@@ -241,6 +241,7 @@ test('rules payload includes catalog, costs, formula, scripts, caps, and positio
   assert.equal(rules.map_summary.light_zones.length, 3)
   assert.equal(rules.map_summary.hazard_slots.length, 2)
   assert.equal(rules.simulator.max_calls_per_intermission, 10)
+  assert.equal(rules.caps.simulate_wall_seconds, 10)
 })
 
 function makeWorld() {
