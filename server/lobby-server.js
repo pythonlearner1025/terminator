@@ -4,6 +4,7 @@ import {mkdir, readFile, writeFile} from 'node:fs/promises'
 import {readFileSync} from 'node:fs'
 import path from 'node:path'
 import {fileURLToPath} from 'node:url'
+import {BuiltinSkynet} from '../lib/core/builtin-skynet.js'
 import {buildRulesPayload, validateWaveConfig, waveBudget} from '../lib/core/waves.js'
 import {validateScript, UNIT_TYPES} from './script-validator.js'
 import {runSimulation} from './simulator.js'
@@ -278,7 +279,6 @@ export function createLobbyServer({dataDir = DEFAULT_DATA_DIR, logger = console,
     } catch (error) {
       if (!response.headersSent) sendError(response, error.statusCode || 500, error.code || 'INTERNAL_ERROR', error.statusCode ? error.message : 'internal server error')
       else response.end()
-      if (!error.statusCode) logger.error?.(`lobby request failed: ${String(error?.message || error)}`)
     }
   })
 
@@ -371,7 +371,7 @@ function resolvePlan(lobby, targetWave, {force = false, now = Date.now()} = {}) 
     } else {
       reason = 'built-in Skynet'
     }
-    if (!config) config = builtInPlan(targetWave)
+    if (!config) config = new BuiltinSkynet().plan({wave: targetWave, budget: lobby.budget, telemetry: lobby.telemetry.get(lobby.wave) || null})
   }
   const result = {
     ok: true,
@@ -386,16 +386,6 @@ function resolvePlan(lobby, targetWave, {force = false, now = Date.now()} = {}) 
   lobby.appliedConfig = clone(config)
   lobby.appliedPlans.set(targetWave, clone(result))
   return result
-}
-
-function builtInPlan(wave) {
-  const spawns = wave >= 3
-    ? [{t: 0, gate: 'N1', unit: 'scout', count: 1}, {t: 1, gate: 'E1', unit: 'endo', count: 1}]
-    : [{t: 0, gate: 'N1', unit: 'scout', count: 1}]
-  return {
-    spawns,
-    knobs: {gates: [...new Set(spawns.map((group) => group.gate))], doors: {}, lights: {}, fog: 0, hazards: [], break_flank_wall: false},
-  }
 }
 
 function resolveGhost(lobby, request) {
