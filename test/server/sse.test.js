@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
-import {createLobby, json, startTestServer} from './helpers.js'
+import {createLobby, gameHeaders, json, startTestServer} from './helpers.js'
 
 test('SSE delivers every documented event type', async (t) => {
   const fixture = await startTestServer()
@@ -26,7 +26,7 @@ test('SSE delivers every documented event type', async (t) => {
     {type: 'wave_summary', wave: 1, t: 4, time_to_clear: 4},
     {type: 'phase', wave: 1, t: 0, phase: 'intermission', deadline_ms: Date.now() + 10_000},
   ]
-  const posted = await json(fixture.url, `${base}/game/events`, {method: 'POST', body: {events}})
+  const posted = await json(fixture.url, `${base}/game/events`, {method: 'POST', headers: gameHeaders(created), body: {events}})
   assert.equal(posted.body.delivered, events.length)
 
   const all = await received

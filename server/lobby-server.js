@@ -69,6 +69,9 @@ export function createLobbyServer({dataDir = DEFAULT_DATA_DIR, logger = console,
       const lobby = lobbies.get(match[1])
       if (!lobby) return sendError(response, 404, 'LOBBY_NOT_FOUND', 'lobby not found')
       const route = match[2] || '/'
+      if (route.startsWith('/game/') && request.headers['x-game-token'] !== lobby.gameToken) {
+        return sendError(response, 401, 'GAME_AUTH_FAILED', 'valid game token required')
+      }
 
       if (request.method === 'POST' && route === '/join') {
         const body = await readJson(request)

@@ -3,7 +3,7 @@ import {spawn} from 'node:child_process'
 import test from 'node:test'
 import {fileURLToPath} from 'node:url'
 import path from 'node:path'
-import {createLobby, json, startTestServer, waitFor} from './helpers.js'
+import {createLobby, gameHeaders, json, startTestServer, waitFor} from './helpers.js'
 
 const repo = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..')
 
@@ -12,7 +12,8 @@ test('reference client --fake completes a two-wave scripted game loop', async (t
   t.after(() => fixture.close())
   const lobby = await createLobby(fixture.url, {player_name: 'Fake Loop Player'})
   const base = `/api/lobby/${lobby.code}`
-  await json(fixture.url, `${base}/game/wave_summary`, {method: 'POST', body: {
+  const game = (route, options = {}) => json(fixture.url, `${base}${route}`, {...options, headers: gameHeaders(lobby)})
+  await game('/game/wave_summary', {method: 'POST', body: {
     wave: 1,
     summary: {wave: 1, time_to_clear: 10, player_path: [{t: 0, x: 0, y: 0, z: 9}], shots: {pistol: {fired: 5, hits: 3}}},
     budget: 540,
@@ -37,13 +38,13 @@ test('reference client --fake completes a two-wave scripted game loop', async (t
   child.stderr.on('data', (chunk) => { stderr += chunk })
 
   await waitFor(async () => (await json(fixture.url, `${base}/state`)).body.agent_ready_wave === 2, {timeoutMs: 15_000})
-  const waveTwo = await json(fixture.url, `${base}/game/plan/2`)
+  const waveTwo = await game('/game/plan/2')
   assert.equal(waveTwo.body.fallback, false)
   assert.equal(waveTwo.body.scripts.scout.rev, 2)
   assert.equal(waveTwo.body.config.knobs.fog, 2)
 
-  await json(fixture.url, `${base}/game/phase`, {method: 'POST', body: {phase: 'wave', wave: 2, budget: 540, applied_config: waveTwo.body.config}})
-  await json(fixture.url, `${base}/game/wave_summary`, {method: 'POST', body: {
+  await game('/game/phase', {method: 'POST', body: {phase: 'wave', wave: 2, budget: 540, applied_config: waveTwo.body.config}})
+  await game('/game/wave_summary', {method: 'POST', body: {
     wave: 2,
     summary: {wave: 2, time_to_clear: 9, player_path: [{t: 0, x: 1, y: 0, z: 9}], shots: {pistol: {fired: 4, hits: 3}}},
     budget: 660,
@@ -51,7 +52,7 @@ test('reference client --fake completes a two-wave scripted game loop', async (t
   }})
 
   await waitFor(async () => (await json(fixture.url, `${base}/state`)).body.agent_ready_wave === 3, {timeoutMs: 15_000})
-  const waveThree = await json(fixture.url, `${base}/game/plan/3`)
+  const waveThree = await game('/game/plan/3')
   assert.equal(waveThree.body.fallback, false)
   assert.equal(waveThree.body.scripts.scout.rev, 3)
   assert.equal(waveThree.body.config.spawns.length, 2)

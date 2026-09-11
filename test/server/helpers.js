@@ -32,13 +32,17 @@ export async function createLobby(url, body = {}) {
   return response.json()
 }
 
-export async function json(url, route, {method = 'GET', body} = {}) {
+export async function json(url, route, {method = 'GET', body, headers = {}} = {}) {
   const response = await fetch(`${url}${route}`, {
     method,
-    headers: {'Content-Type': 'application/json'},
+    headers: {'Content-Type': 'application/json', ...headers},
     ...(body === undefined ? {} : {body: JSON.stringify(body)}),
   })
   return {status: response.status, body: await response.json()}
+}
+
+export function gameHeaders(created) {
+  return {'X-Game-Token': created.game_token}
 }
 
 export const validConfig = {
