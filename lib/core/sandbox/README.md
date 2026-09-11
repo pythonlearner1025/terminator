@@ -1,10 +1,11 @@
 # Unit script sandbox
 
 The sandbox uses the separate-WASM release-sync variant from `quickjs-emscripten`. Package imports use
-the installed core and variant in Node plus bundled ESM URLs in Kite3D. The aliases avoid the
-development server externalizing QuickJS's private chunk files. The same release build loads in Node
-and through the Kite3D browser development server. Every scripted unit owns one QuickJS runtime and
-one context. Each runtime has a 256 KB memory limit.
+the installed core and variant in Node plus browser ESM URLs in Kite3D. The aliases avoid the
+development server externalizing QuickJS's private chunk files. The variant uses its published ESM
+file so its relative FFI and WebAssembly paths remain intact. The same release build loads in Node and
+through the Kite3D browser development server. Every scripted unit owns one QuickJS runtime and one
+context. Each runtime has a 256 KB memory limit.
 
 Fuel is deterministic. One QuickJS interrupt-handler check represents 1,000 documented interpreter
 operations, so the 10,000-operation tick budget allows 10 checks. On quickjs-emscripten 0.32.0, an

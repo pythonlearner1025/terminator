@@ -30,7 +30,7 @@
     "name": "Terminator: human vs Skynet",
     "imports": {
       "#quickjs-core": "https://esm.sh/quickjs-emscripten-core@0.32.0?bundle",
-      "#quickjs-release-sync": "https://esm.sh/@jitl/quickjs-wasmfile-release-sync@0.32.0?bundle"
+      "#quickjs-release-sync": "https://cdn.jsdelivr.net/npm/@jitl/quickjs-wasmfile-release-sync@0.32.0/dist/index.mjs"
     },
     "scripts": [
       "./scripts/GameManager.script.js",
