@@ -105,7 +105,7 @@ export function createSoldierFigure(E, variant = 'olive') {
   lamp.name = 'Headlamp'; lamp.position.copy(lens.position); lamp.castShadow = false
   const target = new E.Group(); target.name = 'Headlamp Target'; target.position.set(0, -.11, 3)
   head.add(lamp, target); lamp.target = target
-  for (const [side, sign] of [['Left', -1], ['Right', 1]]) {
+  for (const [side, sign] of [['Left', 1], ['Right', -1]]) {
     const upper = bone(`Upper Arm ${side}`, chest, [sign * .244, .19, 0])
     const fore = bone(`Forearm ${side}`, upper, [0, -.285, 0])
     const hand = bone(`Hand ${side}`, fore, [0, -.26, 0])
