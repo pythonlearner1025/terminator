@@ -16,7 +16,8 @@
         5,
         6,
         7,
-        8
+        8,
+        9
       ]
     }
   ],
@@ -214,6 +215,32 @@
         "kite3dAuthoring": {
           "role": "direct",
           "id": "terminator-saved-camera"
+        }
+      }
+    },
+    {
+      "name": "Soldier Template",
+      "translation": [
+        34,
+        0,
+        9
+      ],
+      "extras": {
+        "gltfUUID": "terminator-node-soldier-template",
+        "kite3dAuthoring": {
+          "role": "generator",
+          "id": "terminator-soldier-template"
+        },
+        "EntityComponentPlugin": {
+          "terminator-component-soldier-generator": {
+            "type": "Generator",
+            "state": {
+              "module": "generators/soldier-template.generator.js",
+              "params": {
+                "variant": "olive"
+              }
+            }
+          }
         }
       }
     }

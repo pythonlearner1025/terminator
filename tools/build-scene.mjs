@@ -26,6 +26,15 @@ const specs = [
   unitTemplate('Endo', 'endo', [34, 0, 0]),
   unitTemplate('Heavy', 'heavy', [34, 0, 5]),
   {
+    name: 'Soldier Template',
+    uuid: 'terminator-node-soldier-template',
+    translation: [34, 0, 9],
+    authoring: {role: 'generator', id: 'terminator-soldier-template'},
+    components: {
+      'terminator-component-soldier-generator': {type: 'Generator', state: {module: 'generators/soldier-template.generator.js', params: {variant: 'olive'}}},
+    },
+  },
+  {
     name: 'Player Start',
     uuid: 'terminator-node-player-start',
     translation: [0, 0, 9],

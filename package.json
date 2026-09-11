@@ -44,7 +44,8 @@
     "scripts": [
       "./scripts/GameManager.script.js",
       "./generators/map.generator.js",
-      "./generators/unit-template.generator.js"
+      "./generators/unit-template.generator.js",
+      "./generators/soldier-template.generator.js"
     ],
     "viewer": {
       "msaa": true,
