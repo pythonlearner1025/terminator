@@ -45,7 +45,9 @@ Legend: [ ] todo, [~] in progress, [x] done, [!] blocked
 - [x] W8 + W9 Lobby server, game relay, MCP server, reference LLM client (sol). Evidence docs/evidence/w8
 - [x] W10 HUD and UX: HUD, trader, menus, lobby screen, dossier screen (astra). Evidence docs/evidence/w10
 - [x] W11 First-person weapons with hands and animations (astra). Evidence docs/evidence/w11
-- [~] W12 Audio (sol)
+- [x] W12 Audio: procedural WebAudio, 40 sounds, bindings (sol). Evidence docs/evidence/w12
+- [x] Fixes from checkpoint 1 play: right handed controls (1de5880), no re-aim from frozen cursor on click (52de5bb)
+- [~] Editor bug: toolbar icons render blank in kite3d editor; agent investigating in ~/blitz, PR if editor bug
 - [~] Checkpoint 1: tests 54 pass, check passes, editor open on port 4300 in Play, owner playing (2026-09-11)
 - [ ] W13 Feedback fixes and polish, then Checkpoint 2
 
