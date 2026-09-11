@@ -1,107 +1,106 @@
 {
-  "ok": false,
-  "checkedAt": "2026-09-11T21:11:33.773Z",
+  "ok": true,
   "mode": "headless",
-  "componentTypes": [
-    "Cannon3DBodyComponent",
-    "Cannon3DShapeComponent",
-    "CannonRagdollComponent",
-    "GameManager",
-    "Generator",
-    "HtmlUiComponent"
-  ],
-  "rows": [
-    {
-      "kind": "script",
-      "path": "scripts/GameManager.script.js",
-      "status": "pass",
-      "detail": "GameManager"
-    },
-    {
-      "kind": "script",
-      "path": "generators/map.generator.js",
-      "status": "pass",
-      "detail": "no component types"
-    },
-    {
-      "kind": "script",
-      "path": "generators/unit-template.generator.js",
-      "status": "pass",
-      "detail": "no component types"
-    },
-    {
-      "kind": "component",
-      "path": "Game Manager",
-      "status": "pass",
-      "detail": "GameManager"
-    },
-    {
-      "kind": "component",
-      "path": "Map",
-      "status": "pass",
-      "detail": "Generator"
-    },
-    {
-      "kind": "generator",
-      "path": "generators/map.generator.js",
-      "status": "pass",
-      "detail": "Map"
-    },
-    {
-      "kind": "component",
-      "path": "Unit Template Scout",
-      "status": "pass",
-      "detail": "Generator"
-    },
-    {
-      "kind": "generator",
-      "path": "generators/unit-template.generator.js",
-      "status": "pass",
-      "detail": "Unit Template Scout"
-    },
-    {
-      "kind": "component",
-      "path": "Unit Template Endo",
-      "status": "pass",
-      "detail": "Generator"
-    },
-    {
-      "kind": "generator",
-      "path": "generators/unit-template.generator.js",
-      "status": "pass",
-      "detail": "Unit Template Endo"
-    },
-    {
-      "kind": "component",
-      "path": "Unit Template Heavy",
-      "status": "pass",
-      "detail": "Generator"
-    },
-    {
-      "kind": "generator",
-      "path": "generators/unit-template.generator.js",
-      "status": "pass",
-      "detail": "Unit Template Heavy"
-    }
-  ],
   "outcomes": [
     {
       "name": "Playable",
-      "status": "fail",
-      "summary": "Headless check failed: SSAOPlugin: pass/viewer not created yet",
-      "codes": []
+      "status": "pass",
+      "summary": "The game booted and ran 30 frames without errors.",
+      "codes": [],
+      "durationMs": 27485,
+      "report": {
+        "projectValidation": {
+          "ok": true,
+          "status": "pass",
+          "summary": "Project validations passed.",
+          "results": [
+            {
+              "status": "pass",
+              "summary": "Headless world and view adapters are running.",
+              "checks": {
+                "nodesPresent": true,
+                "systemsReady": true,
+                "tickRate": 60
+              }
+            }
+          ]
+        },
+        "cleanup": {
+          "ok": true,
+          "status": "pass",
+          "summary": "Runtime cleanup passed.",
+          "issues": [],
+          "trackedObjectCount": 0,
+          "outsideRenderableCount": 0
+        },
+        "runtimeErrors": 0,
+        "relationships": []
+      }
     },
     {
       "name": "Editable",
-      "status": "fail",
-      "summary": "Headless check failed: SSAOPlugin: pass/viewer not created yet",
-      "codes": []
+      "status": "pass",
+      "summary": "Stopped-mode authored representation passed.",
+      "codes": [
+        "CAMERA_CONTAINMENT_UNVERIFIED"
+      ],
+      "report": {
+        "ok": true,
+        "status": "pass",
+        "summary": "Stopped-mode authored representation passed.",
+        "issues": [
+          {
+            "code": "CAMERA_CONTAINMENT_UNVERIFIED",
+            "severity": "warning",
+            "message": "The camera intersects local geometry bounds, but hollow or imported mesh containment is unverified.",
+            "object": {
+              "uuid": "37774216-8273-4e2d-91cb-87733d32b98b",
+              "name": "Static Map cracked asphalt"
+            }
+          },
+          {
+            "code": "CAMERA_CONTAINMENT_UNVERIFIED",
+            "severity": "warning",
+            "message": "The camera intersects local geometry bounds, but hollow or imported mesh containment is unverified.",
+            "object": {
+              "uuid": "2f58f753-2b49-4e4e-8d17-efc106f613e2",
+              "name": "Static skyline"
+            }
+          }
+        ],
+        "checks": {
+          "visibleAuthoredContent": true,
+          "selectableAuthoredContent": true,
+          "relationshipsValid": true,
+          "generatorPreviews": true,
+          "cameraUseful": true
+        },
+        "metrics": {
+          "authoredObjectCount": 420,
+          "renderableCount": 252,
+          "visibleRenderableCount": 243,
+          "selectableCount": 243,
+          "generatorCount": 4,
+          "generatorPreviewCount": 4,
+          "cameraFramedRenderableCount": 78,
+          "cameraInsideRenderableCount": 0
+        }
+      }
     },
     {
       "name": "Persisted",
-      "status": "fail",
-      "summary": "Headless check failed: SSAOPlugin: pass/viewer not created yet",
-      "codes": []
+      "status": "pass",
+      "summary": "Save/Reload semantic equivalence passed.",
+      "codes": [],
+      "report": {
+        "ok": true,
+        "status": "pass",
+        "summary": "Save/Reload semantic equivalence passed.",
+        "issues": [],
+        "changes": [],
+        "beforeBytes": 2946,
+        "afterBytes": 2946
+      }
     }
   ]
 }

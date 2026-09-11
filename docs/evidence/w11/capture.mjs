@@ -156,7 +156,7 @@ try {
       // Reverse order each pair to reduce bias from other agents' GPU work.
       let visible,hidden
       if(i%2){visible=await frame(true);hidden=await frame(false)}else{hidden=await frame(false);visible=await frame(true)}
-      pairs.push({visible,hidden,cpuDeltaMs:visible.cpuMs-hidden.cpuMs,gpuDeltaMs:ext?visible.gpuMs-hidden.gpuMs:null})
+      pairs.push({visible,hidden,cpuDeltaMs:visible.cpuMs-hidden.cpuMs,gpuDeltaMs:ext&&visible.gpuMs!==null&&hidden.gpuMs!==null?visible.gpuMs-hidden.gpuMs:null})
     }
     v.root.visible=true;viewer.setDirty()
     const summary=key=>{const a=pairs.map(p=>p[key]).filter(v=>v!==null).sort((a,b)=>a-b);return a.length?{meanMs:a.reduce((s,v)=>s+v,0)/a.length,medianMs:a[Math.floor(a.length/2)],p95Ms:a[Math.floor(a.length*.95)]}:null}

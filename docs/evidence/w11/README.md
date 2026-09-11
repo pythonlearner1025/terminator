@@ -70,7 +70,7 @@ measures idle M4 rendering; it does not certify every combat frame on every GPU.
 Raw measurements and the passing animation assertions are in
 [capture-results.json](capture-results.json).
 
-## Verification and remaining shared failure
+## Verification
 
 `node docs/evidence/w11/capture.mjs` produced all 18 references with zero browser
 errors and passed dry-fire, reload suppression/completion, fire cadence, shotgun
@@ -79,23 +79,22 @@ pump/insertion, CameraFeel kick/hit-stop and independent FOV assertions.
 `node docs/evidence/w11/live-and-check.mjs` exercised real inputs in Wave 1. The
 harness granted inventory and extra health during combat, then restored health
 for the screenshot. Weapon runtime removal, camera restoration and HUD removal
-all passed. There were zero live gameplay errors. Editor teardown emitted:
+all passed. The final run had zero gameplay or teardown errors.
 
-```text
-SSAOPlugin: pass/viewer not created yet
-```
+The Kite3D headless check against port 4950 passed **Playable, Editable and
+Persisted**. Editable retains the informational `CAMERA_CONTAINMENT_UNVERIFIED`
+code. The complete report is [kite3d-check.json](kite3d-check.json).
 
-`npx kite3d check` passed its 12 static rows. Playable, Editable and Persisted all
-failed with the exact summary below, from the shared MapPost/SSAO teardown path
-outside the weapon-owned files:
+The CLI passed all 12 static rows, but the shared `.kite3d/dev.json` was replaced
+by another agent's metadata during checking. Its browser launch failed with
+`page.goto: net::ERR_CONNECTION_REFUSED` at the stopped server on port 4700.
+[check.mjs](check.mjs) runs the identical Kite3D headless check entrypoint on the
+owned port 4950, avoiding that metadata race. It is this direct run that passed
+all three runtime outcomes. The earlier shared SSAO teardown failure was fixed
+outside this workstream before the final checks.
 
-```text
-Headless check failed: SSAOPlugin: pass/viewer not created yet
-```
-
-The sanitized report is [kite3d-check.json](kite3d-check.json). This is not a clean
-project-wide check result. No map, unit, core, UI, server or generator source was
-changed, and nothing was published.
+No map, unit, core, UI, server or generator source was changed by this workstream,
+and nothing was published.
 
 ## Reproduce
 
@@ -106,4 +105,5 @@ it, so another agent replacing `.kite3d/dev.json` does not redirect the captures
 ```sh
 PW_TEST_SCREENSHOT_NO_FONTS_READY=1 node docs/evidence/w11/capture.mjs
 PW_TEST_SCREENSHOT_NO_FONTS_READY=1 node docs/evidence/w11/live-and-check.mjs
+node docs/evidence/w11/check.mjs
 ```
