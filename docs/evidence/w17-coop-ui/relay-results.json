@@ -1,0 +1,28 @@
+{
+  "mode": "Real local WebSocket relay; two isolated headless Chromium contexts. Controlled death/respawn triggers sent through actual snapshots.",
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "assertions": [
+    "Real host cannot start before the squad is ready",
+    "Ready messages travel through the relay and enable host Start",
+    "Guest uses its own player identity after joining",
+    "Guest HUD shows the host as a teammate",
+    "Live match displays authoritative two-player scaling",
+    "Guest death snapshot activates the spectate camera",
+    "Respawn snapshot restores guest input",
+    "Host departure produces a clear main-menu notice",
+    "Two real relay clients produced no uncaught browser errors"
+  ],
+  "screenshots": [
+    "26-relay-host-created.png",
+    "27-relay-host-two-players.png",
+    "28-relay-guest-connected.png",
+    "29-relay-squad-ready.png",
+    "30-relay-guest-in-match.png",
+    "31-relay-guest-spectating.png",
+    "32-relay-host-left.png"
+  ],
+  "issues": []
+}
