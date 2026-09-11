@@ -6,6 +6,8 @@ import {WaveDirector} from '../lib/core/waves.js'
 import {TICK_SECONDS, World} from '../lib/core/world.js'
 import {LobbyClient} from '../lib/net/lobby-client.js'
 import {Hud} from '../lib/ui/hud.js'
+import {UiSession} from '../lib/ui/session.js'
+import {CameraFeel} from '../lib/view/camera-feel.js'
 import {InputController} from '../lib/view/input.js'
 import {MapView} from '../lib/view/map.js'
 import {PlayerView} from '../lib/view/player.js'
@@ -27,6 +29,8 @@ export class GameManager extends Object3DComponent {
   unitView = null
   playerView = null
   hud = null
+  ui = null
+  cameraFeel = null
   lobby = null
   accumulator = 0
   started = false
@@ -48,9 +52,8 @@ export class GameManager extends Object3DComponent {
     this.mapView.start()
     this.unitView.start(this.world)
     this.playerView.start(this.world)
-    this.input.start({yaw: this.world.player.yaw, pitch: this.world.player.pitch})
-    this.lobby.start()
-    this.director.start()
+    this.cameraFeel = new CameraFeel()
+    this.ui = new UiSession(this)
     this.accumulator = 0
     this.started = true
     this.syncViews()
@@ -58,12 +61,20 @@ export class GameManager extends Object3DComponent {
 
   update({deltaTime} = {}) {
     if (!this.started || !this.world) return
+    if (this.ui?.frozen || this.cameraFeel?.hitStopped) {
+      this.accumulator = 0
+      this.lobby?.update()
+      this.ui?.sync(projectViewModel(this.world))
+      return true
+    }
     this.accumulator += Math.min(0.1, Math.max(0, Number(deltaTime) || 16.667) / 1000)
     let steps = 0
     while (this.accumulator >= TICK_SECONDS && steps < 8) {
-      this.director.step(this.input.sample())
+      this.director.step(this.ui ? this.ui.sample() : this.input.sample())
+      this.cameraFeel?.consume(this.world)
       this.accumulator -= TICK_SECONDS
       steps += 1
+      if (this.cameraFeel?.hitStopped) { this.accumulator = 0; break }
     }
     if (steps === 8) this.accumulator = Math.min(this.accumulator, TICK_SECONDS)
     this.lobby?.update()
@@ -80,12 +91,16 @@ export class GameManager extends Object3DComponent {
     this.mapView?.sync(this.world)
     this.unitView?.sync(this.world)
     this.playerView?.sync(this.world)
-    this.hud?.render(projectViewModel(this.world))
+    this.cameraFeel?.apply(this.playerView?.camera)
+    if (this.ui) this.ui.sync(projectViewModel(this.world))
+    else this.hud?.render(projectViewModel(this.world))
     this.ctx.viewer.setDirty(this)
   }
 
   stop() {
     this.started = false
+    this.ui?.dispose()
+    this.cameraFeel?.dispose()
     this.lobby?.stop()
     this.input?.stop()
     this.hud?.dispose()
@@ -95,6 +110,8 @@ export class GameManager extends Object3DComponent {
     this.input = null
     this.lobby = null
     this.hud = null
+    this.ui = null
+    this.cameraFeel = null
     this.playerView = null
     this.unitView = null
     this.mapView = null
