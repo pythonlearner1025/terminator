@@ -6,7 +6,11 @@ import {best, ghostFromWave, ghostInputAt, last, selectGhost, simulate} from '..
 
 const idleBrain = {tick() {}}
 const nativeFactory = () => idleBrain
-const plainDefaultFactory = ({fallback}) => fallback
+const nonLethalDefaultFactory = ({fallback}) => ({
+  tick(self, sense, act, mem) {
+    fallback.tick(self, sense, {...act, fire() {}, melee() {}}, mem)
+  },
+})
 
 test('ghost replays recorded movement and look within one centimeter', () => {
   const original = new World({seed: 9, brains: {scout: idleBrain, endo: idleBrain, heavy: idleBrain}})
@@ -94,16 +98,17 @@ test('24 alive units simulate at least 30 times faster than real time', () => {
     ],
     knobs: {gates: ['N1', 'E1', 'S1'], doors: {}, lights: {}, fog: 0, hazards: [], break_flank_wall: false},
   }
-  simulate({waveConfig: config, ghost: {inputs: [], accuracy: {}}, seed: 77, maxSeconds: 1, brainFactory: plainDefaultFactory})
+  simulate({waveConfig: config, ghost: {inputs: [], accuracy: {}}, seed: 77, maxSeconds: 1, brainFactory: nonLethalDefaultFactory})
   let result
   let speed = 0
   for (let attempt = 0; attempt < 2; attempt += 1) {
     const startedAt = performance.now()
-    result = simulate({waveConfig: config, ghost: {inputs: [], accuracy: {}}, seed: 77, maxSeconds: 30, brainFactory: plainDefaultFactory})
+    result = simulate({waveConfig: config, ghost: {inputs: [], accuracy: {}}, seed: 77, maxSeconds: 30, brainFactory: nonLethalDefaultFactory})
     const wallSeconds = (performance.now() - startedAt) / 1000
     speed = Math.max(speed, 30 / wallSeconds)
   }
   assert.equal(result.units.heavy.spawned, 24)
   assert.equal(result.units.heavy.killed, 0)
+  assert.equal(result.player_died, false)
   assert.ok(speed >= 30, `expected at least 30x, measured ${speed.toFixed(1)}x`)
 })
