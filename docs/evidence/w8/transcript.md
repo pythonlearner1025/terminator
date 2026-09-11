@@ -43,10 +43,12 @@ curl -sS http://localhost:7801/api/lobby/KHYAIS/state
 
 curl -sS -X POST http://localhost:7801/api/lobby/KHYAIS/script \
   -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer [redacted]' \
   --data '{"unit_type":"scout","source":"export function tick(self, sense, act, mem) {\n  const target = sense.player?.pos || sense.lastKnownPlayer?.pos || self.pos\n  act.moveTo(target)\n  act.face(target)\n  act.say('\''REV TWO ACTIVE'\'')\n  if (sense.player && self.type !== '\''scout'\'') { act.aimAt(target); act.fire() }\n  if (sense.player && self.type === '\''scout'\'') act.melee()\n}","note":"Wave 2 evidence script"}'
 
 curl -sS -X POST http://localhost:7801/api/lobby/KHYAIS/wave_config \
   -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer [redacted]' \
   --data '{"wave":2,"spawns":[{"t":0,"gate":"E1","unit":"scout","count":1}],"knobs":{"gates":["E1"],"doors":{"building_ground":"locked"},"lights":{"courtyard":"off"},"fog":2,"hazards":[],"break_flank_wall":false}}'
 ```
 

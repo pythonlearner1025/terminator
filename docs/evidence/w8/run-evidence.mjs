@@ -91,7 +91,7 @@ try {
   if (sense.player && self.type === 'scout') act.melee()
 }`
   const scriptBody = {unit_type: 'scout', source: scriptSource, note: 'Wave 2 evidence script'}
-  const script = await curlJson(['-X', 'POST', `${base}/script`, '-H', 'Content-Type: application/json', '--data', JSON.stringify(scriptBody)])
+  const script = await curlJson(['-X', 'POST', `${base}/script`, '-H', 'Content-Type: application/json', '-H', `Authorization: Bearer ${join.token}`, '--data', JSON.stringify(scriptBody)])
   const configBody = {
     wave: 2,
     spawns: [{t: 0, gate: 'E1', unit: 'scout', count: 1}],
@@ -104,7 +104,7 @@ try {
       break_flank_wall: false,
     },
   }
-  const config = await curlJson(['-X', 'POST', `${base}/wave_config`, '-H', 'Content-Type: application/json', '--data', JSON.stringify(configBody)])
+  const config = await curlJson(['-X', 'POST', `${base}/wave_config`, '-H', 'Content-Type: application/json', '-H', `Authorization: Bearer ${join.token}`, '--data', JSON.stringify(configBody)])
   await page.waitForFunction(() => window.terminator.manager.lobby.pendingPlan?.scripts?.scout?.rev === 2, null, {timeout: 10_000})
   await page.keyboard.press('r')
   await page.waitForFunction(() => window.terminator.world.wave === 2 && window.terminator.world.phase === 'wave', null, {timeout: 15_000})
@@ -147,8 +147,8 @@ try {
     commands: {
       join: `curl -sS -X POST ${base}/join -H 'Content-Type: application/json' --data '<join JSON>'`,
       events: `curl -sS -N ${base}/events`,
-      script: `curl -sS -X POST ${base}/script -H 'Content-Type: application/json' --data '<script JSON>'`,
-      waveConfig: `curl -sS -X POST ${base}/wave_config -H 'Content-Type: application/json' --data '<wave config JSON>'`,
+      script: `curl -sS -X POST ${base}/script -H 'Content-Type: application/json' -H 'Authorization: Bearer [redacted]' --data '<script JSON>'`,
+      waveConfig: `curl -sS -X POST ${base}/wave_config -H 'Content-Type: application/json' -H 'Authorization: Bearer [redacted]' --data '<wave config JSON>'`,
     },
     responses: {
       join: {name: join.state.agent.name, phase: join.state.phase, wave: join.state.wave},
