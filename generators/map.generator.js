@@ -1,4 +1,4 @@
-import {createMapGroup} from '../lib/view/map.js'
+import {createMapGroup} from './map.geometry.js'
 
 export default async function generate({params, engine}) {
   const response = await fetch(new URL('../lib/core/data/map.json', import.meta.url))
