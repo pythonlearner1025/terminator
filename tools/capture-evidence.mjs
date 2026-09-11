@@ -170,7 +170,7 @@ async function aimAtNearestVisibleUnit() {
   })
   if (turn === null) return false
   if (Math.abs(turn) > 0.35) {
-    const key = turn > 0 ? 'ArrowRight' : 'ArrowLeft'
+    const key = turn < 0 ? 'ArrowRight' : 'ArrowLeft'
     await page.keyboard.down(key)
     await waitTicks(Math.min(90, Math.max(1, Math.round(Math.abs(turn) / 0.032))))
     await page.keyboard.up(key)
@@ -202,7 +202,7 @@ async function aimAtNearestVisibleUnit() {
     const rect = canvas.getBoundingClientRect()
     const verticalFov = input.fov * Math.PI / 180
     const horizontalFov = 2 * Math.atan(Math.tan(verticalFov / 2) * rect.width / Math.max(1, rect.height))
-    const nx = target.delta / (horizontalFov * 0.5)
+    const nx = -target.delta / (horizontalFov * 0.5)
     const ny = -target.pitch / (verticalFov * 0.5)
     if (Math.abs(nx) > 0.94 || Math.abs(ny) > 0.94) return null
     return {
