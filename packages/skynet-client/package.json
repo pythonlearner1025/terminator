@@ -1,0 +1,12 @@
+{
+  "name": "terminator-skynet-client",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "terminator-skynet-client": "./index.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.65.0"
+  }
+}
