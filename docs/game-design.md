@@ -25,7 +25,7 @@ A 60 by 60 meter compound. Parts:
 
 ## Human
 
-- Health 100. Armor 0 to 100, bought at the trader. Armor absorbs 60% of damage until it is gone.
+- Health 100. It resets to 100 at each wave clear. Armor 0 to 100, bought at the trader. Armor absorbs 60% of damage until it is gone.
 - Move 5 m/s. Sprint 7.5 m/s for a stamina of 6 s, recovers in 4 s. Crouch. No jump in MVP.
 - Four weapon slots plus knife and grenades. Reload with a mag drop (no partial mag saving in MVP).
 - Headshots on terminators deal 2x damage. Body shots on a Heavy's chest plates deal 0.5x.
