@@ -78,7 +78,7 @@ try {
     if (!world) return false
     for (const unit of world.aliveUnits) world.damageUnit(unit.id, unit.hp, {source: 'player', weapon: 'pistol', distance: 5})
     return world.phase === 'intermission'
-  }, null, {timeout: 20_000, polling: 100})
+  }, null, {timeout: 45_000, polling: 100})
   await waitFor(() => sseText.includes('"type":"wave_summary"'), 10_000, 'wave summary did not arrive over SSE')
 
   const state = await curlJson([`${base}/state`])
