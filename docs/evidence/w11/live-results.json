@@ -1,0 +1,49 @@
+{
+  "live": {
+    "weapons": [
+      {
+        "id": "pistol",
+        "tick": 141,
+        "units": 4,
+        "mode": "reload",
+        "shots": 2,
+        "reload": 1.3500000000000003
+      },
+      {
+        "id": "m4",
+        "tick": 344,
+        "units": 4,
+        "mode": "reload",
+        "shots": 3,
+        "reload": 1.6833333333333338
+      },
+      {
+        "id": "shotgun",
+        "tick": 545,
+        "units": 5,
+        "mode": "reload",
+        "shots": 1,
+        "reload": 2.3000000000000003
+      },
+      {
+        "id": "plasma",
+        "tick": 744,
+        "units": 5,
+        "mode": "reload",
+        "shots": 1,
+        "reload": 2.0000000000000004
+      }
+    ],
+    "knife": "knife",
+    "grenade": "grenade",
+    "errors": [],
+    "testSetup": "Granted weapon inventory and 10000 health during input testing; restored health to 100 for screenshot"
+  },
+  "resources": {
+    "runtimeExisted": true,
+    "runtimeRemoved": true,
+    "cameraRestored": true,
+    "hudRemoved": true
+  },
+  "teardownErrors": []
+}
