@@ -18,7 +18,7 @@
     "pull": "kite3d pull",
     "server": "node server/index.js",
     "dev:all": "concurrently -k -n game,server \"npm run dev\" \"npm run server\"",
-    "test": "node --test test/core/*.test.js test/core/sandbox/*.test.js test/server/*.test.js",
+    "test": "find test -type f -name '*.test.js' -exec node --test {} +",
     "scene": "node tools/build-scene.mjs",
     "benchmark": "node tools/benchmark-world.mjs"
   },
