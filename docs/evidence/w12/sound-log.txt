@@ -1,0 +1,629 @@
+Terminator W12 Playwright sound log
+Recorded: 2026-09-11T21:43:42.274Z
+Server: http://127.0.0.1:4900/?t=[redacted]
+Wave: 1, phase after playthrough: intermission
+Ticks: 10 to 2140
+Kills: 5, player shots: 102
+AudioContext during evidence: running
+Distinct sounds fired: 24
+Sound events logged: 616
+
+2026-09-11T21:43:04.906Z [audio] ambient_bed variant=1 bus=ambient
+2026-09-11T21:43:04.931Z [audio] skynet_static variant=1 bus=effects
+2026-09-11T21:43:04.932Z [audio] typewriter_tick variant=1 bus=effects
+2026-09-11T21:43:04.933Z [audio] typewriter_tick variant=2 bus=effects
+2026-09-11T21:43:04.933Z [audio] typewriter_tick variant=1 bus=effects
+2026-09-11T21:43:04.933Z [audio] typewriter_tick variant=2 bus=effects
+2026-09-11T21:43:04.933Z [audio] typewriter_tick variant=1 bus=effects
+2026-09-11T21:43:04.933Z [audio] typewriter_tick variant=2 bus=effects
+2026-09-11T21:43:04.933Z [audio] typewriter_tick variant=1 bus=effects
+2026-09-11T21:43:04.933Z [audio] typewriter_tick variant=2 bus=effects
+2026-09-11T21:43:04.933Z [audio] typewriter_tick variant=1 bus=effects
+2026-09-11T21:43:04.933Z [audio] typewriter_tick variant=2 bus=effects
+2026-09-11T21:43:04.933Z [audio] typewriter_tick variant=1 bus=effects
+2026-09-11T21:43:04.933Z [audio] typewriter_tick variant=2 bus=effects
+2026-09-11T21:43:04.933Z [audio] typewriter_tick variant=1 bus=effects
+2026-09-11T21:43:04.933Z [audio] typewriter_tick variant=2 bus=effects
+2026-09-11T21:43:04.933Z [audio] typewriter_tick variant=1 bus=effects
+2026-09-11T21:43:04.933Z [audio] typewriter_tick variant=2 bus=effects
+2026-09-11T21:43:05.013Z [audio] ui_hover variant=1 bus=effects
+2026-09-11T21:43:05.062Z [audio] wave_klaxon variant=1 bus=effects
+2026-09-11T21:43:05.205Z [audio] combat_music variant=1 bus=combat
+2026-09-11T21:43:05.220Z [audio] skynet_static variant=2 bus=effects
+2026-09-11T21:43:05.220Z [audio] typewriter_tick variant=1 bus=effects
+2026-09-11T21:43:05.220Z [audio] typewriter_tick variant=2 bus=effects
+2026-09-11T21:43:05.220Z [audio] typewriter_tick variant=1 bus=effects
+2026-09-11T21:43:05.220Z [audio] typewriter_tick variant=2 bus=effects
+2026-09-11T21:43:05.220Z [audio] typewriter_tick variant=1 bus=effects
+2026-09-11T21:43:05.220Z [audio] typewriter_tick variant=2 bus=effects
+2026-09-11T21:43:05.220Z [audio] typewriter_tick variant=1 bus=effects
+2026-09-11T21:43:05.220Z [audio] typewriter_tick variant=2 bus=effects
+2026-09-11T21:43:05.220Z [audio] typewriter_tick variant=1 bus=effects
+2026-09-11T21:43:05.220Z [audio] typewriter_tick variant=2 bus=effects
+2026-09-11T21:43:05.220Z [audio] typewriter_tick variant=1 bus=effects
+2026-09-11T21:43:05.220Z [audio] typewriter_tick variant=2 bus=effects
+2026-09-11T21:43:05.220Z [audio] typewriter_tick variant=1 bus=effects
+2026-09-11T21:43:05.220Z [audio] typewriter_tick variant=2 bus=effects
+2026-09-11T21:43:05.220Z [audio] typewriter_tick variant=1 bus=effects
+2026-09-11T21:43:05.220Z [audio] typewriter_tick variant=2 bus=effects
+2026-09-11T21:43:05.258Z [audio] spawn_gate variant=1 bus=effects pos=-17.2,1,27.5
+2026-09-11T21:43:35.333Z [audio] footstep_concrete variant=1 bus=effects pos=0.1,0,8.9
+2026-09-11T21:43:35.336Z [audio] servo_scout variant=1 bus=effects pos=-18.8,0,27.5
+2026-09-11T21:43:35.358Z [audio] footstep_concrete variant=2 bus=effects pos=1.4,0,7.6
+2026-09-11T21:43:35.392Z [audio] spawn_gate variant=2 bus=effects pos=-15.7,1,28.4
+2026-09-11T21:43:35.394Z [audio] servo_scout variant=2 bus=effects pos=-20.3,0,27.1
+2026-09-11T21:43:35.402Z [audio] footstep_concrete variant=1 bus=effects pos=2.7,0,6.2
+2026-09-11T21:43:35.422Z [audio] servo_scout variant=1 bus=effects pos=-20.5,0,25.2
+2026-09-11T21:43:35.448Z [audio] footstep_concrete variant=2 bus=effects pos=3.8,0,4.7
+2026-09-11T21:43:35.448Z [audio] servo_scout variant=2 bus=effects pos=-20.5,0,24.3
+2026-09-11T21:43:35.474Z [audio] spawn_gate variant=1 bus=effects pos=-16,1,28.5
+2026-09-11T21:43:35.474Z [audio] servo_scout variant=1 bus=effects pos=-16.2,0,29.5
+2026-09-11T21:43:35.498Z [audio] footstep_concrete variant=1 bus=effects pos=5.2,0,3.4
+2026-09-11T21:43:35.498Z [audio] servo_scout variant=2 bus=effects pos=-18.8,0,24.5
+2026-09-11T21:43:35.515Z [audio] servo_scout variant=1 bus=effects pos=-17.5,0,29.5
+2026-09-11T21:43:35.515Z [audio] servo_scout variant=2 bus=effects pos=-17.9,0,28.5
+2026-09-11T21:43:35.540Z [audio] footstep_concrete variant=2 bus=effects pos=6.6,0,2.2
+2026-09-11T21:43:35.540Z [audio] spawn_gate variant=2 bus=effects pos=-16.5,1,27.5
+2026-09-11T21:43:35.540Z [audio] servo_scout variant=1 bus=effects pos=-16.9,0,24.5
+2026-09-11T21:43:35.557Z [audio] servo_scout variant=2 bus=effects pos=-16.4,0,25.2
+2026-09-11T21:43:35.557Z [audio] servo_scout variant=1 bus=effects pos=-19.6,0,28.4
+2026-09-11T21:43:35.581Z [audio] footstep_concrete variant=1 bus=effects pos=7.9,0,0.9
+2026-09-11T21:43:35.581Z [audio] servo_scout variant=2 bus=effects pos=-15.6,0,29.5
+2026-09-11T21:43:35.581Z [audio] servo_scout variant=1 bus=effects pos=-19.5,0,27.5
+2026-09-11T21:43:35.581Z [audio] servo_scout variant=2 bus=effects pos=-14.9,0,27.5
+2026-09-11T21:43:35.606Z [audio] servo_scout variant=1 bus=effects pos=-15.6,0,26.6
+2026-09-11T21:43:35.623Z [audio] footstep_concrete variant=2 bus=effects pos=9.2,0,-0.5
+2026-09-11T21:43:35.623Z [audio] servo_scout variant=2 bus=effects pos=-19.5,0,25.6
+2026-09-11T21:43:35.623Z [audio] servo_scout variant=1 bus=effects pos=-13.5,0,28.4
+2026-09-11T21:43:35.648Z [audio] servo_scout variant=2 bus=effects pos=-14.7,0,28
+2026-09-11T21:43:35.648Z [audio] servo_scout variant=1 bus=effects pos=-14.7,0,29
+2026-09-11T21:43:35.649Z [audio] servo_scout variant=2 bus=effects pos=-19.5,0,24.7
+2026-09-11T21:43:35.649Z [audio] servo_scout variant=1 bus=effects pos=-12.6,0,28.5
+2026-09-11T21:43:35.673Z [audio] footstep_concrete variant=1 bus=effects pos=10.4,0,-1.9
+2026-09-11T21:43:35.673Z [audio] servo_scout variant=2 bus=effects pos=-13.9,0,28.4
+2026-09-11T21:43:35.690Z [audio] footstep_concrete variant=2 bus=effects pos=11.5,0,-3.4
+2026-09-11T21:43:35.690Z [audio] servo_scout variant=1 bus=effects pos=-13.5,0,28.5
+2026-09-11T21:43:35.690Z [audio] servo_scout variant=2 bus=effects pos=-19.5,0,22.8
+2026-09-11T21:43:35.714Z [audio] servo_scout variant=1 bus=effects pos=-14.5,0,28.5
+2026-09-11T21:43:35.740Z [audio] footstep_concrete variant=1 bus=effects pos=13,0,-4.6
+2026-09-11T21:43:35.740Z [audio] servo_scout variant=2 bus=effects pos=-14.9,0,28.5
+2026-09-11T21:43:35.740Z [audio] servo_scout variant=1 bus=effects pos=-19.5,0,20.9
+2026-09-11T21:43:35.766Z [audio] servo_scout variant=2 bus=effects pos=-16.3,0,28.5
+2026-09-11T21:43:35.790Z [audio] footstep_concrete variant=2 bus=effects pos=14.4,0,-5.8
+2026-09-11T21:43:35.790Z [audio] servo_scout variant=1 bus=effects pos=-17.3,0,28.5
+2026-09-11T21:43:35.814Z [audio] servo_scout variant=2 bus=effects pos=-14.6,0,27.8
+2026-09-11T21:43:35.814Z [audio] servo_scout variant=1 bus=effects pos=-15.5,0,28.8
+2026-09-11T21:43:35.814Z [audio] servo_scout variant=2 bus=effects pos=-18.9,0,20.5
+2026-09-11T21:43:35.839Z [audio] footstep_concrete variant=1 bus=effects pos=15.9,0,-6.9
+2026-09-11T21:43:35.840Z [audio] servo_scout variant=1 bus=effects pos=-15.2,0,27.3
+2026-09-11T21:43:35.840Z [audio] servo_scout variant=2 bus=effects pos=-15.5,0,27.9
+2026-09-11T21:43:35.840Z [audio] servo_scout variant=1 bus=effects pos=-18.4,0,27.5
+2026-09-11T21:43:35.864Z [audio] servo_scout variant=2 bus=effects pos=-18.5,0,22.3
+2026-09-11T21:43:35.864Z [audio] servo_scout variant=1 bus=effects pos=-18.5,0,26.6
+2026-09-11T21:43:35.893Z [audio] footstep_metal variant=1 bus=effects pos=17.3,0.2,-8.1
+2026-09-11T21:43:35.893Z [audio] servo_scout variant=2 bus=effects pos=-15.5,0,25.4
+2026-09-11T21:43:35.893Z [audio] servo_scout variant=1 bus=effects pos=-15.5,0,26
+2026-09-11T21:43:35.893Z [audio] servo_scout variant=2 bus=effects pos=-18.5,0,23.2
+2026-09-11T21:43:35.908Z [audio] servo_scout variant=1 bus=effects pos=-18.5,0,24.7
+2026-09-11T21:43:35.933Z [audio] footstep_metal variant=2 bus=effects pos=17.6,0,-9.5
+2026-09-11T21:43:35.933Z [audio] servo_scout variant=2 bus=effects pos=-15.5,0,23.6
+2026-09-11T21:43:35.933Z [audio] servo_scout variant=1 bus=effects pos=-15.5,0,24.1
+2026-09-11T21:43:35.933Z [audio] servo_scout variant=2 bus=effects pos=-18.5,0,25.1
+2026-09-11T21:43:35.933Z [audio] servo_scout variant=1 bus=effects pos=-18.5,0,23.8
+2026-09-11T21:43:35.957Z [audio] servo_scout variant=2 bus=effects pos=-15.5,0,22.6
+2026-09-11T21:43:35.957Z [audio] servo_scout variant=1 bus=effects pos=-15.5,0,23.2
+2026-09-11T21:43:35.957Z [audio] servo_scout variant=2 bus=effects pos=-18.5,0,26
+2026-09-11T21:43:35.973Z [audio] footstep_metal variant=1 bus=effects pos=17.6,0,-10.8
+2026-09-11T21:43:35.973Z [audio] servo_scout variant=1 bus=effects pos=-18.5,0,21.9
+2026-09-11T21:43:35.998Z [audio] servo_scout variant=2 bus=effects pos=-15.5,0,20.8
+2026-09-11T21:43:35.998Z [audio] servo_scout variant=1 bus=effects pos=-15.5,0,21.3
+2026-09-11T21:43:35.998Z [audio] servo_scout variant=2 bus=effects pos=-18.5,0,24.4
+2026-09-11T21:43:36.015Z [audio] footstep_metal variant=2 bus=effects pos=17.6,0,-12.1
+2026-09-11T21:43:36.015Z [audio] servo_scout variant=1 bus=effects pos=-15.5,0,19.8
+2026-09-11T21:43:36.015Z [audio] servo_scout variant=2 bus=effects pos=-15.5,0,20.4
+2026-09-11T21:43:36.015Z [audio] servo_scout variant=1 bus=effects pos=-16.7,0,21.5
+2026-09-11T21:43:36.039Z [audio] footstep_metal variant=1 bus=effects pos=17.6,0,-13.5
+2026-09-11T21:43:36.040Z [audio] servo_scout variant=2 bus=effects pos=-18.4,0,23.5
+2026-09-11T21:43:36.040Z [audio] servo_scout variant=1 bus=effects pos=-15.8,0,21.4
+2026-09-11T21:43:36.063Z [audio] servo_scout variant=2 bus=effects pos=-15.5,0,18
+2026-09-11T21:43:36.063Z [audio] servo_scout variant=1 bus=effects pos=-15.5,0,18.5
+2026-09-11T21:43:36.090Z [audio] footstep_metal variant=2 bus=effects pos=18,0,-14.8
+2026-09-11T21:43:36.090Z [audio] servo_scout variant=2 bus=effects pos=-15.5,0,17
+2026-09-11T21:43:36.090Z [audio] servo_scout variant=1 bus=effects pos=-15.5,0,17.6
+2026-09-11T21:43:36.090Z [audio] servo_scout variant=2 bus=effects pos=-16.5,0,23.5
+2026-09-11T21:43:36.090Z [audio] servo_scout variant=1 bus=effects pos=-15.5,0,19.6
+2026-09-11T21:43:36.107Z [audio] servo_scout variant=2 bus=effects pos=-15.5,0,18.6
+2026-09-11T21:43:36.130Z [audio] footstep_concrete variant=2 bus=effects pos=19.3,0,-16.1
+2026-09-11T21:43:36.131Z [audio] servo_scout variant=1 bus=effects pos=-14.4,0,15.8
+2026-09-11T21:43:36.131Z [audio] servo_scout variant=2 bus=effects pos=-14.7,0,16.2
+2026-09-11T21:43:36.131Z [audio] servo_scout variant=1 bus=effects pos=-15.5,0,24
+2026-09-11T21:43:36.155Z [audio] servo_scout variant=2 bus=effects pos=-15.4,0,16.9
+2026-09-11T21:43:36.174Z [audio] footstep_concrete variant=1 bus=effects pos=20.7,0,-17.4
+2026-09-11T21:43:36.174Z [audio] servo_scout variant=1 bus=effects pos=-12.6,0,15.5
+2026-09-11T21:43:36.174Z [audio] servo_scout variant=2 bus=effects pos=-13.1,0,15.5
+2026-09-11T21:43:36.174Z [audio] servo_scout variant=1 bus=effects pos=-15.5,0,22.1
+2026-09-11T21:43:36.197Z [audio] servo_scout variant=2 bus=effects pos=-11.6,0,15.5
+2026-09-11T21:43:36.197Z [audio] servo_scout variant=1 bus=effects pos=-12.2,0,15.5
+2026-09-11T21:43:36.197Z [audio] servo_scout variant=2 bus=effects pos=-15.5,0,21.2
+2026-09-11T21:43:36.197Z [audio] servo_scout variant=1 bus=effects pos=-14.2,0,15.7
+2026-09-11T21:43:36.223Z [audio] footstep_concrete variant=2 bus=effects pos=22,0,-18.7
+2026-09-11T21:43:36.223Z [audio] servo_scout variant=2 bus=effects pos=-13.3,0,15.6
+2026-09-11T21:43:36.240Z [audio] servo_scout variant=1 bus=effects pos=-9.8,0,15.5
+2026-09-11T21:43:36.240Z [audio] servo_scout variant=2 bus=effects pos=-10.3,0,15.5
+2026-09-11T21:43:36.240Z [audio] servo_scout variant=1 bus=effects pos=-15.5,0,19.3
+2026-09-11T21:43:36.263Z [audio] footstep_concrete variant=1 bus=effects pos=23.3,0,-20
+2026-09-11T21:43:36.263Z [audio] servo_scout variant=2 bus=effects pos=-8.8,0,15.5
+2026-09-11T21:43:36.263Z [audio] servo_scout variant=1 bus=effects pos=-9.4,0,15.5
+2026-09-11T21:43:36.263Z [audio] servo_scout variant=2 bus=effects pos=-11.4,0,15.5
+2026-09-11T21:43:36.289Z [audio] servo_scout variant=1 bus=effects pos=-15.5,0,17.5
+2026-09-11T21:43:36.290Z [audio] servo_scout variant=2 bus=effects pos=-10.5,0,15.5
+2026-09-11T21:43:36.306Z [audio] footstep_concrete variant=2 bus=effects pos=24.5,0,-21.4
+2026-09-11T21:43:36.308Z [audio] grenade_throw variant=1 bus=effects
+2026-09-11T21:43:36.325Z [audio] grenade_explosion variant=1 bus=effects pos=20.6,0.4,-16.9
+2026-09-11T21:43:36.328Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:36.328Z [audio] spawn_gate variant=1 bus=effects pos=15.5,1,27.5
+2026-09-11T21:43:36.328Z [audio] servo_scout variant=1 bus=effects pos=-7.3,0,15.5
+2026-09-11T21:43:36.328Z [audio] servo_scout variant=2 bus=effects pos=-7.8,0,15.5
+2026-09-11T21:43:36.341Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:36.357Z [audio] footstep_concrete variant=1 bus=effects pos=25.8,0,-22.9
+2026-09-11T21:43:36.361Z [audio] sparks_metal variant=1 bus=effects pos=-7,1,15.5
+2026-09-11T21:43:36.361Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:36.365Z [audio] sparks_metal variant=2 bus=effects pos=-7,1,15.5
+2026-09-11T21:43:36.365Z [audio] servo_scout variant=1 bus=effects pos=-15.4,0,16.8
+2026-09-11T21:43:36.378Z [audio] footstep_concrete variant=2 bus=effects pos=26.9,0,-24.1
+2026-09-11T21:43:36.398Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:36.422Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:36.422Z [audio] footstep_concrete variant=1 bus=effects pos=27.9,0,-25.4
+2026-09-11T21:43:36.422Z [audio] servo_scout variant=2 bus=effects pos=-9.1,0,15.5
+2026-09-11T21:43:36.465Z [audio] sparks_metal variant=1 bus=effects pos=-5.9,1,15.5
+2026-09-11T21:43:36.465Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:36.465Z [audio] sparks_metal variant=2 bus=effects pos=-5.9,1,15.5
+2026-09-11T21:43:36.465Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-26.7
+2026-09-11T21:43:36.465Z [audio] servo_scout variant=1 bus=effects pos=-5.9,0,15.5
+2026-09-11T21:43:36.465Z [audio] servo_scout variant=2 bus=effects pos=-6.4,0,15.5
+2026-09-11T21:43:36.465Z [audio] servo_scout variant=1 bus=effects pos=-14.5,0,15.8
+2026-09-11T21:43:36.490Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:36.506Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28
+2026-09-11T21:43:36.507Z [audio] sparks_metal variant=1 bus=effects pos=-5.6,1,15.5
+2026-09-11T21:43:36.507Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:36.507Z [audio] sparks_metal variant=2 bus=effects pos=-5.6,1,15.5
+2026-09-11T21:43:36.548Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:36.548Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:36.548Z [audio] servo_scout variant=2 bus=effects pos=-12.9,0,15.5
+2026-09-11T21:43:36.572Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:36.572Z [audio] servo_scout variant=1 bus=effects pos=-7.4,0,15.5
+2026-09-11T21:43:36.598Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:36.598Z [audio] sparks_metal variant=1 bus=effects pos=-4.6,1,15.5
+2026-09-11T21:43:36.598Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:36.598Z [audio] sparks_metal variant=2 bus=effects pos=-4.6,1,15.5
+2026-09-11T21:43:36.598Z [audio] servo_scout variant=2 bus=effects pos=-4.6,0,15.5
+2026-09-11T21:43:36.616Z [audio] servo_scout variant=1 bus=effects pos=-5.2,0,15.5
+2026-09-11T21:43:36.638Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:36.638Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:36.638Z [audio] servo_scout variant=2 bus=effects pos=-11.4,0,15.5
+2026-09-11T21:43:36.666Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:36.680Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:36.704Z [audio] sparks_metal variant=1 bus=effects pos=-3.8,1,15.5
+2026-09-11T21:43:36.711Z [audio] unit_death variant=1 bus=effects pos=-3.8,1,15.5
+2026-09-11T21:43:36.711Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:36.711Z [audio] sparks_metal variant=2 bus=effects pos=-3.8,1,15.5
+2026-09-11T21:43:36.715Z [audio] headshot_clang variant=1 bus=effects pos=-3.8,1,15.5
+2026-09-11T21:43:36.720Z [audio] reload_pistol variant=1 bus=effects
+2026-09-11T21:43:36.720Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:36.727Z [audio] servo_scout variant=1 bus=effects pos=-3.7,0,15.5
+2026-09-11T21:43:36.727Z [audio] servo_scout variant=2 bus=effects pos=-5.8,0,15.5
+2026-09-11T21:43:36.747Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:36.747Z [audio] servo_scout variant=1 bus=effects pos=-9.4,0,15.5
+2026-09-11T21:43:36.774Z [audio] servo_scout variant=2 bus=effects pos=-1.8,0,15.5
+2026-09-11T21:43:36.774Z [audio] servo_scout variant=1 bus=effects pos=-8.5,0,15.5
+2026-09-11T21:43:36.774Z [audio] servo_scout variant=2 bus=effects pos=-3.9,0,15.5
+2026-09-11T21:43:36.790Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:36.790Z [audio] servo_scout variant=1 bus=effects pos=-0.9,0,15.5
+2026-09-11T21:43:36.790Z [audio] servo_scout variant=2 bus=effects pos=-3,0,15.5
+2026-09-11T21:43:36.793Z [audio] servo_endo variant=1 bus=effects pos=16.7,0,27.5
+2026-09-11T21:43:36.816Z [audio] servo_scout variant=1 bus=effects pos=-6.6,0,15.5
+2026-09-11T21:43:36.832Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:36.833Z [audio] servo_scout variant=2 bus=effects pos=1,0,15.5
+2026-09-11T21:43:36.833Z [audio] servo_scout variant=1 bus=effects pos=-5.7,0,15.5
+2026-09-11T21:43:36.833Z [audio] servo_scout variant=2 bus=effects pos=-1.1,0,15.5
+2026-09-11T21:43:36.855Z [audio] servo_scout variant=1 bus=effects pos=-0.2,0,15.5
+2026-09-11T21:43:36.857Z [audio] servo_endo variant=2 bus=effects pos=18.1,0,27.5
+2026-09-11T21:43:36.872Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:36.872Z [audio] servo_scout variant=2 bus=effects pos=2.9,0,15.5
+2026-09-11T21:43:36.872Z [audio] servo_scout variant=1 bus=effects pos=-3.8,0,15.5
+2026-09-11T21:43:36.890Z [audio] servo_scout variant=2 bus=effects pos=3.8,0,15.5
+2026-09-11T21:43:36.890Z [audio] servo_scout variant=1 bus=effects pos=-2.9,0,15.5
+2026-09-11T21:43:36.890Z [audio] servo_scout variant=2 bus=effects pos=1.7,0,15.5
+2026-09-11T21:43:36.890Z [audio] servo_endo variant=1 bus=effects pos=19.1,0,27.5
+2026-09-11T21:43:36.914Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:36.914Z [audio] servo_scout variant=1 bus=effects pos=2.6,0,15.5
+2026-09-11T21:43:36.931Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:36.931Z [audio] servo_scout variant=2 bus=effects pos=4.8,0,15.5
+2026-09-11T21:43:36.955Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:36.955Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:36.955Z [audio] servo_scout variant=1 bus=effects pos=-1.4,0,15.5
+2026-09-11T21:43:36.973Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:36.997Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:37.014Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:37.014Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:37.014Z [audio] servo_scout variant=2 bus=effects pos=4,0,15.5
+2026-09-11T21:43:37.039Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:37.056Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:37.081Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:37.081Z [audio] servo_scout variant=1 bus=effects pos=6.6,0,15.5
+2026-09-11T21:43:37.098Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:37.098Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:37.098Z [audio] servo_scout variant=2 bus=effects pos=0,0,15.5
+2026-09-11T21:43:37.123Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:37.140Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:37.164Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:37.165Z [audio] servo_scout variant=1 bus=effects pos=5.4,0,15.5
+2026-09-11T21:43:37.189Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:37.189Z [audio] servo_scout variant=2 bus=effects pos=7.8,0,15.5
+2026-09-11T21:43:37.215Z [audio] servo_scout variant=1 bus=effects pos=2,0,15.5
+2026-09-11T21:43:37.230Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:37.230Z [audio] servo_scout variant=2 bus=effects pos=9.6,0,15.5
+2026-09-11T21:43:37.231Z [audio] servo_scout variant=1 bus=effects pos=3,0,15.5
+2026-09-11T21:43:37.231Z [audio] servo_scout variant=2 bus=effects pos=7.5,0,15.5
+2026-09-11T21:43:37.231Z [audio] servo_endo variant=2 bus=effects pos=20.4,0,27.5
+2026-09-11T21:43:37.256Z [audio] servo_scout variant=1 bus=effects pos=8.4,0,15.5
+2026-09-11T21:43:37.273Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:37.273Z [audio] servo_scout variant=2 bus=effects pos=11.5,0,15.5
+2026-09-11T21:43:37.273Z [audio] servo_scout variant=1 bus=effects pos=4.8,0,15.5
+2026-09-11T21:43:37.298Z [audio] servo_scout variant=2 bus=effects pos=12.4,0,15.5
+2026-09-11T21:43:37.298Z [audio] servo_scout variant=1 bus=effects pos=5.8,0,15.5
+2026-09-11T21:43:37.298Z [audio] servo_scout variant=2 bus=effects pos=10.3,0,15.5
+2026-09-11T21:43:37.298Z [audio] servo_endo variant=1 bus=effects pos=21.8,0,27.5
+2026-09-11T21:43:37.315Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:37.315Z [audio] servo_scout variant=1 bus=effects pos=11.2,0,15.5
+2026-09-11T21:43:37.339Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:37.339Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:37.340Z [audio] servo_scout variant=2 bus=effects pos=13.9,0,15.5
+2026-09-11T21:43:37.340Z [audio] servo_scout variant=1 bus=effects pos=7.4,0,15.5
+2026-09-11T21:43:37.340Z [audio] servo_endo variant=2 bus=effects pos=22.7,0,27.5
+2026-09-11T21:43:37.364Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:37.390Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:37.406Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:37.431Z [audio] sparks_metal variant=1 bus=effects pos=14.9,1,15.5
+2026-09-11T21:43:37.431Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:37.431Z [audio] sparks_metal variant=2 bus=effects pos=14.9,1,15.5
+2026-09-11T21:43:37.431Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:37.432Z [audio] servo_scout variant=2 bus=effects pos=12.8,0,15.5
+2026-09-11T21:43:37.447Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:37.447Z [audio] servo_scout variant=1 bus=effects pos=15,0,15.5
+2026-09-11T21:43:37.477Z [audio] reload_pistol variant=2 bus=effects
+2026-09-11T21:43:37.477Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:37.497Z [audio] servo_scout variant=2 bus=effects pos=9.3,0,15.5
+2026-09-11T21:43:37.514Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:37.514Z [audio] servo_scout variant=1 bus=effects pos=16.9,0,15.5
+2026-09-11T21:43:37.514Z [audio] servo_scout variant=2 bus=effects pos=10.2,0,15.5
+2026-09-11T21:43:37.514Z [audio] servo_scout variant=1 bus=effects pos=14.7,0,15.5
+2026-09-11T21:43:37.539Z [audio] servo_scout variant=2 bus=effects pos=15.7,0,15.5
+2026-09-11T21:43:37.555Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:37.555Z [audio] servo_scout variant=1 bus=effects pos=18.7,0,15.5
+2026-09-11T21:43:37.555Z [audio] servo_scout variant=2 bus=effects pos=12.1,0,15.5
+2026-09-11T21:43:37.555Z [audio] servo_endo variant=1 bus=effects pos=24.1,0,27.5
+2026-09-11T21:43:37.581Z [audio] servo_scout variant=1 bus=effects pos=19.7,0,15.5
+2026-09-11T21:43:37.581Z [audio] servo_scout variant=2 bus=effects pos=13,0,15.5
+2026-09-11T21:43:37.581Z [audio] servo_scout variant=1 bus=effects pos=17.5,0,15.5
+2026-09-11T21:43:37.598Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:37.598Z [audio] servo_scout variant=2 bus=effects pos=18.5,0,15.5
+2026-09-11T21:43:37.623Z [audio] servo_scout variant=1 bus=effects pos=21.5,0,15.5
+2026-09-11T21:43:37.623Z [audio] servo_scout variant=2 bus=effects pos=14.9,0,15.5
+2026-09-11T21:43:37.623Z [audio] servo_endo variant=2 bus=effects pos=25.5,0,27.5
+2026-09-11T21:43:37.646Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:37.646Z [audio] servo_scout variant=1 bus=effects pos=22.5,0,15.5
+2026-09-11T21:43:37.646Z [audio] servo_scout variant=2 bus=effects pos=20.3,0,15.5
+2026-09-11T21:43:37.665Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:37.665Z [audio] servo_scout variant=1 bus=effects pos=16.7,0,15.5
+2026-09-11T21:43:37.665Z [audio] servo_endo variant=1 bus=effects pos=26.4,0,27.5
+2026-09-11T21:43:37.689Z [audio] servo_scout variant=2 bus=effects pos=24.3,0,15.5
+2026-09-11T21:43:37.689Z [audio] servo_scout variant=1 bus=effects pos=17.7,0,15.5
+2026-09-11T21:43:37.689Z [audio] servo_scout variant=2 bus=effects pos=22.2,0,15.5
+2026-09-11T21:43:37.714Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:37.714Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:37.731Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:37.732Z [audio] servo_scout variant=1 bus=effects pos=22.9,0,15.5
+2026-09-11T21:43:37.756Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:37.756Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:37.772Z [audio] servo_scout variant=2 bus=effects pos=25.1,0,15.5
+2026-09-11T21:43:37.798Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:37.798Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:37.798Z [audio] servo_scout variant=1 bus=effects pos=18.9,0,15.5
+2026-09-11T21:43:37.823Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:37.839Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:37.839Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:37.948Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:37.948Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:37.948Z [audio] servo_scout variant=2 bus=effects pos=24.3,0,15.5
+2026-09-11T21:43:37.972Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:37.991Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:38.014Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:38.014Z [audio] servo_scout variant=1 bus=effects pos=26.9,0,15.5
+2026-09-11T21:43:38.014Z [audio] servo_scout variant=2 bus=effects pos=20.3,0,15.5
+2026-09-11T21:43:38.031Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:38.031Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:38.055Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:38.055Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:38.097Z [audio] sparks_metal variant=1 bus=effects pos=27.6,1,15.5
+2026-09-11T21:43:38.097Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:38.097Z [audio] sparks_metal variant=2 bus=effects pos=27.6,1,15.5
+2026-09-11T21:43:38.097Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:38.097Z [audio] servo_scout variant=1 bus=effects pos=25.7,0,15.5
+2026-09-11T21:43:38.122Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:38.138Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:38.138Z [audio] sparks_metal variant=1 bus=effects pos=27.1,1,27.5
+2026-09-11T21:43:38.139Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:38.139Z [audio] sparks_metal variant=2 bus=effects pos=27.1,1,27.5
+2026-09-11T21:43:38.139Z [audio] servo_scout variant=2 bus=effects pos=28.1,0,15.4
+2026-09-11T21:43:38.164Z [audio] reload_pistol variant=1 bus=effects
+2026-09-11T21:43:38.164Z [audio] servo_scout variant=1 bus=effects pos=21.7,0,15.5
+2026-09-11T21:43:38.181Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:38.205Z [audio] servo_scout variant=2 bus=effects pos=28.5,0,13.7
+2026-09-11T21:43:38.205Z [audio] servo_scout variant=1 bus=effects pos=23.3,0,15.5
+2026-09-11T21:43:38.205Z [audio] servo_scout variant=2 bus=effects pos=27.8,0,15.5
+2026-09-11T21:43:38.223Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:38.223Z [audio] servo_scout variant=1 bus=effects pos=28.4,0,14.9
+2026-09-11T21:43:38.223Z [audio] servo_endo variant=2 bus=effects pos=27.9,0,27.5
+2026-09-11T21:43:38.247Z [audio] servo_scout variant=2 bus=effects pos=28.5,0,11.8
+2026-09-11T21:43:38.247Z [audio] servo_scout variant=1 bus=effects pos=25.1,0,15.5
+2026-09-11T21:43:38.264Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:38.264Z [audio] servo_scout variant=2 bus=effects pos=28.5,0,10.9
+2026-09-11T21:43:38.264Z [audio] servo_scout variant=1 bus=effects pos=26.1,0,15.5
+2026-09-11T21:43:38.264Z [audio] servo_scout variant=2 bus=effects pos=28.5,0,13.1
+2026-09-11T21:43:38.264Z [audio] servo_endo variant=1 bus=effects pos=28.3,0,26.8
+2026-09-11T21:43:38.306Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:38.307Z [audio] servo_scout variant=1 bus=effects pos=28.5,0,9
+2026-09-11T21:43:38.307Z [audio] servo_scout variant=2 bus=effects pos=27.9,0,15.5
+2026-09-11T21:43:38.307Z [audio] servo_scout variant=1 bus=effects pos=28.5,0,11.2
+2026-09-11T21:43:38.331Z [audio] servo_scout variant=2 bus=effects pos=28.5,0,8.1
+2026-09-11T21:43:38.331Z [audio] servo_scout variant=1 bus=effects pos=28.5,0,10.3
+2026-09-11T21:43:38.331Z [audio] servo_endo variant=2 bus=effects pos=28.5,0,25.5
+2026-09-11T21:43:38.347Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:38.347Z [audio] servo_scout variant=2 bus=effects pos=28.5,0,13.9
+2026-09-11T21:43:38.372Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:38.372Z [audio] servo_scout variant=1 bus=effects pos=28.5,0,6.2
+2026-09-11T21:43:38.372Z [audio] servo_scout variant=2 bus=effects pos=28.5,0,13
+2026-09-11T21:43:38.372Z [audio] servo_scout variant=1 bus=effects pos=28.5,0,8.4
+2026-09-11T21:43:38.372Z [audio] servo_endo variant=1 bus=effects pos=28.5,0,24.5
+2026-09-11T21:43:38.389Z [audio] sparks_metal variant=1 bus=effects pos=28.5,1,5.9
+2026-09-11T21:43:38.389Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:38.389Z [audio] sparks_metal variant=2 bus=effects pos=28.5,1,5.9
+2026-09-11T21:43:38.414Z [audio] sparks_metal variant=1 bus=effects pos=28.5,1,5.5
+2026-09-11T21:43:38.414Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:38.414Z [audio] sparks_metal variant=2 bus=effects pos=28.5,1,5.5
+2026-09-11T21:43:38.414Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:38.431Z [audio] sparks_metal variant=1 bus=effects pos=28.5,1,5.5
+2026-09-11T21:43:38.438Z [audio] unit_death variant=2 bus=effects pos=28.5,1,5.5
+2026-09-11T21:43:38.438Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:38.438Z [audio] sparks_metal variant=2 bus=effects pos=28.5,1,5.5
+2026-09-11T21:43:38.438Z [audio] servo_scout variant=2 bus=effects pos=28.5,0,7.5
+2026-09-11T21:43:38.456Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:38.473Z [audio] sparks_metal variant=1 bus=effects pos=28.5,1,7.3
+2026-09-11T21:43:38.473Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:38.473Z [audio] sparks_metal variant=2 bus=effects pos=28.5,1,7.3
+2026-09-11T21:43:38.497Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:38.497Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:38.497Z [audio] servo_scout variant=1 bus=effects pos=28.5,0,11.6
+2026-09-11T21:43:38.513Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:38.539Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:38.564Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:38.564Z [audio] servo_scout variant=2 bus=effects pos=28.5,0,6.2
+2026-09-11T21:43:38.580Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:38.580Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:38.622Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:38.622Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:38.622Z [audio] servo_scout variant=1 bus=effects pos=28.5,0,10.2
+2026-09-11T21:43:38.646Z [audio] sparks_metal variant=1 bus=effects pos=28.5,1,5.5
+2026-09-11T21:43:38.646Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:38.646Z [audio] sparks_metal variant=2 bus=effects pos=28.5,1,5.5
+2026-09-11T21:43:38.672Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:38.672Z [audio] sparks_metal variant=1 bus=effects pos=28.5,1,5.2
+2026-09-11T21:43:38.672Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:38.672Z [audio] sparks_metal variant=2 bus=effects pos=28.5,1,5.2
+2026-09-11T21:43:38.690Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:38.715Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:38.715Z [audio] servo_scout variant=2 bus=effects pos=28.5,0,4.8
+2026-09-11T21:43:38.739Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:38.739Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:38.755Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:38.782Z [audio] reload_pistol variant=2 bus=effects
+2026-09-11T21:43:38.782Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:38.782Z [audio] servo_scout variant=1 bus=effects pos=28.5,0,8.8
+2026-09-11T21:43:38.824Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:38.824Z [audio] servo_scout variant=2 bus=effects pos=28.5,0,7.4
+2026-09-11T21:43:38.824Z [audio] servo_scout variant=1 bus=effects pos=28.5,0,2.8
+2026-09-11T21:43:38.840Z [audio] servo_scout variant=2 bus=effects pos=28.5,0,1.9
+2026-09-11T21:43:38.864Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:38.864Z [audio] servo_scout variant=1 bus=effects pos=28.5,0,5.5
+2026-09-11T21:43:38.864Z [audio] servo_endo variant=2 bus=effects pos=28.5,0,23
+2026-09-11T21:43:38.905Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:38.905Z [audio] servo_scout variant=2 bus=effects pos=28.5,0,3.6
+2026-09-11T21:43:38.905Z [audio] servo_scout variant=1 bus=effects pos=28.5,0,0.1
+2026-09-11T21:43:38.905Z [audio] servo_endo variant=1 bus=effects pos=28.5,0,22.1
+2026-09-11T21:43:38.931Z [audio] servo_scout variant=2 bus=effects pos=28.5,0,2.7
+2026-09-11T21:43:38.946Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:38.946Z [audio] servo_scout variant=1 bus=effects pos=28.5,0,-1.7
+2026-09-11T21:43:38.973Z [audio] servo_scout variant=2 bus=effects pos=28.5,0,1.4
+2026-09-11T21:43:38.973Z [audio] servo_scout variant=1 bus=effects pos=28.5,0,-2.7
+2026-09-11T21:43:38.973Z [audio] servo_endo variant=2 bus=effects pos=28.5,0,20.7
+2026-09-11T21:43:38.988Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:39.007Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:39.007Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:39.007Z [audio] servo_scout variant=2 bus=effects pos=28.5,0,0
+2026-09-11T21:43:39.007Z [audio] servo_scout variant=1 bus=effects pos=28.5,0,-4.5
+2026-09-11T21:43:39.029Z [audio] sparks_metal variant=1 bus=effects pos=28.5,1,-5.5
+2026-09-11T21:43:39.029Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:39.029Z [audio] sparks_metal variant=2 bus=effects pos=28.5,1,-5.5
+2026-09-11T21:43:39.029Z [audio] servo_scout variant=2 bus=effects pos=28.5,0,-5.5
+2026-09-11T21:43:39.047Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:39.047Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:39.047Z [audio] servo_scout variant=1 bus=effects pos=28.5,0,-1.8
+2026-09-11T21:43:39.072Z [audio] servo_scout variant=2 bus=effects pos=28.5,0,-2.8
+2026-09-11T21:43:39.073Z [audio] servo_scout variant=1 bus=effects pos=28.5,0,-7.3
+2026-09-11T21:43:39.091Z [audio] sparks_metal variant=1 bus=effects pos=28.5,1,-7.4
+2026-09-11T21:43:39.091Z [audio] unit_death variant=1 bus=effects pos=28.5,1,-7.4
+2026-09-11T21:43:39.091Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:39.091Z [audio] sparks_metal variant=2 bus=effects pos=28.5,1,-7.4
+2026-09-11T21:43:39.091Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:39.124Z [audio] sparks_metal variant=1 bus=effects pos=28.5,1,-4.6
+2026-09-11T21:43:39.124Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:39.124Z [audio] sparks_metal variant=2 bus=effects pos=28.5,1,-4.6
+2026-09-11T21:43:39.124Z [audio] servo_scout variant=2 bus=effects pos=28.5,0,-4.6
+2026-09-11T21:43:39.131Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:39.131Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:39.156Z [audio] servo_scout variant=1 bus=effects pos=28.5,0,-6.5
+2026-09-11T21:43:39.180Z [audio] sparks_metal variant=1 bus=effects pos=28.5,1,-7.4
+2026-09-11T21:43:39.180Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:39.180Z [audio] sparks_metal variant=2 bus=effects pos=28.5,1,-7.4
+2026-09-11T21:43:39.184Z [audio] headshot_clang variant=2 bus=effects pos=28.5,1,-7.4
+2026-09-11T21:43:39.184Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:39.184Z [audio] servo_scout variant=2 bus=effects pos=28.5,0,-7.4
+2026-09-11T21:43:39.199Z [audio] sparks_metal variant=1 bus=effects pos=28.5,1,-8.4
+2026-09-11T21:43:39.199Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:39.199Z [audio] sparks_metal variant=2 bus=effects pos=28.5,1,-8.4
+2026-09-11T21:43:39.223Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:39.223Z [audio] servo_scout variant=1 bus=effects pos=28.5,0,-9.3
+2026-09-11T21:43:39.241Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:39.241Z [audio] servo_scout variant=2 bus=effects pos=28.5,0,-10.2
+2026-09-11T21:43:39.264Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:39.264Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:39.280Z [audio] sparks_metal variant=1 bus=effects pos=28.5,1,20.1
+2026-09-11T21:43:39.280Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:39.280Z [audio] sparks_metal variant=2 bus=effects pos=28.5,1,20.1
+2026-09-11T21:43:39.280Z [audio] servo_scout variant=1 bus=effects pos=28.5,0,-12.1
+2026-09-11T21:43:39.306Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:39.307Z [audio] servo_scout variant=2 bus=effects pos=28.5,0,-13
+2026-09-11T21:43:39.330Z [audio] sparks_metal variant=1 bus=effects pos=28.5,1,-13.2
+2026-09-11T21:43:39.330Z [audio] unit_death variant=2 bus=effects pos=28.5,1,-13.2
+2026-09-11T21:43:39.331Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:39.331Z [audio] sparks_metal variant=2 bus=effects pos=28.5,1,-13.2
+2026-09-11T21:43:39.331Z [audio] headshot_clang variant=1 bus=effects pos=28.5,1,-13.2
+2026-09-11T21:43:39.331Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:39.348Z [audio] sparks_metal variant=1 bus=effects pos=28.5,1,20.1
+2026-09-11T21:43:39.348Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:39.348Z [audio] sparks_metal variant=2 bus=effects pos=28.5,1,20.1
+2026-09-11T21:43:39.348Z [audio] headshot_clang variant=2 bus=effects pos=28.5,1,20.1
+2026-09-11T21:43:39.372Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:39.372Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:39.390Z [audio] reload_pistol variant=1 bus=effects
+2026-09-11T21:43:39.415Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:39.430Z [audio] servo_endo variant=1 bus=effects pos=28.5,0,19.6
+2026-09-11T21:43:39.457Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:39.498Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:39.498Z [audio] servo_endo variant=2 bus=effects pos=28.5,0,18.2
+2026-09-11T21:43:39.531Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:39.531Z [audio] servo_endo variant=1 bus=effects pos=28.5,0,17.2
+2026-09-11T21:43:39.573Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:39.597Z [audio] servo_endo variant=2 bus=effects pos=28.5,0,15.8
+2026-09-11T21:43:39.623Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:39.623Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:39.648Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:39.648Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:39.665Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:39.682Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:39.699Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:39.724Z [audio] sparks_metal variant=1 bus=effects pos=28.5,1,15.8
+2026-09-11T21:43:39.724Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:39.725Z [audio] sparks_metal variant=2 bus=effects pos=28.5,1,15.8
+2026-09-11T21:43:39.725Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:39.740Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:39.765Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:39.782Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:39.799Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:39.799Z [audio] sparks_metal variant=1 bus=effects pos=28.5,1,15.8
+2026-09-11T21:43:39.799Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:39.799Z [audio] sparks_metal variant=2 bus=effects pos=28.5,1,15.8
+2026-09-11T21:43:39.840Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:39.840Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:39.864Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:39.881Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:39.881Z [audio] sparks_metal variant=1 bus=effects pos=28.5,1,15.8
+2026-09-11T21:43:39.881Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:39.881Z [audio] sparks_metal variant=2 bus=effects pos=28.5,1,15.8
+2026-09-11T21:43:39.923Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:39.923Z [audio] sparks_metal variant=1 bus=effects pos=28.5,1,15.8
+2026-09-11T21:43:39.923Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:39.923Z [audio] sparks_metal variant=2 bus=effects pos=28.5,1,15.8
+2026-09-11T21:43:39.948Z [audio] sparks_metal variant=1 bus=effects pos=28.5,1,15.8
+2026-09-11T21:43:39.948Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:39.948Z [audio] sparks_metal variant=2 bus=effects pos=28.5,1,15.8
+2026-09-11T21:43:39.948Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:39.965Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:39.990Z [audio] reload_pistol variant=2 bus=effects
+2026-09-11T21:43:39.991Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:40.038Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:40.058Z [audio] servo_endo variant=1 bus=effects pos=28.5,0,14.8
+2026-09-11T21:43:40.074Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:40.114Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:40.114Z [audio] servo_endo variant=2 bus=effects pos=28.5,0,13.4
+2026-09-11T21:43:40.157Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:40.157Z [audio] servo_endo variant=1 bus=effects pos=28.5,0,12.5
+2026-09-11T21:43:40.198Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:40.232Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:40.240Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:40.240Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:40.267Z [audio] plasma_bolt variant=1 bus=effects pos=28.4,1.6,11.4
+2026-09-11T21:43:40.269Z [audio] plasma_impact_concrete variant=1 bus=effects pos=28.6,1.7,-28.6
+2026-09-11T21:43:40.269Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:40.269Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:40.269Z [audio] servo_endo variant=2 bus=effects pos=28.2,0,11.4
+2026-09-11T21:43:40.305Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:40.305Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:40.331Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:40.348Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:40.348Z [audio] sparks_metal variant=1 bus=effects pos=28,1,11.4
+2026-09-11T21:43:40.348Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:40.348Z [audio] sparks_metal variant=2 bus=effects pos=28,1,11.4
+2026-09-11T21:43:40.398Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:40.398Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:40.423Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:40.439Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:40.465Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:40.481Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:40.481Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:40.507Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:40.520Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:40.547Z [audio] sparks_metal variant=1 bus=effects pos=28,1,11.4
+2026-09-11T21:43:40.547Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:40.548Z [audio] sparks_metal variant=2 bus=effects pos=28,1,11.4
+2026-09-11T21:43:40.573Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:40.573Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:40.596Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:40.596Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:40.615Z [audio] reload_pistol variant=1 bus=effects
+2026-09-11T21:43:40.639Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:40.660Z [audio] plasma_bolt variant=2 bus=effects pos=27.9,1.6,11.5
+2026-09-11T21:43:40.661Z [audio] plasma_impact_concrete variant=2 bus=effects pos=28.6,1.7,-28.6
+2026-09-11T21:43:40.681Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:40.716Z [audio] plasma_bolt variant=1 bus=effects pos=28.2,1.6,11.1
+2026-09-11T21:43:40.716Z [audio] plasma_impact_concrete variant=1 bus=effects pos=28.6,1.7,-28.6
+2026-09-11T21:43:40.716Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:40.740Z [audio] servo_endo variant=1 bus=effects pos=27.9,0,10.7
+2026-09-11T21:43:40.757Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:40.782Z [audio] servo_endo variant=2 bus=effects pos=27,0,10.6
+2026-09-11T21:43:40.798Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:40.846Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:40.847Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:40.864Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:40.889Z [audio] footstep_concrete variant=1 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:40.890Z [audio] plasma_bolt variant=2 bus=effects pos=27.3,1.6,10.7
+2026-09-11T21:43:40.890Z [audio] plasma_impact_concrete variant=2 bus=effects pos=28.6,1.7,-28.6
+2026-09-11T21:43:40.890Z [audio] pistol_9mm variant=1 bus=effects
+2026-09-11T21:43:40.890Z [audio] servo_endo variant=1 bus=effects pos=27.3,0,10.6
+2026-09-11T21:43:40.915Z [audio] footstep_concrete variant=2 bus=effects pos=28.6,0,-28.6
+2026-09-11T21:43:40.915Z [audio] plasma_bolt variant=1 bus=effects pos=26.9,1.6,10.6
+2026-09-11T21:43:40.915Z [audio] plasma_impact_concrete variant=1 bus=effects pos=28.6,1.7,-28.6
+2026-09-11T21:43:40.962Z [audio] wave_clear variant=1 bus=music
+2026-09-11T21:43:40.967Z [audio] trader_open variant=1 bus=effects
+2026-09-11T21:43:40.971Z [audio] sparks_metal variant=1 bus=effects pos=26.9,1,10.7
+2026-09-11T21:43:40.971Z [audio] unit_death variant=1 bus=effects pos=26.9,1,10.7
+2026-09-11T21:43:40.971Z [audio] pistol_9mm variant=2 bus=effects
+2026-09-11T21:43:40.971Z [audio] sparks_metal variant=2 bus=effects pos=26.9,1,10.7
+2026-09-11T21:43:41.763Z [audio] ui_click variant=1 bus=effects
+2026-09-11T21:43:41.803Z [audio] ui_click variant=2 bus=effects
+2026-09-11T21:43:41.816Z [audio] cash_register variant=1 bus=effects
+2026-09-11T21:43:41.870Z [audio] ui_hover variant=2 bus=effects
+
+Diagnostics:
+none
