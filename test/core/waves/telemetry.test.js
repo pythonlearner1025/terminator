@@ -78,3 +78,26 @@ test('trader purchases use documented prices and enter telemetry and the event l
   ])
   assert.equal(world.eventLog.filter(({type}) => type === 'purchase').length, 2)
 })
+
+test('intermission purchases are carried into the next wave summary', () => {
+  const world = new World({seed: 6, brains: {scout: idleBrain, endo: idleBrain, heavy: idleBrain}})
+  const director = new WaveDirector(world, {maxWaves: 2})
+  const config = {
+    spawns: [{t: 0, gate: 'N1', unit: 'scout', count: 1}],
+    knobs: {gates: ['N1'], doors: {}, lights: {}, fog: 0, hazards: [], break_flank_wall: false},
+  }
+  director.start(config)
+  director.step({})
+  world.damageUnit(world.aliveUnits[0].id, 999, {source: 'player', weapon: 'pistol'})
+  director.step({})
+  world.player.scrap = 200
+  world.player.hp = 40
+  assert.equal(world.purchase('medkit').ok, true)
+  director.submitConfig({wave: 2, ...config})
+  director.ready(1)
+  director.step({})
+  world.damageUnit(world.aliveUnits[0].id, 999, {source: 'player', weapon: 'pistol'})
+  director.step({})
+  const summary = director.telemetryByWave.get(2)
+  assert.deepEqual(summary.purchases.map(({item, price}) => ({item, price})), [{item: 'medkit', price: 150}])
+})
