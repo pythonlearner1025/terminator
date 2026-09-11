@@ -43,6 +43,21 @@ clock time. The same seed, starting state, and input records produce the same ev
 
 The replay buffer is `world.replay`. It contains one normalized input record for every completed tick.
 
+## Vertical surfaces and navigation
+
+`map.json.walkable` describes which existing collider boxes provide footing. A `top` surface uses the
+collider's upper face. A `stairTread` uses the collider center plus `heightRules.stairTreadOffset`, so
+the six riser boxes produce 0.5 m tread increments without changing their geometry. A `ramp` surface
+linearly interpolates its height along the declared axis. `movementHoles` identify the stairwell where
+the second-floor slab remains a sight blocker but is not a movement ceiling.
+
+`NavGrid` samples every declared surface at each horizontal grid cell. Each sample is a separate node,
+so ground, upper-floor, balcony, dock, and connector nodes can share an x/z cell. Cardinal and same-cell
+neighbors connect only when their height difference is at most `walkable.maxStep`. Static and dynamic
+blockers are tested against the node's vertical body interval. This makes each locked door block only
+the level its box overlaps. A* returns `{x, y, z}` points, and unit path following takes its foot height
+from the current walkable surface. Failed paths and changed goals retain the World's 2 Hz re-path cap.
+
 ## Input schema
 
 ```js

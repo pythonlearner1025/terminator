@@ -74,5 +74,28 @@
   "flankWall": {"id": "south_flank", "pos": {"x": 0, "y": 1.5, "z": -29.5}, "size": {"x": 4, "y": 3, "z": 1}, "broken": false},
   "trader": {"id": "trader_crate", "pos": {"x": -7, "y": 0.65, "z": 23}, "size": {"x": 2, "y": 1.3, "z": 1.2}},
   "playerStart": {"pos": {"x": 0, "y": 0, "z": 9}, "yaw": 0, "pitch": 0},
+  "walkable": {
+    "maxStep": 0.5,
+    "agentHeight": 2,
+    "gravity": 18,
+    "heightRules": {"stairTreadOffset": 0.25},
+    "surfaces": [
+      {"collider": "ground", "level": "ground", "height": "top"},
+      {"collider": "building_ground_floor", "level": "ground", "height": "top"},
+      {"collider": "building_second_floor", "level": "upper", "height": "top"},
+      {"collider": "building_balcony", "level": "upper", "height": "top"},
+      {"collider": "stair_1", "level": "stairs", "height": "stairTread"},
+      {"collider": "stair_2", "level": "stairs", "height": "stairTread"},
+      {"collider": "stair_3", "level": "stairs", "height": "stairTread"},
+      {"collider": "stair_4", "level": "stairs", "height": "stairTread"},
+      {"collider": "stair_5", "level": "stairs", "height": "stairTread"},
+      {"collider": "stair_6", "level": "stairs", "height": "stairTread"},
+      {"collider": "dock_floor", "level": "dock", "height": "top"},
+      {"collider": "dock_ramp", "level": "dockRamp", "height": "ramp", "axis": "x", "from": 17, "to": 18.5, "low": 0, "high": 0.7}
+    ],
+    "movementHoles": [
+      {"collider": "building_second_floor", "minX": 8.4, "maxX": 11.6, "minZ": 18.9, "maxZ": 25.1}
+    ]
+  },
   "navGrid": {"cellSize": 1, "width": 60, "height": 60, "origin": {"x": -30, "z": -30}, "agentRadius": 0.4}
 }
