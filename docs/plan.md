@@ -47,7 +47,9 @@ Legend: [ ] todo, [~] in progress, [x] done, [!] blocked
 - [x] W11 First-person weapons with hands and animations (astra). Evidence docs/evidence/w11
 - [x] W12 Audio: procedural WebAudio, 40 sounds, bindings (sol). Evidence docs/evidence/w12
 - [x] Fixes from checkpoint 1 play: right handed controls (1de5880), no re-aim from frozen cursor on click (52de5bb)
-- [~] Editor bug: toolbar icons render blank in kite3d editor; agent investigating in ~/blitz, PR if editor bug
+- [x] Aim down sights on right mouse, crosshair removed, easier economy, health reset at wave clear (17d2e95, 5709510, b3fd86a)
+- [~] Co-op pass (docs/coop-design.md): soldier model (astra, running), multi-player core (sol, running), then netcode and relay (sol) and co-op UI (astra)
+- [~] Editor bug: toolbar icons render blank in kite3d editor; headless-only agent investigating in ~/blitz, PR if editor bug
 - [~] Checkpoint 1: tests 54 pass, check passes, editor open on port 4300 in Play, owner playing (2026-09-11)
 - [ ] W13 Feedback fixes and polish, then Checkpoint 2
 
