@@ -4,6 +4,7 @@ import {BuiltinSkynet} from '../lib/core/builtin-skynet.js'
 import {projectViewModel} from '../lib/core/viewmodel.js'
 import {WaveDirector} from '../lib/core/waves.js'
 import {TICK_SECONDS, World} from '../lib/core/world.js'
+import {LobbyClient} from '../lib/net/lobby-client.js'
 import {Hud} from '../lib/ui/hud.js'
 import {InputController} from '../lib/view/input.js'
 import {MapView} from '../lib/view/map.js'
@@ -26,6 +27,7 @@ export class GameManager extends Object3DComponent {
   unitView = null
   playerView = null
   hud = null
+  lobby = null
   accumulator = 0
   started = false
 
@@ -42,10 +44,12 @@ export class GameManager extends Object3DComponent {
     this.playerView = new PlayerView(viewer)
     this.input = new InputController(viewer)
     this.hud = new Hud(viewer)
+    this.lobby = new LobbyClient({world: this.world, director: this.director, intermissionSeconds: this.intermissionSeconds})
     this.mapView.start()
     this.unitView.start(this.world)
     this.playerView.start(this.world)
     this.input.start({yaw: this.world.player.yaw, pitch: this.world.player.pitch})
+    this.lobby.start()
     this.director.start()
     this.accumulator = 0
     this.started = true
@@ -62,6 +66,7 @@ export class GameManager extends Object3DComponent {
       steps += 1
     }
     if (steps === 8) this.accumulator = Math.min(this.accumulator, TICK_SECONDS)
+    this.lobby?.update()
     this.syncViews()
     return true
   }
@@ -81,12 +86,14 @@ export class GameManager extends Object3DComponent {
 
   stop() {
     this.started = false
+    this.lobby?.stop()
     this.input?.stop()
     this.hud?.dispose()
     this.playerView?.stop()
     this.unitView?.stop()
     this.mapView?.stop()
     this.input = null
+    this.lobby = null
     this.hud = null
     this.playerView = null
     this.unitView = null
