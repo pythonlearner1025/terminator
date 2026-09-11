@@ -66,6 +66,7 @@ from the current walkable surface. Failed paths and changed goals retain the Wor
   yaw: number,
   pitch: number,
   fire: boolean,
+  aim: boolean,
   reload: boolean,
   switchTo: null | number | string,
   sprint: boolean,
@@ -79,6 +80,12 @@ from the current walkable surface. Failed paths and changed goals retain the Wor
 All fields describe the current tick. They are not deltas. `move.x` is right. `move.z` is forward.
 Yaw and pitch are radians. Yaw zero faces positive Z. The browser adapter turns key and mouse events
 into this record.
+
+`aim` defaults to false, including older replay and ghost records. Hold the right mouse button
+to aim; only the left button fires. Firearms aim only outside reloads and quick knife/grenade
+actions. Aiming uses `weapons.json.aim`: 35% base spread, 60% movement speed, and no sprint.
+The view-model's `weapon.aiming` and `weapon.spread` expose effective aim and hitscan spread in
+degrees. The legacy `crosshair.spread` also reports that spread; the HUD draws no crosshair.
 
 ## Unit brain contract
 
