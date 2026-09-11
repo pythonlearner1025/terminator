@@ -166,6 +166,27 @@ test('a missing submission uses the last valid config and reports the reason', (
   assert.deepEqual(director.config, first)
 })
 
+test('an invalid revision after a valid submission falls back to that last valid config', () => {
+  const world = makeWorld()
+  const director = new WaveDirector(world)
+  director.start(configFor(1))
+  director.step({})
+  killAll(world)
+  director.step({})
+  const valid = {
+    spawns: [{t: 0, gate: 'E1', unit: 'endo', count: 1}],
+    knobs: baseKnobs(['E1']),
+  }
+  assert.equal(director.submitConfig({wave: 2, ...valid}).ok, true)
+  assert.equal(director.submitConfig({wave: 2, spawns: [], knobs: baseKnobs([])}).ok, false)
+  director.ready(1)
+  assert.deepEqual(director.config, valid)
+  const applied = director.events.history.filter(({type}) => type === 'config_applied').at(-1)
+  assert.equal(applied.fallback, true)
+  assert.equal(applied.reason, 'invalid_submission')
+  assert.equal(world.skynet.fallbackCount, 1)
+})
+
 test('player death ends the match and publishes a death wave summary', () => {
   const world = makeWorld()
   const director = new WaveDirector(world)
