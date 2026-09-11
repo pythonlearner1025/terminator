@@ -1,0 +1,142 @@
+{
+  "capturedAt": "2026-09-11T22:55:32.171Z",
+  "serverPort": 4580,
+  "headless": true,
+  "api": {
+    "localSkipped": true,
+    "sharing": {
+      "bodyGeometry": true,
+      "separateSkeletons": true,
+      "templateSkeletonUnchanged": true,
+      "weaponGeometry": true,
+      "weaponMaterial": true,
+      "variants": [
+        "olive",
+        "gray"
+      ]
+    },
+    "states": {
+      "idle": "idle",
+      "walk": "walk",
+      "run": "run",
+      "crouch": "crouch",
+      "aim": "aim",
+      "fire": "fire",
+      "reload": "reload",
+      "hit": "hit",
+      "death": "death",
+      "downed": "downed"
+    },
+    "weaponChecks": {
+      "pistol": true,
+      "m4": true,
+      "shotgun": true,
+      "plasma": true,
+      "knife": true,
+      "grenade": true
+    },
+    "grips": {
+      "pistol": {
+        "Right": 4.577566798522237e-16,
+        "Left": 5.087681048627601e-16
+      },
+      "m4": {
+        "Right": 3.3306690738754696e-16,
+        "Left": 5.087681048627601e-16
+      },
+      "shotgun": {
+        "Right": 4.440892098500626e-16,
+        "Left": 2.220446049250313e-16
+      },
+      "plasma": {
+        "Right": 4.440892098500626e-16,
+        "Left": 4.965068306494546e-16
+      },
+      "knife": {
+        "Right": 2.482534153247273e-16,
+        "Left": 0.4465266765268269
+      },
+      "grenade": {
+        "Right": 4.965068306494546e-16,
+        "Left": 0.546593360866683
+      }
+    },
+    "muzzleFlash": true,
+    "objectSnapshot": true,
+    "removed": true,
+    "rejoined": true,
+    "templateUnchanged": true,
+    "stopped": true,
+    "localSwitch": true,
+    "performanceMs": {
+      "median": 0,
+      "p95": 0.10000014305114746,
+      "mean": 0.013000000317891438,
+      "frames": 600
+    },
+    "floorBounds": {
+      "crouch": 0.00707184419916404,
+      "death": 0.02508089082281073,
+      "downed": 0.014077199646425065
+    },
+    "integration": {
+      "remoteRendered": true,
+      "walk": true,
+      "run": true,
+      "shotEvent": true
+    },
+    "anatomy": {
+      "parts": 172,
+      "triangles": 15492,
+      "joints": [
+        "Pelvis",
+        "Spine",
+        "Chest",
+        "Neck",
+        "Head",
+        "Upper Arm Left",
+        "Forearm Left",
+        "Hand Left",
+        "Thigh Left",
+        "Shin Left",
+        "Foot Left",
+        "Upper Arm Right",
+        "Forearm Right",
+        "Hand Right",
+        "Thigh Right",
+        "Shin Right",
+        "Foot Right"
+      ]
+    }
+  },
+  "inFront": true,
+  "screenshots": [
+    "front.png",
+    "both-variants.png",
+    "three-quarter.png",
+    "weapon-pistol.png",
+    "weapon-m4.png",
+    "weapon-shotgun.png",
+    "weapon-plasma.png",
+    "weapon-knife.png",
+    "weapon-grenade.png",
+    "walk.png",
+    "run.png",
+    "crouch.png",
+    "aim.png",
+    "fire.png",
+    "reload.png",
+    "hit.png",
+    "death.png",
+    "downed.png"
+  ],
+  "messages": [],
+  "cleanup": {
+    "ok": true,
+    "status": "pass",
+    "summary": "Runtime cleanup passed.",
+    "issues": [],
+    "trackedObjectCount": 0,
+    "outsideRenderableCount": 0
+  }
+}
