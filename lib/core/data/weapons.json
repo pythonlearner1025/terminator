@@ -1,0 +1,77 @@
+{
+  "slots": ["pistol", "m4", "shotgun", "plasma"],
+  "weapons": {
+    "pistol": {
+      "id": "pistol",
+      "slot": 1,
+      "name": "9mm Pistol",
+      "damage": 25,
+      "rate": 6,
+      "mag": 15,
+      "reserveMax": 120,
+      "spreadDeg": 1.5,
+      "price": 0,
+      "ammoPrice": 10,
+      "reloadSeconds": 1.45,
+      "pellets": 1
+    },
+    "m4": {
+      "id": "m4",
+      "slot": 2,
+      "name": "M4 Rifle",
+      "damage": 30,
+      "rate": 11,
+      "mag": 30,
+      "reserveMax": 240,
+      "spreadDeg": 2,
+      "price": 500,
+      "ammoPrice": 30,
+      "reloadSeconds": 1.8,
+      "pellets": 1
+    },
+    "shotgun": {
+      "id": "shotgun",
+      "slot": 3,
+      "name": "Pump Shotgun",
+      "damage": 12,
+      "rate": 1.2,
+      "mag": 8,
+      "reserveMax": 48,
+      "spreadDeg": 7,
+      "price": 650,
+      "ammoPrice": 40,
+      "reloadSeconds": 2.4,
+      "pellets": 8
+    },
+    "plasma": {
+      "id": "plasma",
+      "slot": 4,
+      "name": "Plasma Rifle",
+      "damage": 90,
+      "rate": 3,
+      "mag": 20,
+      "reserveMax": 100,
+      "spreadDeg": 1,
+      "price": 1800,
+      "ammoPrice": 120,
+      "reloadSeconds": 2.1,
+      "pellets": 1
+    },
+    "grenade": {
+      "id": "grenade",
+      "name": "Frag Grenade",
+      "damage": 250,
+      "radius": 4,
+      "price": 60,
+      "max": 4
+    },
+    "knife": {
+      "id": "knife",
+      "name": "Knife",
+      "damage": 40,
+      "rate": 2,
+      "range": 1.8,
+      "price": 0
+    }
+  }
+}

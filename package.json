@@ -8,7 +8,10 @@
   "scripts": {
     "dev": "kite3d dev",
     "publish": "kite3d publish",
-    "pull": "kite3d pull"
+    "pull": "kite3d pull",
+    "test": "node --test test/core/*.test.js",
+    "scene": "node tools/build-scene.mjs",
+    "benchmark": "node tools/benchmark-world.mjs"
   },
   "devDependencies": {
     "kite3d": "0.15.0"

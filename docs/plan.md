@@ -27,8 +27,8 @@ A built-in fallback Skynet so the game plays without an agent.
 Legend: [ ] todo, [~] in progress, [x] done, [!] blocked
 
 - [x] W0 Brainstorm and plan
-- [~] W1 Discover kite3d: scaffold, API, headless, screenshots (codex, sol)
-- [ ] W2 Scaffold the project with `npx kite3d` and lay down the architecture skeleton
+- [x] W1 Discover kite3d: scaffold, API, headless, screenshots (codex, sol). See docs/kite3d-notes.md
+- [~] W2 Scaffold the project with `npx kite3d` and lay down the architecture skeleton
 - [ ] W3 FPS core: controller, weapons, hit detection, damage, one map with cover and spawns (visual: astra)
 - [ ] W4 Enemies: three unit types built to docs/art-reference.md, animation, hit reactions, death (astra)
 - [ ] W5 NPC script runtime: sandbox, fuel cap, sensor API, actuator API, default scripts per unit
