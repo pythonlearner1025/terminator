@@ -17,6 +17,8 @@
     "publish": "kite3d publish",
     "pull": "kite3d pull",
     "server": "node server/index.js",
+    "tunnel": "node server/party-tunnel.js",
+    "tunnel": "node server/party-tunnel.js",
     "dev:all": "concurrently -k -n game,server \"npm run dev\" \"npm run server\"",
     "test": "find test -type f -name '*.test.js' -exec node --test {} +",
     "scene": "node tools/build-scene.mjs",
@@ -30,7 +32,8 @@
     "@jitl/quickjs-wasmfile-release-sync": "^0.32.0",
     "@kite3d/engine": "0.15.0",
     "quickjs-emscripten": "0.32.0",
-    "threepipe": "0.5.1"
+    "threepipe": "0.5.1",
+    "ws": "^8.21.3"
   },
   "kite3d": {
     "version": "0.15.0",

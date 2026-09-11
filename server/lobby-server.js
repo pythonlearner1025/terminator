@@ -8,6 +8,7 @@ import {BuiltinSkynet} from '../lib/core/builtin-skynet.js'
 import {buildRulesPayload, validateWaveConfig, waveBudget} from '../lib/core/waves.js'
 import {validateScript, UNIT_TYPES} from './script-validator.js'
 import {runSimulation} from './simulator.js'
+import {attachPartyRelay, normalizeRelayBase} from './party-relay.js'
 
 const dirname = path.dirname(fileURLToPath(import.meta.url))
 const DEFAULT_DATA_DIR = path.join(dirname, 'data')
@@ -32,9 +33,10 @@ const defaultScripts = {
   heavy: readFileSync(new URL('../lib/core/brains/default-heavy.js', import.meta.url), 'utf8'),
 }
 
-export function createLobbyServer({dataDir = DEFAULT_DATA_DIR, logger = console, now = () => Date.now()} = {}) {
+export function createLobbyServer({dataDir = DEFAULT_DATA_DIR, logger = console, now = () => Date.now(), party = {}} = {}) {
   const lobbies = new Map()
   const sockets = new Set()
+  let partyRelay
   const server = http.createServer(async (request, response) => {
     const started = now()
     let logged = false
@@ -50,6 +52,20 @@ export function createLobbyServer({dataDir = DEFAULT_DATA_DIR, logger = console,
 
     try {
       if (request.method === 'GET' && url.pathname === '/health') return sendJson(response, 200, {ok: true, lobbies: lobbies.size})
+      const partyInviteMatch = url.pathname.toUpperCase().match(/^\/PARTY\/([A-Z0-9]{6})\/INVITE$/)
+      if (request.method === 'GET' && partyInviteMatch) {
+        return sendJson(response, 200, partyRelay.invite(request, partyInviteMatch[1]))
+      }
+      if (request.method === 'POST' && url.pathname === '/api/party/tunnel') {
+        if (!isLoopback(request.socket.remoteAddress)) return sendError(response, 403, 'LOCAL_ONLY', 'tunnel registration is local only')
+        const body = await readJson(request)
+        const tunnelUrl = normalizeRelayBase(body.url)
+        if (!tunnelUrl || !new URL(tunnelUrl).hostname.endsWith('.trycloudflare.com')) {
+          return sendError(response, 400, 'INVALID_TUNNEL_URL', 'a trycloudflare.com URL is required')
+        }
+        partyRelay.setTunnelUrl(tunnelUrl)
+        return sendJson(response, 200, {ok: true})
+      }
       if (request.method === 'POST' && url.pathname === '/api/lobby') {
         const body = await readJson(request)
         const requested = typeof body.code === 'string' ? body.code.toUpperCase() : ''
@@ -294,11 +310,15 @@ export function createLobbyServer({dataDir = DEFAULT_DATA_DIR, logger = console,
     sockets.add(socket)
     socket.on('close', () => sockets.delete(socket))
   })
+  partyRelay = attachPartyRelay(server, {logger, ...party})
   server.closeAll = () => {
     for (const lobby of lobbies.values()) for (const client of lobby.clients) client.end()
+    partyRelay.close()
     for (const socket of sockets) socket.destroy()
   }
   server.lobbies = lobbies
+  server.partyRooms = partyRelay.rooms
+  server.setPartyTunnelUrl = (url) => partyRelay.setTunnelUrl(url)
   return server
 }
 
@@ -530,4 +550,8 @@ function httpError(statusCode, code, message) {
 
 function clone(value) {
   return value == null ? value : structuredClone(value)
+}
+
+function isLoopback(address = '') {
+  return address === '127.0.0.1' || address === '::1' || address === '::ffff:127.0.0.1'
 }
