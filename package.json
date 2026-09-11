@@ -16,8 +16,23 @@
   "devDependencies": {
     "kite3d": "0.15.0"
   },
+  "dependencies": {
+    "@kite3d/engine": "0.15.0",
+    "threepipe": "0.5.1"
+  },
   "kite3d": {
     "version": "0.15.0",
+    "name": "Terminator: human vs Skynet",
+    "scripts": [
+      "./scripts/GameManager.script.js",
+      "./generators/map.generator.js",
+      "./generators/unit-template.generator.js"
+    ],
+    "viewer": {
+      "msaa": true,
+      "tonemap": true,
+      "backgroundColor": "#03070d"
+    },
     "publish": {
       "exclude": [
         "docs/**",

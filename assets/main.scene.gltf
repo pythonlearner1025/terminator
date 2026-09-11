@@ -1,6 +1,263 @@
 {
-  "asset": {"version": "2.0", "generator": "Kite3D"},
+  "asset": {
+    "version": "2.0",
+    "generator": "Kite3D 0.15.0 plus tools/build-scene.mjs"
+  },
   "scene": 0,
-  "scenes": [{"name": "Main Scene", "nodes": []}],
-  "nodes": []
+  "scenes": [
+    {
+      "name": "Main Scene",
+      "nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Game Manager",
+      "extras": {
+        "gltfUUID": "terminator-node-game-manager",
+        "kite3dAuthoring": {
+          "role": "direct",
+          "id": "terminator-game-manager"
+        },
+        "EntityComponentPlugin": {
+          "terminator-component-game-manager": {
+            "type": "GameManager",
+            "state": {
+              "seed": 2029,
+              "intermissionSeconds": 45
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Map",
+      "extras": {
+        "gltfUUID": "terminator-node-map",
+        "kite3dAuthoring": {
+          "role": "generator",
+          "id": "terminator-map"
+        },
+        "EntityComponentPlugin": {
+          "terminator-component-map-generator": {
+            "type": "Generator",
+            "state": {
+              "module": "generators/map.generator.js",
+              "params": {
+                "markers": true
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Unit Template Scout",
+      "translation": [
+        34,
+        0,
+        -5
+      ],
+      "extras": {
+        "gltfUUID": "terminator-node-unit-template-scout",
+        "kite3dAuthoring": {
+          "role": "generator",
+          "id": "terminator-unit-template-scout"
+        },
+        "EntityComponentPlugin": {
+          "terminator-component-unit-generator-scout": {
+            "type": "Generator",
+            "state": {
+              "module": "generators/unit-template.generator.js",
+              "params": {
+                "type": "scout"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Unit Template Endo",
+      "translation": [
+        34,
+        0,
+        0
+      ],
+      "extras": {
+        "gltfUUID": "terminator-node-unit-template-endo",
+        "kite3dAuthoring": {
+          "role": "generator",
+          "id": "terminator-unit-template-endo"
+        },
+        "EntityComponentPlugin": {
+          "terminator-component-unit-generator-endo": {
+            "type": "Generator",
+            "state": {
+              "module": "generators/unit-template.generator.js",
+              "params": {
+                "type": "endo"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Unit Template Heavy",
+      "translation": [
+        34,
+        0,
+        5
+      ],
+      "extras": {
+        "gltfUUID": "terminator-node-unit-template-heavy",
+        "kite3dAuthoring": {
+          "role": "generator",
+          "id": "terminator-unit-template-heavy"
+        },
+        "EntityComponentPlugin": {
+          "terminator-component-unit-generator-heavy": {
+            "type": "Generator",
+            "state": {
+              "module": "generators/unit-template.generator.js",
+              "params": {
+                "type": "heavy"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Player Start",
+      "translation": [
+        0,
+        0,
+        9
+      ],
+      "extras": {
+        "gltfUUID": "terminator-node-player-start",
+        "kite3dAuthoring": {
+          "role": "direct",
+          "id": "terminator-player-start"
+        }
+      }
+    },
+    {
+      "name": "Cool Blue Key",
+      "rotation": [
+        -0.3390375985791144,
+        -0.2541399157766984,
+        0.09565898901441384,
+        0.9007306854878766
+      ],
+      "extensions": {
+        "KHR_lights_punctual": {
+          "light": 0
+        }
+      },
+      "extras": {
+        "gltfUUID": "terminator-node-cool-key",
+        "kite3dAuthoring": {
+          "role": "direct",
+          "id": "terminator-light-cool-key"
+        }
+      }
+    },
+    {
+      "name": "Orange Fill",
+      "translation": [
+        -4,
+        4,
+        3
+      ],
+      "extensions": {
+        "KHR_lights_punctual": {
+          "light": 1
+        }
+      },
+      "extras": {
+        "gltfUUID": "terminator-node-orange-fill",
+        "kite3dAuthoring": {
+          "role": "direct",
+          "id": "terminator-light-orange-fill"
+        }
+      }
+    },
+    {
+      "name": "Saved Overview Camera",
+      "translation": [
+        52,
+        43,
+        52
+      ],
+      "rotation": [
+        -0.24157608430697244,
+        0.3693694454149553,
+        0.1000640904649342,
+        0.8917367246470139
+      ],
+      "camera": 0,
+      "extras": {
+        "gltfUUID": "terminator-node-saved-camera",
+        "kite3dAuthoring": {
+          "role": "direct",
+          "id": "terminator-saved-camera"
+        }
+      }
+    }
+  ],
+  "cameras": [
+    {
+      "name": "Saved Overview Camera",
+      "type": "perspective",
+      "perspective": {
+        "aspectRatio": 1.6,
+        "yfov": 1.0471975511965976,
+        "znear": 0.1,
+        "zfar": 220
+      }
+    }
+  ],
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ],
+  "extensions": {
+    "KHR_lights_punctual": {
+      "lights": [
+        {
+          "name": "Cool Blue Key",
+          "type": "directional",
+          "color": [
+            0.42,
+            0.62,
+            1
+          ],
+          "intensity": 3.2
+        },
+        {
+          "name": "Orange Fill",
+          "type": "point",
+          "color": [
+            1,
+            0.26,
+            0.06
+          ],
+          "intensity": 95,
+          "range": 24
+        }
+      ]
+    }
+  }
 }
