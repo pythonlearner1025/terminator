@@ -89,6 +89,19 @@ test('simulator uses the injected brain factory for submitted scripts', () => {
   assert.match(seen.find(({unitType}) => unitType === 'scout').source, /export function tick/)
 })
 
+test('simulator uses the live sandbox path for submitted source by default', () => {
+  const result = simulate({
+    waveConfig: {
+      spawns: [{t: 0, gate: 'N1', unit: 'scout', count: 1}],
+      knobs: {gates: ['N1']},
+    },
+    scripts: {scout: {source: 'export function tick() { throw new Error("sandbox proof") }', rev: 4}},
+    ghost: {inputs: [], accuracy: {}},
+    maxSeconds: 0.2,
+  })
+  assert.equal(result.script_errors, 1)
+})
+
 test('24 alive units simulate at least 30 times faster than real time', () => {
   const config = {
     spawns: [
