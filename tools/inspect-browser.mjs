@@ -16,6 +16,17 @@ await page.goto(dev.url, {waitUntil: 'domcontentloaded'})
 await page.getByTestId('play').click()
 await page.waitForFunction(() => Boolean(window.viewer), {timeout: 15000})
 await page.waitForTimeout(1500)
+if (process.argv.includes('--ai')) {
+  const rect = await page.evaluate(() => {
+    const value = window.viewer.canvas.getBoundingClientRect()
+    return {x: value.left, y: value.top, width: value.width, height: value.height}
+  })
+  await page.mouse.move(rect.x + rect.width / 2, rect.y + rect.height / 2)
+  await page.mouse.down({button: 'left'})
+  await page.waitForTimeout(500)
+  await page.mouse.up({button: 'left'})
+  await page.waitForTimeout(10000)
+}
 const state = await page.evaluate(() => ({
   modelNames: window.viewer?.scene?.modelRoot?.children?.map((item) => item.name) || [],
   manager: Boolean(window.terminator?.manager),
@@ -23,7 +34,11 @@ const state = await page.evaluate(() => ({
   phase: window.terminator?.phase,
   hud: Boolean(document.querySelector('[data-testid="terminator-hud"]')),
   unitCount: window.terminator?.world?.units?.length ?? -1,
+  player: window.terminator?.world ? {pos: window.terminator.world.player.pos, hp: window.terminator.world.player.hp} : null,
+  units: window.terminator?.world?.units?.map((unit) => ({id: unit.id, pos: unit.pos, intent: unit.intent, path: unit.pathCache.path?.length, pathIndex: unit.pathCache.index, visible: unit.playerVisible})) || [],
+  sounds: window.terminator?.world?.sounds?.length ?? -1,
 }))
 console.log(JSON.stringify({state, messages}, null, 2))
-if (process.argv[2]) await page.screenshot({path: process.argv[2], fullPage: true})
+const output = process.argv.find((value) => value.endsWith('.png'))
+if (output) await page.screenshot({path: output, fullPage: true})
 await browser.close()
