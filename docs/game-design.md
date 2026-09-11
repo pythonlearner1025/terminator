@@ -34,15 +34,15 @@ Weapons:
 
 | Slot | Weapon | Damage | Rate | Mag | Reserve max | Spread | Price | Ammo price per mag |
 |------|--------|--------|------|-----|-------------|--------|-------|--------------------|
-| 1 | 9mm pistol | 25 | 6 per s | 15 | 120 | 1.5 deg | start | 10 |
-| 2 | M4 rifle | 30 | 11 per s | 30 | 240 | 2.0 deg | 500 | 30 |
-| 3 | Pump shotgun | 12 x 8 pellets | 1.2 per s | 8 | 48 | 7.0 deg | 650 | 40 |
-| 4 | Plasma rifle | 90 | 3 per s | 20 | 100 | 1.0 deg | 1800 | 120 |
-| G | Frag grenade | 250 in 4 m | | 1 | 4 | | 60 each | |
+| 1 | 9mm pistol | 25 | 6 per s | 15 | 120 | 1.5 deg | start | 5 |
+| 2 | M4 rifle | 30 | 11 per s | 30 | 240 | 2.0 deg | 400 | 20 |
+| 3 | Pump shotgun | 12 x 8 pellets | 1.2 per s | 8 | 48 | 7.0 deg | 550 | 25 |
+| 4 | Plasma rifle | 90 | 3 per s | 20 | 100 | 1.0 deg | 1500 | 80 |
+| G | Frag grenade | 250 in 4 m | | 1 | 4 | | 40 each | |
 | K | Knife | 40 | 2 per s | | | | start | |
 
-Currency is Scrap. Terminators drop Scrap on death: Scout 30, Endo 80, Heavy 200. A medkit heals 50 for
-150 Scrap. Armor costs 3 Scrap per point.
+Currency is Scrap. The player starts with 400. Terminators drop Scrap on death: Scout 50, Endo 130,
+Heavy 350. Every wave clear pays 150. A medkit heals 50 for 100 Scrap. Armor costs 2 Scrap per point.
 
 ## Units (Skynet's catalog)
 

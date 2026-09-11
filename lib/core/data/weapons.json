@@ -1,5 +1,10 @@
 {
-  "slots": ["pistol", "m4", "shotgun", "plasma"],
+  "slots": [
+    "pistol",
+    "m4",
+    "shotgun",
+    "plasma"
+  ],
   "weapons": {
     "pistol": {
       "id": "pistol",
@@ -11,7 +16,7 @@
       "reserveMax": 120,
       "spreadDeg": 1.5,
       "price": 0,
-      "ammoPrice": 10,
+      "ammoPrice": 5,
       "reloadSeconds": 1.45,
       "pellets": 1
     },
@@ -24,8 +29,8 @@
       "mag": 30,
       "reserveMax": 240,
       "spreadDeg": 2,
-      "price": 500,
-      "ammoPrice": 30,
+      "price": 400,
+      "ammoPrice": 20,
       "reloadSeconds": 1.8,
       "pellets": 1
     },
@@ -38,8 +43,8 @@
       "mag": 8,
       "reserveMax": 48,
       "spreadDeg": 7,
-      "price": 650,
-      "ammoPrice": 40,
+      "price": 550,
+      "ammoPrice": 25,
       "reloadSeconds": 2.4,
       "pellets": 8
     },
@@ -52,8 +57,8 @@
       "mag": 20,
       "reserveMax": 100,
       "spreadDeg": 1,
-      "price": 1800,
-      "ammoPrice": 120,
+      "price": 1500,
+      "ammoPrice": 80,
       "reloadSeconds": 2.1,
       "pellets": 1
     },
@@ -62,7 +67,7 @@
       "name": "Frag Grenade",
       "damage": 250,
       "radius": 4,
-      "price": 60,
+      "price": 40,
       "max": 4
     },
     "knife": {

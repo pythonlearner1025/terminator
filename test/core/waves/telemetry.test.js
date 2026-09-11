@@ -68,13 +68,13 @@ test('trader purchases use documented prices and enter telemetry and the event l
   world.player.hp = 40
   assert.equal(world.purchase('medkit').ok, false)
   world.phase = 'intermission'
-  assert.equal(world.purchase('medkit').price, 150)
-  assert.equal(world.purchase('m4').price, 500)
+  assert.equal(world.purchase('medkit').price, 100)
+  assert.equal(world.purchase('m4').price, 400)
   assert.equal(world.player.hp, 90)
   assert.equal(world.player.ammo.m4.owned, true)
   assert.deepEqual(world.telemetry.purchases.map(({item, price}) => ({item, price})), [
-    {item: 'medkit', price: 150},
-    {item: 'm4', price: 500},
+    {item: 'medkit', price: 100},
+    {item: 'm4', price: 400},
   ])
   assert.equal(world.eventLog.filter(({type}) => type === 'purchase').length, 2)
 })
@@ -99,5 +99,5 @@ test('intermission purchases are carried into the next wave summary', () => {
   world.damageUnit(world.aliveUnits[0].id, 999, {source: 'player', weapon: 'pistol'})
   director.step({})
   const summary = director.telemetryByWave.get(2)
-  assert.deepEqual(summary.purchases.map(({item, price}) => ({item, price})), [{item: 'medkit', price: 150}])
+  assert.deepEqual(summary.purchases.map(({item, price}) => ({item, price})), [{item: 'medkit', price: 100}])
 })
