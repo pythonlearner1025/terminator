@@ -46,7 +46,7 @@ Legend: [ ] todo, [~] in progress, [x] done, [!] blocked
 - [x] W10 HUD and UX: HUD, trader, menus, lobby screen, dossier screen (astra). Evidence docs/evidence/w10
 - [x] W11 First-person weapons with hands and animations (astra). Evidence docs/evidence/w11
 - [~] W12 Audio (sol)
-- [ ] Checkpoint 1: run tests and check, open the editor, press Play, owner plays
+- [~] Checkpoint 1: tests 54 pass, check passes, editor open on port 4300 in Play, owner playing (2026-09-11)
 - [ ] W13 Feedback fixes and polish, then Checkpoint 2
 
 ## Open items
