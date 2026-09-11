@@ -92,6 +92,7 @@ export class GameManager extends Object3DComponent {
     if (!this.world) return
     this.mapView?.sync(this.world)
     this.unitView?.sync(this.world)
+    this.playersView?.sync(this.world)
     this.playerView?.sync(this.world)
     this.cameraFeel?.apply(this.playerView?.camera)
     if (this.ui) this.ui.sync(projectViewModel(this.world))
