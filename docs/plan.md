@@ -37,13 +37,14 @@ Legend: [ ] todo, [~] in progress, [x] done, [!] blocked
 - [x] W0 Brainstorm and plan
 - [x] W1 Discover kite3d: scaffold, API, headless, screenshots. See docs/kite3d-notes.md
 - [x] W2 Scaffold the project and the architecture skeleton. See docs/architecture.md
-- [~] W3 Map visuals for Bunker 7 (astra)
-- [~] W3b Vertical movement: stairs, balcony, multi-level navigation (sol)
-- [~] W4 Enemies built to docs/art-reference.md, animation, hit reactions, death (astra)
-- [~] W5 NPC script runtime: QuickJS sandbox, fuel cap, sensor and actuator API (sol)
-- [~] W6 + W7 Wave director, telemetry, event bus, headless simulator with ghost (sol)
-- [~] W8 + W9 Lobby server, game relay, MCP server, reference LLM client (sol)
-- [~] W10 HUD and UX: HUD, trader, menus, lobby screen, dossier screen (astra)
+- [x] W3 Map visuals for Bunker 7 (astra). Evidence docs/evidence/w3
+- [x] W3b Vertical movement: stairs, balcony, multi-level navigation (sol)
+- [x] W4 Enemies built to docs/art-reference.md, animation, hit reactions, death (astra). Evidence docs/evidence/w4
+- [x] W5 NPC script runtime: QuickJS sandbox, fuel cap, sensor and actuator API (sol)
+- [x] W6 + W7 Wave director, telemetry, event bus, headless simulator with ghost (sol)
+- [x] W8 + W9 Lobby server, game relay, MCP server, reference LLM client (sol). Evidence docs/evidence/w8
+- [x] W10 HUD and UX: HUD, trader, menus, lobby screen, dossier screen (astra). Evidence docs/evidence/w10
+- [x] W11 First-person weapons with hands and animations (astra). Evidence docs/evidence/w11
 - [~] W12 Audio (sol)
 - [ ] Checkpoint 1: run tests and check, open the editor, press Play, owner plays
 - [ ] W13 Feedback fixes and polish, then Checkpoint 2
