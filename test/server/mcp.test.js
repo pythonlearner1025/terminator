@@ -11,7 +11,7 @@ test('MCP server lists ten tools and round-trips skynet_state', async (t) => {
   const fixture = await startTestServer()
   t.after(() => fixture.close())
   const lobby = await createLobby(fixture.url)
-  const child = spawn(process.execPath, ['packages/skynet-mcp/index.js', '--url', fixture.url, '--code', lobby.code, '--name', 'MCP Test'], {
+  const child = spawn('npx', ['--no-install', 'terminator-skynet-mcp', '--url', fixture.url, '--code', lobby.code, '--name', 'MCP Test'], {
     cwd: repo,
     stdio: ['pipe', 'pipe', 'pipe'],
   })
