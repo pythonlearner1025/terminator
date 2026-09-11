@@ -3,13 +3,17 @@
   "description": "Human vs Skynet wave shooter",
   "private": true,
   "type": "module",
+  "imports": {
+    "#quickjs-core": "quickjs-emscripten-core",
+    "#quickjs-release-sync": "@jitl/quickjs-wasmfile-release-sync"
+  },
   "mainScene": "assets/main.scene.gltf",
   "main": "./main.js",
   "scripts": {
     "dev": "kite3d dev",
     "publish": "kite3d publish",
     "pull": "kite3d pull",
-    "test": "node --test test/core/*.test.js",
+    "test": "node --test test/core/*.test.js test/core/sandbox/*.test.js",
     "scene": "node tools/build-scene.mjs",
     "benchmark": "node tools/benchmark-world.mjs"
   },
@@ -18,11 +22,16 @@
   },
   "dependencies": {
     "@kite3d/engine": "0.15.0",
+    "quickjs-emscripten": "0.32.0",
     "threepipe": "0.5.1"
   },
   "kite3d": {
     "version": "0.15.0",
     "name": "Terminator: human vs Skynet",
+    "imports": {
+      "#quickjs-core": "https://esm.sh/quickjs-emscripten-core@0.32.0?bundle",
+      "#quickjs-release-sync": "https://esm.sh/@jitl/quickjs-wasmfile-release-sync@0.32.0?bundle"
+    },
     "scripts": [
       "./scripts/GameManager.script.js",
       "./generators/map.generator.js",
