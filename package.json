@@ -7,20 +7,27 @@
     "#quickjs-core": "quickjs-emscripten-core",
     "#quickjs-release-sync": "@jitl/quickjs-wasmfile-release-sync"
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "mainScene": "assets/main.scene.gltf",
   "main": "./main.js",
   "scripts": {
     "dev": "kite3d dev",
     "publish": "kite3d publish",
     "pull": "kite3d pull",
-    "test": "node --test test/core/*.test.js test/core/sandbox/*.test.js",
+    "server": "node server/index.js",
+    "dev:all": "concurrently -k -n game,server \"npm run dev\" \"npm run server\"",
+    "test": "node --test test/core/*.test.js test/core/sandbox/*.test.js test/server/*.test.js",
     "scene": "node tools/build-scene.mjs",
     "benchmark": "node tools/benchmark-world.mjs"
   },
   "devDependencies": {
+    "concurrently": "^9.2.1",
     "kite3d": "0.15.0"
   },
   "dependencies": {
+    "@jitl/quickjs-wasmfile-release-sync": "^0.32.0",
     "@kite3d/engine": "0.15.0",
     "quickjs-emscripten": "0.32.0",
     "threepipe": "0.5.1"
@@ -30,7 +37,9 @@
     "name": "Terminator: human vs Skynet",
     "imports": {
       "#quickjs-core": "https://esm.sh/quickjs-emscripten-core@0.32.0?bundle",
-      "#quickjs-release-sync": "https://cdn.jsdelivr.net/npm/@jitl/quickjs-wasmfile-release-sync@0.32.0/dist/index.mjs"
+      "#quickjs-release-sync": "https://cdn.jsdelivr.net/npm/@jitl/quickjs-wasmfile-release-sync@0.32.0/dist/index.mjs",
+      "@jitl/quickjs-wasmfile-release-sync/ffi": "https://cdn.jsdelivr.net/npm/@jitl/quickjs-wasmfile-release-sync@0.32.0/dist/ffi.mjs",
+      "@jitl/quickjs-wasmfile-release-sync/emscripten-module": "https://cdn.jsdelivr.net/npm/@jitl/quickjs-wasmfile-release-sync@0.32.0/dist/emscripten-module.browser.mjs"
     },
     "scripts": [
       "./scripts/GameManager.script.js",
