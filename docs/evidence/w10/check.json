@@ -1,0 +1,107 @@
+{
+  "ok": false,
+  "checkedAt": "2026-09-11T20:45:36.394Z",
+  "mode": "headless",
+  "componentTypes": [
+    "Cannon3DBodyComponent",
+    "Cannon3DShapeComponent",
+    "CannonRagdollComponent",
+    "GameManager",
+    "Generator",
+    "HtmlUiComponent"
+  ],
+  "rows": [
+    {
+      "kind": "script",
+      "path": "scripts/GameManager.script.js",
+      "status": "pass",
+      "detail": "GameManager"
+    },
+    {
+      "kind": "script",
+      "path": "generators/map.generator.js",
+      "status": "pass",
+      "detail": "no component types"
+    },
+    {
+      "kind": "script",
+      "path": "generators/unit-template.generator.js",
+      "status": "pass",
+      "detail": "no component types"
+    },
+    {
+      "kind": "component",
+      "path": "Game Manager",
+      "status": "pass",
+      "detail": "GameManager"
+    },
+    {
+      "kind": "component",
+      "path": "Map",
+      "status": "pass",
+      "detail": "Generator"
+    },
+    {
+      "kind": "generator",
+      "path": "generators/map.generator.js",
+      "status": "pass",
+      "detail": "Map"
+    },
+    {
+      "kind": "component",
+      "path": "Unit Template Scout",
+      "status": "pass",
+      "detail": "Generator"
+    },
+    {
+      "kind": "generator",
+      "path": "generators/unit-template.generator.js",
+      "status": "pass",
+      "detail": "Unit Template Scout"
+    },
+    {
+      "kind": "component",
+      "path": "Unit Template Endo",
+      "status": "pass",
+      "detail": "Generator"
+    },
+    {
+      "kind": "generator",
+      "path": "generators/unit-template.generator.js",
+      "status": "pass",
+      "detail": "Unit Template Endo"
+    },
+    {
+      "kind": "component",
+      "path": "Unit Template Heavy",
+      "status": "pass",
+      "detail": "Generator"
+    },
+    {
+      "kind": "generator",
+      "path": "generators/unit-template.generator.js",
+      "status": "pass",
+      "detail": "Unit Template Heavy"
+    }
+  ],
+  "outcomes": [
+    {
+      "name": "Playable",
+      "status": "fail",
+      "summary": "Headless check failed: The game did not render 30 frames within 10 seconds.",
+      "codes": []
+    },
+    {
+      "name": "Editable",
+      "status": "fail",
+      "summary": "Headless check failed: The game did not render 30 frames within 10 seconds.",
+      "codes": []
+    },
+    {
+      "name": "Persisted",
+      "status": "fail",
+      "summary": "Headless check failed: The game did not render 30 frames within 10 seconds.",
+      "codes": []
+    }
+  ]
+}

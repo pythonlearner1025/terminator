@@ -1,0 +1,13 @@
+✔ hitscan doubles head damage and halves frontal Heavy plate damage (39.394041ms)
+✔ A* routes around the courtyard divider in map.json (18.949042ms)
+✔ line of sight is blocked by a collider and clear beside it (6.313167ms)
+✔ budget formula uses 300 + 120 N and multiplier stays in bounds (0.764709ms)
+✔ config validation lists over budget, gate count and unknown ids together (0.438917ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 105.645
