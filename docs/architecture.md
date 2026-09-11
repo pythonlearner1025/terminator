@@ -34,14 +34,39 @@ The saved scene is only changed by `npm run scene`, which runs `tools/build-scen
 ## World step contract
 
 `new World({map, units, weapons, brains, seed})` creates deterministic state. Defaults come from
-`lib/core/data/`.
+`lib/core/data/`. `world.players` is a `Map` in join order. The host is created with id `player` and
+remains available through the compatibility getter `world.player`. `world.addPlayer({id, name})`
+adds up to three players and returns the new state. `world.removePlayer(id)` returns whether a player
+was removed.
 
-`world.step(inputs)` advances exactly one tick at 60 Hz. It normalizes and records the absolute input
-record, moves the player, advances weapon timers, runs unit brains at 10 Hz, applies body limits,
-updates attacks and hazards, samples telemetry, and increments `world.tick` once. It does not read wall
-clock time. The same seed, starting state, and input records produce the same event log.
+`world.step(inputsByPlayer)` advances exactly one tick at 60 Hz. The bundle is keyed by player id.
+A legacy plain input record applies to the host. Missing player ids reuse that player's last absolute
+input. The step moves every player, advances their weapon timers, runs unit brains at 10 Hz, applies
+body limits, updates attacks and hazards, samples aggregate and per-player telemetry, and increments
+`world.tick` once. It does not read wall clock time. The same seed, starting state, and input bundles
+produce the same event log.
 
-The replay buffer is `world.replay`. It contains one normalized input record for every completed tick.
+The replay buffer is `world.replay`. It contains one normalized keyed bundle for every completed tick.
+Ghost replay extracts the host record and also accepts legacy single-player records.
+
+Health, armor, ammo, weapons, grenades, scrap, reloads, and purchases belong to each player.
+`world.purchase(item, playerId)` defaults to the host for old callers. Player attacks carry a
+`playerId`, so kill scrap and telemetry go to the shooter. Unit vision, hearing, melee, and hitscan
+consider every living player.
+
+`world.snapshot()` returns plain JSON state, including keyed players and `playerOrder`, units,
+projectiles, map state, phase and wave timers, scaling, deterministic RNG state, replay and prior
+inputs, telemetry, and an `events` delta. `eventStart` and `eventCursor` identify that delta.
+`world.applySnapshot(snapshot)` replaces prediction and render state and appends the event delta.
+`world.predictPlayer(playerId, inputs)` advances only that player's movement fields by one 60 Hz tick
+without advancing world time, AI, combat, events, or telemetry.
+
+At each wave start, `WaveDirector` selects connected-player scaling: one player uses budget `1.0`,
+health `1.0`, and max alive `24`; two use `1.6`, `1.35`, and `30`; three use `2.1`, `1.7`, and `36`.
+The budget multiplier is applied after the performance multiplier. The selected block is exposed by
+director state, rules, wave summaries, snapshots, and the view-model. A cleared wave heals and pays
+every living player. Dead players keep their loadout and respawn with full health at the next wave.
+The match ends only when every connected player is dead before a wave clears.
 
 ## Vertical surfaces and navigation
 
@@ -116,7 +141,8 @@ sandbox workstream. The current default brains are native modules behind the sam
   player: null | {
     pos, dist, vel, facingMe, hp, armor, weapon, reloading,
   },
-  lastKnownPlayer: null | {pos, t},
+  players: [{id, pos, dist, vel, facingMe, hp, armor, weapon, reloading}],
+  lastKnownPlayer: null | {id, pos, t},
   allies: [{id, type, pos, hp, alive}],
   sounds: [{kind, pos, t}],
   messages: [{from, t, data}],
@@ -152,7 +178,8 @@ weapon cooldown, burst cadence, and Heavy spin-up. A brain never bypasses those 
 
 ## View-model contract
 
-`projectViewModel(world)` returns one render-only snapshot:
+`projectViewModel(world, playerId)` returns one render-only snapshot for that player. Omitting
+`playerId` selects the host:
 
 ```js
 {
@@ -166,6 +193,8 @@ weapon cooldown, burst cadence, and Heavy spin-up. A brain never bypasses those 
   scrap,
   grenades,
   sprintStamina,
+  teammates: [{id, name, hp, health, armor, distance, alive, downed}],
+  scaling: {players, budgetMultiplier, unitHealthMultiplier, maxAlive},
   crosshair: {spread, reloadProgress},
   killFeed: [{id, text, age}],
   hitMarkers: [{id, kind}],
