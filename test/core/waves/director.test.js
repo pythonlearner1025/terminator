@@ -177,6 +177,8 @@ test('player death ends the match and publishes a death wave summary', () => {
   const summary = director.events.history.find(({type}) => type === 'wave_summary')
   assert.equal(summary.player_died, true)
   assert.equal(summary.end_reason, 'player_dead')
+  assert.equal(summary.time_to_clear, null)
+  assert.ok(summary.duration_seconds > 0)
 })
 
 test('spawn and SSE events carry revisions, protocol names, and documented throttles', () => {
