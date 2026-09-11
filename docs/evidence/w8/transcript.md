@@ -118,3 +118,27 @@ node docs/evidence/w8/check-built-in-fallback.mjs
 
 - `lobby-agent-connected.png`: lobby code `KHYAIS` with Evidence Skynet connected.
 - `wave2-agent-config.png`: live wave 2, Evidence Skynet HUD, scout `rev 2` nameplate, fog 2, locked `building_ground`, and courtyard light off.
+
+## Final automated verification
+
+```sh
+npm test
+```
+
+```text
+tests 54
+pass 54
+fail 0
+```
+
+```sh
+npx kite3d check
+```
+
+```text
+Runtime mode: headless
+Playable   PASS     The game booted and ran 30 frames without errors.
+Editable   PASS     CAMERA_CONTAINMENT_UNVERIFIED: Stopped-mode authored representation passed.
+Persisted  PASS     Save/Reload semantic equivalence passed.
+Check passed (12 static row(s)).
+```
