@@ -116,6 +116,7 @@ export class GameManager extends Object3DComponent {
     this.unitView = null
     this.mapView = null
     this.director = null
+    this.world?.destroy?.()
     this.world = null
     this.accumulator = 0
   }
