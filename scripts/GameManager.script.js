@@ -12,6 +12,7 @@ import {InputController} from '../lib/view/input.js'
 import {MapView} from '../lib/view/map.js'
 import {PlayerView} from '../lib/view/player.js'
 import {UnitView} from '../lib/view/units.js'
+import {mountPlayersView} from '../lib/view/players.js'
 
 export class GameManager extends Object3DComponent {
   static ComponentType = 'GameManager'
@@ -52,6 +53,7 @@ export class GameManager extends Object3DComponent {
     this.mapView.start()
     this.unitView.start(this.world)
     this.playerView.start(this.world)
+    this.playersView = mountPlayersView(viewer, this.world, () => this.localPlayerId ?? this.world?.localPlayerId ?? this.world?.player?.id ?? 'player')
     this.cameraFeel = new CameraFeel()
     this.ui = new UiSession(this)
     this.accumulator = 0
@@ -104,6 +106,7 @@ export class GameManager extends Object3DComponent {
     this.lobby?.stop()
     this.input?.stop()
     this.hud?.dispose()
+    this.playersView?.stop(); this.playersView = null
     this.playerView?.stop()
     this.unitView?.stop()
     this.mapView?.stop()
