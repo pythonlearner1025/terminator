@@ -22,24 +22,31 @@ One mode: Judgment Day + Model Update. One map. Three unit types. Intermissions 
 Sandboxed JS scripts with fuel. A headless simulator. A dossier. A lobby an external agent connects to.
 A built-in fallback Skynet so the game plays without an agent.
 
+## Plan shape
+
+Two checkpoints. The owner plays at each one and gives feedback.
+
+- Checkpoint 1: every system present and playable, rough where it must be. Eight agents build in
+  parallel in one tree with disjoint folders. Then the owner plays.
+- Checkpoint 2: the owner's feedback fixed and the polish pass. Then the owner plays again.
+
 ## Workstreams and status
 
 Legend: [ ] todo, [~] in progress, [x] done, [!] blocked
 
 - [x] W0 Brainstorm and plan
-- [x] W1 Discover kite3d: scaffold, API, headless, screenshots (codex, sol). See docs/kite3d-notes.md
-- [x] W2 Scaffold the project with `npx kite3d` and lay down the architecture skeleton
-- [ ] W3 FPS core: controller, weapons, hit detection, damage, one map with cover and spawns (visual: astra)
-- [ ] W4 Enemies: three unit types built to docs/art-reference.md, animation, hit reactions, death (astra)
-- [ ] W5 NPC script runtime: sandbox, fuel cap, sensor API, actuator API, default scripts per unit
-- [ ] W6 Wave director: waves, intermissions, budget, map knobs, unit points, telemetry capture
-- [ ] W7 Headless simulator: deterministic logic run, ghost replay of the human, call caps
-- [ ] W8 Skynet lobby server: protocol, connect code, telemetry stream, config and script submission
-- [ ] W9 Built-in Skynet fallback + reference LLM client
-- [ ] W10 HUD and UX to KF2 quality: HUD, trader, menus, lobby screen, dossier screen (astra)
-- [ ] W11 Dossier store and post-match screen
-- [ ] W12 Audio
-- [ ] W13 Integration QA: play it, screenshot it, test the edges, write the evidence
+- [x] W1 Discover kite3d: scaffold, API, headless, screenshots. See docs/kite3d-notes.md
+- [x] W2 Scaffold the project and the architecture skeleton. See docs/architecture.md
+- [~] W3 Map visuals for Bunker 7 (astra)
+- [~] W3b Vertical movement: stairs, balcony, multi-level navigation (sol)
+- [~] W4 Enemies built to docs/art-reference.md, animation, hit reactions, death (astra)
+- [~] W5 NPC script runtime: QuickJS sandbox, fuel cap, sensor and actuator API (sol)
+- [~] W6 + W7 Wave director, telemetry, event bus, headless simulator with ghost (sol)
+- [~] W8 + W9 Lobby server, game relay, MCP server, reference LLM client (sol)
+- [~] W10 HUD and UX: HUD, trader, menus, lobby screen, dossier screen (astra)
+- [~] W12 Audio (sol)
+- [ ] Checkpoint 1: run tests and check, open the editor, press Play, owner plays
+- [ ] W13 Feedback fixes and polish, then Checkpoint 2
 
 ## Open items
 
