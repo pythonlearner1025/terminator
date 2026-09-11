@@ -1,0 +1,77 @@
+{
+  "assertions": [
+    "Fog 0 density",
+    "Fog 1 density",
+    "Fog 2 density",
+    "Fog 3 density",
+    "Locked door closes and shows red signal",
+    "Explicit open door retracts",
+    "Closed door has no lock signal",
+    "Unlocked door opens on approach",
+    "Unit spawn opens active gate",
+    "Electric arcs and steam particles follow slot state",
+    "All three lights and fixtures switch off",
+    "Stop removes runtime roots and bloom, and restores fog"
+  ],
+  "mode": "Isolated map fixture with real MapView and PlayerView, not full wave gameplay",
+  "viewport": {
+    "width": 1600,
+    "height": 900
+  },
+  "checks": {
+    "bounds": 39,
+    "fogDensity": 0.018,
+    "zones": [
+      {
+        "id": "courtyard",
+        "intensity": 135
+      },
+      {
+        "id": "building",
+        "intensity": 90
+      },
+      {
+        "id": "dock",
+        "intensity": 135
+      }
+    ],
+    "lockedDoor": true,
+    "electric": true,
+    "steam": true,
+    "trader": 0.9999999999999996,
+    "brokenPieces": 6,
+    "audio": "running",
+    "bloom": true
+  },
+  "timings": {
+    "sampleCount": 360,
+    "meanMs": 16.665833333333346,
+    "medianMs": 16.69999999999709,
+    "p95Ms": 16.799999999999272,
+    "p99Ms": 16.80000000000291,
+    "maxMs": 16.80000000000291,
+    "fps": 60.00300015000745,
+    "over20Ms": 0,
+    "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Max, Unspecified Version)"
+  },
+  "screenshots": [
+    "courtyard-player-start.png",
+    "courtyard-wreck.png",
+    "balcony.png",
+    "interior-stairs.png",
+    "tunnel.png",
+    "dock.png",
+    "fog-0.png",
+    "fog-1.png",
+    "fog-2.png",
+    "fog-3.png",
+    "locked-door.png",
+    "active-gate.png",
+    "hazard-electric.png",
+    "hazard-steam.png",
+    "broken-wall.png",
+    "open-trader.png",
+    "light-zones-off.png"
+  ],
+  "messages": []
+}

@@ -1,0 +1,12 @@
+CHECK           STATUS  DETAIL
+node            PASS    Node 26.7.0
+version-pin     PASS    Project and running CLI use 0.15.0
+install-source  PASS    Published package dependency 0.15.0
+packages        PASS    kite3d 0.15.0, @kite3d/editor 0.15.0, @kite3d/engine 0.15.0
+dev-port        PASS    Live project server: pid 87211, port 4700, age 6s
+backend         PASS    https://blitz.dev/health is reachable
+runtime         PASS    Installed engine runtime b35d69f4c7e6 is registered for 0.15.0
+playwright      PASS    Playwright Chromium is available at /Users/minjunes/Library/Caches/ms-playwright/chromium-1243/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+git             PASS    Git repository: /Users/minjunes/games/terminator
+
+Doctor passed.
