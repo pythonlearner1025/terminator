@@ -25,6 +25,7 @@ const SSE_TYPES = new Set([
   'purchase',
   'config_applied',
 ])
+const AGENT_WRITE_ROUTES = new Set(['/wave_config', '/script', '/simulate', '/dossier', '/taunt', '/ready'])
 const defaultScripts = {
   scout: readFileSync(new URL('../lib/core/brains/default-scout.js', import.meta.url), 'utf8'),
   endo: readFileSync(new URL('../lib/core/brains/default-endo.js', import.meta.url), 'utf8'),
@@ -71,6 +72,10 @@ export function createLobbyServer({dataDir = DEFAULT_DATA_DIR, logger = console,
       const route = match[2] || '/'
       if (route.startsWith('/game/') && request.headers['x-game-token'] !== lobby.gameToken) {
         return sendError(response, 401, 'GAME_AUTH_FAILED', 'valid game token required')
+      }
+      if (AGENT_WRITE_ROUTES.has(route) && request.method !== 'GET') {
+        if (!lobby.agent) return sendError(response, 401, 'AGENT_REQUIRED', 'an agent must join before submitting')
+        if (bearerToken(request) !== lobby.agent.token) return sendError(response, 401, 'AGENT_AUTH_FAILED', 'valid agent token required')
       }
 
       if (request.method === 'POST' && route === '/join') {
@@ -496,6 +501,11 @@ function sendJson(response, status, body) {
 
 function sendError(response, status, code, message) {
   return sendJson(response, status, {ok: false, error: code, message})
+}
+
+function bearerToken(request) {
+  const match = String(request.headers.authorization || '').match(/^Bearer\s+(.+)$/i)
+  return match?.[1] || ''
 }
 
 async function readJson(request) {

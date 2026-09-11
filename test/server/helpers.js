@@ -45,6 +45,10 @@ export function gameHeaders(created) {
   return {'X-Game-Token': created.game_token}
 }
 
+export function agentHeaders(joined) {
+  return {Authorization: `Bearer ${joined.body?.token || joined.token}`}
+}
+
 export const validConfig = {
   spawns: [{t: 0, gate: 'N1', unit: 'scout', count: 1}],
   knobs: {gates: ['N1'], doors: {}, lights: {}, fog: 0, hazards: [], break_flank_wall: false},
