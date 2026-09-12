@@ -71,7 +71,7 @@
       }
     },
     {
-      "name": "Unit Template Scout",
+      "name": "Unit T-600 Scout",
       "translation": [
         47,
         0,
@@ -80,24 +80,19 @@
       "extras": {
         "gltfUUID": "terminator-node-unit-template-scout",
         "kite3dAuthoring": {
-          "role": "generator",
+          "role": "template",
           "id": "terminator-unit-template-scout"
         },
-        "EntityComponentPlugin": {
-          "terminator-component-unit-generator-scout": {
-            "type": "Generator",
-            "state": {
-              "module": "generators/unit-template.generator.js",
-              "params": {
-                "type": "scout"
-              }
-            }
-          }
+        "rootPath": "/kite3d/@unit-scout/scout.gltf",
+        "sProperties": [],
+        "unitTemplateType": "scout",
+        "rootPathOptions": {
+          "createUniqueNames": false
         }
       }
     },
     {
-      "name": "Unit Template Endo",
+      "name": "Unit T-800 Endo",
       "translation": [
         47,
         0,
@@ -106,24 +101,19 @@
       "extras": {
         "gltfUUID": "terminator-node-unit-template-endo",
         "kite3dAuthoring": {
-          "role": "generator",
+          "role": "template",
           "id": "terminator-unit-template-endo"
         },
-        "EntityComponentPlugin": {
-          "terminator-component-unit-generator-endo": {
-            "type": "Generator",
-            "state": {
-              "module": "generators/unit-template.generator.js",
-              "params": {
-                "type": "endo"
-              }
-            }
-          }
+        "rootPath": "/kite3d/@unit-endo/endo.gltf",
+        "sProperties": [],
+        "unitTemplateType": "endo",
+        "rootPathOptions": {
+          "createUniqueNames": false
         }
       }
     },
     {
-      "name": "Unit Template Heavy",
+      "name": "Unit T-800 Heavy",
       "translation": [
         47,
         0,
@@ -132,19 +122,14 @@
       "extras": {
         "gltfUUID": "terminator-node-unit-template-heavy",
         "kite3dAuthoring": {
-          "role": "generator",
+          "role": "template",
           "id": "terminator-unit-template-heavy"
         },
-        "EntityComponentPlugin": {
-          "terminator-component-unit-generator-heavy": {
-            "type": "Generator",
-            "state": {
-              "module": "generators/unit-template.generator.js",
-              "params": {
-                "type": "heavy"
-              }
-            }
-          }
+        "rootPath": "/kite3d/@unit-heavy/heavy.gltf",
+        "sProperties": [],
+        "unitTemplateType": "heavy",
+        "rootPathOptions": {
+          "createUniqueNames": false
         }
       }
     },
@@ -227,7 +212,7 @@
       }
     },
     {
-      "name": "Soldier Template",
+      "name": "Unit Resistance Soldier",
       "translation": [
         47,
         0,
@@ -236,19 +221,14 @@
       "extras": {
         "gltfUUID": "terminator-node-soldier-template",
         "kite3dAuthoring": {
-          "role": "generator",
+          "role": "template",
           "id": "terminator-soldier-template"
         },
-        "EntityComponentPlugin": {
-          "terminator-component-soldier-generator": {
-            "type": "Generator",
-            "state": {
-              "module": "generators/soldier-template.generator.js",
-              "params": {
-                "variant": "olive"
-              }
-            }
-          }
+        "rootPath": "/kite3d/@unit-soldier/soldier.gltf",
+        "sProperties": [],
+        "unitTemplateType": "soldier",
+        "rootPathOptions": {
+          "createUniqueNames": false
         }
       }
     },
@@ -298,7 +278,7 @@
       }
     },
     {
-      "name": "Unit Template T-1000",
+      "name": "Unit T-1000",
       "translation": [
         52,
         0,
@@ -307,24 +287,19 @@
       "extras": {
         "gltfUUID": "terminator-node-unit-template-t1000",
         "kite3dAuthoring": {
-          "role": "generator",
+          "role": "template",
           "id": "terminator-unit-template-t1000"
         },
-        "EntityComponentPlugin": {
-          "terminator-component-unit-generator-t1000": {
-            "type": "Generator",
-            "state": {
-              "module": "generators/unit-template.generator.js",
-              "params": {
-                "type": "t1000"
-              }
-            }
-          }
+        "rootPath": "/kite3d/@unit-t1000/t1000.gltf",
+        "sProperties": [],
+        "unitTemplateType": "t1000",
+        "rootPathOptions": {
+          "createUniqueNames": false
         }
       }
     },
     {
-      "name": "Unit Template HK-Aerial",
+      "name": "Unit HK-Aerial",
       "translation": [
         52,
         2,
@@ -333,24 +308,19 @@
       "extras": {
         "gltfUUID": "terminator-node-unit-template-hkaerial",
         "kite3dAuthoring": {
-          "role": "generator",
+          "role": "template",
           "id": "terminator-unit-template-hkaerial"
         },
-        "EntityComponentPlugin": {
-          "terminator-component-unit-generator-hkaerial": {
-            "type": "Generator",
-            "state": {
-              "module": "generators/unit-template.generator.js",
-              "params": {
-                "type": "hkaerial"
-              }
-            }
-          }
+        "rootPath": "/kite3d/@unit-hkaerial/hkaerial.gltf",
+        "sProperties": [],
+        "unitTemplateType": "hkaerial",
+        "rootPathOptions": {
+          "createUniqueNames": false
         }
       }
     },
     {
-      "name": "Unit Template HK-Tank",
+      "name": "Unit HK-Tank",
       "translation": [
         52,
         0,
@@ -359,19 +329,14 @@
       "extras": {
         "gltfUUID": "terminator-node-unit-template-hktank",
         "kite3dAuthoring": {
-          "role": "generator",
+          "role": "template",
           "id": "terminator-unit-template-hktank"
         },
-        "EntityComponentPlugin": {
-          "terminator-component-unit-generator-hktank": {
-            "type": "Generator",
-            "state": {
-              "module": "generators/unit-template.generator.js",
-              "params": {
-                "type": "hktank"
-              }
-            }
-          }
+        "rootPath": "/kite3d/@unit-hktank/hktank.gltf",
+        "sProperties": [],
+        "unitTemplateType": "hktank",
+        "rootPathOptions": {
+          "createUniqueNames": false
         }
       }
     },

@@ -20,6 +20,7 @@
     "tunnel": "node server/party-tunnel.js",
     "dev:all": "concurrently -k -n game,server \"npm run dev\" \"npm run server\"",
     "test": "find test -type f -name '*.test.js' -exec node --test {} +",
+    "build:assets": "python3 generators/unit-textures.py && python3 generators/roster-textures.py && node tools/build-unit-assets.mjs",
     "scene": "node tools/build-scene.mjs",
     "benchmark": "node tools/benchmark-world.mjs",
     "benchmark:view": "node tools/benchmark-browser.mjs",
@@ -29,6 +30,7 @@
     "proof:core": "node tools/prove-core-roster.mjs"
   },
   "devDependencies": {
+    "@gltf-transform/core": "^4.2.1",
     "concurrently": "^9.2.1",
     "kite3d": "0.18.0"
   },
@@ -52,9 +54,7 @@
     "scripts": [
       "./scripts/GameManager.script.js",
       "./generators/map.generator.js",
-      "./generators/range.generator.js",
-      "./generators/unit-template.generator.js",
-      "./generators/soldier-template.generator.js"
+      "./generators/range.generator.js"
     ],
     "viewer": {
       "msaa": 2,

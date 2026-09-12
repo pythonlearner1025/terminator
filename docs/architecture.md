@@ -3,8 +3,8 @@
 ## Folder layout
 
 ```text
-assets/       Saved Kite3D scene files
-generators/   Deterministic stopped-mode previews and unit templates
+assets/       Saved Kite3D scenes, placed unit models, and shared textures
+generators/   Deterministic source geometry used only by authoring build tools
 lib/core/     Headless simulation, data, default brains, waves, and HUD projection
 lib/view/     Kite3D and threepipe adapters
 lib/ui/       HTML and CSS HUD
@@ -30,6 +30,28 @@ World, the wave director, the views, input, and HUD. `start()` first calls `stop
 all runtime resources and restores the saved camera.
 
 The saved scene is only changed by `npm run scene`, which runs `tools/build-scene.mjs`.
+
+## Placed unit assets
+
+`npm run build:assets` generates textures, then runs `tools/build-unit-assets.mjs`. The builder uses
+the deterministic source geometry with Three.js materials. It exports each unit through
+`GLTFExporter`, reads the result through glTF Transform, and writes text glTF plus an external buffer.
+
+Each unit lives under `assets/models/units/<type>/` as `<type>.gltf` and `<type>.bin`. Enemy files
+contain named high and far figures. The soldier file contains its named high figure. Textures remain
+under `assets/textures/units/` and `assets/textures/roster/`; the glTF files reference those shared
+files instead of copying image bytes.
+
+`assets.json` assigns each asset an id such as `unit-endo` and maps every virtual glTF resource to a
+project file. Scene wrappers use `extras.rootPath: "/kite3d/@unit-endo/endo.gltf"`, an empty
+`sProperties` list, and `rootPathOptions.createUniqueNames: false`. The format follows
+`@kite3d/engine/src/runtime/nestedAssets.ts` and `@kite3d/engine/src/runtime/projectFormat.ts`.
+
+The runtime nested-asset loader caches each import and attaches its children to the named scene
+wrapper. `UnitView` clones the placed high figure and shares its far geometry for distance LOD.
+Skeleton clones rebind to cloned bones by stable names before animation, gore, and ragdoll binding.
+The menu clones the same placed Endo. `PlayersView` clones the placed Resistance Soldier.
+Runtime code never calls a unit generator.
 
 ## World step contract
 
@@ -115,7 +137,7 @@ set when it declares `navBlock` or `blocksSight`.
 Unit types declare pose-specific `hitVolumes` in `units.json`. The core selects idle, aim, or Scout
 melee volumes from deterministic intent. Named head volumes cause headshots. Other volumes cover the
 visible torso and limbs without treating the complete character bounds as solid.
-T-1000 reuses Endo volumes. HK-Aerial and HK-Tank use measured placeholder hull and weak-part volumes.
+T-1000 reuses Endo volumes. HK-Aerial and HK-Tank use measured asset hull and weak-part volumes.
 
 `NavGrid` samples every declared surface at each horizontal grid cell. Each sample is a separate node,
 so ground, upper-floor, balcony, dock, and connector nodes can share an x/z cell. Cardinal and same-cell
@@ -277,12 +299,10 @@ The HUD may format or animate these fields. It must not change the World.
 1. Add its body numbers and cost to `lib/core/data/units.json`.
 2. Add a default brain under `lib/core/brains/` and register it in `lib/core/world.js`.
 3. Extend validation or body attack handling only when the new body needs a real new rule.
-4. Add a template node in `tools/build-scene.mjs`.
-5. Extend `generators/unit-template.generator.js` and the template lookup in `lib/view/units.js`.
-6. Add combat, validation, determinism, and view-model tests.
-
-Phase-one unit visuals live in `generators/unit-placeholders.js`. They keep a hidden articulated rig
-for existing effects. HK-Aerial and HK-Tank use simple hulls. Phase two replaces these shapes.
+4. Add a unit asset specification to `tools/build-unit-assets.mjs`.
+5. Add its placed asset wrapper in `tools/build-scene.mjs` and `lib/view/units.js`.
+6. Register its glTF, buffer, and texture mappings in `assets.json` through the asset build.
+7. Add combat, validation, determinism, asset round-trip, and view-model tests.
 
 ## Add a weapon
 

@@ -30,20 +30,20 @@ const specs = [
     authoring: {role: 'generator', id: 'terminator-range'},
     components: {'terminator-component-range': {type: 'Generator', state: {module: 'generators/range.generator.js', params: {}}}},
   },
-  unitTemplate('Scout', 'scout', [47, 0, -5]),
-  unitTemplate('Endo', 'endo', [47, 0, 0]),
-  unitTemplate('Heavy', 'heavy', [47, 0, 5]),
-  unitTemplate('T-1000', 't1000', [52, 0, -5]),
-  unitTemplate('HK-Aerial', 'hkaerial', [52, 2, 0]),
-  unitTemplate('HK-Tank', 'hktank', [52, 0, 7]),
+  unitAsset('T-600 Scout', 'scout', [47, 0, -5]),
+  unitAsset('T-800 Endo', 'endo', [47, 0, 0]),
+  unitAsset('T-800 Heavy', 'heavy', [47, 0, 5]),
+  unitAsset('T-1000', 't1000', [52, 0, -5]),
+  unitAsset('HK-Aerial', 'hkaerial', [52, 2, 0]),
+  unitAsset('HK-Tank', 'hktank', [52, 0, 7]),
   {
-    name: 'Soldier Template',
+    name: 'Unit Resistance Soldier',
+    previousName: 'Soldier Template',
     uuid: 'terminator-node-soldier-template',
     translation: [47, 0, 9],
-    authoring: {role: 'generator', id: 'terminator-soldier-template'},
-    components: {
-      'terminator-component-soldier-generator': {type: 'Generator', state: {module: 'generators/soldier-template.generator.js', params: {variant: 'olive'}}},
-    },
+    authoring: {role: 'template', id: 'terminator-soldier-template'},
+    asset: {id: 'unit-soldier', file: 'soldier.gltf', type: 'soldier'},
+    removeComponents: ['terminator-component-soldier-generator'],
   },
   ...[
     ['Service Loop', 'service-loop', [-35, -3.5, 0]],
@@ -110,12 +110,13 @@ scene.nodes ??= []
 const childIndices = new Set(document.nodes.flatMap((node) => node.children || []))
 
 for (const spec of specs) {
-  let index = document.nodes.findIndex((node) => node.name === spec.name)
+  let index = document.nodes.findIndex((node) => node.name === spec.name || node.name === spec.previousName)
   if (index < 0) {
     document.nodes.push({name: spec.name})
     index = document.nodes.length - 1
   }
   const node = document.nodes[index]
+  node.name = spec.name
   if (spec.translation) node.translation = spec.translation
   if (spec.rotation) node.rotation = spec.rotation
   if (spec.camera !== undefined) node.camera = spec.camera
@@ -123,6 +124,12 @@ for (const spec of specs) {
   const extras = {...(node.extras || {})}
   extras.gltfUUID ||= spec.uuid
   extras.kite3dAuthoring = {...(extras.kite3dAuthoring || {}), ...spec.authoring}
+  if (spec.asset) {
+    extras.rootPath = `/kite3d/@${spec.asset.id}/${spec.asset.file}`
+    extras.rootPathOptions = {...(extras.rootPathOptions || {}), createUniqueNames: false}
+    extras.sProperties = Array.isArray(extras.sProperties) ? extras.sProperties : []
+    extras.unitTemplateType = spec.asset.type
+  }
   if (spec.components) {
     const components = {...(extras.EntityComponentPlugin || {})}
     for (const [id, component] of Object.entries(spec.components)) {
@@ -131,6 +138,10 @@ for (const spec of specs) {
     }
     extras.EntityComponentPlugin = components
   }
+  if (spec.removeComponents && extras.EntityComponentPlugin) {
+    for (const id of spec.removeComponents) delete extras.EntityComponentPlugin[id]
+    if (!Object.keys(extras.EntityComponentPlugin).length) delete extras.EntityComponentPlugin
+  }
   node.extras = extras
   if (!scene.nodes.includes(index) && !childIndices.has(index)) scene.nodes.push(index)
 }
@@ -138,15 +149,15 @@ for (const spec of specs) {
 await writeFile(scenePath, `${JSON.stringify(document, null, 2)}\n`)
 console.log(`Wrote ${specs.length} authored nodes to ${scenePath.pathname}`)
 
-function unitTemplate(label, type, translation) {
+function unitAsset(label, type, translation) {
   return {
-    name: `Unit Template ${label}`,
+    name: `Unit ${label}`,
+    previousName: `Unit Template ${label.replace(/^T-\d+ /, '')}`,
     uuid: `terminator-node-unit-template-${type}`,
     translation,
-    authoring: {role: 'generator', id: `terminator-unit-template-${type}`},
-    components: {
-      [`terminator-component-unit-generator-${type}`]: {type: 'Generator', state: {module: 'generators/unit-template.generator.js', params: {type}}},
-    },
+    authoring: {role: 'template', id: `terminator-unit-template-${type}`},
+    asset: {id: `unit-${type}`, file: `${type}.gltf`, type},
+    removeComponents: [`terminator-component-unit-generator-${type}`],
   }
 }
 

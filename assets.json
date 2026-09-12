@@ -1,4 +1,97 @@
 {
   "version": 1,
-  "files": {}
+  "files": {
+    "unit-scout": {
+      "path": "assets/models/units/scout/scout.gltf",
+      "files": {
+        "scout.gltf": "assets/models/units/scout/scout.gltf",
+        "scout.bin": "assets/models/units/scout/scout.bin",
+        "textures/units/endoskeleton-albedo.jpg": "assets/textures/units/endoskeleton-albedo.jpg",
+        "textures/units/endoskeleton-orm.png": "assets/textures/units/endoskeleton-orm.png",
+        "textures/units/endoskeleton-normal.png": "assets/textures/units/endoskeleton-normal.png",
+        "textures/units/optic-albedo.png": "assets/textures/units/optic-albedo.png",
+        "textures/units/optic-orm.png": "assets/textures/units/optic-orm.png",
+        "textures/units/optic-normal.png": "assets/textures/units/optic-normal.png",
+        "textures/units/optic-emissive.png": "assets/textures/units/optic-emissive.png"
+      }
+    },
+    "unit-endo": {
+      "path": "assets/models/units/endo/endo.gltf",
+      "files": {
+        "endo.gltf": "assets/models/units/endo/endo.gltf",
+        "endo.bin": "assets/models/units/endo/endo.bin",
+        "textures/units/endoskeleton-albedo.jpg": "assets/textures/units/endoskeleton-albedo.jpg",
+        "textures/units/endoskeleton-orm.png": "assets/textures/units/endoskeleton-orm.png",
+        "textures/units/endoskeleton-normal.png": "assets/textures/units/endoskeleton-normal.png",
+        "textures/units/optic-albedo.png": "assets/textures/units/optic-albedo.png",
+        "textures/units/optic-orm.png": "assets/textures/units/optic-orm.png",
+        "textures/units/optic-normal.png": "assets/textures/units/optic-normal.png",
+        "textures/units/optic-emissive.png": "assets/textures/units/optic-emissive.png"
+      }
+    },
+    "unit-heavy": {
+      "path": "assets/models/units/heavy/heavy.gltf",
+      "files": {
+        "heavy.gltf": "assets/models/units/heavy/heavy.gltf",
+        "heavy.bin": "assets/models/units/heavy/heavy.bin",
+        "textures/units/endoskeleton-albedo.jpg": "assets/textures/units/endoskeleton-albedo.jpg",
+        "textures/units/endoskeleton-orm.png": "assets/textures/units/endoskeleton-orm.png",
+        "textures/units/endoskeleton-normal.png": "assets/textures/units/endoskeleton-normal.png",
+        "textures/units/optic-albedo.png": "assets/textures/units/optic-albedo.png",
+        "textures/units/optic-orm.png": "assets/textures/units/optic-orm.png",
+        "textures/units/optic-normal.png": "assets/textures/units/optic-normal.png",
+        "textures/units/optic-emissive.png": "assets/textures/units/optic-emissive.png"
+      }
+    },
+    "unit-t1000": {
+      "path": "assets/models/units/t1000/t1000.gltf",
+      "files": {
+        "t1000.gltf": "assets/models/units/t1000/t1000.gltf",
+        "t1000.bin": "assets/models/units/t1000/t1000.bin",
+        "textures/roster/liquid-albedo.jpg": "assets/textures/roster/liquid-albedo.jpg",
+        "textures/roster/liquid-orm.png": "assets/textures/roster/liquid-orm.png",
+        "textures/roster/liquid-normal.png": "assets/textures/roster/liquid-normal.png"
+      }
+    },
+    "unit-hkaerial": {
+      "path": "assets/models/units/hkaerial/hkaerial.gltf",
+      "files": {
+        "hkaerial.gltf": "assets/models/units/hkaerial/hkaerial.gltf",
+        "hkaerial.bin": "assets/models/units/hkaerial/hkaerial.bin",
+        "textures/roster/hk-albedo.jpg": "assets/textures/roster/hk-albedo.jpg",
+        "textures/roster/hk-orm.png": "assets/textures/roster/hk-orm.png",
+        "textures/roster/hk-normal.png": "assets/textures/roster/hk-normal.png",
+        "textures/units/optic-albedo.png": "assets/textures/units/optic-albedo.png",
+        "textures/units/optic-orm.png": "assets/textures/units/optic-orm.png",
+        "textures/units/optic-normal.png": "assets/textures/units/optic-normal.png",
+        "textures/units/optic-emissive.png": "assets/textures/units/optic-emissive.png"
+      }
+    },
+    "unit-hktank": {
+      "path": "assets/models/units/hktank/hktank.gltf",
+      "files": {
+        "hktank.gltf": "assets/models/units/hktank/hktank.gltf",
+        "hktank.bin": "assets/models/units/hktank/hktank.bin",
+        "textures/roster/hk-albedo.jpg": "assets/textures/roster/hk-albedo.jpg",
+        "textures/roster/hk-orm.png": "assets/textures/roster/hk-orm.png",
+        "textures/roster/hk-normal.png": "assets/textures/roster/hk-normal.png",
+        "textures/units/optic-albedo.png": "assets/textures/units/optic-albedo.png",
+        "textures/units/optic-orm.png": "assets/textures/units/optic-orm.png",
+        "textures/units/optic-normal.png": "assets/textures/units/optic-normal.png",
+        "textures/units/optic-emissive.png": "assets/textures/units/optic-emissive.png"
+      }
+    },
+    "unit-soldier": {
+      "path": "assets/models/units/soldier/soldier.gltf",
+      "files": {
+        "soldier.gltf": "assets/models/units/soldier/soldier.gltf",
+        "soldier.bin": "assets/models/units/soldier/soldier.bin",
+        "textures/units/endoskeleton-orm.png": "assets/textures/units/endoskeleton-orm.png",
+        "textures/units/optic-albedo.png": "assets/textures/units/optic-albedo.png",
+        "textures/units/optic-orm.png": "assets/textures/units/optic-orm.png",
+        "textures/units/optic-normal.png": "assets/textures/units/optic-normal.png",
+        "textures/units/optic-emissive.png": "assets/textures/units/optic-emissive.png"
+      }
+    }
+  }
 }

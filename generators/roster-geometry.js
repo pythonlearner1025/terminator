@@ -1,8 +1,8 @@
 import {rosterMaterials} from './roster-materials.js'
 
 // All opaque parts share one rigid skin. UV quadrants select the shared finish atlas.
-function builder(E,type,detail) {
-  const root=new E.Group(),bones=[],parts=[],glows=[],m=rosterMaterials(E)
+function builder(E,type,detail,materials) {
+  const root=new E.Group(),bones=[],parts=[],glows=[],m=materials||rosterMaterials(E)
   root.name=type==='t1000'?'T-1000 liquid infiltrator':type==='hkaerial'?'HK-Aerial gunship':'HK-Tank siege chassis'
   root.userData.unitTemplateType=type
   const joint=(name,parent,p=[0,0,0])=>{const b=new E.Bone();b.name=name;b.position.set(...p);b.userData.unitJoint=true;(parent||root).add(b);bones.push(b);return b}
@@ -63,8 +63,8 @@ function bevelBox(E,detail){
   g.translate(0,0,-.44);g.scale(1/1.03,1/1.03,1);return g
 }
 
-export function createRosterFigure(E,type,{detail=1}={}) {
-  const b=builder(E,type,detail)
+export function createRosterFigure(E,type,{detail=1,materials}={}) {
+  const b=builder(E,type,detail,materials)
   if(type==='t1000')human(b)
   else vehicle(b,type)
   return b.finish()

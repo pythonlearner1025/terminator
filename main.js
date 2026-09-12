@@ -13,7 +13,7 @@ export async function main({viewer}) {
   publishGameTelemetry({state: 'ready', game: 'Terminator: human vs Skynet', coreTickRate: 60})
   registerGameValidation(() => {
     const manager = game.manager
-    const requiredNodes = ['Game Manager', 'Map', 'Unit Template Scout', 'Unit Template Endo', 'Unit Template Heavy', 'Player Start']
+    const requiredNodes = ['Game Manager', 'Map', 'Unit T-600 Scout', 'Unit T-800 Endo', 'Unit T-800 Heavy', 'Player Start']
     const nodesPresent = requiredNodes.every((name) => viewer.scene.modelRoot.getObjectByName(name)
       || viewer.scene.modelRoot.getObjectByName(name.replaceAll(' ', '_')))
     const systemsReady = Boolean(manager?.world && manager?.hud && manager?.mapView && manager?.unitView && manager?.playerView)

@@ -16,8 +16,7 @@ export function createUnitPreview(E, type = 'endo') {
 
 // Rigid skinning combines every metal component into one draw call per unit.
 // Bone names are the animation contract. All dimensions are in metres, facing +Z.
-export function createUnitFigure(E, type = 'endo', {detail = 1} = {}) {
-  const materials = unitMaterials(E)
+export function createUnitFigure(E, type = 'endo', {detail = 1, materials = unitMaterials(E)} = {}) {
   const root = new E.Group()
   root.name = `${type} Endoskeleton`
   root.userData.unitTemplateType = type

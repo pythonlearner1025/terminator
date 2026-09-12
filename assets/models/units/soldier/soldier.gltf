@@ -1,0 +1,1077 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "Terminator build-unit-assets.mjs using Three.js and glTF Transform"
+  },
+  "scenes": [
+    {
+      "name": "AuxScene",
+      "nodes": [
+        22
+      ]
+    }
+  ],
+  "scene": 0,
+  "nodes": [
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0.3,
+        0,
+        0,
+        0.088,
+        0.137,
+        1
+      ],
+      "name": "Headlamp Lens",
+      "mesh": 0
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        1
+      ],
+      "name": "Headlamp Target"
+    },
+    {
+      "matrix": [
+        -0.9999999999999998,
+        0,
+        0,
+        0,
+        0,
+        0.9976171142715058,
+        0.06899342948856385,
+        0,
+        0,
+        0.06899342948856385,
+        -0.9976171142715056,
+        0,
+        0,
+        0.088,
+        0.137,
+        1
+      ],
+      "name": "Headlamp",
+      "children": [
+        1
+      ],
+      "extensions": {
+        "KHR_lights_punctual": {
+          "light": 0
+        }
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.105,
+        0,
+        1
+      ],
+      "name": "Head",
+      "extras": {
+        "soldierJoint": true
+      },
+      "children": [
+        0,
+        2
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.27,
+        0,
+        1
+      ],
+      "name": "Neck",
+      "extras": {
+        "soldierJoint": true
+      },
+      "children": [
+        3
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.26,
+        0,
+        1
+      ],
+      "name": "Hand Left",
+      "extras": {
+        "soldierJoint": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.285,
+        0,
+        1
+      ],
+      "name": "Forearm Left",
+      "extras": {
+        "soldierJoint": true
+      },
+      "children": [
+        5
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0.244,
+        0.19,
+        0,
+        1
+      ],
+      "name": "Upper Arm Left",
+      "extras": {
+        "soldierJoint": true
+      },
+      "children": [
+        6
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.26,
+        0,
+        1
+      ],
+      "name": "Hand Right",
+      "extras": {
+        "soldierJoint": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.285,
+        0,
+        1
+      ],
+      "name": "Forearm Right",
+      "extras": {
+        "soldierJoint": true
+      },
+      "children": [
+        8
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.244,
+        0.19,
+        0,
+        1
+      ],
+      "name": "Upper Arm Right",
+      "extras": {
+        "soldierJoint": true
+      },
+      "children": [
+        9
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.2,
+        0,
+        1
+      ],
+      "name": "Chest",
+      "extras": {
+        "soldierJoint": true
+      },
+      "children": [
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.09,
+        0,
+        1
+      ],
+      "name": "Spine",
+      "extras": {
+        "soldierJoint": true
+      },
+      "children": [
+        11
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.395,
+        0,
+        1
+      ],
+      "name": "Foot Left",
+      "extras": {
+        "soldierJoint": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.42,
+        0,
+        1
+      ],
+      "name": "Shin Left",
+      "extras": {
+        "soldierJoint": true
+      },
+      "children": [
+        13
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0.116,
+        -0.045,
+        0,
+        1
+      ],
+      "name": "Thigh Left",
+      "extras": {
+        "soldierJoint": true
+      },
+      "children": [
+        14
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.395,
+        0,
+        1
+      ],
+      "name": "Foot Right",
+      "extras": {
+        "soldierJoint": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.42,
+        0,
+        1
+      ],
+      "name": "Shin Right",
+      "extras": {
+        "soldierJoint": true
+      },
+      "children": [
+        16
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.116,
+        -0.045,
+        0,
+        1
+      ],
+      "name": "Thigh Right",
+      "extras": {
+        "soldierJoint": true
+      },
+      "children": [
+        17
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.96,
+        0,
+        1
+      ],
+      "name": "Pelvis",
+      "extras": {
+        "soldierJoint": true
+      },
+      "children": [
+        12,
+        15,
+        18
+      ]
+    },
+    {
+      "name": "Soldier fatigues and equipment",
+      "mesh": 1,
+      "skin": 0
+    },
+    {
+      "name": "Resistance Soldier High",
+      "extras": {
+        "soldierTemplate": true,
+        "soldierAnatomy": {
+          "parts": 172,
+          "triangles": 15492,
+          "joints": [
+            "Pelvis",
+            "Spine",
+            "Chest",
+            "Neck",
+            "Head",
+            "Upper Arm Left",
+            "Forearm Left",
+            "Hand Left",
+            "Thigh Left",
+            "Shin Left",
+            "Foot Left",
+            "Upper Arm Right",
+            "Forearm Right",
+            "Hand Right",
+            "Thigh Right",
+            "Shin Right",
+            "Foot Right"
+          ]
+        },
+        "unitTemplateType": "soldier",
+        "unitAssetDetail": "high"
+      },
+      "children": [
+        19,
+        20
+      ]
+    },
+    {
+      "name": "Resistance Soldier Asset",
+      "extras": {
+        "unitAsset": true,
+        "unitTemplateType": "soldier"
+      },
+      "children": [
+        21
+      ]
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 924,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 924,
+      "byteLength": 924,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1848,
+      "byteLength": 616,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2464,
+      "byteLength": 600,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3064,
+      "byteLength": 557712,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 560776,
+      "byteLength": 557712,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1118488,
+      "byteLength": 371808,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1490296,
+      "byteLength": 557712,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2048008,
+      "byteLength": 557712,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2605720,
+      "byteLength": 743616,
+      "target": 34962,
+      "byteStride": 16
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3349336,
+      "byteLength": 371808,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3721144,
+      "byteLength": 1088
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 3722232,
+      "uri": "soldier.bin"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 77,
+      "max": [
+        0.014000000432133675,
+        0.014000000432133675,
+        0.013314791023731232
+      ],
+      "min": [
+        -0.014000000432133675,
+        -0.014000000432133675,
+        -0.013314791023731232
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 77,
+      "max": [
+        1,
+        1,
+        0.9510565400123596
+      ],
+      "min": [
+        -1,
+        -1,
+        -0.9510565400123596
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 77,
+      "max": [
+        1.0499999523162842,
+        1
+      ],
+      "min": [
+        -0.05000000074505806,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 300,
+      "max": [
+        76
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 46476,
+      "max": [
+        0.3395000100135803,
+        1.7910000085830688,
+        0.2214999943971634
+      ],
+      "min": [
+        -0.3395000100135803,
+        0.007000000216066837,
+        -0.2540000081062317
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 46476,
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 46476,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5126,
+      "count": 46476,
+      "max": [
+        0.6657187342643738,
+        0.6177207827568054,
+        0.4802984297275543
+      ],
+      "min": [
+        0.007368592079728842,
+        0.00998653657734394,
+        0.00998653657734394
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 8,
+      "componentType": 5126,
+      "count": 46476,
+      "max": [
+        0.8500000238418579,
+        0.9800000190734863,
+        1
+      ],
+      "min": [
+        0.014999999664723873,
+        0.47999998927116394,
+        0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 9,
+      "componentType": 5126,
+      "count": 46476,
+      "max": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "min": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 10,
+      "componentType": 5123,
+      "count": 46476,
+      "max": [
+        16,
+        0,
+        0,
+        0
+      ],
+      "min": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 11,
+      "componentType": 5126,
+      "count": 17,
+      "max": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0.24400000274181366,
+        -0.10000000149011612,
+        0,
+        1
+      ],
+      "min": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.24400000274181366,
+        -1.625,
+        0,
+        1
+      ],
+      "type": "MAT4"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          0.8387990117372213,
+          0.5583403896257968,
+          1
+        ],
+        "metallicFactor": 0.25,
+        "roughnessFactor": 0.24,
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "emissiveFactor": [
+        1,
+        0.6583748172725346,
+        0.3231432091022285
+      ],
+      "name": "Resistance warm headlamp lens",
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 2.4
+        }
+      },
+      "occlusionTexture": {
+        "index": 2
+      },
+      "normalTexture": {
+        "index": 3,
+        "scale": 1
+      },
+      "emissiveTexture": {
+        "index": 4
+      }
+    },
+    {
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0.05,
+        "roughnessFactor": 0.94,
+        "metallicRoughnessTexture": {
+          "index": 0
+        }
+      },
+      "name": "Resistance olive worn fatigues",
+      "occlusionTexture": {
+        "index": 0
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6,
+            "COLOR_0": 7,
+            "_SOLDIERSURFACE": 8,
+            "WEIGHTS_0": 9,
+            "JOINTS_0": 10
+          },
+          "material": 1
+        }
+      ]
+    }
+  ],
+  "extensions": {
+    "KHR_lights_punctual": {
+      "lights": [
+        {
+          "name": "Headlamp",
+          "color": [
+            1,
+            0.7454042095350284,
+            0.4286904966038916
+          ],
+          "intensity": 1.1,
+          "type": "spot",
+          "range": 4,
+          "spot": {
+            "innerConeAngle": 0.16799999999999998,
+            "outerConeAngle": 0.48
+          }
+        }
+      ]
+    }
+  },
+  "skins": [
+    {
+      "inverseBindMatrices": 11,
+      "joints": [
+        19,
+        12,
+        11,
+        4,
+        3,
+        7,
+        6,
+        5,
+        15,
+        14,
+        13,
+        10,
+        9,
+        8,
+        18,
+        17,
+        16
+      ],
+      "skeleton": 19
+    }
+  ],
+  "extensionsUsed": [
+    "KHR_materials_emissive_strength",
+    "KHR_lights_punctual"
+  ],
+  "images": [
+    {
+      "name": "textures/units/endoskeleton-orm.png",
+      "uri": "textures/units/endoskeleton-orm.png"
+    },
+    {
+      "name": "textures/units/optic-albedo.png",
+      "uri": "textures/units/optic-albedo.png"
+    },
+    {
+      "name": "textures/units/optic-orm.png",
+      "uri": "textures/units/optic-orm.png"
+    },
+    {
+      "name": "textures/units/optic-normal.png",
+      "uri": "textures/units/optic-normal.png"
+    },
+    {
+      "name": "textures/units/optic-emissive.png",
+      "uri": "textures/units/optic-emissive.png"
+    }
+  ],
+  "textures": [
+    {
+      "name": "textures/units/endoskeleton-orm.png",
+      "source": 0
+    },
+    {
+      "name": "textures/units/optic-albedo.png",
+      "source": 1
+    },
+    {
+      "name": "textures/units/optic-orm.png",
+      "source": 2
+    },
+    {
+      "name": "textures/units/optic-normal.png",
+      "source": 3
+    },
+    {
+      "name": "textures/units/optic-emissive.png",
+      "source": 4
+    }
+  ]
+}

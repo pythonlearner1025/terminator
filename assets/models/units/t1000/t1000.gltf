@@ -1,0 +1,1820 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "Terminator build-unit-assets.mjs using Three.js and glTF Transform"
+  },
+  "scenes": [
+    {
+      "name": "AuxScene",
+      "nodes": [
+        54
+      ]
+    }
+  ],
+  "scene": 0,
+  "nodes": [
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.055,
+        -0.012,
+        1
+      ],
+      "name": "Jaw",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "name": "Eye Emitters"
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.12,
+        0,
+        1
+      ],
+      "name": "Head",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        0,
+        1
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.29,
+        -0.025,
+        1
+      ],
+      "name": "Neck",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        2
+      ]
+    },
+    {
+      "name": "Palm Left",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "matrix": [
+        0.00001,
+        0,
+        0,
+        0,
+        0,
+        0.00001,
+        0,
+        0,
+        0,
+        0,
+        0.00001,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "Blade Left",
+      "extras": {
+        "unitJoint": true,
+        "rosterBlade": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.32,
+        0,
+        1
+      ],
+      "name": "Hand Left",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        4,
+        5
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.31,
+        0,
+        1
+      ],
+      "name": "Forearm Left",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        6
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.034,
+        0,
+        1
+      ],
+      "name": "Upper Arm Left",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        7
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.32,
+        0.19,
+        0,
+        1
+      ],
+      "name": "Shoulder Left",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        8
+      ]
+    },
+    {
+      "name": "Palm Right",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "matrix": [
+        0.00001,
+        0,
+        0,
+        0,
+        0,
+        0.00001,
+        0,
+        0,
+        0,
+        0,
+        0.00001,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "Blade Right",
+      "extras": {
+        "unitJoint": true,
+        "rosterBlade": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.32,
+        0,
+        1
+      ],
+      "name": "Hand Right",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        10,
+        11
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.31,
+        0,
+        1
+      ],
+      "name": "Forearm Right",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        12
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.034,
+        0,
+        1
+      ],
+      "name": "Upper Arm Right",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        13
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0.32,
+        0.19,
+        0,
+        1
+      ],
+      "name": "Shoulder Right",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        14
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.28,
+        0,
+        1
+      ],
+      "name": "Chest",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        3,
+        9,
+        15
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.12,
+        0,
+        1
+      ],
+      "name": "Spine",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        16
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.37,
+        0,
+        1
+      ],
+      "name": "Foot Left",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.42,
+        0,
+        1
+      ],
+      "name": "Shin Left",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        18
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.14,
+        -0.07,
+        0,
+        1
+      ],
+      "name": "Thigh Left",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        19
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.37,
+        0,
+        1
+      ],
+      "name": "Foot Right",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.42,
+        0,
+        1
+      ],
+      "name": "Shin Right",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        21
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0.14,
+        -0.07,
+        0,
+        1
+      ],
+      "name": "Thigh Right",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        22
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.94,
+        0,
+        1
+      ],
+      "name": "Pelvis",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        17,
+        20,
+        23
+      ]
+    },
+    {
+      "name": "Combined articulated steel",
+      "mesh": 0,
+      "skin": 0
+    },
+    {
+      "name": "T-1000 High",
+      "extras": {
+        "unitTemplateType": "t1000",
+        "rosterBody": "liquid",
+        "unitAnatomy": {
+          "triangles": 29828,
+          "parts": 52,
+          "joints": [
+            "Pelvis",
+            "Spine",
+            "Chest",
+            "Neck",
+            "Head",
+            "Jaw",
+            "Shoulder Left",
+            "Upper Arm Left",
+            "Forearm Left",
+            "Hand Left",
+            "Palm Left",
+            "Blade Left",
+            "Thigh Left",
+            "Shin Left",
+            "Foot Left",
+            "Shoulder Right",
+            "Upper Arm Right",
+            "Forearm Right",
+            "Hand Right",
+            "Palm Right",
+            "Blade Right",
+            "Thigh Right",
+            "Shin Right",
+            "Foot Right"
+          ]
+        },
+        "roster": true,
+        "unitAssetDetail": "high"
+      },
+      "children": [
+        24,
+        25
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.055,
+        -0.012,
+        1
+      ],
+      "name": "Jaw",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "name": "Eye Emitters"
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.12,
+        0,
+        1
+      ],
+      "name": "Head",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        27,
+        28
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.29,
+        -0.025,
+        1
+      ],
+      "name": "Neck",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        29
+      ]
+    },
+    {
+      "name": "Palm Left",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "matrix": [
+        0.00001,
+        0,
+        0,
+        0,
+        0,
+        0.00001,
+        0,
+        0,
+        0,
+        0,
+        0.00001,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "Blade Left",
+      "extras": {
+        "unitJoint": true,
+        "rosterBlade": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.32,
+        0,
+        1
+      ],
+      "name": "Hand Left",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        31,
+        32
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.31,
+        0,
+        1
+      ],
+      "name": "Forearm Left",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        33
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.034,
+        0,
+        1
+      ],
+      "name": "Upper Arm Left",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        34
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.32,
+        0.19,
+        0,
+        1
+      ],
+      "name": "Shoulder Left",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        35
+      ]
+    },
+    {
+      "name": "Palm Right",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "matrix": [
+        0.00001,
+        0,
+        0,
+        0,
+        0,
+        0.00001,
+        0,
+        0,
+        0,
+        0,
+        0.00001,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "Blade Right",
+      "extras": {
+        "unitJoint": true,
+        "rosterBlade": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.32,
+        0,
+        1
+      ],
+      "name": "Hand Right",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        37,
+        38
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.31,
+        0,
+        1
+      ],
+      "name": "Forearm Right",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        39
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.034,
+        0,
+        1
+      ],
+      "name": "Upper Arm Right",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        40
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0.32,
+        0.19,
+        0,
+        1
+      ],
+      "name": "Shoulder Right",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        41
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.28,
+        0,
+        1
+      ],
+      "name": "Chest",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        30,
+        36,
+        42
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.12,
+        0,
+        1
+      ],
+      "name": "Spine",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        43
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.37,
+        0,
+        1
+      ],
+      "name": "Foot Left",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.42,
+        0,
+        1
+      ],
+      "name": "Shin Left",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        45
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.14,
+        -0.07,
+        0,
+        1
+      ],
+      "name": "Thigh Left",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        46
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.37,
+        0,
+        1
+      ],
+      "name": "Foot Right",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.42,
+        0,
+        1
+      ],
+      "name": "Shin Right",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        48
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0.14,
+        -0.07,
+        0,
+        1
+      ],
+      "name": "Thigh Right",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        49
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.94,
+        0,
+        1
+      ],
+      "name": "Pelvis",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        44,
+        47,
+        50
+      ]
+    },
+    {
+      "name": "Combined articulated steel",
+      "mesh": 1,
+      "skin": 1
+    },
+    {
+      "name": "T-1000 Far",
+      "extras": {
+        "unitTemplateType": "t1000",
+        "rosterBody": "liquid",
+        "unitAnatomy": {
+          "triangles": 12052,
+          "parts": 52,
+          "joints": [
+            "Pelvis",
+            "Spine",
+            "Chest",
+            "Neck",
+            "Head",
+            "Jaw",
+            "Shoulder Left",
+            "Upper Arm Left",
+            "Forearm Left",
+            "Hand Left",
+            "Palm Left",
+            "Blade Left",
+            "Thigh Left",
+            "Shin Left",
+            "Foot Left",
+            "Shoulder Right",
+            "Upper Arm Right",
+            "Forearm Right",
+            "Hand Right",
+            "Palm Right",
+            "Blade Right",
+            "Thigh Right",
+            "Shin Right",
+            "Foot Right"
+          ]
+        },
+        "roster": true,
+        "unitAssetDetail": "far"
+      },
+      "children": [
+        51,
+        52
+      ],
+      "extensions": {
+        "WEBGI_object3d_extras": {
+          "visible": false
+        }
+      }
+    },
+    {
+      "name": "T-1000 Asset",
+      "extras": {
+        "unitAsset": true,
+        "unitTemplateType": "t1000"
+      },
+      "children": [
+        26,
+        53
+      ]
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 1073808,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1073808,
+      "byteLength": 1073808,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2147616,
+      "byteLength": 715872,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2863488,
+      "byteLength": 1431744,
+      "target": 34962,
+      "byteStride": 16
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4295232,
+      "byteLength": 715872,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5011104,
+      "byteLength": 433872,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5444976,
+      "byteLength": 433872,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5878848,
+      "byteLength": 289248,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 6168096,
+      "byteLength": 578496,
+      "target": 34962,
+      "byteStride": 16
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 6746592,
+      "byteLength": 289248,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 7035840,
+      "byteLength": 1536
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 7037376,
+      "byteLength": 1536
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 7038912,
+      "uri": "t1000.bin"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 89484,
+      "max": [
+        0.42500001192092896,
+        1.9639999866485596,
+        0.21299999952316284
+      ],
+      "min": [
+        -0.42500001192092896,
+        0.0020000000949949026,
+        -0.1600000113248825
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 89484,
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 89484,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 89484,
+      "max": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "min": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 89484,
+      "max": [
+        23,
+        0,
+        0,
+        0
+      ],
+      "min": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 36156,
+      "max": [
+        0.42500001192092896,
+        1.9639999866485596,
+        0.21299999952316284
+      ],
+      "min": [
+        -0.42500001192092896,
+        0.0020000000949949026,
+        -0.1600000113248825
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 36156,
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5126,
+      "count": 36156,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 8,
+      "componentType": 5126,
+      "count": 36156,
+      "max": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "min": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 9,
+      "componentType": 5123,
+      "count": 36156,
+      "max": [
+        23,
+        0,
+        0,
+        0
+      ],
+      "min": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 10,
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0.3199999928474426,
+        -0.07999999821186066,
+        0.03700000047683716,
+        1
+      ],
+      "min": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.3199999928474426,
+        -1.75,
+        0,
+        1
+      ],
+      "type": "MAT4"
+    },
+    {
+      "bufferView": 11,
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0.3199999928474426,
+        -0.07999999821186066,
+        0.03700000047683716,
+        1
+      ],
+      "min": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.3199999928474426,
+        -1.75,
+        0,
+        1
+      ],
+      "type": "MAT4"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "metallicFactor": 1,
+        "roughnessFactor": 1,
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      },
+      "name": "Mimetic polyalloy 1K",
+      "occlusionTexture": {
+        "index": 1
+      },
+      "normalTexture": {
+        "index": 2,
+        "scale": 0.34
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2,
+            "WEIGHTS_0": 3,
+            "JOINTS_0": 4
+          },
+          "material": 0
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 5,
+            "NORMAL": 6,
+            "TEXCOORD_0": 7,
+            "WEIGHTS_0": 8,
+            "JOINTS_0": 9
+          },
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "skins": [
+    {
+      "inverseBindMatrices": 10,
+      "joints": [
+        24,
+        17,
+        16,
+        3,
+        2,
+        0,
+        9,
+        8,
+        7,
+        6,
+        4,
+        5,
+        20,
+        19,
+        18,
+        15,
+        14,
+        13,
+        12,
+        10,
+        11,
+        23,
+        22,
+        21
+      ],
+      "skeleton": 24
+    },
+    {
+      "inverseBindMatrices": 11,
+      "joints": [
+        51,
+        44,
+        43,
+        30,
+        29,
+        27,
+        36,
+        35,
+        34,
+        33,
+        31,
+        32,
+        47,
+        46,
+        45,
+        42,
+        41,
+        40,
+        39,
+        37,
+        38,
+        50,
+        49,
+        48
+      ],
+      "skeleton": 51
+    }
+  ],
+  "images": [
+    {
+      "name": "textures/roster/liquid-albedo.jpg",
+      "uri": "textures/roster/liquid-albedo.jpg"
+    },
+    {
+      "name": "textures/roster/liquid-orm.png",
+      "uri": "textures/roster/liquid-orm.png"
+    },
+    {
+      "name": "textures/roster/liquid-normal.png",
+      "uri": "textures/roster/liquid-normal.png"
+    }
+  ],
+  "textures": [
+    {
+      "name": "textures/roster/liquid-albedo.jpg",
+      "source": 0
+    },
+    {
+      "name": "textures/roster/liquid-orm.png",
+      "source": 1
+    },
+    {
+      "name": "textures/roster/liquid-normal.png",
+      "source": 2
+    }
+  ],
+  "extensionsUsed": [
+    "WEBGI_object3d_extras"
+  ]
+}

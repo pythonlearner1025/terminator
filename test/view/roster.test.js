@@ -5,7 +5,8 @@ import {measureRosterParts,measureColliderFit} from '../../tools/collider-fit.mj
 // Use the collider tool's DOM and texture shims. Geometry and animation remain real.
 const partFit=await measureRosterParts()
 const E=await import('threepipe')
-const {createUnitPlaceholder}=await import('../../generators/unit-placeholders.js')
+const {loadUnitAsset}=await import('../../tools/load-unit-asset.mjs')
+const {clonePlacedUnitFigure}=await import('../../lib/view/unit-assets.js')
 const {rosterMaterials}=await import('../../generators/roster-materials.js')
 const {bindUnitRig,animateUnit,disposeUnitRig}=await import('../../lib/view/units-animation.js')
 const {resetRosterRig,rosterHit}=await import('../../lib/view/roster-animation.js')
@@ -15,9 +16,10 @@ const {goreDecision}=await import('../../lib/view/gore.js')
 const {TEMPLATE_NAMES}=await import('../../lib/view/units.js')
 const {BOSS_MARKUP,renderBoss,waveBannerTitle}=await import('../../lib/ui/boss.js')
 const types=['t1000','hkaerial','hktank']
+const sources=new Map(await Promise.all(types.map(async type=>[type,await loadUnitAsset(type)])))
 const spec=JSON.parse(await readFile(new URL('../../lib/core/data/units.json',import.meta.url),'utf8'))
 function fixture(type){
-  const object=createUnitPlaceholder(E,type),rig=bindUnitRig(object)
+  const object=clonePlacedUnitFigure(sources.get(type),type),rig=bindUnitRig(object)
   const unit={id:'fixture-'+type,type,pos:{x:0,y:0,z:0},vel:{x:0,y:0,z:0},yaw:0,alive:true,hp:300,maxHp:900,intent:{},spawnedAt:0}
   return {object,rig,unitType:type,unit}
 }

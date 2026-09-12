@@ -1,0 +1,4717 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "Terminator build-unit-assets.mjs using Three.js and glTF Transform"
+  },
+  "scenes": [
+    {
+      "name": "AuxScene",
+      "nodes": [
+        86
+      ]
+    }
+  ],
+  "scene": 0,
+  "nodes": [
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.055,
+        -0.012,
+        1
+      ],
+      "name": "Jaw",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0.85,
+        0,
+        0,
+        0,
+        0,
+        0.48,
+        0,
+        -0.069,
+        0.009,
+        0.083,
+        1
+      ],
+      "name": "Eye Left",
+      "mesh": 0
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.069,
+        0.009,
+        0.137,
+        1
+      ],
+      "name": "Eye Bloom",
+      "mesh": 1
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.069,
+        0.009,
+        0.138,
+        1
+      ],
+      "name": "Eye Flare",
+      "mesh": 2
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.069,
+        0.009,
+        0.092,
+        1
+      ],
+      "name": "Tracking Glint",
+      "mesh": 3
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0.85,
+        0,
+        0,
+        0,
+        0,
+        0.48,
+        0,
+        0.069,
+        0.009,
+        0.083,
+        1
+      ],
+      "name": "Eye Right",
+      "mesh": 4
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0.069,
+        0.009,
+        0.137,
+        1
+      ],
+      "name": "Eye Bloom",
+      "mesh": 5
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0.069,
+        0.009,
+        0.138,
+        1
+      ],
+      "name": "Eye Flare",
+      "mesh": 6
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0.069,
+        0.009,
+        0.092,
+        1
+      ],
+      "name": "Tracking Glint",
+      "mesh": 7
+    },
+    {
+      "name": "Eye Emitters",
+      "children": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.12,
+        0,
+        1
+      ],
+      "name": "Head",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        0,
+        9
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.29,
+        -0.025,
+        1
+      ],
+      "name": "Neck",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        10
+      ]
+    },
+    {
+      "matrix": [
+        0.9993302354173859,
+        0.03659286967545317,
+        -0.00020608141003513626,
+        0,
+        -0.03659286967545317,
+        0.9992668257527596,
+        -0.011259344515524045,
+        0,
+        -0.00020608141003513626,
+        0.011259344515524045,
+        0.9999365903353739,
+        0,
+        -0.046,
+        -0.105,
+        0.061,
+        1
+      ],
+      "name": "Elbow Left Rod",
+      "extras": {
+        "unitJoint": true,
+        "actuator": {
+          "target": "Upper Arm Left",
+          "point": [
+            -0.059,
+            -0.06,
+            0.057
+          ],
+          "restLength": 0.18,
+          "shaft": true
+        }
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.32,
+        0,
+        1
+      ],
+      "name": "Hand Left",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.31,
+        0,
+        1
+      ],
+      "name": "Forearm Left",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        12,
+        13
+      ]
+    },
+    {
+      "matrix": [
+        -0.8263572624444131,
+        -0.03659286967545359,
+        -0.5619560807521262,
+        0,
+        0.03659286967545359,
+        -0.9992668257527593,
+        0.011259344515524164,
+        0,
+        -0.5619560807521262,
+        -0.011259344515524164,
+        0.8270904366916538,
+        0,
+        -0.059,
+        -0.06,
+        0.057,
+        1
+      ],
+      "name": "Elbow Left Cylinder",
+      "extras": {
+        "unitJoint": true,
+        "actuator": {
+          "target": "Forearm Left",
+          "point": [
+            -0.046,
+            -0.105,
+            0.061
+          ],
+          "restLength": 0.18,
+          "shaft": false
+        }
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.034,
+        0,
+        1
+      ],
+      "name": "Upper Arm Left",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        14,
+        15
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.37,
+        0.19,
+        0,
+        1
+      ],
+      "name": "Shoulder Left",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        16
+      ]
+    },
+    {
+      "matrix": [
+        0.9993302354173859,
+        -0.03659286967545317,
+        0.00020608141003513626,
+        0,
+        0.03659286967545317,
+        0.9992668257527596,
+        -0.011259344515524045,
+        0,
+        0.00020608141003513626,
+        0.011259344515524045,
+        0.9999365903353739,
+        0,
+        0.046,
+        -0.105,
+        0.061,
+        1
+      ],
+      "name": "Elbow Right Rod",
+      "extras": {
+        "unitJoint": true,
+        "actuator": {
+          "target": "Upper Arm Right",
+          "point": [
+            0.059,
+            -0.06,
+            0.057
+          ],
+          "restLength": 0.18,
+          "shaft": true
+        }
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.32,
+        0,
+        1
+      ],
+      "name": "Hand Right",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0.13,
+        1
+      ],
+      "name": "Barrels",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "name": "Muzzle Heat",
+      "mesh": 8
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0.74,
+        1
+      ],
+      "name": "Muzzle",
+      "extras": {
+        "unitJoint": true,
+        "unitMuzzle": true
+      },
+      "children": [
+        21
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.23,
+        0.12,
+        1
+      ],
+      "name": "Weapon",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        20,
+        22
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.31,
+        0,
+        1
+      ],
+      "name": "Forearm Right",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        18,
+        19,
+        23
+      ]
+    },
+    {
+      "matrix": [
+        -0.8263572624444131,
+        0.03659286967545359,
+        0.5619560807521262,
+        0,
+        -0.03659286967545359,
+        -0.9992668257527593,
+        0.011259344515524164,
+        0,
+        0.5619560807521262,
+        -0.011259344515524164,
+        0.8270904366916538,
+        0,
+        0.059,
+        -0.06,
+        0.057,
+        1
+      ],
+      "name": "Elbow Right Cylinder",
+      "extras": {
+        "unitJoint": true,
+        "actuator": {
+          "target": "Forearm Right",
+          "point": [
+            0.046,
+            -0.105,
+            0.061
+          ],
+          "restLength": 0.18,
+          "shaft": false
+        }
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.034,
+        0,
+        1
+      ],
+      "name": "Upper Arm Right",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        24,
+        25
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0.37,
+        0.19,
+        0,
+        1
+      ],
+      "name": "Shoulder Right",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        26
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.28,
+        0,
+        1
+      ],
+      "name": "Chest",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        11,
+        17,
+        27
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.12,
+        0,
+        1
+      ],
+      "name": "Spine",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        28
+      ]
+    },
+    {
+      "matrix": [
+        0.9996094539687821,
+        0.027945037052808055,
+        -0.00012016800960551494,
+        0,
+        -0.027945037052808055,
+        0.9995724791965958,
+        -0.008598472939325549,
+        0,
+        -0.00012016800960551494,
+        0.008598472939325549,
+        0.9999630252278137,
+        0,
+        -0.046,
+        -0.105,
+        0.061,
+        1
+      ],
+      "name": "Knee Left Rod",
+      "extras": {
+        "unitJoint": true,
+        "actuator": {
+          "target": "Thigh Left",
+          "point": [
+            -0.059,
+            -0.06,
+            0.057
+          ],
+          "restLength": 0.18,
+          "shaft": true
+        }
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.37,
+        0,
+        1
+      ],
+      "name": "Foot Left",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.42,
+        0,
+        1
+      ],
+      "name": "Shin Left",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        30,
+        31
+      ]
+    },
+    {
+      "matrix": [
+        -0.82663648099581,
+        -0.027945037052801464,
+        -0.5620419941525558,
+        0,
+        0.027945037052801464,
+        -0.9995724791965961,
+        0.00859847293932351,
+        0,
+        -0.5620419941525558,
+        -0.00859847293932351,
+        0.8270640017992139,
+        0,
+        -0.059,
+        -0.06,
+        0.057,
+        1
+      ],
+      "name": "Knee Left Cylinder",
+      "extras": {
+        "unitJoint": true,
+        "actuator": {
+          "target": "Shin Left",
+          "point": [
+            -0.046,
+            -0.105,
+            0.061
+          ],
+          "restLength": 0.18,
+          "shaft": false
+        }
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.14,
+        -0.07,
+        0,
+        1
+      ],
+      "name": "Thigh Left",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        32,
+        33
+      ]
+    },
+    {
+      "matrix": [
+        0.9996094539687821,
+        -0.027945037052808055,
+        0.00012016800960551494,
+        0,
+        0.027945037052808055,
+        0.9995724791965958,
+        -0.008598472939325549,
+        0,
+        0.00012016800960551494,
+        0.008598472939325549,
+        0.9999630252278137,
+        0,
+        0.046,
+        -0.105,
+        0.061,
+        1
+      ],
+      "name": "Knee Right Rod",
+      "extras": {
+        "unitJoint": true,
+        "actuator": {
+          "target": "Thigh Right",
+          "point": [
+            0.059,
+            -0.06,
+            0.057
+          ],
+          "restLength": 0.18,
+          "shaft": true
+        }
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.37,
+        0,
+        1
+      ],
+      "name": "Foot Right",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.42,
+        0,
+        1
+      ],
+      "name": "Shin Right",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        35,
+        36
+      ]
+    },
+    {
+      "matrix": [
+        -0.82663648099581,
+        0.027945037052801464,
+        0.5620419941525558,
+        0,
+        -0.027945037052801464,
+        -0.9995724791965961,
+        0.00859847293932351,
+        0,
+        0.5620419941525558,
+        -0.00859847293932351,
+        0.8270640017992139,
+        0,
+        0.059,
+        -0.06,
+        0.057,
+        1
+      ],
+      "name": "Knee Right Cylinder",
+      "extras": {
+        "unitJoint": true,
+        "actuator": {
+          "target": "Shin Right",
+          "point": [
+            0.046,
+            -0.105,
+            0.061
+          ],
+          "restLength": 0.18,
+          "shaft": false
+        }
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0.14,
+        -0.07,
+        0,
+        1
+      ],
+      "name": "Thigh Right",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        37,
+        38
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.94,
+        0,
+        1
+      ],
+      "name": "Pelvis",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        29,
+        34,
+        39
+      ]
+    },
+    {
+      "name": "Combined articulated steel",
+      "mesh": 9,
+      "skin": 0
+    },
+    {
+      "matrix": [
+        1.13,
+        0,
+        0,
+        0,
+        0,
+        1.13,
+        0,
+        0,
+        0,
+        0,
+        1.13,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "T-800 Heavy High",
+      "extras": {
+        "unitTemplateType": "heavy",
+        "unitAnatomy": {
+          "parts": 300,
+          "triangles": 27088,
+          "joints": [
+            "Pelvis",
+            "Spine",
+            "Chest",
+            "Neck",
+            "Head",
+            "Jaw",
+            "Shoulder Left",
+            "Upper Arm Left",
+            "Forearm Left",
+            "Elbow Left Cylinder",
+            "Elbow Left Rod",
+            "Hand Left",
+            "Thigh Left",
+            "Shin Left",
+            "Knee Left Cylinder",
+            "Knee Left Rod",
+            "Foot Left",
+            "Shoulder Right",
+            "Upper Arm Right",
+            "Forearm Right",
+            "Elbow Right Cylinder",
+            "Elbow Right Rod",
+            "Hand Right",
+            "Thigh Right",
+            "Shin Right",
+            "Knee Right Cylinder",
+            "Knee Right Rod",
+            "Foot Right",
+            "Weapon",
+            "Barrels",
+            "Muzzle"
+          ],
+          "textureBytes": 0
+        },
+        "unitAssetDetail": "high"
+      },
+      "children": [
+        40,
+        41
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.055,
+        -0.012,
+        1
+      ],
+      "name": "Jaw",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0.85,
+        0,
+        0,
+        0,
+        0,
+        0.48,
+        0,
+        -0.069,
+        0.009,
+        0.083,
+        1
+      ],
+      "name": "Eye Left",
+      "mesh": 10
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.069,
+        0.009,
+        0.137,
+        1
+      ],
+      "name": "Eye Bloom",
+      "mesh": 11
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.069,
+        0.009,
+        0.138,
+        1
+      ],
+      "name": "Eye Flare",
+      "mesh": 12
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.069,
+        0.009,
+        0.092,
+        1
+      ],
+      "name": "Tracking Glint",
+      "mesh": 13
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0.85,
+        0,
+        0,
+        0,
+        0,
+        0.48,
+        0,
+        0.069,
+        0.009,
+        0.083,
+        1
+      ],
+      "name": "Eye Right",
+      "mesh": 14
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0.069,
+        0.009,
+        0.137,
+        1
+      ],
+      "name": "Eye Bloom",
+      "mesh": 15
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0.069,
+        0.009,
+        0.138,
+        1
+      ],
+      "name": "Eye Flare",
+      "mesh": 16
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0.069,
+        0.009,
+        0.092,
+        1
+      ],
+      "name": "Tracking Glint",
+      "mesh": 17
+    },
+    {
+      "name": "Eye Emitters",
+      "children": [
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.12,
+        0,
+        1
+      ],
+      "name": "Head",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        43,
+        52
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.29,
+        -0.025,
+        1
+      ],
+      "name": "Neck",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        53
+      ]
+    },
+    {
+      "matrix": [
+        0.9993302354173859,
+        0.03659286967545317,
+        -0.00020608141003513626,
+        0,
+        -0.03659286967545317,
+        0.9992668257527596,
+        -0.011259344515524045,
+        0,
+        -0.00020608141003513626,
+        0.011259344515524045,
+        0.9999365903353739,
+        0,
+        -0.046,
+        -0.105,
+        0.061,
+        1
+      ],
+      "name": "Elbow Left Rod",
+      "extras": {
+        "unitJoint": true,
+        "actuator": {
+          "target": "Upper Arm Left",
+          "point": [
+            -0.059,
+            -0.06,
+            0.057
+          ],
+          "restLength": 0.18,
+          "shaft": true
+        }
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.32,
+        0,
+        1
+      ],
+      "name": "Hand Left",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.31,
+        0,
+        1
+      ],
+      "name": "Forearm Left",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        55,
+        56
+      ]
+    },
+    {
+      "matrix": [
+        -0.8263572624444131,
+        -0.03659286967545359,
+        -0.5619560807521262,
+        0,
+        0.03659286967545359,
+        -0.9992668257527593,
+        0.011259344515524164,
+        0,
+        -0.5619560807521262,
+        -0.011259344515524164,
+        0.8270904366916538,
+        0,
+        -0.059,
+        -0.06,
+        0.057,
+        1
+      ],
+      "name": "Elbow Left Cylinder",
+      "extras": {
+        "unitJoint": true,
+        "actuator": {
+          "target": "Forearm Left",
+          "point": [
+            -0.046,
+            -0.105,
+            0.061
+          ],
+          "restLength": 0.18,
+          "shaft": false
+        }
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.034,
+        0,
+        1
+      ],
+      "name": "Upper Arm Left",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        57,
+        58
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.37,
+        0.19,
+        0,
+        1
+      ],
+      "name": "Shoulder Left",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        59
+      ]
+    },
+    {
+      "matrix": [
+        0.9993302354173859,
+        -0.03659286967545317,
+        0.00020608141003513626,
+        0,
+        0.03659286967545317,
+        0.9992668257527596,
+        -0.011259344515524045,
+        0,
+        0.00020608141003513626,
+        0.011259344515524045,
+        0.9999365903353739,
+        0,
+        0.046,
+        -0.105,
+        0.061,
+        1
+      ],
+      "name": "Elbow Right Rod",
+      "extras": {
+        "unitJoint": true,
+        "actuator": {
+          "target": "Upper Arm Right",
+          "point": [
+            0.059,
+            -0.06,
+            0.057
+          ],
+          "restLength": 0.18,
+          "shaft": true
+        }
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.32,
+        0,
+        1
+      ],
+      "name": "Hand Right",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0.13,
+        1
+      ],
+      "name": "Barrels",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "name": "Muzzle Heat",
+      "mesh": 18
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0.74,
+        1
+      ],
+      "name": "Muzzle",
+      "extras": {
+        "unitJoint": true,
+        "unitMuzzle": true
+      },
+      "children": [
+        64
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.23,
+        0.12,
+        1
+      ],
+      "name": "Weapon",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        63,
+        65
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.31,
+        0,
+        1
+      ],
+      "name": "Forearm Right",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        61,
+        62,
+        66
+      ]
+    },
+    {
+      "matrix": [
+        -0.8263572624444131,
+        0.03659286967545359,
+        0.5619560807521262,
+        0,
+        -0.03659286967545359,
+        -0.9992668257527593,
+        0.011259344515524164,
+        0,
+        0.5619560807521262,
+        -0.011259344515524164,
+        0.8270904366916538,
+        0,
+        0.059,
+        -0.06,
+        0.057,
+        1
+      ],
+      "name": "Elbow Right Cylinder",
+      "extras": {
+        "unitJoint": true,
+        "actuator": {
+          "target": "Forearm Right",
+          "point": [
+            0.046,
+            -0.105,
+            0.061
+          ],
+          "restLength": 0.18,
+          "shaft": false
+        }
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.034,
+        0,
+        1
+      ],
+      "name": "Upper Arm Right",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        67,
+        68
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0.37,
+        0.19,
+        0,
+        1
+      ],
+      "name": "Shoulder Right",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        69
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.28,
+        0,
+        1
+      ],
+      "name": "Chest",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        54,
+        60,
+        70
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.12,
+        0,
+        1
+      ],
+      "name": "Spine",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        71
+      ]
+    },
+    {
+      "matrix": [
+        0.9996094539687821,
+        0.027945037052808055,
+        -0.00012016800960551494,
+        0,
+        -0.027945037052808055,
+        0.9995724791965958,
+        -0.008598472939325549,
+        0,
+        -0.00012016800960551494,
+        0.008598472939325549,
+        0.9999630252278137,
+        0,
+        -0.046,
+        -0.105,
+        0.061,
+        1
+      ],
+      "name": "Knee Left Rod",
+      "extras": {
+        "unitJoint": true,
+        "actuator": {
+          "target": "Thigh Left",
+          "point": [
+            -0.059,
+            -0.06,
+            0.057
+          ],
+          "restLength": 0.18,
+          "shaft": true
+        }
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.37,
+        0,
+        1
+      ],
+      "name": "Foot Left",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.42,
+        0,
+        1
+      ],
+      "name": "Shin Left",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        73,
+        74
+      ]
+    },
+    {
+      "matrix": [
+        -0.82663648099581,
+        -0.027945037052801464,
+        -0.5620419941525558,
+        0,
+        0.027945037052801464,
+        -0.9995724791965961,
+        0.00859847293932351,
+        0,
+        -0.5620419941525558,
+        -0.00859847293932351,
+        0.8270640017992139,
+        0,
+        -0.059,
+        -0.06,
+        0.057,
+        1
+      ],
+      "name": "Knee Left Cylinder",
+      "extras": {
+        "unitJoint": true,
+        "actuator": {
+          "target": "Shin Left",
+          "point": [
+            -0.046,
+            -0.105,
+            0.061
+          ],
+          "restLength": 0.18,
+          "shaft": false
+        }
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.14,
+        -0.07,
+        0,
+        1
+      ],
+      "name": "Thigh Left",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        75,
+        76
+      ]
+    },
+    {
+      "matrix": [
+        0.9996094539687821,
+        -0.027945037052808055,
+        0.00012016800960551494,
+        0,
+        0.027945037052808055,
+        0.9995724791965958,
+        -0.008598472939325549,
+        0,
+        0.00012016800960551494,
+        0.008598472939325549,
+        0.9999630252278137,
+        0,
+        0.046,
+        -0.105,
+        0.061,
+        1
+      ],
+      "name": "Knee Right Rod",
+      "extras": {
+        "unitJoint": true,
+        "actuator": {
+          "target": "Thigh Right",
+          "point": [
+            0.059,
+            -0.06,
+            0.057
+          ],
+          "restLength": 0.18,
+          "shaft": true
+        }
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.37,
+        0,
+        1
+      ],
+      "name": "Foot Right",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.42,
+        0,
+        1
+      ],
+      "name": "Shin Right",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        78,
+        79
+      ]
+    },
+    {
+      "matrix": [
+        -0.82663648099581,
+        0.027945037052801464,
+        0.5620419941525558,
+        0,
+        -0.027945037052801464,
+        -0.9995724791965961,
+        0.00859847293932351,
+        0,
+        0.5620419941525558,
+        -0.00859847293932351,
+        0.8270640017992139,
+        0,
+        0.059,
+        -0.06,
+        0.057,
+        1
+      ],
+      "name": "Knee Right Cylinder",
+      "extras": {
+        "unitJoint": true,
+        "actuator": {
+          "target": "Shin Right",
+          "point": [
+            0.046,
+            -0.105,
+            0.061
+          ],
+          "restLength": 0.18,
+          "shaft": false
+        }
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0.14,
+        -0.07,
+        0,
+        1
+      ],
+      "name": "Thigh Right",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        80,
+        81
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.94,
+        0,
+        1
+      ],
+      "name": "Pelvis",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        72,
+        77,
+        82
+      ]
+    },
+    {
+      "name": "Combined articulated steel",
+      "mesh": 19,
+      "skin": 1
+    },
+    {
+      "matrix": [
+        1.13,
+        0,
+        0,
+        0,
+        0,
+        1.13,
+        0,
+        0,
+        0,
+        0,
+        1.13,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "T-800 Heavy Far",
+      "extras": {
+        "unitTemplateType": "heavy",
+        "unitAnatomy": {
+          "parts": 300,
+          "triangles": 12252,
+          "joints": [
+            "Pelvis",
+            "Spine",
+            "Chest",
+            "Neck",
+            "Head",
+            "Jaw",
+            "Shoulder Left",
+            "Upper Arm Left",
+            "Forearm Left",
+            "Elbow Left Cylinder",
+            "Elbow Left Rod",
+            "Hand Left",
+            "Thigh Left",
+            "Shin Left",
+            "Knee Left Cylinder",
+            "Knee Left Rod",
+            "Foot Left",
+            "Shoulder Right",
+            "Upper Arm Right",
+            "Forearm Right",
+            "Elbow Right Cylinder",
+            "Elbow Right Rod",
+            "Hand Right",
+            "Thigh Right",
+            "Shin Right",
+            "Knee Right Cylinder",
+            "Knee Right Rod",
+            "Foot Right",
+            "Weapon",
+            "Barrels",
+            "Muzzle"
+          ],
+          "textureBytes": 0
+        },
+        "unitAssetDetail": "far"
+      },
+      "children": [
+        83,
+        84
+      ],
+      "extensions": {
+        "WEBGI_object3d_extras": {
+          "visible": false
+        }
+      }
+    },
+    {
+      "name": "T-800 Heavy Asset",
+      "extras": {
+        "unitAsset": true,
+        "unitTemplateType": "heavy"
+      },
+      "children": [
+        42,
+        85
+      ]
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 1404,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1404,
+      "byteLength": 1404,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2808,
+      "byteLength": 936,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3744,
+      "byteLength": 1008,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4752,
+      "byteLength": 48,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4800,
+      "byteLength": 48,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4848,
+      "byteLength": 32,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4880,
+      "byteLength": 12,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4892,
+      "byteLength": 48,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4940,
+      "byteLength": 48,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4988,
+      "byteLength": 32,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5020,
+      "byteLength": 12,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5032,
+      "byteLength": 48,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5080,
+      "byteLength": 48,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5128,
+      "byteLength": 32,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5160,
+      "byteLength": 12,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5172,
+      "byteLength": 1404,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 6576,
+      "byteLength": 1404,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 7980,
+      "byteLength": 936,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 8916,
+      "byteLength": 1008,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 9924,
+      "byteLength": 48,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 9972,
+      "byteLength": 48,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 10020,
+      "byteLength": 32,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 10052,
+      "byteLength": 12,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 10064,
+      "byteLength": 48,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 10112,
+      "byteLength": 48,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 10160,
+      "byteLength": 32,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 10192,
+      "byteLength": 12,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 10204,
+      "byteLength": 48,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 10252,
+      "byteLength": 48,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 10300,
+      "byteLength": 32,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 10332,
+      "byteLength": 12,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 10344,
+      "byteLength": 48,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 10392,
+      "byteLength": 48,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 10440,
+      "byteLength": 32,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 10472,
+      "byteLength": 12,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 10484,
+      "byteLength": 975168,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 985652,
+      "byteLength": 975168,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1960820,
+      "byteLength": 650112,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2610932,
+      "byteLength": 1300224,
+      "target": 34962,
+      "byteStride": 16
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3911156,
+      "byteLength": 650112,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4561268,
+      "byteLength": 1404,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4562672,
+      "byteLength": 1404,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4564076,
+      "byteLength": 936,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4565012,
+      "byteLength": 1008,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4566020,
+      "byteLength": 48,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4566068,
+      "byteLength": 48,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4566116,
+      "byteLength": 32,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4566148,
+      "byteLength": 12,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4566160,
+      "byteLength": 48,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4566208,
+      "byteLength": 48,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4566256,
+      "byteLength": 32,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4566288,
+      "byteLength": 12,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4566300,
+      "byteLength": 48,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4566348,
+      "byteLength": 48,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4566396,
+      "byteLength": 32,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4566428,
+      "byteLength": 12,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4566440,
+      "byteLength": 1404,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4567844,
+      "byteLength": 1404,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4569248,
+      "byteLength": 936,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4570184,
+      "byteLength": 1008,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4571192,
+      "byteLength": 48,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4571240,
+      "byteLength": 48,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4571288,
+      "byteLength": 32,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4571320,
+      "byteLength": 12,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4571332,
+      "byteLength": 48,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4571380,
+      "byteLength": 48,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4571428,
+      "byteLength": 32,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4571460,
+      "byteLength": 12,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4571472,
+      "byteLength": 48,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4571520,
+      "byteLength": 48,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4571568,
+      "byteLength": 32,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4571600,
+      "byteLength": 12,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4571612,
+      "byteLength": 48,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4571660,
+      "byteLength": 48,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4571708,
+      "byteLength": 32,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4571740,
+      "byteLength": 12,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4571752,
+      "byteLength": 441072,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5012824,
+      "byteLength": 441072,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5453896,
+      "byteLength": 294048,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5747944,
+      "byteLength": 588096,
+      "target": 34962,
+      "byteStride": 16
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 6336040,
+      "byteLength": 294048,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 6630088,
+      "byteLength": 1984
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 6632072,
+      "byteLength": 1984
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 6634056,
+      "uri": "heavy.bin"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 117,
+      "max": [
+        0.012000000104308128,
+        0.012000000104308128,
+        0.012000000104308128
+      ],
+      "min": [
+        -0.012000000104308128,
+        -0.012000000104308128,
+        -0.012000000104308128
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 117,
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 117,
+      "max": [
+        1.0416666269302368,
+        1
+      ],
+      "min": [
+        -0.0416666679084301,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 504,
+      "max": [
+        116
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0.042500000447034836,
+        0.042500000447034836,
+        0
+      ],
+      "min": [
+        -0.042500000447034836,
+        -0.042500000447034836,
+        0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0,
+        0,
+        1
+      ],
+      "min": [
+        0,
+        0,
+        1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5123,
+      "count": 6,
+      "max": [
+        3
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 8,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0.08500000089406967,
+        0.004000000189989805,
+        0
+      ],
+      "min": [
+        -0.08500000089406967,
+        -0.004000000189989805,
+        0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 9,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0,
+        0,
+        1
+      ],
+      "min": [
+        0,
+        0,
+        1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 10,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 11,
+      "componentType": 5123,
+      "count": 6,
+      "max": [
+        3
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 12,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0.007000000216066837,
+        0.007000000216066837,
+        0
+      ],
+      "min": [
+        -0.007000000216066837,
+        -0.007000000216066837,
+        0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 13,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0,
+        0,
+        1
+      ],
+      "min": [
+        0,
+        0,
+        1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 14,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 15,
+      "componentType": 5123,
+      "count": 6,
+      "max": [
+        3
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 16,
+      "componentType": 5126,
+      "count": 117,
+      "max": [
+        0.012000000104308128,
+        0.012000000104308128,
+        0.012000000104308128
+      ],
+      "min": [
+        -0.012000000104308128,
+        -0.012000000104308128,
+        -0.012000000104308128
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 17,
+      "componentType": 5126,
+      "count": 117,
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 18,
+      "componentType": 5126,
+      "count": 117,
+      "max": [
+        1.0416666269302368,
+        1
+      ],
+      "min": [
+        -0.0416666679084301,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 19,
+      "componentType": 5123,
+      "count": 504,
+      "max": [
+        116
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 20,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0.042500000447034836,
+        0.042500000447034836,
+        0
+      ],
+      "min": [
+        -0.042500000447034836,
+        -0.042500000447034836,
+        0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 21,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0,
+        0,
+        1
+      ],
+      "min": [
+        0,
+        0,
+        1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 22,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 23,
+      "componentType": 5123,
+      "count": 6,
+      "max": [
+        3
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 24,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0.08500000089406967,
+        0.004000000189989805,
+        0
+      ],
+      "min": [
+        -0.08500000089406967,
+        -0.004000000189989805,
+        0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 25,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0,
+        0,
+        1
+      ],
+      "min": [
+        0,
+        0,
+        1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 26,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 27,
+      "componentType": 5123,
+      "count": 6,
+      "max": [
+        3
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 28,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0.007000000216066837,
+        0.007000000216066837,
+        0
+      ],
+      "min": [
+        -0.007000000216066837,
+        -0.007000000216066837,
+        0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 29,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0,
+        0,
+        1
+      ],
+      "min": [
+        0,
+        0,
+        1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 30,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 31,
+      "componentType": 5123,
+      "count": 6,
+      "max": [
+        3
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 32,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0.125,
+        0.125,
+        0
+      ],
+      "min": [
+        -0.125,
+        -0.125,
+        0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 33,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0,
+        0,
+        1
+      ],
+      "min": [
+        0,
+        0,
+        1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 34,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 35,
+      "componentType": 5123,
+      "count": 6,
+      "max": [
+        3
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 36,
+      "componentType": 5126,
+      "count": 81264,
+      "max": [
+        0.5516930818557739,
+        1.9739999771118164,
+        0.8318531513214111
+      ],
+      "min": [
+        -0.5516930818557739,
+        0.007364998571574688,
+        -0.18693289160728455
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 37,
+      "componentType": 5126,
+      "count": 81264,
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 38,
+      "componentType": 5126,
+      "count": 81264,
+      "max": [
+        0.9919999837875366,
+        0.9919999837875366
+      ],
+      "min": [
+        0.00800000037997961,
+        0.00800000037997961
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 39,
+      "componentType": 5126,
+      "count": 81264,
+      "max": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "min": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 40,
+      "componentType": 5123,
+      "count": 81264,
+      "max": [
+        29,
+        0,
+        0,
+        0
+      ],
+      "min": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 41,
+      "componentType": 5126,
+      "count": 117,
+      "max": [
+        0.012000000104308128,
+        0.012000000104308128,
+        0.012000000104308128
+      ],
+      "min": [
+        -0.012000000104308128,
+        -0.012000000104308128,
+        -0.012000000104308128
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 42,
+      "componentType": 5126,
+      "count": 117,
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 43,
+      "componentType": 5126,
+      "count": 117,
+      "max": [
+        1.0416666269302368,
+        1
+      ],
+      "min": [
+        -0.0416666679084301,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 44,
+      "componentType": 5123,
+      "count": 504,
+      "max": [
+        116
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 45,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0.042500000447034836,
+        0.042500000447034836,
+        0
+      ],
+      "min": [
+        -0.042500000447034836,
+        -0.042500000447034836,
+        0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 46,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0,
+        0,
+        1
+      ],
+      "min": [
+        0,
+        0,
+        1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 47,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 48,
+      "componentType": 5123,
+      "count": 6,
+      "max": [
+        3
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 49,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0.08500000089406967,
+        0.004000000189989805,
+        0
+      ],
+      "min": [
+        -0.08500000089406967,
+        -0.004000000189989805,
+        0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 50,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0,
+        0,
+        1
+      ],
+      "min": [
+        0,
+        0,
+        1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 51,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 52,
+      "componentType": 5123,
+      "count": 6,
+      "max": [
+        3
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 53,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0.007000000216066837,
+        0.007000000216066837,
+        0
+      ],
+      "min": [
+        -0.007000000216066837,
+        -0.007000000216066837,
+        0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 54,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0,
+        0,
+        1
+      ],
+      "min": [
+        0,
+        0,
+        1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 55,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 56,
+      "componentType": 5123,
+      "count": 6,
+      "max": [
+        3
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 57,
+      "componentType": 5126,
+      "count": 117,
+      "max": [
+        0.012000000104308128,
+        0.012000000104308128,
+        0.012000000104308128
+      ],
+      "min": [
+        -0.012000000104308128,
+        -0.012000000104308128,
+        -0.012000000104308128
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 58,
+      "componentType": 5126,
+      "count": 117,
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 59,
+      "componentType": 5126,
+      "count": 117,
+      "max": [
+        1.0416666269302368,
+        1
+      ],
+      "min": [
+        -0.0416666679084301,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 60,
+      "componentType": 5123,
+      "count": 504,
+      "max": [
+        116
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 61,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0.042500000447034836,
+        0.042500000447034836,
+        0
+      ],
+      "min": [
+        -0.042500000447034836,
+        -0.042500000447034836,
+        0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 62,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0,
+        0,
+        1
+      ],
+      "min": [
+        0,
+        0,
+        1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 63,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 64,
+      "componentType": 5123,
+      "count": 6,
+      "max": [
+        3
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 65,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0.08500000089406967,
+        0.004000000189989805,
+        0
+      ],
+      "min": [
+        -0.08500000089406967,
+        -0.004000000189989805,
+        0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 66,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0,
+        0,
+        1
+      ],
+      "min": [
+        0,
+        0,
+        1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 67,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 68,
+      "componentType": 5123,
+      "count": 6,
+      "max": [
+        3
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 69,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0.007000000216066837,
+        0.007000000216066837,
+        0
+      ],
+      "min": [
+        -0.007000000216066837,
+        -0.007000000216066837,
+        0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 70,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0,
+        0,
+        1
+      ],
+      "min": [
+        0,
+        0,
+        1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 71,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 72,
+      "componentType": 5123,
+      "count": 6,
+      "max": [
+        3
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 73,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0.125,
+        0.125,
+        0
+      ],
+      "min": [
+        -0.125,
+        -0.125,
+        0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 74,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0,
+        0,
+        1
+      ],
+      "min": [
+        0,
+        0,
+        1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 75,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 76,
+      "componentType": 5123,
+      "count": 6,
+      "max": [
+        3
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 77,
+      "componentType": 5126,
+      "count": 36756,
+      "max": [
+        0.5499645471572876,
+        1.9739999771118164,
+        0.8315981030464172
+      ],
+      "min": [
+        -0.5499645471572876,
+        0.007364998571574688,
+        -0.18693289160728455
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 78,
+      "componentType": 5126,
+      "count": 36756,
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 79,
+      "componentType": 5126,
+      "count": 36756,
+      "max": [
+        0.9919999837875366,
+        0.9919999837875366
+      ],
+      "min": [
+        0.00800000037997961,
+        0.00800000037997961
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 80,
+      "componentType": 5126,
+      "count": 36756,
+      "max": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "min": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 81,
+      "componentType": 5123,
+      "count": 36756,
+      "max": [
+        29,
+        0,
+        0,
+        0
+      ],
+      "min": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 82,
+      "componentType": 5126,
+      "count": 31,
+      "max": [
+        1,
+        0.03659287095069885,
+        0.5620419979095459,
+        0,
+        0.03659287095069885,
+        1,
+        0.011259344406425953,
+        0,
+        0.5620419979095459,
+        0.011259344406425953,
+        1,
+        0,
+        0.376177042722702,
+        1.450003743171692,
+        0.03700000047683716,
+        1
+      ],
+      "min": [
+        -0.8266364932060242,
+        -0.03659287095069885,
+        -0.5620419979095459,
+        0,
+        -0.03659287095069885,
+        -0.9995724558830261,
+        -0.011259344406425953,
+        0,
+        -0.5620419979095459,
+        -0.011259344406425953,
+        0.8270639777183533,
+        0,
+        -0.376177042722702,
+        -1.75,
+        -0.8600000143051147,
+        1
+      ],
+      "type": "MAT4"
+    },
+    {
+      "bufferView": 83,
+      "componentType": 5126,
+      "count": 31,
+      "max": [
+        1,
+        0.03659287095069885,
+        0.5620419979095459,
+        0,
+        0.03659287095069885,
+        1,
+        0.011259344406425953,
+        0,
+        0.5620419979095459,
+        0.011259344406425953,
+        1,
+        0,
+        0.376177042722702,
+        1.450003743171692,
+        0.03700000047683716,
+        1
+      ],
+      "min": [
+        -0.8266364932060242,
+        -0.03659287095069885,
+        -0.5620419979095459,
+        0,
+        -0.03659287095069885,
+        -0.9995724558830261,
+        -0.011259344406425953,
+        0,
+        -0.5620419979095459,
+        -0.011259344406425953,
+        0.8270639777183533,
+        0,
+        -0.376177042722702,
+        -1.75,
+        -0.8600000143051147,
+        1
+      ],
+      "type": "MAT4"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.07036009568874305,
+          0.002428215868235294,
+          0.0009105809505882353,
+          1
+        ],
+        "metallicFactor": 0.65,
+        "roughnessFactor": 0.5,
+        "baseColorTexture": {
+          "index": 3
+        },
+        "metallicRoughnessTexture": {
+          "index": 4
+        }
+      },
+      "emissiveFactor": [
+        1,
+        0.033104766565152086,
+        0.015996293361446288
+      ],
+      "name": "Machined red optical glass",
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 3
+        }
+      },
+      "occlusionTexture": {
+        "index": 4
+      },
+      "normalTexture": {
+        "index": 5,
+        "scale": 0.55
+      },
+      "emissiveTexture": {
+        "index": 6
+      }
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          0.006048833020386069,
+          0.0009105809505882353,
+          0.35
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.9
+      },
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "name": "Optical scattering",
+      "extensions": {
+        "KHR_materials_unlit": {}
+      }
+    },
+    {
+      "pbrMetallicRoughness": {
+        "metallicFactor": 1,
+        "roughnessFactor": 1,
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      },
+      "name": "Endoskeleton 1K worn metal atlas",
+      "occlusionTexture": {
+        "index": 1
+      },
+      "normalTexture": {
+        "index": 2,
+        "scale": 1
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 8,
+            "NORMAL": 9,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 1
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 12,
+            "NORMAL": 13,
+            "TEXCOORD_0": 14
+          },
+          "indices": 15,
+          "material": 1
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 16,
+            "NORMAL": 17,
+            "TEXCOORD_0": 18
+          },
+          "indices": 19,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 20,
+            "NORMAL": 21,
+            "TEXCOORD_0": 22
+          },
+          "indices": 23,
+          "material": 1
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 24,
+            "NORMAL": 25,
+            "TEXCOORD_0": 26
+          },
+          "indices": 27,
+          "material": 1
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 28,
+            "NORMAL": 29,
+            "TEXCOORD_0": 30
+          },
+          "indices": 31,
+          "material": 1
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 32,
+            "NORMAL": 33,
+            "TEXCOORD_0": 34
+          },
+          "indices": 35,
+          "material": 1
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 36,
+            "NORMAL": 37,
+            "TEXCOORD_0": 38,
+            "WEIGHTS_0": 39,
+            "JOINTS_0": 40
+          },
+          "material": 2
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 41,
+            "NORMAL": 42,
+            "TEXCOORD_0": 43
+          },
+          "indices": 44,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 45,
+            "NORMAL": 46,
+            "TEXCOORD_0": 47
+          },
+          "indices": 48,
+          "material": 1
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 49,
+            "NORMAL": 50,
+            "TEXCOORD_0": 51
+          },
+          "indices": 52,
+          "material": 1
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 53,
+            "NORMAL": 54,
+            "TEXCOORD_0": 55
+          },
+          "indices": 56,
+          "material": 1
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 57,
+            "NORMAL": 58,
+            "TEXCOORD_0": 59
+          },
+          "indices": 60,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 61,
+            "NORMAL": 62,
+            "TEXCOORD_0": 63
+          },
+          "indices": 64,
+          "material": 1
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 65,
+            "NORMAL": 66,
+            "TEXCOORD_0": 67
+          },
+          "indices": 68,
+          "material": 1
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 69,
+            "NORMAL": 70,
+            "TEXCOORD_0": 71
+          },
+          "indices": 72,
+          "material": 1
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 73,
+            "NORMAL": 74,
+            "TEXCOORD_0": 75
+          },
+          "indices": 76,
+          "material": 1
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 77,
+            "NORMAL": 78,
+            "TEXCOORD_0": 79,
+            "WEIGHTS_0": 80,
+            "JOINTS_0": 81
+          },
+          "material": 2
+        }
+      ]
+    }
+  ],
+  "skins": [
+    {
+      "inverseBindMatrices": 82,
+      "joints": [
+        40,
+        29,
+        28,
+        11,
+        10,
+        0,
+        17,
+        16,
+        14,
+        15,
+        12,
+        13,
+        34,
+        32,
+        33,
+        30,
+        31,
+        27,
+        26,
+        24,
+        25,
+        18,
+        19,
+        39,
+        37,
+        38,
+        35,
+        36,
+        23,
+        20,
+        22
+      ],
+      "skeleton": 40
+    },
+    {
+      "inverseBindMatrices": 83,
+      "joints": [
+        83,
+        72,
+        71,
+        54,
+        53,
+        43,
+        60,
+        59,
+        57,
+        58,
+        55,
+        56,
+        77,
+        75,
+        76,
+        73,
+        74,
+        70,
+        69,
+        67,
+        68,
+        61,
+        62,
+        82,
+        80,
+        81,
+        78,
+        79,
+        66,
+        63,
+        65
+      ],
+      "skeleton": 83
+    }
+  ],
+  "extensionsUsed": [
+    "KHR_materials_emissive_strength",
+    "KHR_materials_unlit",
+    "WEBGI_object3d_extras"
+  ],
+  "images": [
+    {
+      "name": "textures/units/endoskeleton-albedo.jpg",
+      "uri": "textures/units/endoskeleton-albedo.jpg"
+    },
+    {
+      "name": "textures/units/endoskeleton-orm.png",
+      "uri": "textures/units/endoskeleton-orm.png"
+    },
+    {
+      "name": "textures/units/endoskeleton-normal.png",
+      "uri": "textures/units/endoskeleton-normal.png"
+    },
+    {
+      "name": "textures/units/optic-albedo.png",
+      "uri": "textures/units/optic-albedo.png"
+    },
+    {
+      "name": "textures/units/optic-orm.png",
+      "uri": "textures/units/optic-orm.png"
+    },
+    {
+      "name": "textures/units/optic-normal.png",
+      "uri": "textures/units/optic-normal.png"
+    },
+    {
+      "name": "textures/units/optic-emissive.png",
+      "uri": "textures/units/optic-emissive.png"
+    }
+  ],
+  "textures": [
+    {
+      "name": "textures/units/endoskeleton-albedo.jpg",
+      "source": 0
+    },
+    {
+      "name": "textures/units/endoskeleton-orm.png",
+      "source": 1
+    },
+    {
+      "name": "textures/units/endoskeleton-normal.png",
+      "source": 2
+    },
+    {
+      "name": "textures/units/optic-albedo.png",
+      "source": 3
+    },
+    {
+      "name": "textures/units/optic-orm.png",
+      "source": 4
+    },
+    {
+      "name": "textures/units/optic-normal.png",
+      "source": 5
+    },
+    {
+      "name": "textures/units/optic-emissive.png",
+      "source": 6
+    }
+  ]
+}

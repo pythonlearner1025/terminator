@@ -1,0 +1,1646 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "Terminator build-unit-assets.mjs using Three.js and glTF Transform"
+  },
+  "scenes": [
+    {
+      "name": "AuxScene",
+      "nodes": [
+        36
+      ]
+    }
+  ],
+  "scene": 0,
+  "nodes": [
+    {
+      "name": "Eye Emitters"
+    },
+    {
+      "name": "Head",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        0
+      ]
+    },
+    {
+      "name": "Chest",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        1
+      ]
+    },
+    {
+      "name": "Spine",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        2
+      ]
+    },
+    {
+      "name": "Pelvis",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        3
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.6,
+        0,
+        1
+      ],
+      "name": "Hull",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1.25,
+        0.65,
+        0,
+        1
+      ],
+      "name": "Wing Left",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.228,
+        0,
+        1
+      ],
+      "name": "Intake Left",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.62,
+        0.42,
+        -0.45,
+        1
+      ],
+      "name": "Thruster Left",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        7
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1.25,
+        0.65,
+        0,
+        1
+      ],
+      "name": "Wing Right",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.228,
+        0,
+        1
+      ],
+      "name": "Intake Right",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0.62,
+        0.42,
+        -0.45,
+        1
+      ],
+      "name": "Thruster Right",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        10
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0.86,
+        1
+      ],
+      "name": "Muzzle",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.22,
+        0.18,
+        1
+      ],
+      "name": "Searchlight",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.32,
+        0,
+        1
+      ],
+      "name": "Turret",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        12,
+        13
+      ]
+    },
+    {
+      "name": "Combined articulated steel",
+      "mesh": 0,
+      "skin": 0
+    },
+    {
+      "name": "Roster running lights",
+      "mesh": 1,
+      "skin": 1
+    },
+    {
+      "name": "HK-Aerial High",
+      "extras": {
+        "unitTemplateType": "hkaerial",
+        "rosterBody": "aerial",
+        "unitAnatomy": {
+          "triangles": 8276,
+          "parts": 66,
+          "joints": [
+            "Pelvis",
+            "Spine",
+            "Chest",
+            "Head",
+            "Hull",
+            "Wing Left",
+            "Thruster Left",
+            "Intake Left",
+            "Wing Right",
+            "Thruster Right",
+            "Intake Right",
+            "Turret",
+            "Muzzle",
+            "Searchlight"
+          ]
+        },
+        "roster": true,
+        "unitAssetDetail": "high"
+      },
+      "children": [
+        4,
+        5,
+        6,
+        8,
+        9,
+        11,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "name": "Eye Emitters"
+    },
+    {
+      "name": "Head",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        18
+      ]
+    },
+    {
+      "name": "Chest",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        19
+      ]
+    },
+    {
+      "name": "Spine",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        20
+      ]
+    },
+    {
+      "name": "Pelvis",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        21
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.6,
+        0,
+        1
+      ],
+      "name": "Hull",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1.25,
+        0.65,
+        0,
+        1
+      ],
+      "name": "Wing Left",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.228,
+        0,
+        1
+      ],
+      "name": "Intake Left",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.62,
+        0.42,
+        -0.45,
+        1
+      ],
+      "name": "Thruster Left",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        25
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1.25,
+        0.65,
+        0,
+        1
+      ],
+      "name": "Wing Right",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.228,
+        0,
+        1
+      ],
+      "name": "Intake Right",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0.62,
+        0.42,
+        -0.45,
+        1
+      ],
+      "name": "Thruster Right",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        28
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0.86,
+        1
+      ],
+      "name": "Muzzle",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.22,
+        0.18,
+        1
+      ],
+      "name": "Searchlight",
+      "extras": {
+        "unitJoint": true
+      }
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.32,
+        0,
+        1
+      ],
+      "name": "Turret",
+      "extras": {
+        "unitJoint": true
+      },
+      "children": [
+        30,
+        31
+      ]
+    },
+    {
+      "name": "Combined articulated steel",
+      "mesh": 2,
+      "skin": 2
+    },
+    {
+      "name": "Roster running lights",
+      "mesh": 3,
+      "skin": 3
+    },
+    {
+      "name": "HK-Aerial Far",
+      "extras": {
+        "unitTemplateType": "hkaerial",
+        "rosterBody": "aerial",
+        "unitAnatomy": {
+          "triangles": 4572,
+          "parts": 66,
+          "joints": [
+            "Pelvis",
+            "Spine",
+            "Chest",
+            "Head",
+            "Hull",
+            "Wing Left",
+            "Thruster Left",
+            "Intake Left",
+            "Wing Right",
+            "Thruster Right",
+            "Intake Right",
+            "Turret",
+            "Muzzle",
+            "Searchlight"
+          ]
+        },
+        "roster": true,
+        "unitAssetDetail": "far"
+      },
+      "children": [
+        22,
+        23,
+        24,
+        26,
+        27,
+        29,
+        32,
+        33,
+        34
+      ],
+      "extensions": {
+        "WEBGI_object3d_extras": {
+          "visible": false
+        }
+      }
+    },
+    {
+      "name": "HK-Aerial Asset",
+      "extras": {
+        "unitAsset": true,
+        "unitTemplateType": "hkaerial"
+      },
+      "children": [
+        17,
+        35
+      ]
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 297936,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 297936,
+      "byteLength": 297936,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 595872,
+      "byteLength": 198624,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 794496,
+      "byteLength": 397248,
+      "target": 34962,
+      "byteStride": 16
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1191744,
+      "byteLength": 198624,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1390368,
+      "byteLength": 20160,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1410528,
+      "byteLength": 20160,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1430688,
+      "byteLength": 13440,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1444128,
+      "byteLength": 26880,
+      "target": 34962,
+      "byteStride": 16
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1471008,
+      "byteLength": 13440,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1484448,
+      "byteLength": 164592,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1649040,
+      "byteLength": 164592,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1813632,
+      "byteLength": 109728,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1923360,
+      "byteLength": 219456,
+      "target": 34962,
+      "byteStride": 16
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2142816,
+      "byteLength": 109728,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2252544,
+      "byteLength": 12096,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2264640,
+      "byteLength": 12096,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2276736,
+      "byteLength": 8064,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2284800,
+      "byteLength": 16128,
+      "target": 34962,
+      "byteStride": 16
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2300928,
+      "byteLength": 8064,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2308992,
+      "byteLength": 896
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2309888,
+      "byteLength": 896
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2310784,
+      "byteLength": 896
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2311680,
+      "byteLength": 896
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 2312576,
+      "uri": "hkaerial.bin"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 24828,
+      "max": [
+        2.0253326892852783,
+        0.8644999861717224,
+        0.858022928237915
+      ],
+      "min": [
+        -2.0253326892852783,
+        -0.019999999552965164,
+        -0.824999988079071
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 24828,
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 24828,
+      "max": [
+        0.9919999837875366,
+        0.9919999837875366
+      ],
+      "min": [
+        0.00800000037997961,
+        0.00800000037997961
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 24828,
+      "max": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "min": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 24828,
+      "max": [
+        11,
+        0,
+        0,
+        0
+      ],
+      "min": [
+        4,
+        0,
+        0,
+        0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 1680,
+      "max": [
+        2.015000104904175,
+        0.7475000023841858,
+        0.8025000095367432
+      ],
+      "min": [
+        -2.015000104904175,
+        0.20600000023841858,
+        -0.6200000047683716
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 1680,
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5126,
+      "count": 1680,
+      "max": [
+        0.9919999837875366,
+        0.9919999837875366
+      ],
+      "min": [
+        0.5080000162124634,
+        0.5080000162124634
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 8,
+      "componentType": 5126,
+      "count": 1680,
+      "max": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "min": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 9,
+      "componentType": 5123,
+      "count": 1680,
+      "max": [
+        9,
+        0,
+        0,
+        0
+      ],
+      "min": [
+        4,
+        0,
+        0,
+        0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 10,
+      "componentType": 5126,
+      "count": 13716,
+      "max": [
+        2.0253326892852783,
+        0.8644999861717224,
+        0.8587999939918518
+      ],
+      "min": [
+        -2.0253326892852783,
+        -0.019999999552965164,
+        -0.824999988079071
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 11,
+      "componentType": 5126,
+      "count": 13716,
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 12,
+      "componentType": 5126,
+      "count": 13716,
+      "max": [
+        0.9919999837875366,
+        0.9919999837875366
+      ],
+      "min": [
+        0.00800000037997961,
+        0.00800000037997961
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 13,
+      "componentType": 5126,
+      "count": 13716,
+      "max": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "min": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 14,
+      "componentType": 5123,
+      "count": 13716,
+      "max": [
+        11,
+        0,
+        0,
+        0
+      ],
+      "min": [
+        4,
+        0,
+        0,
+        0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 15,
+      "componentType": 5126,
+      "count": 1008,
+      "max": [
+        2.015000104904175,
+        0.7475000023841858,
+        0.8025000095367432
+      ],
+      "min": [
+        -2.015000104904175,
+        0.20600000023841858,
+        -0.6200000047683716
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 16,
+      "componentType": 5126,
+      "count": 1008,
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 17,
+      "componentType": 5126,
+      "count": 1008,
+      "max": [
+        0.9919999837875366,
+        0.9919999837875366
+      ],
+      "min": [
+        0.5080000162124634,
+        0.5080000162124634
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 18,
+      "componentType": 5126,
+      "count": 1008,
+      "max": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "min": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 19,
+      "componentType": 5123,
+      "count": 1008,
+      "max": [
+        9,
+        0,
+        0,
+        0
+      ],
+      "min": [
+        4,
+        0,
+        0,
+        0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 20,
+      "componentType": 5126,
+      "count": 14,
+      "max": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1.25,
+        0,
+        0.44999998807907104,
+        1
+      ],
+      "min": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1.25,
+        -0.6499999761581421,
+        -0.8600000143051147,
+        1
+      ],
+      "type": "MAT4"
+    },
+    {
+      "bufferView": 21,
+      "componentType": 5126,
+      "count": 14,
+      "max": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1.25,
+        0,
+        0.44999998807907104,
+        1
+      ],
+      "min": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1.25,
+        -0.6499999761581421,
+        -0.8600000143051147,
+        1
+      ],
+      "type": "MAT4"
+    },
+    {
+      "bufferView": 22,
+      "componentType": 5126,
+      "count": 14,
+      "max": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1.25,
+        0,
+        0.44999998807907104,
+        1
+      ],
+      "min": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1.25,
+        -0.6499999761581421,
+        -0.8600000143051147,
+        1
+      ],
+      "type": "MAT4"
+    },
+    {
+      "bufferView": 23,
+      "componentType": 5126,
+      "count": 14,
+      "max": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1.25,
+        0,
+        0.44999998807907104,
+        1
+      ],
+      "min": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1.25,
+        -0.6499999761581421,
+        -0.8600000143051147,
+        1
+      ],
+      "type": "MAT4"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "metallicFactor": 1,
+        "roughnessFactor": 1,
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      },
+      "name": "Hunter Killer worn armor 1K",
+      "occlusionTexture": {
+        "index": 1
+      },
+      "normalTexture": {
+        "index": 2,
+        "scale": 1
+      }
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.10461648408208657,
+          0.004024717016506897,
+          0.002428215868235294,
+          1
+        ],
+        "metallicFactor": 0.3,
+        "roughnessFactor": 0.35,
+        "baseColorTexture": {
+          "index": 3
+        },
+        "metallicRoughnessTexture": {
+          "index": 4
+        }
+      },
+      "emissiveFactor": [
+        1,
+        0.02121901037134225,
+        0.007499032040460618
+      ],
+      "name": "Hunter Killer optical glass",
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 3
+        }
+      },
+      "occlusionTexture": {
+        "index": 4
+      },
+      "normalTexture": {
+        "index": 5,
+        "scale": 1
+      },
+      "emissiveTexture": {
+        "index": 6
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2,
+            "WEIGHTS_0": 3,
+            "JOINTS_0": 4
+          },
+          "material": 0
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 5,
+            "NORMAL": 6,
+            "TEXCOORD_0": 7,
+            "WEIGHTS_0": 8,
+            "JOINTS_0": 9
+          },
+          "material": 1
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 10,
+            "NORMAL": 11,
+            "TEXCOORD_0": 12,
+            "WEIGHTS_0": 13,
+            "JOINTS_0": 14
+          },
+          "material": 0
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 15,
+            "NORMAL": 16,
+            "TEXCOORD_0": 17,
+            "WEIGHTS_0": 18,
+            "JOINTS_0": 19
+          },
+          "material": 1
+        }
+      ]
+    }
+  ],
+  "skins": [
+    {
+      "inverseBindMatrices": 20,
+      "joints": [
+        4,
+        3,
+        2,
+        1,
+        5,
+        6,
+        8,
+        7,
+        9,
+        11,
+        10,
+        14,
+        12,
+        13
+      ],
+      "skeleton": 4
+    },
+    {
+      "inverseBindMatrices": 21,
+      "joints": [
+        4,
+        3,
+        2,
+        1,
+        5,
+        6,
+        8,
+        7,
+        9,
+        11,
+        10,
+        14,
+        12,
+        13
+      ],
+      "skeleton": 4
+    },
+    {
+      "inverseBindMatrices": 22,
+      "joints": [
+        22,
+        21,
+        20,
+        19,
+        23,
+        24,
+        26,
+        25,
+        27,
+        29,
+        28,
+        32,
+        30,
+        31
+      ],
+      "skeleton": 22
+    },
+    {
+      "inverseBindMatrices": 23,
+      "joints": [
+        22,
+        21,
+        20,
+        19,
+        23,
+        24,
+        26,
+        25,
+        27,
+        29,
+        28,
+        32,
+        30,
+        31
+      ],
+      "skeleton": 22
+    }
+  ],
+  "extensionsUsed": [
+    "KHR_materials_emissive_strength",
+    "WEBGI_object3d_extras"
+  ],
+  "images": [
+    {
+      "name": "textures/roster/hk-albedo.jpg",
+      "uri": "textures/roster/hk-albedo.jpg"
+    },
+    {
+      "name": "textures/roster/hk-orm.png",
+      "uri": "textures/roster/hk-orm.png"
+    },
+    {
+      "name": "textures/roster/hk-normal.png",
+      "uri": "textures/roster/hk-normal.png"
+    },
+    {
+      "name": "textures/units/optic-albedo.png",
+      "uri": "textures/units/optic-albedo.png"
+    },
+    {
+      "name": "textures/units/optic-orm.png",
+      "uri": "textures/units/optic-orm.png"
+    },
+    {
+      "name": "textures/units/optic-normal.png",
+      "uri": "textures/units/optic-normal.png"
+    },
+    {
+      "name": "textures/units/optic-emissive.png",
+      "uri": "textures/units/optic-emissive.png"
+    }
+  ],
+  "textures": [
+    {
+      "name": "textures/roster/hk-albedo.jpg",
+      "source": 0
+    },
+    {
+      "name": "textures/roster/hk-orm.png",
+      "source": 1
+    },
+    {
+      "name": "textures/roster/hk-normal.png",
+      "source": 2
+    },
+    {
+      "name": "textures/units/optic-albedo.png",
+      "source": 3
+    },
+    {
+      "name": "textures/units/optic-orm.png",
+      "source": 4
+    },
+    {
+      "name": "textures/units/optic-normal.png",
+      "source": 5
+    },
+    {
+      "name": "textures/units/optic-emissive.png",
+      "source": 6
+    }
+  ]
+}

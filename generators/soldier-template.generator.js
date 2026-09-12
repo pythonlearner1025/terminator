@@ -24,10 +24,10 @@ export function createSoldierPreview(E, variant = 'olive') {
 }
 
 // Metres, feet on Y=0, facing +Z. One rigid-skinned surface draw, one lamp lens.
-// Bone names are shared with players-animation.js. Geometry is built only for
-// the authored preview; runtime soldiers share it and rebind their own skeleton.
-export function createSoldierFigure(E, variant = 'olive') {
-  const materials = soldierMaterials(E), root = new E.Group(), bones = [], parts = []
+// Bone names are shared with players-animation.js. The asset build serializes
+// this figure; runtime soldiers clone that glTF and rebind their own skeleton.
+export function createSoldierFigure(E, variant = 'olive', {materials = soldierMaterials(E)} = {}) {
+  const root = new E.Group(), bones = [], parts = []
   root.name = 'Resistance Soldier'; root.userData.soldierTemplate = true
   const cloth = [0xd6cfb9, .015, .98, 1], seam = [0x989680, .02, .98, 1]
   const vest = [0x494b3b, .025, .94, 0], web = [0x77745b, .02, .97, 0]

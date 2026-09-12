@@ -323,11 +323,17 @@ async function loadGeometry() {
     queueMicrotask(() => onLoad?.(texture))
     return texture
   }
-  const [{createMapGroup}, {createUnitPlaceholder}, {bindUnitRig, animateUnit}] = await Promise.all([
+  const [{createMapGroup}, {loadUnitAsset}, {clonePlacedUnitFigure}, {bindUnitRig, animateUnit}] = await Promise.all([
     import('../generators/map.geometry.js'),
-    import('../generators/unit-placeholders.js'),
+    import('./load-unit-asset.mjs'),
+    import('../lib/view/unit-assets.js'),
     import('../lib/view/units-animation.js'),
   ])
+  const unitSources = new Map(await Promise.all(
+    Object.keys(POSES).map(async type => [type, await loadUnitAsset(type)]),
+  ))
+  const createUnitPlaceholder = (_engine, type, {detail = 1} = {}) =>
+    clonePlacedUnitFigure(unitSources.get(type), type, detail ? 'high' : 'far')
   return {E, createMapGroup, createUnitPlaceholder, bindUnitRig, animateUnit}
 }
 
