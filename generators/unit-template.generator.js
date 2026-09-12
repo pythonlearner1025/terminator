@@ -1,7 +1,28 @@
-import {unitMaterials} from './unit-materials.js'
+import {unitMaterials, unitPreviewMaterials} from './unit-materials.js'
 
 export default function generate({params, engine}) {
-  return createUnitFigure(engine, ['scout', 'endo', 'heavy'].includes(params.type) ? params.type : 'endo')
+  return createUnitPreview(engine, ['scout', 'endo', 'heavy'].includes(params.type) ? params.type : 'endo')
+}
+
+export function createUnitPreview(E, type = 'endo') {
+  const materials = unitPreviewMaterials(E), root = new E.Group()
+  const heavy = type === 'heavy', scout = type === 'scout', bulk = heavy ? 1.3 : scout ? .78 : 1
+  root.name = `${type} Endoskeleton`
+  root.userData.unitTemplateType = type
+  const box = (name, size, position, material = materials.metal) => {
+    const mesh = new E.Mesh2(new E.BoxGeometry(...size), material)
+    mesh.name = name; mesh.position.set(...position); root.add(mesh)
+  }
+  box('Preview torso', [.58 * bulk, .72, .3], [0, 1.35, 0])
+  box('Preview pelvis', [.42 * bulk, .24, .28], [0, .91, 0])
+  box('Preview head', [.28, .3, .27], [0, 1.92, .02])
+  for (const side of [-1, 1]) {
+    box('Preview arm', [.13 * bulk, .72, .14], [side * .4 * bulk, 1.28, 0])
+    box('Preview leg', [.17 * bulk, .82, .2], [side * .15 * bulk, .43, 0])
+    box(side < 0 ? 'Eye Left' : 'Eye Right', [.055, .04, .025], [side * .075, 1.95, .155], materials.eye)
+  }
+  root.userData.unitAnatomy = {preview: true, parts: root.children.length, type}
+  return root
 }
 
 // Rigid skinning combines every metal component into one draw call per unit.

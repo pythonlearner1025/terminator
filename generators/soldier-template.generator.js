@@ -1,7 +1,26 @@
-import {soldierMaterials} from './soldier-materials.js'
+import {soldierMaterials, soldierPreviewMaterials} from './soldier-materials.js'
 
 export default function generate({params = {}, engine}) {
-  return createSoldierFigure(engine, params.variant)
+  return createSoldierPreview(engine, params.variant)
+}
+
+export function createSoldierPreview(E, variant = 'olive') {
+  const materials = soldierPreviewMaterials(E), root = new E.Group()
+  const material = materials[variant] || materials.olive
+  root.name = 'Resistance Soldier'; root.userData.soldierTemplate = true
+  const box = (name, size, position, selected = material) => {
+    const mesh = new E.Mesh2(new E.BoxGeometry(...size), selected)
+    mesh.name = name; mesh.position.set(...position); root.add(mesh)
+  }
+  box('Preview fatigues', [.48, .68, .28], [0, 1.3, 0])
+  box('Preview head', [.25, .29, .25], [0, 1.86, .01])
+  for (const side of [-1, 1]) {
+    box('Preview arm', [.13, .7, .14], [side * .34, 1.25, 0])
+    box('Preview leg', [.18, .84, .22], [side * .13, .43, 0])
+  }
+  box('Headlamp Lens', [.07, .05, .025], [0, 1.9, .145], materials.lamp)
+  root.userData.soldierAnatomy = {preview: true, parts: root.children.length}
+  return root
 }
 
 // Metres, feet on Y=0, facing +Z. One rigid-skinned surface draw, one lamp lens.

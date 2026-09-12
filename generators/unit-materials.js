@@ -57,3 +57,9 @@ export function unitMaterials(E) {
   shared = {metal, eye, halo, glowMap, textureBytes: (6 * 128 * 128 + 128 * 128 + 64 * 64) * 4 * 4 / 3}
   return shared
 }
+
+export function unitPreviewMaterials(E) {
+  const metal = new E.UnlitMaterial({name: 'Unit authoring preview steel', color: 0x9aa4ab})
+  const eye = new E.UnlitMaterial({name: 'Unit authoring preview optics', color: 0xff0800})
+  return {metal, eye}
+}

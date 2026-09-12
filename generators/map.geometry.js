@@ -2,6 +2,46 @@ import {mapMaterials, randomSource} from './map.materials.js'
 
 const xyz = p => [p.x, p.y, p.z]
 
+export function createMapPreviewGroup(api, map, {markers = true} = {}) {
+  const group = new api.Group()
+  group.name = 'Bunker 7 Night Preview'
+  const materials = {
+    ground: new api.UnlitMaterial({name: 'Map preview ground', color: 0x465866}),
+    structure: new api.UnlitMaterial({name: 'Map preview structures', color: 0x73818b}),
+    accent: new api.UnlitMaterial({name: 'Map preview hazards and gates', color: 0xc3563c}),
+  }
+  const batches = new Map(Object.values(materials).map(material => [material, []]))
+  const addBox = (position, size, material) => {
+    const geometry = new api.BoxGeometry(size[0], size[1], size[2])
+    geometry.translate(position[0], position[1], position[2])
+    batches.get(material).push(geometry)
+  }
+  const bounds = []
+  for (const collider of map.colliders) {
+    const position = xyz(collider.center), size = xyz(collider.size)
+    const material = ['floor', 'stair', 'ramp'].includes(collider.kind) ? materials.ground : materials.structure
+    addBox(position, size, material)
+    bounds.push({id: collider.id, min: position.map((value, index) => value - size[index] / 2),
+      max: position.map((value, index) => value + size[index] / 2), center: position, size})
+  }
+  for (const door of map.doors) addBox(xyz(door.pos), xyz(door.size), materials.accent)
+  for (const gate of map.spawnGates) addBox([gate.pos.x, 1.5, gate.pos.z], [3.8, 3, .12], materials.accent)
+  for (const slot of map.hazardSlots) addBox([slot.pos.x, .03, slot.pos.z], [slot.size.x, .06, slot.size.z], materials.accent)
+  addBox(xyz(map.trader.pos), xyz(map.trader.size), materials.accent)
+  if (markers) addBox([map.playerStart.pos.x, .04, map.playerStart.pos.z], [1.2, .08, 1.2], materials.accent)
+  for (const [material, geometries] of batches) {
+    if (!geometries.length) continue
+    const geometry = api.mergeGeometries(geometries, false)
+    for (const part of geometries) part.dispose()
+    if (!geometry) throw new Error(`Could not merge map preview material ${material.name}`)
+    const mesh = new api.Mesh2(geometry, material)
+    mesh.name = material.name
+    group.add(mesh)
+  }
+  group.userData.mapVisualBounds = bounds
+  return group
+}
+
 export function createMapGroup(api, map, {markers = true, runtime = false} = {}) {
   const group = new api.Group()
   group.name = runtime ? 'Bunker 7 Night Runtime' : 'Bunker 7 Night Preview'

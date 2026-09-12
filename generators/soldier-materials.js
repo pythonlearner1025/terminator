@@ -33,3 +33,13 @@ export function soldierMaterials(E) {
   }
   return shared
 }
+
+export function soldierPreviewMaterials(E) {
+  const make = (variant, color) => new E.UnlitMaterial({
+    name: `Resistance ${variant} authoring preview`, color,
+  })
+  return {
+    olive: make('olive', 0xb8c49a), gray: make('gray', 0xc3ccd4),
+    lamp: new E.UnlitMaterial({name: 'Resistance authoring preview headlamp', color: 0xffecc5}),
+  }
+}
