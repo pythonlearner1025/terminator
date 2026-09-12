@@ -60,10 +60,13 @@ Legend: [ ] todo, [~] in progress, [x] done, [!] blocked
 - [x] Co-op fix pass: gameplay-only pointer lock, reliable guest prediction and reconnect, lobby return, and two-client proof
 - [x] KF2 core pass: enemy projectiles, six-unit roster, bosses, sniper, launcher, telemetry, simulator proof
 - [x] KF2 weapon and gore views: real sniper and launcher rigs, projectile visuals, dismemberment, deformation, and crawl state
-- [~] KF2 unit phase two: final T-1000, HK-Aerial, HK-Tank visuals and boss bar; phase one uses measured placeholders
+- [x] Hitbox fit (sol): fitted collision primitives for every prop and unit, ?colliders=1 overlay (7c99d59)
+- [x] WebRTC P2P co-op with platform signaling (sol): worker blitz-games-signal on blitz-cloud branch poc/p2p-signaling, lib/net/signaling.js and webrtc.js, relay only behind ?relay= (e9c2341). kite3d docs PR blitzdotdev/kite3d#6
+- [x] KF2 tracers: realistic thin exposure streaks with bloom, from real footage (4fa95ed); map expansion with tunnel loop, barracks, colonnade, density (7192b26); pistol is a six-shot revolver (26522ee)
+- [~] KF2 phase two: final T-1000, HK-Aerial, HK-Tank visuals and boss bar (astra, pass/roster-visuals); three-player lobby QA through the deployed signaling at 12, 24, 36 enemies (sol, pass/lobby-qa); then a quiet-machine performance pass against the 13.3 ms p99 budget
 - [ ] Deferred by the passes: SMG, LMG, and real sculpted endoskeleton and weapon models
-- [x] Existing published release 703528bb remains at https://terminator.app.blitz.dev/; owner claims the release
-- [ ] Checkpoint 2: owner hosts a party from the published game through `npm run tunnel` and plays with a friend
+- [x] Auto-publish on every master commit from ~/games/terminator-deploy (tools/publish-master.sh, hooks via tools/install-publish-hooks.sh); latest release c87421d1 (26522ee); the owner claimed the game
+- [ ] Checkpoint 2: owner hosts a party from the published game with Host Party and the ?party= link and plays with a friend
 - [x] Editor bug: toolbar icons blank. Root cause: idle full-rate render loop. PR blitzdotdev/kite3d#4, CI green, unmerged
 - [ ] kite3d CLI bug to file: a second `kite3d dev` on another port deletes the shared .kite3d/dev.json on exit and orphans the first server
 - [~] Checkpoint 1: tests 54 pass, check passes, editor open on port 4300 in Play, owner playing (2026-09-11)
