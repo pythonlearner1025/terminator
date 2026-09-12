@@ -50,7 +50,9 @@ Legend: [ ] todo, [~] in progress, [x] done, [!] blocked
 - [x] Aim down sights on right mouse, crosshair removed, easier economy, health reset at wave clear (17d2e95, 5709510, b3fd86a)
 - [x] Co-op pass (docs/coop-design.md): soldier model, multi-player core, netcode and relay, co-op UI. Two-client relay proof on the final tree: both reach wave 1, 21 Hz snapshots, zero errors. Boot regression fixed (78ad572).
 - [x] Checkpoint 1 feedback round: aim down sights, terse then labeled UI, economy, health reset, kite3d 0.16.0 upgrade
-- [~] AAA pass (existing level only), five Astra agents in worktrees under ../terminator-wt, branches pass/materials, pass/enemies, pass/weapons, pass/audio, pass/presentation; the orchestrator squash-merges each onto master
+- [x] AAA pass (existing level only): audio 439e7d4, materials 855b436, enemies 10ab883, presentation 304e642, weapons 8468bd1, each a squash of its worktree branch. 89 tests, check green
+- [~] Performance pass (pass/performance worktree, sol): every pass measured 15 to 28 fps with 24 enemies at 1080p; target 60
+- [ ] Deferred by the passes: T-1000, HK-Aerial, HK-Tank; SMG, sniper, LMG; real sculpted models for the endoskeleton and weapons (procedural ceiling)
 - [ ] Publish the build to https://terminator.app.blitz.dev/ on the owner's go; owner claims the release
 - [ ] Checkpoint 2: owner hosts a party from the published game through `npm run tunnel` and plays with a friend
 - [x] Editor bug: toolbar icons blank. Root cause: idle full-rate render loop. PR blitzdotdev/kite3d#4, CI green, unmerged
