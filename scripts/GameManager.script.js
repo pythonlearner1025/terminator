@@ -159,6 +159,7 @@ export class GameManager extends Object3DComponent {
   }
 
   async startHost({name, relay} = {}) {
+    if (this.world?.sandboxEnabled?.()) return {ok: false, error: {code: 'sandbox'}}
     this._stopParty()
     this.sessionMode = 'host'
     this.localPlayerId = this.world.hostPlayerId
@@ -177,6 +178,7 @@ export class GameManager extends Object3DComponent {
   }
 
   async joinParty({code, relay, signal, name} = {}) {
+    if (this.world?.sandboxEnabled?.()) return {ok: false, error: {code: 'sandbox'}}
     this._stopParty()
     this.lobby?.stop()
     this.sessionMode = 'guest'

@@ -61,6 +61,10 @@ inputs, telemetry, and an `events` delta. `eventStart` and `eventCursor` identif
 `world.predictPlayer(playerId, inputs)` advances only that player's movement fields by one 60 Hz tick
 without advancing world time, AI, combat, events, or telemetry.
 
+`world.setSandbox(options)` controls deterministic testing rules. Invulnerability keeps the host at
+full health and armor. Infinite Scrap fixes its balance at 999999 and bypasses purchase deductions.
+Sandbox state survives snapshots, and sandbox wave summaries carry `sandbox: true`.
+
 All ranged enemy attacks are fixed-tick entries in `world.projectiles`. Rounds and bolts fly straight.
 Tank shells use gravity and splash damage. Swept map and player-capsule tests prevent tunneling.
 Player launcher shells sweep against the fitted map primitives and named unit-part volumes.

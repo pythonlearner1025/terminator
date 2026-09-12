@@ -112,6 +112,13 @@ zone 40, fog level 0 to 3 at 20 per level, place a hazard 60, break the flank wa
 Spawn groups: Skynet submits a list of groups. Each group has a time offset from wave start, a gate,
 a unit type, and a count. Units spawn 0.5 s apart within a group.
 
+## Sandbox
+
+Open `https://terminator.app.blitz.dev/sandbox` to enter the single-player testing mode.
+The player has full health, full armor, infinite Scrap, and an always-open trader.
+The wave director starts paused. Use the panel to spawn units, control waves, and supply weapons.
+Press F1 to show or hide the panel.
+
 ## Telemetry captured per wave
 
 - Player path as a polyline sampled at 4 Hz, and a 2 m grid heatmap of time spent.
