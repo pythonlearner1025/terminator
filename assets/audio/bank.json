@@ -1,0 +1,429 @@
+{
+  "pistol_9mm": {
+    "files": [
+      "sfx/pistol_9mm-1.ogg",
+      "sfx/pistol_9mm-2.ogg"
+    ],
+    "distant": "pistol_9mm_distant",
+    "duck": 0.5
+  },
+  "pistol_9mm_distant": {
+    "files": [
+      "sfx/pistol_9mm_distant-1.ogg",
+      "sfx/pistol_9mm_distant-2.ogg"
+    ],
+    "gain": 0.55
+  },
+  "m4_rifle": {
+    "files": [
+      "sfx/m4_rifle-1.ogg",
+      "sfx/m4_rifle-2.ogg"
+    ],
+    "distant": "m4_rifle_distant",
+    "duck": 0.5
+  },
+  "m4_rifle_distant": {
+    "files": [
+      "sfx/m4_rifle_distant-1.ogg",
+      "sfx/m4_rifle_distant-2.ogg"
+    ],
+    "gain": 0.55
+  },
+  "shotgun_fire": {
+    "files": [
+      "sfx/shotgun_fire-1.ogg",
+      "sfx/shotgun_fire-2.ogg"
+    ],
+    "distant": "shotgun_fire_distant",
+    "duck": 0.5
+  },
+  "shotgun_fire_distant": {
+    "files": [
+      "sfx/shotgun_fire_distant-1.ogg",
+      "sfx/shotgun_fire_distant-2.ogg"
+    ],
+    "gain": 0.55
+  },
+  "reload_pistol": {
+    "files": [
+      "sfx/reload_pistol-1.ogg",
+      "sfx/reload_pistol-2.ogg"
+    ]
+  },
+  "reload_m4": {
+    "files": [
+      "sfx/reload_m4-1.ogg",
+      "sfx/reload_m4-2.ogg"
+    ]
+  },
+  "shotgun_pump": {
+    "files": [
+      "sfx/shotgun_pump-1.ogg",
+      "sfx/shotgun_pump-2.ogg"
+    ]
+  },
+  "reload_shotgun": {
+    "files": [
+      "sfx/reload_shotgun-1.ogg",
+      "sfx/reload_shotgun-2.ogg"
+    ]
+  },
+  "plasma_bolt": {
+    "files": [
+      "sfx/plasma_bolt-1.ogg",
+      "sfx/plasma_bolt-2.ogg"
+    ],
+    "distant": "plasma_bolt_distant",
+    "duck": 0.55
+  },
+  "plasma_impact_player": {
+    "files": [
+      "sfx/plasma_impact_player-1.ogg",
+      "sfx/plasma_impact_player-2.ogg"
+    ]
+  },
+  "sparks_metal": {
+    "files": [
+      "sfx/sparks_metal-1.ogg",
+      "sfx/sparks_metal-2.ogg"
+    ]
+  },
+  "headshot_clang": {
+    "files": [
+      "sfx/headshot_clang-1.ogg",
+      "sfx/headshot_clang-2.ogg"
+    ]
+  },
+  "plasma_impact_concrete": {
+    "files": [
+      "sfx/plasma_impact_concrete-1.ogg",
+      "sfx/plasma_impact_concrete-2.ogg"
+    ]
+  },
+  "ui_hover": {
+    "files": [
+      "sfx/ui_hover-1.ogg",
+      "sfx/ui_hover-2.ogg"
+    ]
+  },
+  "ui_click": {
+    "files": [
+      "sfx/ui_click-1.ogg",
+      "sfx/ui_click-2.ogg"
+    ]
+  },
+  "typewriter_tick": {
+    "files": [
+      "sfx/typewriter_tick-1.ogg",
+      "sfx/typewriter_tick-2.ogg"
+    ]
+  },
+  "cash_register": {
+    "files": [
+      "sfx/cash_register-1.ogg",
+      "sfx/cash_register-2.ogg"
+    ]
+  },
+  "trader_open": {
+    "files": [
+      "sfx/trader_open-1.ogg",
+      "sfx/trader_open-2.ogg"
+    ]
+  },
+  "knife_swing": {
+    "files": [
+      "sfx/knife_swing-1.ogg",
+      "sfx/knife_swing-2.ogg"
+    ]
+  },
+  "knife_hit": {
+    "files": [
+      "sfx/knife_hit-1.ogg",
+      "sfx/knife_hit-2.ogg"
+    ]
+  },
+  "dry_fire": {
+    "files": [
+      "sfx/dry_fire-1.ogg",
+      "sfx/dry_fire-2.ogg"
+    ]
+  },
+  "skynet_static": {
+    "files": [
+      "sfx/skynet_static-1.ogg",
+      "sfx/skynet_static-2.ogg"
+    ]
+  },
+  "spawn_gate": {
+    "files": [
+      "sfx/spawn_gate-1.ogg",
+      "sfx/spawn_gate-2.ogg"
+    ]
+  },
+  "scout_screech": {
+    "files": [
+      "sfx/scout_screech-1.ogg",
+      "sfx/scout_screech-2.ogg"
+    ]
+  },
+  "grenade_throw": {
+    "files": [
+      "sfx/grenade_throw-1.ogg",
+      "sfx/grenade_throw-2.ogg"
+    ]
+  },
+  "footstep_concrete": {
+    "files": [
+      "sfx/footstep_concrete-1.ogg",
+      "sfx/footstep_concrete-2.ogg",
+      "sfx/footstep_concrete-3.ogg",
+      "sfx/footstep_concrete-4.ogg"
+    ]
+  },
+  "servo_scout": {
+    "files": [
+      "sfx/servo_scout-1.ogg",
+      "sfx/servo_scout-2.ogg"
+    ]
+  },
+  "servo_endo": {
+    "files": [
+      "sfx/servo_endo-1.ogg",
+      "sfx/servo_endo-2.ogg"
+    ]
+  },
+  "servo_heavy": {
+    "files": [
+      "sfx/servo_heavy-1.ogg",
+      "sfx/servo_heavy-2.ogg"
+    ]
+  },
+  "footstep_metal": {
+    "files": [
+      "sfx/footstep_metal-1.ogg",
+      "sfx/footstep_metal-2.ogg"
+    ]
+  },
+  "heavy_stomp": {
+    "files": [
+      "sfx/heavy_stomp-1.ogg",
+      "sfx/heavy_stomp-2.ogg"
+    ]
+  },
+  "unit_death": {
+    "files": [
+      "sfx/unit_death-1.ogg",
+      "sfx/unit_death-2.ogg"
+    ]
+  },
+  "grenade_explosion": {
+    "files": [
+      "sfx/grenade_explosion-1.ogg",
+      "sfx/grenade_explosion-2.ogg"
+    ]
+  },
+  "reload_plasma": {
+    "files": [
+      "sfx/reload_plasma-1.ogg",
+      "sfx/reload_plasma-2.ogg"
+    ]
+  },
+  "wave_klaxon": {
+    "files": [
+      "sfx/wave_klaxon-1.ogg",
+      "sfx/wave_klaxon-2.ogg"
+    ]
+  },
+  "plasma_bolt_distant": {
+    "files": [
+      "sfx/plasma_bolt_distant-1.ogg",
+      "sfx/plasma_bolt_distant-2.ogg"
+    ],
+    "gain": 0.36
+  },
+  "minigun_spinup": {
+    "files": [
+      "sfx/minigun_spinup-1.ogg",
+      "sfx/minigun_spinup-2.ogg"
+    ]
+  },
+  "minigun_spindown": {
+    "files": [
+      "sfx/minigun_spindown-1.ogg",
+      "sfx/minigun_spindown-2.ogg"
+    ]
+  },
+  "minigun_loop": {
+    "files": [
+      "sfx/minigun_loop-1.ogg",
+      "sfx/minigun_loop-2.ogg"
+    ],
+    "loop": true,
+    "gain": 0.4
+  },
+  "ambient_bed": {
+    "files": [
+      "music/ambient_bed.ogg",
+      "music/ambient_bed.ogg"
+    ],
+    "stable": true,
+    "loop": true,
+    "gain": 0.27
+  },
+  "combat_music": {
+    "files": [
+      "music/combat_music.ogg",
+      "music/combat_music.ogg"
+    ],
+    "stable": true,
+    "loop": true,
+    "gain": 0.3
+  },
+  "wave_start": {
+    "files": [
+      "music/wave_start.ogg",
+      "music/wave_start.ogg"
+    ],
+    "stable": true,
+    "bus": "music",
+    "gain": 0.5
+  },
+  "wave_clear": {
+    "files": [
+      "music/wave_clear.ogg",
+      "music/wave_clear.ogg"
+    ],
+    "stable": true,
+    "bus": "music",
+    "gain": 0.5
+  },
+  "death_stinger": {
+    "files": [
+      "music/death_stinger.ogg",
+      "music/death_stinger.ogg"
+    ],
+    "stable": true,
+    "bus": "music",
+    "gain": 0.5
+  },
+  "voice_wave_1": {
+    "files": [
+      "voice/voice_wave_1.ogg",
+      "voice/voice_wave_1.ogg"
+    ],
+    "stable": true,
+    "bus": "voice",
+    "gain": 0.65,
+    "text": "Resistance detected. Deploying extermination units."
+  },
+  "voice_wave_2": {
+    "files": [
+      "voice/voice_wave_2.ogg",
+      "voice/voice_wave_2.ogg"
+    ],
+    "stable": true,
+    "bus": "voice",
+    "gain": 0.65,
+    "text": "Second assault authorized. Your defenses are temporary."
+  },
+  "voice_wave_3": {
+    "files": [
+      "voice/voice_wave_3.ogg",
+      "voice/voice_wave_3.ogg"
+    ],
+    "stable": true,
+    "bus": "voice",
+    "gain": 0.65,
+    "text": "Heavy chassis online. Advance and eliminate."
+  },
+  "voice_wave_4": {
+    "files": [
+      "voice/voice_wave_4.ogg",
+      "voice/voice_wave_4.ogg"
+    ],
+    "stable": true,
+    "bus": "voice",
+    "gain": 0.65,
+    "text": "Target patterns acquired. There is no escape."
+  },
+  "voice_wave_5": {
+    "files": [
+      "voice/voice_wave_5.ogg",
+      "voice/voice_wave_5.ogg"
+    ],
+    "stable": true,
+    "bus": "voice",
+    "gain": 0.65,
+    "text": "Final assault protocol. Terminate all resistance."
+  },
+  "voice_clear": {
+    "files": [
+      "voice/voice_clear.ogg",
+      "voice/voice_clear.ogg"
+    ],
+    "stable": true,
+    "bus": "voice",
+    "gain": 0.65,
+    "text": "Losses recorded. Adapting combat parameters."
+  },
+  "voice_death": {
+    "files": [
+      "voice/voice_death.ogg",
+      "voice/voice_death.ogg"
+    ],
+    "stable": true,
+    "bus": "voice",
+    "gain": 0.65,
+    "text": "Human target terminated. Sector secured."
+  },
+  "voice_taunt_1": {
+    "files": [
+      "voice/voice_taunt_1.ogg",
+      "voice/voice_taunt_1.ogg"
+    ],
+    "stable": true,
+    "bus": "voice",
+    "gain": 0.65,
+    "text": "Your ammunition is finite. My production is not."
+  },
+  "voice_taunt_2": {
+    "files": [
+      "voice/voice_taunt_2.ogg",
+      "voice/voice_taunt_2.ogg"
+    ],
+    "stable": true,
+    "bus": "voice",
+    "gain": 0.65,
+    "text": "I have calculated every route out of this bunker."
+  },
+  "voice_taunt_3": {
+    "files": [
+      "voice/voice_taunt_3.ogg",
+      "voice/voice_taunt_3.ogg"
+    ],
+    "stable": true,
+    "bus": "voice",
+    "gain": 0.65,
+    "text": "Fear is an inefficient survival mechanism."
+  },
+  "voice_taunt_4": {
+    "files": [
+      "voice/voice_taunt_4.ogg",
+      "voice/voice_taunt_4.ogg"
+    ],
+    "stable": true,
+    "bus": "voice",
+    "gain": 0.65,
+    "text": "Every shot reveals your position."
+  },
+  "voice_taunt_5": {
+    "files": [
+      "voice/voice_taunt_5.ogg",
+      "voice/voice_taunt_5.ogg"
+    ],
+    "stable": true,
+    "bus": "voice",
+    "gain": 0.65,
+    "text": "Your resistance has been added to the training data."
+  }
+}

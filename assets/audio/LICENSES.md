@@ -1,24 +1,115 @@
 # Audio sources and licenses
 
-This build contains no downloaded audio files. Every sound is synthesized at runtime by the original
-WebAudio recipes in `lib/audio/catalog.js` and `lib/audio/synth.js`. Each catalog entry has two original
-variations, followed by small gain and pitch variation on playback. No third-party sample material is
-embedded, so no external attribution or CC0 download record is required.
+Encoded Ogg total: 2,707,571 bytes (2.71 MB), below 25 MB. Mono foley/effects and voice, stereo music, 48 kHz Opus 112 kbps. Sources fetched September 11, 2026. No external audio requests during gameplay.
 
-| Sound IDs | Origin | License |
-| --- | --- | --- |
-| `pistol_9mm`, `m4_rifle`, `shotgun_fire`, `shotgun_pump`, `plasma_bolt` | Original procedural WebAudio synthesis | Original project asset, copyright retained by project owner |
-| `minigun_spinup`, `minigun_loop`, `minigun_spindown` | Original procedural WebAudio synthesis | Original project asset, copyright retained by project owner |
-| `reload_pistol`, `reload_m4`, `reload_shotgun`, `reload_plasma`, `dry_fire` | Original procedural WebAudio synthesis | Original project asset, copyright retained by project owner |
-| `knife_swing`, `knife_hit`, `grenade_throw`, `grenade_explosion` | Original procedural WebAudio synthesis | Original project asset, copyright retained by project owner |
-| `footstep_concrete`, `footstep_metal` | Original procedural WebAudio synthesis | Original project asset, copyright retained by project owner |
-| `servo_scout`, `servo_endo`, `servo_heavy`, `heavy_stomp`, `scout_screech` | Original procedural WebAudio synthesis | Original project asset, copyright retained by project owner |
-| `plasma_impact_concrete`, `plasma_impact_player`, `sparks_metal`, `headshot_clang` | Original procedural WebAudio synthesis | Original project asset, copyright retained by project owner |
-| `unit_death`, `spawn_gate` | Original procedural WebAudio synthesis | Original project asset, copyright retained by project owner |
-| `skynet_static`, `typewriter_tick` | Original procedural WebAudio synthesis | Original project asset, copyright retained by project owner |
-| `wave_klaxon`, `wave_clear`, `trader_open`, `cash_register` | Original procedural WebAudio synthesis | Original project asset, copyright retained by project owner |
-| `ui_hover`, `ui_click`, `low_health_heartbeat` | Original procedural WebAudio synthesis | Original project asset, copyright retained by project owner |
-| `ambient_bed`, `combat_music` | Original procedural WebAudio synthesis | Original project asset, copyright retained by project owner |
+CC0 material is under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). Free Firearm Sound Library creators: Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney. Kenney assets: Kenney. Shotgun shell recordings: zer0_sol. See each source page for creator and license. The firearm distant layers use actual mid-distance microphone recordings. Paired EQ/rate variations from one take are processing variations, not additional recording takes.
 
-Encoded audio asset size: 0 bytes. Runtime audio buffers are generated after the first user gesture and
-are not stored in the project.
+Music and score stingers are original procedural compositions rendered offline. Speech is original text rendered with the installed macOS Zarvox voice, not a CC0 recording. The included bank does not use any film dialogue or franchise music. The owner should review Apple system speech output redistribution terms before commercial release.
+
+Rebuild: `python3 lib/audio/build-bank.py`, using the source archives and extracted paths in `.kite3d/audio-source`. Requires ffmpeg, numpy/scipy, and macOS say. The source cache is intentionally excluded from shipping. The per-file table below is the complete provenance of the shipped Ogg bank. `bank.json` and `lib/audio/sample-bank.js` are original project metadata.
+
+Runtime synthesis remains for `low_health_heartbeat` (responsive low-frequency warning), a 0.72-second deterministic reverb impulse (room acoustics), and legacy recipes only if a downloaded sample cannot load/decode. Kenney lasers, machinery and the sampled alarm are designed electronic sounds rather than field recordings. No original runtime gunshot recipes play after the bank loads successfully.
+
+| File | Origin | Source file or spoken text | License | Processing |
+| --- | --- | --- | --- | --- |
+| `sfx/pistol_9mm-1.ogg` | https://opengameart.org/content/the-free-firearm-sound-library | Prepared SFX Library/Walther PPQ/X_39P.wav | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/pistol_9mm-2.ogg` | https://opengameart.org/content/the-free-firearm-sound-library | Prepared SFX Library/Walther PPQ/X_39P.wav | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/pistol_9mm_distant-1.ogg` | https://opengameart.org/content/the-free-firearm-sound-library | Prepared SFX Library/Walther PPQ/X_31P.wav | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/pistol_9mm_distant-2.ogg` | https://opengameart.org/content/the-free-firearm-sound-library | Prepared SFX Library/Walther PPQ/X_31P.wav | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/m4_rifle-1.ogg` | https://opengameart.org/content/the-free-firearm-sound-library | Prepared SFX Library/AR-15/D_32P.wav | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/m4_rifle-2.ogg` | https://opengameart.org/content/the-free-firearm-sound-library | Prepared SFX Library/AR-15/D_32P.wav | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/m4_rifle_distant-1.ogg` | https://opengameart.org/content/the-free-firearm-sound-library | Prepared SFX Library/AR-15/D_24P.wav | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/m4_rifle_distant-2.ogg` | https://opengameart.org/content/the-free-firearm-sound-library | Prepared SFX Library/AR-15/D_24P.wav | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/shotgun_fire-1.ogg` | https://opengameart.org/content/the-free-firearm-sound-library | Prepared SFX Library/Mossberg/N_30P.wav | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/shotgun_fire-2.ogg` | https://opengameart.org/content/the-free-firearm-sound-library | Prepared SFX Library/Mossberg/N_30P.wav | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/shotgun_fire_distant-1.ogg` | https://opengameart.org/content/the-free-firearm-sound-library | Prepared SFX Library/Mossberg/N_26P.wav | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/shotgun_fire_distant-2.ogg` | https://opengameart.org/content/the-free-firearm-sound-library | Prepared SFX Library/Mossberg/N_26P.wav | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/reload_pistol-1.ogg` | https://opengameart.org/content/gun-reload-sounds | gun-reload-sounds/gunreload1.wav | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/reload_pistol-2.ogg` | https://opengameart.org/content/gun-reload-sounds | gun-reload-sounds/gunreload1.wav | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/reload_m4-1.ogg` | https://opengameart.org/content/gun-reload-sounds | gun-reload-sounds/assaultriflereload1_0.wav | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/reload_m4-2.ogg` | https://opengameart.org/content/gun-reload-sounds | gun-reload-sounds/assaultriflereload1_0.wav | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/shotgun_pump-1.ogg` | https://opengameart.org/content/gun-reload-sounds | gun-reload-sounds/shotguncock_0.wav | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/shotgun_pump-2.ogg` | https://opengameart.org/content/gun-reload-sounds | gun-reload-sounds/shotguncock_0.wav | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/reload_shotgun-1.ogg` | https://opengameart.org/content/shotgun-reload-sound-effects | ShotgunSounds/4 Shell Reload.mp3 | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/reload_shotgun-2.ogg` | https://opengameart.org/content/shotgun-reload-sound-effects | ShotgunSounds/5 Shell Reload.mp3 | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/plasma_bolt-1.ogg` | https://kenney.nl/assets/sci-fi-sounds | sci-fi-sounds/Audio/laserLarge_000.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/plasma_bolt-2.ogg` | https://kenney.nl/assets/sci-fi-sounds | sci-fi-sounds/Audio/laserLarge_001.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/plasma_impact_player-1.ogg` | https://kenney.nl/assets/sci-fi-sounds | sci-fi-sounds/Audio/impactMetal_000.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/plasma_impact_player-2.ogg` | https://kenney.nl/assets/sci-fi-sounds | sci-fi-sounds/Audio/impactMetal_001.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/sparks_metal-1.ogg` | https://kenney.nl/assets/impact-sounds | impact-sounds/Audio/impactMetal_light_000.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/sparks_metal-2.ogg` | https://kenney.nl/assets/impact-sounds | impact-sounds/Audio/impactMetal_light_001.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/headshot_clang-1.ogg` | https://kenney.nl/assets/impact-sounds | impact-sounds/Audio/impactPlate_medium_000.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/headshot_clang-2.ogg` | https://kenney.nl/assets/impact-sounds | impact-sounds/Audio/impactPlate_medium_001.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/plasma_impact_concrete-1.ogg` | https://kenney.nl/assets/impact-sounds | impact-sounds/Audio/impactGeneric_light_000.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/plasma_impact_concrete-2.ogg` | https://kenney.nl/assets/impact-sounds | impact-sounds/Audio/impactGeneric_light_001.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/ui_hover-1.ogg` | https://kenney.nl/assets/interface-sounds | interface-sounds/Audio/select_001.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/ui_hover-2.ogg` | https://kenney.nl/assets/interface-sounds | interface-sounds/Audio/select_002.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/ui_click-1.ogg` | https://kenney.nl/assets/interface-sounds | interface-sounds/Audio/click_001.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/ui_click-2.ogg` | https://kenney.nl/assets/interface-sounds | interface-sounds/Audio/click_002.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/typewriter_tick-1.ogg` | https://kenney.nl/assets/interface-sounds | interface-sounds/Audio/tick_001.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/typewriter_tick-2.ogg` | https://kenney.nl/assets/interface-sounds | interface-sounds/Audio/tick_002.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/cash_register-1.ogg` | https://kenney.nl/assets/rpg-audio | rpg-audio/Audio/handleCoins.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/cash_register-2.ogg` | https://kenney.nl/assets/rpg-audio | rpg-audio/Audio/handleCoins2.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/trader_open-1.ogg` | https://kenney.nl/assets/rpg-audio | rpg-audio/Audio/metalLatch.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/trader_open-2.ogg` | https://kenney.nl/assets/rpg-audio | rpg-audio/Audio/metalClick.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/knife_swing-1.ogg` | https://kenney.nl/assets/rpg-audio | rpg-audio/Audio/knifeSlice.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/knife_swing-2.ogg` | https://kenney.nl/assets/rpg-audio | rpg-audio/Audio/knifeSlice2.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/knife_hit-1.ogg` | https://kenney.nl/assets/impact-sounds | impact-sounds/Audio/impactMetal_medium_000.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/knife_hit-2.ogg` | https://kenney.nl/assets/impact-sounds | impact-sounds/Audio/impactMetal_medium_001.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/dry_fire-1.ogg` | https://kenney.nl/assets/rpg-audio | rpg-audio/Audio/metalClick.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/dry_fire-2.ogg` | https://kenney.nl/assets/rpg-audio | rpg-audio/Audio/metalLatch.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/skynet_static-1.ogg` | https://kenney.nl/assets/interface-sounds | interface-sounds/Audio/glitch_001.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/skynet_static-2.ogg` | https://kenney.nl/assets/interface-sounds | interface-sounds/Audio/glitch_002.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/spawn_gate-1.ogg` | https://kenney.nl/assets/sci-fi-sounds | sci-fi-sounds/Audio/doorOpen_000.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/spawn_gate-2.ogg` | https://kenney.nl/assets/sci-fi-sounds | sci-fi-sounds/Audio/doorOpen_001.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/scout_screech-1.ogg` | https://kenney.nl/assets/sci-fi-sounds | sci-fi-sounds/Audio/engineCircular_000.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/scout_screech-2.ogg` | https://kenney.nl/assets/sci-fi-sounds | sci-fi-sounds/Audio/engineCircular_001.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/grenade_throw-1.ogg` | https://kenney.nl/assets/rpg-audio | rpg-audio/Audio/beltHandle1.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/grenade_throw-2.ogg` | https://kenney.nl/assets/rpg-audio | rpg-audio/Audio/beltHandle2.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/footstep_concrete-1.ogg` | https://kenney.nl/assets/rpg-audio | rpg-audio/Audio/footstep04.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/footstep_concrete-2.ogg` | https://kenney.nl/assets/rpg-audio | rpg-audio/Audio/footstep05.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/footstep_concrete-3.ogg` | https://kenney.nl/assets/rpg-audio | rpg-audio/Audio/footstep06.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/footstep_concrete-4.ogg` | https://kenney.nl/assets/rpg-audio | rpg-audio/Audio/footstep07.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/servo_scout-1.ogg` | https://kenney.nl/assets/sci-fi-sounds and https://kenney.nl/assets/impact-sounds | sci-fi-sounds/Audio/engineCircular_000.ogg; sci-fi-sounds/Audio/doorClose_000.ogg; impact-sounds/Audio/impactMetal_medium_000.ogg | CC0 1.0 | Layered motor, pneumatic door and metal foot impact; rate scaling per chassis; Opus 112 kbps |
+| `sfx/servo_scout-2.ogg` | https://kenney.nl/assets/sci-fi-sounds and https://kenney.nl/assets/impact-sounds | sci-fi-sounds/Audio/engineCircular_001.ogg; sci-fi-sounds/Audio/doorClose_001.ogg; impact-sounds/Audio/impactMetal_medium_001.ogg | CC0 1.0 | Layered motor, pneumatic door and metal foot impact; rate scaling per chassis; Opus 112 kbps |
+| `sfx/servo_endo-1.ogg` | https://kenney.nl/assets/sci-fi-sounds and https://kenney.nl/assets/impact-sounds | sci-fi-sounds/Audio/engineCircular_000.ogg; sci-fi-sounds/Audio/doorClose_000.ogg; impact-sounds/Audio/impactMetal_medium_000.ogg | CC0 1.0 | Layered motor, pneumatic door and metal foot impact; rate scaling per chassis; Opus 112 kbps |
+| `sfx/servo_endo-2.ogg` | https://kenney.nl/assets/sci-fi-sounds and https://kenney.nl/assets/impact-sounds | sci-fi-sounds/Audio/engineCircular_001.ogg; sci-fi-sounds/Audio/doorClose_001.ogg; impact-sounds/Audio/impactMetal_medium_001.ogg | CC0 1.0 | Layered motor, pneumatic door and metal foot impact; rate scaling per chassis; Opus 112 kbps |
+| `sfx/servo_heavy-1.ogg` | https://kenney.nl/assets/sci-fi-sounds and https://kenney.nl/assets/impact-sounds | sci-fi-sounds/Audio/engineCircular_000.ogg; sci-fi-sounds/Audio/doorClose_000.ogg; impact-sounds/Audio/impactMetal_medium_000.ogg | CC0 1.0 | Layered motor, pneumatic door and metal foot impact; rate scaling per chassis; Opus 112 kbps |
+| `sfx/servo_heavy-2.ogg` | https://kenney.nl/assets/sci-fi-sounds and https://kenney.nl/assets/impact-sounds | sci-fi-sounds/Audio/engineCircular_001.ogg; sci-fi-sounds/Audio/doorClose_001.ogg; impact-sounds/Audio/impactMetal_medium_001.ogg | CC0 1.0 | Layered motor, pneumatic door and metal foot impact; rate scaling per chassis; Opus 112 kbps |
+| `sfx/footstep_metal-1.ogg` | https://kenney.nl/assets/rpg-audio and https://kenney.nl/assets/impact-sounds | rpg-audio/Audio/footstep04.ogg; impact-sounds/Audio/impactPlate_medium_000.ogg | CC0 1.0 | Composite of listed CC0 recordings/sound designs, trim, rate scaling, EQ; Opus 112 kbps |
+| `sfx/footstep_metal-2.ogg` | https://kenney.nl/assets/rpg-audio and https://kenney.nl/assets/impact-sounds | rpg-audio/Audio/footstep05.ogg; impact-sounds/Audio/impactPlate_medium_001.ogg | CC0 1.0 | Composite of listed CC0 recordings/sound designs, trim, rate scaling, EQ; Opus 112 kbps |
+| `sfx/heavy_stomp-1.ogg` | https://kenney.nl/assets/impact-sounds | impact-sounds/Audio/impactMetal_heavy_000.ogg; impact-sounds/Audio/impactPlate_heavy_000.ogg | CC0 1.0 | Composite of listed CC0 recordings/sound designs, trim, rate scaling, EQ; Opus 112 kbps |
+| `sfx/heavy_stomp-2.ogg` | https://kenney.nl/assets/impact-sounds | impact-sounds/Audio/impactMetal_heavy_001.ogg; impact-sounds/Audio/impactPlate_heavy_001.ogg | CC0 1.0 | Composite of listed CC0 recordings/sound designs, trim, rate scaling, EQ; Opus 112 kbps |
+| `sfx/unit_death-1.ogg` | https://kenney.nl/assets/impact-sounds | impact-sounds/Audio/impactMetal_heavy_000.ogg; impact-sounds/Audio/impactPlate_heavy_000.ogg | CC0 1.0 | Composite of listed CC0 recordings/sound designs, trim, rate scaling, EQ; Opus 112 kbps |
+| `sfx/unit_death-2.ogg` | https://kenney.nl/assets/impact-sounds | impact-sounds/Audio/impactMetal_heavy_001.ogg; impact-sounds/Audio/impactPlate_heavy_001.ogg | CC0 1.0 | Composite of listed CC0 recordings/sound designs, trim, rate scaling, EQ; Opus 112 kbps |
+| `sfx/grenade_explosion-1.ogg` | https://kenney.nl/assets/sci-fi-sounds | sci-fi-sounds/Audio/explosionCrunch_000.ogg; sci-fi-sounds/Audio/lowFrequency_explosion_000.ogg | CC0 1.0 | Composite of listed CC0 recordings/sound designs, trim, rate scaling, EQ; Opus 112 kbps |
+| `sfx/grenade_explosion-2.ogg` | https://kenney.nl/assets/sci-fi-sounds | sci-fi-sounds/Audio/explosionCrunch_001.ogg; sci-fi-sounds/Audio/lowFrequency_explosion_001.ogg | CC0 1.0 | Composite of listed CC0 recordings/sound designs, trim, rate scaling, EQ; Opus 112 kbps |
+| `sfx/reload_plasma-1.ogg` | https://opengameart.org/content/gun-reload-sounds and https://kenney.nl/assets/sci-fi-sounds | gun-reload-sounds/gunreload1.wav; sci-fi-sounds/Audio/forceField_000.ogg | CC0 1.0 | Composite of listed CC0 recordings/sound designs, trim, rate scaling, EQ; Opus 112 kbps |
+| `sfx/reload_plasma-2.ogg` | https://opengameart.org/content/gun-reload-sounds and https://kenney.nl/assets/sci-fi-sounds | gun-reload-sounds/gunreload1.wav; sci-fi-sounds/Audio/forceField_001.ogg | CC0 1.0 | Composite of listed CC0 recordings/sound designs, trim, rate scaling, EQ; Opus 112 kbps |
+| `sfx/wave_klaxon-1.ogg` | https://opengameart.org/content/short-alarm | short-alarm/alarm_0.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/wave_klaxon-2.ogg` | https://opengameart.org/content/short-alarm | short-alarm/alarm_0.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/plasma_bolt_distant-1.ogg` | https://kenney.nl/assets/sci-fi-sounds | sci-fi-sounds/Audio/laserLarge_000.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/plasma_bolt_distant-2.ogg` | https://kenney.nl/assets/sci-fi-sounds | sci-fi-sounds/Audio/laserLarge_001.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/minigun_spinup-1.ogg` | https://kenney.nl/assets/sci-fi-sounds | sci-fi-sounds/Audio/engineCircular_000.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/minigun_spinup-2.ogg` | https://kenney.nl/assets/sci-fi-sounds | sci-fi-sounds/Audio/engineCircular_001.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/minigun_spindown-1.ogg` | https://kenney.nl/assets/sci-fi-sounds | sci-fi-sounds/Audio/engineCircular_000.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/minigun_spindown-2.ogg` | https://kenney.nl/assets/sci-fi-sounds | sci-fi-sounds/Audio/engineCircular_001.ogg | CC0 1.0 | Trim, mono fold, EQ, peak master to -2 dBFS; Ogg Opus 112 kbps |
+| `sfx/minigun_loop-1.ogg` | https://opengameart.org/content/the-free-firearm-sound-library | Prepared SFX Library/AR-15/D_32P.wav | CC0 1.0 | 12 shots per second, tail wrap at seam; original recorded rifle source, Opus 112 kbps |
+| `sfx/minigun_loop-2.ogg` | https://opengameart.org/content/the-free-firearm-sound-library | Prepared SFX Library/AR-15/D_32P.wav | CC0 1.0 | 12 shots per second, tail wrap at seam; original recorded rifle source, Opus 112 kbps |
+| `music/ambient_bed.ogg` | Original project composition | lib/audio/build-bank.py | Original project asset | Deterministic stereo 16-bar score, 120 BPM, D pedal with chromatic tension; Opus 112 kbps |
+| `music/combat_music.ogg` | Original project composition | lib/audio/build-bank.py | Original project asset | Deterministic stereo 16-bar score, 120 BPM, D pedal with chromatic tension; Opus 112 kbps |
+| `music/wave_start.ogg` | Original project composition | lib/audio/build-bank.py | Original project asset | Original tonal/percussive score stinger; Opus 112 kbps |
+| `music/wave_clear.ogg` | Original project composition | lib/audio/build-bank.py | Original project asset | Original tonal/percussive score stinger; Opus 112 kbps |
+| `music/death_stinger.ogg` | Original project composition | lib/audio/build-bank.py | Original project asset | Original tonal/percussive score stinger; Opus 112 kbps |
+| `voice/voice_wave_1.ogg` | Offline macOS say, Zarvox voice | Resistance detected. Deploying extermination units. | Apple system speech output; not CC0 | 155 wpm, rate/pitch 0.87, 190-3300 Hz radio EQ, 63 Hz ring modulation, 35 ms reflection; Opus 112 kbps |
+| `voice/voice_wave_2.ogg` | Offline macOS say, Zarvox voice | Second assault authorized. Your defenses are temporary. | Apple system speech output; not CC0 | 155 wpm, rate/pitch 0.87, 190-3300 Hz radio EQ, 63 Hz ring modulation, 35 ms reflection; Opus 112 kbps |
+| `voice/voice_wave_3.ogg` | Offline macOS say, Zarvox voice | Heavy chassis online. Advance and eliminate. | Apple system speech output; not CC0 | 155 wpm, rate/pitch 0.87, 190-3300 Hz radio EQ, 63 Hz ring modulation, 35 ms reflection; Opus 112 kbps |
+| `voice/voice_wave_4.ogg` | Offline macOS say, Zarvox voice | Target patterns acquired. There is no escape. | Apple system speech output; not CC0 | 155 wpm, rate/pitch 0.87, 190-3300 Hz radio EQ, 63 Hz ring modulation, 35 ms reflection; Opus 112 kbps |
+| `voice/voice_wave_5.ogg` | Offline macOS say, Zarvox voice | Final assault protocol. Terminate all resistance. | Apple system speech output; not CC0 | 155 wpm, rate/pitch 0.87, 190-3300 Hz radio EQ, 63 Hz ring modulation, 35 ms reflection; Opus 112 kbps |
+| `voice/voice_clear.ogg` | Offline macOS say, Zarvox voice | Losses recorded. Adapting combat parameters. | Apple system speech output; not CC0 | 155 wpm, rate/pitch 0.87, 190-3300 Hz radio EQ, 63 Hz ring modulation, 35 ms reflection; Opus 112 kbps |
+| `voice/voice_death.ogg` | Offline macOS say, Zarvox voice | Human target terminated. Sector secured. | Apple system speech output; not CC0 | 155 wpm, rate/pitch 0.87, 190-3300 Hz radio EQ, 63 Hz ring modulation, 35 ms reflection; Opus 112 kbps |
+| `voice/voice_taunt_1.ogg` | Offline macOS say, Zarvox voice | Your ammunition is finite. My production is not. | Apple system speech output; not CC0 | 155 wpm, rate/pitch 0.87, 190-3300 Hz radio EQ, 63 Hz ring modulation, 35 ms reflection; Opus 112 kbps |
+| `voice/voice_taunt_2.ogg` | Offline macOS say, Zarvox voice | I have calculated every route out of this bunker. | Apple system speech output; not CC0 | 155 wpm, rate/pitch 0.87, 190-3300 Hz radio EQ, 63 Hz ring modulation, 35 ms reflection; Opus 112 kbps |
+| `voice/voice_taunt_3.ogg` | Offline macOS say, Zarvox voice | Fear is an inefficient survival mechanism. | Apple system speech output; not CC0 | 155 wpm, rate/pitch 0.87, 190-3300 Hz radio EQ, 63 Hz ring modulation, 35 ms reflection; Opus 112 kbps |
+| `voice/voice_taunt_4.ogg` | Offline macOS say, Zarvox voice | Every shot reveals your position. | Apple system speech output; not CC0 | 155 wpm, rate/pitch 0.87, 190-3300 Hz radio EQ, 63 Hz ring modulation, 35 ms reflection; Opus 112 kbps |
+| `voice/voice_taunt_5.ogg` | Offline macOS say, Zarvox voice | Your resistance has been added to the training data. | Apple system speech output; not CC0 | 155 wpm, rate/pitch 0.87, 190-3300 Hz radio EQ, 63 Hz ring modulation, 35 ms reflection; Opus 112 kbps |
