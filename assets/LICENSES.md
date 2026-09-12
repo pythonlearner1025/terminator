@@ -33,3 +33,23 @@ Poly Haven assets are CC0 1.0: https://polyhaven.com/license. Downloaded 2026-09
 | `assets/textures/map/paint_normal.jpg` | Derived from Poly Haven Rusty Metal 02, CC0 1.0, using generators/map.bake.py. |
 
 ARM channels are ambient occlusion (red), roughness (green), metalness (blue). Normal maps are OpenGL tangent space. Source maps are 1K, moon HDRI is 2K, decal atlas is 2K.
+
+## Units
+
+All files below are stored in `assets/textures/units/`.
+
+| File | Source | License |
+| --- | --- | --- |
+| `endoskeleton-albedo.jpg` | Original deterministic bake, `generators/unit-textures.py` | Project-authored, no third-party input |
+| `endoskeleton-normal.png` | Original deterministic bake, `generators/unit-textures.py` | Project-authored, no third-party input |
+| `endoskeleton-orm.png` | Original deterministic bake, `generators/unit-textures.py` | Project-authored, no third-party input |
+| `optic-albedo.png` | Original deterministic bake, `generators/unit-textures.py` | Project-authored, no third-party input |
+| `optic-normal.png` | Original deterministic bake, `generators/unit-textures.py` | Project-authored, no third-party input |
+| `optic-orm.png` | Original deterministic bake, `generators/unit-textures.py` | Project-authored, no third-party input |
+| `optic-emissive.png` | Original deterministic bake, `generators/unit-textures.py` | Project-authored, no third-party input |
+| `impact-albedo.png` | Original deterministic bake, `generators/unit-textures.py` | Project-authored, no third-party input |
+| `impact-normal.png` | Original deterministic bake, `generators/unit-textures.py` | Project-authored, no third-party input |
+| `impact-orm.png` | Original deterministic bake, `generators/unit-textures.py` | Project-authored, no third-party input |
+| `studio_small_09_1k.hdr` | [Studio Small 09](https://polyhaven.com/a/studio_small_09), Sergej Majboroda, Poly Haven. Downloaded 2026-09-11. | [CC0 1.0](https://polyhaven.com/license) |
+
+ORM packs ambient occlusion in R, roughness in G and metalness in B. The optical emissive map and impact alpha are separate. Geometry is project-authored in `generators/unit-template.generator.js`. No third-party endoskeleton model was imported.
