@@ -1,4 +1,5 @@
 import {unitMaterials} from './unit-materials.js'
+import {combineOrmMaterial} from '../lib/view/orm-material.js'
 let shared
 export function rosterMaterials(E) {
   if (shared) return shared
@@ -15,6 +16,7 @@ export function rosterMaterials(E) {
     const material=new E.PhysicalMaterial({name,map:load(`${prefix}-albedo.jpg`,true),normalMap:load(`${prefix}-normal.png`),
       roughnessMap:orm,metalnessMap:orm,aoMap:orm,metalness:1,roughness:1,envMapIntensity:prefix==='liquid'?.65:.32})
     material.userData.renderToGBuffer=false
+    combineOrmMaterial(material)
     return material
   }
   const chrome=surface('liquid','Mimetic polyalloy 1K'),armor=surface('hk','Hunter Killer worn armor 1K')

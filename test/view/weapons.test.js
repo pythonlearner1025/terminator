@@ -96,6 +96,19 @@ test('incoming volleys follow authoritative velocity and retain only observed re
   view.dispose()
 })
 
+test('projectile lights keep the two nearest luminous bolts without growing',()=>{
+  const view=new ProjectileView(new E.Group(),8,{shellMaterial:new E.PhysicalMaterial()})
+  const world=worldFixture(),camera=new E.PerspectiveCamera()
+  for(let i=1;i<=6;i++)world.projectiles.push({id:i,type:'bolt',owner:'unit',pos:{x:i,y:0,z:0},vel:{x:0,y:0,z:1}})
+  view.sync(world,camera)
+  assert.equal(view.lights.length,2)
+  assert.deepEqual(view.lights.map(light=>light.position.x).sort((a,b)=>a-b),[1,2])
+  assert.ok(view.lights.every(light=>light.visible&&light.intensity===1.4))
+  world.projectiles.length=0;world.tick++;view.sync(world,camera)
+  assert.ok(view.lights.every(light=>!light.visible&&light.intensity===0))
+  view.dispose()
+})
+
 test('shot events emit one travelling tracer or nine cosmetic shotgun pellets without replay',()=>{
   const world=worldFixture(),view=new TracerView(new E.Group()),muzzle=new E.Vector3(0,1.5,.6)
   view.sync(world,muzzle)

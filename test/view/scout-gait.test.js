@@ -64,20 +64,30 @@ test('T-1000 melee intent drives a visible two-arm strike pose',()=>{
   assert.ok(rig.joints['Forearm Left'].rotation.x<-.3)
 })
 
-test('new Scouts start animating and retain the 30 Hz UnitView gate',()=>{
+test('new Scouts animate at 30 Hz in view and throttle to 12 Hz fully offscreen',()=>{
   const unit=state(),world={tick:0,units:[unit],player:{pos:{x:0,z:0}},nav}
   unit.vel.z=7
+  const camera=new E.PerspectiveCamera(54,16/9,.1,100)
+  camera.position.set(0,2,-10);camera.lookAt(0,1,10);camera.updateProjectionMatrix();camera.updateMatrixWorld(true)
   const visual=fixture(),view={owner:{},activeIds:new Set(),visuals:new Map(),lastTick:0,quality:getQualityPreset('high'),
+    viewer:{scene:{mainCamera:camera}},viewProjection:new E.Matrix4(),frustum:new E.Frustum(),cullSphere:new E.Sphere(),v4:new E.Vector3(),
     cloneTemplateFigure:()=>visual,processEvents(){},fx:{update(){}},optics:{update(){}}}
   let previous=-1,updates=0
   for(let i=0;i<120;i++){
-    world.tick=i;unit.pos.z=i*7/60
+    world.tick=i;unit.pos.x=Math.sin(i/10)*2;unit.pos.z=2
     UnitView.prototype.sync.call(view,world)
     if(visual.lastAnimationTick!==previous){updates++;previous=visual.lastAnimationTick}
   }
   assert.equal(updates,60)
   assert.ok(visual.rig.phase>20)
   assert.ok(visual.rig.joints.Pelvis.rotation.x>1.1)
+  unit.pos.x=100;previous=visual.lastAnimationTick;updates=0
+  for(let i=120;i<240;i++){
+    world.tick=i;unit.pos.z=2
+    UnitView.prototype.sync.call(view,world)
+    if(visual.lastAnimationTick!==previous){updates++;previous=visual.lastAnimationTick}
+  }
+  assert.equal(updates,24)
 })
 
 test('allocation-free ground sampling agrees with core support on Bunker 7 surfaces',()=>{

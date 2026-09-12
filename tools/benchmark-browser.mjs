@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import {spawn} from 'node:child_process'
 import {mkdir, readFile, writeFile} from 'node:fs/promises'
+import {loadavg} from 'node:os'
 import {resolve} from 'node:path'
 import {chromium} from 'playwright'
 
@@ -82,7 +83,7 @@ try {
     return rect && Math.round(rect.width) === width && Math.round(rect.height) === height
   }, {width: options.width, height: options.height}, {timeout: 10_000})
 
-  const setup = await page.evaluate(async ({motionBlur, disable, roster}) => {
+  const setup = await page.evaluate(async ({motionBlur, disable, roster, enemies}) => {
     const manager = window.terminator.manager
     const world = manager.world
     for (const unit of world.units) unit.brain?.destroy?.()
@@ -92,6 +93,7 @@ try {
     world.eventLog.length = 0
     world.snapshotEventCursor = 0
     world.telemetry.units = {}
+    world.scaling.maxAlive = Math.max(world.maxAlive, enemies)
     manager.unitView.eventIndex = 0
     const player = world.player
     Object.assign(player.pos, {x: 0, y: 0, z: 17})
@@ -107,13 +109,13 @@ try {
     player.ammo.m4.mag = 30
     player.ammo.m4.reserve = 240
     const positions = []
-    for (let row = 0; row < 4; row += 1) {
-      for (let column = 0; column < 6; column += 1) {
+    for (let row = 0; row < Math.ceil(enemies / 6); row += 1) {
+      for (let column = 0; column < 6 && positions.length < enemies; column += 1) {
         positions.push({x: (column - 2) * 1.1, y: 0, z: 13 - row * 1.5})
       }
     }
     for (let index = 0; index < positions.length; index += 1) {
-      const type = roster === 'wave5' ? (index === 23 ? 'hktank' : ['scout', 'endo', 'heavy', 't1000', 'hkaerial'][index % 5]) : ['scout', 'endo', 'heavy'][index % 3]
+      const type = roster === 'wave5' ? (index === positions.length - 1 ? 'hktank' : ['heavy', 't1000', 'hkaerial'][index % 3]) : ['scout', 'endo', 'heavy'][index % 3]
       const pos = positions[index]
       if (type === 'hkaerial') pos.y = 4.5
       if (type === 'hktank') { pos.x = 0; pos.z = 3 }
@@ -147,6 +149,7 @@ try {
       if (object.isPointLight || object.isSpotLight) object.visible = false
     })
     if (disable.includes('units')) manager.unitView.root.visible = false
+    if (disable.includes('ui')) manager.syncUi = () => {}
     manager.director.step = inputs => world.step(inputs)
     manager.input?.stop()
     manager.input.yaw=player.yaw;manager.input.pitch=player.pitch
@@ -171,12 +174,13 @@ try {
     window.viewer.setDirty()
     return {units: world.aliveUnits.length, quality: manager.ui?.screens?.settings?.quality || 'high', disabled: disable,
       visualWarmup: manager.visualWarmupReport || null, audio: manager.audio ? {loading:Boolean(manager.audio.loading),decoded:manager.audio.stats.loaded} : null}
-  }, {motionBlur: options.motionBlur, disable: options.disable, roster: options.roster})
+  }, {motionBlur: options.motionBlur, disable: options.disable, roster: options.roster, enemies: options.enemies})
 
-  await page.waitForFunction(() => window.terminator.manager.unitView.visuals.size === 24, undefined, {timeout: 20_000})
+  await page.waitForFunction(enemies => window.terminator.manager.unitView.visuals.size === enemies, options.enemies, {timeout: 20_000})
   await page.waitForTimeout(options.warmupSeconds * 1000)
-  warnings.length = 0
+  const hostLoadBefore = loadavg()
   const metrics = await page.evaluate(collectMetrics, {seconds: options.seconds, ragdollDeaths: options.ragdolls, goreStress: options.goreStress, weaponBurst: options.weaponBurst,rosterDeaths:options.rosterDeaths})
+  const hostLoadAfter = loadavg()
   const scene = await page.evaluate(() => {
     const {viewer} = window
     const manager = window.terminator.manager
@@ -201,6 +205,18 @@ try {
         high: object.userData.unitAnatomy?.triangles || 0,
         low: manager.unitView.runtimeFarTemplates[type]?.userData.unitAnatomy?.triangles || 0,
       }])),
+      effectCapacity: {
+        projectilePool: manager.playerView?.weapons?.projectiles?.slots?.length || 0,
+        projectileLights: manager.playerView?.weapons?.projectiles?.lights?.length || 0,
+        tracerPool: manager.playerView?.weapons?.tracers?.pool?.items?.length || 0,
+        impactDecals: manager.unitView.fx?.decals?.length || 0,
+        retainedDebris: manager.unitView.fx?.gore?.pieces?.items?.length || 0,
+        activeUnitRagdolls: 8,
+        activeDebrisPhysics: 24,
+        atmospherePracticalSources: manager.mapView.refs?.atmosphere?.sources?.length || 0,
+        mapPracticalSources: manager.mapView.localLightEntries?.length || 0,
+        mapPracticalLights: manager.mapView.localLights?.length || 0,
+      },
       quality: manager.performanceQuality || null,
     }
   })
@@ -223,9 +239,11 @@ try {
     capturedAt: new Date().toISOString(),
     durationSeconds: options.seconds,
     warmupSeconds: options.warmupSeconds,
+    enemyCount: options.enemies,
+    hostLoad: {before: hostLoadBefore, after: hostLoadAfter},
     requestedViewport: {width: options.width, height: options.height, deviceScaleFactor: 1},
     effects: {post: !options.disable.includes('post'), motionBlur: options.motionBlur, rain: 1, smoke: 1,
-      hazards: ['electric', 'steam'], combatStress: `24 enemies, two enemy shots per frame, ten impact bursts per second, ${options.rosterDeaths?3:options.ragdolls} deterministic ${options.rosterDeaths?"new roster":options.goreStress?"gore":"M4"} death(s), ${options.roster==="wave5"?"":"limb loss, "}and explosion events`, disabled: options.disable},
+      hazards: ['electric', 'steam'], combatStress: `${options.enemies} enemies, two enemy shots per frame, ten impact bursts per second, ${options.rosterDeaths?3:options.ragdolls} deterministic ${options.rosterDeaths?"new roster":options.goreStress?"gore":"M4"} death(s), ${options.roster==="wave5"?"":"limb loss, "}and explosion events`, disabled: options.disable},
     browser: metrics.browser,
     setup,
     scene,
@@ -252,8 +270,8 @@ try {
     await writeFile(path, json)
   }
   process.stdout.write(json)
-  const expectedAlive=options.ragdolls===1?24:24-options.ragdolls
-  if(scene.aliveEnemies!==expectedAlive||scene.renderedEnemies!==24)process.exitCode=1
+  const expectedAlive=options.ragdolls===1?options.enemies:options.enemies-options.ragdolls
+  if(scene.aliveEnemies!==expectedAlive||scene.renderedEnemies!==options.enemies)process.exitCode=1
   if (result.warnings.length) process.exitCode = 1
 } catch (error) {
   process.stderr.write(`${String(error?.stack || error).replace(/\?t=[A-Za-z0-9._~-]+/g, '?t=[redacted]')}\n`)
@@ -275,6 +293,7 @@ function parseOptions(argv) {
     warmupSeconds: Number(value('warmup', 3)),
     port: Number(value('port', 4660)),
     roster: value('roster', 'legacy'),
+    enemies: Math.max(1, Math.round(Number(value('enemies', 24)))),
     rosterDeaths:value('roster-deaths','off')==='on',
     output: value('output', ''),
     screenshot: value('screenshot', ''),

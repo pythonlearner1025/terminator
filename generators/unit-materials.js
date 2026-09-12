@@ -1,3 +1,5 @@
+import {combineOrmMaterial} from '../lib/view/orm-material.js'
+
 // Shared atlas: one PBR draw for rigid-skinned anatomy, with no vertex colours.
 // All URLs resolve from the module so both the editor and published runtime work.
 let shared
@@ -32,11 +34,13 @@ export function unitMaterials(E) {
   metal = new E.PhysicalMaterial({name: 'Endoskeleton 1K worn metal atlas', map, normalMap,
     normalScale: new E.Vector2(.55, .55), roughnessMap: orm, metalnessMap: orm, aoMap: orm,
     metalness: 1, roughness: 1, envMapIntensity: .6})
+  combineOrmMaterial(metal)
   const opticOrm = load('optic-orm.png')
   eye = new E.PhysicalMaterial({name: 'Machined red optical glass', map: load('optic-albedo.png', true),
     normalMap: load('optic-normal.png'), roughnessMap: opticOrm, metalnessMap: opticOrm, aoMap: opticOrm,
     emissiveMap: load('optic-emissive.png', true), emissive: 0xff3322, emissiveIntensity: 8,
     metalness: .65, roughness: .5, envMapIntensity: .5})
+  combineOrmMaterial(eye)
   // The atlas already carries baked ambient occlusion. Excluding unit skins
   // from the screen-space G-buffer avoids drawing every skinned triangle twice
   // while preserving direct light, shadows, reflections, and baked creases.
@@ -54,6 +58,7 @@ export function unitMaterials(E) {
     normalMap:load('impact-normal.png'),normalScale:new E.Vector2(1,1),roughnessMap:impactOrm,
     metalnessMap:impactOrm,aoMap:impactOrm,roughness:1,metalness:1,transparent:true,alphaTest:.035,
     depthWrite:false,polygonOffset:true,polygonOffsetFactor:-2,envMapIntensity:.4})
+  combineOrmMaterial(impact)
   shared={metal,eye,halo,impact,glowMap,environment,ready:Promise.all(pending),textureBytes:3*1024*1024*4*4/3+4*256*256*4*4/3+3*512*512*4*4/3+1024*512*8}
   return shared
 }

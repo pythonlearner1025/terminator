@@ -48,6 +48,7 @@ export class GameManager extends Object3DComponent {
   accumulator = 0
   started = false
   viewsStarted = false
+  uiProjectionTick = null
 
   start() {
     this.stop()
@@ -73,6 +74,7 @@ export class GameManager extends Object3DComponent {
     if(rangeSource)rangeSource.visible=false
     this.ui = new UiSession(this)
     this.accumulator = 0
+    this.uiProjectionTick = null
     this.started = true
     this.syncViews()
   }
@@ -119,7 +121,7 @@ export class GameManager extends Object3DComponent {
       this.accumulator = 0
       if (this.sessionMode !== 'guest') this.lobby?.update()
       this.party?.interpolate?.()
-      this.ui?.sync(projectViewModel(this.world, this.localPlayerId))
+      this.syncUi(true)
       return true
     }
     if(this.range){
@@ -168,9 +170,17 @@ export class GameManager extends Object3DComponent {
     this.grenadeView?.sync(this.world)
     this.cameraFeel?.apply(this.playerView?.camera,this.range?this.world.time:undefined)
     this.rangeView?.sync(this.world)
-    if (this.ui) this.ui.sync(projectViewModel(this.world, this.localPlayerId))
-    else this.hud?.render(projectViewModel(this.world, this.localPlayerId))
+    this.syncUi()
     this.ctx.viewer.setDirty(this)
+  }
+
+  syncUi(force=false) {
+    if(!this.world)return
+    if(!force&&this.uiProjectionTick!==null&&this.world.tick>=this.uiProjectionTick&&this.world.tick-this.uiProjectionTick<2)return
+    this.uiProjectionTick=this.world.tick
+    const view=projectViewModel(this.world,this.localPlayerId)
+    if(this.ui)this.ui.sync(view)
+    else this.hud?.render(view)
   }
 
   async startHost({name, relay} = {}) {

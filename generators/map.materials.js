@@ -1,3 +1,5 @@
+import {combineOrmMaterial} from '../lib/view/orm-material.js'
+
 // Local CC0 PBR sets plus deterministic baked derivatives. Each map owns its GPU resources.
 export function randomSource(seed = 2029) {
   return () => { seed = Math.imul(seed ^ seed >>> 15, 1 | seed); seed ^= seed + Math.imul(seed ^ seed >>> 7, 61 | seed); return ((seed ^ seed >>> 14) >>> 0) / 4294967296 }
@@ -42,6 +44,7 @@ export function mapMaterials(api) {
       roughness, metalness, normalScale: new api.Vector2(.75, .75), aoMapIntensity: .8, fog: true})
     mat.name = `Map ${name}`
     mat.userData.mapSurface = true
+    combineOrmMaterial(mat)
     return mat
   }
   const glow = (name, color, intensity = 3) => {
@@ -67,6 +70,8 @@ export function mapMaterials(api) {
   mats.serviceFloor.envMapIntensity=.05; mats.serviceWall.envMapIntensity=.08
   mats.skyline.emissive.setHex(0x142334); mats.skyline.emissiveIntensity = .5; mats.skyline.emissiveMap = concrete.map
   mats.skyline.normalScale.set(.1,.1)
+  // Distant silhouettes never intersect gameplay geometry, so they cannot contribute useful screen-space occlusion.
+  mats.skyline.userData.renderToGBuffer=false
   // Large-scale stains and variable wetness use world coordinates, independently of tile UVs.
   const surfaceUniforms = {mapWetness: {value: .72}}
   for (const mat of [mats.ground, mats.concrete, mats.floor]) {
@@ -103,6 +108,7 @@ export function mapMaterials(api) {
     roughnessMap:paint.arm,aoMap:paint.arm,metalnessMap:paint.arm,metalness:.05,roughness:1,
     transparent:true,depthWrite:false,side:api.DoubleSide,polygonOffset:true,polygonOffsetFactor:-2})
   labelMaterial.name='Map weathered signage atlas'
+  combineOrmMaterial(labelMaterial)
   const labels=new Map()
   function label(text,color='#c5cccb',background=null) {
     const key=[text,color,background].join('|')

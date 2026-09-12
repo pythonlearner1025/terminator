@@ -1,0 +1,1794 @@
+{
+  "benchmark": "Terminator browser performance",
+  "roster": "legacy",
+  "capturedAt": "2026-09-12T20:10:18.532Z",
+  "durationSeconds": 10,
+  "warmupSeconds": 5,
+  "enemyCount": 36,
+  "hostLoad": {
+    "before": [
+      10.98095703125,
+      6.74365234375,
+      6.0234375
+    ],
+    "after": [
+      9.98095703125,
+      6.6689453125,
+      6.0048828125
+    ]
+  },
+  "requestedViewport": {
+    "width": 1920,
+    "height": 1080,
+    "deviceScaleFactor": 1
+  },
+  "effects": {
+    "post": true,
+    "motionBlur": true,
+    "rain": 1,
+    "smoke": 1,
+    "hazards": [
+      "electric",
+      "steam"
+    ],
+    "combatStress": "36 enemies, two enemy shots per frame, ten impact bursts per second, 1 deterministic M4 death(s), limb loss, and explosion events",
+    "disabled": []
+  },
+  "browser": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+    "gpuVendor": "Google Inc. (Apple)",
+    "gpuRenderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Max, Unspecified Version)",
+    "webgl": "WebGL2RenderingContext"
+  },
+  "setup": {
+    "units": 36,
+    "quality": "high",
+    "disabled": [],
+    "visualWarmup": {
+      "textures": 96,
+      "materials": 543,
+      "programs": 383,
+      "deathPath": {
+        "ragdolls": 1,
+        "detachedLimbs": 6,
+        "fixedLimbMeshes": 96,
+        "skullCrunch": 1,
+        "limb": 5,
+        "torsoSplit": 1,
+        "dent": 1,
+        "vertexCap": 384,
+        "rosterDeaths": 3
+      }
+    },
+    "audio": {
+      "loading": false,
+      "decoded": 101
+    }
+  },
+  "scene": {
+    "aliveEnemies": 36,
+    "renderedEnemies": 36,
+    "enemiesInFrustum": 36,
+    "renderScale": 1,
+    "renderSize": [
+      1920,
+      1080
+    ],
+    "canvas": {
+      "width": 1920,
+      "height": 1080
+    },
+    "shadowMap": {
+      "width": 1024,
+      "height": 1024,
+      "radius": 2
+    },
+    "unitTriangles": {
+      "scout": {
+        "high": 24512,
+        "low": 11004
+      },
+      "endo": {
+        "high": 25492,
+        "low": 11712
+      },
+      "heavy": {
+        "high": 27088,
+        "low": 12252
+      },
+      "t1000": {
+        "high": 29828,
+        "low": 12052
+      },
+      "hkaerial": {
+        "high": 8276,
+        "low": 4572
+      },
+      "hktank": {
+        "high": 16676,
+        "low": 8644
+      }
+    },
+    "effectCapacity": {
+      "projectilePool": 192,
+      "projectileLights": 2,
+      "tracerPool": 256,
+      "impactDecals": 72,
+      "retainedDebris": 96,
+      "activeUnitRagdolls": 8,
+      "activeDebrisPhysics": 24,
+      "atmospherePracticalSources": 14,
+      "mapPracticalSources": 34,
+      "mapPracticalLights": 4
+    },
+    "quality": {
+      "id": "high",
+      "renderScale": 1,
+      "shadowMapSize": 1024,
+      "gbufferScale": 0.2,
+      "ssaoScale": 0.2,
+      "ssaoSamples": 2,
+      "ssaoEnabled": true,
+      "bloomScale": 0.2,
+      "particleDensity": 0.65,
+      "lodDistance": 5,
+      "animationLodDistance": 7,
+      "animationHz": 30,
+      "farAnimationHz": 24
+    }
+  },
+  "frame": {
+    "samples": 583,
+    "intervalMs": {
+      "samples": 583,
+      "mean": 17.145,
+      "p50": 16.9,
+      "p95": 20.7,
+      "p99": 22.6,
+      "max": 25.3
+    },
+    "workMs": {
+      "samples": 584,
+      "mean": 15.236,
+      "p50": 15.2,
+      "p95": 18.7,
+      "p99": 20.5,
+      "max": 22.2
+    },
+    "effectiveFps": 58.327
+  },
+  "gpu": {
+    "supported": true,
+    "samples": 584,
+    "frameMs": {
+      "samples": 584,
+      "mean": 7.866,
+      "p50": 7.58,
+      "p95": 10.521,
+      "p99": 12.967,
+      "max": 17.843
+    },
+    "unresolvedQueries": 0
+  },
+  "renderer": {
+    "drawCalls": {
+      "samples": 584,
+      "mean": 233.567,
+      "p50": 233,
+      "p95": 241,
+      "p99": 243,
+      "max": 246
+    },
+    "triangles": {
+      "samples": 584,
+      "mean": 623253.887,
+      "p50": 623232,
+      "p95": 623646,
+      "p99": 623796,
+      "max": 623940
+    },
+    "points": {
+      "samples": 584,
+      "mean": 458.928,
+      "p50": 454,
+      "p95": 477,
+      "p99": 477,
+      "max": 477
+    },
+    "lines": {
+      "samples": 584,
+      "mean": 863,
+      "p50": 863,
+      "p95": 863,
+      "p99": 863,
+      "max": 863
+    },
+    "geometries": 468,
+    "textures": 193
+  },
+  "textureMemory": {
+    "textures": 99,
+    "bytes": 576588432,
+    "mebibytes": 549.878,
+    "largest": [
+      {
+        "name": "unnamed",
+        "width": 2048,
+        "height": 2048,
+        "bytes": 22369621
+      },
+      {
+        "name": "unnamed",
+        "width": 2048,
+        "height": 2048,
+        "bytes": 22369621
+      },
+      {
+        "name": "unnamed",
+        "width": 2048,
+        "height": 2048,
+        "bytes": 22369621
+      },
+      {
+        "name": "unnamed",
+        "width": 2048,
+        "height": 2048,
+        "bytes": 22369621
+      },
+      {
+        "name": "Weapon albedo atlas",
+        "width": 2048,
+        "height": 2048,
+        "bytes": 22369621
+      },
+      {
+        "name": "Weapon ao atlas",
+        "width": 2048,
+        "height": 2048,
+        "bytes": 22369621
+      },
+      {
+        "name": "Weapon emissive atlas",
+        "width": 2048,
+        "height": 2048,
+        "bytes": 22369621
+      },
+      {
+        "name": "Weapon normal atlas",
+        "width": 2048,
+        "height": 2048,
+        "bytes": 22369621
+      }
+    ]
+  },
+  "postPasses": {
+    "gbuffer": {
+      "calls": 584,
+      "msPerFrame": 4.32,
+      "meanCallMs": 4.312,
+      "maxCallMs": 6.3
+    },
+    "ssao": {
+      "calls": 584,
+      "msPerFrame": 0.038,
+      "meanCallMs": 0.038,
+      "maxCallMs": 0.2
+    },
+    "render": {
+      "calls": 584,
+      "msPerFrame": 7.62,
+      "meanCallMs": 7.607,
+      "maxCallMs": 12
+    },
+    "map-bloom": {
+      "calls": 584,
+      "msPerFrame": 0.118,
+      "meanCallMs": 0.118,
+      "maxCallMs": 0.3
+    },
+    "screen": {
+      "calls": 584,
+      "msPerFrame": 0.055,
+      "meanCallMs": 0.055,
+      "maxCallMs": 0.2
+    }
+  },
+  "systems": {
+    "combat effects": {
+      "calls": 584,
+      "msPerFrame": 0.015,
+      "meanCallMs": 0.015,
+      "maxCallMs": 0.2
+    },
+    "HUD": {
+      "calls": 882,
+      "msPerFrame": 0.143,
+      "meanCallMs": 0.095,
+      "maxCallMs": 1.9
+    },
+    "weather": {
+      "calls": 588,
+      "msPerFrame": 0.028,
+      "meanCallMs": 0.028,
+      "maxCallMs": 0.1
+    },
+    "map": {
+      "calls": 588,
+      "msPerFrame": 0.144,
+      "meanCallMs": 0.143,
+      "maxCallMs": 0.4
+    },
+    "ragdolls": {
+      "calls": 588,
+      "msPerFrame": 0.073,
+      "meanCallMs": 0.072,
+      "maxCallMs": 2.2
+    },
+    "gore": {
+      "calls": 588,
+      "msPerFrame": 0.009,
+      "meanCallMs": 0.009,
+      "maxCallMs": 0.1
+    },
+    "fx": {
+      "calls": 1177,
+      "msPerFrame": 0.071,
+      "meanCallMs": 0.035,
+      "maxCallMs": 0.2
+    },
+    "units": {
+      "calls": 588,
+      "msPerFrame": 1.222,
+      "meanCallMs": 1.211,
+      "maxCallMs": 4.9
+    },
+    "players": {
+      "calls": 1172,
+      "msPerFrame": 0.006,
+      "meanCallMs": 0.003,
+      "maxCallMs": 0.2
+    },
+    "tracers": {
+      "calls": 588,
+      "msPerFrame": 0.004,
+      "meanCallMs": 0.004,
+      "maxCallMs": 0.1
+    },
+    "projectiles": {
+      "calls": 588,
+      "msPerFrame": 0.006,
+      "meanCallMs": 0.006,
+      "maxCallMs": 0.1
+    },
+    "weapons": {
+      "calls": 588,
+      "msPerFrame": 0.144,
+      "meanCallMs": 0.142,
+      "maxCallMs": 0.6
+    },
+    "player": {
+      "calls": 588,
+      "msPerFrame": 0.185,
+      "meanCallMs": 0.184,
+      "maxCallMs": 0.6
+    },
+    "mesh deformation": {
+      "calls": 2,
+      "msPerFrame": 0,
+      "meanCallMs": 0,
+      "maxCallMs": 0
+    },
+    "unit damage": {
+      "calls": 2,
+      "msPerFrame": 0,
+      "meanCallMs": 0.1,
+      "maxCallMs": 0.1
+    },
+    "wreck effect": {
+      "calls": 1,
+      "msPerFrame": 0,
+      "meanCallMs": 0,
+      "maxCallMs": 0
+    },
+    "audio start": {
+      "calls": 7,
+      "msPerFrame": 0.002,
+      "meanCallMs": 0.129,
+      "maxCallMs": 0.3
+    }
+  },
+  "ragdolls": {
+    "requestedDeaths": 1,
+    "rosterDeaths": false,
+    "maxActive": 1,
+    "viewCpuMeanMs": 0.072,
+    "viewCpuMaxMs": 2.2
+  },
+  "gore": {
+    "stress": false,
+    "maxActivePieces": 0,
+    "pieceCapacity": 96,
+    "meanMs": 0.009,
+    "stats": {
+      "crunches": 0,
+      "limbs": 0,
+      "splits": 0,
+      "dents": 0,
+      "fallbacks": 0,
+      "stains": 0,
+      "wreckHits": 0,
+      "maxVertices": 0,
+      "frames": 883,
+      "totalMs": 7.300001382827759,
+      "maxMs": 0.10000014305114746
+    }
+  },
+  "topCosts": [
+    {
+      "area": "pass:render",
+      "msPerFrame": 7.62
+    },
+    {
+      "area": "pass:gbuffer",
+      "msPerFrame": 4.32
+    },
+    {
+      "area": "system:units",
+      "msPerFrame": 1.222
+    },
+    {
+      "area": "system:player",
+      "msPerFrame": 0.185
+    },
+    {
+      "area": "system:map",
+      "msPerFrame": 0.144
+    }
+  ],
+  "worstFrames": [
+    {
+      "frame": 8,
+      "intervalMs": 14.5,
+      "workMs": 22.2,
+      "gpuMs": 8.695,
+      "events": [
+        "M4 kill 1",
+        "first shot: M4",
+        "first hit",
+        "first decal",
+        "wreck spawn",
+        "audio start",
+        "first death: M4 kill"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 7.9
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4.6
+        },
+        {
+          "area": "units",
+          "ms": 3.4
+        }
+      ],
+      "cause": "M4 kill 1, first shot: M4, first hit, first decal, wreck spawn, audio start, first death: M4 kill"
+    },
+    {
+      "frame": 47,
+      "intervalMs": 14.9,
+      "workMs": 20.9,
+      "gpuMs": 7.769,
+      "events": [],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 9.4
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4.8
+        },
+        {
+          "area": "units",
+          "ms": 2.4
+        }
+      ],
+      "cause": "render"
+    },
+    {
+      "frame": 479,
+      "intervalMs": 16,
+      "workMs": 20.9,
+      "gpuMs": 6.383,
+      "events": [],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 9.7
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4.4
+        },
+        {
+          "area": "units",
+          "ms": 2.7
+        }
+      ],
+      "cause": "render"
+    },
+    {
+      "frame": 87,
+      "intervalMs": 15.2,
+      "workMs": 20.9,
+      "gpuMs": 7.296,
+      "events": [],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 12
+        },
+        {
+          "area": "gbuffer",
+          "ms": 3.6
+        },
+        {
+          "area": "units",
+          "ms": 1.2
+        }
+      ],
+      "cause": "render"
+    },
+    {
+      "frame": 9,
+      "intervalMs": 24.3,
+      "workMs": 20.6,
+      "gpuMs": 8.674,
+      "events": [],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 7.8
+        },
+        {
+          "area": "units",
+          "ms": 4.9
+        },
+        {
+          "area": "gbuffer",
+          "ms": 3.7
+        }
+      ],
+      "cause": "render"
+    },
+    {
+      "frame": 330,
+      "intervalMs": 16.6,
+      "workMs": 20.5,
+      "gpuMs": 8.681,
+      "events": [],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 9.5
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4.6
+        },
+        {
+          "area": "units",
+          "ms": 2.7
+        }
+      ],
+      "cause": "render"
+    },
+    {
+      "frame": 54,
+      "intervalMs": 17.3,
+      "workMs": 20.3,
+      "gpuMs": 6.536,
+      "events": [],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 10.6
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4.3
+        },
+        {
+          "area": "units",
+          "ms": 2
+        }
+      ],
+      "cause": "render"
+    },
+    {
+      "frame": 72,
+      "intervalMs": 15.3,
+      "workMs": 19.8,
+      "gpuMs": 8.1,
+      "events": [],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 8.7
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4.9
+        },
+        {
+          "area": "units",
+          "ms": 2.1
+        }
+      ],
+      "cause": "render"
+    },
+    {
+      "frame": 326,
+      "intervalMs": 16.6,
+      "workMs": 19.7,
+      "gpuMs": 7.414,
+      "events": [],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 10.6
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4.2
+        },
+        {
+          "area": "units",
+          "ms": 1.3
+        }
+      ],
+      "cause": "render"
+    },
+    {
+      "frame": 52,
+      "intervalMs": 18.2,
+      "workMs": 19.6,
+      "gpuMs": 10.233,
+      "events": [],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 8.4
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4.9
+        },
+        {
+          "area": "units",
+          "ms": 2.7
+        }
+      ],
+      "cause": "render"
+    }
+  ],
+  "eventFrames": [
+    {
+      "frame": 3,
+      "intervalMs": 19.1,
+      "workMs": 12.9,
+      "gpuMs": 6.927,
+      "events": [
+        "GC: 23.167 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 6.9
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4.5
+        },
+        {
+          "area": "map",
+          "ms": 0.2
+        }
+      ],
+      "cause": "GC: 23.167 MiB reclaimed"
+    },
+    {
+      "frame": 8,
+      "intervalMs": 14.5,
+      "workMs": 22.2,
+      "gpuMs": 8.695,
+      "events": [
+        "M4 kill 1",
+        "first shot: M4",
+        "first hit",
+        "first decal",
+        "wreck spawn",
+        "audio start",
+        "first death: M4 kill"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 7.9
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4.6
+        },
+        {
+          "area": "units",
+          "ms": 3.4
+        }
+      ],
+      "cause": "M4 kill 1, first shot: M4, first hit, first decal, wreck spawn, audio start, first death: M4 kill"
+    },
+    {
+      "frame": 13,
+      "intervalMs": 17,
+      "workMs": 17.1,
+      "gpuMs": 7.558,
+      "events": [
+        "GC: 24.42 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 8.2
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4.6
+        },
+        {
+          "area": "units",
+          "ms": 1.7
+        }
+      ],
+      "cause": "GC: 24.42 MiB reclaimed"
+    },
+    {
+      "frame": 25,
+      "intervalMs": 20.5,
+      "workMs": 18.1,
+      "gpuMs": 7.484,
+      "events": [
+        "GC: 22.141 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 8.6
+        },
+        {
+          "area": "gbuffer",
+          "ms": 3.9
+        },
+        {
+          "area": "units",
+          "ms": 3.3
+        }
+      ],
+      "cause": "GC: 22.141 MiB reclaimed"
+    },
+    {
+      "frame": 37,
+      "intervalMs": 18.8,
+      "workMs": 16.1,
+      "gpuMs": 7.806,
+      "events": [
+        "GC: 24.587 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 7.6
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4
+        },
+        {
+          "area": "units",
+          "ms": 1.8
+        }
+      ],
+      "cause": "GC: 24.587 MiB reclaimed"
+    },
+    {
+      "frame": 40,
+      "intervalMs": 20.9,
+      "workMs": 17.9,
+      "gpuMs": 9.995,
+      "events": [
+        "explosion"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 9.6
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4.5
+        },
+        {
+          "area": "units",
+          "ms": 1.3
+        }
+      ],
+      "cause": "explosion"
+    },
+    {
+      "frame": 49,
+      "intervalMs": 16.8,
+      "workMs": 14.2,
+      "gpuMs": 9.835,
+      "events": [
+        "GC: 22.772 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 7.2
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4.1
+        },
+        {
+          "area": "units",
+          "ms": 1.9
+        }
+      ],
+      "cause": "GC: 22.772 MiB reclaimed"
+    },
+    {
+      "frame": 61,
+      "intervalMs": 17.8,
+      "workMs": 18.9,
+      "gpuMs": 8.925,
+      "events": [
+        "GC: 25.294 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 9
+        },
+        {
+          "area": "gbuffer",
+          "ms": 3.5
+        },
+        {
+          "area": "units",
+          "ms": 2.9
+        }
+      ],
+      "cause": "GC: 25.294 MiB reclaimed"
+    },
+    {
+      "frame": 73,
+      "intervalMs": 21.9,
+      "workMs": 18,
+      "gpuMs": 7.492,
+      "events": [
+        "GC: 23.913 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 8.4
+        },
+        {
+          "area": "gbuffer",
+          "ms": 5
+        },
+        {
+          "area": "units",
+          "ms": 2
+        }
+      ],
+      "cause": "GC: 23.913 MiB reclaimed"
+    },
+    {
+      "frame": 90,
+      "intervalMs": 17.3,
+      "workMs": 10.5,
+      "gpuMs": 7.61,
+      "events": [
+        "GC: 58.381 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 5.1
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4.1
+        },
+        {
+          "area": "map",
+          "ms": 0.2
+        }
+      ],
+      "cause": "GC: 58.381 MiB reclaimed"
+    },
+    {
+      "frame": 103,
+      "intervalMs": 19.7,
+      "workMs": 13.1,
+      "gpuMs": 9.661,
+      "events": [
+        "GC: 24.112 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 8.4
+        },
+        {
+          "area": "gbuffer",
+          "ms": 3.3
+        },
+        {
+          "area": "map",
+          "ms": 0.2
+        }
+      ],
+      "cause": "GC: 24.112 MiB reclaimed"
+    },
+    {
+      "frame": 115,
+      "intervalMs": 17.5,
+      "workMs": 11.8,
+      "gpuMs": 7.574,
+      "events": [
+        "GC: 19.012 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 6
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4.5
+        },
+        {
+          "area": "units",
+          "ms": 0.2
+        }
+      ],
+      "cause": "GC: 19.012 MiB reclaimed"
+    },
+    {
+      "frame": 129,
+      "intervalMs": 18.9,
+      "workMs": 14.8,
+      "gpuMs": 7.034,
+      "events": [
+        "GC: 18.2 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 7.7
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4.1
+        },
+        {
+          "area": "units",
+          "ms": 1.8
+        }
+      ],
+      "cause": "GC: 18.2 MiB reclaimed"
+    },
+    {
+      "frame": 137,
+      "intervalMs": 17,
+      "workMs": 11.2,
+      "gpuMs": 8.861,
+      "events": [
+        "GC: 16.663 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 6.8
+        },
+        {
+          "area": "gbuffer",
+          "ms": 3.1
+        },
+        {
+          "area": "map-bloom",
+          "ms": 0.2
+        }
+      ],
+      "cause": "GC: 16.663 MiB reclaimed"
+    },
+    {
+      "frame": 153,
+      "intervalMs": 18.9,
+      "workMs": 14.9,
+      "gpuMs": 7.313,
+      "events": [
+        "GC: 24.095 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 8
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4
+        },
+        {
+          "area": "units",
+          "ms": 1.6
+        }
+      ],
+      "cause": "GC: 24.095 MiB reclaimed"
+    },
+    {
+      "frame": 165,
+      "intervalMs": 19.6,
+      "workMs": 15.7,
+      "gpuMs": 7.935,
+      "events": [
+        "GC: 24.11 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 7.5
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4.7
+        },
+        {
+          "area": "units",
+          "ms": 2.1
+        }
+      ],
+      "cause": "GC: 24.11 MiB reclaimed"
+    },
+    {
+      "frame": 179,
+      "intervalMs": 16.7,
+      "workMs": 16.5,
+      "gpuMs": 6.492,
+      "events": [
+        "GC: 25.835 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 7
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4.2
+        },
+        {
+          "area": "units",
+          "ms": 2.3
+        }
+      ],
+      "cause": "GC: 25.835 MiB reclaimed"
+    },
+    {
+      "frame": 194,
+      "intervalMs": 20.1,
+      "workMs": 14.4,
+      "gpuMs": 8.178,
+      "events": [
+        "GC: 22.757 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 7
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4.3
+        },
+        {
+          "area": "units",
+          "ms": 1.7
+        }
+      ],
+      "cause": "GC: 22.757 MiB reclaimed"
+    },
+    {
+      "frame": 210,
+      "intervalMs": 19.8,
+      "workMs": 13.9,
+      "gpuMs": 7.59,
+      "events": [
+        "GC: 22.826 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 9.3
+        },
+        {
+          "area": "gbuffer",
+          "ms": 3.3
+        },
+        {
+          "area": "player",
+          "ms": 0.3
+        }
+      ],
+      "cause": "GC: 22.826 MiB reclaimed"
+    },
+    {
+      "frame": 220,
+      "intervalMs": 19.1,
+      "workMs": 15.4,
+      "gpuMs": 7.212,
+      "events": [
+        "GC: 17.757 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 8
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4
+        },
+        {
+          "area": "units",
+          "ms": 1.8
+        }
+      ],
+      "cause": "GC: 17.757 MiB reclaimed"
+    },
+    {
+      "frame": 234,
+      "intervalMs": 21.4,
+      "workMs": 13.4,
+      "gpuMs": 7.843,
+      "events": [
+        "GC: 24.354 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 8.3
+        },
+        {
+          "area": "gbuffer",
+          "ms": 3.8
+        },
+        {
+          "area": "map",
+          "ms": 0.2
+        }
+      ],
+      "cause": "GC: 24.354 MiB reclaimed"
+    },
+    {
+      "frame": 248,
+      "intervalMs": 18.1,
+      "workMs": 11.7,
+      "gpuMs": 7.948,
+      "events": [
+        "GC: 22.981 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 6
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4.2
+        },
+        {
+          "area": "map",
+          "ms": 0.2
+        }
+      ],
+      "cause": "GC: 22.981 MiB reclaimed"
+    },
+    {
+      "frame": 260,
+      "intervalMs": 17.7,
+      "workMs": 11.9,
+      "gpuMs": 14.062,
+      "events": [
+        "GC: 18.148 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 6.7
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4.2
+        },
+        {
+          "area": "map",
+          "ms": 0.2
+        }
+      ],
+      "cause": "GC: 18.148 MiB reclaimed"
+    },
+    {
+      "frame": 272,
+      "intervalMs": 17.4,
+      "workMs": 12.2,
+      "gpuMs": 8.938,
+      "events": [
+        "GC: 17.246 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 6.1
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4.9
+        },
+        {
+          "area": "player",
+          "ms": 0.2
+        }
+      ],
+      "cause": "GC: 17.246 MiB reclaimed"
+    },
+    {
+      "frame": 290,
+      "intervalMs": 20.5,
+      "workMs": 10.8,
+      "gpuMs": 6.677,
+      "events": [
+        "GC: 23.092 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 4.9
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4.3
+        },
+        {
+          "area": "map",
+          "ms": 0.2
+        }
+      ],
+      "cause": "GC: 23.092 MiB reclaimed"
+    },
+    {
+      "frame": 302,
+      "intervalMs": 20,
+      "workMs": 15.8,
+      "gpuMs": 8.836,
+      "events": [
+        "GC: 23.046 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 9.8
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4.8
+        },
+        {
+          "area": "units",
+          "ms": 0.2
+        }
+      ],
+      "cause": "GC: 23.046 MiB reclaimed"
+    },
+    {
+      "frame": 318,
+      "intervalMs": 16.7,
+      "workMs": 16.4,
+      "gpuMs": 6.228,
+      "events": [
+        "GC: 23.095 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 7.8
+        },
+        {
+          "area": "gbuffer",
+          "ms": 3.6
+        },
+        {
+          "area": "units",
+          "ms": 2.1
+        }
+      ],
+      "cause": "GC: 23.095 MiB reclaimed"
+    },
+    {
+      "frame": 331,
+      "intervalMs": 22.5,
+      "workMs": 14.1,
+      "gpuMs": 7.985,
+      "events": [
+        "GC: 24.463 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 6
+        },
+        {
+          "area": "gbuffer",
+          "ms": 3.8
+        },
+        {
+          "area": "units",
+          "ms": 1
+        }
+      ],
+      "cause": "GC: 24.463 MiB reclaimed"
+    },
+    {
+      "frame": 346,
+      "intervalMs": 18.9,
+      "workMs": 14.3,
+      "gpuMs": 8.178,
+      "events": [
+        "GC: 23.09 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 7.5
+        },
+        {
+          "area": "gbuffer",
+          "ms": 5.3
+        },
+        {
+          "area": "map",
+          "ms": 0.2
+        }
+      ],
+      "cause": "GC: 23.09 MiB reclaimed"
+    },
+    {
+      "frame": 363,
+      "intervalMs": 18.5,
+      "workMs": 14.6,
+      "gpuMs": 7.652,
+      "events": [
+        "GC: 23.065 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 6.2
+        },
+        {
+          "area": "gbuffer",
+          "ms": 3.8
+        },
+        {
+          "area": "units",
+          "ms": 1.2
+        }
+      ],
+      "cause": "GC: 23.065 MiB reclaimed"
+    },
+    {
+      "frame": 375,
+      "intervalMs": 18.1,
+      "workMs": 16.8,
+      "gpuMs": 7.222,
+      "events": [
+        "GC: 26.014 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 9.5
+        },
+        {
+          "area": "gbuffer",
+          "ms": 3.9
+        },
+        {
+          "area": "units",
+          "ms": 1
+        }
+      ],
+      "cause": "GC: 26.014 MiB reclaimed"
+    },
+    {
+      "frame": 389,
+      "intervalMs": 18.3,
+      "workMs": 17.7,
+      "gpuMs": 8.539,
+      "events": [
+        "GC: 26.129 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 8.7
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4.2
+        },
+        {
+          "area": "units",
+          "ms": 2.1
+        }
+      ],
+      "cause": "GC: 26.129 MiB reclaimed"
+    },
+    {
+      "frame": 406,
+      "intervalMs": 16.3,
+      "workMs": 11.1,
+      "gpuMs": 6.625,
+      "events": [
+        "GC: 23.163 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 7.5
+        },
+        {
+          "area": "gbuffer",
+          "ms": 2.2
+        },
+        {
+          "area": "map",
+          "ms": 0.2
+        }
+      ],
+      "cause": "GC: 23.163 MiB reclaimed"
+    },
+    {
+      "frame": 418,
+      "intervalMs": 16.8,
+      "workMs": 12.3,
+      "gpuMs": 9.426,
+      "events": [
+        "GC: 18.657 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 6.4
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4.6
+        },
+        {
+          "area": "fx",
+          "ms": 0.2
+        }
+      ],
+      "cause": "GC: 18.657 MiB reclaimed"
+    },
+    {
+      "frame": 428,
+      "intervalMs": 17.4,
+      "workMs": 13.2,
+      "gpuMs": 6.217,
+      "events": [
+        "GC: 17.083 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 7
+        },
+        {
+          "area": "gbuffer",
+          "ms": 3
+        },
+        {
+          "area": "units",
+          "ms": 1.9
+        }
+      ],
+      "cause": "GC: 17.083 MiB reclaimed"
+    },
+    {
+      "frame": 440,
+      "intervalMs": 17,
+      "workMs": 14.8,
+      "gpuMs": 7.736,
+      "events": [
+        "GC: 17.28 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 8.1
+        },
+        {
+          "area": "gbuffer",
+          "ms": 3.8
+        },
+        {
+          "area": "units",
+          "ms": 1.6
+        }
+      ],
+      "cause": "GC: 17.28 MiB reclaimed"
+    },
+    {
+      "frame": 454,
+      "intervalMs": 16.7,
+      "workMs": 12,
+      "gpuMs": 5.458,
+      "events": [
+        "GC: 16.993 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 6.5
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4.3
+        },
+        {
+          "area": "map",
+          "ms": 0.2
+        }
+      ],
+      "cause": "GC: 16.993 MiB reclaimed"
+    },
+    {
+      "frame": 466,
+      "intervalMs": 17.2,
+      "workMs": 14.7,
+      "gpuMs": 6.34,
+      "events": [
+        "GC: 18.345 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 8.6
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4.6
+        },
+        {
+          "area": "map",
+          "ms": 0.2
+        }
+      ],
+      "cause": "GC: 18.345 MiB reclaimed"
+    },
+    {
+      "frame": 480,
+      "intervalMs": 22.6,
+      "workMs": 14,
+      "gpuMs": 5.999,
+      "events": [
+        "GC: 23.213 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 7.2
+        },
+        {
+          "area": "gbuffer",
+          "ms": 5.3
+        },
+        {
+          "area": "map",
+          "ms": 0.3
+        }
+      ],
+      "cause": "GC: 23.213 MiB reclaimed"
+    },
+    {
+      "frame": 494,
+      "intervalMs": 16.7,
+      "workMs": 11.3,
+      "gpuMs": 8.249,
+      "events": [
+        "GC: 19.902 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 6.4
+        },
+        {
+          "area": "gbuffer",
+          "ms": 3.9
+        },
+        {
+          "area": "player",
+          "ms": 0.2
+        }
+      ],
+      "cause": "GC: 19.902 MiB reclaimed"
+    },
+    {
+      "frame": 508,
+      "intervalMs": 17.4,
+      "workMs": 12.7,
+      "gpuMs": 12.25,
+      "events": [
+        "GC: 17.059 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 5.8
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4.5
+        },
+        {
+          "area": "units",
+          "ms": 1.5
+        }
+      ],
+      "cause": "GC: 17.059 MiB reclaimed"
+    },
+    {
+      "frame": 520,
+      "intervalMs": 16.8,
+      "workMs": 12.2,
+      "gpuMs": 13.827,
+      "events": [
+        "GC: 17.032 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 5.7
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4.3
+        },
+        {
+          "area": "units",
+          "ms": 1.5
+        }
+      ],
+      "cause": "GC: 17.032 MiB reclaimed"
+    },
+    {
+      "frame": 530,
+      "intervalMs": 18.1,
+      "workMs": 13.2,
+      "gpuMs": 6.472,
+      "events": [
+        "GC: 18.381 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 7.7
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4.5
+        },
+        {
+          "area": "map",
+          "ms": 0.2
+        }
+      ],
+      "cause": "GC: 18.381 MiB reclaimed"
+    },
+    {
+      "frame": 544,
+      "intervalMs": 20.8,
+      "workMs": 15.3,
+      "gpuMs": 6.789,
+      "events": [
+        "GC: 24.522 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 8.1
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4.4
+        },
+        {
+          "area": "units",
+          "ms": 1.5
+        }
+      ],
+      "cause": "GC: 24.522 MiB reclaimed"
+    },
+    {
+      "frame": 562,
+      "intervalMs": 17.2,
+      "workMs": 14.6,
+      "gpuMs": 6.134,
+      "events": [
+        "GC: 23.059 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 7.8
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4.2
+        },
+        {
+          "area": "units",
+          "ms": 1.7
+        }
+      ],
+      "cause": "GC: 23.059 MiB reclaimed"
+    },
+    {
+      "frame": 574,
+      "intervalMs": 19.3,
+      "workMs": 14.9,
+      "gpuMs": 8.026,
+      "events": [
+        "GC: 23.141 MiB reclaimed"
+      ],
+      "costs": [
+        {
+          "area": "render",
+          "ms": 7.9
+        },
+        {
+          "area": "gbuffer",
+          "ms": 4
+        },
+        {
+          "area": "units",
+          "ms": 1.9
+        }
+      ],
+      "cause": "GC: 23.141 MiB reclaimed"
+    }
+  ],
+  "workloadFpsFloor": 48.78,
+  "weaponBurst": null,
+  "warnings": [],
+  "screenshot": null
+}
