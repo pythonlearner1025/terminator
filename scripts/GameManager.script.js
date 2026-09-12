@@ -68,6 +68,9 @@ export class GameManager extends Object3DComponent {
     this.hud = new Hud(viewer)
     this.lobby = new LobbyClient({world: this.world, director: this.director, intermissionSeconds: this.intermissionSeconds})
     this.cameraFeel = new CameraFeel()
+    const rangeSource=viewer.scene.modelRoot.getObjectByName('Weapons Range') || viewer.scene.modelRoot.getObjectByName('Weapons_Range')
+    this.rangePreview=rangeSource?{source:rangeSource,visible:rangeSource.visible}:null
+    if(rangeSource)rangeSource.visible=false
     this.ui = new UiSession(this)
     this.accumulator = 0
     this.started = true
@@ -112,11 +115,22 @@ export class GameManager extends Object3DComponent {
 
   update({deltaTime} = {}) {
     if (!this.started || !this.world) return
-    if (this.ui?.frozen || this.cameraFeel?.hitStopped) {
+    if (this.ui?.frozen || (!this.range && this.cameraFeel?.hitStopped)) {
       this.accumulator = 0
       if (this.sessionMode !== 'guest') this.lobby?.update()
       this.party?.interpolate?.()
       this.ui?.sync(projectViewModel(this.world, this.localPlayerId))
+      return true
+    }
+    if(this.range){
+      const ticks=this.range.clock.takeTicks(deltaTime)
+      for(let i=0;i<ticks;i++){
+        this.director.pauseWaves()
+        this.director.step(this.ui.sample())
+        this.range.afterStep()
+        this.cameraFeel?.consume(this.world)
+      }
+      this.syncViews()
       return true
     }
     this.accumulator += Math.min(0.1, Math.max(0, Number(deltaTime) || 16.667) / 1000)
@@ -152,7 +166,8 @@ export class GameManager extends Object3DComponent {
     this.playersView?.sync(this.world)
     this.playerView?.sync(this.world)
     this.grenadeView?.sync(this.world)
-    this.cameraFeel?.apply(this.playerView?.camera)
+    this.cameraFeel?.apply(this.playerView?.camera,this.range?this.world.time:undefined)
+    this.rangeView?.sync(this.world)
     if (this.ui) this.ui.sync(projectViewModel(this.world, this.localPlayerId))
     else this.hud?.render(projectViewModel(this.world, this.localPlayerId))
     this.ctx.viewer.setDirty(this)
@@ -339,6 +354,7 @@ export class GameManager extends Object3DComponent {
     this.visualWarmup = null
     this.visualWarmupReport = null
     this.ui?.dispose()
+    if(this.rangePreview){this.rangePreview.source.visible=this.rangePreview.visible;this.rangePreview=null}
     this._stopParty()
     this.cameraFeel?.dispose()
     this.lobby?.stop()

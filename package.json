@@ -52,6 +52,7 @@
     "scripts": [
       "./scripts/GameManager.script.js",
       "./generators/map.generator.js",
+      "./generators/range.generator.js",
       "./generators/unit-template.generator.js",
       "./generators/soldier-template.generator.js"
     ],

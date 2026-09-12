@@ -23,7 +23,8 @@
         12,
         13,
         14,
-        15
+        15,
+        16
       ]
     }
   ],
@@ -368,6 +369,25 @@
               "params": {
                 "type": "hktank"
               }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Weapons Range",
+      "extras": {
+        "gltfUUID": "terminator-node-range",
+        "kite3dAuthoring": {
+          "role": "generator",
+          "id": "terminator-range"
+        },
+        "EntityComponentPlugin": {
+          "terminator-component-range": {
+            "type": "Generator",
+            "state": {
+              "module": "generators/range.generator.js",
+              "params": {}
             }
           }
         }

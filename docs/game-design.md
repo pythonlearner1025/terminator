@@ -119,6 +119,31 @@ The player has full health, full armor, infinite Scrap, and an always-open trade
 The wave director starts paused. Use the panel to spawn units, control waves, and supply weapons.
 Press F1 to show or hide the panel.
 
+## Weapons range
+
+Append `&range=1` to a dev editor URL and press Play. Use `?range=1` when no query exists.
+`/range/` forwards to `/?range=1`. The range starts directly, without the match menu.
+The south courtyard contains 10 m, 20 m, and 40 m target stations and six reactive steel plates at 15 m.
+Station distances measure east from the firing line. The aim ruler reports the actual ray distance.
+Each station supplies all six unit types. All three HK-Tanks use the 40 m wide lane.
+HK-Aerials stay at 4 m altitude. Dummy brains never move or attack.
+Dead targets respawn at their saved positions after 120 simulation ticks, with a short flash.
+The player has sandbox protection, infinite Scrap, and infinite reserve ammunition and grenades.
+Magazine reloads keep their normal duration. Disable Magazine reloads to retain loaded rounds.
+
+F1 toggles the range panel. Both panels remain available with `?range=1&sandbox=1`.
+The range keeps the director paused. It supports all eight weapons, instant equipment, and a single-shot button.
+Time controls select 1x, 0.25x, 0.1x, or Pause. Step advances exactly one 60 Hz tick while paused.
+The same ticks drive simulation, weapon animation, muzzle effects, tracers, projectiles, weather, ragdolls, and camera springs.
+Inspect uses the existing held rig. Drag to orbit, scroll to zoom, and select idle, fire, reload, or aim loops.
+Player View returns to the unchanged player position and direction.
+Diagnostic paths retain the last 20 shots for three simulation seconds. Projectile paths follow their sampled flight.
+Impact marks, frozen peak muzzle light, hitbox wireframes, and the distance ruler have separate switches.
+Steel plates ring and swing without adding gameplay colliders or damage rules.
+Night, Overcast, and Noon change only the yard key light and exposure. The existing sky and weather remain.
+Respawn Targets resets the fixture. Clear Shots clears diagnostic paths and player tracer trails.
+This mode prepares visual iteration. It does not replace the existing weapon models or animations.
+
 ## Telemetry captured per wave
 
 - Player path as a polyline sampled at 4 Hz, and a 2 m grid heatmap of time spent.

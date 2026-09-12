@@ -25,6 +25,11 @@ const specs = [
       'terminator-component-map-generator': {type: 'Generator', state: {module: 'generators/map.generator.js', params: {markers: true}}},
     },
   },
+  {
+    name: 'Weapons Range', uuid: 'terminator-node-range',
+    authoring: {role: 'generator', id: 'terminator-range'},
+    components: {'terminator-component-range': {type: 'Generator', state: {module: 'generators/range.generator.js', params: {}}}},
+  },
   unitTemplate('Scout', 'scout', [47, 0, -5]),
   unitTemplate('Endo', 'endo', [47, 0, 0]),
   unitTemplate('Heavy', 'heavy', [47, 0, 5]),

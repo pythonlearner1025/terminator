@@ -64,6 +64,17 @@ without advancing world time, AI, combat, events, or telemetry.
 `world.setSandbox(options)` controls deterministic testing rules. Invulnerability keeps the host at
 full health and armor. Infinite Scrap fixes its balance at 999999 and bypasses purchase deductions.
 Sandbox state survives snapshots, and sandbox wave summaries carry `sandbox: true`.
+The optional `infiniteAmmo` flag retains host reserve ammunition and grenades.
+Its `noReload` option retains loaded rounds and prevents reloads. Defaults preserve normal matches.
+
+`lib/core/range.js` owns the range layout, loadout commands, fixed-tick respawns, and time admission.
+`spawnUnit(type, pos, {brain: "dummy"})` creates a stationary native brain with no sensor or attack work.
+Snapshots preserve that brain selection. Range hitscan shot events add `paths` with the authoritative
+pellet directions and impact points. These optional records do not consume randomness or change damage.
+`RangeClock` changes how many 60 Hz steps the manager admits. It never changes `World.step` duration.
+`lib/ui/range.js` mounts only for `range=1`. `lib/view/range.js` owns visual plates and debug overlays.
+The inspector uses the existing weapon rig, material projection, and animation state.
+Range runtime resources refer to the saved Weapons Range generator and stay outside `modelRoot`.
 
 All ranged enemy attacks are fixed-tick entries in `world.projectiles`. Rounds and bolts fly straight.
 Tank shells use gravity and splash damage. Swept map and player-capsule tests prevent tunneling.
