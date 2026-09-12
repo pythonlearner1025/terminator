@@ -1,0 +1,63 @@
+{
+  "headless": true,
+  "port": 4673,
+  "viewport": [
+    1920,
+    1080
+  ],
+  "evidence": [
+    {
+      "file": "02-hkaerial-bank.png",
+      "unit": "hkaerial",
+      "bolts": 0,
+      "banking": true,
+      "searchlight": true
+    },
+    {
+      "file": "01-t1000-blade.png",
+      "unit": "t1000",
+      "melee": true,
+      "nameplate": "T-1000"
+    },
+    {
+      "file": "03-hktank-boss.png",
+      "unit": "hktank",
+      "shells": 0,
+      "boss": true,
+      "renderedBoss": true
+    },
+    {
+      "file": "04-t1000-puddle.png",
+      "type": "t1000",
+      "phase": "pool",
+      "puddle": true,
+      "pieces": 0,
+      "severed": 0,
+      "particles": 0
+    },
+    {
+      "file": "05-hkaerial-breakup.png",
+      "type": "hkaerial",
+      "phase": "burn",
+      "puddle": false,
+      "pieces": 6,
+      "severed": 0,
+      "particles": 24
+    },
+    {
+      "file": "06-hktank-wreck.png",
+      "type": "hktank",
+      "phase": "burn",
+      "puddle": false,
+      "pieces": 1,
+      "severed": 0,
+      "particles": 23
+    }
+  ],
+  "cleanup": {
+    "detached": true,
+    "rosterDisposed": true,
+    "visuals": 0
+  },
+  "issues": []
+}

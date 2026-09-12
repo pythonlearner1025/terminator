@@ -1,6 +1,9 @@
 import {unitMaterials} from './unit-materials.js'
+import {createRosterFigure} from './roster-geometry.js'
+import {rosterMaterials} from './roster-materials.js'
 
 export default async function generate({params, engine}) {
+  if(['t1000','hkaerial','hktank'].includes(params.type)){await rosterMaterials(engine).ready;return createRosterFigure(engine,params.type)}
   await unitMaterials(engine).ready
   return createUnitPreview(engine, ['scout', 'endo', 'heavy'].includes(params.type) ? params.type : 'endo')
 }

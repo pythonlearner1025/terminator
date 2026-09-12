@@ -96,3 +96,22 @@ No external images enter these maps. All three files are dedicated under CC0 1.0
 
 Torn steel, sockets, and cables reuse the licensed unit atlas above.
 Reference video frames stay under `docs/reference/kf2/gore/`, which publishing excludes.
+
+
+## Roster PBR maps
+
+Each file is an original 1024 by 1024 procedural bake from `generators/roster-textures.py`, seed 2029.
+No reference image pixels enter these maps. These originals are dedicated under CC0 1.0.
+
+| File | Source | License |
+| --- | --- | --- |
+| `textures/roster/hk-albedo.jpg` | Original worn armor, polished fittings, vents, and tread atlas | CC0-1.0 |
+| `textures/roster/hk-normal.png` | Original panel grooves, scratches, pits, and transverse tread cleats | CC0-1.0 |
+| `textures/roster/hk-orm.png` | Original packed ambient occlusion, roughness, and metalness | CC0-1.0 |
+| `textures/roster/liquid-albedo.jpg` | Original neutral mimetic polyalloy | CC0-1.0 |
+| `textures/roster/liquid-normal.png` | Original liquid surface flow | CC0-1.0 |
+| `textures/roster/liquid-orm.png` | Original packed liquid ambient occlusion, roughness, and metalness | CC0-1.0 |
+
+Optics reuse `textures/units/optic-*`. Reflections reuse `textures/units/studio_small_09_1k.hdr`.
+Fire, dust, and smoke reuse `textures/weapons/fx-smoke.png`. Their licenses appear above.
+Film and product references remain under excluded `docs/reference/terminator/`.

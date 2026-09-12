@@ -83,8 +83,8 @@ export async function measureColliderFit() {
       const vehicleVisual = object.getObjectByName(type === 'hkaerial' ? 'HK-Aerial Placeholder Visual' : 'HK-Tank Placeholder Visual')
       const anatomy = vehicleVisual
         ? objectBounds(E, vehicleVisual)
-        : skinnedBounds(E, rig, part => !['Weapon', 'Barrels', 'Muzzle'].includes(part.bone.name))
-      const skull = vehicleVisual ? null : skinnedBounds(E, rig, part => part.bone.name === 'Head')
+        : skinnedBounds(E, rig, part => !['Weapon', 'Barrels', 'Muzzle', 'Blade Left', 'Blade Right'].includes(part.bone.name))
+      const skull = vehicleVisual || spec.flying || spec.boss ? null : skinnedBounds(E, rig, part => part.bone.name === 'Head')
       const hitVolumes = unitHitVolumes(spec, pose)
       const hitBounds = combinedPrimitiveBounds(hitVolumes)
       const headVolumes = hitVolumes.filter(part => part.part === 'head')
@@ -106,6 +106,30 @@ export async function measureColliderFit() {
     }
   }
   return {props, units: unitRows}
+}
+
+export async function measureRosterParts() {
+  const units=JSON.parse(await readFile(new URL('lib/core/data/units.json',root),'utf8'))
+  const {E,createUnitPlaceholder,bindUnitRig}=await loadGeometry(),rows=[]
+  for(const type of ['t1000','hkaerial','hktank']){
+    const object=createUnitPlaceholder(E,type),rig=bindUnitRig(object)
+    object.updateMatrixWorld(true)
+    const spec=units.types[type],volumes=unitHitVolumes(spec,'idle')
+    const aliases={pelvis:['Pelvis'],spine:['Spine'],chest:['Chest','Shoulder Left','Shoulder Right','Neck'],
+      head:['Head'], 'arm-left':['Upper Arm Left','Forearm Left','Hand Left','Palm Left'],
+      'arm-right':['Upper Arm Right','Forearm Right','Hand Right','Palm Right'],
+      'leg-left':['Thigh Left','Shin Left','Foot Left'],'leg-right':['Thigh Right','Shin Right','Foot Right']}
+    const groups=new Map()
+    for(const volume of volumes){const key=type==='t1000'?volume.id:volume.part;(groups.get(key)||groups.set(key,[]).get(key)).push(volume)}
+    for(const [name,shapes] of groups){
+      const names=aliases[name]||[name],set=new Set()
+      for(const bone of rig.mesh.skeleton.bones)if(names.includes(bone.name)||name==='Cannon'&&bone.name.startsWith('Cannon '))set.add(bone.name)
+      const visual=skinnedBounds(E,rig,part=>set.has(part.bone.name)),hit=combinedPrimitiveBounds(shapes)
+      const delta=compareBounds(visual,hit)
+      rows.push({type,part:name,visual,hit,sideCm:delta,maxErrorCm:Math.max(...Object.values(delta).map(Math.abs))})
+    }
+  }
+  return rows
 }
 
 export function formatReport(report) {

@@ -28,6 +28,9 @@ const specs = [
   unitTemplate('Scout', 'scout', [47, 0, -5]),
   unitTemplate('Endo', 'endo', [47, 0, 0]),
   unitTemplate('Heavy', 'heavy', [47, 0, 5]),
+  unitTemplate('T-1000', 't1000', [52, 0, -5]),
+  unitTemplate('HK-Aerial', 'hkaerial', [52, 2, 0]),
+  unitTemplate('HK-Tank', 'hktank', [52, 0, 7]),
   {
     name: 'Soldier Template',
     uuid: 'terminator-node-soldier-template',

@@ -20,7 +20,10 @@
         9,
         10,
         11,
-        12
+        12,
+        13,
+        14,
+        15
       ]
     }
   ],
@@ -289,6 +292,84 @@
         "kite3dAuthoring": {
           "role": "direct",
           "id": "terminator-covered-link"
+        }
+      }
+    },
+    {
+      "name": "Unit Template T-1000",
+      "translation": [
+        52,
+        0,
+        -5
+      ],
+      "extras": {
+        "gltfUUID": "terminator-node-unit-template-t1000",
+        "kite3dAuthoring": {
+          "role": "generator",
+          "id": "terminator-unit-template-t1000"
+        },
+        "EntityComponentPlugin": {
+          "terminator-component-unit-generator-t1000": {
+            "type": "Generator",
+            "state": {
+              "module": "generators/unit-template.generator.js",
+              "params": {
+                "type": "t1000"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Unit Template HK-Aerial",
+      "translation": [
+        52,
+        2,
+        0
+      ],
+      "extras": {
+        "gltfUUID": "terminator-node-unit-template-hkaerial",
+        "kite3dAuthoring": {
+          "role": "generator",
+          "id": "terminator-unit-template-hkaerial"
+        },
+        "EntityComponentPlugin": {
+          "terminator-component-unit-generator-hkaerial": {
+            "type": "Generator",
+            "state": {
+              "module": "generators/unit-template.generator.js",
+              "params": {
+                "type": "hkaerial"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Unit Template HK-Tank",
+      "translation": [
+        52,
+        0,
+        7
+      ],
+      "extras": {
+        "gltfUUID": "terminator-node-unit-template-hktank",
+        "kite3dAuthoring": {
+          "role": "generator",
+          "id": "terminator-unit-template-hktank"
+        },
+        "EntityComponentPlugin": {
+          "terminator-component-unit-generator-hktank": {
+            "type": "Generator",
+            "state": {
+              "module": "generators/unit-template.generator.js",
+              "params": {
+                "type": "hktank"
+              }
+            }
+          }
         }
       }
     }

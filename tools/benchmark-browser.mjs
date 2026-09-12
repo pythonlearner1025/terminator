@@ -82,7 +82,7 @@ try {
     return rect && Math.round(rect.width) === width && Math.round(rect.height) === height
   }, {width: options.width, height: options.height}, {timeout: 10_000})
 
-  const setup = await page.evaluate(async ({motionBlur, disable}) => {
+  const setup = await page.evaluate(async ({motionBlur, disable, roster}) => {
     const manager = window.terminator.manager
     const world = manager.world
     for (const unit of world.units) unit.brain?.destroy?.()
@@ -113,8 +113,10 @@ try {
       }
     }
     for (let index = 0; index < positions.length; index += 1) {
-      const type = ['scout', 'endo', 'heavy'][index % 3]
+      const type = roster === 'wave5' ? (index === 23 ? 'hktank' : ['scout', 'endo', 'heavy', 't1000', 'hkaerial'][index % 5]) : ['scout', 'endo', 'heavy'][index % 3]
       const pos = positions[index]
+      if (type === 'hkaerial') pos.y = 4.5
+      if (type === 'hktank') { pos.x = 0; pos.z = 3 }
       const yaw = Math.atan2(player.pos.x - pos.x, player.pos.z - pos.z)
       const unit = world.spawnUnit(type, pos, {id: `benchmark-${type}-${index + 1}`, yaw})
       unit.brain?.destroy?.()
@@ -123,6 +125,8 @@ try {
       unit.intent.fire = type !== 'scout'
       unit.reactionReadyTick = 0
     }
+    world.wave = roster === 'wave5' ? 5 : world.wave
+    world.bossPhase = roster === 'wave5'
     world.mapState.gates = world.map.spawnGates.map(gate => gate.id)
     for (const key of Object.keys(world.mapState.lights)) world.mapState.lights[key] = 'on'
     world.mapState.hazards = world.map.hazardSlots.slice(0, 2).map((slot, index) => ({slot: slot.id, kind: index ? 'steam' : 'electric'}))
@@ -167,12 +171,12 @@ try {
     window.viewer.setDirty()
     return {units: world.aliveUnits.length, quality: manager.ui?.screens?.settings?.quality || 'high', disabled: disable,
       visualWarmup: manager.visualWarmupReport || null, audio: manager.audio ? {loading:Boolean(manager.audio.loading),decoded:manager.audio.stats.loaded} : null}
-  }, {motionBlur: options.motionBlur, disable: options.disable})
+  }, {motionBlur: options.motionBlur, disable: options.disable, roster: options.roster})
 
   await page.waitForFunction(() => window.terminator.manager.unitView.visuals.size === 24, undefined, {timeout: 20_000})
   await page.waitForTimeout(options.warmupSeconds * 1000)
   warnings.length = 0
-  const metrics = await page.evaluate(collectMetrics, {seconds: options.seconds, ragdollDeaths: options.ragdolls, goreStress: options.goreStress, weaponBurst: options.weaponBurst})
+  const metrics = await page.evaluate(collectMetrics, {seconds: options.seconds, ragdollDeaths: options.ragdolls, goreStress: options.goreStress, weaponBurst: options.weaponBurst,rosterDeaths:options.rosterDeaths})
   const scene = await page.evaluate(() => {
     const {viewer} = window
     const manager = window.terminator.manager
@@ -215,12 +219,13 @@ try {
   }
   const result = {
     benchmark: 'Terminator browser performance',
+    roster: options.roster,
     capturedAt: new Date().toISOString(),
     durationSeconds: options.seconds,
     warmupSeconds: options.warmupSeconds,
     requestedViewport: {width: options.width, height: options.height, deviceScaleFactor: 1},
     effects: {post: !options.disable.includes('post'), motionBlur: options.motionBlur, rain: 1, smoke: 1,
-      hazards: ['electric', 'steam'], combatStress: `24 enemies, two enemy shots per frame, ten impact bursts per second, ${options.ragdolls} deterministic ${options.goreStress?"gore":"M4"} death(s), limb loss, and explosion events`, disabled: options.disable},
+      hazards: ['electric', 'steam'], combatStress: `24 enemies, two enemy shots per frame, ten impact bursts per second, ${options.rosterDeaths?3:options.ragdolls} deterministic ${options.rosterDeaths?"new roster":options.goreStress?"gore":"M4"} death(s), ${options.roster==="wave5"?"":"limb loss, "}and explosion events`, disabled: options.disable},
     browser: metrics.browser,
     setup,
     scene,
@@ -269,6 +274,8 @@ function parseOptions(argv) {
     seconds: Number(value('seconds', 10)),
     warmupSeconds: Number(value('warmup', 3)),
     port: Number(value('port', 4660)),
+    roster: value('roster', 'legacy'),
+    rosterDeaths:value('roster-deaths','off')==='on',
     output: value('output', ''),
     screenshot: value('screenshot', ''),
     ragdolls: Math.max(1,Math.min(8,Math.round(Number(value('ragdolls',1))))),
@@ -308,7 +315,7 @@ async function reachable(origin) {
 function delay(ms) { return new Promise(resolveDelay => setTimeout(resolveDelay, ms)) }
 function redact(value) { return String(value).replace(/\?t=[A-Za-z0-9._~-]+/g, '?t=[redacted]') }
 
-async function collectMetrics({seconds,ragdollDeaths=1,goreStress=false,weaponBurst=false}) {
+async function collectMetrics({seconds,ragdollDeaths=1,goreStress=false,weaponBurst=false,rosterDeaths=false}) {
   const round = value => Number.isFinite(value) ? Number(value.toFixed(3)) : null
   const mean = values => values.reduce((sum, value) => sum + value, 0) / Math.max(1, values.length)
   const summary = values => {
@@ -374,7 +381,8 @@ async function collectMetrics({seconds,ragdollDeaths=1,goreStress=false,weaponBu
   const pendingQueries = [], gpuSamples = []
   const combatIds=[...manager.unitView.visuals.keys()]
   const primary=manager.world.unitById.get('benchmark-heavy-3')
-  const deathTargets=[primary,...manager.world.units.filter(unit=>unit!==primary)].slice(0,ragdollDeaths)
+  const deathTargets=rosterDeaths?['t1000','hkaerial','hktank'].map(type=>manager.world.units.find(unit=>unit.type===type)):[primary,...manager.world.units.filter(unit=>unit!==primary)].slice(0,ragdollDeaths)
+  if(rosterDeaths&&!deathTargets.every(Boolean))throw new Error('Roster death stress requires --roster=wave5')
   const combatFrom = manager.unitView.v1.clone(), combatTo = manager.unitView.v2.clone(), combatHit = manager.unitView.v1.clone()
   const firstEvents = new Set()
   const currentRecord = () => frameRecords[frameSerial]
@@ -556,7 +564,7 @@ async function collectMetrics({seconds,ragdollDeaths=1,goreStress=false,weaponBu
           }
           world.emit('shot',{by:world.player.id,playerId:world.player.id,weapon:'m4',hit:true,headshot:false,killed:true,unitId:target.id,
             origin:{...world.player.pos,y:world.player.pos.y+1.65}})
-          mark(`${goreStress?"gore":"M4"} kill ${deathIndex+1}`);markFirst('first shot','M4');manager.syncViews();manager.audioBindings?.sync(world)
+          mark(`${rosterDeaths?target.type:goreStress?"gore":"M4"} kill ${deathIndex+1}`);markFirst('first shot','M4');manager.syncViews();manager.audioBindings?.sync(world)
           const emitted = world.eventLog.slice(eventStart)
           if (emitted.some(event => event.type === 'unit_death')) markFirst('first death', 'M4 kill')
         }
@@ -579,13 +587,14 @@ async function collectMetrics({seconds,ragdollDeaths=1,goreStress=false,weaponBu
         manager.syncViews(); manager.audioBindings?.sync(world)
         mark('explosion')
       }
-      if(ragdollDeaths===1&&effectFrame===72) {
+      if(!rosterDeaths&&ragdollDeaths===1&&effectFrame===72) {
         const target = manager.world.unitById.get('benchmark-heavy-3')
         if (target && !target.alive) {
           target.alive = true; target.hp = target.maxHp; target.diedAtTick = null
           manager.syncViews()
         }
       }
+      if(rosterDeaths&&effectFrame===72){for(const unit of deathTargets){unit.alive=true;unit.hp=unit.maxHp;unit.diedAtTick=null}manager.syncViews()}
       if(weaponBurst)runWeaponBurst()
       effectFrame += 1
     }
@@ -687,7 +696,7 @@ async function collectMetrics({seconds,ragdollDeaths=1,goreStress=false,weaponBu
     textureMemory: inspectTextureMemory(viewer),
     postPasses,
     systems,
-    ragdolls:{requestedDeaths:ragdollDeaths,maxActive:maxActiveRagdolls,viewCpuMeanMs:systems.ragdolls?.meanCallMs??null,
+    ragdolls:{requestedDeaths:deathTargets.length,rosterDeaths,maxActive:maxActiveRagdolls,viewCpuMeanMs:systems.ragdolls?.meanCallMs??null,
       viewCpuMaxMs:systems.ragdolls?.maxCallMs??null},
     gore:{stress:goreStress,maxActivePieces,pieceCapacity:manager.unitView.fx.gore?.pieces.items.length||0,meanMs:systems.gore?.meanCallMs||0,stats:manager.unitView.fx.gore?.stats||null},
     topCosts: ranked,
