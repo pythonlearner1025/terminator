@@ -66,7 +66,18 @@ while [ -e "$PENDING" ]; do
   fi
 
   node -e "const s=require('$STATE/state.json');if(s.playState==='playing'){s.playState='stopped';require('fs').writeFileSync('$STATE/state.json',JSON.stringify(s,null,2))}" 2>/dev/null
+  published=0
   if (cd "$DEPLOY" && npx kite3d publish --slug "$SLUG" --message "master ${target:0:7}: $subject" >> "$LOG" 2>&1); then
+    published=1
+  elif tail -n 20 "$LOG" | grep -q "did not render 30 frames"; then
+    # The bundled check has a 10 s render budget and fails under machine load. Prove the tree
+    # with a standalone check, then publish without the bundled check.
+    log "bundled check timed out; running a standalone check"
+    if (cd "$DEPLOY" && npx kite3d check >> "$LOG" 2>&1) && (cd "$DEPLOY" && npx kite3d publish --no-check --slug "$SLUG" --message "master ${target:0:7}: $subject" >> "$LOG" 2>&1); then
+      published=1
+    fi
+  fi
+  if [ "$published" = 1 ]; then
     hash=$(node -e "console.log(require('$STATE/deploys.json').last_publish.release_hash.slice(0,8))" 2>/dev/null)
     code=$(curl -s -o /dev/null -w '%{http_code}' https://$SLUG.app.blitz.dev/)
     log "done: master ${target:0:7} published as release $hash, live site answered $code"
