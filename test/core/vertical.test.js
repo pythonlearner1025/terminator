@@ -24,6 +24,52 @@ test('player climbs from the courtyard to the balcony with scripted input', () =
   }
 })
 
+test('player descends and reclimbs stairs after Scouts die on the treads', () => {
+  const world = new World({seed: 18, brains: {scout: {tick() {}}}})
+  world.configureMap({doors: {building_ground: 'unlocked', building_balcony: 'unlocked'}})
+  for (let index = 0; index < 6; index += 1) {
+    const scout = world.spawnUnit('scout', {x: 10, y: 0.5 + index * 0.5, z: 24.5 - index}, {id: `stair-scout-${index + 1}`})
+    world.damageUnit(scout.id, scout.hp, {source: 'player', weapon: 'pistol'})
+  }
+
+  world.player.pos = {x: 10, y: balconyFloor, z: 18.4}
+  world.player.vel = {x: 0, y: 0, z: 0}
+  const descentHeights = []
+  walkPlayerTo(world, {x: 10, z: 25.6}, descentHeights)
+
+  assert.equal(world.player.pos.y, colliderTop('building_ground_floor'))
+  assert.ok(descentHeights.some((height) => height < balconyFloor), 'player never left the upper-floor support')
+
+  const climbHeights = []
+  walkPlayerTo(world, {x: 10, z: 18.4}, climbHeights)
+  assert.equal(world.player.pos.y, balconyFloor)
+  assert.ok(world.units.every((unit) => !unit.alive), 'dead Scouts must remain non-blocking in both directions')
+})
+
+test('dead Scouts do not affect the balcony edge or dock ramp', () => {
+  const balconyWorld = new World({seed: 19, brains: {scout: {tick() {}}}})
+  const balconyScout = balconyWorld.spawnUnit('scout', {x: 0, y: balconyFloor, z: 15.5}, {id: 'balcony-scout'})
+  balconyWorld.damageUnit(balconyScout.id, balconyScout.hp, {source: 'player', weapon: 'pistol'})
+  balconyWorld.player.pos = {x: 0, y: balconyFloor, z: 15.5}
+  balconyWorld.player.vel = {x: 0, y: 0, z: 0}
+  for (let tick = 0; tick < 30; tick += 1) {
+    balconyWorld.step({move: {x: 0, z: 1}, yaw: Math.PI, pitch: 0})
+  }
+  assert.ok(balconyWorld.player.pos.y < balconyFloor)
+  for (let tick = 0; tick < 90; tick += 1) balconyWorld.step()
+  assert.equal(balconyWorld.player.pos.y, colliderTop('ground'))
+
+  const dockWorld = new World({seed: 20, brains: {scout: {tick() {}}}})
+  const dockScout = dockWorld.spawnUnit('scout', {x: 17.75, y: 0.35, z: -5}, {id: 'dock-scout'})
+  dockWorld.damageUnit(dockScout.id, dockScout.hp, {source: 'player', weapon: 'pistol'})
+  dockWorld.player.pos = {x: 19, y: colliderTop('dock_floor'), z: -5}
+  dockWorld.player.vel = {x: 0, y: 0, z: 0}
+  walkPlayerTo(dockWorld, {x: 16, z: -5}, [])
+  assert.equal(dockWorld.player.pos.y, colliderTop('ground'))
+  walkPlayerTo(dockWorld, {x: 19, z: -5}, [])
+  assert.equal(dockWorld.player.pos.y, colliderTop('dock_floor'))
+})
+
 test('player cannot enter the second floor slab from below', () => {
   const world = new World({seed: 12})
   const slab = map.colliders.find(({id}) => id === 'building_second_floor')
