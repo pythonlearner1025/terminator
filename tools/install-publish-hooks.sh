@@ -14,6 +14,8 @@ for name in post-commit post-merge; do
 # Auto-publish master (installed by tools/install-publish-hooks.sh). Delete this file to stop.
 [ "\$(git rev-parse --show-toplevel 2>/dev/null)" = "$REPO" ] || exit 0
 [ "\$(git symbolic-ref --short HEAD 2>/dev/null)" = "master" ] || exit 0
+# post-merge gets 1 for a squash merge: nothing is committed yet, the commit hook publishes later.
+[ "$name" = "post-merge" ] && [ "\$1" = "1" ] && exit 0
 echo "\$(date '+%F %T') hook $name fired in \$(pwd) on \$(git rev-parse --short HEAD)" >> "$REPO/../terminator-deploy/.kite3d/auto-publish.log" 2>/dev/null
 nohup env -u GIT_DIR -u GIT_WORK_TREE -u GIT_INDEX_FILE -u GIT_PREFIX "$REPO/tools/publish-master.sh" >/dev/null 2>&1 &
 exit 0
