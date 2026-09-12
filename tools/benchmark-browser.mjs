@@ -172,7 +172,7 @@ try {
   await page.waitForFunction(() => window.terminator.manager.unitView.visuals.size === 24, undefined, {timeout: 20_000})
   await page.waitForTimeout(options.warmupSeconds * 1000)
   warnings.length = 0
-  const metrics = await page.evaluate(collectMetrics, {seconds: options.seconds, ragdollDeaths: options.ragdolls, goreStress: options.goreStress})
+  const metrics = await page.evaluate(collectMetrics, {seconds: options.seconds, ragdollDeaths: options.ragdolls, goreStress: options.goreStress, weaponBurst: options.weaponBurst})
   const scene = await page.evaluate(() => {
     const {viewer} = window
     const manager = window.terminator.manager
@@ -236,6 +236,7 @@ try {
     worstFrames: metrics.worstFrames,
     eventFrames: metrics.eventFrames,
     workloadFpsFloor: metrics.workloadFpsFloor,
+    weaponBurst:metrics.weaponBurst,
     warnings: [...new Set(warnings)],
     screenshot: options.screenshot || null,
   }
@@ -273,6 +274,7 @@ function parseOptions(argv) {
     ragdolls: Math.max(1,Math.min(8,Math.round(Number(value('ragdolls',1))))),
     goreStress: value('gore','off') === 'on',
     motionBlur: value('motion-blur', 'on') !== 'off',
+    weaponBurst:value('weapon-burst','off')==='on',
     disable: value('disable', '').split(',').filter(Boolean),
   }
 }
@@ -306,7 +308,7 @@ async function reachable(origin) {
 function delay(ms) { return new Promise(resolveDelay => setTimeout(resolveDelay, ms)) }
 function redact(value) { return String(value).replace(/\?t=[A-Za-z0-9._~-]+/g, '?t=[redacted]') }
 
-async function collectMetrics({seconds,ragdollDeaths=1,goreStress=false}) {
+async function collectMetrics({seconds,ragdollDeaths=1,goreStress=false,weaponBurst=false}) {
   const round = value => Number.isFinite(value) ? Number(value.toFixed(3)) : null
   const mean = values => values.reduce((sum, value) => sum + value, 0) / Math.max(1, values.length)
   const summary = values => {
@@ -411,6 +413,8 @@ async function collectMetrics({seconds,ragdollDeaths=1,goreStress=false}) {
   wrap(manager.playersView, 'sync', 'players')
   wrap(manager.playerView, 'sync', 'player')
   wrap(manager.playerView?.weapons, 'sync', 'weapons')
+  wrap(manager.playerView?.weapons?.tracers, 'sync', 'tracers')
+  wrap(manager.playerView?.weapons?.projectiles, 'sync', 'projectiles')
   wrap(manager.mapView?.refs?.weather, 'sync', 'weather')
   wrap(manager.unitView?.fx, 'update', 'fx')
   wrap(manager.unitView?.ragdolls,'update','ragdolls')
@@ -457,6 +461,48 @@ async function collectMetrics({seconds,ragdollDeaths=1,goreStress=false}) {
       }
       gl.deleteQuery(query.handle); pendingQueries.splice(index, 1)
     }
+  }
+  // Isolated visual stress. C1 gameplay is not required to render the shared contract.
+  const burstWorld=manager.world,burstView=manager.playerView?.weapons
+  const burstIds=['pistol','m4','shotgun','plasma','sniper','launcher','knife','grenade']
+  const burstShots=Object.fromEntries(burstIds.map(id=>[id,0]))
+  const burstProjectiles=Array.from({length:52},(_,i)=>({id:`weapon-stress-${i}`,type:i>=48?'grenade':['round','bolt','shell'][i%3],owner:'unit',ownerId:'stress',
+    pos:{x:0,y:1.6,z:0},vel:{x:0,y:0,z:18},born:0}))
+  const burstSnapshot=Object.create(burstWorld)
+  burstSnapshot.projectiles=burstProjectiles
+  let burstFrame=0
+  const burstOrigin={x:0,y:1.65,z:17},burstEnd={x:0,y:2,z:-20}
+  const runWeaponBurst=()=>{
+    const id=burstIds[Math.floor(burstFrame/24)%burstIds.length],p=burstWorld.player
+    if(burstFrame%6===0) {
+      const rig=burstView.rigs[id]
+      if(rig) {
+        burstShots[id]++
+        if(id==='grenade')burstWorld.emit('grenade_thrown',{by:p.id,playerId:p.id})
+        else {
+          burstWorld.emit('shot',{by:p.id,playerId:p.id,weapon:id,origin:burstOrigin,hitPoint:burstEnd,hit:false})
+          if(id!=='knife') {
+            // Show the real model and mechanism without changing the loadout rules.
+            const previous=burstView.animation.shown
+            burstView.rigs[previous].root.visible=false
+            rig.root.visible=true;rig.root.position.copy(burstView.rigs.m4.root.position)
+            rig.root.rotation.copy(burstView.rigs.m4.root.rotation)
+            rig.root.updateMatrixWorld(true);burstView.fx.fire(rig,id,.1)
+            burstView.animation.shown=id
+          }
+        }
+      }
+    }
+    burstOrigin.x=p.pos.x;burstOrigin.y=p.pos.y+1.65;burstOrigin.z=p.pos.z
+    for(let i=0;i<burstProjectiles.length;i++) {
+      const projectile=burstProjectiles[i],age=((burstFrame+i*3)%90)/60
+      projectile.pos.x=(i%8-3.5)*1.1;projectile.pos.y=1.1+(i%3)*.4
+      projectile.pos.z=-8+age*18
+    }
+    burstSnapshot.tick=burstWorld.tick
+    burstView.projectiles?.sync(burstSnapshot,manager.playerView.camera)
+    manager.grenadeView?.sync(burstSnapshot)
+    burstFrame++
   }
   const onPreFrame = () => {
     const now = performance.now()
@@ -540,6 +586,7 @@ async function collectMetrics({seconds,ragdollDeaths=1,goreStress=false}) {
           manager.syncViews()
         }
       }
+      if(weaponBurst)runWeaponBurst()
       effectFrame += 1
     }
   }
@@ -647,6 +694,7 @@ async function collectMetrics({seconds,ragdollDeaths=1,goreStress=false}) {
     worstFrames,
     eventFrames,
     workloadFpsFloor,
+    weaponBurst:weaponBurst?{shots:burstShots,projectiles:52,projectileTypes:['round','bolt','shell','grenade'],mode:'isolated visual contract fixture'}:null,
   }
 }
 

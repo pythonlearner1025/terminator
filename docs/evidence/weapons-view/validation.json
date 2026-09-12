@@ -1,0 +1,24 @@
+{
+  "checks": 68,
+  "tracerCount": 5,
+  "projectileCount": {
+    "round": 3,
+    "bolt": 6,
+    "shell": 0,
+    "grenade": 0,
+    "unknown": 0,
+    "dropped": 0
+  },
+  "reload": {
+    "weapon": "sniper",
+    "mode": "reload",
+    "reloadProgress": 0.62,
+    "shotProgress": 1,
+    "shellsInserted": 0,
+    "reloadPhase": "seat",
+    "aiming": false,
+    "aimProgress": 0
+  },
+  "cleanup": true,
+  "errors": []
+}

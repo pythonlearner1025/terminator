@@ -56,7 +56,7 @@ ORM packs ambient occlusion in R, roughness in G and metalness in B. The optical
 
 ## Weapons
 
-All files below were authored procedurally for this project on 2026-09-11 using
+All files below were authored procedurally for this project on 2026-09-11 and revised on 2026-09-12 using
 `assets/textures/weapons/generate.py`, seed 2029. No downloaded photographic or
 model assets are included. Generated images are dedicated under
 [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/).
@@ -71,6 +71,7 @@ Markings use the existing Barlow Condensed font, licensed under SIL OFL 1.1 in
 | `textures/weapons/weapon-metalness.png` | 2048 x 2048 | Original metal and dielectric surface masks | CC0-1.0 |
 | `textures/weapons/weapon-ao.png` | 2048 x 2048 | Original surface cavity mask | CC0-1.0 |
 | `textures/weapons/weapon-emissive.png` | 2048 x 2048 | Original plasma cell emission mask | CC0-1.0 |
+| `textures/weapons/fx-muzzle-atlas.png` | 1536 x 256 | Original six weapon flame profiles and plasma corona | CC0-1.0 |
 | `textures/weapons/fx-muzzle.png` | 256 x 256 | Original radial flame with seven irregular lobes | CC0-1.0 |
 | `textures/weapons/fx-blast.png` | 256 x 256 | Original turbulent fireball and flash | CC0-1.0 |
 | `textures/weapons/fx-smoke.png` | 256 x 256 | Original multiscale noise cloud | CC0-1.0 |
