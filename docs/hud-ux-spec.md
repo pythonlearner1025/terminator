@@ -1,5 +1,18 @@
 # HUD and UX spec
 
+## Terse revision
+
+W18 replaces the text treatments below. Barlow, angular panels, scanlines, skull art, colors, and feedback animations stay.
+
+- Main: title, Play, Host, Join, Skynet, Settings, Quit. No dossier anywhere in the UI.
+- Host: code, one invite/copy action, roster, readiness icons, override toggle, Start. Join: code/invite and relay inputs, Join; connected players use the roster. Settings: one word per control. Utility navigation uses accessible icon buttons.
+- Skynet lobby: code, complete selectable install command/copy, status icon, Start. Pause: Resume and Settings/Menu icons. Quit: Quit and Menu.
+- Trader: categories, short item names, prices, scrap balance, bulk ammo/armor icons with prices, countdown. Purchases retain sound, color, and brief error labels.
+- HUD: icon/number vitals, numeric ammunition, `WAVE 3/10`, remaining count, `SKYNET · BUILT-IN · 1140`, `E7 S3 H1`, one short transmission line, three icon feed entries. Enemy plates show type, rev and health only. Teammates keep names and health, with armor bars. Spectate keeps the target name and arrow controls. No gameplay hints or chatter subtitles.
+- Results: result, wave, kills/accuracy/damage taken/scrap, Play Again. Co-op shows the same four values per player; full names remain. Partial history and unavailable/disconnected data retain accessible labels. Server dossier APIs and core data are unchanged.
+
+Measurements, screenshots, and checks: [W18 evidence](evidence/w18-terse-ui/README.md).
+
 Quality bar: Killing Floor 2. Every element below exists in KF2 or is the Skynet equivalent. The look is
 dark, gritty, angular panels, a condensed sans-serif face, subtle scanlines, and high-contrast numbers.
 Resistance elements are cool white and blue. Skynet elements are red. Warnings are amber. Everything
