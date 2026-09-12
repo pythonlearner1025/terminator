@@ -39,6 +39,8 @@ while [ -e "$PENDING" ]; do
   subject=$(git -C "$REPO" log -1 --format=%s "$target")
   log "start: master $target ($subject)"
 
+  # kite3d publish rewrites package.json (kite3d.version) in the deploy worktree; drop that before the check.
+  git -C "$DEPLOY" checkout -q -- package.json 2>/dev/null
   if [ -n "$(git -C "$DEPLOY" status --porcelain)" ]; then
     log "abort: deploy worktree is dirty, resolve by hand: git -C $DEPLOY status"
     exit 1
