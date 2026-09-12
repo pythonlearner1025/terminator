@@ -32,10 +32,10 @@ export function init(self, mem) {}
 ```ts
 {
   id: string,
-  type: "scout" | "endo" | "heavy",
+  type: "scout" | "endo" | "heavy" | "t1000" | "hkaerial" | "hktank",
   hp: number, maxHp: number,
   pos: {x, y, z}, yaw: number,           // yaw in radians, 0 faces +z
-  vel: {x, y, z},
+  vel: {x, y, z}, flying: boolean, altitude: number,
   weapon: { ready: boolean, range: number, spread: number, cooldownLeft: number },
   alive: boolean,
   spawnedAt: number,
@@ -50,6 +50,8 @@ Everything here is filtered by the body. Nothing is omniscient.
 {
   time: number,                             // seconds since wave start
   rand(): number,                           // seeded [0, 1)
+  flying: boolean,                          // true for HK-Aerial
+  altitude: number,                         // flyer root height; zero for ground units
   player: null | {                          // null unless in the vision cone, in range, and unoccluded
     pos: {x, y, z}, dist: number, vel: {x, y, z},
     facingMe: boolean,                      // player looks within 30 deg of this unit
@@ -79,24 +81,32 @@ weapon cooldown, and spin-up.
 
 ```ts
 {
-  moveTo(pos): void,        // pathfinds; replaces any previous move
+  moveTo(pos): void,        // ground units pathfind; flyers move directly in three dimensions
   stop(): void,
   face(pos): void,          // turns at the unit's turn rate
   fire(): void,             // fires if ready and facing within spread of the aim point
   aimAt(pos): void,         // sets the aim point; fire() uses it
-  melee(): void,            // scouts only
+  melee(): void,            // Scout and T-1000
   crouch(on: boolean): void,
   say(text: string): void,  // 40 chars max, shows as a subtitle near the unit, 1 per 5 s
   broadcast(data: any): void,   // to allies' sense.messages, 512 bytes max, 2 per s
 }
 ```
 
+For flyers, `moveTo({x, y, z})` clamps `y` to 3.5 through 6 meters. The engine tests full-body
+clearance against map colliders and ceilings. A flyer does not enter or query the ground navigation grid.
+
+Weak parts remain spatial hit regions. A script uses `act.aimAt(pos)` and cannot submit a trusted part
+name. The engine resolves the hit part. Read `unit_catalog.types[type].parts` for valid names and
+damage multipliers. HK-Aerial has a 2x `Turret`. HK-Tank has a rear 3x `Core`. Neither has a head.
+
 ## Default scripts
 
 The engine ships one default script per unit type. They are plain, readable, and shown to Skynet in the
 rules message as a starting point. The Scout charges the last known position and circles behind. The
 Endo advances between cover points and bursts when the player is visible. The Heavy walks straight,
-spins up on sight, and suppresses the last known position.
+spins up on sight, and suppresses the last known position. The T-1000 closes for melee. HK-Aerial
+orbits at 12 through 25 meters. HK-Tank advances slowly and fires its cannon and twin plasma burst.
 
 ## Versioning
 

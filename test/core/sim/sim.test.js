@@ -85,7 +85,7 @@ test('simulator uses the injected brain factory for submitted scripts', () => {
     },
     maxSeconds: 0.1,
   })
-  assert.deepEqual(seen.map(({unitType}) => unitType).sort(), ['endo', 'heavy', 'scout'])
+  assert.deepEqual(seen.map(({unitType}) => unitType).sort(), ['endo', 'heavy', 'hkaerial', 'hktank', 'scout', 't1000'])
   assert.match(seen.find(({unitType}) => unitType === 'scout').source, /export function tick/)
 })
 

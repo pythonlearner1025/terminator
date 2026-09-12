@@ -4,7 +4,7 @@ globalThis.ImageData??=class {}
 globalThis.window??={}
 const E=await import('threepipe')
 const {TracerPool,TracerView,TRACER_STYLE}=await import('../../lib/view/tracers.js')
-const {ProjectileView,projectileStyle}=await import('../../lib/view/projectiles.js')
+const {ProjectileView,projectileStyle,projectileType}=await import('../../lib/view/projectiles.js')
 const {createWeaponRigs,WEAPON_IDS}=await import('../../lib/view/weapons.js')
 const {GrenadeView}=await import('../../lib/view/grenade.js')
 const {WeaponAnimation}=await import('../../lib/view/weapons-animation.js')
@@ -111,6 +111,7 @@ test('projectile types map to bounded instanced renderers and leave snapshots un
   view.sync(world,camera);world.tick=6;view.sync(world,camera)
   assert.equal(view.streaks.count,3);assert.equal(view.orbs.count,1);assert.equal(view.shells.count,1)
   assert.equal(view.counts.grenade,1);assert.equal(projectileStyle('grenade').renderer,'grenade')
+  assert.equal(projectileType({projectileType:'bolt'}),'bolt')
   assert.equal(projectileStyle('unknown'),null);assert.equal(JSON.stringify(world.projectiles),snapshot)
   assert.equal(view.streaks.end[2],20)
   const slots=[...view.slots],array=view.shells.instanceMatrix.array

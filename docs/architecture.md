@@ -51,8 +51,8 @@ Ghost replay extracts the host record and also accepts legacy single-player reco
 
 Health, armor, ammo, weapons, grenades, scrap, reloads, and purchases belong to each player.
 `world.purchase(item, playerId)` defaults to the host for old callers. Player attacks carry a
-`playerId`, so kill scrap and telemetry go to the shooter. Unit vision, hearing, melee, and hitscan
-consider every living player.
+`playerId`, so kill scrap and telemetry go to the shooter. Unit vision, hearing, melee, and projectile
+targeting consider every living player.
 
 `world.snapshot()` returns plain JSON state, including keyed players and `playerOrder`, units,
 projectiles, map state, phase and wave timers, scaling, deterministic RNG state, replay and prior
@@ -60,6 +60,13 @@ inputs, telemetry, and an `events` delta. `eventStart` and `eventCursor` identif
 `world.applySnapshot(snapshot)` replaces prediction and render state and appends the event delta.
 `world.predictPlayer(playerId, inputs)` advances only that player's movement fields by one 60 Hz tick
 without advancing world time, AI, combat, events, or telemetry.
+
+All ranged enemy attacks are fixed-tick entries in `world.projectiles`. Rounds and bolts fly straight.
+Tank shells use gravity and splash damage. Swept map and player-capsule tests prevent tunneling.
+Player launcher shells sweep against the fitted map primitives and named unit-part volumes.
+`projectile_fired` and `projectile_hit` expose deterministic lifecycle events. Snapshots retain active
+projectiles and their sequence counter, so guests and replay continuations see identical trajectories.
+Event records reserve `type` for the event name. Their projectile subtype uses `projectileType`.
 
 Grenades are fixed-tick entries in `world.projectiles`. A throw emits `grenade_thrown`, advances with
 gravity and swept sphere collision against active map colliders, emits `grenade_bounce` for audible
@@ -73,6 +80,9 @@ The budget multiplier is applied after the performance multiplier. The selected 
 director state, rules, wave summaries, snapshots, and the view-model. A cleared wave heals and pays
 every living player. Dead players keep their loadout and respawn with full health at the next wave.
 The match ends only when every connected player is dead before a wave clears.
+
+Roster validation unlocks Heavy on wave 2, HK-Aerial on wave 3, and T-1000 on wave 4. Waves 5 and 10
+require one zero-cost HK-Tank at the 8-meter boss gate. The final wave carries the finale flag.
 
 ## Vertical surfaces and navigation
 
@@ -90,6 +100,7 @@ set when it declares `navBlock` or `blocksSight`.
 Unit types declare pose-specific `hitVolumes` in `units.json`. The core selects idle, aim, or Scout
 melee volumes from deterministic intent. Named head volumes cause headshots. Other volumes cover the
 visible torso and limbs without treating the complete character bounds as solid.
+T-1000 reuses Endo volumes. HK-Aerial and HK-Tank use measured placeholder hull and weak-part volumes.
 
 `NavGrid` samples every declared surface at each horizontal grid cell. Each sample is a separate node,
 so ground, upper-floor, balcony, dock, and connector nodes can share an x/z cell. Cardinal and same-cell
@@ -97,6 +108,9 @@ neighbors connect only when their height difference is at most `walkable.maxStep
 blockers are tested against the node's vertical body interval. This makes each locked door block only
 the level its box overlaps. A* returns `{x, y, z}` points, and unit path following takes its foot height
 from the current walkable surface. Failed paths and changed goals retain the World's 2 Hz re-path cap.
+
+HK-Aerial bypasses `NavGrid`. It flies directly between 3.5 and 6 meters. Each candidate step tests
+its clearance sphere against active colliders, floors, walls, and indoor ceilings.
 
 ## Input schema
 
@@ -121,6 +135,8 @@ from the current walkable surface. Failed paths and changed goals retain the Wor
 All fields describe the current tick. They are not deltas. `move.x` is right. `move.z` is forward.
 Yaw and pitch are radians. Yaw zero faces positive Z. The browser adapter turns key and mouse events
 into this record. `jump` is a one-tick pulse and defaults to false for older records.
+Keys 5 and 6 select the sniper and launcher. The wheel cycles owned weapons only.
+Wheel input uses `switchTo: "next" | "previous"`; direct slot inputs remain numbers.
 
 `aim` defaults to false, including older replay and ghost records. Hold the right mouse button
 to aim; only the left button fires. Firearms aim only outside reloads and quick knife/grenade
@@ -143,7 +159,7 @@ sandbox workstream. The current default brains are native modules behind the sam
   yaw,
   vel: {x, y, z},
   weapon: {ready, range, spread, cooldownLeft},
-  alive,
+  alive, flying, altitude,
   spawnedAt,
 }
 ```
@@ -154,6 +170,8 @@ sandbox workstream. The current default brains are native modules behind the sam
 {
   time,
   rand(),
+  flying,
+  altitude,
   player: null | {
     pos, dist, vel, facingMe, hp, armor, weapon, reloading,
   },
@@ -191,6 +209,7 @@ sandbox workstream. The current default brains are native modules behind the sam
 
 Intent persists until a later brain tick changes it. World enforces reaction delay, turn rate, spread,
 weapon cooldown, burst cadence, and Heavy spin-up. A brain never bypasses those body rules.
+Flyer `moveTo` consumes its full three-dimensional target without requesting a navigation path.
 
 ## View-model contract
 
@@ -204,7 +223,8 @@ weapon cooldown, burst cadence, and Heavy spin-up. A brain never bypasses those 
   armor: {value, max, ratio},
   ammo: {mag, reserve, capacity, low, empty},
   weapon: {id, name, slot, reloadProgress, reloading},
-  wave: {current, total, remaining, phase, timer, budget, multiplier},
+  wave: {current, total, remaining, phase, timer, budget, multiplier, boss, finale},
+  boss: null | {name, hp, hpMax},
   skynet: {status, connected, fallbackCount, revs},
   scrap,
   grenades,
@@ -231,14 +251,19 @@ The HUD may format or animate these fields. It must not change the World.
 5. Extend `generators/unit-template.generator.js` and the template lookup in `lib/view/units.js`.
 6. Add combat, validation, determinism, and view-model tests.
 
+Phase-one unit visuals live in `generators/unit-placeholders.js`. They keep a hidden articulated rig
+for existing effects. HK-Aerial and HK-Tank use simple hulls. Phase two replaces these shapes.
+
 ## Add a weapon
 
 1. Add the complete tune to `lib/core/data/weapons.json`.
 2. Add the weapon id to `slots` when it occupies a numbered slot.
 3. Extend World only if the weapon has behavior that existing hitscan, pellet, melee, or grenade paths
    cannot express.
-4. Add the placeholder view geometry in `lib/view/player.js`.
+4. Add the first-person rig in `lib/view/weapons.js` and its animation in `lib/view/weapons-animation.js`.
 5. Add combat and telemetry tests.
+
+`lib/view/projectiles.js` renders authoritative round, bolt, shell, and grenade entries without changing core state.
 
 No map, unit, or weapon number belongs in the view or HUD.
 

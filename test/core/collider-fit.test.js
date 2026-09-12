@@ -20,6 +20,15 @@ test('every prop movement and shot collider fits its visual bounds within five c
   }
 })
 
+test('every roster unit has measured hit volumes and vehicle hulls fit within five centimetres', async () => {
+  const report = await measureColliderFit()
+  assert.deepEqual(new Set(report.units.map(row => row.type)), new Set(['scout', 'endo', 'heavy', 't1000', 'hkaerial', 'hktank']))
+  for (const row of report.units.filter(item => item.type === 'hkaerial' || item.type === 'hktank')) {
+    assert.ok(row.outerCm <= 5.0001, `${row.type} ${row.pose} overshoots by ${row.outerCm.toFixed(2)} cm`)
+    assert.ok(row.missingCm <= 5.0001, `${row.type} ${row.pose} misses by ${row.missingCm.toFixed(2)} cm`)
+  }
+})
+
 test('player stops at the visible crate and barrel surfaces from four sides', () => {
   const fixtures = [
     {id: 'trader crate', center: {x: -7, z: 23}, half: {x: 1, z: 0.6}, y: 0.1},

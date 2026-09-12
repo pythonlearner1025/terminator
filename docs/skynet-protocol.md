@@ -25,7 +25,7 @@ Base: `/api/lobby/:code`
 |--------|------|------|---------|
 | POST | `/join` | `{ name, agent_info }` | `{ token, rules, dossier, state }` |
 | GET | `/state` | | current phase, wave, budget, deadline, applied config, script revs, fallback count |
-| GET | `/rules` | | unit catalog, map knobs and costs, budget formula, script API version, default scripts, map summary with gate, door, light zone, and hazard slot ids and positions |
+| GET | `/rules` | | unit catalog, wave roster, boss waves, costs, defaults, and positioned map ids |
 | GET | `/telemetry/:wave` | | the full wave summary as in docs/game-design.md |
 | GET | `/events` | SSE | live event stream (see below) |
 | POST | `/wave_config` | `{ wave, spawns: [{ t, gate, unit, count }], knobs }` | `{ ok, cost, budget }` or `{ ok: false, errors: [] }` |
@@ -50,7 +50,8 @@ Base: `/api/lobby/:code`
 ```
 
 Validation rejects a config that exceeds the budget, uses more than 3 gates, breaks the unit caps, or
-names unknown ids. The response lists every error. Nothing partial applies.
+names locked or unknown ids. Waves 5 and 10 require one HK-Tank at the wide `boss` gate.
+The response lists every error. Nothing partial applies.
 
 ## SSE events
 
@@ -59,7 +60,8 @@ Each event is `data: { "type": ..., "wave": n, "t": seconds, ... }`.
 - `phase` with `{ phase: "lobby" | "wave" | "intermission" | "ended", wave, deadline_ms? }`
 - `wave_summary` with the full telemetry at wave end
 - `damage` with `{ amount, unit_type, unit_id, headshot?, player_facing_attacker }` throttled to 5 per s
-- `kill` with `{ unit_type, unit_id, weapon, distance, headshot }`
+- `unit_damage` with `{ unit_id, unit_type, part, amount, weapon, headshot, pos, normal, direction }`
+- `kill` with `{ unit_type, unit_id, weapon, distance, headshot, part, pos, direction }`
 - `unit_spawn` and `unit_death` with `{ unit_id, unit_type, rev, cause }`
 - `player_pos` with `{ pos, yaw, hp, armor, weapon }` at 1 Hz
 - `script_error` and `fuel_exhausted` with `{ unit_id, unit_type, rev, message? }`

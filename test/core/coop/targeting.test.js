@@ -61,6 +61,7 @@ test('unit melee and hitscan damage the selected teammate rather than the host',
   const endo = gunWorld.spawnUnit('endo', {x: 5, y: 0, z: 2}, {yaw: 0})
   endo.targetPlayerId = gunGuest.id
   gunWorld.fireUnitWeapon(endo, {...gunWorld.unitCatalog.types.endo, spreadDeg: 0})
+  for (let tick = 0; tick < 30; tick += 1) gunWorld.step({})
   assert.equal(gunGuest.hp, 85)
   assert.equal(gunWorld.player.hp, 100)
 })

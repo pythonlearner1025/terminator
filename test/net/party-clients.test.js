@@ -106,24 +106,7 @@ test('guest local hitscan reports a hit that damages the unit on the host', asyn
   const delivered = once(guest, 'snapshot')
   session.host.sendSnapshot()
   await delivered
-  const guestPlayer = guest.world.getPlayer(guest.playerId)
-  const collider = guest.world.unitHitCollider(guest.world.unitById.get(unit.id))
-  const shape = collider.shapes.find(part => part.id === 'chest')
-    || collider.shapes.find(part => part.part === 'body') || collider.shapes[0]
-  const offset = shape.offset
-  const cos = Math.cos(collider.yaw || 0), sin = Math.sin(collider.yaw || 0)
-  const target = {
-    x: collider.center.x + offset.x * cos + offset.z * sin,
-    y: collider.center.y + offset.y,
-    z: collider.center.z - offset.x * sin + offset.z * cos,
-  }
-  const eye = {x: guestPlayer.pos.x, y: guestPlayer.pos.y + 1.65, z: guestPlayer.pos.z}
-  guest.step({
-    move: {x: 0, z: 0},
-    yaw: Math.atan2(target.x - eye.x, target.z - eye.z),
-    pitch: Math.atan2(target.y - eye.y, Math.hypot(target.x - eye.x, target.z - eye.z)),
-    fire: true,
-  })
+  guest.step({...idle, ...aimAtVolume(session.host.world, player, unit, 'chest'), fire: true})
   for (let tick = 0; tick < 4; tick += 1) guest.step(idle)
   await waitFor(() => session.host.latestInputs.get(guest.playerId)?.tick === 4)
   assert.equal(session.host.pendingHits.get(guest.playerId)?.has(0), true)
@@ -132,6 +115,53 @@ test('guest local hitscan reports a hit that damages the unit on the host', asyn
   assert.ok(unit.hp < startingHp)
   assert.equal(session.host.world.eventLog.findLast((event) => event.type === 'unit_damage').playerId, guest.playerId)
   assert.equal(session.host.world.getPlayer(guest.playerId).ammo.pistol.mag, startingMag - 1)
+})
+
+test('guest shot cadence follows elapsed time when input delivery is slower than sixty hertz', async (t) => {
+  const session = await makeSession(t, {guests: ['Sarah']})
+  const guest = session.guests[0]
+  let now = 1_000
+  guest.now = () => now
+  assert.ok(guest.localShot(0, {...idle, fire: true}))
+  now += 100
+  assert.equal(guest.localShot(1, {...idle, fire: true}), null)
+  now += 100
+  assert.ok(guest.localShot(2, {...idle, fire: true}))
+})
+
+test('guest launcher fire creates one authoritative shell on the reliable host path', async (t) => {
+  const session = await makeSession(t, {guests: ['Sarah']})
+  const guest = session.guests[0]
+  const player = session.host.world.getPlayer(guest.playerId)
+  player.activeWeapon = 'launcher'
+  player.ammo.launcher = {owned: true, mag: 1, reserve: 0}
+  const delivered = once(guest, 'snapshot')
+  session.host.sendSnapshot()
+  await delivered
+  guest.step({...idle, fire: true})
+  await waitFor(() => session.host.latestInputs.get(guest.playerId)?.tick === 0)
+  session.host.step(idle)
+  const shells = session.host.world.projectiles.filter(projectile => projectile.weapon === 'launcher')
+  assert.equal(shells.length, 1)
+  assert.equal(shells[0].ownerId, guest.playerId)
+  assert.equal(player.ammo.launcher.mag, 0)
+})
+
+test('guest sniper fire resolves all penetration hits authoritatively', async (t) => {
+  const session = await makeSession(t, {guests: ['Kyle']})
+  const guest = session.guests[0]
+  const player = session.host.world.getPlayer(guest.playerId)
+  Object.assign(player, {pos: {x: 15, y: 0, z: 10}, yaw: 0, pitch: 0, activeWeapon: 'sniper'})
+  player.ammo.sniper = {owned: true, mag: 1, reserve: 0}
+  const units = [15, 18, 21].map(z => session.host.world.spawnUnit('endo', {x: 15, y: 0, z}))
+  const delivered = once(guest, 'snapshot')
+  session.host.sendSnapshot()
+  await delivered
+  guest.step({...idle, fire: true})
+  await waitFor(() => session.host.latestInputs.get(guest.playerId)?.tick === 0)
+  session.host.step(idle)
+  assert.ok(units.every(unit => unit.hp < unit.maxHp))
+  assert.equal(player.ammo.sniper.mag, 0)
 })
 
 test('guest ready and purchase messages update authoritative party and player state', async (t) => {
@@ -279,4 +309,22 @@ function once(source, type) {
   return new Promise((resolve) => {
     const off = source.on(type, (event) => { off(); resolve(event.detail) })
   })
+}
+
+function aimAtVolume(world, player, unit, volumeId) {
+  const collider = world.unitHitCollider(unit)
+  const volume = collider.shapes.find(shape => shape.id === volumeId) || collider.shapes[0]
+  const offset = volume.offset || {x: 0, y: 0, z: 0}
+  const cos = Math.cos(collider.yaw || 0)
+  const sin = Math.sin(collider.yaw || 0)
+  const target = {
+    x: collider.center.x + (offset.x || 0) * cos + (offset.z || 0) * sin,
+    y: collider.center.y + (offset.y || 0),
+    z: collider.center.z - (offset.x || 0) * sin + (offset.z || 0) * cos,
+  }
+  const origin = {...player.pos, y: player.pos.y + (player.crouch ? 1.12 : 1.65)}
+  const dx = target.x - origin.x
+  const dy = target.y - origin.y
+  const dz = target.z - origin.z
+  return {yaw: Math.atan2(dx, dz), pitch: Math.atan2(dy, Math.hypot(dx, dz))}
 }

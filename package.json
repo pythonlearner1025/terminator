@@ -25,7 +25,8 @@
     "benchmark:view": "node tools/benchmark-browser.mjs",
     "e2e:webrtc": "node test/e2e/webrtc.mjs",
     "e2e:coop": "node test/e2e/coop.mjs",
-    "e2e:coop-three": "node test/e2e/coop-three.mjs"
+    "e2e:coop-three": "node test/e2e/coop-three.mjs",
+    "proof:core": "node tools/prove-core-roster.mjs"
   },
   "devDependencies": {
     "concurrently": "^9.2.1",

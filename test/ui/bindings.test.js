@@ -9,6 +9,7 @@ test('bindings survive settings normalization and swap collisions only in overla
   assert.deepEqual(normalizeSettings({bindings:changed}).bindings,changed)
   assert.equal(changed.reload,'KeyR')
   assert.equal(changed.ready,'KeyR','reload and ready intentionally share a contextual key')
+  assert.equal(DEFAULT_BINDINGS.slot5,'Digit5');assert.equal(DEFAULT_BINDINGS.slot6,'Digit6')
   for(const [action] of ACTIONS){
     const mapped=rebind(DEFAULT_BINDINGS,action,'KeyP')
     assert.equal(normalizeBindings(mapped)[action],'KeyP',action)
@@ -22,7 +23,7 @@ test('physical inputs produce remapped movement, one-shot actions and held mouse
   globalThis.window=new EventTarget()
   const canvas=new EventTarget()
   let lockRequests=0
-  const input={viewer:{canvas},keys:new Set(),yaw:0,pitch:0,sample:()=>({fire:true,reload:true}),requestLock:()=>lockRequests++}
+  const input={viewer:{canvas},keys:new Set(),yaw:0,pitch:0,sample:()=>({fire:true,reload:true,switchTo:'next'}),requestLock:()=>lockRequests++}
   const bindings={...DEFAULT_BINDINGS,forward:'KeyI',fire:'KeyF',aim:'Mouse1',reload:'KeyL',jump:'Space'}
   const adapter=new BindingInput(input,bindings)
   const dispatch=(target,type,props)=>{const event=new Event(type,{cancelable:true});Object.assign(event,props);target.dispatchEvent(event)}
@@ -37,6 +38,7 @@ test('physical inputs produce remapped movement, one-shot actions and held mouse
     let sampled=adapter.sample()
     assert.equal(lockRequests,1,'rebound mouse aim can still request pointer lock')
     assert.equal(sampled.move.z,1);assert.equal(sampled.reload,true);assert.equal(sampled.jump,true);assert.equal(sampled.aim,true);assert.equal(sampled.fire,false)
+    assert.equal(sampled.switchTo,'next')
     assert.equal(adapter.sample().reload,false);assert.equal(adapter.sample().jump,false)
     dispatch(window,'keydown',{code:'KeyL',repeat:true})
     assert.equal(adapter.sample().reload,false)

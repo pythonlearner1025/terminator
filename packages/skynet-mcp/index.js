@@ -28,7 +28,7 @@ const tools = [
         properties: {
           t: {type: 'number', minimum: 0},
           gate: {type: 'string'},
-          unit: {type: 'string', enum: ['scout', 'endo', 'heavy']},
+          unit: {type: 'string', enum: ['scout', 'endo', 'heavy', 't1000', 'hkaerial', 'hktank']},
           count: {type: 'integer', minimum: 1},
         },
       },
@@ -36,7 +36,7 @@ const tools = [
     knobs: {type: 'object', description: 'Map controls using gates, doors, lights, fog, hazards, and break_flank_wall.'},
   }, (input) => api('POST', '/wave_config', input), ['wave', 'spawns', 'knobs']),
   tool('skynet_script', 'Validate and submit one unit brain script. Accepted scripts receive a new per-type revision.', {
-    unit_type: {type: 'string', enum: ['scout', 'endo', 'heavy']},
+    unit_type: {type: 'string', enum: ['scout', 'endo', 'heavy', 't1000', 'hkaerial', 'hktank']},
     source: {type: 'string', description: 'ES module source exporting tick and optionally init.'},
     note: {type: 'string'},
   }, (input) => api('POST', '/script', input), ['unit_type', 'source']),

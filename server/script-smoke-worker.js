@@ -10,9 +10,11 @@ function smokeRun({unitType, source, rev}) {
     type: unitType,
     hp: 100,
     maxHp: 100,
-    pos: {x: 0, y: 0, z: 0},
+    pos: {x: 0, y: unitType === 'hkaerial' ? 4.5 : 0, z: 0},
     yaw: 0,
     vel: {x: 0, y: 0, z: 0},
+    flying: unitType === 'hkaerial',
+    altitude: unitType === 'hkaerial' ? 4.5 : 0,
     weapon: {ready: true, range: 30, spread: 1, cooldownLeft: 0},
     alive: true,
     spawnedAt: 0,
@@ -25,6 +27,8 @@ function smokeRun({unitType, source, rev}) {
     for (let index = 0; index < 50; index += 1) {
       runtime.tick(self, {
         time: index / 10,
+        flying: unitType === 'hkaerial',
+        altitude: unitType === 'hkaerial' ? self.pos.y : 0,
         rand: () => 0.5,
         player: {pos: {x: 0, y: 0, z: 8}, dist: 8, vel: {x: 0, y: 0, z: 0}, facingMe: true, hp: 100, armor: 0, weapon: 'pistol', reloading: false},
         lastKnownPlayer: null,

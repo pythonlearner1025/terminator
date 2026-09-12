@@ -18,7 +18,7 @@ models. Skynet also keeps a dossier on the human that the human can read after e
 
 ## MVP scope
 
-One mode: Judgment Day + Model Update. One map. Three unit types. Intermissions with a trader.
+One mode: Judgment Day + Model Update. One map. Six unit types. Intermissions with a trader.
 Sandboxed JS scripts with fuel. A headless simulator. A dossier. A lobby an external agent connects to.
 A built-in fallback Skynet so the game plays without an agent.
 
@@ -57,9 +57,12 @@ Legend: [ ] todo, [~] in progress, [x] done, [!] blocked
 - [x] Ragdoll deaths on cannon-es, eight active, wrecks stay 180 s then sink and fade (bcc4554, astra). Evidence docs/evidence/ragdoll
 - [x] Menu Endo: reflection map path, NaN head turn from a pose without yaw, camera framing (5755a6a, 9558f7c)
 - [x] Performance pass 2 (astra, integrated with ragdolls by sol): warmup of shaders, textures, audio, and the death path; fixed pools; stable lights; 1K unit textures. 24 enemies: CPU p99 15.1 to 12.1 ms, first M4 kill 937 to 15 ms (800bf86). Evidence docs/evidence/perf2
-- [~] Co-op fix pass (sol, pass/coop-fix): mouse lock on party screens, guest glitch, return to lobby after a party wipe; then a second agent play-tests two clients end to end
-- [ ] Deferred by the passes: T-1000, HK-Aerial, HK-Tank; SMG, sniper, LMG; real sculpted models for the endoskeleton and weapons (procedural ceiling)
-- [~] Published release 703528bb to https://terminator.app.blitz.dev/; next publish after the co-op fix lands; owner claims the release
+- [x] Co-op fix pass: gameplay-only pointer lock, reliable guest prediction and reconnect, lobby return, and two-client proof
+- [x] KF2 core pass: enemy projectiles, six-unit roster, bosses, sniper, launcher, telemetry, simulator proof
+- [x] KF2 weapon and gore views: real sniper and launcher rigs, projectile visuals, dismemberment, deformation, and crawl state
+- [~] KF2 unit phase two: final T-1000, HK-Aerial, HK-Tank visuals and boss bar; phase one uses measured placeholders
+- [ ] Deferred by the passes: SMG, LMG, and real sculpted endoskeleton and weapon models
+- [x] Existing published release 703528bb remains at https://terminator.app.blitz.dev/; owner claims the release
 - [ ] Checkpoint 2: owner hosts a party from the published game through `npm run tunnel` and plays with a friend
 - [x] Editor bug: toolbar icons blank. Root cause: idle full-rate render loop. PR blitzdotdev/kite3d#4, CI green, unmerged
 - [ ] kite3d CLI bug to file: a second `kite3d dev` on another port deletes the shared .kite3d/dev.json on exit and orphans the first server

@@ -3,7 +3,9 @@
     "pistol",
     "m4",
     "shotgun",
-    "plasma"
+    "plasma",
+    "sniper",
+    "launcher"
   ],
   "aim": {"spreadMultiplier": 0.35, "moveMultiplier": 0.6},
   "weapons": {
@@ -62,6 +64,41 @@
       "ammoPrice": 80,
       "reloadSeconds": 2.1,
       "pellets": 1
+    },
+    "sniper": {
+      "id": "sniper",
+      "slot": 5,
+      "name": "M14 Marksman",
+      "damage": 220,
+      "rate": 1.2,
+      "mag": 10,
+      "reserveMax": 60,
+      "spreadDeg": 0.2,
+      "price": 1100,
+      "ammoPrice": 60,
+      "reloadSeconds": 2.6,
+      "pellets": 1,
+      "penetration": 2,
+      "penetrationMultiplier": 0.6,
+      "aimFov": 30
+    },
+    "launcher": {
+      "id": "launcher",
+      "slot": 6,
+      "name": "M79 Launcher",
+      "damage": 260,
+      "rate": 1,
+      "mag": 1,
+      "reserveMax": 20,
+      "spreadDeg": 0.5,
+      "price": 1400,
+      "ammoPrice": 60,
+      "reloadSeconds": 2.2,
+      "pellets": 1,
+      "projectile": "shell",
+      "projectileSpeed": 32,
+      "armingDistance": 2.5,
+      "radius": 3.5
     },
     "grenade": {
       "id": "grenade",

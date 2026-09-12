@@ -1,6 +1,6 @@
 import {Worker} from 'node:worker_threads'
 
-export const UNIT_TYPES = new Set(['scout', 'endo', 'heavy'])
+export const UNIT_TYPES = new Set(['scout', 'endo', 'heavy', 't1000', 'hkaerial', 'hktank'])
 
 export function validateScript({unitType, source, current}, {timeoutMs = 5_000} = {}) {
   if (!UNIT_TYPES.has(unitType)) return Promise.resolve({ok: false, error: `unknown unit type: ${unitType}`, smoke_log: []})

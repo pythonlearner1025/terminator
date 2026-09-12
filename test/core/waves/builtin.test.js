@@ -36,6 +36,8 @@ test('built-in Skynet counters rich telemetry while remaining valid for waves 1 
     assert.equal(config.knobs.fog, 3)
     if (wave % 3 === 0) assert.equal(Object.values(config.knobs.lights).includes('off'), true)
     if (wave >= 5) assert.equal(config.knobs.doors.building_ground, 'locked')
-    if (wave >= 5) assert.equal(config.spawns[0].unit, 'heavy')
+    if (wave >= 3) assert.equal(config.spawns.some(({unit}) => unit === 'hkaerial'), true)
+    if (wave >= 4) assert.equal(config.spawns.some(({unit}) => unit === 't1000'), true)
+    if (wave === 5 || wave === 10) assert.equal(config.spawns[0].unit, 'hktank')
   }
 })

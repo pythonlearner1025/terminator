@@ -99,6 +99,8 @@ try {
   }
   assert.ok(setupHealth > 100_000, `Guest did not receive the setup health snapshot: ${setupHealth}`)
   await Promise.all([setManualClock(host, true), setManualClock(guest, true)])
+  // Preserve the long network setup under slow headless rendering. Reset before damage and spectate assertions.
+  await setAuthoritativeHealth(host, guest, 5_000)
   pass('Host used Start and both browsers entered wave one with combat HUD, two players, and active local input')
 
   await verifyPauseReleasesPointerLock(host)
@@ -106,6 +108,7 @@ try {
 
   await moveAndAssertReplication(host, guest, 'player')
   await moveAndAssertReplication(guest, host, 'guest-1')
+  await Promise.all([startCombatGuard(host), startCombatGuard(guest)])
   pass('Keyboard movement changed both local players and each remote browser received the other position change')
 
   const reconnect = await guest.evaluate(() => {
@@ -122,6 +125,7 @@ try {
   assert.equal(await guest.evaluate(() => window.terminator.manager.party.playerId), reconnect.playerId)
   assert.equal(await guest.evaluate(() => window.terminator.manager.party.resumeToken), reconnect.resumeToken)
   assert.deepEqual(await roster(host), ['John', 'Sarah'])
+  await Promise.all([stopCombatGuard(host), stopCombatGuard(guest)])
   pass('The guest dropped and automatically reconnected from the same invite with the same player id, token, and roster slot')
 
   await host.evaluate(() => {
@@ -262,7 +266,7 @@ function watchPage(role, page) {
   page.on('console', message => {
     if (message.type() === 'error' || message.type() === 'warning') {
       const source = sanitize(message.location().url || '')
-      if (source.endsWith('/files/.kite3d/state.json') && /412/.test(message.text())) return
+      if (/\/files\/\.kite3d\/(state\.json|console\.log)$/.test(source) && /412/.test(message.text())) return
       issues.push({
         role,
         level: message.type(),
@@ -273,7 +277,7 @@ function watchPage(role, page) {
   })
   page.on('response', response => {
     const url = sanitize(response.url())
-    if (response.status() === 412 && url.endsWith('/files/.kite3d/state.json')) return
+    if (response.status() === 412 && /\/files\/\.kite3d\/(state\.json|console\.log)$/.test(url)) return
     if (response.status() >= 400) issues.push({
       role,
       level: 'http',
@@ -328,6 +332,19 @@ async function setManualClock(page, active) {
       }, 1000 / 60)
     }
   }, active)
+}
+
+async function setAuthoritativeHealth(hostPage, guestPage, hp) {
+  const expected = await hostPage.evaluate(value => {
+    const manager = window.terminator.manager
+    for (const player of manager.world.players.values()) {
+      if (player.alive) player.hp = value
+    }
+    manager.party.sendSnapshot()
+    return [...manager.world.players.values()].filter(player => player.alive).map(player => player.id)
+  }, hp)
+  await guestPage.waitForFunction(({expected, hp}) => expected.every(id => window.terminator.world.getPlayer(id)?.hp === hp),
+    {expected, hp}, {timeout: 10_000})
 }
 
 async function ready(page) {
@@ -476,8 +493,8 @@ async function shootUntilKill(page, playerId, timeoutMs, remotePage) {
   const startKills = await page.evaluate(id => window.terminator.world.eventLog.filter(event => event.type === 'kill' && event.playerId === id).length, playerId)
   const deadline = Date.now() + timeoutMs
   while (Date.now() < deadline) {
-    await aimAndAct(page, {fire: true})
-    const kills = await page.evaluate(id => window.terminator.world.eventLog.filter(event => event.type === 'kill' && event.playerId === id).length, playerId)
+    await aimAndAct(page, {fire: true, flee: true})
+    const kills = await page.evaluate(id => window.terminator.world.telemetry.players[id]?.counters?.kills || 0, playerId)
     if (kills > startKills) { await stopCombat(page); return }
     await page.waitForTimeout(80)
   }
@@ -777,3 +794,55 @@ async function waitForReachable(url, timeoutMs) {
 function sanitize(value) {
   return String(value).replace(/([?&]t=)[A-Za-z0-9._~-]+/g, '$1[redacted]')
 }
+
+async function startCombatGuard(page) {
+  await page.evaluate(() => {
+    clearInterval(window.__coopCombatGuard)
+    window.terminator.manager.ctx.viewer.renderEnabled = false
+    window.__coopCombatGuard = setInterval(() => {
+      const manager = window.terminator?.manager
+      const world = manager?.world
+      const player = world?.getPlayer(manager.localPlayerId)
+      const bindings = manager?.ui?.bindings
+      if (!player?.alive || world.phase !== 'wave' || !bindings) return
+      if (!window.__coopGameClock) {
+        manager.ctx.viewer.renderEnabled = false
+        window.__coopGameClock = setInterval(() => manager.update({deltaTime: 1000 / 60}), 1000 / 60)
+      }
+      const target = world.aliveUnits.slice().sort((a, b) =>
+        Math.hypot(a.pos.x - player.pos.x, a.pos.z - player.pos.z)
+          - Math.hypot(b.pos.x - player.pos.x, b.pos.z - player.pos.z))[0]
+      if (!target) return
+      const collider = world.unitHitCollider(target)
+      const volume = collider.shapes.find(shape => ['chest', 'hull', 'pelvis', 'spine'].includes(shape.id))
+        || collider.shapes.find(shape => shape.id !== 'head') || collider.shapes[0]
+      const offset = volume?.offset || {x: 0, y: 0, z: 0}
+      const cos = Math.cos(collider.yaw || 0)
+      const sin = Math.sin(collider.yaw || 0)
+      const point = {
+        x: collider.center.x + (offset.x || 0) * cos + (offset.z || 0) * sin,
+        y: collider.center.y + (offset.y || 0),
+        z: collider.center.z - (offset.x || 0) * sin + (offset.z || 0) * cos,
+      }
+      const dx = point.x - player.pos.x
+      const dz = point.z - player.pos.z
+      const dy = point.y - (player.pos.y + 1.65)
+      manager.input.yaw = Math.atan2(dx, dz)
+      manager.input.pitch = Math.atan2(dy, Math.hypot(dx, dz))
+      for (const code of ['Mouse0', 'Mouse2', 'KeyS', 'ShiftLeft']) bindings.held.add(code)
+      const ammo = player.ammo[player.activeWeapon]
+      if (ammo?.mag === 0 && ammo.reserve > 0 && player.reloadTimer === 0) bindings.pulses.add('reload')
+    }, 16)
+  })
+}
+
+async function stopCombatGuard(page) {
+  await page.evaluate(() => {
+    clearInterval(window.__coopCombatGuard)
+    window.__coopCombatGuard = null
+    const bindings = window.terminator?.manager?.ui?.bindings
+    if (!bindings) return
+    for (const code of ['Mouse0', 'Mouse2', 'KeyS', 'ShiftLeft']) bindings.held.delete(code)
+  })
+}
+

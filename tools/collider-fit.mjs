@@ -18,12 +18,24 @@ const POSES = {
     ['idle', {vel: {x: 0, y: 0, z: 0}, intent: {}}],
     ['aim', {vel: {x: 0, y: 0, z: 0}, intent: {aimAt: {x: 0, y: 1.6, z: 8}, fire: true}}],
   ],
+  t1000: [
+    ['idle', {vel: {x: 0, y: 0, z: 0}, intent: {}}],
+    ['aim', {vel: {x: 0, y: 0, z: 0}, intent: {aimAt: {x: 0, y: 1.6, z: 8}, fire: true}}],
+  ],
+  hkaerial: [
+    ['idle', {vel: {x: 0, y: 0, z: 0}, intent: {}}],
+    ['aim', {vel: {x: 0, y: 0, z: 0}, intent: {aimAt: {x: 0, y: 1.6, z: 8}, fire: true}}],
+  ],
+  hktank: [
+    ['idle', {vel: {x: 0, y: 0, z: 0}, intent: {}}],
+    ['aim', {vel: {x: 0, y: 0, z: 0}, intent: {aimAt: {x: 0, y: 1.6, z: 8}, fire: true}}],
+  ],
 }
 
 export async function measureColliderFit() {
   const map = JSON.parse(await readFile(new URL('lib/core/data/map.json', root), 'utf8'))
   const units = JSON.parse(await readFile(new URL('lib/core/data/units.json', root), 'utf8'))
-  const {E, createMapGroup, createUnitFigure, bindUnitRig, animateUnit} = await loadGeometry()
+  const {E, createMapGroup, createUnitPlaceholder, bindUnitRig, animateUnit} = await loadGeometry()
   const mapGroup = createMapGroup(E, map, {markers: false, runtime: true})
   mapGroup.updateMatrixWorld(true)
   const visualById = new Map(mapGroup.userData.mapVisualBounds.map(item => [item.id, bounds(item.min, item.max)]))
@@ -59,13 +71,20 @@ export async function measureColliderFit() {
   const unitRows = []
   for (const [type, spec] of Object.entries(units.types)) {
     for (const [pose, statePatch] of POSES[type]) {
-      const object = createUnitFigure(E, type)
+      const object = createUnitPlaceholder(E, type)
       const rig = bindUnitRig(object)
-      const state = {id: `fit-${type}`, type, pos: {x: 0, y: 0, z: 0}, yaw: 0, alive: true, spinUp: 1, ...statePatch}
-      for (let frame = 0; frame < 90; frame += 1) animateUnit(rig, state, 1 / 60, frame / 60)
+      const state = {id: `fit-${type}`, type, pos: {x: 0, y: 0, z: 0}, yaw: 0, alive: true, spinUp: 1, spawnedAt: 0, ...statePatch}
+      for (let frame = 0; frame < 90; frame += 1) {
+        object.position.set(state.pos.x, state.pos.y, state.pos.z)
+        object.rotation.y = state.yaw
+        animateUnit(rig, state, 1 / 60, frame / 60)
+      }
       object.updateMatrixWorld(true)
-      const anatomy = skinnedBounds(E, rig, part => !['Weapon', 'Barrels', 'Muzzle'].includes(part.bone.name))
-      const skull = skinnedBounds(E, rig, part => part.bone.name === 'Head')
+      const vehicleVisual = object.getObjectByName(type === 'hkaerial' ? 'HK-Aerial Placeholder Visual' : 'HK-Tank Placeholder Visual')
+      const anatomy = vehicleVisual
+        ? objectBounds(E, vehicleVisual)
+        : skinnedBounds(E, rig, part => !['Weapon', 'Barrels', 'Muzzle'].includes(part.bone.name))
+      const skull = vehicleVisual ? null : skinnedBounds(E, rig, part => part.bone.name === 'Head')
       const hitVolumes = unitHitVolumes(spec, pose)
       const hitBounds = combinedPrimitiveBounds(hitVolumes)
       const headVolumes = hitVolumes.filter(part => part.part === 'head')
@@ -82,7 +101,7 @@ export async function measureColliderFit() {
         volumes: hitVolumes.map(describePrimitive).join(' + '),
         outerCm: Math.max(0, ...Object.values(outer)),
         missingCm: Math.max(0, ...Object.values(missing)),
-        headOuterCm: headBounds ? Math.max(0, ...Object.values(compareBounds(skull, headBounds))) : Infinity,
+        headOuterCm: headBounds && skull ? Math.max(0, ...Object.values(compareBounds(skull, headBounds))) : 0,
       })
     }
   }
@@ -207,6 +226,11 @@ function skinnedBounds(E, rig, include) {
   return bounds(box.min.toArray(), box.max.toArray())
 }
 
+function objectBounds(E, object) {
+  const box = new E.Box3().setFromObject(object)
+  return bounds(box.min.toArray(), box.max.toArray())
+}
+
 function compareBounds(visual, collider) {
   if (!visual || !collider) return null
   return {
@@ -275,12 +299,12 @@ async function loadGeometry() {
     queueMicrotask(() => onLoad?.(texture))
     return texture
   }
-  const [{createMapGroup}, {createUnitFigure}, {bindUnitRig, animateUnit}] = await Promise.all([
+  const [{createMapGroup}, {createUnitPlaceholder}, {bindUnitRig, animateUnit}] = await Promise.all([
     import('../generators/map.geometry.js'),
-    import('../generators/unit-template.generator.js'),
+    import('../generators/unit-placeholders.js'),
     import('../lib/view/units-animation.js'),
   ])
-  return {E, createMapGroup, createUnitFigure, bindUnitRig, animateUnit}
+  return {E, createMapGroup, createUnitPlaceholder, bindUnitRig, animateUnit}
 }
 
 const invoked = process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)

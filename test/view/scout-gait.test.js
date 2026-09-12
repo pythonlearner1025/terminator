@@ -14,9 +14,9 @@ const nav=new NavGrid(map)
 
 // Anatomical fixture only: rendering and the full generated Scout are exercised
 // separately by tools/verify-scout.mjs in headless Chrome.
-function fixture() {
+function fixture(type='scout') {
   const object=new E.Group(),bones=[],j={}
-  object.userData.unitTemplateType='scout';object.scale.setScalar(.93)
+  object.userData.unitTemplateType=type;object.scale.setScalar(.93)
   const bone=(name,parent,x,y,z)=>{
     const b=new E.Bone();b.name=name;b.position.set(x,y,z);parent.add(b);bones.push(b);j[name]=b;return b
   }
@@ -53,6 +53,15 @@ test('Scouts stay on all fours at rest and chase, and rise only for stationary m
   unit.vel.z=7
   for(let i=0;i<40;i++){unit.pos.z+=7/30;object.position.z=unit.pos.z;animateUnit(rig,unit,1/30,i/30,nav)}
   assert.ok(rig.joints.Pelvis.rotation.x>1.1)
+})
+
+test('T-1000 melee intent drives a visible two-arm strike pose',()=>{
+  const {rig}=fixture('t1000')
+  const unit={...state(),id:'t1000-test',type:'t1000',intent:{melee:true}}
+  for(let i=0;i<40;i++)animateUnit(rig,unit,1/30,i/30)
+  assert.ok(rig.states.has('melee'))
+  assert.ok(rig.joints['Upper Arm Right'].rotation.x<-.4)
+  assert.ok(rig.joints['Forearm Left'].rotation.x<-.3)
 })
 
 test('new Scouts start animating and retain the 30 Hz UnitView gate',()=>{

@@ -229,13 +229,13 @@ test('spawn and SSE events carry revisions, protocol names, and documented throt
 
 test('rules payload includes catalog, costs, formula, scripts, caps, and positioned map ids', () => {
   const rules = buildRulesPayload()
-  assert.deepEqual(Object.keys(rules.unit_catalog.types).sort(), ['endo', 'heavy', 'scout'])
+  assert.deepEqual(Object.keys(rules.unit_catalog.types).sort(), ['endo', 'heavy', 'hkaerial', 'hktank', 'scout', 't1000'])
   assert.equal(rules.map_knobs.costs.door, 30)
   assert.equal(rules.map_knobs.costs.hazard, 60)
   assert.deepEqual(rules.budget_formula.inputs, ['health_lost', 'time_to_clear', 'damage_per_minute'])
   assert.match(rules.default_scripts.scout, /export function tick/)
   assert.equal(rules.default_scripts.scout, scoutScriptSource)
-  assert.equal(rules.map_summary.gates.length, 6)
+  assert.equal(rules.map_summary.gates.length, 7)
   assert.equal(rules.map_summary.doors.every(({id, pos}) => id && Number.isFinite(pos.x)), true)
   assert.equal(rules.map_summary.light_zones.length, 3)
   assert.equal(rules.map_summary.hazard_slots.length, 2)

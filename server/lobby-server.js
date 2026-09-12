@@ -17,6 +17,7 @@ const SSE_TYPES = new Set([
   'phase',
   'wave_summary',
   'damage',
+  'unit_damage',
   'kill',
   'unit_spawn',
   'unit_death',
@@ -31,6 +32,9 @@ const defaultScripts = {
   scout: readFileSync(new URL('../lib/core/brains/default-scout.js', import.meta.url), 'utf8'),
   endo: readFileSync(new URL('../lib/core/brains/default-endo.js', import.meta.url), 'utf8'),
   heavy: readFileSync(new URL('../lib/core/brains/default-heavy.js', import.meta.url), 'utf8'),
+  t1000: readFileSync(new URL('../lib/core/brains/default-t1000.js', import.meta.url), 'utf8'),
+  hkaerial: readFileSync(new URL('../lib/core/brains/default-hkaerial.js', import.meta.url), 'utf8'),
+  hktank: readFileSync(new URL('../lib/core/brains/default-hktank.js', import.meta.url), 'utf8'),
 }
 
 export function createLobbyServer({dataDir = DEFAULT_DATA_DIR, logger = console, now = () => Date.now(), party = {}} = {}) {
