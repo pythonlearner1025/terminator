@@ -33,16 +33,11 @@ const POSES = {
 }
 
 export async function measureColliderFit() {
-  const map = JSON.parse(await readFile(new URL('lib/core/data/map.json', root), 'utf8'))
+  const {defaultMap: map} = await import('../lib/core/map.js')
+  const placements = JSON.parse(await readFile(new URL('lib/core/data/map-piece-placements.json', root), 'utf8')).pieces
   const units = JSON.parse(await readFile(new URL('lib/core/data/units.json', root), 'utf8'))
-  const {E, createMapGroup, createUnitPlaceholder, bindUnitRig, animateUnit} = await loadGeometry()
-  const mapGroup = createMapGroup(E, map, {markers: false, runtime: true})
-  mapGroup.updateMatrixWorld(true)
-  const visualById = new Map(mapGroup.userData.mapVisualBounds.map(item => [item.id, bounds(item.min, item.max)]))
-  const trader = mapGroup.getObjectByName('Resistance trader crate')
-  trader.updateWorldMatrix(true, true)
-  const traderBounds = new E.Box3().setFromObject(trader)
-  visualById.set('trader_crate', bounds(traderBounds.min.toArray(), traderBounds.max.toArray()))
+  const {E, createUnitPlaceholder, bindUnitRig, animateUnit} = await loadGeometry()
+  const visualById = await placedVisualBounds(E, placements)
 
   const staticColliders = [...map.colliders, ...(map.trader?.navBlock ? [map.trader] : [])]
   const propIds = staticColliders.filter(item => !STRUCTURAL_KINDS.has(item.kind)).map(item => item.id)
@@ -323,8 +318,7 @@ async function loadGeometry() {
     queueMicrotask(() => onLoad?.(texture))
     return texture
   }
-  const [{createMapGroup}, {loadUnitAsset}, {clonePlacedUnitFigure}, {bindUnitRig, animateUnit}] = await Promise.all([
-    import('../generators/map.geometry.js'),
+  const [{loadUnitAsset}, {clonePlacedUnitFigure}, {bindUnitRig, animateUnit}] = await Promise.all([
     import('./load-unit-asset.mjs'),
     import('../lib/view/unit-assets.js'),
     import('../lib/view/units-animation.js'),
@@ -334,7 +328,73 @@ async function loadGeometry() {
   ))
   const createUnitPlaceholder = (_engine, type, {detail = 1} = {}) =>
     clonePlacedUnitFigure(unitSources.get(type), type, detail ? 'high' : 'far')
-  return {E, createMapGroup, createUnitPlaceholder, bindUnitRig, animateUnit}
+  return {E, createUnitPlaceholder, bindUnitRig, animateUnit}
+}
+
+async function placedVisualBounds(E, placements) {
+  const manifest = JSON.parse(await readFile(new URL('assets.json', root), 'utf8'))
+  const cache = new Map()
+  const result = new Map()
+  for (const placement of placements.filter(item => ['collider', 'trader'].includes(item.role))) {
+    let local = cache.get(placement.assetId)
+    if (!local) {
+      const entry = manifest.files[placement.assetId]
+      if (!entry) throw new Error(`Missing asset manifest entry ${placement.assetId}`)
+      local = gltfBounds(E, JSON.parse(await readFile(new URL(entry.path, root), 'utf8')))
+      cache.set(placement.assetId, local)
+    }
+    const matrix = new E.Matrix4()
+    const position = new E.Vector3().fromArray(placement.translation)
+    const rotation = new E.Euler().fromArray(placement.rotation || [0, 0, 0])
+    const quaternion = new E.Quaternion().setFromEuler(rotation)
+    const scale = new E.Vector3().fromArray(placement.scale || [1, 1, 1])
+    matrix.compose(position, quaternion, scale)
+    result.set(placement.id, plainBounds(transformBounds(E, local, matrix)))
+  }
+  return result
+}
+
+function gltfBounds(E, document) {
+  const result = new E.Box3()
+  const roots = document.scenes?.[document.scene || 0]?.nodes || []
+  const walk = (index, parentMatrix) => {
+    const node = document.nodes[index]
+    const local = new E.Matrix4()
+    if (node.matrix) local.fromArray(node.matrix)
+    else local.compose(
+      new E.Vector3().fromArray(node.translation || [0, 0, 0]),
+      new E.Quaternion().fromArray(node.rotation || [0, 0, 0, 1]),
+      new E.Vector3().fromArray(node.scale || [1, 1, 1]),
+    )
+    const world = parentMatrix.clone().multiply(local)
+    if (node.mesh !== undefined) {
+      for (const primitive of document.meshes[node.mesh].primitives || []) {
+        const accessor = document.accessors[primitive.attributes.POSITION]
+        if (!accessor?.min || !accessor?.max) continue
+        result.union(transformBounds(E, box3(E, accessor.min, accessor.max), world))
+      }
+    }
+    for (const child of node.children || []) walk(child, world)
+  }
+  for (const index of roots) walk(index, new E.Matrix4())
+  return result
+}
+
+function transformBounds(E, source, matrix) {
+  const result = new E.Box3()
+  const point = new E.Vector3()
+  for (const x of [source.min.x, source.max.x]) for (const y of [source.min.y, source.max.y]) for (const z of [source.min.z, source.max.z]) {
+    result.expandByPoint(point.set(x, y, z).applyMatrix4(matrix))
+  }
+  return result
+}
+
+function box3(E, min, max) {
+  return new E.Box3(new E.Vector3().fromArray(min), new E.Vector3().fromArray(max))
+}
+
+function plainBounds(box) {
+  return bounds(box.min.toArray(), box.max.toArray())
 }
 
 const invoked = process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)

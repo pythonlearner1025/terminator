@@ -1,0 +1,252 @@
+{
+  "asset": {
+    "generator": "Terminator tools/build-map-assets.mjs with glTF-Transform 4.5.0 and three.js",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "name": "Supply chests olive POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 72,
+      "max": [
+        1.2999999523162842,
+        0.6200000047683716,
+        0.5299999713897705
+      ],
+      "min": [
+        -1.2999999523162842,
+        -0.6200000047683716,
+        -0.5299999713897705
+      ],
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Supply chests olive NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 72,
+      "bufferView": 0,
+      "byteOffset": 12
+    },
+    {
+      "name": "Supply chests olive TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 72,
+      "bufferView": 0,
+      "byteOffset": 24
+    },
+    {
+      "name": "Supply chests steel POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 144,
+      "max": [
+        1.159999966621399,
+        0.6399999856948853,
+        0.550000011920929
+      ],
+      "min": [
+        -1.159999966621399,
+        -0.6399999856948853,
+        -0.550000011920929
+      ],
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Supply chests steel NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 144,
+      "bufferView": 1,
+      "byteOffset": 12
+    },
+    {
+      "name": "Supply chests steel TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 144,
+      "bufferView": 1,
+      "byteOffset": 24
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 2304,
+      "byteStride": 32,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2304,
+      "byteLength": 4608,
+      "byteStride": 32,
+      "target": 34962
+    }
+  ],
+  "samplers": [
+    {
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "source": 0,
+      "sampler": 0
+    },
+    {
+      "source": 1,
+      "sampler": 0
+    },
+    {
+      "source": 2,
+      "sampler": 0
+    }
+  ],
+  "images": [
+    {
+      "name": "paint_albedo.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/paint_albedo.jpg"
+    },
+    {
+      "name": "paint_normal.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/paint_normal.jpg"
+    },
+    {
+      "name": "paint_arm.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/paint_arm.jpg"
+    }
+  ],
+  "buffers": [
+    {
+      "name": "Map piece geometry",
+      "uri": "supply-2p6x1p28x1p1.bin",
+      "byteLength": 6912
+    }
+  ],
+  "materials": [
+    {
+      "name": "Map olive",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.29,
+          0.39,
+          0.27,
+          1
+        ],
+        "roughnessFactor": 0.84,
+        "metallicFactor": 0.55,
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    },
+    {
+      "name": "Map steel",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.44,
+          0.49,
+          0.51,
+          1
+        ],
+        "roughnessFactor": 0.68,
+        "metallicFactor": 0.82,
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Supply chests olive",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "mode": 4,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "Supply chests steel",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 3,
+            "NORMAL": 4,
+            "TEXCOORD_0": 5
+          },
+          "mode": 4,
+          "material": 1
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Supply chests asset",
+      "extras": {
+        "mapPieceAsset": true
+      },
+      "children": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "Supply chests olive",
+      "extras": {
+        "material": "olive"
+      },
+      "mesh": 0
+    },
+    {
+      "name": "Supply chests steel",
+      "extras": {
+        "material": "steel"
+      },
+      "mesh": 1
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Supply 2p6x1p28x1p1",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

@@ -1,382 +1,852 @@
 {
   "id": "bunker-7",
   "name": "Bunker 7",
-  "size": {"x": 84, "z": 60},
-  "bounds": {"minX": -42, "maxX": 42, "minZ": -30, "maxZ": 30},
-  "colliders": [
-    {"id": "ground", "kind": "floor", "center": {"x": 0, "y": -0.25, "z": 0}, "size": {"x": 60, "y": 0.5, "z": 60}, "navBlock": false, "blocksSight": false},
-    {"id": "wall_n_w", "kind": "wall", "center": {"x": -24, "y": 1.5, "z": 29.5}, "size": {"x": 12, "y": 3, "z": 1}, "navBlock": true, "blocksSight": true},
-    {"id": "wall_n_mid", "kind": "wall", "center": {"x": 0, "y": 1.5, "z": 29.5}, "size": {"x": 28, "y": 3, "z": 1}, "navBlock": true, "blocksSight": true},
-    {"id": "wall_n_e", "kind": "wall", "center": {"x": 24, "y": 1.5, "z": 29.5}, "size": {"x": 12, "y": 3, "z": 1}, "navBlock": true, "blocksSight": true},
-    {"id": "wall_s_w", "kind": "wall", "center": {"x": -21, "y": 1.5, "z": -29.5}, "size": {"x": 18, "y": 3, "z": 1}, "navBlock": true, "blocksSight": true},
-    {"id": "wall_s_mid", "kind": "wall", "center": {"x": 0, "y": 1.5, "z": -29.5}, "size": {"x": 16, "y": 3, "z": 1}, "navBlock": true, "blocksSight": true},
-    {"id": "wall_s_e", "kind": "wall", "center": {"x": 21, "y": 1.5, "z": -29.5}, "size": {"x": 18, "y": 3, "z": 1}, "navBlock": true, "blocksSight": true},
-    {"id": "wall_e_s", "kind": "wall", "center": {"x": 29.5, "y": 1.5, "z": -22}, "size": {"x": 1, "y": 3, "z": 16}, "navBlock": true, "blocksSight": true},
-    {"id": "wall_e_n", "kind": "wall", "center": {"x": 29.5, "y": 1.5, "z": 23.5}, "size": {"x": 1, "y": 3, "z": 13}, "navBlock": true, "blocksSight": true},
-    {"id": "wall_w_s", "kind": "wall", "center": {"x": -29.5, "y": 1.5, "z": -26.8}, "size": {"x": 1, "y": 3, "z": 6.4}, "navBlock": true, "blocksSight": true},
-    {"id": "wall_w_n", "kind": "wall", "center": {"x": -29.5, "y": 1.5, "z": 26.8}, "size": {"x": 1, "y": 3, "z": 6.4}, "navBlock": true, "blocksSight": true},
-
-    {"id": "courtyard_divider", "kind": "rubble", "center": {"x": 0, "y": 0.75, "z": 0}, "size": {"x": 1, "y": 1.5, "z": 12}, "shapes": [{"id": "visible-rubble", "shape": "box", "offset": {"x": 0, "y": -0.0735, "z": 0}, "size": {"x": 1, "y": 1.353, "z": 12}}], "navBlock": true, "blocksSight": true},
-    {"id": "rubble_nw", "kind": "rubble", "center": {"x": -7, "y": 0.65, "z": 5}, "size": {"x": 4, "y": 1.3, "z": 2}, "shapes": [{"id": "visible-rubble", "shape": "box", "offset": {"x": 0, "y": -0.015, "z": 0}, "size": {"x": 4, "y": 1.27, "z": 2}}], "navBlock": true, "blocksSight": true},
-    {"id": "rubble_se", "kind": "rubble", "center": {"x": 7, "y": 0.55, "z": -5}, "size": {"x": 5, "y": 1.1, "z": 2.5}, "shapes": [{"id": "visible-rubble", "shape": "box", "offset": {"x": 0, "y": -0.0125, "z": 0}, "size": {"x": 5, "y": 1.075, "z": 2.5}}], "navBlock": true, "blocksSight": true},
-    {"id": "wrecked_truck", "kind": "truck", "center": {"x": -8, "y": 1.2, "z": -5}, "size": {"x": 5.5, "y": 2.4, "z": 2.4}, "shapes": [
-      {"id": "chassis", "shape": "box", "offset": {"x": 0, "y": -0.72, "z": 0}, "size": {"x": 5.45, "y": 0.6, "z": 2.32}},
-      {"id": "cargo-bed", "shape": "box", "offset": {"x": 0.95, "y": -0.2, "z": 0}, "size": {"x": 3.5, "y": 0.55, "z": 2.3}},
-      {"id": "cargo-side-n", "shape": "box", "offset": {"x": 0.98, "y": 0.32, "z": -1.09}, "size": {"x": 3.48, "y": 0.75, "z": 0.12}},
-      {"id": "cargo-side-s", "shape": "box", "offset": {"x": 0.98, "y": 0.32, "z": 1.09}, "size": {"x": 3.48, "y": 0.75, "z": 0.12}},
-      {"id": "cabin", "shape": "box", "offset": {"x": -1.85, "y": 0.1, "z": 0}, "size": {"x": 1.65, "y": 1.6, "z": 2.28}},
-      {"id": "roof", "shape": "box", "offset": {"x": -1.8, "y": 1.07, "z": 0}, "size": {"x": 1.8, "y": 0.18, "z": 2.35}},
-      {"id": "wheel-front-n", "shape": "cylinder", "axis": "z", "offset": {"x": -1.8, "y": -0.7, "z": -1.05}, "radius": 0.49, "height": 0.3},
-      {"id": "wheel-front-s", "shape": "cylinder", "axis": "z", "offset": {"x": -1.8, "y": -0.7, "z": 1.05}, "radius": 0.49, "height": 0.3},
-      {"id": "wheel-rear-n", "shape": "cylinder", "axis": "z", "offset": {"x": 1.65, "y": -0.7, "z": -1.05}, "radius": 0.49, "height": 0.3},
-      {"id": "wheel-rear-s", "shape": "cylinder", "axis": "z", "offset": {"x": 1.65, "y": -0.7, "z": 1.05}, "radius": 0.49, "height": 0.3}
-    ], "navBlock": true, "blocksSight": true},
-    {"id": "burning_barrel_w", "kind": "barrel", "center": {"x": -4, "y": 0.65, "z": 3}, "size": {"x": 0.8, "y": 1.3, "z": 0.8}, "shapes": [{"id": "drum", "shape": "cylinder", "axis": "y", "offset": {"x": 0, "y": 0.011, "z": 0}, "radius": 0.395, "height": 1.262}], "navBlock": true, "blocksSight": true},
-    {"id": "burning_barrel_e", "kind": "barrel", "center": {"x": 5, "y": 0.65, "z": -2}, "size": {"x": 0.8, "y": 1.3, "z": 0.8}, "shapes": [{"id": "drum", "shape": "cylinder", "axis": "y", "offset": {"x": 0, "y": 0.011, "z": 0}, "radius": 0.395, "height": 1.262}], "navBlock": true, "blocksSight": true},
-
-    {"id": "building_back", "kind": "building_wall", "center": {"x": 0, "y": 3, "z": 27}, "size": {"x": 28, "y": 6, "z": 0.6}, "navBlock": true, "blocksSight": true},
-    {"id": "building_west", "kind": "building_wall", "center": {"x": -14, "y": 3, "z": 22}, "size": {"x": 0.6, "y": 6, "z": 10}, "navBlock": true, "blocksSight": true},
-    {"id": "building_east", "kind": "building_wall", "center": {"x": 14, "y": 3, "z": 22}, "size": {"x": 0.6, "y": 6, "z": 10}, "navBlock": true, "blocksSight": true},
-    {"id": "building_front_w", "kind": "building_wall", "center": {"x": -7.75, "y": 3, "z": 17}, "size": {"x": 12.5, "y": 6, "z": 0.6}, "navBlock": true, "blocksSight": true},
-    {"id": "building_front_e", "kind": "building_wall", "center": {"x": 7.75, "y": 3, "z": 17}, "size": {"x": 12.5, "y": 6, "z": 0.6}, "navBlock": true, "blocksSight": true},
-    {"id": "building_ground_floor", "kind": "floor", "center": {"x": 0, "y": 0.05, "z": 22}, "size": {"x": 28, "y": 0.1, "z": 10}, "navBlock": false, "blocksSight": false},
-    {"id": "building_second_floor", "kind": "floor", "center": {"x": 0, "y": 3.05, "z": 22}, "size": {"x": 28, "y": 0.2, "z": 10}, "navBlock": false, "blocksSight": true},
-    {"id": "building_balcony", "kind": "floor", "center": {"x": 0, "y": 3.05, "z": 15.8}, "size": {"x": 20, "y": 0.2, "z": 2}, "navBlock": false, "blocksSight": true},
-    {"id": "stair_1", "kind": "stair", "center": {"x": 10, "y": 0.25, "z": 24.5}, "size": {"x": 3, "y": 0.5, "z": 1}, "navBlock": true, "blocksSight": false},
-    {"id": "stair_2", "kind": "stair", "center": {"x": 10, "y": 0.75, "z": 23.5}, "size": {"x": 3, "y": 1, "z": 1}, "navBlock": true, "blocksSight": false},
-    {"id": "stair_3", "kind": "stair", "center": {"x": 10, "y": 1.25, "z": 22.5}, "size": {"x": 3, "y": 1.5, "z": 1}, "navBlock": true, "blocksSight": false},
-    {"id": "stair_4", "kind": "stair", "center": {"x": 10, "y": 1.75, "z": 21.5}, "size": {"x": 3, "y": 2, "z": 1}, "navBlock": true, "blocksSight": false},
-    {"id": "stair_5", "kind": "stair", "center": {"x": 10, "y": 2.25, "z": 20.5}, "size": {"x": 3, "y": 2.5, "z": 1}, "navBlock": true, "blocksSight": false},
-    {"id": "stair_6", "kind": "stair", "center": {"x": 10, "y": 2.75, "z": 19.5}, "size": {"x": 3, "y": 3, "z": 1}, "navBlock": true, "blocksSight": false},
-
-    {"id": "dock_floor", "kind": "floor", "center": {"x": 23, "y": 0.35, "z": -5}, "size": {"x": 10, "y": 0.7, "z": 18}, "navBlock": false, "blocksSight": false},
-    {"id": "container_red", "kind": "container", "center": {"x": 22, "y": 1.45, "z": 6}, "size": {"x": 2.6, "y": 2.9, "z": 6}, "shapes": [{"id": "shell", "shape": "box", "offset": {"x": 0, "y": -0.005, "z": 0}, "size": {"x": 2.6, "y": 2.89, "z": 6}}], "navBlock": true, "blocksSight": true},
-    {"id": "container_blue", "kind": "container", "center": {"x": 26, "y": 1.45, "z": -4}, "size": {"x": 2.6, "y": 2.9, "z": 7}, "shapes": [{"id": "shell", "shape": "box", "offset": {"x": 0, "y": -0.005, "z": 0}, "size": {"x": 2.6, "y": 2.89, "z": 7}}], "navBlock": true, "blocksSight": true},
-    {"id": "container_gray", "kind": "container", "center": {"x": 20, "y": 1.45, "z": -10}, "size": {"x": 2.6, "y": 2.9, "z": 6}, "shapes": [{"id": "shell", "shape": "box", "offset": {"x": 0, "y": -0.005, "z": 0}, "size": {"x": 2.6, "y": 2.89, "z": 6}}], "navBlock": true, "blocksSight": true},
-    {"id": "dock_ramp", "kind": "ramp", "center": {"x": 18, "y": 0.3, "z": -5}, "size": {"x": 2, "y": 0.6, "z": 6}, "navBlock": false, "blocksSight": false},
-
-    {"id": "tunnel_north", "kind": "tunnel_wall", "center": {"x": -24, "y": 1.5, "z": 4}, "size": {"x": 10, "y": 3, "z": 0.6}, "navBlock": true, "blocksSight": true},
-    {"id": "tunnel_south", "kind": "tunnel_wall", "center": {"x": -24, "y": 1.5, "z": -4}, "size": {"x": 10, "y": 3, "z": 0.6}, "navBlock": true, "blocksSight": true},
-    {"id": "tunnel_roof", "kind": "floor", "center": {"x": -24, "y": 3, "z": 0}, "size": {"x": 10, "y": 0.4, "z": 8}, "navBlock": false, "blocksSight": true},
-
-    {"id": "exp_west_yard", "kind": "floor", "center": {"x": -36, "y": -0.25, "z": 0}, "size": {"x": 12, "y": 0.5, "z": 60}, "navBlock": false, "blocksSight": true, "area": "expansion", "shapes": [{"id": "slab-0", "shape": "box", "offset": {"x": -4.049999999999997, "y": 0, "z": 0}, "size": {"x": 3.8999999999999986, "y": 0.5, "z": 60}}, {"id": "slab-1", "shape": "box", "offset": {"x": 4.050000000000001, "y": 0, "z": 0}, "size": {"x": 3.8999999999999986, "y": 0.5, "z": 60}}, {"id": "slab-2", "shape": "box", "offset": {"x": 0, "y": 0, "z": -26}, "size": {"x": 4.200000000000003, "y": 0.5, "z": 8}}, {"id": "slab-3", "shape": "box", "offset": {"x": 0, "y": 0, "z": 0}, "size": {"x": 4.200000000000003, "y": 0.5, "z": 30}}, {"id": "slab-4", "shape": "box", "offset": {"x": 0, "y": 0, "z": 26}, "size": {"x": 4.200000000000003, "y": 0.5, "z": 8}}]},
-    {"id": "exp_east_yard", "kind": "floor", "center": {"x": 36, "y": -0.25, "z": 0}, "size": {"x": 12, "y": 0.5, "z": 60}, "navBlock": false, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_service_floor", "kind": "floor", "center": {"x": -35, "y": -3.7, "z": 0}, "size": {"x": 7.4, "y": 0.4, "z": 31.4}, "navBlock": false, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_service_south_1", "kind": "stair", "center": {"x": -36, "y": -3.25, "z": -15.5}, "size": {"x": 3, "y": 0.5, "z": 1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_service_south_2", "kind": "stair", "center": {"x": -36, "y": -2.75, "z": -16.5}, "size": {"x": 3, "y": 0.5, "z": 1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_service_south_3", "kind": "stair", "center": {"x": -36, "y": -2.25, "z": -17.5}, "size": {"x": 3, "y": 0.5, "z": 1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_service_south_4", "kind": "stair", "center": {"x": -36, "y": -1.75, "z": -18.5}, "size": {"x": 3, "y": 0.5, "z": 1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_service_south_5", "kind": "stair", "center": {"x": -36, "y": -1.25, "z": -19.5}, "size": {"x": 3, "y": 0.5, "z": 1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_service_south_6", "kind": "stair", "center": {"x": -36, "y": -0.75, "z": -20.5}, "size": {"x": 3, "y": 0.5, "z": 1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_service_south_7", "kind": "stair", "center": {"x": -36, "y": -0.25, "z": -21.5}, "size": {"x": 3, "y": 0.5, "z": 1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_service_north_1", "kind": "stair", "center": {"x": -36, "y": -3.25, "z": 15.5}, "size": {"x": 3, "y": 0.5, "z": 1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_service_north_2", "kind": "stair", "center": {"x": -36, "y": -2.75, "z": 16.5}, "size": {"x": 3, "y": 0.5, "z": 1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_service_north_3", "kind": "stair", "center": {"x": -36, "y": -2.25, "z": 17.5}, "size": {"x": 3, "y": 0.5, "z": 1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_service_north_4", "kind": "stair", "center": {"x": -36, "y": -1.75, "z": 18.5}, "size": {"x": 3, "y": 0.5, "z": 1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_service_north_5", "kind": "stair", "center": {"x": -36, "y": -1.25, "z": 19.5}, "size": {"x": 3, "y": 0.5, "z": 1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_service_north_6", "kind": "stair", "center": {"x": -36, "y": -0.75, "z": 20.5}, "size": {"x": 3, "y": 0.5, "z": 1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_service_north_7", "kind": "stair", "center": {"x": -36, "y": -0.25, "z": 21.5}, "size": {"x": 3, "y": 0.5, "z": 1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_service_side_-39", "kind": "building_wall", "center": {"x": -39, "y": -1.875, "z": 0}, "size": {"x": 0.6, "y": 3.25, "z": 32}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_service_side_-31", "kind": "building_wall", "center": {"x": -31, "y": -1.875, "z": 0}, "size": {"x": 0.6, "y": 3.25, "z": 32}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_service_end_-1_w", "kind": "building_wall", "center": {"x": -38.5, "y": -1.875, "z": -16}, "size": {"x": 1, "y": 3.25, "z": 0.6}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_service_end_-1_e", "kind": "building_wall", "center": {"x": -32.5, "y": -1.875, "z": -16}, "size": {"x": 3, "y": 3.25, "z": 0.6}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_service_stair_-1_-38.4", "kind": "building_wall", "center": {"x": -38.4, "y": -1.6, "z": -18.5}, "size": {"x": 0.6, "y": 3.8, "z": 6.4}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_service_stair_-1_-33.6", "kind": "building_wall", "center": {"x": -33.6, "y": -1.6, "z": -18.5}, "size": {"x": 0.6, "y": 3.8, "z": 6.4}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_service_rail_-1_-38.4", "kind": "building_wall", "center": {"x": -38.4, "y": 0.6, "z": -18.5}, "size": {"x": 0.6, "y": 1.2, "z": 6.4}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_service_rail_-1_-33.6", "kind": "building_wall", "center": {"x": -33.6, "y": 0.6, "z": -18.5}, "size": {"x": 0.6, "y": 1.2, "z": 6.4}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_service_end_1_w", "kind": "building_wall", "center": {"x": -38.5, "y": -1.875, "z": 16}, "size": {"x": 1, "y": 3.25, "z": 0.6}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_service_end_1_e", "kind": "building_wall", "center": {"x": -32.5, "y": -1.875, "z": 16}, "size": {"x": 3, "y": 3.25, "z": 0.6}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_service_stair_1_-38.4", "kind": "building_wall", "center": {"x": -38.4, "y": -1.6, "z": 18.5}, "size": {"x": 0.6, "y": 3.8, "z": 6.4}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_service_stair_1_-33.6", "kind": "building_wall", "center": {"x": -33.6, "y": -1.6, "z": 18.5}, "size": {"x": 0.6, "y": 3.8, "z": 6.4}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_service_rail_1_-38.4", "kind": "building_wall", "center": {"x": -38.4, "y": 0.6, "z": 18.5}, "size": {"x": 0.6, "y": 1.2, "z": 6.4}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_service_rail_1_-33.6", "kind": "building_wall", "center": {"x": -33.6, "y": 0.6, "z": 18.5}, "size": {"x": 0.6, "y": 1.2, "z": 6.4}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_service_choke_w", "kind": "building_wall", "center": {"x": -38.1, "y": -1.875, "z": 0}, "size": {"x": 1.8, "y": 3.25, "z": 0.8}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_service_choke_e", "kind": "building_wall", "center": {"x": -32.8, "y": -1.875, "z": 0}, "size": {"x": 3.6, "y": 3.25, "z": 0.8}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_old_west_inner_s", "kind": "wall", "center": {"x": -29.5, "y": 1.5, "z": -9.5}, "size": {"x": 1, "y": 3, "z": 15}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_old_west_inner_n", "kind": "wall", "center": {"x": -29.5, "y": 1.5, "z": 9.5}, "size": {"x": 1, "y": 3, "z": 15}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_old_east_inner_s", "kind": "wall", "center": {"x": 29.5, "y": 1.5, "z": -5}, "size": {"x": 1, "y": 3, "z": 6}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_old_east_inner_n", "kind": "wall", "center": {"x": 29.5, "y": 1.5, "z": 5.5}, "size": {"x": 1, "y": 3, "z": 7}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_west_corner_-28.5", "kind": "wall", "center": {"x": -30.5, "y": 1.5, "z": -28.5}, "size": {"x": 1, "y": 3, "z": 1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_west_corner_28.5", "kind": "wall", "center": {"x": -30.5, "y": 1.5, "z": 28.5}, "size": {"x": 1, "y": 3, "z": 1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_perimeter_-41.7_-22", "kind": "wall", "center": {"x": -41.7, "y": 1.8, "z": -22}, "size": {"x": 0.6, "y": 3.6, "z": 16}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_perimeter_-41.7_-5", "kind": "wall", "center": {"x": -41.7, "y": 1.8, "z": -5}, "size": {"x": 0.6, "y": 3.6, "z": 6}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_perimeter_-41.7_8", "kind": "wall", "center": {"x": -41.7, "y": 1.8, "z": 8}, "size": {"x": 0.6, "y": 3.6, "z": 12}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_perimeter_-41.7_26", "kind": "wall", "center": {"x": -41.7, "y": 1.8, "z": 26}, "size": {"x": 0.6, "y": 3.6, "z": 8}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_perimeter_41.7_-22", "kind": "wall", "center": {"x": 41.7, "y": 1.8, "z": -22}, "size": {"x": 0.6, "y": 3.6, "z": 16}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_perimeter_41.7_-5", "kind": "wall", "center": {"x": 41.7, "y": 1.8, "z": -5}, "size": {"x": 0.6, "y": 3.6, "z": 6}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_perimeter_41.7_8", "kind": "wall", "center": {"x": 41.7, "y": 1.8, "z": 8}, "size": {"x": 0.6, "y": 3.6, "z": 12}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_perimeter_41.7_26", "kind": "wall", "center": {"x": 41.7, "y": 1.8, "z": 26}, "size": {"x": 0.6, "y": 3.6, "z": 8}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_north_-36", "kind": "wall", "center": {"x": -36, "y": 1.8, "z": 29.7}, "size": {"x": 12, "y": 3.6, "z": 0.6}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_north_36", "kind": "wall", "center": {"x": 36, "y": 1.8, "z": 29.7}, "size": {"x": 12, "y": 3.6, "z": 0.6}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_south_west", "kind": "wall", "center": {"x": -36, "y": 1.8, "z": -29.7}, "size": {"x": 12, "y": 3.6, "z": 0.6}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_south_east_l", "kind": "wall", "center": {"x": 31.25, "y": 1.8, "z": -29.7}, "size": {"x": 2.5, "y": 3.6, "z": 0.6}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_south_east_r", "kind": "wall", "center": {"x": 40.75, "y": 1.8, "z": -29.7}, "size": {"x": 2.5, "y": 3.6, "z": 0.6}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_upper", "kind": "floor", "center": {"x": 36, "y": 3.1, "z": 14}, "size": {"x": 10, "y": 0.2, "z": 20}, "navBlock": false, "blocksSight": true, "area": "expansion", "shapes": [{"id": "slab-0", "shape": "box", "offset": {"x": -1.5499999999999972, "y": 0, "z": 0}, "size": {"x": 6.899999999999999, "y": 0.2, "z": 20}}, {"id": "slab-1", "shape": "box", "offset": {"x": 3.450000000000003, "y": 0, "z": -4.050000000000001}, "size": {"x": 3.1000000000000014, "y": 0.2, "z": 11.9}}, {"id": "slab-2", "shape": "box", "offset": {"x": 3.450000000000003, "y": 0, "z": 9.05}, "size": {"x": 3.1000000000000014, "y": 0.2, "z": 1.8999999999999986}}]},
-    {"id": "exp_barracks_roof", "kind": "floor", "center": {"x": 36, "y": 6.3, "z": 14}, "size": {"x": 10, "y": 0.2, "z": 20}, "navBlock": false, "blocksSight": true, "area": "expansion", "shapes": [{"id": "slab-0", "shape": "box", "offset": {"x": 1.5499999999999972, "y": 0, "z": 0}, "size": {"x": 6.899999999999999, "y": 0.2, "z": 20}}, {"id": "slab-1", "shape": "box", "offset": {"x": -3.450000000000003, "y": 0, "z": -4.050000000000001}, "size": {"x": 3.1000000000000014, "y": 0.2, "z": 11.9}}, {"id": "slab-2", "shape": "box", "offset": {"x": -3.450000000000003, "y": 0, "z": 9.05}, "size": {"x": 3.1000000000000014, "y": 0.2, "z": 1.8999999999999986}}]},
-    {"id": "exp_barracks_lower_1", "kind": "stair", "center": {"x": 39.5, "y": 0.25, "z": 21.5}, "size": {"x": 3, "y": 0.5, "z": 1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_lower_2", "kind": "stair", "center": {"x": 39.5, "y": 0.75, "z": 20.5}, "size": {"x": 3, "y": 0.5, "z": 1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_lower_3", "kind": "stair", "center": {"x": 39.5, "y": 1.25, "z": 19.5}, "size": {"x": 3, "y": 0.5, "z": 1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_lower_4", "kind": "stair", "center": {"x": 39.5, "y": 1.75, "z": 18.5}, "size": {"x": 3, "y": 0.5, "z": 1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_lower_5", "kind": "stair", "center": {"x": 39.5, "y": 2.25, "z": 17.5}, "size": {"x": 3, "y": 0.5, "z": 1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_lower_6", "kind": "stair", "center": {"x": 39.5, "y": 2.75, "z": 16.5}, "size": {"x": 3, "y": 0.5, "z": 1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_roof_1", "kind": "stair", "center": {"x": 32.5, "y": 3.45, "z": 16.5}, "size": {"x": 3, "y": 0.5, "z": 1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_roof_2", "kind": "stair", "center": {"x": 32.5, "y": 3.95, "z": 17.5}, "size": {"x": 3, "y": 0.5, "z": 1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_roof_3", "kind": "stair", "center": {"x": 32.5, "y": 4.45, "z": 18.5}, "size": {"x": 3, "y": 0.5, "z": 1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_roof_4", "kind": "stair", "center": {"x": 32.5, "y": 4.95, "z": 19.5}, "size": {"x": 3, "y": 0.5, "z": 1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_roof_5", "kind": "stair", "center": {"x": 32.5, "y": 5.45, "z": 20.5}, "size": {"x": 3, "y": 0.5, "z": 1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_roof_6", "kind": "stair", "center": {"x": 32.5, "y": 5.95, "z": 21.5}, "size": {"x": 3, "y": 0.5, "z": 1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_side_31_0_sill", "kind": "building_wall", "center": {"x": 31, "y": 0.55, "z": 7}, "size": {"x": 0.4, "y": 1.1, "z": 6}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_side_31_0_header", "kind": "building_wall", "center": {"x": 31, "y": 2.8, "z": 14}, "size": {"x": 0.4, "y": 0.8, "z": 20}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_side_31_0_4.75", "kind": "building_wall", "center": {"x": 31, "y": 1.75, "z": 4.75}, "size": {"x": 0.4, "y": 1.3, "z": 1.5}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_side_31_0_10", "kind": "building_wall", "center": {"x": 31, "y": 1.75, "z": 9.75}, "size": {"x": 0.4, "y": 1.3, "z": 1.5}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_side_31_0_15", "kind": "building_wall", "center": {"x": 31, "y": 1.75, "z": 15.25}, "size": {"x": 0.4, "y": 1.3, "z": 1.5}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_side_31_0_20", "kind": "building_wall", "center": {"x": 31, "y": 1.75, "z": 20}, "size": {"x": 0.4, "y": 1.3, "z": 2}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_side_31_0_23.25", "kind": "building_wall", "center": {"x": 31, "y": 1.75, "z": 23.25}, "size": {"x": 0.4, "y": 1.3, "z": 1.5}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_side_31_3.2_sill", "kind": "building_wall", "center": {"x": 31, "y": 3.75, "z": 14}, "size": {"x": 0.4, "y": 1.1, "z": 20}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_side_31_3.2_header", "kind": "building_wall", "center": {"x": 31, "y": 6, "z": 14}, "size": {"x": 0.4, "y": 0.8, "z": 20}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_side_31_3.2_4.75", "kind": "building_wall", "center": {"x": 31, "y": 4.95, "z": 4.75}, "size": {"x": 0.4, "y": 1.3, "z": 1.5}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_side_31_3.2_10", "kind": "building_wall", "center": {"x": 31, "y": 4.95, "z": 10}, "size": {"x": 0.4, "y": 1.3, "z": 2}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_side_31_3.2_15", "kind": "building_wall", "center": {"x": 31, "y": 4.95, "z": 15}, "size": {"x": 0.4, "y": 1.3, "z": 2}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_side_31_3.2_20", "kind": "building_wall", "center": {"x": 31, "y": 4.95, "z": 20}, "size": {"x": 0.4, "y": 1.3, "z": 2}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_side_31_3.2_23.25", "kind": "building_wall", "center": {"x": 31, "y": 4.95, "z": 23.25}, "size": {"x": 0.4, "y": 1.3, "z": 1.5}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_side_41_0_sill", "kind": "building_wall", "center": {"x": 41, "y": 0.55, "z": 14}, "size": {"x": 0.4, "y": 1.1, "z": 20}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_side_41_0_header", "kind": "building_wall", "center": {"x": 41, "y": 2.8, "z": 14}, "size": {"x": 0.4, "y": 0.8, "z": 20}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_side_41_0_4.75", "kind": "building_wall", "center": {"x": 41, "y": 1.75, "z": 4.75}, "size": {"x": 0.4, "y": 1.3, "z": 1.5}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_side_41_0_10", "kind": "building_wall", "center": {"x": 41, "y": 1.75, "z": 10}, "size": {"x": 0.4, "y": 1.3, "z": 2}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_side_41_0_15", "kind": "building_wall", "center": {"x": 41, "y": 1.75, "z": 15}, "size": {"x": 0.4, "y": 1.3, "z": 2}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_side_41_0_20", "kind": "building_wall", "center": {"x": 41, "y": 1.75, "z": 20}, "size": {"x": 0.4, "y": 1.3, "z": 2}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_side_41_0_23.25", "kind": "building_wall", "center": {"x": 41, "y": 1.75, "z": 23.25}, "size": {"x": 0.4, "y": 1.3, "z": 1.5}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_side_41_3.2_sill", "kind": "building_wall", "center": {"x": 41, "y": 3.75, "z": 14}, "size": {"x": 0.4, "y": 1.1, "z": 20}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_side_41_3.2_header", "kind": "building_wall", "center": {"x": 41, "y": 6, "z": 14}, "size": {"x": 0.4, "y": 0.8, "z": 20}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_side_41_3.2_4.75", "kind": "building_wall", "center": {"x": 41, "y": 4.95, "z": 4.75}, "size": {"x": 0.4, "y": 1.3, "z": 1.5}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_side_41_3.2_10", "kind": "building_wall", "center": {"x": 41, "y": 4.95, "z": 10}, "size": {"x": 0.4, "y": 1.3, "z": 2}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_side_41_3.2_15", "kind": "building_wall", "center": {"x": 41, "y": 4.95, "z": 15}, "size": {"x": 0.4, "y": 1.3, "z": 2}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_side_41_3.2_20", "kind": "building_wall", "center": {"x": 41, "y": 4.95, "z": 20}, "size": {"x": 0.4, "y": 1.3, "z": 2}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_side_41_3.2_23.25", "kind": "building_wall", "center": {"x": 41, "y": 4.95, "z": 23.25}, "size": {"x": 0.4, "y": 1.3, "z": 1.5}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_w_sill_n", "kind": "building_wall", "center": {"x": 31, "y": 0.55, "z": 19.25}, "size": {"x": 0.4, "y": 1.1, "z": 9.5}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_south_l_0", "kind": "building_wall", "center": {"x": 32.75, "y": 1.6, "z": 4}, "size": {"x": 3.5, "y": 3.2, "z": 0.4}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_south_r_0", "kind": "building_wall", "center": {"x": 39.25, "y": 1.6, "z": 4}, "size": {"x": 3.5, "y": 3.2, "z": 0.4}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_south_head_0", "kind": "building_wall", "center": {"x": 36, "y": 2.95, "z": 4}, "size": {"x": 3, "y": 0.5, "z": 0.4}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_north_0_-1", "kind": "building_wall", "center": {"x": 32.75, "y": 1.6, "z": 24}, "size": {"x": 3.5, "y": 3.2, "z": 0.4}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_north_0_1", "kind": "building_wall", "center": {"x": 39.25, "y": 1.6, "z": 24}, "size": {"x": 3.5, "y": 3.2, "z": 0.4}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_north_head_0", "kind": "building_wall", "center": {"x": 36, "y": 2.95, "z": 24}, "size": {"x": 3, "y": 0.5, "z": 0.4}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_partition_34_0_5.5", "kind": "building_wall", "center": {"x": 34, "y": 1.4, "z": 5.5}, "size": {"x": 0.22, "y": 2.8, "z": 3}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_partition_34_0_10", "kind": "building_wall", "center": {"x": 34, "y": 1.4, "z": 10}, "size": {"x": 0.22, "y": 2.8, "z": 2}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_partition_34_0_14.75", "kind": "building_wall", "center": {"x": 34, "y": 1.4, "z": 14.75}, "size": {"x": 0.22, "y": 2.8, "z": 0.5}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_partition_38_0_5.5", "kind": "building_wall", "center": {"x": 38, "y": 1.4, "z": 5.5}, "size": {"x": 0.22, "y": 2.8, "z": 3}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_partition_38_0_10", "kind": "building_wall", "center": {"x": 38, "y": 1.4, "z": 10}, "size": {"x": 0.22, "y": 2.8, "z": 2}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_partition_38_0_14.75", "kind": "building_wall", "center": {"x": 38, "y": 1.4, "z": 14.75}, "size": {"x": 0.22, "y": 2.8, "z": 0.5}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_south_l_3.2", "kind": "building_wall", "center": {"x": 32.75, "y": 4.800000000000001, "z": 4}, "size": {"x": 3.5, "y": 3.2, "z": 0.4}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_south_r_3.2", "kind": "building_wall", "center": {"x": 39.25, "y": 4.800000000000001, "z": 4}, "size": {"x": 3.5, "y": 3.2, "z": 0.4}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_south_head_3.2", "kind": "building_wall", "center": {"x": 36, "y": 6.15, "z": 4}, "size": {"x": 3, "y": 0.5, "z": 0.4}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_north_3.2_-1", "kind": "building_wall", "center": {"x": 32.75, "y": 4.800000000000001, "z": 24}, "size": {"x": 3.5, "y": 3.2, "z": 0.4}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_north_3.2_1", "kind": "building_wall", "center": {"x": 39.25, "y": 4.800000000000001, "z": 24}, "size": {"x": 3.5, "y": 3.2, "z": 0.4}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_north_head_3.2", "kind": "building_wall", "center": {"x": 36, "y": 6.15, "z": 24}, "size": {"x": 3, "y": 0.5, "z": 0.4}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_partition_34_3.2_5.5", "kind": "building_wall", "center": {"x": 34, "y": 4.6, "z": 5.5}, "size": {"x": 0.22, "y": 2.8, "z": 3}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_partition_34_3.2_10", "kind": "building_wall", "center": {"x": 34, "y": 4.6, "z": 10}, "size": {"x": 0.22, "y": 2.8, "z": 2}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_partition_34_3.2_14.75", "kind": "building_wall", "center": {"x": 34, "y": 4.6, "z": 14.75}, "size": {"x": 0.22, "y": 2.8, "z": 0.5}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_partition_38_3.2_5.5", "kind": "building_wall", "center": {"x": 38, "y": 4.6, "z": 5.5}, "size": {"x": 0.22, "y": 2.8, "z": 3}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_partition_38_3.2_10", "kind": "building_wall", "center": {"x": 38, "y": 4.6, "z": 10}, "size": {"x": 0.22, "y": 2.8, "z": 2}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_partition_38_3.2_14.75", "kind": "building_wall", "center": {"x": 38, "y": 4.6, "z": 14.75}, "size": {"x": 0.22, "y": 2.8, "z": 0.5}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_parapet_31", "kind": "building_wall", "center": {"x": 31, "y": 6.9, "z": 14}, "size": {"x": 0.4, "y": 1, "z": 20}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_parapet_41", "kind": "building_wall", "center": {"x": 41, "y": 6.9, "z": 14}, "size": {"x": 0.4, "y": 1, "z": 20}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_parapet_4", "kind": "building_wall", "center": {"x": 36, "y": 6.9, "z": 4}, "size": {"x": 10, "y": 1, "z": 0.4}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_barracks_parapet_24", "kind": "building_wall", "center": {"x": 36, "y": 6.9, "z": 24}, "size": {"x": 10, "y": 1, "z": 0.4}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_colonnade_canopy", "kind": "floor", "center": {"x": 22, "y": 4.15, "z": 13}, "size": {"x": 18, "y": 0.3, "z": 6}, "navBlock": false, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_column_14_10.4", "kind": "column", "center": {"x": 14, "y": 2, "z": 10.4}, "size": {"x": 0.7, "y": 4, "z": 0.7}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_column_14_15.6", "kind": "column", "center": {"x": 14, "y": 2, "z": 15.6}, "size": {"x": 0.7, "y": 4, "z": 0.7}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_column_18_10.4", "kind": "column", "center": {"x": 18, "y": 2, "z": 10.4}, "size": {"x": 0.7, "y": 4, "z": 0.7}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_column_18_15.6", "kind": "column", "center": {"x": 18, "y": 2, "z": 15.6}, "size": {"x": 0.7, "y": 4, "z": 0.7}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_column_22_10.4", "kind": "column", "center": {"x": 22, "y": 2, "z": 10.4}, "size": {"x": 0.7, "y": 4, "z": 0.7}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_column_22_15.6", "kind": "column", "center": {"x": 22, "y": 2, "z": 15.6}, "size": {"x": 0.7, "y": 4, "z": 0.7}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_column_26_10.4", "kind": "column", "center": {"x": 26, "y": 2, "z": 10.4}, "size": {"x": 0.7, "y": 4, "z": 0.7}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_column_26_15.6", "kind": "column", "center": {"x": 26, "y": 2, "z": 15.6}, "size": {"x": 0.7, "y": 4, "z": 0.7}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_column_30_10.4", "kind": "column", "center": {"x": 30, "y": 2, "z": 10.4}, "size": {"x": 0.7, "y": 4, "z": 0.7}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_column_30_15.6", "kind": "column", "center": {"x": 30, "y": 2, "z": 15.6}, "size": {"x": 0.7, "y": 4, "z": 0.7}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_depot_rear_-1", "kind": "building_wall", "center": {"x": 31.75, "y": 3.25, "z": -27}, "size": {"x": 1.5, "y": 6.5, "z": 0.5}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_depot_rear_1", "kind": "building_wall", "center": {"x": 40.25, "y": 3.25, "z": -27}, "size": {"x": 1.5, "y": 6.5, "z": 0.5}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_depot_rear_header", "kind": "building_wall", "center": {"x": 36, "y": 5.7, "z": -27}, "size": {"x": 7, "y": 1.6, "z": 0.5}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_depot_return_-1", "kind": "building_wall", "center": {"x": 31, "y": 3.25, "z": -21}, "size": {"x": 0.5, "y": 6.5, "z": 12}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_depot_return_1", "kind": "building_wall", "center": {"x": 41, "y": 3.25, "z": -21}, "size": {"x": 0.5, "y": 6.5, "z": 12}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_depot_pier_-1", "kind": "building_wall", "center": {"x": 32, "y": 3.25, "z": -15}, "size": {"x": 2, "y": 6.5, "z": 0.5}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_depot_pier_1", "kind": "building_wall", "center": {"x": 40, "y": 3.25, "z": -15}, "size": {"x": 2, "y": 6.5, "z": 0.5}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_depot_lintel", "kind": "building_wall", "center": {"x": 36, "y": 6.15, "z": -15}, "size": {"x": 10, "y": 0.7, "z": 0.5}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_depot_broken_roof", "kind": "floor", "center": {"x": 36, "y": 6.35, "z": -24.6}, "size": {"x": 10, "y": 0.3, "z": 4.800000000000001}, "navBlock": false, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_pump_rear", "kind": "building_wall", "center": {"x": -36, "y": 2.5, "z": -28}, "size": {"x": 10, "y": 5, "z": 0.5}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_pump_return_-1", "kind": "building_wall", "center": {"x": -41, "y": 2.5, "z": -26}, "size": {"x": 0.5, "y": 5, "z": 4}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_pump_return_1", "kind": "building_wall", "center": {"x": -31, "y": 2.5, "z": -26}, "size": {"x": 0.5, "y": 5, "z": 4}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_pump_pier_-1", "kind": "building_wall", "center": {"x": -40, "y": 2.5, "z": -24}, "size": {"x": 2, "y": 5, "z": 0.5}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_pump_pier_1", "kind": "building_wall", "center": {"x": -32, "y": 2.5, "z": -24}, "size": {"x": 2, "y": 5, "z": 0.5}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_pump_lintel", "kind": "building_wall", "center": {"x": -36, "y": 4.65, "z": -24}, "size": {"x": 10, "y": 0.7, "z": 0.5}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_pump_broken_roof", "kind": "floor", "center": {"x": -36, "y": 4.85, "z": -27.2}, "size": {"x": 10, "y": 0.3, "z": 1.6}, "navBlock": false, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_stores_rear", "kind": "building_wall", "center": {"x": -36, "y": 3, "z": 28}, "size": {"x": 10, "y": 6, "z": 0.5}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_stores_return_-1", "kind": "building_wall", "center": {"x": -41, "y": 3, "z": 26}, "size": {"x": 0.5, "y": 6, "z": 4}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_stores_return_1", "kind": "building_wall", "center": {"x": -31, "y": 3, "z": 26}, "size": {"x": 0.5, "y": 6, "z": 4}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_stores_pier_-1", "kind": "building_wall", "center": {"x": -40, "y": 3, "z": 24}, "size": {"x": 2, "y": 6, "z": 0.5}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_stores_pier_1", "kind": "building_wall", "center": {"x": -32, "y": 3, "z": 24}, "size": {"x": 2, "y": 6, "z": 0.5}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_stores_lintel", "kind": "building_wall", "center": {"x": -36, "y": 5.65, "z": 24}, "size": {"x": 10, "y": 0.7, "z": 0.5}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_stores_broken_roof", "kind": "floor", "center": {"x": -36, "y": 5.85, "z": 27.2}, "size": {"x": 10, "y": 0.3, "z": 1.6}, "navBlock": false, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_supply_yard_w", "kind": "supply", "center": {"x": -23, "y": 0.64, "z": -13}, "size": {"x": 2.6, "y": 1.28, "z": 1.1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_supply_yard_e", "kind": "supply", "center": {"x": 12, "y": 0.64, "z": -16}, "size": {"x": 2.6, "y": 1.28, "z": 1.1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_supply_link", "kind": "supply", "center": {"x": 24, "y": 0.64, "z": 8}, "size": {"x": 2.6, "y": 1.28, "z": 1.1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_supply_depot", "kind": "supply", "center": {"x": 35, "y": 0.64, "z": -20}, "size": {"x": 2.6, "y": 1.28, "z": 1.1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_supply_west", "kind": "supply", "center": {"x": -40, "y": 0.64, "z": 10}, "size": {"x": 2.6, "y": 1.28, "z": 1.1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_supply_north", "kind": "supply", "center": {"x": -20, "y": 0.64, "z": 23}, "size": {"x": 2.6, "y": 1.28, "z": 1.1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_sandbags_south", "kind": "sandbags", "center": {"x": -16, "y": 0.65, "z": -21}, "size": {"x": 3.2, "y": 1.3, "z": 1.2}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_sandbags_east", "kind": "sandbags", "center": {"x": 35, "y": 0.65, "z": -7}, "size": {"x": 3.2, "y": 1.3, "z": 1.2}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_sandbags_west", "kind": "sandbags", "center": {"x": -32, "y": 0.65, "z": 7}, "size": {"x": 3.2, "y": 1.3, "z": 1.2}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_sandbags_north", "kind": "sandbags", "center": {"x": 19, "y": 0.65, "z": 23}, "size": {"x": 3.2, "y": 1.3, "z": 1.2}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_generator_tunnel", "kind": "generator", "center": {"x": -32.2, "y": -2.7, "z": 7}, "size": {"x": 1.6, "y": 1.6, "z": 2.4}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_generator_yard", "kind": "generator", "center": {"x": -40, "y": 0.8, "z": -8}, "size": {"x": 1.6, "y": 1.6, "z": 2.4}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_generator_depot", "kind": "generator", "center": {"x": 39, "y": 0.8, "z": -24}, "size": {"x": 1.6, "y": 1.6, "z": 2.4}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_spool_depot", "kind": "spool", "center": {"x": 33, "y": 0.6, "z": -23}, "size": {"x": 1.2, "y": 1.2, "z": 1.2}, "navBlock": true, "blocksSight": true, "area": "expansion", "shapes": [{"id": "core", "shape": "cylinder", "axis": "y", "radius": 0.4, "height": 1.04, "offset": {"x": 0, "y": 0, "z": 0}}, {"id": "bottom", "shape": "cylinder", "axis": "y", "radius": 0.6, "height": 0.08, "offset": {"x": 0, "y": -0.56, "z": 0}}, {"id": "top", "shape": "cylinder", "axis": "y", "radius": 0.6, "height": 0.08, "offset": {"x": 0, "y": 0.56, "z": 0}}]},
-    {"id": "exp_spool_west", "kind": "spool", "center": {"x": -32, "y": 0.6, "z": -11}, "size": {"x": 1.2, "y": 1.2, "z": 1.2}, "navBlock": true, "blocksSight": true, "area": "expansion", "shapes": [{"id": "core", "shape": "cylinder", "axis": "y", "radius": 0.4, "height": 1.04, "offset": {"x": 0, "y": 0, "z": 0}}, {"id": "bottom", "shape": "cylinder", "axis": "y", "radius": 0.6, "height": 0.08, "offset": {"x": 0, "y": -0.56, "z": 0}}, {"id": "top", "shape": "cylinder", "axis": "y", "radius": 0.6, "height": 0.08, "offset": {"x": 0, "y": 0.56, "z": 0}}]},
-    {"id": "exp_spool_link", "kind": "spool", "center": {"x": 17, "y": 0.6, "z": 8}, "size": {"x": 1.2, "y": 1.2, "z": 1.2}, "navBlock": true, "blocksSight": true, "area": "expansion", "shapes": [{"id": "core", "shape": "cylinder", "axis": "y", "radius": 0.4, "height": 1.04, "offset": {"x": 0, "y": 0, "z": 0}}, {"id": "bottom", "shape": "cylinder", "axis": "y", "radius": 0.6, "height": 0.08, "offset": {"x": 0, "y": -0.56, "z": 0}}, {"id": "top", "shape": "cylinder", "axis": "y", "radius": 0.6, "height": 0.08, "offset": {"x": 0, "y": 0.56, "z": 0}}]},
-    {"id": "exp_service_choke_lintel", "kind": "building_wall", "center": {"x": -35.9, "y": -0.65, "z": 0}, "size": {"x": 2.6, "y": 0.7, "z": 0.8}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_bunk_32.5_0_5.7", "kind": "bunk", "center": {"x": 32.5, "y": 0.35, "z": 5.7}, "size": {"x": 1.1, "y": 0.7, "z": 2.2}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_bunk_39.5_0_5.7", "kind": "bunk", "center": {"x": 39.5, "y": 0.35, "z": 5.7}, "size": {"x": 1.1, "y": 0.7, "z": 2.2}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_bunk_32.5_0_10.2", "kind": "bunk", "center": {"x": 32.5, "y": 0.35, "z": 10.2}, "size": {"x": 1.1, "y": 0.7, "z": 2.2}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_bunk_39.5_0_13", "kind": "bunk", "center": {"x": 39.5, "y": 0.35, "z": 13}, "size": {"x": 1.1, "y": 0.7, "z": 2.2}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_bunk_32.5_3.2_5.7", "kind": "bunk", "center": {"x": 32.5, "y": 3.5500000000000003, "z": 5.7}, "size": {"x": 1.1, "y": 0.7, "z": 2.2}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_bunk_39.5_3.2_5.7", "kind": "bunk", "center": {"x": 39.5, "y": 3.5500000000000003, "z": 5.7}, "size": {"x": 1.1, "y": 0.7, "z": 2.2}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_bunk_32.5_3.2_10.2", "kind": "bunk", "center": {"x": 32.5, "y": 3.5500000000000003, "z": 10.2}, "size": {"x": 1.1, "y": 0.7, "z": 2.2}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_bunk_39.5_3.2_13", "kind": "bunk", "center": {"x": 39.5, "y": 3.5500000000000003, "z": 13}, "size": {"x": 1.1, "y": 0.7, "z": 2.2}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_supply_inner_w", "kind": "supply", "center": {"x": -19, "y": 0.64, "z": 6}, "size": {"x": 2.6, "y": 1.28, "z": 1.1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_supply_inner_e", "kind": "supply", "center": {"x": 12, "y": 0.64, "z": 7}, "size": {"x": 2.6, "y": 1.28, "z": 1.1}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_sandbags_south_inner", "kind": "sandbags", "center": {"x": -8, "y": 0.65, "z": -18}, "size": {"x": 3.2, "y": 1.3, "z": 1.2}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_generator_inner", "kind": "generator", "center": {"x": -16, "y": 0.8, "z": -7}, "size": {"x": 1.6, "y": 1.6, "z": 2.4}, "navBlock": true, "blocksSight": true, "area": "expansion"},
-    {"id": "exp_spool_north_inner", "kind": "spool", "center": {"x": 18, "y": 0.6, "z": 19}, "size": {"x": 1.2, "y": 1.2, "z": 1.2}, "navBlock": true, "blocksSight": true, "area": "expansion", "shapes": [{"id": "core", "shape": "cylinder", "axis": "y", "radius": 0.4, "height": 1.04, "offset": {"x": 0, "y": 0, "z": 0}}, {"id": "bottom", "shape": "cylinder", "axis": "y", "radius": 0.6, "height": 0.08, "offset": {"x": 0, "y": -0.56, "z": 0}}, {"id": "top", "shape": "cylinder", "axis": "y", "radius": 0.6, "height": 0.08, "offset": {"x": 0, "y": 0.56, "z": 0}}]},
-    {"id": "exp_rubble_south_inner", "kind": "rubble", "center": {"x": 4, "y": 0.5, "z": -20}, "size": {"x": 3, "y": 1, "z": 2}, "navBlock": true, "blocksSight": true, "area": "expansion", "shapes": [{"id": "visible-rubble", "shape": "box", "offset": {"x": 0, "y": 0, "z": 0}, "size": {"x": 3, "y": 1, "z": 2}}]},
-    {"id": "exp_fire_west", "kind": "barrel", "center": {"x": -20, "y": 0.65, "z": -10}, "size": {"x": 0.8, "y": 1.3, "z": 0.8}, "navBlock": true, "blocksSight": true, "area": "expansion", "shapes": [{"id": "drum", "shape": "cylinder", "axis": "y", "offset": {"x": 0, "y": 0.011, "z": 0}, "radius": 0.395, "height": 1.262}]},
-    {"id": "exp_fire_east", "kind": "barrel", "center": {"x": 17, "y": 0.65, "z": -16}, "size": {"x": 0.8, "y": 1.3, "z": 0.8}, "navBlock": true, "blocksSight": true, "area": "expansion", "shapes": [{"id": "drum", "shape": "cylinder", "axis": "y", "offset": {"x": 0, "y": 0.011, "z": 0}, "radius": 0.395, "height": 1.262}]}
-  ],
+  "size": {
+    "x": 84,
+    "z": 60
+  },
+  "bounds": {
+    "minX": -42,
+    "maxX": 42,
+    "minZ": -30,
+    "maxZ": 30
+  },
   "spawnGates": [
-    {"id": "N1", "pos": {"x": -16, "y": 0, "z": 28}, "yaw": 3.141593},
-    {"id": "N2", "pos": {"x": 16, "y": 0, "z": 28}, "yaw": 3.141593},
-    {"id": "E1", "pos": {"x": 40, "y": 0, "z": 0}, "yaw": -1.570796},
-    {"id": "S1", "pos": {"x": -10, "y": 0, "z": -28}, "yaw": 0},
-    {"id": "S2", "pos": {"x": 10, "y": 0, "z": -28}, "yaw": 0},
-    {"id": "W1", "pos": {"x": -40, "y": 0, "z": 0}, "yaw": 1.570796},
-    {"id": "E2", "pos": {"x": 40, "y": 0, "z": -10}, "yaw": -1.5707963267948966},
-    {"id": "W2", "pos": {"x": -40, "y": 0, "z": 18}, "yaw": 1.5707963267948966},
-    {"id": "S3", "pos": {"x": 36, "y": 0, "z": -28}, "yaw": 0, "width": 7, "height": 4.8, "tags": ["boss"], "boss": true}
+    {
+      "id": "N1",
+      "pos": {
+        "x": -16,
+        "y": 0,
+        "z": 28
+      },
+      "yaw": 3.141593
+    },
+    {
+      "id": "N2",
+      "pos": {
+        "x": 16,
+        "y": 0,
+        "z": 28
+      },
+      "yaw": 3.141593
+    },
+    {
+      "id": "E1",
+      "pos": {
+        "x": 40,
+        "y": 0,
+        "z": 0
+      },
+      "yaw": -1.570796
+    },
+    {
+      "id": "S1",
+      "pos": {
+        "x": -10,
+        "y": 0,
+        "z": -28
+      },
+      "yaw": 0
+    },
+    {
+      "id": "S2",
+      "pos": {
+        "x": 10,
+        "y": 0,
+        "z": -28
+      },
+      "yaw": 0
+    },
+    {
+      "id": "W1",
+      "pos": {
+        "x": -40,
+        "y": 0,
+        "z": 0
+      },
+      "yaw": 1.570796
+    },
+    {
+      "id": "E2",
+      "pos": {
+        "x": 40,
+        "y": 0,
+        "z": -10
+      },
+      "yaw": -1.5707963267948966
+    },
+    {
+      "id": "W2",
+      "pos": {
+        "x": -40,
+        "y": 0,
+        "z": 18
+      },
+      "yaw": 1.5707963267948966
+    },
+    {
+      "id": "S3",
+      "pos": {
+        "x": 36,
+        "y": 0,
+        "z": -28
+      },
+      "yaw": 0,
+      "width": 7,
+      "height": 4.8,
+      "tags": [
+        "boss"
+      ],
+      "boss": true
+    }
   ],
   "doors": [
-    {"id": "tunnel_w", "pos": {"x": -28.5, "y": 1.35, "z": 0}, "size": {"x": 0.4, "y": 2.7, "z": 7.2}, "default": "unlocked"},
-    {"id": "tunnel_e", "pos": {"x": -19.5, "y": 1.35, "z": 0}, "size": {"x": 0.4, "y": 2.7, "z": 7.2}, "default": "unlocked"},
-    {"id": "building_ground", "pos": {"x": 0, "y": 1.35, "z": 17}, "size": {"x": 3, "y": 2.7, "z": 0.4}, "default": "unlocked"},
-    {"id": "building_balcony", "pos": {"x": 0, "y": 4.15, "z": 17}, "size": {"x": 3, "y": 2, "z": 0.3}, "default": "locked"}
+    {
+      "id": "tunnel_w",
+      "pos": {
+        "x": -28.5,
+        "y": 1.35,
+        "z": 0
+      },
+      "size": {
+        "x": 0.4,
+        "y": 2.7,
+        "z": 7.2
+      },
+      "default": "unlocked"
+    },
+    {
+      "id": "tunnel_e",
+      "pos": {
+        "x": -19.5,
+        "y": 1.35,
+        "z": 0
+      },
+      "size": {
+        "x": 0.4,
+        "y": 2.7,
+        "z": 7.2
+      },
+      "default": "unlocked"
+    },
+    {
+      "id": "building_ground",
+      "pos": {
+        "x": 0,
+        "y": 1.35,
+        "z": 17
+      },
+      "size": {
+        "x": 3,
+        "y": 2.7,
+        "z": 0.4
+      },
+      "default": "unlocked"
+    },
+    {
+      "id": "building_balcony",
+      "pos": {
+        "x": 0,
+        "y": 4.15,
+        "z": 17
+      },
+      "size": {
+        "x": 3,
+        "y": 2,
+        "z": 0.3
+      },
+      "default": "locked"
+    }
   ],
   "lightZones": [
-    {"id": "courtyard", "name": "Courtyard Floods", "pos": {"x": 0, "y": 6, "z": 0}, "size": {"x": 26, "y": 10, "z": 26}, "default": "on"},
-    {"id": "building", "name": "Building Interior", "pos": {"x": 0, "y": 3, "z": 22}, "size": {"x": 28, "y": 6, "z": 10}, "default": "on"},
-    {"id": "dock", "name": "Dock Lamps", "pos": {"x": 23, "y": 5, "z": -4}, "size": {"x": 12, "y": 8, "z": 20}, "default": "on"}
+    {
+      "id": "courtyard",
+      "name": "Courtyard Floods",
+      "pos": {
+        "x": 0,
+        "y": 6,
+        "z": 0
+      },
+      "size": {
+        "x": 26,
+        "y": 10,
+        "z": 26
+      },
+      "default": "on"
+    },
+    {
+      "id": "building",
+      "name": "Building Interior",
+      "pos": {
+        "x": 0,
+        "y": 3,
+        "z": 22
+      },
+      "size": {
+        "x": 28,
+        "y": 6,
+        "z": 10
+      },
+      "default": "on"
+    },
+    {
+      "id": "dock",
+      "name": "Dock Lamps",
+      "pos": {
+        "x": 23,
+        "y": 5,
+        "z": -4
+      },
+      "size": {
+        "x": 12,
+        "y": 8,
+        "z": 20
+      },
+      "default": "on"
+    }
   ],
   "hazardSlots": [
-    {"id": "courtyard_center", "pos": {"x": 3, "y": 0.05, "z": 2}, "size": {"x": 5, "y": 0.1, "z": 5}, "types": ["electric", "steam"]},
-    {"id": "dock_ramp", "pos": {"x": 18, "y": 0.65, "z": -5}, "size": {"x": 3, "y": 0.1, "z": 6}, "types": ["electric", "steam"]}
+    {
+      "id": "courtyard_center",
+      "pos": {
+        "x": 3,
+        "y": 0.05,
+        "z": 2
+      },
+      "size": {
+        "x": 5,
+        "y": 0.1,
+        "z": 5
+      },
+      "types": [
+        "electric",
+        "steam"
+      ]
+    },
+    {
+      "id": "dock_ramp",
+      "pos": {
+        "x": 18,
+        "y": 0.65,
+        "z": -5
+      },
+      "size": {
+        "x": 3,
+        "y": 0.1,
+        "z": 6
+      },
+      "types": [
+        "electric",
+        "steam"
+      ]
+    }
   ],
-  "flankWall": {"id": "south_flank", "pos": {"x": 0, "y": 1.5, "z": -29.5}, "size": {"x": 4, "y": 3, "z": 1}, "broken": false},
-  "trader": {"id": "trader_crate", "kind": "trader", "pos": {"x": -7, "y": 0.65, "z": 23}, "center": {"x": -7, "y": 0.65, "z": 23}, "size": {"x": 2, "y": 1.3, "z": 1.2}, "shapes": [{"id": "crate", "shape": "box", "offset": {"x": 0, "y": 0.0025, "z": 0}, "size": {"x": 2, "y": 1.285, "z": 1.2}}], "navBlock": true, "blocksSight": true},
-  "playerStart": {"pos": {"x": 0, "y": 0, "z": 9}, "yaw": 0, "pitch": 0},
+  "flankWall": {
+    "id": "south_flank",
+    "pos": {
+      "x": 0,
+      "y": 1.5,
+      "z": -29.5
+    },
+    "size": {
+      "x": 4,
+      "y": 3,
+      "z": 1
+    },
+    "broken": false
+  },
+  "trader": {
+    "id": "trader_crate",
+    "kind": "trader",
+    "pos": {
+      "x": -7,
+      "y": 0.65,
+      "z": 23
+    },
+    "navBlock": true,
+    "blocksSight": true
+  },
+  "playerStart": {
+    "pos": {
+      "x": 0,
+      "y": 0,
+      "z": 9
+    },
+    "yaw": 0,
+    "pitch": 0
+  },
   "walkable": {
     "maxStep": 0.5,
     "agentHeight": 2,
     "gravity": 18,
-    "heightRules": {"stairTreadOffset": 0.25},
+    "heightRules": {
+      "stairTreadOffset": 0.25
+    },
     "surfaces": [
-      {"collider": "ground", "level": "ground", "height": "top"},
-      {"collider": "building_ground_floor", "level": "ground", "height": "top"},
-      {"collider": "building_second_floor", "level": "upper", "height": "top"},
-      {"collider": "building_balcony", "level": "upper", "height": "top"},
-      {"collider": "stair_1", "level": "stairs", "height": "stairTread"},
-      {"collider": "stair_2", "level": "stairs", "height": "stairTread"},
-      {"collider": "stair_3", "level": "stairs", "height": "stairTread"},
-      {"collider": "stair_4", "level": "stairs", "height": "stairTread"},
-      {"collider": "stair_5", "level": "stairs", "height": "stairTread"},
-      {"collider": "stair_6", "level": "stairs", "height": "stairTread"},
-      {"collider": "dock_floor", "level": "dock", "height": "top"},
-      {"collider": "dock_ramp", "level": "dockRamp", "height": "ramp", "axis": "x", "from": 17, "to": 18.5, "low": 0, "high": 0.7},
-      {"collider": "exp_west_yard", "level": "ground", "height": "top"},
-      {"collider": "exp_east_yard", "level": "ground", "height": "top"},
-      {"collider": "exp_service_floor", "level": "service", "height": "top"},
-      {"collider": "exp_service_south_1", "level": "service_south", "height": "stairTread"},
-      {"collider": "exp_service_south_2", "level": "service_south", "height": "stairTread"},
-      {"collider": "exp_service_south_3", "level": "service_south", "height": "stairTread"},
-      {"collider": "exp_service_south_4", "level": "service_south", "height": "stairTread"},
-      {"collider": "exp_service_south_5", "level": "service_south", "height": "stairTread"},
-      {"collider": "exp_service_south_6", "level": "service_south", "height": "stairTread"},
-      {"collider": "exp_service_south_7", "level": "service_south", "height": "stairTread"},
-      {"collider": "exp_service_north_1", "level": "service_north", "height": "stairTread"},
-      {"collider": "exp_service_north_2", "level": "service_north", "height": "stairTread"},
-      {"collider": "exp_service_north_3", "level": "service_north", "height": "stairTread"},
-      {"collider": "exp_service_north_4", "level": "service_north", "height": "stairTread"},
-      {"collider": "exp_service_north_5", "level": "service_north", "height": "stairTread"},
-      {"collider": "exp_service_north_6", "level": "service_north", "height": "stairTread"},
-      {"collider": "exp_service_north_7", "level": "service_north", "height": "stairTread"},
-      {"collider": "exp_barracks_upper", "level": "barracks_upper", "height": "top"},
-      {"collider": "exp_barracks_roof", "level": "barracks_roof", "height": "top"},
-      {"collider": "exp_barracks_lower_1", "level": "barracks_lower", "height": "stairTread"},
-      {"collider": "exp_barracks_lower_2", "level": "barracks_lower", "height": "stairTread"},
-      {"collider": "exp_barracks_lower_3", "level": "barracks_lower", "height": "stairTread"},
-      {"collider": "exp_barracks_lower_4", "level": "barracks_lower", "height": "stairTread"},
-      {"collider": "exp_barracks_lower_5", "level": "barracks_lower", "height": "stairTread"},
-      {"collider": "exp_barracks_lower_6", "level": "barracks_lower", "height": "stairTread"},
-      {"collider": "exp_barracks_roof_1", "level": "barracks_roof", "height": "stairTread"},
-      {"collider": "exp_barracks_roof_2", "level": "barracks_roof", "height": "stairTread"},
-      {"collider": "exp_barracks_roof_3", "level": "barracks_roof", "height": "stairTread"},
-      {"collider": "exp_barracks_roof_4", "level": "barracks_roof", "height": "stairTread"},
-      {"collider": "exp_barracks_roof_5", "level": "barracks_roof", "height": "stairTread"},
-      {"collider": "exp_barracks_roof_6", "level": "barracks_roof", "height": "stairTread"}
+      {
+        "collider": "ground",
+        "level": "ground",
+        "height": "top"
+      },
+      {
+        "collider": "building_ground_floor",
+        "level": "ground",
+        "height": "top"
+      },
+      {
+        "collider": "building_second_floor",
+        "level": "upper",
+        "height": "top"
+      },
+      {
+        "collider": "building_balcony",
+        "level": "upper",
+        "height": "top"
+      },
+      {
+        "collider": "stair_1",
+        "level": "stairs",
+        "height": "stairTread"
+      },
+      {
+        "collider": "stair_2",
+        "level": "stairs",
+        "height": "stairTread"
+      },
+      {
+        "collider": "stair_3",
+        "level": "stairs",
+        "height": "stairTread"
+      },
+      {
+        "collider": "stair_4",
+        "level": "stairs",
+        "height": "stairTread"
+      },
+      {
+        "collider": "stair_5",
+        "level": "stairs",
+        "height": "stairTread"
+      },
+      {
+        "collider": "stair_6",
+        "level": "stairs",
+        "height": "stairTread"
+      },
+      {
+        "collider": "dock_floor",
+        "level": "dock",
+        "height": "top"
+      },
+      {
+        "collider": "dock_ramp",
+        "level": "dockRamp",
+        "height": "ramp",
+        "axis": "x",
+        "from": 17,
+        "to": 18.5,
+        "low": 0,
+        "high": 0.7
+      },
+      {
+        "collider": "exp_west_yard",
+        "level": "ground",
+        "height": "top"
+      },
+      {
+        "collider": "exp_east_yard",
+        "level": "ground",
+        "height": "top"
+      },
+      {
+        "collider": "exp_service_floor",
+        "level": "service",
+        "height": "top"
+      },
+      {
+        "collider": "exp_service_south_1",
+        "level": "service_south",
+        "height": "stairTread"
+      },
+      {
+        "collider": "exp_service_south_2",
+        "level": "service_south",
+        "height": "stairTread"
+      },
+      {
+        "collider": "exp_service_south_3",
+        "level": "service_south",
+        "height": "stairTread"
+      },
+      {
+        "collider": "exp_service_south_4",
+        "level": "service_south",
+        "height": "stairTread"
+      },
+      {
+        "collider": "exp_service_south_5",
+        "level": "service_south",
+        "height": "stairTread"
+      },
+      {
+        "collider": "exp_service_south_6",
+        "level": "service_south",
+        "height": "stairTread"
+      },
+      {
+        "collider": "exp_service_south_7",
+        "level": "service_south",
+        "height": "stairTread"
+      },
+      {
+        "collider": "exp_service_north_1",
+        "level": "service_north",
+        "height": "stairTread"
+      },
+      {
+        "collider": "exp_service_north_2",
+        "level": "service_north",
+        "height": "stairTread"
+      },
+      {
+        "collider": "exp_service_north_3",
+        "level": "service_north",
+        "height": "stairTread"
+      },
+      {
+        "collider": "exp_service_north_4",
+        "level": "service_north",
+        "height": "stairTread"
+      },
+      {
+        "collider": "exp_service_north_5",
+        "level": "service_north",
+        "height": "stairTread"
+      },
+      {
+        "collider": "exp_service_north_6",
+        "level": "service_north",
+        "height": "stairTread"
+      },
+      {
+        "collider": "exp_service_north_7",
+        "level": "service_north",
+        "height": "stairTread"
+      },
+      {
+        "collider": "exp_barracks_upper",
+        "level": "barracks_upper",
+        "height": "top"
+      },
+      {
+        "collider": "exp_barracks_roof",
+        "level": "barracks_roof",
+        "height": "top"
+      },
+      {
+        "collider": "exp_barracks_lower_1",
+        "level": "barracks_lower",
+        "height": "stairTread"
+      },
+      {
+        "collider": "exp_barracks_lower_2",
+        "level": "barracks_lower",
+        "height": "stairTread"
+      },
+      {
+        "collider": "exp_barracks_lower_3",
+        "level": "barracks_lower",
+        "height": "stairTread"
+      },
+      {
+        "collider": "exp_barracks_lower_4",
+        "level": "barracks_lower",
+        "height": "stairTread"
+      },
+      {
+        "collider": "exp_barracks_lower_5",
+        "level": "barracks_lower",
+        "height": "stairTread"
+      },
+      {
+        "collider": "exp_barracks_lower_6",
+        "level": "barracks_lower",
+        "height": "stairTread"
+      },
+      {
+        "collider": "exp_barracks_roof_1",
+        "level": "barracks_roof",
+        "height": "stairTread"
+      },
+      {
+        "collider": "exp_barracks_roof_2",
+        "level": "barracks_roof",
+        "height": "stairTread"
+      },
+      {
+        "collider": "exp_barracks_roof_3",
+        "level": "barracks_roof",
+        "height": "stairTread"
+      },
+      {
+        "collider": "exp_barracks_roof_4",
+        "level": "barracks_roof",
+        "height": "stairTread"
+      },
+      {
+        "collider": "exp_barracks_roof_5",
+        "level": "barracks_roof",
+        "height": "stairTread"
+      },
+      {
+        "collider": "exp_barracks_roof_6",
+        "level": "barracks_roof",
+        "height": "stairTread"
+      }
     ],
     "movementHoles": [
-      {"collider": "building_second_floor", "minX": 8.4, "maxX": 11.6, "minZ": 18.9, "maxZ": 25.1},
-      {"collider": "exp_west_yard", "minX": -38.1, "maxX": -33.9, "minZ": -22, "maxZ": -15},
-      {"collider": "exp_west_yard", "minX": -38.1, "maxX": -33.9, "minZ": 15, "maxZ": 22},
-      {"collider": "exp_barracks_upper", "minX": 37.9, "maxX": 41.1, "minZ": 15.9, "maxZ": 22.1},
-      {"collider": "exp_barracks_roof", "minX": 30.9, "maxX": 34.1, "minZ": 15.9, "maxZ": 22.1}
+      {
+        "collider": "building_second_floor",
+        "minX": 8.4,
+        "maxX": 11.6,
+        "minZ": 18.9,
+        "maxZ": 25.1
+      },
+      {
+        "collider": "exp_west_yard",
+        "minX": -38.1,
+        "maxX": -33.9,
+        "minZ": -22,
+        "maxZ": -15
+      },
+      {
+        "collider": "exp_west_yard",
+        "minX": -38.1,
+        "maxX": -33.9,
+        "minZ": 15,
+        "maxZ": 22
+      },
+      {
+        "collider": "exp_barracks_upper",
+        "minX": 37.9,
+        "maxX": 41.1,
+        "minZ": 15.9,
+        "maxZ": 22.1
+      },
+      {
+        "collider": "exp_barracks_roof",
+        "minX": 30.9,
+        "maxX": 34.1,
+        "minZ": 15.9,
+        "maxZ": 22.1
+      }
     ]
   },
-  "navGrid": {"cellSize": 1, "width": 84, "height": 60, "origin": {"x": -42, "z": -30}, "agentRadius": 0.4},
+  "navGrid": {
+    "cellSize": 1,
+    "width": 84,
+    "height": 60,
+    "origin": {
+      "x": -42,
+      "z": -30
+    },
+    "agentRadius": 0.4
+  },
   "environment": {
     "expansion": "west-service-east-barracks",
     "footprintArea": 5040,
     "previousFootprintArea": 3600,
     "fixtures": [
-      {"id": "service-0", "pos": {"x": -35.8, "y": -0.72, "z": -12}, "color": "#acd3bc", "power": 16, "range": 8, "style": "tube", "zone": "courtyard"},
-      {"id": "service-1", "pos": {"x": -35.8, "y": -0.72, "z": -4}, "color": "#acd3bc", "power": 16, "range": 8, "style": "tube", "zone": "courtyard"},
-      {"id": "service-2", "pos": {"x": -35.8, "y": -0.72, "z": 5}, "color": "#ed3924", "power": 10, "range": 8, "style": "emergency", "zone": "courtyard"},
-      {"id": "service-3", "pos": {"x": -35.8, "y": -0.72, "z": 13}, "color": "#acd3bc", "power": 16, "range": 8, "style": "tube", "zone": "courtyard"},
-      {"id": "barracks-0-0", "pos": {"x": 36, "y": 2.8, "z": 7.7}, "color": "#e9c990", "power": 18, "range": 7, "style": "tube", "zone": "building"},
-      {"id": "barracks-0-3.2", "pos": {"x": 36, "y": 6, "z": 7.7}, "color": "#e9c990", "power": 18, "range": 7, "style": "tube", "zone": "building"},
-      {"id": "barracks-1-0", "pos": {"x": 36, "y": 2.8, "z": 12.5}, "color": "#e9c990", "power": 18, "range": 7, "style": "tube", "zone": "building"},
-      {"id": "barracks-1-3.2", "pos": {"x": 36, "y": 6, "z": 12.5}, "color": "#e9c990", "power": 18, "range": 7, "style": "tube", "zone": "building"},
-      {"id": "barracks-2-0", "pos": {"x": 36, "y": 2.8, "z": 20.5}, "color": "#e9c990", "power": 18, "range": 7, "style": "tube", "zone": "building"},
-      {"id": "barracks-2-3.2", "pos": {"x": 36, "y": 6, "z": 20.5}, "color": "#e9c990", "power": 18, "range": 7, "style": "tube", "zone": "building"},
-      {"id": "link-0", "pos": {"x": 16, "y": 3.8, "z": 13}, "color": "#a3c9dd", "power": 18, "range": 8, "style": "work", "zone": "courtyard"},
-      {"id": "link-1", "pos": {"x": 24, "y": 3.8, "z": 13}, "color": "#a3c9dd", "power": 18, "range": 8, "style": "work", "zone": "courtyard"},
-      {"id": "link-2", "pos": {"x": 30, "y": 3.8, "z": 13}, "color": "#a3c9dd", "power": 18, "range": 8, "style": "work", "zone": "courtyard"},
-      {"id": "depot", "pos": {"x": 36, "y": 4.2, "z": -24}, "color": "#eaa35c", "power": 28, "range": 10, "style": "work", "zone": "dock"}
+      {
+        "id": "service-0",
+        "pos": {
+          "x": -35.8,
+          "y": -0.72,
+          "z": -12
+        },
+        "color": "#acd3bc",
+        "power": 16,
+        "range": 8,
+        "style": "tube",
+        "zone": "courtyard"
+      },
+      {
+        "id": "service-1",
+        "pos": {
+          "x": -35.8,
+          "y": -0.72,
+          "z": -4
+        },
+        "color": "#acd3bc",
+        "power": 16,
+        "range": 8,
+        "style": "tube",
+        "zone": "courtyard"
+      },
+      {
+        "id": "service-2",
+        "pos": {
+          "x": -35.8,
+          "y": -0.72,
+          "z": 5
+        },
+        "color": "#ed3924",
+        "power": 10,
+        "range": 8,
+        "style": "emergency",
+        "zone": "courtyard"
+      },
+      {
+        "id": "service-3",
+        "pos": {
+          "x": -35.8,
+          "y": -0.72,
+          "z": 13
+        },
+        "color": "#acd3bc",
+        "power": 16,
+        "range": 8,
+        "style": "tube",
+        "zone": "courtyard"
+      },
+      {
+        "id": "barracks-0-0",
+        "pos": {
+          "x": 36,
+          "y": 2.8,
+          "z": 7.7
+        },
+        "color": "#e9c990",
+        "power": 18,
+        "range": 7,
+        "style": "tube",
+        "zone": "building"
+      },
+      {
+        "id": "barracks-0-3.2",
+        "pos": {
+          "x": 36,
+          "y": 6,
+          "z": 7.7
+        },
+        "color": "#e9c990",
+        "power": 18,
+        "range": 7,
+        "style": "tube",
+        "zone": "building"
+      },
+      {
+        "id": "barracks-1-0",
+        "pos": {
+          "x": 36,
+          "y": 2.8,
+          "z": 12.5
+        },
+        "color": "#e9c990",
+        "power": 18,
+        "range": 7,
+        "style": "tube",
+        "zone": "building"
+      },
+      {
+        "id": "barracks-1-3.2",
+        "pos": {
+          "x": 36,
+          "y": 6,
+          "z": 12.5
+        },
+        "color": "#e9c990",
+        "power": 18,
+        "range": 7,
+        "style": "tube",
+        "zone": "building"
+      },
+      {
+        "id": "barracks-2-0",
+        "pos": {
+          "x": 36,
+          "y": 2.8,
+          "z": 20.5
+        },
+        "color": "#e9c990",
+        "power": 18,
+        "range": 7,
+        "style": "tube",
+        "zone": "building"
+      },
+      {
+        "id": "barracks-2-3.2",
+        "pos": {
+          "x": 36,
+          "y": 6,
+          "z": 20.5
+        },
+        "color": "#e9c990",
+        "power": 18,
+        "range": 7,
+        "style": "tube",
+        "zone": "building"
+      },
+      {
+        "id": "link-0",
+        "pos": {
+          "x": 16,
+          "y": 3.8,
+          "z": 13
+        },
+        "color": "#a3c9dd",
+        "power": 18,
+        "range": 8,
+        "style": "work",
+        "zone": "courtyard"
+      },
+      {
+        "id": "link-1",
+        "pos": {
+          "x": 24,
+          "y": 3.8,
+          "z": 13
+        },
+        "color": "#a3c9dd",
+        "power": 18,
+        "range": 8,
+        "style": "work",
+        "zone": "courtyard"
+      },
+      {
+        "id": "link-2",
+        "pos": {
+          "x": 30,
+          "y": 3.8,
+          "z": 13
+        },
+        "color": "#a3c9dd",
+        "power": 18,
+        "range": 8,
+        "style": "work",
+        "zone": "courtyard"
+      },
+      {
+        "id": "depot",
+        "pos": {
+          "x": 36,
+          "y": 4.2,
+          "z": -24
+        },
+        "color": "#eaa35c",
+        "power": 28,
+        "range": 10,
+        "style": "work",
+        "zone": "dock"
+      }
     ],
     "fog": [
-      {"pos": {"x": -35, "y": -3.2, "z": -9}, "size": {"x": 7, "y": 0.7, "z": 11}},
-      {"pos": {"x": -35, "y": -3.2, "z": 8}, "size": {"x": 7, "y": 0.7, "z": 12}},
-      {"pos": {"x": -36, "y": 0.2, "z": 11}, "size": {"x": 9, "y": 0.6, "z": 5}},
-      {"pos": {"x": 0, "y": 0.13, "z": -15}, "size": {"x": 16, "y": 0.4, "z": 7}}
+      {
+        "pos": {
+          "x": -35,
+          "y": -3.2,
+          "z": -9
+        },
+        "size": {
+          "x": 7,
+          "y": 0.7,
+          "z": 11
+        }
+      },
+      {
+        "pos": {
+          "x": -35,
+          "y": -3.2,
+          "z": 8
+        },
+        "size": {
+          "x": 7,
+          "y": 0.7,
+          "z": 12
+        }
+      },
+      {
+        "pos": {
+          "x": -36,
+          "y": 0.2,
+          "z": 11
+        },
+        "size": {
+          "x": 9,
+          "y": 0.6,
+          "z": 5
+        }
+      },
+      {
+        "pos": {
+          "x": 0,
+          "y": 0.13,
+          "z": -15
+        },
+        "size": {
+          "x": 16,
+          "y": 0.4,
+          "z": 7
+        }
+      }
     ],
     "vents": [
-      {"x": -31.4, "y": -2.4, "z": 5},
-      {"x": -38.7, "y": -2.5, "z": -9},
-      {"x": 40.6, "y": 0.2, "z": -18}
+      {
+        "x": -31.4,
+        "y": -2.4,
+        "z": 5
+      },
+      {
+        "x": -38.7,
+        "y": -2.5,
+        "z": -9
+      },
+      {
+        "x": 40.6,
+        "y": 0.2,
+        "z": -18
+      }
     ],
     "sparks": [
-      {"x": -32, "y": -0.8, "z": 4},
-      {"x": 30, "y": 3.7, "z": 13}
+      {
+        "x": -32,
+        "y": -0.8,
+        "z": 4
+      },
+      {
+        "x": 30,
+        "y": 3.7,
+        "z": 13
+      }
     ],
     "areas": [
-      {"id": "service", "name": "Service Loop", "pos": {"x": -35, "y": -3.5, "z": 0}},
-      {"id": "barracks", "name": "Barracks Block C", "pos": {"x": 36, "y": 0, "z": 14}},
-      {"id": "colonnade", "name": "Covered Yard Link", "pos": {"x": 22, "y": 0, "z": 13}}
+      {
+        "id": "service",
+        "name": "Service Loop",
+        "pos": {
+          "x": -35,
+          "y": -3.5,
+          "z": 0
+        }
+      },
+      {
+        "id": "barracks",
+        "name": "Barracks Block C",
+        "pos": {
+          "x": 36,
+          "y": 0,
+          "z": 14
+        }
+      },
+      {
+        "id": "colonnade",
+        "name": "Covered Yard Link",
+        "pos": {
+          "x": 22,
+          "y": 0,
+          "z": 13
+        }
+      }
     ]
   }
 }

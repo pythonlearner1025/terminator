@@ -3,8 +3,8 @@
 ## Folder layout
 
 ```text
-assets/       Saved Kite3D scenes, placed unit models, and shared textures
-generators/   Deterministic source geometry used only by authoring build tools
+assets/       Saved scenes, textures, reusable map pieces, and placed unit models
+generators/   Deterministic geometry and texture inputs used only by authoring tools
 lib/core/     Headless simulation, data, default brains, waves, and HUD projection
 lib/view/     Kite3D and threepipe adapters
 lib/ui/       HTML and CSS HUD
@@ -29,12 +29,14 @@ root DOM nodes.
 World, the wave director, the views, input, and HUD. `start()` first calls `stop()`. `stop()` removes
 all runtime resources and restores the saved camera.
 
-The saved scene is only changed by `npm run scene`, which runs `tools/build-scene.mjs`.
+`tools/build-scene.mjs` creates missing map placements and preserves existing placement transforms.
+The editor can then save human transform, visibility, name, replacement, and deletion changes.
 
 ## Placed unit assets
 
-`npm run build:assets` generates textures, then runs `tools/build-unit-assets.mjs`. The builder uses
-the deterministic source geometry with Three.js materials. It exports each unit through
+`npm run build:assets` builds map textures and assets, then builds unit textures and assets.
+It runs `tools/build-scene.mjs` last. The unit builder uses deterministic source geometry with
+Three.js materials. It exports each unit through
 `GLTFExporter`, reads the result through glTF Transform, and writes text glTF plus an external buffer.
 
 Each unit lives under `assets/models/units/<type>/` as `<type>.gltf` and `<type>.bin`. Enemy files
@@ -96,7 +98,8 @@ pellet directions and impact points. These optional records do not consume rando
 `RangeClock` changes how many 60 Hz steps the manager admits. It never changes `World.step` duration.
 `lib/ui/range.js` mounts only for `range=1`. `lib/view/range.js` owns visual plates and debug overlays.
 The inspector uses the existing weapon rig, material projection, and animation state.
-Range runtime resources refer to the saved Weapons Range generator and stay outside `modelRoot`.
+Range targets and props are runtime-only because range mode is not part of Bunker 7.
+`lib/view/range-props.js` creates them outside `modelRoot` and removes them on Stop.
 
 All ranged enemy attacks are fixed-tick entries in `world.projectiles`. Rounds and bolts fly straight.
 Tank shells use gravity and splash damage. Swept map and player-capsule tests prevent tunneling.
@@ -123,7 +126,7 @@ require one zero-cost HK-Tank at the 8-meter boss gate. The final wave carries t
 
 ## Vertical surfaces and navigation
 
-`map.json.walkable` describes which existing collider boxes provide footing. A `top` surface uses the
+`map.json.walkable` describes which placed collider assets provide footing. A `top` surface uses the
 collider's upper face. A `stairTread` uses the collider center plus `heightRules.stairTreadOffset`, so
 the six riser boxes produce 0.5 m tread increments without changing their geometry. A `ramp` surface
 linearly interpolates its height along the declared axis. `movementHoles` identify the stairwell where
@@ -150,8 +153,12 @@ HK-Aerial bypasses `NavGrid`. It flies directly between 3.5 and 6 meters. Each c
 its clearance sphere against active colliders, floors, walls, and indoor ceilings.
 
 Bunker 7 extension records use `exp_` collider ids and `area: "expansion"`.
-`map.environment` stores visual fixture, fog, vent, spark, and area-marker positions.
-These records do not change simulation rules. `MapView` reads them and owns the pooled atmosphere.
+`assets/main.scene.gltf` owns all visual map placement transforms.
+`map-piece-registry.json` owns local collider shapes for each reusable asset.
+`map.json` owns surfaces, gates, doors, switches, hazards, starts, fog, vents, and sparks.
+`lib/core/map.js` applies scene transforms to registry shapes before creating `World` and `NavGrid`.
+The same ordered placements always create the same collider array.
+`MapView` reads the derived map and owns pooled atmosphere.
 The expanded slabs use compound box shapes around stair holes. The same shape data serves shots, grenades, and movement.
 The tunnel sits at y = -3.5. Block C uses ground, y = 3.2, and y = 6.4 walkable layers.
 All new unit routes have Scout and Heavy traversal tests, including body clearance at turns.
@@ -159,9 +166,11 @@ Axis-aligned box queries reject footprint misses before allocating primitives. E
 Nav rebuilds filter collider candidates by cell bounds before testing exact shapes, preserving collider order and the footprint tolerance.
 An exhaustive comparison checks every layer against the original full collider scan, including closed doors and rotated compound fixtures.
 Each rebuild clears the neighbor cache. Path searches cache immutable lists on first use and preserve the original neighbor order.
+Edit mode shows every nested asset root separately.
+Play hides those roots and merges static descendants by material into runtime batches.
+Doors, gates, hazards, fixtures, flank blocks, and the trader remain separate runtime clones.
+Stop removes all batches and clones, then restores every placed root.
 Static material batches retain albedo, normal, roughness, metalness, and AO maps.
-Per-vertex factors preserve each painted surface's original tint, roughness, and metalness within a shared PBR draw.
-Gate hardware uses instances. Skyline particles share fixed buffers. Runtime cleanup owns their source buffers too.
 `kite3d.viewer.camera` sets the stopped viewer camera. Scene generation uses the same position and target for the named overview camera.
 
 ## Input schema
@@ -319,8 +328,8 @@ No map, unit, or weapon number belongs in the view or HUD.
 
 ## Later workstream ownership
 
-- W3 map visuals owns `generators/map.*` and `lib/view/map*`.
-- W4 enemies owns `generators/unit*` and `lib/view/units*`.
+- Map visuals own `assets/models/map/`, `lib/view/map*`, and `tools/build-map-assets.mjs`.
+- W4 enemies owns `assets/models/units/`, `generators/unit*`, `lib/view/units*`, and `tools/build-unit-assets.mjs`.
 - W5 sandbox owns `lib/core/sandbox/`.
 - W6 and W7 director and simulator own `lib/core/waves*` and `lib/core/sim/`.
 - W8 server owns `server/` and `packages/`.

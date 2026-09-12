@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
-import map from '../../lib/core/data/map.json' with {type: 'json'}
+import {defaultMap as map} from '../../lib/core/map.js'
 import {World} from '../../lib/core/world.js'
 
 const balconyFloor = colliderTop('building_balcony')

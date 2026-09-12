@@ -1,0 +1,164 @@
+{
+  "asset": {
+    "generator": "Terminator tools/build-map-assets.mjs with glTF-Transform 4.5.0 and three.js",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "name": "Floor slab concrete POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 36,
+      "max": [
+        5,
+        0.15000000596046448,
+        2.4000000953674316
+      ],
+      "min": [
+        -5,
+        -0.15000000596046448,
+        -2.4000000953674316
+      ],
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Floor slab concrete NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 36,
+      "bufferView": 0,
+      "byteOffset": 12
+    },
+    {
+      "name": "Floor slab concrete TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 36,
+      "bufferView": 0,
+      "byteOffset": 24
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 1152,
+      "byteStride": 32,
+      "target": 34962
+    }
+  ],
+  "samplers": [
+    {
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "source": 0,
+      "sampler": 0
+    },
+    {
+      "source": 1,
+      "sampler": 0
+    },
+    {
+      "source": 2,
+      "sampler": 0
+    }
+  ],
+  "images": [
+    {
+      "name": "concrete_wall_007_diff_1k.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/concrete_wall_007_diff_1k.jpg"
+    },
+    {
+      "name": "concrete_wall_007_nor_gl_1k.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/concrete_wall_007_nor_gl_1k.jpg"
+    },
+    {
+      "name": "concrete_wall_007_arm_1k.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/concrete_wall_007_arm_1k.jpg"
+    }
+  ],
+  "buffers": [
+    {
+      "name": "Map piece geometry",
+      "uri": "floor-10x0p3x4p8.bin",
+      "byteLength": 1152
+    }
+  ],
+  "materials": [
+    {
+      "name": "Map concrete",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.56,
+          0.59,
+          0.59,
+          1
+        ],
+        "roughnessFactor": 0.9,
+        "metallicFactor": 0,
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Floor slab concrete",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "mode": 4,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Floor slab asset",
+      "extras": {
+        "mapPieceAsset": true
+      },
+      "children": [
+        1
+      ]
+    },
+    {
+      "name": "Floor slab concrete",
+      "extras": {
+        "material": "concrete"
+      },
+      "mesh": 0
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Floor 10x0p3x4p8",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

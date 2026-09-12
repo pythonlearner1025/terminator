@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict'
 import {readdir} from 'node:fs/promises'
 import test from 'node:test'
-import map from '../../lib/core/data/map.json' with {type:'json'}
+import {defaultMap as map} from '../../lib/core/map.js'
 import {agentHeaders, createLobby, gameHeaders, json, startTestServer, validConfig, validScript} from './helpers.js'
 
 test('all lobby HTTP endpoints complete a match relay lifecycle', async (t) => {

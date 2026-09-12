@@ -1,0 +1,164 @@
+{
+  "asset": {
+    "generator": "Terminator tools/build-map-assets.mjs with glTF-Transform 4.5.0 and three.js",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "name": "Ramp slab steel POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 960,
+      "max": [
+        1,
+        0.30000001192092896,
+        3
+      ],
+      "min": [
+        -1,
+        -0.30000001192092896,
+        -3
+      ],
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Ramp slab steel NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 960,
+      "bufferView": 0,
+      "byteOffset": 12
+    },
+    {
+      "name": "Ramp slab steel TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 960,
+      "bufferView": 0,
+      "byteOffset": 24
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 30720,
+      "byteStride": 32,
+      "target": 34962
+    }
+  ],
+  "samplers": [
+    {
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "source": 0,
+      "sampler": 0
+    },
+    {
+      "source": 1,
+      "sampler": 0
+    },
+    {
+      "source": 2,
+      "sampler": 0
+    }
+  ],
+  "images": [
+    {
+      "name": "paint_albedo.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/paint_albedo.jpg"
+    },
+    {
+      "name": "paint_normal.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/paint_normal.jpg"
+    },
+    {
+      "name": "paint_arm.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/paint_arm.jpg"
+    }
+  ],
+  "buffers": [
+    {
+      "name": "Map piece geometry",
+      "uri": "ramp-2x0p6x6.bin",
+      "byteLength": 30720
+    }
+  ],
+  "materials": [
+    {
+      "name": "Map steel",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.44,
+          0.49,
+          0.51,
+          1
+        ],
+        "roughnessFactor": 0.68,
+        "metallicFactor": 0.82,
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Ramp slab steel",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "mode": 4,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Ramp slab asset",
+      "extras": {
+        "mapPieceAsset": true
+      },
+      "children": [
+        1
+      ]
+    },
+    {
+      "name": "Ramp slab steel",
+      "extras": {
+        "material": "steel"
+      },
+      "mesh": 0
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Ramp 2x0p6x6",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

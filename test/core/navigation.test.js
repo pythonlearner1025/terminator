@@ -1,9 +1,9 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
-import map from '../../lib/core/data/map.json' with {type: 'json'}
+import {defaultMap as map} from '../../lib/core/map.js'
 import {World} from '../../lib/core/world.js'
 
-test('A* routes around the courtyard divider in map.json', () => {
+test('A* routes around the authored courtyard divider', () => {
   const world = new World({seed: 1})
   const start = {x: -3, y: 0, z: 0}
   const end = {x: 3, y: 0, z: 0}

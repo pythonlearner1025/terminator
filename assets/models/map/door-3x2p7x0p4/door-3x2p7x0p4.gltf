@@ -1,0 +1,988 @@
+{
+  "asset": {
+    "generator": "Terminator tools/build-map-assets.mjs with glTF-Transform 4.5.0 and three.js",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "name": "Armored door leaf POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        1.4500000476837158,
+        1.3200000524520874,
+        0.20000000298023224
+      ],
+      "min": [
+        -1.4500000476837158,
+        -1.3200000524520874,
+        -0.20000000298023224
+      ],
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Armored door leaf NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 0,
+      "byteOffset": 12
+    },
+    {
+      "name": "Armored door leaf TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 0,
+      "byteOffset": 24
+    },
+    {
+      "name": "Armored door leaf indices",
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 36,
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Door lamella indices",
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 36,
+      "bufferView": 1,
+      "byteOffset": 72
+    },
+    {
+      "name": "Door lamella indices",
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 36,
+      "bufferView": 1,
+      "byteOffset": 144
+    },
+    {
+      "name": "Door lamella indices",
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 36,
+      "bufferView": 1,
+      "byteOffset": 216
+    },
+    {
+      "name": "Door lamella indices",
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 36,
+      "bufferView": 1,
+      "byteOffset": 288
+    },
+    {
+      "name": "Door lamella indices",
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 36,
+      "bufferView": 1,
+      "byteOffset": 360
+    },
+    {
+      "name": "Door lamella indices",
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 36,
+      "bufferView": 1,
+      "byteOffset": 432
+    },
+    {
+      "name": "Door lamella indices",
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 36,
+      "bufferView": 1,
+      "byteOffset": 504
+    },
+    {
+      "name": "Door lamella indices",
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 36,
+      "bufferView": 1,
+      "byteOffset": 576
+    },
+    {
+      "name": "Door lock indicator indices",
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 36,
+      "bufferView": 1,
+      "byteOffset": 648
+    },
+    {
+      "name": "Door lamella POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        1.4600000381469727,
+        0.029999999329447746,
+        0.20000000298023224
+      ],
+      "min": [
+        -1.4600000381469727,
+        -0.029999999329447746,
+        -0.20000000298023224
+      ],
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "name": "Door lamella NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 2,
+      "byteOffset": 12
+    },
+    {
+      "name": "Door lamella TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 2,
+      "byteOffset": 24
+    },
+    {
+      "name": "Door lamella POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        1.4600000381469727,
+        0.029999999329447746,
+        0.20000000298023224
+      ],
+      "min": [
+        -1.4600000381469727,
+        -0.029999999329447746,
+        -0.20000000298023224
+      ],
+      "bufferView": 3,
+      "byteOffset": 0
+    },
+    {
+      "name": "Door lamella NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 3,
+      "byteOffset": 12
+    },
+    {
+      "name": "Door lamella TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 3,
+      "byteOffset": 24
+    },
+    {
+      "name": "Door lamella POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        1.4600000381469727,
+        0.029999999329447746,
+        0.20000000298023224
+      ],
+      "min": [
+        -1.4600000381469727,
+        -0.029999999329447746,
+        -0.20000000298023224
+      ],
+      "bufferView": 4,
+      "byteOffset": 0
+    },
+    {
+      "name": "Door lamella NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 4,
+      "byteOffset": 12
+    },
+    {
+      "name": "Door lamella TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 4,
+      "byteOffset": 24
+    },
+    {
+      "name": "Door lamella POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        1.4600000381469727,
+        0.029999999329447746,
+        0.20000000298023224
+      ],
+      "min": [
+        -1.4600000381469727,
+        -0.029999999329447746,
+        -0.20000000298023224
+      ],
+      "bufferView": 5,
+      "byteOffset": 0
+    },
+    {
+      "name": "Door lamella NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 5,
+      "byteOffset": 12
+    },
+    {
+      "name": "Door lamella TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 5,
+      "byteOffset": 24
+    },
+    {
+      "name": "Door lamella POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        1.4600000381469727,
+        0.029999999329447746,
+        0.20000000298023224
+      ],
+      "min": [
+        -1.4600000381469727,
+        -0.029999999329447746,
+        -0.20000000298023224
+      ],
+      "bufferView": 6,
+      "byteOffset": 0
+    },
+    {
+      "name": "Door lamella NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 6,
+      "byteOffset": 12
+    },
+    {
+      "name": "Door lamella TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 6,
+      "byteOffset": 24
+    },
+    {
+      "name": "Door lamella POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        1.4600000381469727,
+        0.029999999329447746,
+        0.20000000298023224
+      ],
+      "min": [
+        -1.4600000381469727,
+        -0.029999999329447746,
+        -0.20000000298023224
+      ],
+      "bufferView": 7,
+      "byteOffset": 0
+    },
+    {
+      "name": "Door lamella NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 7,
+      "byteOffset": 12
+    },
+    {
+      "name": "Door lamella TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 7,
+      "byteOffset": 24
+    },
+    {
+      "name": "Door lamella POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        1.4600000381469727,
+        0.029999999329447746,
+        0.20000000298023224
+      ],
+      "min": [
+        -1.4600000381469727,
+        -0.029999999329447746,
+        -0.20000000298023224
+      ],
+      "bufferView": 8,
+      "byteOffset": 0
+    },
+    {
+      "name": "Door lamella NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 8,
+      "byteOffset": 12
+    },
+    {
+      "name": "Door lamella TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 8,
+      "byteOffset": 24
+    },
+    {
+      "name": "Door lamella POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        1.4600000381469727,
+        0.029999999329447746,
+        0.20000000298023224
+      ],
+      "min": [
+        -1.4600000381469727,
+        -0.029999999329447746,
+        -0.20000000298023224
+      ],
+      "bufferView": 9,
+      "byteOffset": 0
+    },
+    {
+      "name": "Door lamella NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 9,
+      "byteOffset": 12
+    },
+    {
+      "name": "Door lamella TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 9,
+      "byteOffset": 24
+    },
+    {
+      "name": "Door lock indicator POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        0.06499999761581421,
+        0.06499999761581421,
+        0.20000000298023224
+      ],
+      "min": [
+        -0.06499999761581421,
+        -0.06499999761581421,
+        -0.20000000298023224
+      ],
+      "bufferView": 10,
+      "byteOffset": 0
+    },
+    {
+      "name": "Door lock indicator NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 10,
+      "byteOffset": 12
+    },
+    {
+      "name": "Door lock indicator TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 10,
+      "byteOffset": 24
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 768,
+      "byteStride": 32,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 768,
+      "byteLength": 720,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1488,
+      "byteLength": 768,
+      "byteStride": 32,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2256,
+      "byteLength": 768,
+      "byteStride": 32,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3024,
+      "byteLength": 768,
+      "byteStride": 32,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3792,
+      "byteLength": 768,
+      "byteStride": 32,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4560,
+      "byteLength": 768,
+      "byteStride": 32,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5328,
+      "byteLength": 768,
+      "byteStride": 32,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 6096,
+      "byteLength": 768,
+      "byteStride": 32,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 6864,
+      "byteLength": 768,
+      "byteStride": 32,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 7632,
+      "byteLength": 768,
+      "byteStride": 32,
+      "target": 34962
+    }
+  ],
+  "samplers": [
+    {
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "source": 0,
+      "sampler": 0
+    },
+    {
+      "source": 1,
+      "sampler": 0
+    },
+    {
+      "source": 2,
+      "sampler": 0
+    },
+    {
+      "source": 3,
+      "sampler": 0
+    },
+    {
+      "source": 4,
+      "sampler": 0
+    },
+    {
+      "source": 5,
+      "sampler": 0
+    },
+    {
+      "source": 6,
+      "sampler": 0
+    },
+    {
+      "source": 7,
+      "sampler": 0
+    },
+    {
+      "source": 8,
+      "sampler": 0
+    }
+  ],
+  "images": [
+    {
+      "name": "paint_albedo.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/paint_albedo.jpg"
+    },
+    {
+      "name": "paint_normal.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/paint_normal.jpg"
+    },
+    {
+      "name": "paint_arm.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/paint_arm.jpg"
+    },
+    {
+      "name": "rusty_metal_02_diff_1k.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/rusty_metal_02_diff_1k.jpg"
+    },
+    {
+      "name": "rusty_metal_02_nor_gl_1k.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/rusty_metal_02_nor_gl_1k.jpg"
+    },
+    {
+      "name": "rusty_metal_02_arm_1k.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/rusty_metal_02_arm_1k.jpg"
+    },
+    {
+      "name": "glass_albedo.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/glass_albedo.jpg"
+    },
+    {
+      "name": "glass_normal.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/glass_normal.jpg"
+    },
+    {
+      "name": "glass_arm.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/glass_arm.jpg"
+    }
+  ],
+  "buffers": [
+    {
+      "name": "Map piece geometry",
+      "uri": "door-3x2p7x0p4.bin",
+      "byteLength": 8400
+    }
+  ],
+  "materials": [
+    {
+      "name": "Map steel",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.44,
+          0.49,
+          0.51,
+          1
+        ],
+        "roughnessFactor": 0.68,
+        "metallicFactor": 0.82,
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    },
+    {
+      "name": "Map rust",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.48,
+          0.3,
+          0.18,
+          1
+        ],
+        "roughnessFactor": 0.92,
+        "metallicFactor": 0.42,
+        "baseColorTexture": {
+          "index": 3
+        },
+        "metallicRoughnessTexture": {
+          "index": 5
+        }
+      },
+      "normalTexture": {
+        "index": 4
+      },
+      "occlusionTexture": {
+        "index": 5
+      }
+    },
+    {
+      "name": "Map redGlow",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.45,
+          0.02,
+          0.01,
+          1
+        ],
+        "roughnessFactor": 0.65,
+        "metallicFactor": 0,
+        "baseColorTexture": {
+          "index": 6
+        },
+        "metallicRoughnessTexture": {
+          "index": 8
+        }
+      },
+      "emissiveFactor": [
+        1,
+        0.015,
+        0.005
+      ],
+      "normalTexture": {
+        "index": 7
+      },
+      "occlusionTexture": {
+        "index": 8
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Armored door leaf",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 3
+        }
+      ]
+    },
+    {
+      "name": "Door lamella",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 13,
+            "NORMAL": 14,
+            "TEXCOORD_0": 15
+          },
+          "mode": 4,
+          "material": 1,
+          "indices": 4
+        }
+      ]
+    },
+    {
+      "name": "Door lamella",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 16,
+            "NORMAL": 17,
+            "TEXCOORD_0": 18
+          },
+          "mode": 4,
+          "material": 1,
+          "indices": 5
+        }
+      ]
+    },
+    {
+      "name": "Door lamella",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 19,
+            "NORMAL": 20,
+            "TEXCOORD_0": 21
+          },
+          "mode": 4,
+          "material": 1,
+          "indices": 6
+        }
+      ]
+    },
+    {
+      "name": "Door lamella",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 22,
+            "NORMAL": 23,
+            "TEXCOORD_0": 24
+          },
+          "mode": 4,
+          "material": 1,
+          "indices": 7
+        }
+      ]
+    },
+    {
+      "name": "Door lamella",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 25,
+            "NORMAL": 26,
+            "TEXCOORD_0": 27
+          },
+          "mode": 4,
+          "material": 1,
+          "indices": 8
+        }
+      ]
+    },
+    {
+      "name": "Door lamella",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 28,
+            "NORMAL": 29,
+            "TEXCOORD_0": 30
+          },
+          "mode": 4,
+          "material": 1,
+          "indices": 9
+        }
+      ]
+    },
+    {
+      "name": "Door lamella",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 31,
+            "NORMAL": 32,
+            "TEXCOORD_0": 33
+          },
+          "mode": 4,
+          "material": 1,
+          "indices": 10
+        }
+      ]
+    },
+    {
+      "name": "Door lamella",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 34,
+            "NORMAL": 35,
+            "TEXCOORD_0": 36
+          },
+          "mode": 4,
+          "material": 1,
+          "indices": 11
+        }
+      ]
+    },
+    {
+      "name": "Door lock indicator",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 37,
+            "NORMAL": 38,
+            "TEXCOORD_0": 39
+          },
+          "mode": 4,
+          "material": 2,
+          "indices": 12
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Door asset",
+      "extras": {
+        "mapPieceAsset": true
+      },
+      "children": [
+        1
+      ]
+    },
+    {
+      "name": "Door shutter",
+      "children": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "name": "Armored door leaf",
+      "extras": {
+        "material": "steel"
+      },
+      "mesh": 0
+    },
+    {
+      "name": "Door lamella",
+      "extras": {
+        "material": "rust"
+      },
+      "translation": [
+        0,
+        -1.1,
+        0
+      ],
+      "mesh": 1
+    },
+    {
+      "name": "Door lamella",
+      "extras": {
+        "material": "rust"
+      },
+      "translation": [
+        0,
+        -0.78,
+        0
+      ],
+      "mesh": 2
+    },
+    {
+      "name": "Door lamella",
+      "extras": {
+        "material": "rust"
+      },
+      "translation": [
+        0,
+        -0.46,
+        0
+      ],
+      "mesh": 3
+    },
+    {
+      "name": "Door lamella",
+      "extras": {
+        "material": "rust"
+      },
+      "translation": [
+        0,
+        -0.14,
+        0
+      ],
+      "mesh": 4
+    },
+    {
+      "name": "Door lamella",
+      "extras": {
+        "material": "rust"
+      },
+      "translation": [
+        0,
+        0.18,
+        0
+      ],
+      "mesh": 5
+    },
+    {
+      "name": "Door lamella",
+      "extras": {
+        "material": "rust"
+      },
+      "translation": [
+        0,
+        0.5,
+        0
+      ],
+      "mesh": 6
+    },
+    {
+      "name": "Door lamella",
+      "extras": {
+        "material": "rust"
+      },
+      "translation": [
+        0,
+        0.8200000000000001,
+        0
+      ],
+      "mesh": 7
+    },
+    {
+      "name": "Door lamella",
+      "extras": {
+        "material": "rust"
+      },
+      "translation": [
+        0,
+        1.1400000000000001,
+        0
+      ],
+      "mesh": 8
+    },
+    {
+      "name": "Door lock indicator",
+      "extras": {
+        "material": "redGlow",
+        "mapDynamic": "door-signal"
+      },
+      "translation": [
+        1.02,
+        0.81,
+        0
+      ],
+      "mesh": 9
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Door 3x2p7x0p4",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

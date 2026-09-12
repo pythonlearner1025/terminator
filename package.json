@@ -20,7 +20,11 @@
     "tunnel": "node server/party-tunnel.js",
     "dev:all": "concurrently -k -n game,server \"npm run dev\" \"npm run server\"",
     "test": "find test -type f -name '*.test.js' -exec node --test {} +",
-    "build:assets": "python3 generators/unit-textures.py && python3 generators/roster-textures.py && node tools/build-unit-assets.mjs",
+    "build:map-textures": "python3 generators/map.bake.py",
+    "build:map-assets": "node tools/build-map-assets.mjs",
+    "build:unit-textures": "python3 generators/unit-textures.py && python3 generators/roster-textures.py",
+    "build:unit-assets": "node tools/build-unit-assets.mjs",
+    "build:assets": "npm run build:map-textures && npm run build:map-assets && npm run build:unit-textures && npm run build:unit-assets && npm run scene",
     "scene": "node tools/build-scene.mjs",
     "benchmark": "node tools/benchmark-world.mjs",
     "benchmark:view": "node tools/benchmark-browser.mjs",
@@ -30,7 +34,7 @@
     "proof:core": "node tools/prove-core-roster.mjs"
   },
   "devDependencies": {
-    "@gltf-transform/core": "^4.2.1",
+    "@gltf-transform/core": "^4.5.0",
     "concurrently": "^9.2.1",
     "kite3d": "0.18.0"
   },
@@ -52,9 +56,7 @@
       "@jitl/quickjs-wasmfile-release-sync/emscripten-module": "https://cdn.jsdelivr.net/npm/@jitl/quickjs-wasmfile-release-sync@0.32.0/dist/emscripten-module.browser.mjs"
     },
     "scripts": [
-      "./scripts/GameManager.script.js",
-      "./generators/map.generator.js",
-      "./generators/range.generator.js"
+      "./scripts/GameManager.script.js"
     ],
     "viewer": {
       "msaa": 2,

@@ -1,0 +1,281 @@
+{
+  "asset": {
+    "generator": "Terminator tools/build-map-assets.mjs with glTF-Transform 4.5.0 and three.js",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "name": "Trader armored crate POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        1,
+        0.6499999761581421,
+        0.6000000238418579
+      ],
+      "min": [
+        -1,
+        -0.6499999761581421,
+        -0.6000000238418579
+      ],
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Trader armored crate NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 0,
+      "byteOffset": 12
+    },
+    {
+      "name": "Trader armored crate TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 0,
+      "byteOffset": 24
+    },
+    {
+      "name": "Trader armored crate indices",
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 36,
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Trader sliding lid indices",
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 36,
+      "bufferView": 1,
+      "byteOffset": 72
+    },
+    {
+      "name": "Trader sliding lid POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        1,
+        0.10000000149011612,
+        0.6000000238418579
+      ],
+      "min": [
+        -1,
+        -0.10000000149011612,
+        -0.6000000238418579
+      ],
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "name": "Trader sliding lid NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 2,
+      "byteOffset": 12
+    },
+    {
+      "name": "Trader sliding lid TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 2,
+      "byteOffset": 24
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 768,
+      "byteStride": 32,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 768,
+      "byteLength": 144,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 912,
+      "byteLength": 768,
+      "byteStride": 32,
+      "target": 34962
+    }
+  ],
+  "samplers": [
+    {
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "source": 0,
+      "sampler": 0
+    },
+    {
+      "source": 1,
+      "sampler": 0
+    },
+    {
+      "source": 2,
+      "sampler": 0
+    }
+  ],
+  "images": [
+    {
+      "name": "paint_albedo.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/paint_albedo.jpg"
+    },
+    {
+      "name": "paint_normal.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/paint_normal.jpg"
+    },
+    {
+      "name": "paint_arm.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/paint_arm.jpg"
+    }
+  ],
+  "buffers": [
+    {
+      "name": "Map piece geometry",
+      "uri": "trader-2x1p3x1p2-3mxpxd.bin",
+      "byteLength": 1680
+    }
+  ],
+  "materials": [
+    {
+      "name": "Map olive",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.29,
+          0.39,
+          0.27,
+          1
+        ],
+        "roughnessFactor": 0.84,
+        "metallicFactor": 0.55,
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    },
+    {
+      "name": "Map steel",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.44,
+          0.49,
+          0.51,
+          1
+        ],
+        "roughnessFactor": 0.68,
+        "metallicFactor": 0.82,
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Trader armored crate",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 3
+        }
+      ]
+    },
+    {
+      "name": "Trader sliding lid",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 5,
+            "NORMAL": 6,
+            "TEXCOORD_0": 7
+          },
+          "mode": 4,
+          "material": 1,
+          "indices": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Trader crate asset",
+      "extras": {
+        "mapPieceAsset": true
+      },
+      "children": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "Trader armored crate",
+      "extras": {
+        "material": "olive"
+      },
+      "mesh": 0
+    },
+    {
+      "name": "Trader sliding lid",
+      "extras": {
+        "material": "steel"
+      },
+      "translation": [
+        0,
+        0.55,
+        0
+      ],
+      "mesh": 1
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Trader 2x1p3x1p2 3mxpxd",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

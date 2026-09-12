@@ -35,6 +35,42 @@ try {
   })
   await page.goto(dev.url, {waitUntil: 'domcontentloaded'})
   await page.getByTestId('play').waitFor({state: 'visible', timeout: 30_000})
+  await page.waitForFunction(() => {
+    let mapPieces = 0, loadedMapPieces = 0, unitAssets = 0, loadedUnitAssets = 0
+    window.viewer?.scene?.modelRoot?.traverse(object => {
+      if (object.userData.mapPiece?.nodeId) { mapPieces += 1; if (object.children.length) loadedMapPieces += 1 }
+      if (object.userData.rootPath?.startsWith('/kite3d/@unit-')) {
+        unitAssets += 1
+        if (object.children.length) loadedUnitAssets += 1
+      }
+    })
+    return mapPieces === 266 && loadedMapPieces === 266 && unitAssets === 7 && loadedUnitAssets === 7
+      && document.body.innerText.includes('Project loaded')
+  }, undefined, {timeout: 90_000})
+  await page.waitForTimeout(1_000)
+  const editMode = await page.evaluate(async seconds => {
+    const values = []
+    await new Promise(resolveSample => {
+      let last = performance.now()
+      const deadline = last + seconds * 1_000
+      const sample = now => {
+        values.push(now - last); last = now
+        if (now >= deadline) resolveSample()
+        else requestAnimationFrame(sample)
+      }
+      requestAnimationFrame(sample)
+    })
+    values.shift()
+    const sorted = values.sort((a, b) => a - b)
+    const at = quantile => sorted[Math.min(sorted.length - 1, Math.floor(sorted.length * quantile))]
+    const round = value => Number(value.toFixed(3))
+    const rect = window.viewer.canvas.getBoundingClientRect()
+    return {
+      samples: sorted.length,
+      frameMs: {p50: round(at(.5)), p95: round(at(.95)), p99: round(at(.99)), max: round(sorted.at(-1))},
+      canvas: {width: rect.width, height: rect.height},
+    }
+  }, Math.min(5, options.seconds))
   await page.getByTestId('play').click()
   await page.waitForFunction(() => Boolean(window.terminator?.manager?.world), undefined, {timeout: 45_000})
   await page.waitForFunction(() => Boolean(window.terminator?.manager?.ui?.menuScene?.root)
@@ -48,7 +84,9 @@ try {
       for (const material of list) if (material && !materials.includes(material)) materials.push(material)
     })
     const environments = materials.map(material => material.envMap).filter(Boolean)
-    return environments.length > 0 && environments.every(texture => (texture.image?.height || texture.source?.data?.height || 0) > 1)
+    // Placed glTF assets can have no edit-mode environment. Runtime unit materials
+    // receive their environment after views start and are checked below.
+    return environments.every(texture => (texture.image?.height || texture.source?.data?.height || 0) > 1)
   }, undefined, {timeout: 20_000})
   await page.evaluate(() => {
     window.viewer.scene.modelRoot.traverse(object => {
@@ -78,10 +116,14 @@ try {
     }
     await manager.mapView.ready
   }, {width: options.width, height: options.height})
-  await page.waitForFunction(({width, height}) => {
-    const rect = window.viewer?.canvas?.getBoundingClientRect()
-    return rect && Math.round(rect.width) === width && Math.round(rect.height) === height
-  }, {width: options.width, height: options.height}, {timeout: 10_000})
+  // Hundreds of nested asset roots can leave one late editor resize queued after Play starts.
+  await page.waitForTimeout(1_500)
+  await page.evaluate(({width, height}) => {
+    Object.assign(window.viewer.container.style, {width: `${width}px`, height: `${height}px`})
+    Object.assign(window.viewer.canvas.style, {width: `${width}px`, height: `${height}px`})
+    window.viewer.setSize({width, height})
+    window.viewer.resize()
+  }, {width: options.width, height: options.height})
 
   const setup = await page.evaluate(async ({motionBlur, disable, roster, enemies}) => {
     const manager = window.terminator.manager
@@ -245,6 +287,7 @@ try {
     effects: {post: !options.disable.includes('post'), motionBlur: options.motionBlur, rain: 1, smoke: 1,
       hazards: ['electric', 'steam'], combatStress: `${options.enemies} enemies, two enemy shots per frame, ten impact bursts per second, ${options.rosterDeaths?3:options.ragdolls} deterministic ${options.rosterDeaths?"new roster":options.goreStress?"gore":"M4"} death(s), ${options.roster==="wave5"?"":"limb loss, "}and explosion events`, disabled: options.disable},
     browser: metrics.browser,
+    editMode,
     setup,
     scene,
     frame: metrics.frame,

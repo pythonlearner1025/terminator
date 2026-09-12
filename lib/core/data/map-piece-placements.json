@@ -1,0 +1,5938 @@
+{
+  "version": 1,
+  "pieces": [
+    {
+      "id": "ground",
+      "name": "Floor slab 1",
+      "assetId": "map-floor-60x0p5x60",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        0,
+        -0.25,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": false,
+      "blocksSight": false,
+      "nodeId": "collider:ground"
+    },
+    {
+      "id": "wall_n_w",
+      "name": "Wall segment 1",
+      "assetId": "map-wall-12x3x1",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -24,
+        1.5,
+        29.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "nodeId": "collider:wall_n_w"
+    },
+    {
+      "id": "wall_n_mid",
+      "name": "Wall segment 2",
+      "assetId": "map-wall-28x3x1",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        0,
+        1.5,
+        29.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "nodeId": "collider:wall_n_mid"
+    },
+    {
+      "id": "wall_n_e",
+      "name": "Wall segment 3",
+      "assetId": "map-wall-12x3x1",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        24,
+        1.5,
+        29.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "nodeId": "collider:wall_n_e"
+    },
+    {
+      "id": "wall_s_w",
+      "name": "Wall segment 4",
+      "assetId": "map-wall-18x3x1",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -21,
+        1.5,
+        -29.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "nodeId": "collider:wall_s_w"
+    },
+    {
+      "id": "wall_s_mid",
+      "name": "Wall segment 5",
+      "assetId": "map-wall-16x3x1",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        0,
+        1.5,
+        -29.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "nodeId": "collider:wall_s_mid"
+    },
+    {
+      "id": "wall_s_e",
+      "name": "Wall segment 6",
+      "assetId": "map-wall-18x3x1",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        21,
+        1.5,
+        -29.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "nodeId": "collider:wall_s_e"
+    },
+    {
+      "id": "wall_e_s",
+      "name": "Wall segment 7",
+      "assetId": "map-wall-1x3x16",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        29.5,
+        1.5,
+        -22
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "nodeId": "collider:wall_e_s"
+    },
+    {
+      "id": "wall_e_n",
+      "name": "Wall segment 8",
+      "assetId": "map-wall-1x3x13",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        29.5,
+        1.5,
+        23.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "nodeId": "collider:wall_e_n"
+    },
+    {
+      "id": "wall_w_s",
+      "name": "Wall segment 9",
+      "assetId": "map-wall-1x3x6p4",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -29.5,
+        1.5,
+        -26.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "nodeId": "collider:wall_w_s"
+    },
+    {
+      "id": "wall_w_n",
+      "name": "Wall segment 10",
+      "assetId": "map-wall-1x3x6p4",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -29.5,
+        1.5,
+        26.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "nodeId": "collider:wall_w_n"
+    },
+    {
+      "id": "courtyard_divider",
+      "name": "Rubble bank 1",
+      "assetId": "map-rubble-1x1p5x12-zh655b",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        0,
+        0.75,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "nodeId": "collider:courtyard_divider"
+    },
+    {
+      "id": "rubble_nw",
+      "name": "Rubble bank 2",
+      "assetId": "map-rubble-nw",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        -7,
+        0.65,
+        5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "nodeId": "collider:rubble_nw"
+    },
+    {
+      "id": "rubble_se",
+      "name": "Rubble bank 3",
+      "assetId": "map-rubble-se",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        7,
+        0.55,
+        -5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "nodeId": "collider:rubble_se"
+    },
+    {
+      "id": "wrecked_truck",
+      "name": "Wrecked truck 1",
+      "assetId": "map-truck-5p5x2p4x2p4-m0jo9i",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        -8,
+        1.2,
+        -5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "nodeId": "collider:wrecked_truck"
+    },
+    {
+      "id": "burning_barrel_w",
+      "name": "Barrel 1",
+      "assetId": "map-barrel-0p8x1p3x0p8-103qszk",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        -4,
+        0.65,
+        3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "nodeId": "collider:burning_barrel_w"
+    },
+    {
+      "id": "burning_barrel_e",
+      "name": "Barrel 2",
+      "assetId": "map-barrel-0p8x1p3x0p8-103qszk",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        5,
+        0.65,
+        -2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "nodeId": "collider:burning_barrel_e"
+    },
+    {
+      "id": "building_back",
+      "name": "Bunker shell 1",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        0,
+        3,
+        27
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "nodeId": "collider:building_back",
+      "scale": [
+        28,
+        6,
+        0.6
+      ]
+    },
+    {
+      "id": "building_west",
+      "name": "Bunker shell 2",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -14,
+        3,
+        22
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "nodeId": "collider:building_west",
+      "scale": [
+        0.6,
+        6,
+        10
+      ]
+    },
+    {
+      "id": "building_east",
+      "name": "Bunker shell 3",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        14,
+        3,
+        22
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "nodeId": "collider:building_east",
+      "scale": [
+        0.6,
+        6,
+        10
+      ]
+    },
+    {
+      "id": "building_front_w",
+      "name": "Bunker shell 4",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -7.75,
+        3,
+        17
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "nodeId": "collider:building_front_w",
+      "scale": [
+        12.5,
+        6,
+        0.6
+      ]
+    },
+    {
+      "id": "building_front_e",
+      "name": "Bunker shell 5",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        7.75,
+        3,
+        17
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "nodeId": "collider:building_front_e",
+      "scale": [
+        12.5,
+        6,
+        0.6
+      ]
+    },
+    {
+      "id": "building_ground_floor",
+      "name": "Floor slab 2",
+      "assetId": "map-floor-28x0p1x10",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        0,
+        0.05,
+        22
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": false,
+      "blocksSight": false,
+      "nodeId": "collider:building_ground_floor"
+    },
+    {
+      "id": "building_second_floor",
+      "name": "Floor slab 3",
+      "assetId": "map-floor-28x0p2x10",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        0,
+        3.05,
+        22
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": false,
+      "blocksSight": true,
+      "nodeId": "collider:building_second_floor"
+    },
+    {
+      "id": "building_balcony",
+      "name": "Floor slab 4",
+      "assetId": "map-floor-20x0p2x2",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        0,
+        3.05,
+        15.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": false,
+      "blocksSight": true,
+      "nodeId": "collider:building_balcony"
+    },
+    {
+      "id": "stair_1",
+      "name": "Stair tread 1",
+      "assetId": "map-stair-3x0p5x1",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        10,
+        0.25,
+        24.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": false,
+      "nodeId": "collider:stair_1"
+    },
+    {
+      "id": "stair_2",
+      "name": "Stair tread 2",
+      "assetId": "map-stair-3x1x1",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        10,
+        0.75,
+        23.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": false,
+      "nodeId": "collider:stair_2"
+    },
+    {
+      "id": "stair_3",
+      "name": "Stair tread 3",
+      "assetId": "map-stair-3x1p5x1",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        10,
+        1.25,
+        22.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": false,
+      "nodeId": "collider:stair_3"
+    },
+    {
+      "id": "stair_4",
+      "name": "Stair tread 4",
+      "assetId": "map-stair-3x2x1",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        10,
+        1.75,
+        21.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": false,
+      "nodeId": "collider:stair_4"
+    },
+    {
+      "id": "stair_5",
+      "name": "Stair tread 5",
+      "assetId": "map-stair-3x2p5x1",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        10,
+        2.25,
+        20.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": false,
+      "nodeId": "collider:stair_5"
+    },
+    {
+      "id": "stair_6",
+      "name": "Stair tread 6",
+      "assetId": "map-stair-3x3x1",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        10,
+        2.75,
+        19.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": false,
+      "nodeId": "collider:stair_6"
+    },
+    {
+      "id": "dock_floor",
+      "name": "Floor slab 5",
+      "assetId": "map-floor-10x0p7x18",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        23,
+        0.35,
+        -5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": false,
+      "blocksSight": false,
+      "nodeId": "collider:dock_floor"
+    },
+    {
+      "id": "container_red",
+      "name": "Container 1",
+      "assetId": "map-container-red",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        22,
+        1.45,
+        6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "nodeId": "collider:container_red"
+    },
+    {
+      "id": "container_blue",
+      "name": "Container 2",
+      "assetId": "map-container-blue",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        26,
+        1.45,
+        -4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "nodeId": "collider:container_blue"
+    },
+    {
+      "id": "container_gray",
+      "name": "Container 3",
+      "assetId": "map-container-gray",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        20,
+        1.45,
+        -10
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "nodeId": "collider:container_gray"
+    },
+    {
+      "id": "dock_ramp",
+      "name": "Ramp slab 1",
+      "assetId": "map-ramp-2x0p6x6",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        18,
+        0.3,
+        -5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": false,
+      "blocksSight": false,
+      "nodeId": "collider:dock_ramp"
+    },
+    {
+      "id": "tunnel_north",
+      "name": "Tunnel wall 1",
+      "assetId": "map-tunnel-wall-10x3x0p6",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -24,
+        1.5,
+        4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "nodeId": "collider:tunnel_north"
+    },
+    {
+      "id": "tunnel_south",
+      "name": "Tunnel wall 2",
+      "assetId": "map-tunnel-wall-10x3x0p6",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -24,
+        1.5,
+        -4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "nodeId": "collider:tunnel_south"
+    },
+    {
+      "id": "tunnel_roof",
+      "name": "Floor slab 6",
+      "assetId": "map-floor-10x0p4x8",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        -24,
+        3,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": false,
+      "blocksSight": true,
+      "nodeId": "collider:tunnel_roof"
+    },
+    {
+      "id": "exp_west_yard",
+      "name": "Floor slab 7",
+      "assetId": "map-floor-12x0p5x60-1ehthkr",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        -36,
+        -0.25,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": false,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_west_yard"
+    },
+    {
+      "id": "exp_east_yard",
+      "name": "Floor slab 8",
+      "assetId": "map-floor-12x0p5x60",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        36,
+        -0.25,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": false,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_east_yard"
+    },
+    {
+      "id": "exp_service_floor",
+      "name": "Floor slab 9",
+      "assetId": "map-floor-7p4x0p4x31p4",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        -35,
+        -3.7,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": false,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_service_floor"
+    },
+    {
+      "id": "exp_service_south_1",
+      "name": "Stair tread 7",
+      "assetId": "map-stair-3x0p5x1",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        -36,
+        -3.25,
+        -15.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_service_south_1"
+    },
+    {
+      "id": "exp_service_south_2",
+      "name": "Stair tread 8",
+      "assetId": "map-stair-3x0p5x1",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        -36,
+        -2.75,
+        -16.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_service_south_2"
+    },
+    {
+      "id": "exp_service_south_3",
+      "name": "Stair tread 9",
+      "assetId": "map-stair-3x0p5x1",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        -36,
+        -2.25,
+        -17.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_service_south_3"
+    },
+    {
+      "id": "exp_service_south_4",
+      "name": "Stair tread 10",
+      "assetId": "map-stair-3x0p5x1",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        -36,
+        -1.75,
+        -18.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_service_south_4"
+    },
+    {
+      "id": "exp_service_south_5",
+      "name": "Stair tread 11",
+      "assetId": "map-stair-3x0p5x1",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        -36,
+        -1.25,
+        -19.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_service_south_5"
+    },
+    {
+      "id": "exp_service_south_6",
+      "name": "Stair tread 12",
+      "assetId": "map-stair-3x0p5x1",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        -36,
+        -0.75,
+        -20.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_service_south_6"
+    },
+    {
+      "id": "exp_service_south_7",
+      "name": "Stair tread 13",
+      "assetId": "map-stair-3x0p5x1",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        -36,
+        -0.25,
+        -21.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_service_south_7"
+    },
+    {
+      "id": "exp_service_north_1",
+      "name": "Stair tread 14",
+      "assetId": "map-stair-3x0p5x1",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        -36,
+        -3.25,
+        15.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_service_north_1"
+    },
+    {
+      "id": "exp_service_north_2",
+      "name": "Stair tread 15",
+      "assetId": "map-stair-3x0p5x1",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        -36,
+        -2.75,
+        16.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_service_north_2"
+    },
+    {
+      "id": "exp_service_north_3",
+      "name": "Stair tread 16",
+      "assetId": "map-stair-3x0p5x1",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        -36,
+        -2.25,
+        17.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_service_north_3"
+    },
+    {
+      "id": "exp_service_north_4",
+      "name": "Stair tread 17",
+      "assetId": "map-stair-3x0p5x1",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        -36,
+        -1.75,
+        18.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_service_north_4"
+    },
+    {
+      "id": "exp_service_north_5",
+      "name": "Stair tread 18",
+      "assetId": "map-stair-3x0p5x1",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        -36,
+        -1.25,
+        19.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_service_north_5"
+    },
+    {
+      "id": "exp_service_north_6",
+      "name": "Stair tread 19",
+      "assetId": "map-stair-3x0p5x1",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        -36,
+        -0.75,
+        20.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_service_north_6"
+    },
+    {
+      "id": "exp_service_north_7",
+      "name": "Stair tread 20",
+      "assetId": "map-stair-3x0p5x1",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        -36,
+        -0.25,
+        21.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_service_north_7"
+    },
+    {
+      "id": "exp_service_side_-39",
+      "name": "Bunker shell 6",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -39,
+        -1.875,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_service_side_-39",
+      "scale": [
+        0.6,
+        3.25,
+        32
+      ]
+    },
+    {
+      "id": "exp_service_side_-31",
+      "name": "Bunker shell 7",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -31,
+        -1.875,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_service_side_-31",
+      "scale": [
+        0.6,
+        3.25,
+        32
+      ]
+    },
+    {
+      "id": "exp_service_end_-1_w",
+      "name": "Bunker shell 8",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -38.5,
+        -1.875,
+        -16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_service_end_-1_w",
+      "scale": [
+        1,
+        3.25,
+        0.6
+      ]
+    },
+    {
+      "id": "exp_service_end_-1_e",
+      "name": "Bunker shell 9",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -32.5,
+        -1.875,
+        -16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_service_end_-1_e",
+      "scale": [
+        3,
+        3.25,
+        0.6
+      ]
+    },
+    {
+      "id": "exp_service_stair_-1_-38.4",
+      "name": "Bunker shell 10",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -38.4,
+        -1.6,
+        -18.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_service_stair_-1_-38.4",
+      "scale": [
+        0.6,
+        3.8,
+        6.4
+      ]
+    },
+    {
+      "id": "exp_service_stair_-1_-33.6",
+      "name": "Bunker shell 11",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -33.6,
+        -1.6,
+        -18.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_service_stair_-1_-33.6",
+      "scale": [
+        0.6,
+        3.8,
+        6.4
+      ]
+    },
+    {
+      "id": "exp_service_rail_-1_-38.4",
+      "name": "Bunker shell 12",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -38.4,
+        0.6,
+        -18.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_service_rail_-1_-38.4",
+      "scale": [
+        0.6,
+        1.2,
+        6.4
+      ]
+    },
+    {
+      "id": "exp_service_rail_-1_-33.6",
+      "name": "Bunker shell 13",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -33.6,
+        0.6,
+        -18.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_service_rail_-1_-33.6",
+      "scale": [
+        0.6,
+        1.2,
+        6.4
+      ]
+    },
+    {
+      "id": "exp_service_end_1_w",
+      "name": "Bunker shell 14",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -38.5,
+        -1.875,
+        16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_service_end_1_w",
+      "scale": [
+        1,
+        3.25,
+        0.6
+      ]
+    },
+    {
+      "id": "exp_service_end_1_e",
+      "name": "Bunker shell 15",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -32.5,
+        -1.875,
+        16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_service_end_1_e",
+      "scale": [
+        3,
+        3.25,
+        0.6
+      ]
+    },
+    {
+      "id": "exp_service_stair_1_-38.4",
+      "name": "Bunker shell 16",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -38.4,
+        -1.6,
+        18.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_service_stair_1_-38.4",
+      "scale": [
+        0.6,
+        3.8,
+        6.4
+      ]
+    },
+    {
+      "id": "exp_service_stair_1_-33.6",
+      "name": "Bunker shell 17",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -33.6,
+        -1.6,
+        18.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_service_stair_1_-33.6",
+      "scale": [
+        0.6,
+        3.8,
+        6.4
+      ]
+    },
+    {
+      "id": "exp_service_rail_1_-38.4",
+      "name": "Bunker shell 18",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -38.4,
+        0.6,
+        18.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_service_rail_1_-38.4",
+      "scale": [
+        0.6,
+        1.2,
+        6.4
+      ]
+    },
+    {
+      "id": "exp_service_rail_1_-33.6",
+      "name": "Bunker shell 19",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -33.6,
+        0.6,
+        18.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_service_rail_1_-33.6",
+      "scale": [
+        0.6,
+        1.2,
+        6.4
+      ]
+    },
+    {
+      "id": "exp_service_choke_w",
+      "name": "Bunker shell 20",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -38.1,
+        -1.875,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_service_choke_w",
+      "scale": [
+        1.8,
+        3.25,
+        0.8
+      ]
+    },
+    {
+      "id": "exp_service_choke_e",
+      "name": "Bunker shell 21",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -32.8,
+        -1.875,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_service_choke_e",
+      "scale": [
+        3.6,
+        3.25,
+        0.8
+      ]
+    },
+    {
+      "id": "exp_old_west_inner_s",
+      "name": "Wall segment 11",
+      "assetId": "map-wall-1x3x15",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -29.5,
+        1.5,
+        -9.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_old_west_inner_s"
+    },
+    {
+      "id": "exp_old_west_inner_n",
+      "name": "Wall segment 12",
+      "assetId": "map-wall-1x3x15",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -29.5,
+        1.5,
+        9.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_old_west_inner_n"
+    },
+    {
+      "id": "exp_old_east_inner_s",
+      "name": "Wall segment 13",
+      "assetId": "map-wall-1x3x6",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        29.5,
+        1.5,
+        -5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_old_east_inner_s"
+    },
+    {
+      "id": "exp_old_east_inner_n",
+      "name": "Wall segment 14",
+      "assetId": "map-wall-1x3x7",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        29.5,
+        1.5,
+        5.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_old_east_inner_n"
+    },
+    {
+      "id": "exp_west_corner_-28.5",
+      "name": "Wall segment 15",
+      "assetId": "map-wall-1x3x1",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -30.5,
+        1.5,
+        -28.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_west_corner_-28.5"
+    },
+    {
+      "id": "exp_west_corner_28.5",
+      "name": "Wall segment 16",
+      "assetId": "map-wall-1x3x1",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -30.5,
+        1.5,
+        28.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_west_corner_28.5"
+    },
+    {
+      "id": "exp_perimeter_-41.7_-22",
+      "name": "Wall segment 17",
+      "assetId": "map-wall-0p6x3p6x16",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -41.7,
+        1.8,
+        -22
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_perimeter_-41.7_-22"
+    },
+    {
+      "id": "exp_perimeter_-41.7_-5",
+      "name": "Wall segment 18",
+      "assetId": "map-wall-0p6x3p6x6",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -41.7,
+        1.8,
+        -5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_perimeter_-41.7_-5"
+    },
+    {
+      "id": "exp_perimeter_-41.7_8",
+      "name": "Wall segment 19",
+      "assetId": "map-wall-0p6x3p6x12",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -41.7,
+        1.8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_perimeter_-41.7_8"
+    },
+    {
+      "id": "exp_perimeter_-41.7_26",
+      "name": "Wall segment 20",
+      "assetId": "map-wall-0p6x3p6x8",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -41.7,
+        1.8,
+        26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_perimeter_-41.7_26"
+    },
+    {
+      "id": "exp_perimeter_41.7_-22",
+      "name": "Wall segment 21",
+      "assetId": "map-wall-0p6x3p6x16",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        41.7,
+        1.8,
+        -22
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_perimeter_41.7_-22"
+    },
+    {
+      "id": "exp_perimeter_41.7_-5",
+      "name": "Wall segment 22",
+      "assetId": "map-wall-0p6x3p6x6",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        41.7,
+        1.8,
+        -5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_perimeter_41.7_-5"
+    },
+    {
+      "id": "exp_perimeter_41.7_8",
+      "name": "Wall segment 23",
+      "assetId": "map-wall-0p6x3p6x12",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        41.7,
+        1.8,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_perimeter_41.7_8"
+    },
+    {
+      "id": "exp_perimeter_41.7_26",
+      "name": "Wall segment 24",
+      "assetId": "map-wall-0p6x3p6x8",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        41.7,
+        1.8,
+        26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_perimeter_41.7_26"
+    },
+    {
+      "id": "exp_north_-36",
+      "name": "Wall segment 25",
+      "assetId": "map-wall-12x3p6x0p6",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -36,
+        1.8,
+        29.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_north_-36"
+    },
+    {
+      "id": "exp_north_36",
+      "name": "Wall segment 26",
+      "assetId": "map-wall-12x3p6x0p6",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        36,
+        1.8,
+        29.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_north_36"
+    },
+    {
+      "id": "exp_south_west",
+      "name": "Wall segment 27",
+      "assetId": "map-wall-12x3p6x0p6",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -36,
+        1.8,
+        -29.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_south_west"
+    },
+    {
+      "id": "exp_south_east_l",
+      "name": "Wall segment 28",
+      "assetId": "map-wall-2p5x3p6x0p6",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        31.25,
+        1.8,
+        -29.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_south_east_l"
+    },
+    {
+      "id": "exp_south_east_r",
+      "name": "Wall segment 29",
+      "assetId": "map-wall-2p5x3p6x0p6",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        40.75,
+        1.8,
+        -29.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_south_east_r"
+    },
+    {
+      "id": "exp_barracks_upper",
+      "name": "Floor slab 10",
+      "assetId": "map-floor-10x0p2x20-1v1svwu",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        36,
+        3.1,
+        14
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": false,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_upper"
+    },
+    {
+      "id": "exp_barracks_roof",
+      "name": "Floor slab 11",
+      "assetId": "map-floor-10x0p2x20-134p795",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        36,
+        6.3,
+        14
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": false,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_roof"
+    },
+    {
+      "id": "exp_barracks_lower_1",
+      "name": "Stair tread 21",
+      "assetId": "map-stair-3x0p5x1",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        39.5,
+        0.25,
+        21.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_lower_1"
+    },
+    {
+      "id": "exp_barracks_lower_2",
+      "name": "Stair tread 22",
+      "assetId": "map-stair-3x0p5x1",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        39.5,
+        0.75,
+        20.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_lower_2"
+    },
+    {
+      "id": "exp_barracks_lower_3",
+      "name": "Stair tread 23",
+      "assetId": "map-stair-3x0p5x1",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        39.5,
+        1.25,
+        19.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_lower_3"
+    },
+    {
+      "id": "exp_barracks_lower_4",
+      "name": "Stair tread 24",
+      "assetId": "map-stair-3x0p5x1",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        39.5,
+        1.75,
+        18.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_lower_4"
+    },
+    {
+      "id": "exp_barracks_lower_5",
+      "name": "Stair tread 25",
+      "assetId": "map-stair-3x0p5x1",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        39.5,
+        2.25,
+        17.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_lower_5"
+    },
+    {
+      "id": "exp_barracks_lower_6",
+      "name": "Stair tread 26",
+      "assetId": "map-stair-3x0p5x1",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        39.5,
+        2.75,
+        16.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_lower_6"
+    },
+    {
+      "id": "exp_barracks_roof_1",
+      "name": "Stair tread 27",
+      "assetId": "map-stair-3x0p5x1",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        32.5,
+        3.45,
+        16.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_roof_1"
+    },
+    {
+      "id": "exp_barracks_roof_2",
+      "name": "Stair tread 28",
+      "assetId": "map-stair-3x0p5x1",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        32.5,
+        3.95,
+        17.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_roof_2"
+    },
+    {
+      "id": "exp_barracks_roof_3",
+      "name": "Stair tread 29",
+      "assetId": "map-stair-3x0p5x1",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        32.5,
+        4.45,
+        18.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_roof_3"
+    },
+    {
+      "id": "exp_barracks_roof_4",
+      "name": "Stair tread 30",
+      "assetId": "map-stair-3x0p5x1",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        32.5,
+        4.95,
+        19.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_roof_4"
+    },
+    {
+      "id": "exp_barracks_roof_5",
+      "name": "Stair tread 31",
+      "assetId": "map-stair-3x0p5x1",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        32.5,
+        5.45,
+        20.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_roof_5"
+    },
+    {
+      "id": "exp_barracks_roof_6",
+      "name": "Stair tread 32",
+      "assetId": "map-stair-3x0p5x1",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        32.5,
+        5.95,
+        21.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_roof_6"
+    },
+    {
+      "id": "exp_barracks_side_31_0_sill",
+      "name": "Bunker shell 22",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        31,
+        0.55,
+        7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_side_31_0_sill",
+      "scale": [
+        0.4,
+        1.1,
+        6
+      ]
+    },
+    {
+      "id": "exp_barracks_side_31_0_header",
+      "name": "Bunker shell 23",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        31,
+        2.8,
+        14
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_side_31_0_header",
+      "scale": [
+        0.4,
+        0.8,
+        20
+      ]
+    },
+    {
+      "id": "exp_barracks_side_31_0_4.75",
+      "name": "Bunker shell 24",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        31,
+        1.75,
+        4.75
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_side_31_0_4.75",
+      "scale": [
+        0.4,
+        1.3,
+        1.5
+      ]
+    },
+    {
+      "id": "exp_barracks_side_31_0_10",
+      "name": "Bunker shell 25",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        31,
+        1.75,
+        9.75
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_side_31_0_10",
+      "scale": [
+        0.4,
+        1.3,
+        1.5
+      ]
+    },
+    {
+      "id": "exp_barracks_side_31_0_15",
+      "name": "Bunker shell 26",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        31,
+        1.75,
+        15.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_side_31_0_15",
+      "scale": [
+        0.4,
+        1.3,
+        1.5
+      ]
+    },
+    {
+      "id": "exp_barracks_side_31_0_20",
+      "name": "Bunker shell 27",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        31,
+        1.75,
+        20
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_side_31_0_20",
+      "scale": [
+        0.4,
+        1.3,
+        2
+      ]
+    },
+    {
+      "id": "exp_barracks_side_31_0_23.25",
+      "name": "Bunker shell 28",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        31,
+        1.75,
+        23.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_side_31_0_23.25",
+      "scale": [
+        0.4,
+        1.3,
+        1.5
+      ]
+    },
+    {
+      "id": "exp_barracks_side_31_3.2_sill",
+      "name": "Bunker shell 29",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        31,
+        3.75,
+        14
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_side_31_3.2_sill",
+      "scale": [
+        0.4,
+        1.1,
+        20
+      ]
+    },
+    {
+      "id": "exp_barracks_side_31_3.2_header",
+      "name": "Bunker shell 30",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        31,
+        6,
+        14
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_side_31_3.2_header",
+      "scale": [
+        0.4,
+        0.8,
+        20
+      ]
+    },
+    {
+      "id": "exp_barracks_side_31_3.2_4.75",
+      "name": "Bunker shell 31",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        31,
+        4.95,
+        4.75
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_side_31_3.2_4.75",
+      "scale": [
+        0.4,
+        1.3,
+        1.5
+      ]
+    },
+    {
+      "id": "exp_barracks_side_31_3.2_10",
+      "name": "Bunker shell 32",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        31,
+        4.95,
+        10
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_side_31_3.2_10",
+      "scale": [
+        0.4,
+        1.3,
+        2
+      ]
+    },
+    {
+      "id": "exp_barracks_side_31_3.2_15",
+      "name": "Bunker shell 33",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        31,
+        4.95,
+        15
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_side_31_3.2_15",
+      "scale": [
+        0.4,
+        1.3,
+        2
+      ]
+    },
+    {
+      "id": "exp_barracks_side_31_3.2_20",
+      "name": "Bunker shell 34",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        31,
+        4.95,
+        20
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_side_31_3.2_20",
+      "scale": [
+        0.4,
+        1.3,
+        2
+      ]
+    },
+    {
+      "id": "exp_barracks_side_31_3.2_23.25",
+      "name": "Bunker shell 35",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        31,
+        4.95,
+        23.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_side_31_3.2_23.25",
+      "scale": [
+        0.4,
+        1.3,
+        1.5
+      ]
+    },
+    {
+      "id": "exp_barracks_side_41_0_sill",
+      "name": "Bunker shell 36",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        41,
+        0.55,
+        14
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_side_41_0_sill",
+      "scale": [
+        0.4,
+        1.1,
+        20
+      ]
+    },
+    {
+      "id": "exp_barracks_side_41_0_header",
+      "name": "Bunker shell 37",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        41,
+        2.8,
+        14
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_side_41_0_header",
+      "scale": [
+        0.4,
+        0.8,
+        20
+      ]
+    },
+    {
+      "id": "exp_barracks_side_41_0_4.75",
+      "name": "Bunker shell 38",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        41,
+        1.75,
+        4.75
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_side_41_0_4.75",
+      "scale": [
+        0.4,
+        1.3,
+        1.5
+      ]
+    },
+    {
+      "id": "exp_barracks_side_41_0_10",
+      "name": "Bunker shell 39",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        41,
+        1.75,
+        10
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_side_41_0_10",
+      "scale": [
+        0.4,
+        1.3,
+        2
+      ]
+    },
+    {
+      "id": "exp_barracks_side_41_0_15",
+      "name": "Bunker shell 40",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        41,
+        1.75,
+        15
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_side_41_0_15",
+      "scale": [
+        0.4,
+        1.3,
+        2
+      ]
+    },
+    {
+      "id": "exp_barracks_side_41_0_20",
+      "name": "Bunker shell 41",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        41,
+        1.75,
+        20
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_side_41_0_20",
+      "scale": [
+        0.4,
+        1.3,
+        2
+      ]
+    },
+    {
+      "id": "exp_barracks_side_41_0_23.25",
+      "name": "Bunker shell 42",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        41,
+        1.75,
+        23.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_side_41_0_23.25",
+      "scale": [
+        0.4,
+        1.3,
+        1.5
+      ]
+    },
+    {
+      "id": "exp_barracks_side_41_3.2_sill",
+      "name": "Bunker shell 43",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        41,
+        3.75,
+        14
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_side_41_3.2_sill",
+      "scale": [
+        0.4,
+        1.1,
+        20
+      ]
+    },
+    {
+      "id": "exp_barracks_side_41_3.2_header",
+      "name": "Bunker shell 44",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        41,
+        6,
+        14
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_side_41_3.2_header",
+      "scale": [
+        0.4,
+        0.8,
+        20
+      ]
+    },
+    {
+      "id": "exp_barracks_side_41_3.2_4.75",
+      "name": "Bunker shell 45",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        41,
+        4.95,
+        4.75
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_side_41_3.2_4.75",
+      "scale": [
+        0.4,
+        1.3,
+        1.5
+      ]
+    },
+    {
+      "id": "exp_barracks_side_41_3.2_10",
+      "name": "Bunker shell 46",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        41,
+        4.95,
+        10
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_side_41_3.2_10",
+      "scale": [
+        0.4,
+        1.3,
+        2
+      ]
+    },
+    {
+      "id": "exp_barracks_side_41_3.2_15",
+      "name": "Bunker shell 47",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        41,
+        4.95,
+        15
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_side_41_3.2_15",
+      "scale": [
+        0.4,
+        1.3,
+        2
+      ]
+    },
+    {
+      "id": "exp_barracks_side_41_3.2_20",
+      "name": "Bunker shell 48",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        41,
+        4.95,
+        20
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_side_41_3.2_20",
+      "scale": [
+        0.4,
+        1.3,
+        2
+      ]
+    },
+    {
+      "id": "exp_barracks_side_41_3.2_23.25",
+      "name": "Bunker shell 49",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        41,
+        4.95,
+        23.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_side_41_3.2_23.25",
+      "scale": [
+        0.4,
+        1.3,
+        1.5
+      ]
+    },
+    {
+      "id": "exp_barracks_w_sill_n",
+      "name": "Bunker shell 50",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        31,
+        0.55,
+        19.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_w_sill_n",
+      "scale": [
+        0.4,
+        1.1,
+        9.5
+      ]
+    },
+    {
+      "id": "exp_barracks_south_l_0",
+      "name": "Bunker shell 51",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        32.75,
+        1.6,
+        4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_south_l_0",
+      "scale": [
+        3.5,
+        3.2,
+        0.4
+      ]
+    },
+    {
+      "id": "exp_barracks_south_r_0",
+      "name": "Bunker shell 52",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        39.25,
+        1.6,
+        4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_south_r_0",
+      "scale": [
+        3.5,
+        3.2,
+        0.4
+      ]
+    },
+    {
+      "id": "exp_barracks_south_head_0",
+      "name": "Bunker shell 53",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        36,
+        2.95,
+        4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_south_head_0",
+      "scale": [
+        3,
+        0.5,
+        0.4
+      ]
+    },
+    {
+      "id": "exp_barracks_north_0_-1",
+      "name": "Bunker shell 54",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        32.75,
+        1.6,
+        24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_north_0_-1",
+      "scale": [
+        3.5,
+        3.2,
+        0.4
+      ]
+    },
+    {
+      "id": "exp_barracks_north_0_1",
+      "name": "Bunker shell 55",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        39.25,
+        1.6,
+        24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_north_0_1",
+      "scale": [
+        3.5,
+        3.2,
+        0.4
+      ]
+    },
+    {
+      "id": "exp_barracks_north_head_0",
+      "name": "Bunker shell 56",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        36,
+        2.95,
+        24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_north_head_0",
+      "scale": [
+        3,
+        0.5,
+        0.4
+      ]
+    },
+    {
+      "id": "exp_barracks_partition_34_0_5.5",
+      "name": "Bunker shell 57",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        34,
+        1.4,
+        5.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_partition_34_0_5.5",
+      "scale": [
+        0.22,
+        2.8,
+        3
+      ]
+    },
+    {
+      "id": "exp_barracks_partition_34_0_10",
+      "name": "Bunker shell 58",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        34,
+        1.4,
+        10
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_partition_34_0_10",
+      "scale": [
+        0.22,
+        2.8,
+        2
+      ]
+    },
+    {
+      "id": "exp_barracks_partition_34_0_14.75",
+      "name": "Bunker shell 59",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        34,
+        1.4,
+        14.75
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_partition_34_0_14.75",
+      "scale": [
+        0.22,
+        2.8,
+        0.5
+      ]
+    },
+    {
+      "id": "exp_barracks_partition_38_0_5.5",
+      "name": "Bunker shell 60",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        38,
+        1.4,
+        5.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_partition_38_0_5.5",
+      "scale": [
+        0.22,
+        2.8,
+        3
+      ]
+    },
+    {
+      "id": "exp_barracks_partition_38_0_10",
+      "name": "Bunker shell 61",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        38,
+        1.4,
+        10
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_partition_38_0_10",
+      "scale": [
+        0.22,
+        2.8,
+        2
+      ]
+    },
+    {
+      "id": "exp_barracks_partition_38_0_14.75",
+      "name": "Bunker shell 62",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        38,
+        1.4,
+        14.75
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_partition_38_0_14.75",
+      "scale": [
+        0.22,
+        2.8,
+        0.5
+      ]
+    },
+    {
+      "id": "exp_barracks_south_l_3.2",
+      "name": "Bunker shell 63",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        32.75,
+        4.800000000000001,
+        4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_south_l_3.2",
+      "scale": [
+        3.5,
+        3.2,
+        0.4
+      ]
+    },
+    {
+      "id": "exp_barracks_south_r_3.2",
+      "name": "Bunker shell 64",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        39.25,
+        4.800000000000001,
+        4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_south_r_3.2",
+      "scale": [
+        3.5,
+        3.2,
+        0.4
+      ]
+    },
+    {
+      "id": "exp_barracks_south_head_3.2",
+      "name": "Bunker shell 65",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        36,
+        6.15,
+        4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_south_head_3.2",
+      "scale": [
+        3,
+        0.5,
+        0.4
+      ]
+    },
+    {
+      "id": "exp_barracks_north_3.2_-1",
+      "name": "Bunker shell 66",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        32.75,
+        4.800000000000001,
+        24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_north_3.2_-1",
+      "scale": [
+        3.5,
+        3.2,
+        0.4
+      ]
+    },
+    {
+      "id": "exp_barracks_north_3.2_1",
+      "name": "Bunker shell 67",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        39.25,
+        4.800000000000001,
+        24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_north_3.2_1",
+      "scale": [
+        3.5,
+        3.2,
+        0.4
+      ]
+    },
+    {
+      "id": "exp_barracks_north_head_3.2",
+      "name": "Bunker shell 68",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        36,
+        6.15,
+        24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_north_head_3.2",
+      "scale": [
+        3,
+        0.5,
+        0.4
+      ]
+    },
+    {
+      "id": "exp_barracks_partition_34_3.2_5.5",
+      "name": "Bunker shell 69",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        34,
+        4.6,
+        5.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_partition_34_3.2_5.5",
+      "scale": [
+        0.22,
+        2.8,
+        3
+      ]
+    },
+    {
+      "id": "exp_barracks_partition_34_3.2_10",
+      "name": "Bunker shell 70",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        34,
+        4.6,
+        10
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_partition_34_3.2_10",
+      "scale": [
+        0.22,
+        2.8,
+        2
+      ]
+    },
+    {
+      "id": "exp_barracks_partition_34_3.2_14.75",
+      "name": "Bunker shell 71",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        34,
+        4.6,
+        14.75
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_partition_34_3.2_14.75",
+      "scale": [
+        0.22,
+        2.8,
+        0.5
+      ]
+    },
+    {
+      "id": "exp_barracks_partition_38_3.2_5.5",
+      "name": "Bunker shell 72",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        38,
+        4.6,
+        5.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_partition_38_3.2_5.5",
+      "scale": [
+        0.22,
+        2.8,
+        3
+      ]
+    },
+    {
+      "id": "exp_barracks_partition_38_3.2_10",
+      "name": "Bunker shell 73",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        38,
+        4.6,
+        10
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_partition_38_3.2_10",
+      "scale": [
+        0.22,
+        2.8,
+        2
+      ]
+    },
+    {
+      "id": "exp_barracks_partition_38_3.2_14.75",
+      "name": "Bunker shell 74",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        38,
+        4.6,
+        14.75
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_partition_38_3.2_14.75",
+      "scale": [
+        0.22,
+        2.8,
+        0.5
+      ]
+    },
+    {
+      "id": "exp_barracks_parapet_31",
+      "name": "Bunker shell 75",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        31,
+        6.9,
+        14
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_parapet_31",
+      "scale": [
+        0.4,
+        1,
+        20
+      ]
+    },
+    {
+      "id": "exp_barracks_parapet_41",
+      "name": "Bunker shell 76",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        41,
+        6.9,
+        14
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_parapet_41",
+      "scale": [
+        0.4,
+        1,
+        20
+      ]
+    },
+    {
+      "id": "exp_barracks_parapet_4",
+      "name": "Bunker shell 77",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        36,
+        6.9,
+        4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_parapet_4",
+      "scale": [
+        10,
+        1,
+        0.4
+      ]
+    },
+    {
+      "id": "exp_barracks_parapet_24",
+      "name": "Bunker shell 78",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        36,
+        6.9,
+        24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_barracks_parapet_24",
+      "scale": [
+        10,
+        1,
+        0.4
+      ]
+    },
+    {
+      "id": "exp_colonnade_canopy",
+      "name": "Floor slab 12",
+      "assetId": "map-floor-18x0p3x6",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        22,
+        4.15,
+        13
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": false,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_colonnade_canopy"
+    },
+    {
+      "id": "exp_column_14_10.4",
+      "name": "Column 1",
+      "assetId": "map-column-0p7x4x0p7",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        14,
+        2,
+        10.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_column_14_10.4"
+    },
+    {
+      "id": "exp_column_14_15.6",
+      "name": "Column 2",
+      "assetId": "map-column-0p7x4x0p7",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        14,
+        2,
+        15.6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_column_14_15.6"
+    },
+    {
+      "id": "exp_column_18_10.4",
+      "name": "Column 3",
+      "assetId": "map-column-0p7x4x0p7",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        18,
+        2,
+        10.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_column_18_10.4"
+    },
+    {
+      "id": "exp_column_18_15.6",
+      "name": "Column 4",
+      "assetId": "map-column-0p7x4x0p7",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        18,
+        2,
+        15.6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_column_18_15.6"
+    },
+    {
+      "id": "exp_column_22_10.4",
+      "name": "Column 5",
+      "assetId": "map-column-0p7x4x0p7",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        22,
+        2,
+        10.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_column_22_10.4"
+    },
+    {
+      "id": "exp_column_22_15.6",
+      "name": "Column 6",
+      "assetId": "map-column-0p7x4x0p7",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        22,
+        2,
+        15.6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_column_22_15.6"
+    },
+    {
+      "id": "exp_column_26_10.4",
+      "name": "Column 7",
+      "assetId": "map-column-0p7x4x0p7",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        26,
+        2,
+        10.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_column_26_10.4"
+    },
+    {
+      "id": "exp_column_26_15.6",
+      "name": "Column 8",
+      "assetId": "map-column-0p7x4x0p7",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        26,
+        2,
+        15.6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_column_26_15.6"
+    },
+    {
+      "id": "exp_column_30_10.4",
+      "name": "Column 9",
+      "assetId": "map-column-0p7x4x0p7",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        30,
+        2,
+        10.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_column_30_10.4"
+    },
+    {
+      "id": "exp_column_30_15.6",
+      "name": "Column 10",
+      "assetId": "map-column-0p7x4x0p7",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        30,
+        2,
+        15.6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_column_30_15.6"
+    },
+    {
+      "id": "exp_depot_rear_-1",
+      "name": "Bunker shell 79",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        31.75,
+        3.25,
+        -27
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_depot_rear_-1",
+      "scale": [
+        1.5,
+        6.5,
+        0.5
+      ]
+    },
+    {
+      "id": "exp_depot_rear_1",
+      "name": "Bunker shell 80",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        40.25,
+        3.25,
+        -27
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_depot_rear_1",
+      "scale": [
+        1.5,
+        6.5,
+        0.5
+      ]
+    },
+    {
+      "id": "exp_depot_rear_header",
+      "name": "Bunker shell 81",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        36,
+        5.7,
+        -27
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_depot_rear_header",
+      "scale": [
+        7,
+        1.6,
+        0.5
+      ]
+    },
+    {
+      "id": "exp_depot_return_-1",
+      "name": "Bunker shell 82",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        31,
+        3.25,
+        -21
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_depot_return_-1",
+      "scale": [
+        0.5,
+        6.5,
+        12
+      ]
+    },
+    {
+      "id": "exp_depot_return_1",
+      "name": "Bunker shell 83",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        41,
+        3.25,
+        -21
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_depot_return_1",
+      "scale": [
+        0.5,
+        6.5,
+        12
+      ]
+    },
+    {
+      "id": "exp_depot_pier_-1",
+      "name": "Bunker shell 84",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        32,
+        3.25,
+        -15
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_depot_pier_-1",
+      "scale": [
+        2,
+        6.5,
+        0.5
+      ]
+    },
+    {
+      "id": "exp_depot_pier_1",
+      "name": "Bunker shell 85",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        40,
+        3.25,
+        -15
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_depot_pier_1",
+      "scale": [
+        2,
+        6.5,
+        0.5
+      ]
+    },
+    {
+      "id": "exp_depot_lintel",
+      "name": "Bunker shell 86",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        36,
+        6.15,
+        -15
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_depot_lintel",
+      "scale": [
+        10,
+        0.7,
+        0.5
+      ]
+    },
+    {
+      "id": "exp_depot_broken_roof",
+      "name": "Floor slab 13",
+      "assetId": "map-floor-10x0p3x4p8",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        36,
+        6.35,
+        -24.6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": false,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_depot_broken_roof"
+    },
+    {
+      "id": "exp_pump_rear",
+      "name": "Bunker shell 87",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -36,
+        2.5,
+        -28
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_pump_rear",
+      "scale": [
+        10,
+        5,
+        0.5
+      ]
+    },
+    {
+      "id": "exp_pump_return_-1",
+      "name": "Bunker shell 88",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -41,
+        2.5,
+        -26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_pump_return_-1",
+      "scale": [
+        0.5,
+        5,
+        4
+      ]
+    },
+    {
+      "id": "exp_pump_return_1",
+      "name": "Bunker shell 89",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -31,
+        2.5,
+        -26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_pump_return_1",
+      "scale": [
+        0.5,
+        5,
+        4
+      ]
+    },
+    {
+      "id": "exp_pump_pier_-1",
+      "name": "Bunker shell 90",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -40,
+        2.5,
+        -24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_pump_pier_-1",
+      "scale": [
+        2,
+        5,
+        0.5
+      ]
+    },
+    {
+      "id": "exp_pump_pier_1",
+      "name": "Bunker shell 91",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -32,
+        2.5,
+        -24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_pump_pier_1",
+      "scale": [
+        2,
+        5,
+        0.5
+      ]
+    },
+    {
+      "id": "exp_pump_lintel",
+      "name": "Bunker shell 92",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -36,
+        4.65,
+        -24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_pump_lintel",
+      "scale": [
+        10,
+        0.7,
+        0.5
+      ]
+    },
+    {
+      "id": "exp_pump_broken_roof",
+      "name": "Floor slab 14",
+      "assetId": "map-floor-10x0p3x1p6",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        -36,
+        4.85,
+        -27.2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": false,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_pump_broken_roof"
+    },
+    {
+      "id": "exp_stores_rear",
+      "name": "Bunker shell 93",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -36,
+        3,
+        28
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_stores_rear",
+      "scale": [
+        10,
+        6,
+        0.5
+      ]
+    },
+    {
+      "id": "exp_stores_return_-1",
+      "name": "Bunker shell 94",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -41,
+        3,
+        26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_stores_return_-1",
+      "scale": [
+        0.5,
+        6,
+        4
+      ]
+    },
+    {
+      "id": "exp_stores_return_1",
+      "name": "Bunker shell 95",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -31,
+        3,
+        26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_stores_return_1",
+      "scale": [
+        0.5,
+        6,
+        4
+      ]
+    },
+    {
+      "id": "exp_stores_pier_-1",
+      "name": "Bunker shell 96",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -40,
+        3,
+        24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_stores_pier_-1",
+      "scale": [
+        2,
+        6,
+        0.5
+      ]
+    },
+    {
+      "id": "exp_stores_pier_1",
+      "name": "Bunker shell 97",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -32,
+        3,
+        24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_stores_pier_1",
+      "scale": [
+        2,
+        6,
+        0.5
+      ]
+    },
+    {
+      "id": "exp_stores_lintel",
+      "name": "Bunker shell 98",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -36,
+        5.65,
+        24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_stores_lintel",
+      "scale": [
+        10,
+        0.7,
+        0.5
+      ]
+    },
+    {
+      "id": "exp_stores_broken_roof",
+      "name": "Floor slab 15",
+      "assetId": "map-floor-10x0p3x1p6",
+      "role": "collider",
+      "category": "Floors",
+      "translation": [
+        -36,
+        5.85,
+        27.2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": false,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_stores_broken_roof"
+    },
+    {
+      "id": "exp_supply_yard_w",
+      "name": "Supply chests 1",
+      "assetId": "map-supply-2p6x1p28x1p1",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        -23,
+        0.64,
+        -13
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_supply_yard_w"
+    },
+    {
+      "id": "exp_supply_yard_e",
+      "name": "Supply chests 2",
+      "assetId": "map-supply-2p6x1p28x1p1",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        12,
+        0.64,
+        -16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_supply_yard_e"
+    },
+    {
+      "id": "exp_supply_link",
+      "name": "Supply chests 3",
+      "assetId": "map-supply-2p6x1p28x1p1",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        24,
+        0.64,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_supply_link"
+    },
+    {
+      "id": "exp_supply_depot",
+      "name": "Supply chests 4",
+      "assetId": "map-supply-2p6x1p28x1p1",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        35,
+        0.64,
+        -20
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_supply_depot"
+    },
+    {
+      "id": "exp_supply_west",
+      "name": "Supply chests 5",
+      "assetId": "map-supply-2p6x1p28x1p1",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        -40,
+        0.64,
+        10
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_supply_west"
+    },
+    {
+      "id": "exp_supply_north",
+      "name": "Supply chests 6",
+      "assetId": "map-supply-2p6x1p28x1p1",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        -20,
+        0.64,
+        23
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_supply_north"
+    },
+    {
+      "id": "exp_sandbags_south",
+      "name": "Sandbag stack 1",
+      "assetId": "map-sandbags-3p2x1p3x1p2",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        -16,
+        0.65,
+        -21
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_sandbags_south"
+    },
+    {
+      "id": "exp_sandbags_east",
+      "name": "Sandbag stack 2",
+      "assetId": "map-sandbags-3p2x1p3x1p2",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        35,
+        0.65,
+        -7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_sandbags_east"
+    },
+    {
+      "id": "exp_sandbags_west",
+      "name": "Sandbag stack 3",
+      "assetId": "map-sandbags-3p2x1p3x1p2",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        -32,
+        0.65,
+        7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_sandbags_west"
+    },
+    {
+      "id": "exp_sandbags_north",
+      "name": "Sandbag stack 4",
+      "assetId": "map-sandbags-3p2x1p3x1p2",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        19,
+        0.65,
+        23
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_sandbags_north"
+    },
+    {
+      "id": "exp_generator_tunnel",
+      "name": "Generator 1",
+      "assetId": "map-generator-1p6x1p6x2p4",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        -32.2,
+        -2.7,
+        7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_generator_tunnel"
+    },
+    {
+      "id": "exp_generator_yard",
+      "name": "Generator 2",
+      "assetId": "map-generator-1p6x1p6x2p4",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        -40,
+        0.8,
+        -8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_generator_yard"
+    },
+    {
+      "id": "exp_generator_depot",
+      "name": "Generator 3",
+      "assetId": "map-generator-1p6x1p6x2p4",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        39,
+        0.8,
+        -24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_generator_depot"
+    },
+    {
+      "id": "exp_spool_depot",
+      "name": "Cable spool 1",
+      "assetId": "map-spool-1p2x1p2x1p2-awmfnx",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        33,
+        0.6,
+        -23
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_spool_depot"
+    },
+    {
+      "id": "exp_spool_west",
+      "name": "Cable spool 2",
+      "assetId": "map-spool-1p2x1p2x1p2-awmfnx",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        -32,
+        0.6,
+        -11
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_spool_west"
+    },
+    {
+      "id": "exp_spool_link",
+      "name": "Cable spool 3",
+      "assetId": "map-spool-1p2x1p2x1p2-awmfnx",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        17,
+        0.6,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_spool_link"
+    },
+    {
+      "id": "exp_service_choke_lintel",
+      "name": "Bunker shell 99",
+      "assetId": "map-bunker-shell",
+      "role": "collider",
+      "category": "Walls",
+      "translation": [
+        -35.9,
+        -0.65,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_service_choke_lintel",
+      "scale": [
+        2.6,
+        0.7,
+        0.8
+      ]
+    },
+    {
+      "id": "exp_bunk_32.5_0_5.7",
+      "name": "Field bed 1",
+      "assetId": "map-bunk-1p1x0p7x2p2",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        32.5,
+        0.35,
+        5.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_bunk_32.5_0_5.7"
+    },
+    {
+      "id": "exp_bunk_39.5_0_5.7",
+      "name": "Field bed 2",
+      "assetId": "map-bunk-1p1x0p7x2p2",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        39.5,
+        0.35,
+        5.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_bunk_39.5_0_5.7"
+    },
+    {
+      "id": "exp_bunk_32.5_0_10.2",
+      "name": "Field bed 3",
+      "assetId": "map-bunk-1p1x0p7x2p2",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        32.5,
+        0.35,
+        10.2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_bunk_32.5_0_10.2"
+    },
+    {
+      "id": "exp_bunk_39.5_0_13",
+      "name": "Field bed 4",
+      "assetId": "map-bunk-1p1x0p7x2p2",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        39.5,
+        0.35,
+        13
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_bunk_39.5_0_13"
+    },
+    {
+      "id": "exp_bunk_32.5_3.2_5.7",
+      "name": "Field bed 5",
+      "assetId": "map-bunk-1p1x0p7x2p2",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        32.5,
+        3.5500000000000003,
+        5.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_bunk_32.5_3.2_5.7"
+    },
+    {
+      "id": "exp_bunk_39.5_3.2_5.7",
+      "name": "Field bed 6",
+      "assetId": "map-bunk-1p1x0p7x2p2",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        39.5,
+        3.5500000000000003,
+        5.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_bunk_39.5_3.2_5.7"
+    },
+    {
+      "id": "exp_bunk_32.5_3.2_10.2",
+      "name": "Field bed 7",
+      "assetId": "map-bunk-1p1x0p7x2p2",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        32.5,
+        3.5500000000000003,
+        10.2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_bunk_32.5_3.2_10.2"
+    },
+    {
+      "id": "exp_bunk_39.5_3.2_13",
+      "name": "Field bed 8",
+      "assetId": "map-bunk-1p1x0p7x2p2",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        39.5,
+        3.5500000000000003,
+        13
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_bunk_39.5_3.2_13"
+    },
+    {
+      "id": "exp_supply_inner_w",
+      "name": "Supply chests 7",
+      "assetId": "map-supply-2p6x1p28x1p1",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        -19,
+        0.64,
+        6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_supply_inner_w"
+    },
+    {
+      "id": "exp_supply_inner_e",
+      "name": "Supply chests 8",
+      "assetId": "map-supply-2p6x1p28x1p1",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        12,
+        0.64,
+        7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_supply_inner_e"
+    },
+    {
+      "id": "exp_sandbags_south_inner",
+      "name": "Sandbag stack 5",
+      "assetId": "map-sandbags-3p2x1p3x1p2",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        -8,
+        0.65,
+        -18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_sandbags_south_inner"
+    },
+    {
+      "id": "exp_generator_inner",
+      "name": "Generator 4",
+      "assetId": "map-generator-1p6x1p6x2p4",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        -16,
+        0.8,
+        -7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_generator_inner"
+    },
+    {
+      "id": "exp_spool_north_inner",
+      "name": "Cable spool 4",
+      "assetId": "map-spool-1p2x1p2x1p2-awmfnx",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        18,
+        0.6,
+        19
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_spool_north_inner"
+    },
+    {
+      "id": "exp_rubble_south_inner",
+      "name": "Rubble bank 4",
+      "assetId": "map-rubble-3x1x2-1qfgh79",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        4,
+        0.5,
+        -20
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_rubble_south_inner"
+    },
+    {
+      "id": "exp_fire_west",
+      "name": "Barrel 3",
+      "assetId": "map-barrel-0p8x1p3x0p8-103qszk",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        -20,
+        0.65,
+        -10
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_fire_west"
+    },
+    {
+      "id": "exp_fire_east",
+      "name": "Barrel 4",
+      "assetId": "map-barrel-0p8x1p3x0p8-103qszk",
+      "role": "collider",
+      "category": "Props",
+      "translation": [
+        17,
+        0.65,
+        -16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "area": "expansion",
+      "nodeId": "collider:exp_fire_east"
+    },
+    {
+      "id": "trader_crate",
+      "name": "Trader crate 1",
+      "assetId": "map-trader-2x1p3x1p2-3mxpxd",
+      "role": "trader",
+      "category": "Props",
+      "translation": [
+        -7,
+        0.65,
+        23
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "navBlock": true,
+      "blocksSight": true,
+      "nodeId": "trader:trader_crate"
+    },
+    {
+      "id": "tunnel_w",
+      "name": "Door tunnel_w",
+      "assetId": "map-door-0p4x2p7x7p2",
+      "role": "door",
+      "category": "Gates",
+      "translation": [
+        -28.5,
+        1.35,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "nodeId": "door:tunnel_w"
+    },
+    {
+      "id": "tunnel_e",
+      "name": "Door tunnel_e",
+      "assetId": "map-door-0p4x2p7x7p2",
+      "role": "door",
+      "category": "Gates",
+      "translation": [
+        -19.5,
+        1.35,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "nodeId": "door:tunnel_e"
+    },
+    {
+      "id": "building_ground",
+      "name": "Door building_ground",
+      "assetId": "map-door-3x2p7x0p4",
+      "role": "door",
+      "category": "Gates",
+      "translation": [
+        0,
+        1.35,
+        17
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "nodeId": "door:building_ground"
+    },
+    {
+      "id": "building_balcony",
+      "name": "Door building_balcony",
+      "assetId": "map-door-3x2x0p3",
+      "role": "door",
+      "category": "Gates",
+      "translation": [
+        0,
+        4.15,
+        17
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "nodeId": "door:building_balcony"
+    },
+    {
+      "id": "N1",
+      "name": "Gate N1",
+      "assetId": "map-gate-4x3",
+      "role": "gate",
+      "category": "Gates",
+      "translation": [
+        -16,
+        0,
+        28
+      ],
+      "rotation": [
+        0,
+        3.141593,
+        0
+      ],
+      "nodeId": "gate:N1"
+    },
+    {
+      "id": "N2",
+      "name": "Gate N2",
+      "assetId": "map-gate-4x3",
+      "role": "gate",
+      "category": "Gates",
+      "translation": [
+        16,
+        0,
+        28
+      ],
+      "rotation": [
+        0,
+        3.141593,
+        0
+      ],
+      "nodeId": "gate:N2"
+    },
+    {
+      "id": "E1",
+      "name": "Gate E1",
+      "assetId": "map-gate-4x3",
+      "role": "gate",
+      "category": "Gates",
+      "translation": [
+        40,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        -1.570796,
+        0
+      ],
+      "nodeId": "gate:E1"
+    },
+    {
+      "id": "S1",
+      "name": "Gate S1",
+      "assetId": "map-gate-4x3",
+      "role": "gate",
+      "category": "Gates",
+      "translation": [
+        -10,
+        0,
+        -28
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "nodeId": "gate:S1"
+    },
+    {
+      "id": "S2",
+      "name": "Gate S2",
+      "assetId": "map-gate-4x3",
+      "role": "gate",
+      "category": "Gates",
+      "translation": [
+        10,
+        0,
+        -28
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "nodeId": "gate:S2"
+    },
+    {
+      "id": "W1",
+      "name": "Gate W1",
+      "assetId": "map-gate-4x3",
+      "role": "gate",
+      "category": "Gates",
+      "translation": [
+        -40,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        1.570796,
+        0
+      ],
+      "nodeId": "gate:W1"
+    },
+    {
+      "id": "E2",
+      "name": "Gate E2",
+      "assetId": "map-gate-4x3",
+      "role": "gate",
+      "category": "Gates",
+      "translation": [
+        40,
+        0,
+        -10
+      ],
+      "rotation": [
+        0,
+        -1.5707963267948966,
+        0
+      ],
+      "nodeId": "gate:E2"
+    },
+    {
+      "id": "W2",
+      "name": "Gate W2",
+      "assetId": "map-gate-4x3",
+      "role": "gate",
+      "category": "Gates",
+      "translation": [
+        -40,
+        0,
+        18
+      ],
+      "rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ],
+      "nodeId": "gate:W2"
+    },
+    {
+      "id": "S3",
+      "name": "Gate S3",
+      "assetId": "map-gate-7x4p8",
+      "role": "gate",
+      "category": "Gates",
+      "translation": [
+        36,
+        0,
+        -28
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "nodeId": "gate:S3"
+    },
+    {
+      "id": "courtyard_center",
+      "name": "Hazard fixture courtyard_center",
+      "assetId": "map-hazard-5x0p1x5",
+      "role": "hazard",
+      "category": "Gates",
+      "translation": [
+        3,
+        0.05,
+        2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "nodeId": "hazard:courtyard_center"
+    },
+    {
+      "id": "dock_ramp",
+      "name": "Hazard fixture dock_ramp",
+      "assetId": "map-hazard-3x0p1x6",
+      "role": "hazard",
+      "category": "Gates",
+      "translation": [
+        18,
+        0.65,
+        -5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "nodeId": "hazard:dock_ramp"
+    },
+    {
+      "id": "south_flank",
+      "name": "Breakable flank wall",
+      "assetId": "map-flank-4x3x1",
+      "role": "flank",
+      "category": "Gates",
+      "translation": [
+        0,
+        1.5,
+        -29.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "nodeId": "flank:south_flank"
+    },
+    {
+      "id": "service-0",
+      "name": "Light fixture service-0",
+      "assetId": "map-light-fixture-tube",
+      "role": "fixture",
+      "category": "Props",
+      "translation": [
+        -35.8,
+        -0.72,
+        -12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "nodeId": "fixture:service-0"
+    },
+    {
+      "id": "service-1",
+      "name": "Light fixture service-1",
+      "assetId": "map-light-fixture-tube",
+      "role": "fixture",
+      "category": "Props",
+      "translation": [
+        -35.8,
+        -0.72,
+        -4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "nodeId": "fixture:service-1"
+    },
+    {
+      "id": "service-2",
+      "name": "Light fixture service-2",
+      "assetId": "map-light-fixture-emergency",
+      "role": "fixture",
+      "category": "Props",
+      "translation": [
+        -35.8,
+        -0.72,
+        5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "nodeId": "fixture:service-2"
+    },
+    {
+      "id": "service-3",
+      "name": "Light fixture service-3",
+      "assetId": "map-light-fixture-tube",
+      "role": "fixture",
+      "category": "Props",
+      "translation": [
+        -35.8,
+        -0.72,
+        13
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "nodeId": "fixture:service-3"
+    },
+    {
+      "id": "barracks-0-0",
+      "name": "Light fixture barracks-0-0",
+      "assetId": "map-light-fixture-tube",
+      "role": "fixture",
+      "category": "Props",
+      "translation": [
+        36,
+        2.8,
+        7.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "nodeId": "fixture:barracks-0-0"
+    },
+    {
+      "id": "barracks-0-3.2",
+      "name": "Light fixture barracks-0-3.2",
+      "assetId": "map-light-fixture-tube",
+      "role": "fixture",
+      "category": "Props",
+      "translation": [
+        36,
+        6,
+        7.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "nodeId": "fixture:barracks-0-3.2"
+    },
+    {
+      "id": "barracks-1-0",
+      "name": "Light fixture barracks-1-0",
+      "assetId": "map-light-fixture-tube",
+      "role": "fixture",
+      "category": "Props",
+      "translation": [
+        36,
+        2.8,
+        12.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "nodeId": "fixture:barracks-1-0"
+    },
+    {
+      "id": "barracks-1-3.2",
+      "name": "Light fixture barracks-1-3.2",
+      "assetId": "map-light-fixture-tube",
+      "role": "fixture",
+      "category": "Props",
+      "translation": [
+        36,
+        6,
+        12.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "nodeId": "fixture:barracks-1-3.2"
+    },
+    {
+      "id": "barracks-2-0",
+      "name": "Light fixture barracks-2-0",
+      "assetId": "map-light-fixture-tube",
+      "role": "fixture",
+      "category": "Props",
+      "translation": [
+        36,
+        2.8,
+        20.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "nodeId": "fixture:barracks-2-0"
+    },
+    {
+      "id": "barracks-2-3.2",
+      "name": "Light fixture barracks-2-3.2",
+      "assetId": "map-light-fixture-tube",
+      "role": "fixture",
+      "category": "Props",
+      "translation": [
+        36,
+        6,
+        20.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "nodeId": "fixture:barracks-2-3.2"
+    },
+    {
+      "id": "link-0",
+      "name": "Light fixture link-0",
+      "assetId": "map-light-fixture-work",
+      "role": "fixture",
+      "category": "Props",
+      "translation": [
+        16,
+        3.8,
+        13
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "nodeId": "fixture:link-0"
+    },
+    {
+      "id": "link-1",
+      "name": "Light fixture link-1",
+      "assetId": "map-light-fixture-work",
+      "role": "fixture",
+      "category": "Props",
+      "translation": [
+        24,
+        3.8,
+        13
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "nodeId": "fixture:link-1"
+    },
+    {
+      "id": "link-2",
+      "name": "Light fixture link-2",
+      "assetId": "map-light-fixture-work",
+      "role": "fixture",
+      "category": "Props",
+      "translation": [
+        30,
+        3.8,
+        13
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "nodeId": "fixture:link-2"
+    },
+    {
+      "id": "depot",
+      "name": "Light fixture depot",
+      "assetId": "map-light-fixture-work",
+      "role": "fixture",
+      "category": "Props",
+      "translation": [
+        36,
+        4.2,
+        -24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "nodeId": "fixture:depot"
+    },
+    {
+      "id": "service-pipe--38.66--0.78",
+      "name": "Service pipe 1",
+      "assetId": "map-pipe-0p26x0p26x30p4",
+      "role": "decoration",
+      "category": "Props",
+      "translation": [
+        -38.66,
+        -0.78,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "nodeId": "decoration:service-pipe--38.66--0.78"
+    },
+    {
+      "id": "service-pipe--38.66--1.02",
+      "name": "Service pipe 2",
+      "assetId": "map-pipe-0p26x0p26x30p4",
+      "role": "decoration",
+      "category": "Props",
+      "translation": [
+        -38.66,
+        -1.02,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "nodeId": "decoration:service-pipe--38.66--1.02"
+    },
+    {
+      "id": "service-pipe--31.34--0.78",
+      "name": "Service pipe 3",
+      "assetId": "map-pipe-0p26x0p26x30p4",
+      "role": "decoration",
+      "category": "Props",
+      "translation": [
+        -31.34,
+        -0.78,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "nodeId": "decoration:service-pipe--31.34--0.78"
+    },
+    {
+      "id": "service-pipe--31.34--1.02",
+      "name": "Service pipe 4",
+      "assetId": "map-pipe-0p26x0p26x30p4",
+      "role": "decoration",
+      "category": "Props",
+      "translation": [
+        -31.34,
+        -1.02,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "nodeId": "decoration:service-pipe--31.34--1.02"
+    },
+    {
+      "id": "balcony-cable--7.75",
+      "name": "Electrical cable 1",
+      "assetId": "map-cable-8x0p75x0p06",
+      "role": "decoration",
+      "category": "Props",
+      "translation": [
+        -7.75,
+        5.25,
+        16.73
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "nodeId": "decoration:balcony-cable--7.75"
+    },
+    {
+      "id": "balcony-cable-7.75",
+      "name": "Electrical cable 2",
+      "assetId": "map-cable-8x0p75x0p06",
+      "role": "decoration",
+      "category": "Props",
+      "translation": [
+        7.75,
+        5.25,
+        16.73
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "nodeId": "decoration:balcony-cable-7.75"
+    }
+  ]
+}

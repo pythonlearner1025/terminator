@@ -1,0 +1,252 @@
+{
+  "asset": {
+    "generator": "Terminator tools/build-map-assets.mjs with glTF-Transform 4.5.0 and three.js",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "name": "Generator steel POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 72,
+      "max": [
+        0.800000011920929,
+        0.800000011920929,
+        1.2000000476837158
+      ],
+      "min": [
+        -0.800000011920929,
+        -0.800000011920929,
+        -1.2000000476837158
+      ],
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Generator steel NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 72,
+      "bufferView": 0,
+      "byteOffset": 12
+    },
+    {
+      "name": "Generator steel TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 72,
+      "bufferView": 0,
+      "byteOffset": 24
+    },
+    {
+      "name": "Generator olive POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 36,
+      "max": [
+        0.75,
+        0.7099999785423279,
+        1.1100000143051147
+      ],
+      "min": [
+        -0.75,
+        -0.6500000357627869,
+        -1.1100000143051147
+      ],
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Generator olive NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 36,
+      "bufferView": 1,
+      "byteOffset": 12
+    },
+    {
+      "name": "Generator olive TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 36,
+      "bufferView": 1,
+      "byteOffset": 24
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 2304,
+      "byteStride": 32,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2304,
+      "byteLength": 1152,
+      "byteStride": 32,
+      "target": 34962
+    }
+  ],
+  "samplers": [
+    {
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "source": 0,
+      "sampler": 0
+    },
+    {
+      "source": 1,
+      "sampler": 0
+    },
+    {
+      "source": 2,
+      "sampler": 0
+    }
+  ],
+  "images": [
+    {
+      "name": "paint_albedo.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/paint_albedo.jpg"
+    },
+    {
+      "name": "paint_normal.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/paint_normal.jpg"
+    },
+    {
+      "name": "paint_arm.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/paint_arm.jpg"
+    }
+  ],
+  "buffers": [
+    {
+      "name": "Map piece geometry",
+      "uri": "generator-1p6x1p6x2p4.bin",
+      "byteLength": 3456
+    }
+  ],
+  "materials": [
+    {
+      "name": "Map steel",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.44,
+          0.49,
+          0.51,
+          1
+        ],
+        "roughnessFactor": 0.68,
+        "metallicFactor": 0.82,
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    },
+    {
+      "name": "Map olive",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.29,
+          0.39,
+          0.27,
+          1
+        ],
+        "roughnessFactor": 0.84,
+        "metallicFactor": 0.55,
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Generator steel",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "mode": 4,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "Generator olive",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 3,
+            "NORMAL": 4,
+            "TEXCOORD_0": 5
+          },
+          "mode": 4,
+          "material": 1
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Generator asset",
+      "extras": {
+        "mapPieceAsset": true
+      },
+      "children": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "Generator steel",
+      "extras": {
+        "material": "steel"
+      },
+      "mesh": 0
+    },
+    {
+      "name": "Generator olive",
+      "extras": {
+        "material": "olive"
+      },
+      "mesh": 1
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Generator 1p6x1p6x2p4",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

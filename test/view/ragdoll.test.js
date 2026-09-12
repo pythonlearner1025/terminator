@@ -1,13 +1,12 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import {readFileSync} from 'node:fs'
 import {Ray, Vec3} from 'cannon-es'
+import {defaultMap as map} from '../../lib/core/map.js'
 
 globalThis.ImageData ??= class {}
 globalThis.window ??= {}
 const E = await import('threepipe')
 const {RagdollSystem, buildRagdollTerrain} = await import('../../lib/view/ragdoll.js')
-const map = JSON.parse(readFileSync(new URL('../../lib/core/data/map.json',import.meta.url),'utf8'))
 
 function fixture(pos={x:4,y:0,z:10}) {
   const object=new E.Group(), joints={}, contacts=[]

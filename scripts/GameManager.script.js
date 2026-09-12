@@ -1,5 +1,7 @@
 import {Object3DComponent} from 'threepipe'
-import mapData from '../lib/core/data/map.json' with {type: 'json'}
+import mapRules from '../lib/core/data/map.json' with {type: 'json'}
+import mapPieceRegistry from '../lib/core/data/map-piece-registry.json' with {type: 'json'}
+import {buildMapFromPlacements, scenePlacements} from '../lib/core/map.js'
 import {BuiltinSkynet} from '../lib/core/builtin-skynet.js'
 import {projectViewModel} from '../lib/core/viewmodel.js'
 import {WaveDirector} from '../lib/core/waves.js'
@@ -53,15 +55,25 @@ export class GameManager extends Object3DComponent {
   start() {
     this.stop()
     const viewer = this.ctx.viewer
-    this.world = new World({map: mapData, seed: this.seed})
+    this.hiddenUnitSources = []
+    viewer.scene.modelRoot.traverse(object => {
+      if (!object.userData?.rootPath?.startsWith('/kite3d/@unit-')) return
+      this.hiddenUnitSources.push([object, object.visible])
+      object.visible = false
+    })
+    const mapRoot = viewer.scene.modelRoot.getObjectByName('Map')
+    if (!mapRoot) throw new Error('Map authored node not found')
+    this.mapData = buildMapFromPlacements(mapRules, mapPieceRegistry, scenePlacements(mapRoot))
+    this.world = new World({map: this.mapData, seed: this.seed})
     this.sessionMode = 'single'
     this.localPlayerId = this.world.hostPlayerId
     this.partyState = null
     this.director = new WaveDirector(this.world, {
-      builtin: new BuiltinSkynet({map: mapData}),
+      builtin: new BuiltinSkynet({map: this.mapData}),
       intermissionSeconds: this.intermissionSeconds,
     })
-    this.mapView = new MapView(viewer, mapData)
+    this.mapView = new MapView(viewer, this.mapData)
+    this.mapView.start()
     this.unitView = new UnitView(viewer)
     this.playerView = new PlayerView(viewer)
     this.grenadeView = new GrenadeView(viewer)
@@ -69,9 +81,6 @@ export class GameManager extends Object3DComponent {
     this.hud = new Hud(viewer)
     this.lobby = new LobbyClient({world: this.world, director: this.director, intermissionSeconds: this.intermissionSeconds})
     this.cameraFeel = new CameraFeel()
-    const rangeSource=viewer.scene.modelRoot.getObjectByName('Weapons Range') || viewer.scene.modelRoot.getObjectByName('Weapons_Range')
-    this.rangePreview=rangeSource?{source:rangeSource,visible:rangeSource.visible}:null
-    if(rangeSource)rangeSource.visible=false
     this.ui = new UiSession(this)
     this.accumulator = 0
     this.uiProjectionTick = null
@@ -82,7 +91,7 @@ export class GameManager extends Object3DComponent {
   startViews() {
     if (this.viewsStarted || !this.world) return false
     try {
-      this.mapView.start()
+      this.mapView.startEffects()
       this.unitView.start(this.world)
       this.playerView.start(this.world)
       this.grenadeView.start(this.world, this.playerView.weapons.material)
@@ -100,7 +109,6 @@ export class GameManager extends Object3DComponent {
       this.grenadeView?.stop()
       this.playerView?.stop()
       this.unitView?.stop()
-      this.mapView?.stop()
       throw error
     }
   }
@@ -112,7 +120,6 @@ export class GameManager extends Object3DComponent {
     this.grenadeView?.stop()
     this.playerView?.stop()
     this.unitView?.stop()
-    this.mapView?.stop()
   }
 
   update({deltaTime} = {}) {
@@ -343,9 +350,9 @@ export class GameManager extends Object3DComponent {
   _resetSingleWorld() {
     this.lobby?.stop()
     this.world?.destroy?.()
-    this.world = new World({map: mapData, seed: this.seed})
+    this.world = new World({map: this.mapData, seed: this.seed})
     this.director = new WaveDirector(this.world, {
-      builtin: new BuiltinSkynet({map: mapData}),
+      builtin: new BuiltinSkynet({map: this.mapData}),
       intermissionSeconds: this.intermissionSeconds,
     })
     this.lobby = new LobbyClient({world: this.world, director: this.director, intermissionSeconds: this.intermissionSeconds})
@@ -364,13 +371,15 @@ export class GameManager extends Object3DComponent {
     this.visualWarmup = null
     this.visualWarmupReport = null
     this.ui?.dispose()
-    if(this.rangePreview){this.rangePreview.source.visible=this.rangePreview.visible;this.rangePreview=null}
     this._stopParty()
     this.cameraFeel?.dispose()
     this.lobby?.stop()
     this.input?.stop()
     this.hud?.dispose()
     this.stopViews()
+    this.mapView?.stop()
+    for (const [source, visible] of this.hiddenUnitSources || []) source.visible = visible
+    this.hiddenUnitSources = null
     this.input = null
     this.lobby = null
     this.hud = null
@@ -383,6 +392,7 @@ export class GameManager extends Object3DComponent {
     this.director = null
     this.world?.destroy?.()
     this.world = null
+    this.mapData = null
     this.accumulator = 0
     this.sessionMode = 'single'
     this.localPlayerId = 'player'

@@ -1,0 +1,163 @@
+{
+  "asset": {
+    "generator": "Terminator tools/build-map-assets.mjs with glTF-Transform 4.5.0 and three.js",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "name": "Sandbag stack canvas POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 2304,
+      "max": [
+        1.600000023841858,
+        0.6499999761581421,
+        0.6000000238418579
+      ],
+      "min": [
+        -1.600000023841858,
+        -0.6499999761581421,
+        -0.6000000238418579
+      ],
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Sandbag stack canvas NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 2304,
+      "bufferView": 0,
+      "byteOffset": 12
+    },
+    {
+      "name": "Sandbag stack canvas TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 2304,
+      "bufferView": 0,
+      "byteOffset": 24
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 73728,
+      "byteStride": 32,
+      "target": 34962
+    }
+  ],
+  "samplers": [
+    {
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "source": 0,
+      "sampler": 0
+    },
+    {
+      "source": 1,
+      "sampler": 0
+    },
+    {
+      "source": 2,
+      "sampler": 0
+    }
+  ],
+  "images": [
+    {
+      "name": "canvas_albedo.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/canvas_albedo.jpg"
+    },
+    {
+      "name": "canvas_normal.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/canvas_normal.jpg"
+    },
+    {
+      "name": "canvas_arm.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/canvas_arm.jpg"
+    }
+  ],
+  "buffers": [
+    {
+      "name": "Map piece geometry",
+      "uri": "sandbags-3p2x1p3x1p2.bin",
+      "byteLength": 73728
+    }
+  ],
+  "materials": [
+    {
+      "name": "Map canvas",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.56,
+          0.52,
+          0.34,
+          1
+        ],
+        "metallicFactor": 0,
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Sandbag stack canvas",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "mode": 4,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Sandbag stack asset",
+      "extras": {
+        "mapPieceAsset": true
+      },
+      "children": [
+        1
+      ]
+    },
+    {
+      "name": "Sandbag stack canvas",
+      "extras": {
+        "material": "canvas"
+      },
+      "mesh": 0
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Sandbags 3p2x1p3x1p2",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

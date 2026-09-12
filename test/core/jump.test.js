@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
-import mapData from '../../lib/core/data/map.json' with {type: 'json'}
+import {defaultMap as mapData} from '../../lib/core/map.js'
 import {TICK_RATE, World} from '../../lib/core/world.js'
 
 const idleBrain = {tick() {}}

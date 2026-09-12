@@ -1,0 +1,279 @@
+{
+  "asset": {
+    "generator": "Terminator tools/build-map-assets.mjs with glTF-Transform 4.5.0 and three.js",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "name": "Wall segment concrete POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 36,
+      "max": [
+        8,
+        1.5,
+        0.5
+      ],
+      "min": [
+        -8,
+        -1.5,
+        -0.5
+      ],
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Wall segment concrete NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 36,
+      "bufferView": 0,
+      "byteOffset": 12
+    },
+    {
+      "name": "Wall segment concrete TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 36,
+      "bufferView": 0,
+      "byteOffset": 24
+    },
+    {
+      "name": "Wall segment rust POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 180,
+      "max": [
+        7.28000020980835,
+        1.440000057220459,
+        0.5
+      ],
+      "min": [
+        -6.480000019073486,
+        -1.440000057220459,
+        -0.5
+      ],
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Wall segment rust NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 180,
+      "bufferView": 1,
+      "byteOffset": 12
+    },
+    {
+      "name": "Wall segment rust TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 180,
+      "bufferView": 1,
+      "byteOffset": 24
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 1152,
+      "byteStride": 32,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1152,
+      "byteLength": 5760,
+      "byteStride": 32,
+      "target": 34962
+    }
+  ],
+  "samplers": [
+    {
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "source": 0,
+      "sampler": 0
+    },
+    {
+      "source": 1,
+      "sampler": 0
+    },
+    {
+      "source": 2,
+      "sampler": 0
+    },
+    {
+      "source": 3,
+      "sampler": 0
+    },
+    {
+      "source": 4,
+      "sampler": 0
+    },
+    {
+      "source": 5,
+      "sampler": 0
+    }
+  ],
+  "images": [
+    {
+      "name": "concrete_wall_007_diff_1k.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/concrete_wall_007_diff_1k.jpg"
+    },
+    {
+      "name": "concrete_wall_007_nor_gl_1k.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/concrete_wall_007_nor_gl_1k.jpg"
+    },
+    {
+      "name": "concrete_wall_007_arm_1k.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/concrete_wall_007_arm_1k.jpg"
+    },
+    {
+      "name": "rusty_metal_02_diff_1k.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/rusty_metal_02_diff_1k.jpg"
+    },
+    {
+      "name": "rusty_metal_02_nor_gl_1k.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/rusty_metal_02_nor_gl_1k.jpg"
+    },
+    {
+      "name": "rusty_metal_02_arm_1k.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/rusty_metal_02_arm_1k.jpg"
+    }
+  ],
+  "buffers": [
+    {
+      "name": "Map piece geometry",
+      "uri": "wall-16x3x1.bin",
+      "byteLength": 6912
+    }
+  ],
+  "materials": [
+    {
+      "name": "Map concrete",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.56,
+          0.59,
+          0.59,
+          1
+        ],
+        "roughnessFactor": 0.9,
+        "metallicFactor": 0,
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    },
+    {
+      "name": "Map rust",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.48,
+          0.3,
+          0.18,
+          1
+        ],
+        "roughnessFactor": 0.92,
+        "metallicFactor": 0.42,
+        "baseColorTexture": {
+          "index": 3
+        },
+        "metallicRoughnessTexture": {
+          "index": 5
+        }
+      },
+      "normalTexture": {
+        "index": 4
+      },
+      "occlusionTexture": {
+        "index": 5
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Wall segment concrete",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "mode": 4,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "Wall segment rust",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 3,
+            "NORMAL": 4,
+            "TEXCOORD_0": 5
+          },
+          "mode": 4,
+          "material": 1
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Wall segment asset",
+      "extras": {
+        "mapPieceAsset": true
+      },
+      "children": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "Wall segment concrete",
+      "extras": {
+        "material": "concrete"
+      },
+      "mesh": 0
+    },
+    {
+      "name": "Wall segment rust",
+      "extras": {
+        "material": "rust"
+      },
+      "mesh": 1
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Wall 16x3x1",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

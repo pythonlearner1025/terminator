@@ -2,7 +2,7 @@ import assert from 'node:assert/strict'
 import test from 'node:test'
 import {NavGrid} from '../../lib/core/nav.js'
 import {staticColliders} from '../../lib/core/collision.js'
-import map from '../../lib/core/data/map.json' with {type:'json'}
+import {defaultMap as map} from '../../lib/core/map.js'
 
 test('nav candidates and cached connections match full scans on every layer and doorway state',()=>{
   const dynamic=map.doors.map(d=>({id:d.id,center:d.pos,size:d.size,navBlock:true}))

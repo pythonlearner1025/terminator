@@ -1,0 +1,279 @@
+{
+  "asset": {
+    "generator": "Terminator tools/build-map-assets.mjs with glTF-Transform 4.5.0 and three.js",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "name": "Column concrete POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 36,
+      "max": [
+        0.3499999940395355,
+        2,
+        0.3499999940395355
+      ],
+      "min": [
+        -0.3499999940395355,
+        -2,
+        -0.3499999940395355
+      ],
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Column concrete NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 36,
+      "bufferView": 0,
+      "byteOffset": 12
+    },
+    {
+      "name": "Column concrete TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 36,
+      "bufferView": 0,
+      "byteOffset": 24
+    },
+    {
+      "name": "Column steel POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 72,
+      "max": [
+        0.3499999940395355,
+        1.9950000047683716,
+        0.3499999940395355
+      ],
+      "min": [
+        -0.3499999940395355,
+        -1.9950000047683716,
+        -0.3499999940395355
+      ],
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Column steel NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 72,
+      "bufferView": 1,
+      "byteOffset": 12
+    },
+    {
+      "name": "Column steel TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 72,
+      "bufferView": 1,
+      "byteOffset": 24
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 1152,
+      "byteStride": 32,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1152,
+      "byteLength": 2304,
+      "byteStride": 32,
+      "target": 34962
+    }
+  ],
+  "samplers": [
+    {
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "source": 0,
+      "sampler": 0
+    },
+    {
+      "source": 1,
+      "sampler": 0
+    },
+    {
+      "source": 2,
+      "sampler": 0
+    },
+    {
+      "source": 3,
+      "sampler": 0
+    },
+    {
+      "source": 4,
+      "sampler": 0
+    },
+    {
+      "source": 5,
+      "sampler": 0
+    }
+  ],
+  "images": [
+    {
+      "name": "concrete_wall_007_diff_1k.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/concrete_wall_007_diff_1k.jpg"
+    },
+    {
+      "name": "concrete_wall_007_nor_gl_1k.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/concrete_wall_007_nor_gl_1k.jpg"
+    },
+    {
+      "name": "concrete_wall_007_arm_1k.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/concrete_wall_007_arm_1k.jpg"
+    },
+    {
+      "name": "paint_albedo.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/paint_albedo.jpg"
+    },
+    {
+      "name": "paint_normal.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/paint_normal.jpg"
+    },
+    {
+      "name": "paint_arm.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/paint_arm.jpg"
+    }
+  ],
+  "buffers": [
+    {
+      "name": "Map piece geometry",
+      "uri": "column-0p7x4x0p7.bin",
+      "byteLength": 3456
+    }
+  ],
+  "materials": [
+    {
+      "name": "Map concrete",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.56,
+          0.59,
+          0.59,
+          1
+        ],
+        "roughnessFactor": 0.9,
+        "metallicFactor": 0,
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    },
+    {
+      "name": "Map steel",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.44,
+          0.49,
+          0.51,
+          1
+        ],
+        "roughnessFactor": 0.68,
+        "metallicFactor": 0.82,
+        "baseColorTexture": {
+          "index": 3
+        },
+        "metallicRoughnessTexture": {
+          "index": 5
+        }
+      },
+      "normalTexture": {
+        "index": 4
+      },
+      "occlusionTexture": {
+        "index": 5
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Column concrete",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "mode": 4,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "Column steel",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 3,
+            "NORMAL": 4,
+            "TEXCOORD_0": 5
+          },
+          "mode": 4,
+          "material": 1
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Column asset",
+      "extras": {
+        "mapPieceAsset": true
+      },
+      "children": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "Column concrete",
+      "extras": {
+        "material": "concrete"
+      },
+      "mesh": 0
+    },
+    {
+      "name": "Column steel",
+      "extras": {
+        "material": "steel"
+      },
+      "mesh": 1
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Column 0p7x4x0p7",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

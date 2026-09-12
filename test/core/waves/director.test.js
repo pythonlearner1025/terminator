@@ -1,4 +1,4 @@
-import map from '../../../lib/core/data/map.json' with {type:'json'}
+import {defaultMap as map} from '../../../lib/core/map.js'
 import assert from 'node:assert/strict'
 import test from 'node:test'
 import {BuiltinSkynet} from '../../../lib/core/builtin-skynet.js'

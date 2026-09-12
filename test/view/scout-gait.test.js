@@ -1,7 +1,7 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import {readFileSync} from 'node:fs'
 import {NavGrid} from '../../lib/core/nav.js'
+import {defaultMap as map} from '../../lib/core/map.js'
 import {getQualityPreset} from '../../lib/view/performance-quality.js'
 
 globalThis.ImageData ??= class {}
@@ -9,7 +9,6 @@ globalThis.window ??= {}
 const E=await import('threepipe')
 const {bindUnitRig,animateUnit,unitGround}=await import('../../lib/view/units-animation.js')
 const {UnitView}=await import('../../lib/view/units.js')
-const map=JSON.parse(readFileSync(new URL('../../lib/core/data/map.json',import.meta.url),'utf8'))
 const nav=new NavGrid(map)
 
 // Anatomical fixture only: rendering and the full generated Scout are exercised

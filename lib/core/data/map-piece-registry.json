@@ -1,0 +1,2448 @@
+{
+  "version": 1,
+  "assets": {
+    "map-floor-60x0p5x60": {
+      "kind": "floor",
+      "size": {
+        "x": 60,
+        "y": 0.5,
+        "z": 60
+      },
+      "sourceId": "ground",
+      "collider": {
+        "kind": "floor",
+        "shape": "box",
+        "size": {
+          "x": 60,
+          "y": 0.5,
+          "z": 60
+        }
+      },
+      "anchor": [
+        0,
+        -0.25,
+        0
+      ]
+    },
+    "map-wall-12x3x1": {
+      "kind": "wall",
+      "size": {
+        "x": 12,
+        "y": 3,
+        "z": 1
+      },
+      "sourceId": "wall_n_w",
+      "collider": {
+        "kind": "wall",
+        "shape": "box",
+        "size": {
+          "x": 12,
+          "y": 3,
+          "z": 1
+        }
+      },
+      "anchor": [
+        -24,
+        1.5,
+        29.5
+      ]
+    },
+    "map-wall-28x3x1": {
+      "kind": "wall",
+      "size": {
+        "x": 28,
+        "y": 3,
+        "z": 1
+      },
+      "sourceId": "wall_n_mid",
+      "collider": {
+        "kind": "wall",
+        "shape": "box",
+        "size": {
+          "x": 28,
+          "y": 3,
+          "z": 1
+        }
+      },
+      "anchor": [
+        0,
+        1.5,
+        29.5
+      ]
+    },
+    "map-wall-18x3x1": {
+      "kind": "wall",
+      "size": {
+        "x": 18,
+        "y": 3,
+        "z": 1
+      },
+      "sourceId": "wall_s_w",
+      "collider": {
+        "kind": "wall",
+        "shape": "box",
+        "size": {
+          "x": 18,
+          "y": 3,
+          "z": 1
+        }
+      },
+      "anchor": [
+        -21,
+        1.5,
+        -29.5
+      ]
+    },
+    "map-wall-16x3x1": {
+      "kind": "wall",
+      "size": {
+        "x": 16,
+        "y": 3,
+        "z": 1
+      },
+      "sourceId": "wall_s_mid",
+      "collider": {
+        "kind": "wall",
+        "shape": "box",
+        "size": {
+          "x": 16,
+          "y": 3,
+          "z": 1
+        }
+      },
+      "anchor": [
+        0,
+        1.5,
+        -29.5
+      ]
+    },
+    "map-wall-1x3x16": {
+      "kind": "wall",
+      "size": {
+        "x": 1,
+        "y": 3,
+        "z": 16
+      },
+      "sourceId": "wall_e_s",
+      "collider": {
+        "kind": "wall",
+        "shape": "box",
+        "size": {
+          "x": 1,
+          "y": 3,
+          "z": 16
+        }
+      },
+      "anchor": [
+        29.5,
+        1.5,
+        -22
+      ]
+    },
+    "map-wall-1x3x13": {
+      "kind": "wall",
+      "size": {
+        "x": 1,
+        "y": 3,
+        "z": 13
+      },
+      "sourceId": "wall_e_n",
+      "collider": {
+        "kind": "wall",
+        "shape": "box",
+        "size": {
+          "x": 1,
+          "y": 3,
+          "z": 13
+        }
+      },
+      "anchor": [
+        29.5,
+        1.5,
+        23.5
+      ]
+    },
+    "map-wall-1x3x6p4": {
+      "kind": "wall",
+      "size": {
+        "x": 1,
+        "y": 3,
+        "z": 6.4
+      },
+      "sourceId": "wall_w_s",
+      "collider": {
+        "kind": "wall",
+        "shape": "box",
+        "size": {
+          "x": 1,
+          "y": 3,
+          "z": 6.4
+        }
+      },
+      "anchor": [
+        -29.5,
+        1.5,
+        -26.8
+      ]
+    },
+    "map-rubble-1x1p5x12-zh655b": {
+      "kind": "rubble",
+      "size": {
+        "x": 1,
+        "y": 1.5,
+        "z": 12
+      },
+      "shapes": [
+        {
+          "id": "visible-rubble",
+          "shape": "box",
+          "offset": {
+            "x": 0,
+            "y": -0.0735,
+            "z": 0
+          },
+          "size": {
+            "x": 1,
+            "y": 1.353,
+            "z": 12
+          }
+        }
+      ],
+      "sourceId": "courtyard_divider",
+      "collider": {
+        "kind": "rubble",
+        "shape": "box",
+        "size": {
+          "x": 1,
+          "y": 1.5,
+          "z": 12
+        },
+        "shapes": [
+          {
+            "id": "visible-rubble",
+            "shape": "box",
+            "offset": {
+              "x": 0,
+              "y": -0.0735,
+              "z": 0
+            },
+            "size": {
+              "x": 1,
+              "y": 1.353,
+              "z": 12
+            }
+          }
+        ]
+      },
+      "anchor": [
+        0,
+        0.75,
+        0
+      ]
+    },
+    "map-rubble-nw": {
+      "kind": "rubble",
+      "size": {
+        "x": 4,
+        "y": 1.3,
+        "z": 2
+      },
+      "shapes": [
+        {
+          "id": "visible-rubble",
+          "shape": "box",
+          "offset": {
+            "x": 0,
+            "y": -0.015,
+            "z": 0
+          },
+          "size": {
+            "x": 4,
+            "y": 1.27,
+            "z": 2
+          }
+        }
+      ],
+      "sourceId": "rubble_nw",
+      "collider": {
+        "kind": "rubble",
+        "shape": "box",
+        "size": {
+          "x": 4,
+          "y": 1.3,
+          "z": 2
+        },
+        "shapes": [
+          {
+            "id": "visible-rubble",
+            "shape": "box",
+            "offset": {
+              "x": 0,
+              "y": -0.015,
+              "z": 0
+            },
+            "size": {
+              "x": 4,
+              "y": 1.27,
+              "z": 2
+            }
+          }
+        ]
+      },
+      "anchor": [
+        -7,
+        0.65,
+        5
+      ]
+    },
+    "map-rubble-se": {
+      "kind": "rubble",
+      "size": {
+        "x": 5,
+        "y": 1.1,
+        "z": 2.5
+      },
+      "shapes": [
+        {
+          "id": "visible-rubble",
+          "shape": "box",
+          "offset": {
+            "x": 0,
+            "y": -0.0125,
+            "z": 0
+          },
+          "size": {
+            "x": 5,
+            "y": 1.075,
+            "z": 2.5
+          }
+        }
+      ],
+      "sourceId": "rubble_se",
+      "collider": {
+        "kind": "rubble",
+        "shape": "box",
+        "size": {
+          "x": 5,
+          "y": 1.1,
+          "z": 2.5
+        },
+        "shapes": [
+          {
+            "id": "visible-rubble",
+            "shape": "box",
+            "offset": {
+              "x": 0,
+              "y": -0.0125,
+              "z": 0
+            },
+            "size": {
+              "x": 5,
+              "y": 1.075,
+              "z": 2.5
+            }
+          }
+        ]
+      },
+      "anchor": [
+        7,
+        0.55,
+        -5
+      ]
+    },
+    "map-truck-5p5x2p4x2p4-m0jo9i": {
+      "kind": "truck",
+      "size": {
+        "x": 5.5,
+        "y": 2.4,
+        "z": 2.4
+      },
+      "shapes": [
+        {
+          "id": "chassis",
+          "shape": "box",
+          "offset": {
+            "x": 0,
+            "y": -0.72,
+            "z": 0
+          },
+          "size": {
+            "x": 5.45,
+            "y": 0.6,
+            "z": 2.32
+          }
+        },
+        {
+          "id": "cargo-bed",
+          "shape": "box",
+          "offset": {
+            "x": 0.95,
+            "y": -0.2,
+            "z": 0
+          },
+          "size": {
+            "x": 3.5,
+            "y": 0.55,
+            "z": 2.3
+          }
+        },
+        {
+          "id": "cargo-side-n",
+          "shape": "box",
+          "offset": {
+            "x": 0.98,
+            "y": 0.32,
+            "z": -1.09
+          },
+          "size": {
+            "x": 3.48,
+            "y": 0.75,
+            "z": 0.12
+          }
+        },
+        {
+          "id": "cargo-side-s",
+          "shape": "box",
+          "offset": {
+            "x": 0.98,
+            "y": 0.32,
+            "z": 1.09
+          },
+          "size": {
+            "x": 3.48,
+            "y": 0.75,
+            "z": 0.12
+          }
+        },
+        {
+          "id": "cabin",
+          "shape": "box",
+          "offset": {
+            "x": -1.85,
+            "y": 0.1,
+            "z": 0
+          },
+          "size": {
+            "x": 1.65,
+            "y": 1.6,
+            "z": 2.28
+          }
+        },
+        {
+          "id": "roof",
+          "shape": "box",
+          "offset": {
+            "x": -1.8,
+            "y": 1.07,
+            "z": 0
+          },
+          "size": {
+            "x": 1.8,
+            "y": 0.18,
+            "z": 2.35
+          }
+        },
+        {
+          "id": "wheel-front-n",
+          "shape": "cylinder",
+          "axis": "z",
+          "offset": {
+            "x": -1.8,
+            "y": -0.7,
+            "z": -1.05
+          },
+          "radius": 0.49,
+          "height": 0.3
+        },
+        {
+          "id": "wheel-front-s",
+          "shape": "cylinder",
+          "axis": "z",
+          "offset": {
+            "x": -1.8,
+            "y": -0.7,
+            "z": 1.05
+          },
+          "radius": 0.49,
+          "height": 0.3
+        },
+        {
+          "id": "wheel-rear-n",
+          "shape": "cylinder",
+          "axis": "z",
+          "offset": {
+            "x": 1.65,
+            "y": -0.7,
+            "z": -1.05
+          },
+          "radius": 0.49,
+          "height": 0.3
+        },
+        {
+          "id": "wheel-rear-s",
+          "shape": "cylinder",
+          "axis": "z",
+          "offset": {
+            "x": 1.65,
+            "y": -0.7,
+            "z": 1.05
+          },
+          "radius": 0.49,
+          "height": 0.3
+        }
+      ],
+      "sourceId": "wrecked_truck",
+      "collider": {
+        "kind": "truck",
+        "shape": "box",
+        "size": {
+          "x": 5.5,
+          "y": 2.4,
+          "z": 2.4
+        },
+        "shapes": [
+          {
+            "id": "chassis",
+            "shape": "box",
+            "offset": {
+              "x": 0,
+              "y": -0.72,
+              "z": 0
+            },
+            "size": {
+              "x": 5.45,
+              "y": 0.6,
+              "z": 2.32
+            }
+          },
+          {
+            "id": "cargo-bed",
+            "shape": "box",
+            "offset": {
+              "x": 0.95,
+              "y": -0.2,
+              "z": 0
+            },
+            "size": {
+              "x": 3.5,
+              "y": 0.55,
+              "z": 2.3
+            }
+          },
+          {
+            "id": "cargo-side-n",
+            "shape": "box",
+            "offset": {
+              "x": 0.98,
+              "y": 0.32,
+              "z": -1.09
+            },
+            "size": {
+              "x": 3.48,
+              "y": 0.75,
+              "z": 0.12
+            }
+          },
+          {
+            "id": "cargo-side-s",
+            "shape": "box",
+            "offset": {
+              "x": 0.98,
+              "y": 0.32,
+              "z": 1.09
+            },
+            "size": {
+              "x": 3.48,
+              "y": 0.75,
+              "z": 0.12
+            }
+          },
+          {
+            "id": "cabin",
+            "shape": "box",
+            "offset": {
+              "x": -1.85,
+              "y": 0.1,
+              "z": 0
+            },
+            "size": {
+              "x": 1.65,
+              "y": 1.6,
+              "z": 2.28
+            }
+          },
+          {
+            "id": "roof",
+            "shape": "box",
+            "offset": {
+              "x": -1.8,
+              "y": 1.07,
+              "z": 0
+            },
+            "size": {
+              "x": 1.8,
+              "y": 0.18,
+              "z": 2.35
+            }
+          },
+          {
+            "id": "wheel-front-n",
+            "shape": "cylinder",
+            "axis": "z",
+            "offset": {
+              "x": -1.8,
+              "y": -0.7,
+              "z": -1.05
+            },
+            "radius": 0.49,
+            "height": 0.3
+          },
+          {
+            "id": "wheel-front-s",
+            "shape": "cylinder",
+            "axis": "z",
+            "offset": {
+              "x": -1.8,
+              "y": -0.7,
+              "z": 1.05
+            },
+            "radius": 0.49,
+            "height": 0.3
+          },
+          {
+            "id": "wheel-rear-n",
+            "shape": "cylinder",
+            "axis": "z",
+            "offset": {
+              "x": 1.65,
+              "y": -0.7,
+              "z": -1.05
+            },
+            "radius": 0.49,
+            "height": 0.3
+          },
+          {
+            "id": "wheel-rear-s",
+            "shape": "cylinder",
+            "axis": "z",
+            "offset": {
+              "x": 1.65,
+              "y": -0.7,
+              "z": 1.05
+            },
+            "radius": 0.49,
+            "height": 0.3
+          }
+        ]
+      },
+      "anchor": [
+        -8,
+        1.2,
+        -5
+      ]
+    },
+    "map-barrel-0p8x1p3x0p8-103qszk": {
+      "kind": "barrel",
+      "size": {
+        "x": 0.8,
+        "y": 1.3,
+        "z": 0.8
+      },
+      "shapes": [
+        {
+          "id": "drum",
+          "shape": "cylinder",
+          "axis": "y",
+          "offset": {
+            "x": 0,
+            "y": 0.011,
+            "z": 0
+          },
+          "radius": 0.395,
+          "height": 1.262
+        }
+      ],
+      "sourceId": "burning_barrel_w",
+      "collider": {
+        "kind": "barrel",
+        "shape": "box",
+        "size": {
+          "x": 0.8,
+          "y": 1.3,
+          "z": 0.8
+        },
+        "shapes": [
+          {
+            "id": "drum",
+            "shape": "cylinder",
+            "axis": "y",
+            "offset": {
+              "x": 0,
+              "y": 0.011,
+              "z": 0
+            },
+            "radius": 0.395,
+            "height": 1.262
+          }
+        ]
+      },
+      "anchor": [
+        -4,
+        0.65,
+        3
+      ]
+    },
+    "map-floor-28x0p1x10": {
+      "kind": "floor",
+      "size": {
+        "x": 28,
+        "y": 0.1,
+        "z": 10
+      },
+      "sourceId": "building_ground_floor",
+      "collider": {
+        "kind": "floor",
+        "shape": "box",
+        "size": {
+          "x": 28,
+          "y": 0.1,
+          "z": 10
+        }
+      },
+      "anchor": [
+        0,
+        0.05,
+        22
+      ]
+    },
+    "map-floor-28x0p2x10": {
+      "kind": "floor",
+      "size": {
+        "x": 28,
+        "y": 0.2,
+        "z": 10
+      },
+      "sourceId": "building_second_floor",
+      "collider": {
+        "kind": "floor",
+        "shape": "box",
+        "size": {
+          "x": 28,
+          "y": 0.2,
+          "z": 10
+        }
+      },
+      "anchor": [
+        0,
+        3.05,
+        22
+      ]
+    },
+    "map-floor-20x0p2x2": {
+      "kind": "floor",
+      "size": {
+        "x": 20,
+        "y": 0.2,
+        "z": 2
+      },
+      "sourceId": "building_balcony",
+      "collider": {
+        "kind": "floor",
+        "shape": "box",
+        "size": {
+          "x": 20,
+          "y": 0.2,
+          "z": 2
+        }
+      },
+      "anchor": [
+        0,
+        3.05,
+        15.8
+      ]
+    },
+    "map-stair-3x0p5x1": {
+      "kind": "stair",
+      "size": {
+        "x": 3,
+        "y": 0.5,
+        "z": 1
+      },
+      "sourceId": "stair_1",
+      "collider": {
+        "kind": "stair",
+        "shape": "box",
+        "size": {
+          "x": 3,
+          "y": 0.5,
+          "z": 1
+        }
+      },
+      "anchor": [
+        10,
+        0.25,
+        24.5
+      ]
+    },
+    "map-stair-3x1x1": {
+      "kind": "stair",
+      "size": {
+        "x": 3,
+        "y": 1,
+        "z": 1
+      },
+      "sourceId": "stair_2",
+      "collider": {
+        "kind": "stair",
+        "shape": "box",
+        "size": {
+          "x": 3,
+          "y": 1,
+          "z": 1
+        }
+      },
+      "anchor": [
+        10,
+        0.75,
+        23.5
+      ]
+    },
+    "map-stair-3x1p5x1": {
+      "kind": "stair",
+      "size": {
+        "x": 3,
+        "y": 1.5,
+        "z": 1
+      },
+      "sourceId": "stair_3",
+      "collider": {
+        "kind": "stair",
+        "shape": "box",
+        "size": {
+          "x": 3,
+          "y": 1.5,
+          "z": 1
+        }
+      },
+      "anchor": [
+        10,
+        1.25,
+        22.5
+      ]
+    },
+    "map-stair-3x2x1": {
+      "kind": "stair",
+      "size": {
+        "x": 3,
+        "y": 2,
+        "z": 1
+      },
+      "sourceId": "stair_4",
+      "collider": {
+        "kind": "stair",
+        "shape": "box",
+        "size": {
+          "x": 3,
+          "y": 2,
+          "z": 1
+        }
+      },
+      "anchor": [
+        10,
+        1.75,
+        21.5
+      ]
+    },
+    "map-stair-3x2p5x1": {
+      "kind": "stair",
+      "size": {
+        "x": 3,
+        "y": 2.5,
+        "z": 1
+      },
+      "sourceId": "stair_5",
+      "collider": {
+        "kind": "stair",
+        "shape": "box",
+        "size": {
+          "x": 3,
+          "y": 2.5,
+          "z": 1
+        }
+      },
+      "anchor": [
+        10,
+        2.25,
+        20.5
+      ]
+    },
+    "map-stair-3x3x1": {
+      "kind": "stair",
+      "size": {
+        "x": 3,
+        "y": 3,
+        "z": 1
+      },
+      "sourceId": "stair_6",
+      "collider": {
+        "kind": "stair",
+        "shape": "box",
+        "size": {
+          "x": 3,
+          "y": 3,
+          "z": 1
+        }
+      },
+      "anchor": [
+        10,
+        2.75,
+        19.5
+      ]
+    },
+    "map-floor-10x0p7x18": {
+      "kind": "floor",
+      "size": {
+        "x": 10,
+        "y": 0.7,
+        "z": 18
+      },
+      "sourceId": "dock_floor",
+      "collider": {
+        "kind": "floor",
+        "shape": "box",
+        "size": {
+          "x": 10,
+          "y": 0.7,
+          "z": 18
+        }
+      },
+      "anchor": [
+        23,
+        0.35,
+        -5
+      ]
+    },
+    "map-container-red": {
+      "kind": "container",
+      "size": {
+        "x": 2.6,
+        "y": 2.9,
+        "z": 6
+      },
+      "shapes": [
+        {
+          "id": "shell",
+          "shape": "box",
+          "offset": {
+            "x": 0,
+            "y": -0.005,
+            "z": 0
+          },
+          "size": {
+            "x": 2.6,
+            "y": 2.89,
+            "z": 6
+          }
+        }
+      ],
+      "sourceId": "container_red",
+      "collider": {
+        "kind": "container",
+        "shape": "box",
+        "size": {
+          "x": 2.6,
+          "y": 2.9,
+          "z": 6
+        },
+        "shapes": [
+          {
+            "id": "shell",
+            "shape": "box",
+            "offset": {
+              "x": 0,
+              "y": -0.005,
+              "z": 0
+            },
+            "size": {
+              "x": 2.6,
+              "y": 2.89,
+              "z": 6
+            }
+          }
+        ]
+      },
+      "anchor": [
+        22,
+        1.45,
+        6
+      ]
+    },
+    "map-container-blue": {
+      "kind": "container",
+      "size": {
+        "x": 2.6,
+        "y": 2.9,
+        "z": 7
+      },
+      "shapes": [
+        {
+          "id": "shell",
+          "shape": "box",
+          "offset": {
+            "x": 0,
+            "y": -0.005,
+            "z": 0
+          },
+          "size": {
+            "x": 2.6,
+            "y": 2.89,
+            "z": 7
+          }
+        }
+      ],
+      "sourceId": "container_blue",
+      "collider": {
+        "kind": "container",
+        "shape": "box",
+        "size": {
+          "x": 2.6,
+          "y": 2.9,
+          "z": 7
+        },
+        "shapes": [
+          {
+            "id": "shell",
+            "shape": "box",
+            "offset": {
+              "x": 0,
+              "y": -0.005,
+              "z": 0
+            },
+            "size": {
+              "x": 2.6,
+              "y": 2.89,
+              "z": 7
+            }
+          }
+        ]
+      },
+      "anchor": [
+        26,
+        1.45,
+        -4
+      ]
+    },
+    "map-container-gray": {
+      "kind": "container",
+      "size": {
+        "x": 2.6,
+        "y": 2.9,
+        "z": 6
+      },
+      "shapes": [
+        {
+          "id": "shell",
+          "shape": "box",
+          "offset": {
+            "x": 0,
+            "y": -0.005,
+            "z": 0
+          },
+          "size": {
+            "x": 2.6,
+            "y": 2.89,
+            "z": 6
+          }
+        }
+      ],
+      "sourceId": "container_gray",
+      "collider": {
+        "kind": "container",
+        "shape": "box",
+        "size": {
+          "x": 2.6,
+          "y": 2.9,
+          "z": 6
+        },
+        "shapes": [
+          {
+            "id": "shell",
+            "shape": "box",
+            "offset": {
+              "x": 0,
+              "y": -0.005,
+              "z": 0
+            },
+            "size": {
+              "x": 2.6,
+              "y": 2.89,
+              "z": 6
+            }
+          }
+        ]
+      },
+      "anchor": [
+        20,
+        1.45,
+        -10
+      ]
+    },
+    "map-ramp-2x0p6x6": {
+      "kind": "ramp",
+      "size": {
+        "x": 2,
+        "y": 0.6,
+        "z": 6
+      },
+      "sourceId": "dock_ramp",
+      "collider": {
+        "kind": "ramp",
+        "shape": "box",
+        "size": {
+          "x": 2,
+          "y": 0.6,
+          "z": 6
+        }
+      },
+      "anchor": [
+        18,
+        0.3,
+        -5
+      ]
+    },
+    "map-tunnel-wall-10x3x0p6": {
+      "kind": "tunnel_wall",
+      "size": {
+        "x": 10,
+        "y": 3,
+        "z": 0.6
+      },
+      "sourceId": "tunnel_north",
+      "collider": {
+        "kind": "tunnel_wall",
+        "shape": "box",
+        "size": {
+          "x": 10,
+          "y": 3,
+          "z": 0.6
+        }
+      },
+      "anchor": [
+        -24,
+        1.5,
+        4
+      ]
+    },
+    "map-floor-10x0p4x8": {
+      "kind": "floor",
+      "size": {
+        "x": 10,
+        "y": 0.4,
+        "z": 8
+      },
+      "sourceId": "tunnel_roof",
+      "collider": {
+        "kind": "floor",
+        "shape": "box",
+        "size": {
+          "x": 10,
+          "y": 0.4,
+          "z": 8
+        }
+      },
+      "anchor": [
+        -24,
+        3,
+        0
+      ]
+    },
+    "map-floor-12x0p5x60-1ehthkr": {
+      "kind": "floor",
+      "size": {
+        "x": 12,
+        "y": 0.5,
+        "z": 60
+      },
+      "shapes": [
+        {
+          "id": "slab-0",
+          "shape": "box",
+          "offset": {
+            "x": -4.049999999999997,
+            "y": 0,
+            "z": 0
+          },
+          "size": {
+            "x": 3.8999999999999986,
+            "y": 0.5,
+            "z": 60
+          }
+        },
+        {
+          "id": "slab-1",
+          "shape": "box",
+          "offset": {
+            "x": 4.050000000000001,
+            "y": 0,
+            "z": 0
+          },
+          "size": {
+            "x": 3.8999999999999986,
+            "y": 0.5,
+            "z": 60
+          }
+        },
+        {
+          "id": "slab-2",
+          "shape": "box",
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": -26
+          },
+          "size": {
+            "x": 4.200000000000003,
+            "y": 0.5,
+            "z": 8
+          }
+        },
+        {
+          "id": "slab-3",
+          "shape": "box",
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "size": {
+            "x": 4.200000000000003,
+            "y": 0.5,
+            "z": 30
+          }
+        },
+        {
+          "id": "slab-4",
+          "shape": "box",
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 26
+          },
+          "size": {
+            "x": 4.200000000000003,
+            "y": 0.5,
+            "z": 8
+          }
+        }
+      ],
+      "sourceId": "exp_west_yard",
+      "collider": {
+        "kind": "floor",
+        "shape": "box",
+        "size": {
+          "x": 12,
+          "y": 0.5,
+          "z": 60
+        },
+        "shapes": [
+          {
+            "id": "slab-0",
+            "shape": "box",
+            "offset": {
+              "x": -4.049999999999997,
+              "y": 0,
+              "z": 0
+            },
+            "size": {
+              "x": 3.8999999999999986,
+              "y": 0.5,
+              "z": 60
+            }
+          },
+          {
+            "id": "slab-1",
+            "shape": "box",
+            "offset": {
+              "x": 4.050000000000001,
+              "y": 0,
+              "z": 0
+            },
+            "size": {
+              "x": 3.8999999999999986,
+              "y": 0.5,
+              "z": 60
+            }
+          },
+          {
+            "id": "slab-2",
+            "shape": "box",
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": -26
+            },
+            "size": {
+              "x": 4.200000000000003,
+              "y": 0.5,
+              "z": 8
+            }
+          },
+          {
+            "id": "slab-3",
+            "shape": "box",
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "size": {
+              "x": 4.200000000000003,
+              "y": 0.5,
+              "z": 30
+            }
+          },
+          {
+            "id": "slab-4",
+            "shape": "box",
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 26
+            },
+            "size": {
+              "x": 4.200000000000003,
+              "y": 0.5,
+              "z": 8
+            }
+          }
+        ]
+      },
+      "anchor": [
+        -36,
+        -0.25,
+        0
+      ]
+    },
+    "map-floor-12x0p5x60": {
+      "kind": "floor",
+      "size": {
+        "x": 12,
+        "y": 0.5,
+        "z": 60
+      },
+      "sourceId": "exp_east_yard",
+      "collider": {
+        "kind": "floor",
+        "shape": "box",
+        "size": {
+          "x": 12,
+          "y": 0.5,
+          "z": 60
+        }
+      },
+      "anchor": [
+        36,
+        -0.25,
+        0
+      ]
+    },
+    "map-floor-7p4x0p4x31p4": {
+      "kind": "floor",
+      "size": {
+        "x": 7.4,
+        "y": 0.4,
+        "z": 31.4
+      },
+      "sourceId": "exp_service_floor",
+      "collider": {
+        "kind": "floor",
+        "shape": "box",
+        "size": {
+          "x": 7.4,
+          "y": 0.4,
+          "z": 31.4
+        }
+      },
+      "anchor": [
+        -35,
+        -3.7,
+        0
+      ]
+    },
+    "map-wall-1x3x15": {
+      "kind": "wall",
+      "size": {
+        "x": 1,
+        "y": 3,
+        "z": 15
+      },
+      "sourceId": "exp_old_west_inner_s",
+      "collider": {
+        "kind": "wall",
+        "shape": "box",
+        "size": {
+          "x": 1,
+          "y": 3,
+          "z": 15
+        }
+      },
+      "anchor": [
+        -29.5,
+        1.5,
+        -9.5
+      ]
+    },
+    "map-wall-1x3x6": {
+      "kind": "wall",
+      "size": {
+        "x": 1,
+        "y": 3,
+        "z": 6
+      },
+      "sourceId": "exp_old_east_inner_s",
+      "collider": {
+        "kind": "wall",
+        "shape": "box",
+        "size": {
+          "x": 1,
+          "y": 3,
+          "z": 6
+        }
+      },
+      "anchor": [
+        29.5,
+        1.5,
+        -5
+      ]
+    },
+    "map-wall-1x3x7": {
+      "kind": "wall",
+      "size": {
+        "x": 1,
+        "y": 3,
+        "z": 7
+      },
+      "sourceId": "exp_old_east_inner_n",
+      "collider": {
+        "kind": "wall",
+        "shape": "box",
+        "size": {
+          "x": 1,
+          "y": 3,
+          "z": 7
+        }
+      },
+      "anchor": [
+        29.5,
+        1.5,
+        5.5
+      ]
+    },
+    "map-wall-1x3x1": {
+      "kind": "wall",
+      "size": {
+        "x": 1,
+        "y": 3,
+        "z": 1
+      },
+      "sourceId": "exp_west_corner_-28.5",
+      "collider": {
+        "kind": "wall",
+        "shape": "box",
+        "size": {
+          "x": 1,
+          "y": 3,
+          "z": 1
+        }
+      },
+      "anchor": [
+        -30.5,
+        1.5,
+        -28.5
+      ]
+    },
+    "map-wall-0p6x3p6x16": {
+      "kind": "wall",
+      "size": {
+        "x": 0.6,
+        "y": 3.6,
+        "z": 16
+      },
+      "sourceId": "exp_perimeter_-41.7_-22",
+      "collider": {
+        "kind": "wall",
+        "shape": "box",
+        "size": {
+          "x": 0.6,
+          "y": 3.6,
+          "z": 16
+        }
+      },
+      "anchor": [
+        -41.7,
+        1.8,
+        -22
+      ]
+    },
+    "map-wall-0p6x3p6x6": {
+      "kind": "wall",
+      "size": {
+        "x": 0.6,
+        "y": 3.6,
+        "z": 6
+      },
+      "sourceId": "exp_perimeter_-41.7_-5",
+      "collider": {
+        "kind": "wall",
+        "shape": "box",
+        "size": {
+          "x": 0.6,
+          "y": 3.6,
+          "z": 6
+        }
+      },
+      "anchor": [
+        -41.7,
+        1.8,
+        -5
+      ]
+    },
+    "map-wall-0p6x3p6x12": {
+      "kind": "wall",
+      "size": {
+        "x": 0.6,
+        "y": 3.6,
+        "z": 12
+      },
+      "sourceId": "exp_perimeter_-41.7_8",
+      "collider": {
+        "kind": "wall",
+        "shape": "box",
+        "size": {
+          "x": 0.6,
+          "y": 3.6,
+          "z": 12
+        }
+      },
+      "anchor": [
+        -41.7,
+        1.8,
+        8
+      ]
+    },
+    "map-wall-0p6x3p6x8": {
+      "kind": "wall",
+      "size": {
+        "x": 0.6,
+        "y": 3.6,
+        "z": 8
+      },
+      "sourceId": "exp_perimeter_-41.7_26",
+      "collider": {
+        "kind": "wall",
+        "shape": "box",
+        "size": {
+          "x": 0.6,
+          "y": 3.6,
+          "z": 8
+        }
+      },
+      "anchor": [
+        -41.7,
+        1.8,
+        26
+      ]
+    },
+    "map-wall-12x3p6x0p6": {
+      "kind": "wall",
+      "size": {
+        "x": 12,
+        "y": 3.6,
+        "z": 0.6
+      },
+      "sourceId": "exp_north_-36",
+      "collider": {
+        "kind": "wall",
+        "shape": "box",
+        "size": {
+          "x": 12,
+          "y": 3.6,
+          "z": 0.6
+        }
+      },
+      "anchor": [
+        -36,
+        1.8,
+        29.7
+      ]
+    },
+    "map-wall-2p5x3p6x0p6": {
+      "kind": "wall",
+      "size": {
+        "x": 2.5,
+        "y": 3.6,
+        "z": 0.6
+      },
+      "sourceId": "exp_south_east_l",
+      "collider": {
+        "kind": "wall",
+        "shape": "box",
+        "size": {
+          "x": 2.5,
+          "y": 3.6,
+          "z": 0.6
+        }
+      },
+      "anchor": [
+        31.25,
+        1.8,
+        -29.7
+      ]
+    },
+    "map-floor-10x0p2x20-1v1svwu": {
+      "kind": "floor",
+      "size": {
+        "x": 10,
+        "y": 0.2,
+        "z": 20
+      },
+      "shapes": [
+        {
+          "id": "slab-0",
+          "shape": "box",
+          "offset": {
+            "x": -1.5499999999999972,
+            "y": 0,
+            "z": 0
+          },
+          "size": {
+            "x": 6.899999999999999,
+            "y": 0.2,
+            "z": 20
+          }
+        },
+        {
+          "id": "slab-1",
+          "shape": "box",
+          "offset": {
+            "x": 3.450000000000003,
+            "y": 0,
+            "z": -4.050000000000001
+          },
+          "size": {
+            "x": 3.1000000000000014,
+            "y": 0.2,
+            "z": 11.9
+          }
+        },
+        {
+          "id": "slab-2",
+          "shape": "box",
+          "offset": {
+            "x": 3.450000000000003,
+            "y": 0,
+            "z": 9.05
+          },
+          "size": {
+            "x": 3.1000000000000014,
+            "y": 0.2,
+            "z": 1.8999999999999986
+          }
+        }
+      ],
+      "sourceId": "exp_barracks_upper",
+      "collider": {
+        "kind": "floor",
+        "shape": "box",
+        "size": {
+          "x": 10,
+          "y": 0.2,
+          "z": 20
+        },
+        "shapes": [
+          {
+            "id": "slab-0",
+            "shape": "box",
+            "offset": {
+              "x": -1.5499999999999972,
+              "y": 0,
+              "z": 0
+            },
+            "size": {
+              "x": 6.899999999999999,
+              "y": 0.2,
+              "z": 20
+            }
+          },
+          {
+            "id": "slab-1",
+            "shape": "box",
+            "offset": {
+              "x": 3.450000000000003,
+              "y": 0,
+              "z": -4.050000000000001
+            },
+            "size": {
+              "x": 3.1000000000000014,
+              "y": 0.2,
+              "z": 11.9
+            }
+          },
+          {
+            "id": "slab-2",
+            "shape": "box",
+            "offset": {
+              "x": 3.450000000000003,
+              "y": 0,
+              "z": 9.05
+            },
+            "size": {
+              "x": 3.1000000000000014,
+              "y": 0.2,
+              "z": 1.8999999999999986
+            }
+          }
+        ]
+      },
+      "anchor": [
+        36,
+        3.1,
+        14
+      ]
+    },
+    "map-floor-10x0p2x20-134p795": {
+      "kind": "floor",
+      "size": {
+        "x": 10,
+        "y": 0.2,
+        "z": 20
+      },
+      "shapes": [
+        {
+          "id": "slab-0",
+          "shape": "box",
+          "offset": {
+            "x": 1.5499999999999972,
+            "y": 0,
+            "z": 0
+          },
+          "size": {
+            "x": 6.899999999999999,
+            "y": 0.2,
+            "z": 20
+          }
+        },
+        {
+          "id": "slab-1",
+          "shape": "box",
+          "offset": {
+            "x": -3.450000000000003,
+            "y": 0,
+            "z": -4.050000000000001
+          },
+          "size": {
+            "x": 3.1000000000000014,
+            "y": 0.2,
+            "z": 11.9
+          }
+        },
+        {
+          "id": "slab-2",
+          "shape": "box",
+          "offset": {
+            "x": -3.450000000000003,
+            "y": 0,
+            "z": 9.05
+          },
+          "size": {
+            "x": 3.1000000000000014,
+            "y": 0.2,
+            "z": 1.8999999999999986
+          }
+        }
+      ],
+      "sourceId": "exp_barracks_roof",
+      "collider": {
+        "kind": "floor",
+        "shape": "box",
+        "size": {
+          "x": 10,
+          "y": 0.2,
+          "z": 20
+        },
+        "shapes": [
+          {
+            "id": "slab-0",
+            "shape": "box",
+            "offset": {
+              "x": 1.5499999999999972,
+              "y": 0,
+              "z": 0
+            },
+            "size": {
+              "x": 6.899999999999999,
+              "y": 0.2,
+              "z": 20
+            }
+          },
+          {
+            "id": "slab-1",
+            "shape": "box",
+            "offset": {
+              "x": -3.450000000000003,
+              "y": 0,
+              "z": -4.050000000000001
+            },
+            "size": {
+              "x": 3.1000000000000014,
+              "y": 0.2,
+              "z": 11.9
+            }
+          },
+          {
+            "id": "slab-2",
+            "shape": "box",
+            "offset": {
+              "x": -3.450000000000003,
+              "y": 0,
+              "z": 9.05
+            },
+            "size": {
+              "x": 3.1000000000000014,
+              "y": 0.2,
+              "z": 1.8999999999999986
+            }
+          }
+        ]
+      },
+      "anchor": [
+        36,
+        6.3,
+        14
+      ]
+    },
+    "map-floor-18x0p3x6": {
+      "kind": "floor",
+      "size": {
+        "x": 18,
+        "y": 0.3,
+        "z": 6
+      },
+      "sourceId": "exp_colonnade_canopy",
+      "collider": {
+        "kind": "floor",
+        "shape": "box",
+        "size": {
+          "x": 18,
+          "y": 0.3,
+          "z": 6
+        }
+      },
+      "anchor": [
+        22,
+        4.15,
+        13
+      ]
+    },
+    "map-column-0p7x4x0p7": {
+      "kind": "column",
+      "size": {
+        "x": 0.7,
+        "y": 4,
+        "z": 0.7
+      },
+      "sourceId": "exp_column_14_10.4",
+      "collider": {
+        "kind": "column",
+        "shape": "box",
+        "size": {
+          "x": 0.7,
+          "y": 4,
+          "z": 0.7
+        }
+      },
+      "anchor": [
+        14,
+        2,
+        10.4
+      ]
+    },
+    "map-floor-10x0p3x4p8": {
+      "kind": "floor",
+      "size": {
+        "x": 10,
+        "y": 0.3,
+        "z": 4.800000000000001
+      },
+      "sourceId": "exp_depot_broken_roof",
+      "collider": {
+        "kind": "floor",
+        "shape": "box",
+        "size": {
+          "x": 10,
+          "y": 0.3,
+          "z": 4.800000000000001
+        }
+      },
+      "anchor": [
+        36,
+        6.35,
+        -24.6
+      ]
+    },
+    "map-floor-10x0p3x1p6": {
+      "kind": "floor",
+      "size": {
+        "x": 10,
+        "y": 0.3,
+        "z": 1.6
+      },
+      "sourceId": "exp_pump_broken_roof",
+      "collider": {
+        "kind": "floor",
+        "shape": "box",
+        "size": {
+          "x": 10,
+          "y": 0.3,
+          "z": 1.6
+        }
+      },
+      "anchor": [
+        -36,
+        4.85,
+        -27.2
+      ]
+    },
+    "map-supply-2p6x1p28x1p1": {
+      "kind": "supply",
+      "size": {
+        "x": 2.6,
+        "y": 1.28,
+        "z": 1.1
+      },
+      "sourceId": "exp_supply_yard_w",
+      "collider": {
+        "kind": "supply",
+        "shape": "box",
+        "size": {
+          "x": 2.6,
+          "y": 1.28,
+          "z": 1.1
+        }
+      },
+      "anchor": [
+        -23,
+        0.64,
+        -13
+      ]
+    },
+    "map-sandbags-3p2x1p3x1p2": {
+      "kind": "sandbags",
+      "size": {
+        "x": 3.2,
+        "y": 1.3,
+        "z": 1.2
+      },
+      "sourceId": "exp_sandbags_south",
+      "collider": {
+        "kind": "sandbags",
+        "shape": "box",
+        "size": {
+          "x": 3.2,
+          "y": 1.3,
+          "z": 1.2
+        }
+      },
+      "anchor": [
+        -16,
+        0.65,
+        -21
+      ]
+    },
+    "map-generator-1p6x1p6x2p4": {
+      "kind": "generator",
+      "size": {
+        "x": 1.6,
+        "y": 1.6,
+        "z": 2.4
+      },
+      "sourceId": "exp_generator_tunnel",
+      "collider": {
+        "kind": "generator",
+        "shape": "box",
+        "size": {
+          "x": 1.6,
+          "y": 1.6,
+          "z": 2.4
+        }
+      },
+      "anchor": [
+        -32.2,
+        -2.7,
+        7
+      ]
+    },
+    "map-spool-1p2x1p2x1p2-awmfnx": {
+      "kind": "spool",
+      "size": {
+        "x": 1.2,
+        "y": 1.2,
+        "z": 1.2
+      },
+      "shapes": [
+        {
+          "id": "core",
+          "shape": "cylinder",
+          "axis": "y",
+          "radius": 0.4,
+          "height": 1.04,
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "id": "bottom",
+          "shape": "cylinder",
+          "axis": "y",
+          "radius": 0.6,
+          "height": 0.08,
+          "offset": {
+            "x": 0,
+            "y": -0.56,
+            "z": 0
+          }
+        },
+        {
+          "id": "top",
+          "shape": "cylinder",
+          "axis": "y",
+          "radius": 0.6,
+          "height": 0.08,
+          "offset": {
+            "x": 0,
+            "y": 0.56,
+            "z": 0
+          }
+        }
+      ],
+      "sourceId": "exp_spool_depot",
+      "collider": {
+        "kind": "spool",
+        "shape": "box",
+        "size": {
+          "x": 1.2,
+          "y": 1.2,
+          "z": 1.2
+        },
+        "shapes": [
+          {
+            "id": "core",
+            "shape": "cylinder",
+            "axis": "y",
+            "radius": 0.4,
+            "height": 1.04,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          {
+            "id": "bottom",
+            "shape": "cylinder",
+            "axis": "y",
+            "radius": 0.6,
+            "height": 0.08,
+            "offset": {
+              "x": 0,
+              "y": -0.56,
+              "z": 0
+            }
+          },
+          {
+            "id": "top",
+            "shape": "cylinder",
+            "axis": "y",
+            "radius": 0.6,
+            "height": 0.08,
+            "offset": {
+              "x": 0,
+              "y": 0.56,
+              "z": 0
+            }
+          }
+        ]
+      },
+      "anchor": [
+        33,
+        0.6,
+        -23
+      ]
+    },
+    "map-bunk-1p1x0p7x2p2": {
+      "kind": "bunk",
+      "size": {
+        "x": 1.1,
+        "y": 0.7,
+        "z": 2.2
+      },
+      "sourceId": "exp_bunk_32.5_0_5.7",
+      "collider": {
+        "kind": "bunk",
+        "shape": "box",
+        "size": {
+          "x": 1.1,
+          "y": 0.7,
+          "z": 2.2
+        }
+      },
+      "anchor": [
+        32.5,
+        0.35,
+        5.7
+      ]
+    },
+    "map-rubble-3x1x2-1qfgh79": {
+      "kind": "rubble",
+      "size": {
+        "x": 3,
+        "y": 1,
+        "z": 2
+      },
+      "shapes": [
+        {
+          "id": "visible-rubble",
+          "shape": "box",
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "size": {
+            "x": 3,
+            "y": 1,
+            "z": 2
+          }
+        }
+      ],
+      "sourceId": "exp_rubble_south_inner",
+      "collider": {
+        "kind": "rubble",
+        "shape": "box",
+        "size": {
+          "x": 3,
+          "y": 1,
+          "z": 2
+        },
+        "shapes": [
+          {
+            "id": "visible-rubble",
+            "shape": "box",
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "size": {
+              "x": 3,
+              "y": 1,
+              "z": 2
+            }
+          }
+        ]
+      },
+      "anchor": [
+        4,
+        0.5,
+        -20
+      ]
+    },
+    "map-trader-2x1p3x1p2-3mxpxd": {
+      "kind": "trader",
+      "size": {
+        "x": 2,
+        "y": 1.3,
+        "z": 1.2
+      },
+      "shapes": [
+        {
+          "id": "crate",
+          "shape": "box",
+          "offset": {
+            "x": 0,
+            "y": 0.0025,
+            "z": 0
+          },
+          "size": {
+            "x": 2,
+            "y": 1.285,
+            "z": 1.2
+          }
+        }
+      ],
+      "sourceId": "trader_crate",
+      "collider": {
+        "kind": "trader",
+        "shape": "box",
+        "size": {
+          "x": 2,
+          "y": 1.3,
+          "z": 1.2
+        },
+        "shapes": [
+          {
+            "id": "crate",
+            "shape": "box",
+            "offset": {
+              "x": 0,
+              "y": 0.0025,
+              "z": 0
+            },
+            "size": {
+              "x": 2,
+              "y": 1.285,
+              "z": 1.2
+            }
+          }
+        ]
+      },
+      "anchor": [
+        -7,
+        0.65,
+        23
+      ]
+    },
+    "map-door-0p4x2p7x7p2": {
+      "kind": "door",
+      "size": {
+        "x": 0.4,
+        "y": 2.7,
+        "z": 7.2
+      },
+      "sourceId": "tunnel_w",
+      "collider": null,
+      "anchor": [
+        -28.5,
+        1.35,
+        0
+      ]
+    },
+    "map-door-3x2p7x0p4": {
+      "kind": "door",
+      "size": {
+        "x": 3,
+        "y": 2.7,
+        "z": 0.4
+      },
+      "sourceId": "building_ground",
+      "collider": null,
+      "anchor": [
+        0,
+        1.35,
+        17
+      ]
+    },
+    "map-door-3x2x0p3": {
+      "kind": "door",
+      "size": {
+        "x": 3,
+        "y": 2,
+        "z": 0.3
+      },
+      "sourceId": "building_balcony",
+      "collider": null,
+      "anchor": [
+        0,
+        4.15,
+        17
+      ]
+    },
+    "map-gate-4x3": {
+      "kind": "gate",
+      "size": {
+        "x": 4,
+        "y": 3,
+        "z": 0.24
+      },
+      "sourceId": "N1",
+      "collider": null,
+      "anchor": [
+        -16,
+        0,
+        28
+      ]
+    },
+    "map-gate-7x4p8": {
+      "kind": "gate",
+      "size": {
+        "x": 7,
+        "y": 4.8,
+        "z": 0.24
+      },
+      "sourceId": "S3",
+      "collider": null,
+      "anchor": [
+        36,
+        0,
+        -28
+      ]
+    },
+    "map-hazard-5x0p1x5": {
+      "kind": "hazard",
+      "size": {
+        "x": 5,
+        "y": 0.1,
+        "z": 5
+      },
+      "sourceId": "courtyard_center",
+      "collider": null,
+      "anchor": [
+        3,
+        0.05,
+        2
+      ]
+    },
+    "map-hazard-3x0p1x6": {
+      "kind": "hazard",
+      "size": {
+        "x": 3,
+        "y": 0.1,
+        "z": 6
+      },
+      "sourceId": "dock_ramp",
+      "collider": null,
+      "anchor": [
+        18,
+        0.65,
+        -5
+      ]
+    },
+    "map-flank-4x3x1": {
+      "kind": "flank",
+      "size": {
+        "x": 4,
+        "y": 3,
+        "z": 1
+      },
+      "sourceId": "south_flank",
+      "collider": null,
+      "anchor": [
+        0,
+        1.5,
+        -29.5
+      ]
+    },
+    "map-light-fixture-tube": {
+      "kind": "fixture",
+      "size": {
+        "x": 1.7,
+        "y": 0.28,
+        "z": 0.28
+      },
+      "sourceId": "service-0",
+      "style": "tube",
+      "color": "#acd3bc",
+      "power": 16,
+      "range": 8,
+      "collider": null,
+      "anchor": [
+        -35.8,
+        -0.72,
+        -12
+      ]
+    },
+    "map-light-fixture-emergency": {
+      "kind": "fixture",
+      "size": {
+        "x": 0.5,
+        "y": 0.28,
+        "z": 0.28
+      },
+      "sourceId": "service-2",
+      "style": "emergency",
+      "color": "#ed3924",
+      "power": 10,
+      "range": 8,
+      "collider": null,
+      "anchor": [
+        -35.8,
+        -0.72,
+        5
+      ]
+    },
+    "map-light-fixture-work": {
+      "kind": "fixture",
+      "size": {
+        "x": 0.5,
+        "y": 0.28,
+        "z": 0.28
+      },
+      "sourceId": "link-0",
+      "style": "work",
+      "color": "#a3c9dd",
+      "power": 18,
+      "range": 8,
+      "collider": null,
+      "anchor": [
+        16,
+        3.8,
+        13
+      ]
+    },
+    "map-pipe-0p26x0p26x30p4": {
+      "kind": "pipe",
+      "size": {
+        "x": 0.26,
+        "y": 0.26,
+        "z": 30.4
+      },
+      "sourceId": "service-pipe--38.66--0.78",
+      "collider": null,
+      "anchor": [
+        -38.66,
+        -0.78,
+        0
+      ]
+    },
+    "map-cable-8x0p75x0p06": {
+      "kind": "cable",
+      "size": {
+        "x": 8,
+        "y": 0.75,
+        "z": 0.06
+      },
+      "sourceId": "balcony-cable--7.75",
+      "collider": null,
+      "anchor": [
+        -7.75,
+        5.25,
+        16.73
+      ]
+    },
+    "map-bunker-shell": {
+      "kind": "building_wall",
+      "size": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "sourceId": "bunker-shell",
+      "collider": {
+        "kind": "building_wall",
+        "shape": "box",
+        "size": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      },
+      "anchor": [
+        0,
+        0,
+        0
+      ]
+    }
+  }
+}

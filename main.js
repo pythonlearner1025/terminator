@@ -16,11 +16,14 @@ export async function main({viewer}) {
     const requiredNodes = ['Game Manager', 'Map', 'Unit T-600 Scout', 'Unit T-800 Endo', 'Unit T-800 Heavy', 'Player Start']
     const nodesPresent = requiredNodes.every((name) => viewer.scene.modelRoot.getObjectByName(name)
       || viewer.scene.modelRoot.getObjectByName(name.replaceAll(' ', '_')))
+    const authoredPieces = manager?.mapView?.batching?.placements?.length || 0
+    const runtimeBatches = manager?.mapView?.batching?.batches?.length || 0
     const systemsReady = Boolean(manager?.world && manager?.hud && manager?.mapView && manager?.unitView && manager?.playerView)
+      && authoredPieces > 0 && runtimeBatches > 0
     return {
       status: nodesPresent && systemsReady ? 'pass' : 'fail',
       summary: nodesPresent && systemsReady ? 'Headless world and view adapters are running.' : 'Required authored nodes or runtime systems are missing.',
-      checks: {nodesPresent, systemsReady, tickRate: 60},
+      checks: {nodesPresent, systemsReady, authoredPieces, runtimeBatches, tickRate: 60},
     }
   })
 }

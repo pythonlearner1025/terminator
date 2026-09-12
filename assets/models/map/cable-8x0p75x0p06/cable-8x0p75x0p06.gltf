@@ -1,0 +1,163 @@
+{
+  "asset": {
+    "generator": "Terminator tools/build-map-assets.mjs with glTF-Transform 4.5.0 and three.js",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "name": "Electrical cable rubber POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 720,
+      "max": [
+        4.006272315979004,
+        0.022934099659323692,
+        0.02500000037252903
+      ],
+      "min": [
+        -4.006272315979004,
+        -0.7237764000892639,
+        -0.02022542431950569
+      ],
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Electrical cable rubber NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 720,
+      "bufferView": 0,
+      "byteOffset": 12
+    },
+    {
+      "name": "Electrical cable rubber TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 720,
+      "bufferView": 0,
+      "byteOffset": 24
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 23040,
+      "byteStride": 32,
+      "target": 34962
+    }
+  ],
+  "samplers": [
+    {
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "source": 0,
+      "sampler": 0
+    },
+    {
+      "source": 1,
+      "sampler": 0
+    },
+    {
+      "source": 2,
+      "sampler": 0
+    }
+  ],
+  "images": [
+    {
+      "name": "asphalt_02_diff_1k.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/asphalt_02_diff_1k.jpg"
+    },
+    {
+      "name": "asphalt_02_nor_gl_1k.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/asphalt_02_nor_gl_1k.jpg"
+    },
+    {
+      "name": "asphalt_02_arm_1k.jpg",
+      "mimeType": "image/jpeg",
+      "uri": "/kite3d/assets/textures/map/asphalt_02_arm_1k.jpg"
+    }
+  ],
+  "buffers": [
+    {
+      "name": "Map piece geometry",
+      "uri": "cable-8x0p75x0p06.bin",
+      "byteLength": 23040
+    }
+  ],
+  "materials": [
+    {
+      "name": "Map rubber",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.025,
+          0.035,
+          0.045,
+          1
+        ],
+        "metallicFactor": 0,
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Electrical cable rubber",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "mode": 4,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Electrical cable asset",
+      "extras": {
+        "mapPieceAsset": true
+      },
+      "children": [
+        1
+      ]
+    },
+    {
+      "name": "Electrical cable rubber",
+      "extras": {
+        "material": "rubber"
+      },
+      "mesh": 0
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Cable 8x0p75x0p06",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

@@ -96,5 +96,8 @@ for f in sorted(P.iterdir()):
  deriv='Derived from Poly Haven Rusty Metal 02, CC0 1.0, using generators/map.bake.py.' if f.name.startswith(('paint_','corrugated_')) else 'Original procedural bake, generators/map.bake.py. No third party source; project asset.'
  rows.append(f'| `{f}` | {deriv} |')
 rows+=['','ARM channels are ambient occlusion (red), roughness (green), metalness (blue). Normal maps are OpenGL tangent space. Source maps are 1K, moon HDRI is 2K, decal atlas is 2K.','']
-Path('assets/LICENSES.md').write_text('\n'.join(rows))
+license_path=Path('assets/LICENSES.md')
+existing=license_path.read_text() if license_path.exists() else ''
+suffix=('\n## Units\n'+existing.split('\n## Units\n',1)[1]) if '\n## Units\n' in existing else ''
+license_path.write_text('\n'.join(rows)+suffix)
 print('Baked map textures and per-file licenses')
