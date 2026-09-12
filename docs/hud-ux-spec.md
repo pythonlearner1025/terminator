@@ -9,7 +9,7 @@ W18 replaces the text treatments below. Barlow, angular panels, scanlines, skull
 - Skynet lobby: code, complete selectable install command/copy, status icon, Start. Pause: Resume and Settings/Menu icons. Quit: Quit and Menu.
 - Trader: categories, short item names, prices, scrap balance, bulk ammo/armor icons with prices, countdown. Purchases retain sound, color, and brief error labels.
 - HUD: icon/number vitals, numeric ammunition, `WAVE 3/10`, remaining count, `SKYNET · BUILT-IN · 1140`, `E7 S3 H1`, one short transmission line, three icon feed entries. Enemy plates show type, rev and health only. Teammates keep names and health, with armor bars. Spectate keeps the target name and arrow controls. No gameplay hints or chatter subtitles.
-- Results: result, wave, kills/accuracy/damage taken/scrap, Play Again. Co-op shows the same four values per player; full names remain. Partial history and unavailable/disconnected data retain accessible labels. Server dossier APIs and core data are unchanged.
+- Results: result, wave, kills/accuracy/damage taken/scrap, Play Again. Co-op shows the same four values per player; initials identify players, with full names in accessible labels. Partial history and unavailable/disconnected data retain accessible labels. Server dossier APIs and core data are unchanged.
 
 Measurements, screenshots, and checks: [W18 evidence](evidence/w18-terse-ui/README.md).
 
