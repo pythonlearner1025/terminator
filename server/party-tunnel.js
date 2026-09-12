@@ -53,8 +53,8 @@ async function publishedGameUrl() {
   try {
     const {readFile} = await import('node:fs/promises')
     const deploys = JSON.parse(await readFile(new URL('../.kite3d/deploys.json', import.meta.url), 'utf8'))
-    const entry = Array.isArray(deploys) ? deploys[0] : (deploys.deploys?.[0] || deploys)
-    const url = entry?.preview_url || entry?.url || null
+    const slug = deploys.last_publish?.slug || Object.keys(deploys.games || {})[0]
+    const url = slug ? deploys.games?.[slug]?.preview_url || null : null
     return url ? String(url).replace(/\/$/, '') : null
   } catch {
     return null
