@@ -1,0 +1,198 @@
+{
+  "ok": true,
+  "checkedAt": "2026-09-12T02:31:03.735Z",
+  "mode": "headless",
+  "componentTypes": [
+    "Cannon3DBodyComponent",
+    "Cannon3DShapeComponent",
+    "CannonRagdollComponent",
+    "GameManager",
+    "Generator",
+    "HtmlUiComponent"
+  ],
+  "rows": [
+    {
+      "kind": "script",
+      "path": "scripts/GameManager.script.js",
+      "status": "pass",
+      "detail": "GameManager"
+    },
+    {
+      "kind": "script",
+      "path": "generators/map.generator.js",
+      "status": "pass",
+      "detail": "no component types"
+    },
+    {
+      "kind": "script",
+      "path": "generators/unit-template.generator.js",
+      "status": "pass",
+      "detail": "no component types"
+    },
+    {
+      "kind": "script",
+      "path": "generators/soldier-template.generator.js",
+      "status": "pass",
+      "detail": "no component types"
+    },
+    {
+      "kind": "component",
+      "path": "Game Manager",
+      "status": "pass",
+      "detail": "GameManager"
+    },
+    {
+      "kind": "component",
+      "path": "Map",
+      "status": "pass",
+      "detail": "Generator"
+    },
+    {
+      "kind": "generator",
+      "path": "generators/map.generator.js",
+      "status": "pass",
+      "detail": "Map"
+    },
+    {
+      "kind": "component",
+      "path": "Unit Template Scout",
+      "status": "pass",
+      "detail": "Generator"
+    },
+    {
+      "kind": "generator",
+      "path": "generators/unit-template.generator.js",
+      "status": "pass",
+      "detail": "Unit Template Scout"
+    },
+    {
+      "kind": "component",
+      "path": "Unit Template Endo",
+      "status": "pass",
+      "detail": "Generator"
+    },
+    {
+      "kind": "generator",
+      "path": "generators/unit-template.generator.js",
+      "status": "pass",
+      "detail": "Unit Template Endo"
+    },
+    {
+      "kind": "component",
+      "path": "Unit Template Heavy",
+      "status": "pass",
+      "detail": "Generator"
+    },
+    {
+      "kind": "generator",
+      "path": "generators/unit-template.generator.js",
+      "status": "pass",
+      "detail": "Unit Template Heavy"
+    },
+    {
+      "kind": "component",
+      "path": "Soldier Template",
+      "status": "pass",
+      "detail": "Generator"
+    },
+    {
+      "kind": "generator",
+      "path": "generators/soldier-template.generator.js",
+      "status": "pass",
+      "detail": "Soldier Template"
+    }
+  ],
+  "outcomes": [
+    {
+      "name": "Playable",
+      "status": "pass",
+      "summary": "The game booted and ran 30 frames without errors.",
+      "codes": [],
+      "durationMs": 2698,
+      "report": {
+        "projectValidation": {
+          "ok": true,
+          "status": "pass",
+          "summary": "Project validations passed.",
+          "results": [
+            {
+              "status": "pass",
+              "summary": "Headless world and view adapters are running.",
+              "checks": {
+                "nodesPresent": true,
+                "systemsReady": true,
+                "tickRate": 60
+              }
+            }
+          ]
+        },
+        "cleanup": {
+          "ok": true,
+          "status": "pass",
+          "summary": "Runtime cleanup passed.",
+          "issues": [],
+          "trackedObjectCount": 0,
+          "outsideRenderableCount": 0
+        },
+        "runtimeErrors": 0,
+        "relationships": []
+      }
+    },
+    {
+      "name": "Editable",
+      "status": "pass",
+      "summary": "Stopped-mode authored representation passed.",
+      "codes": [
+        "CAMERA_CONTAINMENT_UNVERIFIED"
+      ],
+      "report": {
+        "ok": true,
+        "status": "pass",
+        "summary": "Stopped-mode authored representation passed.",
+        "issues": [
+          {
+            "code": "CAMERA_CONTAINMENT_UNVERIFIED",
+            "severity": "warning",
+            "message": "The camera intersects local geometry bounds, but hollow or imported mesh containment is unverified.",
+            "object": {
+              "uuid": "efefc380-db1c-4532-9df7-03b947ded4f8",
+              "name": "Map preview ground"
+            }
+          }
+        ],
+        "checks": {
+          "visibleAuthoredContent": true,
+          "selectableAuthoredContent": true,
+          "relationshipsValid": true,
+          "generatorPreviews": true,
+          "cameraUseful": true
+        },
+        "metrics": {
+          "authoredObjectCount": 53,
+          "renderableCount": 37,
+          "visibleRenderableCount": 37,
+          "selectableCount": 37,
+          "generatorCount": 5,
+          "generatorPreviewCount": 5,
+          "cameraFramedRenderableCount": 3,
+          "cameraInsideRenderableCount": 0
+        }
+      }
+    },
+    {
+      "name": "Persisted",
+      "status": "pass",
+      "summary": "Save/Reload semantic equivalence passed.",
+      "codes": [],
+      "report": {
+        "ok": true,
+        "status": "pass",
+        "summary": "Save/Reload semantic equivalence passed.",
+        "issues": [],
+        "changes": [],
+        "beforeBytes": 3350,
+        "afterBytes": 3350
+      }
+    }
+  ]
+}

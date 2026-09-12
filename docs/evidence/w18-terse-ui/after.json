@@ -1,0 +1,350 @@
+{
+  "phase": "after",
+  "commit": "5de2e7bd832b7bf555510c96d81f1b5a7bacd371",
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "method": "Actual screen root innerText, trimmed with whitespace collapsed to one space. HUD uses combat root. Input values and placeholders recorded separately because innerText excludes them. Fixed world and UI fixtures, no simulated completed match.",
+  "screens": [
+    {
+      "name": "main",
+      "characters": 62,
+      "text": "TERMINATOR HUMAN VS SKYNET PLAY HOST JOIN SKYNET SETTINGS QUIT",
+      "raw": "TERMINATOR\nHUMAN VS SKYNET\nPLAY\nHOST\nJOIN\nSKYNET\nSETTINGS\nQUIT",
+      "formText": [],
+      "layout": {
+        "width": 1920,
+        "height": 1080,
+        "controlsVisible": true
+      },
+      "screenshot": "main.png",
+      "before": 325,
+      "cutPercent": 80.92
+    },
+    {
+      "name": "lobby",
+      "characters": 105,
+      "text": "JDG729 claude mcp add skynet -- npx terminator-skynet-mcp --url http://127.0.0.1:7801 --code JDG729 START",
+      "raw": "JDG729\n\nclaude mcp add skynet -- npx terminator-skynet-mcp --url http://127.0.0.1:7801 --code JDG729\nSTART",
+      "formText": [],
+      "layout": {
+        "width": 1920,
+        "height": 1080,
+        "controlsVisible": true
+      },
+      "screenshot": "lobby.png",
+      "before": 530,
+      "cutPercent": 80.19
+    },
+    {
+      "name": "host",
+      "characters": 51,
+      "text": "JDG729 Sarah Connor Kyle Reese Blair Williams START",
+      "raw": "JDG729\nSarah Connor\nKyle Reese\nBlair Williams\nSTART",
+      "formText": [
+        {
+          "type": "text",
+          "label": "Invite link",
+          "value": "https://resistance.example/?party=JDG729&relay=wss%3A%2F%2Fresistance-fixture.trycloudflare.com",
+          "placeholder": ""
+        },
+        {
+          "type": "checkbox",
+          "label": "Start even if someone is not ready",
+          "value": "on",
+          "placeholder": ""
+        }
+      ],
+      "layout": {
+        "width": 1920,
+        "height": 1080,
+        "controlsVisible": true
+      },
+      "screenshot": "host.png",
+      "before": 792,
+      "cutPercent": 93.56
+    },
+    {
+      "name": "join",
+      "characters": 4,
+      "text": "JOIN",
+      "raw": "JOIN",
+      "formText": [
+        {
+          "type": "text",
+          "label": "Party code or invite link",
+          "value": "",
+          "placeholder": "Code"
+        },
+        {
+          "type": "text",
+          "label": "Relay address",
+          "value": "",
+          "placeholder": "Relay"
+        }
+      ],
+      "layout": {
+        "width": 1920,
+        "height": 1080,
+        "controlsVisible": true
+      },
+      "screenshot": "join.png",
+      "before": 668,
+      "cutPercent": 99.4
+    },
+    {
+      "name": "join-connected",
+      "characters": 38,
+      "text": "Sarah Connor Kyle Reese Blair Williams",
+      "raw": "Sarah Connor\nKyle Reese\nBlair Williams",
+      "formText": [],
+      "layout": {
+        "width": 1920,
+        "height": 1080,
+        "controlsVisible": true
+      },
+      "screenshot": "join-connected.png",
+      "before": 697,
+      "cutPercent": 94.55
+    },
+    {
+      "name": "settings",
+      "characters": 82,
+      "text": "Sensitivity 1.00x FOV 72° Master 80% Music 65% Effects 85% Quality LOW MEDIUM HIGH",
+      "raw": "Sensitivity\n1.00x\nFOV\n72°\nMaster\n80%\nMusic\n65%\nEffects\n85%\nQuality\nLOW\nMEDIUM\nHIGH",
+      "formText": [
+        {
+          "type": "range",
+          "label": "Sensitivity",
+          "value": "1",
+          "placeholder": ""
+        },
+        {
+          "type": "range",
+          "label": "FOV",
+          "value": "72",
+          "placeholder": ""
+        },
+        {
+          "type": "range",
+          "label": "Master",
+          "value": "80",
+          "placeholder": ""
+        },
+        {
+          "type": "range",
+          "label": "Music",
+          "value": "65",
+          "placeholder": ""
+        },
+        {
+          "type": "range",
+          "label": "Effects",
+          "value": "85",
+          "placeholder": ""
+        }
+      ],
+      "layout": {
+        "width": 1920,
+        "height": 1080,
+        "controlsVisible": true
+      },
+      "screenshot": "settings.png",
+      "before": 416,
+      "cutPercent": 80.29
+    },
+    {
+      "name": "pause",
+      "characters": 6,
+      "text": "RESUME",
+      "raw": "RESUME",
+      "formText": [],
+      "layout": {
+        "width": 1920,
+        "height": 1080,
+        "controlsVisible": true
+      },
+      "screenshot": "pause.png",
+      "before": 58,
+      "cutPercent": 89.66
+    },
+    {
+      "name": "quit",
+      "characters": 9,
+      "text": "QUIT MENU",
+      "raw": "QUIT\nMENU",
+      "formText": [],
+      "layout": {
+        "width": 1920,
+        "height": 1080,
+        "controlsVisible": true
+      },
+      "screenshot": "quit.png",
+      "before": 92,
+      "cutPercent": 90.22
+    },
+    {
+      "name": "trader-weapons",
+      "characters": 80,
+      "text": "WEAPONS AMMO ARMOR ITEMS Pistol 0 M4 400 Shotgun 550 Plasma 1500 1,140 0 110 27s",
+      "raw": "WEAPONS\nAMMO\nARMOR\nITEMS\nPistol\n0\nM4\n400\nShotgun\n550\nPlasma\n1500\n1,140\n0\n110\n27s",
+      "formText": [],
+      "layout": {
+        "width": 1920,
+        "height": 1080,
+        "controlsVisible": true
+      },
+      "screenshot": "trader-weapons.png",
+      "before": 526,
+      "cutPercent": 84.79
+    },
+    {
+      "name": "trader-ammo",
+      "characters": 49,
+      "text": "WEAPONS AMMO ARMOR ITEMS Pistol 5 1,140 0 110 27s",
+      "raw": "WEAPONS\nAMMO\nARMOR\nITEMS\nPistol\n5\n1,140\n0\n110\n27s",
+      "formText": [],
+      "layout": {
+        "width": 1920,
+        "height": 1080,
+        "controlsVisible": true
+      },
+      "screenshot": "trader-ammo.png",
+      "before": 310,
+      "cutPercent": 84.19
+    },
+    {
+      "name": "trader-armor",
+      "characters": 50,
+      "text": "WEAPONS AMMO ARMOR ITEMS Armor 110 1,140 0 110 27s",
+      "raw": "WEAPONS\nAMMO\nARMOR\nITEMS\nArmor\n110\n1,140\n0\n110\n27s",
+      "formText": [],
+      "layout": {
+        "width": 1920,
+        "height": 1080,
+        "controlsVisible": true
+      },
+      "screenshot": "trader-armor.png",
+      "before": 325,
+      "cutPercent": 84.62
+    },
+    {
+      "name": "trader-items",
+      "characters": 59,
+      "text": "WEAPONS AMMO ARMOR ITEMS Frag 40 Medkit 100 1,140 0 110 27s",
+      "raw": "WEAPONS\nAMMO\nARMOR\nITEMS\nFrag\n40\nMedkit\n100\n1,140\n0\n110\n27s",
+      "formText": [],
+      "layout": {
+        "width": 1920,
+        "height": 1080,
+        "controlsVisible": true
+      },
+      "screenshot": "trader-items.png",
+      "before": 366,
+      "cutPercent": 83.88
+    },
+    {
+      "name": "postmatch",
+      "characters": 43,
+      "text": "TERMINATED 7/10 37 64% 145 2,140 PLAY AGAIN",
+      "raw": "TERMINATED\n7/10\n37\n64%\n145\n2,140\nPLAY AGAIN",
+      "formText": [],
+      "layout": {
+        "width": 1920,
+        "height": 1080,
+        "controlsVisible": true
+      },
+      "screenshot": "postmatch.png",
+      "before": 383,
+      "cutPercent": 88.77
+    },
+    {
+      "name": "scoreboard",
+      "characters": 82,
+      "text": "TERMINATED 7/10 SC 21 64% 145 950 KR 16 53% 145 710 BW 12 75% 145 1,200 PLAY AGAIN",
+      "raw": "TERMINATED\n7/10\n\t\t\t\t\nSC\t21\t64%\t145\t950\nKR\t16\t53%\t145\t710\nBW\t12\t75%\t145\t1,200\nPLAY AGAIN",
+      "formText": [],
+      "layout": {
+        "width": 1920,
+        "height": 1080,
+        "controlsVisible": true
+      },
+      "screenshot": "scoreboard.png",
+      "before": 430,
+      "cutPercent": 80.93
+    },
+    {
+      "name": "dossier",
+      "removed": true,
+      "text": "",
+      "characters": 0,
+      "formText": [],
+      "screenshot": null,
+      "before": 229,
+      "cutPercent": 100
+    },
+    {
+      "name": "hud",
+      "characters": 112,
+      "text": "1140 WAVE 3/10 3 SKYNET · BUILT-IN · 1140 E7 S3 H1 Your resistance is… 76 45 15 /120 1 ENDO r7 SCOUT r3 HEAVY r1",
+      "raw": "1140\nWAVE 3/10\n3\nSKYNET · BUILT-IN · 1140\nE7 S3 H1\nYour resistance is…\n76\n45\n15\n/120\n1\nENDO\nr7\nSCOUT\nr3\nHEAVY\nr1",
+      "formText": [],
+      "layout": {
+        "width": 1920,
+        "height": 1080,
+        "controlsVisible": true
+      },
+      "screenshot": "hud.png",
+      "before": 628,
+      "cutPercent": 82.17
+    },
+    {
+      "name": "intermission",
+      "characters": 119,
+      "text": "1140 WAVE 3/10 27s SKYNET · BUILT-IN · 420 E7 S3 H1 Your resistance is… 76 45 15 /120 1 ENDO r7 SCOUT r3 HEAVY r1 ↗ 19m",
+      "raw": "1140\nWAVE 3/10\n27s\nSKYNET · BUILT-IN · 420\nE7 S3 H1\nYour resistance is…\n76\n45\n15\n/120\n1\nENDO\nr7\nSCOUT\nr3\nHEAVY\nr1\n↗ 19m",
+      "formText": [],
+      "layout": {
+        "width": 1920,
+        "height": 1080,
+        "controlsVisible": true
+      },
+      "screenshot": "intermission.png",
+      "before": 710,
+      "cutPercent": 83.24
+    },
+    {
+      "name": "coop-hud",
+      "characters": 145,
+      "text": "1140 Kyle Reese 76 Blair Williams 100 WAVE 3/10 3 SKYNET · BUILT-IN · 1140 E7 S3 H1 Your resistance is… 76 45 15 /120 1 ENDO r7 SCOUT r3 HEAVY r1",
+      "raw": "1140\nKyle Reese\n76\nBlair Williams\n100\nWAVE 3/10\n3\nSKYNET · BUILT-IN · 1140\nE7 S3 H1\nYour resistance is…\n76\n45\n15\n/120\n1\nENDO\nr7\nSCOUT\nr3\nHEAVY\nr1",
+      "formText": [],
+      "layout": {
+        "width": 1920,
+        "height": 1080,
+        "controlsVisible": true
+      },
+      "screenshot": "coop-hud.png",
+      "before": 726,
+      "cutPercent": 80.03
+    },
+    {
+      "name": "spectate",
+      "characters": 144,
+      "text": "1140 Kyle Reese 76 Blair Williams 100 WAVE 3/10 3 SKYNET · BUILT-IN · 1140 E7 S3 H1 Your resistance is… ENDO r7 SCOUT r3 HEAVY r1 Kyle Reese 1/2",
+      "raw": "1140\nKyle Reese\n76\nBlair Williams\n100\nWAVE 3/10\n3\nSKYNET · BUILT-IN · 1140\nE7 S3 H1\nYour resistance is…\nENDO\nr7\nSCOUT\nr3\nHEAVY\nr1\nKyle Reese\n1/2",
+      "formText": [],
+      "layout": {
+        "width": 1920,
+        "height": 1080,
+        "controlsVisible": true
+      },
+      "screenshot": "spectate.png",
+      "before": 746,
+      "cutPercent": 80.7
+    }
+  ],
+  "errors": [],
+  "everyScreenMeets80Percent": true
+}

@@ -1,0 +1,23 @@
+KIND       STATUS  PATH                                      DETAIL
+script     PASS    scripts/GameManager.script.js             GameManager
+script     PASS    generators/map.generator.js               no component types
+script     PASS    generators/unit-template.generator.js     no component types
+script     PASS    generators/soldier-template.generator.js  no component types
+component  PASS    Game Manager                              GameManager
+component  PASS    Map                                       Generator
+generator  PASS    generators/map.generator.js               Map
+component  PASS    Unit Template Scout                       Generator
+generator  PASS    generators/unit-template.generator.js     Unit Template Scout
+component  PASS    Unit Template Endo                        Generator
+generator  PASS    generators/unit-template.generator.js     Unit Template Endo
+component  PASS    Unit Template Heavy                       Generator
+generator  PASS    generators/unit-template.generator.js     Unit Template Heavy
+component  PASS    Soldier Template                          Generator
+generator  PASS    generators/soldier-template.generator.js  Soldier Template
+
+Runtime mode: headless
+Playable   PASS     The game booted and ran 30 frames without errors.
+  Project validation PASS: Headless world and view adapters are running.
+Editable   PASS     CAMERA_CONTAINMENT_UNVERIFIED: Stopped-mode authored representation passed.
+Persisted  PASS     Save/Reload semantic equivalence passed.
+Check passed (15 static row(s)).
