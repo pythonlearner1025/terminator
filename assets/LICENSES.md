@@ -53,3 +53,31 @@ All files below are stored in `assets/textures/units/`.
 | `studio_small_09_1k.hdr` | [Studio Small 09](https://polyhaven.com/a/studio_small_09), Sergej Majboroda, Poly Haven. Downloaded 2026-09-11. | [CC0 1.0](https://polyhaven.com/license) |
 
 ORM packs ambient occlusion in R, roughness in G and metalness in B. The optical emissive map and impact alpha are separate. Geometry is project-authored in `generators/unit-template.generator.js`. No third-party endoskeleton model was imported.
+
+## Weapons
+
+All files below were authored procedurally for this project on 2026-09-11 using
+`assets/textures/weapons/generate.py`, seed 2029. No downloaded photographic or
+model assets are included. Generated images are dedicated under
+[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/).
+Markings use the existing Barlow Condensed font, licensed under SIL OFL 1.1 in
+`assets/fonts/OFL.txt`. Only rasterized lettering is included in the atlas.
+
+| File | Size | Source / content | License |
+| --- | --- | --- | --- |
+| `textures/weapons/weapon-albedo.png` | 2048 x 2048 | Original surface atlas, wear and engraved lettering | CC0-1.0 |
+| `textures/weapons/weapon-normal.png` | 2048 x 2048 | Original baked scratches, lettering, stipple and weave | CC0-1.0 |
+| `textures/weapons/weapon-roughness.png` | 2048 x 2048 | Original oil, machining and wear variation | CC0-1.0 |
+| `textures/weapons/weapon-metalness.png` | 2048 x 2048 | Original metal and dielectric surface masks | CC0-1.0 |
+| `textures/weapons/weapon-ao.png` | 2048 x 2048 | Original surface cavity mask | CC0-1.0 |
+| `textures/weapons/weapon-emissive.png` | 2048 x 2048 | Original plasma cell emission mask | CC0-1.0 |
+| `textures/weapons/fx-muzzle.png` | 256 x 256 | Original radial flame with seven irregular lobes | CC0-1.0 |
+| `textures/weapons/fx-blast.png` | 256 x 256 | Original turbulent fireball and flash | CC0-1.0 |
+| `textures/weapons/fx-smoke.png` | 256 x 256 | Original multiscale noise cloud | CC0-1.0 |
+| `textures/weapons/fx-hole.png` | 256 x 256 | Original chipped crater mask | CC0-1.0 |
+| `textures/weapons/fx-scorch.png` | 256 x 256 | Original soot mask | CC0-1.0 |
+| `textures/weapons/fx-shockwave.png` | 256 x 256 | Original annular pressure-wave mask | CC0-1.0 |
+
+The generator script is original project code. It requires Python 3, Pillow and
+NumPy only to rebake assets; none is a runtime dependency. Weapon meshes are
+constructed by `lib/view/weapons.js` and include no third-party model geometry.

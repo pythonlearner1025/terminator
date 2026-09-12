@@ -1,0 +1,207 @@
+{
+  "baseline": "04f69da",
+  "revision": "efd2c81ad848e8855a99f494818b251fbf5975fa",
+  "method": "ABBA, 120 warmup + 240 measured frames per run; 24 enemies with fixture health/ammo to maintain load; cycles all four firearms and detonates four grenades; one core tick per rendered frame; 1920x1080; headless local Chrome; GPU timer queries",
+  "runs": [
+    {
+      "mode": "baseline",
+      "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Max, Unspecified Version)",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "alive": 24,
+      "frame": {
+        "samples": 240,
+        "mean": 17.49208333293597,
+        "median": 16.600000143051147,
+        "p95": 25
+      },
+      "core": {
+        "samples": 240,
+        "mean": 0.9908333291610082,
+        "median": 1,
+        "p95": 1.3000001907348633
+      },
+      "view": {
+        "samples": 240,
+        "mean": 1.558749994635582,
+        "median": 1,
+        "p95": 3
+      },
+      "render": {
+        "samples": 240,
+        "mean": 9.114999998609225,
+        "median": 8.599999904632568,
+        "p95": 12.300000190734863
+      },
+      "gpuMs": {
+        "samples": 238,
+        "mean": 11.33816598739496,
+        "median": 10.915999,
+        "p95": 16.624416
+      },
+      "shots": 441,
+      "explosions": 4,
+      "weaponFx": null,
+      "errors": [],
+      "intercepted": [
+        "camera-feel.js",
+        "player.js",
+        "weapons.js",
+        "weapons-animation.js",
+        "fx.js"
+      ]
+    },
+    {
+      "mode": "current",
+      "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Max, Unspecified Version)",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "alive": 24,
+      "frame": {
+        "samples": 240,
+        "mean": 17.625416666269302,
+        "median": 16.600000143051147,
+        "p95": 22.799999952316284
+      },
+      "core": {
+        "samples": 240,
+        "mean": 1.0187499950329462,
+        "median": 1,
+        "p95": 1.2999999523162842
+      },
+      "view": {
+        "samples": 240,
+        "mean": 1.6374999990065893,
+        "median": 1.0999999046325684,
+        "p95": 2.8000001907348633
+      },
+      "render": {
+        "samples": 240,
+        "mean": 10.002083337306976,
+        "median": 9.5,
+        "p95": 14.599999904632568
+      },
+      "gpuMs": {
+        "samples": 238,
+        "mean": 12.191149722689081,
+        "median": 11.710625,
+        "p95": 17.344208
+      },
+      "shots": 441,
+      "explosions": 4,
+      "weaponFx": {
+        "tracers": 29,
+        "wallImpacts": 10,
+        "scorches": 1,
+        "explosions": 4,
+        "bounces": 25
+      },
+      "errors": [],
+      "intercepted": []
+    },
+    {
+      "mode": "current",
+      "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Max, Unspecified Version)",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "alive": 24,
+      "frame": {
+        "samples": 240,
+        "mean": 17.772500000397365,
+        "median": 16.600000143051147,
+        "p95": 24.399999856948853
+      },
+      "core": {
+        "samples": 240,
+        "mean": 1.0124999980131786,
+        "median": 1,
+        "p95": 1.2999999523162842
+      },
+      "view": {
+        "samples": 240,
+        "mean": 1.584583338101705,
+        "median": 1,
+        "p95": 2.8000001907348633
+      },
+      "render": {
+        "samples": 240,
+        "mean": 10.025416671236355,
+        "median": 9.300000190734863,
+        "p95": 12.600000143051147
+      },
+      "gpuMs": {
+        "samples": 238,
+        "mean": 12.78381323529412,
+        "median": 12.297541,
+        "p95": 18.512208
+      },
+      "shots": 441,
+      "explosions": 4,
+      "weaponFx": {
+        "tracers": 29,
+        "wallImpacts": 10,
+        "scorches": 1,
+        "explosions": 4,
+        "bounces": 25
+      },
+      "errors": [],
+      "intercepted": []
+    },
+    {
+      "mode": "baseline",
+      "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Max, Unspecified Version)",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "alive": 24,
+      "frame": {
+        "samples": 240,
+        "mean": 17.69708333313465,
+        "median": 16.5,
+        "p95": 23.700000047683716
+      },
+      "core": {
+        "samples": 240,
+        "mean": 0.9891666611035664,
+        "median": 1,
+        "p95": 1.2999999523162842
+      },
+      "view": {
+        "samples": 240,
+        "mean": 1.5854166567325592,
+        "median": 1,
+        "p95": 2.5999999046325684
+      },
+      "render": {
+        "samples": 240,
+        "mean": 9.330416666467984,
+        "median": 8.600000143051147,
+        "p95": 13
+      },
+      "gpuMs": {
+        "samples": 239,
+        "mean": 12.323644707112978,
+        "median": 11.746125,
+        "p95": 17.593791
+      },
+      "shots": 441,
+      "explosions": 4,
+      "weaponFx": null,
+      "errors": [],
+      "intercepted": [
+        "camera-feel.js",
+        "player.js",
+        "weapons.js",
+        "weapons-animation.js",
+        "fx.js"
+      ]
+    }
+  ]
+}
