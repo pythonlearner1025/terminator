@@ -231,7 +231,7 @@ export function createMapGroup(api, map, {markers = true, runtime = false} = {})
     decal('Gate battered hazard border', [0,-1.32,.111], [3.8,.3], 11, [0,0,0], shutter)
     const signal = box('Gate red warning strip', [0, 1.25, 0.12], [3.75, 0.13, 0.03], m.redGlow, gate)
     const light = lamp(`${g.id} red gate spill`, [0, 1.2, 0.8], 0xff2010, 3, 6, gate)
-    refs.gates.push({id: g.id, shutter, signal, light, amount: 0, lastSpawn: -1000})
+    refs.gates.push({id: g.id, pos: xyz(g.pos), shutter, signal, light, amount: 0, lastSpawn: -1000})
   }
   // Breakup remains inside the slot. The overlapping static wall is retained, as required by the core data.
   const flank = partGroup('South flank breakable facing')

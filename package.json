@@ -21,7 +21,8 @@
     "dev:all": "concurrently -k -n game,server \"npm run dev\" \"npm run server\"",
     "test": "find test -type f -name '*.test.js' -exec node --test {} +",
     "scene": "node tools/build-scene.mjs",
-    "benchmark": "node tools/benchmark-world.mjs"
+    "benchmark": "node tools/benchmark-world.mjs",
+    "benchmark:view": "node tools/benchmark-browser.mjs"
   },
   "devDependencies": {
     "concurrently": "^9.2.1",

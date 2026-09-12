@@ -1,0 +1,297 @@
+{
+  "benchmark": "Terminator browser performance",
+  "capturedAt": "2026-09-12T04:15:19.282Z",
+  "durationSeconds": 10,
+  "warmupSeconds": 5,
+  "requestedViewport": {
+    "width": 1920,
+    "height": 1080,
+    "deviceScaleFactor": 1
+  },
+  "effects": {
+    "post": true,
+    "motionBlur": true,
+    "rain": 1,
+    "smoke": 1,
+    "hazards": [
+      "electric",
+      "steam"
+    ],
+    "combatStress": "two enemy shots per frame and ten impact bursts per second",
+    "disabled": []
+  },
+  "browser": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+    "gpuVendor": "Google Inc. (Apple)",
+    "gpuRenderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Max, Unspecified Version)",
+    "webgl": "WebGL2RenderingContext"
+  },
+  "setup": {
+    "units": 24,
+    "quality": "high",
+    "disabled": []
+  },
+  "scene": {
+    "aliveEnemies": 24,
+    "renderedEnemies": 24,
+    "enemiesInFrustum": 24,
+    "renderScale": 1,
+    "renderSize": [
+      1920,
+      1080
+    ],
+    "canvas": {
+      "width": 1920,
+      "height": 1080
+    },
+    "shadowMap": {
+      "width": 2048,
+      "height": 2048,
+      "radius": 2
+    },
+    "unitTriangles": {
+      "scout": {
+        "high": 24512,
+        "low": 11004
+      },
+      "endo": {
+        "high": 25492,
+        "low": 11712
+      },
+      "heavy": {
+        "high": 27088,
+        "low": 12252
+      }
+    },
+    "quality": null
+  },
+  "frame": {
+    "samples": 598,
+    "intervalMs": {
+      "samples": 598,
+      "mean": 16.694,
+      "p50": 16.7,
+      "p95": 17.5,
+      "max": 35.8
+    },
+    "workMs": {
+      "samples": 599,
+      "mean": 12.954,
+      "p50": 13.1,
+      "p95": 15.4,
+      "max": 34.3
+    },
+    "effectiveFps": 59.902
+  },
+  "gpu": {
+    "supported": true,
+    "samples": 599,
+    "frameMs": {
+      "samples": 599,
+      "mean": 16.846,
+      "p50": 15.737,
+      "p95": 25.954,
+      "max": 46.504
+    },
+    "unresolvedQueries": 0
+  },
+  "renderer": {
+    "drawCalls": {
+      "samples": 599,
+      "mean": 273.189,
+      "p50": 273,
+      "p95": 274,
+      "max": 274
+    },
+    "triangles": {
+      "samples": 599,
+      "mean": 1304100.718,
+      "p50": 1304102,
+      "p95": 1304102,
+      "max": 1304102
+    },
+    "points": {
+      "samples": 599,
+      "mean": 489.903,
+      "p50": 488,
+      "p95": 498,
+      "max": 498
+    },
+    "lines": {
+      "samples": 599,
+      "mean": 1318,
+      "p50": 1318,
+      "p95": 1318,
+      "max": 1318
+    },
+    "geometries": 206,
+    "textures": 113
+  },
+  "textureMemory": {
+    "textures": 91,
+    "bytes": 443659248,
+    "mebibytes": 423.106,
+    "largest": [
+      {
+        "name": "Units endoskeleton-albedo.jpg",
+        "width": 2048,
+        "height": 2048,
+        "bytes": 22369621
+      },
+      {
+        "name": "Units endoskeleton-orm.png",
+        "width": 2048,
+        "height": 2048,
+        "bytes": 22369621
+      },
+      {
+        "name": "Units endoskeleton-normal.png",
+        "width": 2048,
+        "height": 2048,
+        "bytes": 22369621
+      },
+      {
+        "name": "unnamed",
+        "width": 2048,
+        "height": 2048,
+        "bytes": 22369621
+      },
+      {
+        "name": "unnamed",
+        "width": 2048,
+        "height": 2048,
+        "bytes": 22369621
+      },
+      {
+        "name": "unnamed",
+        "width": 2048,
+        "height": 2048,
+        "bytes": 22369621
+      },
+      {
+        "name": "Units endoskeleton-albedo.jpg",
+        "width": 2048,
+        "height": 2048,
+        "bytes": 22369621
+      },
+      {
+        "name": "Units endoskeleton-orm.png",
+        "width": 2048,
+        "height": 2048,
+        "bytes": 22369621
+      }
+    ]
+  },
+  "postPasses": {
+    "gbuffer": {
+      "calls": 599,
+      "msPerFrame": 2.812,
+      "meanCallMs": 2.807,
+      "maxCallMs": 6.5
+    },
+    "ssao": {
+      "calls": 599,
+      "msPerFrame": 0.052,
+      "meanCallMs": 0.051,
+      "maxCallMs": 0.2
+    },
+    "render": {
+      "calls": 599,
+      "msPerFrame": 7.517,
+      "meanCallMs": 7.504,
+      "maxCallMs": 24.8
+    },
+    "map-bloom": {
+      "calls": 599,
+      "msPerFrame": 0.136,
+      "meanCallMs": 0.136,
+      "maxCallMs": 0.4
+    },
+    "screen": {
+      "calls": 599,
+      "msPerFrame": 0.075,
+      "meanCallMs": 0.075,
+      "maxCallMs": 0.2
+    }
+  },
+  "systems": {
+    "combat effects": {
+      "calls": 599,
+      "msPerFrame": 0.023,
+      "meanCallMs": 0.023,
+      "maxCallMs": 0.1
+    },
+    "HUD": {
+      "calls": 1198,
+      "msPerFrame": 0.174,
+      "meanCallMs": 0.087,
+      "maxCallMs": 0.4
+    },
+    "weather": {
+      "calls": 599,
+      "msPerFrame": 0.035,
+      "meanCallMs": 0.035,
+      "maxCallMs": 0.2
+    },
+    "map": {
+      "calls": 599,
+      "msPerFrame": 0.11,
+      "meanCallMs": 0.11,
+      "maxCallMs": 0.3
+    },
+    "fx": {
+      "calls": 1198,
+      "msPerFrame": 0.087,
+      "meanCallMs": 0.043,
+      "maxCallMs": 0.3
+    },
+    "units": {
+      "calls": 599,
+      "msPerFrame": 1.568,
+      "meanCallMs": 1.565,
+      "maxCallMs": 2.4
+    },
+    "players": {
+      "calls": 1198,
+      "msPerFrame": 0.006,
+      "meanCallMs": 0.003,
+      "maxCallMs": 0.1
+    },
+    "weapons": {
+      "calls": 599,
+      "msPerFrame": 0.015,
+      "meanCallMs": 0.015,
+      "maxCallMs": 0.1
+    },
+    "player": {
+      "calls": 599,
+      "msPerFrame": 0.061,
+      "meanCallMs": 0.061,
+      "maxCallMs": 0.3
+    }
+  },
+  "topCosts": [
+    {
+      "area": "pass:render",
+      "msPerFrame": 7.517
+    },
+    {
+      "area": "pass:gbuffer",
+      "msPerFrame": 2.812
+    },
+    {
+      "area": "system:units",
+      "msPerFrame": 1.568
+    },
+    {
+      "area": "system:HUD",
+      "msPerFrame": 0.174
+    },
+    {
+      "area": "pass:map-bloom",
+      "msPerFrame": 0.136
+    }
+  ],
+  "warnings": [],
+  "screenshot": null
+}
