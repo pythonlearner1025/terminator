@@ -100,6 +100,16 @@ export class GameManager extends Object3DComponent {
     }
   }
 
+  stopViews() {
+    if (!this.viewsStarted) return
+    this.viewsStarted = false
+    this.playersView?.stop(); this.playersView = null
+    this.grenadeView?.stop()
+    this.playerView?.stop()
+    this.unitView?.stop()
+    this.mapView?.stop()
+  }
+
   update({deltaTime} = {}) {
     if (!this.started || !this.world) return
     if (this.ui?.frozen || this.cameraFeel?.hitStopped) {
@@ -194,14 +204,40 @@ export class GameManager extends Object3DComponent {
 
   async startMatch({override = false} = {}) {
     if (this.sessionMode !== 'host' || !this.party) return {ok: false, error: 'Only the host can start the party'}
+    if (this.matchStarting) return {ok: false, error: 'Match is already starting'}
     const players = this.party.state().players
     if (!override && !players.every((player) => player.ready)) return {ok: false, error: 'Every player must be ready'}
-    this.startViews()
-    await Promise.all([this.visualWarmup,prepareAudio()])
-    const result = this.director.start()
-    if (result === false || result?.ok === false) return result || {ok: false, error: 'Match could not start'}
-    this.party.startMatch()
+    this.matchStarting = true
+    try {
+      this.ui?.preparePartyMatch()
+      const preparation = this.party.prepareMatch({hostLoaded: false})
+      try {
+        this.startViews()
+        await Promise.all([this.visualWarmup, prepareAudio()])
+        this.party.acceptLoaded(this.localPlayerId)
+      } catch (error) {
+        this.party.cancelPreparing(error)
+        throw error
+      }
+      const prepared = await preparation
+      if (prepared?.ok === false) return prepared
+      const result = this.director.start()
+      if (result === false || result?.ok === false) return result || {ok: false, error: 'Match could not start'}
+      this.party.startMatch()
+      this._acceptPartyState(this.party.state(), 'host')
+      return {ok: true}
+    } finally {
+      this.matchStarting = false
+    }
+  }
+
+  returnPartyToLobby() {
+    if (this.sessionMode !== 'host' || !this.party) return {ok: false, error: 'Only the host can return the party to the lobby'}
+    const result = this.party.returnToLobby()
+    if (result?.ok === false) return result
+    this.stopViews()
     this._acceptPartyState(this.party.state(), 'host')
+    this.ui?.returnToPartyLobby('host')
     return {ok: true}
   }
 
@@ -229,8 +265,21 @@ export class GameManager extends Object3DComponent {
   _bindParty(party, role) {
     this.partyOffs.push(party.on('state', ({detail}) => this._acceptPartyState(detail, role)))
     this.partyOffs.push(party.on('match-start', () => {
+      this.ui?.preparePartyMatch()
       this.startViews()
       this._acceptPartyState({...party.partyState, matchStarted: true}, role)
+    }))
+    this.partyOffs.push(party.on('match-prepare', () => {
+      this.ui?.preparePartyMatch()
+      this.startViews()
+      party.loaded?.()
+    }))
+    this.partyOffs.push(party.on('return-lobby', () => {
+      this.director.phase = this.world.phase
+      this.director.wave = this.world.wave
+      this.stopViews()
+      this._acceptPartyState({...party.partyState, matchStarted: false}, role)
+      this.ui?.returnToPartyLobby(role)
     }))
     this.partyOffs.push(party.on('ended', ({detail}) => {
       this.input?.stop()
@@ -284,7 +333,7 @@ export class GameManager extends Object3DComponent {
 
   stop() {
     this.started = false
-    this.viewsStarted = false
+    this.matchStarting = false
     this.visualWarmup = null
     this.visualWarmupReport = null
     this.ui?.dispose()
@@ -293,11 +342,7 @@ export class GameManager extends Object3DComponent {
     this.lobby?.stop()
     this.input?.stop()
     this.hud?.dispose()
-    this.playersView?.stop(); this.playersView = null
-    this.grenadeView?.stop()
-    this.playerView?.stop()
-    this.unitView?.stop()
-    this.mapView?.stop()
+    this.stopViews()
     this.input = null
     this.lobby = null
     this.hud = null

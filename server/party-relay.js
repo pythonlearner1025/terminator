@@ -4,7 +4,7 @@ import {WebSocket, WebSocketServer} from 'ws'
 
 const PARTY_PATH = /^\/party\/([A-Z0-9]{6})$/i
 const MAX_GUESTS = 2
-const MAX_MESSAGE_BYTES = 64 * 1024
+const MAX_MESSAGE_BYTES = 256 * 1024
 
 export function attachPartyRelay(server, {logger = console, lanHost = null, tunnelUrl = null} = {}) {
   const rooms = new Map()

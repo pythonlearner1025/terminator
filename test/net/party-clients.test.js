@@ -4,11 +4,16 @@ import {WebSocket} from 'ws'
 import {World} from '../../lib/core/world.js'
 import {PartyGuest} from '../../lib/net/party-guest.js'
 import {PartyHost} from '../../lib/net/party-host.js'
+import {WaveDirector} from '../../lib/core/waves.js'
 import {startTestServer, waitFor} from '../server/helpers.js'
 
 const idleBrain = {tick() {}}
 const brains = {scout: idleBrain, endo: idleBrain, heavy: idleBrain}
 const idle = {move: {x: 0, z: 0}, yaw: 0, pitch: 0}
+const config = {
+  spawns: [{t: 0, gate: 'N1', unit: 'scout', count: 1}],
+  knobs: {gates: ['N1'], doors: {}, lights: {}, fog: 0, hazards: [], break_flank_wall: false},
+}
 
 test('one host and two headless guests join and receive a snapshot over the real relay', async (t) => {
   const session = await makeSession(t, {guests: ['Kyle', 'Sarah']})
@@ -65,6 +70,18 @@ test('host schedules twenty authoritative snapshots for sixty simulation ticks',
   assert.equal(guest.world.tick, 60)
 })
 
+test('network snapshots omit the growing replay without changing the host replay', async (t) => {
+  const session = await makeSession(t, {guests: ['Sarah']})
+  const guest = session.guests[0]
+  for (let tick = 0; tick < 240; tick += 1) session.host.step(idle)
+  await waitFor(() => guest.world.tick >= 238)
+
+  assert.equal(session.host.world.replay.length, 240)
+  assert.equal(guest.world.replay.length, 0)
+  assert.equal(session.host.connected, true)
+  assert.equal(guest.connected, true)
+})
+
 test('guest local hitscan reports a hit that damages the unit on the host', async (t) => {
   const session = await makeSession(t, {guests: ['Sarah']})
   const guest = session.guests[0]
@@ -77,7 +94,9 @@ test('guest local hitscan reports a hit that damages the unit on the host', asyn
   session.host.sendSnapshot()
   await delivered
   guest.step({move: {x: 0, z: 0}, yaw: 0, pitch: 0, fire: true})
-  await waitFor(() => session.host.pendingHits.get(guest.playerId)?.has(0))
+  for (let tick = 0; tick < 4; tick += 1) guest.step(idle)
+  await waitFor(() => session.host.latestInputs.get(guest.playerId)?.tick === 4)
+  assert.equal(session.host.pendingHits.get(guest.playerId)?.has(0), true)
   session.host.step(idle)
 
   assert.ok(unit.hp < startingHp)
@@ -120,6 +139,70 @@ test('guest reconnects with the same player id during the grace period', async (
   assert.equal(resumed.playerId, playerId)
   assert.equal(session.host.players.get(playerId).connected, true)
   assert.equal(session.host.world.players.size, 2)
+})
+
+test('a transient guest socket drop reconnects automatically with its player id and input sequence', async (t) => {
+  const session = await makeSession(t, {guests: ['Kyle'], disconnectGraceMs: 2_000})
+  const guest = session.guests[0]
+  const playerId = guest.playerId
+  guest.step(idle)
+  await waitFor(() => session.host.latestInputs.get(playerId)?.tick === 0)
+  const firstSocket = guest.socket
+  firstSocket.terminate()
+  await waitFor(() => guest.socket && guest.socket !== firstSocket && guest.connected)
+  await waitFor(() => session.host.players.get(playerId)?.connected === true)
+
+  const tick = guest.step({move: {x: 0, z: 1}, yaw: 0, pitch: 0})
+  await waitFor(() => session.host.latestInputs.get(playerId)?.tick === tick)
+  assert.equal(guest.playerId, playerId)
+  assert.equal(session.host.world.players.size, 2)
+})
+
+test('host waits for its own view and every connected guest view before starting a match', async (t) => {
+  const session = await makeSession(t, {guests: ['Sarah']})
+  const guest = session.guests[0]
+  const preparing = once(guest, 'match-prepare')
+  const prepared = session.host.prepareMatch({timeoutMs: 1_000, hostLoaded: false})
+
+  await preparing
+  session.host.acceptLoaded(session.host.world.hostPlayerId)
+  let settled = false
+  prepared.then(() => { settled = true })
+  await new Promise(resolve => setTimeout(resolve, 20))
+  assert.equal(settled, false, 'the host remains in the party lobby while the guest loads')
+
+  guest.loaded()
+  assert.deepEqual(await prepared, {ok: true})
+  assert.equal(session.host.matchStarted, false)
+  session.host.startMatch()
+  assert.equal(session.host.matchStarted, true)
+})
+
+test('an ended match returns the connected roster to the same ready-reset party', async (t) => {
+  const session = await makeSession(t, {guests: ['Sarah']})
+  const guest = session.guests[0]
+  const director = session.host.director = new WaveDirector(session.host.world, {maxWaves: 3})
+  session.host.setReady('player', true)
+  guest.ready()
+  await waitFor(() => session.host.players.get(guest.playerId)?.ready)
+  director.start(config)
+  session.host.startMatch()
+  session.host.lastSnapshotTick = session.host.world.tick
+  session.host.world.damagePlayer(1000, {type: 'test'}, 'player')
+  session.host.world.damagePlayer(1000, {type: 'test'}, guest.playerId)
+  session.host.step(idle)
+  assert.equal(session.host.world.phase, 'ended')
+  await waitFor(() => guest.world.phase === 'ended')
+
+  const returned = once(guest, 'return-lobby')
+  assert.deepEqual(session.host.returnToLobby(), {ok: true})
+  await returned
+  assert.equal(session.host.code, 'NET123')
+  assert.equal(guest.code, 'NET123')
+  assert.equal(guest.world.phase, 'lobby')
+  assert.equal(session.host.players.size, 2)
+  assert.ok([...session.host.players.values()].every(player => player.ready === false))
+  assert.equal(guest.partyState.matchStarted, false)
 })
 
 test('guest disconnect keeps a ten-second-grace slot before removal and host leave ends the party', async (t) => {

@@ -72,6 +72,28 @@ test('a dead teammate respawns next wave and the match ends only when everyone i
   assert.equal(director.telemetryByWave.get(2).player_died, true)
 })
 
+test('an ended co-op match resets to a fresh lobby without replacing the roster', () => {
+  const world = makeParty()
+  const director = new WaveDirector(world, {maxWaves: 3})
+  const roster = [...world.players.values()]
+  director.start(config)
+  director.step({})
+  world.damagePlayer(1000, {type: 'test'}, 'player')
+  world.damagePlayer(1000, {type: 'test'}, 'guest-1')
+  director.step({})
+  assert.equal(director.phase, 'ended')
+
+  assert.deepEqual(director.returnToLobby(), {ok: true})
+  assert.equal(director.phase, 'lobby')
+  assert.equal(world.phase, 'lobby')
+  assert.equal(world.wave, 0)
+  assert.deepEqual([...world.players.values()], roster)
+  assert.ok([...world.players.values()].every(player => player.alive && player.hp === 100 && player.scrap === 400))
+  assert.equal(world.units.length, 0)
+  assert.equal(world.eventLog.at(-1).phase, 'lobby')
+  assert.equal(director.start(config).ok, true, 'the same director can start a second match')
+})
+
 test('the per-player view model selects its HUD and lists teammate state', () => {
   const world = makeParty()
   const guest = world.getPlayer('guest-1')

@@ -1,0 +1,153 @@
+{
+  "mode": "two isolated headless Chromium processes and contexts with a reserved third guest context and 1920 by 1080 evidence capture",
+  "gamePort": 4730,
+  "relayPort": 7831,
+  "partyCode": "P5I57F",
+  "steps": [
+    {
+      "step": 1,
+      "status": "pass",
+      "message": "Host clicked the real Kite3D Play control and reached the game main menu"
+    },
+    {
+      "step": 2,
+      "status": "pass",
+      "message": "Host entered a name, created a six-character party, and the party screen released input and pointer lock"
+    },
+    {
+      "step": 3,
+      "status": "pass",
+      "message": "Host used Copy Invite and retained the exact generated invite link"
+    },
+    {
+      "step": 4,
+      "status": "pass",
+      "message": "Guest opened the copied invite, clicked Play, joined through the real form, and both browsers saw the same roster"
+    },
+    {
+      "step": 5,
+      "status": "pass",
+      "message": "Both players used the Ready UI and both browsers showed every ready mark"
+    },
+    {
+      "step": 6,
+      "status": "pass",
+      "message": "Host used Start and both browsers entered wave one with combat HUD, two players, and active local input"
+    },
+    {
+      "step": 7,
+      "status": "pass",
+      "message": "Opening a screen during play stopped look input, released pointer lock, and Resume restored play input"
+    },
+    {
+      "step": 8,
+      "status": "pass",
+      "message": "Keyboard movement changed both local players and each remote browser received the other position change"
+    },
+    {
+      "step": 9,
+      "status": "pass",
+      "message": "The guest dropped and automatically reconnected from the same invite with the same player id, token, and roster slot"
+    },
+    {
+      "step": 10,
+      "status": "pass",
+      "message": "Host and guest fired through the public input state, each killed an enemy, and both HUDs reflected authoritative health and wave state"
+    },
+    {
+      "step": 11,
+      "status": "pass",
+      "message": "One player died, stayed in the match, and spectated the living teammate on both authoritative and HUD state"
+    },
+    {
+      "step": 12,
+      "status": "pass",
+      "message": "The living player cleared wave one while the teammate remained down and both browsers entered the same intermission"
+    },
+    {
+      "step": 13,
+      "status": "pass",
+      "message": "The living player bought ammunition through the Trader UI and the purchase and scrap total matched on both browsers"
+    },
+    {
+      "step": 14,
+      "status": "pass",
+      "message": "Starting wave two respawned the downed player at full health on both browsers"
+    },
+    {
+      "step": 15,
+      "status": "pass",
+      "message": "Both players died in wave two and both browsers showed the same two-player scoreboard instead of leaving the party"
+    },
+    {
+      "step": 16,
+      "status": "pass",
+      "message": "Return to Party kept the code and roster and reset every ready mark"
+    },
+    {
+      "step": 17,
+      "status": "pass",
+      "message": "The same host started a second match with the same guest and party code, without creating or opening another invite"
+    },
+    {
+      "step": 18,
+      "status": "pass",
+      "message": "No uncaught page errors or console errors occurred in either active browser"
+    }
+  ],
+  "issues": [
+    {
+      "role": "host",
+      "level": "warning",
+      "text": "[.WebGL-0x12c00439c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "source": "http://127.0.0.1:4730/?t=[redacted]"
+    },
+    {
+      "role": "host",
+      "level": "warning",
+      "text": "[.WebGL-0x12c00437800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "source": "http://127.0.0.1:4730/?t=[redacted]"
+    },
+    {
+      "role": "host",
+      "level": "warning",
+      "text": "[.WebGL-0x12c00439c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "source": "http://127.0.0.1:4730/?t=[redacted]"
+    },
+    {
+      "role": "host",
+      "level": "warning",
+      "text": "[.WebGL-0x12c00437800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)",
+      "source": "http://127.0.0.1:4730/?t=[redacted]"
+    },
+    {
+      "role": "guest",
+      "level": "warning",
+      "text": "[.WebGL-0x13400438a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "source": "http://127.0.0.1:4730/?party=P5I57F&relay=ws%3A%2F%2F127.0.0.1%3A7831%2Fparty%2FP5I57F&t=[redacted]"
+    },
+    {
+      "role": "guest",
+      "level": "warning",
+      "text": "[.WebGL-0x13400436000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "source": "http://127.0.0.1:4730/?party=P5I57F&relay=ws%3A%2F%2F127.0.0.1%3A7831%2Fparty%2FP5I57F&t=[redacted]"
+    },
+    {
+      "role": "guest",
+      "level": "warning",
+      "text": "[.WebGL-0x13400438a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "source": "http://127.0.0.1:4730/?party=P5I57F&relay=ws%3A%2F%2F127.0.0.1%3A7831%2Fparty%2FP5I57F&t=[redacted]"
+    },
+    {
+      "role": "guest",
+      "level": "warning",
+      "text": "[.WebGL-0x13400436000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)",
+      "source": "http://127.0.0.1:4730/?party=P5I57F&relay=ws%3A%2F%2F127.0.0.1%3A7831%2Fparty%2FP5I57F&t=[redacted]"
+    }
+  ],
+  "screenshots": [
+    "host-mid-wave.png",
+    "guest-mid-wave.png",
+    "party-lobby-after-death.png"
+  ]
+}
