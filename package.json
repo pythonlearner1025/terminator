@@ -52,7 +52,7 @@
       "./generators/soldier-template.generator.js"
     ],
     "viewer": {
-      "msaa": true,
+      "msaa": 2,
       "tonemap": true,
       "backgroundColor": "#03070d"
     },

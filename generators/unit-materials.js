@@ -29,7 +29,7 @@ export function unitMaterials(E) {
     }, undefined, reject)
     environment.mapping = E.EquirectangularReflectionMapping
   }))
-  metal = new E.PhysicalMaterial({name: 'Endoskeleton 2K worn metal atlas', map, normalMap,
+  metal = new E.PhysicalMaterial({name: 'Endoskeleton 1K worn metal atlas', map, normalMap,
     normalScale: new E.Vector2(.55, .55), roughnessMap: orm, metalnessMap: orm, aoMap: orm,
     metalness: 1, roughness: 1, envMapIntensity: .6})
   const opticOrm = load('optic-orm.png')
@@ -54,7 +54,7 @@ export function unitMaterials(E) {
     normalMap:load('impact-normal.png'),normalScale:new E.Vector2(1,1),roughnessMap:impactOrm,
     metalnessMap:impactOrm,aoMap:impactOrm,roughness:1,metalness:1,transparent:true,alphaTest:.035,
     depthWrite:false,polygonOffset:true,polygonOffsetFactor:-2,envMapIntensity:.4})
-  shared={metal,eye,halo,impact,glowMap,environment,ready:Promise.all(pending),textureBytes:3*2048*2048*4*4/3+4*256*256*4*4/3+3*512*512*4*4/3+1024*512*8}
+  shared={metal,eye,halo,impact,glowMap,environment,ready:Promise.all(pending),textureBytes:3*1024*1024*4*4/3+4*256*256*4*4/3+3*512*512*4*4/3+1024*512*8}
   return shared
 }
 

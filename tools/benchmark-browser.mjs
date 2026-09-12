@@ -36,6 +36,8 @@ try {
   await page.getByTestId('play').waitFor({state: 'visible', timeout: 30_000})
   await page.getByTestId('play').click()
   await page.waitForFunction(() => Boolean(window.terminator?.manager?.world), undefined, {timeout: 45_000})
+  await page.waitForFunction(() => Boolean(window.terminator?.manager?.ui?.menuScene?.root)
+    && window.terminator.manager.ui.screens?.route === 'main', undefined, {timeout: 45_000})
   await page.waitForFunction(() => {
     const root = window.viewer?.scene?.modelRoot
     if (!root) return false
@@ -56,13 +58,6 @@ try {
 
   await page.evaluate(async ({width, height}) => {
     const manager = window.terminator.manager
-    if (!manager.viewsStarted) {
-      manager.ui?.menuScene?.setActive(false)
-      manager.startViews()
-      manager.director.start()
-      manager.ui?.screens?.show(null)
-    }
-    await manager.mapView.ready
     const {viewer} = window
     Object.assign(viewer.container.style, {
       position: 'fixed', left: '0', top: '0', width: `${width}px`, height: `${height}px`,
@@ -71,6 +66,16 @@ try {
     viewer.setSize({width, height})
     viewer.renderManager.renderScale = 1
     viewer.resize()
+    if (!manager.viewsStarted) {
+      manager.ui?.menuScene?.setActive(false)
+      manager.startViews()
+      await manager.visualWarmup
+      for(let attempts=0;attempts<120&&!manager.audio;attempts++)await new Promise(resolve=>requestAnimationFrame(resolve))
+      await manager.audio?.unlock()
+      manager.director.start()
+      manager.ui?.screens?.show(null)
+    }
+    await manager.mapView.ready
   }, {width: options.width, height: options.height})
   await page.waitForFunction(({width, height}) => {
     const rect = window.viewer?.canvas?.getBoundingClientRect()
@@ -96,10 +101,15 @@ try {
     player.maxHp = 1e9
     player.armor = 1e9
     player.alive = true
+    player.activeWeapon = 'm4'
+    player.aiming = true
+    player.ammo.m4.owned = true
+    player.ammo.m4.mag = 30
+    player.ammo.m4.reserve = 240
     const positions = []
     for (let row = 0; row < 4; row += 1) {
       for (let column = 0; column < 6; column += 1) {
-        positions.push({x: (column - 2.5) * 1.1, y: 0, z: 13 - row * 1.5})
+        positions.push({x: (column - 2) * 1.1, y: 0, z: 13 - row * 1.5})
       }
     }
     for (let index = 0; index < positions.length; index += 1) {
@@ -135,6 +145,8 @@ try {
     if (disable.includes('units')) manager.unitView.root.visible = false
     manager.director.step = inputs => world.step(inputs)
     manager.input?.stop()
+    manager.input.yaw=player.yaw;manager.input.pitch=player.pitch
+    manager.input.cursorAnchorYaw=player.yaw;manager.input.cursorAnchorPitch=player.pitch
     manager.ui?.screens?.show(null)
     // Keep newly cloned PBR units out of the first renderer traversal until the
     // shared HDR environment has real dimensions. Older builds created the
@@ -153,13 +165,14 @@ try {
     })
     manager.unitView.root.visible = !disable.includes('units')
     window.viewer.setDirty()
-    return {units: world.aliveUnits.length, quality: manager.ui?.screens?.settings?.quality || 'high', disabled: disable}
+    return {units: world.aliveUnits.length, quality: manager.ui?.screens?.settings?.quality || 'high', disabled: disable,
+      visualWarmup: manager.visualWarmupReport || null, audio: manager.audio ? {loading:Boolean(manager.audio.loading),decoded:manager.audio.stats.loaded} : null}
   }, {motionBlur: options.motionBlur, disable: options.disable})
 
   await page.waitForFunction(() => window.terminator.manager.unitView.visuals.size === 24, undefined, {timeout: 20_000})
   await page.waitForTimeout(options.warmupSeconds * 1000)
   warnings.length = 0
-  const metrics = await page.evaluate(collectMetrics, {seconds: options.seconds})
+  const metrics = await page.evaluate(collectMetrics, {seconds: options.seconds, ragdollDeaths: options.ragdolls})
   const scene = await page.evaluate(() => {
     const {viewer} = window
     const manager = window.terminator.manager
@@ -207,7 +220,7 @@ try {
     warmupSeconds: options.warmupSeconds,
     requestedViewport: {width: options.width, height: options.height, deviceScaleFactor: 1},
     effects: {post: !options.disable.includes('post'), motionBlur: options.motionBlur, rain: 1, smoke: 1,
-      hazards: ['electric', 'steam'], combatStress: 'two enemy shots per frame and ten impact bursts per second', disabled: options.disable},
+      hazards: ['electric', 'steam'], combatStress: `24 enemies, two enemy shots per frame, ten impact bursts per second, ${options.ragdolls} deterministic M4 death(s), limb loss, and explosion events`, disabled: options.disable},
     browser: metrics.browser,
     setup,
     scene,
@@ -217,7 +230,11 @@ try {
     textureMemory: metrics.textureMemory,
     postPasses: metrics.postPasses,
     systems: metrics.systems,
+    ragdolls: metrics.ragdolls,
     topCosts: metrics.topCosts,
+    worstFrames: metrics.worstFrames,
+    eventFrames: metrics.eventFrames,
+    workloadFpsFloor: metrics.workloadFpsFloor,
     warnings: [...new Set(warnings)],
     screenshot: options.screenshot || null,
   }
@@ -228,7 +245,8 @@ try {
     await writeFile(path, json)
   }
   process.stdout.write(json)
-  if (scene.aliveEnemies !== 24 || scene.renderedEnemies !== 24 || scene.enemiesInFrustum !== 24) process.exitCode = 1
+  const expectedAlive=options.ragdolls===1?24:24-options.ragdolls
+  if(scene.aliveEnemies!==expectedAlive||scene.renderedEnemies!==24)process.exitCode=1
   if (result.warnings.length) process.exitCode = 1
 } catch (error) {
   process.stderr.write(`${String(error?.stack || error).replace(/\?t=[A-Za-z0-9._~-]+/g, '?t=[redacted]')}\n`)
@@ -251,6 +269,7 @@ function parseOptions(argv) {
     port: Number(value('port', 4660)),
     output: value('output', ''),
     screenshot: value('screenshot', ''),
+    ragdolls: Math.max(1,Math.min(8,Math.round(Number(value('ragdolls',1))))),
     motionBlur: value('motion-blur', 'on') !== 'off',
     disable: value('disable', '').split(',').filter(Boolean),
   }
@@ -285,14 +304,14 @@ async function reachable(origin) {
 function delay(ms) { return new Promise(resolveDelay => setTimeout(resolveDelay, ms)) }
 function redact(value) { return String(value).replace(/\?t=[A-Za-z0-9._~-]+/g, '?t=[redacted]') }
 
-async function collectMetrics({seconds}) {
+async function collectMetrics({seconds,ragdollDeaths=1}) {
   const round = value => Number.isFinite(value) ? Number(value.toFixed(3)) : null
   const mean = values => values.reduce((sum, value) => sum + value, 0) / Math.max(1, values.length)
   const summary = values => {
-    if (!values.length) return {samples: 0, mean: null, p50: null, p95: null, max: null}
+    if (!values.length) return {samples: 0, mean: null, p50: null, p95: null, p99: null, max: null}
     const sorted = [...values].sort((a, b) => a - b)
     const at = quantile => sorted[Math.min(sorted.length - 1, Math.floor(sorted.length * quantile))]
-    return {samples: values.length, mean: round(mean(values)), p50: round(at(.5)), p95: round(at(.95)), max: round(sorted.at(-1))}
+    return {samples: values.length, mean: round(mean(values)), p50: round(at(.5)), p95: round(at(.95)), p99: round(at(.99)), max: round(sorted.at(-1))}
   }
   const inspectTextureMemory = currentViewer => {
     const textures = new Set(), visited = new WeakSet()
@@ -343,16 +362,33 @@ async function collectMetrics({seconds}) {
   const renderer = renderManager.webglRenderer
   const gl = renderer.getContext()
   const timer = gl.getExtension('EXT_disjoint_timer_query_webgl2')
-  const frameIntervals = [], frameWork = [], drawCalls = [], triangles = [], points = [], lines = []
+  const frameIntervals = [], frameWork = [], drawCalls = [], triangles = [], points = [], lines = [], frameRecords = []
   const systemStats = new Map(), passStats = new Map(), restores = []
   let renderTotals = {calls: 0, triangles: 0, points: 0, lines: 0}
-  let frameStart = 0, lastFrame = 0, collecting = false, activeQuery = null, effectFrame = 0
+  let frameStart = 0, lastFrame = 0, collecting = false, activeQuery = null, effectFrame = 0, frameSerial = -1, maxActiveRagdolls = 0
+  let programs = renderer.info.programs?.length || 0, priorHeap = performance.memory?.usedJSHeapSize || 0
   const pendingQueries = [], gpuSamples = []
-  const combatVisuals = [...manager.unitView.visuals.values()]
+  const combatIds=[...manager.unitView.visuals.keys()]
+  const primary=manager.world.unitById.get('benchmark-heavy-3')
+  const deathTargets=[primary,...manager.world.units.filter(unit=>unit!==primary)].slice(0,ragdollDeaths)
   const combatFrom = manager.unitView.v1.clone(), combatTo = manager.unitView.v2.clone(), combatHit = manager.unitView.v1.clone()
+  const firstEvents = new Set()
+  const currentRecord = () => frameRecords[frameSerial]
+  const mark = (name, detail = '') => {
+    const frame = currentRecord()
+    if (!collecting || !frame) return
+    const label = detail ? `${name}: ${detail}` : name
+    if (!frame.events.includes(label)) frame.events.push(label)
+  }
+  const markFirst = (name, detail = '') => {
+    if (firstEvents.has(name)) return
+    firstEvents.add(name); mark(name, detail)
+  }
   const record = (stats, name, duration) => {
     const item = stats.get(name) || {calls: 0, totalMs: 0, maxMs: 0}
     item.calls += 1; item.totalMs += duration; item.maxMs = Math.max(item.maxMs, duration); stats.set(name, item)
+    const frame = currentRecord()
+    if (collecting && frame) frame.costs[name] = (frame.costs[name] || 0) + duration
   }
   const wrap = (target, key, name, stats = systemStats, after) => {
     if (!target || typeof target[key] !== 'function') return
@@ -375,10 +411,20 @@ async function collectMetrics({seconds}) {
   wrap(manager.playerView?.weapons, 'sync', 'weapons')
   wrap(manager.mapView?.refs?.weather, 'sync', 'weather')
   wrap(manager.unitView?.fx, 'update', 'fx')
+  wrap(manager.unitView?.ragdolls,'update','ragdolls')
   wrap(manager.playersView?.fx, 'update', 'fx')
   wrap(manager.playerView?.weapons?.fx, 'update', 'fx')
   wrap(manager.hud, 'render', 'HUD')
   wrap(manager.hud, 'sync', 'HUD')
+  wrap(manager.unitView?.fx, 'damage', 'unit damage', systemStats, () => {
+    markFirst('first hit'); markFirst('first decal')
+  })
+  wrap(manager.unitView?.fx, 'sever', 'limb separation', systemStats, () => markFirst('limb loss'))
+  wrap(manager.unitView?.fx, 'wreck', 'wreck effect', systemStats, () => markFirst('wreck spawn'))
+  wrap(manager.audio, '_play', 'audio start', systemStats, () => markFirst('audio start'))
+  wrap(renderer, 'compile', 'renderer compile', systemStats, () => markFirst('shader compile', 'explicit compile'))
+  wrap(renderer, 'compileAsync', 'renderer compile async', systemStats, () => markFirst('shader compile', 'explicit compileAsync'))
+  wrap(renderer, 'initTexture', 'texture upload', systemStats, () => markFirst('texture upload'))
   for (const pass of renderManager.passes) wrap(pass, 'render', pass.passId || pass.constructor?.name || 'post-pass', passStats)
   const originalRendererRender = renderer.render
   renderer.render = function (...args) {
@@ -398,20 +444,33 @@ async function collectMetrics({seconds}) {
     if (!timer) return
     for (let index = pendingQueries.length - 1; index >= 0; index -= 1) {
       const query = pendingQueries[index]
-      if (!gl.getQueryParameter(query, gl.QUERY_RESULT_AVAILABLE)) continue
-      if (!gl.getParameter(timer.GPU_DISJOINT_EXT)) gpuSamples.push(gl.getQueryParameter(query, gl.QUERY_RESULT) / 1e6)
-      gl.deleteQuery(query); pendingQueries.splice(index, 1)
+      if (!gl.getQueryParameter(query.handle, gl.QUERY_RESULT_AVAILABLE)) continue
+      if (!gl.getParameter(timer.GPU_DISJOINT_EXT)) {
+        const ms = gl.getQueryParameter(query.handle, gl.QUERY_RESULT) / 1e6
+        gpuSamples.push(ms)
+        if (frameRecords[query.frame]) frameRecords[query.frame].gpuMs = ms
+      }
+      gl.deleteQuery(query.handle); pendingQueries.splice(index, 1)
     }
   }
   const onPreFrame = () => {
     const now = performance.now()
     frameStart = now
-    if (collecting && lastFrame) frameIntervals.push(now - lastFrame)
+    if (collecting) {
+      frameSerial += 1
+      const intervalMs = lastFrame ? now - lastFrame : null
+      if (intervalMs !== null) frameIntervals.push(intervalMs)
+      frameRecords.push({frame: frameSerial, intervalMs, workMs: null, gpuMs: null, events: [], costs: {}})
+      const heap = performance.memory?.usedJSHeapSize || 0
+      if (priorHeap && heap < priorHeap - 1024 * 1024) mark('GC', `${round((priorHeap - heap) / 1048576)} MiB reclaimed`)
+      priorHeap = heap
+    }
     lastFrame = now
-    if (collecting && combatVisuals.length && manager.unitView.fx) {
+    if (collecting && combatIds.length && manager.unitView.fx) {
       const started = performance.now()
       for (let offset = 0; offset < 2; offset += 1) {
-        const visual = combatVisuals[(effectFrame * 2 + offset) % combatVisuals.length]
+        const visual=manager.unitView.visuals.get(combatIds[(effectFrame*2+offset)%combatIds.length])
+        if(!visual)continue
         const muzzle = visual.rig.joints.Muzzle
         if (muzzle) muzzle.getWorldPosition(combatFrom)
         else combatFrom.copy(visual.object.position).setY(1.55)
@@ -420,22 +479,65 @@ async function collectMetrics({seconds}) {
         visual.rig.recoil = 1
       }
       if (effectFrame % 6 === 0) {
-        const visual = combatVisuals[effectFrame % combatVisuals.length]
-        combatHit.copy(visual.object.position).setY(1.1)
-        manager.unitView.fx.hit(combatHit, effectFrame, undefined, visual.object.position.y)
+        const visual=manager.unitView.visuals.get(combatIds[effectFrame%combatIds.length])
+        if(visual){
+          combatHit.copy(visual.object.position).setY(1.1)
+          manager.unitView.fx.hit(combatHit,effectFrame,undefined,visual.object.position.y)
+        }
       }
       record(systemStats, 'combat effects', performance.now() - started)
+      const deathOffset=effectFrame-8
+      const deathIndex=deathOffset>=0&&deathOffset%6===0?deathOffset/6:-1
+      if(deathIndex>=0&&deathIndex<deathTargets.length) {
+        const world=manager.world,target=deathTargets[deathIndex]
+        if (target?.alive) {
+          const eventStart = world.eventLog.length
+          world.damageUnit(target.id,target.hp,{source:'player',playerId:world.player.id,weapon:'m4',distance:4})
+          world.emit('shot',{by:world.player.id,playerId:world.player.id,weapon:'m4',hit:true,headshot:false,killed:true,unitId:target.id,
+            origin:{...world.player.pos,y:world.player.pos.y+1.65}})
+          mark(`M4 kill ${deathIndex+1}`);markFirst('first shot','M4');manager.syncViews();manager.audioBindings?.sync(world)
+          const emitted = world.eventLog.slice(eventStart)
+          if (emitted.some(event => event.type === 'unit_death')) markFirst('first death', 'M4 kill')
+        }
+      }
+      if (effectFrame === 24) {
+        const world = manager.world, target = world.unitById.get('benchmark-heavy-6')
+        if (target?.alive) {
+          world.damageUnit(target.id, 140, {source: 'player', playerId: world.player.id, weapon: 'plasma'})
+          manager.syncViews(); manager.audioBindings?.sync(world)
+        }
+      }
+      if (effectFrame === 40) {
+        const world = manager.world
+        world.emit('explosion', {by: world.player.id, playerId: world.player.id, pos: {x: 0, y: .05, z: 10}, hit: true})
+        manager.syncViews(); manager.audioBindings?.sync(world)
+        mark('explosion')
+      }
+      if(ragdollDeaths===1&&effectFrame===72) {
+        const target = manager.world.unitById.get('benchmark-heavy-3')
+        if (target && !target.alive) {
+          target.alive = true; target.hp = target.maxHp; target.diedAtTick = null
+          manager.syncViews()
+        }
+      }
       effectFrame += 1
     }
   }
-  const onPostFrame = () => { if (collecting && frameStart) frameWork.push(performance.now() - frameStart) }
+  const onPostFrame = () => {
+    if (!collecting || !frameStart) return
+    const workMs = performance.now() - frameStart
+    frameWork.push(workMs)
+    const frame = currentRecord()
+    if (frame) workMs > (frame.workMs || 0) && (frame.workMs = workMs)
+    maxActiveRagdolls=Math.max(maxActiveRagdolls,manager.unitView.ragdolls?.activeCount('unit')||0)
+  }
   const onPreRender = () => {
     renderTotals = {calls: 0, triangles: 0, points: 0, lines: 0}
     if (!collecting || !timer || activeQuery) return
     pollQueries()
     if (pendingQueries.length >= 8) return
-    activeQuery = gl.createQuery()
-    gl.beginQuery(timer.TIME_ELAPSED_EXT, activeQuery)
+    activeQuery = {handle: gl.createQuery(), frame: frameSerial}
+    gl.beginQuery(timer.TIME_ELAPSED_EXT, activeQuery.handle)
   }
   const onPostRender = () => {
     if (!collecting) return
@@ -444,6 +546,16 @@ async function collectMetrics({seconds}) {
       pendingQueries.push(activeQuery)
       activeQuery = null
     }
+    const programList = renderer.info.programs || []
+    const nextPrograms = programList.length
+    if (nextPrograms > programs) {
+      const variants=programList.slice(programs).map(program=>{
+        const diagnostics=program.diagnostics||{}
+        return String(program.name||diagnostics.material?.name||program.cacheKey||'unnamed').slice(0,80)
+      })
+      markFirst('shader compile', `${nextPrograms - programs} program(s): ${variants.join(', ')}`)
+    }
+    programs = nextPrograms
     drawCalls.push(renderTotals.calls); triangles.push(renderTotals.triangles); points.push(renderTotals.points); lines.push(renderTotals.lines)
   }
   viewer.addEventListener('preFrame', onPreFrame)
@@ -458,7 +570,7 @@ async function collectMetrics({seconds}) {
     pollQueries()
     if (pendingQueries.length) await new Promise(resolveFrame => requestAnimationFrame(resolveFrame))
   }
-  for (const query of pendingQueries) gl.deleteQuery(query)
+  for (const query of pendingQueries) gl.deleteQuery(query.handle)
   viewer.removeEventListener('preFrame', onPreFrame)
   viewer.removeEventListener('postFrame', onPostFrame)
   viewer.removeEventListener('preRender', onPreRender)
@@ -478,6 +590,18 @@ async function collectMetrics({seconds}) {
     ...Object.entries(systems).map(([name, item]) => ({area: `system:${name}`, msPerFrame: item.msPerFrame})),
     ...Object.entries(postPasses).map(([name, item]) => ({area: `pass:${name}`, msPerFrame: item.msPerFrame})),
   ].sort((a, b) => b.msPerFrame - a.msPerFrame).slice(0, 5)
+  const usefulFrames = frameRecords.filter(frame => frame.workMs !== null || frame.gpuMs !== null)
+  const describeFrame = frame => {
+    const costs = Object.entries(frame.costs).sort((a, b) => b[1] - a[1]).slice(0, 3)
+      .map(([area, ms]) => ({area, ms: round(ms)}))
+    return {...frame, intervalMs: round(frame.intervalMs), workMs: round(frame.workMs), gpuMs: round(frame.gpuMs), costs,
+      cause: frame.events.length ? frame.events.join(', ') : (costs[0]?.area || 'steady rendering')}
+  }
+  const worstFrames = usefulFrames.sort((a, b) => Math.max(b.workMs || 0, b.gpuMs || 0) - Math.max(a.workMs || 0, a.gpuMs || 0))
+    .slice(0, 10).map(describeFrame)
+  const eventFrames = frameRecords.filter(frame => frame.events.length).map(describeFrame)
+  const cpuP99 = summary(frameWork).p99, gpuP99 = timer ? summary(gpuSamples).p99 : null
+  const workloadFpsFloor = round(1000 / Math.max(cpuP99 || 0, gpuP99 || 0))
   const debug = gl.getExtension('WEBGL_debug_renderer_info')
   return {
     browser: {
@@ -495,7 +619,12 @@ async function collectMetrics({seconds}) {
     textureMemory: inspectTextureMemory(viewer),
     postPasses,
     systems,
+    ragdolls:{requestedDeaths:ragdollDeaths,maxActive:maxActiveRagdolls,viewCpuMeanMs:systems.ragdolls?.meanCallMs??null,
+      viewCpuMaxMs:systems.ragdolls?.maxCallMs??null},
     topCosts: ranked,
+    worstFrames,
+    eventFrames,
+    workloadFpsFloor,
   }
 }
 
@@ -543,9 +672,9 @@ function inspectTextureMemory(viewer) {
 }
 
 function summary(values) {
-  if (!values.length) return {mean: null, p50: null, p95: null, max: null}
+  if (!values.length) return {mean: null, p50: null, p95: null, p99: null, max: null}
   const sorted = [...values].sort((a, b) => a - b)
-  return {mean: round(mean(sorted)), p50: round(percentile(sorted, .5)), p95: round(percentile(sorted, .95)), max: round(sorted.at(-1))}
+  return {mean: round(mean(sorted)), p50: round(percentile(sorted, .5)), p95: round(percentile(sorted, .95)), p99: round(percentile(sorted, .99)), max: round(sorted.at(-1))}
 }
 function mean(values) { return values.length ? values.reduce((sum, value) => sum + value, 0) / values.length : NaN }
 function percentile(sorted, fraction) { return sorted[Math.min(sorted.length - 1, Math.floor(sorted.length * fraction))] }

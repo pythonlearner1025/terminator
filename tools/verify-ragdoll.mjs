@@ -4,8 +4,9 @@ import {readFile,writeFile,mkdir} from 'node:fs/promises'
 import assert from 'node:assert/strict'
 const root=new URL('../',import.meta.url),out=new URL('docs/evidence/ragdoll/',root)
 const dev=JSON.parse(await readFile(new URL('.kite3d/dev.json',root),'utf8'))
-assert.equal(new URL(dev.origin).port,'4710')
-await mkdir(out,{recursive:true})
+assert.equal(new URL(dev.origin).port,'4670')
+const captureScreenshots=process.argv.includes('--screenshots')
+if(captureScreenshots)await mkdir(out,{recursive:true})
 const browser=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true,args:['--use-angle=metal']})
 const page=await browser.newPage({viewport:{width:1920,height:1080},deviceScaleFactor:1})
 const errors=[],knownMenuWarnings=[]
@@ -26,8 +27,11 @@ try {
   await page.waitForFunction(()=>terminator.manager.ui.screens.route==='main',null,{timeout:90000})
   await page.evaluate(async()=>{
     const m=terminator.manager
-    m.ui.menuScene.setActive(false);m.startViews();m.ui.screens.show(null);m.hud.root.style.visibility='hidden';m.ui.applySettings({...m.ui.screens.settings,quality:'high'})
+    m.ui.menuScene.setActive(false);m.startViews();await m.visualWarmup;m.ui.screens.show(null);m.hud.root.style.visibility='hidden';m.ui.applySettings({...m.ui.screens.settings,quality:'high'})
     await m.mapView.ready
+    const warmup=m.visualWarmupReport?.deathPath
+    if(warmup?.ragdolls!==1||warmup?.detachedLimbs!==1||warmup?.fixedLimbMeshes!==12)throw new Error(`Death warmup proof failed: ${JSON.stringify(warmup)}`)
+    if(m.unitView.ragdolls.records.size||m.unitView.ragdolls.world.constraints.length)throw new Error('Death warmup did not reset ragdoll records')
     m.update=()=>true;m.input.stop();m.playerView.root.visible=false
     await m.unitView.materials?.ready
     window.ragdollCamera=(pos,target)=>{
@@ -55,7 +59,7 @@ try {
     ragdollCamera([6,1.4,4.5],[4,1.05,7.1])
   })
   await page.waitForTimeout(800)
-  await page.screenshot({path:new URL('shotgun-midair.png',out).pathname})
+  if(captureScreenshots)await page.screenshot({path:new URL('shotgun-midair.png',out).pathname})
   const shot=await page.evaluate(()=>{
     const v=terminator.manager.unitView.visuals.get(shotgunProofId)
     return {active:v.ragdoll.settledAt===null,weapon:v.impact.weapon,bodies:v.ragdoll.parts.length,head:v.rig.joints.Head.getWorldPosition(v.object.position.clone()).toArray()}
@@ -77,7 +81,7 @@ try {
     })
   })
   await page.waitForTimeout(400)
-  await page.screenshot({path:new URL('stairs-settled.png',out).pathname})
+  if(captureScreenshots)await page.screenshot({path:new URL('stairs-settled.png',out).pathname})
   assert.ok(stairs.every(s=>s.settled))
   const proof=await page.evaluate(async()=>{
     const m=terminator.manager,w=m.world,view=m.unitView
@@ -118,7 +122,7 @@ try {
     advanceWreck(120)
     if(wreck.rig.mesh.material.opacity<.45||wreck.rig.mesh.material.opacity>.55)throw new Error('Wreck did not fade over two seconds')
     advanceWreck(65)
-    if(view.visuals.has(lifetime.id)||view.visuals.has(shotgunProofId)||view.fx.bodies.length)throw new Error('Expired corpse or detached limb remained')
+    if(view.visuals.has(lifetime.id)||view.visuals.has(shotgunProofId)||view.fx.bodies.some(body=>body.record))throw new Error('Expired corpse or detached limb remained')
     // Pooled rigs restore severed scales and start clean on a later spawn.
     const u=spawnEvidence('recycled-proof',{x:5,y:0,z:8});advanceWreck(3)
     const v=view.visuals.get(u.id)

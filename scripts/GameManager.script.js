@@ -9,6 +9,7 @@ import {PartyGuest} from '../lib/net/party-guest.js'
 import {PartyHost} from '../lib/net/party-host.js'
 import {Hud} from '../lib/ui/hud.js'
 import {UiSession} from '../lib/ui/session.js'
+import {prepareAudio} from '../lib/ui/sfx.js'
 import {CameraFeel} from '../lib/view/camera-feel.js'
 import {GrenadeView} from '../lib/view/grenade.js'
 import {InputController} from '../lib/view/input.js'
@@ -16,6 +17,7 @@ import {MapView} from '../lib/view/map.js'
 import {PlayerView} from '../lib/view/player.js'
 import {UnitView} from '../lib/view/units.js'
 import {mountPlayersView} from '../lib/view/players.js'
+import {warmupMatch} from '../lib/view/match-warmup.js'
 
 export class GameManager extends Object3DComponent {
   static ComponentType = 'GameManager'
@@ -83,6 +85,10 @@ export class GameManager extends Object3DComponent {
         () => this.localPlayerId ?? this.world?.localPlayerId ?? this.world?.player?.id ?? 'player')
       this.viewsStarted = true
       this.syncViews()
+      this.visualWarmup = warmupMatch(this).then(report => {
+        if(this.viewsStarted)this.visualWarmupReport=report
+        return report
+      })
       return true
     } catch (error) {
       this.playersView?.stop(); this.playersView = null
@@ -186,11 +192,12 @@ export class GameManager extends Object3DComponent {
     return {ok: true}
   }
 
-  startMatch({override = false} = {}) {
+  async startMatch({override = false} = {}) {
     if (this.sessionMode !== 'host' || !this.party) return {ok: false, error: 'Only the host can start the party'}
     const players = this.party.state().players
     if (!override && !players.every((player) => player.ready)) return {ok: false, error: 'Every player must be ready'}
     this.startViews()
+    await Promise.all([this.visualWarmup,prepareAudio()])
     const result = this.director.start()
     if (result === false || result?.ok === false) return result || {ok: false, error: 'Match could not start'}
     this.party.startMatch()
@@ -278,6 +285,8 @@ export class GameManager extends Object3DComponent {
   stop() {
     this.started = false
     this.viewsStarted = false
+    this.visualWarmup = null
+    this.visualWarmupReport = null
     this.ui?.dispose()
     this._stopParty()
     this.cameraFeel?.dispose()
