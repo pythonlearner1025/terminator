@@ -48,8 +48,11 @@ Legend: [ ] todo, [~] in progress, [x] done, [!] blocked
 - [x] W12 Audio: procedural WebAudio, 40 sounds, bindings (sol). Evidence docs/evidence/w12
 - [x] Fixes from checkpoint 1 play: right handed controls (1de5880), no re-aim from frozen cursor on click (52de5bb)
 - [x] Aim down sights on right mouse, crosshair removed, easier economy, health reset at wave clear (17d2e95, 5709510, b3fd86a)
-- [~] Co-op pass (docs/coop-design.md): soldier model (astra, running), multi-player core (sol, running), then netcode and relay (sol) and co-op UI (astra)
-- [~] Editor bug: toolbar icons render blank in kite3d editor; headless-only agent investigating in ~/blitz, PR if editor bug
+- [x] Co-op pass (docs/coop-design.md): soldier model, multi-player core, netcode and relay, co-op UI. Two-client relay proof on the final tree: both reach wave 1, 21 Hz snapshots, zero errors. Boot regression fixed (78ad572).
+- [ ] Publish the co-op build to https://terminator.app.blitz.dev/ on the owner's go; owner claims the release
+- [ ] Checkpoint 2: owner hosts a party from the published game through `npm run tunnel` and plays with a friend
+- [x] Editor bug: toolbar icons blank. Root cause: idle full-rate render loop. PR blitzdotdev/kite3d#4, CI green, unmerged
+- [ ] kite3d CLI bug to file: a second `kite3d dev` on another port deletes the shared .kite3d/dev.json on exit and orphans the first server
 - [~] Checkpoint 1: tests 54 pass, check passes, editor open on port 4300 in Play, owner playing (2026-09-11)
 - [ ] W13 Feedback fixes and polish, then Checkpoint 2
 
