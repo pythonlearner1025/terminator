@@ -41,7 +41,14 @@ while [ -e "$PENDING" ]; do
     exit 1
   fi
   before_lock=$(git -C "$DEPLOY" rev-parse HEAD:package-lock.json 2>/dev/null)
-  git -C "$DEPLOY" checkout -q --detach "$target" || { log "abort: checkout failed"; exit 1 }
+  # The hook fires while git may still hold a lock from the commit itself. Retry briefly.
+  checked_out=0
+  for attempt in 1 2 3 4 5; do
+    if err=$(git -C "$DEPLOY" checkout -q --detach "$target" 2>&1); then checked_out=1; break; fi
+    log "checkout attempt $attempt failed: $err"
+    sleep 2
+  done
+  [ "$checked_out" = 1 ] || { log "abort: checkout failed after 5 attempts"; exit 1 }
   after_lock=$(git -C "$DEPLOY" rev-parse HEAD:package-lock.json 2>/dev/null)
   if [ "$before_lock" != "$after_lock" ] || [ ! -d "$DEPLOY/node_modules" ]; then
     log "npm ci (lockfile changed)"
