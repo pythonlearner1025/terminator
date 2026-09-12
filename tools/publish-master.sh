@@ -72,8 +72,14 @@ while [ -e "$PENDING" ]; do
   elif tail -n 20 "$LOG" | grep -q "did not render 30 frames"; then
     # The bundled check has a 10 s render budget and fails under machine load. Prove the tree
     # with a standalone check, then publish without the bundled check.
-    log "bundled check timed out; running a standalone check"
-    if (cd "$DEPLOY" && npx kite3d check >> "$LOG" 2>&1) && (cd "$DEPLOY" && npx kite3d publish --no-check --slug "$SLUG" --message "master ${target:0:7}: $subject" >> "$LOG" 2>&1); then
+    log "bundled check timed out; running a standalone check (up to 3 tries)"
+    checked=0
+    for try in 1 2 3; do
+      if (cd "$DEPLOY" && npx kite3d check >> "$LOG" 2>&1); then checked=1; break; fi
+      log "standalone check try $try failed; waiting 30 s for the machine to settle"
+      sleep 30
+    done
+    if [ "$checked" = 1 ] && (cd "$DEPLOY" && npx kite3d publish --no-check --slug "$SLUG" --message "master ${target:0:7}: $subject" >> "$LOG" 2>&1); then
       published=1
     fi
   fi
