@@ -32,6 +32,11 @@ async function announce(httpUrl) {
   announced = true
   const relayUrl = httpUrl.replace(/^https:/, 'wss:')
   console.log(`Public relay URL: ${relayUrl}`)
+  const gameUrl = await publishedGameUrl()
+  if (gameUrl) {
+    console.log(`Host from the published game with this link (the host must use the tunnel too, browsers block a public page from reaching localhost):`)
+    console.log(`  ${gameUrl}?relay=${encodeURIComponent(relayUrl)}`)
+  }
   try {
     const response = await fetch(`${origin}/api/party/tunnel`, {
       method: 'POST',
@@ -41,6 +46,18 @@ async function announce(httpUrl) {
     if (!response.ok) console.error(`Lobby server did not register the tunnel URL (${response.status}).`)
   } catch {
     console.error(`Lobby server is not reachable at ${origin}. Start it with npm run server, then restart this tunnel.`)
+  }
+}
+
+async function publishedGameUrl() {
+  try {
+    const {readFile} = await import('node:fs/promises')
+    const deploys = JSON.parse(await readFile(new URL('../.kite3d/deploys.json', import.meta.url), 'utf8'))
+    const entry = Array.isArray(deploys) ? deploys[0] : (deploys.deploys?.[0] || deploys)
+    const url = entry?.preview_url || entry?.url || null
+    return url ? String(url).replace(/\/$/, '') : null
+  } catch {
+    return null
   }
 }
 
