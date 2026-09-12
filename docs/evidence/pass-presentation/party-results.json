@@ -1,0 +1,11 @@
+{
+  "checks": [
+    "Host Start waits for guest readiness",
+    "First-time guest dismisses controls before readiness",
+    "Guest HUD receives host difficulty through real relay snapshots",
+    "Two-player Hell on Earth uses combined budget and health scaling",
+    "Online simulation continues while guest rebinds",
+    "No page errors in host and guest flow"
+  ],
+  "errors": []
+}

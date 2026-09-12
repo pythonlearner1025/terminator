@@ -1,11 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M237.642 332C228.019 354.682 217.187 402.768 250.839 413.655C292.903 427.264 313.111 362.518 352.701 385.612C384.373 404.087 365.898 449.534 352.701 470.566" stroke="#1B3976" stroke-width="11.5472" stroke-linecap="round"></path>
-  <path d="M388.155 457.455L359.3 458.195C358.751 458.195 357.074 457.37 354.764 454.072C351.877 449.948 341.98 437.163 338.681 435.513C336.989 434.667 334.641 434.906 332.703 435.404C330.909 435.864 329.515 437.188 328.603 438.799C324.674 445.742 318.765 457.116 318.473 461.494C318.143 466.443 321.36 467.68 323.009 467.68H348.997C349.541 467.68 350.084 467.622 350.625 467.568C352.231 467.406 354.486 467.526 354.764 468.917C355.176 470.979 372.497 489.125 376.209 491.187C378.244 492.317 381.17 491.576 383.473 490.554C385.254 489.765 386.461 488.139 387.115 486.304C389.904 478.478 394.183 466.302 394.767 463.969C395.124 462.541 394.532 461.05 393.696 459.807C392.501 458.032 390.294 457.4 388.155 457.455Z" fill="#E7312C"></path>
-  <path d="M358.475 459.844C351.464 478.814 318.884 504.383 299.914 499.022" stroke="#E7312C" stroke-width="11.5472" stroke-linecap="round"></path>
-  <path d="M251.699 175.19C247.987 196.224 232.544 314.732 227.87 373.705C230.475 374.023 233.22 373.224 235.3 371.197L397.412 213.262C398.999 211.716 399.91 209.712 400.111 207.641C358.34 196.211 280.049 176.422 251.699 175.19Z" fill="#1F62C2"></path>
-  <path d="M282.91 45.6295C274.387 75.4589 256.235 143.024 251.699 175.19C280.049 176.422 358.34 196.211 400.111 207.641C400.32 205.492 399.764 203.27 398.408 201.413L286.914 48.723C285.858 47.2772 284.458 46.2368 282.91 45.6295Z" fill="#4F99E6"></path>
-  <path d="M111.216 175.596C148.259 174.432 227.976 172.401 251.699 175.19C256.235 143.024 274.387 75.4589 282.91 45.6295C280.028 44.4988 276.636 44.8693 274.007 46.9191L113.541 172.067C112.362 172.987 111.572 174.238 111.216 175.596Z" fill="#266CCB"></path>
-  <path d="M227.87 373.705C232.544 314.732 247.987 196.224 251.699 175.19C227.976 172.401 148.259 174.432 111.216 175.596C110.788 177.23 110.987 179.02 111.888 180.577L221.117 369.245C222.624 371.847 225.172 373.375 227.87 373.705Z" fill="#154FA9"></path>
-</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
-@media (prefers-color-scheme: dark) { :root { filter: invert(100%); } }
-</style></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none">
+  <title>Terminator: human vs Skynet</title>
+  <defs>
+    <linearGradient id="steel" x1="0" y1="70" x2="0" y2="440" gradientUnits="userSpaceOnUse"><stop stop-color="#f1f7fa"/><stop offset=".45" stop-color="#8da8b8"/><stop offset=".48" stop-color="#e6f4fa"/><stop offset="1" stop-color="#526e81"/></linearGradient>
+    <radialGradient id="stage"><stop stop-color="#223340"/><stop offset="1" stop-color="#03080d"/></radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="8"/></filter>
+  </defs>
+  <rect width="512" height="512" rx="82" fill="url(#stage)"/>
+  <path d="M42 104 104 42h304l62 62v304l-62 62H104l-62-62Z" stroke="#89aec4" stroke-opacity=".22" stroke-width="2"/>
+  <path d="m116 83 47 37m186 0 47-37" stroke="#ff392b" stroke-width="14" filter="url(#glow)"/>
+  <g transform="translate(56 56) scale(2.5)">
+    <path d="M40 126 22 98V56l25-31h66l25 31v42l-18 28M53 139h54" stroke="url(#steel)" stroke-width="5"/>
+    <path d="m49 103 25-58h14l25 58H97l-5-13H69l-5 13Zm25-27h13l-6-17Z" fill="#d5e6ee"/>
+    <path d="M53 116h54M65 126h30" stroke="#87a9bd" stroke-width="5"/>
+    <path d="m20 19 18 15m84 0 18-15" stroke="#ff4635" stroke-width="4"/>
+  </g>
+  <path d="M143 420h226M55 193v113m402-113v113" stroke="#7b9cb0" stroke-opacity=".18"/>
+</svg>

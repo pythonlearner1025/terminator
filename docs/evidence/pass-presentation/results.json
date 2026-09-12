@@ -1,0 +1,39 @@
+{
+  "checks": [
+    "Loading bar reports completed real asset tasks",
+    "Menu tracks cursor without advancing simulation",
+    "Every input action has a labeled binding control",
+    "Keyboard rebinding updates its label",
+    "Mouse buttons can be rebound",
+    "Bindings persist in local storage",
+    "Reset restores default bindings",
+    "First-play controls pause before starting the wave",
+    "Selected difficulty reaches live budget and unit health scaling",
+    "HUD displays selected difficulty",
+    "Benchmark retains exactly 24 live enemies",
+    "Benchmark includes active gunfire and explosions",
+    "Controls card stays dismissed on the next match",
+    "No browser errors: "
+  ],
+  "benchmark": {
+    "durationMs": 15000.700000047684,
+    "samples": 227,
+    "meanMs": 65.94625550639788,
+    "medianMs": 31.09999990463257,
+    "p95Ms": 259.09999990463257,
+    "fps": 15.132627144018507,
+    "minAlive": 24,
+    "maxAlive": 24,
+    "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Max, Unspecified Version)",
+    "width": 1920,
+    "height": 1080,
+    "quality": "high",
+    "shots": 1150,
+    "explosions": 8,
+    "ticks": 894,
+    "phase": "wave",
+    "effectsEnabled": true,
+    "fixture": "8 Endo, 8 Scout, 8 Heavy; elevated health preserves 24 alive; automatic plasma fire and grenade pulses; no rendering or AI disabled"
+  },
+  "errors": []
+}
