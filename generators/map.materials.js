@@ -1,4 +1,4 @@
-// Deterministic, local canvas textures. No downloaded images or global GPU caches.
+// Local CC0 PBR sets plus deterministic baked derivatives. Each map owns its GPU resources.
 export function randomSource(seed = 2029) {
   return () => { seed = Math.imul(seed ^ seed >>> 15, 1 | seed); seed ^= seed + Math.imul(seed ^ seed >>> 7, 61 | seed); return ((seed ^ seed >>> 14) >>> 0) / 4294967296 }
 }
@@ -16,68 +16,91 @@ export function mapMaterials(api) {
     textures.push(texture)
     return texture
   }
-  const surface = (base, steel = false) => canvasTexture((ctx, w, h) => {
-    ctx.fillStyle = base; ctx.fillRect(0, 0, w, h)
-    for (let i = 0; i < 18000; i++) {
-      const v = Math.floor(rand() * 140)
-      ctx.fillStyle = `rgba(${v},${v},${v},${rand() * 0.2})`
-      ctx.fillRect(rand() * w, rand() * h, rand() * 3 + 1, rand() * 3 + 1)
-    }
-    for (let i = 0; i < 60; i++) {
-      const x = rand() * w, y = rand() * h
-      const gradient = ctx.createRadialGradient(x, y, 0, x, y, 8 + rand() * 70)
-      gradient.addColorStop(0, steel ? '#71371070' : '#0a151940'); gradient.addColorStop(1, '#00000000')
-      ctx.fillStyle = gradient; ctx.fillRect(0, 0, w, h)
-    }
-    ctx.strokeStyle = '#0d151977'; ctx.lineWidth = 2
-    if (steel) {
-      for (let x = 0; x < w; x += 64) {
-        ctx.fillStyle = '#a1a3a322'; ctx.fillRect(x, 0, 5, h)
-        ctx.fillStyle = '#050b1044'; ctx.fillRect(x + 6, 0, 4, h)
-      }
-    } else {
-      ctx.strokeRect(1, 1, w - 2, h - 2)
-      for (let i = 0; i < 8; i++) {
-        let x = rand() * w, y = rand() * h
-        ctx.beginPath(); ctx.moveTo(x, y)
-        for (let j = 0; j < 5; j++) { x += (rand() - 0.5) * 70; y += rand() * 40; ctx.lineTo(x, y) }
-        ctx.stroke()
-      }
-    }
+  const loader = new api.TextureLoader(), pending = []
+  const load = (name, color = false) => {
+    let resolve, reject
+    pending.push(new Promise((yes, no) => { resolve = yes; reject = no }))
+    const texture = loader.load(new URL(`../assets/textures/map/${name}`, import.meta.url).href,
+      () => resolve(), undefined, () => reject(new Error(`Map texture failed: ${name}`)))
+    texture.colorSpace = color ? api.SRGBColorSpace : api.NoColorSpace
+    texture.wrapS = texture.wrapT = api.RepeatWrapping
+    texture.anisotropy = 8
+    textures.push(texture)
+    return texture
+  }
+  const set = (name, source = false) => ({
+    map: load(source ? `${name}_diff_1k.jpg` : `${name}_albedo.jpg`, true),
+    normalMap: load(source ? `${name}_nor_gl_1k.jpg` : `${name}_normal.jpg`),
+    arm: load(source ? `${name}_arm_1k.jpg` : `${name}_arm.jpg`),
   })
-  const concrete = surface('#747d85'), asphalt = surface('#434c54'), rust = surface('#655044', true)
-  const corrugated = surface('#879095', true)
-  const lit = (name, color, map = concrete, metalness = 0.05) => {
-    const mat = new api.PhysicalMaterial({color, map, roughness: metalness ? 0.78 : 0.94, metalness, bumpMap: map, bumpScale: 0.055})
+  const concrete = set('concrete_wall_007', true), asphalt = set('asphalt_02', true)
+  const rust = set('rusty_metal_02', true), paint = set('paint'), corrugated = set('corrugated')
+  const canvas = set('canvas'), glass = set('glass')
+  const lit = (name, color, maps = concrete, metalness = 1, roughness = 1) => {
+    const mat = new api.PhysicalMaterial({color, map: maps.map, normalMap: maps.normalMap,
+      roughnessMap: maps.arm, metalnessMap: maps.arm, aoMap: maps.arm,
+      roughness, metalness, normalScale: new api.Vector2(.75, .75), aoMapIntensity: .8, fog: true})
     mat.name = `Map ${name}`
+    mat.userData.mapSurface = true
     return mat
   }
   const glow = (name, color, intensity = 3) => {
-    const mat = new api.PhysicalMaterial({color, emissive: color, emissiveIntensity: intensity, roughness: 0.8})
-    mat.name = `Map ${name}`
+    const mat = lit(name, color, glass, 0, .65)
+    mat.emissive.setHex(color); mat.emissiveMap = concrete.map; mat.emissiveIntensity = intensity
     return mat
   }
   const mats = {
-    concrete: lit('weathered concrete', 0x8997a5), ground: lit('cracked asphalt', 0x788899, asphalt),
-    dark: lit('blackened steel', 0x293841, rust, 0.55), rust: lit('oxidized steel', 0x977053, rust, 0.6),
-    red: lit('oxide container', 0x975244, corrugated, 0.5), blue: lit('navy container', 0x426577, corrugated, 0.5),
-    steel: lit('galvanized steel', 0x78838a, corrugated, 0.6), yellow: lit('worn safety ochre', 0xc7a655, rust),
-    truck: lit('resistance truck olive', 0x5e6861, rust, 0.5), rubber: lit('charred rubber', 0x151e23, asphalt),
+    concrete: lit('weathered concrete', 0xc4cbca), ground: lit('wet cracked asphalt', 0x87969e, asphalt, 0, .93),
+    floor: lit('bunker concrete floor', 0x87928e, concrete, 0, .82),
+    dark: lit('blackened steel', 0x3d4a50, paint, .9), rust: lit('oxidized steel', 0x886144, rust, .4),
+    red: lit('oxide container', 0xac6050, corrugated), blue: lit('navy container', 0x5b8896, corrugated),
+    steel: lit('galvanized steel', 0xb0b9bb, paint), yellow: lit('worn safety ochre', 0xd0ac51, paint, .45),
+    truck: lit('resistance olive paint', 0x738a71, paint), rubber: lit('charred rubber', 0x293039, asphalt, 0),
+    canvas: lit('frayed sandbag canvas', 0xbbb491, canvas, 0), glass: lit('cracked blast glass', 0xffffff, glass, .15), skyline: lit('distant ash concrete', 0x26323e, concrete, 0),
     redGlow: glow('Skynet signal', 0xff170a, 5), orangeGlow: glow('fire', 0xff6512, 5),
     whiteGlow: glow('fluorescent', 0xb5e1ed, 3), greenGlow: glow('resistance signal', 0x52ffbd, 3),
     electricGlow: glow('electrical arcs', 0x68c9ff, 6),
   }
-  function label(text, color = '#c5cccb', background = '#162128') {
+  mats.skyline.emissive.setHex(0x142334); mats.skyline.emissiveIntensity = .5; mats.skyline.emissiveMap = concrete.map
+  mats.skyline.normalScale.set(.1,.1)
+  // Large-scale stains and variable wetness use world coordinates, independently of tile UVs.
+  const surfaceUniforms = {mapWetness: {value: .72}}
+  for (const mat of [mats.ground, mats.concrete, mats.floor]) {
+    const compile = mat.onBeforeCompile, cacheKey = mat.customProgramCacheKey
+    mat.onBeforeCompile = function(shader, renderer) {
+      compile.call(this, shader, renderer)
+      shader.uniforms.mapWetness = surfaceUniforms.mapWetness
+      shader.vertexShader = 'varying vec3 vMapWorld;\n' + shader.vertexShader
+      shader.vertexShader = shader.vertexShader.replace('#include <worldpos_vertex>', '#include <worldpos_vertex>\nvMapWorld=(modelMatrix*vec4(transformed,1.)).xyz;')
+      shader.fragmentShader = 'varying vec3 vMapWorld; uniform float mapWetness;\n' + shader.fragmentShader
+      shader.fragmentShader = shader.fragmentShader.replace('#include <map_fragment>', `#include <map_fragment>
+        float macro=sin(vMapWorld.x*.43+sin(vMapWorld.z*.3))*sin(vMapWorld.z*.57+vMapWorld.x*.11);
+        diffuseColor.rgb*=.85+.15*macro;`)
+      shader.fragmentShader = shader.fragmentShader.replace('#include <roughnessmap_fragment>', `#include <roughnessmap_fragment>
+        float wetPatch=smoothstep(.2,.82,macro)*mapWetness*step(abs(vMapWorld.y),.035);
+        roughnessFactor=mix(roughnessFactor,.16,wetPatch);`)
+    }
+    mat.customProgramCacheKey = function() { return cacheKey.call(this) + ':bunker-world-grime-v1' }
+  }
+  const decalMaps = {map: load('decals_albedo.png', true), normalMap: load('decals_normal.jpg'), arm: load('decals_arm.jpg')}
+  mats.decal = lit('grime scorch and bullet decal atlas', 0xffffff, decalMaps, .1)
+  mats.puddle = lit('rainwater pools', 0xa8b6bd, decalMaps, 1, 1)
+  for (const mat of [mats.decal, mats.puddle]) {
+    mat.transparent = true; mat.depthWrite = false; mat.polygonOffset = true; mat.polygonOffsetFactor = -2
+    mat.normalScale.set(.18, .18)
+  }
+  mats.puddle.envMapIntensity = 1.6
+  function label(text, color = '#c5cccb', background = null) {
     const texture = canvasTexture((ctx, w, h) => {
-      ctx.fillStyle = background; ctx.fillRect(0, 0, w, h)
-      ctx.strokeStyle = color; ctx.lineWidth = 4; ctx.strokeRect(9, 9, w - 18, h - 18)
+      if (background) { ctx.fillStyle = background; ctx.fillRect(0, 0, w, h) }
       ctx.fillStyle = color; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'
       const lines = text.split('\n')
-      ctx.font = `bold ${lines.length > 1 ? 47 : 68}px monospace`
+      ctx.font = `bold ${lines.length > 1 ? 58 : 84}px Arial, sans-serif`
       lines.forEach((line, i) => ctx.fillText(line, w / 2, h / 2 + (i - (lines.length - 1) / 2) * 57, w - 34))
-      for (let i = 0; i < 280; i++) { ctx.fillStyle = '#16212850'; ctx.fillRect(rand() * w, rand() * h, rand() * 8, 2) }
+      ctx.globalCompositeOperation = 'destination-out'
+      for (let i = 0; i < 650; i++) { ctx.fillStyle = '#0009'; ctx.fillRect(rand() * w, rand() * h, rand() * 7, 1 + rand()*2) }
     }, 512, 192)
-    const mat = new api.PhysicalMaterial({map: texture, roughness: 1, side: api.DoubleSide, polygonOffset: true, polygonOffsetFactor: -2})
+    const mat = new api.PhysicalMaterial({map: texture, normalMap: paint.normalMap, roughnessMap: paint.arm, aoMap: paint.arm, metalnessMap: paint.arm, metalness: .05, roughness: 1, transparent: true, depthWrite: false, side: api.DoubleSide, polygonOffset: true, polygonOffsetFactor: -2})
     mat.name = `Map stencil ${text.replaceAll('\n', ' ')}`
     return mat
   }
@@ -97,5 +120,5 @@ export function mapMaterials(api) {
       ctx.fill()
     }
   }, 128, 256)
-  return {mats, label, particle, flame, textures}
+  return {mats, label, particle, flame, textures, ready: Promise.all(pending), surfaceUniforms}
 }

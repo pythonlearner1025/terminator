@@ -1,4 +1,7 @@
 import {mapMaterials, randomSource} from './map.materials.js'
+import {addSurfaceDetails, addMapDressing} from './map.details.js'
+import {batchLocalMeshes, bevelMapBox} from './map.batching.js'
+import {createWeather} from '../lib/view/weather.js'
 
 const xyz = p => [p.x, p.y, p.z]
 
@@ -45,10 +48,10 @@ export function createMapPreviewGroup(api, map, {markers = true} = {}) {
 export function createMapGroup(api, map, {markers = true, runtime = false} = {}) {
   const group = new api.Group()
   group.name = runtime ? 'Bunker 7 Night Runtime' : 'Bunker 7 Night Preview'
-  const {mats: m, label, particle, flame: flameTexture, textures} = mapMaterials(api)
+  const {mats: m, label, particle, flame: flameTexture, textures, ready, surfaceUniforms} = mapMaterials(api)
   const rand = randomSource(712029)
   const batches = new Map(), bounds = []
-  const refs = {doors: [], gates: [], hazards: [], fires: [], zones: [], flank: [], dust: null, trader: null}
+  const refs = {doors: [], gates: [], hazards: [], fires: [], zones: [], flank: [], dust: null, trader: null, shafts: []}
   const boxGeo = new api.BoxGeometry(1, 1, 1)
   function mesh(name, geometry, pos, mat, parent = group, rotation = [0, 0, 0], solid = true) {
     const object = new api.Mesh2(geometry, mat)
@@ -58,15 +61,23 @@ export function createMapGroup(api, map, {markers = true, runtime = false} = {})
     return object
   }
   function box(name, pos, size, mat, parent = group, rotation = [0, 0, 0]) {
-    const geometry = boxGeo.clone().scale(...size)
+    const bevel = ![m.concrete,m.ground,m.floor,m.skyline].includes(mat) && Math.min(...size) > .24
+    const geometry = bevel ? bevelMapBox(api, size) : boxGeo.clone().scale(...size)
     const uv = geometry.attributes.uv
     // Box face UVs are tiled in meters, so a 60 m floor has fine detail too.
     const faceScale = [[size[2], size[1]], [size[2], size[1]], [size[0], size[2]], [size[0], size[2]], [size[0], size[1]], [size[0], size[1]]]
-    for (let i = 0; i < uv.count; i++) { const s = faceScale[Math.floor(i / 4)]; uv.setXY(i, uv.getX(i) * s[0] / 3, uv.getY(i) * s[1] / 3) }
+    // Stable per-object offsets break synchronized repeats without extra materials or draws.
+    const ox = rand() * 13, oy = rand() * 13
+    for (let i = 0; i < uv.count; i++) { const s = faceScale[Math.floor(i / (uv.count / 6))]; uv.setXY(i, uv.getX(i) * s[0] / 2.5 + ox, uv.getY(i) * s[1] / 2.5 + oy) }
     return mesh(name, geometry, pos, mat, parent, rotation)
   }
   function plane(name, pos, size, mat, rotation = [0, 0, 0], parent = group) {
     return mesh(name, new api.PlaneGeometry(...size), pos, mat, parent, rotation, false)
+  }
+  function decal(name, pos, size, tile, rotation = [0,0,0], parent = group, mat = m.decal) {
+    const geometry = new api.PlaneGeometry(...size), uv = geometry.attributes.uv
+    for (let i=0;i<uv.count;i++) uv.setXY(i, (tile%4 + uv.getX(i))/4, (3-Math.floor(tile/4) + uv.getY(i))/4)
+    return mesh(name, geometry, pos, mat, parent, rotation, false)
   }
   function partGroup(name, position = [0, 0, 0], parent = group) {
     const node = new api.Group(); node.name = name; node.position.set(...position); parent.add(node); return node
@@ -104,7 +115,7 @@ export function createMapGroup(api, map, {markers = true, runtime = false} = {})
       box('Truck cabin', [p.x - 1.85, 1.3, p.z], [1.65, 1.6, 2.28], m.truck, node)
       box('Truck roof', [p.x - 1.8, 2.27, p.z], [1.8, 0.18, 2.35], m.rust, node)
       for (const z of [-1.146, 1.146]) {
-        plane('Truck shattered windshield', [p.x - 1.83, 1.84, p.z + z], [1.28, 0.62], m.dark, [0, z > 0 ? 0 : Math.PI, 0], node)
+        plane('Truck shattered windshield', [p.x - 1.83, 1.84, p.z + z], [1.28, 0.62], m.glass, [0, z > 0 ? 0 : Math.PI, 0], node)
         plane('Resistance stencil', [p.x - 1.83, 1.03, p.z + z], [1, 0.35], label('R / 07'), [0, z > 0 ? 0 : Math.PI, 0], node)
       }
       for (const x of [-1.8, 1.65]) for (const z of [-1.05, 1.05]) {
@@ -122,7 +133,7 @@ export function createMapGroup(api, map, {markers = true, runtime = false} = {})
     } else {
       const container = c.kind === 'container'
       const mat = container ? m[c.id.includes('red') ? 'red' : c.id.includes('blue') ? 'blue' : 'steel']
-        : c.kind === 'floor' ? m.ground : c.kind === 'stair' || c.kind === 'ramp' ? m.steel : m.concrete
+        : c.kind === 'floor' ? (c.id === 'ground' ? m.ground : m.floor) : c.kind === 'stair' || c.kind === 'ramp' ? m.steel : m.concrete
       const isFloor = c.kind === 'floor' || c.kind === 'stair' || c.kind === 'ramp'
       const holes = (map.walkable?.movementHoles || []).filter(h => h.collider === c.id)
       const tread = c.kind === 'stair' && map.walkable?.heightRules?.stairTreadOffset !== undefined
@@ -150,7 +161,7 @@ export function createMapGroup(api, map, {markers = true, runtime = false} = {})
       } else if (c.kind === 'stair') {
         const bottom = p.y - s.y / 2
         box(c.id, [p.x, (bottom + tread) / 2, p.z], [s.x, tread - bottom, s.z], mat, node)
-      } else box(c.id, xyz(p), isFloor ? xyz(s) : [s.x - 0.025, s.y - 0.025, s.z - 0.025], mat, node)
+      } else box(c.id, xyz(p), isFloor ? xyz(s) : container ? [s.x - .13, s.y - .05, s.z - .09] : [s.x - 0.025, s.y - 0.025, s.z - 0.025], mat, node)
       if (container) {
         for (const x of [-s.x / 2 + 0.06, s.x / 2 - 0.06]) {
           for (const y of [0.07, s.y - 0.07]) box('Container reinforced edge', [p.x + x, y, p.z], [0.12, 0.12, s.z], m.rust, node)
@@ -169,7 +180,7 @@ export function createMapGroup(api, map, {markers = true, runtime = false} = {})
         if (c.id.startsWith('building_front')) {
           for (const y of [1.8, 4.5]) for (const x of [-3.8, 0, 3.8]) {
             // Inset black window recesses on solid walls, with steel mullions.
-            plane('Sealed blast window', [p.x + x, y, p.z - s.z / 2], [2.1, 1.05], m.dark, [0, Math.PI, 0], node)
+            plane('Sealed blast window', [p.x + x, y, p.z - s.z / 2], [2.1, 1.05], m.glass, [0, Math.PI, 0], node)
             box('Window crossbar', [p.x + x, y, p.z - s.z / 2 + 0.025], [0.07, 1.05, 0.05], m.rust, node)
           }
           plane('Bunker facade stencil', [p.x, 5.6, p.z - s.z / 2], [9, 0.55], label(c.id.endsWith('w') ? 'BUNKER 7' : 'LOS ANGELES / 2029', '#c8b988'), [0, Math.PI, 0], node)
@@ -185,12 +196,15 @@ export function createMapGroup(api, map, {markers = true, runtime = false} = {})
         plane('Dock deck marking', [22, 0.7, -1], [3, 2], label('LOADING\nBAY 07', '#b4aa83'), [-Math.PI / 2, 0, 0], node)
       }
     }
+    addSurfaceDetails(api, c, node, {box, mesh, plane, label, decal, m, rand})
     node.updateMatrixWorld(true)
     const b = new api.Box3().setFromObject(node)
     bounds.push({id: c.id, min: b.min.toArray(), max: b.max.toArray(), center: xyz(p), size: xyz(s)})
     return node
   }
   for (const collider of map.colliders) insetDetails(collider)
+
+  addMapDressing(api, map, {group, box, mesh, plane, partGroup, label, decal, m, rand})
 
   // Door panels telescope into their existing bounds, never into a corridor.
   for (const d of map.doors) {
@@ -202,6 +216,7 @@ export function createMapGroup(api, map, {markers = true, runtime = false} = {})
     const signal = box('Door lock indicator', [width * 0.34, d.size.y * 0.3, 0], [0.13, 0.13, depth], m.redGlow, shutter)
     const sign = label(d.id.includes('tunnel') ? 'SERVICE ACCESS' : 'RESISTANCE / 07', '#c4bc9e')
     for (const z of [-depth / 2, depth / 2]) plane('Door stencil', [0, 0.1, z], [Math.min(width - 0.3, 2.4), 0.5], sign, [0, z > 0 ? 0 : Math.PI, 0], shutter)
+    for (const z of [-depth/2, depth/2]) decal('Armored door caution strip', [0, -d.size.y/2+.19, z], [width-.15,.26], 10, [0,z>0?0:Math.PI,0], shutter)
     refs.doors.push({id: d.id, object: door, shutter, signal, height: d.size.y, amount: 0, pos: d.pos})
     shutter.visible = !runtime || d.default === 'locked'
   }
@@ -213,6 +228,7 @@ export function createMapGroup(api, map, {markers = true, runtime = false} = {})
     box('Gate sealed plating', [0, 0, 0], [3.95, 3, 0.06], m.dark, shutter)
     for (let x = -1.7; x < 2; x += 0.48) box('Gate armor rib', [x, 0, 0.06], [0.1, 3, 0.08], m.rust, shutter)
     plane('Skynet gate identification', [0, 0.35, 0.11], [3.4, 0.8], label(`SKYNET / ${g.id}`, '#efb0a0'), [0, 0, 0], shutter)
+    decal('Gate battered hazard border', [0,-1.32,.111], [3.8,.3], 11, [0,0,0], shutter)
     const signal = box('Gate red warning strip', [0, 1.25, 0.12], [3.75, 0.13, 0.03], m.redGlow, gate)
     const light = lamp(`${g.id} red gate spill`, [0, 1.2, 0.8], 0xff2010, 3, 6, gate)
     refs.gates.push({id: g.id, shutter, signal, light, amount: 0, lastSpawn: -1000})
@@ -244,18 +260,27 @@ export function createMapGroup(api, map, {markers = true, runtime = false} = {})
   }
   const trader = partGroup('Resistance trader crate', xyz(map.trader.pos))
   const ts = map.trader.size
-  box('Trader armored crate', [0, -0.12, 0], [ts.x, ts.y - 0.26, ts.z], m.truck, trader)
-  for (const x of [-0.8, 0.8]) box('Trader retaining strap', [x, -0.1, 0], [0.12, ts.y - 0.3, ts.z], m.rust, trader)
+  box('Trader armored crate', [0, -0.12, 0], [ts.x-.08, ts.y - 0.26, ts.z-.08], m.truck, trader)
+  for (const x of [-0.8, 0.8]) box('Trader retaining strap', [x, -0.1, 0], [0.12, ts.y - 0.3, ts.z-.005], m.rust, trader)
   const lid = partGroup('Trader sliding lid', [0, ts.y / 2 - 0.12, 0], trader)
   box('Trader lid', [0, 0, 0], [ts.x, 0.23, ts.z], m.steel, lid)
   plane('Trader supply stencil', [0, -0.05, -ts.z / 2], [1.5, 0.6], label('RESISTANCE\nSUPPLY / 07', '#a8dbbb'), [0, Math.PI, 0], trader)
+  for (const x of [-.91,.91]) for (const z of [-.51,.51]) {
+    box('Trader protective corner', [x,-.1,z], [.15,1.02,.15], m.steel, trader)
+  }
+  for (const x of [-.56,.56]) {
+    box('Trader recessed carry handle', [x,-.06,-.589], [.33,.15,.02], m.dark, trader)
+    box('Trader steel latch', [x,.24,-.585], [.12,.26,.03], m.steel, trader)
+    box('Trader latch pin', [x,.27,-.598], [.19,.05,.004], m.yellow, trader)
+  }
+  for (let i=0;i<5;i++) box('Trader sealed ammo pack', [-.64+i*.32,.22,.02], [.24,.27,.7], m.truck, trader)
   const inner = box('Trader illuminated supplies', [0, ts.y / 2 - 0.28, 0], [ts.x - 0.18, 0.06, ts.z - 0.18], m.greenGlow, trader)
   const traderLight = lamp('Trader green light', [0, 0.8, 0], 0x75ffc7, 0, 5, trader)
   refs.trader = {lid, inner, light: traderLight, amount: 0, depth: ts.z}
 
   // Zone point lights correspond one-to-one with the core switches.
   for (const zone of map.lightZones) {
-    const light = lamp(`Light zone ${zone.id}`, xyz(zone.pos), zone.id === 'building' ? 0xb0d4bf : 0x99c9ff, zone.id === 'building' ? 90 : 135, zone.id === 'building' ? 22 : 30)
+    const light = lamp(`Light zone ${zone.id}`, xyz(zone.pos), zone.id === 'building' ? 0xb0d4bf : 0x99c9ff, zone.id === 'building' ? 90 : zone.id === 'dock' ? 75 : 48, zone.id === 'building' ? 22 : 30)
     refs.zones.push({id: zone.id, light, power: light.intensity})
   }
   // Fixtures are in existing wall volumes, with no extra poles or overhead obstructions.
@@ -263,27 +288,40 @@ export function createMapGroup(api, map, {markers = true, runtime = false} = {})
   const fixtureMats = Object.fromEntries(map.lightZones.map(z => [z.id, m.whiteGlow.clone()]))
   for (const zone of refs.zones) zone.fixtureMaterial = fixtureMats[zone.id]
   for (const x of [-7.75, 7.75]) box('Courtyard flood fixture', [x, 5.5, 16.74], [0.9, 0.13, 0.08], fixtureMats.courtyard, fixtureGroup)
+  for (const x of [-4,4]) {
+    box('Balcony lamp protective housing', [x,5.65,16.755], [.4,.28,.11], m.dark, fixtureGroup)
+    box('Balcony lamp lens', [x,5.65,16.705], [.29,.17,.01], fixtureMats.building, fixtureGroup)
+  }
   box('Dock lamp fixture', [29.05, 2.7, -5], [0.07, 0.2, 1.3], fixtureMats.dock, fixtureGroup)
   box('Interior fluorescent fixture', [0, 2.98, 24], [3.5, 0.04, 0.2], fixtureMats.building, fixtureGroup)
   box('Tunnel utility fixture', [-24, 2.85, 0], [0.65, 0.05, 0.22], m.whiteGlow)
   lamp('Tunnel emergency utility light', [-24, 2.55, 0], 0x86b9c9, 16, 11)
-  const key = new api.DirectionalLight(0x8fb6ee, 2.45)
+  const key = new api.DirectionalLight(0xabc8ef, 1.3)
   key.name = 'Map moon shadow key'; key.position.set(-18, 34, -12); key.castShadow = true
-  key.shadow.mapSize.set(1024, 1024)
-  Object.assign(key.shadow.camera, {left: -40, right: 40, top: 40, bottom: -40, near: 1, far: 100})
-  key.shadow.bias = -0.0004; key.shadow.normalBias = 0.05
+  key.shadow.mapSize.set(2048, 2048)
+  Object.assign(key.shadow.camera, {left: -33, right: 33, top: 33, bottom: -33, near: 1, far: 100})
+  key.shadow.bias = -0.0004; key.shadow.normalBias = 0.035; key.shadow.radius = 2
   group.add(key); group.add(key.target)
-  const fill = new api.HemisphereLight(0x7593b3, 0x16100b, 1.05); fill.name = 'Map night sky fill'; group.add(fill)
+  const fill = new api.HemisphereLight(0x7892ac, 0x19130e, .48); fill.name = 'Map night sky fill'; group.add(fill)
 
   // Unreachable skyline outside the 60 m compound is explicitly scenery, never walkable geometry.
   const skyline = partGroup('Distant Los Angeles ruins')
   skyline.userData.mapBackdrop = true
-  const silhouette = new api.UnlitMaterial({color: 0x080e16, fog: true})
+  const silhouette = m.skyline
   for (let i = 0; i < 46; i++) {
-    const angle = i / 46 * Math.PI * 2, radius = 85 + rand() * 25, h = 8 + rand() * 26
+    const angle = i / 46 * Math.PI * 2, radius = 70 + (i % 3) * 40 + rand() * 15, h = 8 + rand() * 32
     const x = Math.sin(angle) * radius, z = Math.cos(angle) * radius, width = 4 + rand() * 7
-    box('Ruined skyline block', [x, h / 2 - 2, z], [width, h, 5 + rand() * 6], silhouette, skyline)
-    if (i % 3 === 0) box('Exposed skyscraper core', [x, h + 1, z], [width * 0.5, 6, 3], silhouette, skyline)
+    box('Ruined skyline lower shell', [x,h*.18-2,z], [width,h*.36,6], silhouette, skyline)
+    for (const side of [-1,1]) {
+      box('Ruined skyline fractured wall', [x+side*(width/2-.35),h*.45,z], [.7,h*.9,5.6], silhouette, skyline)
+      box('Ruined skyline exposed column', [x+side*width*.17,h*.48,z+2.2], [.35,h*.96,.35], m.dark, skyline)
+    }
+    for (let y = 3; y < h - 1; y += 3.8) {
+      const remaining = .6 + rand()*.4
+      box('Ruined skyline broken slab', [x,y,z], [width*remaining,.18,5.8], silhouette, skyline)
+      if (i%4===0 && y<h*.5) box('Distant burning floor', [x,y+.6,z-2.5], [width*.5,.4,.06], m.orangeGlow, skyline)
+    }
+    if (i % 3 === 0) box('Exposed skyscraper core', [x,h*.5,z+1], [width*.28,h+7,2.5], silhouette, skyline)
     if (i % 4 === 0) {
       const fire = particles(`Distant fire ${i}`, 9, 0xff751d, 1.8, true)
       const smoke = particles(`Distant smoke ${i}`, 5, 0x4c515d, 6)
@@ -295,8 +333,16 @@ export function createMapGroup(api, map, {markers = true, runtime = false} = {})
   if (markers) {
     plane('Player start marker', [map.playerStart.pos.x, 0.001, map.playerStart.pos.z], [1.8, 1.3], label('PLAYER\nSTART', '#98c9dc'), [-Math.PI / 2, 0, 0])
   }
+  refs.surfaceUniforms = surfaceUniforms
+  refs.weather = createWeather(api, group, map, {particle, runtime})
+  for (const door of refs.doors) batchLocalMeshes(api, door.shutter, new Set([door.signal]))
+  for (const gate of refs.gates) batchLocalMeshes(api, gate.shutter)
+  for (const hazard of refs.hazards) batchLocalMeshes(api, hazard.electric.parent, new Set([hazard.electric]))
+  batchLocalMeshes(api, trader, new Set([lid, inner]))
+  batchLocalMeshes(api, lid)
+  batchLocalMeshes(api, fixtureGroup)
   // Merge only static meshes. Animated roots, lights and particles retain stable names.
-  const dynamicRoots = new Set([fixtureGroup, ...refs.doors.map(v => v.object), ...refs.gates.map(v => v.shutter.parent), flank, trader,
+  const dynamicRoots = new Set([refs.weather.root, fixtureGroup, ...refs.doors.map(v => v.object), ...refs.gates.map(v => v.shutter.parent), flank, trader,
     ...refs.hazards.map(v => v.electric.parent), ...refs.fires.map(v => v.tongues).filter(Boolean)])
   function collect(node) {
     for (const child of [...node.children]) {
@@ -314,7 +360,7 @@ export function createMapGroup(api, map, {markers = true, runtime = false} = {})
   for (const [material, geometries] of batches) {
     const geometry = api.mergeGeometries(geometries, false)
     if (!geometry) throw new Error(`Could not merge map material ${material.name}`)
-    mesh(`Static ${material.name || 'skyline'}`, geometry, [0, 0, 0], material)
+    mesh(`Static ${material.name || 'skyline'}`, geometry, [0, 0, 0], material, group, [0,0,0], !material.transparent)
     for (const part of geometries) part.dispose()
   }
   // Stopped-mode effects have a deterministic preview at their authored sources.
@@ -330,5 +376,6 @@ export function createMapGroup(api, map, {markers = true, runtime = false} = {})
   // Non-enumerable runtime refs avoid persisting cycles from generated objects.
   Object.defineProperty(group, 'mapRefs', {value: refs})
   Object.defineProperty(group, 'mapTextures', {value: textures})
+  Object.defineProperty(group, 'mapReady', {value: ready})
   return group
 }
