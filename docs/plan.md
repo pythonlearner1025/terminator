@@ -51,9 +51,15 @@ Legend: [ ] todo, [~] in progress, [x] done, [!] blocked
 - [x] Co-op pass (docs/coop-design.md): soldier model, multi-player core, netcode and relay, co-op UI. Two-client relay proof on the final tree: both reach wave 1, 21 Hz snapshots, zero errors. Boot regression fixed (78ad572).
 - [x] Checkpoint 1 feedback round: aim down sights, terse then labeled UI, economy, health reset, kite3d 0.16.0 upgrade
 - [x] AAA pass (existing level only): audio 439e7d4, materials 855b436, enemies 10ab883, presentation 304e642, weapons 8468bd1, each a squash of its worktree branch. 89 tests, check green
-- [~] Performance pass (pass/performance worktree, sol): every pass measured 15 to 28 fps with 24 enemies at 1080p; target 60
+- [x] Performance pass 1 (sol): light previews and lazy PBR fixed the 28 s boot; published as release 703528bb
+- [x] Checkpoint 2 feedback fixes, each a squash of its worktree branch: HUD scale slider and subtle HUD, jump, dead bodies no longer block stairs, Scout gallop restored (93c4404 and before)
+- [x] Grenades as projectiles with a 2.5 s fuse, bounce, and 4 m blast (c64c81c, sol). 7 tests, evidence docs/evidence/pass-grenade
+- [x] Ragdoll deaths on cannon-es, eight active, wrecks stay 180 s then sink and fade (bcc4554, astra). Evidence docs/evidence/ragdoll
+- [x] Menu Endo: reflection map path, NaN head turn from a pose without yaw, camera framing (5755a6a, 9558f7c)
+- [x] Performance pass 2 (astra, integrated with ragdolls by sol): warmup of shaders, textures, audio, and the death path; fixed pools; stable lights; 1K unit textures. 24 enemies: CPU p99 15.1 to 12.1 ms, first M4 kill 937 to 15 ms (800bf86). Evidence docs/evidence/perf2
+- [~] Co-op fix pass (sol, pass/coop-fix): mouse lock on party screens, guest glitch, return to lobby after a party wipe; then a second agent play-tests two clients end to end
 - [ ] Deferred by the passes: T-1000, HK-Aerial, HK-Tank; SMG, sniper, LMG; real sculpted models for the endoskeleton and weapons (procedural ceiling)
-- [ ] Publish the build to https://terminator.app.blitz.dev/ on the owner's go; owner claims the release
+- [~] Published release 703528bb to https://terminator.app.blitz.dev/; next publish after the co-op fix lands; owner claims the release
 - [ ] Checkpoint 2: owner hosts a party from the published game through `npm run tunnel` and plays with a friend
 - [x] Editor bug: toolbar icons blank. Root cause: idle full-rate render loop. PR blitzdotdev/kite3d#4, CI green, unmerged
 - [ ] kite3d CLI bug to file: a second `kite3d dev` on another port deletes the shared .kite3d/dev.json on exit and orphans the first server
