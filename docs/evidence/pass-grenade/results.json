@@ -1,0 +1,71 @@
+{
+  "flight": {
+    "projectile": {
+      "id": "grenade-player-0",
+      "type": "grenade",
+      "playerId": "player",
+      "pos": {
+        "x": 0,
+        "y": 2.1369675265858,
+        "z": 11.234038486086128
+      },
+      "vel": {
+        "x": 0,
+        "y": 0.7848376329290001,
+        "z": 11.170192430430625
+      },
+      "radius": 0.09,
+      "restitution": 0.35,
+      "friction": 0.28,
+      "spawnTick": 0,
+      "detonateTick": 150,
+      "grounded": false
+    },
+    "meshes": [
+      {
+        "name": "grenade action surfaces",
+        "maps": true
+      },
+      {
+        "name": "grenade magazine surfaces",
+        "maps": true
+      },
+      {
+        "name": "grenade receiver surfaces",
+        "maps": true
+      }
+    ]
+  },
+  "blast": {
+    "explosion": {
+      "type": "explosion",
+      "tick": 150,
+      "t": 2.5,
+      "wave": 1,
+      "by": "player",
+      "playerId": "player",
+      "projectileId": "grenade-player-0",
+      "pos": {
+        "x": 0,
+        "y": 0.09,
+        "z": 15.604544926677125
+      },
+      "radius": 4,
+      "hit": false,
+      "hits": []
+    },
+    "projectilesRemaining": 0,
+    "visualsRemaining": 0,
+    "cameraShake": 0.05401143322481027,
+    "unitHealth": {}
+  },
+  "cleanup": {
+    "grenadeRootRemoved": true,
+    "playerRootRemoved": true
+  },
+  "startupErrors": [
+    "404 http://127.0.0.1:4720/files/lib/assets/textures/units/studio_small_09_1k.hdr",
+    "error: Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "errors": []
+}

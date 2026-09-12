@@ -61,6 +61,12 @@ inputs, telemetry, and an `events` delta. `eventStart` and `eventCursor` identif
 `world.predictPlayer(playerId, inputs)` advances only that player's movement fields by one 60 Hz tick
 without advancing world time, AI, combat, events, or telemetry.
 
+Grenades are fixed-tick entries in `world.projectiles`. A throw emits `grenade_thrown`, advances with
+gravity and swept sphere collision against active map colliders, emits `grenade_bounce` for audible
+impacts, and emits `explosion` at the projectile position after a 2.5 second fuse. Explosion events
+include the configured radius and a hit list. Damage falls off linearly to zero at that radius for
+units and every living player, including the thrower and teammates.
+
 At each wave start, `WaveDirector` selects connected-player scaling: one player uses budget `1.0`,
 health `1.0`, and max alive `24`; two use `1.6`, `1.35`, and `30`; three use `2.1`, `1.7`, and `36`.
 The budget multiplier is applied after the performance multiplier. The selected block is exposed by

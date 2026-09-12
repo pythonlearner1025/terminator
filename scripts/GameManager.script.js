@@ -10,6 +10,7 @@ import {PartyHost} from '../lib/net/party-host.js'
 import {Hud} from '../lib/ui/hud.js'
 import {UiSession} from '../lib/ui/session.js'
 import {CameraFeel} from '../lib/view/camera-feel.js'
+import {GrenadeView} from '../lib/view/grenade.js'
 import {InputController} from '../lib/view/input.js'
 import {MapView} from '../lib/view/map.js'
 import {PlayerView} from '../lib/view/player.js'
@@ -31,6 +32,7 @@ export class GameManager extends Object3DComponent {
   mapView = null
   unitView = null
   playerView = null
+  grenadeView = null
   hud = null
   ui = null
   cameraFeel = null
@@ -59,6 +61,7 @@ export class GameManager extends Object3DComponent {
     this.mapView = new MapView(viewer, mapData)
     this.unitView = new UnitView(viewer)
     this.playerView = new PlayerView(viewer)
+    this.grenadeView = new GrenadeView(viewer)
     this.input = new InputController(viewer)
     this.hud = new Hud(viewer)
     this.lobby = new LobbyClient({world: this.world, director: this.director, intermissionSeconds: this.intermissionSeconds})
@@ -75,6 +78,7 @@ export class GameManager extends Object3DComponent {
       this.mapView.start()
       this.unitView.start(this.world)
       this.playerView.start(this.world)
+      this.grenadeView.start(this.world, this.playerView.weapons.material)
       this.playersView = mountPlayersView(this.ctx.viewer, this.world,
         () => this.localPlayerId ?? this.world?.localPlayerId ?? this.world?.player?.id ?? 'player')
       this.viewsStarted = true
@@ -82,6 +86,7 @@ export class GameManager extends Object3DComponent {
       return true
     } catch (error) {
       this.playersView?.stop(); this.playersView = null
+      this.grenadeView?.stop()
       this.playerView?.stop()
       this.unitView?.stop()
       this.mapView?.stop()
@@ -130,6 +135,7 @@ export class GameManager extends Object3DComponent {
     this.unitView?.sync(this.world)
     this.playersView?.sync(this.world)
     this.playerView?.sync(this.world)
+    this.grenadeView?.sync(this.world)
     this.cameraFeel?.apply(this.playerView?.camera)
     if (this.ui) this.ui.sync(projectViewModel(this.world, this.localPlayerId))
     else this.hud?.render(projectViewModel(this.world, this.localPlayerId))
@@ -279,6 +285,7 @@ export class GameManager extends Object3DComponent {
     this.input?.stop()
     this.hud?.dispose()
     this.playersView?.stop(); this.playersView = null
+    this.grenadeView?.stop()
     this.playerView?.stop()
     this.unitView?.stop()
     this.mapView?.stop()
@@ -288,6 +295,7 @@ export class GameManager extends Object3DComponent {
     this.ui = null
     this.cameraFeel = null
     this.playerView = null
+    this.grenadeView = null
     this.unitView = null
     this.mapView = null
     this.director = null
