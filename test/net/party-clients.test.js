@@ -123,9 +123,9 @@ test('guest shot cadence follows elapsed time when input delivery is slower than
   let now = 1_000
   guest.now = () => now
   assert.ok(guest.localShot(0, {...idle, fire: true}))
-  now += 100
+  now += 200
   assert.equal(guest.localShot(1, {...idle, fire: true}), null)
-  now += 100
+  now += 200
   assert.ok(guest.localShot(2, {...idle, fire: true}))
 })
 

@@ -12,15 +12,15 @@
     "pistol": {
       "id": "pistol",
       "slot": 1,
-      "name": "9mm Pistol",
-      "damage": 25,
-      "rate": 6,
-      "mag": 15,
-      "reserveMax": 120,
-      "spreadDeg": 1.5,
+      "name": "1858 Revolver",
+      "damage": 50,
+      "rate": 2.5,
+      "mag": 6,
+      "reserveMax": 66,
+      "spreadDeg": 1.2,
       "price": 0,
-      "ammoPrice": 5,
-      "reloadSeconds": 1.45,
+      "ammoPrice": 6,
+      "reloadSeconds": 2.6,
       "pellets": 1
     },
     "m4": {

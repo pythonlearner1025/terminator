@@ -51,7 +51,7 @@ Weapons:
 
 | Slot | Weapon | Damage | Rate | Mag | Reserve | Spread | Reload | Price | Ammo |
 |------|--------|--------|------|-----|---------|--------|--------|-------|------|
-| 1 | 9mm pistol | 25 | 6/s | 15 | 120 | 1.5 deg | 1.45 s | start | 5 |
+| 1 | 1858 Revolver | 50 | 2.5/s | 6 | 66 | 1.2 deg | 2.6 s | start | 6 |
 | 2 | M4 rifle | 30 | 11/s | 30 | 240 | 2 deg | 1.8 s | 400 | 20 |
 | 3 | Pump shotgun | 12 x 8 | 1.2/s | 8 | 48 | 7 deg | 2.4 s | 550 | 25 |
 | 4 | Plasma rifle | 90 | 3/s | 20 | 100 | 1 deg | 2.1 s | 1500 | 80 |
@@ -62,6 +62,7 @@ Weapons:
 
 The sniper penetrates two units. Each continued hit retains 60 percent of the previous damage.
 The launcher fires 32 m/s shells. A shell arms after 2.5 meters and detonates on contact.
+The revolver starts with 6 loaded rounds and 66 reserve rounds. Body hits kill a Scout in 3 shots and an Endo in 6 shots.
 
 Currency is Scrap. The player starts with 400. Terminators drop Scrap on death: Scout 50, Endo 130,
 Heavy 350, T-1000 400, HK-Aerial 350, and HK-Tank 1500. Every wave clear pays 150.

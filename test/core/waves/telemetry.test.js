@@ -21,7 +21,7 @@ test('scripted 60 second run produces complete and internally consistent telemet
       move: {x: Math.sin(tick / 120) * 0.2, z: Math.cos(tick / 180) * 0.2},
       yaw: 0,
       pitch: -0.02,
-      fire: tick < 150,
+      fire: tick < 120,
       reload: tick === 180,
     })
   }

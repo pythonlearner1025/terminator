@@ -66,7 +66,7 @@ test('reload immediately suppresses aim, speed penalty and firing, then held aim
   world.step({...walking, aim: true, reload: true, fire: true, sprint: true})
   assert.equal(world.player.aiming, false)
   close(speed(world), 7.5)
-  close(world.playerSpread, 1.5)
+  close(world.playerSpread, 1.2)
   assert.equal(world.telemetry.shots.pistol.fired, 1)
   while (world.player.reloadTimer > 1 / 60) {
     world.step({aim: true, fire: true})
@@ -74,7 +74,7 @@ test('reload immediately suppresses aim, speed penalty and firing, then held aim
   }
   world.step({aim: true})
   assert.equal(world.player.aiming, true)
-  close(world.playerSpread, 0.525)
+  close(world.playerSpread, 0.42)
 })
 
 test('knife and grenade quick actions ignore held aim until the action ends', () => {
