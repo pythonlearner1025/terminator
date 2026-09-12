@@ -42,9 +42,52 @@ test('30 metre tracer travels for 0.2 seconds, clips its head, and fades behind 
   const pool=new TracerPool(new E.Group(),4),p=pool.emit(new E.Vector3(),new E.Vector3(0,0,30),'m4')
   pool.update(.1);assert.equal(pool.batch.end[2],15);assert.equal(p.active,true)
   pool.update(.1);assert.equal(pool.batch.end[2],30);assert.equal(p.active,true)
-  pool.update(.02);assert.equal(p.active,false)
+  pool.update(.02);assert.equal(p.active,true);assert.equal(pool.batch.end[2],30)
+  assert.ok(pool.batch.shape[2]>0&&pool.batch.shape[2]<1)
+  pool.update(.04);assert.equal(p.active,false)
   assert.equal(pool.emit(new E.Vector3(),new E.Vector3(0,0,1),'knife'),null)
   pool.dispose()
+})
+
+test('distant trajectories retain a full rifle trail, distinct widths, and bounded impact fade',()=>{
+  const pool=new TracerPool(new E.Group(),8),from=new E.Vector3(),to=new E.Vector3(0,0,40)
+  for(const id of ['pistol','m4','shotgun','plasma','sniper']) {
+    pool.reset();pool.emit(from,to,id);pool.update(.25)
+    assert.equal(pool.active,1);assert.equal(pool.batch.end[2],37.5)
+    assert.ok(Math.abs(pool.batch.end[2]-pool.batch.start[2]-TRACER_STYLE[id].trail)<.00001)
+    assert.equal(pool.batch.shape[2],1)
+    pool.update(.025)
+    assert.equal(pool.batch.end[2],40)
+    if(pool.active)assert.ok(pool.batch.shape[2]>0&&pool.batch.shape[2]<1)
+    pool.update(.2);assert.equal(pool.active,0)
+  }
+  assert.ok(TRACER_STYLE.m4.trail>=6);assert.ok(TRACER_STYLE.sniper.trail>=10)
+  assert.ok(TRACER_STYLE.sniper.trail>TRACER_STYLE.m4.trail)
+  assert.ok(TRACER_STYLE.pistol.width<TRACER_STYLE.m4.width)
+  assert.ok(TRACER_STYLE.plasma.width>TRACER_STYLE.m4.width)
+  pool.reset();pool.emit(from,new E.Vector3(0,0,.2),'sniper');pool.update(1/60)
+  assert.ok(pool.batch.start[2]>=0);assert.ok(pool.batch.end[2]<=.200001)
+  pool.update(.2);assert.equal(pool.active,0);pool.dispose()
+})
+
+test('incoming volleys keep long warning trails behind authoritative projectile heads',()=>{
+  const view=new ProjectileView(new E.Group(),16,{shellMaterial:new E.PhysicalMaterial(),smokeMap:new E.Texture()})
+  const world=worldFixture(),camera=new E.PerspectiveCamera()
+  for(let i=0;i<12;i++)world.projectiles.push({id:i,type:i%2?'bolt':'round',owner:'unit',
+    pos:{x:i-6,y:1.65,z:20},vel:{x:0,y:0,z:-18}})
+  const snapshot=JSON.stringify(world.projectiles)
+  view.sync(world,camera)
+  for(let step=0;step<5;step++){world.tick+=6;view.sync(world,camera)}
+  assert.equal(view.streaks.count,12);assert.equal(view.orbs.count,6)
+  for(let i=0;i<12;i++){
+    assert.equal(view.streaks.end[i*3+2],20)
+    assert.equal(view.streaks.start[i*3+2],26)
+    assert.ok(view.streaks.shape[i*4+2]>0&&view.streaks.shape[i*4+2]<=.75)
+  }
+  assert.equal(JSON.stringify(world.projectiles),snapshot)
+  world.projectiles=[];view.sync(world,camera)
+  assert.equal(view.streaks.count,0);assert.equal(view.lights[0].intensity,0)
+  view.dispose()
 })
 
 test('shot events emit one travelling tracer or nine cosmetic shotgun pellets without replay',()=>{
