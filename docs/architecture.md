@@ -82,6 +82,15 @@ the six riser boxes produce 0.5 m tread increments without changing their geomet
 linearly interpolates its height along the declared axis. `movementHoles` identify the stairwell where
 the second-floor slab remains a sight blocker but is not a movement ceiling.
 
+`lib/core/collision.js` resolves colliders into deterministic box, oriented-box, cylinder, or sphere
+primitives. Compound `shapes` use local offsets from the authored center. Movement, navigation,
+sight, hitscan, and grenade sweeps query the same primitives. The trader joins the static collider
+set when it declares `navBlock` or `blocksSight`.
+
+Unit types declare pose-specific `hitVolumes` in `units.json`. The core selects idle, aim, or Scout
+melee volumes from deterministic intent. Named head volumes cause headshots. Other volumes cover the
+visible torso and limbs without treating the complete character bounds as solid.
+
 `NavGrid` samples every declared surface at each horizontal grid cell. Each sample is a separate node,
 so ground, upper-floor, balcony, dock, and connector nodes can share an x/z cell. Cardinal and same-cell
 neighbors connect only when their height difference is at most `walkable.maxStep`. Static and dynamic

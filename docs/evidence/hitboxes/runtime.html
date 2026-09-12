@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><title>Collider fit evidence</title>
+<style>html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#03070d}canvas{width:100%;height:100%;display:block}</style>
+<canvas id="game"></canvas>
+<script type="module">
+const imports=await fetch('/api/import-map').then(response=>response.json())
+const script=document.createElement('script')
+script.type='importmap'
+script.textContent=JSON.stringify(imports)
+document.head.append(script)
+const {createGame}=await import('@kite3d/engine')
+window.evidenceGame=await createGame({base:new URL('/files/',location.href).href,canvas:document.getElementById('game')})
+</script>
+</html>
