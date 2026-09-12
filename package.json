@@ -18,7 +18,6 @@
     "pull": "kite3d pull",
     "server": "node server/index.js",
     "tunnel": "node server/party-tunnel.js",
-    "tunnel": "node server/party-tunnel.js",
     "dev:all": "concurrently -k -n game,server \"npm run dev\" \"npm run server\"",
     "test": "find test -type f -name '*.test.js' -exec node --test {} +",
     "scene": "node tools/build-scene.mjs",

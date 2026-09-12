@@ -49,6 +49,18 @@ test('guest input reaches the host and prediction reconciles within one snapshot
   assert.equal(guest.pendingInputs.length, 0)
 })
 
+test('host schedules twenty authoritative snapshots for sixty simulation ticks', async (t) => {
+  const session = await makeSession(t, {guests: ['Sarah']})
+  const guest = session.guests[0]
+  session.host.lastSnapshotTick = 0
+
+  for (let tick = 0; tick < 60; tick += 1) session.host.step(idle)
+  await waitFor(() => guest.messageCounts.received.snapshot === 20)
+
+  assert.equal(session.host.messageCounts.sent.snapshot, 20)
+  assert.equal(guest.world.tick, 60)
+})
+
 test('guest local hitscan reports a hit that damages the unit on the host', async (t) => {
   const session = await makeSession(t, {guests: ['Sarah']})
   const guest = session.guests[0]
@@ -78,11 +90,32 @@ test('guest ready and purchase messages update authoritative party and player st
 
   guest.ready()
   await waitFor(() => session.host.players.get(guest.playerId)?.ready === true)
-  const result = once(guest, 'purchase-result')
-  guest.purchase('medkit', 'medkit-1')
-  assert.equal((await result).result.ok, true)
+  const event = once(guest, 'purchase-result')
+  const purchase = guest.purchase('medkit', 'medkit-1')
+  assert.equal((await event).result.ok, true)
+  assert.equal((await purchase).ok, true)
   assert.equal(player.hp, 90)
   assert.equal(player.scrap, 300)
+})
+
+test('guest reconnects with the same player id during the grace period', async (t) => {
+  const session = await makeSession(t, {guests: ['Kyle'], disconnectGraceMs: 1_000})
+  const original = session.guests[0]
+  const playerId = original.playerId
+  const resumeToken = original.resumeToken
+  original.stop()
+  await waitFor(() => session.host.players.get(playerId)?.connected === false)
+
+  const resumed = new PartyGuest({
+    code: 'NET123', relay: session.fixture.url, name: 'Kyle', resumeToken, WebSocket,
+    worldFactory: ({seed}) => new World({seed, brains}),
+  })
+  t.after(() => resumed.stop())
+  await resumed.start()
+
+  assert.equal(resumed.playerId, playerId)
+  assert.equal(session.host.players.get(playerId).connected, true)
+  assert.equal(session.host.world.players.size, 2)
 })
 
 test('guest disconnect keeps a ten-second-grace slot before removal and host leave ends the party', async (t) => {
