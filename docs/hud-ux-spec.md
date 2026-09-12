@@ -5,7 +5,7 @@
 W18 replaces the text treatments below. Barlow, angular panels, scanlines, skull art, colors, and feedback animations stay.
 
 - Main: title, Play, Host, Join, Skynet, Settings, Quit. No dossier anywhere in the UI.
-- Host: code, one invite/copy action, roster, readiness icons, override toggle, Start. Join: code/invite and relay inputs, Join; connected players use the roster. Settings: one word per control. Utility navigation uses accessible icon buttons.
+- Host: code, one invite/copy action, roster, readiness icons, override toggle, Start. Join: code/invite and relay inputs, Join; connected players use the roster. Settings: one word per control, including Space for Jump. Utility navigation uses accessible icon buttons.
 - Skynet lobby: code, complete selectable install command/copy, status icon, Start. Pause: Resume and Settings/Menu icons. Quit: Quit and Menu.
 - Trader: categories, short item names, prices, scrap balance, bulk ammo/armor icons with prices, countdown. Purchases retain sound, color, and brief error labels.
 - HUD: icon/number vitals, numeric ammunition, `WAVE 3/10`, remaining count, `SKYNET · BUILT-IN · 1140`, `E7 S3 H1`, one short transmission line, three icon feed entries. Enemy plates show type, rev and health only. Teammates keep names and health, with armor bars. Spectate keeps the target name and arrow controls. No gameplay hints or chatter subtitles.

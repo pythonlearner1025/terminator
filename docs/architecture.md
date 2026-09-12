@@ -96,6 +96,7 @@ from the current walkable surface. Failed paths and changed goals retain the Wor
   switchTo: null | number | string,
   sprint: boolean,
   crouch: boolean,
+  jump: boolean,
   grenade: boolean,
   melee: boolean,
   ready: boolean,
@@ -104,7 +105,7 @@ from the current walkable surface. Failed paths and changed goals retain the Wor
 
 All fields describe the current tick. They are not deltas. `move.x` is right. `move.z` is forward.
 Yaw and pitch are radians. Yaw zero faces positive Z. The browser adapter turns key and mouse events
-into this record.
+into this record. `jump` is a one-tick pulse and defaults to false for older records.
 
 `aim` defaults to false, including older replay and ghost records. Hold the right mouse button
 to aim; only the left button fires. Firearms aim only outside reloads and quick knife/grenade

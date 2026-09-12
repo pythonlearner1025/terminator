@@ -1,0 +1,310 @@
+{
+  "benchmark": "Terminator browser performance",
+  "capturedAt": "2026-09-12T04:51:35.513Z",
+  "durationSeconds": 10,
+  "warmupSeconds": 5,
+  "requestedViewport": {
+    "width": 1920,
+    "height": 1080,
+    "deviceScaleFactor": 1
+  },
+  "effects": {
+    "post": true,
+    "motionBlur": true,
+    "rain": 1,
+    "smoke": 1,
+    "hazards": [
+      "electric",
+      "steam"
+    ],
+    "combatStress": "two enemy shots per frame and ten impact bursts per second",
+    "disabled": []
+  },
+  "browser": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+    "gpuVendor": "Google Inc. (Apple)",
+    "gpuRenderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Max, Unspecified Version)",
+    "webgl": "WebGL2RenderingContext"
+  },
+  "setup": {
+    "units": 24,
+    "quality": "high",
+    "disabled": []
+  },
+  "scene": {
+    "aliveEnemies": 24,
+    "renderedEnemies": 24,
+    "enemiesInFrustum": 24,
+    "renderScale": 1,
+    "renderSize": [
+      1920,
+      1080
+    ],
+    "canvas": {
+      "width": 1920,
+      "height": 1080
+    },
+    "shadowMap": {
+      "width": 2048,
+      "height": 2048,
+      "radius": 2
+    },
+    "unitTriangles": {
+      "scout": {
+        "high": 24512,
+        "low": 11004
+      },
+      "endo": {
+        "high": 25492,
+        "low": 11712
+      },
+      "heavy": {
+        "high": 27088,
+        "low": 12252
+      }
+    },
+    "quality": {
+      "id": "high",
+      "renderScale": 1,
+      "shadowMapSize": 2048,
+      "gbufferScale": 0.5,
+      "ssaoScale": 0.5,
+      "ssaoSamples": 8,
+      "bloomScale": 0.5,
+      "particleDensity": 1,
+      "lodDistance": 30,
+      "animationLodDistance": 32,
+      "animationHz": 30,
+      "farAnimationHz": 30
+    }
+  },
+  "frame": {
+    "samples": 558,
+    "intervalMs": {
+      "samples": 558,
+      "mean": 17.949,
+      "p50": 17.4,
+      "p95": 21.6,
+      "max": 28.7
+    },
+    "workMs": {
+      "samples": 559,
+      "mean": 15.366,
+      "p50": 15.3,
+      "p95": 19,
+      "max": 27.4
+    },
+    "effectiveFps": 55.713
+  },
+  "gpu": {
+    "supported": true,
+    "samples": 559,
+    "frameMs": {
+      "samples": 559,
+      "mean": 9.827,
+      "p50": 8.994,
+      "p95": 13.762,
+      "max": 18.667
+    },
+    "unresolvedQueries": 0
+  },
+  "renderer": {
+    "drawCalls": {
+      "samples": 559,
+      "mean": 248.184,
+      "p50": 248,
+      "p95": 249,
+      "max": 249
+    },
+    "triangles": {
+      "samples": 559,
+      "mean": 684936.626,
+      "p50": 684938,
+      "p95": 684938,
+      "max": 684938
+    },
+    "points": {
+      "samples": 559,
+      "mean": 489.86,
+      "p50": 488,
+      "p95": 498,
+      "max": 498
+    },
+    "lines": {
+      "samples": 559,
+      "mean": 1318,
+      "p50": 1318,
+      "p95": 1318,
+      "max": 1318
+    },
+    "geometries": 206,
+    "textures": 118
+  },
+  "textureMemory": {
+    "textures": 105,
+    "bytes": 684230635,
+    "mebibytes": 652.533,
+    "largest": [
+      {
+        "name": "Units endoskeleton-albedo.jpg",
+        "width": 2048,
+        "height": 2048,
+        "bytes": 22369621
+      },
+      {
+        "name": "Units endoskeleton-orm.png",
+        "width": 2048,
+        "height": 2048,
+        "bytes": 22369621
+      },
+      {
+        "name": "Units endoskeleton-normal.png",
+        "width": 2048,
+        "height": 2048,
+        "bytes": 22369621
+      },
+      {
+        "name": "unnamed",
+        "width": 2048,
+        "height": 2048,
+        "bytes": 22369621
+      },
+      {
+        "name": "unnamed",
+        "width": 2048,
+        "height": 2048,
+        "bytes": 22369621
+      },
+      {
+        "name": "unnamed",
+        "width": 2048,
+        "height": 2048,
+        "bytes": 22369621
+      },
+      {
+        "name": "Units endoskeleton-albedo.jpg",
+        "width": 2048,
+        "height": 2048,
+        "bytes": 22369621
+      },
+      {
+        "name": "Units endoskeleton-orm.png",
+        "width": 2048,
+        "height": 2048,
+        "bytes": 22369621
+      }
+    ]
+  },
+  "postPasses": {
+    "gbuffer": {
+      "calls": 559,
+      "msPerFrame": 3.528,
+      "meanCallMs": 3.521,
+      "maxCallMs": 5.3
+    },
+    "ssao": {
+      "calls": 559,
+      "msPerFrame": 0.074,
+      "meanCallMs": 0.074,
+      "maxCallMs": 0.2
+    },
+    "render": {
+      "calls": 559,
+      "msPerFrame": 8.912,
+      "meanCallMs": 8.896,
+      "maxCallMs": 22.4
+    },
+    "map-bloom": {
+      "calls": 559,
+      "msPerFrame": 0.17,
+      "meanCallMs": 0.17,
+      "maxCallMs": 0.4
+    },
+    "screen": {
+      "calls": 559,
+      "msPerFrame": 0.09,
+      "meanCallMs": 0.09,
+      "maxCallMs": 0.3
+    }
+  },
+  "systems": {
+    "combat effects": {
+      "calls": 559,
+      "msPerFrame": 0.023,
+      "meanCallMs": 0.023,
+      "maxCallMs": 0.2
+    },
+    "HUD": {
+      "calls": 1118,
+      "msPerFrame": 0.22,
+      "meanCallMs": 0.11,
+      "maxCallMs": 0.4
+    },
+    "weather": {
+      "calls": 559,
+      "msPerFrame": 0.043,
+      "meanCallMs": 0.043,
+      "maxCallMs": 0.2
+    },
+    "map": {
+      "calls": 559,
+      "msPerFrame": 0.105,
+      "meanCallMs": 0.105,
+      "maxCallMs": 0.3
+    },
+    "fx": {
+      "calls": 1118,
+      "msPerFrame": 0.128,
+      "meanCallMs": 0.064,
+      "maxCallMs": 0.3
+    },
+    "units": {
+      "calls": 559,
+      "msPerFrame": 1.011,
+      "meanCallMs": 1.009,
+      "maxCallMs": 1.6
+    },
+    "players": {
+      "calls": 1118,
+      "msPerFrame": 0.01,
+      "meanCallMs": 0.005,
+      "maxCallMs": 0.1
+    },
+    "weapons": {
+      "calls": 559,
+      "msPerFrame": 0.054,
+      "meanCallMs": 0.054,
+      "maxCallMs": 0.2
+    },
+    "player": {
+      "calls": 559,
+      "msPerFrame": 0.118,
+      "meanCallMs": 0.118,
+      "maxCallMs": 0.3
+    }
+  },
+  "topCosts": [
+    {
+      "area": "pass:render",
+      "msPerFrame": 8.912
+    },
+    {
+      "area": "pass:gbuffer",
+      "msPerFrame": 3.528
+    },
+    {
+      "area": "system:units",
+      "msPerFrame": 1.011
+    },
+    {
+      "area": "system:HUD",
+      "msPerFrame": 0.22
+    },
+    {
+      "area": "pass:map-bloom",
+      "msPerFrame": 0.17
+    }
+  ],
+  "warnings": [],
+  "screenshot": "docs/evidence/jump/combat-24.png"
+}

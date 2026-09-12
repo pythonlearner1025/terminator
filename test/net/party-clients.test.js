@@ -33,10 +33,13 @@ test('guest input reaches the host and prediction reconciles within one snapshot
   const session = await makeSession(t, {guests: ['Kyle']})
   const guest = session.guests[0]
   const startingZ = guest.world.getPlayer(guest.playerId).pos.z
+  const startingY = guest.world.getPlayer(guest.playerId).pos.y
 
-  guest.step({move: {x: 0, z: 1}, yaw: 0, pitch: 0, sprint: true})
+  guest.step({move: {x: 0, z: 1}, yaw: 0, pitch: 0, sprint: true, jump: true})
   const predictedZ = guest.world.getPlayer(guest.playerId).pos.z
+  const predictedY = guest.world.getPlayer(guest.playerId).pos.y
   assert.ok(predictedZ > startingZ, 'local prediction moves before an authoritative step')
+  assert.ok(predictedY > startingY, 'local prediction jumps before an authoritative step')
   await waitFor(() => session.host.latestInputs.get(guest.playerId)?.tick === 0)
 
   const snapshot = once(guest, 'snapshot')
@@ -45,6 +48,7 @@ test('guest input reaches the host and prediction reconciles within one snapshot
   const hostPlayer = session.host.world.getPlayer(guest.playerId)
   const guestPlayer = guest.world.getPlayer(guest.playerId)
   assert.ok(hostPlayer.pos.z > startingZ, 'the host applied the guest input')
+  assert.ok(hostPlayer.pos.y > startingY, 'the host applied the guest jump pulse')
   assert.deepEqual(guestPlayer.pos, hostPlayer.pos)
   assert.equal(guest.pendingInputs.length, 0)
 })
