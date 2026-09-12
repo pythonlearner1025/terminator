@@ -30,11 +30,11 @@
   },
   "devDependencies": {
     "concurrently": "^9.2.1",
-    "kite3d": "0.16.0"
+    "kite3d": "0.18.0"
   },
   "dependencies": {
     "@jitl/quickjs-wasmfile-release-sync": "^0.32.0",
-    "@kite3d/engine": "0.16.0",
+    "@kite3d/engine": "0.18.0",
     "cannon-es": "0.20.0",
     "quickjs-emscripten": "0.32.0",
     "threepipe": "0.5.1",
@@ -60,8 +60,16 @@
       "tonemap": true,
       "backgroundColor": "#03070d",
       "camera": {
-        "position": [62, 49, 60],
-        "target": [0, 0, 0]
+        "position": [
+          62,
+          49,
+          60
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ]
       }
     },
     "publish": {
