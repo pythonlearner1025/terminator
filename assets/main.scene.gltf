@@ -62,7 +62,8 @@
             "state": {
               "module": "generators/map.generator.js",
               "params": {
-                "markers": true
+                "markers": true,
+                "detail": "full"
               }
             }
           }

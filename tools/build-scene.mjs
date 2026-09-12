@@ -22,7 +22,7 @@ const specs = [
     uuid: 'terminator-node-map',
     authoring: {role: 'generator', id: 'terminator-map'},
     components: {
-      'terminator-component-map-generator': {type: 'Generator', state: {module: 'generators/map.generator.js', params: {markers: true}}},
+      'terminator-component-map-generator': {type: 'Generator', state: {module: 'generators/map.generator.js', params: {markers: true, detail: process.env.MAP_DETAIL || 'full'}}},
     },
   },
   {
