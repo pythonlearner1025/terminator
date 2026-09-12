@@ -33,7 +33,7 @@ test('tracer buffers and slot objects remain fixed after overflow and 10000 warm
   assert.equal(pool.items.length,32);assert.ok(pool.overwritten>0)
   for(let i=0;i<32;i++)assert.equal(pool.items[i],items[i])
   for(const [i,buffer] of [pool.batch.start,pool.batch.end,pool.batch.color,pool.batch.shape].entries())assert.equal(buffer,buffers[i])
-  assert.ok(pool.batch.geometry.instanceCount<=32)
+  assert.ok(pool.batch.geometry.instanceCount<=64)
   pool.update(2);assert.equal(pool.active,0);assert.equal(pool.batch.mesh.visible,false)
   pool.dispose()
 })
@@ -44,7 +44,7 @@ test('30 metre tracer travels for 0.2 seconds, clips its head, and fades behind 
   pool.update(.1);assert.equal(pool.batch.end[2],30);assert.equal(p.active,true)
   pool.update(.02);assert.equal(p.active,true);assert.equal(pool.batch.end[2],30)
   assert.ok(pool.batch.shape[2]>0&&pool.batch.shape[2]<1)
-  pool.update(.04);assert.equal(p.active,false)
+  pool.update(.16);assert.equal(p.active,false)
   assert.equal(pool.emit(new E.Vector3(),new E.Vector3(0,0,1),'knife'),null)
   pool.dispose()
 })
@@ -58,10 +58,10 @@ test('distant trajectories retain a full rifle trail, distinct widths, and bound
     assert.equal(pool.batch.shape[2],1)
     pool.update(.025)
     assert.equal(pool.batch.end[2],40)
-    if(pool.active)assert.ok(pool.batch.shape[2]>0&&pool.batch.shape[2]<1)
+    if(pool.batch.phase[3]===0)assert.ok(pool.batch.shape[2]>0&&pool.batch.shape[2]<1)
     pool.update(.2);assert.equal(pool.active,0)
   }
-  assert.ok(TRACER_STYLE.m4.trail>=6);assert.ok(TRACER_STYLE.sniper.trail>=10)
+  assert.ok(TRACER_STYLE.m4.trail>=2.5&&TRACER_STYLE.m4.trail<=4);assert.equal(TRACER_STYLE.sniper.trail,5.5)
   assert.ok(TRACER_STYLE.sniper.trail>TRACER_STYLE.m4.trail)
   assert.ok(TRACER_STYLE.pistol.width<TRACER_STYLE.m4.width)
   assert.ok(TRACER_STYLE.plasma.width>TRACER_STYLE.m4.width)
@@ -70,23 +70,29 @@ test('distant trajectories retain a full rifle trail, distinct widths, and bound
   pool.update(.2);assert.equal(pool.active,0);pool.dispose()
 })
 
-test('incoming volleys keep long warning trails behind authoritative projectile heads',()=>{
-  const view=new ProjectileView(new E.Group(),16,{shellMaterial:new E.PhysicalMaterial(),smokeMap:new E.Texture()})
+test('incoming volleys follow authoritative velocity and retain only observed residual paths',()=>{
+  const view=new ProjectileView(new E.Group(),16,{shellMaterial:new E.PhysicalMaterial()})
   const world=worldFixture(),camera=new E.PerspectiveCamera()
   for(let i=0;i<12;i++)world.projectiles.push({id:i,type:i%2?'bolt':'round',owner:'unit',
-    pos:{x:i-6,y:1.65,z:20},vel:{x:0,y:0,z:-18}})
-  const snapshot=JSON.stringify(world.projectiles)
+    pos:{x:i-6,y:1.65,z:24},vel:{x:0,y:0,z:-30}})
   view.sync(world,camera)
-  for(let step=0;step<5;step++){world.tick+=6;view.sync(world,camera)}
-  assert.equal(view.streaks.count,12);assert.equal(view.orbs.count,6)
+  for(let step=0;step<4;step++){
+    for(const p of world.projectiles)p.pos.z-=1
+    world.tick+=2;view.sync(world,camera)
+  }
+  const snapshot=JSON.stringify(world.projectiles);view.sync(world,camera)
+  assert.equal(view.orbs.count,6)
   for(let i=0;i<12;i++){
     assert.equal(view.streaks.end[i*3+2],20)
-    assert.equal(view.streaks.start[i*3+2],26)
-    assert.ok(view.streaks.shape[i*4+2]>0&&view.streaks.shape[i*4+2]<=.75)
+    assert.ok(Math.abs(view.streaks.start[i*3+2]-(i%2?21.4:21))<.00001)
   }
   assert.equal(JSON.stringify(world.projectiles),snapshot)
-  world.projectiles=[];view.sync(world,camera)
-  assert.equal(view.streaks.count,0);assert.equal(view.lights[0].intensity,0)
+  world.projectiles=[];world.tick++;view.sync(world,camera)
+  assert.equal(view.orbs.count,0);assert.equal(view.lights[0].intensity,0)
+  assert.ok(view.streaks.count>0)
+  for(let i=0;i<view.streaks.count;i++)assert.equal(view.streaks.phase[i*4+3],1)
+  world.tick+=12;view.sync(world,camera);world.tick+=12;view.sync(world,camera)
+  assert.equal(view.streaks.count,0)
   view.dispose()
 })
 
@@ -108,17 +114,17 @@ test('projectile types map to bounded instanced renderers and leave snapshots un
   for(const [i,type] of ['round','bolt','shell','grenade'].entries())
     world.projectiles.push({id:i,type,owner:'unit',pos:{x:i,y:1,z:20},vel:{x:0,y:0,z:-18}})
   const snapshot=JSON.stringify(world.projectiles)
-  view.sync(world,camera);world.tick=6;view.sync(world,camera)
-  assert.equal(view.streaks.count,3);assert.equal(view.orbs.count,1);assert.equal(view.shells.count,1)
+  view.sync(world,camera);for(const p of world.projectiles)p.pos.z-=2;world.tick=6;view.sync(world,camera)
+  assert.equal(view.streaks.count,4);assert.equal(view.orbs.count,1);assert.equal(view.shells.count,1);assert.equal(view.smoke.count,2)
   assert.equal(view.counts.grenade,1);assert.equal(projectileStyle('grenade').renderer,'grenade')
   assert.equal(projectileType({projectileType:'bolt'}),'bolt')
-  assert.equal(projectileStyle('unknown'),null);assert.equal(JSON.stringify(world.projectiles),snapshot)
-  assert.equal(view.streaks.end[2],20)
+  assert.equal(projectileStyle('unknown'),null);assert.equal(JSON.stringify(world.projectiles),snapshot.replaceAll('\"z\":20','\"z\":18'))
+  assert.equal(view.streaks.end[2],18)
   const slots=[...view.slots],array=view.shells.instanceMatrix.array
   for(let i=0;i<500;i++){world.projectiles[0].id=100+i;world.tick++;view.sync(world,camera)}
   assert.equal(view.slots.length,8);assert.equal(view.shells.instanceMatrix.array,array)
   for(let i=0;i<8;i++)assert.equal(slots[i],view.slots[i])
-  world.projectiles=[];view.sync(world,camera);assert.equal(view.streaks.count,0);assert.equal(view.orbs.count,0)
+  world.projectiles=[];for(let i=0;i<3;i++){world.tick+=6;view.sync(world,camera)};assert.equal(view.streaks.count,0);assert.equal(view.orbs.count,0)
   view.dispose()
 })
 

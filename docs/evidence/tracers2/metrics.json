@@ -1,0 +1,1263 @@
+{
+  "runs": [
+    {
+      "run": "before-benchmark",
+      "capturedAt": "2026-09-12T09:05:25.573Z",
+      "frame": {
+        "samples": 570,
+        "intervalMs": {
+          "samples": 570,
+          "mean": 17.549,
+          "p50": 17.1,
+          "p95": 20.3,
+          "p99": 28.7,
+          "max": 36.7
+        },
+        "workMs": {
+          "samples": 571,
+          "mean": 15.234,
+          "p50": 15.2,
+          "p95": 17.6,
+          "p99": 19.1,
+          "max": 22.4
+        },
+        "effectiveFps": 56.985
+      },
+      "gpu": {
+        "samples": 571,
+        "mean": 14.612,
+        "p50": 13.871,
+        "p95": 21.382,
+        "p99": 23.78,
+        "max": 28.656
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+        "gpuVendor": "Google Inc. (Apple)",
+        "gpuRenderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Max, Unspecified Version)",
+        "webgl": "WebGL2RenderingContext"
+      },
+      "units": 24,
+      "weaponBurst": {
+        "shots": {
+          "pistol": 12,
+          "m4": 12,
+          "shotgun": 12,
+          "plasma": 12,
+          "sniper": 12,
+          "launcher": 12,
+          "knife": 12,
+          "grenade": 12
+        },
+        "projectiles": 52,
+        "projectileTypes": [
+          "round",
+          "bolt",
+          "shell",
+          "grenade"
+        ],
+        "mode": "isolated visual contract fixture"
+      },
+      "tracers": {
+        "calls": 575,
+        "msPerFrame": 0.009,
+        "meanCallMs": 0.009,
+        "maxCallMs": 0.2
+      },
+      "projectiles": {
+        "calls": 1146,
+        "msPerFrame": 0.226,
+        "meanCallMs": 0.113,
+        "maxCallMs": 0.9
+      },
+      "warnings": []
+    },
+    {
+      "run": "after-benchmark",
+      "capturedAt": "2026-09-12T09:16:21.224Z",
+      "frame": {
+        "samples": 338,
+        "intervalMs": {
+          "samples": 338,
+          "mean": 29.649,
+          "p50": 29.5,
+          "p95": 35.7,
+          "p99": 40.4,
+          "max": 70.1
+        },
+        "workMs": {
+          "samples": 339,
+          "mean": 25.59,
+          "p50": 25.4,
+          "p95": 31.3,
+          "p99": 34.9,
+          "max": 42.3
+        },
+        "effectiveFps": 33.727
+      },
+      "gpu": {
+        "samples": 339,
+        "mean": 28.636,
+        "p50": 27.278,
+        "p95": 42.848,
+        "p99": 53.956,
+        "max": 63.089
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+        "gpuVendor": "Google Inc. (Apple)",
+        "gpuRenderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Max, Unspecified Version)",
+        "webgl": "WebGL2RenderingContext"
+      },
+      "units": 24,
+      "weaponBurst": {
+        "shots": {
+          "pistol": 8,
+          "m4": 8,
+          "shotgun": 8,
+          "plasma": 8,
+          "sniper": 8,
+          "launcher": 8,
+          "knife": 5,
+          "grenade": 4
+        },
+        "projectiles": 52,
+        "projectileTypes": [
+          "round",
+          "bolt",
+          "shell",
+          "grenade"
+        ],
+        "mode": "isolated visual contract fixture"
+      },
+      "tracers": {
+        "calls": 343,
+        "msPerFrame": 0.019,
+        "meanCallMs": 0.019,
+        "maxCallMs": 0.4
+      },
+      "projectiles": {
+        "calls": 682,
+        "msPerFrame": 0.092,
+        "meanCallMs": 0.046,
+        "maxCallMs": 0.8
+      },
+      "warnings": []
+    },
+    {
+      "run": "paired-before",
+      "capturedAt": "2026-09-12T09:19:00.415Z",
+      "frame": {
+        "samples": 332,
+        "intervalMs": {
+          "samples": 332,
+          "mean": 30.141,
+          "p50": 30,
+          "p95": 35.1,
+          "p99": 37.8,
+          "max": 41.9
+        },
+        "workMs": {
+          "samples": 333,
+          "mean": 26.408,
+          "p50": 26.2,
+          "p95": 31.2,
+          "p99": 34.2,
+          "max": 38.3
+        },
+        "effectiveFps": 33.177
+      },
+      "gpu": {
+        "samples": 333,
+        "mean": 28.022,
+        "p50": 26.595,
+        "p95": 41.471,
+        "p99": 48.3,
+        "max": 51.179
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+        "gpuVendor": "Google Inc. (Apple)",
+        "gpuRenderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Max, Unspecified Version)",
+        "webgl": "WebGL2RenderingContext"
+      },
+      "units": 24,
+      "weaponBurst": {
+        "shots": {
+          "pistol": 8,
+          "m4": 8,
+          "shotgun": 8,
+          "plasma": 8,
+          "sniper": 8,
+          "launcher": 8,
+          "knife": 4,
+          "grenade": 4
+        },
+        "projectiles": 52,
+        "projectileTypes": [
+          "round",
+          "bolt",
+          "shell",
+          "grenade"
+        ],
+        "mode": "isolated visual contract fixture"
+      },
+      "tracers": {
+        "calls": 337,
+        "msPerFrame": 0.025,
+        "meanCallMs": 0.025,
+        "maxCallMs": 1.3
+      },
+      "projectiles": {
+        "calls": 670,
+        "msPerFrame": 0.349,
+        "meanCallMs": 0.173,
+        "maxCallMs": 1.1
+      },
+      "warnings": []
+    },
+    {
+      "run": "paired-after",
+      "capturedAt": "2026-09-12T09:19:47.004Z",
+      "frame": {
+        "samples": 398,
+        "intervalMs": {
+          "samples": 398,
+          "mean": 25.183,
+          "p50": 25,
+          "p95": 28.7,
+          "p99": 31.4,
+          "max": 38.8
+        },
+        "workMs": {
+          "samples": 399,
+          "mean": 21.87,
+          "p50": 21.6,
+          "p95": 25.2,
+          "p99": 27,
+          "max": 34.9
+        },
+        "effectiveFps": 39.709
+      },
+      "gpu": {
+        "samples": 399,
+        "mean": 23.046,
+        "p50": 22.538,
+        "p95": 34.374,
+        "p99": 40.547,
+        "max": 45.051
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+        "gpuVendor": "Google Inc. (Apple)",
+        "gpuRenderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Max, Unspecified Version)",
+        "webgl": "WebGL2RenderingContext"
+      },
+      "units": 24,
+      "weaponBurst": {
+        "shots": {
+          "pistol": 11,
+          "m4": 8,
+          "shotgun": 8,
+          "plasma": 8,
+          "sniper": 8,
+          "launcher": 8,
+          "knife": 8,
+          "grenade": 8
+        },
+        "projectiles": 52,
+        "projectileTypes": [
+          "round",
+          "bolt",
+          "shell",
+          "grenade"
+        ],
+        "mode": "isolated visual contract fixture"
+      },
+      "tracers": {
+        "calls": 403,
+        "msPerFrame": 0.016,
+        "meanCallMs": 0.016,
+        "maxCallMs": 0.3
+      },
+      "projectiles": {
+        "calls": 802,
+        "msPerFrame": 0.103,
+        "meanCallMs": 0.051,
+        "maxCallMs": 0.6
+      },
+      "warnings": []
+    },
+    {
+      "run": "final-before",
+      "capturedAt": "2026-09-12T09:34:57.763Z",
+      "frame": {
+        "samples": 441,
+        "intervalMs": {
+          "samples": 441,
+          "mean": 22.683,
+          "p50": 22.6,
+          "p95": 26.9,
+          "p99": 28.6,
+          "max": 38.1
+        },
+        "workMs": {
+          "samples": 442,
+          "mean": 19.654,
+          "p50": 19.6,
+          "p95": 23.5,
+          "p99": 25.3,
+          "max": 34.2
+        },
+        "effectiveFps": 44.086
+      },
+      "gpu": {
+        "samples": 442,
+        "mean": 18.854,
+        "p50": 17.785,
+        "p95": 28.786,
+        "p99": 35.002,
+        "max": 40.676
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+        "gpuVendor": "Google Inc. (Apple)",
+        "gpuRenderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Max, Unspecified Version)",
+        "webgl": "WebGL2RenderingContext"
+      },
+      "units": 24,
+      "weaponBurst": {
+        "shots": {
+          "pistol": 12,
+          "m4": 12,
+          "shotgun": 10,
+          "plasma": 8,
+          "sniper": 8,
+          "launcher": 8,
+          "knife": 8,
+          "grenade": 8
+        },
+        "projectiles": 52,
+        "projectileTypes": [
+          "round",
+          "bolt",
+          "shell",
+          "grenade"
+        ],
+        "mode": "isolated visual contract fixture"
+      },
+      "tracers": {
+        "calls": 446,
+        "msPerFrame": 0.014,
+        "meanCallMs": 0.014,
+        "maxCallMs": 0.8
+      },
+      "projectiles": {
+        "calls": 888,
+        "msPerFrame": 0.308,
+        "meanCallMs": 0.153,
+        "maxCallMs": 0.7
+      },
+      "warnings": []
+    },
+    {
+      "run": "final-after",
+      "capturedAt": "2026-09-12T09:35:31.157Z",
+      "frame": {
+        "samples": 406,
+        "intervalMs": {
+          "samples": 406,
+          "mean": 24.662,
+          "p50": 24.1,
+          "p95": 31.2,
+          "p99": 32.4,
+          "max": 35.3
+        },
+        "workMs": {
+          "samples": 407,
+          "mean": 21.484,
+          "p50": 21,
+          "p95": 27.2,
+          "p99": 28.6,
+          "max": 31.4
+        },
+        "effectiveFps": 40.549
+      },
+      "gpu": {
+        "samples": 407,
+        "mean": 21.139,
+        "p50": 20.305,
+        "p95": 31.624,
+        "p99": 35.354,
+        "max": 38.824
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+        "gpuVendor": "Google Inc. (Apple)",
+        "gpuRenderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Max, Unspecified Version)",
+        "webgl": "WebGL2RenderingContext"
+      },
+      "units": 24,
+      "weaponBurst": {
+        "shots": {
+          "pistol": 12,
+          "m4": 8,
+          "shotgun": 8,
+          "plasma": 8,
+          "sniper": 8,
+          "launcher": 8,
+          "knife": 8,
+          "grenade": 8
+        },
+        "projectiles": 52,
+        "projectileTypes": [
+          "round",
+          "bolt",
+          "shell",
+          "grenade"
+        ],
+        "mode": "isolated visual contract fixture"
+      },
+      "tracers": {
+        "calls": 411,
+        "msPerFrame": 0.017,
+        "meanCallMs": 0.017,
+        "maxCallMs": 0.3
+      },
+      "projectiles": {
+        "calls": 818,
+        "msPerFrame": 0.088,
+        "meanCallMs": 0.044,
+        "maxCallMs": 0.8
+      },
+      "warnings": []
+    },
+    {
+      "run": "refined-before",
+      "capturedAt": "2026-09-12T09:39:50.906Z",
+      "frame": {
+        "samples": 331,
+        "intervalMs": {
+          "samples": 331,
+          "mean": 30.267,
+          "p50": 29.9,
+          "p95": 35.6,
+          "p99": 39.9,
+          "max": 42.3
+        },
+        "workMs": {
+          "samples": 332,
+          "mean": 26.458,
+          "p50": 26.1,
+          "p95": 31.4,
+          "p99": 35.3,
+          "max": 37.9
+        },
+        "effectiveFps": 33.039
+      },
+      "gpu": {
+        "samples": 332,
+        "mean": 28.4,
+        "p50": 27.165,
+        "p95": 41.814,
+        "p99": 47.594,
+        "max": 50.888
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+        "gpuVendor": "Google Inc. (Apple)",
+        "gpuRenderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Max, Unspecified Version)",
+        "webgl": "WebGL2RenderingContext"
+      },
+      "units": 24,
+      "weaponBurst": {
+        "shots": {
+          "pistol": 8,
+          "m4": 8,
+          "shotgun": 8,
+          "plasma": 8,
+          "sniper": 8,
+          "launcher": 8,
+          "knife": 4,
+          "grenade": 4
+        },
+        "projectiles": 52,
+        "projectileTypes": [
+          "round",
+          "bolt",
+          "shell",
+          "grenade"
+        ],
+        "mode": "isolated visual contract fixture"
+      },
+      "tracers": {
+        "calls": 336,
+        "msPerFrame": 0.023,
+        "meanCallMs": 0.022,
+        "maxCallMs": 1.6
+      },
+      "projectiles": {
+        "calls": 668,
+        "msPerFrame": 0.445,
+        "meanCallMs": 0.221,
+        "maxCallMs": 1.1
+      },
+      "warnings": []
+    },
+    {
+      "run": "refined-after",
+      "capturedAt": "2026-09-12T09:40:22.854Z",
+      "frame": {
+        "samples": 404,
+        "intervalMs": {
+          "samples": 404,
+          "mean": 24.807,
+          "p50": 24.5,
+          "p95": 31,
+          "p99": 33,
+          "max": 40.1
+        },
+        "workMs": {
+          "samples": 405,
+          "mean": 21.446,
+          "p50": 21.1,
+          "p95": 27.2,
+          "p99": 28.9,
+          "max": 35.8
+        },
+        "effectiveFps": 40.311
+      },
+      "gpu": {
+        "samples": 405,
+        "mean": 22.78,
+        "p50": 21.504,
+        "p95": 34.94,
+        "p99": 42.048,
+        "max": 44.907
+      },
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+        "gpuVendor": "Google Inc. (Apple)",
+        "gpuRenderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Max, Unspecified Version)",
+        "webgl": "WebGL2RenderingContext"
+      },
+      "units": 24,
+      "weaponBurst": {
+        "shots": {
+          "pistol": 12,
+          "m4": 8,
+          "shotgun": 8,
+          "plasma": 8,
+          "sniper": 8,
+          "launcher": 8,
+          "knife": 8,
+          "grenade": 8
+        },
+        "projectiles": 52,
+        "projectileTypes": [
+          "round",
+          "bolt",
+          "shell",
+          "grenade"
+        ],
+        "mode": "isolated visual contract fixture"
+      },
+      "tracers": {
+        "calls": 409,
+        "msPerFrame": 0.016,
+        "meanCallMs": 0.016,
+        "maxCallMs": 0.5
+      },
+      "projectiles": {
+        "calls": 814,
+        "msPerFrame": 0.079,
+        "meanCallMs": 0.039,
+        "maxCallMs": 0.6
+      },
+      "warnings": []
+    }
+  ],
+  "corePixels": {
+    "after-m4-20.png": {
+      "brightPixels": 24,
+      "lengthPx": 13.8,
+      "widthPx": 2.93
+    },
+    "after-m4-40.png": {
+      "brightPixels": 24,
+      "lengthPx": 13.19,
+      "widthPx": 2.85
+    },
+    "after-high-no-bloom.png": {
+      "brightPixels": 25,
+      "lengthPx": 13.2,
+      "widthPx": 2.82
+    },
+    "after-low-no-bloom.png": {
+      "brightPixels": 28,
+      "lengthPx": 13.74,
+      "widthPx": 2.55
+    }
+  },
+  "captures": {
+    "before": {
+      "measurements": [
+        {
+          "id": "m4",
+          "distance": 20,
+          "age": 0.11666666666666667,
+          "eye": [
+            -5,
+            1.65,
+            16
+          ],
+          "quaternion": [
+            -0.1395431146442365,
+            1.2126648502263137e-16,
+            -1.7089102869211638e-17,
+            -0.9902159962126371
+          ],
+          "fov": 72,
+          "from": [
+            -4.907529111455103,
+            1.9260861919223067,
+            14.636475277446252
+          ],
+          "tip": [
+            0.0002268270897910568,
+            -0.0004861891600249171,
+            0.9952593647893634
+          ],
+          "start": [
+            -4.954723834991455,
+            4.606067657470703,
+            5.522449016571045
+          ],
+          "end": [
+            -4.994466781616211,
+            6.862894058227539,
+            -2.152520179748535
+          ],
+          "active": 1,
+          "style": {
+            "speed": 150,
+            "width": 0.114,
+            "glow": 1.02,
+            "trail": 8,
+            "pixels": 112,
+            "color": [
+              5.2,
+              1.25,
+              0.08
+            ]
+          }
+        },
+        {
+          "id": "m4",
+          "distance": 40,
+          "age": 0.25,
+          "eye": [
+            -5,
+            1.65,
+            16
+          ],
+          "quaternion": [
+            -0.1395431146442365,
+            1.2126648502263137e-16,
+            -1.7089102869211638e-17,
+            -0.9902159962126371
+          ],
+          "fov": 72,
+          "from": [
+            -4.907529111455103,
+            1.9210157523942628,
+            14.635017250626552
+          ],
+          "tip": [
+            5.309800305594958e-05,
+            -0.00011919703291231078,
+            0.9979834050147098
+          ],
+          "start": [
+            -4.978175163269043,
+            10.159174919128418,
+            -13.691255569458008
+          ],
+          "end": [
+            -4.99733304977417,
+            12.393251419067383,
+            -21.372957229614258
+          ],
+          "active": 1,
+          "style": {
+            "speed": 150,
+            "width": 0.114,
+            "glow": 1.02,
+            "trail": 8,
+            "pixels": 112,
+            "color": [
+              5.2,
+              1.25,
+              0.08
+            ]
+          }
+        },
+        {
+          "id": "sniper",
+          "distance": 40,
+          "age": 0.25,
+          "eye": [
+            -5,
+            1.65,
+            16
+          ],
+          "quaternion": [
+            -0.1395431146442365,
+            1.2126648502263137e-16,
+            -1.7089102869211638e-17,
+            -0.9902159962126371
+          ],
+          "fov": 72,
+          "from": [
+            -4.95523586500036,
+            2.1298732400955505,
+            14.583567359982531
+          ],
+          "tip": [
+            2.3223815694821608e-05,
+            6.432221614252048e-05,
+            0.9979904870384083
+          ],
+          "start": [
+            -4.982554912567139,
+            8.583308219909668,
+            -8.012946128845215
+          ],
+          "end": [
+            -4.998830318450928,
+            12.427907943725586,
+            -21.474699020385742
+          ],
+          "active": 1,
+          "style": {
+            "speed": 150,
+            "width": 0.09,
+            "glow": 0.9,
+            "trail": 14,
+            "pixels": 176,
+            "color": [
+              5.4,
+              3.1,
+              0.65
+            ]
+          }
+        },
+        {
+          "volley": {
+            "cores": 6,
+            "lines": 9,
+            "positions": [
+              {
+                "x": -9.999999999999998,
+                "y": 4.2,
+                "z": -4
+              },
+              {
+                "x": -8.800000000000004,
+                "y": 4.24,
+                "z": -3.999999999999999
+              },
+              {
+                "x": -7.6000000000000005,
+                "y": 4.28,
+                "z": -3.999999999999999
+              },
+              {
+                "x": -6.400000000000002,
+                "y": 4.2,
+                "z": -4
+              },
+              {
+                "x": -5.199999999999999,
+                "y": 4.24,
+                "z": -3.999999999999999
+              },
+              {
+                "x": -4,
+                "y": 4.28,
+                "z": -3.999999999999999
+              },
+              {
+                "x": -2.8,
+                "y": 4.2,
+                "z": -4
+              },
+              {
+                "x": -1.5999999999999999,
+                "y": 4.24,
+                "z": -3.999999999999999
+              },
+              {
+                "x": -0.40000000000000036,
+                "y": 4.28,
+                "z": -3.999999999999999
+              }
+            ],
+            "ends": [
+              -10,
+              4.199999809265137,
+              -4,
+              -8.800000190734863,
+              4.239999771118164,
+              -4,
+              -7.599999904632568,
+              4.28000020980835,
+              -4,
+              -6.400000095367432,
+              4.199999809265137,
+              -4,
+              -5.199999809265137,
+              4.239999771118164,
+              -4,
+              -4,
+              4.28000020980835,
+              -4,
+              -2.799999952316284,
+              4.199999809265137,
+              -4,
+              -1.600000023841858,
+              4.239999771118164,
+              -4,
+              -0.4000000059604645,
+              4.28000020980835,
+              -4
+            ]
+          }
+        }
+      ],
+      "cleanup": true,
+      "errors": []
+    },
+    "after": {
+      "measurements": [
+        {
+          "id": "m4",
+          "distance": 20,
+          "age": 0.11666666666666667,
+          "eye": [
+            -5,
+            1.65,
+            16
+          ],
+          "quaternion": [
+            -0.1395431146442365,
+            1.2126648502263137e-16,
+            -1.7089102869211638e-17,
+            -0.9902159962126371
+          ],
+          "fov": 72,
+          "from": [
+            -4.907529111455103,
+            1.9260861919223067,
+            14.636475277446252
+          ],
+          "tip": [
+            0.0002268270897910568,
+            -0.0004861891600249171,
+            0.9952593647893634
+          ],
+          "start": [
+            -4.9765825271606445,
+            5.847322463989258,
+            1.3012160062789917
+          ],
+          "end": [
+            -4.994466781616211,
+            6.862894058227539,
+            -2.152520179748535
+          ],
+          "active": 1,
+          "style": {
+            "speed": 150,
+            "exposure": 0.024,
+            "width": 0.026,
+            "trail": 3.6,
+            "minPixels": 1.5,
+            "color": [
+              1,
+              0.72,
+              0.32
+            ],
+            "head": [
+              1,
+              0.96,
+              0.82
+            ],
+            "tail": [
+              1,
+              0.13,
+              0.018
+            ],
+            "linger": 0.16,
+            "intensity": 14
+          }
+        },
+        {
+          "id": "m4",
+          "distance": 40,
+          "age": 0.25,
+          "eye": [
+            -5,
+            1.65,
+            16
+          ],
+          "quaternion": [
+            -0.1395431146442365,
+            1.2126648502263137e-16,
+            -1.7089102869211638e-17,
+            -0.9902159962126371
+          ],
+          "fov": 72,
+          "from": [
+            -4.907529111455103,
+            1.9210157523942628,
+            14.635017250626552
+          ],
+          "tip": [
+            5.309800305594958e-05,
+            -0.00011919703291231078,
+            0.9979834050147098
+          ],
+          "start": [
+            -4.988711833953857,
+            11.387917518615723,
+            -17.91619110107422
+          ],
+          "end": [
+            -4.99733304977417,
+            12.393251419067383,
+            -21.372957229614258
+          ],
+          "active": 1,
+          "style": {
+            "speed": 150,
+            "exposure": 0.024,
+            "width": 0.026,
+            "trail": 3.6,
+            "minPixels": 1.5,
+            "color": [
+              1,
+              0.72,
+              0.32
+            ],
+            "head": [
+              1,
+              0.96,
+              0.82
+            ],
+            "tail": [
+              1,
+              0.13,
+              0.018
+            ],
+            "linger": 0.16,
+            "intensity": 14
+          }
+        },
+        {
+          "id": "sniper",
+          "distance": 40,
+          "age": 0.25,
+          "eye": [
+            -5,
+            1.65,
+            16
+          ],
+          "quaternion": [
+            -0.1395431146442365,
+            1.2126648502263137e-16,
+            -1.7089102869211638e-17,
+            -0.9902159962126371
+          ],
+          "fov": 72,
+          "from": [
+            -4.95523586500036,
+            2.1298732400955505,
+            14.583567359982531
+          ],
+          "tip": [
+            2.3223815694821608e-05,
+            6.432221614252048e-05,
+            0.9979904870384083
+          ],
+          "start": [
+            -4.992436408996582,
+            10.917530059814453,
+            -16.186153411865234
+          ],
+          "end": [
+            -4.998830318450928,
+            12.427907943725586,
+            -21.474699020385742
+          ],
+          "active": 1,
+          "style": {
+            "speed": 150,
+            "exposure": 0.03666666666666667,
+            "width": 0.028,
+            "trail": 5.5,
+            "minPixels": 1.5,
+            "color": [
+              1,
+              0.72,
+              0.32
+            ],
+            "head": [
+              1,
+              0.96,
+              0.82
+            ],
+            "tail": [
+              1,
+              0.13,
+              0.018
+            ],
+            "linger": 0.18,
+            "intensity": 16
+          }
+        },
+        {
+          "volley": {
+            "cores": 6,
+            "lines": 18,
+            "positions": [
+              {
+                "x": -9.999999999999998,
+                "y": 4.2,
+                "z": -4
+              },
+              {
+                "x": -8.800000000000004,
+                "y": 4.24,
+                "z": -3.999999999999999
+              },
+              {
+                "x": -7.6000000000000005,
+                "y": 4.28,
+                "z": -3.999999999999999
+              },
+              {
+                "x": -6.400000000000002,
+                "y": 4.2,
+                "z": -4
+              },
+              {
+                "x": -5.199999999999999,
+                "y": 4.24,
+                "z": -3.999999999999999
+              },
+              {
+                "x": -4,
+                "y": 4.28,
+                "z": -3.999999999999999
+              },
+              {
+                "x": -2.8,
+                "y": 4.2,
+                "z": -4
+              },
+              {
+                "x": -1.5999999999999999,
+                "y": 4.24,
+                "z": -3.999999999999999
+              },
+              {
+                "x": -0.40000000000000036,
+                "y": 4.28,
+                "z": -3.999999999999999
+              }
+            ],
+            "ends": [
+              -10,
+              4.199999809265137,
+              -4,
+              -8.800000190734863,
+              4.239999771118164,
+              -4,
+              -7.599999904632568,
+              4.28000020980835,
+              -4,
+              -6.400000095367432,
+              4.199999809265137,
+              -4,
+              -5.199999809265137,
+              4.239999771118164,
+              -4,
+              -4,
+              4.28000020980835,
+              -4,
+              -2.799999952316284,
+              4.199999809265137,
+              -4,
+              -1.600000023841858,
+              4.239999771118164,
+              -4,
+              -0.4000000059604645,
+              4.28000020980835,
+              -4
+            ]
+          }
+        },
+        {
+          "bloomCheck": {
+            "highBloomEnabled": true,
+            "lowBloomEnabled": false,
+            "lowScale": 0.65
+          }
+        }
+      ],
+      "cleanup": true,
+      "errors": []
+    }
+  },
+  "referenceBytes": 1082663,
+  "gifBytes": 1808804,
+  "checks": {
+    "default": [
+      {
+        "name": "Playable",
+        "status": "fail",
+        "summary": "Headless check failed: The game did not render 30 frames within 10 seconds.",
+        "codes": []
+      },
+      {
+        "name": "Editable",
+        "status": "fail",
+        "summary": "Headless check failed: The game did not render 30 frames within 10 seconds.",
+        "codes": []
+      },
+      {
+        "name": "Persisted",
+        "status": "fail",
+        "summary": "Headless check failed: The game did not render 30 frames within 10 seconds.",
+        "codes": []
+      }
+    ],
+    "headlessMetal": [
+      {
+        "name": "Playable",
+        "status": "pass",
+        "summary": "The game booted and ran 30 frames without errors.",
+        "codes": [],
+        "durationMs": 1781,
+        "report": {
+          "projectValidation": {
+            "ok": true,
+            "status": "pass",
+            "summary": "Project validations passed.",
+            "results": [
+              {
+                "status": "pass",
+                "summary": "Headless world and view adapters are running.",
+                "checks": {
+                  "nodesPresent": true,
+                  "systemsReady": true,
+                  "tickRate": 60
+                }
+              }
+            ]
+          },
+          "cleanup": {
+            "ok": true,
+            "status": "pass",
+            "summary": "Runtime cleanup passed.",
+            "issues": [],
+            "trackedObjectCount": 0,
+            "outsideRenderableCount": 0
+          },
+          "runtimeErrors": 0,
+          "relationships": []
+        }
+      },
+      {
+        "name": "Editable",
+        "status": "pass",
+        "summary": "Stopped-mode authored representation passed.",
+        "codes": [
+          "CAMERA_CONTAINMENT_UNVERIFIED"
+        ],
+        "report": {
+          "ok": true,
+          "status": "pass",
+          "summary": "Stopped-mode authored representation passed.",
+          "issues": [
+            {
+              "code": "CAMERA_CONTAINMENT_UNVERIFIED",
+              "severity": "warning",
+              "message": "The camera intersects local geometry bounds, but hollow or imported mesh containment is unverified.",
+              "object": {
+                "uuid": "bd95f460-3254-4fb1-b5e6-622f5a0398a5",
+                "name": "Map preview ground"
+              }
+            }
+          ],
+          "checks": {
+            "visibleAuthoredContent": true,
+            "selectableAuthoredContent": true,
+            "relationshipsValid": true,
+            "generatorPreviews": true,
+            "cameraUseful": true
+          },
+          "metrics": {
+            "authoredObjectCount": 146,
+            "renderableCount": 38,
+            "visibleRenderableCount": 37,
+            "selectableCount": 37,
+            "generatorCount": 5,
+            "generatorPreviewCount": 5,
+            "cameraFramedRenderableCount": 3,
+            "cameraInsideRenderableCount": 0
+          }
+        }
+      },
+      {
+        "name": "Persisted",
+        "status": "pass",
+        "summary": "Save/Reload semantic equivalence passed.",
+        "codes": [],
+        "report": {
+          "ok": true,
+          "status": "pass",
+          "summary": "Save/Reload semantic equivalence passed.",
+          "issues": [],
+          "changes": [],
+          "beforeBytes": 3350,
+          "afterBytes": 3350
+        }
+      }
+    ]
+  },
+  "testRuns": [
+    {
+      "run": "npm-test.log",
+      "passed": 152,
+      "failed": 0
+    },
+    {
+      "run": "npm-test-final.log",
+      "passed": 151,
+      "failed": 1
+    },
+    {
+      "run": "npm-test-retry.log",
+      "passed": 152,
+      "failed": 0
+    }
+  ],
+  "tests": {
+    "command": "npm test",
+    "run": "npm-test-retry.log",
+    "passed": 152,
+    "failed": 0
+  }
+}
