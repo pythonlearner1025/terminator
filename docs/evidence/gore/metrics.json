@@ -1,0 +1,311 @@
+{
+  "viewport": [
+    1920,
+    1080
+  ],
+  "quality": "High",
+  "effects": "All enabled",
+  "browser": "Chrome 152, ANGLE Metal, Apple M3 Max",
+  "beforeM4": {
+    "capturedAt": "2026-09-12T07:37:47.708Z",
+    "startingEnemies": 24,
+    "renderedEnemies": 24,
+    "seconds": 12,
+    "fps": 48.856,
+    "intervalMeanMs": 20.468,
+    "cpu": {
+      "samples": 588,
+      "mean": 18.265,
+      "p50": 18.2,
+      "p95": 21.5,
+      "p99": 23.1,
+      "max": 25.5
+    },
+    "gpu": {
+      "samples": 588,
+      "mean": 8.268,
+      "p50": 8.048,
+      "p95": 10.978,
+      "p99": 12.659,
+      "max": 14.16
+    },
+    "killCpuMaxMs": 21.6,
+    "killGpuMaxMs": 9.796,
+    "unitViewMeanMs": 2.035,
+    "ragdolls": {
+      "requestedDeaths": 8,
+      "maxActive": 8,
+      "viewCpuMeanMs": 1.083,
+      "viewCpuMaxMs": 4.7
+    },
+    "gore": null,
+    "shaderCompileEvents": 0,
+    "warnings": []
+  },
+  "afterM4": {
+    "capturedAt": "2026-09-12T08:13:34.962Z",
+    "startingEnemies": 24,
+    "renderedEnemies": 24,
+    "seconds": 12,
+    "fps": 54.312,
+    "intervalMeanMs": 18.412,
+    "cpu": {
+      "samples": 652,
+      "mean": 15.6,
+      "p50": 15.8,
+      "p95": 20.4,
+      "p99": 24.1,
+      "max": 25.3
+    },
+    "gpu": {
+      "samples": 652,
+      "mean": 8.078,
+      "p50": 7.571,
+      "p95": 11.716,
+      "p99": 15.67,
+      "max": 19.813
+    },
+    "killCpuMaxMs": 25.2,
+    "killGpuMaxMs": 11.845,
+    "unitViewMeanMs": 1.859,
+    "ragdolls": {
+      "requestedDeaths": 8,
+      "maxActive": 8,
+      "viewCpuMeanMs": 0.824,
+      "viewCpuMaxMs": 5.5
+    },
+    "gore": {
+      "stress": false,
+      "maxActivePieces": 0,
+      "pieceCapacity": 96,
+      "meanMs": 0.013,
+      "stats": {
+        "crunches": 0,
+        "limbs": 0,
+        "splits": 0,
+        "dents": 9,
+        "fallbacks": 0,
+        "stains": 0,
+        "wreckHits": 0,
+        "maxVertices": 384,
+        "frames": 949,
+        "totalMs": 11.200001001358032,
+        "maxMs": 0.19999980926513672
+      }
+    },
+    "shaderCompileEvents": 0,
+    "warnings": []
+  },
+  "earlierGoreCapture": {
+    "capturedAt": "2026-09-12T08:03:46.938Z",
+    "startingEnemies": 24,
+    "renderedEnemies": 24,
+    "seconds": 12,
+    "fps": 60.005,
+    "intervalMeanMs": 16.665,
+    "cpu": {
+      "samples": 720,
+      "mean": 12.594,
+      "p50": 12.4,
+      "p95": 15.3,
+      "p99": 16.7,
+      "max": 18.6
+    },
+    "gpu": {
+      "samples": 720,
+      "mean": 7.653,
+      "p50": 7.382,
+      "p95": 10.146,
+      "p99": 12.37,
+      "max": 14.667
+    },
+    "killCpuMaxMs": 18.6,
+    "killGpuMaxMs": 13.304,
+    "unitViewMeanMs": 1.404,
+    "ragdolls": {
+      "requestedDeaths": 8,
+      "maxActive": 8,
+      "viewCpuMeanMs": 0.507,
+      "viewCpuMaxMs": 2.8
+    },
+    "gore": {
+      "stress": true,
+      "maxActivePieces": 24,
+      "pieceCapacity": 96,
+      "meanMs": 0.04,
+      "stats": {
+        "crunches": 2,
+        "limbs": 22,
+        "splits": 5,
+        "dents": 9,
+        "fallbacks": 0,
+        "stains": 160,
+        "wreckHits": 0,
+        "maxVertices": 384,
+        "frames": 1033,
+        "totalMs": 30.40000009536743,
+        "maxMs": 1.4000000953674316
+      }
+    },
+    "shaderCompileEvents": 0,
+    "warnings": []
+  },
+  "finalGoreCapture": {
+    "capturedAt": "2026-09-12T08:13:58.667Z",
+    "startingEnemies": 24,
+    "renderedEnemies": 24,
+    "seconds": 12,
+    "fps": 46.515,
+    "intervalMeanMs": 21.499,
+    "cpu": {
+      "samples": 560,
+      "mean": 19.258,
+      "p50": 18.7,
+      "p95": 25,
+      "p99": 27.8,
+      "max": 33.2
+    },
+    "gpu": {
+      "samples": 560,
+      "mean": 8.289,
+      "p50": 7.844,
+      "p95": 11.921,
+      "p99": 14.339,
+      "max": 16.919
+    },
+    "killCpuMaxMs": 33.2,
+    "killGpuMaxMs": 15.728,
+    "unitViewMeanMs": 2.3,
+    "ragdolls": {
+      "requestedDeaths": 8,
+      "maxActive": 8,
+      "viewCpuMeanMs": 1.013,
+      "viewCpuMaxMs": 5.7
+    },
+    "gore": {
+      "stress": true,
+      "maxActivePieces": 24,
+      "pieceCapacity": 96,
+      "meanMs": 0.079,
+      "stats": {
+        "crunches": 2,
+        "limbs": 22,
+        "splits": 5,
+        "dents": 9,
+        "fallbacks": 0,
+        "stains": 162,
+        "wreckHits": 0,
+        "maxVertices": 384,
+        "frames": 800,
+        "totalMs": 47.59999704360962,
+        "maxMs": 1.4000000953674316
+      }
+    },
+    "shaderCompileEvents": 0,
+    "warnings": []
+  },
+  "proof": {
+    "warmup": {
+      "ragdolls": 1,
+      "detachedLimbs": 6,
+      "fixedLimbMeshes": 96,
+      "skullCrunch": 1,
+      "limb": 5,
+      "torsoSplit": 1,
+      "dent": 1,
+      "vertexCap": 384
+    },
+    "head": {
+      "midProgress": 0.5555555555555556,
+      "vertices": 384,
+      "spin": 9.779292389855424,
+      "headPosition": [
+        3.808617271653184,
+        1.916079990760972,
+        7.535995632925954
+      ]
+    },
+    "limb": {
+      "alive": true,
+      "crawl": 0.8347011117784134,
+      "severed": [
+        "Thigh Left"
+      ],
+      "pelvisY": 0.4696156618431882
+    },
+    "split": {
+      "severed": [
+        "Upper Arm Left",
+        "Upper Arm Right",
+        "Thigh Left",
+        "Thigh Right"
+      ],
+      "torsoGap": 1.4446581998359398,
+      "constraints": 3
+    },
+    "proof": {
+      "coreUnchanged": true,
+      "lifetime": true,
+      "frozenWreckShot": true,
+      "stains": 150,
+      "pieceCapacity": 96,
+      "deformationCap": 384,
+      "activePieces": 0,
+      "stats": {
+        "crunches": 0,
+        "limbs": 4,
+        "splits": 1,
+        "dents": 1,
+        "fallbacks": 0,
+        "stains": 150,
+        "wreckHits": 1,
+        "maxVertices": 384,
+        "frames": 137,
+        "totalMs": 9.000000476837158,
+        "maxMs": 0.9000000953674316
+      },
+      "activeBudget": {
+        "samples": 90,
+        "ragdolls": 8,
+        "pieces": 24,
+        "meanMs": 1.3155555566151937,
+        "p95Ms": 2.200000047683716,
+        "maxMs": 2.5,
+        "physicsMeanMs": 1.2277777777777779,
+        "goreMeanMs": 0.0877777788374159,
+        "stableGeometries": true
+      },
+      "cleanup": {
+        "bodies": 0,
+        "records": 0,
+        "root": false
+      }
+    },
+    "errors": []
+  },
+  "tests": {
+    "passed": 126,
+    "failed": 0
+  },
+  "check": {
+    "Playable": {
+      "status": "pass",
+      "codes": []
+    },
+    "Editable": {
+      "status": "pass",
+      "codes": [
+        "CAMERA_CONTAINMENT_UNVERIFIED"
+      ]
+    },
+    "Persisted": {
+      "status": "pass",
+      "codes": []
+    }
+  },
+  "checkCheckedAt": "2026-09-12T08:23:07.616Z",
+  "checkRetries": {
+    "transientFailure": "30 rendered frames exceeded 10 seconds",
+    "repeatPassed": true
+  }
+}

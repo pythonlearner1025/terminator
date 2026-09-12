@@ -81,3 +81,17 @@ Markings use the existing Barlow Condensed font, licensed under SIL OFL 1.1 in
 The generator script is original project code. It requires Python 3, Pillow and
 NumPy only to rebake assets; none is a runtime dependency. Weapon meshes are
 constructed by `lib/view/weapons.js` and include no third-party model geometry.
+
+## Machine gore
+
+Each new map is a 512 by 512 original bake from `tools/bake-gore.py`, seed 20290912.
+No external images enter these maps. All three files are dedicated under CC0 1.0.
+
+| File | Source | License |
+| --- | --- | --- |
+| `textures/gore/fluid-albedo.png` | Original dark hydraulic fluid and irregular splatter alpha | CC0-1.0 |
+| `textures/gore/fluid-normal.png` | Original fluid meniscus and capillary ripple bake | CC0-1.0 |
+| `textures/gore/fluid-orm.png` | Original wet roughness, ambient occlusion, and dielectric metalness | CC0-1.0 |
+
+Torn steel, sockets, and cables reuse the licensed unit atlas above.
+Reference video frames stay under `docs/reference/kf2/gore/`, which publishing excludes.

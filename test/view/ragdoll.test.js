@@ -98,3 +98,40 @@ test('a detached limb settles on a tread, keeps its lifetime, and reuses a physi
   assert.equal(system.freeBodies.length,free-1)
   system.dispose()
 })
+
+test('delayed skull detachment removes its body and constraint without restarting the corpse',()=>{
+  const system=new RagdollSystem(map),v=fixture(),state=unit(),before=JSON.stringify(state)
+  const record=system.add(v,state,shot)
+  system.update(1/60)
+  const born=record.born,head=record.byBone.get(v.rig.joints.Head).body
+  system.detachBone(record,v.rig.joints.Head)
+  assert.equal(record.born,born);assert.equal(record.parts.length,10);assert.equal(record.constraints.length,9)
+  assert.ok(!system.world.bodies.includes(head));assert.equal(JSON.stringify(state),before)
+  system.update(1/60);system.dispose()
+})
+
+test('blast-split torsos omit the waist joint and receive divergent velocities',()=>{
+  const system=new RagdollSystem(map),v=fixture();v.rig.goreSplit=true
+  const record=system.add(v,unit(),{...shot,weapon:'launcher'})
+  assert.equal(record.constraints.length,9)
+  const chest=record.byBone.get(v.rig.joints.Chest).body,pelvis=record.byBone.get(v.rig.joints.Pelvis).body
+  assert.ok(!record.constraints.some(j=>j.bodyA===pelvis&&j.bodyB===chest))
+  assert.ok(chest.velocity.y>pelvis.velocity.y+3)
+  system.dispose()
+})
+
+test('24 active pieces retain frozen records and reuse the primed physics pool',()=>{
+  const system=new RagdollSystem(map);system.primePools()
+  const bodies=new Set(system.freeBodies),records=new Set(system.freeLimbRecords),pieces=[]
+  const hulls=new Map([...bodies].map(body=>[body,body.shapes[0].convexPolyhedronRepresentation]))
+  for(let i=0;i<40;i++){
+    const mesh=new E.Mesh(new E.BoxGeometry(.1,.2,.1),new E.MeshStandardMaterial());mesh.position.set(4,2,10)
+    const record=system.addDetached(mesh,new Vec3(1,2,1),()=>{});pieces.push(record)
+    assert.ok(records.has(record));assert.ok(bodies.has(record.parts[0].body))
+    assert.equal(record.parts[0].body.shapes[0].convexPolyhedronRepresentation,hulls.get(record.parts[0].body))
+    assert.ok(system.activeCount('limb')<=24)
+  }
+  assert.equal(system.activeCount('limb'),24);assert.equal(system.records.size,40)
+  assert.notEqual(pieces[0].settledAt,null)
+  system.dispose()
+})

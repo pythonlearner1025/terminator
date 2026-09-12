@@ -172,7 +172,7 @@ try {
   await page.waitForFunction(() => window.terminator.manager.unitView.visuals.size === 24, undefined, {timeout: 20_000})
   await page.waitForTimeout(options.warmupSeconds * 1000)
   warnings.length = 0
-  const metrics = await page.evaluate(collectMetrics, {seconds: options.seconds, ragdollDeaths: options.ragdolls})
+  const metrics = await page.evaluate(collectMetrics, {seconds: options.seconds, ragdollDeaths: options.ragdolls, goreStress: options.goreStress})
   const scene = await page.evaluate(() => {
     const {viewer} = window
     const manager = window.terminator.manager
@@ -220,7 +220,7 @@ try {
     warmupSeconds: options.warmupSeconds,
     requestedViewport: {width: options.width, height: options.height, deviceScaleFactor: 1},
     effects: {post: !options.disable.includes('post'), motionBlur: options.motionBlur, rain: 1, smoke: 1,
-      hazards: ['electric', 'steam'], combatStress: `24 enemies, two enemy shots per frame, ten impact bursts per second, ${options.ragdolls} deterministic M4 death(s), limb loss, and explosion events`, disabled: options.disable},
+      hazards: ['electric', 'steam'], combatStress: `24 enemies, two enemy shots per frame, ten impact bursts per second, ${options.ragdolls} deterministic ${options.goreStress?"gore":"M4"} death(s), limb loss, and explosion events`, disabled: options.disable},
     browser: metrics.browser,
     setup,
     scene,
@@ -231,6 +231,7 @@ try {
     postPasses: metrics.postPasses,
     systems: metrics.systems,
     ragdolls: metrics.ragdolls,
+    gore: metrics.gore,
     topCosts: metrics.topCosts,
     worstFrames: metrics.worstFrames,
     eventFrames: metrics.eventFrames,
@@ -270,6 +271,7 @@ function parseOptions(argv) {
     output: value('output', ''),
     screenshot: value('screenshot', ''),
     ragdolls: Math.max(1,Math.min(8,Math.round(Number(value('ragdolls',1))))),
+    goreStress: value('gore','off') === 'on',
     motionBlur: value('motion-blur', 'on') !== 'off',
     disable: value('disable', '').split(',').filter(Boolean),
   }
@@ -304,7 +306,7 @@ async function reachable(origin) {
 function delay(ms) { return new Promise(resolveDelay => setTimeout(resolveDelay, ms)) }
 function redact(value) { return String(value).replace(/\?t=[A-Za-z0-9._~-]+/g, '?t=[redacted]') }
 
-async function collectMetrics({seconds,ragdollDeaths=1}) {
+async function collectMetrics({seconds,ragdollDeaths=1,goreStress=false}) {
   const round = value => Number.isFinite(value) ? Number(value.toFixed(3)) : null
   const mean = values => values.reduce((sum, value) => sum + value, 0) / Math.max(1, values.length)
   const summary = values => {
@@ -365,7 +367,7 @@ async function collectMetrics({seconds,ragdollDeaths=1}) {
   const frameIntervals = [], frameWork = [], drawCalls = [], triangles = [], points = [], lines = [], frameRecords = []
   const systemStats = new Map(), passStats = new Map(), restores = []
   let renderTotals = {calls: 0, triangles: 0, points: 0, lines: 0}
-  let frameStart = 0, lastFrame = 0, collecting = false, activeQuery = null, effectFrame = 0, frameSerial = -1, maxActiveRagdolls = 0
+  let frameStart = 0, lastFrame = 0, collecting = false, activeQuery = null, effectFrame = 0, frameSerial = -1, maxActiveRagdolls = 0, maxActivePieces = 0
   let programs = renderer.info.programs?.length || 0, priorHeap = performance.memory?.usedJSHeapSize || 0
   const pendingQueries = [], gpuSamples = []
   const combatIds=[...manager.unitView.visuals.keys()]
@@ -412,6 +414,9 @@ async function collectMetrics({seconds,ragdollDeaths=1}) {
   wrap(manager.mapView?.refs?.weather, 'sync', 'weather')
   wrap(manager.unitView?.fx, 'update', 'fx')
   wrap(manager.unitView?.ragdolls,'update','ragdolls')
+  wrap(manager.unitView?.fx?.gore,'update','gore')
+  wrap(manager.unitView?.fx?.gore,'detach','gore detachment')
+  wrap(manager.unitView?.fx?.gore,'deform','mesh deformation')
   wrap(manager.playersView?.fx, 'update', 'fx')
   wrap(manager.playerView?.weapons?.fx, 'update', 'fx')
   wrap(manager.hud, 'render', 'HUD')
@@ -492,18 +497,33 @@ async function collectMetrics({seconds,ragdollDeaths=1}) {
         const world=manager.world,target=deathTargets[deathIndex]
         if (target?.alive) {
           const eventStart = world.eventLog.length
-          world.damageUnit(target.id,target.hp,{source:'player',playerId:world.player.id,weapon:'m4',distance:4})
+          const weapon=goreStress?(deathIndex<2?'m4':deathIndex===2?'shotgun':'grenade'):'m4'
+          const headshot=goreStress&&deathIndex<2
+          world.damageUnit(target.id,target.hp,{source:'player',playerId:world.player.id,weapon,distance:4,headshot})
+          if(goreStress) {
+            const v=manager.unitView.visuals.get(target.id),part=headshot?'Head':deathIndex===2?'Upper Arm Right':'Chest'
+            v.rig.joints[part].getWorldPosition(combatHit);combatHit.z+=.1
+            for(let i=eventStart;i<world.eventLog.length;i++) {
+              const e=world.eventLog[i]
+              if(e.type==='unit_damage'||e.type==='kill')Object.assign(e,{part,pos:{x:combatHit.x,y:combatHit.y,z:combatHit.z},direction:{x:.1,y:.1,z:-1},normal:{x:-.1,y:-.1,z:1}})
+            }
+          }
           world.emit('shot',{by:world.player.id,playerId:world.player.id,weapon:'m4',hit:true,headshot:false,killed:true,unitId:target.id,
             origin:{...world.player.pos,y:world.player.pos.y+1.65}})
-          mark(`M4 kill ${deathIndex+1}`);markFirst('first shot','M4');manager.syncViews();manager.audioBindings?.sync(world)
+          mark(`${goreStress?"gore":"M4"} kill ${deathIndex+1}`);markFirst('first shot','M4');manager.syncViews();manager.audioBindings?.sync(world)
           const emitted = world.eventLog.slice(eventStart)
           if (emitted.some(event => event.type === 'unit_death')) markFirst('first death', 'M4 kill')
         }
       }
       if (effectFrame === 24) {
-        const world = manager.world, target = world.unitById.get('benchmark-heavy-6')
+        const world = manager.world, target = world.unitById.get(goreStress?'benchmark-heavy-24':'benchmark-heavy-6')
         if (target?.alive) {
-          world.damageUnit(target.id, 140, {source: 'player', playerId: world.player.id, weapon: 'plasma'})
+          const from=world.eventLog.length
+          world.damageUnit(target.id, goreStress?target.maxHp*.6:140, {source: 'player', playerId: world.player.id, weapon: 'plasma'})
+          if(goreStress) {
+            manager.unitView.visuals.get(target.id).rig.joints['Thigh Left'].getWorldPosition(combatHit);combatHit.y-=.15
+            Object.assign(world.eventLog[from],{part:'Thigh Left',pos:{x:combatHit.x,y:combatHit.y,z:combatHit.z},direction:{x:-.5,y:.2,z:-1},normal:{x:.5,y:-.2,z:1}})
+          }
           manager.syncViews(); manager.audioBindings?.sync(world)
         }
       }
@@ -530,6 +550,7 @@ async function collectMetrics({seconds,ragdollDeaths=1}) {
     const frame = currentRecord()
     if (frame) workMs > (frame.workMs || 0) && (frame.workMs = workMs)
     maxActiveRagdolls=Math.max(maxActiveRagdolls,manager.unitView.ragdolls?.activeCount('unit')||0)
+    maxActivePieces=Math.max(maxActivePieces,manager.unitView.ragdolls?.activeCount('limb')||0)
   }
   const onPreRender = () => {
     renderTotals = {calls: 0, triangles: 0, points: 0, lines: 0}
@@ -621,6 +642,7 @@ async function collectMetrics({seconds,ragdollDeaths=1}) {
     systems,
     ragdolls:{requestedDeaths:ragdollDeaths,maxActive:maxActiveRagdolls,viewCpuMeanMs:systems.ragdolls?.meanCallMs??null,
       viewCpuMaxMs:systems.ragdolls?.maxCallMs??null},
+    gore:{stress:goreStress,maxActivePieces,pieceCapacity:manager.unitView.fx.gore?.pieces.items.length||0,meanMs:systems.gore?.meanCallMs||0,stats:manager.unitView.fx.gore?.stats||null},
     topCosts: ranked,
     worstFrames,
     eventFrames,
