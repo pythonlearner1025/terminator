@@ -12,6 +12,9 @@
 # The running publish loops until no marker is left, so the last master commit always ships.
 
 set -u
+# Git hooks export GIT_DIR and GIT_INDEX_FILE. Inherited here, they point git at the wrong
+# repository inside the deploy worktree ("Unable to create .git/index.lock: Not a directory").
+unset GIT_DIR GIT_WORK_TREE GIT_INDEX_FILE GIT_PREFIX GIT_COMMON_DIR GIT_OBJECT_DIRECTORY 2>/dev/null
 REPO=${TERMINATOR_REPO:-/Users/minjunes/games/terminator}
 DEPLOY=${TERMINATOR_DEPLOY:-/Users/minjunes/games/terminator-deploy}
 SLUG=${TERMINATOR_SLUG:-terminator}
