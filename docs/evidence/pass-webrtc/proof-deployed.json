@@ -1,0 +1,76 @@
+{
+  "proof": "Three-player real-game co-op through deployed signaling and WebRTC",
+  "signalMode": "deployed",
+  "signalOrigin": "https://blitz-games-signal.blitzapp.workers.dev",
+  "mode": "headless Chromium",
+  "roomCode": "CJ294D",
+  "hostRoomCreateMs": 776.3000001907349,
+  "guestConnections": [
+    {
+      "name": "Sarah",
+      "playerId": "guest-2",
+      "connectMs": 627.0999999046326
+    },
+    {
+      "name": "Kyle",
+      "playerId": "guest-1",
+      "connectMs": 601.2999999523163
+    }
+  ],
+  "traffic": [
+    {
+      "wallElapsedSeconds": 0.9013999998569489,
+      "inputs": 120,
+      "inputsPerSecond": 60,
+      "snapshots": 20,
+      "snapshotsPerSecond": 20,
+      "playerId": "guest-2",
+      "movedMeters": 7.5
+    },
+    {
+      "wallElapsedSeconds": 0.9012999999523162,
+      "inputs": 120,
+      "inputsPerSecond": 60,
+      "snapshots": 20,
+      "snapshotsPerSecond": 20,
+      "playerId": "guest-1",
+      "movedMeters": 7.5
+    }
+  ],
+  "rateMethod": "Rates use 120 input ticks over two simulated seconds and 20 snapshots over 60 host ticks.",
+  "partyState": [
+    {
+      "mode": "host",
+      "wave": 1,
+      "phase": "intermission",
+      "players": 3
+    },
+    {
+      "mode": "guest",
+      "wave": 1,
+      "phase": "intermission",
+      "players": 3
+    },
+    {
+      "mode": "guest",
+      "wave": 1,
+      "phase": "intermission",
+      "players": 3
+    }
+  ],
+  "combat": {
+    "killPlayerId": "guest-1",
+    "killUnitId": "scout-1"
+  },
+  "shots": [
+    {
+      "playerId": "guest-2",
+      "inputMessages": 220
+    },
+    {
+      "playerId": "guest-1",
+      "inputMessages": 224
+    }
+  ],
+  "consoleErrors": []
+}

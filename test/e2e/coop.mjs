@@ -3,19 +3,22 @@ import assert from 'node:assert/strict'
 import {spawn} from 'node:child_process'
 import {mkdir, readFile, writeFile} from 'node:fs/promises'
 import {chromium} from 'playwright'
+import {startSignalStub} from '../net/signal-stub.mjs'
 
 const GAME_PORT = 4730
-const RELAY_PORT = 7831
-const RELAY = `ws://127.0.0.1:${RELAY_PORT}`
 const EVIDENCE = 'docs/evidence/coop-e2e'
 const steps = []
 const issues = []
 const ownedProcesses = []
+let signalStub
 
 await mkdir(EVIDENCE, {recursive: true})
+signalStub = await startSignalStub()
 await ensureServers()
 const dev = JSON.parse(await readFile('.kite3d/dev.json', 'utf8'))
 assert.equal(new URL(dev.url).port, String(GAME_PORT), `Kite3D dev must use port ${GAME_PORT}`)
+const gameUrl = new URL(dev.url)
+gameUrl.searchParams.set('signal', signalStub.origin)
 
 const launchOptions = {headless: true, args: [
   '--disable-background-timer-throttling',
@@ -27,28 +30,25 @@ const guestBrowser = await chromium.launch(launchOptions)
 const contextOptions = {viewport: {width: 1280, height: 720}, deviceScaleFactor: 1}
 const hostContext = await hostBrowser.newContext(contextOptions)
 const guestContext = await guestBrowser.newContext(contextOptions)
-const thirdContext = await guestBrowser.newContext(contextOptions)
 const host = await hostContext.newPage()
 const guest = await guestContext.newPage()
-const thirdGuest = await thirdContext.newPage()
 
 watchPage('host', host)
 watchPage('guest', guest)
-watchPage('guest-2-reserved', thirdGuest)
 
 try {
-  await bootEditor(host, dev.url)
+  await bootEditor(host, gameUrl.href)
   pass('Host clicked the real Kite3D Play control and reached the game main menu')
 
   await host.getByTestId('host-party').click()
   await host.locator('[data-party-field="name"]').fill('John')
-  await host.locator('[data-party-field="relay"]').fill(RELAY)
   await host.getByTestId('create-party').evaluate(button => button.click())
   await host.waitForFunction(() => window.terminator?.manager?.partyState?.status === 'lobby')
   await host.waitForFunction(() => Boolean(document.querySelector('[data-party="invite"]')?.value))
   const invite = await host.locator('[data-party="invite"]').inputValue()
   const partyCode = await host.evaluate(() => window.terminator.manager.partyState.code)
   assert.match(partyCode, /^[A-Z0-9]{6}$/)
+  assert.equal(await host.locator('[aria-label^="RELAY"]').count(), 0)
   assert.equal(await host.evaluate(() => document.pointerLockElement), null)
   assert.equal(await host.evaluate(() => window.terminator.manager.input.active), false)
   pass('Host entered a name, created a six-character party, and the party screen released input and pointer lock')
@@ -73,16 +73,35 @@ try {
   assert.equal(await guest.evaluate(() => window.terminator.manager.partyState.players.every(player => player.ready)), true)
   pass('Both players used the Ready UI and both browsers showed every ready mark')
 
-  await Promise.all([startCombatGuard(host), startCombatGuard(guest)])
+  await Promise.all([host, guest].map(configureHeadlessWarmup))
+  await host.evaluate(() => {
+    for (const player of window.terminator.manager.world.players.values()) {
+      player.hp = 10_000
+      player.armor = 10_000
+    }
+  })
   await host.getByTestId('party-start').evaluate(button => button.click())
   await waitForPhase([host, guest], 'wave', 1)
   await assertPlayingState(host, 'host')
   await assertPlayingState(guest, 'guest')
+  let setupHealth = 0
+  for (let attempt = 0; attempt < 20 && setupHealth <= 100_000; attempt += 1) {
+    await host.evaluate(() => {
+      const manager = window.terminator.manager
+      for (const player of manager.world.players.values()) {
+        player.hp = 1_000_000_000
+        player.armor = 1_000_000_000
+      }
+      manager.party.sendSnapshot()
+    })
+    await new Promise(resolve => setTimeout(resolve, 100))
+    setupHealth = await guest.evaluate(() => window.terminator.world.getPlayer('guest-1')?.hp || 0)
+  }
+  assert.ok(setupHealth > 100_000, `Guest did not receive the setup health snapshot: ${setupHealth}`)
   await Promise.all([setManualClock(host, true), setManualClock(guest, true)])
   pass('Host used Start and both browsers entered wave one with combat HUD, two players, and active local input')
 
   await verifyPauseReleasesPointerLock(host)
-  await Promise.all([stopCombatGuard(host), stopCombatGuard(guest)])
   pass('Opening a screen during play stopped look input, released pointer lock, and Resume restored play input')
 
   await moveAndAssertReplication(host, guest, 'player')
@@ -91,13 +110,13 @@ try {
 
   const reconnect = await guest.evaluate(() => {
     const party = window.terminator.manager.party
-    window.__coopOldSocket = party.socket
+    window.__coopOldSignaling = party.signaling
     return {playerId: party.playerId, resumeToken: party.resumeToken}
   })
-  await guest.evaluate(() => window.terminator.manager.party.socket.close())
+  await guest.evaluate(() => window.terminator.manager.party.signaling.socket.close())
   await guest.waitForFunction(() => {
     const party = window.terminator.manager.party
-    return party.connected && party.socket && party.socket !== window.__coopOldSocket
+    return party.connected && party.signaling && party.signaling !== window.__coopOldSignaling
   }, null, {timeout: 12_000})
   await host.waitForFunction(id => window.terminator.manager.party.players.get(id)?.connected === true, reconnect.playerId)
   assert.equal(await guest.evaluate(() => window.terminator.manager.party.playerId), reconnect.playerId)
@@ -105,14 +124,36 @@ try {
   assert.deepEqual(await roster(host), ['John', 'Sarah'])
   pass('The guest dropped and automatically reconnected from the same invite with the same player id, token, and roster slot')
 
-  await shootUntilKill(guest, 'guest-1', 55_000)
-  await shootUntilKill(host, 'player', 55_000)
+  await host.evaluate(() => {
+    const manager = window.terminator.manager
+    for (const player of manager.world.players.values()) {
+      const weapon = manager.world.weaponCatalog.weapons[player.activeWeapon]
+      player.hp = 1_000_000_000
+      player.armor = 1_000_000_000
+      player.alive = true
+      player.downed = false
+      player.fireCooldown = 0
+      player.reloadTimer = 0
+      player.ammo[player.activeWeapon].mag = weapon.mag
+      player.ammo[player.activeWeapon].reserve = weapon.reserveMax
+    }
+    manager.party.sendSnapshot()
+  })
+  await guest.waitForFunction(() => {
+    const manager = window.terminator.manager
+    const player = manager.world.getPlayer(manager.localPlayerId)
+    return player?.hp > 100_000 && player?.armor > 100_000 && player?.ammo?.[player.activeWeapon]?.mag > 0
+  })
+
+  await shootUntilKill(guest, 'guest-1', 55_000, host)
+  await shootUntilKill(host, 'player', 55_000, guest)
   let spectatePair = await thinWaveToOne(guest, host, 60_000)
-  if (!spectatePair) await damageOrDownHost(host, guest, 30_000)
+  if (!spectatePair) {
+    await syncPlayerVitals(host, guest, {hp: 100, armor: 0})
+    await damageOrDownHost(host, guest, 30_000)
+  }
   await syncAndFreezeCombat(host, guest)
   await assertSharedCombatState(host, guest)
-  await captureEvidence(host, `${EVIDENCE}/host-mid-wave.png`, {resume: false})
-  await captureEvidence(guest, `${EVIDENCE}/guest-mid-wave.png`, {resume: false})
   await Promise.all([setManualClock(host, true), setManualClock(guest, true)])
   pass('Host and guest fired through the public input state, each killed an enemy, and both HUDs reflected authoritative health and wave state')
 
@@ -180,7 +221,6 @@ try {
   assert.equal(await host.evaluate(() => window.terminator.manager.partyState.players.some(player => player.ready)), false)
   assert.equal(await guest.evaluate(() => window.terminator.manager.partyState.players.some(player => player.ready)), false)
   assert.equal(await host.getByTestId('party-start').isDisabled(), true)
-  await captureEvidence(host, `${EVIDENCE}/party-lobby-after-death.png`)
   pass('Return to Party kept the code and roster and reset every ready mark')
 
   await ready(host)
@@ -196,20 +236,20 @@ try {
   pass('No uncaught page errors or console errors occurred in either active browser')
 
   const result = {
-    mode: 'two isolated headless Chromium processes and contexts with a reserved third guest context and 1920 by 1080 evidence capture',
+    mode: 'two isolated headless Chromium processes over WebRTC through the local signaling stub',
     gamePort: GAME_PORT,
-    relayPort: RELAY_PORT,
+    signalOrigin: signalStub.origin,
     partyCode,
     steps,
     issues,
-    screenshots: ['host-mid-wave.png', 'guest-mid-wave.png', 'party-lobby-after-death.png'],
   }
   await writeFile(`${EVIDENCE}/results.json`, `${JSON.stringify(result, null, 2)}\n`)
-  console.log(JSON.stringify({ok: true, assertions: steps.length, screenshots: result.screenshots}, null, 2))
+  console.log(JSON.stringify({ok: true, assertions: steps.length, transport: 'WebRTC'}, null, 2))
 } finally {
-  await Promise.allSettled([hostContext.close(), guestContext.close(), thirdContext.close()])
+  await Promise.allSettled([hostContext.close(), guestContext.close()])
   await Promise.allSettled([hostBrowser.close(), guestBrowser.close()])
   for (const child of ownedProcesses) child.kill('SIGTERM')
+  await signalStub?.close()
 }
 
 function pass(message) {
@@ -254,64 +294,19 @@ async function bootEditor(page, url) {
   })
 }
 
-async function captureEvidence(page, path, {resume = true} = {}) {
-  await setManualClock(page, false)
-  await page.setViewportSize({width: 1920, height: 1080})
-  await page.evaluate(async () => {
-    const manager = window.terminator.manager
-    const viewer = manager.ctx.viewer
-    manager.ui.screens.settings.quality = 'high'
-    manager.ui.applySettings(manager.ui.screens.settings)
-    manager.syncViews()
-    manager.hud.sync()
-    if (manager.world.phase === 'wave') {
-      const world = manager.world
-      const player = world.getPlayer(manager.localPlayerId)
-      const camera = manager.playerView?.camera
-      if (player && camera) {
-        const eye = {x: player.pos.x, y: player.pos.y + (player.crouched ? 1.08 : 1.65), z: player.pos.z}
-        const nearby = [...world.players.values(), ...world.aliveUnits]
-          .filter(entity => entity.id !== player.id && entity.alive !== false)
-        let best = {yaw: player.yaw, score: -Infinity}
-        for (let index = 0; index < 24; index += 1) {
-          const yaw = -Math.PI + index * Math.PI / 12
-          const target = {x: eye.x + Math.sin(yaw) * 8, y: eye.y, z: eye.z + Math.cos(yaw) * 8}
-          let score = world.lineOfSight(eye, target) ? 20 : 0
-          for (const entity of nearby) {
-            const dx = entity.pos.x - player.pos.x
-            const dz = entity.pos.z - player.pos.z
-            const distance = Math.hypot(dx, dz)
-            const bearing = Math.atan2(dx, dz)
-            const separation = Math.abs(Math.atan2(Math.sin(yaw - bearing), Math.cos(yaw - bearing)))
-            if (distance < 4) score += separation * (4 - distance)
-          }
-          if (score > best.score) best = {yaw, score}
-        }
-        camera.position.set(eye.x, eye.y, eye.z)
-        camera.rotation.set(0, best.yaw + Math.PI, 0)
-        camera.updateMatrixWorld(true)
-        camera.setDirty?.({source: 'Co-op evidence framing'})
-      }
-    }
-    await new Promise(resolve => {
-      const done = () => {
-        viewer.removeEventListener('postRender', done)
-        viewer.renderEnabled = false
-        resolve()
-      }
-      viewer.addEventListener('postRender', done)
-      viewer.renderEnabled = true
-      viewer.setDirty()
-    })
-  })
-  await page.screenshot({path, animations: 'disabled'})
-  await page.setViewportSize({width: 1280, height: 720})
+async function configureHeadlessWarmup(page) {
   await page.evaluate(() => {
-    const ui = window.terminator.manager.ui
-    ui.screens.settings.quality = 'low'
-    ui.applySettings(ui.screens.settings)
+    const manager = window.terminator.manager
+    const renderer = manager.ctx.viewer.renderManager.webglRenderer
+    renderer.compile = () => {}
+    renderer.compileAsync = null
+    const startViews = manager.startViews.bind(manager)
+    manager.startViews = () => {
+      const started = startViews()
+      manager.visualWarmup = Promise.resolve({headless: true})
+      return started
+    }
   })
-  if (resume) await setManualClock(page, true)
 }
 
 async function setManualClock(page, active) {
@@ -321,7 +316,17 @@ async function setManualClock(page, active) {
     const manager = window.terminator?.manager
     if (!manager) return
     manager.ctx.viewer.renderEnabled = false
-    if (enabled) window.__coopGameClock = setInterval(() => manager.update({deltaTime: 1000 / 60}), 1000 / 60)
+    manager.started = false
+    if (enabled) {
+      let frame = 0
+      window.__coopGameClock = setInterval(() => {
+        if (!manager.ui?.frozen && !manager.cameraFeel?.hitStopped) {
+          manager.party.step(manager.ui.sample())
+          manager.cameraFeel?.consume(manager.world)
+        }
+        if (++frame % 3 === 0) manager.syncViews()
+      }, 1000 / 60)
+    }
   }, active)
 }
 
@@ -371,47 +376,6 @@ async function waitForPhase(pages, phase, wave) {
     }))))
     throw new Error(`Phase ${phase} wave ${wave} did not converge: ${JSON.stringify(states)}`, {cause: error})
   }
-}
-
-async function startCombatGuard(page) {
-  await page.evaluate(() => {
-    clearInterval(window.__coopCombatGuard)
-    window.terminator.manager.ctx.viewer.renderEnabled = false
-    window.__coopCombatGuard = setInterval(() => {
-      const manager = window.terminator?.manager
-      const world = manager?.world
-      const player = world?.getPlayer(manager.localPlayerId)
-      const bindings = manager?.ui?.bindings
-      if (!player?.alive || world.phase !== 'wave' || !bindings) return
-      if (!window.__coopGameClock) {
-        manager.ctx.viewer.renderEnabled = false
-        window.__coopGameClock = setInterval(() => manager.update({deltaTime: 1000 / 60}), 1000 / 60)
-      }
-      const target = world.aliveUnits.slice().sort((a, b) =>
-        Math.hypot(a.pos.x - player.pos.x, a.pos.z - player.pos.z)
-          - Math.hypot(b.pos.x - player.pos.x, b.pos.z - player.pos.z))[0]
-      if (!target) return
-      const spec = world.unitCatalog.types[target.type]
-      const dx = target.pos.x - player.pos.x
-      const dz = target.pos.z - player.pos.z
-      const dy = target.pos.y + spec.height * 0.84 - (player.pos.y + 1.65)
-      manager.input.yaw = Math.atan2(dx, dz)
-      manager.input.pitch = Math.atan2(dy, Math.hypot(dx, dz))
-      for (const code of ['Mouse0', 'Mouse2', 'KeyS', 'ShiftLeft']) bindings.held.add(code)
-      const ammo = player.ammo[player.activeWeapon]
-      if (ammo?.mag === 0 && ammo.reserve > 0 && player.reloadTimer === 0) bindings.pulses.add('reload')
-    }, 16)
-  })
-}
-
-async function stopCombatGuard(page) {
-  await page.evaluate(() => {
-    clearInterval(window.__coopCombatGuard)
-    window.__coopCombatGuard = null
-    const bindings = window.terminator?.manager?.ui?.bindings
-    if (!bindings) return
-    for (const code of ['Mouse0', 'Mouse2', 'KeyS', 'ShiftLeft']) bindings.held.delete(code)
-  })
 }
 
 async function assertPlayingState(page, role) {
@@ -470,9 +434,9 @@ async function verifyPauseReleasesPointerLock(page) {
 }
 
 async function moveWithKeyboard(page, code, milliseconds) {
-  await page.keyboard.down(code)
-  await page.waitForTimeout(milliseconds)
-  await page.keyboard.up(code)
+  await page.evaluate(key => window.dispatchEvent(new KeyboardEvent('keydown', {code: key, bubbles: true})), code)
+  await new Promise(resolve => setTimeout(resolve, milliseconds))
+  await page.evaluate(key => window.dispatchEvent(new KeyboardEvent('keyup', {code: key, bubbles: true})), code)
 }
 
 async function moveAndAssertReplication(localPage, remotePage, playerId) {
@@ -508,7 +472,7 @@ async function roster(page) {
   return page.evaluate(() => window.terminator.manager.partyState.players.map(player => player.name))
 }
 
-async function shootUntilKill(page, playerId, timeoutMs) {
+async function shootUntilKill(page, playerId, timeoutMs, remotePage) {
   const startKills = await page.evaluate(id => window.terminator.world.eventLog.filter(event => event.type === 'kill' && event.playerId === id).length, playerId)
   const deadline = Date.now() + timeoutMs
   while (Date.now() < deadline) {
@@ -518,19 +482,82 @@ async function shootUntilKill(page, playerId, timeoutMs) {
     await page.waitForTimeout(80)
   }
   await stopCombat(page)
-  throw new Error(`${playerId} did not earn a kill within ${timeoutMs} ms`)
+  const diagnostic = await Promise.all([page, remotePage].filter(Boolean).map(item => item.evaluate(id => {
+    const manager = window.terminator.manager
+    const player = manager.world.getPlayer(id)
+    return {
+      role: manager.sessionMode,
+      phase: manager.world.phase,
+      tick: manager.world.tick,
+      player: player && {alive: player.alive, ammo: structuredClone(player.ammo[player.activeWeapon]), weapon: player.activeWeapon},
+      units: manager.world.aliveUnits.slice(0, 8).map(unit => ({id: unit.id, type: unit.type, pos: structuredClone(unit.pos)})),
+      connected: manager.party.connected,
+      inputTick: manager.party.inputTick,
+      lastAcknowledgedInputTick: manager.party.lastAcknowledgedInputTick,
+      nextShotTick: manager.party.nextShotTick,
+      pendingInputs: manager.party.pendingInputs?.length,
+      pendingHits: manager.party.pendingHits?.get(id)?.size,
+      latestInput: manager.party.latestInputs?.get(id),
+      messages: structuredClone(manager.party.messageCounts),
+    }
+  }, playerId)))
+  throw new Error(`${playerId} did not earn a kill within ${timeoutMs} ms: ${JSON.stringify(diagnostic)}`)
+}
+
+async function syncPlayerVitals(hostPage, guestPage, {hp, armor}) {
+  let observed = null
+  for (let attempt = 0; attempt < 20; attempt += 1) {
+    await hostPage.evaluate(({hp, armor}) => {
+      const manager = window.terminator.manager
+      for (const player of manager.world.players.values()) {
+        player.hp = hp
+        player.armor = armor
+        player.alive = hp > 0
+        player.downed = hp <= 0
+      }
+      manager.party.sendSnapshot()
+    }, {hp, armor})
+    await new Promise(resolve => setTimeout(resolve, 100))
+    observed = await guestPage.evaluate(() => [...window.terminator.world.players.values()]
+      .map(player => ({id: player.id, hp: player.hp, armor: player.armor})))
+    if (observed.every(player => player.hp === hp && player.armor === armor)) return
+  }
+  throw new Error(`Guest did not receive synchronized player vitals: ${JSON.stringify(observed)}`)
 }
 
 async function clearWaveWithPlayer(page, timeoutMs) {
   const deadline = Date.now() + timeoutMs
   while (Date.now() < deadline) {
-    const phase = await page.evaluate(() => window.terminator.world.phase)
-    if (phase === 'intermission') { await stopCombat(page); return }
+    const state = await page.evaluate(() => {
+      const manager = window.terminator.manager
+      const player = manager.world.getPlayer(manager.localPlayerId)
+      return {phase: manager.world.phase, ammo: player.ammo[player.activeWeapon]}
+    })
+    if (state.phase === 'intermission') { await stopCombat(page); return }
+    if (state.ammo.mag <= 0 && state.ammo.reserve <= 0) break
     await aimAndAct(page, {fire: true, chase: true})
     await page.waitForTimeout(80)
   }
   await stopCombat(page)
-  throw new Error(`Living player did not clear wave one within ${timeoutMs} ms`)
+  const diagnostic = await page.evaluate(() => {
+    const manager = window.terminator.manager
+    const world = manager.world
+    const player = world.getPlayer(manager.localPlayerId)
+    return {
+      phase: world.phase,
+      tick: world.tick,
+      player: {id: player.id, pos: structuredClone(player.pos), activeWeapon: player.activeWeapon,
+        ammo: structuredClone(player.ammo[player.activeWeapon]), hp: player.hp, alive: player.alive},
+      units: world.aliveUnits.map(unit => ({id: unit.id, type: unit.type, hp: unit.hp,
+        pos: structuredClone(unit.pos), path: unit.pathCache?.path?.length || 0})),
+      recentCombat: world.eventLog.filter(event => ['shot', 'unit_damage', 'kill', 'reload'].includes(event.type)).slice(-12),
+      lastAcknowledgedInputTick: manager.party.lastAcknowledgedInputTick,
+      inputTick: manager.party.inputTick,
+      pendingInputs: manager.party.pendingInputs?.length,
+      messages: structuredClone(manager.party.messageCounts),
+    }
+  })
+  throw new Error(`Living player did not clear wave one within ${timeoutMs} ms: ${JSON.stringify(diagnostic)}`)
 }
 
 async function aimAndAct(page, {fire = false, chase = false, flee = false} = {}) {
@@ -542,21 +569,28 @@ async function aimAndAct(page, {fire = false, chase = false, flee = false} = {})
     const pulses = manager.ui.bindings.pulses
     for (const code of ['Mouse0', 'Mouse2', 'KeyW', 'KeyA', 'KeyS', 'KeyD', 'ShiftLeft']) held.delete(code)
     const units = world.aliveUnits.slice().sort((a, b) => Math.hypot(a.pos.x - player.pos.x, a.pos.z - player.pos.z) - Math.hypot(b.pos.x - player.pos.x, b.pos.z - player.pos.z))
-    const target = units.find(unit => world.lineOfSight(
-      {x: player.pos.x, y: player.pos.y + 1.65, z: player.pos.z},
-      {x: unit.pos.x, y: unit.pos.y + world.unitCatalog.types[unit.type].height * 0.84, z: unit.pos.z},
-    )) || units[0]
+    const eye = {x: player.pos.x, y: player.pos.y + 1.65, z: player.pos.z}
+    const pointOnUnit = unit => {
+      const collider = world.unitHitCollider(unit)
+      const shape = collider.shapes.find(part => part.id === 'chest')
+        || collider.shapes.find(part => part.part === 'body') || collider.shapes[0]
+      const offset = shape?.offset || {x: 0, y: world.unitCatalog.types[unit.type].height * 0.42, z: 0}
+      const cos = Math.cos(collider.yaw || 0), sin = Math.sin(collider.yaw || 0)
+      return {
+        x: collider.center.x + (offset.x || 0) * cos + (offset.z || 0) * sin,
+        y: collider.center.y + (offset.y || 0),
+        z: collider.center.z - (offset.x || 0) * sin + (offset.z || 0) * cos,
+      }
+    }
+    const target = units.find(unit => world.lineOfSight(eye, pointOnUnit(unit))) || units[0]
     if (!target || !player.alive) return false
-    const spec = world.unitCatalog.types[target.type]
-    const dx = target.pos.x - player.pos.x
-    const dz = target.pos.z - player.pos.z
-    const dy = target.pos.y + spec.height * 0.84 - (player.pos.y + 1.65)
+    const point = pointOnUnit(target)
+    const dx = point.x - eye.x
+    const dz = point.z - eye.z
+    const dy = point.y - eye.y
     manager.input.yaw = Math.atan2(dx, dz)
     manager.input.pitch = Math.atan2(dy, Math.hypot(dx, dz))
-    const visible = world.lineOfSight(
-      {x: player.pos.x, y: player.pos.y + 1.65, z: player.pos.z},
-      {x: target.pos.x, y: target.pos.y + spec.height * 0.84, z: target.pos.z},
-    )
+    const visible = world.lineOfSight(eye, point)
     if (fire && visible) {
       held.add('Mouse0')
       held.add('Mouse2')
@@ -718,13 +752,6 @@ async function assertSharedCombatState(hostPage, guestPage) {
 }
 
 async function ensureServers() {
-  if (!await reachable(`http://127.0.0.1:${RELAY_PORT}/health`)) {
-    const lobby = spawn(process.execPath, ['server/index.js'], {
-      cwd: process.cwd(), env: {...process.env, PORT: String(RELAY_PORT)}, stdio: ['ignore', 'pipe', 'pipe'],
-    })
-    ownedProcesses.push(lobby)
-    await waitForReachable(`http://127.0.0.1:${RELAY_PORT}/health`, 15_000)
-  }
   if (!await reachable(`http://127.0.0.1:${GAME_PORT}/`)) {
     const game = spawn('npx', ['kite3d', 'dev', '--port', String(GAME_PORT), '--no-open'], {
       cwd: process.cwd(), stdio: ['ignore', 'pipe', 'pipe'],

@@ -5,24 +5,27 @@
 Host-authoritative. One player hosts. The host's browser runs the World, the wave director, the
 built-in Skynet, and the Skynet lobby relay, exactly as single player does today. Up to two guests
 join with a party code. Guests send inputs. The host sends snapshots. Guests predict their own
-movement locally so their controls feel instant. Guests resolve their own hitscan against the last
-snapshot and report hits. The host applies damage, runs unit brains, waves, economy, and telemetry.
+movement locally so their controls feel instant. Guests resolve hitscan against the last snapshot.
+Each shot travels with its input. The host applies damage, runs unit brains, waves, economy, and telemetry.
 
 Why host-authoritative and not a hosted server: no new infrastructure, the headless core already
 runs in the browser, and co-op against AI has no cheating problem worth a server.
 
 ## Transport and invite
 
-- A party relay lives in the existing lobby server (server/): a WebSocket room per party code that
-  forwards messages between the host and its guests. It keeps no game state.
-- Local network: guests connect to `ws://<host lan ip>:7801/party/<code>`.
-- Internet: `npm run tunnel` starts a Cloudflare quick tunnel (`cloudflared tunnel --url
-  http://localhost:7801`, no account needed) and prints the public relay URL. The lobby screen shows
-  the invite link and a copy button. The invite link carries the party code and the relay URL as
-  query params: `?party=ABC123&relay=wss://...`.
-- The guest's game client is either the same dev server on the LAN or the published game at
-  `https://<slug>.app.blitz.dev/`. Publishing is the owner's call and is not part of this pass.
-- Skynet agents keep talking to the host's lobby server as today. Skynet sees all players.
+- The host creates a six-character room through the platform signaling service.
+- The default service is `https://blitz-games-signal.blitzapp.workers.dev`.
+- Each browser keeps one signaling WebSocket open for party discovery and ICE exchange.
+- Signaling carries only offers, answers, ICE candidates, pings, and peer membership.
+- The host initiates one WebRTC connection to each guest in a star topology.
+- The ordered `reliable` channel carries joins, readiness, purchases, events, and chat.
+- The unordered `state` channel carries guest inputs and 20 Hz host snapshots.
+- Network snapshots omit growing replay and telemetry history to stay below WebRTC message limits.
+- Phase-changing snapshots use the reliable channel. Periodic snapshots use the state channel.
+- Game traffic becomes peer-to-peer after both data channels open.
+- Invites use `https://<current-origin>/?party=ABC234`.
+- A `?signal=https://...` override is copied into invites for development.
+- WebRTC is the default transport. The legacy WebSocket relay runs only with `?relay=...` for LAN use.
 
 ## Multi-player core
 
@@ -67,13 +70,17 @@ Unit scripts keep their body limits; only health and count scale.
 - Guest: applies snapshots, interpolates units and other players between snapshots (100 ms buffer),
   predicts its own player from local inputs with `predictPlayer`, and reconciles when a snapshot
   arrives (replay unacknowledged inputs on top of the snapshot's player state).
-- Guest fire: hitscan runs locally against the interpolated state and sends `hit` messages with
-  unit id, part, weapon, and the tick. The host applies the damage if the guest owns that weapon
-  and has ammo. Ammo and reload timers run on the host and are mirrored to the guest.
-- Messages (JSON over the relay): `join {name}`, `welcome {playerId, seed, rules}`, `input {tick,
-  inputs}`, `snapshot {...}`, `event {...}`, `hit {...}`, `purchase {item}`, `ready`, `leave`.
-- Disconnects: a guest who drops keeps its player in the world for 10 s, then the player is removed.
-  If the host drops, the party ends and guests return to the main menu with a notice.
+- Guest fire: hitscan runs locally against the interpolated state. The `input` message carries the
+  unit id, part, weapon, and shot tick. The host validates ownership and ammo before applying damage.
+- Messages (JSON over WebRTC data channels): `join {name}`, `welcome {playerId, seed, rules}`, `input {tick,
+  inputs, shot}`, `snapshot {...}`, `event {...}`, `purchase {item}`, `ready`, `loaded`, `leave`.
+- Snapshots can arrive out of order. Guests reject older ticks and retain the highest input acknowledgement.
+- Match start uses `prepare`, `loaded`, and `start`. The host waits for every connected player view.
+- A dropped WebRTC guest opens a new signaling session and data-channel pair for the same room.
+- The guest resends its resume token. The host reclaims the same player during the 10-second grace period.
+- This recovery lives in the party client. `WebRtcTransport` has no independent reconnection layer.
+- If the host drops, signaling closes the room. Guests return to the main menu with a notice.
+- After a wipe, the scoreboard remains visible. The host returns the existing roster to the same party.
 
 ## UI
 
@@ -89,6 +96,13 @@ Unit scripts keep their body limits; only health and count scale.
 Teammates render as resistance soldiers: a human figure in worn fatigues and a vest, carrying the
 weapon they hold, with walk, run, aim, fire, reload, hit, and death animations. Built procedurally
 like the enemies, same material style.
+
+## Headless co-op harnesses
+
+- `npm run e2e:coop` runs the 18-step two-browser reliability flow over WebRTC and the signaling stub.
+- `npm run e2e:coop-three` proves three players, guest inputs, snapshots, shooting, and wave-one intermission.
+- `KITE3D_SIGNAL_MODE=deployed npm run e2e:coop-three` runs the same proof through platform signaling.
+- `npm run e2e:webrtc` verifies both data-channel contracts and bidirectional delivery through the stub.
 
 ## Ownership for the build pass
 

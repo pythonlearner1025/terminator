@@ -1,0 +1,76 @@
+{
+  "proof": "Three-player real-game co-op through stub signaling and WebRTC",
+  "signalMode": "stub",
+  "signalOrigin": "http://127.0.0.1:64868",
+  "mode": "headless Chromium",
+  "roomCode": "VJF6Q2",
+  "hostRoomCreateMs": 279.5,
+  "guestConnections": [
+    {
+      "name": "Sarah",
+      "playerId": "guest-2",
+      "connectMs": 369.60000014305115
+    },
+    {
+      "name": "Kyle",
+      "playerId": "guest-1",
+      "connectMs": 360.5
+    }
+  ],
+  "traffic": [
+    {
+      "wallElapsedSeconds": 0.9765999999046325,
+      "inputs": 120,
+      "inputsPerSecond": 60,
+      "snapshots": 20,
+      "snapshotsPerSecond": 20,
+      "playerId": "guest-2",
+      "movedMeters": 7.5
+    },
+    {
+      "wallElapsedSeconds": 0.9761000001430511,
+      "inputs": 120,
+      "inputsPerSecond": 60,
+      "snapshots": 20,
+      "snapshotsPerSecond": 20,
+      "playerId": "guest-1",
+      "movedMeters": 7.5
+    }
+  ],
+  "rateMethod": "Rates use 120 input ticks over two simulated seconds and 20 snapshots over 60 host ticks.",
+  "partyState": [
+    {
+      "mode": "host",
+      "wave": 1,
+      "phase": "intermission",
+      "players": 3
+    },
+    {
+      "mode": "guest",
+      "wave": 1,
+      "phase": "intermission",
+      "players": 3
+    },
+    {
+      "mode": "guest",
+      "wave": 1,
+      "phase": "intermission",
+      "players": 3
+    }
+  ],
+  "combat": {
+    "killPlayerId": "guest-1",
+    "killUnitId": "scout-1"
+  },
+  "shots": [
+    {
+      "playerId": "guest-2",
+      "inputMessages": 453
+    },
+    {
+      "playerId": "guest-1",
+      "inputMessages": 449
+    }
+  ],
+  "consoleErrors": []
+}

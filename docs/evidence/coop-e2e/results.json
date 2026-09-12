@@ -1,8 +1,8 @@
 {
-  "mode": "two isolated headless Chromium processes and contexts with a reserved third guest context and 1920 by 1080 evidence capture",
+  "mode": "two isolated headless Chromium processes over WebRTC through the local signaling stub",
   "gamePort": 4730,
-  "relayPort": 7831,
-  "partyCode": "P5I57F",
+  "signalOrigin": "http://127.0.0.1:64253",
+  "partyCode": "E7SAP6",
   "steps": [
     {
       "step": 1,
@@ -99,55 +99,50 @@
     {
       "role": "host",
       "level": "warning",
-      "text": "[.WebGL-0x12c00439c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
-      "source": "http://127.0.0.1:4730/?t=[redacted]"
+      "text": "[.WebGL-0x12c00438a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "source": "http://127.0.0.1:4730/?t=[redacted]&signal=http%3A%2F%2F127.0.0.1%3A64253"
     },
     {
       "role": "host",
       "level": "warning",
-      "text": "[.WebGL-0x12c00437800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
-      "source": "http://127.0.0.1:4730/?t=[redacted]"
+      "text": "[.WebGL-0x12c00436c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "source": "http://127.0.0.1:4730/?t=[redacted]&signal=http%3A%2F%2F127.0.0.1%3A64253"
     },
     {
       "role": "host",
       "level": "warning",
-      "text": "[.WebGL-0x12c00439c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
-      "source": "http://127.0.0.1:4730/?t=[redacted]"
+      "text": "[.WebGL-0x12c00438a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "source": "http://127.0.0.1:4730/?t=[redacted]&signal=http%3A%2F%2F127.0.0.1%3A64253"
     },
     {
       "role": "host",
       "level": "warning",
-      "text": "[.WebGL-0x12c00437800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)",
-      "source": "http://127.0.0.1:4730/?t=[redacted]"
+      "text": "[.WebGL-0x12c00436c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)",
+      "source": "http://127.0.0.1:4730/?t=[redacted]&signal=http%3A%2F%2F127.0.0.1%3A64253"
     },
     {
       "role": "guest",
       "level": "warning",
-      "text": "[.WebGL-0x13400438a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
-      "source": "http://127.0.0.1:4730/?party=P5I57F&relay=ws%3A%2F%2F127.0.0.1%3A7831%2Fparty%2FP5I57F&t=[redacted]"
+      "text": "[.WebGL-0x1140043ae00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "source": "http://127.0.0.1:4730/?party=E7SAP6&signal=http%3A%2F%2F127.0.0.1%3A64253&t=[redacted]"
     },
     {
       "role": "guest",
       "level": "warning",
-      "text": "[.WebGL-0x13400436000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
-      "source": "http://127.0.0.1:4730/?party=P5I57F&relay=ws%3A%2F%2F127.0.0.1%3A7831%2Fparty%2FP5I57F&t=[redacted]"
+      "text": "[.WebGL-0x11400438400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "source": "http://127.0.0.1:4730/?party=E7SAP6&signal=http%3A%2F%2F127.0.0.1%3A64253&t=[redacted]"
     },
     {
       "role": "guest",
       "level": "warning",
-      "text": "[.WebGL-0x13400438a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
-      "source": "http://127.0.0.1:4730/?party=P5I57F&relay=ws%3A%2F%2F127.0.0.1%3A7831%2Fparty%2FP5I57F&t=[redacted]"
+      "text": "[.WebGL-0x1140043ae00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "source": "http://127.0.0.1:4730/?party=E7SAP6&signal=http%3A%2F%2F127.0.0.1%3A64253&t=[redacted]"
     },
     {
       "role": "guest",
       "level": "warning",
-      "text": "[.WebGL-0x13400436000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)",
-      "source": "http://127.0.0.1:4730/?party=P5I57F&relay=ws%3A%2F%2F127.0.0.1%3A7831%2Fparty%2FP5I57F&t=[redacted]"
+      "text": "[.WebGL-0x11400438400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)",
+      "source": "http://127.0.0.1:4730/?party=E7SAP6&signal=http%3A%2F%2F127.0.0.1%3A64253&t=[redacted]"
     }
-  ],
-  "screenshots": [
-    "host-mid-wave.png",
-    "guest-mid-wave.png",
-    "party-lobby-after-death.png"
   ]
 }

@@ -3,7 +3,7 @@ import test from 'node:test'
 import {WebSocket} from 'ws'
 import {World} from '../../lib/core/world.js'
 import {PartyGuest} from '../../lib/net/party-guest.js'
-import {PartyHost} from '../../lib/net/party-host.js'
+import {PartyHost, networkSnapshot} from '../../lib/net/party-host.js'
 import {WaveDirector} from '../../lib/core/waves.js'
 import {startTestServer, waitFor} from '../server/helpers.js'
 
@@ -56,6 +56,7 @@ test('guest input reaches the host and prediction reconciles within one snapshot
   assert.ok(hostPlayer.pos.y > startingY, 'the host applied the guest jump pulse')
   assert.deepEqual(guestPlayer.pos, hostPlayer.pos)
   assert.equal(guest.pendingInputs.length, 0)
+  assert.equal(guest.lastAcknowledgedInputTick, 0)
 })
 
 test('host schedules twenty authoritative snapshots for sixty simulation ticks', async (t) => {
@@ -70,14 +71,26 @@ test('host schedules twenty authoritative snapshots for sixty simulation ticks',
   assert.equal(guest.world.tick, 60)
 })
 
-test('network snapshots omit the growing replay without changing the host replay', async (t) => {
+test('network snapshots omit growing history and remain within the WebRTC message limit', async (t) => {
   const session = await makeSession(t, {guests: ['Sarah']})
   const guest = session.guests[0]
-  for (let tick = 0; tick < 240; tick += 1) session.host.step(idle)
-  await waitFor(() => guest.world.tick >= 238)
+  const player = session.host.world.getPlayer('player')
+  player.hp = 1_000_000
+  player.armor = 1_000_000
+  for (let tick = 0; tick < 3_600; tick += 1) session.host.world.step(idle)
 
-  assert.equal(session.host.world.replay.length, 240)
+  const snapshot = networkSnapshot(session.host.world)
+  const encodedBytes = Buffer.byteLength(JSON.stringify({type: 'snapshot', snapshot}), 'utf8')
+  const delivered = once(guest, 'snapshot')
+  session.host.sendSnapshot()
+  await delivered
+
+  assert.equal(session.host.world.replay.length, 3_600)
   assert.equal(guest.world.replay.length, 0)
+  assert.equal(guest.world.tick, 3_600)
+  assert.equal(snapshot.telemetry.playerPath.length, 0)
+  assert.equal(Object.keys(snapshot.telemetry.units).length, 0)
+  assert.ok(encodedBytes < 60 * 1_024, `network snapshot was ${encodedBytes} bytes`)
   assert.equal(session.host.connected, true)
   assert.equal(guest.connected, true)
 })
@@ -93,7 +106,24 @@ test('guest local hitscan reports a hit that damages the unit on the host', asyn
   const delivered = once(guest, 'snapshot')
   session.host.sendSnapshot()
   await delivered
-  guest.step({move: {x: 0, z: 0}, yaw: 0, pitch: 0, fire: true})
+  const guestPlayer = guest.world.getPlayer(guest.playerId)
+  const collider = guest.world.unitHitCollider(guest.world.unitById.get(unit.id))
+  const shape = collider.shapes.find(part => part.id === 'chest')
+    || collider.shapes.find(part => part.part === 'body') || collider.shapes[0]
+  const offset = shape.offset
+  const cos = Math.cos(collider.yaw || 0), sin = Math.sin(collider.yaw || 0)
+  const target = {
+    x: collider.center.x + offset.x * cos + offset.z * sin,
+    y: collider.center.y + offset.y,
+    z: collider.center.z - offset.x * sin + offset.z * cos,
+  }
+  const eye = {x: guestPlayer.pos.x, y: guestPlayer.pos.y + 1.65, z: guestPlayer.pos.z}
+  guest.step({
+    move: {x: 0, z: 0},
+    yaw: Math.atan2(target.x - eye.x, target.z - eye.z),
+    pitch: Math.atan2(target.y - eye.y, Math.hypot(target.x - eye.x, target.z - eye.z)),
+    fire: true,
+  })
   for (let tick = 0; tick < 4; tick += 1) guest.step(idle)
   await waitFor(() => session.host.latestInputs.get(guest.playerId)?.tick === 4)
   assert.equal(session.host.pendingHits.get(guest.playerId)?.has(0), true)

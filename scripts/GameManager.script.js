@@ -176,12 +176,12 @@ export class GameManager extends Object3DComponent {
     }
   }
 
-  async joinParty({code, relay, name} = {}) {
+  async joinParty({code, relay, signal, name} = {}) {
     this._stopParty()
     this.lobby?.stop()
     this.sessionMode = 'guest'
     this.localPlayerId = null
-    const party = this.party = new PartyGuest({code, relay, name})
+    const party = this.party = new PartyGuest({code, relay, signalOrigin: signal, name})
     this._bindParty(party, 'guest')
     this.partyOffs.push(party.on('world', ({detail}) => this._adoptGuestWorld(detail.world, detail.playerId)))
     this._setPartyState({role: 'guest', status: 'connecting', code: party.code, hostId: 'player', players: []})
