@@ -58,7 +58,11 @@
     "viewer": {
       "msaa": 2,
       "tonemap": true,
-      "backgroundColor": "#03070d"
+      "backgroundColor": "#03070d",
+      "camera": {
+        "position": [62, 49, 60],
+        "target": [0, 0, 0]
+      }
     },
     "publish": {
       "exclude": [

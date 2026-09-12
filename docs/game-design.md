@@ -10,18 +10,35 @@ blue-gray steel and concrete, orange fire light, and red terminator eyes in the 
 
 ## Map: "Bunker 7" (one map)
 
-A 60 by 60 meter compound. Parts:
+An 84 by 60 metre compound. The original 60 by 60 metre layout remains at its centre.
+The footprint grows from 3,600 to 5,040 square metres, or 40 percent.
 
-- Central courtyard with rubble cover, a wrecked truck, and two burning barrels (orange light sources).
-- A two-story building on the north side with a balcony that overlooks the courtyard and interior stairs.
-- A loading dock on the east side with shipping containers for cover.
-- A service tunnel on the west side, narrow, with a door at each end.
-- Six standard spawn gates surround the perimeter. A seventh 8-meter boss gate admits the HK-Tank.
-- Four lockable doors: tunnel west, tunnel east, building ground floor, building balcony.
-- Three light zones Skynet can cut: courtyard floods, building interior, dock lamps.
-- Two hazard slots: courtyard center and dock ramp. Hazard types: electrified floor, steam vent.
-- One breakable flank wall on the south side, closed at match start.
-- The trader is a resistance supply crate on the ground floor of the building. It opens in intermission.
+- Central courtyard: the original truck, rubble, barrels, north building, balcony, and trader remain.
+- East loading dock: the original containers and ramp remain. Two wall openings connect the new east yard.
+- West service loop: two seven-tread stairs descend 3.5 metres below the new west yard.
+  The 31.4 metre service floor has a 2.6 metre choke, pipes, drainage, local mist, and an equipment alcove.
+  The two mouths return to different sides of the courtyard. The original west access tunnel also remains.
+- Barracks Block C: a 10 by 20 metre block has ground and upper corridors, eight field beds, and three ground entrances.
+  Window apertures pass shots. Six-tread stair flights reach the 3.2 metre upper floor and 6.4 metre roof.
+  Each tread rises 0.5 metres. The final landing adds 0.2 metres. Roof parapets provide cover.
+- Covered yard link: an 18 by 6 metre canopy joins the northeast yard to Block C.
+  Ten concrete columns provide cover. Local work lights identify the route.
+- Perimeter shells: a motor depot, pump house, and stores block interrupt lateral sightlines.
+- Added cover: eight paired supply chests, five sandbag groups, four generators, four cable spools, and one rubble bank.
+- Nine spawn gates: N1, N2, E1, S1, S2, W1, E2, W2, S3.
+  E1 and W1 move to the new outer boundary. E2 and W2 cover the added yards.
+  S3 has a seven metre aperture, 4.8 metre shutter, and `tags: ["boss"]` for the shared boss contract.
+- Four existing lockable doors and three existing light switches keep their ids and rules.
+  Fourteen added practical lights follow those switches. Four pooled local point lights remain active at most.
+- Two added fire barrels join the original courtyard fires.
+- Four low fog areas, three steam vents, two damaged cable emitters, and pooled dust add local atmosphere.
+  The existing fires, rain, skyline smoke, and two configurable hazard slots remain.
+- The original south flank wall and resistance trader keep their existing rules.
+
+All extension colliders use `exp_` ids and `area: "expansion"` in `lib/core/data/map.json`.
+New slabs store actual hole geometry as compound shapes, so bullets and grenades also pass through stair openings.
+The nav coverage test opens switchable doors before checking reachability. Locking the original balcony door still isolates that balcony.
+Source photographs and game reference frames stay under `docs/reference/` and do not ship.
 
 ## Human
 

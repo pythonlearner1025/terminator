@@ -1,6 +1,8 @@
 import {mapMaterials, randomSource} from './map.materials.js'
 import {addSurfaceDetails, addMapDressing} from './map.details.js'
-import {batchLocalMeshes, bevelMapBox} from './map.batching.js'
+import {batchLocalMeshes, bevelMapBox, instanceMapHardware, mapMaterialBatcher, batchMapParticles} from './map.batching.js'
+import {addExpansionSolid, addExpansionDressing} from './map.expansion.js'
+import {createMapAtmosphere} from './map.atmosphere.js'
 import {createWeather} from '../lib/view/weather.js'
 
 const xyz = p => [p.x, p.y, p.z]
@@ -54,6 +56,11 @@ export function createMapGroup(api, map, {markers = true, runtime = false} = {})
   const refs = {doors: [], gates: [], hazards: [], fires: [], zones: [], flank: [], dust: null, trader: null, shafts: []}
   const boxGeo = new api.BoxGeometry(1, 1, 1)
   function mesh(name, geometry, pos, mat, parent = group, rotation = [0, 0, 0], solid = true) {
+    if(mat?.mapLabel){
+      const {rect,material}=mat.mapLabel,uv=geometry.attributes.uv
+      for(let i=0;i<uv.count;i++)uv.setXY(i,rect[0]+uv.getX(i)*rect[2],rect[1]+uv.getY(i)*rect[3])
+      mat=material
+    }
     const object = new api.Mesh2(geometry, mat)
     object.name = name; object.position.set(...pos); object.rotation.set(...rotation)
     object.castShadow = solid; object.receiveShadow = solid
@@ -61,7 +68,7 @@ export function createMapGroup(api, map, {markers = true, runtime = false} = {})
     return object
   }
   function box(name, pos, size, mat, parent = group, rotation = [0, 0, 0]) {
-    const bevel = ![m.concrete,m.ground,m.floor,m.skyline].includes(mat) && Math.min(...size) > .24
+    const bevel = ![m.concrete,m.ground,m.floor,m.serviceFloor,m.serviceWall,m.skyline].includes(mat) && Math.min(...size) > .24
     const geometry = bevel ? bevelMapBox(api, size) : boxGeo.clone().scale(...size)
     const uv = geometry.attributes.uv
     // Box face UVs are tiled in meters, so a 60 m floor has fine detail too.
@@ -100,7 +107,9 @@ export function createMapGroup(api, map, {markers = true, runtime = false} = {})
     const node = partGroup(`Structure ${c.id}`)
     node.userData.mapColliderId = c.id
     // All structural mesh bounds are tested before the static material merge.
-    if (c.kind === 'rubble') {
+    if (c.area === 'expansion' && addExpansionSolid(api,c,node,{box,mesh,plane,label,decal,m,rand})) {
+      // Collider-driven expansion surfaces are complete.
+    } else if (c.kind === 'rubble') {
       box(`${c.id} shattered foundation`, [p.x, p.y - s.y * 0.29, p.z], [s.x, s.y * 0.42, s.z], m.concrete, node)
       for (let i = 0; i < 14; i++) {
         const sx = s.x * (0.07 + rand() * 0.13), sz = s.z * (0.13 + rand() * 0.25), sy = s.y * (0.18 + rand() * 0.35)
@@ -133,7 +142,7 @@ export function createMapGroup(api, map, {markers = true, runtime = false} = {})
     } else {
       const container = c.kind === 'container'
       const mat = container ? m[c.id.includes('red') ? 'red' : c.id.includes('blue') ? 'blue' : 'steel']
-        : c.kind === 'floor' ? (c.id === 'ground' ? m.ground : m.floor) : c.kind === 'stair' || c.kind === 'ramp' ? m.steel : m.concrete
+        : c.kind === 'floor' ? (c.id === 'ground' ? m.ground : c.id==='exp_service_floor'?m.serviceFloor:m.floor) : c.kind === 'stair' || c.kind === 'ramp' ? m.steel : m.concrete
       const isFloor = c.kind === 'floor' || c.kind === 'stair' || c.kind === 'ramp'
       const holes = (map.walkable?.movementHoles || []).filter(h => h.collider === c.id)
       const tread = c.kind === 'stair' && map.walkable?.heightRules?.stairTreadOffset !== undefined
@@ -196,15 +205,26 @@ export function createMapGroup(api, map, {markers = true, runtime = false} = {})
         plane('Dock deck marking', [22, 0.7, -1], [3, 2], label('LOADING\nBAY 07', '#b4aa83'), [-Math.PI / 2, 0, 0], node)
       }
     }
-    addSurfaceDetails(api, c, node, {box, mesh, plane, label, decal, m, rand})
+    if(c.area !== 'expansion') addSurfaceDetails(api, c, node, {box, mesh, plane, label, decal, m, rand})
+    if(c.area === 'expansion') node.userData.mapBatchRegion=c.center.y<0?'service':c.center.x<0?'west':'east'
     node.updateMatrixWorld(true)
     const b = new api.Box3().setFromObject(node)
+    if(c.kind==='rubble'&&c.shapes?.length===1){
+      // Preserve the fitted cover silhouette when earlier map records change the dressing seed.
+      const shape=c.shapes[0],bottom=p.y+(shape.offset?.y||0)-shape.size.y/2
+      node.scale.y=shape.size.y/(b.max.y-b.min.y)
+      node.position.y=bottom-b.min.y*node.scale.y
+      node.updateMatrixWorld(true);b.setFromObject(node)
+    }
     bounds.push({id: c.id, min: b.min.toArray(), max: b.max.toArray(), center: xyz(p), size: xyz(s)})
     return node
   }
   for (const collider of map.colliders) insetDetails(collider)
 
   addMapDressing(api, map, {group, box, mesh, plane, partGroup, label, decal, m, rand})
+
+  addExpansionDressing(api,map,{group,box,mesh,plane,partGroup,label,decal,m,rand})
+  refs.atmosphere=createMapAtmosphere(api,map,{partGroup,box,mesh,lamp,m,particle})
 
   // Door panels telescope into their existing bounds, never into a corridor.
   for (const d of map.doors) {
@@ -222,8 +242,9 @@ export function createMapGroup(api, map, {markers = true, runtime = false} = {})
   }
   // Gates sit just beyond the enforced play bounds. The core provides gate positions, not solid gate colliders.
   for (const g of map.spawnGates) {
-    const gate = partGroup(`Spawn gate ${g.id}`, [g.pos.x - Math.sin(g.yaw) * 2.04, 1.5, g.pos.z - Math.cos(g.yaw) * 2.04])
+    const gate = partGroup(`Spawn gate ${g.id}`, [g.pos.x - Math.sin(g.yaw) * 2.04, (g.height||3)/2, g.pos.z - Math.cos(g.yaw) * 2.04])
     gate.rotation.y = g.yaw
+    gate.scale.set((g.width||4)/4,(g.height||3)/3,1)
     const shutter = partGroup(`${g.id} bunker shutter`, [0, 0, 0], gate)
     box('Gate sealed plating', [0, 0, 0], [3.95, 3, 0.06], m.dark, shutter)
     for (let x = -1.7; x < 2; x += 0.48) box('Gate armor rib', [x, 0, 0.06], [0.1, 3, 0.08], m.rust, shutter)
@@ -299,12 +320,12 @@ export function createMapGroup(api, map, {markers = true, runtime = false} = {})
   const key = new api.DirectionalLight(0xabc8ef, 1.3)
   key.name = 'Map moon shadow key'; key.position.set(-18, 34, -12); key.castShadow = true
   key.shadow.mapSize.set(2048, 2048)
-  Object.assign(key.shadow.camera, {left: -33, right: 33, top: 33, bottom: -33, near: 1, far: 100})
+  Object.assign(key.shadow.camera, {left: -48, right: 48, top: 42, bottom: -42, near: 1, far: 100})
   key.shadow.bias = -0.0004; key.shadow.normalBias = 0.035; key.shadow.radius = 2
   group.add(key); group.add(key.target)
   const fill = new api.HemisphereLight(0x7892ac, 0x19130e, .48); fill.name = 'Map night sky fill'; group.add(fill)
 
-  // Unreachable skyline outside the 60 m compound is explicitly scenery, never walkable geometry.
+  // Unreachable skyline outside the compound is scenery, never walkable geometry.
   const skyline = partGroup('Distant Los Angeles ruins')
   skyline.userData.mapBackdrop = true
   const silhouette = m.skyline
@@ -341,28 +362,41 @@ export function createMapGroup(api, map, {markers = true, runtime = false} = {})
   batchLocalMeshes(api, trader, new Set([lid, inner]))
   batchLocalMeshes(api, lid)
   batchLocalMeshes(api, fixtureGroup)
+  batchLocalMeshes(api, refs.atmosphere.root)
   // Merge only static meshes. Animated roots, lights and particles retain stable names.
   const dynamicRoots = new Set([refs.weather.root, fixtureGroup, ...refs.doors.map(v => v.object), ...refs.gates.map(v => v.shutter.parent), flank, trader,
-    ...refs.hazards.map(v => v.electric.parent), ...refs.fires.map(v => v.tongues).filter(Boolean)])
+    refs.atmosphere.root, ...refs.hazards.map(v => v.electric.parent), ...refs.fires.map(v => v.tongues).filter(Boolean)])
+  const batchMaterial=mapMaterialBatcher(api)
   function collect(node) {
     for (const child of [...node.children]) {
       if (dynamicRoots.has(child) || child.isPoints || child.isLight || child.isLine) continue
       if (child.isMesh) {
         child.updateWorldMatrix(true, false)
         const geometry = (child.geometry.index ? child.geometry.toNonIndexed() : child.geometry.clone()).applyMatrix4(child.matrixWorld)
-        if (!batches.has(child.material)) batches.set(child.material, [])
-        batches.get(child.material).push(geometry)
+        const material=batchMaterial(child.material,geometry)
+        if (!batches.has(material)) batches.set(material, [])
+        batches.get(material).push(geometry)
         child.geometry.dispose(); child.removeFromParent()
-      } else collect(child)
+      } else {
+        collect(child)
+        if(child.isGroup&&child.children.length===0)child.removeFromParent()
+      }
     }
   }
   collect(group)
   for (const [material, geometries] of batches) {
     const geometry = api.mergeGeometries(geometries, false)
     if (!geometry) throw new Error(`Could not merge map material ${material.name}`)
-    mesh(`Static ${material.name || 'skyline'}`, geometry, [0, 0, 0], material, group, [0,0,0], !material.transparent)
+    mesh(`Static ${material.name || 'skyline'}`, geometry, [0, 0, 0], material, group, [0,0,0], !material.transparent && material !== m.skyline)
     for (const part of geometries) part.dispose()
   }
+  const gateHardware=[]
+  for(const gate of refs.gates){
+    gate.shutter.traverse(object=>{if(object.isMesh&&(!object.material.transparent||object.material===m.decal))gateHardware.push(object)})
+    gateHardware.push(gate.signal)
+  }
+  refs.gateBatches=instanceMapHardware(api,group,gateHardware)
+  group.traverse(object=>{if(object.isMesh&&object.name.startsWith('Static ')){object.updateMatrix();object.matrixAutoUpdate=false}})
   // Stopped-mode effects have a deterministic preview at their authored sources.
   for (const fire of refs.fires) {
     for (const [points, height, spread] of [[fire.flame, 1.4, 0.25], [fire.smoke, 6, 1]]) {
@@ -370,6 +404,15 @@ export function createMapGroup(api, map, {markers = true, runtime = false} = {})
       for (let i = 0; i < positions.count; i++) positions.setXYZ(i, fire.pos[0] + (rand() - 0.5) * spread * scale, fire.pos[1] + rand() * height * scale, fire.pos[2] + (rand() - 0.5) * spread * scale)
     }
   }
+  const distant=refs.fires.filter(f=>f.distant)
+  const local=refs.fires.filter(f=>!f.distant)
+  refs.particleBatches=[
+    batchMapParticles(api,group,local.map(f=>f.flame),'Batched barrel embers'),
+    batchMapParticles(api,group,local.map(f=>f.smoke),'Batched barrel smoke'),
+    batchMapParticles(api,group,distant.map(f=>f.flame),'Batched skyline embers'),
+    batchMapParticles(api,group,distant.map(f=>f.smoke),'Batched skyline smoke'),
+  ]
+  for(const batch of refs.particleBatches)batch.sync()
   refs.dust.visible = runtime; refs.wire.visible = runtime
   boxGeo.dispose()
   group.userData.mapVisualBounds = bounds

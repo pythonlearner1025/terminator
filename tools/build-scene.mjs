@@ -4,6 +4,9 @@ import {readFile, writeFile} from 'node:fs/promises'
 globalThis.ImageData ??= class {}
 const {Object3D, PerspectiveCamera, Quaternion, Vector3} = await import('three')
 
+const packageJson = JSON.parse(await readFile(new URL('../package.json', import.meta.url), 'utf8'))
+const overviewPosition = packageJson.kite3d.viewer.camera.position
+const overviewTarget = packageJson.kite3d.viewer.camera.target
 const scenePath = new URL('../assets/main.scene.gltf', import.meta.url)
 const specs = [
   {
@@ -22,18 +25,23 @@ const specs = [
       'terminator-component-map-generator': {type: 'Generator', state: {module: 'generators/map.generator.js', params: {markers: true}}},
     },
   },
-  unitTemplate('Scout', 'scout', [34, 0, -5]),
-  unitTemplate('Endo', 'endo', [34, 0, 0]),
-  unitTemplate('Heavy', 'heavy', [34, 0, 5]),
+  unitTemplate('Scout', 'scout', [47, 0, -5]),
+  unitTemplate('Endo', 'endo', [47, 0, 0]),
+  unitTemplate('Heavy', 'heavy', [47, 0, 5]),
   {
     name: 'Soldier Template',
     uuid: 'terminator-node-soldier-template',
-    translation: [34, 0, 9],
+    translation: [47, 0, 9],
     authoring: {role: 'generator', id: 'terminator-soldier-template'},
     components: {
       'terminator-component-soldier-generator': {type: 'Generator', state: {module: 'generators/soldier-template.generator.js', params: {variant: 'olive'}}},
     },
   },
+  ...[
+    ['Service Loop', 'service-loop', [-35, -3.5, 0]],
+    ['Barracks Block C', 'barracks-c', [36, 0, 14]],
+    ['Covered Yard Link', 'covered-link', [22, 0, 13]],
+  ].map(([name,id,translation])=>({name,uuid:`terminator-node-${id}`,translation,authoring:{role:'direct',id:`terminator-${id}`}})),
   {
     name: 'Player Start',
     uuid: 'terminator-node-player-start',
@@ -57,8 +65,8 @@ const specs = [
   {
     name: 'Saved Overview Camera',
     uuid: 'terminator-node-saved-camera',
-    translation: [52, 43, 52],
-    rotation: lookQuaternion([52, 43, 52], [0, 0, 0]),
+    translation: overviewPosition,
+    rotation: lookQuaternion(overviewPosition, overviewTarget),
     camera: 0,
     authoring: {role: 'direct', id: 'terminator-saved-camera'},
   },

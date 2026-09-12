@@ -1,0 +1,200 @@
+{
+  "benchmark": "Terminator browser performance",
+  "capturedAt": "2026-09-12T09:45:05.771Z",
+  "durationSeconds": 12,
+  "warmupSeconds": 5,
+  "requestedViewport": {
+    "width": 1920,
+    "height": 1080,
+    "deviceScaleFactor": 1
+  },
+  "effects": {
+    "post": true,
+    "motionBlur": true,
+    "rain": 1,
+    "smoke": 1,
+    "hazards": [
+      "electric",
+      "steam"
+    ],
+    "combatStress": "24 enemies, two enemy shots per frame, ten impact bursts per second, 1 deterministic M4 death(s), limb loss, and explosion events",
+    "disabled": []
+  },
+  "browser": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+    "gpuVendor": "Google Inc. (Apple)",
+    "gpuRenderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Max, Unspecified Version)",
+    "webgl": "WebGL2RenderingContext"
+  },
+  "units": 24,
+  "scene": {
+    "aliveEnemies": 24,
+    "renderedEnemies": 24,
+    "enemiesInFrustum": 24,
+    "renderScale": 1,
+    "renderSize": [
+      1920,
+      1080
+    ],
+    "canvas": {
+      "width": 1920,
+      "height": 1080
+    },
+    "shadowMap": {
+      "width": 1024,
+      "height": 1024,
+      "radius": 2
+    },
+    "unitTriangles": {
+      "scout": {
+        "high": 24512,
+        "low": 11004
+      },
+      "endo": {
+        "high": 25492,
+        "low": 11712
+      },
+      "heavy": {
+        "high": 27088,
+        "low": 12252
+      }
+    },
+    "quality": {
+      "id": "high",
+      "renderScale": 1,
+      "shadowMapSize": 1024,
+      "gbufferScale": 0.2,
+      "ssaoScale": 0.2,
+      "ssaoSamples": 2,
+      "ssaoEnabled": true,
+      "bloomScale": 0.2,
+      "particleDensity": 0.65,
+      "lodDistance": 5,
+      "animationLodDistance": 7,
+      "animationHz": 30,
+      "farAnimationHz": 24
+    }
+  },
+  "frame": {
+    "samples": 628,
+    "intervalMs": {
+      "samples": 628,
+      "mean": 19.127,
+      "p50": 19,
+      "p95": 22.9,
+      "p99": 25.6,
+      "max": 28.7
+    },
+    "workMs": {
+      "samples": 629,
+      "mean": 16.573,
+      "p50": 16.5,
+      "p95": 20,
+      "p99": 22.3,
+      "max": 25.7
+    },
+    "effectiveFps": 52.281
+  },
+  "gpu": {
+    "supported": true,
+    "samples": 629,
+    "frameMs": {
+      "samples": 629,
+      "mean": 16.024,
+      "p50": 15.15,
+      "p95": 23.406,
+      "p99": 27.382,
+      "max": 31.959
+    },
+    "unresolvedQueries": 0
+  },
+  "renderer": {
+    "drawCalls": {
+      "samples": 629,
+      "mean": 220.294,
+      "p50": 218,
+      "p95": 226,
+      "p99": 230,
+      "max": 232
+    },
+    "triangles": {
+      "samples": 629,
+      "mean": 499664.763,
+      "p50": 500192,
+      "p95": 500690,
+      "p99": 500896,
+      "max": 500974
+    },
+    "points": {
+      "samples": 629,
+      "mean": 458.952,
+      "p50": 454,
+      "p95": 477,
+      "p99": 477,
+      "max": 477
+    },
+    "lines": {
+      "samples": 629,
+      "mean": 863,
+      "p50": 863,
+      "p95": 863,
+      "p99": 863,
+      "max": 863
+    },
+    "geometries": 426,
+    "textures": 146
+  },
+  "killFrame": {
+    "frame": 8,
+    "intervalMs": 16.9,
+    "workMs": 25.7,
+    "gpuMs": 16.663,
+    "events": [
+      "M4 kill 1",
+      "first shot: M4",
+      "first hit",
+      "first decal",
+      "wreck spawn",
+      "audio start",
+      "first death: M4 kill"
+    ],
+    "costs": [
+      {
+        "area": "render",
+        "ms": 8.8
+      },
+      {
+        "area": "units",
+        "ms": 6.3
+      },
+      {
+        "area": "gbuffer",
+        "ms": 3.2
+      }
+    ],
+    "cause": "M4 kill 1, first shot: M4, first hit, first decal, wreck spawn, audio start, first death: M4 kill"
+  },
+  "topCosts": [
+    {
+      "area": "pass:render",
+      "msPerFrame": 8.789
+    },
+    {
+      "area": "pass:gbuffer",
+      "msPerFrame": 3.607
+    },
+    {
+      "area": "system:units",
+      "msPerFrame": 1.413
+    },
+    {
+      "area": "system:HUD",
+      "msPerFrame": 0.207
+    },
+    {
+      "area": "system:player",
+      "msPerFrame": 0.202
+    }
+  ],
+  "warnings": []
+}

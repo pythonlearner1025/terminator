@@ -112,6 +112,21 @@ from the current walkable surface. Failed paths and changed goals retain the Wor
 HK-Aerial bypasses `NavGrid`. It flies directly between 3.5 and 6 meters. Each candidate step tests
 its clearance sphere against active colliders, floors, walls, and indoor ceilings.
 
+Bunker 7 extension records use `exp_` collider ids and `area: "expansion"`.
+`map.environment` stores visual fixture, fog, vent, spark, and area-marker positions.
+These records do not change simulation rules. `MapView` reads them and owns the pooled atmosphere.
+The expanded slabs use compound box shapes around stair holes. The same shape data serves shots, grenades, and movement.
+The tunnel sits at y = -3.5. Block C uses ground, y = 3.2, and y = 6.4 walkable layers.
+All new unit routes have Scout and Heavy traversal tests, including body clearance at turns.
+Axis-aligned box queries reject footprint misses before allocating primitives. Equivalent compound-box tests preserve query semantics.
+Nav rebuilds filter collider candidates by cell bounds before testing exact shapes, preserving collider order and the footprint tolerance.
+An exhaustive comparison checks every layer against the original full collider scan, including closed doors and rotated compound fixtures.
+Each rebuild clears the neighbor cache. Path searches cache immutable lists on first use and preserve the original neighbor order.
+Static material batches retain albedo, normal, roughness, metalness, and AO maps.
+Per-vertex factors preserve each painted surface's original tint, roughness, and metalness within a shared PBR draw.
+Gate hardware uses instances. Skyline particles share fixed buffers. Runtime cleanup owns their source buffers too.
+`kite3d.viewer.camera` sets the stopped viewer camera. Scene generation uses the same position and target for the named overview camera.
+
 ## Input schema
 
 ```js

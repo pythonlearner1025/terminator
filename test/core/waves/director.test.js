@@ -1,3 +1,4 @@
+import map from '../../../lib/core/data/map.json' with {type:'json'}
 import assert from 'node:assert/strict'
 import test from 'node:test'
 import {BuiltinSkynet} from '../../../lib/core/builtin-skynet.js'
@@ -235,7 +236,7 @@ test('rules payload includes catalog, costs, formula, scripts, caps, and positio
   assert.deepEqual(rules.budget_formula.inputs, ['health_lost', 'time_to_clear', 'damage_per_minute'])
   assert.match(rules.default_scripts.scout, /export function tick/)
   assert.equal(rules.default_scripts.scout, scoutScriptSource)
-  assert.equal(rules.map_summary.gates.length, 7)
+  assert.deepEqual(rules.map_summary.gates.map(g=>g.id), map.spawnGates.map(g=>g.id))
   assert.equal(rules.map_summary.doors.every(({id, pos}) => id && Number.isFinite(pos.x)), true)
   assert.equal(rules.map_summary.light_zones.length, 3)
   assert.equal(rules.map_summary.hazard_slots.length, 2)

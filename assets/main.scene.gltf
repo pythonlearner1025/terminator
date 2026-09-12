@@ -17,7 +17,10 @@
         6,
         7,
         8,
-        9
+        9,
+        10,
+        11,
+        12
       ]
     }
   ],
@@ -65,7 +68,7 @@
     {
       "name": "Unit Template Scout",
       "translation": [
-        34,
+        47,
         0,
         -5
       ],
@@ -91,7 +94,7 @@
     {
       "name": "Unit Template Endo",
       "translation": [
-        34,
+        47,
         0,
         0
       ],
@@ -117,7 +120,7 @@
     {
       "name": "Unit Template Heavy",
       "translation": [
-        34,
+        47,
         0,
         5
       ],
@@ -199,15 +202,15 @@
     {
       "name": "Saved Overview Camera",
       "translation": [
-        52,
-        43,
-        52
+        62,
+        49,
+        60
       ],
       "rotation": [
-        -0.24157608430697244,
-        0.3693694454149553,
-        0.1000640904649342,
-        0.8917367246470139
+        -0.23514098782183027,
+        0.3773013832548729,
+        0.09966419836597168,
+        0.8901794367453123
       ],
       "camera": 0,
       "extras": {
@@ -221,7 +224,7 @@
     {
       "name": "Soldier Template",
       "translation": [
-        34,
+        47,
         0,
         9
       ],
@@ -241,6 +244,51 @@
               }
             }
           }
+        }
+      }
+    },
+    {
+      "name": "Service Loop",
+      "translation": [
+        -35,
+        -3.5,
+        0
+      ],
+      "extras": {
+        "gltfUUID": "terminator-node-service-loop",
+        "kite3dAuthoring": {
+          "role": "direct",
+          "id": "terminator-service-loop"
+        }
+      }
+    },
+    {
+      "name": "Barracks Block C",
+      "translation": [
+        36,
+        0,
+        14
+      ],
+      "extras": {
+        "gltfUUID": "terminator-node-barracks-c",
+        "kite3dAuthoring": {
+          "role": "direct",
+          "id": "terminator-barracks-c"
+        }
+      }
+    },
+    {
+      "name": "Covered Yard Link",
+      "translation": [
+        22,
+        0,
+        13
+      ],
+      "extras": {
+        "gltfUUID": "terminator-node-covered-link",
+        "kite3dAuthoring": {
+          "role": "direct",
+          "id": "terminator-covered-link"
         }
       }
     }

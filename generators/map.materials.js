@@ -51,6 +51,9 @@ export function mapMaterials(api) {
   }
   const mats = {
     concrete: lit('weathered concrete', 0xc4cbca), ground: lit('wet cracked asphalt', 0x87969e, asphalt, 0, .93),
+    serviceFloor:lit('damp service concrete',0x545f59,concrete,0,.7),
+    serviceWall:lit('service cut concrete',0x7a8179,concrete,0,.92),
+    housePaint:lit('barracks utility paint',0x566557,paint,0,.93),
     floor: lit('bunker concrete floor', 0x87928e, concrete, 0, .82),
     dark: lit('blackened steel', 0x3d4a50, paint, .9), rust: lit('oxidized steel', 0x886144, rust, .4),
     red: lit('oxide container', 0xac6050, corrugated), blue: lit('navy container', 0x5b8896, corrugated),
@@ -61,6 +64,7 @@ export function mapMaterials(api) {
     whiteGlow: glow('fluorescent', 0xb5e1ed, 3), greenGlow: glow('resistance signal', 0x52ffbd, 3),
     electricGlow: glow('electrical arcs', 0x68c9ff, 6),
   }
+  mats.serviceFloor.envMapIntensity=.05; mats.serviceWall.envMapIntensity=.08
   mats.skyline.emissive.setHex(0x142334); mats.skyline.emissiveIntensity = .5; mats.skyline.emissiveMap = concrete.map
   mats.skyline.normalScale.set(.1,.1)
   // Large-scale stains and variable wetness use world coordinates, independently of tile UVs.
@@ -82,6 +86,8 @@ export function mapMaterials(api) {
     }
     mat.customProgramCacheKey = function() { return cacheKey.call(this) + ':bunker-world-grime-v1' }
   }
+  for(const mat of [mats.dark,mats.steel,mats.yellow,mats.truck,mats.housePaint])mat.userData.mapBatchFamily='painted metal'
+  for(const mat of [mats.red,mats.blue])mat.userData.mapBatchFamily='corrugated metal'
   const decalMaps = {map: load('decals_albedo.png', true), normalMap: load('decals_normal.jpg'), arm: load('decals_arm.jpg')}
   mats.decal = lit('grime scorch and bullet decal atlas', 0xffffff, decalMaps, .1)
   mats.puddle = lit('rainwater pools', 0xa8b6bd, decalMaps, 1, 1)
@@ -90,19 +96,31 @@ export function mapMaterials(api) {
     mat.normalScale.set(.18, .18)
   }
   mats.puddle.envMapIntensity = 1.6
-  function label(text, color = '#c5cccb', background = null) {
-    const texture = canvasTexture((ctx, w, h) => {
-      if (background) { ctx.fillStyle = background; ctx.fillRect(0, 0, w, h) }
-      ctx.fillStyle = color; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'
-      const lines = text.split('\n')
-      ctx.font = `bold ${lines.length > 1 ? 58 : 84}px Arial, sans-serif`
-      lines.forEach((line, i) => ctx.fillText(line, w / 2, h / 2 + (i - (lines.length - 1) / 2) * 57, w - 34))
-      ctx.globalCompositeOperation = 'destination-out'
-      for (let i = 0; i < 650; i++) { ctx.fillStyle = '#0009'; ctx.fillRect(rand() * w, rand() * h, rand() * 7, 1 + rand()*2) }
-    }, 512, 192)
-    const mat = new api.PhysicalMaterial({map: texture, normalMap: paint.normalMap, roughnessMap: paint.arm, aoMap: paint.arm, metalnessMap: paint.arm, metalness: .05, roughness: 1, transparent: true, depthWrite: false, side: api.DoubleSide, polygonOffset: true, polygonOffsetFactor: -2})
-    mat.name = `Map stencil ${text.replaceAll('\n', ' ')}`
-    return mat
+  mats.puddle.opacity = .45
+  // One 2048 atlas batches all signs into one PBR material, including animated shutters.
+  const labelTexture=canvasTexture(()=>{},2048,2048), labelCanvas=labelTexture.image
+  const labelMaterial=new api.PhysicalMaterial({map:labelTexture,normalMap:paint.normalMap,
+    roughnessMap:paint.arm,aoMap:paint.arm,metalnessMap:paint.arm,metalness:.05,roughness:1,
+    transparent:true,depthWrite:false,side:api.DoubleSide,polygonOffset:true,polygonOffsetFactor:-2})
+  labelMaterial.name='Map weathered signage atlas'
+  const labels=new Map()
+  function label(text,color='#c5cccb',background=null) {
+    const key=[text,color,background].join('|')
+    if(labels.has(key))return labels.get(key)
+    const index=labels.size,w=512,h=192,x=(index%4)*w,y=Math.floor(index/4)*h
+    if(y+h>2048)throw new Error('Map signage atlas capacity exceeded')
+    const ctx=labelCanvas.getContext('2d')
+    ctx.globalCompositeOperation='source-over'
+    if(background){ctx.fillStyle=background;ctx.fillRect(x,y,w,h)}
+    ctx.fillStyle=color;ctx.textAlign='center';ctx.textBaseline='middle'
+    const lines=text.split('\n');ctx.font=`bold ${lines.length>1?58:84}px Arial, sans-serif`
+    lines.forEach((line,i)=>ctx.fillText(line,x+w/2,y+h/2+(i-(lines.length-1)/2)*57,w-34))
+    ctx.globalCompositeOperation='destination-out'
+    for(let i=0;i<650;i++){ctx.fillStyle='#0009';ctx.fillRect(x+rand()*(w-7),y+rand()*(h-3),rand()*7,1+rand()*2)}
+    labelTexture.needsUpdate=true
+    const handle={mapLabel:{material:labelMaterial,rect:[x/2048,1-(y+h)/2048,w/2048,h/2048]}}
+    labels.set(key,handle)
+    return handle
   }
   const particle = canvasTexture((ctx, w, h) => {
     const g = ctx.createRadialGradient(w / 2, h / 2, 0, w / 2, h / 2, w / 2)

@@ -92,11 +92,11 @@ test('HK-Tank scales boss health and takes triple rear Core damage', () => {
 test('HK-Tank is accepted only once at the dedicated wide boss gate', () => {
   const config = {
     spawns: [
-      {t: 0, gate: 'boss', unit: 'hktank', count: 1},
+      {t: 0, gate: 'S3', unit: 'hktank', count: 1},
       {t: 0, gate: 'N1', unit: 't1000', count: 1},
       {t: 1, gate: 'N2', unit: 'hkaerial', count: 1},
     ],
-    knobs: {gates: ['boss', 'N1', 'N2']},
+    knobs: {gates: ['S3', 'N1', 'N2']},
   }
   assert.equal(validateWaveConfig(config, {wave: 5, budget: 900}).ok, true)
   const narrow = structuredClone(config)

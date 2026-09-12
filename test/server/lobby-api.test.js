@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict'
 import {readdir} from 'node:fs/promises'
 import test from 'node:test'
+import map from '../../lib/core/data/map.json' with {type:'json'}
 import {agentHeaders, createLobby, gameHeaders, json, startTestServer, validConfig, validScript} from './helpers.js'
 
 test('all lobby HTTP endpoints complete a match relay lifecycle', async (t) => {
@@ -23,7 +24,7 @@ test('all lobby HTTP endpoints complete a match relay lifecycle', async (t) => {
 
   const rules = await json(fixture.url, `${base}/rules`)
   assert.equal(rules.body.script_api_version, 1)
-  assert.equal(rules.body.map_summary.gates.length, 7)
+  assert.deepEqual(rules.body.map_summary.gates.map(g=>g.id), map.spawnGates.map(g=>g.id))
   assert.equal(rules.body.simulator.max_calls_per_intermission, 10)
 
   const summary = {wave: 1, time_to_clear: 12, player_path: [{t: 0, x: 0, y: 0, z: 9}], shots: {pistol: {fired: 3, hits: 2}}}

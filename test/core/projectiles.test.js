@@ -7,9 +7,10 @@ const brains = Object.fromEntries(['scout', 'endo', 'heavy', 't1000', 'hkaerial'
 
 function aimedEndoWorld(seed = 5) {
   const world = new World({seed, brains})
-  world.player.pos = {x: 15, y: 0, z: 10}
+  // z 8 keeps the strafe lane clear of the colonnade columns at z 10.4 (map expansion).
+  world.player.pos = {x: 15, y: 0, z: 8}
   world.player.yaw = 0
-  const unit = world.spawnUnit('endo', {x: 15, y: 0, z: -10}, {yaw: 0})
+  const unit = world.spawnUnit('endo', {x: 15, y: 0, z: -12}, {yaw: 0})
   unit.targetPlayerId = world.player.id
   return {world, unit}
 }
