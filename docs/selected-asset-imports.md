@@ -12,9 +12,9 @@ Play batching now distinguishes texture transforms and retains vertex colors and
 
 ## Remaining imports
 
-This is a partial integration. Of 25 unique selected Sketchfab sources, eight are installed, seven are downloaded but need surface or dynamic-part adaptation, and ten still need download. The authenticated batch reached HTTP 429 after 15 successful downloads. Existing models remain active for pending families.
+This is a partial integration. All 25 unique selected Sketchfab sources are downloaded and hash-verified in the local Git-ignored cache. Eight are installed; the remaining 17 need surface, dynamic-part, or rig adaptation. The resumed authenticated batch completed successfully after the earlier HTTP 429. Existing models remain active for pending families.
 
-The downloaded wall, flank wall, bunk, trader console, door, shutter, and grate still need fitting/adaptation. In particular, the door is supplied open, the bed includes suspension lines, and animated shutters and breakable wall chunks must retain their gameplay behavior.
+The wall, flank wall, bunk, trader console, door, shutter, grate, lights, pipes, cables, characters, and HK vehicles still need fitting/adaptation. In particular, the door is supplied open, the bed includes suspension lines, and animated shutters and breakable wall chunks must retain their gameplay behavior.
 
 `assets/sources/selected-assets.json` records the chosen sources, authors, licenses, target asset IDs, and pending status. The Heavy shares the selected Endo body; both HK variants share one selected vehicle set. The comparison and chosen-set pages remain under `docs/asset-comparison/`.
 
