@@ -128,3 +128,18 @@ Slabs use a neutral tint and repeat the texture at its documented two-meter widt
 
 The other entries in `assets/sources/selected-assets.json` are selected sources pending
 model acquisition and integration. They do not indicate that those models are included.
+
+## Selected Sketchfab prop models
+
+The following model adaptations are distributed under CC BY 4.0. Changes: selected static variants, removed showcase animation, resized textures to at most 1K, and fitted instances to existing map bounds. Rubble uses repeated piles along long banks. Original archive credits are included beside each model as `LICENSE.txt`.
+
+| Model | Creator | Source | License |
+| --- | --- | --- | --- |
+| Rubble Pile - Photoscan (Optimized) | GameDev Nick (https://sketchfab.com/GameDevNick) | [Sketchfab](https://sketchfab.com/3d-models/rubble-pile-photoscan-optimized-5986d1487d9443b883d67b121c2c903c) | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
+| Crashed Abandoned Truck - Game Ready | Rashad Ibrahimli (https://sketchfab.com/rashad-ibrahimli) | [Sketchfab](https://sketchfab.com/3d-models/crashed-abandoned-truck-game-ready-1e9afcb999814bcfa2ea27b22df14059) | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
+| Barrel Pack - Low Poly Props | Vlaxled (https://sketchfab.com/Vo_plex) | [Sketchfab](https://sketchfab.com/3d-models/barrel-pack-low-poly-props-99483dc2d26548e1955898b063ad87cb) | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
+| Freight shipping container - Rusted | Sousinho (https://sketchfab.com/sousinho) | [Sketchfab](https://sketchfab.com/3d-models/freight-shipping-container-rusted-2b787d1a02174d0bbca9eac34eb3a486) | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
+| Cargo Crate | boysichterman (https://sketchfab.com/boysichterman) | [Sketchfab](https://sketchfab.com/3d-models/cargo-crate-19a32159a3d6443e95105f4f7cb51c39) | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
+| Sandbags | usedm (https://sketchfab.com/usedm) | [Sketchfab](https://sketchfab.com/3d-models/sandbags-b917a79cdc884eee9d44018c38b4df5e) | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
+| PE-77-D Generator | krambulini (https://sketchfab.com/krambulini) | [Sketchfab](https://sketchfab.com/3d-models/pe-77-d-generator-05cb0187751541f195d8b7cf3c4736ef) | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
+| Cable Spool | wolfgar74 (https://sketchfab.com/wolfgar74) | [Sketchfab](https://sketchfab.com/3d-models/cable-spool-22ddb8e02f944fb7b5662f14fdc50e5e) | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |

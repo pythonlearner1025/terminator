@@ -41,3 +41,20 @@ test('floor materials with matching transforms still share one static batch', ()
   assert.equal(batching.batches.length, 1)
   assert.equal(batching.sharedMaterials.disposedMaterials, 1)
 })
+
+test('imported vertex colors and additional UV channels survive static batching', () => {
+  const {source, runtime} = fixture([[1, 1], [1, 1]])
+  for (const placement of source.children) {
+    const mesh = placement.children[0], count = mesh.geometry.attributes.position.count
+    mesh.material.vertexColors = true
+    mesh.geometry.setAttribute('color', new THREE.Float32BufferAttribute(Array.from({length: count}, () => [.25, .5, .75]).flat(), 3))
+    mesh.geometry.setAttribute('uv1', new THREE.Float32BufferAttribute(new Float32Array(count * 2).fill(.3), 2))
+    mesh.geometry.setAttribute('uv2', new THREE.Float32BufferAttribute(new Float32Array(count * 2).fill(.7), 2))
+  }
+  const {batches} = batchPlacedMap(api, source, runtime)
+  assert.equal(batches.length, 1)
+  const geometry = batches[0].geometry
+  assert.deepEqual([...geometry.attributes.color.array.slice(0, 4)], [.25, .5, .75, 1])
+  assert.ok(Math.abs(geometry.attributes.uv1.getX(0) - .3) < .00001)
+  assert.ok(Math.abs(geometry.attributes.uv2.getX(0) - .7) < .00001)
+})

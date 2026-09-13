@@ -71,6 +71,283 @@
       "count": 432,
       "bufferView": 1,
       "byteOffset": 24
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 39135,
+      "max": [
+        1.589509129524231,
+        0.6524924635887146,
+        2.7295475006103516
+      ],
+      "min": [
+        -1.4848246574401855,
+        -0.3257579803466797,
+        -0.3785512447357178
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 4,
+      "byteOffset": 469620,
+      "componentType": 5126,
+      "count": 39135,
+      "max": [
+        0.9999704957008362,
+        0.9999939799308777,
+        0.9999979138374329
+      ],
+      "min": [
+        -0.9993786215782166,
+        -0.99994957447052,
+        -0.9998090267181396
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 39135,
+      "max": [
+        0.99800705909729,
+        0.9983170628547668
+      ],
+      "min": [
+        0.0017551113851368427,
+        0.003128000069409609
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5125,
+      "count": 39135,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "byteOffset": 939240,
+      "componentType": 5126,
+      "count": 28263,
+      "max": [
+        1.600906491279602,
+        0.6315277218818665,
+        2.7613885402679443
+      ],
+      "min": [
+        -1.4848246574401855,
+        -0.3259057104587555,
+        -0.18156564235687256
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 4,
+      "byteOffset": 1278396,
+      "componentType": 5126,
+      "count": 28263,
+      "max": [
+        0.9997367858886719,
+        0.9999960660934448,
+        0.9999819397926331
+      ],
+      "min": [
+        -0.9982591271400452,
+        -0.9971684217453003,
+        -0.9996258020401001
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 313080,
+      "componentType": 5126,
+      "count": 28263,
+      "max": [
+        0.9965307712554932,
+        0.9987639784812927
+      ],
+      "min": [
+        0.001366000040434301,
+        0.0030330000445246696
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 156540,
+      "componentType": 5125,
+      "count": 28263,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "byteOffset": 1617552,
+      "componentType": 5126,
+      "count": 34581,
+      "max": [
+        1.6116687059402466,
+        0.6576520800590515,
+        2.6328659057617188
+      ],
+      "min": [
+        -1.4834061861038208,
+        -0.32290151715278625,
+        -0.39642763137817383
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 4,
+      "byteOffset": 2032524,
+      "componentType": 5126,
+      "count": 34581,
+      "max": [
+        0.999962568283081,
+        0.9999879598617554,
+        0.9996889233589172
+      ],
+      "min": [
+        -0.9991346001625061,
+        -0.9926812648773193,
+        -0.9989520311355591
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 539184,
+      "componentType": 5126,
+      "count": 34581,
+      "max": [
+        0.9985100030899048,
+        0.9986180067062378
+      ],
+      "min": [
+        0.0012939999578520656,
+        0.0019093429436907172
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 269592,
+      "componentType": 5125,
+      "count": 34581,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "byteOffset": 2447496,
+      "componentType": 5126,
+      "count": 41373,
+      "max": [
+        1.607340931892395,
+        0.6492614150047302,
+        2.7629549503326416
+      ],
+      "min": [
+        -1.4831832647323608,
+        -0.32389670610427856,
+        -0.22061538696289062
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 4,
+      "byteOffset": 2943972,
+      "componentType": 5126,
+      "count": 41373,
+      "max": [
+        0.9999836683273315,
+        0.9999619126319885,
+        0.9997992515563965
+      ],
+      "min": [
+        -0.9989493489265442,
+        -0.9991940855979919,
+        -0.9998416304588318
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 815832,
+      "componentType": 5126,
+      "count": 41373,
+      "max": [
+        0.9960870146751404,
+        0.9979419708251953
+      ],
+      "min": [
+        0.0012379999971017241,
+        0.001449999981559813
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 407916,
+      "componentType": 5125,
+      "count": 41373,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "byteOffset": 3440448,
+      "componentType": 5126,
+      "count": 38283,
+      "max": [
+        1.5134907960891724,
+        0.6511083841323853,
+        2.750322103500366
+      ],
+      "min": [
+        -1.379106044769287,
+        -0.3243464231491089,
+        -0.2744649648666382
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 4,
+      "byteOffset": 3899844,
+      "componentType": 5126,
+      "count": 38283,
+      "max": [
+        0.999953031539917,
+        0.999955415725708,
+        0.999779462814331
+      ],
+      "min": [
+        -0.9999181032180786,
+        -0.9993237853050232,
+        -0.9991041421890259
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 1146816,
+      "componentType": 5126,
+      "count": 38283,
+      "max": [
+        0.988548219203949,
+        0.9986709952354431
+      ],
+      "min": [
+        0.0012600000482052565,
+        0.0012570000253617764
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 573408,
+      "componentType": 5125,
+      "count": 38283,
+      "type": "SCALAR"
     }
   ],
   "bufferViews": [
@@ -87,10 +364,38 @@
       "byteLength": 13824,
       "byteStride": 32,
       "target": 34962
+    },
+    {
+      "buffer": 1,
+      "byteLength": 726540,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 1,
+      "byteLength": 1453080,
+      "byteOffset": 726540,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 1,
+      "byteLength": 4359240,
+      "byteOffset": 2179620,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
     }
   ],
   "samplers": [
     {
+      "wrapS": 10497,
+      "wrapT": 10497
+    },
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
       "wrapS": 10497,
       "wrapT": 10497
     }
@@ -119,6 +424,26 @@
     {
       "source": 5,
       "sampler": 0
+    },
+    {
+      "sampler": 1,
+      "source": 6
+    },
+    {
+      "sampler": 1,
+      "source": 7
+    },
+    {
+      "sampler": 1,
+      "source": 8
+    },
+    {
+      "sampler": 1,
+      "source": 9
+    },
+    {
+      "sampler": 1,
+      "source": 10
     }
   ],
   "images": [
@@ -151,6 +476,21 @@
       "name": "rusty_metal_02_arm_1k.jpg",
       "mimeType": "image/jpeg",
       "uri": "/kite3d/assets/textures/map/rusty_metal_02_arm_1k.jpg"
+    },
+    {
+      "uri": "/kite3d/assets/models/selected/5986d1487d9443b883d67b121c2c903c/TextureAtlas_1001_baseColor.png"
+    },
+    {
+      "uri": "/kite3d/assets/models/selected/5986d1487d9443b883d67b121c2c903c/TextureAtlas_1002_baseColor.png"
+    },
+    {
+      "uri": "/kite3d/assets/models/selected/5986d1487d9443b883d67b121c2c903c/TextureAtlas_1003_baseColor.png"
+    },
+    {
+      "uri": "/kite3d/assets/models/selected/5986d1487d9443b883d67b121c2c903c/TextureAtlas_1004_baseColor.png"
+    },
+    {
+      "uri": "/kite3d/assets/models/selected/5986d1487d9443b883d67b121c2c903c/TextureAtlas_1005_baseColor.png"
     }
   ],
   "buffers": [
@@ -158,6 +498,10 @@
       "name": "Map piece geometry",
       "uri": "rubble-se.bin",
       "byteLength": 49536
+    },
+    {
+      "byteLength": 6538860,
+      "uri": "/kite3d/assets/models/selected/5986d1487d9443b883d67b121c2c903c/scene.bin"
     }
   ],
   "materials": [
@@ -210,6 +554,56 @@
       "occlusionTexture": {
         "index": 5
       }
+    },
+    {
+      "doubleSided": true,
+      "name": "Selected rubble 1: TextureAtlas_1001",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 6
+        },
+        "metallicFactor": 0
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Selected rubble 2: TextureAtlas_1002",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 7
+        },
+        "metallicFactor": 0
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Selected rubble 3: TextureAtlas_1003",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 8
+        },
+        "metallicFactor": 0
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Selected rubble 4: TextureAtlas_1004",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 9
+        },
+        "metallicFactor": 0
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Selected rubble 5: TextureAtlas_1005",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 10
+        },
+        "metallicFactor": 0
+      }
     }
   ],
   "meshes": [
@@ -240,32 +634,370 @@
           "material": 1
         }
       ]
+    },
+    {
+      "name": "LOD3_TextureAtlas_1001_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 7,
+            "POSITION": 6,
+            "TEXCOORD_0": 8
+          },
+          "indices": 9,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "LOD3_TextureAtlas_1002_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 11,
+            "POSITION": 10,
+            "TEXCOORD_0": 12
+          },
+          "indices": 13,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "LOD3_TextureAtlas_1003_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 15,
+            "POSITION": 14,
+            "TEXCOORD_0": 16
+          },
+          "indices": 17,
+          "material": 4,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "LOD3_TextureAtlas_1004_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 19,
+            "POSITION": 18,
+            "TEXCOORD_0": 20
+          },
+          "indices": 21,
+          "material": 5,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "LOD3_TextureAtlas_1005_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 23,
+            "POSITION": 22,
+            "TEXCOORD_0": 24
+          },
+          "indices": 25,
+          "material": 6,
+          "mode": 4
+        }
+      ]
     }
   ],
   "nodes": [
     {
       "name": "Rubble bank asset",
       "extras": {
-        "mapPieceAsset": true
+        "mapPieceAsset": true,
+        "selectedSource": {
+          "id": "5986d1487d9443b883d67b121c2c903c",
+          "family": "rubble",
+          "source": "https://sketchfab.com/3d-models/rubble-pile-photoscan-optimized-5986d1487d9443b883d67b121c2c903c",
+          "tileCount": 2,
+          "fitBounds": [
+            5,
+            1.1,
+            2.5
+          ]
+        }
       },
       "children": [
         1,
-        2
+        2,
+        12,
+        22
       ]
     },
     {
       "name": "Rubble bank concrete",
       "extras": {
         "material": "concrete"
-      },
-      "mesh": 0
+      }
     },
     {
       "name": "Rubble bank rust",
       "extras": {
         "material": "rust"
-      },
-      "mesh": 1
+      }
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2.220446049250313e-16,
+        -1,
+        0,
+        0,
+        1,
+        2.220446049250313e-16,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        5
+      ],
+      "matrix": [
+        0.009999999776482582,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0.009999999776482582,
+        0,
+        0,
+        -0.009999999776482582,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "418cfd551e6a47fcb0f3fca5549bd9fb.fbx"
+    },
+    {
+      "children": [
+        6
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "matrix": [
+        100,
+        0,
+        0,
+        0,
+        0,
+        99.99999999999866,
+        0.000016292067073209114,
+        0,
+        0,
+        -0.000016292067073209114,
+        99.99999999999866,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "LOD3"
+    },
+    {
+      "mesh": 2,
+      "name": "LOD3_TextureAtlas_1001_0"
+    },
+    {
+      "mesh": 3,
+      "name": "LOD3_TextureAtlas_1002_0"
+    },
+    {
+      "mesh": 4,
+      "name": "LOD3_TextureAtlas_1003_0"
+    },
+    {
+      "mesh": 5,
+      "name": "LOD3_TextureAtlas_1004_0"
+    },
+    {
+      "mesh": 6,
+      "name": "LOD3_TextureAtlas_1005_0"
+    },
+    {
+      "name": "Selected rubble 1-1",
+      "matrix": [
+        4.8452775725498596e-17,
+        0,
+        -0.8073649003885199,
+        0,
+        0,
+        1.1183885838070955,
+        0,
+        0,
+        0.791293877699812,
+        0,
+        4.943684205023613e-17,
+        0,
+        -2.1863092502165635,
+        -0.18551037024109895,
+        0.0512047151465495,
+        1
+      ],
+      "children": [
+        3
+      ]
+    },
+    {
+      "children": [
+        14
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2.220446049250313e-16,
+        -1,
+        0,
+        0,
+        1,
+        2.220446049250313e-16,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        15
+      ],
+      "matrix": [
+        0.009999999776482582,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0.009999999776482582,
+        0,
+        0,
+        -0.009999999776482582,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "418cfd551e6a47fcb0f3fca5549bd9fb.fbx"
+    },
+    {
+      "children": [
+        16
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "matrix": [
+        100,
+        0,
+        0,
+        0,
+        0,
+        99.99999999999866,
+        0.000016292067073209114,
+        0,
+        0,
+        -0.000016292067073209114,
+        99.99999999999866,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "LOD3"
+    },
+    {
+      "mesh": 2,
+      "name": "LOD3_TextureAtlas_1001_0"
+    },
+    {
+      "mesh": 3,
+      "name": "LOD3_TextureAtlas_1002_0"
+    },
+    {
+      "mesh": 4,
+      "name": "LOD3_TextureAtlas_1003_0"
+    },
+    {
+      "mesh": 5,
+      "name": "LOD3_TextureAtlas_1004_0"
+    },
+    {
+      "mesh": 6,
+      "name": "LOD3_TextureAtlas_1005_0"
+    },
+    {
+      "name": "Selected rubble 2-1",
+      "matrix": [
+        4.8452775725498596e-17,
+        0,
+        -0.8073649003885199,
+        0,
+        0,
+        1.1183885838070955,
+        0,
+        0,
+        0.791293877699812,
+        0,
+        4.943684205023613e-17,
+        0,
+        0.3136907497834366,
+        -0.18551037024109895,
+        0.0512047151465495,
+        1
+      ],
+      "children": [
+        13
+      ]
     }
   ],
   "scenes": [

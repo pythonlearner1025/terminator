@@ -71,6 +71,77 @@
       "count": 144,
       "bufferView": 1,
       "byteOffset": 24
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 1836,
+      "max": [
+        50,
+        151.21530151367188,
+        50.000003814697266
+      ],
+      "min": [
+        0,
+        0,
+        0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 4,
+      "byteOffset": 22032,
+      "componentType": 5126,
+      "count": 1836,
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 1836,
+      "max": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 1836,
+      "max": [
+        0.9953179955482483,
+        0.9958800077438354
+      ],
+      "min": [
+        0.008848999626934528,
+        0.003261999925598502
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5125,
+      "count": 5148,
+      "type": "SCALAR"
     }
   ],
   "bufferViews": [
@@ -87,10 +158,46 @@
       "byteLength": 4608,
       "byteStride": 32,
       "target": 34962
+    },
+    {
+      "buffer": 1,
+      "byteLength": 20592,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 1,
+      "byteLength": 14688,
+      "byteOffset": 20592,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 1,
+      "byteLength": 44064,
+      "byteOffset": 35280,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 1,
+      "byteLength": 29376,
+      "byteOffset": 79344,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
     }
   ],
   "samplers": [
     {
+      "wrapS": 10497,
+      "wrapT": 10497
+    },
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
       "wrapS": 10497,
       "wrapT": 10497
     }
@@ -107,6 +214,18 @@
     {
       "source": 2,
       "sampler": 0
+    },
+    {
+      "sampler": 1,
+      "source": 3
+    },
+    {
+      "sampler": 1,
+      "source": 4
+    },
+    {
+      "sampler": 1,
+      "source": 5
     }
   ],
   "images": [
@@ -124,6 +243,15 @@
       "name": "paint_arm.jpg",
       "mimeType": "image/jpeg",
       "uri": "/kite3d/assets/textures/map/paint_arm.jpg"
+    },
+    {
+      "uri": "/kite3d/assets/models/selected/19a32159a3d6443e95105f4f7cb51c39/cargocrate1_baseColor.png"
+    },
+    {
+      "uri": "/kite3d/assets/models/selected/19a32159a3d6443e95105f4f7cb51c39/cargocrate1_metallicRoughness.png"
+    },
+    {
+      "uri": "/kite3d/assets/models/selected/19a32159a3d6443e95105f4f7cb51c39/cargocrate1_normal.png"
     }
   ],
   "buffers": [
@@ -131,6 +259,10 @@
       "name": "Map piece geometry",
       "uri": "supply-2p6x1p28x1p1.bin",
       "byteLength": 6912
+    },
+    {
+      "byteLength": 108720,
+      "uri": "/kite3d/assets/models/selected/19a32159a3d6443e95105f4f7cb51c39/scene.bin"
     }
   ],
   "materials": [
@@ -183,6 +315,25 @@
       "occlusionTexture": {
         "index": 2
       }
+    },
+    {
+      "doubleSided": true,
+      "name": "Selected supply 1: cargocrate1",
+      "normalTexture": {
+        "index": 5
+      },
+      "occlusionTexture": {
+        "index": 4
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 3
+        },
+        "metallicFactor": 0,
+        "metallicRoughnessTexture": {
+          "index": 4
+        }
+      }
     }
   ],
   "meshes": [
@@ -213,32 +364,140 @@
           "material": 1
         }
       ]
+    },
+    {
+      "name": "Object_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 7,
+            "POSITION": 6,
+            "TANGENT": 8,
+            "TEXCOORD_0": 9
+          },
+          "indices": 10,
+          "material": 2,
+          "mode": 4
+        }
+      ]
     }
   ],
   "nodes": [
     {
       "name": "Supply chests asset",
       "extras": {
-        "mapPieceAsset": true
+        "mapPieceAsset": true,
+        "selectedSource": {
+          "id": "19a32159a3d6443e95105f4f7cb51c39",
+          "family": "supply",
+          "source": "https://sketchfab.com/3d-models/cargo-crate-19a32159a3d6443e95105f4f7cb51c39",
+          "tileCount": 1,
+          "fitBounds": [
+            2.6,
+            1.28,
+            1.1
+          ]
+        }
       },
       "children": [
         1,
-        2
+        2,
+        7
       ]
     },
     {
       "name": "Supply chests olive",
       "extras": {
         "material": "olive"
-      },
-      "mesh": 0
+      }
     },
     {
       "name": "Supply chests steel",
       "extras": {
         "material": "steel"
-      },
-      "mesh": 1
+      }
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2.220446049250313e-16,
+        -1,
+        0,
+        0,
+        1,
+        2.220446049250313e-16,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        5
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -25,
+        -75.60765075683594,
+        -25.000001907348633,
+        1
+      ],
+      "name": "c11f0c72f3c747bb917fecff8b7cb703.obj.cleaner.materialmerger.gles"
+    },
+    {
+      "children": [
+        6
+      ],
+      "name": "Object_2"
+    },
+    {
+      "mesh": 2,
+      "name": "Object_3"
+    },
+    {
+      "name": "Selected supply 1-1",
+      "matrix": [
+        1.0528305157977797e-18,
+        0,
+        -0.022,
+        0,
+        0,
+        0.02559999804687513,
+        0,
+        0,
+        0.01719402715184168,
+        0,
+        1.3471114790620884e-18,
+        0,
+        -1.221709109120303e-16,
+        0,
+        0,
+        1
+      ],
+      "children": [
+        3
+      ]
     }
   ],
   "scenes": [

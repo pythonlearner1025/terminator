@@ -15,6 +15,7 @@ test('resume skips only complete archives matching their source receipt', async 
     await writeFile(path, bytes)
     await writeFile(join(dir, 'model.json'), JSON.stringify({...asset, source: asset.url, bytes: bytes.length, sha256: createHash('sha256').update(bytes).digest('hex')}))
     assert.equal(await cachedArchiveValid(path, asset), true)
+    assert.equal(await cachedArchiveValid(path, {...asset, url: 'https://sketchfab.com/3d-models/renamed-model'}), true)
     assert.equal(await cachedArchiveValid(path, {...asset, id: 'other'}), false)
     await writeFile(path, Buffer.from('corrupt archive!'))
     assert.equal(await cachedArchiveValid(path, asset), false)

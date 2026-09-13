@@ -34,7 +34,9 @@
     "proof:core": "node tools/prove-core-roster.mjs",
     "assets:selected:fetch": "node tools/fetch-selected-assets.mjs",
     "assets:selected:fetch-models": "node tools/fetch-selected-assets.mjs --models",
-    "assets:selected:apply-floor": "node tools/apply-selected-floor.mjs"
+    "assets:selected:apply-floor": "node tools/apply-selected-floor.mjs",
+    "assets:selected:prepare-props": "python3 tools/prepare-selected-props.py",
+    "assets:selected:apply-props": "node tools/apply-selected-props.mjs"
   },
   "devDependencies": {
     "@gltf-transform/core": "^4.5.0",

@@ -5,7 +5,8 @@ import {setTimeout as sleep} from 'node:timers/promises'
 export async function cachedArchiveValid(path, asset) {
   try {
     const receipt = JSON.parse(await readFile(path.replace(/\.zip$/, '.json'), 'utf8'))
-    if (receipt.id !== asset.id || receipt.source !== asset.url) return false
+    // Sketchfab slugs and creator names may change; the model UID is stable.
+    if (receipt.id !== asset.id) return false
     const bytes = await readFile(path)
     return bytes.length === receipt.bytes && createHash('sha256').update(bytes).digest('hex') === receipt.sha256
   } catch (error) {

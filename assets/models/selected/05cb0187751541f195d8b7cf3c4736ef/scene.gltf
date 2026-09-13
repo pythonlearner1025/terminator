@@ -1,0 +1,437 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 473,
+      "max": [
+        38.63451385498047,
+        137.97506713867188,
+        62.799156188964844
+      ],
+      "min": [
+        -0.9200800061225891,
+        21.504844665527344,
+        -68.36941528320312
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 5676,
+      "componentType": 5126,
+      "count": 473,
+      "max": [
+        1.0,
+        1.0,
+        0.9999992251396179
+      ],
+      "min": [
+        -0.9979762434959412,
+        -1.0,
+        -0.9999992251396179
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 473,
+      "max": [
+        0.976177990436554,
+        0.9999023079872131,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -0.9859482049942017,
+        -0.9998985528945923,
+        -0.9999140501022339,
+        1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 473,
+      "max": [
+        1.9791860580444336,
+        0.9912229776382446
+      ],
+      "min": [
+        0.015464999713003635,
+        0.01394800003618002
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 897,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 11352,
+      "componentType": 5126,
+      "count": 15721,
+      "max": [
+        52.51430892944336,
+        162.421630859375,
+        80.91452026367188
+      ],
+      "min": [
+        -70.51433563232422,
+        -6.472206115722656,
+        -101.54254913330078
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 200004,
+      "componentType": 5126,
+      "count": 15721,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 7568,
+      "componentType": 5126,
+      "count": 15721,
+      "max": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 3784,
+      "componentType": 5126,
+      "count": 15721,
+      "max": [
+        0.9978179931640625,
+        0.9997569918632507
+      ],
+      "min": [
+        0.00024300000222865492,
+        0.00024300000222865492
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 3588,
+      "componentType": 5125,
+      "count": 51732,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "krambulini (https://sketchfab.com/krambulini)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/pe-77-d-generator-05cb0187751541f195d8b7cf3c4736ef",
+      "title": "PE-77-D Generator"
+    },
+    "generator": "Sketchfab-12.67.0",
+    "version": "2.0",
+    "copyright": "PE-77-D Generator by krambulini (https://sketchfab.com/krambulini); CC-BY-4.0; https://sketchfab.com/3d-models/pe-77-d-generator-05cb0187751541f195d8b7cf3c4736ef"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 210516,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 129552,
+      "byteOffset": 210516,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 388656,
+      "byteOffset": 340068,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 259104,
+      "byteOffset": 728724,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 987828,
+      "uri": "/kite3d/assets/models/selected/05cb0187751541f195d8b7cf3c4736ef/scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "/kite3d/assets/models/selected/05cb0187751541f195d8b7cf3c4736ef/Main_baseColor.png"
+    },
+    {
+      "uri": "/kite3d/assets/models/selected/05cb0187751541f195d8b7cf3c4736ef/Main_metallicRoughness.png"
+    },
+    {
+      "uri": "/kite3d/assets/models/selected/05cb0187751541f195d8b7cf3c4736ef/Main_normal.png"
+    },
+    {
+      "uri": "/kite3d/assets/models/selected/05cb0187751541f195d8b7cf3c4736ef/material_baseColor.png"
+    },
+    {
+      "uri": "/kite3d/assets/models/selected/05cb0187751541f195d8b7cf3c4736ef/material_metallicRoughness.png"
+    },
+    {
+      "uri": "/kite3d/assets/models/selected/05cb0187751541f195d8b7cf3c4736ef/material_normal.png"
+    }
+  ],
+  "materials": [
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "name": "Selected generator 1: Main",
+      "normalTexture": {
+        "index": 2
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "name": "Selected generator 2: material",
+      "normalTexture": {
+        "index": 5
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 3
+        },
+        "metallicRoughnessTexture": {
+          "index": 4
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "defaultMaterial",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "defaultMaterial",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 6,
+            "POSITION": 5,
+            "TANGENT": 7,
+            "TEXCOORD_0": 8
+          },
+          "indices": 9,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2,
+        4
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -4.371139006309477e-08,
+        0.999999999999999,
+        0.0,
+        0.0,
+        -0.999999999999999,
+        -4.371139006309477e-08,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Collada visual scene group"
+    },
+    {
+      "children": [
+        3
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        -0.031384,
+        -5.804466,
+        -0.025084,
+        1.0
+      ],
+      "name": "Generator.2nd"
+    },
+    {
+      "mesh": 0,
+      "name": "defaultMaterial"
+    },
+    {
+      "children": [
+        5
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        -0.031384,
+        -5.804466,
+        -0.025084,
+        1.0
+      ],
+      "name": "Generator"
+    },
+    {
+      "mesh": 1,
+      "name": "defaultMaterial"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    },
+    {
+      "sampler": 0,
+      "source": 3
+    },
+    {
+      "sampler": 0,
+      "source": 4
+    },
+    {
+      "sampler": 0,
+      "source": 5
+    }
+  ]
+}

@@ -4,6 +4,7 @@ import {mkdir, readFile, rm, writeFile} from 'node:fs/promises'
 import {dirname, relative, resolve} from 'node:path'
 import {fileURLToPath} from 'node:url'
 import {applySelectedFloor} from './lib/selected-floor.mjs'
+import {applySelectedProps} from './lib/selected-props.mjs'
 
 globalThis.ImageData ??= class {}
 const THREE = await import('three')
@@ -66,6 +67,7 @@ async function main() {
   }
   await writeJson(manifestPath, manifest)
   await applySelectedFloor(root)
+  await applySelectedProps(root)
   process.stdout.write(`${JSON.stringify({pieceTypes: Object.keys(registry.assets).length, instances: placements.pieces.length, filesWritten, totalBytes}, null, 2)}\n`)
 }
 
