@@ -2,17 +2,13 @@ import {createHash} from 'node:crypto'
 import {mkdir, readFile, writeFile, rename, rm} from 'node:fs/promises'
 import {fileURLToPath} from 'node:url'
 import {resolve} from 'node:path'
+import {setTimeout as sleep} from 'node:timers/promises'
+import {cachedArchiveValid, fetchAssetJson as json} from './lib/asset-downloads.mjs'
 
 const root = fileURLToPath(new URL('../', import.meta.url))
 const selection = JSON.parse(await readFile(resolve(root, 'assets/sources/selected-assets.json'), 'utf8'))
 const models = process.argv.includes('--models')
 if (process.argv.slice(2).some(arg => arg !== '--models')) throw new Error('Usage: node tools/fetch-selected-assets.mjs [--models]')
-
-async function json(url, headers = {}) {
-  const response = await fetch(url, {headers: {'User-Agent': 'Terminator asset importer', ...headers}, signal: AbortSignal.timeout(30000)})
-  if (!response.ok) throw new Error(`Asset metadata request returned HTTP ${response.status}`)
-  return response.json()
-}
 
 async function download(url, output, expectedMD5) {
   const source = new URL(url)
@@ -32,10 +28,18 @@ async function download(url, output, expectedMD5) {
 try {
   if (models) {
     const token = process.env.SKETCHFAB_API_TOKEN
-    if (!token) throw new Error('Set SKETCHFAB_API_TOKEN locally to download the selected Sketchfab models. Do not put it in Git or PR text.')
     const unique = new Map(selection.assets.filter(a => a.provider === 'Sketchfab').map(a => [a.id, a]))
     const cache = resolve(root, '.kite3d/selected-downloads')
+    let requested = false
     for (const asset of unique.values()) {
+      if (await cachedArchiveValid(resolve(cache, `${asset.id}.zip`), asset)) {
+        console.log(`Already downloaded and verified: ${asset.name} (${asset.id})`)
+        continue
+      }
+      if (!token) throw new Error('Set SKETCHFAB_API_TOKEN locally to download the remaining Sketchfab models. Completed archives are saved. Do not put the token in Git or PR text.')
+      // Pace new requests as well as backing off when the provider rate limits.
+      if (requested) await sleep(5000)
+      requested = true
       const data = await json(`https://api.sketchfab.com/v3/models/${asset.id}/download`, {Authorization: `Token ${token}`})
       if (!data.gltf?.url) throw new Error(`No glTF archive available for ${asset.id}`)
       const result = await download(data.gltf.url, resolve(cache, `${asset.id}.zip`))
