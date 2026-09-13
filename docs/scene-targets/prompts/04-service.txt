@@ -1,0 +1,24 @@
+Use case: sketch-to-render.
+Asset type: revised environment target for the playable Bunker 7 scene.
+
+PRIMARY DIRECTION
+Explicitly evoke James Cameron's original The Terminator (1984), specifically the graphic language and cinematographic look of its Future War night sequences. Match the supplied blue, smoke-filled ruined battlefield still. The reference collection is https://sites.pitt.edu/~goscilo/Sci-Fi/FilmStills/TheTerminator.html (James Cameron, 1984; cinematography by Adam Greenberg).
+
+INPUT ROLES
+Image 1: the CURRENT GAMEPLAY SCREENSHOT for this POV. Use it almost as a depth map or rough blockout. It dictates perspective and spatial organization; its flat materials, crude details and present lighting are replaceable.
+Image 2: references/terminator-1984-user-reference.png, the user's film-look reference. This dictates color, exposure, atmosphere, silhouette treatment and photographic character. It must be attached to every generation. The URL supplies context; the actual attached still supplies visual guidance.
+The previously generated amber-lit compound images are rejected. Do not use them as references.
+
+VISUAL OUTCOME
+A suffocating blue-black nocturnal war ruin. Dense cobalt and steel-blue smoke layers separate foreground wreckage, middle-distance structures and the far background. Large near-black masses dominate, with thin hard blue-white rim light catching broken concrete edges, twisted metal and pipework. Powerful cold backlight blooms through airborne dust and smoke; a few small white highlights glow with a soft photographic halo. Let objects disappear into darkness and re-emerge at their edges. Readability comes from silhouette and depth separation, not from evenly illuminating every surface.
+Use the tactile, photographed-set and miniature-effects character of the original 1984 film: rough physical debris, soot, broken masonry, charred steel, modest analog grain, softly glowing highlights and subdued local texture contrast. Preserve detail in the rendering without making every surface equally sharp or shiny. Material color largely disappears into the blue night. Tiny pale-violet glints may accent the haze, subordinate to the cold blue-white light; do not add foreground laser beams or combat subjects.
+The map should feel devastated, abandoned and dangerous. Dress existing walls and cover with fractured edges, exposed reinforcement, bent framing and irregular rubble silhouettes. Concentrate debris in existing cover zones and at wall bases; keep traversable lanes open. Ground is largely dark ash, crushed masonry and soot with occasional dull metallic or damp catches. Deep layered smoke should give the background weight instead of leaving a featureless black sky.
+
+LOCKED COMPOSITION
+Keep the screenshot's exact camera position, 72-degree field of view, 16:9 crop, horizon, vanishing points, standing player eye level and foreground scale. Keep major building footprints, cover positions, floor levels, openings, stairs and sightlines aligned to the input. Retain the scene's large geometric arrangement while radically improving its visual expression. Preserve weapon, hands and HUD in the same screen-space positions and shapes. Do not reproduce the film still's camera, characters or robots; transfer its look to this map. Output one full-frame player POV.
+
+AVOID
+No warm amber lighting scheme, evenly spaced glowing wall lamps, welcoming resistance base, decorative military signage, dominant orange fires, glossy rain-soaked paving, mirror-like puddles, teal-and-orange grading, neon cyberpunk, sleek sci-fi architecture, clean modern game presentation, hyper-sharp texture noise, cinematic letterbox bars, lens changes or shallow depth of field. Existing barrel fires can remain small dim localized sources; they must not set the palette. No new characters, enemies, towering machines or large buildings. Avoid blanket fog that erases the map: keep foreground silhouette, middle-distance landmarks and distant haze distinct.
+
+SERVICE ROUTE / BLUE INDUSTRIAL DARKNESS
+Lock the wide passage, low flat ceiling, paired upper-wall pipes, central doorway, distant stair and right-side steam source. Give pipes nearly black cores with thin cold blue-white highlights; show damaged brackets and occasional dull exposed metal. Illuminate from the existing far opening and a sparse cold maintenance source concealed by the current structural edges. Blue-gray steam and dust create overlapping depth planes; darkness conceals much of the walls. Damp soot-streaked concrete, mineral seams and scattered grit should read quietly without making the whole floor reflective. Keep the rectangular doorway and open floor legible. Evoke the oppressive physical industrial atmosphere of James Cameron's original The Terminator with the supplied Future War still's blue-black palette. No orange caged-lamp corridor, arched tunnel or newly invented openings.

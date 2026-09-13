@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "viewport": {"width": 1920, "height": 1080},
+  "seed": 2029,
+  "tick": 120,
+  "settings": {"quality": "high", "fov": 72, "controlsSeen": true},
+  "views": [
+    {"id":"01-courtyard","title":"Courtyard / resistance stronghold","feet":[-12,0,-17],"lookAt":[5,2,18],"description":"Ground-level diagonal across the central combat yard toward the command building and eastern structures."},
+    {"id":"02-cargo","title":"Cargo approach / eastern flank","feet":[15,0,-19],"lookAt":[25,2,7],"description":"Ground-level approach to the container dock, with cover, cargo silhouettes and the barracks beyond."},
+    {"id":"03-barracks","title":"Barracks / inhabited shelter","feet":[36,0,5.5],"lookAt":[36,1.65,22],"description":"Standing inside the barracks, looking along the occupied room toward its stairs."},
+    {"id":"04-service","title":"Service trench / underground route","feet":[-36,-3.5,-12.5],"lookAt":[-35.7,-1.85,10],"description":"Standing on the sunken service floor, looking along the long maintenance route."},
+    {"id":"05-rooftop","title":"Barracks roof / battlefield overview","feet":[31.6,6.4,6],"lookAt":[-6,1,0],"description":"Standing on the stair-accessible barracks roof, looking across the dock and central yard. Eye height remains 1.65 m above the roof."}
+  ]
+}

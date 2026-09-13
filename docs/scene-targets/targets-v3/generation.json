@@ -1,0 +1,67 @@
+{
+  "version": 3,
+  "generator": "built-in image_gen",
+  "edit": "Preserve v2 composition and lighting; improve rubble formation, material variation and reduce grain",
+  "views": [
+    {
+      "id": "01-courtyard",
+      "image": "targets-v3/01-courtyard.png",
+      "sha256": "c94d380c9abb0da8edcb29218cb6590bfb509185bae7d16aa1eb26b911ba2d02",
+      "prompt": "prompts-v3/01-courtyard.txt",
+      "prompt_sha256": "bd93d8dd78d657fefa6035050a245c8bb6d24ccee971d9a5e64c50d56dfacd33",
+      "inputs": [
+        "targets-v2/01-courtyard.png",
+        "references/real-debris-user-reference.png",
+        "before/01-courtyard.png"
+      ]
+    },
+    {
+      "id": "02-cargo",
+      "image": "targets-v3/02-cargo.png",
+      "sha256": "8b1dd9c88d7921809b4037b0fa4498a016d8adfcf655426a16aed0a84d428c7f",
+      "prompt": "prompts-v3/02-cargo.txt",
+      "prompt_sha256": "eb8f3f8202c5915342e31c36ff34c766a80fa9c3f3c73fdaf3959ce109f2963d",
+      "inputs": [
+        "targets-v2/02-cargo.png",
+        "references/real-debris-user-reference.png",
+        "before/02-cargo.png"
+      ]
+    },
+    {
+      "id": "03-barracks",
+      "image": "targets-v3/03-barracks.png",
+      "sha256": "b585ae467349a1cae1f987b2fbf492f51e19b44eff6cddf6fadc2be123c3c086",
+      "prompt": "prompts-v3/03-barracks.txt",
+      "prompt_sha256": "5be2642d1ca032da158c5c2f2acea4226e64baf722506cde7e1ae011d29dcf5b",
+      "inputs": [
+        "targets-v2/03-barracks.png",
+        "references/real-debris-user-reference.png",
+        "before/03-barracks.png"
+      ]
+    },
+    {
+      "id": "04-service",
+      "image": "targets-v3/04-service.png",
+      "sha256": "dd9abbe21619ad6055f6022e38cf50ab602e25a0c66784d3ffdcc6fa8682243f",
+      "prompt": "prompts-v3/04-service.txt",
+      "prompt_sha256": "7ef12190134d1617dc9c9caa209de8c11e26fa0b0e19de3b5a508834babff16c",
+      "inputs": [
+        "targets-v2/04-service.png",
+        "references/real-debris-user-reference.png",
+        "before/04-service.png"
+      ]
+    },
+    {
+      "id": "05-rooftop",
+      "image": "targets-v3/05-rooftop.png",
+      "sha256": "a1bca8d0bbc1ec30d07b94fad7eda168c8f1d75b0711b76efbd88ec24dea4583",
+      "prompt": "prompts-v3/05-rooftop.txt",
+      "prompt_sha256": "36b8681aa5c4b70f970e84b969e83e54115a6153952da9b7edf84861c166b7ec",
+      "inputs": [
+        "targets-v2/05-rooftop.png",
+        "references/real-debris-user-reference.png",
+        "before/05-rooftop.png"
+      ]
+    }
+  ]
+}
