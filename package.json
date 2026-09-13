@@ -72,7 +72,8 @@
           0,
           0,
           0
-        ]
+        ],
+        "controlsMode": "threeFirstPerson"
       }
     },
     "publish": {
@@ -84,6 +85,9 @@
         "test/**",
         "tools/**"
       ]
-    }
+    },
+    "plugins": [
+      "./scripts/FirstPerson.plugin.js"
+    ]
   }
 }
