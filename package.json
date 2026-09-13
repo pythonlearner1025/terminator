@@ -31,7 +31,10 @@
     "e2e:webrtc": "node test/e2e/webrtc.mjs",
     "e2e:coop": "node test/e2e/coop.mjs",
     "e2e:coop-three": "node test/e2e/coop-three.mjs",
-    "proof:core": "node tools/prove-core-roster.mjs"
+    "proof:core": "node tools/prove-core-roster.mjs",
+    "assets:selected:fetch": "node tools/fetch-selected-assets.mjs",
+    "assets:selected:fetch-models": "node tools/fetch-selected-assets.mjs --models",
+    "assets:selected:apply-floor": "node tools/apply-selected-floor.mjs"
   },
   "devDependencies": {
     "@gltf-transform/core": "^4.5.0",

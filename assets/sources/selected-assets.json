@@ -1,0 +1,436 @@
+{
+  "version": 1,
+  "direction": "Worn military-industrial / Future War",
+  "assets": [
+    {
+      "family": "wall",
+      "id": "893893fc88104dd8a3bd66333411acd2",
+      "name": "Dirty leaking concrete wall",
+      "provider": "Sketchfab",
+      "url": "https://sketchfab.com/3d-models/none-893893fc88104dd8a3bd66333411acd2",
+      "author": "\u041er\u0440\u043d\u0434\u043f \u042f\u0422G",
+      "license": "CC Attribution",
+      "targets": [
+        "map-wall-12x3x1",
+        "map-wall-28x3x1",
+        "map-wall-18x3x1",
+        "map-wall-16x3x1",
+        "map-wall-1x3x16",
+        "map-wall-1x3x13",
+        "map-wall-1x3x6p4",
+        "map-wall-1x3x15",
+        "map-wall-1x3x6",
+        "map-wall-1x3x7",
+        "map-wall-1x3x1",
+        "map-wall-0p6x3p6x16",
+        "map-wall-0p6x3p6x6",
+        "map-wall-0p6x3p6x12",
+        "map-wall-0p6x3p6x8",
+        "map-wall-12x3p6x0p6",
+        "map-wall-2p5x3p6x0p6"
+      ],
+      "integration": "pending-model-download",
+      "sharedWith": null
+    },
+    {
+      "family": "floor",
+      "id": "hangar_concrete_floor",
+      "name": "Hangar Concrete Floor",
+      "provider": "Poly Haven",
+      "url": "https://polyhaven.com/a/hangar_concrete_floor",
+      "author": "Dimitrios Savva",
+      "license": "CC0",
+      "targets": [
+        "map-floor-60x0p5x60",
+        "map-floor-28x0p1x10",
+        "map-floor-28x0p2x10",
+        "map-floor-20x0p2x2",
+        "map-floor-10x0p7x18",
+        "map-floor-10x0p4x8",
+        "map-floor-12x0p5x60-1ehthkr",
+        "map-floor-12x0p5x60",
+        "map-floor-7p4x0p4x31p4",
+        "map-floor-10x0p2x20-1v1svwu",
+        "map-floor-10x0p2x20-134p795",
+        "map-floor-18x0p3x6",
+        "map-floor-10x0p3x4p8",
+        "map-floor-10x0p3x1p6"
+      ],
+      "integration": "material",
+      "sharedWith": null
+    },
+    {
+      "family": "rubble",
+      "id": "5986d1487d9443b883d67b121c2c903c",
+      "name": "Rubble Pile - Photoscan (Optimized)",
+      "provider": "Sketchfab",
+      "url": "https://sketchfab.com/3d-models/none-5986d1487d9443b883d67b121c2c903c",
+      "author": "Coozy",
+      "license": "CC Attribution",
+      "targets": [
+        "map-rubble-1x1p5x12-zh655b",
+        "map-rubble-nw",
+        "map-rubble-se",
+        "map-rubble-3x1x2-1qfgh79"
+      ],
+      "integration": "pending-model-download",
+      "sharedWith": null
+    },
+    {
+      "family": "truck",
+      "id": "1e9afcb999814bcfa2ea27b22df14059",
+      "name": "Crashed Abandoned Truck - Game Ready",
+      "provider": "Sketchfab",
+      "url": "https://sketchfab.com/3d-models/none-1e9afcb999814bcfa2ea27b22df14059",
+      "author": "Rashad Ibrahimli",
+      "license": "CC Attribution",
+      "targets": [
+        "map-truck-5p5x2p4x2p4-m0jo9i"
+      ],
+      "integration": "pending-model-download",
+      "sharedWith": null
+    },
+    {
+      "family": "barrel",
+      "id": "99483dc2d26548e1955898b063ad87cb",
+      "name": "Barrel Pack - Low Poly Props",
+      "provider": "Sketchfab",
+      "url": "https://sketchfab.com/3d-models/none-99483dc2d26548e1955898b063ad87cb",
+      "author": "Vlaxled",
+      "license": "CC Attribution",
+      "targets": [
+        "map-barrel-0p8x1p3x0p8-103qszk"
+      ],
+      "integration": "pending-model-download",
+      "sharedWith": null
+    },
+    {
+      "family": "container",
+      "id": "2b787d1a02174d0bbca9eac34eb3a486",
+      "name": "Freight shipping container - Rusted",
+      "provider": "Sketchfab",
+      "url": "https://sketchfab.com/3d-models/none-2b787d1a02174d0bbca9eac34eb3a486",
+      "author": "Sousinho",
+      "license": "CC Attribution",
+      "targets": [
+        "map-container-red",
+        "map-container-blue",
+        "map-container-gray"
+      ],
+      "integration": "pending-model-download",
+      "sharedWith": null
+    },
+    {
+      "family": "supply",
+      "id": "19a32159a3d6443e95105f4f7cb51c39",
+      "name": "Cargo Crate",
+      "provider": "Sketchfab",
+      "url": "https://sketchfab.com/3d-models/none-19a32159a3d6443e95105f4f7cb51c39",
+      "author": "boysichterman",
+      "license": "CC Attribution",
+      "targets": [
+        "map-supply-2p6x1p28x1p1"
+      ],
+      "integration": "pending-model-download",
+      "sharedWith": null
+    },
+    {
+      "family": "sandbags",
+      "id": "b917a79cdc884eee9d44018c38b4df5e",
+      "name": "Sandbags",
+      "provider": "Sketchfab",
+      "url": "https://sketchfab.com/3d-models/none-b917a79cdc884eee9d44018c38b4df5e",
+      "author": "usedm",
+      "license": "CC Attribution",
+      "targets": [
+        "map-sandbags-3p2x1p3x1p2"
+      ],
+      "integration": "pending-model-download",
+      "sharedWith": null
+    },
+    {
+      "family": "generator",
+      "id": "05cb0187751541f195d8b7cf3c4736ef",
+      "name": "PE-77-D Generator",
+      "provider": "Sketchfab",
+      "url": "https://sketchfab.com/3d-models/none-05cb0187751541f195d8b7cf3c4736ef",
+      "author": "krambulini",
+      "license": "CC Attribution",
+      "targets": [
+        "map-generator-1p6x1p6x2p4"
+      ],
+      "integration": "pending-model-download",
+      "sharedWith": null
+    },
+    {
+      "family": "spool",
+      "id": "22ddb8e02f944fb7b5662f14fdc50e5e",
+      "name": "Cable Spool",
+      "provider": "Sketchfab",
+      "url": "https://sketchfab.com/3d-models/none-22ddb8e02f944fb7b5662f14fdc50e5e",
+      "author": "wolfgar74",
+      "license": "CC Attribution",
+      "targets": [
+        "map-spool-1p2x1p2x1p2-awmfnx"
+      ],
+      "integration": "pending-model-download",
+      "sharedWith": null
+    },
+    {
+      "family": "bunk",
+      "id": "8fa236c43fe7487499d35b1bd2d2c0a2",
+      "name": "Military bed",
+      "provider": "Sketchfab",
+      "url": "https://sketchfab.com/3d-models/none-8fa236c43fe7487499d35b1bd2d2c0a2",
+      "author": "turn_ye",
+      "license": "CC Attribution",
+      "targets": [
+        "map-bunk-1p1x0p7x2p2"
+      ],
+      "integration": "pending-model-download",
+      "sharedWith": null
+    },
+    {
+      "family": "trader",
+      "id": "689b4d970c1c4a099c7c3c2238310255",
+      "name": "Abandoned Sci-Fi Control Console",
+      "provider": "Sketchfab",
+      "url": "https://sketchfab.com/3d-models/none-689b4d970c1c4a099c7c3c2238310255",
+      "author": "x4vier28",
+      "license": "CC Attribution",
+      "targets": [
+        "map-trader-2x1p3x1p2-3mxpxd"
+      ],
+      "integration": "pending-model-download",
+      "sharedWith": null
+    },
+    {
+      "family": "door",
+      "id": "e46c4b1b423b482084170a5fe72acfa6",
+      "name": "Metal door bunker",
+      "provider": "Sketchfab",
+      "url": "https://sketchfab.com/3d-models/none-e46c4b1b423b482084170a5fe72acfa6",
+      "author": "Mouad Hsaine",
+      "license": "CC Attribution",
+      "targets": [
+        "map-door-0p4x2p7x7p2",
+        "map-door-3x2p7x0p4",
+        "map-door-3x2x0p3"
+      ],
+      "integration": "pending-model-download",
+      "sharedWith": null
+    },
+    {
+      "family": "gate",
+      "id": "fc5f2411ddea4fa19c882e9082f1e173",
+      "name": "Game-Ready Roller Shutters",
+      "provider": "Sketchfab",
+      "url": "https://sketchfab.com/3d-models/none-fc5f2411ddea4fa19c882e9082f1e173",
+      "author": "jellystuff",
+      "license": "CC Attribution-ShareAlike",
+      "targets": [
+        "map-gate-4x3",
+        "map-gate-7x4p8"
+      ],
+      "integration": "pending-model-download",
+      "sharedWith": null
+    },
+    {
+      "family": "hazard",
+      "id": "d3cb922e9304417bad755b8c7298ff4f",
+      "name": "Floor Grate Small Pack [Free]",
+      "provider": "Sketchfab",
+      "url": "https://sketchfab.com/3d-models/none-d3cb922e9304417bad755b8c7298ff4f",
+      "author": "Jesus Fernandez Garcia",
+      "license": "CC Attribution",
+      "targets": [
+        "map-hazard-5x0p1x5",
+        "map-hazard-3x0p1x6"
+      ],
+      "integration": "pending-model-download",
+      "sharedWith": null
+    },
+    {
+      "family": "flank",
+      "id": "51c6567b2d524f179254667176f60a3a",
+      "name": "Worn concrete wall",
+      "provider": "Sketchfab",
+      "url": "https://sketchfab.com/3d-models/none-51c6567b2d524f179254667176f60a3a",
+      "author": "Sousinho",
+      "license": "CC Attribution",
+      "targets": [
+        "map-flank-4x3x1"
+      ],
+      "integration": "pending-model-download",
+      "sharedWith": null
+    },
+    {
+      "family": "tube",
+      "id": "07c2805b50b6476f8e0ad467fae00b82",
+      "name": "Weathered Fluorescent Light/Lamp",
+      "provider": "Sketchfab",
+      "url": "https://sketchfab.com/3d-models/none-07c2805b50b6476f8e0ad467fae00b82",
+      "author": "Mark Peters",
+      "license": "CC Attribution",
+      "targets": [
+        "map-light-fixture-tube"
+      ],
+      "integration": "pending-model-download",
+      "sharedWith": null
+    },
+    {
+      "family": "emergency",
+      "id": "7b12be1b4bd74ee0b10511ddcabf5cc8",
+      "name": "Abandoned Factory Warning Light",
+      "provider": "Sketchfab",
+      "url": "https://sketchfab.com/3d-models/none-7b12be1b4bd74ee0b10511ddcabf5cc8",
+      "author": "x4vier28",
+      "license": "CC Attribution",
+      "targets": [
+        "map-light-fixture-emergency"
+      ],
+      "integration": "pending-model-download",
+      "sharedWith": null
+    },
+    {
+      "family": "work",
+      "id": "e824cce9d5904b0ea935febde4f79bd6",
+      "name": "Game Ready - Floodlight",
+      "provider": "Sketchfab",
+      "url": "https://sketchfab.com/3d-models/none-e824cce9d5904b0ea935febde4f79bd6",
+      "author": "Allan-Jay Branscombe",
+      "license": "CC Attribution",
+      "targets": [
+        "map-light-fixture-work"
+      ],
+      "integration": "pending-model-download",
+      "sharedWith": null
+    },
+    {
+      "family": "pipe",
+      "id": "f43677d2d1014669b7c7a9f220d46eb3",
+      "name": "Modular Pipes",
+      "provider": "Sketchfab",
+      "url": "https://sketchfab.com/3d-models/none-f43677d2d1014669b7c7a9f220d46eb3",
+      "author": "DJMaesen",
+      "license": "CC Attribution",
+      "targets": [
+        "map-pipe-0p26x0p26x30p4"
+      ],
+      "integration": "pending-model-download",
+      "sharedWith": null
+    },
+    {
+      "family": "cable",
+      "id": "86fd2a4c57144bf083882564a63870f7",
+      "name": "Modular cables 1m",
+      "provider": "Sketchfab",
+      "url": "https://sketchfab.com/3d-models/none-86fd2a4c57144bf083882564a63870f7",
+      "author": "Simon Laisn\u00e9",
+      "license": "CC Attribution",
+      "targets": [
+        "map-cable-8x0p75x0p06"
+      ],
+      "integration": "pending-model-download",
+      "sharedWith": null
+    },
+    {
+      "family": "scout",
+      "id": "870c16026c90408a9bb7792cf45438e9",
+      "name": "Terminator T-600",
+      "provider": "Sketchfab",
+      "url": "https://sketchfab.com/3d-models/none-870c16026c90408a9bb7792cf45438e9",
+      "author": "WogColonel",
+      "license": "CC Attribution",
+      "targets": [
+        "unit-scout"
+      ],
+      "integration": "pending-model-download",
+      "sharedWith": null
+    },
+    {
+      "family": "endo",
+      "id": "dd9b3744c30e4bf58aa6f57da00c1eb0",
+      "name": "TERMINATOR: T-800 Endo-Skeleton (Damaged)",
+      "provider": "Sketchfab",
+      "url": "https://sketchfab.com/3d-models/none-dd9b3744c30e4bf58aa6f57da00c1eb0",
+      "author": "CatBYTE Studio",
+      "license": "CC Attribution",
+      "targets": [
+        "unit-endo"
+      ],
+      "integration": "pending-model-download",
+      "sharedWith": null
+    },
+    {
+      "family": "heavy",
+      "id": "dd9b3744c30e4bf58aa6f57da00c1eb0",
+      "name": "TERMINATOR: T-800 Endo-Skeleton (Damaged)",
+      "provider": "Sketchfab",
+      "url": "https://sketchfab.com/3d-models/none-dd9b3744c30e4bf58aa6f57da00c1eb0",
+      "author": "CatBYTE Studio",
+      "license": "CC Attribution",
+      "targets": [
+        "unit-heavy"
+      ],
+      "integration": "pending-model-download",
+      "sharedWith": "endo"
+    },
+    {
+      "family": "t1000",
+      "id": "d84edf1cf92e4c969533f54472e259e3",
+      "name": "T1000 (T2)",
+      "provider": "Sketchfab",
+      "url": "https://sketchfab.com/3d-models/none-d84edf1cf92e4c969533f54472e259e3",
+      "author": "BimboCattibo90",
+      "license": "CC Attribution",
+      "targets": [
+        "unit-t1000"
+      ],
+      "integration": "pending-model-download",
+      "sharedWith": null
+    },
+    {
+      "family": "hkaerial",
+      "id": "f8032df0442c4b909d1cfe6b8edeadc3",
+      "name": "Hunter Killer Tank and Aerial",
+      "provider": "Sketchfab",
+      "url": "https://sketchfab.com/3d-models/none-f8032df0442c4b909d1cfe6b8edeadc3",
+      "author": "Green_Monkey",
+      "license": "CC Attribution",
+      "targets": [
+        "unit-hkaerial"
+      ],
+      "integration": "pending-model-download",
+      "sharedWith": null
+    },
+    {
+      "family": "hktank",
+      "id": "f8032df0442c4b909d1cfe6b8edeadc3",
+      "name": "Hunter Killer Tank and Aerial",
+      "provider": "Sketchfab",
+      "url": "https://sketchfab.com/3d-models/none-f8032df0442c4b909d1cfe6b8edeadc3",
+      "author": "Green_Monkey",
+      "license": "CC Attribution",
+      "targets": [
+        "unit-hktank"
+      ],
+      "integration": "pending-model-download",
+      "sharedWith": "hkaerial"
+    },
+    {
+      "family": "soldier",
+      "id": "de876bfdce1c47a4aa67670faee7208e",
+      "name": "Sci-Fi Soldier / Futuristic Combat Trooper",
+      "provider": "Sketchfab",
+      "url": "https://sketchfab.com/3d-models/none-de876bfdce1c47a4aa67670faee7208e",
+      "author": "ART_LOLL",
+      "license": "CC Attribution",
+      "targets": [
+        "unit-soldier"
+      ],
+      "integration": "pending-model-download",
+      "sharedWith": null
+    }
+  ]
+}

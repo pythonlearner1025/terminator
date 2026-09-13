@@ -70,19 +70,19 @@
   ],
   "images": [
     {
-      "name": "asphalt_02_diff_1k.jpg",
+      "name": "hangar_concrete_floor_diff_1k.jpg",
       "mimeType": "image/jpeg",
-      "uri": "/kite3d/assets/textures/map/asphalt_02_diff_1k.jpg"
+      "uri": "/kite3d/assets/textures/map/hangar_concrete_floor_diff_1k.jpg"
     },
     {
-      "name": "asphalt_02_nor_gl_1k.jpg",
+      "name": "hangar_concrete_floor_nor_gl_1k.jpg",
       "mimeType": "image/jpeg",
-      "uri": "/kite3d/assets/textures/map/asphalt_02_nor_gl_1k.jpg"
+      "uri": "/kite3d/assets/textures/map/hangar_concrete_floor_nor_gl_1k.jpg"
     },
     {
-      "name": "asphalt_02_arm_1k.jpg",
+      "name": "hangar_concrete_floor_arm_1k.jpg",
       "mimeType": "image/jpeg",
-      "uri": "/kite3d/assets/textures/map/asphalt_02_arm_1k.jpg"
+      "uri": "/kite3d/assets/textures/map/hangar_concrete_floor_arm_1k.jpg"
     }
   ],
   "buffers": [
@@ -97,25 +97,57 @@
       "name": "Map ground",
       "pbrMetallicRoughness": {
         "baseColorFactor": [
-          0.32,
-          0.38,
-          0.43,
+          0.65,
+          0.65,
+          0.65,
           1
         ],
-        "roughnessFactor": 0.94,
+        "roughnessFactor": 1,
         "metallicFactor": 0,
         "baseColorTexture": {
-          "index": 0
+          "index": 0,
+          "extensions": {
+            "KHR_texture_transform": {
+              "scale": [
+                30,
+                30
+              ]
+            }
+          }
         },
         "metallicRoughnessTexture": {
-          "index": 2
+          "index": 2,
+          "extensions": {
+            "KHR_texture_transform": {
+              "scale": [
+                30,
+                30
+              ]
+            }
+          }
         }
       },
       "normalTexture": {
-        "index": 1
+        "index": 1,
+        "extensions": {
+          "KHR_texture_transform": {
+            "scale": [
+              30,
+              30
+            ]
+          }
+        }
       },
       "occlusionTexture": {
-        "index": 2
+        "index": 2,
+        "extensions": {
+          "KHR_texture_transform": {
+            "scale": [
+              30,
+              30
+            ]
+          }
+        }
       }
     }
   ],
@@ -160,5 +192,8 @@
         0
       ]
     }
+  ],
+  "extensionsUsed": [
+    "KHR_texture_transform"
   ]
 }

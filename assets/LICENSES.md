@@ -115,3 +115,16 @@ No reference image pixels enter these maps. These originals are dedicated under 
 Optics reuse `textures/units/optic-*`. Reflections reuse `textures/units/studio_small_09_1k.hdr`.
 Fire, dust, and smoke reuse `textures/weapons/fx-smoke.png`. Their licenses appear above.
 Film and product references remain under excluded `docs/reference/terminator/`.
+
+
+## Selected Hangar Concrete Floor
+
+`assets/textures/map/hangar_concrete_floor_{diff,nor_gl,arm}_1k.jpg`:
+[Hangar Concrete Floor](https://polyhaven.com/a/hangar_concrete_floor) by Dimitrios Savva,
+Poly Haven, [CC0 1.0](https://polyhaven.com/license). Downloaded 2026-09-12.
+The diffuse, OpenGL normal and packed AO/roughness/metalness maps are 1K JPEGs.
+Original checksums and download URLs are recorded in `assets/sources/hangar-concrete-floor.json`.
+Slabs use a neutral tint and repeat the texture at its documented two-meter width.
+
+The other entries in `assets/sources/selected-assets.json` are selected sources pending
+model acquisition and integration. They do not indicate that those models are included.

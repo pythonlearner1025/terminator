@@ -3,6 +3,7 @@ import {Document, NodeIO, Accessor} from '@gltf-transform/core'
 import {mkdir, readFile, rm, writeFile} from 'node:fs/promises'
 import {dirname, relative, resolve} from 'node:path'
 import {fileURLToPath} from 'node:url'
+import {applySelectedFloor} from './lib/selected-floor.mjs'
 
 globalThis.ImageData ??= class {}
 const THREE = await import('three')
@@ -64,6 +65,7 @@ async function main() {
     delete manifest.files[id]
   }
   await writeJson(manifestPath, manifest)
+  await applySelectedFloor(root)
   process.stdout.write(`${JSON.stringify({pieceTypes: Object.keys(registry.assets).length, instances: placements.pieces.length, filesWritten, totalBytes}, null, 2)}\n`)
 }
 
