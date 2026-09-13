@@ -26,7 +26,7 @@ try {
   window.mapCaptureFrame=()=>{m.world.tick++;m.mapView.sync(m.world);window.viewer.setDirty()}
   window.viewer.addEventListener('preFrame',window.mapCaptureFrame)
  })
- const output=process.argv[2]||'docs/evidence/map'
+ const output=process.argv[2]||'/Users/minjunes/games/terminator-evidence/docs/evidence/map'
  await mkdir(new URL(output+'/',root),{recursive:true})
  for(const [name,pos,target] of [
   ['tunnel',[-36,-1.85,-12.5],[-35.7,-1.85,10]],

@@ -6,7 +6,7 @@ import {chromium} from 'playwright'
 import {startSignalStub} from '../net/signal-stub.mjs'
 
 const GAME_PORT = 4730
-const EVIDENCE = 'docs/evidence/coop-e2e'
+const EVIDENCE = '/Users/minjunes/games/terminator-evidence/docs/evidence/coop-e2e'
 const steps = []
 const issues = []
 const ownedProcesses = []
@@ -845,4 +845,3 @@ async function stopCombatGuard(page) {
     for (const code of ['Mouse0', 'Mouse2', 'KeyS', 'ShiftLeft']) bindings.held.delete(code)
   })
 }
-

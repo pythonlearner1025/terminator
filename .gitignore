@@ -4,3 +4,6 @@ dist/
 *.log
 .env
 .kite3d/
+docs/evidence/**
+!docs/evidence/
+!docs/evidence/README.md

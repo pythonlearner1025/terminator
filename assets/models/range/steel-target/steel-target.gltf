@@ -1,0 +1,697 @@
+{
+  "asset": {
+    "generator": "Terminator tools/build-range-assets.mjs with glTF-Transform 4.5.0 and three.js",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "name": "Target stand leg POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        0.027499999850988388,
+        0.5,
+        0.027499999850988388
+      ],
+      "min": [
+        -0.027499999850988388,
+        -0.5,
+        -0.027499999850988388
+      ],
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Target stand leg NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 0,
+      "byteOffset": 12
+    },
+    {
+      "name": "Target stand leg TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 0,
+      "byteOffset": 24
+    },
+    {
+      "name": "Target stand leg indices",
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 36,
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Target stand foot indices",
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 36,
+      "bufferView": 1,
+      "byteOffset": 72
+    },
+    {
+      "name": "Target stand leg indices",
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 36,
+      "bufferView": 1,
+      "byteOffset": 144
+    },
+    {
+      "name": "Target stand foot indices",
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 36,
+      "bufferView": 1,
+      "byteOffset": 216
+    },
+    {
+      "name": "Target stand beam indices",
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 36,
+      "bufferView": 1,
+      "byteOffset": 288
+    },
+    {
+      "name": "Plate suspension strap indices",
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 36,
+      "bufferView": 1,
+      "byteOffset": 360
+    },
+    {
+      "name": "Plate suspension strap indices",
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 36,
+      "bufferView": 1,
+      "byteOffset": 432
+    },
+    {
+      "name": "Target stand foot POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        0.375,
+        0.02500000037252903,
+        0.30000001192092896
+      ],
+      "min": [
+        -0.375,
+        -0.02500000037252903,
+        -0.30000001192092896
+      ],
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "name": "Target stand foot NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 2,
+      "byteOffset": 12
+    },
+    {
+      "name": "Target stand foot TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 2,
+      "byteOffset": 24
+    },
+    {
+      "name": "Target stand leg POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        0.027499999850988388,
+        0.5,
+        0.027499999850988388
+      ],
+      "min": [
+        -0.027499999850988388,
+        -0.5,
+        -0.027499999850988388
+      ],
+      "bufferView": 3,
+      "byteOffset": 0
+    },
+    {
+      "name": "Target stand leg NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 3,
+      "byteOffset": 12
+    },
+    {
+      "name": "Target stand leg TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 3,
+      "byteOffset": 24
+    },
+    {
+      "name": "Target stand foot POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        0.375,
+        0.02500000037252903,
+        0.30000001192092896
+      ],
+      "min": [
+        -0.375,
+        -0.02500000037252903,
+        -0.30000001192092896
+      ],
+      "bufferView": 4,
+      "byteOffset": 0
+    },
+    {
+      "name": "Target stand foot NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 4,
+      "byteOffset": 12
+    },
+    {
+      "name": "Target stand foot TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 4,
+      "byteOffset": 24
+    },
+    {
+      "name": "Target stand beam POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        0.027499999850988388,
+        0.5,
+        0.027499999850988388
+      ],
+      "min": [
+        -0.027499999850988388,
+        -0.5,
+        -0.027499999850988388
+      ],
+      "bufferView": 5,
+      "byteOffset": 0
+    },
+    {
+      "name": "Target stand beam NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 5,
+      "byteOffset": 12
+    },
+    {
+      "name": "Target stand beam TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 5,
+      "byteOffset": 24
+    },
+    {
+      "name": "Suspended steel silhouette POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 324,
+      "max": [
+        0.2939999997615814,
+        0.14399999380111694,
+        0.014999999664723873
+      ],
+      "min": [
+        -0.2939999997615814,
+        -0.8040000200271606,
+        -0.003000000026077032
+      ],
+      "bufferView": 6,
+      "byteOffset": 0
+    },
+    {
+      "name": "Suspended steel silhouette NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 324,
+      "bufferView": 6,
+      "byteOffset": 12
+    },
+    {
+      "name": "Suspended steel silhouette TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 324,
+      "bufferView": 6,
+      "byteOffset": 24
+    },
+    {
+      "name": "Plate suspension strap POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        0.027499999850988388,
+        0.5,
+        0.027499999850988388
+      ],
+      "min": [
+        -0.027499999850988388,
+        -0.5,
+        -0.027499999850988388
+      ],
+      "bufferView": 7,
+      "byteOffset": 0
+    },
+    {
+      "name": "Plate suspension strap NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 7,
+      "byteOffset": 12
+    },
+    {
+      "name": "Plate suspension strap TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 7,
+      "byteOffset": 24
+    },
+    {
+      "name": "Plate suspension strap POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        0.027499999850988388,
+        0.5,
+        0.027499999850988388
+      ],
+      "min": [
+        -0.027499999850988388,
+        -0.5,
+        -0.027499999850988388
+      ],
+      "bufferView": 8,
+      "byteOffset": 0
+    },
+    {
+      "name": "Plate suspension strap NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 8,
+      "byteOffset": 12
+    },
+    {
+      "name": "Plate suspension strap TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 8,
+      "byteOffset": 24
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 768,
+      "byteStride": 32,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 768,
+      "byteLength": 504,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1272,
+      "byteLength": 768,
+      "byteStride": 32,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2040,
+      "byteLength": 768,
+      "byteStride": 32,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2808,
+      "byteLength": 768,
+      "byteStride": 32,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3576,
+      "byteLength": 768,
+      "byteStride": 32,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4344,
+      "byteLength": 10368,
+      "byteStride": 32,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 14712,
+      "byteLength": 768,
+      "byteStride": 32,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 15480,
+      "byteLength": 768,
+      "byteStride": 32,
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "name": "Range Steel Target Asset geometry",
+      "uri": "steel-target.bin",
+      "byteLength": 16248
+    }
+  ],
+  "materials": [
+    {
+      "name": "Range dark steel",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.010329823026364548,
+          0.015996293361446288,
+          0.019382360952473074,
+          1
+        ],
+        "roughnessFactor": 0.76,
+        "metallicFactor": 0.72
+      }
+    },
+    {
+      "name": "Range worn steel",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.13843161502267545,
+          0.174647403645279,
+          0.19461783043107173,
+          1
+        ],
+        "roughnessFactor": 0.64,
+        "metallicFactor": 0.78
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Target stand leg",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 3
+        }
+      ]
+    },
+    {
+      "name": "Target stand foot",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 10,
+            "NORMAL": 11,
+            "TEXCOORD_0": 12
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 4
+        }
+      ]
+    },
+    {
+      "name": "Target stand leg",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 13,
+            "NORMAL": 14,
+            "TEXCOORD_0": 15
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 5
+        }
+      ]
+    },
+    {
+      "name": "Target stand foot",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 16,
+            "NORMAL": 17,
+            "TEXCOORD_0": 18
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 6
+        }
+      ]
+    },
+    {
+      "name": "Target stand beam",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 19,
+            "NORMAL": 20,
+            "TEXCOORD_0": 21
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 7
+        }
+      ]
+    },
+    {
+      "name": "Suspended steel silhouette",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 22,
+            "NORMAL": 23,
+            "TEXCOORD_0": 24
+          },
+          "mode": 4,
+          "material": 1
+        }
+      ]
+    },
+    {
+      "name": "Plate suspension strap",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 25,
+            "NORMAL": 26,
+            "TEXCOORD_0": 27
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 8
+        }
+      ]
+    },
+    {
+      "name": "Plate suspension strap",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 28,
+            "NORMAL": 29,
+            "TEXCOORD_0": 30
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 9
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Range Steel Target Asset",
+      "extras": {
+        "rangeFixtureAsset": "steel-target"
+      },
+      "children": [
+        1
+      ]
+    },
+    {
+      "name": "Range Target Stand",
+      "children": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "name": "Target stand leg",
+      "translation": [
+        -0.42,
+        0.99,
+        0
+      ],
+      "scale": [
+        1,
+        1.98,
+        1
+      ],
+      "mesh": 0
+    },
+    {
+      "name": "Target stand foot",
+      "translation": [
+        -0.42,
+        0.03,
+        0
+      ],
+      "mesh": 1
+    },
+    {
+      "name": "Target stand leg",
+      "translation": [
+        0.42,
+        0.99,
+        0
+      ],
+      "scale": [
+        1,
+        1.98,
+        1
+      ],
+      "mesh": 2
+    },
+    {
+      "name": "Target stand foot",
+      "translation": [
+        0.42,
+        0.03,
+        0
+      ],
+      "mesh": 3
+    },
+    {
+      "name": "Target stand beam",
+      "translation": [
+        0,
+        2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0.7071067811865475,
+        0.7071067811865476
+      ],
+      "scale": [
+        1,
+        1.05,
+        1
+      ],
+      "mesh": 4
+    },
+    {
+      "name": "Plate Pivot",
+      "translation": [
+        0,
+        1.8,
+        0
+      ],
+      "children": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "name": "Suspended steel silhouette",
+      "mesh": 5
+    },
+    {
+      "name": "Plate suspension strap",
+      "translation": [
+        -0.2,
+        0,
+        0.035
+      ],
+      "scale": [
+        0.5,
+        0.35,
+        0.5
+      ],
+      "mesh": 6
+    },
+    {
+      "name": "Plate suspension strap",
+      "translation": [
+        0.2,
+        0,
+        0.035
+      ],
+      "scale": [
+        0.5,
+        0.35,
+        0.5
+      ],
+      "mesh": 7
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Range Steel Target Asset",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

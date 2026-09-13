@@ -2,7 +2,7 @@
 import {chromium} from 'playwright'
 import {readFile,writeFile,mkdir} from 'node:fs/promises'
 import assert from 'node:assert/strict'
-const root=new URL('../',import.meta.url),out=new URL('docs/evidence/ragdoll/',root)
+const root=new URL('../',import.meta.url),out=new URL('file:///Users/minjunes/games/terminator-evidence/docs/evidence/ragdoll/')
 const dev=JSON.parse(await readFile(new URL('.kite3d/dev.json',root),'utf8'))
 assert.equal(new URL(dev.origin).port,'4670')
 const captureScreenshots=process.argv.includes('--screenshots')
@@ -22,7 +22,7 @@ page.on('pageerror',e=>errors.push(redact(e.message)))
 page.on('console',e=>{if(['warning','error'].includes(e.type()))report(e.text(),e.location().url)})
 try {
   await page.request.get(dev.url)
-  await page.goto(dev.origin+'/files/docs/evidence/pass-enemies/runtime.html')
+  await page.goto(dev.origin+'/files/tools/map-runtime.html')
   await page.waitForFunction(()=>window.terminator?.manager?.unitView,null,{timeout:90000})
   await page.waitForFunction(()=>terminator.manager.ui.screens.route==='main',null,{timeout:90000})
   await page.evaluate(async()=>{

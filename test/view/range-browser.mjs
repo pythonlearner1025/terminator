@@ -3,7 +3,7 @@
 import assert from 'node:assert/strict'
 import {chromium} from 'playwright'
 import {readFile,writeFile,mkdir} from 'node:fs/promises'
-const output='docs/evidence/range'
+const output='/Users/minjunes/games/terminator-evidence/docs/evidence/range'
 await mkdir(output,{recursive:true})
 const dev=JSON.parse(await readFile('.kite3d/dev.json','utf8'))
 assert.equal(new URL(dev.url).port,'4682')

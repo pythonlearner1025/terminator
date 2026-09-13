@@ -17,7 +17,7 @@ shots use staged core positions and loadouts, advancing the existing switch anim
 before freezing the capture. They are not proof of natural playthrough progress.
 The map, gameplay unit meshes, weapons, and effects belong to the other visual passes
 and remain below the KF2 target in this branch. Replace the store captures after those
-passes merge using `node docs/evidence/pass-presentation/capture.mjs`.
+passes merge using `node /Users/minjunes/games/terminator-evidence/docs/evidence/pass-presentation/capture.mjs`.
 
 The menu owns six 1024 x 1024 PBR maps. Rebuild them with `python3 docs/store/build-materials.py`
 (Pillow and NumPy). Per-file provenance is in `assets/store/LICENSES.md`.

@@ -9,7 +9,7 @@ import {WebSocket} from 'ws'
 import {SIGNAL_ORIGIN} from '../../lib/net/signaling.js'
 
 const ROOT = new URL('../../', import.meta.url)
-const EVIDENCE = new URL('../../docs/evidence/lobby-qa/', import.meta.url)
+const EVIDENCE = new URL('file:///Users/minjunes/games/terminator-evidence/docs/evidence/lobby-qa/')
 const RAW = new URL('raw-results.json', EVIDENCE)
 const PORT = 4740
 const LOAD_SECONDS = Number(process.env.LOBBY_LOAD_SECONDS || 6)

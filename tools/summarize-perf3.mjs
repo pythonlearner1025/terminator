@@ -5,7 +5,7 @@ import {dirname, resolve} from 'node:path'
 const args=process.argv.slice(2)
 const value=(name,fallback='')=>args.find(arg=>arg.startsWith(`--${name}=`))?.slice(name.length+3)??fallback
 const phase=value('phase')
-const output=value('output',`docs/evidence/perf3/${phase}.json`)
+const output=value('output',`/Users/minjunes/games/terminator-evidence/docs/evidence/perf3/${phase}.json`)
 const files=args.filter(arg=>!arg.startsWith('--'))
 if(!phase||!files.length)throw new Error('Usage: summarize-perf3 --phase=before [--output=path] run.json ...')
 

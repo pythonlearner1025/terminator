@@ -2,7 +2,7 @@
 import {chromium} from 'playwright'
 import {readFile,writeFile,mkdir} from 'node:fs/promises'
 import assert from 'node:assert/strict'
-const root=new URL('../',import.meta.url),out=new URL('docs/evidence/scout-gait/',root)
+const root=new URL('../',import.meta.url),out=new URL('file:///Users/minjunes/games/terminator-evidence/docs/evidence/scout-gait/')
 const dev=JSON.parse(await readFile(new URL('.kite3d/dev.json',root),'utf8'))
 assert.equal(new URL(dev.origin).port,'4680')
 await mkdir(out,{recursive:true})
@@ -12,7 +12,7 @@ const errors=[]
 page.on('pageerror',e=>errors.push(String(e.message).replace(/([?&]t=)[^&\s)"']+/g,'$1[redacted]')))
 try {
   await page.request.get(dev.url)
-  await page.goto(dev.origin+'/files/docs/evidence/pass-enemies/runtime.html')
+  await page.goto(dev.origin+'/files/tools/map-runtime.html')
   await page.waitForFunction(()=>window.terminator?.manager?.unitView,null,{timeout:90000})
   await page.evaluate(async()=>{
     const m=terminator.manager

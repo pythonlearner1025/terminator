@@ -4,7 +4,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageOps
 import json, math, subprocess, re
 
 scratch=Path('.kite3d/tracers2')
-out=Path('docs/evidence/tracers2')
+out=Path('/Users/minjunes/games/terminator-evidence/docs/evidence/tracers2')
 out.mkdir(parents=True,exist_ok=True)
 subprocess.run(['ffmpeg','-v','error','-framerate','20','-i',str(scratch/'burst/%03d.png'),
     '-filter_complex','[0:v]scale=640:360:flags=lanczos,split[a][b];[a]palettegen=max_colors=160:stats_mode=diff[p];[b][p]paletteuse=dither=bayer:bayer_scale=3:diff_mode=rectangle',

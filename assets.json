@@ -575,6 +575,20 @@
         "textures/units/optic-normal.png": "assets/textures/units/optic-normal.png",
         "textures/units/optic-emissive.png": "assets/textures/units/optic-emissive.png"
       }
+    },
+    "range-steel-target": {
+      "path": "assets/models/range/steel-target/steel-target.gltf",
+      "files": {
+        "f.gltf": "assets/models/range/steel-target/steel-target.gltf",
+        "steel-target.bin": "assets/models/range/steel-target/steel-target.bin"
+      }
+    },
+    "range-firing-line": {
+      "path": "assets/models/range/firing-line/firing-line.gltf",
+      "files": {
+        "f.gltf": "assets/models/range/firing-line/firing-line.gltf",
+        "firing-line.bin": "assets/models/range/firing-line/firing-line.bin"
+      }
     }
   }
 }

@@ -23,7 +23,7 @@ HK-Tank findings from the film and product study:
 
 Film frames and fifteen initial findings per unit live under [docs/reference/terminator](reference/terminator/SOURCES.md).
 Hot Toys images were added during the final comparison. Initial product studies used DarkSide and HCG models.
-[Evidence and limitations](evidence/roster-visuals/README.md) contain benchmark numbers, test counts, check results, and six captures.
+[Evidence and limitations](/Users/minjunes/games/terminator-evidence/docs/evidence/roster-visuals/README.md) contain benchmark numbers, test counts, check results, and six captures.
 
 Files added or changed follow. Each line describes one file.
 
@@ -35,19 +35,19 @@ Files added or changed follow. Each line describes one file.
 - [assets/textures/roster/liquid-albedo.jpg](../assets/textures/roster/liquid-albedo.jpg): Adds an original licensed PBR texture.
 - [assets/textures/roster/liquid-normal.png](../assets/textures/roster/liquid-normal.png): Adds an original licensed PBR texture.
 - [assets/textures/roster/liquid-orm.png](../assets/textures/roster/liquid-orm.png): Adds an original licensed PBR texture.
-- [docs/evidence/roster-visuals/01-t1000-blade.png](../docs/evidence/roster-visuals/01-t1000-blade.png): Records one 1920 by 1080 headless game fixture.
-- [docs/evidence/roster-visuals/02-hkaerial-bank.png](../docs/evidence/roster-visuals/02-hkaerial-bank.png): Records one 1920 by 1080 headless game fixture.
-- [docs/evidence/roster-visuals/03-hktank-boss.png](../docs/evidence/roster-visuals/03-hktank-boss.png): Records one 1920 by 1080 headless game fixture.
-- [docs/evidence/roster-visuals/04-t1000-puddle.png](../docs/evidence/roster-visuals/04-t1000-puddle.png): Records one 1920 by 1080 headless game fixture.
-- [docs/evidence/roster-visuals/05-hkaerial-breakup.png](../docs/evidence/roster-visuals/05-hkaerial-breakup.png): Records one 1920 by 1080 headless game fixture.
-- [docs/evidence/roster-visuals/06-hktank-wreck.png](../docs/evidence/roster-visuals/06-hktank-wreck.png): Records one 1920 by 1080 headless game fixture.
-- [docs/evidence/roster-visuals/README.md](../docs/evidence/roster-visuals/README.md): Reports measured results, commands, capture paths, and remaining gaps.
-- [docs/evidence/roster-visuals/after.json](../docs/evidence/roster-visuals/after.json): Retains the final mixed-roster benchmark.
-- [docs/evidence/roster-visuals/before.json](../docs/evidence/roster-visuals/before.json): Retains the baseline mixed-roster benchmark.
-- [docs/evidence/roster-visuals/capture.json](../docs/evidence/roster-visuals/capture.json): Records headless fixture assertions and disposal results.
-- [docs/evidence/roster-visuals/collider-fit.json](../docs/evidence/roster-visuals/collider-fit.json): Records twenty part bounds and six settled pose comparisons.
-- [docs/evidence/roster-visuals/deaths.json](../docs/evidence/roster-visuals/deaths.json): Retains the three-type death benchmark.
-- [docs/evidence/roster-visuals/validation.json](../docs/evidence/roster-visuals/validation.json): Records test totals and all three Kite3D outcomes.
+- [01-t1000-blade.png](/Users/minjunes/games/terminator-evidence/docs/evidence/roster-visuals/01-t1000-blade.png): Records one 1920 by 1080 headless game fixture.
+- [02-hkaerial-bank.png](/Users/minjunes/games/terminator-evidence/docs/evidence/roster-visuals/02-hkaerial-bank.png): Records one 1920 by 1080 headless game fixture.
+- [03-hktank-boss.png](/Users/minjunes/games/terminator-evidence/docs/evidence/roster-visuals/03-hktank-boss.png): Records one 1920 by 1080 headless game fixture.
+- [04-t1000-puddle.png](/Users/minjunes/games/terminator-evidence/docs/evidence/roster-visuals/04-t1000-puddle.png): Records one 1920 by 1080 headless game fixture.
+- [05-hkaerial-breakup.png](/Users/minjunes/games/terminator-evidence/docs/evidence/roster-visuals/05-hkaerial-breakup.png): Records one 1920 by 1080 headless game fixture.
+- [06-hktank-wreck.png](/Users/minjunes/games/terminator-evidence/docs/evidence/roster-visuals/06-hktank-wreck.png): Records one 1920 by 1080 headless game fixture.
+- [README.md](/Users/minjunes/games/terminator-evidence/docs/evidence/roster-visuals/README.md): Reports measured results, commands, capture paths, and remaining gaps.
+- [after.json](/Users/minjunes/games/terminator-evidence/docs/evidence/roster-visuals/after.json): Retains the final mixed-roster benchmark.
+- [before.json](/Users/minjunes/games/terminator-evidence/docs/evidence/roster-visuals/before.json): Retains the baseline mixed-roster benchmark.
+- [capture.json](/Users/minjunes/games/terminator-evidence/docs/evidence/roster-visuals/capture.json): Records headless fixture assertions and disposal results.
+- [collider-fit.json](/Users/minjunes/games/terminator-evidence/docs/evidence/roster-visuals/collider-fit.json): Records twenty part bounds and six settled pose comparisons.
+- [deaths.json](/Users/minjunes/games/terminator-evidence/docs/evidence/roster-visuals/deaths.json): Retains the three-type death benchmark.
+- [validation.json](/Users/minjunes/games/terminator-evidence/docs/evidence/roster-visuals/validation.json): Records test totals and all three Kite3D outcomes.
 - [docs/reference/terminator/SOURCES.md](../docs/reference/terminator/SOURCES.md): Records film and product sources and the final comparison.
 - [docs/reference/terminator/hkaerial/NOTES.md](../docs/reference/terminator/hkaerial/NOTES.md): Records fifteen observations before modeling.
 - [docs/reference/terminator/hkaerial/action-01.jpg](../docs/reference/terminator/hkaerial/action-01.jpg): Retains a study image excluded from publishing.
@@ -83,11 +83,10 @@ Files added or changed follow. Each line describes one file.
 - [docs/reference/terminator/t1000/hot-toys-face.jpg](../docs/reference/terminator/t1000/hot-toys-face.jpg): Retains a study image excluded from publishing.
 - [docs/reference/terminator/t1000/product.jpg](../docs/reference/terminator/t1000/product.jpg): Retains a study image excluded from publishing.
 - [docs/roster-visuals.md](../docs/roster-visuals.md): Maps reference findings and changed files.
-- [generators/roster-geometry.js](../generators/roster-geometry.js): Builds merged human, gunship, tank, and low-detail rigs.
-- [generators/roster-materials.js](../generators/roster-materials.js): Loads shared PBR maps and installs liquid and tread shaders.
-- [generators/roster-textures.py](../generators/roster-textures.py): Bakes six deterministic 1024-pixel PBR textures.
-- [generators/unit-placeholders.js](../generators/unit-placeholders.js): Routes legacy factory calls to the new roster builders.
-- [generators/unit-template.generator.js](../generators/unit-template.generator.js): Registers the three new authored previews.
+- [tools/lib/roster-figure.js](../tools/lib/roster-figure.js): Builds merged human, gunship, tank, and low-detail rigs.
+- [lib/view/roster-materials.js](../lib/view/roster-materials.js): Loads shared PBR maps and installs liquid and tread shaders.
+- [tools/bake-roster-textures.py](../tools/bake-roster-textures.py): Bakes six deterministic 1024-pixel PBR textures.
+- [tools/lib/unit-figure.js](../tools/lib/unit-figure.js): Builds the three endoskeleton asset families.
 - [lib/ui/boss.js](../lib/ui/boss.js): Renders boss health, rear-core hint, and inbound title.
 - [lib/ui/hud.js](../lib/ui/hud.js): Integrates boss UI and fixes T-1000 names and roster kill icons.
 - [lib/ui/icons.js](../lib/ui/icons.js): Adds T-1000, Aerial, Tank, and core symbols.

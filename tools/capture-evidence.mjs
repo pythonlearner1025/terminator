@@ -3,7 +3,7 @@ import {mkdir, readFile} from 'node:fs/promises'
 import {chromium} from 'playwright'
 
 const root = new URL('../', import.meta.url)
-const output = new URL('../docs/evidence/phase1/', import.meta.url)
+const output = new URL('file:///Users/minjunes/games/terminator-evidence/docs/evidence/phase1/')
 await mkdir(output, {recursive: true})
 const dev = JSON.parse(await readFile(new URL('.kite3d/dev.json', root), 'utf8'))
 const browser = await chromium.launch({
@@ -103,10 +103,10 @@ try {
   await page.waitForFunction(() => !document.querySelector('[data-testid="terminator-hud"]'), undefined, {timeout: 5000})
   if (messages.length) throw new Error(`Browser emitted ${messages.length} warning or error messages:\n${messages.join('\n')}`)
   console.log(JSON.stringify({walkedFrom: beforeWalk, walkedTo: afterWalk, damageEvents, ...finalState, screenshots: [
-    'docs/evidence/phase1/gray-box-player.png',
-    'docs/evidence/phase1/hud-wave.png',
-    'docs/evidence/phase1/unit-close-up.png',
-    'docs/evidence/phase1/intermission.png',
+    '/Users/minjunes/games/terminator-evidence/docs/evidence/phase1/gray-box-player.png',
+    '/Users/minjunes/games/terminator-evidence/docs/evidence/phase1/hud-wave.png',
+    '/Users/minjunes/games/terminator-evidence/docs/evidence/phase1/unit-close-up.png',
+    '/Users/minjunes/games/terminator-evidence/docs/evidence/phase1/intermission.png',
   ]}, null, 2))
 } finally {
   await browser.close()

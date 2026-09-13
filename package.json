@@ -20,11 +20,11 @@
     "tunnel": "node server/party-tunnel.js",
     "dev:all": "concurrently -k -n game,server \"npm run dev\" \"npm run server\"",
     "test": "find test -type f -name '*.test.js' -exec node --test {} +",
-    "build:map-textures": "python3 generators/map.bake.py",
+    "build:textures": "python3 tools/bake-map-textures.py && python3 tools/bake-unit-textures.py && python3 tools/bake-roster-textures.py",
     "build:map-assets": "node tools/build-map-assets.mjs",
-    "build:unit-textures": "python3 generators/unit-textures.py && python3 generators/roster-textures.py",
     "build:unit-assets": "node tools/build-unit-assets.mjs",
-    "build:assets": "npm run build:map-textures && npm run build:map-assets && npm run build:unit-textures && npm run build:unit-assets && npm run scene",
+    "build:range-assets": "node tools/build-range-assets.mjs",
+    "build:assets": "npm run build:textures && npm run build:map-assets && npm run build:unit-assets && npm run build:range-assets && npm run scene",
     "scene": "node tools/build-scene.mjs",
     "benchmark": "node tools/benchmark-world.mjs",
     "benchmark:view": "node tools/benchmark-browser.mjs",
@@ -78,6 +78,7 @@
     "publish": {
       "exclude": [
         "docs/**",
+        "docs/evidence/**",
         "server/**",
         "packages/**",
         "test/**",

@@ -1,5 +1,6 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
+import {readFile} from 'node:fs/promises'
 globalThis.ImageData??=class {}
 globalThis.window??={}
 const E=await import('threepipe')
@@ -8,6 +9,19 @@ const {RangeClock}=await import('../../lib/core/range.js')
 const {CameraFeel}=await import('../../lib/view/camera-feel.js')
 const {WeaponAnimation}=await import('../../lib/view/weapons-animation.js')
 const {createWeaponRigs}=await import('../../lib/view/weapons.js')
+
+test('range fixtures are registered glTF assets with a named animation pivot',async()=>{
+ const root=new URL('../../',import.meta.url)
+ const manifest=JSON.parse(await readFile(new URL('assets.json',root),'utf8'))
+ for(const [id,slug] of [['range-steel-target','steel-target'],['range-firing-line','firing-line']]){
+  const entry=manifest.files[id]
+  assert.equal(entry.path,`assets/models/range/${slug}/${slug}.gltf`)
+  assert.ok(entry.files['f.gltf']);assert.ok(entry.files[`${slug}.bin`])
+ }
+ const target=JSON.parse(await readFile(new URL(manifest.files['range-steel-target'].path,root),'utf8'))
+ const names=new Set(target.nodes.map(node=>node.name))
+ assert.ok(names.has('Plate Pivot'));assert.ok(names.has('Suspended steel silhouette'))
+})
 
 test('range plates register silhouette hits, reject empty shoulders, and respect nearer world impacts',()=>{
  const plate={x:15,y:1.8,z:0,id:'plate-1',lastHit:-Infinity,hits:0}

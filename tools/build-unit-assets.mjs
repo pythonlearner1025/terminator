@@ -16,9 +16,9 @@ globalThis.FileReader ??= class FileReader {
 
 const THREE = await import('three')
 const {GLTFExporter} = await import('three/addons/exporters/GLTFExporter.js')
-const {createUnitFigure} = await import('../generators/unit-template.generator.js')
-const {createRosterFigure} = await import('../generators/roster-geometry.js')
-const {createSoldierFigure} = await import('../generators/soldier-template.generator.js')
+const {createUnitFigure} = await import('./lib/unit-figure.js')
+const {createRosterFigure} = await import('./lib/roster-figure.js')
+const {createSoldierFigure} = await import('./lib/soldier-figure.js')
 
 const root = fileURLToPath(new URL('../', import.meta.url))
 const assetsPath = resolve(root, 'assets.json')

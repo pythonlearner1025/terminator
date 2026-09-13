@@ -16,21 +16,21 @@ Poly Haven assets are CC0 1.0: https://polyhaven.com/license. Downloaded 2026-09
 | `assets/textures/map/rusty_metal_02_nor_gl_1k.jpg` | [Poly Haven asset](https://polyhaven.com/a/rusty_metal_02), CC0 1.0. Original [download](https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rusty_metal_02/rusty_metal_02_nor_gl_1k.jpg). |
 | `assets/textures/map/rusty_metal_02_arm_1k.jpg` | [Poly Haven asset](https://polyhaven.com/a/rusty_metal_02), CC0 1.0. Original [download](https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rusty_metal_02/rusty_metal_02_arm_1k.jpg). |
 | `assets/hdri/qwantani_moon_noon_puresky_2k.hdr` | [Poly Haven asset](https://polyhaven.com/a/qwantani_moon_noon_puresky), CC0 1.0. Original [download](https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/qwantani_moon_noon_puresky_2k.hdr). |
-| `assets/textures/map/canvas_albedo.jpg` | Original procedural bake, generators/map.bake.py. No third party source; project asset. |
-| `assets/textures/map/canvas_arm.jpg` | Original procedural bake, generators/map.bake.py. No third party source; project asset. |
-| `assets/textures/map/canvas_normal.jpg` | Original procedural bake, generators/map.bake.py. No third party source; project asset. |
-| `assets/textures/map/corrugated_albedo.jpg` | Derived from Poly Haven Rusty Metal 02, CC0 1.0, using generators/map.bake.py. |
-| `assets/textures/map/corrugated_arm.jpg` | Derived from Poly Haven Rusty Metal 02, CC0 1.0, using generators/map.bake.py. |
-| `assets/textures/map/corrugated_normal.jpg` | Derived from Poly Haven Rusty Metal 02, CC0 1.0, using generators/map.bake.py. |
-| `assets/textures/map/decals_albedo.png` | Original procedural bake, generators/map.bake.py. No third party source; project asset. |
-| `assets/textures/map/decals_arm.jpg` | Original procedural bake, generators/map.bake.py. No third party source; project asset. |
-| `assets/textures/map/decals_normal.jpg` | Original procedural bake, generators/map.bake.py. No third party source; project asset. |
-| `assets/textures/map/glass_albedo.jpg` | Original procedural bake, generators/map.bake.py. No third party source; project asset. |
-| `assets/textures/map/glass_arm.jpg` | Original procedural bake, generators/map.bake.py. No third party source; project asset. |
-| `assets/textures/map/glass_normal.jpg` | Original procedural bake, generators/map.bake.py. No third party source; project asset. |
-| `assets/textures/map/paint_albedo.jpg` | Derived from Poly Haven Rusty Metal 02, CC0 1.0, using generators/map.bake.py. |
-| `assets/textures/map/paint_arm.jpg` | Derived from Poly Haven Rusty Metal 02, CC0 1.0, using generators/map.bake.py. |
-| `assets/textures/map/paint_normal.jpg` | Derived from Poly Haven Rusty Metal 02, CC0 1.0, using generators/map.bake.py. |
+| `assets/textures/map/canvas_albedo.jpg` | Original procedural bake, tools/bake-map-textures.py. No third party source; project asset. |
+| `assets/textures/map/canvas_arm.jpg` | Original procedural bake, tools/bake-map-textures.py. No third party source; project asset. |
+| `assets/textures/map/canvas_normal.jpg` | Original procedural bake, tools/bake-map-textures.py. No third party source; project asset. |
+| `assets/textures/map/corrugated_albedo.jpg` | Derived from Poly Haven Rusty Metal 02, CC0 1.0, using tools/bake-map-textures.py. |
+| `assets/textures/map/corrugated_arm.jpg` | Derived from Poly Haven Rusty Metal 02, CC0 1.0, using tools/bake-map-textures.py. |
+| `assets/textures/map/corrugated_normal.jpg` | Derived from Poly Haven Rusty Metal 02, CC0 1.0, using tools/bake-map-textures.py. |
+| `assets/textures/map/decals_albedo.png` | Original procedural bake, tools/bake-map-textures.py. No third party source; project asset. |
+| `assets/textures/map/decals_arm.jpg` | Original procedural bake, tools/bake-map-textures.py. No third party source; project asset. |
+| `assets/textures/map/decals_normal.jpg` | Original procedural bake, tools/bake-map-textures.py. No third party source; project asset. |
+| `assets/textures/map/glass_albedo.jpg` | Original procedural bake, tools/bake-map-textures.py. No third party source; project asset. |
+| `assets/textures/map/glass_arm.jpg` | Original procedural bake, tools/bake-map-textures.py. No third party source; project asset. |
+| `assets/textures/map/glass_normal.jpg` | Original procedural bake, tools/bake-map-textures.py. No third party source; project asset. |
+| `assets/textures/map/paint_albedo.jpg` | Derived from Poly Haven Rusty Metal 02, CC0 1.0, using tools/bake-map-textures.py. |
+| `assets/textures/map/paint_arm.jpg` | Derived from Poly Haven Rusty Metal 02, CC0 1.0, using tools/bake-map-textures.py. |
+| `assets/textures/map/paint_normal.jpg` | Derived from Poly Haven Rusty Metal 02, CC0 1.0, using tools/bake-map-textures.py. |
 
 ARM channels are ambient occlusion (red), roughness (green), metalness (blue). Normal maps are OpenGL tangent space. Source maps are 1K, moon HDRI is 2K, decal atlas is 2K.
 
@@ -40,19 +40,19 @@ All files below are stored in `assets/textures/units/`.
 
 | File | Source | License |
 | --- | --- | --- |
-| `endoskeleton-albedo.jpg` | Original deterministic bake, `generators/unit-textures.py` | Project-authored, no third-party input |
-| `endoskeleton-normal.png` | Original deterministic bake, `generators/unit-textures.py` | Project-authored, no third-party input |
-| `endoskeleton-orm.png` | Original deterministic bake, `generators/unit-textures.py` | Project-authored, no third-party input |
-| `optic-albedo.png` | Original deterministic bake, `generators/unit-textures.py` | Project-authored, no third-party input |
-| `optic-normal.png` | Original deterministic bake, `generators/unit-textures.py` | Project-authored, no third-party input |
-| `optic-orm.png` | Original deterministic bake, `generators/unit-textures.py` | Project-authored, no third-party input |
-| `optic-emissive.png` | Original deterministic bake, `generators/unit-textures.py` | Project-authored, no third-party input |
-| `impact-albedo.png` | Original deterministic bake, `generators/unit-textures.py` | Project-authored, no third-party input |
-| `impact-normal.png` | Original deterministic bake, `generators/unit-textures.py` | Project-authored, no third-party input |
-| `impact-orm.png` | Original deterministic bake, `generators/unit-textures.py` | Project-authored, no third-party input |
+| `endoskeleton-albedo.jpg` | Original deterministic bake, `tools/bake-unit-textures.py` | Project-authored, no third-party input |
+| `endoskeleton-normal.png` | Original deterministic bake, `tools/bake-unit-textures.py` | Project-authored, no third-party input |
+| `endoskeleton-orm.png` | Original deterministic bake, `tools/bake-unit-textures.py` | Project-authored, no third-party input |
+| `optic-albedo.png` | Original deterministic bake, `tools/bake-unit-textures.py` | Project-authored, no third-party input |
+| `optic-normal.png` | Original deterministic bake, `tools/bake-unit-textures.py` | Project-authored, no third-party input |
+| `optic-orm.png` | Original deterministic bake, `tools/bake-unit-textures.py` | Project-authored, no third-party input |
+| `optic-emissive.png` | Original deterministic bake, `tools/bake-unit-textures.py` | Project-authored, no third-party input |
+| `impact-albedo.png` | Original deterministic bake, `tools/bake-unit-textures.py` | Project-authored, no third-party input |
+| `impact-normal.png` | Original deterministic bake, `tools/bake-unit-textures.py` | Project-authored, no third-party input |
+| `impact-orm.png` | Original deterministic bake, `tools/bake-unit-textures.py` | Project-authored, no third-party input |
 | `studio_small_09_1k.hdr` | [Studio Small 09](https://polyhaven.com/a/studio_small_09), Sergej Majboroda, Poly Haven. Downloaded 2026-09-11. | [CC0 1.0](https://polyhaven.com/license) |
 
-ORM packs ambient occlusion in R, roughness in G and metalness in B. The optical emissive map and impact alpha are separate. Geometry is project-authored in `generators/unit-template.generator.js`. No third-party endoskeleton model was imported.
+ORM packs ambient occlusion in R, roughness in G and metalness in B. The optical emissive map and impact alpha are separate. Geometry is project-authored in `tools/lib/unit-figure.js`. No third-party endoskeleton model was imported.
 
 ## Weapons
 
@@ -100,7 +100,7 @@ Reference video frames stay under `docs/reference/kf2/gore/`, which publishing e
 
 ## Roster PBR maps
 
-Each file is an original 1024 by 1024 procedural bake from `generators/roster-textures.py`, seed 2029.
+Each file is an original 1024 by 1024 procedural bake from `tools/bake-roster-textures.py`, seed 2029.
 No reference image pixels enter these maps. These originals are dedicated under CC0 1.0.
 
 | File | Source | License |

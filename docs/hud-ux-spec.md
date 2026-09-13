@@ -11,7 +11,7 @@ W18 replaces the text treatments below. Barlow, angular panels, scanlines, skull
 - HUD: icon/number vitals, numeric ammunition, `WAVE 3/10`, remaining count, `SKYNET · BUILT-IN · 1140`, `E7 S3 H1`, one short transmission line, three icon feed entries. Enemy plates show type, rev and health only. Teammates keep names and health, with armor bars. Spectate keeps the target name and arrow controls. No gameplay hints or chatter subtitles.
 - Results: result, wave, kills/accuracy/damage taken/scrap, Play Again. Co-op shows the same four values per player; initials identify players, with full names in accessible labels. Partial history and unavailable/disconnected data retain accessible labels. Server dossier APIs and core data are unchanged.
 
-Measurements, screenshots, and checks: [W18 evidence](evidence/w18-terse-ui/README.md).
+Measurements, screenshots, and checks: [W18 evidence](/Users/minjunes/games/terminator-evidence/docs/evidence/w18-terse-ui/README.md).
 
 Quality bar: Killing Floor 2. Every element below exists in KF2 or is the Skynet equivalent. The look is
 dark, gritty, angular panels, a condensed sans-serif face, subtle scanlines, and high-contrast numbers.

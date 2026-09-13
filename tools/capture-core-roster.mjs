@@ -4,7 +4,7 @@ import {mkdir, readFile, writeFile} from 'node:fs/promises'
 import {chromium} from 'playwright'
 
 const PORT = 4665
-const OUTPUT = 'docs/evidence/core-roster'
+const OUTPUT = '/Users/minjunes/games/terminator-evidence/docs/evidence/core-roster'
 const dev = JSON.parse(await readFile('.kite3d/dev.json', 'utf8'))
 assert.equal(new URL(dev.url).port, String(PORT), `Kite3D dev must use port ${PORT}`)
 await mkdir(OUTPUT, {recursive: true})

@@ -8,7 +8,7 @@ import {SIGNAL_ORIGIN} from '../../lib/net/signaling.js'
 import {startSignalStub} from '../net/signal-stub.mjs'
 
 const root = new URL('../../', import.meta.url)
-const evidence = new URL('../../docs/evidence/pass-webrtc/', import.meta.url)
+const evidence = new URL('file:///Users/minjunes/games/terminator-evidence/docs/evidence/pass-webrtc/')
 const port = Number(process.env.KITE3D_COOP_PORT || 4730)
 const signalMode = process.env.KITE3D_SIGNAL_MODE === 'deployed' ? 'deployed' : 'stub'
 const consoleErrors = []

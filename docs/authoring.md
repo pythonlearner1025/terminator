@@ -91,9 +91,9 @@ No unit wrapper uses a Generator component.
 
 ## Build and edit workflow
 
-Run `npm run build:assets` after changing map or unit build inputs.
-The command builds map textures, map assets, unit textures, and unit assets in that order.
-It creates or updates the scene layout last.
+Run `npm run build:assets` after changing map, unit, or range build inputs.
+The command builds textures, map assets, unit assets, and range assets in that order.
+It creates or updates the Bunker 7 scene layout last.
 After migration, it preserves human transforms, asset replacements, and deletions.
 Set `RESET_MAP_PLACEMENTS=1` only when the canonical layout must replace those edits.
 
@@ -112,6 +112,7 @@ Select that root to move, replace, rename, hide, or delete the piece.
 The unit files reference shared textures under `assets/textures/units/` and `assets/textures/roster/`.
 `tools/build-unit-assets.mjs` updates the seven `unit-*` entries without removing map entries.
 `tools/build-map-assets.mjs` updates the 69 `map-*` entries without removing unit entries.
+`tools/build-range-assets.mjs` updates two `range-*` entries for the optional range mode.
 
 ## Data split
 
@@ -125,3 +126,38 @@ These include spawn gates, doors, switches, hazards, lights, starts, surfaces, f
 `scripts/GameManager.script.js` reads placed nodes when Play starts.
 `lib/core/map.js` applies their transforms to the registry shapes.
 `World`, collision, and navigation receive that derived map.
+
+## Generator retirement
+
+The project has no `generators/` directory and registers no Generator component.
+Build-only figure code lives under `tools/lib/`.
+Runtime material adapters live under `lib/view/`.
+The Python texture bakes live beside other build code under `tools/`.
+
+## Range fixture ownership
+
+The optional range is a Play-time mode, not authored Bunker 7 content.
+Therefore, range placement during Play is acceptable.
+`tools/build-range-assets.mjs` writes the steel target and firing-line files under `assets/models/range/`.
+It also registers `range-steel-target` and `range-firing-line` in `assets.json`.
+`lib/view/range-props.js` loads those files and places six target nodes during Play.
+It creates no visible geometry.
+Stop removes all loaded range nodes through `RuntimeObjectOwner`.
+
+## Weapons Lab branch sync
+
+The `lab/weapons` branch must merge this cleanup commit before it retires its lab generators.
+Keep the lab worktree unchanged until that merge.
+Then run `npm install` and `npm run build:assets` to create shared unit and range assets.
+Run `node tools/build-lab-assets.mjs` from the lab branch.
+The command writes three lab fixture assets and replaces every lab Generator node with placed assets.
+It creates separate placed nodes for six plates and eighteen range targets.
+Remove all `generators/` entries from `kite3d.scripts` after the scene migration.
+Keep only `GameManager.script.js`, `WeaponsLab.script.js`, and other real component scripts.
+Run `node tools/build-lab-assets.mjs` again to confirm that the lab migration is deterministic.
+
+## Evidence location
+
+Historical evidence and all new agent evidence live under `/Users/minjunes/games/terminator-evidence/docs/evidence/`.
+The repository keeps only `docs/evidence/README.md` as a pointer.
+The publish exclusions retain `docs/**`, so evidence and tracked study frames never ship.

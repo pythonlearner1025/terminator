@@ -37,15 +37,15 @@ Legend: [ ] todo, [~] in progress, [x] done, [!] blocked
 - [x] W0 Brainstorm and plan
 - [x] W1 Discover kite3d: scaffold, API, headless, screenshots. See docs/kite3d-notes.md
 - [x] W2 Scaffold the project and the architecture skeleton. See docs/architecture.md
-- [x] W3 Map visuals for Bunker 7 (astra). Evidence docs/evidence/w3
+- [x] W3 Map visuals for Bunker 7 (astra). Evidence: `/Users/minjunes/games/terminator-evidence/docs/evidence/w3`.
 - [x] W3b Vertical movement: stairs, balcony, multi-level navigation (sol)
-- [x] W4 Enemies built to docs/art-reference.md, animation, hit reactions, death (astra). Evidence docs/evidence/w4
+- [x] W4 Enemies built to docs/art-reference.md, animation, hit reactions, death (astra). Evidence: `/Users/minjunes/games/terminator-evidence/docs/evidence/w4`.
 - [x] W5 NPC script runtime: QuickJS sandbox, fuel cap, sensor and actuator API (sol)
 - [x] W6 + W7 Wave director, telemetry, event bus, headless simulator with ghost (sol)
-- [x] W8 + W9 Lobby server, game relay, MCP server, reference LLM client (sol). Evidence docs/evidence/w8
-- [x] W10 HUD and UX: HUD, trader, menus, lobby screen, dossier screen (astra). Evidence docs/evidence/w10
-- [x] W11 First-person weapons with hands and animations (astra). Evidence docs/evidence/w11
-- [x] W12 Audio: procedural WebAudio, 40 sounds, bindings (sol). Evidence docs/evidence/w12
+- [x] W8 + W9 Lobby server, game relay, MCP server, reference LLM client (sol). Evidence: `/Users/minjunes/games/terminator-evidence/docs/evidence/w8`.
+- [x] W10 HUD and UX: HUD, trader, menus, lobby screen, dossier screen (astra). Evidence: `/Users/minjunes/games/terminator-evidence/docs/evidence/w10`.
+- [x] W11 First-person weapons with hands and animations (astra). Evidence: `/Users/minjunes/games/terminator-evidence/docs/evidence/w11`.
+- [x] W12 Audio: procedural WebAudio, 40 sounds, bindings (sol). Evidence: `/Users/minjunes/games/terminator-evidence/docs/evidence/w12`.
 - [x] Fixes from checkpoint 1 play: right handed controls (1de5880), no re-aim from frozen cursor on click (52de5bb)
 - [x] Aim down sights on right mouse, crosshair removed, easier economy, health reset at wave clear (17d2e95, 5709510, b3fd86a)
 - [x] Co-op pass (docs/coop-design.md): soldier model, multi-player core, netcode and relay, co-op UI. Two-client relay proof on the final tree: both reach wave 1, 21 Hz snapshots, zero errors. Boot regression fixed (78ad572).
@@ -53,10 +53,10 @@ Legend: [ ] todo, [~] in progress, [x] done, [!] blocked
 - [x] AAA pass (existing level only): audio 439e7d4, materials 855b436, enemies 10ab883, presentation 304e642, weapons 8468bd1, each a squash of its worktree branch. 89 tests, check green
 - [x] Performance pass 1 (sol): light previews and lazy PBR fixed the 28 s boot; published as release 703528bb
 - [x] Checkpoint 2 feedback fixes, each a squash of its worktree branch: HUD scale slider and subtle HUD, jump, dead bodies no longer block stairs, Scout gallop restored (93c4404 and before)
-- [x] Grenades as projectiles with a 2.5 s fuse, bounce, and 4 m blast (c64c81c, sol). 7 tests, evidence docs/evidence/pass-grenade
-- [x] Ragdoll deaths on cannon-es, eight active, wrecks stay 180 s then sink and fade (bcc4554, astra). Evidence docs/evidence/ragdoll
+- [x] Grenades as projectiles with a 2.5 s fuse, bounce, and 4 m blast (c64c81c, sol). 7 tests. Evidence: `/Users/minjunes/games/terminator-evidence/docs/evidence/pass-grenade`.
+- [x] Ragdoll deaths on cannon-es, eight active, wrecks stay 180 s then sink and fade (bcc4554, astra). Evidence: `/Users/minjunes/games/terminator-evidence/docs/evidence/ragdoll`.
 - [x] Menu Endo: reflection map path, NaN head turn from a pose without yaw, camera framing (5755a6a, 9558f7c)
-- [x] Performance pass 2 (astra, integrated with ragdolls by sol): warmup of shaders, textures, audio, and the death path; fixed pools; stable lights; 1K unit textures. 24 enemies: CPU p99 15.1 to 12.1 ms, first M4 kill 937 to 15 ms (800bf86). Evidence docs/evidence/perf2
+- [x] Performance pass 2 (astra, integrated with ragdolls by sol): warmup of shaders, textures, audio, and the death path; fixed pools; stable lights; 1K unit textures. 24 enemies: CPU p99 15.1 to 12.1 ms, first M4 kill 937 to 15 ms (800bf86). Evidence: `/Users/minjunes/games/terminator-evidence/docs/evidence/perf2`.
 - [x] Co-op fix pass: gameplay-only pointer lock, reliable guest prediction and reconnect, lobby return, and two-client proof
 - [x] KF2 core pass: enemy projectiles, six-unit roster, bosses, sniper, launcher, telemetry, simulator proof
 - [x] KF2 weapon and gore views: real sniper and launcher rigs, projectile visuals, dismemberment, deformation, and crawl state
@@ -69,6 +69,7 @@ Legend: [ ] todo, [~] in progress, [x] done, [!] blocked
 - [ ] Checkpoint 2: owner hosts a party from the published game with Host Party and the ?party= link and plays with a friend
 - [x] Editor bug: toolbar icons blank. Root cause: idle full-rate render loop. PR blitzdotdev/kite3d#4, CI green, unmerged
 - [ ] kite3d CLI bug to file: a second `kite3d dev` on another port deletes the shared .kite3d/dev.json on exit and orphans the first server
+- [x] Authoring rule change: map, units, and range fixtures use file-backed assets. Generators are retired. Evidence moved outside the repository.
 - [~] Checkpoint 1: tests 54 pass, check passes, editor open on port 4300 in Play, owner playing (2026-09-11)
 - [ ] W13 Feedback fixes and polish, then Checkpoint 2
 

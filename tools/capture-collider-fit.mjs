@@ -6,10 +6,10 @@ import {chromium} from 'playwright'
 const name = process.argv[2]
 assert.ok(name === 'before' || name === 'after', 'usage: node tools/capture-collider-fit.mjs before|after')
 const root = new URL('../', import.meta.url)
-const output = new URL(`docs/evidence/hitboxes/${name}.png`, root)
+const output = new URL(`file:///Users/minjunes/games/terminator-evidence/docs/evidence/hitboxes/${name}.png`)
 const dev = JSON.parse(await readFile(new URL('.kite3d/dev.json', root), 'utf8'))
 assert.equal(new URL(dev.origin).port, '4687')
-await mkdir(new URL('docs/evidence/hitboxes/', root), {recursive: true})
+await mkdir(new URL('file:///Users/minjunes/games/terminator-evidence/docs/evidence/hitboxes/'), {recursive: true})
 const browser = await chromium.launch({executablePath: chromium.executablePath(), headless: true})
 const page = await browser.newPage({viewport: {width: 1600, height: 1000}, deviceScaleFactor: 1})
 const errors = []
@@ -20,7 +20,7 @@ page.on('console', message => {
 })
 try {
   await page.request.get(dev.url)
-  await page.goto(`${dev.origin}/files/docs/evidence/hitboxes/runtime.html?colliders=1`, {waitUntil: 'domcontentloaded'})
+  await page.goto(`${dev.origin}/files/tools/map-runtime.html?colliders=1`, {waitUntil: 'domcontentloaded'})
   await page.waitForFunction(() => window.terminator?.manager?.world, null, {timeout: 90_000})
   await page.evaluate(async () => {
     const manager = window.terminator.manager

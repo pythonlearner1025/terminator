@@ -4,13 +4,13 @@
 
 ```text
 assets/       Saved scenes, textures, reusable map pieces, and placed unit models
-generators/   Deterministic geometry and texture inputs used only by authoring tools
 lib/core/     Headless simulation, data, default brains, waves, and HUD projection
 lib/view/     Kite3D and threepipe adapters
 lib/ui/       HTML and CSS HUD
 scripts/      Kite3D Object3D components
 test/core/    Node tests for the headless simulation
-tools/        Reproducible scene and benchmark commands
+tools/        Reproducible asset, scene, texture, and benchmark commands
+tools/lib/    Build-only figure and glTF export libraries
 ```
 
 ## Module boundaries
@@ -34,7 +34,7 @@ The editor can then save human transform, visibility, name, replacement, and del
 
 ## Placed unit assets
 
-`npm run build:assets` builds map textures and assets, then builds unit textures and assets.
+`npm run build:assets` builds all textures, map assets, unit assets, and range assets.
 It runs `tools/build-scene.mjs` last. The unit builder uses deterministic source geometry with
 Three.js materials. It exports each unit through
 `GLTFExporter`, reads the result through glTF Transform, and writes text glTF plus an external buffer.
@@ -99,7 +99,9 @@ pellet directions and impact points. These optional records do not consume rando
 `lib/ui/range.js` mounts only for `range=1`. `lib/view/range.js` owns visual plates and debug overlays.
 The inspector uses the existing weapon rig, material projection, and animation state.
 Range targets and props are runtime-only because range mode is not part of Bunker 7.
-`lib/view/range-props.js` creates them outside `modelRoot` and removes them on Stop.
+Their reusable glTF files live under `assets/models/range/` and are registered in `assets.json`.
+`lib/view/range-props.js` loads and places those files outside `modelRoot` during Play.
+It creates no visible geometry, and Stop removes every placed range node.
 
 All ranged enemy attacks are fixed-tick entries in `world.projectiles`. Rounds and bolts fly straight.
 Tank shells use gravity and splash damage. Swept map and player-capsule tests prevent tunneling.
@@ -329,7 +331,7 @@ No map, unit, or weapon number belongs in the view or HUD.
 ## Later workstream ownership
 
 - Map visuals own `assets/models/map/`, `lib/view/map*`, and `tools/build-map-assets.mjs`.
-- W4 enemies owns `assets/models/units/`, `generators/unit*`, `lib/view/units*`, and `tools/build-unit-assets.mjs`.
+- W4 enemies owns `assets/models/units/`, `tools/lib/*-figure.js`, `lib/view/units*`, and `tools/build-unit-assets.mjs`.
 - W5 sandbox owns `lib/core/sandbox/`.
 - W6 and W7 director and simulator own `lib/core/waves*` and `lib/core/sim/`.
 - W8 server owns `server/` and `packages/`.

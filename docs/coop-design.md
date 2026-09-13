@@ -111,4 +111,4 @@ like the enemies, same material style.
 - Net (sol): server/ party relay, `npm run tunnel`, lib/net/party-host.js, lib/net/party-guest.js,
   prediction and reconciliation, GameManager wiring, tests with two headless clients in one process.
 - UI (astra): lib/ui party screens, teammates HUD, spectate, scoreboard.
-- Soldier model (astra): generators/soldier*, lib/view/players*.
+- Soldier model (astra): `tools/lib/soldier-figure.js` and `lib/view/players*`.
