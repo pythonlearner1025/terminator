@@ -1,0 +1,223 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v4.4.56",
+    "version": "2.0"
+  },
+  "extensionsUsed": [
+    "KHR_texture_transform",
+    "KHR_materials_specular",
+    "KHR_materials_sheen"
+  ],
+  "extensionsRequired": [
+    "KHR_texture_transform"
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "sphere_gltf"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_specular": {
+          "specularTexture": {
+            "extensions": {
+              "KHR_texture_transform": {
+                "scale": [
+                  0.9984230995178223,
+                  1
+                ]
+              }
+            },
+            "index": 0
+          }
+        },
+        "KHR_materials_sheen": {
+          "sheenColorFactor": [
+            1,
+            1,
+            1
+          ],
+          "sheenRoughnessFactor": 0.35990336537361145
+        }
+      },
+      "name": "denim_fabric_03",
+      "normalTexture": {
+        "extensions": {
+          "KHR_texture_transform": {
+            "scale": [
+              0.9984230995178223,
+              1
+            ]
+          }
+        },
+        "index": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "extensions": {
+            "KHR_texture_transform": {
+              "scale": [
+                0.9984230995178223,
+                1
+              ]
+            }
+          },
+          "index": 2
+        },
+        "metallicRoughnessTexture": {
+          "extensions": {
+            "KHR_texture_transform": {
+              "scale": [
+                0.9984230995178223,
+                1
+              ]
+            }
+          },
+          "index": 3
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Sphere.001",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    },
+    {
+      "sampler": 0,
+      "source": 3
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/jpeg",
+      "name": "denim_fabric_03_spec_ior",
+      "uri": "textures/denim_fabric_03_spec_ior_1k.jpg"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "name": "denim_fabric_03_nor_gl",
+      "uri": "textures/denim_fabric_03_nor_gl_1k.jpg"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "name": "denim_fabric_03_diff",
+      "uri": "textures/denim_fabric_03_diff_1k.jpg"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "name": "denim_fabric_03_metal-denim_fabric_03_rough",
+      "uri": "textures/denim_fabric_03_arm_1k.jpg"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 53937,
+      "max": [
+        0.13558843731880188,
+        0.1355513334274292,
+        0.13552503287792206
+      ],
+      "min": [
+        -0.1355891078710556,
+        -0.13553005456924438,
+        -0.13552510738372803
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 53937,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 53937,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 322170,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 647244,
+      "byteOffset": 0,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 647244,
+      "byteOffset": 647244,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 431496,
+      "byteOffset": 1294488,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 644340,
+      "byteOffset": 1725984,
+      "target": 34963
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 2370324,
+      "uri": "denim_fabric_03.bin"
+    }
+  ]
+}
