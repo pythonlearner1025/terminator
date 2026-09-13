@@ -1,0 +1,2464 @@
+{
+  "cursors": {
+    "next": "12",
+    "previous": null
+  },
+  "next": "https://api.sketchfab.com/v3/search?count=12&cursor=12&downloadable=true&q=electrical+cable&sort_by=-relevance&type=models",
+  "previous": null,
+  "results": [
+    {
+      "uri": "https://api.sketchfab.com/v3/models/1a49e6f9a4d04784b55c8ac17fbe3959",
+      "uid": "1a49e6f9a4d04784b55c8ac17fbe3959",
+      "name": "OMICRON-MPD800",
+      "staffpickedAt": null,
+      "viewCount": 5,
+      "likeCount": 0,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-1a49e6f9a4d04784b55c8ac17fbe3959",
+      "embedUrl": "https://sketchfab.com/models/1a49e6f9a4d04784b55c8ac17fbe3959/embed",
+      "commentCount": 2,
+      "isDownloadable": true,
+      "publishedAt": "2026-08-25T07:36:25.832815",
+      "tags": [
+        {
+          "name": "testing",
+          "slug": "testing",
+          "uri": "https://api.sketchfab.com/v3/tags/testing"
+        },
+        {
+          "name": "engineer",
+          "slug": "engineer",
+          "uri": "https://api.sketchfab.com/v3/tags/engineer"
+        },
+        {
+          "name": "play",
+          "slug": "play",
+          "uri": "https://api.sketchfab.com/v3/tags/play"
+        },
+        {
+          "name": "mpd",
+          "slug": "mpd",
+          "uri": "https://api.sketchfab.com/v3/tags/mpd"
+        },
+        {
+          "name": "rodin",
+          "slug": "rodin",
+          "uri": "https://api.sketchfab.com/v3/tags/rodin"
+        },
+        {
+          "name": "shaded",
+          "slug": "shaded",
+          "uri": "https://api.sketchfab.com/v3/tags/shaded"
+        },
+        {
+          "name": "omicron",
+          "slug": "omicron",
+          "uri": "https://api.sketchfab.com/v3/tags/omicron"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "test",
+          "slug": "test",
+          "uri": "https://api.sketchfab.com/v3/tags/test"
+        },
+        {
+          "name": "3dmodel",
+          "slug": "3dmodel",
+          "uri": "https://api.sketchfab.com/v3/tags/3dmodel"
+        },
+        {
+          "name": "electric",
+          "slug": "electric",
+          "uri": "https://api.sketchfab.com/v3/tags/electric"
+        },
+        {
+          "name": "gen-1",
+          "slug": "gen-1",
+          "uri": "https://api.sketchfab.com/v3/tags/gen-1"
+        },
+        {
+          "name": "createdwithai",
+          "slug": "createdwithai",
+          "uri": "https://api.sketchfab.com/v3/tags/createdwithai"
+        },
+        {
+          "name": "mpd800",
+          "slug": "mpd800",
+          "uri": "https://api.sketchfab.com/v3/tags/mpd800"
+        }
+      ],
+      "categories": [
+        {
+          "name": "electronics-gadgets"
+        },
+        {
+          "name": "science-technology"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "2d1e788bc7aa443bb98b97301b007930",
+            "size": 56121,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/1a49e6f9a4d04784b55c8ac17fbe3959/thumbnails/7db8af67931840678412069949300c4a/d3450aca0f6845549bad8de6e829fc9f.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "aeebf4a31141446a8519bbb120997df6",
+            "size": 19374,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/1a49e6f9a4d04784b55c8ac17fbe3959/thumbnails/7db8af67931840678412069949300c4a/2c061383b41c40bcba40facc9afae62c.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "c9636f5c92504a37847b661b877337ad",
+            "size": 11574,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/1a49e6f9a4d04784b55c8ac17fbe3959/thumbnails/7db8af67931840678412069949300c4a/33134cbd40f04d66bb75a47bad508868.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "bbb37a3d5cdb457a96afe6744a9f0604",
+            "size": 3000,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/1a49e6f9a4d04784b55c8ac17fbe3959/thumbnails/7db8af67931840678412069949300c4a/406c9b472710482682ec9666ed7c449f.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "1db9cd725e24474d97596ef3b93b85c0",
+            "size": 969,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/1a49e6f9a4d04784b55c8ac17fbe3959/thumbnails/7db8af67931840678412069949300c4a/6caf855b17e44dccac3b64f35c0b0add.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "dd57aeace9c2421c8415a5d6dea20dcb",
+        "username": "Saleem.Alk",
+        "displayName": "Saleem",
+        "profileUrl": "https://sketchfab.com/Saleem.Alk",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/b67154a2a1344ab49b6e2f2085319bdb",
+          "images": [
+            {
+              "size": 1372,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/b67154a2a1344ab49b6e2f2085319bdb/8ea36686058f4908a083d4678bfca935.png",
+              "height": 32
+            },
+            {
+              "size": 2334,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/b67154a2a1344ab49b6e2f2085319bdb/daf3f173206348a2a99e1bf04151f159.png",
+              "height": 48
+            },
+            {
+              "size": 4432,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/b67154a2a1344ab49b6e2f2085319bdb/de96bb200f48422b85bc09482d334362.png",
+              "height": 90
+            },
+            {
+              "size": 5150,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/b67154a2a1344ab49b6e2f2085319bdb/648ec38137d74973991822754d5d421b.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/dd57aeace9c2421c8415a5d6dea20dcb"
+      },
+      "description": "A realistic industrial MPD 800 partial discharge measurement and analysis system for high-voltage electrical testing, professional modular test equipment, rugged compact control unit with a modern industrial enclosure, high-quality dark gray and black housing, detailed front control panel, integrated display screen showing partial discharge measurement data and waveforms, multiple electrical connectors, input and output ports, professional measurement cables and accessories, precision-engineered construction, realistic PBR materials, matte non-plastic finish, subtle surface texture, accurate industrial details, professional high-voltage testing equipment, clean isolated product view, studio lighting, photorealistic, high detail, industrial equipment photography, neutral background, no text, no logos.",
+      "faceCount": 38830,
+      "createdAt": "2026-08-25T07:36:15.839345",
+      "vertexCount": 19417,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 933612,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 38830,
+          "vertexCount": 19417
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 543229,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 38830,
+          "vertexCount": 19417
+        },
+        "source": {
+          "textureCount": null,
+          "size": 1863892,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 545388,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/09f48d1f5834409f9b9aa3d2a2cf85fb",
+      "uid": "09f48d1f5834409f9b9aa3d2a2cf85fb",
+      "name": "Simple Power Box",
+      "staffpickedAt": null,
+      "viewCount": 216,
+      "likeCount": 4,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-09f48d1f5834409f9b9aa3d2a2cf85fb",
+      "embedUrl": "https://sketchfab.com/models/09f48d1f5834409f9b9aa3d2a2cf85fb/embed",
+      "commentCount": 2,
+      "isDownloadable": true,
+      "publishedAt": "2026-07-03T23:33:30.158231",
+      "tags": [
+        {
+          "name": "power",
+          "slug": "power",
+          "uri": "https://api.sketchfab.com/v3/tags/power"
+        },
+        {
+          "name": "prop",
+          "slug": "prop",
+          "uri": "https://api.sketchfab.com/v3/tags/prop"
+        },
+        {
+          "name": "electrical",
+          "slug": "electrical",
+          "uri": "https://api.sketchfab.com/v3/tags/electrical"
+        },
+        {
+          "name": "broken",
+          "slug": "broken",
+          "uri": "https://api.sketchfab.com/v3/tags/broken"
+        },
+        {
+          "name": "panel",
+          "slug": "panel",
+          "uri": "https://api.sketchfab.com/v3/tags/panel"
+        },
+        {
+          "name": "box",
+          "slug": "box",
+          "uri": "https://api.sketchfab.com/v3/tags/box"
+        },
+        {
+          "name": "industrial",
+          "slug": "industrial",
+          "uri": "https://api.sketchfab.com/v3/tags/industrial"
+        },
+        {
+          "name": "environment",
+          "slug": "environment",
+          "uri": "https://api.sketchfab.com/v3/tags/environment"
+        },
+        {
+          "name": "wall",
+          "slug": "wall",
+          "uri": "https://api.sketchfab.com/v3/tags/wall"
+        }
+      ],
+      "categories": [],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "ae1b0b286c494f3d851d3b9dd7029dfc",
+            "size": 62148,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/09f48d1f5834409f9b9aa3d2a2cf85fb/thumbnails/3a0fccee2b04483d8d7696566b41ebe3/9eeaf9edd56b4ce39be454427f97b07b.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "d8911022512d420a87dd258027687137",
+            "size": 20593,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/09f48d1f5834409f9b9aa3d2a2cf85fb/thumbnails/3a0fccee2b04483d8d7696566b41ebe3/d47708dce20a466b98641971b4751bc2.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "bb513f0e470947518efdb4e7eb5a61a5",
+            "size": 11977,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/09f48d1f5834409f9b9aa3d2a2cf85fb/thumbnails/3a0fccee2b04483d8d7696566b41ebe3/89abc68b5a574c66be603fa6ae87f72b.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "08c8924d9cbf4971a5bd3734df6fadb5",
+            "size": 2952,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/09f48d1f5834409f9b9aa3d2a2cf85fb/thumbnails/3a0fccee2b04483d8d7696566b41ebe3/928b8c14e90e493fb98059ae06dad735.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "8fee7042bbe44091980d27acfa1545e0",
+            "size": 1029,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/09f48d1f5834409f9b9aa3d2a2cf85fb/thumbnails/3a0fccee2b04483d8d7696566b41ebe3/5aca3859d71b47d2b2add74d03b1dd03.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "32d8f28735b742488276e06718eb17eb",
+        "username": "ChristopherKR",
+        "displayName": "trashbinkr",
+        "profileUrl": "https://sketchfab.com/ChristopherKR",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/3ef1bd11d3eb4b57a0b353e8f2e5fc3e",
+          "images": [
+            {
+              "size": 680,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/3ef1bd11d3eb4b57a0b353e8f2e5fc3e/116042a0854e40538adab302b593683d.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1253,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/3ef1bd11d3eb4b57a0b353e8f2e5fc3e/efea16be51d04eb7a00cb9ea0b43b87f.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2797,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/3ef1bd11d3eb4b57a0b353e8f2e5fc3e/ac9b469ccec74caf923a81fb2f0be3ed.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3215,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/3ef1bd11d3eb4b57a0b353e8f2e5fc3e/a075e1d43d2f446c949b5967b470c757.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/32d8f28735b742488276e06718eb17eb"
+      },
+      "description": "Simple power box with a simple industrial design. Broken cable / normal.",
+      "faceCount": 3505,
+      "createdAt": "2026-07-03T23:28:09.334820",
+      "vertexCount": 1777,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 2,
+          "size": 1260808,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 3313,
+          "vertexCount": 3560
+        },
+        "gltf": {
+          "textureCount": 2,
+          "size": 1145573,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 3313,
+          "vertexCount": 3560
+        },
+        "source": {
+          "textureCount": null,
+          "size": 3385898,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 304281,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "72eb2b1960364637901eacce19283624",
+        "label": "Free Standard"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/0c63358da0594960afc797e3cc5dc95b",
+      "uid": "0c63358da0594960afc797e3cc5dc95b",
+      "name": "Gotham underworld slum/Low-Poly Tenement House",
+      "staffpickedAt": null,
+      "viewCount": 181,
+      "likeCount": 3,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-0c63358da0594960afc797e3cc5dc95b",
+      "embedUrl": "https://sketchfab.com/models/0c63358da0594960afc797e3cc5dc95b/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-01-05T19:27:37.200964",
+      "tags": [
+        {
+          "name": "cyberpunk",
+          "slug": "cyberpunk",
+          "uri": "https://api.sketchfab.com/v3/tags/cyberpunk"
+        },
+        {
+          "name": "noir",
+          "slug": "noir",
+          "uri": "https://api.sketchfab.com/v3/tags/noir"
+        },
+        {
+          "name": "dystopian",
+          "slug": "dystopian",
+          "uri": "https://api.sketchfab.com/v3/tags/dystopian"
+        },
+        {
+          "name": "maxpayne",
+          "slug": "maxpayne",
+          "uri": "https://api.sketchfab.com/v3/tags/maxpayne"
+        },
+        {
+          "name": "gotham",
+          "slug": "gotham",
+          "uri": "https://api.sketchfab.com/v3/tags/gotham"
+        },
+        {
+          "name": "slum",
+          "slug": "slum",
+          "uri": "https://api.sketchfab.com/v3/tags/slum"
+        },
+        {
+          "name": "environmentdesign",
+          "slug": "environmentdesign",
+          "uri": "https://api.sketchfab.com/v3/tags/environmentdesign"
+        },
+        {
+          "name": "architecture",
+          "slug": "architecture",
+          "uri": "https://api.sketchfab.com/v3/tags/architecture"
+        },
+        {
+          "name": "lowpoly",
+          "slug": "lowpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpoly"
+        },
+        {
+          "name": "gameready",
+          "slug": "gameready",
+          "uri": "https://api.sketchfab.com/v3/tags/gameready"
+        },
+        {
+          "name": "neonoir",
+          "slug": "neonoir",
+          "uri": "https://api.sketchfab.com/v3/tags/neonoir"
+        },
+        {
+          "name": "urbandecay",
+          "slug": "urbandecay",
+          "uri": "https://api.sketchfab.com/v3/tags/urbandecay"
+        },
+        {
+          "name": "citykit",
+          "slug": "citykit",
+          "uri": "https://api.sketchfab.com/v3/tags/citykit"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "44acdce4584b493a8eb25959a4b8b9c1",
+            "size": 83098,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/0c63358da0594960afc797e3cc5dc95b/thumbnails/ca6edc5db2ae4435b6b0753cbc7df956/27e8043fdbee4e25930a264689776222.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "d714b1034f6f43b59964e4d941bbb422",
+            "size": 27167,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/0c63358da0594960afc797e3cc5dc95b/thumbnails/ca6edc5db2ae4435b6b0753cbc7df956/dd80ccc41b1b488c9d8f5106ce96ff1c.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "cacd97867694489b838e61107f5d297d",
+            "size": 16169,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/0c63358da0594960afc797e3cc5dc95b/thumbnails/ca6edc5db2ae4435b6b0753cbc7df956/4da5291947cb493ba01a3fd6ed20ed46.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "188bba5417dc423aa6b42ed2e0804eb6",
+            "size": 3627,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/0c63358da0594960afc797e3cc5dc95b/thumbnails/ca6edc5db2ae4435b6b0753cbc7df956/32a3811143d74a00be6cd6b89e7bb088.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "7949ba3f713542089e4354b4cf3584f3",
+            "size": 963,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/0c63358da0594960afc797e3cc5dc95b/thumbnails/ca6edc5db2ae4435b6b0753cbc7df956/2dd55d43d40e48eab1f4a333ce0eaf33.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "f83459ef68554352bd36c5026bf4f3d7",
+        "username": "INGSOC1984",
+        "displayName": "INGSOC1984",
+        "profileUrl": "https://sketchfab.com/INGSOC1984",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/8efa415087b84b2da0458e1b2eac17a0",
+          "images": [
+            {
+              "size": 2585,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/8efa415087b84b2da0458e1b2eac17a0/8219d3d4518c4463a0038b2c9a21e6d2.png",
+              "height": 32
+            },
+            {
+              "size": 4400,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/8efa415087b84b2da0458e1b2eac17a0/caf778bf252f4ca4b596350e80b8fee6.png",
+              "height": 48
+            },
+            {
+              "size": 9107,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/8efa415087b84b2da0458e1b2eac17a0/604a713e06e34352ac69890346583b66.png",
+              "height": 90
+            },
+            {
+              "size": 10052,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/8efa415087b84b2da0458e1b2eac17a0/995b0735370947549339ccd8850e21ee.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/f83459ef68554352bd36c5026bf4f3d7"
+      },
+      "description": "A versatile, low-poly urban tenement building designed for gritty, atmospheric environments. Inspired by the rain-slicked streets of Gotham, the oppressive architecture of Max Payne, and the neon-drenched corridors of Neo-Noir cinema.\n\nThis asset features modular-ready proportions, external AC units, rooftop cisterns, and chaotic electrical wiring\u2014perfect for creating a \"lived-in\" sense of urban decay and social stratification.\n\nKey Features:\n\nAesthetic: Gritty, Industrial, Cyberpunk, and Hard-Boiled Noir.\n\nDetails: External cabling, rooftop water tanks, recessed balconies, and industrial utility boxes.\n\nOptimization: Low-poly geometry suitable for PC and Mobile game engines (Unreal Engine, Unity, Godot).\n\nScale: Real-world architectural scale.\n\nKeywords: #Noir #NeoNoir #Gotham #Cyberpunk #MaxPayne #UrbanDecay #LowPoly #GameReady #EnvironmentDesign #Dystopian #Slum #Architecture #CityKit",
+      "faceCount": 69854,
+      "createdAt": "2026-01-05T19:22:01.817972",
+      "vertexCount": 35816,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 2537828,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 69854,
+          "vertexCount": 51688
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 845145,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 69854,
+          "vertexCount": 51688
+        },
+        "source": {
+          "textureCount": null,
+          "size": 1820766,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 1043722,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/561ecb6dfc2446ad8d5f7b5b8edf5aed",
+      "uid": "561ecb6dfc2446ad8d5f7b5b8edf5aed",
+      "name": "Formula_e__jaguar_i_type-4",
+      "staffpickedAt": null,
+      "viewCount": 32,
+      "likeCount": 2,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-561ecb6dfc2446ad8d5f7b5b8edf5aed",
+      "embedUrl": "https://sketchfab.com/models/561ecb6dfc2446ad8d5f7b5b8edf5aed/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2025-12-29T17:19:37.919645",
+      "tags": [
+        {
+          "name": "carreras",
+          "slug": "carreras",
+          "uri": "https://api.sketchfab.com/v3/tags/carreras"
+        },
+        {
+          "name": "formu",
+          "slug": "formu",
+          "uri": "https://api.sketchfab.com/v3/tags/formu"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "c568394010d9468ca71f22763e324d54",
+            "size": 62950,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/561ecb6dfc2446ad8d5f7b5b8edf5aed/thumbnails/de7bf898e45944c1ba7394bb91a74d92/5cad8e08c7d045319c0da560da44bd4e.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "73c916e704b7460a9ced3c3904c4b3b8",
+            "size": 22091,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/561ecb6dfc2446ad8d5f7b5b8edf5aed/thumbnails/de7bf898e45944c1ba7394bb91a74d92/dce212f9205e43c58e60b1ad590a1a45.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "b71ac5bcf73b47729487a23d0ad179aa",
+            "size": 13032,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/561ecb6dfc2446ad8d5f7b5b8edf5aed/thumbnails/de7bf898e45944c1ba7394bb91a74d92/f0501be7ce834257bd2b6649b7944134.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "b9adb13d9572470fba3d5a6360e33992",
+            "size": 3056,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/561ecb6dfc2446ad8d5f7b5b8edf5aed/thumbnails/de7bf898e45944c1ba7394bb91a74d92/d39a9e0e66ac4c7fbe342374b19547df.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "248f1711e8944478af24bd39c1b0528c",
+            "size": 932,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/561ecb6dfc2446ad8d5f7b5b8edf5aed/thumbnails/de7bf898e45944c1ba7394bb91a74d92/c709b018fdf04552b96e49ac847da189.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "f4e2f70a9a2c413ba7c4d4a1df5303a6",
+        "username": "ezequielmp",
+        "displayName": "ezequielmp",
+        "profileUrl": "https://sketchfab.com/ezequielmp",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/74dec137389a43de9de2e1c22cda875b",
+          "images": [
+            {
+              "size": 954,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/74dec137389a43de9de2e1c22cda875b/24b3a118a2824f6f9ba17dcbc33c152d.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1230,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/74dec137389a43de9de2e1c22cda875b/9ddb3e7ca95b414da8fa7fd12c67dab6.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2190,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/74dec137389a43de9de2e1c22cda875b/89e3d682ce7b4074ad7b52c4385036de.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2352,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/74dec137389a43de9de2e1c22cda875b/275841cf66f442e79f82c3dab8759e77.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/f4e2f70a9a2c413ba7c4d4a1df5303a6"
+      },
+      "description": "El Jaguar I-TYPE 4 fue el monoplaza de F\u00f3rmula E de Jaguar para la temporada 2019-2020, caracterizado por un sistema de propulsi\u00f3n (motor, inversor, caja de cambios) completamente redise\u00f1ado, m\u00e1s ligero y eficiente, logrando victorias y podios, representando un gran salto en tecnolog\u00eda el\u00e9ctrica para el equipo y un banco de pruebas para futuros coches de calle el\u00e9ctricos como el I-PACE.",
+      "faceCount": 295806,
+      "createdAt": "2025-12-29T17:11:32.647956",
+      "vertexCount": 156514,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 5,
+          "size": 17639380,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 295806,
+          "vertexCount": 363183
+        },
+        "gltf": {
+          "textureCount": 5,
+          "size": 7760201,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 295806,
+          "vertexCount": 363183
+        },
+        "source": {
+          "textureCount": null,
+          "size": 20384067,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 9274923,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/a9dcdd83536240f295dcace8f42b26e7",
+      "uid": "a9dcdd83536240f295dcace8f42b26e7",
+      "name": "Electric Cabinet / Schaltschrank",
+      "staffpickedAt": null,
+      "viewCount": 1234,
+      "likeCount": 12,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-a9dcdd83536240f295dcace8f42b26e7",
+      "embedUrl": "https://sketchfab.com/models/a9dcdd83536240f295dcace8f42b26e7/embed",
+      "commentCount": 3,
+      "isDownloadable": true,
+      "publishedAt": "2025-11-30T13:22:21.144686",
+      "tags": [
+        {
+          "name": "austria",
+          "slug": "austria",
+          "uri": "https://api.sketchfab.com/v3/tags/austria"
+        },
+        {
+          "name": "electric-cabinet",
+          "slug": "electric-cabinet",
+          "uri": "https://api.sketchfab.com/v3/tags/electric-cabinet"
+        },
+        {
+          "name": "realityscan-mobile",
+          "slug": "realityscan-mobile",
+          "uri": "https://api.sketchfab.com/v3/tags/realityscan-mobile"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        },
+        {
+          "name": "electronics-gadgets"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "5f2265d768aa4e06a1f0b50195d90d26",
+            "size": 100460,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/a9dcdd83536240f295dcace8f42b26e7/thumbnails/7c295114f6ed43ed9f048e186c6adb45/506255dbdda94e17a97eb62cc121eb40.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "72f46a0b08744976af82fa9dabed6fcc",
+            "size": 31412,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/a9dcdd83536240f295dcace8f42b26e7/thumbnails/7c295114f6ed43ed9f048e186c6adb45/82a7adb78f51400abdfc16d87cfbca72.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "2facfcfe407143209114476542f52548",
+            "size": 17892,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/a9dcdd83536240f295dcace8f42b26e7/thumbnails/7c295114f6ed43ed9f048e186c6adb45/9c409f0824c7454c9451e654c5f1d1c1.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "7acaea784b544489afb51a4fba5a1d63",
+            "size": 3599,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/a9dcdd83536240f295dcace8f42b26e7/thumbnails/7c295114f6ed43ed9f048e186c6adb45/739d902482df4893a7db734d59f8c402.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "e2b1bf2b5ab1498580fc3371a1880fbf",
+            "size": 974,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/a9dcdd83536240f295dcace8f42b26e7/thumbnails/7c295114f6ed43ed9f048e186c6adb45/242523e174304edd973f8fa78dbe0730.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "ae43cc2743f04bec94f9d3b2b635f925",
+        "username": "stefano",
+        "displayName": "stefano",
+        "profileUrl": "https://sketchfab.com/stefano",
+        "account": "pro",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/51af6a870cce449eb75b0345feebaebb",
+          "images": [
+            {
+              "size": 5719,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/2ef0f894055b4bb69123b2a27fa2d379.jpeg",
+              "height": 90
+            },
+            {
+              "size": 6496,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/ab11eedf96374486acb544f71a23b165.jpeg",
+              "height": 100
+            },
+            {
+              "size": 1359,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/35f6f9b6c9a14a548ce472582d8a9bb5.jpeg",
+              "height": 32
+            },
+            {
+              "size": 2584,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/a8072a51447c4d41ab177b357111b420.jpeg",
+              "height": 48
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/ae43cc2743f04bec94f9d3b2b635f925"
+      },
+      "description": "The open interior of a small electrical distribution cabinet, commonly found in flats or residential settings.\n\nProtection Devices (Top Row): A row of DIN-rail mounted protection devices is visible at the top.\nMain Breakers/Fuses: On the left, there are several modular devices which are likely circuit breakers (Sicherungsautomaten) and a main switch or RCD/RCCB (Residual Current Device/Fehlerstrom-Schutzschalter). The main body of these components is white/light grey.\n\nWiring: Numerous wires are connected to the terminals of these devices.\n\nBusbar/Distribution Block (Orange): In the center, a striking orange component is visible. This is a busbar or distribution block, used to connect and distribute current (often phase wires) from the main incoming supply to the individual circuit breakers.\n\nWiring and Cable Management: The wires inside the cabinet are grouped and routed, although there is a typical complexity of wiring expected in a functional electrical panel.",
+      "faceCount": 751759,
+      "createdAt": "2025-11-30T13:20:59.857429",
+      "vertexCount": 376075,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 44395168,
+          "type": "glb",
+          "textureMaxResolution": 8192,
+          "faceCount": 751759,
+          "vertexCount": 612798
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 32461755,
+          "type": "gltf",
+          "textureMaxResolution": 8192,
+          "faceCount": 751759,
+          "vertexCount": 612798
+        },
+        "source": {
+          "textureCount": null,
+          "size": 58136563,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 24347603,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "b9ddc40b93e34cdca1fc152f39b9f375",
+        "label": "CC Attribution-ShareAlike"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/c7036a2eb8cb49d58e45a5d0fc15b268",
+      "uid": "c7036a2eb8cb49d58e45a5d0fc15b268",
+      "name": "Rusty Electric Meter Box Mounted on a Tree",
+      "staffpickedAt": null,
+      "viewCount": 223,
+      "likeCount": 4,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-c7036a2eb8cb49d58e45a5d0fc15b268",
+      "embedUrl": "https://sketchfab.com/models/c7036a2eb8cb49d58e45a5d0fc15b268/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2025-10-27T15:25:42.366624",
+      "tags": [
+        {
+          "name": "lidar",
+          "slug": "lidar",
+          "uri": "https://api.sketchfab.com/v3/tags/lidar"
+        },
+        {
+          "name": "infrastructure",
+          "slug": "infrastructure",
+          "uri": "https://api.sketchfab.com/v3/tags/infrastructure"
+        },
+        {
+          "name": "corrosion",
+          "slug": "corrosion",
+          "uri": "https://api.sketchfab.com/v3/tags/corrosion"
+        },
+        {
+          "name": "post-soviet",
+          "slug": "post-soviet",
+          "uri": "https://api.sketchfab.com/v3/tags/post-soviet"
+        },
+        {
+          "name": "street-scene",
+          "slug": "street-scene",
+          "uri": "https://api.sketchfab.com/v3/tags/street-scene"
+        },
+        {
+          "name": "public-utility",
+          "slug": "public-utility",
+          "uri": "https://api.sketchfab.com/v3/tags/public-utility"
+        },
+        {
+          "name": "iphonescan",
+          "slug": "iphonescan",
+          "uri": "https://api.sketchfab.com/v3/tags/iphonescan"
+        },
+        {
+          "name": "urban-decay",
+          "slug": "urban-decay",
+          "uri": "https://api.sketchfab.com/v3/tags/urban-decay"
+        },
+        {
+          "name": "electrical-equipment",
+          "slug": "electrical-equipment",
+          "uri": "https://api.sketchfab.com/v3/tags/electrical-equipment"
+        },
+        {
+          "name": "electrical-box",
+          "slug": "electrical-box",
+          "uri": "https://api.sketchfab.com/v3/tags/electrical-box"
+        },
+        {
+          "name": "iphone12pro",
+          "slug": "iphone12pro",
+          "uri": "https://api.sketchfab.com/v3/tags/iphone12pro"
+        },
+        {
+          "name": "electric-meter",
+          "slug": "electric-meter",
+          "uri": "https://api.sketchfab.com/v3/tags/electric-meter"
+        },
+        {
+          "name": "iphonelidar",
+          "slug": "iphonelidar",
+          "uri": "https://api.sketchfab.com/v3/tags/iphonelidar"
+        },
+        {
+          "name": "texture-reference",
+          "slug": "texture-reference",
+          "uri": "https://api.sketchfab.com/v3/tags/texture-reference"
+        },
+        {
+          "name": "utility-box",
+          "slug": "utility-box",
+          "uri": "https://api.sketchfab.com/v3/tags/utility-box"
+        },
+        {
+          "name": "rusty-box",
+          "slug": "rusty-box",
+          "uri": "https://api.sketchfab.com/v3/tags/rusty-box"
+        },
+        {
+          "name": "realistic-asset",
+          "slug": "realistic-asset",
+          "uri": "https://api.sketchfab.com/v3/tags/realistic-asset"
+        },
+        {
+          "name": "weathered-metal",
+          "slug": "weathered-metal",
+          "uri": "https://api.sketchfab.com/v3/tags/weathered-metal"
+        },
+        {
+          "name": "urban-infrastructure",
+          "slug": "urban-infrastructure",
+          "uri": "https://api.sketchfab.com/v3/tags/urban-infrastructure"
+        },
+        {
+          "name": "urban-environment",
+          "slug": "urban-environment",
+          "uri": "https://api.sketchfab.com/v3/tags/urban-environment"
+        },
+        {
+          "name": "street-infrastructure",
+          "slug": "street-infrastructure",
+          "uri": "https://api.sketchfab.com/v3/tags/street-infrastructure"
+        },
+        {
+          "name": "aged-metal",
+          "slug": "aged-metal",
+          "uri": "https://api.sketchfab.com/v3/tags/aged-metal"
+        },
+        {
+          "name": "metal-surface",
+          "slug": "metal-surface",
+          "uri": "https://api.sketchfab.com/v3/tags/metal-surface"
+        },
+        {
+          "name": "weathered-surface",
+          "slug": "weathered-surface",
+          "uri": "https://api.sketchfab.com/v3/tags/weathered-surface"
+        },
+        {
+          "name": "realistic-texture",
+          "slug": "realistic-texture",
+          "uri": "https://api.sketchfab.com/v3/tags/realistic-texture"
+        },
+        {
+          "name": "urban-realism",
+          "slug": "urban-realism",
+          "uri": "https://api.sketchfab.com/v3/tags/urban-realism"
+        },
+        {
+          "name": "street-element",
+          "slug": "street-element",
+          "uri": "https://api.sketchfab.com/v3/tags/street-element"
+        },
+        {
+          "name": "city-detail",
+          "slug": "city-detail",
+          "uri": "https://api.sketchfab.com/v3/tags/city-detail"
+        },
+        {
+          "name": "worn-surface",
+          "slug": "worn-surface",
+          "uri": "https://api.sketchfab.com/v3/tags/worn-surface"
+        },
+        {
+          "name": "industrial-texture",
+          "slug": "industrial-texture",
+          "uri": "https://api.sketchfab.com/v3/tags/industrial-texture"
+        },
+        {
+          "name": "street-texture",
+          "slug": "street-texture",
+          "uri": "https://api.sketchfab.com/v3/tags/street-texture"
+        },
+        {
+          "name": "tree-mounted",
+          "slug": "tree-mounted",
+          "uri": "https://api.sketchfab.com/v3/tags/tree-mounted"
+        },
+        {
+          "name": "aged-object",
+          "slug": "aged-object",
+          "uri": "https://api.sketchfab.com/v3/tags/aged-object"
+        },
+        {
+          "name": "metallic-decay",
+          "slug": "metallic-decay",
+          "uri": "https://api.sketchfab.com/v3/tags/metallic-decay"
+        },
+        {
+          "name": "outdoor-installation",
+          "slug": "outdoor-installation",
+          "uri": "https://api.sketchfab.com/v3/tags/outdoor-installation"
+        },
+        {
+          "name": "industrial-element",
+          "slug": "industrial-element",
+          "uri": "https://api.sketchfab.com/v3/tags/industrial-element"
+        },
+        {
+          "name": "public-installation",
+          "slug": "public-installation",
+          "uri": "https://api.sketchfab.com/v3/tags/public-installation"
+        },
+        {
+          "name": "cable-detail",
+          "slug": "cable-detail",
+          "uri": "https://api.sketchfab.com/v3/tags/cable-detail"
+        },
+        {
+          "name": "rust-texture",
+          "slug": "rust-texture",
+          "uri": "https://api.sketchfab.com/v3/tags/rust-texture"
+        },
+        {
+          "name": "outdoor-element",
+          "slug": "outdoor-element",
+          "uri": "https://api.sketchfab.com/v3/tags/outdoor-element"
+        },
+        {
+          "name": "utility-equipment",
+          "slug": "utility-equipment",
+          "uri": "https://api.sketchfab.com/v3/tags/utility-equipment"
+        },
+        {
+          "name": "realistic-environment",
+          "slug": "realistic-environment",
+          "uri": "https://api.sketchfab.com/v3/tags/realistic-environment"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "9a53509949ba4b998c2c2b6460c508a4",
+            "size": 173177,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/c7036a2eb8cb49d58e45a5d0fc15b268/thumbnails/b3661e09a973491394fcce57d67e6774/c9e717d688c946fcaa2d6c28b2727335.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "ec7768d63bb345d798ab539f6e673890",
+            "size": 54849,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/c7036a2eb8cb49d58e45a5d0fc15b268/thumbnails/b3661e09a973491394fcce57d67e6774/4f3b47b4ad494ac98b8fd74309b25ca6.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "dea17a5fbc3e471fa4272567ae2b1e08",
+            "size": 30458,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/c7036a2eb8cb49d58e45a5d0fc15b268/thumbnails/b3661e09a973491394fcce57d67e6774/6d7a648034d849c796261841b2bed0c9.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "5144b5f115db4f9186e0c8a5c947f757",
+            "size": 5387,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/c7036a2eb8cb49d58e45a5d0fc15b268/thumbnails/b3661e09a973491394fcce57d67e6774/3cb41563cc7940cdb8fcc5e73ad30672.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "e1b1bc3076c347f5b7fa15e38abf537d",
+            "size": 1180,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/c7036a2eb8cb49d58e45a5d0fc15b268/thumbnails/b3661e09a973491394fcce57d67e6774/9a56c038c9a3415ebb38148b27df679e.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "7f74d1d72f7e4577ae24737b2685cd5a",
+        "username": "ffedo",
+        "displayName": "ffedo",
+        "profileUrl": "https://sketchfab.com/ffedo",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/f3957f60c94d42149959612154da86b0",
+          "images": [
+            {
+              "size": 1063,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/f3957f60c94d42149959612154da86b0/a08f70b725954c9cbe8b09faccd2ba51.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1465,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/f3957f60c94d42149959612154da86b0/e3f779f7be6c43079407aaefd6729f52.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3447,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/f3957f60c94d42149959612154da86b0/faf5b1f0fb784ae5a112fd71bd6d1dc8.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4042,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/f3957f60c94d42149959612154da86b0/bc38fff7bc7048e0866f5f01496f5d02.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/7f74d1d72f7e4577ae24737b2685cd5a"
+      },
+      "description": "3D photogrammetry model of an old metal electric meter box mounted directly onto a tree trunk with metallic straps. The box is heavily rusted and shows signs of long-term outdoor exposure, with orange and brown corrosion marks across its surface. A clear inspection window reveals an electric meter labeled \u201cEnergo-Pro.\u201d The lower section has torn paper labels with Georgian text and faded numbers. The metal surface texture is rough, featuring rust stains, scratches, and peeling paint. The surrounding tree bark, visible straps, and electrical cables add realism to the setup, representing a makeshift installation typical in urban and rural post-Soviet environments. Ideal for realistic street or infrastructure scenes, visual storytelling, or texturing studies. Scanned with iPhone 12 Pro using lidar and iphonescan technology. Reference for realistic urban environment.",
+      "faceCount": 82940,
+      "createdAt": "2025-10-27T15:23:18.091573",
+      "vertexCount": 41769,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 4750984,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 82940,
+          "vertexCount": 47834
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 3790980,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 82940,
+          "vertexCount": 47834
+        },
+        "source": {
+          "textureCount": null,
+          "size": 6130705,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 4040810,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/676ed304908947da8731134f8743df3c",
+      "uid": "676ed304908947da8731134f8743df3c",
+      "name": "Old Wooden Door on A. Kazbegi Avenue, Tbilisi",
+      "staffpickedAt": null,
+      "viewCount": 259,
+      "likeCount": 8,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-676ed304908947da8731134f8743df3c",
+      "embedUrl": "https://sketchfab.com/models/676ed304908947da8731134f8743df3c/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2025-10-27T15:07:55.022853",
+      "tags": [
+        {
+          "name": "lidar",
+          "slug": "lidar",
+          "uri": "https://api.sketchfab.com/v3/tags/lidar"
+        },
+        {
+          "name": "doorway",
+          "slug": "doorway",
+          "uri": "https://api.sketchfab.com/v3/tags/doorway"
+        },
+        {
+          "name": "architectural-detail",
+          "slug": "architectural-detail",
+          "uri": "https://api.sketchfab.com/v3/tags/architectural-detail"
+        },
+        {
+          "name": "post-soviet",
+          "slug": "post-soviet",
+          "uri": "https://api.sketchfab.com/v3/tags/post-soviet"
+        },
+        {
+          "name": "historic-building",
+          "slug": "historic-building",
+          "uri": "https://api.sketchfab.com/v3/tags/historic-building"
+        },
+        {
+          "name": "digital-asset",
+          "slug": "digital-asset",
+          "uri": "https://api.sketchfab.com/v3/tags/digital-asset"
+        },
+        {
+          "name": "old-building",
+          "slug": "old-building",
+          "uri": "https://api.sketchfab.com/v3/tags/old-building"
+        },
+        {
+          "name": "street-scene",
+          "slug": "street-scene",
+          "uri": "https://api.sketchfab.com/v3/tags/street-scene"
+        },
+        {
+          "name": "wooden-door",
+          "slug": "wooden-door",
+          "uri": "https://api.sketchfab.com/v3/tags/wooden-door"
+        },
+        {
+          "name": "city-wall",
+          "slug": "city-wall",
+          "uri": "https://api.sketchfab.com/v3/tags/city-wall"
+        },
+        {
+          "name": "iphonescan",
+          "slug": "iphonescan",
+          "uri": "https://api.sketchfab.com/v3/tags/iphonescan"
+        },
+        {
+          "name": "urban-decay",
+          "slug": "urban-decay",
+          "uri": "https://api.sketchfab.com/v3/tags/urban-decay"
+        },
+        {
+          "name": "architecture",
+          "slug": "architecture",
+          "uri": "https://api.sketchfab.com/v3/tags/architecture"
+        },
+        {
+          "name": "old-door",
+          "slug": "old-door",
+          "uri": "https://api.sketchfab.com/v3/tags/old-door"
+        },
+        {
+          "name": "chipped-paint",
+          "slug": "chipped-paint",
+          "uri": "https://api.sketchfab.com/v3/tags/chipped-paint"
+        },
+        {
+          "name": "iphone12pro",
+          "slug": "iphone12pro",
+          "uri": "https://api.sketchfab.com/v3/tags/iphone12pro"
+        },
+        {
+          "name": "wall-texture",
+          "slug": "wall-texture",
+          "uri": "https://api.sketchfab.com/v3/tags/wall-texture"
+        },
+        {
+          "name": "iphonelidar",
+          "slug": "iphonelidar",
+          "uri": "https://api.sketchfab.com/v3/tags/iphonelidar"
+        },
+        {
+          "name": "peeling-paint",
+          "slug": "peeling-paint",
+          "uri": "https://api.sketchfab.com/v3/tags/peeling-paint"
+        },
+        {
+          "name": "aged-wood",
+          "slug": "aged-wood",
+          "uri": "https://api.sketchfab.com/v3/tags/aged-wood"
+        },
+        {
+          "name": "realistic-door",
+          "slug": "realistic-door",
+          "uri": "https://api.sketchfab.com/v3/tags/realistic-door"
+        },
+        {
+          "name": "weathered-door",
+          "slug": "weathered-door",
+          "uri": "https://api.sketchfab.com/v3/tags/weathered-door"
+        },
+        {
+          "name": "urban-environment",
+          "slug": "urban-environment",
+          "uri": "https://api.sketchfab.com/v3/tags/urban-environment"
+        },
+        {
+          "name": "urban-texture",
+          "slug": "urban-texture",
+          "uri": "https://api.sketchfab.com/v3/tags/urban-texture"
+        },
+        {
+          "name": "urban-style",
+          "slug": "urban-style",
+          "uri": "https://api.sketchfab.com/v3/tags/urban-style"
+        },
+        {
+          "name": "historic-door",
+          "slug": "historic-door",
+          "uri": "https://api.sketchfab.com/v3/tags/historic-door"
+        },
+        {
+          "name": "city-architecture",
+          "slug": "city-architecture",
+          "uri": "https://api.sketchfab.com/v3/tags/city-architecture"
+        },
+        {
+          "name": "weathered-surface",
+          "slug": "weathered-surface",
+          "uri": "https://api.sketchfab.com/v3/tags/weathered-surface"
+        },
+        {
+          "name": "realistic-texture",
+          "slug": "realistic-texture",
+          "uri": "https://api.sketchfab.com/v3/tags/realistic-texture"
+        },
+        {
+          "name": "urban-reference",
+          "slug": "urban-reference",
+          "uri": "https://api.sketchfab.com/v3/tags/urban-reference"
+        },
+        {
+          "name": "urban-realism",
+          "slug": "urban-realism",
+          "uri": "https://api.sketchfab.com/v3/tags/urban-realism"
+        },
+        {
+          "name": "street-detail",
+          "slug": "street-detail",
+          "uri": "https://api.sketchfab.com/v3/tags/street-detail"
+        },
+        {
+          "name": "street-element",
+          "slug": "street-element",
+          "uri": "https://api.sketchfab.com/v3/tags/street-element"
+        },
+        {
+          "name": "city-texture",
+          "slug": "city-texture",
+          "uri": "https://api.sketchfab.com/v3/tags/city-texture"
+        },
+        {
+          "name": "realistic-surface",
+          "slug": "realistic-surface",
+          "uri": "https://api.sketchfab.com/v3/tags/realistic-surface"
+        },
+        {
+          "name": "worn-paint",
+          "slug": "worn-paint",
+          "uri": "https://api.sketchfab.com/v3/tags/worn-paint"
+        },
+        {
+          "name": "cracked-wall",
+          "slug": "cracked-wall",
+          "uri": "https://api.sketchfab.com/v3/tags/cracked-wall"
+        },
+        {
+          "name": "heritage-texture",
+          "slug": "heritage-texture",
+          "uri": "https://api.sketchfab.com/v3/tags/heritage-texture"
+        },
+        {
+          "name": "worn-structure",
+          "slug": "worn-structure",
+          "uri": "https://api.sketchfab.com/v3/tags/worn-structure"
+        },
+        {
+          "name": "post-soviet-architecture",
+          "slug": "post-soviet-architecture",
+          "uri": "https://api.sketchfab.com/v3/tags/post-soviet-architecture"
+        },
+        {
+          "name": "decayed-facade",
+          "slug": "decayed-facade",
+          "uri": "https://api.sketchfab.com/v3/tags/decayed-facade"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "ad6ac9b18ea544848ab6e20000382e93",
+            "size": 298784,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/676ed304908947da8731134f8743df3c/thumbnails/74cc69baff5f4d0ba07dfa791b24dcf9/00a87d6d32e24291b293a6f91d18ecff.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "a3b66fe8bdce45b399e11f131342ee01",
+            "size": 79270,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/676ed304908947da8731134f8743df3c/thumbnails/74cc69baff5f4d0ba07dfa791b24dcf9/c706183266134ab49ac68896b0db9cb1.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "bc6a3e3ce8194a52a0a2919a64fcb559",
+            "size": 42308,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/676ed304908947da8731134f8743df3c/thumbnails/74cc69baff5f4d0ba07dfa791b24dcf9/ad54d15a5d5a4a7298eae42326b7f75c.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "a0a009ab906244efa7bd58608812362c",
+            "size": 7161,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/676ed304908947da8731134f8743df3c/thumbnails/74cc69baff5f4d0ba07dfa791b24dcf9/23d9e10582304937a3f160e67a6ab63f.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "da6239190f044f2d91e6a55845fa76c2",
+            "size": 1251,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/676ed304908947da8731134f8743df3c/thumbnails/74cc69baff5f4d0ba07dfa791b24dcf9/8b9d625dd1374b35b258518a8c2a302f.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "7f74d1d72f7e4577ae24737b2685cd5a",
+        "username": "ffedo",
+        "displayName": "ffedo",
+        "profileUrl": "https://sketchfab.com/ffedo",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/f3957f60c94d42149959612154da86b0",
+          "images": [
+            {
+              "size": 1063,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/f3957f60c94d42149959612154da86b0/a08f70b725954c9cbe8b09faccd2ba51.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1465,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/f3957f60c94d42149959612154da86b0/e3f779f7be6c43079407aaefd6729f52.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3447,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/f3957f60c94d42149959612154da86b0/faf5b1f0fb784ae5a112fd71bd6d1dc8.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4042,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/f3957f60c94d42149959612154da86b0/bc38fff7bc7048e0866f5f01496f5d02.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/7f74d1d72f7e4577ae24737b2685cd5a"
+      },
+      "description": "3D photogrammetry model of an old wooden door set in a weathered concrete wall on A. Kazbegi Avenue in Tbilisi, Georgia. The double door is heavily worn, featuring peeling blue-gray paint, exposed wood, and visible cracks. The surrounding wall shows chipped plaster, exposed bricks, and rough cement patches, reflecting decades of decay typical in post-Soviet urban architecture. Above the doorway, electrical cables run across the facade, adding to the raw street realism. A small street sign in both Georgian and English indicates \u201cA. Kazbegi Ave.\u201d while a number plate \u201c11\u201d is fixed on the left. The surface details\u2014aged paint, corroded textures, and urban wear\u2014make this model ideal for realistic city environment references, heritage visualizations, or architectural studies of old urban infrastructure. Scanned with iPhone 12 Pro using lidar and iphonescan technology. Reference for realistic street urban environment.",
+      "faceCount": 424884,
+      "createdAt": "2025-10-27T15:06:27.903520",
+      "vertexCount": 214127,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 23137868,
+          "type": "glb",
+          "textureMaxResolution": 8192,
+          "faceCount": 424884,
+          "vertexCount": 272179
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 17512373,
+          "type": "gltf",
+          "textureMaxResolution": 8192,
+          "faceCount": 424884,
+          "vertexCount": 272179
+        },
+        "source": {
+          "textureCount": null,
+          "size": 28052116,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 19262981,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/eec5543d22284cd6acf0b6a628f3a13e",
+      "uid": "eec5543d22284cd6acf0b6a628f3a13e",
+      "name": "Rusty Outdoor Electrical Box Free",
+      "staffpickedAt": null,
+      "viewCount": 252,
+      "likeCount": 11,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-eec5543d22284cd6acf0b6a628f3a13e",
+      "embedUrl": "https://sketchfab.com/models/eec5543d22284cd6acf0b6a628f3a13e/embed",
+      "commentCount": 2,
+      "isDownloadable": true,
+      "publishedAt": "2025-07-18T00:24:54.699981",
+      "tags": [
+        {
+          "name": "cables",
+          "slug": "cables",
+          "uri": "https://api.sketchfab.com/v3/tags/cables"
+        },
+        {
+          "name": "rustyelectricalbox",
+          "slug": "rustyelectricalbox",
+          "uri": "https://api.sketchfab.com/v3/tags/rustyelectricalbox"
+        },
+        {
+          "name": "outdoorelectricalbox",
+          "slug": "outdoorelectricalbox",
+          "uri": "https://api.sketchfab.com/v3/tags/outdoorelectricalbox"
+        },
+        {
+          "name": "externalelectrical",
+          "slug": "externalelectrical",
+          "uri": "https://api.sketchfab.com/v3/tags/externalelectrical"
+        }
+      ],
+      "categories": [
+        {
+          "name": "electronics-gadgets"
+        },
+        {
+          "name": "science-technology"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "93e9f00a957e4569a9623e07d91db8b6",
+            "size": 224108,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/eec5543d22284cd6acf0b6a628f3a13e/thumbnails/c6c887c3eeae40b386bc486994469485/beca9086953440afbfb6dbdec6aae650.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "d85df3f48e804691ae71774689d96123",
+            "size": 40504,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/eec5543d22284cd6acf0b6a628f3a13e/thumbnails/c6c887c3eeae40b386bc486994469485/90766b4701a04ccbb21fc6425edaab4a.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "a366db3cba9b4467bb947397cb380e98",
+            "size": 22371,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/eec5543d22284cd6acf0b6a628f3a13e/thumbnails/c6c887c3eeae40b386bc486994469485/7342313c8acc47b19fa63c7bc78ebdef.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "bc341f29f4914ff3b21d8beeea0050c0",
+            "size": 4413,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/eec5543d22284cd6acf0b6a628f3a13e/thumbnails/c6c887c3eeae40b386bc486994469485/dfb4ad4785764f66af8eacfce83f16e6.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "21382ed255da4f069b0e83dcc6030c97",
+            "size": 1063,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/eec5543d22284cd6acf0b6a628f3a13e/thumbnails/c6c887c3eeae40b386bc486994469485/59f9937d62544420ac25ff3d5c7fe9e5.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "27851d6681674472b66b3aea532aacd7",
+        "username": "AMMediaGames",
+        "displayName": "AMMediaGames",
+        "profileUrl": "https://sketchfab.com/AMMediaGames",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/657bd3070590472d88c1868608990bc3",
+          "images": [
+            {
+              "size": 1196,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/657bd3070590472d88c1868608990bc3/9850e2acd31240b299ae927be50a168c.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1745,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/657bd3070590472d88c1868608990bc3/a07c4cc36b9940f9b31465e62553c65d.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3989,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/657bd3070590472d88c1868608990bc3/9ceecfcc9f1e43ed99f539b5f12704f1.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4786,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/657bd3070590472d88c1868608990bc3/6184690ad2084947b3750be515e4a5a5.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/27851d6681674472b66b3aea532aacd7"
+      },
+      "description": "Patreon subscribers get access to custom skins for all my models, but that doesn\u2019t mean I don\u2019t go out of my way to help everyone else :)\n\nYou can find more from me over on Youtube if you download and use my models please help me out by subscribing for free on YouTube it\u2019s a way to support me and I would greatly appreciate it :)",
+      "faceCount": 41394,
+      "createdAt": "2025-07-18T00:13:30.904729",
+      "vertexCount": 21458,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 3,
+          "size": 8181428,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 41394,
+          "vertexCount": 22949
+        },
+        "gltf": {
+          "textureCount": 3,
+          "size": 7334858,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 41394,
+          "vertexCount": 22949
+        },
+        "source": {
+          "textureCount": null,
+          "size": 7372231,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 5055162,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/14b11c90258b441f8e7e33c89bd2041c",
+      "uid": "14b11c90258b441f8e7e33c89bd2041c",
+      "name": "UK Electrical Box 1 Single GANG",
+      "staffpickedAt": null,
+      "viewCount": 180,
+      "likeCount": 0,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-14b11c90258b441f8e7e33c89bd2041c",
+      "embedUrl": "https://sketchfab.com/models/14b11c90258b441f8e7e33c89bd2041c/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2025-02-28T22:36:08.797319",
+      "tags": [
+        {
+          "name": "switch",
+          "slug": "switch",
+          "uri": "https://api.sketchfab.com/v3/tags/switch"
+        },
+        {
+          "name": "electrical",
+          "slug": "electrical",
+          "uri": "https://api.sketchfab.com/v3/tags/electrical"
+        },
+        {
+          "name": "uk",
+          "slug": "uk",
+          "uri": "https://api.sketchfab.com/v3/tags/uk"
+        },
+        {
+          "name": "box",
+          "slug": "box",
+          "uri": "https://api.sketchfab.com/v3/tags/box"
+        },
+        {
+          "name": "3d",
+          "slug": "3d",
+          "uri": "https://api.sketchfab.com/v3/tags/3d"
+        },
+        {
+          "name": "single-gang",
+          "slug": "single-gang",
+          "uri": "https://api.sketchfab.com/v3/tags/single-gang"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        },
+        {
+          "name": "electronics-gadgets"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "ebca2a44b8bb43e88c6b24757acee634",
+            "size": 77040,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/14b11c90258b441f8e7e33c89bd2041c/thumbnails/19affb223f8c43bea4c0ea647513370c/e19b6e48e7a549489df6f05d64d26393.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "96345dde03fb4939a1b6c5b58bb14685",
+            "size": 28786,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/14b11c90258b441f8e7e33c89bd2041c/thumbnails/19affb223f8c43bea4c0ea647513370c/eeb2faa24c114b42bca4ae13aa525652.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "39c1df0ff6494c739b4f18f65ddab3d7",
+            "size": 17860,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/14b11c90258b441f8e7e33c89bd2041c/thumbnails/19affb223f8c43bea4c0ea647513370c/4b386cd813694ce290770ccff725cf24.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "2ead1909b39b402a8358c8defa5f2c41",
+            "size": 4568,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/14b11c90258b441f8e7e33c89bd2041c/thumbnails/19affb223f8c43bea4c0ea647513370c/739502edacd34d76991ef77ad4d0bdb5.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "88116b4bbb2e42c782b04f57b4417593",
+            "size": 1106,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/14b11c90258b441f8e7e33c89bd2041c/thumbnails/19affb223f8c43bea4c0ea647513370c/6a45f32f65ac48049dd54d9ed540ec8d.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "a50cf799d39141ceb6ce972de3c5bab9",
+        "username": "blacksoulgem95",
+        "displayName": "blacksoulgem95",
+        "profileUrl": "https://sketchfab.com/blacksoulgem95",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/ade8d71d24434630a001ac32578a673c",
+          "images": [
+            {
+              "size": 1109,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/ade8d71d24434630a001ac32578a673c/12fdca33eaf44d8f936dba1dc28f40db.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1586,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/ade8d71d24434630a001ac32578a673c/067ab74daaed4d7abea70e05c534e0b8.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3581,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/ade8d71d24434630a001ac32578a673c/da7bb110494845d4a53b3984a080ee6f.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4129,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/ade8d71d24434630a001ac32578a673c/b1ea692ceb8d4d7780627a8c813e915d.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/a50cf799d39141ceb6ce972de3c5bab9"
+      },
+      "description": "SIngle gang UK Box with holes for 20 and 25mm corrugated tubes to bring in cables, and M3.5 sockets to wall mount, plus the M3.5 sockets to screw in the front plate",
+      "faceCount": 3772,
+      "createdAt": "2025-02-28T22:34:39.906264",
+      "vertexCount": 1852,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 132884,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 3772,
+          "vertexCount": 3576
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 33906,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 3772,
+          "vertexCount": 3576
+        },
+        "source": {
+          "textureCount": null,
+          "size": 988846,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 98151,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/71f671cfeab64b7c8d9db594a15b3dff",
+      "uid": "71f671cfeab64b7c8d9db594a15b3dff",
+      "name": "electric socket",
+      "staffpickedAt": null,
+      "viewCount": 66,
+      "likeCount": 0,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-71f671cfeab64b7c8d9db594a15b3dff",
+      "embedUrl": "https://sketchfab.com/models/71f671cfeab64b7c8d9db594a15b3dff/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2024-07-31T01:36:17.687489",
+      "tags": [
+        {
+          "name": "electronics",
+          "slug": "electronics",
+          "uri": "https://api.sketchfab.com/v3/tags/electronics"
+        },
+        {
+          "name": "cable",
+          "slug": "cable",
+          "uri": "https://api.sketchfab.com/v3/tags/cable"
+        },
+        {
+          "name": "technology",
+          "slug": "technology",
+          "uri": "https://api.sketchfab.com/v3/tags/technology"
+        },
+        {
+          "name": "interior",
+          "slug": "interior",
+          "uri": "https://api.sketchfab.com/v3/tags/interior"
+        }
+      ],
+      "categories": [
+        {
+          "name": "electronics-gadgets"
+        },
+        {
+          "name": "people"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "77db0dd4afc6474286620b2e0defb4dc",
+            "size": 47075,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/71f671cfeab64b7c8d9db594a15b3dff/thumbnails/26644395985c43a1baa3f3722aa49664/3e15b0a92b944ef8999325eb4f54171c.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "d4cc1bdd7d22415e963d14478eb39da5",
+            "size": 16136,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/71f671cfeab64b7c8d9db594a15b3dff/thumbnails/26644395985c43a1baa3f3722aa49664/80543656e9d3474db16179a52ed75956.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "1b31674ea97b4009a4c21418618c3496",
+            "size": 9548,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/71f671cfeab64b7c8d9db594a15b3dff/thumbnails/26644395985c43a1baa3f3722aa49664/78079a48e9144fc1ad7e6e059bd9b879.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "c0d8136aaaf845e191e63359386420cd",
+            "size": 2288,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/71f671cfeab64b7c8d9db594a15b3dff/thumbnails/26644395985c43a1baa3f3722aa49664/306c5564038f4d6e8d1f8eb332aad70a.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "9923f58084774f948b8981b5ab15163e",
+            "size": 845,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/71f671cfeab64b7c8d9db594a15b3dff/thumbnails/26644395985c43a1baa3f3722aa49664/88a93976c43845768ea717cf3374e43a.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "d2c2a71488874cecbb4f56498b5e9dec",
+        "username": "rizkiifs",
+        "displayName": "rizkiifs",
+        "profileUrl": "https://sketchfab.com/rizkiifs",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/7d3c09784530418685dcc696a52e9775",
+          "images": [
+            {
+              "size": 948,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/7d3c09784530418685dcc696a52e9775/768bcc7515f94b61a919361e8f88c99b.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1163,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/7d3c09784530418685dcc696a52e9775/4a9bd2189edf42608793bcbeb009920f.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2163,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/7d3c09784530418685dcc696a52e9775/9e76b85758a446908bf5398ea4aba24e.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2463,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/7d3c09784530418685dcc696a52e9775/01ffd77eabb748f7b7677f79d4454be5.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/d2c2a71488874cecbb4f56498b5e9dec"
+      },
+      "description": "3D model of socket, for room interiors, funcitions to conduct electrical current in the house",
+      "faceCount": 113961,
+      "createdAt": "2024-07-31T01:26:03.613510",
+      "vertexCount": 57436,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 2,
+          "size": 12471060,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 113932,
+          "vertexCount": 166475
+        },
+        "gltf": {
+          "textureCount": 2,
+          "size": 8017864,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 113932,
+          "vertexCount": 166475
+        },
+        "source": {
+          "textureCount": null,
+          "size": 10057043,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 7144627,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/0093ed9fcdbf4a9daa29394870ec1b60",
+      "uid": "0093ed9fcdbf4a9daa29394870ec1b60",
+      "name": "Ladder Cable Tray",
+      "staffpickedAt": null,
+      "viewCount": 597,
+      "likeCount": 4,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-0093ed9fcdbf4a9daa29394870ec1b60",
+      "embedUrl": "https://sketchfab.com/models/0093ed9fcdbf4a9daa29394870ec1b60/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2024-07-18T10:32:27.978346",
+      "tags": [
+        {
+          "name": "electrical",
+          "slug": "electrical",
+          "uri": "https://api.sketchfab.com/v3/tags/electrical"
+        },
+        {
+          "name": "tray",
+          "slug": "tray",
+          "uri": "https://api.sketchfab.com/v3/tags/tray"
+        },
+        {
+          "name": "cable",
+          "slug": "cable",
+          "uri": "https://api.sketchfab.com/v3/tags/cable"
+        },
+        {
+          "name": "cabletray",
+          "slug": "cabletray",
+          "uri": "https://api.sketchfab.com/v3/tags/cabletray"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        },
+        {
+          "name": "science-technology"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "545434d303df4de080d3f42be5bda7b4",
+            "size": 466324,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/0093ed9fcdbf4a9daa29394870ec1b60/thumbnails/046f10eece274238b192e16f4dc45b36/b29ff37da52944d79bc08505205d1676.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "b754ad8c5b2e4db588e352160bb563ce",
+            "size": 49804,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/0093ed9fcdbf4a9daa29394870ec1b60/thumbnails/046f10eece274238b192e16f4dc45b36/527b49133c5042dbaf9c9e4caac5f6a4.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "441cc35d976146359d098e80a4d06322",
+            "size": 18398,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/0093ed9fcdbf4a9daa29394870ec1b60/thumbnails/046f10eece274238b192e16f4dc45b36/35b753bea2d34681befb9535767fc132.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "f3711449b84b413dafa6ce10d79b97c1",
+            "size": 2135,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/0093ed9fcdbf4a9daa29394870ec1b60/thumbnails/046f10eece274238b192e16f4dc45b36/b48190a381e042468857374bfcfa8bc9.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "54d6fb16d44441c6a05f1ec6699a0281",
+            "size": 848,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/0093ed9fcdbf4a9daa29394870ec1b60/thumbnails/046f10eece274238b192e16f4dc45b36/e2fcb903fb76483aaf87d42f23745ec1.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "9699aec7a9764de38004f0570fd49e9e",
+        "username": "AlfazalEng",
+        "displayName": "AlfazalEng",
+        "profileUrl": "https://sketchfab.com/AlfazalEng",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/3712559e5896470a800d14be60239f07",
+          "images": [
+            {
+              "size": 1991,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/3712559e5896470a800d14be60239f07/07f74cf00d584d4488edd08c3b131195.png",
+              "height": 32
+            },
+            {
+              "size": 3428,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/3712559e5896470a800d14be60239f07/886749e37c544724bb41df4758a7ae97.png",
+              "height": 48
+            },
+            {
+              "size": 8214,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/3712559e5896470a800d14be60239f07/ecfca4513ea74e9891978dd677d88392.png",
+              "height": 90
+            },
+            {
+              "size": 9692,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/3712559e5896470a800d14be60239f07/ac978002580e4b1a808eab2c234aa33c.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/9699aec7a9764de38004f0570fd49e9e"
+      },
+      "description": "Make Alfazal Engineering\nConatact ALfazal Engineering for Quote",
+      "faceCount": 30104,
+      "createdAt": "2024-07-18T10:31:42.834436",
+      "vertexCount": 14976,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 15342532,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 30092,
+          "vertexCount": 74516
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 10091134,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 30092,
+          "vertexCount": 74516
+        },
+        "source": {
+          "textureCount": null,
+          "size": 13241057,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 2371461,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/11955067f60b4d48baeab7ba0b1cfafb",
+      "uid": "11955067f60b4d48baeab7ba0b1cfafb",
+      "name": "Stepper Motor Robot",
+      "staffpickedAt": null,
+      "viewCount": 232,
+      "likeCount": 0,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-11955067f60b4d48baeab7ba0b1cfafb",
+      "embedUrl": "https://sketchfab.com/models/11955067f60b4d48baeab7ba0b1cfafb/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2024-05-07T02:39:19.546630",
+      "tags": [
+        {
+          "name": "power",
+          "slug": "power",
+          "uri": "https://api.sketchfab.com/v3/tags/power"
+        },
+        {
+          "name": "motor",
+          "slug": "motor",
+          "uri": "https://api.sketchfab.com/v3/tags/motor"
+        },
+        {
+          "name": "electrical",
+          "slug": "electrical",
+          "uri": "https://api.sketchfab.com/v3/tags/electrical"
+        },
+        {
+          "name": "laboratory",
+          "slug": "laboratory",
+          "uri": "https://api.sketchfab.com/v3/tags/laboratory"
+        },
+        {
+          "name": "electronic",
+          "slug": "electronic",
+          "uri": "https://api.sketchfab.com/v3/tags/electronic"
+        },
+        {
+          "name": "print",
+          "slug": "print",
+          "uri": "https://api.sketchfab.com/v3/tags/print"
+        },
+        {
+          "name": "cables",
+          "slug": "cables",
+          "uri": "https://api.sketchfab.com/v3/tags/cables"
+        },
+        {
+          "name": "motors",
+          "slug": "motors",
+          "uri": "https://api.sketchfab.com/v3/tags/motors"
+        },
+        {
+          "name": "engineering",
+          "slug": "engineering",
+          "uri": "https://api.sketchfab.com/v3/tags/engineering"
+        },
+        {
+          "name": "robot",
+          "slug": "robot",
+          "uri": "https://api.sketchfab.com/v3/tags/robot"
+        }
+      ],
+      "categories": [
+        {
+          "name": "electronics-gadgets"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "7fe13f3aff9b4d878e0b706fda38f263",
+            "size": 59255,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/11955067f60b4d48baeab7ba0b1cfafb/thumbnails/28e2a6efa82d4bc3af8651b59b1d1706/db70275306b843c394e8ebc6eb8c6cf7.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "e2654a161c064726b7a6e0fff836876c",
+            "size": 18341,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/11955067f60b4d48baeab7ba0b1cfafb/thumbnails/28e2a6efa82d4bc3af8651b59b1d1706/2e1c59e3f75049de989efea361f0c1aa.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "5438a3de39ba4d29a231d6976cc9957d",
+            "size": 10474,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/11955067f60b4d48baeab7ba0b1cfafb/thumbnails/28e2a6efa82d4bc3af8651b59b1d1706/3c7a3dc3f462484cbd40d7597eb4d431.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "877b71a0d3fa41e894052b0a2d1a3cd9",
+            "size": 2425,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/11955067f60b4d48baeab7ba0b1cfafb/thumbnails/28e2a6efa82d4bc3af8651b59b1d1706/a5a2b2211eb24c5296caa8de6e52cef5.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "83db6dd16d0b47b5a62bdf1cac1ecf71",
+            "size": 889,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/11955067f60b4d48baeab7ba0b1cfafb/thumbnails/28e2a6efa82d4bc3af8651b59b1d1706/55656cb8fa4b4d2fa1c2c140aa25b7ec.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "e4aa4bf785924a5fb36d5072b265c909",
+        "username": "sevecool",
+        "displayName": "modern Galery",
+        "profileUrl": "https://sketchfab.com/sevecool",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/177c7de4093f4982a9cbb5be600a47ab",
+          "images": [
+            {
+              "size": 1158,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/177c7de4093f4982a9cbb5be600a47ab/e1a584fef5104bd8877557062777c848.png",
+              "height": 32
+            },
+            {
+              "size": 1790,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/177c7de4093f4982a9cbb5be600a47ab/e8d9eda1052b48efa096dc58dacb9968.png",
+              "height": 48
+            },
+            {
+              "size": 4417,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/177c7de4093f4982a9cbb5be600a47ab/b49fe16d0f404a7985614d5233aced4d.png",
+              "height": 90
+            },
+            {
+              "size": 5247,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/177c7de4093f4982a9cbb5be600a47ab/0d6682f0638546d5a6504b183252828a.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/e4aa4bf785924a5fb36d5072b265c909"
+      },
+      "description": "A stepper motor is a brushless, synchronous electric motor that converts digital pulses into mechanical shaft rotation. Its normal shaft motion consists of discrete angular movements of essentially uniform magnitude when driven from sequentially switched DC power supply.\n\nUse it and be happy.",
+      "faceCount": 70980,
+      "createdAt": "2024-05-07T02:35:05.938535",
+      "vertexCount": 30716,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 2663352,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 70980,
+          "vertexCount": 45241
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 696492,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 70980,
+          "vertexCount": 45241
+        },
+        "source": {
+          "textureCount": null,
+          "size": 3549438,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 1259343,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    }
+  ]
+}

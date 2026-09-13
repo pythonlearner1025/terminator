@@ -1,0 +1,31 @@
+import {chromium} from 'playwright';
+import {readFile,writeFile} from 'node:fs/promises';
+import {resolve} from 'node:path';
+import assert from 'node:assert/strict';
+const browser=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true});
+try{
+ const page=await browser.newPage({viewport:{width:1600,height:1050}});const errors=[];
+ page.on('pageerror',e=>errors.push(e.message));
+ await page.goto('file://'+resolve('docs/asset-comparison/index.html'));
+ await page.evaluate(async()=>{const images=[...document.images];for(const image of images){if(image.dataset.image)image.loading='eager'}await Promise.all(images.filter(i=>i.dataset.image).map(i=>i.decode()))});
+ assert.equal(await page.locator('tbody tr').count(),76);
+ assert.equal(await page.locator('tbody td').count(),228);
+ assert.equal(await page.locator('tbody img').count(),304);
+ assert.equal(await page.locator('thead th').count(),4);
+ assert.equal(await page.locator('tbody td h3 a[href^="https://"]').count(),228);
+ const inventory=JSON.parse(await readFile('docs/asset-comparison/inventory.json','utf8'));
+ const scene=JSON.parse(await readFile('assets/main.scene.gltf','utf8'));
+ const references=scene.nodes.map(n=>n.extras?.rootPath).filter(Boolean);
+ assert.equal(new Set(references).size,76);assert.equal(inventory.reduce((n,r)=>n+r.names.length,0),references.length);
+ await page.getByRole('button',{name:'Units 7',exact:true}).click();assert.equal(await page.locator('tbody tr:visible').count(),7);
+ await page.locator('#search').fill('HK-Tank');assert.equal(await page.locator('tbody tr:visible').count(),1);
+ await page.locator('#search').fill('does-not-exist');assert.equal(await page.locator('#empty').isVisible(),true);
+ await page.locator('#search').fill('');await page.getByRole('button',{name:'All assets 76',exact:true}).click();
+ await page.locator('tbody .preview').first().click();assert.equal(await page.locator('dialog').isVisible(),true);await page.keyboard.press('Escape');assert.equal(await page.locator('dialog').isVisible(),false);
+ await page.screenshot({path:'docs/asset-comparison/page-preview.png'});
+ await page.setViewportSize({width:390,height:844});
+ assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),true);
+ assert.deepEqual(errors,[]);
+ const report={rows:76,alternativeCells:228,loadedImages:304,scenePlacements:references.length,coverage:'all unique referenced scene models',fourColumns:true,filters:'passed',imageDialog:'passed',mobilePageOverflow:false,errors};
+ await writeFile('docs/asset-comparison/verification.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report));
+}finally{await browser.close()}

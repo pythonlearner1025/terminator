@@ -1,0 +1,3982 @@
+{
+  "cursors": {
+    "next": "18",
+    "previous": null
+  },
+  "next": "https://api.sketchfab.com/v3/search?count=18&cursor=18&downloadable=true&q=%22HK%22&sort_by=-likeCount&type=models",
+  "previous": null,
+  "results": [
+    {
+      "uri": "https://api.sketchfab.com/v3/models/a16768f0ffa24737a4fe324a411cfbd9",
+      "uid": "a16768f0ffa24737a4fe324a411cfbd9",
+      "name": "HK 416 A7 (free download)",
+      "staffpickedAt": null,
+      "viewCount": 44085,
+      "likeCount": 745,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-a16768f0ffa24737a4fe324a411cfbd9",
+      "embedUrl": "https://sketchfab.com/models/a16768f0ffa24737a4fe324a411cfbd9/embed",
+      "commentCount": 13,
+      "isDownloadable": true,
+      "publishedAt": "2019-12-07T12:02:42.981023",
+      "tags": [
+        {
+          "name": "rifle",
+          "slug": "rifle",
+          "uri": "https://api.sketchfab.com/v3/tags/rifle"
+        },
+        {
+          "name": "modern",
+          "slug": "modern",
+          "uri": "https://api.sketchfab.com/v3/tags/modern"
+        },
+        {
+          "name": "weapon",
+          "slug": "weapon",
+          "uri": "https://api.sketchfab.com/v3/tags/weapon"
+        },
+        {
+          "name": "gun",
+          "slug": "gun",
+          "uri": "https://api.sketchfab.com/v3/tags/gun"
+        },
+        {
+          "name": "gameready",
+          "slug": "gameready",
+          "uri": "https://api.sketchfab.com/v3/tags/gameready"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "weapons-military"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "ced9c12899584f65a226a6f61b38f4ce",
+            "size": 271742,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/a16768f0ffa24737a4fe324a411cfbd9/thumbnails/7f66a6b6b80a43938732b2bb7c54a2a5/35cbb99861064b6ca9d3ef247299eb9f.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "ae0ad8bd65a64e54b94b1739282b0694",
+            "size": 64145,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/a16768f0ffa24737a4fe324a411cfbd9/thumbnails/7f66a6b6b80a43938732b2bb7c54a2a5/90677b5898004bd3ab20df17d709366d.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "7a415b9463be4a7e8b8f69bf51f78969",
+            "size": 33509,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/a16768f0ffa24737a4fe324a411cfbd9/thumbnails/7f66a6b6b80a43938732b2bb7c54a2a5/2b4352f9445b42d5860b8a0fb8eca634.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "32773e8286a14672b0be50ab2bcb1171",
+            "size": 5818,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/a16768f0ffa24737a4fe324a411cfbd9/thumbnails/7f66a6b6b80a43938732b2bb7c54a2a5/35e33680d1864497a2bb0d56e55bb947.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "00708c4555bb407c99dd30e00f966c37",
+            "size": 900,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/a16768f0ffa24737a4fe324a411cfbd9/thumbnails/7f66a6b6b80a43938732b2bb7c54a2a5/6e5e8e77a5584ad690288b369fd04e83.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "58921e3f25264270a3915a1b3f8c5020",
+        "username": "r4m",
+        "displayName": "r4m",
+        "profileUrl": "https://sketchfab.com/r4m",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/54c30dfd296847b18184982336d4b502",
+          "images": [
+            {
+              "size": 2866,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/54c30dfd296847b18184982336d4b502/776b3dcf06034993a04b630d830b2fc0.png",
+              "height": 32
+            },
+            {
+              "size": 5158,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/54c30dfd296847b18184982336d4b502/9e39550ec3254e8eb34c9d41397df62e.png",
+              "height": 48
+            },
+            {
+              "size": 12779,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/54c30dfd296847b18184982336d4b502/c4ff2def17734ed097254d78f35dedf8.png",
+              "height": 90
+            },
+            {
+              "size": 14659,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/54c30dfd296847b18184982336d4b502/7e6a6c4308104b49b0997efd7f818a13.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/58921e3f25264270a3915a1b3f8c5020"
+      },
+      "description": "Game-ready model of HK416 A7",
+      "faceCount": 30088,
+      "createdAt": "2019-12-07T11:41:01.319780",
+      "vertexCount": 15539,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 6,
+          "size": 27982288,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 30088,
+          "vertexCount": 26141
+        },
+        "gltf": {
+          "textureCount": 6,
+          "size": 27167316,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 30088,
+          "vertexCount": 26141
+        },
+        "source": {
+          "textureCount": null,
+          "size": 94977464,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 4713236,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/972e3643000246e8959a6df509557bcc",
+      "uid": "972e3643000246e8959a6df509557bcc",
+      "name": "Heckler & Koch USP Pistol",
+      "staffpickedAt": null,
+      "viewCount": 38247,
+      "likeCount": 611,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-972e3643000246e8959a6df509557bcc",
+      "embedUrl": "https://sketchfab.com/models/972e3643000246e8959a6df509557bcc/embed",
+      "commentCount": 19,
+      "isDownloadable": true,
+      "publishedAt": "2021-06-28T09:10:36.781104",
+      "tags": [
+        {
+          "name": "heckler",
+          "slug": "heckler",
+          "uri": "https://api.sketchfab.com/v3/tags/heckler"
+        },
+        {
+          "name": "koch",
+          "slug": "koch",
+          "uri": "https://api.sketchfab.com/v3/tags/koch"
+        },
+        {
+          "name": "hk",
+          "slug": "hk",
+          "uri": "https://api.sketchfab.com/v3/tags/hk"
+        },
+        {
+          "name": "usp",
+          "slug": "usp",
+          "uri": "https://api.sketchfab.com/v3/tags/usp"
+        },
+        {
+          "name": "gamedev",
+          "slug": "gamedev",
+          "uri": "https://api.sketchfab.com/v3/tags/gamedev"
+        },
+        {
+          "name": "pistol",
+          "slug": "pistol",
+          "uri": "https://api.sketchfab.com/v3/tags/pistol"
+        },
+        {
+          "name": "downloadable",
+          "slug": "downloadable",
+          "uri": "https://api.sketchfab.com/v3/tags/downloadable"
+        },
+        {
+          "name": "substancepainter",
+          "slug": "substancepainter",
+          "uri": "https://api.sketchfab.com/v3/tags/substancepainter"
+        },
+        {
+          "name": "substance",
+          "slug": "substance",
+          "uri": "https://api.sketchfab.com/v3/tags/substance"
+        },
+        {
+          "name": "weapon",
+          "slug": "weapon",
+          "uri": "https://api.sketchfab.com/v3/tags/weapon"
+        },
+        {
+          "name": "game",
+          "slug": "game",
+          "uri": "https://api.sketchfab.com/v3/tags/game"
+        },
+        {
+          "name": "photoshop",
+          "slug": "photoshop",
+          "uri": "https://api.sketchfab.com/v3/tags/photoshop"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "gameasset",
+          "slug": "gameasset",
+          "uri": "https://api.sketchfab.com/v3/tags/gameasset"
+        },
+        {
+          "name": "free",
+          "slug": "free",
+          "uri": "https://api.sketchfab.com/v3/tags/free"
+        },
+        {
+          "name": "gamemodel",
+          "slug": "gamemodel",
+          "uri": "https://api.sketchfab.com/v3/tags/gamemodel"
+        },
+        {
+          "name": "gun",
+          "slug": "gun",
+          "uri": "https://api.sketchfab.com/v3/tags/gun"
+        },
+        {
+          "name": "download",
+          "slug": "download",
+          "uri": "https://api.sketchfab.com/v3/tags/download"
+        }
+      ],
+      "categories": [
+        {
+          "name": "weapons-military"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "e7b7a3133eb64f90889ff64edcd7f997",
+            "size": 128424,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/972e3643000246e8959a6df509557bcc/thumbnails/f10cf7c4365245c8be53b5d4af3172ad/d3aae2a8dc3445bfae7a040ece260acd.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "f4f10f4c32044b59abe1388bd273dc72",
+            "size": 34286,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/972e3643000246e8959a6df509557bcc/thumbnails/f10cf7c4365245c8be53b5d4af3172ad/3ee47b3eeeb24025878c90823a83bff2.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "0828f17ec34f47d9b788b3f72ac323be",
+            "size": 18920,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/972e3643000246e8959a6df509557bcc/thumbnails/f10cf7c4365245c8be53b5d4af3172ad/6fef9471b74c4e7ba94f6389a65588ac.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "79beafd599214a6ba8f0141ff258667c",
+            "size": 3721,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/972e3643000246e8959a6df509557bcc/thumbnails/f10cf7c4365245c8be53b5d4af3172ad/857bffff8cf6481186791c6e75627711.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "0e38496e968542a6908b29727cdff3e5",
+            "size": 968,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/972e3643000246e8959a6df509557bcc/thumbnails/f10cf7c4365245c8be53b5d4af3172ad/377818fab70249139f72a73049302596.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "8b2bdb4f1635451692cad6a7000a9310",
+        "username": "Urpo",
+        "displayName": "Urpo",
+        "profileUrl": "https://sketchfab.com/Urpo",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/52d40e3e8cc9472f8d2ddaee5df24d5d",
+          "images": [
+            {
+              "size": 2991,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/52d40e3e8cc9472f8d2ddaee5df24d5d/38f9f32c7d3245028d616fc042f85311.jpeg",
+              "height": 100
+            },
+            {
+              "size": 2598,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/52d40e3e8cc9472f8d2ddaee5df24d5d/d92d81a87f33402284c1c2266812480a.jpeg",
+              "height": 90
+            },
+            {
+              "size": 1085,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/52d40e3e8cc9472f8d2ddaee5df24d5d/5135650b158a468b884ea0568579fbd9.jpeg",
+              "height": 48
+            },
+            {
+              "size": 722,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/52d40e3e8cc9472f8d2ddaee5df24d5d/9b87f83bd6a74748bb4dedffc1a0c756.jpeg",
+              "height": 32
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/8b2bdb4f1635451692cad6a7000a9310"
+      },
+      "description": "This is my second model i release using blender as modeling software. Last time i was too lazy to bake high poly normals to my model so this time i took the time to make both high poly and low poly model. I used substance painter and photoshop for texturing.",
+      "faceCount": 7267,
+      "createdAt": "2021-06-27T20:29:58.666941",
+      "vertexCount": 3826,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 9,
+          "size": 51675108,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 7266,
+          "vertexCount": 6557
+        },
+        "gltf": {
+          "textureCount": 9,
+          "size": 51150077,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 7266,
+          "vertexCount": 6557
+        },
+        "source": {
+          "textureCount": null,
+          "size": 95762276,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 4627179,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/cb2f959d048944c7bc5bde2f2be8bae4",
+      "uid": "cb2f959d048944c7bc5bde2f2be8bae4",
+      "name": "Low-Poly AAC Honey Badger",
+      "staffpickedAt": null,
+      "viewCount": 58399,
+      "likeCount": 596,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-cb2f959d048944c7bc5bde2f2be8bae4",
+      "embedUrl": "https://sketchfab.com/models/cb2f959d048944c7bc5bde2f2be8bae4/embed",
+      "commentCount": 84,
+      "isDownloadable": true,
+      "publishedAt": "2020-05-23T10:01:54.880043",
+      "tags": [
+        {
+          "name": "rifle",
+          "slug": "rifle",
+          "uri": "https://api.sketchfab.com/v3/tags/rifle"
+        },
+        {
+          "name": "carbine",
+          "slug": "carbine",
+          "uri": "https://api.sketchfab.com/v3/tags/carbine"
+        },
+        {
+          "name": "as",
+          "slug": "as",
+          "uri": "https://api.sketchfab.com/v3/tags/as"
+        },
+        {
+          "name": "firearm",
+          "slug": "firearm",
+          "uri": "https://api.sketchfab.com/v3/tags/firearm"
+        },
+        {
+          "name": "america",
+          "slug": "america",
+          "uri": "https://api.sketchfab.com/v3/tags/america"
+        },
+        {
+          "name": "american",
+          "slug": "american",
+          "uri": "https://api.sketchfab.com/v3/tags/american"
+        },
+        {
+          "name": "variant",
+          "slug": "variant",
+          "uri": "https://api.sketchfab.com/v3/tags/variant"
+        },
+        {
+          "name": "honey",
+          "slug": "honey",
+          "uri": "https://api.sketchfab.com/v3/tags/honey"
+        },
+        {
+          "name": "300",
+          "slug": "300",
+          "uri": "https://api.sketchfab.com/v3/tags/300"
+        },
+        {
+          "name": "val",
+          "slug": "val",
+          "uri": "https://api.sketchfab.com/v3/tags/val"
+        },
+        {
+          "name": "blackout",
+          "slug": "blackout",
+          "uri": "https://api.sketchfab.com/v3/tags/blackout"
+        },
+        {
+          "name": "badger",
+          "slug": "badger",
+          "uri": "https://api.sketchfab.com/v3/tags/badger"
+        },
+        {
+          "name": "pdw",
+          "slug": "pdw",
+          "uri": "https://api.sketchfab.com/v3/tags/pdw"
+        },
+        {
+          "name": "aac",
+          "slug": "aac",
+          "uri": "https://api.sketchfab.com/v3/tags/aac"
+        },
+        {
+          "name": "honeybadger",
+          "slug": "honeybadger",
+          "uri": "https://api.sketchfab.com/v3/tags/honeybadger"
+        },
+        {
+          "name": "weapon",
+          "slug": "weapon",
+          "uri": "https://api.sketchfab.com/v3/tags/weapon"
+        },
+        {
+          "name": "low",
+          "slug": "low",
+          "uri": "https://api.sketchfab.com/v3/tags/low"
+        },
+        {
+          "name": "poly",
+          "slug": "poly",
+          "uri": "https://api.sketchfab.com/v3/tags/poly"
+        },
+        {
+          "name": "usa",
+          "slug": "usa",
+          "uri": "https://api.sketchfab.com/v3/tags/usa"
+        },
+        {
+          "name": "gun",
+          "slug": "gun",
+          "uri": "https://api.sketchfab.com/v3/tags/gun"
+        },
+        {
+          "name": "smg",
+          "slug": "smg",
+          "uri": "https://api.sketchfab.com/v3/tags/smg"
+        },
+        {
+          "name": "equivalent",
+          "slug": "equivalent",
+          "uri": "https://api.sketchfab.com/v3/tags/equivalent"
+        }
+      ],
+      "categories": [
+        {
+          "name": "science-technology"
+        },
+        {
+          "name": "weapons-military"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "544e03ced1ea473c91ada394bfb3d333",
+            "size": 103734,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/cb2f959d048944c7bc5bde2f2be8bae4/thumbnails/767d854c8af84965846ceaa3f698c2ef/71f912ffd7874edcb1055b23697645b2.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "b60e00fb8c034fd5825ac8f31e140884",
+            "size": 36232,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/cb2f959d048944c7bc5bde2f2be8bae4/thumbnails/767d854c8af84965846ceaa3f698c2ef/c7c595fdff2d4b7a863d9b774d787970.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "18ca7ef8322947b7b05f36bb251a23d8",
+            "size": 21421,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/cb2f959d048944c7bc5bde2f2be8bae4/thumbnails/767d854c8af84965846ceaa3f698c2ef/f416be1e9feb4ccc9f0a01a2d9493755.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "1ee09c16278b4e528bafab8160584892",
+            "size": 4850,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/cb2f959d048944c7bc5bde2f2be8bae4/thumbnails/767d854c8af84965846ceaa3f698c2ef/2d0d1a3e38d14888a6b35a6d05d7cd57.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "b541513b722d4179b3ca880f6d654908",
+            "size": 1189,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/cb2f959d048944c7bc5bde2f2be8bae4/thumbnails/767d854c8af84965846ceaa3f698c2ef/f1bdfecd76904a278dad2e3b3909fe00.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "ba88d4bd23174291a5c9016ba62c6a13",
+        "username": "TastyTony",
+        "displayName": "TastyTony",
+        "profileUrl": "https://sketchfab.com/TastyTony",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/eddea477138d482a852cab8fb209e6e8",
+          "images": [
+            {
+              "size": 1696,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/eddea477138d482a852cab8fb209e6e8/97047a5274304989830e653a21ad569f.png",
+              "height": 32
+            },
+            {
+              "size": 3418,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/eddea477138d482a852cab8fb209e6e8/856e1d9411ee4ac992da4897bae4aa6f.png",
+              "height": 48
+            },
+            {
+              "size": 11176,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/eddea477138d482a852cab8fb209e6e8/6e926dde05f54f8aa63a5848d3ae44db.png",
+              "height": 90
+            },
+            {
+              "size": 13694,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/eddea477138d482a852cab8fb209e6e8/163ac50b1678436ab7d0dba63300d14b.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/ba88d4bd23174291a5c9016ba62c6a13"
+      },
+      "description": "Sorry about the AR Heavy content recently. I have a couple more and that should be it for a while. Some people have been requesting guns so i'm gonna list everything I have on the todo list:-\n\n- Ruger AC 556\n- Lee Enfield No.4\n- Mondragon\n- Mannlicher M1901\n- Walther Q5 Match\n- SR1 Vektor\n- PB\n- Simeon North Model 1826\n- Sig Emperor Scorpion\n- PSS Silent Pistol\n- Some kind of double barrel shotgun\n- Falkor Petra\n- Savage Arms Axis II\n- Sako TRG-42\n- PGM H\u00e9cate II\n- A-545\n\nAnd here's a bunch of guns that are gonna be harder to make due to lack of decent reference images but i'll still try :-\n\n- Tanfoglio Appeal\n- Beretta MX4 Storm\n- Farquhar-Hill\n- CS/LR-14\n- Beretta 87 Target\n- PTRS-41\n- AK Alfa\n- VBR CAR\n- HK SLB 2000\n- Calico M960\n- QLB-06\n- VRBP-100\n- Shkval Rifle\n- AMR-2\n- S&W AS-3\n- BR-18\n- Some kind of Bow\n- QBU-10\n- Nail Gun\n- Stapler\n- RSh-12\n- EF88 Austeyr\n- Bandayevsky RB-12\n- HK433\n- Cobb MCR\n- Zastava M17\n- GD RM227\n\nThere will always be more beyond this but this is just what's currently planned.",
+      "faceCount": 11053,
+      "createdAt": "2020-05-23T09:46:55.129449",
+      "vertexCount": 5862,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 1979928,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 11047,
+          "vertexCount": 32409
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 257623,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 11047,
+          "vertexCount": 32409
+        },
+        "source": {
+          "textureCount": null,
+          "size": 444546,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 796483,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/9bdb2934a94b45ed92c6307883c546b7",
+      "uid": "9bdb2934a94b45ed92c6307883c546b7",
+      "name": "H&K MP5",
+      "staffpickedAt": null,
+      "viewCount": 40916,
+      "likeCount": 479,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-9bdb2934a94b45ed92c6307883c546b7",
+      "embedUrl": "https://sketchfab.com/models/9bdb2934a94b45ed92c6307883c546b7/embed",
+      "commentCount": 37,
+      "isDownloadable": true,
+      "publishedAt": "2020-02-04T14:42:21.432283",
+      "tags": [
+        {
+          "name": "rifle",
+          "slug": "rifle",
+          "uri": "https://api.sketchfab.com/v3/tags/rifle"
+        },
+        {
+          "name": "modern",
+          "slug": "modern",
+          "uri": "https://api.sketchfab.com/v3/tags/modern"
+        },
+        {
+          "name": "army",
+          "slug": "army",
+          "uri": "https://api.sketchfab.com/v3/tags/army"
+        },
+        {
+          "name": "carbine",
+          "slug": "carbine",
+          "uri": "https://api.sketchfab.com/v3/tags/carbine"
+        },
+        {
+          "name": "mp5",
+          "slug": "mp5",
+          "uri": "https://api.sketchfab.com/v3/tags/mp5"
+        },
+        {
+          "name": "civil",
+          "slug": "civil",
+          "uri": "https://api.sketchfab.com/v3/tags/civil"
+        },
+        {
+          "name": "hk",
+          "slug": "hk",
+          "uri": "https://api.sketchfab.com/v3/tags/hk"
+        },
+        {
+          "name": "combat",
+          "slug": "combat",
+          "uri": "https://api.sketchfab.com/v3/tags/combat"
+        },
+        {
+          "name": "machine",
+          "slug": "machine",
+          "uri": "https://api.sketchfab.com/v3/tags/machine"
+        },
+        {
+          "name": "pistol",
+          "slug": "pistol",
+          "uri": "https://api.sketchfab.com/v3/tags/pistol"
+        },
+        {
+          "name": "machine-gun",
+          "slug": "machine-gun",
+          "uri": "https://api.sketchfab.com/v3/tags/machine-gun"
+        },
+        {
+          "name": "pdw",
+          "slug": "pdw",
+          "uri": "https://api.sketchfab.com/v3/tags/pdw"
+        },
+        {
+          "name": "machine-pistol",
+          "slug": "machine-pistol",
+          "uri": "https://api.sketchfab.com/v3/tags/machine-pistol"
+        },
+        {
+          "name": "weapon",
+          "slug": "weapon",
+          "uri": "https://api.sketchfab.com/v3/tags/weapon"
+        },
+        {
+          "name": "weapons",
+          "slug": "weapons",
+          "uri": "https://api.sketchfab.com/v3/tags/weapons"
+        },
+        {
+          "name": "gun",
+          "slug": "gun",
+          "uri": "https://api.sketchfab.com/v3/tags/gun"
+        },
+        {
+          "name": "guns",
+          "slug": "guns",
+          "uri": "https://api.sketchfab.com/v3/tags/guns"
+        }
+      ],
+      "categories": [
+        {
+          "name": "weapons-military"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "cd56dda5377d45beaa20bacc4026c001",
+            "size": 257655,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/9bdb2934a94b45ed92c6307883c546b7/thumbnails/6507b5f335ce4e609a7af39f19084363/44cb246401c747ad97195590e99d79f1.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "2c2594c2fca949d7996d1ef93abc9848",
+            "size": 80049,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/9bdb2934a94b45ed92c6307883c546b7/thumbnails/6507b5f335ce4e609a7af39f19084363/da4078a6d50a47b7b50cce3fe65fcacf.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "c561d34dca044d4c84e0037539940922",
+            "size": 44974,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/9bdb2934a94b45ed92c6307883c546b7/thumbnails/6507b5f335ce4e609a7af39f19084363/66979e9af31d48b1a13a1c24354482dc.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "82a59b80224f4beaa7f7cba1040cf5b5",
+            "size": 7807,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/9bdb2934a94b45ed92c6307883c546b7/thumbnails/6507b5f335ce4e609a7af39f19084363/d9e81061f60f440b91964146f7baf907.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "907e8b0686e545a599097ffef3e66dcd",
+            "size": 1127,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/9bdb2934a94b45ed92c6307883c546b7/thumbnails/6507b5f335ce4e609a7af39f19084363/ffb962e81a234955a5543dbb26dbe01b.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "92986c5c02e54945b69971d13d6fb81e",
+        "username": "wisdom3D",
+        "displayName": "wisdom3D",
+        "profileUrl": "https://sketchfab.com/wisdom3D",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/0842a771ede642159e4f2aca1a18d8ef",
+          "images": [
+            {
+              "size": 595,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/0842a771ede642159e4f2aca1a18d8ef/31ac629231d64704b32ab23aa7a4cdbd.png",
+              "height": 32
+            },
+            {
+              "size": 903,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/0842a771ede642159e4f2aca1a18d8ef/6a8d507c97b44dc2abc60a63ba9d4b11.png",
+              "height": 48
+            },
+            {
+              "size": 1731,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/0842a771ede642159e4f2aca1a18d8ef/c89851aa9d704f66abab3b5cab438331.png",
+              "height": 90
+            },
+            {
+              "size": 1940,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/0842a771ede642159e4f2aca1a18d8ef/a1c0e6fad77a4b28b9c7b89ce2d12c7d.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/92986c5c02e54945b69971d13d6fb81e"
+      },
+      "description": "I decided to texture my old MP5. Here is the result. Enjoy! I had a lot of fun during this project.\n\nYou can find more free stuff on \n[**Patreon**](https://www.patreon.com/cw/fakeblenderman)\n or [**Gumroad**](https://fakeblenderman.gumroad.com/)\n\nCheck out my social media: \n[**Artstation**](https://www.artstation.com/wisdom-gamesart)\n | [**Instagram**](https://www.instagram.com/wisdom_in_3d/)",
+      "faceCount": 22426,
+      "createdAt": "2020-02-04T14:23:22.542815",
+      "vertexCount": 11322,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 6,
+          "size": 35489788,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 22426,
+          "vertexCount": 19732
+        },
+        "gltf": {
+          "textureCount": 6,
+          "size": 34703277,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 22426,
+          "vertexCount": 19732
+        },
+        "source": {
+          "textureCount": null,
+          "size": 43064382,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 4236663,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "bbfe3f7dbcdd4122b966b85b9786a989",
+        "label": "CC Attribution-NonCommercial"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/997840668e1e4c1384c7220563323085",
+      "uid": "997840668e1e4c1384c7220563323085",
+      "name": "HK G28 Sniper Rifle",
+      "staffpickedAt": null,
+      "viewCount": 23529,
+      "likeCount": 445,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-997840668e1e4c1384c7220563323085",
+      "embedUrl": "https://sketchfab.com/models/997840668e1e4c1384c7220563323085/embed",
+      "commentCount": 4,
+      "isDownloadable": true,
+      "publishedAt": "2022-04-01T12:35:17.475122",
+      "tags": [
+        {
+          "name": "rifle",
+          "slug": "rifle",
+          "uri": "https://api.sketchfab.com/v3/tags/rifle"
+        },
+        {
+          "name": "firearm",
+          "slug": "firearm",
+          "uri": "https://api.sketchfab.com/v3/tags/firearm"
+        },
+        {
+          "name": "firearms",
+          "slug": "firearms",
+          "uri": "https://api.sketchfab.com/v3/tags/firearms"
+        },
+        {
+          "name": "sniper",
+          "slug": "sniper",
+          "uri": "https://api.sketchfab.com/v3/tags/sniper"
+        },
+        {
+          "name": "sniper-rifle",
+          "slug": "sniper-rifle",
+          "uri": "https://api.sketchfab.com/v3/tags/sniper-rifle"
+        },
+        {
+          "name": "military",
+          "slug": "military",
+          "uri": "https://api.sketchfab.com/v3/tags/military"
+        }
+      ],
+      "categories": [
+        {
+          "name": "weapons-military"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "b5f3a138e56446f08188fe88eb1c1b0c",
+            "size": 483471,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/997840668e1e4c1384c7220563323085/thumbnails/564a7ca6aa7d4ad9a2a54b0694e1fb45/dab4f2c75884402c81de91edb6aa6cea.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "77e8413f6c22420284c3551e146e3a06",
+            "size": 67582,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/997840668e1e4c1384c7220563323085/thumbnails/564a7ca6aa7d4ad9a2a54b0694e1fb45/20794227c73248cf976b81a961c58d64.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "67ffe4597f9b48f99fad1c384ade7f72",
+            "size": 34282,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/997840668e1e4c1384c7220563323085/thumbnails/564a7ca6aa7d4ad9a2a54b0694e1fb45/ca50e4e5161542e3bc7bbfe2c58c2f67.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "bdf9000f701e4daaa3df9856126344c0",
+            "size": 7137,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/997840668e1e4c1384c7220563323085/thumbnails/564a7ca6aa7d4ad9a2a54b0694e1fb45/5df78fcd682e4aa7884432204e72ca14.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "6c91aee28cae4f1d9a6302d792c52ef6",
+            "size": 1508,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/997840668e1e4c1384c7220563323085/thumbnails/564a7ca6aa7d4ad9a2a54b0694e1fb45/30a0e7ee379a4ea4b7da55b2a70b84db.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "d739e2ea3270477cb6300a03c89f5054",
+        "username": "trolosqlfod",
+        "displayName": "trolosqlfod",
+        "profileUrl": "https://sketchfab.com/trolosqlfod",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/cc6ea9d0cb3d4119be93e0ef2ccbe79f",
+          "images": [
+            {
+              "size": 2146,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/cc6ea9d0cb3d4119be93e0ef2ccbe79f/d4390c8888bb437ab9df91dff4ce5290.png",
+              "height": 32
+            },
+            {
+              "size": 4116,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/cc6ea9d0cb3d4119be93e0ef2ccbe79f/f11cd14dae5f4885ab4bedd04b672b91.png",
+              "height": 48
+            },
+            {
+              "size": 11857,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/cc6ea9d0cb3d4119be93e0ef2ccbe79f/925e60f3d0f247c5bc8daa55cfc4de2c.png",
+              "height": 90
+            },
+            {
+              "size": 14368,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/cc6ea9d0cb3d4119be93e0ef2ccbe79f/3d5c39e7d4a942fbb89811d62037c246.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/d739e2ea3270477cb6300a03c89f5054"
+      },
+      "description": "HK G28 Sniper Rifle",
+      "faceCount": 27294,
+      "createdAt": "2022-04-01T12:31:50.852100",
+      "vertexCount": 14581,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 5,
+          "size": 6963616,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 27287,
+          "vertexCount": 66000
+        },
+        "gltf": {
+          "textureCount": 5,
+          "size": 5591570,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 27287,
+          "vertexCount": 66000
+        },
+        "source": {
+          "textureCount": null,
+          "size": 14143812,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 3244835,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/fad0226e1dcf4af180f707a5509d3a4e",
+      "uid": "fad0226e1dcf4af180f707a5509d3a4e",
+      "name": "HK MP5 SMG",
+      "staffpickedAt": null,
+      "viewCount": 15756,
+      "likeCount": 366,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-fad0226e1dcf4af180f707a5509d3a4e",
+      "embedUrl": "https://sketchfab.com/models/fad0226e1dcf4af180f707a5509d3a4e/embed",
+      "commentCount": 9,
+      "isDownloadable": true,
+      "publishedAt": "2023-10-09T06:55:07.769327",
+      "tags": [
+        {
+          "name": "prop",
+          "slug": "prop",
+          "uri": "https://api.sketchfab.com/v3/tags/prop"
+        },
+        {
+          "name": "mp5",
+          "slug": "mp5",
+          "uri": "https://api.sketchfab.com/v3/tags/mp5"
+        },
+        {
+          "name": "9mm",
+          "slug": "9mm",
+          "uri": "https://api.sketchfab.com/v3/tags/9mm"
+        },
+        {
+          "name": "bullet",
+          "slug": "bullet",
+          "uri": "https://api.sketchfab.com/v3/tags/bullet"
+        },
+        {
+          "name": "firearm",
+          "slug": "firearm",
+          "uri": "https://api.sketchfab.com/v3/tags/firearm"
+        },
+        {
+          "name": "machinegun",
+          "slug": "machinegun",
+          "uri": "https://api.sketchfab.com/v3/tags/machinegun"
+        },
+        {
+          "name": "ammo",
+          "slug": "ammo",
+          "uri": "https://api.sketchfab.com/v3/tags/ammo"
+        },
+        {
+          "name": "hk",
+          "slug": "hk",
+          "uri": "https://api.sketchfab.com/v3/tags/hk"
+        },
+        {
+          "name": "submachinegun",
+          "slug": "submachinegun",
+          "uri": "https://api.sketchfab.com/v3/tags/submachinegun"
+        },
+        {
+          "name": "digital3d",
+          "slug": "digital3d",
+          "uri": "https://api.sketchfab.com/v3/tags/digital3d"
+        },
+        {
+          "name": "weapon",
+          "slug": "weapon",
+          "uri": "https://api.sketchfab.com/v3/tags/weapon"
+        },
+        {
+          "name": "pbr",
+          "slug": "pbr",
+          "uri": "https://api.sketchfab.com/v3/tags/pbr"
+        },
+        {
+          "name": "gameart",
+          "slug": "gameart",
+          "uri": "https://api.sketchfab.com/v3/tags/gameart"
+        },
+        {
+          "name": "military",
+          "slug": "military",
+          "uri": "https://api.sketchfab.com/v3/tags/military"
+        },
+        {
+          "name": "gameasset",
+          "slug": "gameasset",
+          "uri": "https://api.sketchfab.com/v3/tags/gameasset"
+        },
+        {
+          "name": "smg",
+          "slug": "smg",
+          "uri": "https://api.sketchfab.com/v3/tags/smg"
+        },
+        {
+          "name": "guns",
+          "slug": "guns",
+          "uri": "https://api.sketchfab.com/v3/tags/guns"
+        }
+      ],
+      "categories": [
+        {
+          "name": "electronics-gadgets"
+        },
+        {
+          "name": "weapons-military"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "723b5f38f5ad4f97807921fa65cbb6a0",
+            "size": 92809,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/fad0226e1dcf4af180f707a5509d3a4e/thumbnails/01dad08d1fd2478abd0c69c8687363bf/deeb38cb61244b788392aa9c5957fc3e.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "938fc9074f06486b9664068f6079eeac",
+            "size": 28332,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/fad0226e1dcf4af180f707a5509d3a4e/thumbnails/01dad08d1fd2478abd0c69c8687363bf/bad277a78ee348bd8a837a2bf2537383.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "e5e16796bce243cd842f8b90ab57460d",
+            "size": 15981,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/fad0226e1dcf4af180f707a5509d3a4e/thumbnails/01dad08d1fd2478abd0c69c8687363bf/7d44399807584bc5b82fec5c18540810.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "30cb05a393e74a13b79fc9a0004ebdcc",
+            "size": 3407,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/fad0226e1dcf4af180f707a5509d3a4e/thumbnails/01dad08d1fd2478abd0c69c8687363bf/d8727fac7462410a95131a8c73715609.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "f3e63ad02af34caeaab93bfd312c9a65",
+            "size": 960,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/fad0226e1dcf4af180f707a5509d3a4e/thumbnails/01dad08d1fd2478abd0c69c8687363bf/1c2b3f6f509145c9ba1d85cf2bc6b9c7.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "ca862310f9944dc9a05b345c63c6e1b5",
+        "username": "dani-zzz",
+        "displayName": "Daniel Zamary",
+        "profileUrl": "https://sketchfab.com/dani-zzz",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/95bb69fee6014dee91049e3169c1aa10",
+          "images": [
+            {
+              "size": 1150,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/95bb69fee6014dee91049e3169c1aa10/0f4cf916739942b7b27e4e38177c7f55.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1572,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/95bb69fee6014dee91049e3169c1aa10/0615c57d20744b6c8d05119a768bec0a.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3519,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/95bb69fee6014dee91049e3169c1aa10/98af3e6e146f4d8d8b89a766608f3bee.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3989,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/95bb69fee6014dee91049e3169c1aa10/a0402fe39f424871a3194bd1a84f767c.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/ca862310f9944dc9a05b345c63c6e1b5"
+      },
+      "description": "I'm excited to share my latest project a game-ready 3D model of the iconic HK MP5 submachine gun. The journey of bringing this firearm to life was all about precision. Dive into the photorealistic 4K textures and the 16K vertices optimized for game engines.\nAlso checkout my [Artstation](http://www.artstation.com/danielzamary) and support me for more.\nDownload and enjoy!",
+      "faceCount": 32178,
+      "createdAt": "2023-10-09T06:11:19.564604",
+      "vertexCount": 15984,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 15,
+          "size": 168913984,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 32171,
+          "vertexCount": 31624
+        },
+        "gltf": {
+          "textureCount": 15,
+          "size": 167839900,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 32171,
+          "vertexCount": 31624
+        },
+        "source": {
+          "textureCount": null,
+          "size": 174407048,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 6221361,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/059e968f6f764357880807c62c117ab7",
+      "uid": "059e968f6f764357880807c62c117ab7",
+      "name": "Low-Poly HK416",
+      "staffpickedAt": null,
+      "viewCount": 29570,
+      "likeCount": 364,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-059e968f6f764357880807c62c117ab7",
+      "embedUrl": "https://sketchfab.com/models/059e968f6f764357880807c62c117ab7/embed",
+      "commentCount": 8,
+      "isDownloadable": true,
+      "publishedAt": "2019-08-03T23:08:24.827033",
+      "tags": [
+        {
+          "name": "rifle",
+          "slug": "rifle",
+          "uri": "https://api.sketchfab.com/v3/tags/rifle"
+        },
+        {
+          "name": "and",
+          "slug": "and",
+          "uri": "https://api.sketchfab.com/v3/tags/and"
+        },
+        {
+          "name": "m4a1",
+          "slug": "m4a1",
+          "uri": "https://api.sketchfab.com/v3/tags/m4a1"
+        },
+        {
+          "name": "assault",
+          "slug": "assault",
+          "uri": "https://api.sketchfab.com/v3/tags/assault"
+        },
+        {
+          "name": "m4",
+          "slug": "m4",
+          "uri": "https://api.sketchfab.com/v3/tags/m4"
+        },
+        {
+          "name": "m16",
+          "slug": "m16",
+          "uri": "https://api.sketchfab.com/v3/tags/m16"
+        },
+        {
+          "name": "german",
+          "slug": "german",
+          "uri": "https://api.sketchfab.com/v3/tags/german"
+        },
+        {
+          "name": "carbine",
+          "slug": "carbine",
+          "uri": "https://api.sketchfab.com/v3/tags/carbine"
+        },
+        {
+          "name": "koch",
+          "slug": "koch",
+          "uri": "https://api.sketchfab.com/v3/tags/koch"
+        },
+        {
+          "name": "bullet",
+          "slug": "bullet",
+          "uri": "https://api.sketchfab.com/v3/tags/bullet"
+        },
+        {
+          "name": "hk",
+          "slug": "hk",
+          "uri": "https://api.sketchfab.com/v3/tags/hk"
+        },
+        {
+          "name": "ar15",
+          "slug": "ar15",
+          "uri": "https://api.sketchfab.com/v3/tags/ar15"
+        },
+        {
+          "name": "ar",
+          "slug": "ar",
+          "uri": "https://api.sketchfab.com/v3/tags/ar"
+        },
+        {
+          "name": "hk416",
+          "slug": "hk416",
+          "uri": "https://api.sketchfab.com/v3/tags/hk416"
+        },
+        {
+          "name": "germany",
+          "slug": "germany",
+          "uri": "https://api.sketchfab.com/v3/tags/germany"
+        },
+        {
+          "name": "15",
+          "slug": "15",
+          "uri": "https://api.sketchfab.com/v3/tags/15"
+        },
+        {
+          "name": "hk417",
+          "slug": "hk417",
+          "uri": "https://api.sketchfab.com/v3/tags/hk417"
+        },
+        {
+          "name": "hecker",
+          "slug": "hecker",
+          "uri": "https://api.sketchfab.com/v3/tags/hecker"
+        },
+        {
+          "name": "weapon",
+          "slug": "weapon",
+          "uri": "https://api.sketchfab.com/v3/tags/weapon"
+        },
+        {
+          "name": "low",
+          "slug": "low",
+          "uri": "https://api.sketchfab.com/v3/tags/low"
+        },
+        {
+          "name": "poly",
+          "slug": "poly",
+          "uri": "https://api.sketchfab.com/v3/tags/poly"
+        },
+        {
+          "name": "military",
+          "slug": "military",
+          "uri": "https://api.sketchfab.com/v3/tags/military"
+        },
+        {
+          "name": "gun",
+          "slug": "gun",
+          "uri": "https://api.sketchfab.com/v3/tags/gun"
+        },
+        {
+          "name": "smg",
+          "slug": "smg",
+          "uri": "https://api.sketchfab.com/v3/tags/smg"
+        }
+      ],
+      "categories": [
+        {
+          "name": "electronics-gadgets"
+        },
+        {
+          "name": "weapons-military"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "542e34ef1d434b179d55d1347a4a91ce",
+            "size": 99693,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/059e968f6f764357880807c62c117ab7/thumbnails/1d85ffeb1b0e4f68b3964e915b809104/82a63811b1c14064b03595e064e9d1a5.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "88d8a2b613154332910fc1635c0875cd",
+            "size": 33904,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/059e968f6f764357880807c62c117ab7/thumbnails/1d85ffeb1b0e4f68b3964e915b809104/25b4390ee8834985bcc3e807ba5ef66d.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "0924211f750e429aa108f68276778d52",
+            "size": 20122,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/059e968f6f764357880807c62c117ab7/thumbnails/1d85ffeb1b0e4f68b3964e915b809104/0569aff44cfa4c7aacc89fedb83073a5.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "55ce928f973c44d4a18bd98cde4c4806",
+            "size": 4332,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/059e968f6f764357880807c62c117ab7/thumbnails/1d85ffeb1b0e4f68b3964e915b809104/a687053d0478446fa576d8ae9d7809d6.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "3c120de10c49458386ac5915f85b4b7a",
+            "size": 1138,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/059e968f6f764357880807c62c117ab7/thumbnails/1d85ffeb1b0e4f68b3964e915b809104/48eb04565ce84c7c91ef330e079b3e4b.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "ba88d4bd23174291a5c9016ba62c6a13",
+        "username": "TastyTony",
+        "displayName": "TastyTony",
+        "profileUrl": "https://sketchfab.com/TastyTony",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/eddea477138d482a852cab8fb209e6e8",
+          "images": [
+            {
+              "size": 1696,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/eddea477138d482a852cab8fb209e6e8/97047a5274304989830e653a21ad569f.png",
+              "height": 32
+            },
+            {
+              "size": 3418,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/eddea477138d482a852cab8fb209e6e8/856e1d9411ee4ac992da4897bae4aa6f.png",
+              "height": 48
+            },
+            {
+              "size": 11176,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/eddea477138d482a852cab8fb209e6e8/6e926dde05f54f8aa63a5848d3ae44db.png",
+              "height": 90
+            },
+            {
+              "size": 13694,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/eddea477138d482a852cab8fb209e6e8/163ac50b1678436ab7d0dba63300d14b.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/ba88d4bd23174291a5c9016ba62c6a13"
+      },
+      "description": "Ejection ports all wrong but I only noticed that after making the whole damn model so hush.",
+      "faceCount": 9253,
+      "createdAt": "2019-08-03T23:04:11.021399",
+      "vertexCount": 5233,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 1576596,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 9252,
+          "vertexCount": 25746
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 217191,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 9252,
+          "vertexCount": 25746
+        },
+        "source": {
+          "textureCount": null,
+          "size": 351262,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 635829,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/5ff6de0de67d498987a0c8cc534dee03",
+      "uid": "5ff6de0de67d498987a0c8cc534dee03",
+      "name": "Hollow Knight - Pure Nail",
+      "staffpickedAt": null,
+      "viewCount": 20244,
+      "likeCount": 350,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-5ff6de0de67d498987a0c8cc534dee03",
+      "embedUrl": "https://sketchfab.com/models/5ff6de0de67d498987a0c8cc534dee03/embed",
+      "commentCount": 36,
+      "isDownloadable": true,
+      "publishedAt": "2020-11-06T21:45:24.917408",
+      "tags": [
+        {
+          "name": "fantasyweapon",
+          "slug": "fantasyweapon",
+          "uri": "https://api.sketchfab.com/v3/tags/fantasyweapon"
+        },
+        {
+          "name": "hollowknight",
+          "slug": "hollowknight",
+          "uri": "https://api.sketchfab.com/v3/tags/hollowknight"
+        },
+        {
+          "name": "daehowest_ds2020",
+          "slug": "daehowest_ds2020",
+          "uri": "https://api.sketchfab.com/v3/tags/daehowest_ds2020"
+        },
+        {
+          "name": "daehowest_ds2020_a1",
+          "slug": "daehowest_ds2020_a1",
+          "uri": "https://api.sketchfab.com/v3/tags/daehowest_ds2020_a1"
+        }
+      ],
+      "categories": [
+        {
+          "name": "weapons-military"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "5e201186780341569ba4eca17b0d656f",
+            "size": 103820,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/5ff6de0de67d498987a0c8cc534dee03/thumbnails/767c80638eb042ee92c4df04eb27e32e/2b13278f8a27454099ece306a43d30be.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "7854516d50434243bc0fff378b7b3b45",
+            "size": 33858,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/5ff6de0de67d498987a0c8cc534dee03/thumbnails/767c80638eb042ee92c4df04eb27e32e/7f1dafb75c314742bb05e3fc0da4cc54.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "0134792c803c4a01943dfe8f1e025a49",
+            "size": 19156,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/5ff6de0de67d498987a0c8cc534dee03/thumbnails/767c80638eb042ee92c4df04eb27e32e/8210097ac3f1438092c066d3969c9c7a.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "bd618faee547425b80cdd59b5f24ddfe",
+            "size": 3655,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/5ff6de0de67d498987a0c8cc534dee03/thumbnails/767c80638eb042ee92c4df04eb27e32e/c17a1d0c59924979ac587da76dbbc362.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "56a985cb76bb45b69af310a9b5af3fe7",
+            "size": 717,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/5ff6de0de67d498987a0c8cc534dee03/thumbnails/767c80638eb042ee92c4df04eb27e32e/8ffe9a196a92468eb3763b0311f5c507.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "58d55694f3684b4395492405c2daa331",
+        "username": "Joao_Desager",
+        "displayName": "Jo\u00e3o Desager",
+        "profileUrl": "https://sketchfab.com/Joao_Desager",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/3754d5902a3d4e84b2f51011bb065799",
+          "images": [
+            {
+              "size": 865,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/3754d5902a3d4e84b2f51011bb065799/f00deff1fc344161a8d75d63afc39cf8.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1421,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/3754d5902a3d4e84b2f51011bb065799/5ce650948da341068fef5c93de3b3e9a.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3516,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/3754d5902a3d4e84b2f51011bb065799/c9fb0a465cb944f58ff44382590ecd93.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4126,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/3754d5902a3d4e84b2f51011bb065799/92d7acedcd334db9b273ef7e78f31263.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/58d55694f3684b4395492405c2daa331"
+      },
+      "description": "Hollow Knight sculpt based on the Pure nail.\n\nPlayers often take ages to finish HK due to all the side content and dlc. \nSo I wondered what a nail with that many hours on it would look like. The fully upgraded nail of a seasoned Hollow Knight.\n\nDone in Blender and Zbrush, was a ton of fun and a great learning exercise!",
+      "faceCount": 997196,
+      "createdAt": "2020-11-06T21:30:18.534839",
+      "vertexCount": 500122,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 37394420,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 997196,
+          "vertexCount": 635411
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 18202474,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 997196,
+          "vertexCount": 635411
+        },
+        "source": {
+          "textureCount": null,
+          "size": 31646160,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 17628891,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/c503d96157614fb78b5953d49e643b78",
+      "uid": "c503d96157614fb78b5953d49e643b78",
+      "name": "HK MP5 (9mm submachine gun)",
+      "staffpickedAt": null,
+      "viewCount": 17301,
+      "likeCount": 324,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-c503d96157614fb78b5953d49e643b78",
+      "embedUrl": "https://sketchfab.com/models/c503d96157614fb78b5953d49e643b78/embed",
+      "commentCount": 6,
+      "isDownloadable": true,
+      "publishedAt": "2017-08-10T00:24:54.458111",
+      "tags": [
+        {
+          "name": "mp5",
+          "slug": "mp5",
+          "uri": "https://api.sketchfab.com/v3/tags/mp5"
+        },
+        {
+          "name": "submachinegun",
+          "slug": "submachinegun",
+          "uri": "https://api.sketchfab.com/v3/tags/submachinegun"
+        },
+        {
+          "name": "weapon",
+          "slug": "weapon",
+          "uri": "https://api.sketchfab.com/v3/tags/weapon"
+        },
+        {
+          "name": "gun",
+          "slug": "gun",
+          "uri": "https://api.sketchfab.com/v3/tags/gun"
+        }
+      ],
+      "categories": [],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "e0fff2e31b32401c95588d0c55e55d04",
+            "size": 1234,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/c503d96157614fb78b5953d49e643b78/thumbnails/a8e5556c5d3a49f89635045a4b418de2/64x36.jpeg",
+            "height": 36
+          },
+          {
+            "uid": "8c21f19f4b1f441386f6483844f4bf08",
+            "size": 332960,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/c503d96157614fb78b5953d49e643b78/thumbnails/a8e5556c5d3a49f89635045a4b418de2/1920x1080.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "d38ed5289c5e4824ab792e20adb0c97c",
+            "size": 83096,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/c503d96157614fb78b5953d49e643b78/thumbnails/a8e5556c5d3a49f89635045a4b418de2/1024x576.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "754e46c613ed4dccb5fc0c8d26aa1dc2",
+            "size": 40444,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/c503d96157614fb78b5953d49e643b78/thumbnails/a8e5556c5d3a49f89635045a4b418de2/720x405.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "7cfe29305fb042ef9ed42e0f6e3e1f97",
+            "size": 6674,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/c503d96157614fb78b5953d49e643b78/thumbnails/a8e5556c5d3a49f89635045a4b418de2/256x144.jpeg",
+            "height": 144
+          }
+        ]
+      },
+      "user": {
+        "uid": "4cca354ed92742e1b46a0b2fdc547460",
+        "username": "so_O",
+        "displayName": "quick_loop",
+        "profileUrl": "https://sketchfab.com/so_O",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/51af6a870cce449eb75b0345feebaebb",
+          "images": [
+            {
+              "size": 5719,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/2ef0f894055b4bb69123b2a27fa2d379.jpeg",
+              "height": 90
+            },
+            {
+              "size": 6496,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/ab11eedf96374486acb544f71a23b165.jpeg",
+              "height": 100
+            },
+            {
+              "size": 1359,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/35f6f9b6c9a14a548ce472582d8a9bb5.jpeg",
+              "height": 32
+            },
+            {
+              "size": 2584,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/a8072a51447c4d41ab177b357111b420.jpeg",
+              "height": 48
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/4cca354ed92742e1b46a0b2fdc547460"
+      },
+      "description": "**TOOLS**:\n\n* Modeling: 3Ds Max\n\n* Texturing: Quixel suite",
+      "faceCount": 5869,
+      "createdAt": "2017-08-09T22:26:23.808959",
+      "vertexCount": 5722,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 3,
+          "size": 26625500,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 11388,
+          "vertexCount": 11299
+        },
+        "gltf": {
+          "textureCount": 3,
+          "size": 26150984,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 11388,
+          "vertexCount": 11299
+        },
+        "source": {
+          "textureCount": null,
+          "size": 14160217,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 5875463,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/f1ac75b7e3e648fc81c3511373e03dff",
+      "uid": "f1ac75b7e3e648fc81c3511373e03dff",
+      "name": "Pistol Concept",
+      "staffpickedAt": null,
+      "viewCount": 11004,
+      "likeCount": 292,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-f1ac75b7e3e648fc81c3511373e03dff",
+      "embedUrl": "https://sketchfab.com/models/f1ac75b7e3e648fc81c3511373e03dff/embed",
+      "commentCount": 4,
+      "isDownloadable": true,
+      "publishedAt": "2025-07-02T17:48:24.636825",
+      "tags": [
+        {
+          "name": "fps",
+          "slug": "fps",
+          "uri": "https://api.sketchfab.com/v3/tags/fps"
+        },
+        {
+          "name": "shooter",
+          "slug": "shooter",
+          "uri": "https://api.sketchfab.com/v3/tags/shooter"
+        },
+        {
+          "name": "realistic",
+          "slug": "realistic",
+          "uri": "https://api.sketchfab.com/v3/tags/realistic"
+        },
+        {
+          "name": "pistol",
+          "slug": "pistol",
+          "uri": "https://api.sketchfab.com/v3/tags/pistol"
+        },
+        {
+          "name": "personal",
+          "slug": "personal",
+          "uri": "https://api.sketchfab.com/v3/tags/personal"
+        },
+        {
+          "name": "concept-art",
+          "slug": "concept-art",
+          "uri": "https://api.sketchfab.com/v3/tags/concept-art"
+        },
+        {
+          "name": "firstperson",
+          "slug": "firstperson",
+          "uri": "https://api.sketchfab.com/v3/tags/firstperson"
+        },
+        {
+          "name": "weapons3d",
+          "slug": "weapons3d",
+          "uri": "https://api.sketchfab.com/v3/tags/weapons3d"
+        },
+        {
+          "name": "design",
+          "slug": "design",
+          "uri": "https://api.sketchfab.com/v3/tags/design"
+        },
+        {
+          "name": "free",
+          "slug": "free",
+          "uri": "https://api.sketchfab.com/v3/tags/free"
+        },
+        {
+          "name": "gun",
+          "slug": "gun",
+          "uri": "https://api.sketchfab.com/v3/tags/gun"
+        },
+        {
+          "name": "concept",
+          "slug": "concept",
+          "uri": "https://api.sketchfab.com/v3/tags/concept"
+        }
+      ],
+      "categories": [
+        {
+          "name": "weapons-military"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "31114999cfa5494f9a816badca9f815b",
+            "size": 584416,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/f1ac75b7e3e648fc81c3511373e03dff/thumbnails/3bb0799b3cb14c07959a54908e2e61f7/fbffec80e22041b1ba2c464fe2468c3a.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "2b4ab49087ab485e86b561109b330815",
+            "size": 90122,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/f1ac75b7e3e648fc81c3511373e03dff/thumbnails/3bb0799b3cb14c07959a54908e2e61f7/746adb3fdf9e4cf6939b2b4349433a2b.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "3d7f655b72ac4455ba5f7640e92820ee",
+            "size": 42605,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/f1ac75b7e3e648fc81c3511373e03dff/thumbnails/3bb0799b3cb14c07959a54908e2e61f7/2c900dc16b5e4ba9b0cb1d42120c2843.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "b7539a8cd9b04b61a68c4e2e5979703e",
+            "size": 6851,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/f1ac75b7e3e648fc81c3511373e03dff/thumbnails/3bb0799b3cb14c07959a54908e2e61f7/080810a96d75416c818d792195d53917.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "91e837ede68c492caf8704b8c8e90e89",
+            "size": 1394,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/f1ac75b7e3e648fc81c3511373e03dff/thumbnails/3bb0799b3cb14c07959a54908e2e61f7/e7318a5e32ed4a1b888b62890122047c.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "07657f3456f34892ab85e8c7949dc29e",
+        "username": "Diamonddogkz",
+        "displayName": "Diamonddogkz",
+        "profileUrl": "https://sketchfab.com/Diamonddogkz",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/4d3dda47b7844d928109a0f2ce8949a8",
+          "images": [
+            {
+              "size": 1139,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/4d3dda47b7844d928109a0f2ce8949a8/c51916a932d44f16ab7599d14dd804a0.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1617,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/4d3dda47b7844d928109a0f2ce8949a8/04a26c6aa0814634b005092ffd6ea02a.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3593,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/4d3dda47b7844d928109a0f2ce8949a8/e092b9b6f8eb457f92591fff4caf0e51.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4162,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/4d3dda47b7844d928109a0f2ce8949a8/f63ec3d9127a4c0c91416265da9feb67.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/07657f3456f34892ab85e8c7949dc29e"
+      },
+      "description": "Pistol Concept i made in my free time. Special purpose pistol inspired by her majesty from Cyberpunk 2077 and by HK mk.23 (Kept you waitin huh?)\n\nMade in Plasticity, blender, SP, Marmoset\n\nTopology is a bit messy, because i just decimated CAD model a bit, but since this is a concept, and not  production model, whatever\n\nSybyr means whisper in kazakh, if you were wondering, i just named it like that\n\nYou may use it in your commercial/ non-commercial games or mods however you like, just give me credit, please.\n\nMy artstation:https://www.artstation.com/diamonddogkz (Please like my posts)",
+      "faceCount": 84960,
+      "createdAt": "2025-07-02T17:06:59.278863",
+      "vertexCount": 43480,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 18,
+          "size": 96028704,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 84958,
+          "vertexCount": 69590
+        },
+        "gltf": {
+          "textureCount": 18,
+          "size": 93979365,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 84958,
+          "vertexCount": 69590
+        },
+        "source": {
+          "textureCount": null,
+          "size": 93220787,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 12897778,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "72eb2b1960364637901eacce19283624",
+        "label": "Free Standard"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/7518ddacc73e4ee4bb59a0c276af84bc",
+      "uid": "7518ddacc73e4ee4bb59a0c276af84bc",
+      "name": "Weapon Pack of 10/100 Part 4",
+      "staffpickedAt": null,
+      "viewCount": 6929,
+      "likeCount": 284,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-7518ddacc73e4ee4bb59a0c276af84bc",
+      "embedUrl": "https://sketchfab.com/models/7518ddacc73e4ee4bb59a0c276af84bc/embed",
+      "commentCount": 1,
+      "isDownloadable": true,
+      "publishedAt": "2023-03-23T08:14:08.928475",
+      "tags": [
+        {
+          "name": "rifle",
+          "slug": "rifle",
+          "uri": "https://api.sketchfab.com/v3/tags/rifle"
+        },
+        {
+          "name": "assassin",
+          "slug": "assassin",
+          "uri": "https://api.sketchfab.com/v3/tags/assassin"
+        },
+        {
+          "name": "unreal",
+          "slug": "unreal",
+          "uri": "https://api.sketchfab.com/v3/tags/unreal"
+        },
+        {
+          "name": "makarov",
+          "slug": "makarov",
+          "uri": "https://api.sketchfab.com/v3/tags/makarov"
+        },
+        {
+          "name": "aks74u",
+          "slug": "aks74u",
+          "uri": "https://api.sketchfab.com/v3/tags/aks74u"
+        },
+        {
+          "name": "gamedev",
+          "slug": "gamedev",
+          "uri": "https://api.sketchfab.com/v3/tags/gamedev"
+        },
+        {
+          "name": "pistol",
+          "slug": "pistol",
+          "uri": "https://api.sketchfab.com/v3/tags/pistol"
+        },
+        {
+          "name": "tactical",
+          "slug": "tactical",
+          "uri": "https://api.sketchfab.com/v3/tags/tactical"
+        },
+        {
+          "name": "shovel",
+          "slug": "shovel",
+          "uri": "https://api.sketchfab.com/v3/tags/shovel"
+        },
+        {
+          "name": "gamedevelopment",
+          "slug": "gamedevelopment",
+          "uri": "https://api.sketchfab.com/v3/tags/gamedevelopment"
+        },
+        {
+          "name": "blender-3d",
+          "slug": "blender-3d",
+          "uri": "https://api.sketchfab.com/v3/tags/blender-3d"
+        },
+        {
+          "name": "pkm",
+          "slug": "pkm",
+          "uri": "https://api.sketchfab.com/v3/tags/pkm"
+        },
+        {
+          "name": "mpx",
+          "slug": "mpx",
+          "uri": "https://api.sketchfab.com/v3/tags/mpx"
+        },
+        {
+          "name": "comando",
+          "slug": "comando",
+          "uri": "https://api.sketchfab.com/v3/tags/comando"
+        },
+        {
+          "name": "p226",
+          "slug": "p226",
+          "uri": "https://api.sketchfab.com/v3/tags/p226"
+        },
+        {
+          "name": "sigsauer",
+          "slug": "sigsauer",
+          "uri": "https://api.sketchfab.com/v3/tags/sigsauer"
+        },
+        {
+          "name": "hkusp",
+          "slug": "hkusp",
+          "uri": "https://api.sketchfab.com/v3/tags/hkusp"
+        },
+        {
+          "name": "pss",
+          "slug": "pss",
+          "uri": "https://api.sketchfab.com/v3/tags/pss"
+        },
+        {
+          "name": "weapon",
+          "slug": "weapon",
+          "uri": "https://api.sketchfab.com/v3/tags/weapon"
+        },
+        {
+          "name": "knife",
+          "slug": "knife",
+          "uri": "https://api.sketchfab.com/v3/tags/knife"
+        },
+        {
+          "name": "unity",
+          "slug": "unity",
+          "uri": "https://api.sketchfab.com/v3/tags/unity"
+        },
+        {
+          "name": "3d",
+          "slug": "3d",
+          "uri": "https://api.sketchfab.com/v3/tags/3d"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "lowpoly",
+          "slug": "lowpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpoly"
+        },
+        {
+          "name": "gameasset",
+          "slug": "gameasset",
+          "uri": "https://api.sketchfab.com/v3/tags/gameasset"
+        },
+        {
+          "name": "free",
+          "slug": "free",
+          "uri": "https://api.sketchfab.com/v3/tags/free"
+        },
+        {
+          "name": "gun",
+          "slug": "gun",
+          "uri": "https://api.sketchfab.com/v3/tags/gun"
+        },
+        {
+          "name": "assets-game-3d",
+          "slug": "assets-game-3d",
+          "uri": "https://api.sketchfab.com/v3/tags/assets-game-3d"
+        },
+        {
+          "name": "oburgames",
+          "slug": "oburgames",
+          "uri": "https://api.sketchfab.com/v3/tags/oburgames"
+        },
+        {
+          "name": "aw338",
+          "slug": "aw338",
+          "uri": "https://api.sketchfab.com/v3/tags/aw338"
+        },
+        {
+          "name": "halmak",
+          "slug": "halmak",
+          "uri": "https://api.sketchfab.com/v3/tags/halmak"
+        }
+      ],
+      "categories": [
+        {
+          "name": "weapons-military"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "608274ab89dd47fdbfbfc2285d60c18d",
+            "size": 190705,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/7518ddacc73e4ee4bb59a0c276af84bc/thumbnails/af4b96c9fc00433e8722a9f7443bfa8f/e7316ef4eaea4472b2024a9a9755d905.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "7e6ac89e4e3c48829dc26eedbe913118",
+            "size": 63495,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/7518ddacc73e4ee4bb59a0c276af84bc/thumbnails/af4b96c9fc00433e8722a9f7443bfa8f/860a734dda6647b1b677ffae561042ec.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "f379fd1c8049449693482cdd5a5a9c1c",
+            "size": 37775,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/7518ddacc73e4ee4bb59a0c276af84bc/thumbnails/af4b96c9fc00433e8722a9f7443bfa8f/dad54fefa6a842e28f4b4e21934bfca4.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "4caae1304c224006b23954117102b73a",
+            "size": 8295,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/7518ddacc73e4ee4bb59a0c276af84bc/thumbnails/af4b96c9fc00433e8722a9f7443bfa8f/29fd48ccb7bf4dae8c6cc5ff0a6086d0.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "bd668e6a730f47b3ae4c2028ad74523b",
+            "size": 1538,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/7518ddacc73e4ee4bb59a0c276af84bc/thumbnails/af4b96c9fc00433e8722a9f7443bfa8f/35d1100720894b39afa9bc45622a86ec.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "44fc6b53d1ef419a81327c8497255acd",
+        "username": "OburGames",
+        "displayName": "OBUR Games",
+        "profileUrl": "https://sketchfab.com/OburGames",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/d1c64451738e4408aa3b9bdbd2b1231d",
+          "images": [
+            {
+              "size": 994,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/d1c64451738e4408aa3b9bdbd2b1231d/52b54527fd36436780391995c47aaf68.png",
+              "height": 32
+            },
+            {
+              "size": 1351,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/d1c64451738e4408aa3b9bdbd2b1231d/8c2413d00f4048bfb73dc254a1ceda6e.png",
+              "height": 48
+            },
+            {
+              "size": 2597,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/d1c64451738e4408aa3b9bdbd2b1231d/394d159c6be2483ba2e2743a7b3e612d.png",
+              "height": 90
+            },
+            {
+              "size": 2882,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/d1c64451738e4408aa3b9bdbd2b1231d/4552ce168be2438f9088ae797a42cbb5.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/44fc6b53d1ef419a81327c8497255acd"
+      },
+      "description": "We know 3D models can be tough to design. That's why we want to help make it easier for you. Get your hands on 10 beautifully made 3D models for free! \n\nFrom now until the end of May, we'll give away a new weapon model daily on our Discord server as OBUR Games. Some of them will be ready-to-use in your game, while others might require some additional work. \n\nJoin the OBUR Games Discord server and stock up on 100 incredible 3D models. We can't wait to see what you create with these amazing models. Happy gaming! :) </br>\n</br>\n\n![](https://fokur.net/JOINUS.png)</br>\n\nhttps://discord.gg/3rv7dYBqT9\n\n\nWeapons in the pack:</br>\n-AKS74U</br>\n-AW338</br>\n-Halmak_Komando</br>\n-HK_USP</br>\n-Makarov</br>\n-PKM</br>\n-PSS_ASSASSIN_Pistol</br>\n-Sig_Sauer_MPX</br>\n-Sig_Sauer_P226</br>\n-Tactic_Shovel </br>",
+      "faceCount": 46645,
+      "createdAt": "2023-03-19T12:11:49.492252",
+      "vertexCount": 25101,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 2211096,
+          "type": "glb",
+          "textureMaxResolution": 512,
+          "faceCount": 46590,
+          "vertexCount": 47599
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 772624,
+          "type": "gltf",
+          "textureMaxResolution": 512,
+          "faceCount": 46590,
+          "vertexCount": 47599
+        },
+        "source": {
+          "textureCount": null,
+          "size": 1427024,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 1683568,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/73672e27df964ebc8bc1d72a639c4896",
+      "uid": "73672e27df964ebc8bc1d72a639c4896",
+      "name": "Doraemon Lucky Cat",
+      "staffpickedAt": null,
+      "viewCount": 10480,
+      "likeCount": 280,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-73672e27df964ebc8bc1d72a639c4896",
+      "embedUrl": "https://sketchfab.com/models/73672e27df964ebc8bc1d72a639c4896/embed",
+      "commentCount": 4,
+      "isDownloadable": true,
+      "publishedAt": "2021-12-10T04:18:47.236807",
+      "tags": [
+        {
+          "name": "doraemon",
+          "slug": "doraemon",
+          "uri": "https://api.sketchfab.com/v3/tags/doraemon"
+        }
+      ],
+      "categories": [],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "4f0950da4dc745f6aed212c975e25dbb",
+            "size": 89755,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/73672e27df964ebc8bc1d72a639c4896/thumbnails/255b4960b02e4bd78c307231c3a73715/004e979eef654b628934635d17f19937.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "5b8f3d2ad06345ee9e9677b9556f3278",
+            "size": 32857,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/73672e27df964ebc8bc1d72a639c4896/thumbnails/255b4960b02e4bd78c307231c3a73715/2c9f028bb6634f2d96a145b8447ab20c.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "5cd53503abd9443eafef5bc313c3aade",
+            "size": 20100,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/73672e27df964ebc8bc1d72a639c4896/thumbnails/255b4960b02e4bd78c307231c3a73715/c5835b45e2834e2eb999f3074efd7b13.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "47d28316c31243ff96d52511ab4150ab",
+            "size": 4933,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/73672e27df964ebc8bc1d72a639c4896/thumbnails/255b4960b02e4bd78c307231c3a73715/67d4831efc7546cfbf6a3e8899e61d11.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "066bbfa648824a78ae0daf058f44840e",
+            "size": 1174,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/73672e27df964ebc8bc1d72a639c4896/thumbnails/255b4960b02e4bd78c307231c3a73715/d02b981f032d41a5a256887d8b5137a7.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "66657457897c4a67a6115ed93a8cf327",
+        "username": "Patrickart.hk",
+        "displayName": "Patrickart.hk",
+        "profileUrl": "https://sketchfab.com/Patrickart.hk",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/b9f2051a8ede44459926d21b32901e84",
+          "images": [
+            {
+              "size": 791,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/b9f2051a8ede44459926d21b32901e84/83346611cc174a73ada77edfeccd7e11.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1290,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/b9f2051a8ede44459926d21b32901e84/bb4b8d976e5d46b3a9ddd6ba69a2c0c7.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3313,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/b9f2051a8ede44459926d21b32901e84/307fbee31b194edbb3bfc0fee6d8091a.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3830,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/b9f2051a8ede44459926d21b32901e84/0c5176d7862949aba9695aee52e08210.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/66657457897c4a67a6115ed93a8cf327"
+      },
+      "description": "Doraemon Lucky Cat\n\nFollow me here:\n\nhttps://www.facebook.com/PatrickFanart.HK\n\nhttps://www.instagram.com/patrickart.hk\n\nhttps://twitter.com/Patrickart_hk\n\n![](https://truth.bahamut.com.tw/s01/202112/d80165525c523a358adb47bf395c1b15.JPG)",
+      "faceCount": 1570048,
+      "createdAt": "2021-12-10T03:40:51.869382",
+      "vertexCount": 785052,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 168926124,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 1570048,
+          "vertexCount": 3125688
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 29278848,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 1570048,
+          "vertexCount": 3125688
+        },
+        "source": {
+          "textureCount": null,
+          "size": 36588390,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 75058509,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/a79689d37bb547c4a1ab6628f60dd05f",
+      "uid": "a79689d37bb547c4a1ab6628f60dd05f",
+      "name": "Low-Poly HK MP5SD",
+      "staffpickedAt": null,
+      "viewCount": 14040,
+      "likeCount": 252,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-a79689d37bb547c4a1ab6628f60dd05f",
+      "embedUrl": "https://sketchfab.com/models/a79689d37bb547c4a1ab6628f60dd05f/embed",
+      "commentCount": 9,
+      "isDownloadable": true,
+      "publishedAt": "2019-12-07T12:39:53.346307",
+      "tags": [
+        {
+          "name": "5",
+          "slug": "5",
+          "uri": "https://api.sketchfab.com/v3/tags/5"
+        },
+        {
+          "name": "m",
+          "slug": "m",
+          "uri": "https://api.sketchfab.com/v3/tags/m"
+        },
+        {
+          "name": "german",
+          "slug": "german",
+          "uri": "https://api.sketchfab.com/v3/tags/german"
+        },
+        {
+          "name": "mp5",
+          "slug": "mp5",
+          "uri": "https://api.sketchfab.com/v3/tags/mp5"
+        },
+        {
+          "name": "compact",
+          "slug": "compact",
+          "uri": "https://api.sketchfab.com/v3/tags/compact"
+        },
+        {
+          "name": "heckler",
+          "slug": "heckler",
+          "uri": "https://api.sketchfab.com/v3/tags/heckler"
+        },
+        {
+          "name": "koch",
+          "slug": "koch",
+          "uri": "https://api.sketchfab.com/v3/tags/koch"
+        },
+        {
+          "name": "sd",
+          "slug": "sd",
+          "uri": "https://api.sketchfab.com/v3/tags/sd"
+        },
+        {
+          "name": "firearm",
+          "slug": "firearm",
+          "uri": "https://api.sketchfab.com/v3/tags/firearm"
+        },
+        {
+          "name": "hk",
+          "slug": "hk",
+          "uri": "https://api.sketchfab.com/v3/tags/hk"
+        },
+        {
+          "name": "p",
+          "slug": "p",
+          "uri": "https://api.sketchfab.com/v3/tags/p"
+        },
+        {
+          "name": "germany",
+          "slug": "germany",
+          "uri": "https://api.sketchfab.com/v3/tags/germany"
+        },
+        {
+          "name": "suppressor",
+          "slug": "suppressor",
+          "uri": "https://api.sketchfab.com/v3/tags/suppressor"
+        },
+        {
+          "name": "mp5sd",
+          "slug": "mp5sd",
+          "uri": "https://api.sketchfab.com/v3/tags/mp5sd"
+        },
+        {
+          "name": "pdw",
+          "slug": "pdw",
+          "uri": "https://api.sketchfab.com/v3/tags/pdw"
+        },
+        {
+          "name": "covert",
+          "slug": "covert",
+          "uri": "https://api.sketchfab.com/v3/tags/covert"
+        },
+        {
+          "name": "suppressed",
+          "slug": "suppressed",
+          "uri": "https://api.sketchfab.com/v3/tags/suppressed"
+        },
+        {
+          "name": "hecklerandkoch",
+          "slug": "hecklerandkoch",
+          "uri": "https://api.sketchfab.com/v3/tags/hecklerandkoch"
+        },
+        {
+          "name": "low",
+          "slug": "low",
+          "uri": "https://api.sketchfab.com/v3/tags/low"
+        },
+        {
+          "name": "poly",
+          "slug": "poly",
+          "uri": "https://api.sketchfab.com/v3/tags/poly"
+        },
+        {
+          "name": "gun",
+          "slug": "gun",
+          "uri": "https://api.sketchfab.com/v3/tags/gun"
+        },
+        {
+          "name": "smg",
+          "slug": "smg",
+          "uri": "https://api.sketchfab.com/v3/tags/smg"
+        }
+      ],
+      "categories": [
+        {
+          "name": "electronics-gadgets"
+        },
+        {
+          "name": "weapons-military"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "2f9a014c9e084f06b259a846f654fd36",
+            "size": 84858,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/a79689d37bb547c4a1ab6628f60dd05f/thumbnails/68cd8871a25e4d4485fb65998d2ac02e/fe0445f87e34492a87f73b508298c412.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "f10bb00d7cd74b9a8a63465359a33e30",
+            "size": 28457,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/a79689d37bb547c4a1ab6628f60dd05f/thumbnails/68cd8871a25e4d4485fb65998d2ac02e/1536fc6268ca44fb95e61353fe3f1252.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "9fcacfd26e334a468b610c1945c3785e",
+            "size": 16909,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/a79689d37bb547c4a1ab6628f60dd05f/thumbnails/68cd8871a25e4d4485fb65998d2ac02e/ee36a8f0fbc849a9b4ffd59adfad1ab0.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "7c27a63e2cd04532b88cd251b95afaed",
+            "size": 4199,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/a79689d37bb547c4a1ab6628f60dd05f/thumbnails/68cd8871a25e4d4485fb65998d2ac02e/46bd871dc0e94bc99848a1ed41ad25f6.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "26ea7cbd29ac4bddbb7c0e48645a44d0",
+            "size": 1166,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/a79689d37bb547c4a1ab6628f60dd05f/thumbnails/68cd8871a25e4d4485fb65998d2ac02e/b955ad59def74577b67627486796a0e9.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "ba88d4bd23174291a5c9016ba62c6a13",
+        "username": "TastyTony",
+        "displayName": "TastyTony",
+        "profileUrl": "https://sketchfab.com/TastyTony",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/eddea477138d482a852cab8fb209e6e8",
+          "images": [
+            {
+              "size": 1696,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/eddea477138d482a852cab8fb209e6e8/97047a5274304989830e653a21ad569f.png",
+              "height": 32
+            },
+            {
+              "size": 3418,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/eddea477138d482a852cab8fb209e6e8/856e1d9411ee4ac992da4897bae4aa6f.png",
+              "height": 48
+            },
+            {
+              "size": 11176,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/eddea477138d482a852cab8fb209e6e8/6e926dde05f54f8aa63a5848d3ae44db.png",
+              "height": 90
+            },
+            {
+              "size": 13694,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/eddea477138d482a852cab8fb209e6e8/163ac50b1678436ab7d0dba63300d14b.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/ba88d4bd23174291a5c9016ba62c6a13"
+      },
+      "description": "",
+      "faceCount": 5477,
+      "createdAt": "2019-12-07T12:35:45.057211",
+      "vertexCount": 3013,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 974292,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 5473,
+          "vertexCount": 15855
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 116790,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 5473,
+          "vertexCount": 15855
+        },
+        "source": {
+          "textureCount": null,
+          "size": 224772,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 393535,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/96b61ebbbf154843b621ebf7f48647fc",
+      "uid": "96b61ebbbf154843b621ebf7f48647fc",
+      "name": "Low-Poly FN P90",
+      "staffpickedAt": null,
+      "viewCount": 13081,
+      "likeCount": 241,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-96b61ebbbf154843b621ebf7f48647fc",
+      "embedUrl": "https://sketchfab.com/models/96b61ebbbf154843b621ebf7f48647fc/embed",
+      "commentCount": 6,
+      "isDownloadable": true,
+      "publishedAt": "2017-10-12T13:58:57.866707",
+      "tags": [
+        {
+          "name": "rifle",
+          "slug": "rifle",
+          "uri": "https://api.sketchfab.com/v3/tags/rifle"
+        },
+        {
+          "name": "sub",
+          "slug": "sub",
+          "uri": "https://api.sketchfab.com/v3/tags/sub"
+        },
+        {
+          "name": "compact",
+          "slug": "compact",
+          "uri": "https://api.sketchfab.com/v3/tags/compact"
+        },
+        {
+          "name": "fn",
+          "slug": "fn",
+          "uri": "https://api.sketchfab.com/v3/tags/fn"
+        },
+        {
+          "name": "machinegun",
+          "slug": "machinegun",
+          "uri": "https://api.sketchfab.com/v3/tags/machinegun"
+        },
+        {
+          "name": "personal",
+          "slug": "personal",
+          "uri": "https://api.sketchfab.com/v3/tags/personal"
+        },
+        {
+          "name": "57",
+          "slug": "57",
+          "uri": "https://api.sketchfab.com/v3/tags/57"
+        },
+        {
+          "name": "defence",
+          "slug": "defence",
+          "uri": "https://api.sketchfab.com/v3/tags/defence"
+        },
+        {
+          "name": "p90",
+          "slug": "p90",
+          "uri": "https://api.sketchfab.com/v3/tags/p90"
+        },
+        {
+          "name": "pdw",
+          "slug": "pdw",
+          "uri": "https://api.sketchfab.com/v3/tags/pdw"
+        },
+        {
+          "name": "weapon",
+          "slug": "weapon",
+          "uri": "https://api.sketchfab.com/v3/tags/weapon"
+        },
+        {
+          "name": "lowpoly",
+          "slug": "lowpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpoly"
+        },
+        {
+          "name": "gun",
+          "slug": "gun",
+          "uri": "https://api.sketchfab.com/v3/tags/gun"
+        },
+        {
+          "name": "smg",
+          "slug": "smg",
+          "uri": "https://api.sketchfab.com/v3/tags/smg"
+        }
+      ],
+      "categories": [
+        {
+          "name": "electronics-gadgets"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "692f10e539fe4e8795f35af9f7723354",
+            "size": 101171,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/96b61ebbbf154843b621ebf7f48647fc/thumbnails/3a41ce0668064c178ed37122302da3ef/46dcc3db9a3a4bd2a1e6b79094aacbb0.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "21bee44ec94f4a36bf0dc430709f2200",
+            "size": 34105,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/96b61ebbbf154843b621ebf7f48647fc/thumbnails/3a41ce0668064c178ed37122302da3ef/a66f1c7696c24eaf8be54c0bc1c5c705.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "e1bb844992d24f17947cc2b99bd626c1",
+            "size": 20784,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/96b61ebbbf154843b621ebf7f48647fc/thumbnails/3a41ce0668064c178ed37122302da3ef/7b27e8a8324d420b9e690265fe7171a8.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "cdb8a0b9af6646f0b1c3f8e497408066",
+            "size": 5161,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/96b61ebbbf154843b621ebf7f48647fc/thumbnails/3a41ce0668064c178ed37122302da3ef/f6fe8f1da9c24ad59279f5b3a173c179.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "ffd185abd1684da2820537765465cae2",
+            "size": 1200,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/96b61ebbbf154843b621ebf7f48647fc/thumbnails/3a41ce0668064c178ed37122302da3ef/408c4cb8f02a4ad8a313bbf1ef6eec8c.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "ba88d4bd23174291a5c9016ba62c6a13",
+        "username": "TastyTony",
+        "displayName": "TastyTony",
+        "profileUrl": "https://sketchfab.com/TastyTony",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/eddea477138d482a852cab8fb209e6e8",
+          "images": [
+            {
+              "size": 1696,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/eddea477138d482a852cab8fb209e6e8/97047a5274304989830e653a21ad569f.png",
+              "height": 32
+            },
+            {
+              "size": 3418,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/eddea477138d482a852cab8fb209e6e8/856e1d9411ee4ac992da4897bae4aa6f.png",
+              "height": 48
+            },
+            {
+              "size": 11176,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/eddea477138d482a852cab8fb209e6e8/6e926dde05f54f8aa63a5848d3ae44db.png",
+              "height": 90
+            },
+            {
+              "size": 13694,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/eddea477138d482a852cab8fb209e6e8/163ac50b1678436ab7d0dba63300d14b.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/ba88d4bd23174291a5c9016ba62c6a13"
+      },
+      "description": "The FN P90 is a PDW bullpup. The gun has a strange magazine and a very sci-fi design.\n\nThe gun was in direct competition with the HK MP7 as a lightweight compact firearm with the combined traits of an SMG and a Carbine/Assault Rifle.",
+      "faceCount": 6026,
+      "createdAt": "2017-10-12T13:52:04.851062",
+      "vertexCount": 3292,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 805988,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 6026,
+          "vertexCount": 15089
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 104262,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 6026,
+          "vertexCount": 15089
+        },
+        "source": {
+          "textureCount": null,
+          "size": 170128,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 385235,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/5df895ad4114498d89775a226ee51c3b",
+      "uid": "5df895ad4114498d89775a226ee51c3b",
+      "name": "Weapon Pack of 10/100 Part 7",
+      "staffpickedAt": null,
+      "viewCount": 6561,
+      "likeCount": 229,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-5df895ad4114498d89775a226ee51c3b",
+      "embedUrl": "https://sketchfab.com/models/5df895ad4114498d89775a226ee51c3b/embed",
+      "commentCount": 4,
+      "isDownloadable": true,
+      "publishedAt": "2023-04-17T11:26:24.224866",
+      "tags": [
+        {
+          "name": "rifle",
+          "slug": "rifle",
+          "uri": "https://api.sketchfab.com/v3/tags/rifle"
+        },
+        {
+          "name": "assets",
+          "slug": "assets",
+          "uri": "https://api.sketchfab.com/v3/tags/assets"
+        },
+        {
+          "name": "unreal",
+          "slug": "unreal",
+          "uri": "https://api.sketchfab.com/v3/tags/unreal"
+        },
+        {
+          "name": "gamedev",
+          "slug": "gamedev",
+          "uri": "https://api.sketchfab.com/v3/tags/gamedev"
+        },
+        {
+          "name": "hk416",
+          "slug": "hk416",
+          "uri": "https://api.sketchfab.com/v3/tags/hk416"
+        },
+        {
+          "name": "remington",
+          "slug": "remington",
+          "uri": "https://api.sketchfab.com/v3/tags/remington"
+        },
+        {
+          "name": "rpg-7",
+          "slug": "rpg-7",
+          "uri": "https://api.sketchfab.com/v3/tags/rpg-7"
+        },
+        {
+          "name": "gamedevelopment",
+          "slug": "gamedevelopment",
+          "uri": "https://api.sketchfab.com/v3/tags/gamedevelopment"
+        },
+        {
+          "name": "hk33",
+          "slug": "hk33",
+          "uri": "https://api.sketchfab.com/v3/tags/hk33"
+        },
+        {
+          "name": "blender-3d",
+          "slug": "blender-3d",
+          "uri": "https://api.sketchfab.com/v3/tags/blender-3d"
+        },
+        {
+          "name": "hk417",
+          "slug": "hk417",
+          "uri": "https://api.sketchfab.com/v3/tags/hk417"
+        },
+        {
+          "name": "msr",
+          "slug": "msr",
+          "uri": "https://api.sketchfab.com/v3/tags/msr"
+        },
+        {
+          "name": "cz75-auto",
+          "slug": "cz75-auto",
+          "uri": "https://api.sketchfab.com/v3/tags/cz75-auto"
+        },
+        {
+          "name": "mk17",
+          "slug": "mk17",
+          "uri": "https://api.sketchfab.com/v3/tags/mk17"
+        },
+        {
+          "name": "assets-game",
+          "slug": "assets-game",
+          "uri": "https://api.sketchfab.com/v3/tags/assets-game"
+        },
+        {
+          "name": "mk12",
+          "slug": "mk12",
+          "uri": "https://api.sketchfab.com/v3/tags/mk12"
+        },
+        {
+          "name": "weapon",
+          "slug": "weapon",
+          "uri": "https://api.sketchfab.com/v3/tags/weapon"
+        },
+        {
+          "name": "knife",
+          "slug": "knife",
+          "uri": "https://api.sketchfab.com/v3/tags/knife"
+        },
+        {
+          "name": "unity",
+          "slug": "unity",
+          "uri": "https://api.sketchfab.com/v3/tags/unity"
+        },
+        {
+          "name": "asset",
+          "slug": "asset",
+          "uri": "https://api.sketchfab.com/v3/tags/asset"
+        },
+        {
+          "name": "game",
+          "slug": "game",
+          "uri": "https://api.sketchfab.com/v3/tags/game"
+        },
+        {
+          "name": "3d",
+          "slug": "3d",
+          "uri": "https://api.sketchfab.com/v3/tags/3d"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "lowpoly",
+          "slug": "lowpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpoly"
+        },
+        {
+          "name": "gameasset",
+          "slug": "gameasset",
+          "uri": "https://api.sketchfab.com/v3/tags/gameasset"
+        },
+        {
+          "name": "free",
+          "slug": "free",
+          "uri": "https://api.sketchfab.com/v3/tags/free"
+        },
+        {
+          "name": "gun",
+          "slug": "gun",
+          "uri": "https://api.sketchfab.com/v3/tags/gun"
+        },
+        {
+          "name": "guns",
+          "slug": "guns",
+          "uri": "https://api.sketchfab.com/v3/tags/guns"
+        },
+        {
+          "name": "assets-game-3d",
+          "slug": "assets-game-3d",
+          "uri": "https://api.sketchfab.com/v3/tags/assets-game-3d"
+        },
+        {
+          "name": "blaser_r93",
+          "slug": "blaser_r93",
+          "uri": "https://api.sketchfab.com/v3/tags/blaser_r93"
+        },
+        {
+          "name": "hkg3",
+          "slug": "hkg3",
+          "uri": "https://api.sketchfab.com/v3/tags/hkg3"
+        },
+        {
+          "name": "oburgames",
+          "slug": "oburgames",
+          "uri": "https://api.sketchfab.com/v3/tags/oburgames"
+        }
+      ],
+      "categories": [
+        {
+          "name": "weapons-military"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "f1f581594f4c433699399119e764d856",
+            "size": 187062,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/5df895ad4114498d89775a226ee51c3b/thumbnails/7c6d9e8e7b0d444399131ddf0d17a7fb/6f1513a44b9048d7b6d7595cca191a39.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "3e7bc2bf48b1403f8ea3f3823520eb5e",
+            "size": 65487,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/5df895ad4114498d89775a226ee51c3b/thumbnails/7c6d9e8e7b0d444399131ddf0d17a7fb/07f1da6af4e5470aa4cf2ebaad26ce32.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "5ba3afe43c4b4daa8762bb21e3ee210e",
+            "size": 39089,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/5df895ad4114498d89775a226ee51c3b/thumbnails/7c6d9e8e7b0d444399131ddf0d17a7fb/a368e2147d954819b2719af67a544eb2.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "52a454f0b6c84c5ba73851b3e85ac156",
+            "size": 8629,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/5df895ad4114498d89775a226ee51c3b/thumbnails/7c6d9e8e7b0d444399131ddf0d17a7fb/12534280c13c408696df3c0c6ddd5ba7.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "20d08060301545399a3ba5b018f95781",
+            "size": 1488,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/5df895ad4114498d89775a226ee51c3b/thumbnails/7c6d9e8e7b0d444399131ddf0d17a7fb/d9c5413a1ae7474f99bd9b05a71291c4.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "44fc6b53d1ef419a81327c8497255acd",
+        "username": "OburGames",
+        "displayName": "OBUR Games",
+        "profileUrl": "https://sketchfab.com/OburGames",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/d1c64451738e4408aa3b9bdbd2b1231d",
+          "images": [
+            {
+              "size": 994,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/d1c64451738e4408aa3b9bdbd2b1231d/52b54527fd36436780391995c47aaf68.png",
+              "height": 32
+            },
+            {
+              "size": 1351,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/d1c64451738e4408aa3b9bdbd2b1231d/8c2413d00f4048bfb73dc254a1ceda6e.png",
+              "height": 48
+            },
+            {
+              "size": 2597,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/d1c64451738e4408aa3b9bdbd2b1231d/394d159c6be2483ba2e2743a7b3e612d.png",
+              "height": 90
+            },
+            {
+              "size": 2882,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/d1c64451738e4408aa3b9bdbd2b1231d/4552ce168be2438f9088ae797a42cbb5.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/44fc6b53d1ef419a81327c8497255acd"
+      },
+      "description": "We know 3D models can be tough to design. That's why we want to help make it easier for you. Get your hands on 10 beautifully made 3D models for free! \n\nFrom now until the end of May, we'll give away a new weapon model daily on our Discord server as OBUR Games. Some of them will be ready-to-use in your game, while others might require some additional work. \n\nJoin the OBUR Games Discord server and stock up on 100 incredible 3D models. We can't wait to see what you create with these amazing models. Happy gaming! :) </br>\n</br>\n\n![](https://fokur.net/JOINUS.png)</br>\n\nhttps://discord.gg/3rv7dYBqT9\n\n\nWeapons in the pack:</br>\n-CZ75_AUTO</br>\n-Blaser_R93</br>\n-HK_416</br>\n-HK_417_A2</br>\n-MK_12</br>\n-HK_33</br>\n-HK_G3</br>\n-MK_17</br>\n-Remington_MSR</br>\n-RPG7</br>",
+      "faceCount": 42982,
+      "createdAt": "2023-04-17T11:03:34.854695",
+      "vertexCount": 22709,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 2036512,
+          "type": "glb",
+          "textureMaxResolution": 512,
+          "faceCount": 42956,
+          "vertexCount": 43460
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 696628,
+          "type": "gltf",
+          "textureMaxResolution": 512,
+          "faceCount": 42956,
+          "vertexCount": 43460
+        },
+        "source": {
+          "textureCount": null,
+          "size": 1308640,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 1546463,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/2cd63366353b4e8fbc9eff81b1fe922f",
+      "uid": "2cd63366353b4e8fbc9eff81b1fe922f",
+      "name": "Hk G3 Rifle / Game ready",
+      "staffpickedAt": null,
+      "viewCount": 10715,
+      "likeCount": 223,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-2cd63366353b4e8fbc9eff81b1fe922f",
+      "embedUrl": "https://sketchfab.com/models/2cd63366353b4e8fbc9eff81b1fe922f/embed",
+      "commentCount": 4,
+      "isDownloadable": true,
+      "publishedAt": "2018-05-30T01:28:52.057447",
+      "tags": [
+        {
+          "name": "rifle",
+          "slug": "rifle",
+          "uri": "https://api.sketchfab.com/v3/tags/rifle"
+        },
+        {
+          "name": "fps",
+          "slug": "fps",
+          "uri": "https://api.sketchfab.com/v3/tags/fps"
+        },
+        {
+          "name": "hk",
+          "slug": "hk",
+          "uri": "https://api.sketchfab.com/v3/tags/hk"
+        },
+        {
+          "name": "g3",
+          "slug": "g3",
+          "uri": "https://api.sketchfab.com/v3/tags/g3"
+        },
+        {
+          "name": "mmo",
+          "slug": "mmo",
+          "uri": "https://api.sketchfab.com/v3/tags/mmo"
+        },
+        {
+          "name": "max",
+          "slug": "max",
+          "uri": "https://api.sketchfab.com/v3/tags/max"
+        },
+        {
+          "name": "pistol",
+          "slug": "pistol",
+          "uri": "https://api.sketchfab.com/v3/tags/pistol"
+        },
+        {
+          "name": "sniper",
+          "slug": "sniper",
+          "uri": "https://api.sketchfab.com/v3/tags/sniper"
+        },
+        {
+          "name": "shooting",
+          "slug": "shooting",
+          "uri": "https://api.sketchfab.com/v3/tags/shooting"
+        },
+        {
+          "name": "assult",
+          "slug": "assult",
+          "uri": "https://api.sketchfab.com/v3/tags/assult"
+        },
+        {
+          "name": "heckler-koch",
+          "slug": "heckler-koch",
+          "uri": "https://api.sketchfab.com/v3/tags/heckler-koch"
+        },
+        {
+          "name": "sigsauer",
+          "slug": "sigsauer",
+          "uri": "https://api.sketchfab.com/v3/tags/sigsauer"
+        },
+        {
+          "name": "substance",
+          "slug": "substance",
+          "uri": "https://api.sketchfab.com/v3/tags/substance"
+        },
+        {
+          "name": "maya",
+          "slug": "maya",
+          "uri": "https://api.sketchfab.com/v3/tags/maya"
+        },
+        {
+          "name": "game",
+          "slug": "game",
+          "uri": "https://api.sketchfab.com/v3/tags/game"
+        },
+        {
+          "name": "lowpoly",
+          "slug": "lowpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpoly"
+        },
+        {
+          "name": "shotgun",
+          "slug": "shotgun",
+          "uri": "https://api.sketchfab.com/v3/tags/shotgun"
+        },
+        {
+          "name": "3ds",
+          "slug": "3ds",
+          "uri": "https://api.sketchfab.com/v3/tags/3ds"
+        },
+        {
+          "name": "war",
+          "slug": "war",
+          "uri": "https://api.sketchfab.com/v3/tags/war"
+        }
+      ],
+      "categories": [
+        {
+          "name": "weapons-military"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "e2a908e8923146e28af8840ac91b37c3",
+            "size": 207667,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/2cd63366353b4e8fbc9eff81b1fe922f/thumbnails/50e613e5559646949fbad3955726a478/d1ddfeab89f54b89989af2a15b14af64.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "18eeac0169b941049ea5398486abeae9",
+            "size": 40265,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/2cd63366353b4e8fbc9eff81b1fe922f/thumbnails/50e613e5559646949fbad3955726a478/13cba29a22e44341bbda90bb9f2ea5dd.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "de653ec91a024a49b164de4c0b7c36f9",
+            "size": 22407,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/2cd63366353b4e8fbc9eff81b1fe922f/thumbnails/50e613e5559646949fbad3955726a478/d5ae6e098f28474fb0cb0aa796e6a9c7.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "566eed381c3d43a98c17ffaff2fc544c",
+            "size": 4468,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/2cd63366353b4e8fbc9eff81b1fe922f/thumbnails/50e613e5559646949fbad3955726a478/a070a057124249039a597a5e4b275182.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "cb632fb47d354c21963d109327ac8272",
+            "size": 751,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/2cd63366353b4e8fbc9eff81b1fe922f/thumbnails/50e613e5559646949fbad3955726a478/cbf12d85193f4c72a4814ca55d2064e3.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "c0b22c57b4384a35acd11cb172815b2c",
+        "username": "best3deu",
+        "displayName": "Ulrik Langvandsbr\u00e5ten",
+        "profileUrl": "https://sketchfab.com/best3deu",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/92dfe6d4035a40cbb0d7227247153aab",
+          "images": [
+            {
+              "size": 2167,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/92dfe6d4035a40cbb0d7227247153aab/68c006e7d3874434b00080f6a2a0e684.jpeg",
+              "height": 100
+            },
+            {
+              "size": 1908,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/92dfe6d4035a40cbb0d7227247153aab/511aa01005e840a2bb1ce4d85fee0e99.jpeg",
+              "height": 90
+            },
+            {
+              "size": 944,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/92dfe6d4035a40cbb0d7227247153aab/a37981b68db748028102e14bb0ba1781.jpeg",
+              "height": 48
+            },
+            {
+              "size": 653,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/92dfe6d4035a40cbb0d7227247153aab/6bd622fb588243b39aa7ff2f08d72ae1.jpeg",
+              "height": 32
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/c0b22c57b4384a35acd11cb172815b2c"
+      },
+      "description": "Game ready G3 for UE4. Just a little thing Ive been working on for two days now. Every bit of critizism and feedback is much appriciated!",
+      "faceCount": 79027,
+      "createdAt": "2018-05-30T00:25:47.110275",
+      "vertexCount": 41312,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 14,
+          "size": 39584360,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 79017,
+          "vertexCount": 47535
+        },
+        "gltf": {
+          "textureCount": 14,
+          "size": 38110253,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 79017,
+          "vertexCount": 47535
+        },
+        "source": {
+          "textureCount": null,
+          "size": 38072119,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 6165545,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/9f1c89e7d4764ff4bceffb6c67839c7a",
+      "uid": "9f1c89e7d4764ff4bceffb6c67839c7a",
+      "name": "UMP_45mm",
+      "staffpickedAt": null,
+      "viewCount": 8455,
+      "likeCount": 221,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-9f1c89e7d4764ff4bceffb6c67839c7a",
+      "embedUrl": "https://sketchfab.com/models/9f1c89e7d4764ff4bceffb6c67839c7a/embed",
+      "commentCount": 1,
+      "isDownloadable": true,
+      "publishedAt": "2023-09-18T14:18:38.900348",
+      "tags": [
+        {
+          "name": "hk",
+          "slug": "hk",
+          "uri": "https://api.sketchfab.com/v3/tags/hk"
+        },
+        {
+          "name": "ump",
+          "slug": "ump",
+          "uri": "https://api.sketchfab.com/v3/tags/ump"
+        },
+        {
+          "name": "unrealengine",
+          "slug": "unrealengine",
+          "uri": "https://api.sketchfab.com/v3/tags/unrealengine"
+        },
+        {
+          "name": "submachinegun",
+          "slug": "submachinegun",
+          "uri": "https://api.sketchfab.com/v3/tags/submachinegun"
+        },
+        {
+          "name": "ump45",
+          "slug": "ump45",
+          "uri": "https://api.sketchfab.com/v3/tags/ump45"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "lowpoly",
+          "slug": "lowpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpoly"
+        },
+        {
+          "name": "smg",
+          "slug": "smg",
+          "uri": "https://api.sketchfab.com/v3/tags/smg"
+        },
+        {
+          "name": "gameready",
+          "slug": "gameready",
+          "uri": "https://api.sketchfab.com/v3/tags/gameready"
+        }
+      ],
+      "categories": [
+        {
+          "name": "weapons-military"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "a29ca38e9a41409ab3d93156525bb9c5",
+            "size": 113275,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/9f1c89e7d4764ff4bceffb6c67839c7a/thumbnails/327025bdd5234af098087b4371f41750/851b795917964350b71428f6c1a661c6.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "971a242bd6ab42a084c891ec16e2be38",
+            "size": 33432,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/9f1c89e7d4764ff4bceffb6c67839c7a/thumbnails/327025bdd5234af098087b4371f41750/35049f71ae654439ae549aa5456636cd.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "f8dd8c29eac943a1bc7b042bddbb62f0",
+            "size": 18732,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/9f1c89e7d4764ff4bceffb6c67839c7a/thumbnails/327025bdd5234af098087b4371f41750/dbd0743ac7bd4ff8814c870020ca69a9.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "65bf5eca967542efae62175235043301",
+            "size": 3858,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/9f1c89e7d4764ff4bceffb6c67839c7a/thumbnails/327025bdd5234af098087b4371f41750/bb000a8714564ea0aee3ddfb7196e966.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "52fbe08b066545d280aa75c8bdf924eb",
+            "size": 1000,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/9f1c89e7d4764ff4bceffb6c67839c7a/thumbnails/327025bdd5234af098087b4371f41750/1040bada4dd141d9b767fe081b75a8f1.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "ab919b049179456fa82c2ce9a3478e60",
+        "username": "TORI106",
+        "displayName": "TORI106",
+        "profileUrl": "https://sketchfab.com/TORI106",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/4152e2fa7a2d4df3ab6e45f26d7b340e",
+          "images": [
+            {
+              "size": 429,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/4152e2fa7a2d4df3ab6e45f26d7b340e/e172854848b74c96afa3c3db86c19d30.png",
+              "height": 32
+            },
+            {
+              "size": 667,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/4152e2fa7a2d4df3ab6e45f26d7b340e/d82bb166d729426da9f5461cd73b953e.png",
+              "height": 48
+            },
+            {
+              "size": 1380,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/4152e2fa7a2d4df3ab6e45f26d7b340e/b49d8974a0ef4bbfa00fc41b1bf46c5c.png",
+              "height": 90
+            },
+            {
+              "size": 1569,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/4152e2fa7a2d4df3ab6e45f26d7b340e/a351552c13fc4cdc9b0fb8a2d863708d.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/ab919b049179456fa82c2ce9a3478e60"
+      },
+      "description": "UMP_45mm [gameready asset]",
+      "faceCount": 17286,
+      "createdAt": "2023-09-18T14:12:13.836233",
+      "vertexCount": 8762,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 6,
+          "size": 16131904,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 17279,
+          "vertexCount": 14703
+        },
+        "gltf": {
+          "textureCount": 6,
+          "size": 15664288,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 17279,
+          "vertexCount": 14703
+        },
+        "source": {
+          "textureCount": null,
+          "size": 87234903,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 5596747,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/3f265650cebc42ddb2fc4f17964bba02",
+      "uid": "3f265650cebc42ddb2fc4f17964bba02",
+      "name": "Weapon Pack of 10/100 Part 6",
+      "staffpickedAt": null,
+      "viewCount": 7112,
+      "likeCount": 214,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-3f265650cebc42ddb2fc4f17964bba02",
+      "embedUrl": "https://sketchfab.com/models/3f265650cebc42ddb2fc4f17964bba02/embed",
+      "commentCount": 2,
+      "isDownloadable": true,
+      "publishedAt": "2023-04-07T15:51:44.185936",
+      "tags": [
+        {
+          "name": "rifle",
+          "slug": "rifle",
+          "uri": "https://api.sketchfab.com/v3/tags/rifle"
+        },
+        {
+          "name": "unreal",
+          "slug": "unreal",
+          "uri": "https://api.sketchfab.com/v3/tags/unreal"
+        },
+        {
+          "name": "hk",
+          "slug": "hk",
+          "uri": "https://api.sketchfab.com/v3/tags/hk"
+        },
+        {
+          "name": "gamedev",
+          "slug": "gamedev",
+          "uri": "https://api.sketchfab.com/v3/tags/gamedev"
+        },
+        {
+          "name": "gamedevelopment",
+          "slug": "gamedevelopment",
+          "uri": "https://api.sketchfab.com/v3/tags/gamedevelopment"
+        },
+        {
+          "name": "m249",
+          "slug": "m249",
+          "uri": "https://api.sketchfab.com/v3/tags/m249"
+        },
+        {
+          "name": "blender-3d",
+          "slug": "blender-3d",
+          "uri": "https://api.sketchfab.com/v3/tags/blender-3d"
+        },
+        {
+          "name": "cz75",
+          "slug": "cz75",
+          "uri": "https://api.sketchfab.com/v3/tags/cz75"
+        },
+        {
+          "name": "hk45",
+          "slug": "hk45",
+          "uri": "https://api.sketchfab.com/v3/tags/hk45"
+        },
+        {
+          "name": "lvoa-c",
+          "slug": "lvoa-c",
+          "uri": "https://api.sketchfab.com/v3/tags/lvoa-c"
+        },
+        {
+          "name": "nagantm1895",
+          "slug": "nagantm1895",
+          "uri": "https://api.sketchfab.com/v3/tags/nagantm1895"
+        },
+        {
+          "name": "beretta-m9",
+          "slug": "beretta-m9",
+          "uri": "https://api.sketchfab.com/v3/tags/beretta-m9"
+        },
+        {
+          "name": "mark23",
+          "slug": "mark23",
+          "uri": "https://api.sketchfab.com/v3/tags/mark23"
+        },
+        {
+          "name": "assets-game",
+          "slug": "assets-game",
+          "uri": "https://api.sketchfab.com/v3/tags/assets-game"
+        },
+        {
+          "name": "mgl",
+          "slug": "mgl",
+          "uri": "https://api.sketchfab.com/v3/tags/mgl"
+        },
+        {
+          "name": "weapon",
+          "slug": "weapon",
+          "uri": "https://api.sketchfab.com/v3/tags/weapon"
+        },
+        {
+          "name": "unity",
+          "slug": "unity",
+          "uri": "https://api.sketchfab.com/v3/tags/unity"
+        },
+        {
+          "name": "asset",
+          "slug": "asset",
+          "uri": "https://api.sketchfab.com/v3/tags/asset"
+        },
+        {
+          "name": "game",
+          "slug": "game",
+          "uri": "https://api.sketchfab.com/v3/tags/game"
+        },
+        {
+          "name": "3d",
+          "slug": "3d",
+          "uri": "https://api.sketchfab.com/v3/tags/3d"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "lowpoly",
+          "slug": "lowpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpoly"
+        },
+        {
+          "name": "gameasset",
+          "slug": "gameasset",
+          "uri": "https://api.sketchfab.com/v3/tags/gameasset"
+        },
+        {
+          "name": "free",
+          "slug": "free",
+          "uri": "https://api.sketchfab.com/v3/tags/free"
+        },
+        {
+          "name": "gun",
+          "slug": "gun",
+          "uri": "https://api.sketchfab.com/v3/tags/gun"
+        },
+        {
+          "name": "guns",
+          "slug": "guns",
+          "uri": "https://api.sketchfab.com/v3/tags/guns"
+        },
+        {
+          "name": "9130",
+          "slug": "9130",
+          "uri": "https://api.sketchfab.com/v3/tags/9130"
+        },
+        {
+          "name": "assets-game-3d",
+          "slug": "assets-game-3d",
+          "uri": "https://api.sketchfab.com/v3/tags/assets-game-3d"
+        },
+        {
+          "name": "oburgames",
+          "slug": "oburgames",
+          "uri": "https://api.sketchfab.com/v3/tags/oburgames"
+        },
+        {
+          "name": "weldrod",
+          "slug": "weldrod",
+          "uri": "https://api.sketchfab.com/v3/tags/weldrod"
+        },
+        {
+          "name": "mark_1",
+          "slug": "mark_1",
+          "uri": "https://api.sketchfab.com/v3/tags/mark_1"
+        },
+        {
+          "name": "moisin_nagant",
+          "slug": "moisin_nagant",
+          "uri": "https://api.sketchfab.com/v3/tags/moisin_nagant"
+        }
+      ],
+      "categories": [
+        {
+          "name": "weapons-military"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "fdeb12f337084b00aee9d1b3cf28f831",
+            "size": 199434,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/3f265650cebc42ddb2fc4f17964bba02/thumbnails/eb8e245842da4e268fa2868619338a40/b7e7a158817f48cdb26d093e2dc55c8b.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "715e658235824d2c91db075435957742",
+            "size": 63915,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/3f265650cebc42ddb2fc4f17964bba02/thumbnails/eb8e245842da4e268fa2868619338a40/b32257febffd47c6b3615e5503f21947.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "7cd0ef770f764e3baaf780eeffb75165",
+            "size": 38062,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/3f265650cebc42ddb2fc4f17964bba02/thumbnails/eb8e245842da4e268fa2868619338a40/ea0659fe0d28474e95ead4becb119816.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "b02314b43fe84ba898c5b7ac308c7619",
+            "size": 8020,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/3f265650cebc42ddb2fc4f17964bba02/thumbnails/eb8e245842da4e268fa2868619338a40/64f1041f95ee4a38a5828e9836e0bbb9.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "4582105ea05c49978950b85fe854eafa",
+            "size": 1431,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/3f265650cebc42ddb2fc4f17964bba02/thumbnails/eb8e245842da4e268fa2868619338a40/a1ff9a582a204fa7add4b4ffabee0f70.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "44fc6b53d1ef419a81327c8497255acd",
+        "username": "OburGames",
+        "displayName": "OBUR Games",
+        "profileUrl": "https://sketchfab.com/OburGames",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/d1c64451738e4408aa3b9bdbd2b1231d",
+          "images": [
+            {
+              "size": 994,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/d1c64451738e4408aa3b9bdbd2b1231d/52b54527fd36436780391995c47aaf68.png",
+              "height": 32
+            },
+            {
+              "size": 1351,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/d1c64451738e4408aa3b9bdbd2b1231d/8c2413d00f4048bfb73dc254a1ceda6e.png",
+              "height": 48
+            },
+            {
+              "size": 2597,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/d1c64451738e4408aa3b9bdbd2b1231d/394d159c6be2483ba2e2743a7b3e612d.png",
+              "height": 90
+            },
+            {
+              "size": 2882,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/d1c64451738e4408aa3b9bdbd2b1231d/4552ce168be2438f9088ae797a42cbb5.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/44fc6b53d1ef419a81327c8497255acd"
+      },
+      "description": "We know 3D models can be tough to design. That's why we want to help make it easier for you. Get your hands on 10 beautifully made 3D models for free! \n\nFrom now until the end of May, we'll give away a new weapon model daily on our Discord server as OBUR Games. Some of them will be ready-to-use in your game, while others might require some additional work. \n\nJoin the OBUR Games Discord server and stock up on 100 incredible 3D models. We can't wait to see what you create with these amazing models. Happy gaming! :) </br>\n</br>\n\n![](https://fokur.net/JOINUS.png)</br>\n\nhttps://discord.gg/3rv7dYBqT9\n\n\nWeapons in the pack:</br>\n-LVOA-C</br>\n-Weldrod_Mark_1</br>\n-Nagant_M1895</br>\n-Beretta_M9</br>\n-9130_Moisin_Nagant</br>\n-HK_Mark_23</br>\n-CZ_75</br>\n-MIKOR_MGL</br>\n-HK_45</br>\n-M249</br>",
+      "faceCount": 81607,
+      "createdAt": "2023-04-06T11:54:26.707141",
+      "vertexCount": 43096,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 3647792,
+          "type": "glb",
+          "textureMaxResolution": 512,
+          "faceCount": 81451,
+          "vertexCount": 79369
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 1271874,
+          "type": "gltf",
+          "textureMaxResolution": 512,
+          "faceCount": 81451,
+          "vertexCount": 79369
+        },
+        "source": {
+          "textureCount": null,
+          "size": 2197488,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 2752880,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    }
+  ]
+}

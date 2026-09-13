@@ -1,0 +1,4380 @@
+{
+  "cursors": {
+    "next": "18",
+    "previous": null
+  },
+  "next": "https://api.sketchfab.com/v3/search?count=18&cursor=18&downloadable=true&q=%22stairs%22&sort_by=-likeCount&type=models",
+  "previous": null,
+  "results": [
+    {
+      "uri": "https://api.sketchfab.com/v3/models/d6521362b37b48e3a82bce4911409303",
+      "uid": "d6521362b37b48e3a82bce4911409303",
+      "name": "Need some space?",
+      "staffpickedAt": "2019-04-17T07:52:25.212635",
+      "viewCount": 470313,
+      "likeCount": 5199,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-d6521362b37b48e3a82bce4911409303",
+      "embedUrl": "https://sketchfab.com/models/d6521362b37b48e3a82bce4911409303/embed",
+      "commentCount": 231,
+      "isDownloadable": true,
+      "publishedAt": "2019-04-14T22:27:50.966502",
+      "tags": [
+        {
+          "name": "jupiter",
+          "slug": "jupiter",
+          "uri": "https://api.sketchfab.com/v3/tags/jupiter"
+        },
+        {
+          "name": "sky",
+          "slug": "sky",
+          "uri": "https://api.sketchfab.com/v3/tags/sky"
+        },
+        {
+          "name": "planet",
+          "slug": "planet",
+          "uri": "https://api.sketchfab.com/v3/tags/planet"
+        },
+        {
+          "name": "moon",
+          "slug": "moon",
+          "uri": "https://api.sketchfab.com/v3/tags/moon"
+        },
+        {
+          "name": "experiment",
+          "slug": "experiment",
+          "uri": "https://api.sketchfab.com/v3/tags/experiment"
+        },
+        {
+          "name": "universe",
+          "slug": "universe",
+          "uri": "https://api.sketchfab.com/v3/tags/universe"
+        },
+        {
+          "name": "system",
+          "slug": "system",
+          "uri": "https://api.sketchfab.com/v3/tags/system"
+        },
+        {
+          "name": "solar",
+          "slug": "solar",
+          "uri": "https://api.sketchfab.com/v3/tags/solar"
+        },
+        {
+          "name": "mars",
+          "slug": "mars",
+          "uri": "https://api.sketchfab.com/v3/tags/mars"
+        },
+        {
+          "name": "visualization",
+          "slug": "visualization",
+          "uri": "https://api.sketchfab.com/v3/tags/visualization"
+        },
+        {
+          "name": "effect",
+          "slug": "effect",
+          "uri": "https://api.sketchfab.com/v3/tags/effect"
+        },
+        {
+          "name": "earth",
+          "slug": "earth",
+          "uri": "https://api.sketchfab.com/v3/tags/earth"
+        },
+        {
+          "name": "realtime",
+          "slug": "realtime",
+          "uri": "https://api.sketchfab.com/v3/tags/realtime"
+        },
+        {
+          "name": "astronomy",
+          "slug": "astronomy",
+          "uri": "https://api.sketchfab.com/v3/tags/astronomy"
+        },
+        {
+          "name": "particles",
+          "slug": "particles",
+          "uri": "https://api.sketchfab.com/v3/tags/particles"
+        },
+        {
+          "name": "telescope",
+          "slug": "telescope",
+          "uri": "https://api.sketchfab.com/v3/tags/telescope"
+        },
+        {
+          "name": "satellite",
+          "slug": "satellite",
+          "uri": "https://api.sketchfab.com/v3/tags/satellite"
+        },
+        {
+          "name": "interstellar",
+          "slug": "interstellar",
+          "uri": "https://api.sketchfab.com/v3/tags/interstellar"
+        },
+        {
+          "name": "galaxy",
+          "slug": "galaxy",
+          "uri": "https://api.sketchfab.com/v3/tags/galaxy"
+        },
+        {
+          "name": "science",
+          "slug": "science",
+          "uri": "https://api.sketchfab.com/v3/tags/science"
+        },
+        {
+          "name": "star",
+          "slug": "star",
+          "uri": "https://api.sketchfab.com/v3/tags/star"
+        },
+        {
+          "name": "station",
+          "slug": "station",
+          "uri": "https://api.sketchfab.com/v3/tags/station"
+        },
+        {
+          "name": "cluster",
+          "slug": "cluster",
+          "uri": "https://api.sketchfab.com/v3/tags/cluster"
+        },
+        {
+          "name": "procedural",
+          "slug": "procedural",
+          "uri": "https://api.sketchfab.com/v3/tags/procedural"
+        },
+        {
+          "name": "hole",
+          "slug": "hole",
+          "uri": "https://api.sketchfab.com/v3/tags/hole"
+        },
+        {
+          "name": "venus",
+          "slug": "venus",
+          "uri": "https://api.sketchfab.com/v3/tags/venus"
+        },
+        {
+          "name": "milkyway",
+          "slug": "milkyway",
+          "uri": "https://api.sketchfab.com/v3/tags/milkyway"
+        },
+        {
+          "name": "pluto",
+          "slug": "pluto",
+          "uri": "https://api.sketchfab.com/v3/tags/pluto"
+        },
+        {
+          "name": "scientific",
+          "slug": "scientific",
+          "uri": "https://api.sketchfab.com/v3/tags/scientific"
+        },
+        {
+          "name": "hubble",
+          "slug": "hubble",
+          "uri": "https://api.sketchfab.com/v3/tags/hubble"
+        },
+        {
+          "name": "nebula",
+          "slug": "nebula",
+          "uri": "https://api.sketchfab.com/v3/tags/nebula"
+        },
+        {
+          "name": "agency",
+          "slug": "agency",
+          "uri": "https://api.sketchfab.com/v3/tags/agency"
+        },
+        {
+          "name": "programming",
+          "slug": "programming",
+          "uri": "https://api.sketchfab.com/v3/tags/programming"
+        },
+        {
+          "name": "black",
+          "slug": "black",
+          "uri": "https://api.sketchfab.com/v3/tags/black"
+        },
+        {
+          "name": "space",
+          "slug": "space",
+          "uri": "https://api.sketchfab.com/v3/tags/space"
+        },
+        {
+          "name": "light",
+          "slug": "light",
+          "uri": "https://api.sketchfab.com/v3/tags/light"
+        },
+        {
+          "name": "noai",
+          "slug": "noai",
+          "uri": "https://api.sketchfab.com/v3/tags/noai"
+        }
+      ],
+      "categories": [
+        {
+          "name": "nature-plants"
+        },
+        {
+          "name": "science-technology"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "360a36b5457b4ff78c70a148d490bbc9",
+            "size": 429677,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/d6521362b37b48e3a82bce4911409303/thumbnails/4110f13d231a43ec89f534fb84511487/e84b440e5eb745db82a265b3d3203046.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "fcddc1872b6b4e8bbefa92c59f90f4e9",
+            "size": 125570,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/d6521362b37b48e3a82bce4911409303/thumbnails/4110f13d231a43ec89f534fb84511487/85b141037db24c39a534ad5bd7f8c04e.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "01912077a6174d9eb82cb473cb8bd9d4",
+            "size": 62228,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/d6521362b37b48e3a82bce4911409303/thumbnails/4110f13d231a43ec89f534fb84511487/05c0e3973a7545af84057f832b7d0b96.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "995f775d7d45419897cb4c7520c020bf",
+            "size": 7271,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/d6521362b37b48e3a82bce4911409303/thumbnails/4110f13d231a43ec89f534fb84511487/0f3074148ad249bdadbdedf1c8a3fd66.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "6bcbba1962904295b1fc644d59f5cc61",
+            "size": 923,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/d6521362b37b48e3a82bce4911409303/thumbnails/4110f13d231a43ec89f534fb84511487/05cd8a96aa8b4582b92910eae7a3d28f.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "afdb2465d5ae4ccea62dc99346b9db56",
+        "username": "norgeotloic",
+        "displayName": "Lo\u00efc Norgeot",
+        "profileUrl": "https://sketchfab.com/norgeotloic",
+        "account": "ent",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/73a5e36c5f0c4a01a03246a419615f74",
+          "images": [
+            {
+              "size": 2020,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/73a5e36c5f0c4a01a03246a419615f74/7638e10abbc84d69b74fe6d7d4995191.png",
+              "height": 32
+            },
+            {
+              "size": 3803,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/73a5e36c5f0c4a01a03246a419615f74/9f72fab4b197435faea0e9ceede43cc4.png",
+              "height": 48
+            },
+            {
+              "size": 10593,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/73a5e36c5f0c4a01a03246a419615f74/26f14036b5964ebca1d24fcb0b0660a7.png",
+              "height": 90
+            },
+            {
+              "size": 12549,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/73a5e36c5f0c4a01a03246a419615f74/0f52c8be4007455ab87dbe513fe0441e.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/afdb2465d5ae4ccea62dc99346b9db56"
+      },
+      "description": "This model is the result of further programming experiments (C++) on my path to recreating space objects. \n\nIf you're curious, here are a few clues about its creation :\n\n* I initially scattered the stars in a disk-like fashion, and gave them a tangential initial rotation speed.\n* The system is driven through a mix of gravitational forces and vorticity, but I had to create additional attractors in a rotating spiral pattern to emphasize the shape of the galaxy arms.\n* Note that this \"simulation\" does not take into consideration the reciprocical attraction between stars (that would take way too long for now...).\n* Computing 150 iterations for 50k particles and 54 forces (most due to the \"spiral forcing\")  took approximately 20 seconds on my laptop. \n* Each particle was colored in a range related to their initial distance to the center of the galaxy (red-ish in the center, blue-ish at the rim).\n\nAnd [here](https://skfb.ly/6JBWp) is an animated example of the iterative process !",
+      "faceCount": 0,
+      "createdAt": "2019-04-14T09:43:40.005369",
+      "vertexCount": 50000,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 1401564,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 0,
+          "vertexCount": 50000
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 584740,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 0,
+          "vertexCount": 50000
+        },
+        "source": {
+          "textureCount": null,
+          "size": 1834274,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/9ddbc5b32da94bafbfdb56e1f6be9a38",
+      "uid": "9ddbc5b32da94bafbfdb56e1f6be9a38",
+      "name": "Ship in a bottle",
+      "staffpickedAt": "2018-12-12T09:00:30.754755",
+      "viewCount": 148269,
+      "likeCount": 3015,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-9ddbc5b32da94bafbfdb56e1f6be9a38",
+      "embedUrl": "https://sketchfab.com/models/9ddbc5b32da94bafbfdb56e1f6be9a38/embed",
+      "commentCount": 83,
+      "isDownloadable": true,
+      "publishedAt": "2018-12-11T00:30:45.197914",
+      "tags": [
+        {
+          "name": "marine",
+          "slug": "marine",
+          "uri": "https://api.sketchfab.com/v3/tags/marine"
+        },
+        {
+          "name": "wine",
+          "slug": "wine",
+          "uri": "https://api.sketchfab.com/v3/tags/wine"
+        },
+        {
+          "name": "sail",
+          "slug": "sail",
+          "uri": "https://api.sketchfab.com/v3/tags/sail"
+        },
+        {
+          "name": "3d-scan",
+          "slug": "3d-scan",
+          "uri": "https://api.sketchfab.com/v3/tags/3d-scan"
+        },
+        {
+          "name": "prop",
+          "slug": "prop",
+          "uri": "https://api.sketchfab.com/v3/tags/prop"
+        },
+        {
+          "name": "unreal",
+          "slug": "unreal",
+          "uri": "https://api.sketchfab.com/v3/tags/unreal"
+        },
+        {
+          "name": "realtime",
+          "slug": "realtime",
+          "uri": "https://api.sketchfab.com/v3/tags/realtime"
+        },
+        {
+          "name": "ocean",
+          "slug": "ocean",
+          "uri": "https://api.sketchfab.com/v3/tags/ocean"
+        },
+        {
+          "name": "beer",
+          "slug": "beer",
+          "uri": "https://api.sketchfab.com/v3/tags/beer"
+        },
+        {
+          "name": "sailor",
+          "slug": "sailor",
+          "uri": "https://api.sketchfab.com/v3/tags/sailor"
+        },
+        {
+          "name": "diorama",
+          "slug": "diorama",
+          "uri": "https://api.sketchfab.com/v3/tags/diorama"
+        },
+        {
+          "name": "whiskey",
+          "slug": "whiskey",
+          "uri": "https://api.sketchfab.com/v3/tags/whiskey"
+        },
+        {
+          "name": "metal",
+          "slug": "metal",
+          "uri": "https://api.sketchfab.com/v3/tags/metal"
+        },
+        {
+          "name": "realistic",
+          "slug": "realistic",
+          "uri": "https://api.sketchfab.com/v3/tags/realistic"
+        },
+        {
+          "name": "water",
+          "slug": "water",
+          "uri": "https://api.sketchfab.com/v3/tags/water"
+        },
+        {
+          "name": "engine",
+          "slug": "engine",
+          "uri": "https://api.sketchfab.com/v3/tags/engine"
+        },
+        {
+          "name": "rum",
+          "slug": "rum",
+          "uri": "https://api.sketchfab.com/v3/tags/rum"
+        },
+        {
+          "name": "realism",
+          "slug": "realism",
+          "uri": "https://api.sketchfab.com/v3/tags/realism"
+        },
+        {
+          "name": "wave",
+          "slug": "wave",
+          "uri": "https://api.sketchfab.com/v3/tags/wave"
+        },
+        {
+          "name": "maritime",
+          "slug": "maritime",
+          "uri": "https://api.sketchfab.com/v3/tags/maritime"
+        },
+        {
+          "name": "refractive",
+          "slug": "refractive",
+          "uri": "https://api.sketchfab.com/v3/tags/refractive"
+        },
+        {
+          "name": "bakemyscan",
+          "slug": "bakemyscan",
+          "uri": "https://api.sketchfab.com/v3/tags/bakemyscan"
+        },
+        {
+          "name": "photoscan",
+          "slug": "photoscan",
+          "uri": "https://api.sketchfab.com/v3/tags/photoscan"
+        },
+        {
+          "name": "unity",
+          "slug": "unity",
+          "uri": "https://api.sketchfab.com/v3/tags/unity"
+        },
+        {
+          "name": "architecture",
+          "slug": "architecture",
+          "uri": "https://api.sketchfab.com/v3/tags/architecture"
+        },
+        {
+          "name": "glass",
+          "slug": "glass",
+          "uri": "https://api.sketchfab.com/v3/tags/glass"
+        },
+        {
+          "name": "asset",
+          "slug": "asset",
+          "uri": "https://api.sketchfab.com/v3/tags/asset"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "pbr",
+          "slug": "pbr",
+          "uri": "https://api.sketchfab.com/v3/tags/pbr"
+        },
+        {
+          "name": "lowpoly",
+          "slug": "lowpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpoly"
+        },
+        {
+          "name": "scan",
+          "slug": "scan",
+          "uri": "https://api.sketchfab.com/v3/tags/scan"
+        },
+        {
+          "name": "design",
+          "slug": "design",
+          "uri": "https://api.sketchfab.com/v3/tags/design"
+        },
+        {
+          "name": "ship",
+          "slug": "ship",
+          "uri": "https://api.sketchfab.com/v3/tags/ship"
+        },
+        {
+          "name": "wood",
+          "slug": "wood",
+          "uri": "https://api.sketchfab.com/v3/tags/wood"
+        },
+        {
+          "name": "free",
+          "slug": "free",
+          "uri": "https://api.sketchfab.com/v3/tags/free"
+        },
+        {
+          "name": "pirate",
+          "slug": "pirate",
+          "uri": "https://api.sketchfab.com/v3/tags/pirate"
+        },
+        {
+          "name": "decoration",
+          "slug": "decoration",
+          "uri": "https://api.sketchfab.com/v3/tags/decoration"
+        },
+        {
+          "name": "bottle",
+          "slug": "bottle",
+          "uri": "https://api.sketchfab.com/v3/tags/bottle"
+        },
+        {
+          "name": "interior",
+          "slug": "interior",
+          "uri": "https://api.sketchfab.com/v3/tags/interior"
+        },
+        {
+          "name": "sea",
+          "slug": "sea",
+          "uri": "https://api.sketchfab.com/v3/tags/sea"
+        },
+        {
+          "name": "shader",
+          "slug": "shader",
+          "uri": "https://api.sketchfab.com/v3/tags/shader"
+        },
+        {
+          "name": "boat",
+          "slug": "boat",
+          "uri": "https://api.sketchfab.com/v3/tags/boat"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "cultural-heritage-history"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "bbc03d257bac4294a859c516f8fcaed0",
+            "size": 212741,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/9ddbc5b32da94bafbfdb56e1f6be9a38/thumbnails/21b228254d674aff8095dc2fc306b9d8/9608f453821c4f1a864cd6d0d33362ca.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "06dbf78b5f374943b50f2b4bd94d441a",
+            "size": 63634,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/9ddbc5b32da94bafbfdb56e1f6be9a38/thumbnails/21b228254d674aff8095dc2fc306b9d8/e0f3e4c578b04ba0bd08b64c0cb66015.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "5e0ae35915874508a3651e90896ec0d2",
+            "size": 35415,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/9ddbc5b32da94bafbfdb56e1f6be9a38/thumbnails/21b228254d674aff8095dc2fc306b9d8/b292174f409b4212b4efeb45d3cdafa1.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "805d7a005e3d4b679422cf580577a62a",
+            "size": 6635,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/9ddbc5b32da94bafbfdb56e1f6be9a38/thumbnails/21b228254d674aff8095dc2fc306b9d8/550716f1e733405082094ed9223d965b.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "602162a767994e35b92f72ab07e9a5c2",
+            "size": 1034,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/9ddbc5b32da94bafbfdb56e1f6be9a38/thumbnails/21b228254d674aff8095dc2fc306b9d8/ff7908b31c35411f915f1347a6853b7f.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "afdb2465d5ae4ccea62dc99346b9db56",
+        "username": "norgeotloic",
+        "displayName": "Lo\u00efc Norgeot",
+        "profileUrl": "https://sketchfab.com/norgeotloic",
+        "account": "ent",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/73a5e36c5f0c4a01a03246a419615f74",
+          "images": [
+            {
+              "size": 2020,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/73a5e36c5f0c4a01a03246a419615f74/7638e10abbc84d69b74fe6d7d4995191.png",
+              "height": 32
+            },
+            {
+              "size": 3803,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/73a5e36c5f0c4a01a03246a419615f74/9f72fab4b197435faea0e9ceede43cc4.png",
+              "height": 48
+            },
+            {
+              "size": 10593,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/73a5e36c5f0c4a01a03246a419615f74/26f14036b5964ebca1d24fcb0b0660a7.png",
+              "height": 90
+            },
+            {
+              "size": 12549,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/73a5e36c5f0c4a01a03246a419615f74/0f52c8be4007455ab87dbe513fe0441e.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/afdb2465d5ae4ccea62dc99346b9db56"
+      },
+      "description": "**CC-Attribution-NonCommercial**\n\nBased on a scan of a replica of the \"Mayflower\" ship, processed by @spogna and available [here](https://skfb.ly/6u8T6).\n\nLike in the [Mosquito in Amber](https://skfb.ly/6xWCO), most of my attention was spent on normal maps, roughness and refraction settings to try to make this model as realistic as possible.\n\nI actually had to create a secondary internal surface for the bottle, and also relied on clear coat options for the glass material in order to try to give the model a feeling of thickness. \n\nTo try to get the opacity right, I used refraction on the outer layer (normals offset checked), and alpha-blending on the inner one.\n\nAll of the modeling was done with Blender, but the critical part for the model aesthetics relies on Sketchfab materials and post-processing.\n\n<br>\n>\n> Another ship in a bottle\n> \n> Has got no place to sail\n> \n> To see the waves getting darker every hour\n> \n> The stars have lost their power\n> \n> In the sky\n> \n\n<br>\n**Beck**, *Ship in a bottle*.",
+      "faceCount": 53462,
+      "createdAt": "2018-12-10T17:34:38.499853",
+      "vertexCount": 26556,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 14,
+          "size": 22600764,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 53462,
+          "vertexCount": 44964
+        },
+        "gltf": {
+          "textureCount": 14,
+          "size": 21477035,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 53462,
+          "vertexCount": 44964
+        },
+        "source": {
+          "textureCount": null,
+          "size": 8758438,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 5071359,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "bbfe3f7dbcdd4122b966b85b9786a989",
+        "label": "CC Attribution-NonCommercial"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/da3f6e7b85ed44b7aa8bb5571e365abc",
+      "uid": "da3f6e7b85ed44b7aa8bb5571e365abc",
+      "name": "Baker and the Bridge",
+      "staffpickedAt": null,
+      "viewCount": 49037,
+      "likeCount": 1819,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-da3f6e7b85ed44b7aa8bb5571e365abc",
+      "embedUrl": "https://sketchfab.com/models/da3f6e7b85ed44b7aa8bb5571e365abc/embed",
+      "commentCount": 73,
+      "isDownloadable": true,
+      "publishedAt": "2021-11-29T22:54:17.495725",
+      "tags": [
+        {
+          "name": "tree",
+          "slug": "tree",
+          "uri": "https://api.sketchfab.com/v3/tags/tree"
+        },
+        {
+          "name": "field",
+          "slug": "field",
+          "uri": "https://api.sketchfab.com/v3/tags/field"
+        },
+        {
+          "name": "stairs",
+          "slug": "stairs",
+          "uri": "https://api.sketchfab.com/v3/tags/stairs"
+        },
+        {
+          "name": "rocks",
+          "slug": "rocks",
+          "uri": "https://api.sketchfab.com/v3/tags/rocks"
+        },
+        {
+          "name": "nature",
+          "slug": "nature",
+          "uri": "https://api.sketchfab.com/v3/tags/nature"
+        },
+        {
+          "name": "bakery",
+          "slug": "bakery",
+          "uri": "https://api.sketchfab.com/v3/tags/bakery"
+        },
+        {
+          "name": "watermill",
+          "slug": "watermill",
+          "uri": "https://api.sketchfab.com/v3/tags/watermill"
+        },
+        {
+          "name": "roots",
+          "slug": "roots",
+          "uri": "https://api.sketchfab.com/v3/tags/roots"
+        },
+        {
+          "name": "chestnut",
+          "slug": "chestnut",
+          "uri": "https://api.sketchfab.com/v3/tags/chestnut"
+        },
+        {
+          "name": "civilization",
+          "slug": "civilization",
+          "uri": "https://api.sketchfab.com/v3/tags/civilization"
+        },
+        {
+          "name": "thatched",
+          "slug": "thatched",
+          "uri": "https://api.sketchfab.com/v3/tags/thatched"
+        },
+        {
+          "name": "thatchedroof",
+          "slug": "thatchedroof",
+          "uri": "https://api.sketchfab.com/v3/tags/thatchedroof"
+        },
+        {
+          "name": "handpainted",
+          "slug": "handpainted",
+          "uri": "https://api.sketchfab.com/v3/tags/handpainted"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "house",
+          "slug": "house",
+          "uri": "https://api.sketchfab.com/v3/tags/house"
+        },
+        {
+          "name": "bridge",
+          "slug": "bridge",
+          "uri": "https://api.sketchfab.com/v3/tags/bridge"
+        },
+        {
+          "name": "natureandcivchallenge",
+          "slug": "natureandcivchallenge",
+          "uri": "https://api.sketchfab.com/v3/tags/natureandcivchallenge"
+        },
+        {
+          "name": "noai",
+          "slug": "noai",
+          "uri": "https://api.sketchfab.com/v3/tags/noai"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        },
+        {
+          "name": "art-abstract"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "37e80cf53c9247ad81f1ce027f9ecaa9",
+            "size": 522533,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/da3f6e7b85ed44b7aa8bb5571e365abc/thumbnails/383503a8a05447408b84650762962517/b6a810c489494f8daf68d61cbf9f24e3.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "9aa083d4991543dbba3166f845dc1a19",
+            "size": 137913,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/da3f6e7b85ed44b7aa8bb5571e365abc/thumbnails/383503a8a05447408b84650762962517/27c7199bc8904734b7b65d7599b8daeb.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "7db54a1b471446369c61bfcbb6154d31",
+            "size": 71866,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/da3f6e7b85ed44b7aa8bb5571e365abc/thumbnails/383503a8a05447408b84650762962517/a476a7ececad4e7cab9d845a8d8fe63b.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "c5127225bdb043679cdf3174e2df1738",
+            "size": 12183,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/da3f6e7b85ed44b7aa8bb5571e365abc/thumbnails/383503a8a05447408b84650762962517/837473eaae6b4bdb913d64285bd0a6b0.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "a756703ba69b49ef83cd384a18bf4627",
+            "size": 1732,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/da3f6e7b85ed44b7aa8bb5571e365abc/thumbnails/383503a8a05447408b84650762962517/932ec459feb64cc78aa6a4236024877c.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "cf14d50e8f0a42ccad820fc033a7afd3",
+        "username": "ConradJustin",
+        "displayName": "Conrad Justin",
+        "profileUrl": "https://sketchfab.com/ConradJustin",
+        "account": "prem",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/a47e454a011d45e2a83bb274c57c7e5c",
+          "images": [
+            {
+              "size": 1153,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/a47e454a011d45e2a83bb274c57c7e5c/ff7cbcbfbe974a3bb3746ad24176ab8e.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1657,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/a47e454a011d45e2a83bb274c57c7e5c/15e42672a0e849a9a125c2715b040b5a.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3699,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/a47e454a011d45e2a83bb274c57c7e5c/d953fce2d7634d1189b0c42ce7a9f938.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4343,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/a47e454a011d45e2a83bb274c57c7e5c/3c5bf947092f4a9eae99314c886eff49.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/cf14d50e8f0a42ccad820fc033a7afd3"
+      },
+      "description": "When the Nature and Civilization collide - they can fight... but they can also cooporate. This old watermill, bakery, the peculiar bridge, old chestnut, the farmer, the baker... they all are living proof that nature and civilization can coexist in harmony. This is my entry for the Nature & Cicilization challenge.\n\nThis Blender scene took me 12 days to design and model. Everything is hand-painted\n\nThese are my drawings:\n![Design drawings](https://i.imgur.com/dW1DhqI.jpg)\n\nSupport my work: **https://ko-fi.com/conradjustin**\n\nMy website:**[ https://conradjustin.art/](https://conradjustin.art/)**\n\nmy Artstation:**https://www.artstation.com/conradjustin**\n\nGood luck to all participants!",
+      "faceCount": 573312,
+      "createdAt": "2021-11-29T22:21:18.331224",
+      "vertexCount": 350216,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 15,
+          "size": 159593272,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 573312,
+          "vertexCount": 428701
+        },
+        "gltf": {
+          "textureCount": 15,
+          "size": 150291063,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 573312,
+          "vertexCount": 428701
+        },
+        "gltf-ar": {
+          "textureCount": null,
+          "size": 31719,
+          "type": "gltf-ar",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "source": {
+          "textureCount": null,
+          "size": 126091733,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 18495095,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "72eb2b1960364637901eacce19283624",
+        "label": "Free Standard"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/b5de35069fd94e6eaf2309a38e6c6a8e",
+      "uid": "b5de35069fd94e6eaf2309a38e6c6a8e",
+      "name": "DreadRoamer",
+      "staffpickedAt": "2017-07-12T07:23:41.855267",
+      "viewCount": 38974,
+      "likeCount": 1730,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-b5de35069fd94e6eaf2309a38e6c6a8e",
+      "embedUrl": "https://sketchfab.com/models/b5de35069fd94e6eaf2309a38e6c6a8e/embed",
+      "commentCount": 83,
+      "isDownloadable": true,
+      "publishedAt": "2017-07-07T05:16:34.108148",
+      "tags": [
+        {
+          "name": "dreadroamer",
+          "slug": "dreadroamer",
+          "uri": "https://api.sketchfab.com/v3/tags/dreadroamer"
+        },
+        {
+          "name": "substance",
+          "slug": "substance",
+          "uri": "https://api.sketchfab.com/v3/tags/substance"
+        },
+        {
+          "name": "character",
+          "slug": "character",
+          "uri": "https://api.sketchfab.com/v3/tags/character"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "scifi",
+          "slug": "scifi",
+          "uri": "https://api.sketchfab.com/v3/tags/scifi"
+        },
+        {
+          "name": "zbrush",
+          "slug": "zbrush",
+          "uri": "https://api.sketchfab.com/v3/tags/zbrush"
+        }
+      ],
+      "categories": [],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "1d5c29620e5645aebfe3098438fb9267",
+            "size": 344105,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/b5de35069fd94e6eaf2309a38e6c6a8e/thumbnails/8108e56e90a64ff38480d5e7d0101b83/b114027b31cd4d5990ccefe2697eecff.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "e5b1ba9b86e34fd084567ba4e4d62c04",
+            "size": 80731,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/b5de35069fd94e6eaf2309a38e6c6a8e/thumbnails/8108e56e90a64ff38480d5e7d0101b83/ee98090e29e341c688ee185255a92995.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "051cd99039f044e4a1308c6a85ca07f2",
+            "size": 43463,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/b5de35069fd94e6eaf2309a38e6c6a8e/thumbnails/8108e56e90a64ff38480d5e7d0101b83/17025cbe963e48bb994756f7fd4bd109.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "0b99367b70224d5686ef7dfbd1b96332",
+            "size": 6939,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/b5de35069fd94e6eaf2309a38e6c6a8e/thumbnails/8108e56e90a64ff38480d5e7d0101b83/06c68e631af444eb8108aef2cfbce4c9.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "a2dcac43bfe445e2af9afb847ece9b39",
+            "size": 938,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/b5de35069fd94e6eaf2309a38e6c6a8e/thumbnails/8108e56e90a64ff38480d5e7d0101b83/023544c98cd348a487e8a15918be86f5.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "e6cbdbb94e394fa1849522e693a5d37e",
+        "username": "toomanydemons",
+        "displayName": "TooManyDemons",
+        "profileUrl": "https://sketchfab.com/toomanydemons",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/1a7835c7176242bdb494df970e35611a",
+          "images": [
+            {
+              "size": 882,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/1a7835c7176242bdb494df970e35611a/a0427a1d3b2f420298315071a35ef174.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1067,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/1a7835c7176242bdb494df970e35611a/72eb2651730442e9ad3944bcb5026ee2.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2010,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/1a7835c7176242bdb494df970e35611a/d86ce428aa8e42ae81a20aa23793ca45.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2306,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/1a7835c7176242bdb494df970e35611a/be0678e50b6f47c3939d068e2b46052f.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/e6cbdbb94e394fa1849522e693a5d37e"
+      },
+      "description": "Dreadroamers are highly xenophobic, filthy creatures who travel the stars in stolen fleets, attacking and murdering wherever they encounter life. Their pirate fleet usually consists of a variety of rag-tag vessels that have been captured from the other races. These vessels tend to be in poor condition and have often been overly-modified to suit the orc-like dreadroamer\u2019s taste.\n\nThey are a violent, ugly species whose physical appearance varies quite a bit. They tend to be hideous, troll-like and non-symmetrical, and have cybernetically modified their bodies for war. Such is the nature of their biology that dismembered limbs will grow back through-and-around existing impediments in a matter of days. They commonly use this ability to graft weapons and gear to their (vaguely humanoid) forms.",
+      "faceCount": 121483,
+      "createdAt": "2017-07-07T04:54:47.229055",
+      "vertexCount": 60168,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 19,
+          "size": 74668888,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 118584,
+          "vertexCount": 79848
+        },
+        "gltf": {
+          "textureCount": 19,
+          "size": 72645933,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 118584,
+          "vertexCount": 79848
+        },
+        "source": {
+          "textureCount": null,
+          "size": 78139949,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 12721656,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/c0f37ac567d34fa8881ed7a79b335c4d",
+      "uid": "c0f37ac567d34fa8881ed7a79b335c4d",
+      "name": "Astra\u00eda",
+      "staffpickedAt": "2021-05-04T14:36:25.763568",
+      "viewCount": 45256,
+      "likeCount": 1725,
+      "animationCount": 1,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-c0f37ac567d34fa8881ed7a79b335c4d",
+      "embedUrl": "https://sketchfab.com/models/c0f37ac567d34fa8881ed7a79b335c4d/embed",
+      "commentCount": 40,
+      "isDownloadable": true,
+      "publishedAt": "2021-04-21T22:22:31.800023",
+      "tags": [
+        {
+          "name": "goddess",
+          "slug": "goddess",
+          "uri": "https://api.sketchfab.com/v3/tags/goddess"
+        },
+        {
+          "name": "cyborg",
+          "slug": "cyborg",
+          "uri": "https://api.sketchfab.com/v3/tags/cyborg"
+        },
+        {
+          "name": "baked-lighting",
+          "slug": "baked-lighting",
+          "uri": "https://api.sketchfab.com/v3/tags/baked-lighting"
+        },
+        {
+          "name": "substancepainter",
+          "slug": "substancepainter",
+          "uri": "https://api.sketchfab.com/v3/tags/substancepainter"
+        },
+        {
+          "name": "sci-fi",
+          "slug": "sci-fi",
+          "uri": "https://api.sketchfab.com/v3/tags/sci-fi"
+        },
+        {
+          "name": "digital",
+          "slug": "digital",
+          "uri": "https://api.sketchfab.com/v3/tags/digital"
+        },
+        {
+          "name": "decomposing",
+          "slug": "decomposing",
+          "uri": "https://api.sketchfab.com/v3/tags/decomposing"
+        },
+        {
+          "name": "portraitfromthefuture",
+          "slug": "portraitfromthefuture",
+          "uri": "https://api.sketchfab.com/v3/tags/portraitfromthefuture"
+        }
+      ],
+      "categories": [
+        {
+          "name": "art-abstract"
+        },
+        {
+          "name": "characters-creatures"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "f172a1006fe44c83bd7d1462d95e863a",
+            "size": 157066,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/c0f37ac567d34fa8881ed7a79b335c4d/thumbnails/b46ecb691e1749bc970552e42892955d/b06d060bf2674482b290be0e36fec3c8.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "19526915f91c4bd28763e5c71b14e68e",
+            "size": 49373,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/c0f37ac567d34fa8881ed7a79b335c4d/thumbnails/b46ecb691e1749bc970552e42892955d/0453c1d89b774c0f8e56d48c4d252b17.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "b0563a0cb970437aa6ff20e5b51f3707",
+            "size": 28238,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/c0f37ac567d34fa8881ed7a79b335c4d/thumbnails/b46ecb691e1749bc970552e42892955d/8a587d958e5541d691b8a421abcb6d7e.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "e0fcd35fb8f64b9d80bf037ced9ac2d5",
+            "size": 5592,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/c0f37ac567d34fa8881ed7a79b335c4d/thumbnails/b46ecb691e1749bc970552e42892955d/c4840b62d3a5452284aca77f5ad4879f.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "b7e194dbc32b486fb26148e2deb6b830",
+            "size": 912,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/c0f37ac567d34fa8881ed7a79b335c4d/thumbnails/b46ecb691e1749bc970552e42892955d/3519e649a5e845c795e1b913c55fb453.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "0cae1f5537de4a289455c1d09fbf1e03",
+        "username": "quentinotani",
+        "displayName": "Quentin Otani",
+        "profileUrl": "https://sketchfab.com/quentinotani",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/51af6a870cce449eb75b0345feebaebb",
+          "images": [
+            {
+              "size": 5719,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/2ef0f894055b4bb69123b2a27fa2d379.jpeg",
+              "height": 90
+            },
+            {
+              "size": 6496,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/ab11eedf96374486acb544f71a23b165.jpeg",
+              "height": 100
+            },
+            {
+              "size": 1359,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/35f6f9b6c9a14a548ce472582d8a9bb5.jpeg",
+              "height": 32
+            },
+            {
+              "size": 2584,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/a8072a51447c4d41ab177b357111b420.jpeg",
+              "height": 48
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/0cae1f5537de4a289455c1d09fbf1e03"
+      },
+      "description": "Hello everybody ! =)\n\nHere is my entry for this month's challenge #PortraitFromTheFuture\nIn a world where a few robots are so advanced that they are seen as gods, this model is a representation of the goddess who keeps and moves the heavens and the stars.\nModeled with 3ds max textured with Substance Painter and baked with V-ray\n\nHope You Like it",
+      "faceCount": 111626,
+      "createdAt": "2021-04-20T20:36:42.304452",
+      "vertexCount": 58835,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 27,
+          "size": 211631768,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 111626,
+          "vertexCount": 72269
+        },
+        "gltf": {
+          "textureCount": 27,
+          "size": 204732989,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 111626,
+          "vertexCount": 72269
+        },
+        "source": {
+          "textureCount": null,
+          "size": 92834335,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 12305764,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/e74928dc62fe457892e52dd97b6aa6e0",
+      "uid": "e74928dc62fe457892e52dd97b6aa6e0",
+      "name": "The Upper Vestibule",
+      "staffpickedAt": "2017-11-15T15:34:05.152373",
+      "viewCount": 58351,
+      "likeCount": 1566,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-e74928dc62fe457892e52dd97b6aa6e0",
+      "embedUrl": "https://sketchfab.com/models/e74928dc62fe457892e52dd97b6aa6e0/embed",
+      "commentCount": 27,
+      "isDownloadable": true,
+      "publishedAt": "2017-11-14T15:57:00.316599",
+      "tags": [
+        {
+          "name": "tour",
+          "slug": "tour",
+          "uri": "https://api.sketchfab.com/v3/tags/tour"
+        },
+        {
+          "name": "heritage",
+          "slug": "heritage",
+          "uri": "https://api.sketchfab.com/v3/tags/heritage"
+        },
+        {
+          "name": "museum",
+          "slug": "museum",
+          "uri": "https://api.sketchfab.com/v3/tags/museum"
+        },
+        {
+          "name": "culturalheritage",
+          "slug": "culturalheritage",
+          "uri": "https://api.sketchfab.com/v3/tags/culturalheritage"
+        },
+        {
+          "name": "hallwyl",
+          "slug": "hallwyl",
+          "uri": "https://api.sketchfab.com/v3/tags/hallwyl"
+        },
+        {
+          "name": "realitycapture",
+          "slug": "realitycapture",
+          "uri": "https://api.sketchfab.com/v3/tags/realitycapture"
+        },
+        {
+          "name": "architecture",
+          "slug": "architecture",
+          "uri": "https://api.sketchfab.com/v3/tags/architecture"
+        },
+        {
+          "name": "art",
+          "slug": "art",
+          "uri": "https://api.sketchfab.com/v3/tags/art"
+        },
+        {
+          "name": "house",
+          "slug": "house",
+          "uri": "https://api.sketchfab.com/v3/tags/house"
+        },
+        {
+          "name": "home",
+          "slug": "home",
+          "uri": "https://api.sketchfab.com/v3/tags/home"
+        },
+        {
+          "name": "interior",
+          "slug": "interior",
+          "uri": "https://api.sketchfab.com/v3/tags/interior"
+        },
+        {
+          "name": "lernestal",
+          "slug": "lernestal",
+          "uri": "https://api.sketchfab.com/v3/tags/lernestal"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cultural-heritage-history"
+        },
+        {
+          "name": "furniture-home"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "ec564289a7f549e385a683e96bb6d5ed",
+            "size": 628553,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/e74928dc62fe457892e52dd97b6aa6e0/thumbnails/c32a47f77b224db7b73891bac72e1a21/ad0180f784e6492b9fa04b762cf05df4.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "7a15b2ccaee44acfb0f0e92c18ff0438",
+            "size": 163814,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/e74928dc62fe457892e52dd97b6aa6e0/thumbnails/c32a47f77b224db7b73891bac72e1a21/41c184dee10c4901a86dd657de895376.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "7efcd5b8413d40aebc1b12b14115c409",
+            "size": 85008,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/e74928dc62fe457892e52dd97b6aa6e0/thumbnails/c32a47f77b224db7b73891bac72e1a21/b2598cea5dd74dc99b316c11418c574a.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "8352b3da87c04d7a98f931f493fa022f",
+            "size": 12851,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/e74928dc62fe457892e52dd97b6aa6e0/thumbnails/c32a47f77b224db7b73891bac72e1a21/3c349684ed3740a89e0bbe37caaf956c.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "744fd776b76f4cc6ae09c96037dc6c61",
+            "size": 1665,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/e74928dc62fe457892e52dd97b6aa6e0/thumbnails/c32a47f77b224db7b73891bac72e1a21/eabc4359edcf40ec9c70e4b5e936844e.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "da8a6242e0c642ea96e88c1b0631a877",
+        "username": "TheHallwylMuseum",
+        "displayName": "The Hallwyl Museum (Hallwylska museet)",
+        "profileUrl": "https://sketchfab.com/TheHallwylMuseum",
+        "account": "prem",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/4dd28755112a4b20935b7627b8881a37",
+          "images": [
+            {
+              "size": 517,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/4dd28755112a4b20935b7627b8881a37/3731ebd1bfb5410fb80ebde1068e62c2.jpeg",
+              "height": 32
+            },
+            {
+              "size": 935,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/4dd28755112a4b20935b7627b8881a37/30d38697786745ab96b22946de493b12.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2572,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/4dd28755112a4b20935b7627b8881a37/4750d95546e5492db8aeb8ebbb151319.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3006,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/4dd28755112a4b20935b7627b8881a37/e704fffd0e544c1cbfc369ae8a8f9b02.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/da8a6242e0c642ea96e88c1b0631a877"
+      },
+      "description": "**Welcome to [The Hallwyl Museum](https://goo.gl/qbZSY4) in Stockholm, Sweden.**\n\nOnce the home of [Walther](https://goo.gl/79nUeT) and [Wilhelmina von Hallwyl](https://goo.gl/Y8iiJs).\n\nThe Vestibule was the main entrance where both the Hallwyls and their guests entered the house. When you walk up the stairs you will see portraits of mainly Walther von Hallwyl\u00b4s ancestors. \n\nThe portraits here date from the 16th to the 19th century. Walther and Wilhelmina inherited the portraits along with the family's main seat, the medieval castle [Schloss Hallwil](https://goo.gl/dsWmoe) in Switzerland. \n\nAs they wanted to leave the castle with all its furnishings intact the ancestral portraits were copied by the artist [Julius Kronberg](https://goo.gl/PS1hEg). The originals were sent back to Switzerland when the Stockholm house was bequeathed to the Swedish state. \n\n![](https://i.imgur.com/mAilg0r.jpg)\n\nThe images for this project were captured using an [array](https://goo.gl/ePHjDr) of four Panasonic Lumix GX8 cameras.",
+      "faceCount": 1000000,
+      "createdAt": "2017-11-10T14:20:54.920385",
+      "vertexCount": 499385,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 59935668,
+          "type": "glb",
+          "textureMaxResolution": 8192,
+          "faceCount": 1000000,
+          "vertexCount": 912665
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 43977660,
+          "type": "gltf",
+          "textureMaxResolution": 8192,
+          "faceCount": 1000000,
+          "vertexCount": 912665
+        },
+        "source": {
+          "textureCount": null,
+          "size": 47243899,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 34968839,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/6b3e2a011f024ac6a6b123ed33d0ec28",
+      "uid": "6b3e2a011f024ac6a6b123ed33d0ec28",
+      "name": "Stargazing through the attic window \u2606",
+      "staffpickedAt": "2023-05-23T08:21:50.271641",
+      "viewCount": 36078,
+      "likeCount": 1242,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-6b3e2a011f024ac6a6b123ed33d0ec28",
+      "embedUrl": "https://sketchfab.com/models/6b3e2a011f024ac6a6b123ed33d0ec28/embed",
+      "commentCount": 29,
+      "isDownloadable": true,
+      "publishedAt": "2023-05-17T15:04:55.323857",
+      "tags": [
+        {
+          "name": "hair",
+          "slug": "hair",
+          "uri": "https://api.sketchfab.com/v3/tags/hair"
+        },
+        {
+          "name": "sculpt",
+          "slug": "sculpt",
+          "uri": "https://api.sketchfab.com/v3/tags/sculpt"
+        },
+        {
+          "name": "autodesk",
+          "slug": "autodesk",
+          "uri": "https://api.sketchfab.com/v3/tags/autodesk"
+        },
+        {
+          "name": "cute",
+          "slug": "cute",
+          "uri": "https://api.sketchfab.com/v3/tags/cute"
+        },
+        {
+          "name": "handpaint",
+          "slug": "handpaint",
+          "uri": "https://api.sketchfab.com/v3/tags/handpaint"
+        },
+        {
+          "name": "stars",
+          "slug": "stars",
+          "uri": "https://api.sketchfab.com/v3/tags/stars"
+        },
+        {
+          "name": "cosy",
+          "slug": "cosy",
+          "uri": "https://api.sketchfab.com/v3/tags/cosy"
+        },
+        {
+          "name": "aesthetic",
+          "slug": "aesthetic",
+          "uri": "https://api.sketchfab.com/v3/tags/aesthetic"
+        },
+        {
+          "name": "attic",
+          "slug": "attic",
+          "uri": "https://api.sketchfab.com/v3/tags/attic"
+        },
+        {
+          "name": "substance",
+          "slug": "substance",
+          "uri": "https://api.sketchfab.com/v3/tags/substance"
+        },
+        {
+          "name": "maya",
+          "slug": "maya",
+          "uri": "https://api.sketchfab.com/v3/tags/maya"
+        },
+        {
+          "name": "character",
+          "slug": "character",
+          "uri": "https://api.sketchfab.com/v3/tags/character"
+        },
+        {
+          "name": "zbrush",
+          "slug": "zbrush",
+          "uri": "https://api.sketchfab.com/v3/tags/zbrush"
+        },
+        {
+          "name": "stylized",
+          "slug": "stylized",
+          "uri": "https://api.sketchfab.com/v3/tags/stylized"
+        },
+        {
+          "name": "noai",
+          "slug": "noai",
+          "uri": "https://api.sketchfab.com/v3/tags/noai"
+        }
+      ],
+      "categories": [
+        {
+          "name": "characters-creatures"
+        },
+        {
+          "name": "people"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "7eb2b17a5e164e89ade1533d0d3a09ca",
+            "size": 361624,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/6b3e2a011f024ac6a6b123ed33d0ec28/thumbnails/bf37c480f823439ca10eb63e0d0a0df0/1fb0f245eb7a4bc3adecec8e90b425f3.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "977d3c163369439e92241c67d58cea81",
+            "size": 72210,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/6b3e2a011f024ac6a6b123ed33d0ec28/thumbnails/bf37c480f823439ca10eb63e0d0a0df0/1fd8b8c2701248fba7a9dad14015ea72.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "018cd34840984f3c834b0e4e972d0538",
+            "size": 38481,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/6b3e2a011f024ac6a6b123ed33d0ec28/thumbnails/bf37c480f823439ca10eb63e0d0a0df0/6d2ddfdba4bc4ec7a35bf6774aeac7bb.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "9543475162084c919e53f6e166e7dd7f",
+            "size": 7325,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/6b3e2a011f024ac6a6b123ed33d0ec28/thumbnails/bf37c480f823439ca10eb63e0d0a0df0/6d0f90f1a57346e78e495599f0323994.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "9d6a994b3f634894a66b4e5dfef16583",
+            "size": 1401,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/6b3e2a011f024ac6a6b123ed33d0ec28/thumbnails/bf37c480f823439ca10eb63e0d0a0df0/2c0b917ae1da473996249b52ffcccd87.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "c59b3fd74fd54018a4b7ead925173d6d",
+        "username": "Moon_solstice",
+        "displayName": "Moon",
+        "profileUrl": "https://sketchfab.com/Moon_solstice",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/f84825cb5bd241a3bb1fa4673f3abe08",
+          "images": [
+            {
+              "size": 1166,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/f84825cb5bd241a3bb1fa4673f3abe08/78a1abb2f3664635948002bd3619e72b.png",
+              "height": 32
+            },
+            {
+              "size": 2031,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/f84825cb5bd241a3bb1fa4673f3abe08/ce89ae67993941e0813d869ef9d1e457.png",
+              "height": 48
+            },
+            {
+              "size": 4828,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/f84825cb5bd241a3bb1fa4673f3abe08/e9b1349a797144f78d1b8f296e80ce1c.png",
+              "height": 90
+            },
+            {
+              "size": 5594,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/f84825cb5bd241a3bb1fa4673f3abe08/c374800e01f84b92a251068fb64d9a74.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/c59b3fd74fd54018a4b7ead925173d6d"
+      },
+      "description": "\u2606 A girl stargazing through her attic window \u2606\nSomething else than my usual 3D models! I wanted to try out an even more handpainted approach, it was definitely a learning process but I am happy with how this cute character came to life \u2606\n\n[Concept](https://bearbrickjia.tumblr.com/)",
+      "faceCount": 114517,
+      "createdAt": "2023-05-16T16:58:03.850340",
+      "vertexCount": 59997,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 4,
+          "size": 13779420,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 114517,
+          "vertexCount": 63646
+        },
+        "gltf": {
+          "textureCount": 4,
+          "size": 12315020,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 114517,
+          "vertexCount": 63646
+        },
+        "source": {
+          "textureCount": null,
+          "size": 14084816,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 3111592,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/54bc929a26094b6cb36f977903fbcd97",
+      "uid": "54bc929a26094b6cb36f977903fbcd97",
+      "name": "VR apartment loft interior | baked",
+      "staffpickedAt": null,
+      "viewCount": 37044,
+      "likeCount": 1204,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-54bc929a26094b6cb36f977903fbcd97",
+      "embedUrl": "https://sketchfab.com/models/54bc929a26094b6cb36f977903fbcd97/embed",
+      "commentCount": 12,
+      "isDownloadable": true,
+      "publishedAt": "2022-06-06T16:21:01.698752",
+      "tags": [
+        {
+          "name": "room",
+          "slug": "room",
+          "uri": "https://api.sketchfab.com/v3/tags/room"
+        },
+        {
+          "name": "tea",
+          "slug": "tea",
+          "uri": "https://api.sketchfab.com/v3/tags/tea"
+        },
+        {
+          "name": "sofa",
+          "slug": "sofa",
+          "uri": "https://api.sketchfab.com/v3/tags/sofa"
+        },
+        {
+          "name": "stairs",
+          "slug": "stairs",
+          "uri": "https://api.sketchfab.com/v3/tags/stairs"
+        },
+        {
+          "name": "white",
+          "slug": "white",
+          "uri": "https://api.sketchfab.com/v3/tags/white"
+        },
+        {
+          "name": "loft",
+          "slug": "loft",
+          "uri": "https://api.sketchfab.com/v3/tags/loft"
+        },
+        {
+          "name": "corner",
+          "slug": "corner",
+          "uri": "https://api.sketchfab.com/v3/tags/corner"
+        },
+        {
+          "name": "apartment",
+          "slug": "apartment",
+          "uri": "https://api.sketchfab.com/v3/tags/apartment"
+        },
+        {
+          "name": "morning",
+          "slug": "morning",
+          "uri": "https://api.sketchfab.com/v3/tags/morning"
+        },
+        {
+          "name": "carpet",
+          "slug": "carpet",
+          "uri": "https://api.sketchfab.com/v3/tags/carpet"
+        },
+        {
+          "name": "sunshine",
+          "slug": "sunshine",
+          "uri": "https://api.sketchfab.com/v3/tags/sunshine"
+        },
+        {
+          "name": "afternoon",
+          "slug": "afternoon",
+          "uri": "https://api.sketchfab.com/v3/tags/afternoon"
+        },
+        {
+          "name": "ceilinglamp",
+          "slug": "ceilinglamp",
+          "uri": "https://api.sketchfab.com/v3/tags/ceilinglamp"
+        },
+        {
+          "name": "stair",
+          "slug": "stair",
+          "uri": "https://api.sketchfab.com/v3/tags/stair"
+        },
+        {
+          "name": "staircase",
+          "slug": "staircase",
+          "uri": "https://api.sketchfab.com/v3/tags/staircase"
+        },
+        {
+          "name": "home",
+          "slug": "home",
+          "uri": "https://api.sketchfab.com/v3/tags/home"
+        },
+        {
+          "name": "building",
+          "slug": "building",
+          "uri": "https://api.sketchfab.com/v3/tags/building"
+        },
+        {
+          "name": "interior",
+          "slug": "interior",
+          "uri": "https://api.sketchfab.com/v3/tags/interior"
+        },
+        {
+          "name": "ceilinglights",
+          "slug": "ceilinglights",
+          "uri": "https://api.sketchfab.com/v3/tags/ceilinglights"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        },
+        {
+          "name": "furniture-home"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "8e9cf0ab842e4b24b39f05816a011ff0",
+            "size": 233909,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/54bc929a26094b6cb36f977903fbcd97/thumbnails/3b44d305a1da477ca5758d222a293af6/da6c3122f80c4334bce5e71a4b5b01d7.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "600b20f7d7224319bb8bca56140476d3",
+            "size": 57716,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/54bc929a26094b6cb36f977903fbcd97/thumbnails/3b44d305a1da477ca5758d222a293af6/c20919defd764c89aeb69b750722171b.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "b6702092bd834500b61f0a5d455bca4c",
+            "size": 29971,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/54bc929a26094b6cb36f977903fbcd97/thumbnails/3b44d305a1da477ca5758d222a293af6/8e498c290fa24a4a92bc5558a9d85d00.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "6131a98aa5234179bcc7928a7595da67",
+            "size": 5592,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/54bc929a26094b6cb36f977903fbcd97/thumbnails/3b44d305a1da477ca5758d222a293af6/d1e5bf37c1f74eefac2bcd54da75a49f.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "5883dad6d9f9421d97582ceb15fded6d",
+            "size": 1220,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/54bc929a26094b6cb36f977903fbcd97/thumbnails/3b44d305a1da477ca5758d222a293af6/4e6cb1b95bd444fb98a206c5b158eebe.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "307c775e64e84194a185f08e0c117814",
+        "username": "ida61xq",
+        "displayName": "ChristyHsu",
+        "profileUrl": "https://sketchfab.com/ida61xq",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/ddb8665daf7f4725a340c24c3a8a00ee",
+          "images": [
+            {
+              "size": 1155,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/ddb8665daf7f4725a340c24c3a8a00ee/b453c9078d0d45f8b707e9b461042d97.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1559,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/ddb8665daf7f4725a340c24c3a8a00ee/0a6e0d6a412c4c6fae6047bf6cfaedff.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3106,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/ddb8665daf7f4725a340c24c3a8a00ee/bd48864dcc434834847ffb46e5af212b.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3479,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/ddb8665daf7f4725a340c24c3a8a00ee/ddad34367a4648e3b73abe591d75c558.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/307c775e64e84194a185f08e0c117814"
+      },
+      "description": "Apartment loft room with stairs and french window.\n\n- Scaled in real world dimensions\n- Albedo textures with lighting and shadows baked\n\n\n\n\ud83d\udca1 Tips for lovely downloaders : \nTo give the scene best looking in your project, try apply the albedo textures both to diffuse channel and emissive channel. \n\n\ud83d\udcac Any other issues, just leave message here.",
+      "faceCount": 98327,
+      "createdAt": "2022-06-06T11:23:28.709446",
+      "vertexCount": 49780,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 13,
+          "size": 39180696,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 98246,
+          "vertexCount": 106587
+        },
+        "gltf": {
+          "textureCount": 13,
+          "size": 35126089,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 98246,
+          "vertexCount": 106587
+        },
+        "source": {
+          "textureCount": null,
+          "size": 38553249,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 4246330,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/db8f1c8cba3b464993e216acbf4a69b9",
+      "uid": "db8f1c8cba3b464993e216acbf4a69b9",
+      "name": "Of Planes and Satellites",
+      "staffpickedAt": "2020-04-22T08:13:37.535339",
+      "viewCount": 64966,
+      "likeCount": 1200,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-db8f1c8cba3b464993e216acbf4a69b9",
+      "embedUrl": "https://sketchfab.com/models/db8f1c8cba3b464993e216acbf4a69b9/embed",
+      "commentCount": 30,
+      "isDownloadable": true,
+      "publishedAt": "2020-04-20T11:09:10.758858",
+      "tags": [
+        {
+          "name": "world",
+          "slug": "world",
+          "uri": "https://api.sketchfab.com/v3/tags/world"
+        },
+        {
+          "name": "sky",
+          "slug": "sky",
+          "uri": "https://api.sketchfab.com/v3/tags/sky"
+        },
+        {
+          "name": "planet",
+          "slug": "planet",
+          "uri": "https://api.sketchfab.com/v3/tags/planet"
+        },
+        {
+          "name": "moon",
+          "slug": "moon",
+          "uri": "https://api.sketchfab.com/v3/tags/moon"
+        },
+        {
+          "name": "universe",
+          "slug": "universe",
+          "uri": "https://api.sketchfab.com/v3/tags/universe"
+        },
+        {
+          "name": "nasa",
+          "slug": "nasa",
+          "uri": "https://api.sketchfab.com/v3/tags/nasa"
+        },
+        {
+          "name": "visualization",
+          "slug": "visualization",
+          "uri": "https://api.sketchfab.com/v3/tags/visualization"
+        },
+        {
+          "name": "geology",
+          "slug": "geology",
+          "uri": "https://api.sketchfab.com/v3/tags/geology"
+        },
+        {
+          "name": "earth",
+          "slug": "earth",
+          "uri": "https://api.sketchfab.com/v3/tags/earth"
+        },
+        {
+          "name": "astronomy",
+          "slug": "astronomy",
+          "uri": "https://api.sketchfab.com/v3/tags/astronomy"
+        },
+        {
+          "name": "orbit",
+          "slug": "orbit",
+          "uri": "https://api.sketchfab.com/v3/tags/orbit"
+        },
+        {
+          "name": "natural",
+          "slug": "natural",
+          "uri": "https://api.sketchfab.com/v3/tags/natural"
+        },
+        {
+          "name": "satellite",
+          "slug": "satellite",
+          "uri": "https://api.sketchfab.com/v3/tags/satellite"
+        },
+        {
+          "name": "astrophysics",
+          "slug": "astrophysics",
+          "uri": "https://api.sketchfab.com/v3/tags/astrophysics"
+        },
+        {
+          "name": "sun",
+          "slug": "sun",
+          "uri": "https://api.sketchfab.com/v3/tags/sun"
+        },
+        {
+          "name": "stars",
+          "slug": "stars",
+          "uri": "https://api.sketchfab.com/v3/tags/stars"
+        },
+        {
+          "name": "gps",
+          "slug": "gps",
+          "uri": "https://api.sketchfab.com/v3/tags/gps"
+        },
+        {
+          "name": "data",
+          "slug": "data",
+          "uri": "https://api.sketchfab.com/v3/tags/data"
+        },
+        {
+          "name": "galaxy",
+          "slug": "galaxy",
+          "uri": "https://api.sketchfab.com/v3/tags/galaxy"
+        },
+        {
+          "name": "phone",
+          "slug": "phone",
+          "uri": "https://api.sketchfab.com/v3/tags/phone"
+        },
+        {
+          "name": "science",
+          "slug": "science",
+          "uri": "https://api.sketchfab.com/v3/tags/science"
+        },
+        {
+          "name": "station",
+          "slug": "station",
+          "uri": "https://api.sketchfab.com/v3/tags/station"
+        },
+        {
+          "name": "sciences",
+          "slug": "sciences",
+          "uri": "https://api.sketchfab.com/v3/tags/sciences"
+        },
+        {
+          "name": "scientific",
+          "slug": "scientific",
+          "uri": "https://api.sketchfab.com/v3/tags/scientific"
+        },
+        {
+          "name": "weather",
+          "slug": "weather",
+          "uri": "https://api.sketchfab.com/v3/tags/weather"
+        },
+        {
+          "name": "geophysics",
+          "slug": "geophysics",
+          "uri": "https://api.sketchfab.com/v3/tags/geophysics"
+        },
+        {
+          "name": "bladerunner",
+          "slug": "bladerunner",
+          "uri": "https://api.sketchfab.com/v3/tags/bladerunner"
+        },
+        {
+          "name": "dataviz",
+          "slug": "dataviz",
+          "uri": "https://api.sketchfab.com/v3/tags/dataviz"
+        },
+        {
+          "name": "constellation",
+          "slug": "constellation",
+          "uri": "https://api.sketchfab.com/v3/tags/constellation"
+        },
+        {
+          "name": "oceanography",
+          "slug": "oceanography",
+          "uri": "https://api.sketchfab.com/v3/tags/oceanography"
+        },
+        {
+          "name": "observation",
+          "slug": "observation",
+          "uri": "https://api.sketchfab.com/v3/tags/observation"
+        },
+        {
+          "name": "meteorology",
+          "slug": "meteorology",
+          "uri": "https://api.sketchfab.com/v3/tags/meteorology"
+        },
+        {
+          "name": "dataisbeautiful",
+          "slug": "dataisbeautiful",
+          "uri": "https://api.sketchfab.com/v3/tags/dataisbeautiful"
+        },
+        {
+          "name": "international-space-station",
+          "slug": "international-space-station",
+          "uri": "https://api.sketchfab.com/v3/tags/international-space-station"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "scifi",
+          "slug": "scifi",
+          "uri": "https://api.sketchfab.com/v3/tags/scifi"
+        },
+        {
+          "name": "plane",
+          "slug": "plane",
+          "uri": "https://api.sketchfab.com/v3/tags/plane"
+        },
+        {
+          "name": "ship",
+          "slug": "ship",
+          "uri": "https://api.sketchfab.com/v3/tags/ship"
+        },
+        {
+          "name": "free",
+          "slug": "free",
+          "uri": "https://api.sketchfab.com/v3/tags/free"
+        },
+        {
+          "name": "download",
+          "slug": "download",
+          "uri": "https://api.sketchfab.com/v3/tags/download"
+        },
+        {
+          "name": "space",
+          "slug": "space",
+          "uri": "https://api.sketchfab.com/v3/tags/space"
+        },
+        {
+          "name": "nebulae",
+          "slug": "nebulae",
+          "uri": "https://api.sketchfab.com/v3/tags/nebulae"
+        }
+      ],
+      "categories": [
+        {
+          "name": "art-abstract"
+        },
+        {
+          "name": "science-technology"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "17f34bfdae3a4856ae750b47602a87fc",
+            "size": 461242,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/db8f1c8cba3b464993e216acbf4a69b9/thumbnails/4053b6c643f849a8a18f04864ff600e8/9c6139c38f774bd6896bca96a0d659e7.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "bc5e186ae62c412a8a669708361308e4",
+            "size": 146251,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/db8f1c8cba3b464993e216acbf4a69b9/thumbnails/4053b6c643f849a8a18f04864ff600e8/aa68d2c51a0b4fe0a4f5cfb3a38ad351.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "134acc4d23f24f7bb4e730bb07dfbb98",
+            "size": 76990,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/db8f1c8cba3b464993e216acbf4a69b9/thumbnails/4053b6c643f849a8a18f04864ff600e8/2861980889694d23b54f5680b44f2ed0.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "8b720505cff344d0ab360acd50762cae",
+            "size": 10767,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/db8f1c8cba3b464993e216acbf4a69b9/thumbnails/4053b6c643f849a8a18f04864ff600e8/e6fe4c5e76b043a2ae9e28aba8f755e3.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "f7d517985ed14c7693e03ab87b1cc95b",
+            "size": 1216,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/db8f1c8cba3b464993e216acbf4a69b9/thumbnails/4053b6c643f849a8a18f04864ff600e8/e716d5aebcb84954890b89094341d2b6.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "afdb2465d5ae4ccea62dc99346b9db56",
+        "username": "norgeotloic",
+        "displayName": "Lo\u00efc Norgeot",
+        "profileUrl": "https://sketchfab.com/norgeotloic",
+        "account": "ent",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/73a5e36c5f0c4a01a03246a419615f74",
+          "images": [
+            {
+              "size": 2020,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/73a5e36c5f0c4a01a03246a419615f74/7638e10abbc84d69b74fe6d7d4995191.png",
+              "height": 32
+            },
+            {
+              "size": 3803,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/73a5e36c5f0c4a01a03246a419615f74/9f72fab4b197435faea0e9ceede43cc4.png",
+              "height": 48
+            },
+            {
+              "size": 10593,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/73a5e36c5f0c4a01a03246a419615f74/26f14036b5964ebca1d24fcb0b0660a7.png",
+              "height": 90
+            },
+            {
+              "size": 12549,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/73a5e36c5f0c4a01a03246a419615f74/0f52c8be4007455ab87dbe513fe0441e.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/afdb2465d5ae4ccea62dc99346b9db56"
+      },
+      "description": "2200 satellites orbits and 67000 flight routes visualized in 3D \ud83d\udef0\ufe0f\u2708\ufe0f !\n\n### Info\n\n* Orbits are correctly scaled.\n* Maximum airplanes altitude is overly exaggerated (by a factor of ~300).\n* I'd advice you to visit the [Europen Space Agency (ESA) website](https://www.esa.int/Enabling_Support/Space_Transportation/Types_of_orbits) to understand the different types of orbits, and learn why the ISS orbits around Earth in ~1h40 or why your satellite dish needs to be precisely calibrated.\n\n### Orbits categories\n\n* Dark blue: Communications\n* Light blue: Earth Observation (optical, radar, meteo...)\n* Red/Orange: Positioning systems (GPS, Galileo, BeiDou...)\n* Green: R&D and Space science\n\n### Resources\n\n* Orbits: https://www.ucsusa.org/resources/satellite-database\n* Airports and routes: https://github.com/jpatokal/openflights/\n* Landmask/borders: http://www.shadedrelief.com/natural3/pages/extra.html\n\n<br>\n\n**Note:** Randomizing orbits Z-rotation (more realistic) looks like:\n\n![](https://i.imgur.com/KSQTqVK.jpg)",
+      "faceCount": 3968,
+      "createdAt": "2020-04-19T22:43:06.634061",
+      "vertexCount": 219509,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 2,
+          "size": 7717344,
+          "type": "glb",
+          "textureMaxResolution": 8192,
+          "faceCount": 3968,
+          "vertexCount": 233664
+        },
+        "gltf": {
+          "textureCount": 2,
+          "size": 5622342,
+          "type": "gltf",
+          "textureMaxResolution": 8192,
+          "faceCount": 3968,
+          "vertexCount": 233664
+        },
+        "gltf-ar": {
+          "textureCount": null,
+          "size": 10942,
+          "type": "gltf-ar",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "source": {
+          "textureCount": null,
+          "size": 10185288,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 879604,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/db4b209e9e664048981cdcd315e61c4e",
+      "uid": "db4b209e9e664048981cdcd315e61c4e",
+      "name": "Wooden Stairs_8_MB",
+      "staffpickedAt": null,
+      "viewCount": 19789,
+      "likeCount": 1066,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-db4b209e9e664048981cdcd315e61c4e",
+      "embedUrl": "https://sketchfab.com/models/db4b209e9e664048981cdcd315e61c4e/embed",
+      "commentCount": 8,
+      "isDownloadable": true,
+      "publishedAt": "2025-02-08T02:30:30.468181",
+      "tags": [
+        {
+          "name": "wooden",
+          "slug": "wooden",
+          "uri": "https://api.sketchfab.com/v3/tags/wooden"
+        },
+        {
+          "name": "stairs",
+          "slug": "stairs",
+          "uri": "https://api.sketchfab.com/v3/tags/stairs"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        },
+        {
+          "name": "art-abstract"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "b78e067c95da4b02a6349f6e6990dcf9",
+            "size": 292049,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/db4b209e9e664048981cdcd315e61c4e/thumbnails/29abea891ec44e369d7c5c6025a88508/fd1970b72ad14b38b959e06c1cbee373.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "abb6fb5cc3bc4e72a0fa6259d17009df",
+            "size": 81392,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/db4b209e9e664048981cdcd315e61c4e/thumbnails/29abea891ec44e369d7c5c6025a88508/ae16dbbd2b104927befcf18fdffa353c.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "cbb5cd319a9c48af8d8357f6e730a933",
+            "size": 44611,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/db4b209e9e664048981cdcd315e61c4e/thumbnails/29abea891ec44e369d7c5c6025a88508/c86a63f11711467185fc88a49fec54b4.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "953d437e9f294d7789ad702e35f00f5a",
+            "size": 7572,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/db4b209e9e664048981cdcd315e61c4e/thumbnails/29abea891ec44e369d7c5c6025a88508/97270a557f6a4404a5eaf1de5a340077.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "02243cd67a2244f4bd9770d8a712e701",
+            "size": 1327,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/db4b209e9e664048981cdcd315e61c4e/thumbnails/29abea891ec44e369d7c5c6025a88508/69294c29985c42f691aaebc642bd8355.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "73d81967384b423cb9b298dc4612e70c",
+        "username": "ahmagh2e",
+        "displayName": "Mehdi Shahsavan",
+        "profileUrl": "https://sketchfab.com/ahmagh2e",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/1f63228711004b4498ad9e7292c7cc71",
+          "images": [
+            {
+              "size": 1108,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/1f63228711004b4498ad9e7292c7cc71/6bf3a9c090d84477a9d3725355c7f283.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1619,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/1f63228711004b4498ad9e7292c7cc71/54fa5a05dc1d4f0e8cefda27f5d44143.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3548,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/1f63228711004b4498ad9e7292c7cc71/498a9e4122fb4aa4ad728de683a173c3.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4072,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/1f63228711004b4498ad9e7292c7cc71/3e02fbd46916489294eb60ffe1df7994.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/73d81967384b423cb9b298dc4612e70c"
+      },
+      "description": "Wooden \nStairs",
+      "faceCount": 180298,
+      "createdAt": "2025-02-08T02:27:43.143819",
+      "vertexCount": 98345,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 2,
+          "size": 9534448,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 180192,
+          "vertexCount": 111762
+        },
+        "gltf": {
+          "textureCount": 2,
+          "size": 6391126,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 180192,
+          "vertexCount": 111762
+        },
+        "source": {
+          "textureCount": null,
+          "size": 9024176,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 5206883,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/cb18e0e7f2f84970b6410a1510fcc722",
+      "uid": "cb18e0e7f2f84970b6410a1510fcc722",
+      "name": "Horror Corridor VR room [Baked]",
+      "staffpickedAt": null,
+      "viewCount": 48258,
+      "likeCount": 1034,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-cb18e0e7f2f84970b6410a1510fcc722",
+      "embedUrl": "https://sketchfab.com/models/cb18e0e7f2f84970b6410a1510fcc722/embed",
+      "commentCount": 19,
+      "isDownloadable": true,
+      "publishedAt": "2026-02-09T20:33:36.930238",
+      "tags": [
+        {
+          "name": "room",
+          "slug": "room",
+          "uri": "https://api.sketchfab.com/v3/tags/room"
+        },
+        {
+          "name": "stairs",
+          "slug": "stairs",
+          "uri": "https://api.sketchfab.com/v3/tags/stairs"
+        },
+        {
+          "name": "japan",
+          "slug": "japan",
+          "uri": "https://api.sketchfab.com/v3/tags/japan"
+        },
+        {
+          "name": "sexy",
+          "slug": "sexy",
+          "uri": "https://api.sketchfab.com/v3/tags/sexy"
+        },
+        {
+          "name": "standard",
+          "slug": "standard",
+          "uri": "https://api.sketchfab.com/v3/tags/standard"
+        },
+        {
+          "name": "photorealistic",
+          "slug": "photorealistic",
+          "uri": "https://api.sketchfab.com/v3/tags/photorealistic"
+        },
+        {
+          "name": "beauty",
+          "slug": "beauty",
+          "uri": "https://api.sketchfab.com/v3/tags/beauty"
+        },
+        {
+          "name": "unreal",
+          "slug": "unreal",
+          "uri": "https://api.sketchfab.com/v3/tags/unreal"
+        },
+        {
+          "name": "creepy",
+          "slug": "creepy",
+          "uri": "https://api.sketchfab.com/v3/tags/creepy"
+        },
+        {
+          "name": "cyberpunk",
+          "slug": "cyberpunk",
+          "uri": "https://api.sketchfab.com/v3/tags/cyberpunk"
+        },
+        {
+          "name": "arch",
+          "slug": "arch",
+          "uri": "https://api.sketchfab.com/v3/tags/arch"
+        },
+        {
+          "name": "baked",
+          "slug": "baked",
+          "uri": "https://api.sketchfab.com/v3/tags/baked"
+        },
+        {
+          "name": "vr",
+          "slug": "vr",
+          "uri": "https://api.sketchfab.com/v3/tags/vr"
+        },
+        {
+          "name": "best",
+          "slug": "best",
+          "uri": "https://api.sketchfab.com/v3/tags/best"
+        },
+        {
+          "name": "tokyo",
+          "slug": "tokyo",
+          "uri": "https://api.sketchfab.com/v3/tags/tokyo"
+        },
+        {
+          "name": "beautiful",
+          "slug": "beautiful",
+          "uri": "https://api.sketchfab.com/v3/tags/beautiful"
+        },
+        {
+          "name": "realism",
+          "slug": "realism",
+          "uri": "https://api.sketchfab.com/v3/tags/realism"
+        },
+        {
+          "name": "roblox",
+          "slug": "roblox",
+          "uri": "https://api.sketchfab.com/v3/tags/roblox"
+        },
+        {
+          "name": "asset",
+          "slug": "asset",
+          "uri": "https://api.sketchfab.com/v3/tags/asset"
+        },
+        {
+          "name": "game",
+          "slug": "game",
+          "uri": "https://api.sketchfab.com/v3/tags/game"
+        },
+        {
+          "name": "3d",
+          "slug": "3d",
+          "uri": "https://api.sketchfab.com/v3/tags/3d"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "pbr",
+          "slug": "pbr",
+          "uri": "https://api.sketchfab.com/v3/tags/pbr"
+        },
+        {
+          "name": "free",
+          "slug": "free",
+          "uri": "https://api.sketchfab.com/v3/tags/free"
+        },
+        {
+          "name": "ghost",
+          "slug": "ghost",
+          "uri": "https://api.sketchfab.com/v3/tags/ghost"
+        },
+        {
+          "name": "modular",
+          "slug": "modular",
+          "uri": "https://api.sketchfab.com/v3/tags/modular"
+        },
+        {
+          "name": "download",
+          "slug": "download",
+          "uri": "https://api.sketchfab.com/v3/tags/download"
+        },
+        {
+          "name": "light",
+          "slug": "light",
+          "uri": "https://api.sketchfab.com/v3/tags/light"
+        },
+        {
+          "name": "door",
+          "slug": "door",
+          "uri": "https://api.sketchfab.com/v3/tags/door"
+        },
+        {
+          "name": "temple",
+          "slug": "temple",
+          "uri": "https://api.sketchfab.com/v3/tags/temple"
+        },
+        {
+          "name": "noai",
+          "slug": "noai",
+          "uri": "https://api.sketchfab.com/v3/tags/noai"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        },
+        {
+          "name": "characters-creatures"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "6a7c1882ee8a4e06907fd27aca7aaaa4",
+            "size": 379398,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/cb18e0e7f2f84970b6410a1510fcc722/thumbnails/d3fce63bd9414d71bb76baad5f67ff5e/b493d01feaf9443bb1997e4a8eedc56f.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "2957ea2bed004296a4c45a45455da3e8",
+            "size": 79133,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/cb18e0e7f2f84970b6410a1510fcc722/thumbnails/d3fce63bd9414d71bb76baad5f67ff5e/675ad713989544f39e489f18c5d492a5.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "23faeb8ca2204b84a81ad68a89d690a2",
+            "size": 41071,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/cb18e0e7f2f84970b6410a1510fcc722/thumbnails/d3fce63bd9414d71bb76baad5f67ff5e/d71297c5217a4f8da3dc87d663026e79.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "171e4688aef249cdae92317120721a4b",
+            "size": 6834,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/cb18e0e7f2f84970b6410a1510fcc722/thumbnails/d3fce63bd9414d71bb76baad5f67ff5e/dfaf16b8f7c94364b58b83201343d17c.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "0512f56452ed4e26b79dfa39567fd014",
+            "size": 1305,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/cb18e0e7f2f84970b6410a1510fcc722/thumbnails/d3fce63bd9414d71bb76baad5f67ff5e/1830bde28ea945ec8a6e6914cbca9290.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "d801da361d284a679d2444e29f84ef24",
+        "username": "abhayexe",
+        "displayName": "abhayexe",
+        "profileUrl": "https://sketchfab.com/abhayexe",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/ad4d4c5b2b7a4e5ab9f0648a830d635a",
+          "images": [
+            {
+              "size": 1075,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/ad4d4c5b2b7a4e5ab9f0648a830d635a/6f29bd72fed74be99c990d5635999538.png",
+              "height": 32
+            },
+            {
+              "size": 2137,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/ad4d4c5b2b7a4e5ab9f0648a830d635a/9d6bd144e63c49e1903c44bf8a7bdc25.png",
+              "height": 48
+            },
+            {
+              "size": 4959,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/ad4d4c5b2b7a4e5ab9f0648a830d635a/629c1ca78d5d4acdbf0c75592570e14e.png",
+              "height": 90
+            },
+            {
+              "size": 5672,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/ad4d4c5b2b7a4e5ab9f0648a830d635a/95698209c6be4004bc1afec2ec8218e0.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/d801da361d284a679d2444e29f84ef24"
+      },
+      "description": "inspiration from [pintrest](https://kr.pinterest.com/pin/737886720243549886/) : ![](https://i.pinimg.com/1200x/e8/28/07/e82807fa251ed52eba398b0a8202e549.jpg)\n\nmade in blender by me. Used smart node based materials that i made myself in blender.\n\nTextured, modelled and baked in blender by me. No AI is used here Gameready Realistic 4K textures baked and LowPoly Substance Painter not used \u274c Blender only\u2714\ufe0f\n\nYou are free to use my work in any of your works (games, videos anything) without credits but you can let me know your works in the comments just because I like to see them.\n\n4096x4096 4k PBR maps.\n\ngameready \u2714\ufe0f realistic \u2714\ufe0f photoreal \u2714\ufe0f pbr \u2714\ufe0f unrealengine \u2714\ufe0f unity \u2714\ufe0f nanite-ready \u2714\ufe0f high-detail \u2714\ufe0f optimized-mesh \u2714\ufe0f environment-asset \u2714\ufe0f urban \u2714\ufe0f cityscape \u2714\ufe0f asian-architecture \u2714\ufe0f modular \u2714\ufe0f nextgen \u2714\ufe0f cinematic \u2714\ufe0f archviz \u2714\ufe0f open-world \u2714\ufe0f street-scene \u2714\ufe0f AAA-quality \u2714\ufe0f nextgen-assets \u2714\ufe0f nextgen-environment \u2714\ufe0f realworld-scale \u2714\ufe0f accurate-proportions \u2714\ufe0f physically-based \u2714\ufe0f high-fidelity \u2714\ufe0f film-quality \u2714\ufe0f cinem",
+      "faceCount": 3747,
+      "createdAt": "2026-02-09T20:22:05.443864",
+      "vertexCount": 2000,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 13342412,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 3743,
+          "vertexCount": 4150
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 13198398,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 3743,
+          "vertexCount": 4150
+        },
+        "source": {
+          "textureCount": null,
+          "size": 33051071,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 1794504,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "72eb2b1960364637901eacce19283624",
+        "label": "Free Standard"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/6dbba4d7a6454a2680ca37925d883b9d",
+      "uid": "6dbba4d7a6454a2680ca37925d883b9d",
+      "name": "The City within the Stars",
+      "staffpickedAt": "2017-12-06T21:50:34.095284",
+      "viewCount": 82373,
+      "likeCount": 1011,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-6dbba4d7a6454a2680ca37925d883b9d",
+      "embedUrl": "https://sketchfab.com/models/6dbba4d7a6454a2680ca37925d883b9d/embed",
+      "commentCount": 16,
+      "isDownloadable": true,
+      "publishedAt": "2017-12-03T18:56:13.653323",
+      "tags": [
+        {
+          "name": "voxelscificity",
+          "slug": "voxelscificity",
+          "uri": "https://api.sketchfab.com/v3/tags/voxelscificity"
+        },
+        {
+          "name": "sci-fi",
+          "slug": "sci-fi",
+          "uri": "https://api.sketchfab.com/v3/tags/sci-fi"
+        },
+        {
+          "name": "city",
+          "slug": "city",
+          "uri": "https://api.sketchfab.com/v3/tags/city"
+        },
+        {
+          "name": "voxelart",
+          "slug": "voxelart",
+          "uri": "https://api.sketchfab.com/v3/tags/voxelart"
+        },
+        {
+          "name": "magicavoxel",
+          "slug": "magicavoxel",
+          "uri": "https://api.sketchfab.com/v3/tags/magicavoxel"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "ed8f0713b8bf48679a6d69595c81089b",
+            "size": 180113,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/6dbba4d7a6454a2680ca37925d883b9d/thumbnails/7a764d5004b14a1ebda59b3d92cc4abb/8ee7de0a2f7a47ba95aa2580b460ab32.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "16ccc8a448c74822be3fa8c0c282296d",
+            "size": 49317,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/6dbba4d7a6454a2680ca37925d883b9d/thumbnails/7a764d5004b14a1ebda59b3d92cc4abb/68e9fbcc094e4b7994eab1a282696ba8.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "c57bf4afab044607b694aed8aa9feb9f",
+            "size": 25982,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/6dbba4d7a6454a2680ca37925d883b9d/thumbnails/7a764d5004b14a1ebda59b3d92cc4abb/049bb90c793649bdbcb990ec3095b9d4.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "0e55dbe5f8c2458589b66e3cde53e13a",
+            "size": 4154,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/6dbba4d7a6454a2680ca37925d883b9d/thumbnails/7a764d5004b14a1ebda59b3d92cc4abb/0fce0e50f5ac4171a74eb98cd211fc80.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "e15738d18b0e409c9df78115cfed97cc",
+            "size": 676,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/6dbba4d7a6454a2680ca37925d883b9d/thumbnails/7a764d5004b14a1ebda59b3d92cc4abb/5109c467a36449b080e57a2597031c9e.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "047b74838c754efb939b833857f6393e",
+        "username": "Augustin.Cagnat",
+        "displayName": "Augustin.Cagnat",
+        "profileUrl": "https://sketchfab.com/Augustin.Cagnat",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/7784c32c63404b958af13e38c76b491b",
+          "images": [
+            {
+              "size": 657,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/7784c32c63404b958af13e38c76b491b/49bade043fba43039d04f4216667939a.jpeg",
+              "height": 32
+            },
+            {
+              "size": 930,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/7784c32c63404b958af13e38c76b491b/0992fe304ce842b981d6600c1f66b3aa.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2063,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/7784c32c63404b958af13e38c76b491b/8e5012f4091441c0be5eff01c34de783.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2297,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/7784c32c63404b958af13e38c76b491b/67a4aa5d09e542b4a551bcf1d1ccc3e7.jpeg",
+              "height": 100
+            },
+            {
+              "size": 657,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/7784c32c63404b958af13e38c76b491b/61131f03475847b190f198c30b1ca5c1.jpeg",
+              "height": 32
+            },
+            {
+              "size": 930,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/7784c32c63404b958af13e38c76b491b/e3d97fd7d9844aea82b52a3122001693.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2063,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/7784c32c63404b958af13e38c76b491b/b166ff77eec54bfe86678163bb0da4b3.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2297,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/7784c32c63404b958af13e38c76b491b/873d042f97634b9dafb9b94c232c0f1b.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/047b74838c754efb939b833857f6393e"
+      },
+      "description": "Cubica, is the last city of the ancient civilation of Jot\u00fcun. This city can lives forever, unless it is found by the terrible Pomeans...",
+      "faceCount": 2125654,
+      "createdAt": "2017-12-03T18:21:10.329055",
+      "vertexCount": 1044256,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 2,
+          "size": 130119636,
+          "type": "glb",
+          "textureMaxResolution": 256,
+          "faceCount": 2125654,
+          "vertexCount": 3267113
+        },
+        "gltf": {
+          "textureCount": 2,
+          "size": 14499289,
+          "type": "gltf",
+          "textureMaxResolution": 256,
+          "faceCount": 2125654,
+          "vertexCount": 3267113
+        },
+        "source": {
+          "textureCount": null,
+          "size": 38838359,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 8164671,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/9927d85ef1364c55abc4f218e2951d7d",
+      "uid": "9927d85ef1364c55abc4f218e2951d7d",
+      "name": "Modular interior medieval building games Updated",
+      "staffpickedAt": null,
+      "viewCount": 38611,
+      "likeCount": 978,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-9927d85ef1364c55abc4f218e2951d7d",
+      "embedUrl": "https://sketchfab.com/models/9927d85ef1364c55abc4f218e2951d7d/embed",
+      "commentCount": 17,
+      "isDownloadable": true,
+      "publishedAt": "2020-02-02T05:03:49.351968",
+      "tags": [
+        {
+          "name": "stairs",
+          "slug": "stairs",
+          "uri": "https://api.sketchfab.com/v3/tags/stairs"
+        },
+        {
+          "name": "games",
+          "slug": "games",
+          "uri": "https://api.sketchfab.com/v3/tags/games"
+        },
+        {
+          "name": "videogames",
+          "slug": "videogames",
+          "uri": "https://api.sketchfab.com/v3/tags/videogames"
+        },
+        {
+          "name": "brick",
+          "slug": "brick",
+          "uri": "https://api.sketchfab.com/v3/tags/brick"
+        },
+        {
+          "name": "ceiling",
+          "slug": "ceiling",
+          "uri": "https://api.sketchfab.com/v3/tags/ceiling"
+        },
+        {
+          "name": "4x4",
+          "slug": "4x4",
+          "uri": "https://api.sketchfab.com/v3/tags/4x4"
+        },
+        {
+          "name": "medieval",
+          "slug": "medieval",
+          "uri": "https://api.sketchfab.com/v3/tags/medieval"
+        },
+        {
+          "name": "column",
+          "slug": "column",
+          "uri": "https://api.sketchfab.com/v3/tags/column"
+        },
+        {
+          "name": "rustic",
+          "slug": "rustic",
+          "uri": "https://api.sketchfab.com/v3/tags/rustic"
+        },
+        {
+          "name": "tavern",
+          "slug": "tavern",
+          "uri": "https://api.sketchfab.com/v3/tags/tavern"
+        },
+        {
+          "name": "bricks",
+          "slug": "bricks",
+          "uri": "https://api.sketchfab.com/v3/tags/bricks"
+        },
+        {
+          "name": "window",
+          "slug": "window",
+          "uri": "https://api.sketchfab.com/v3/tags/window"
+        },
+        {
+          "name": "arc",
+          "slug": "arc",
+          "uri": "https://api.sketchfab.com/v3/tags/arc"
+        },
+        {
+          "name": "4k",
+          "slug": "4k",
+          "uri": "https://api.sketchfab.com/v3/tags/4k"
+        },
+        {
+          "name": "stones",
+          "slug": "stones",
+          "uri": "https://api.sketchfab.com/v3/tags/stones"
+        },
+        {
+          "name": "arcs",
+          "slug": "arcs",
+          "uri": "https://api.sketchfab.com/v3/tags/arcs"
+        },
+        {
+          "name": "game",
+          "slug": "game",
+          "uri": "https://api.sketchfab.com/v3/tags/game"
+        },
+        {
+          "name": "3d",
+          "slug": "3d",
+          "uri": "https://api.sketchfab.com/v3/tags/3d"
+        },
+        {
+          "name": "3dsmax",
+          "slug": "3dsmax",
+          "uri": "https://api.sketchfab.com/v3/tags/3dsmax"
+        },
+        {
+          "name": "stone",
+          "slug": "stone",
+          "uri": "https://api.sketchfab.com/v3/tags/stone"
+        },
+        {
+          "name": "house",
+          "slug": "house",
+          "uri": "https://api.sketchfab.com/v3/tags/house"
+        },
+        {
+          "name": "wood",
+          "slug": "wood",
+          "uri": "https://api.sketchfab.com/v3/tags/wood"
+        },
+        {
+          "name": "interior",
+          "slug": "interior",
+          "uri": "https://api.sketchfab.com/v3/tags/interior"
+        },
+        {
+          "name": "modular",
+          "slug": "modular",
+          "uri": "https://api.sketchfab.com/v3/tags/modular"
+        },
+        {
+          "name": "door",
+          "slug": "door",
+          "uri": "https://api.sketchfab.com/v3/tags/door"
+        },
+        {
+          "name": "spiralstair",
+          "slug": "spiralstair",
+          "uri": "https://api.sketchfab.com/v3/tags/spiralstair"
+        },
+        {
+          "name": "spiralstairs",
+          "slug": "spiralstairs",
+          "uri": "https://api.sketchfab.com/v3/tags/spiralstairs"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        },
+        {
+          "name": "furniture-home"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "29457b2da2474e51b3f27d827d9d238b",
+            "size": 93393,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/9927d85ef1364c55abc4f218e2951d7d/thumbnails/a699d0c05da34b2cab0997cc5796fab7/d1e961d1979849639c5629051024fead.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "8682f09374374bb79acd363709f0c21d",
+            "size": 31098,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/9927d85ef1364c55abc4f218e2951d7d/thumbnails/a699d0c05da34b2cab0997cc5796fab7/9140e415741b46f59a9943e30b1baa8b.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "8694f817339b4f5981058ac55acce9c0",
+            "size": 17835,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/9927d85ef1364c55abc4f218e2951d7d/thumbnails/a699d0c05da34b2cab0997cc5796fab7/d3f3e4b2fd8841518435b88d3287254a.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "bff75432cf414d51b01b1be5a951ce56",
+            "size": 3564,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/9927d85ef1364c55abc4f218e2951d7d/thumbnails/a699d0c05da34b2cab0997cc5796fab7/15925f1e2d394fe9b8052d590c1f9bee.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "81d7f5d95ec44bfb9a0d8b4e445e0449",
+            "size": 655,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/9927d85ef1364c55abc4f218e2951d7d/thumbnails/a699d0c05da34b2cab0997cc5796fab7/f6368e9b1c8442939b03730846fe37cb.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "f522a5da286f4f0abcec844f1efcc9ad",
+        "username": "yenikholic",
+        "displayName": "Yenikholic",
+        "profileUrl": "https://sketchfab.com/yenikholic",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/2a96be3765a541ab889520118f74f388",
+          "images": [
+            {
+              "size": 823,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/2a96be3765a541ab889520118f74f388/11e72dbff13c4426979fe1f6b46ecccd.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1267,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/2a96be3765a541ab889520118f74f388/2035fbabdd3041d49e1048896ec92fc6.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3050,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/2a96be3765a541ab889520118f74f388/f50e3e7d0bea4eb2a001eedf38649af2.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3486,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/2a96be3765a541ab889520118f74f388/827c6d4d9c224c99a36e4a2d828c505c.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/f522a5da286f4f0abcec844f1efcc9ad"
+      },
+      "description": "Stone and wood Modules of 4x4x5 to build the inside of houses, to create a big interior environment, just starting right now with walls, floor, ceiling, doors, windows, arcs and stairs and also a column and some wooden decoration",
+      "faceCount": 32991,
+      "createdAt": "2020-02-02T00:23:55.847565",
+      "vertexCount": 18756,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 47,
+          "size": 812828356,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 32991,
+          "vertexCount": 39943
+        },
+        "gltf": {
+          "textureCount": 47,
+          "size": 810066325,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 32991,
+          "vertexCount": 39943
+        },
+        "source": {
+          "textureCount": null,
+          "size": 649914546,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 7920199,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "bbfe3f7dbcdd4122b966b85b9786a989",
+        "label": "CC Attribution-NonCommercial"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/bd3ac97071104b64bc388a155b64f79e",
+      "uid": "bd3ac97071104b64bc388a155b64f79e",
+      "name": "Large Industrial Storage Tanks",
+      "staffpickedAt": null,
+      "viewCount": 23700,
+      "likeCount": 952,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-bd3ac97071104b64bc388a155b64f79e",
+      "embedUrl": "https://sketchfab.com/models/bd3ac97071104b64bc388a155b64f79e/embed",
+      "commentCount": 15,
+      "isDownloadable": true,
+      "publishedAt": "2019-04-09T20:08:17.679105",
+      "tags": [
+        {
+          "name": "gas",
+          "slug": "gas",
+          "uri": "https://api.sketchfab.com/v3/tags/gas"
+        },
+        {
+          "name": "oil",
+          "slug": "oil",
+          "uri": "https://api.sketchfab.com/v3/tags/oil"
+        },
+        {
+          "name": "tanks",
+          "slug": "tanks",
+          "uri": "https://api.sketchfab.com/v3/tags/tanks"
+        },
+        {
+          "name": "pipes",
+          "slug": "pipes",
+          "uri": "https://api.sketchfab.com/v3/tags/pipes"
+        },
+        {
+          "name": "large",
+          "slug": "large",
+          "uri": "https://api.sketchfab.com/v3/tags/large"
+        },
+        {
+          "name": "industrial",
+          "slug": "industrial",
+          "uri": "https://api.sketchfab.com/v3/tags/industrial"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        },
+        {
+          "name": "electronics-gadgets"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "b3192e760bf04803942759c54e8c52b7",
+            "size": 973,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/bd3ac97071104b64bc388a155b64f79e/thumbnails/2c1a6e79f40345068a4eb4a2383f9ad5/e97430c459534321a472af47f42216d0.jpeg",
+            "height": 36
+          },
+          {
+            "uid": "ea14176f286d475abad2ce32da3e0374",
+            "size": 310509,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/bd3ac97071104b64bc388a155b64f79e/thumbnails/2c1a6e79f40345068a4eb4a2383f9ad5/2b5c1d88c2cd4f5290d6d65603eeed31.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "22949d62bcc44375b98e5e7ffebd75bc",
+            "size": 73442,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/bd3ac97071104b64bc388a155b64f79e/thumbnails/2c1a6e79f40345068a4eb4a2383f9ad5/e5f1b198150e4a50844d6ee5075cd2e3.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "f6ce52cfaf4c491eba1cfc70e547a7ce",
+            "size": 38705,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/bd3ac97071104b64bc388a155b64f79e/thumbnails/2c1a6e79f40345068a4eb4a2383f9ad5/90bf0e87874748389b881e8bfb4740e0.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "7e694cf34125480a95eeb6165d39d40d",
+            "size": 6316,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/bd3ac97071104b64bc388a155b64f79e/thumbnails/2c1a6e79f40345068a4eb4a2383f9ad5/8add1c1c4f3341dab1127e1477056573.jpeg",
+            "height": 144
+          }
+        ]
+      },
+      "user": {
+        "uid": "ff89ca01d0fe4f7c82cf06dbdd5f28a4",
+        "username": "duanesmind",
+        "displayName": "Duane's Mind",
+        "profileUrl": "https://sketchfab.com/duanesmind",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/ce77e4ff234f4ccabb228653dfbd2483",
+          "images": [
+            {
+              "size": 1871,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/ce77e4ff234f4ccabb228653dfbd2483/47aa88e7f69240d8ad738ba177955a24.png",
+              "height": 32
+            },
+            {
+              "size": 3551,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/ce77e4ff234f4ccabb228653dfbd2483/30ab6b74525a4137806e6c758f80fcfa.png",
+              "height": 48
+            },
+            {
+              "size": 10029,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/ce77e4ff234f4ccabb228653dfbd2483/f89ea78d28cc42fcb608bca2502a2fdf.png",
+              "height": 90
+            },
+            {
+              "size": 12093,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/ce77e4ff234f4ccabb228653dfbd2483/30357e7b02be4a6d84604435880c416c.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/ff89ca01d0fe4f7c82cf06dbdd5f28a4"
+      },
+      "description": "The pipes, staires and tanks are all seperate objects, You can duplicate and customize the scene to your needs.",
+      "faceCount": 9811,
+      "createdAt": "2019-04-09T19:58:47.542892",
+      "vertexCount": 6444,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 8,
+          "size": 11287292,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 9811,
+          "vertexCount": 9520
+        },
+        "gltf": {
+          "textureCount": 8,
+          "size": 10780763,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 9811,
+          "vertexCount": 9520
+        },
+        "source": {
+          "textureCount": null,
+          "size": 39698086,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 3108696,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/a419edddce534968937313dcff8429e7",
+      "uid": "a419edddce534968937313dcff8429e7",
+      "name": "Stairs & Railings",
+      "staffpickedAt": null,
+      "viewCount": 31633,
+      "likeCount": 935,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-a419edddce534968937313dcff8429e7",
+      "embedUrl": "https://sketchfab.com/models/a419edddce534968937313dcff8429e7/embed",
+      "commentCount": 17,
+      "isDownloadable": true,
+      "publishedAt": "2023-04-17T14:08:27.744059",
+      "tags": [
+        {
+          "name": "stairs",
+          "slug": "stairs",
+          "uri": "https://api.sketchfab.com/v3/tags/stairs"
+        },
+        {
+          "name": "london",
+          "slug": "london",
+          "uri": "https://api.sketchfab.com/v3/tags/london"
+        },
+        {
+          "name": "ltd",
+          "slug": "ltd",
+          "uri": "https://api.sketchfab.com/v3/tags/ltd"
+        },
+        {
+          "name": "railings",
+          "slug": "railings",
+          "uri": "https://api.sketchfab.com/v3/tags/railings"
+        },
+        {
+          "name": "atd",
+          "slug": "atd",
+          "uri": "https://api.sketchfab.com/v3/tags/atd"
+        },
+        {
+          "name": "staircase",
+          "slug": "staircase",
+          "uri": "https://api.sketchfab.com/v3/tags/staircase"
+        },
+        {
+          "name": "revit",
+          "slug": "revit",
+          "uri": "https://api.sketchfab.com/v3/tags/revit"
+        },
+        {
+          "name": "handrails",
+          "slug": "handrails",
+          "uri": "https://api.sketchfab.com/v3/tags/handrails"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "01e29fbfdf5544d1a8926d04764bc1c4",
+            "size": 433634,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/a419edddce534968937313dcff8429e7/thumbnails/de2b1883dbb948d2a0c45e4618ff4239/03add715b8764e7ab40f1ba62bfc02fd.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "a3b84945b8d043228a56d0aec2a5927c",
+            "size": 100705,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/a419edddce534968937313dcff8429e7/thumbnails/de2b1883dbb948d2a0c45e4618ff4239/74caa39f701946b4962f93b8e31e032a.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "625d65c596154fb0ac563d890365628e",
+            "size": 49843,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/a419edddce534968937313dcff8429e7/thumbnails/de2b1883dbb948d2a0c45e4618ff4239/025f9e62fc2d4697a2205ed9f4531ead.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "e1066ac025c44ff799a9519c9eb65696",
+            "size": 7572,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/a419edddce534968937313dcff8429e7/thumbnails/de2b1883dbb948d2a0c45e4618ff4239/084c2bff5b044d20a9c1300b5a904c20.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "b7b7dd8cc7344f9d83ceb707ae785b97",
+            "size": 1218,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/a419edddce534968937313dcff8429e7/thumbnails/de2b1883dbb948d2a0c45e4618ff4239/4f299563bed2450fb33e745774ff4175.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "c81babeec6824e118009e4ebb93000b5",
+        "username": "ATD-London",
+        "displayName": "ATD-London",
+        "profileUrl": "https://sketchfab.com/ATD-London",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/f19d57d0570341e7af9f7b52f0bf371b",
+          "images": [
+            {
+              "size": 899,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/f19d57d0570341e7af9f7b52f0bf371b/d5ca74ba4ca042b4ab87e4de0e1641ce.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1629,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/f19d57d0570341e7af9f7b52f0bf371b/ef8a29a6039a4bffbf104c530880f58f.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3408,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/f19d57d0570341e7af9f7b52f0bf371b/8b08ad7ee27b467cb358640952fb424f.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3810,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/f19d57d0570341e7af9f7b52f0bf371b/40140a3eb9a24bc59ce62c9f55046b54.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/c81babeec6824e118009e4ebb93000b5"
+      },
+      "description": "Stairs & Railings\n\nATD London Ltd",
+      "faceCount": 987363,
+      "createdAt": "2023-04-17T14:03:36.274236",
+      "vertexCount": 588874,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 31302908,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 987069,
+          "vertexCount": 809695
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 10611184,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 987069,
+          "vertexCount": 809695
+        },
+        "source": {
+          "textureCount": null,
+          "size": 51693815,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 21497186,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/397b266af9604b9fbf0a4e5446cf864b",
+      "uid": "397b266af9604b9fbf0a4e5446cf864b",
+      "name": "Galactic Incident",
+      "staffpickedAt": null,
+      "viewCount": 69993,
+      "likeCount": 910,
+      "animationCount": 1,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-397b266af9604b9fbf0a4e5446cf864b",
+      "embedUrl": "https://sketchfab.com/models/397b266af9604b9fbf0a4e5446cf864b/embed",
+      "commentCount": 22,
+      "isDownloadable": true,
+      "publishedAt": "2019-04-16T10:29:49.963788",
+      "tags": [
+        {
+          "name": "jupiter",
+          "slug": "jupiter",
+          "uri": "https://api.sketchfab.com/v3/tags/jupiter"
+        },
+        {
+          "name": "sky",
+          "slug": "sky",
+          "uri": "https://api.sketchfab.com/v3/tags/sky"
+        },
+        {
+          "name": "planet",
+          "slug": "planet",
+          "uri": "https://api.sketchfab.com/v3/tags/planet"
+        },
+        {
+          "name": "moon",
+          "slug": "moon",
+          "uri": "https://api.sketchfab.com/v3/tags/moon"
+        },
+        {
+          "name": "experiment",
+          "slug": "experiment",
+          "uri": "https://api.sketchfab.com/v3/tags/experiment"
+        },
+        {
+          "name": "universe",
+          "slug": "universe",
+          "uri": "https://api.sketchfab.com/v3/tags/universe"
+        },
+        {
+          "name": "system",
+          "slug": "system",
+          "uri": "https://api.sketchfab.com/v3/tags/system"
+        },
+        {
+          "name": "solar",
+          "slug": "solar",
+          "uri": "https://api.sketchfab.com/v3/tags/solar"
+        },
+        {
+          "name": "mars",
+          "slug": "mars",
+          "uri": "https://api.sketchfab.com/v3/tags/mars"
+        },
+        {
+          "name": "visualization",
+          "slug": "visualization",
+          "uri": "https://api.sketchfab.com/v3/tags/visualization"
+        },
+        {
+          "name": "effect",
+          "slug": "effect",
+          "uri": "https://api.sketchfab.com/v3/tags/effect"
+        },
+        {
+          "name": "earth",
+          "slug": "earth",
+          "uri": "https://api.sketchfab.com/v3/tags/earth"
+        },
+        {
+          "name": "astronomy",
+          "slug": "astronomy",
+          "uri": "https://api.sketchfab.com/v3/tags/astronomy"
+        },
+        {
+          "name": "particles",
+          "slug": "particles",
+          "uri": "https://api.sketchfab.com/v3/tags/particles"
+        },
+        {
+          "name": "telescope",
+          "slug": "telescope",
+          "uri": "https://api.sketchfab.com/v3/tags/telescope"
+        },
+        {
+          "name": "night",
+          "slug": "night",
+          "uri": "https://api.sketchfab.com/v3/tags/night"
+        },
+        {
+          "name": "satellite",
+          "slug": "satellite",
+          "uri": "https://api.sketchfab.com/v3/tags/satellite"
+        },
+        {
+          "name": "interstellar",
+          "slug": "interstellar",
+          "uri": "https://api.sketchfab.com/v3/tags/interstellar"
+        },
+        {
+          "name": "galaxy",
+          "slug": "galaxy",
+          "uri": "https://api.sketchfab.com/v3/tags/galaxy"
+        },
+        {
+          "name": "science",
+          "slug": "science",
+          "uri": "https://api.sketchfab.com/v3/tags/science"
+        },
+        {
+          "name": "star",
+          "slug": "star",
+          "uri": "https://api.sketchfab.com/v3/tags/star"
+        },
+        {
+          "name": "station",
+          "slug": "station",
+          "uri": "https://api.sketchfab.com/v3/tags/station"
+        },
+        {
+          "name": "nature",
+          "slug": "nature",
+          "uri": "https://api.sketchfab.com/v3/tags/nature"
+        },
+        {
+          "name": "cluster",
+          "slug": "cluster",
+          "uri": "https://api.sketchfab.com/v3/tags/cluster"
+        },
+        {
+          "name": "procedural",
+          "slug": "procedural",
+          "uri": "https://api.sketchfab.com/v3/tags/procedural"
+        },
+        {
+          "name": "hole",
+          "slug": "hole",
+          "uri": "https://api.sketchfab.com/v3/tags/hole"
+        },
+        {
+          "name": "venus",
+          "slug": "venus",
+          "uri": "https://api.sketchfab.com/v3/tags/venus"
+        },
+        {
+          "name": "milkyway",
+          "slug": "milkyway",
+          "uri": "https://api.sketchfab.com/v3/tags/milkyway"
+        },
+        {
+          "name": "error",
+          "slug": "error",
+          "uri": "https://api.sketchfab.com/v3/tags/error"
+        },
+        {
+          "name": "pluto",
+          "slug": "pluto",
+          "uri": "https://api.sketchfab.com/v3/tags/pluto"
+        },
+        {
+          "name": "scientific",
+          "slug": "scientific",
+          "uri": "https://api.sketchfab.com/v3/tags/scientific"
+        },
+        {
+          "name": "failure",
+          "slug": "failure",
+          "uri": "https://api.sketchfab.com/v3/tags/failure"
+        },
+        {
+          "name": "fail",
+          "slug": "fail",
+          "uri": "https://api.sketchfab.com/v3/tags/fail"
+        },
+        {
+          "name": "hubble",
+          "slug": "hubble",
+          "uri": "https://api.sketchfab.com/v3/tags/hubble"
+        },
+        {
+          "name": "nebula",
+          "slug": "nebula",
+          "uri": "https://api.sketchfab.com/v3/tags/nebula"
+        },
+        {
+          "name": "agency",
+          "slug": "agency",
+          "uri": "https://api.sketchfab.com/v3/tags/agency"
+        },
+        {
+          "name": "programming",
+          "slug": "programming",
+          "uri": "https://api.sketchfab.com/v3/tags/programming"
+        },
+        {
+          "name": "realtim",
+          "slug": "realtim",
+          "uri": "https://api.sketchfab.com/v3/tags/realtim"
+        },
+        {
+          "name": "black",
+          "slug": "black",
+          "uri": "https://api.sketchfab.com/v3/tags/black"
+        },
+        {
+          "name": "light",
+          "slug": "light",
+          "uri": "https://api.sketchfab.com/v3/tags/light"
+        },
+        {
+          "name": "debugging",
+          "slug": "debugging",
+          "uri": "https://api.sketchfab.com/v3/tags/debugging"
+        },
+        {
+          "name": "noai",
+          "slug": "noai",
+          "uri": "https://api.sketchfab.com/v3/tags/noai"
+        }
+      ],
+      "categories": [
+        {
+          "name": "nature-plants"
+        },
+        {
+          "name": "science-technology"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "5eb5dbad6e3b4a81b3df7da1fb26decd",
+            "size": 336135,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/397b266af9604b9fbf0a4e5446cf864b/thumbnails/86ac2989875d459a8cd58ce5e9b9743c/a09eb1d156214b349396f67523f5cc12.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "841663ff1975444eb4eb9e137f337703",
+            "size": 102264,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/397b266af9604b9fbf0a4e5446cf864b/thumbnails/86ac2989875d459a8cd58ce5e9b9743c/2176138f78474fa8a8b60037feee7dc9.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "30c1300eeb7c4f7fac092a66e142e093",
+            "size": 53091,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/397b266af9604b9fbf0a4e5446cf864b/thumbnails/86ac2989875d459a8cd58ce5e9b9743c/b82c1d3cb1b946d9883701a826594d72.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "9c585f0c9ca94cc38b085d16461a3370",
+            "size": 6979,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/397b266af9604b9fbf0a4e5446cf864b/thumbnails/86ac2989875d459a8cd58ce5e9b9743c/ea64212c6fde4e579dc30e17a5736847.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "caf2b816f326437faab8291fa51c3cd3",
+            "size": 865,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/397b266af9604b9fbf0a4e5446cf864b/thumbnails/86ac2989875d459a8cd58ce5e9b9743c/baa904696dde42d4925c1c8960f81afc.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "afdb2465d5ae4ccea62dc99346b9db56",
+        "username": "norgeotloic",
+        "displayName": "Lo\u00efc Norgeot",
+        "profileUrl": "https://sketchfab.com/norgeotloic",
+        "account": "ent",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/73a5e36c5f0c4a01a03246a419615f74",
+          "images": [
+            {
+              "size": 2020,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/73a5e36c5f0c4a01a03246a419615f74/7638e10abbc84d69b74fe6d7d4995191.png",
+              "height": 32
+            },
+            {
+              "size": 3803,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/73a5e36c5f0c4a01a03246a419615f74/9f72fab4b197435faea0e9ceede43cc4.png",
+              "height": 48
+            },
+            {
+              "size": 10593,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/73a5e36c5f0c4a01a03246a419615f74/26f14036b5964ebca1d24fcb0b0660a7.png",
+              "height": 90
+            },
+            {
+              "size": 12549,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/73a5e36c5f0c4a01a03246a419615f74/0f52c8be4007455ab87dbe513fe0441e.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/afdb2465d5ae4ccea62dc99346b9db56"
+      },
+      "description": "I tried to simulate a galaxy with particle systems in C++ (using the reciprocical attraction between stars this time, which my [previous \"static\" test](https://skfb.ly/6JyVO) did not take into account), but a minor coding error resulted in the creation of a miniature rogue black hole in it... \n\nAAaaaaahhh, the joys of programming !\n\nThe animation still ended up looking fabulous, and although the download is quite heavy *( approximately 50k particles x 60 steps = 3M vertices )*, it seems to run very smoothly once loaded !",
+      "faceCount": 0,
+      "createdAt": "2019-04-16T00:04:17.287474",
+      "vertexCount": 2890668,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 82624560,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 0,
+          "vertexCount": 2948561
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 33452184,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 0,
+          "vertexCount": 2948561
+        },
+        "source": {
+          "textureCount": null,
+          "size": 38247615,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/52b73f6ea18a440cb42734840d5edc72",
+      "uid": "52b73f6ea18a440cb42734840d5edc72",
+      "name": "[FREE] London Skyscraper",
+      "staffpickedAt": "2026-09-03T14:19:20.777712",
+      "viewCount": 33573,
+      "likeCount": 897,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-52b73f6ea18a440cb42734840d5edc72",
+      "embedUrl": "https://sketchfab.com/models/52b73f6ea18a440cb42734840d5edc72/embed",
+      "commentCount": 19,
+      "isDownloadable": true,
+      "publishedAt": "2026-06-13T19:53:42.249304",
+      "tags": [
+        {
+          "name": "tree",
+          "slug": "tree",
+          "uri": "https://api.sketchfab.com/v3/tags/tree"
+        },
+        {
+          "name": "office",
+          "slug": "office",
+          "uri": "https://api.sketchfab.com/v3/tags/office"
+        },
+        {
+          "name": "modern",
+          "slug": "modern",
+          "uri": "https://api.sketchfab.com/v3/tags/modern"
+        },
+        {
+          "name": "stairs",
+          "slug": "stairs",
+          "uri": "https://api.sketchfab.com/v3/tags/stairs"
+        },
+        {
+          "name": "london",
+          "slug": "london",
+          "uri": "https://api.sketchfab.com/v3/tags/london"
+        },
+        {
+          "name": "urban",
+          "slug": "urban",
+          "uri": "https://api.sketchfab.com/v3/tags/urban"
+        },
+        {
+          "name": "skyscraper",
+          "slug": "skyscraper",
+          "uri": "https://api.sketchfab.com/v3/tags/skyscraper"
+        },
+        {
+          "name": "baked",
+          "slug": "baked",
+          "uri": "https://api.sketchfab.com/v3/tags/baked"
+        },
+        {
+          "name": "tiles",
+          "slug": "tiles",
+          "uri": "https://api.sketchfab.com/v3/tags/tiles"
+        },
+        {
+          "name": "pillar",
+          "slug": "pillar",
+          "uri": "https://api.sketchfab.com/v3/tags/pillar"
+        },
+        {
+          "name": "lobby",
+          "slug": "lobby",
+          "uri": "https://api.sketchfab.com/v3/tags/lobby"
+        },
+        {
+          "name": "realistic",
+          "slug": "realistic",
+          "uri": "https://api.sketchfab.com/v3/tags/realistic"
+        },
+        {
+          "name": "seats",
+          "slug": "seats",
+          "uri": "https://api.sketchfab.com/v3/tags/seats"
+        },
+        {
+          "name": "pbr",
+          "slug": "pbr",
+          "uri": "https://api.sketchfab.com/v3/tags/pbr"
+        },
+        {
+          "name": "city",
+          "slug": "city",
+          "uri": "https://api.sketchfab.com/v3/tags/city"
+        },
+        {
+          "name": "structure",
+          "slug": "structure",
+          "uri": "https://api.sketchfab.com/v3/tags/structure"
+        },
+        {
+          "name": "building",
+          "slug": "building",
+          "uri": "https://api.sketchfab.com/v3/tags/building"
+        },
+        {
+          "name": "interior",
+          "slug": "interior",
+          "uri": "https://api.sketchfab.com/v3/tags/interior"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        },
+        {
+          "name": "places-travel"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "6e8276af4be047a3b8a6f9b244bb247a",
+            "size": 405891,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/52b73f6ea18a440cb42734840d5edc72/thumbnails/5d3b9b6f5c6442bdbacd82fd35024c86/06222782201044e6af6d9013b1a8ca66.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "eb7504d045574414a432996226792cdd",
+            "size": 108404,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/52b73f6ea18a440cb42734840d5edc72/thumbnails/5d3b9b6f5c6442bdbacd82fd35024c86/4063e02baf654d888ff6bb11a17ab652.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "c482b9b3acf346719f3115892108c6fa",
+            "size": 57462,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/52b73f6ea18a440cb42734840d5edc72/thumbnails/5d3b9b6f5c6442bdbacd82fd35024c86/b343dba7f9f242129708f358467a43b6.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "19a7a73a37244befa0148a071ce129e7",
+            "size": 9731,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/52b73f6ea18a440cb42734840d5edc72/thumbnails/5d3b9b6f5c6442bdbacd82fd35024c86/66cf702c49314feb97c6692304d2391b.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "1f8c1c6dc67a4ee782bda24bae2c8f7a",
+            "size": 1469,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/52b73f6ea18a440cb42734840d5edc72/thumbnails/5d3b9b6f5c6442bdbacd82fd35024c86/c057de7181fe475091dffb9aae96f0d7.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "50e2118afccb493da8cf6f597f29fb66",
+        "username": "99.Miles",
+        "displayName": "99.Miles",
+        "profileUrl": "https://sketchfab.com/99.Miles",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/769f1ffce2264032955d16697d3cb3cc",
+          "images": [
+            {
+              "size": 2241,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/769f1ffce2264032955d16697d3cb3cc/6d784ab108494fbdb0209689687b367d.png",
+              "height": 32
+            },
+            {
+              "size": 4559,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/769f1ffce2264032955d16697d3cb3cc/b4808fd8b0d74f7289a60cb64b7d5336.png",
+              "height": 48
+            },
+            {
+              "size": 13734,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/769f1ffce2264032955d16697d3cb3cc/b3b8d44f5d00423b9feffe6fc97f725a.png",
+              "height": 90
+            },
+            {
+              "size": 16581,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/769f1ffce2264032955d16697d3cb3cc/9689d2979d9e41ad881023037375b79f.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/50e2118afccb493da8cf6f597f29fb66"
+      },
+      "description": "A 1:1 recreation of the One Blackfriars skyscraper in London. Includes baked interiors with two sets of emissive maps. The Blender file organizes the building into different segments for easier editing. Made in Blender 5.0\n\nEnjoy and have a great day!",
+      "faceCount": 142785,
+      "createdAt": "2026-06-13T13:40:21.920030",
+      "vertexCount": 106182,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 50,
+          "size": 46107920,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 142742,
+          "vertexCount": 191848
+        },
+        "gltf": {
+          "textureCount": 50,
+          "size": 37980569,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 142742,
+          "vertexCount": 191848
+        },
+        "source": {
+          "textureCount": null,
+          "size": 75283292,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 13030441,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/c8cfe0661df44e6ead4acda96ba80db9",
+      "uid": "c8cfe0661df44e6ead4acda96ba80db9",
+      "name": "Spooky halloween teabags \u2727",
+      "staffpickedAt": "2023-04-13T07:31:55.485410",
+      "viewCount": 11696,
+      "likeCount": 893,
+      "animationCount": 1,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-c8cfe0661df44e6ead4acda96ba80db9",
+      "embedUrl": "https://sketchfab.com/models/c8cfe0661df44e6ead4acda96ba80db9/embed",
+      "commentCount": 12,
+      "isDownloadable": true,
+      "publishedAt": "2023-03-31T18:50:35.450018",
+      "tags": [
+        {
+          "name": "tea",
+          "slug": "tea",
+          "uri": "https://api.sketchfab.com/v3/tags/tea"
+        },
+        {
+          "name": "autodesk",
+          "slug": "autodesk",
+          "uri": "https://api.sketchfab.com/v3/tags/autodesk"
+        },
+        {
+          "name": "cute",
+          "slug": "cute",
+          "uri": "https://api.sketchfab.com/v3/tags/cute"
+        },
+        {
+          "name": "games",
+          "slug": "games",
+          "uri": "https://api.sketchfab.com/v3/tags/games"
+        },
+        {
+          "name": "drawing",
+          "slug": "drawing",
+          "uri": "https://api.sketchfab.com/v3/tags/drawing"
+        },
+        {
+          "name": "stars",
+          "slug": "stars",
+          "uri": "https://api.sketchfab.com/v3/tags/stars"
+        },
+        {
+          "name": "scary",
+          "slug": "scary",
+          "uri": "https://api.sketchfab.com/v3/tags/scary"
+        },
+        {
+          "name": "worm",
+          "slug": "worm",
+          "uri": "https://api.sketchfab.com/v3/tags/worm"
+        },
+        {
+          "name": "outline",
+          "slug": "outline",
+          "uri": "https://api.sketchfab.com/v3/tags/outline"
+        },
+        {
+          "name": "illustration",
+          "slug": "illustration",
+          "uri": "https://api.sketchfab.com/v3/tags/illustration"
+        },
+        {
+          "name": "maya",
+          "slug": "maya",
+          "uri": "https://api.sketchfab.com/v3/tags/maya"
+        },
+        {
+          "name": "cartoon",
+          "slug": "cartoon",
+          "uri": "https://api.sketchfab.com/v3/tags/cartoon"
+        },
+        {
+          "name": "skull",
+          "slug": "skull",
+          "uri": "https://api.sketchfab.com/v3/tags/skull"
+        },
+        {
+          "name": "zbrush",
+          "slug": "zbrush",
+          "uri": "https://api.sketchfab.com/v3/tags/zbrush"
+        },
+        {
+          "name": "stylized",
+          "slug": "stylized",
+          "uri": "https://api.sketchfab.com/v3/tags/stylized"
+        },
+        {
+          "name": "ghost",
+          "slug": "ghost",
+          "uri": "https://api.sketchfab.com/v3/tags/ghost"
+        },
+        {
+          "name": "halloween",
+          "slug": "halloween",
+          "uri": "https://api.sketchfab.com/v3/tags/halloween"
+        },
+        {
+          "name": "noai",
+          "slug": "noai",
+          "uri": "https://api.sketchfab.com/v3/tags/noai"
+        },
+        {
+          "name": "teabags",
+          "slug": "teabags",
+          "uri": "https://api.sketchfab.com/v3/tags/teabags"
+        }
+      ],
+      "categories": [
+        {
+          "name": "art-abstract"
+        },
+        {
+          "name": "food-drink"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "0204ab28b82540fabb595112067b0fce",
+            "size": 363549,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/c8cfe0661df44e6ead4acda96ba80db9/thumbnails/09ef035c8af746318539bee88d386afd/21c62fa70e9a474da539a9c79736b7d9.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "6b12bdc74705493db3d0ecd401fb39a2",
+            "size": 74302,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/c8cfe0661df44e6ead4acda96ba80db9/thumbnails/09ef035c8af746318539bee88d386afd/31edf3a23abc40db8e3e2a61e1add768.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "e539eb5ecf554684976d551a73859451",
+            "size": 40748,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/c8cfe0661df44e6ead4acda96ba80db9/thumbnails/09ef035c8af746318539bee88d386afd/9d632b2fcd334f8cacdebc149a0dce17.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "fdb01475b2384c0bbc02795ffbc2394e",
+            "size": 7606,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/c8cfe0661df44e6ead4acda96ba80db9/thumbnails/09ef035c8af746318539bee88d386afd/40caf96d0ff9423fbdb9c3bfbe1135dc.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "591829e5e3024938b1ce6243f0a892cc",
+            "size": 1185,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/c8cfe0661df44e6ead4acda96ba80db9/thumbnails/09ef035c8af746318539bee88d386afd/419bdc04bbcf4c40863529ccde08fdaf.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "c59b3fd74fd54018a4b7ead925173d6d",
+        "username": "Moon_solstice",
+        "displayName": "Moon",
+        "profileUrl": "https://sketchfab.com/Moon_solstice",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/f84825cb5bd241a3bb1fa4673f3abe08",
+          "images": [
+            {
+              "size": 1166,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/f84825cb5bd241a3bb1fa4673f3abe08/78a1abb2f3664635948002bd3619e72b.png",
+              "height": 32
+            },
+            {
+              "size": 2031,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/f84825cb5bd241a3bb1fa4673f3abe08/ce89ae67993941e0813d869ef9d1e457.png",
+              "height": 48
+            },
+            {
+              "size": 4828,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/f84825cb5bd241a3bb1fa4673f3abe08/e9b1349a797144f78d1b8f296e80ce1c.png",
+              "height": 90
+            },
+            {
+              "size": 5594,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/f84825cb5bd241a3bb1fa4673f3abe08/c374800e01f84b92a251068fb64d9a74.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/c59b3fd74fd54018a4b7ead925173d6d"
+      },
+      "description": "Even though it's unfortunately not halloween yet, I felt like making something spooky!! I love how cute the ghosts are in these teabags *:\uff65\uff9f\u2727*:\uff65\uff9f\u2727\n\nThe amazing concept is by Jeanette\n[Concept by](https://www.instagram.com/createdbyjz/?hl=en)",
+      "faceCount": 74662,
+      "createdAt": "2023-03-30T19:52:11.769870",
+      "vertexCount": 37672,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 4,
+          "size": 4082676,
+          "type": "glb",
+          "textureMaxResolution": 512,
+          "faceCount": 74541,
+          "vertexCount": 98970
+        },
+        "gltf": {
+          "textureCount": 4,
+          "size": 977264,
+          "type": "gltf",
+          "textureMaxResolution": 512,
+          "faceCount": 74541,
+          "vertexCount": 98970
+        },
+        "source": {
+          "textureCount": null,
+          "size": 2929446,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 1077165,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "bbfe3f7dbcdd4122b966b85b9786a989",
+        "label": "CC Attribution-NonCommercial"
+      }
+    }
+  ]
+}

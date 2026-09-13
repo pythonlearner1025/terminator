@@ -1,0 +1,3014 @@
+{
+  "cursors": {
+    "next": "12",
+    "previous": null
+  },
+  "next": "https://api.sketchfab.com/v3/search?count=12&cursor=12&downloadable=true&q=rusty+barrel&sort_by=-relevance&type=models",
+  "previous": null,
+  "results": [
+    {
+      "uri": "https://api.sketchfab.com/v3/models/106cf7126d0c466fb2b7f08d9e31be2d",
+      "uid": "106cf7126d0c466fb2b7f08d9e31be2d",
+      "name": "Rusty Nuclear Waste Barrel \u2013 Game Ready 3D Asset",
+      "staffpickedAt": null,
+      "viewCount": 15,
+      "likeCount": 0,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-106cf7126d0c466fb2b7f08d9e31be2d",
+      "embedUrl": "https://sketchfab.com/models/106cf7126d0c466fb2b7f08d9e31be2d/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-08-30T20:21:53.956931",
+      "tags": [
+        {
+          "name": "drum",
+          "slug": "drum",
+          "uri": "https://api.sketchfab.com/v3/tags/drum"
+        },
+        {
+          "name": "abandoned",
+          "slug": "abandoned",
+          "uri": "https://api.sketchfab.com/v3/tags/abandoned"
+        },
+        {
+          "name": "symbol",
+          "slug": "symbol",
+          "uri": "https://api.sketchfab.com/v3/tags/symbol"
+        },
+        {
+          "name": "barrel",
+          "slug": "barrel",
+          "uri": "https://api.sketchfab.com/v3/tags/barrel"
+        },
+        {
+          "name": "oil",
+          "slug": "oil",
+          "uri": "https://api.sketchfab.com/v3/tags/oil"
+        },
+        {
+          "name": "nuclear",
+          "slug": "nuclear",
+          "uri": "https://api.sketchfab.com/v3/tags/nuclear"
+        },
+        {
+          "name": "apocalyptic",
+          "slug": "apocalyptic",
+          "uri": "https://api.sketchfab.com/v3/tags/apocalyptic"
+        },
+        {
+          "name": "rust",
+          "slug": "rust",
+          "uri": "https://api.sketchfab.com/v3/tags/rust"
+        },
+        {
+          "name": "prop",
+          "slug": "prop",
+          "uri": "https://api.sketchfab.com/v3/tags/prop"
+        },
+        {
+          "name": "post",
+          "slug": "post",
+          "uri": "https://api.sketchfab.com/v3/tags/post"
+        },
+        {
+          "name": "rusty",
+          "slug": "rusty",
+          "uri": "https://api.sketchfab.com/v3/tags/rusty"
+        },
+        {
+          "name": "apocalypse",
+          "slug": "apocalypse",
+          "uri": "https://api.sketchfab.com/v3/tags/apocalypse"
+        },
+        {
+          "name": "ready",
+          "slug": "ready",
+          "uri": "https://api.sketchfab.com/v3/tags/ready"
+        },
+        {
+          "name": "survival",
+          "slug": "survival",
+          "uri": "https://api.sketchfab.com/v3/tags/survival"
+        },
+        {
+          "name": "barril",
+          "slug": "barril",
+          "uri": "https://api.sketchfab.com/v3/tags/barril"
+        },
+        {
+          "name": "dirty",
+          "slug": "dirty",
+          "uri": "https://api.sketchfab.com/v3/tags/dirty"
+        },
+        {
+          "name": "waste",
+          "slug": "waste",
+          "uri": "https://api.sketchfab.com/v3/tags/waste"
+        },
+        {
+          "name": "damaged",
+          "slug": "damaged",
+          "uri": "https://api.sketchfab.com/v3/tags/damaged"
+        },
+        {
+          "name": "grunge",
+          "slug": "grunge",
+          "uri": "https://api.sketchfab.com/v3/tags/grunge"
+        },
+        {
+          "name": "metal",
+          "slug": "metal",
+          "uri": "https://api.sketchfab.com/v3/tags/metal"
+        },
+        {
+          "name": "toxic",
+          "slug": "toxic",
+          "uri": "https://api.sketchfab.com/v3/tags/toxic"
+        },
+        {
+          "name": "decay",
+          "slug": "decay",
+          "uri": "https://api.sketchfab.com/v3/tags/decay"
+        },
+        {
+          "name": "radiation",
+          "slug": "radiation",
+          "uri": "https://api.sketchfab.com/v3/tags/radiation"
+        },
+        {
+          "name": "weathered",
+          "slug": "weathered",
+          "uri": "https://api.sketchfab.com/v3/tags/weathered"
+        },
+        {
+          "name": "pos",
+          "slug": "pos",
+          "uri": "https://api.sketchfab.com/v3/tags/pos"
+        },
+        {
+          "name": "warning",
+          "slug": "warning",
+          "uri": "https://api.sketchfab.com/v3/tags/warning"
+        },
+        {
+          "name": "tambor",
+          "slug": "tambor",
+          "uri": "https://api.sketchfab.com/v3/tags/tambor"
+        },
+        {
+          "name": "radioactive",
+          "slug": "radioactive",
+          "uri": "https://api.sketchfab.com/v3/tags/radioactive"
+        },
+        {
+          "name": "ferrugem",
+          "slug": "ferrugem",
+          "uri": "https://api.sketchfab.com/v3/tags/ferrugem"
+        },
+        {
+          "name": "hazardous",
+          "slug": "hazardous",
+          "uri": "https://api.sketchfab.com/v3/tags/hazardous"
+        },
+        {
+          "name": "asset",
+          "slug": "asset",
+          "uri": "https://api.sketchfab.com/v3/tags/asset"
+        },
+        {
+          "name": "game",
+          "slug": "game",
+          "uri": "https://api.sketchfab.com/v3/tags/game"
+        },
+        {
+          "name": "3d",
+          "slug": "3d",
+          "uri": "https://api.sketchfab.com/v3/tags/3d"
+        },
+        {
+          "name": "industrial",
+          "slug": "industrial",
+          "uri": "https://api.sketchfab.com/v3/tags/industrial"
+        },
+        {
+          "name": "environment",
+          "slug": "environment",
+          "uri": "https://api.sketchfab.com/v3/tags/environment"
+        },
+        {
+          "name": "residuos",
+          "slug": "residuos",
+          "uri": "https://api.sketchfab.com/v3/tags/residuos"
+        },
+        {
+          "name": "enferrujado",
+          "slug": "enferrujado",
+          "uri": "https://api.sketchfab.com/v3/tags/enferrujado"
+        },
+        {
+          "name": "nucleares",
+          "slug": "nucleares",
+          "uri": "https://api.sketchfab.com/v3/tags/nucleares"
+        }
+      ],
+      "categories": [
+        {
+          "name": "science-technology"
+        },
+        {
+          "name": "weapons-military"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "e466efde5dfe40ccb8f28a27a1ccf447",
+            "size": 140445,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/106cf7126d0c466fb2b7f08d9e31be2d/thumbnails/8e31d59de5144a89945ab233733ffcf1/fa9fa67a709e47d5b15862eacfd27cd7.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "8a07b9df823345b2aa77c8a5055c7f6e",
+            "size": 36571,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/106cf7126d0c466fb2b7f08d9e31be2d/thumbnails/8e31d59de5144a89945ab233733ffcf1/9b67563ca48d4954983ecedeb723eec9.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "6348a8d78b694a2eb4f3f59677196f6a",
+            "size": 18892,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/106cf7126d0c466fb2b7f08d9e31be2d/thumbnails/8e31d59de5144a89945ab233733ffcf1/1905d79e7d404d4faa279cc33c1a8d3b.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "e3c12db81a994390b359429e10445ad5",
+            "size": 3684,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/106cf7126d0c466fb2b7f08d9e31be2d/thumbnails/8e31d59de5144a89945ab233733ffcf1/f2837e1ed99e49c7bb2b291a9bac4453.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "94866d55c80b47d794d0bf29c475a5e8",
+            "size": 1039,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/106cf7126d0c466fb2b7f08d9e31be2d/thumbnails/8e31d59de5144a89945ab233733ffcf1/55a400fa58a244df95e6096590d31cc8.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "2915f23376a64d89b898e2971f2e6c99",
+        "username": "nmissura",
+        "displayName": "nmissura",
+        "profileUrl": "https://sketchfab.com/nmissura",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/78fa317e46024a5283765aa34df5e508",
+          "images": [
+            {
+              "size": 6421,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/78fa317e46024a5283765aa34df5e508/aec92fe9a74e499c98d759362cd7f02f.jpeg",
+              "height": 100
+            },
+            {
+              "size": 2518,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/78fa317e46024a5283765aa34df5e508/17fa177ffaa344a2b2fc8e78efd40fbb.jpeg",
+              "height": 48
+            },
+            {
+              "size": 5653,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/78fa317e46024a5283765aa34df5e508/02162695bdc840faa3bcb2d418309c5e.jpeg",
+              "height": 90
+            },
+            {
+              "size": 1350,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/78fa317e46024a5283765aa34df5e508/6fde876cbded4cd48d36a76029e3aa02.jpeg",
+              "height": 32
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/2915f23376a64d89b898e2971f2e6c99"
+      },
+      "description": "**Rusty Nuclear Waste Barrel \u2013 Game Ready 3D Asset**\n\nA detailed and realistic rusty industrial barrel designed for games, environments, cinematics, animations and 3D visualization.\n\nThe model features a heavily weathered metal surface with realistic rust, scratches, dirt and worn paint. A radiation warning symbol adds an authentic hazardous-waste aesthetic, making this prop ideal for nuclear facilities, abandoned industrial areas, post-apocalyptic environments and survival games.\n\n**Features:**\n\u2022 Detailed weathered metal surface\n\u2022 Rust, dirt and scratches\n\u2022 Worn industrial paint\n\u2022 Radiation warning symbol\n\u2022 PBR textures\n\u2022 UV unwrapped\n\u2022 Ideal for games and real-time environments\n\u2022 Suitable for industrial and post-apocalyptic scenes\n\nA versatile environment prop designed to add realism and atmosphere to industrial and abandoned environments.",
+      "faceCount": 48640,
+      "createdAt": "2026-08-30T20:19:16.879181",
+      "vertexCount": 24322,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 3,
+          "size": 14841876,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 48640,
+          "vertexCount": 24766
+        },
+        "gltf": {
+          "textureCount": 3,
+          "size": 12621978,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 48640,
+          "vertexCount": 24766
+        },
+        "source": {
+          "textureCount": null,
+          "size": 24771151,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 3398864,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/56e5b35d61244690ab4e506a601ecf1f",
+      "uid": "56e5b35d61244690ab4e506a601ecf1f",
+      "name": "Worn Red Metal Barrel | Low Poly",
+      "staffpickedAt": null,
+      "viewCount": 30,
+      "likeCount": 1,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-56e5b35d61244690ab4e506a601ecf1f",
+      "embedUrl": "https://sketchfab.com/models/56e5b35d61244690ab4e506a601ecf1f/embed",
+      "commentCount": 2,
+      "isDownloadable": true,
+      "publishedAt": "2026-08-15T22:53:24.254243",
+      "tags": [
+        {
+          "name": "drum",
+          "slug": "drum",
+          "uri": "https://api.sketchfab.com/v3/tags/drum"
+        },
+        {
+          "name": "abandoned",
+          "slug": "abandoned",
+          "uri": "https://api.sketchfab.com/v3/tags/abandoned"
+        },
+        {
+          "name": "red",
+          "slug": "red",
+          "uri": "https://api.sketchfab.com/v3/tags/red"
+        },
+        {
+          "name": "barrel",
+          "slug": "barrel",
+          "uri": "https://api.sketchfab.com/v3/tags/barrel"
+        },
+        {
+          "name": "oil",
+          "slug": "oil",
+          "uri": "https://api.sketchfab.com/v3/tags/oil"
+        },
+        {
+          "name": "rust",
+          "slug": "rust",
+          "uri": "https://api.sketchfab.com/v3/tags/rust"
+        },
+        {
+          "name": "paint",
+          "slug": "paint",
+          "uri": "https://api.sketchfab.com/v3/tags/paint"
+        },
+        {
+          "name": "warehouse",
+          "slug": "warehouse",
+          "uri": "https://api.sketchfab.com/v3/tags/warehouse"
+        },
+        {
+          "name": "hard",
+          "slug": "hard",
+          "uri": "https://api.sketchfab.com/v3/tags/hard"
+        },
+        {
+          "name": "surface",
+          "slug": "surface",
+          "uri": "https://api.sketchfab.com/v3/tags/surface"
+        },
+        {
+          "name": "painted",
+          "slug": "painted",
+          "uri": "https://api.sketchfab.com/v3/tags/painted"
+        },
+        {
+          "name": "rusty",
+          "slug": "rusty",
+          "uri": "https://api.sketchfab.com/v3/tags/rusty"
+        },
+        {
+          "name": "worn",
+          "slug": "worn",
+          "uri": "https://api.sketchfab.com/v3/tags/worn"
+        },
+        {
+          "name": "ready",
+          "slug": "ready",
+          "uri": "https://api.sketchfab.com/v3/tags/ready"
+        },
+        {
+          "name": "dirt",
+          "slug": "dirt",
+          "uri": "https://api.sketchfab.com/v3/tags/dirt"
+        },
+        {
+          "name": "dirty",
+          "slug": "dirty",
+          "uri": "https://api.sketchfab.com/v3/tags/dirty"
+        },
+        {
+          "name": "damaged",
+          "slug": "damaged",
+          "uri": "https://api.sketchfab.com/v3/tags/damaged"
+        },
+        {
+          "name": "grungy",
+          "slug": "grungy",
+          "uri": "https://api.sketchfab.com/v3/tags/grungy"
+        },
+        {
+          "name": "grunge",
+          "slug": "grunge",
+          "uri": "https://api.sketchfab.com/v3/tags/grunge"
+        },
+        {
+          "name": "metal",
+          "slug": "metal",
+          "uri": "https://api.sketchfab.com/v3/tags/metal"
+        },
+        {
+          "name": "realistic",
+          "slug": "realistic",
+          "uri": "https://api.sketchfab.com/v3/tags/realistic"
+        },
+        {
+          "name": "old",
+          "slug": "old",
+          "uri": "https://api.sketchfab.com/v3/tags/old"
+        },
+        {
+          "name": "environmental",
+          "slug": "environmental",
+          "uri": "https://api.sketchfab.com/v3/tags/environmental"
+        },
+        {
+          "name": "chipped",
+          "slug": "chipped",
+          "uri": "https://api.sketchfab.com/v3/tags/chipped"
+        },
+        {
+          "name": "scratches",
+          "slug": "scratches",
+          "uri": "https://api.sketchfab.com/v3/tags/scratches"
+        },
+        {
+          "name": "scratched",
+          "slug": "scratched",
+          "uri": "https://api.sketchfab.com/v3/tags/scratched"
+        },
+        {
+          "name": "weathered",
+          "slug": "weathered",
+          "uri": "https://api.sketchfab.com/v3/tags/weathered"
+        },
+        {
+          "name": "distressed",
+          "slug": "distressed",
+          "uri": "https://api.sketchfab.com/v3/tags/distressed"
+        },
+        {
+          "name": "peeling",
+          "slug": "peeling",
+          "uri": "https://api.sketchfab.com/v3/tags/peeling"
+        },
+        {
+          "name": "modeling",
+          "slug": "modeling",
+          "uri": "https://api.sketchfab.com/v3/tags/modeling"
+        },
+        {
+          "name": "asset",
+          "slug": "asset",
+          "uri": "https://api.sketchfab.com/v3/tags/asset"
+        },
+        {
+          "name": "game",
+          "slug": "game",
+          "uri": "https://api.sketchfab.com/v3/tags/game"
+        },
+        {
+          "name": "3d",
+          "slug": "3d",
+          "uri": "https://api.sketchfab.com/v3/tags/3d"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "pbr",
+          "slug": "pbr",
+          "uri": "https://api.sketchfab.com/v3/tags/pbr"
+        },
+        {
+          "name": "lowpoly",
+          "slug": "lowpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpoly"
+        },
+        {
+          "name": "model",
+          "slug": "model",
+          "uri": "https://api.sketchfab.com/v3/tags/model"
+        },
+        {
+          "name": "factory",
+          "slug": "factory",
+          "uri": "https://api.sketchfab.com/v3/tags/factory"
+        },
+        {
+          "name": "material",
+          "slug": "material",
+          "uri": "https://api.sketchfab.com/v3/tags/material"
+        },
+        {
+          "name": "industrial",
+          "slug": "industrial",
+          "uri": "https://api.sketchfab.com/v3/tags/industrial"
+        },
+        {
+          "name": "environment",
+          "slug": "environment",
+          "uri": "https://api.sketchfab.com/v3/tags/environment"
+        },
+        {
+          "name": "steel",
+          "slug": "steel",
+          "uri": "https://api.sketchfab.com/v3/tags/steel"
+        }
+      ],
+      "categories": [
+        {
+          "name": "art-abstract"
+        },
+        {
+          "name": "weapons-military"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "c39de0b4e77b44cebe1971d13f21c854",
+            "size": 175496,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/56e5b35d61244690ab4e506a601ecf1f/thumbnails/c102fc4fb9924fd798e89db1a82969c7/a11e7e1db12e4903880400c1f294f832.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "34f25cd435da49dd88b937840be1360c",
+            "size": 42139,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/56e5b35d61244690ab4e506a601ecf1f/thumbnails/c102fc4fb9924fd798e89db1a82969c7/4024c4bd67d94291be7d228ed115ea5d.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "4b0abbc72e5643349dd83beb670b9973",
+            "size": 22182,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/56e5b35d61244690ab4e506a601ecf1f/thumbnails/c102fc4fb9924fd798e89db1a82969c7/1ab4d0188cf84fba9eb58e9e8e943b06.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "1f94f20257574385b6ed1abcc7d5c724",
+            "size": 4069,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/56e5b35d61244690ab4e506a601ecf1f/thumbnails/c102fc4fb9924fd798e89db1a82969c7/c68c0a6b6cbb47eea99a69bf5ae783b3.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "27c748ad0b9740f6bd951bf345fc7e1f",
+            "size": 1025,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/56e5b35d61244690ab4e506a601ecf1f/thumbnails/c102fc4fb9924fd798e89db1a82969c7/b8e2cd85b1b74beb90e53271a679dfcc.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "d8b8d0ba9e8648fcaec56758e8e6f3e3",
+        "username": "MH446",
+        "displayName": "MakeModelShare",
+        "profileUrl": "https://sketchfab.com/MH446",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/3ef1bd11d3eb4b57a0b353e8f2e5fc3e",
+          "images": [
+            {
+              "size": 680,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/3ef1bd11d3eb4b57a0b353e8f2e5fc3e/116042a0854e40538adab302b593683d.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1253,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/3ef1bd11d3eb4b57a0b353e8f2e5fc3e/efea16be51d04eb7a00cb9ea0b43b87f.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2797,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/3ef1bd11d3eb4b57a0b353e8f2e5fc3e/ac9b469ccec74caf923a81fb2f0be3ed.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3215,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/3ef1bd11d3eb4b57a0b353e8f2e5fc3e/a075e1d43d2f446c949b5967b470c757.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/d8b8d0ba9e8648fcaec56758e8e6f3e3"
+      },
+      "description": "A Low Poly realistic worn red metal barrel with scratched paint, exposed metal, and weathered surface detail.\n\nDesigned as a game-ready environmental prop suitable for industrial areas, warehouses, abandoned facilities, survival games, and atmospheric environments.\n\nSoftware Used:\n\nBlender\n\nI am relatively new and not a professional. I just use blender here and there. Feedback and suggestions are welcome. Thank you!\n\nCreated using texture assets from ambientCG.com, licensed under the Creative Commons CC0 1.0 Universal License.",
+      "faceCount": 1272,
+      "createdAt": "2026-08-15T22:39:53.805037",
+      "vertexCount": 640,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 2,
+          "size": 2088464,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 1272,
+          "vertexCount": 1316
+        },
+        "gltf": {
+          "textureCount": 2,
+          "size": 2019170,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 1272,
+          "vertexCount": 1316
+        },
+        "source": {
+          "textureCount": null,
+          "size": 5414940,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 1424440,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/99483dc2d26548e1955898b063ad87cb",
+      "uid": "99483dc2d26548e1955898b063ad87cb",
+      "name": "Barrel Pack - Low Poly Props",
+      "staffpickedAt": null,
+      "viewCount": 523,
+      "likeCount": 23,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-99483dc2d26548e1955898b063ad87cb",
+      "embedUrl": "https://sketchfab.com/models/99483dc2d26548e1955898b063ad87cb/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-07-28T18:08:29.800426",
+      "tags": [
+        {
+          "name": "barrel",
+          "slug": "barrel",
+          "uri": "https://api.sketchfab.com/v3/tags/barrel"
+        },
+        {
+          "name": "post-apocalyptic",
+          "slug": "post-apocalyptic",
+          "uri": "https://api.sketchfab.com/v3/tags/post-apocalyptic"
+        },
+        {
+          "name": "rusty",
+          "slug": "rusty",
+          "uri": "https://api.sketchfab.com/v3/tags/rusty"
+        },
+        {
+          "name": "biohazard",
+          "slug": "biohazard",
+          "uri": "https://api.sketchfab.com/v3/tags/biohazard"
+        },
+        {
+          "name": "radiation",
+          "slug": "radiation",
+          "uri": "https://api.sketchfab.com/v3/tags/radiation"
+        },
+        {
+          "name": "game-ready",
+          "slug": "game-ready",
+          "uri": "https://api.sketchfab.com/v3/tags/game-ready"
+        },
+        {
+          "name": "oil-drum",
+          "slug": "oil-drum",
+          "uri": "https://api.sketchfab.com/v3/tags/oil-drum"
+        },
+        {
+          "name": "asset-pack",
+          "slug": "asset-pack",
+          "uri": "https://api.sketchfab.com/v3/tags/asset-pack"
+        },
+        {
+          "name": "prop-pack",
+          "slug": "prop-pack",
+          "uri": "https://api.sketchfab.com/v3/tags/prop-pack"
+        },
+        {
+          "name": "hazardous",
+          "slug": "hazardous",
+          "uri": "https://api.sketchfab.com/v3/tags/hazardous"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "lowpoly",
+          "slug": "lowpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpoly"
+        },
+        {
+          "name": "free",
+          "slug": "free",
+          "uri": "https://api.sketchfab.com/v3/tags/free"
+        },
+        {
+          "name": "industrial",
+          "slug": "industrial",
+          "uri": "https://api.sketchfab.com/v3/tags/industrial"
+        },
+        {
+          "name": "toxic-waste",
+          "slug": "toxic-waste",
+          "uri": "https://api.sketchfab.com/v3/tags/toxic-waste"
+        },
+        {
+          "name": "barrel-pack",
+          "slug": "barrel-pack",
+          "uri": "https://api.sketchfab.com/v3/tags/barrel-pack"
+        }
+      ],
+      "categories": [
+        {
+          "name": "furniture-home"
+        },
+        {
+          "name": "science-technology"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "b51136fb2a504ba9aa5de281cb6c2222",
+            "size": 220090,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/99483dc2d26548e1955898b063ad87cb/thumbnails/4710e3bb635b4214af262d741d414c3d/ce710b0817aa4619885b110c7de0f527.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "ccc226325beb4bab80fb4e71522ab499",
+            "size": 74713,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/99483dc2d26548e1955898b063ad87cb/thumbnails/4710e3bb635b4214af262d741d414c3d/98a93333615747088be68fb677ca8a08.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "057be80e3fc549bd90564c4f3e79d7cd",
+            "size": 42359,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/99483dc2d26548e1955898b063ad87cb/thumbnails/4710e3bb635b4214af262d741d414c3d/8eef14e3227545ccbf5641d91bb131e9.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "b93dea2ad0d845669be8f5ecf38937aa",
+            "size": 7751,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/99483dc2d26548e1955898b063ad87cb/thumbnails/4710e3bb635b4214af262d741d414c3d/748d540bb733486f8d469ce1b603c836.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "58a413f8f66448f9a4c27859f13e5503",
+            "size": 1388,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/99483dc2d26548e1955898b063ad87cb/thumbnails/4710e3bb635b4214af262d741d414c3d/9084296d6c7747b692929f6f6aa4acbc.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "a2474576d9e14c2faf95b26a2b0fbba6",
+        "username": "Vo_plex",
+        "displayName": "Vlaxled",
+        "profileUrl": "https://sketchfab.com/Vo_plex",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/27c74ea336e34455abe4f2437ad687fe",
+          "images": [
+            {
+              "size": 1045,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/27c74ea336e34455abe4f2437ad687fe/ab1a4ec783fc4df4b1bf42145cf945c6.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1304,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/27c74ea336e34455abe4f2437ad687fe/c8b6444134d74b3ca9ab66581c883586.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2455,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/27c74ea336e34455abe4f2437ad687fe/81dddc3088aa4230bdcd26fecc8c1401.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2653,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/27c74ea336e34455abe4f2437ad687fe/0748fd69cb0641e9b0d44ea8e3b7e5f2.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/a2474576d9e14c2faf95b26a2b0fbba6"
+      },
+      "description": "A comprehensive game-ready asset pack containing 5 unique low-poly industrial metal barrels. Includes various post-apocalyptic and hazard variants: classic rusty, biohazard, old grunge, radiation warning, and bright yellow toxic waste drum. Perfect for FPS shooters, survival horror levels, warehouses, or sci-fi environments.\n\nFeatures:\n- Pack of 5 unique photo-textured models\n- Optimized Low-Poly geometry with 3D structural ridges\n- Various hazard and apocalyptic themes (Biohazard, Radiation, Toxic)\n- Made in Blender 3.6\n- Format: FBX (with embedded textures)\n\n---\n\u0423\u043b\u044c\u0442\u0438\u043c\u0430\u0442\u0438\u0432\u043d\u044b\u0439 \u0438\u0433\u0440\u043e\u0432\u043e\u0439 \u043f\u0430\u043a \u0438\u0437 5 \u0443\u043d\u0438\u043a\u0430\u043b\u044c\u043d\u044b\u0445 \u043d\u0438\u0437\u043a\u043e\u043f\u043e\u043b\u0438\u0433\u043e\u043d\u0430\u043b\u044c\u043d\u044b\u0445 \u043c\u0435\u0442\u0430\u043b\u043b\u0438\u0447\u0435\u0441\u043a\u0438\u0445 \u0431\u043e\u0447\u0435\u043a. \u0412\u043a\u043b\u044e\u0447\u0430\u0435\u0442 \u0440\u0430\u0437\u043b\u0438\u0447\u043d\u044b\u0435 \u0438\u043d\u0434\u0443\u0441\u0442\u0440\u0438\u0430\u043b\u044c\u043d\u044b\u0435 \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u044b \u0438 \u0437\u043d\u0430\u043a\u0438 \u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u0438: \u043a\u043b\u0430\u0441\u0441\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0440\u0436\u0430\u0432\u0430\u044f, \u0431\u0438\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0443\u0433\u0440\u043e\u0437\u0430, \u0441\u0442\u0430\u0440\u0430\u044f \u0437\u0430\u0431\u0440\u043e\u0448\u0435\u043d\u043d\u0430\u044f, \u0440\u0430\u0434\u0438\u0430\u0446\u0438\u044f \u0438 \u0436\u0435\u043b\u0442\u0430\u044f \u0431\u043e\u0447\u043a\u0430 \u0441 \u0442\u043e\u043a\u0441\u0438\u0447\u043d\u044b\u043c\u0438 \u043e\u0442\u0445\u043e\u0434\u0430\u043c\u0438. \u0418\u0434\u0435\u0430\u043b\u044c\u043d\u044b\u0435 \u043f\u0440\u043e\u043f\u0441\u044b \u0434\u043b\u044f \u0448\u0443\u0442\u0435\u0440\u043e\u0432, \u0445\u043e\u0440\u0440\u043e\u0440\u043e\u0432 \u0438 \u043d\u0430\u0443\u0447\u043d\u043e-\u0444\u0430\u043d\u0442\u0430\u0441\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0445 \u043b\u043e\u043a\u0430\u0446\u0438\u0439. \u0421\u043e\u0437\u0434\u0430\u043d\u043e \u0432 Blender 3.6.",
+      "faceCount": 1900,
+      "createdAt": "2026-07-28T18:05:40.692929",
+      "vertexCount": 960,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 5,
+          "size": 694968,
+          "type": "glb",
+          "textureMaxResolution": 512,
+          "faceCount": 1900,
+          "vertexCount": 3000
+        },
+        "gltf": {
+          "textureCount": 5,
+          "size": 582304,
+          "type": "gltf",
+          "textureMaxResolution": 512,
+          "faceCount": 1900,
+          "vertexCount": 3000
+        },
+        "source": {
+          "textureCount": null,
+          "size": 697221,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 628207,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/0d03d043bb1647849a36a5c8dee0fafd",
+      "uid": "0d03d043bb1647849a36a5c8dee0fafd",
+      "name": "Rusty Metal Barrel - Inspired Industrial Prop",
+      "staffpickedAt": null,
+      "viewCount": 60,
+      "likeCount": 5,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-0d03d043bb1647849a36a5c8dee0fafd",
+      "embedUrl": "https://sketchfab.com/models/0d03d043bb1647849a36a5c8dee0fafd/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-07-28T14:43:39.238109",
+      "tags": [
+        {
+          "name": "barrel",
+          "slug": "barrel",
+          "uri": "https://api.sketchfab.com/v3/tags/barrel"
+        },
+        {
+          "name": "prop",
+          "slug": "prop",
+          "uri": "https://api.sketchfab.com/v3/tags/prop"
+        },
+        {
+          "name": "post-apocalyptic",
+          "slug": "post-apocalyptic",
+          "uri": "https://api.sketchfab.com/v3/tags/post-apocalyptic"
+        },
+        {
+          "name": "rusty",
+          "slug": "rusty",
+          "uri": "https://api.sketchfab.com/v3/tags/rusty"
+        },
+        {
+          "name": "garbage",
+          "slug": "garbage",
+          "uri": "https://api.sketchfab.com/v3/tags/garbage"
+        },
+        {
+          "name": "metal",
+          "slug": "metal",
+          "uri": "https://api.sketchfab.com/v3/tags/metal"
+        },
+        {
+          "name": "hl2",
+          "slug": "hl2",
+          "uri": "https://api.sketchfab.com/v3/tags/hl2"
+        },
+        {
+          "name": "game-ready",
+          "slug": "game-ready",
+          "uri": "https://api.sketchfab.com/v3/tags/game-ready"
+        },
+        {
+          "name": "half-life",
+          "slug": "half-life",
+          "uri": "https://api.sketchfab.com/v3/tags/half-life"
+        },
+        {
+          "name": "oil-drum",
+          "slug": "oil-drum",
+          "uri": "https://api.sketchfab.com/v3/tags/oil-drum"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "lowpoly",
+          "slug": "lowpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpoly"
+        },
+        {
+          "name": "free",
+          "slug": "free",
+          "uri": "https://api.sketchfab.com/v3/tags/free"
+        },
+        {
+          "name": "container",
+          "slug": "container",
+          "uri": "https://api.sketchfab.com/v3/tags/container"
+        },
+        {
+          "name": "industrial",
+          "slug": "industrial",
+          "uri": "https://api.sketchfab.com/v3/tags/industrial"
+        }
+      ],
+      "categories": [
+        {
+          "name": "science-technology"
+        },
+        {
+          "name": "weapons-military"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "15fa46e16ea24509b830dad4566bb8d4",
+            "size": 153204,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/0d03d043bb1647849a36a5c8dee0fafd/thumbnails/44294cad69cd446ab1fa61737e1ebe62/99969da511a84f8399c3d6788f1a96d3.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "23f48d77eafb47199f39b26e57fe464c",
+            "size": 51437,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/0d03d043bb1647849a36a5c8dee0fafd/thumbnails/44294cad69cd446ab1fa61737e1ebe62/97177d5cfd314af684b31a2990961953.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "270b959046ed4425af94c1d86d08bde6",
+            "size": 28873,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/0d03d043bb1647849a36a5c8dee0fafd/thumbnails/44294cad69cd446ab1fa61737e1ebe62/f91d19b1a4da441dad3a6c118d489ea6.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "57af5648494e40cb91b2a985f4d11f2b",
+            "size": 4944,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/0d03d043bb1647849a36a5c8dee0fafd/thumbnails/44294cad69cd446ab1fa61737e1ebe62/3c62b223d23a4bdb9c4bd8d94ef39044.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "0c33cdd079a84b2b8b81fccad38645e3",
+            "size": 1104,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/0d03d043bb1647849a36a5c8dee0fafd/thumbnails/44294cad69cd446ab1fa61737e1ebe62/e3d7b51fc86846f998c503398eb01e1c.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "a2474576d9e14c2faf95b26a2b0fbba6",
+        "username": "Vo_plex",
+        "displayName": "Vlaxled",
+        "profileUrl": "https://sketchfab.com/Vo_plex",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/27c74ea336e34455abe4f2437ad687fe",
+          "images": [
+            {
+              "size": 1045,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/27c74ea336e34455abe4f2437ad687fe/ab1a4ec783fc4df4b1bf42145cf945c6.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1304,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/27c74ea336e34455abe4f2437ad687fe/c8b6444134d74b3ca9ab66581c883586.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2455,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/27c74ea336e34455abe4f2437ad687fe/81dddc3088aa4230bdcd26fecc8c1401.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2653,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/27c74ea336e34455abe4f2437ad687fe/0748fd69cb0641e9b0d44ea8e3b7e5f2.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/a2474576d9e14c2faf95b26a2b0fbba6"
+      },
+      "description": "An optimized, game-ready low-poly 3D model of a rusty metal oil barrel, heavily inspired by the iconic industrial props from Half-Life 2. Features a custom teal/blue-green worn paint texture with realistic rust patches. Ideal for shooters, post-apocalyptic levels, warehouses, or sci-fi environments.\n\nFeatures:\n- Optimized Low-Poly cylinder geometry\n- Worn industrial photo-textured look (Teal & Rust)\n- Made in Blender 3.6\n- Format: FBX (with embedded textures)\n\n---\n\u041b\u043e\u0443-\u043f\u043e\u043b\u0438 3D-\u043c\u043e\u0434\u0435\u043b\u044c \u0440\u0436\u0430\u0432\u043e\u0439 \u043c\u0435\u0442\u0430\u043b\u043b\u0438\u0447\u0435\u0441\u043a\u043e\u0439 \u0431\u043e\u0447\u043a\u0438, \u0432\u0434\u043e\u0445\u043d\u043e\u0432\u043b\u0435\u043d\u043d\u0430\u044f \u043a\u0443\u043b\u044c\u0442\u043e\u0432\u044b\u043c\u0438 \u043f\u0440\u043e\u043c\u044b\u0448\u043b\u0435\u043d\u043d\u044b\u043c\u0438 \u043f\u0440\u043e\u043f\u0430\u043c\u0438 \u0438\u0437 Half-Life 2. \u0422\u0435\u043a\u0441\u0442\u0443\u0440\u0430 \u0441\u0438\u043d\u0435-\u0437\u0435\u043b\u0435\u043d\u043e\u0439 \u043e\u0431\u043b\u0443\u043f\u0438\u0432\u0448\u0435\u0439\u0441\u044f \u043a\u0440\u0430\u0441\u043a\u0438 \u0441 \u0440\u0435\u0430\u043b\u0438\u0441\u0442\u0438\u0447\u043d\u044b\u043c\u0438 \u043f\u044f\u0442\u043d\u0430\u043c\u0438 \u0440\u0436\u0430\u0432\u0447\u0438\u043d\u044b. \u041e\u0442\u043b\u0438\u0447\u043d\u044b\u0439 \u0431\u0430\u0437\u043e\u0432\u044b\u0439 \u0430\u0441\u0441\u0435\u0442 \u0434\u043b\u044f \u0448\u0443\u0442\u0435\u0440\u043e\u0432, \u043f\u043e\u0441\u0442\u0430\u043f\u043e\u043a\u0430\u043b\u0438\u043f\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0445 \u043b\u043e\u043a\u0430\u0446\u0438\u0439, \u0441\u043a\u043b\u0430\u0434\u043e\u0432 \u0438 \u0438\u043d\u0434\u0443\u0441\u0442\u0440\u0438\u0430\u043b\u044c\u043d\u044b\u0445 \u0437\u043e\u043d. \u0421\u043e\u0437\u0434\u0430\u043d\u043e \u0432 Blender 3.6.",
+      "faceCount": 284,
+      "createdAt": "2026-07-28T14:39:34.382099",
+      "vertexCount": 144,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 213344,
+          "type": "glb",
+          "textureMaxResolution": 512,
+          "faceCount": 284,
+          "vertexCount": 504
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 197370,
+          "type": "gltf",
+          "textureMaxResolution": 512,
+          "faceCount": 284,
+          "vertexCount": 504
+        },
+        "source": {
+          "textureCount": null,
+          "size": 278233,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 211474,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/a4206fd397c943f4a54bc1d80985d287",
+      "uid": "a4206fd397c943f4a54bc1d80985d287",
+      "name": "Low Poly Rusty Barrel",
+      "staffpickedAt": null,
+      "viewCount": 83,
+      "likeCount": 4,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-a4206fd397c943f4a54bc1d80985d287",
+      "embedUrl": "https://sketchfab.com/models/a4206fd397c943f4a54bc1d80985d287/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-07-16T15:38:51.514004",
+      "tags": [
+        {
+          "name": "barrel",
+          "slug": "barrel",
+          "uri": "https://api.sketchfab.com/v3/tags/barrel"
+        },
+        {
+          "name": "rust",
+          "slug": "rust",
+          "uri": "https://api.sketchfab.com/v3/tags/rust"
+        },
+        {
+          "name": "prop",
+          "slug": "prop",
+          "uri": "https://api.sketchfab.com/v3/tags/prop"
+        },
+        {
+          "name": "urban",
+          "slug": "urban",
+          "uri": "https://api.sketchfab.com/v3/tags/urban"
+        },
+        {
+          "name": "rusty",
+          "slug": "rusty",
+          "uri": "https://api.sketchfab.com/v3/tags/rusty"
+        },
+        {
+          "name": "worn",
+          "slug": "worn",
+          "uri": "https://api.sketchfab.com/v3/tags/worn"
+        },
+        {
+          "name": "ready",
+          "slug": "ready",
+          "uri": "https://api.sketchfab.com/v3/tags/ready"
+        },
+        {
+          "name": "graffiti",
+          "slug": "graffiti",
+          "uri": "https://api.sketchfab.com/v3/tags/graffiti"
+        },
+        {
+          "name": "survival",
+          "slug": "survival",
+          "uri": "https://api.sketchfab.com/v3/tags/survival"
+        },
+        {
+          "name": "dirty",
+          "slug": "dirty",
+          "uri": "https://api.sketchfab.com/v3/tags/dirty"
+        },
+        {
+          "name": "metal",
+          "slug": "metal",
+          "uri": "https://api.sketchfab.com/v3/tags/metal"
+        },
+        {
+          "name": "real",
+          "slug": "real",
+          "uri": "https://api.sketchfab.com/v3/tags/real"
+        },
+        {
+          "name": "corrosion",
+          "slug": "corrosion",
+          "uri": "https://api.sketchfab.com/v3/tags/corrosion"
+        },
+        {
+          "name": "asset",
+          "slug": "asset",
+          "uri": "https://api.sketchfab.com/v3/tags/asset"
+        },
+        {
+          "name": "game",
+          "slug": "game",
+          "uri": "https://api.sketchfab.com/v3/tags/game"
+        },
+        {
+          "name": "3d",
+          "slug": "3d",
+          "uri": "https://api.sketchfab.com/v3/tags/3d"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "low",
+          "slug": "low",
+          "uri": "https://api.sketchfab.com/v3/tags/low"
+        },
+        {
+          "name": "model",
+          "slug": "model",
+          "uri": "https://api.sketchfab.com/v3/tags/model"
+        },
+        {
+          "name": "factory",
+          "slug": "factory",
+          "uri": "https://api.sketchfab.com/v3/tags/factory"
+        },
+        {
+          "name": "industrial",
+          "slug": "industrial",
+          "uri": "https://api.sketchfab.com/v3/tags/industrial"
+        },
+        {
+          "name": "environment",
+          "slug": "environment",
+          "uri": "https://api.sketchfab.com/v3/tags/environment"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "c33e0d3189b84310bc74d32a4530ec71",
+            "size": 213982,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/a4206fd397c943f4a54bc1d80985d287/thumbnails/6de540584b2e4173892db5c41b9413dd/a05d6da43bcd4acfab6545be780620c1.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "b1551504fc424e538a37f792a7dd350f",
+            "size": 56124,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/a4206fd397c943f4a54bc1d80985d287/thumbnails/6de540584b2e4173892db5c41b9413dd/7a95cd9a8e4c4b83a6918bcbfb2d83d9.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "263d238c3d5542abb11240f8b5857dea",
+            "size": 29041,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/a4206fd397c943f4a54bc1d80985d287/thumbnails/6de540584b2e4173892db5c41b9413dd/91f12a9f613e4eb2b9d2361ec4921214.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "34f2b36510d145588b5dd6305f246338",
+            "size": 4874,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/a4206fd397c943f4a54bc1d80985d287/thumbnails/6de540584b2e4173892db5c41b9413dd/cd656bcb2f584bd3aec72ead53c7898d.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "7f41ad3cfbe84629ad763ee09b446421",
+            "size": 1116,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/a4206fd397c943f4a54bc1d80985d287/thumbnails/6de540584b2e4173892db5c41b9413dd/c9d0f9c084f3494088379e72a885e3ce.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "3d677644b941454f900c58859c40a762",
+        "username": "angelinadu2006",
+        "displayName": "kkjsd",
+        "profileUrl": "https://sketchfab.com/angelinadu2006",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/31d03d1a57ed4daa9da987f73b0dcb15",
+          "images": [
+            {
+              "size": 1057,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/31d03d1a57ed4daa9da987f73b0dcb15/a7ddb57ba3004de494bb22d450ecdaf5.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1398,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/31d03d1a57ed4daa9da987f73b0dcb15/352f840fc6ab4f89b407ec9480834e67.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2819,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/31d03d1a57ed4daa9da987f73b0dcb15/9006502b8fb64c12baaafe27861a0d12.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3201,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/31d03d1a57ed4daa9da987f73b0dcb15/ad63753ac7ae48948df5a7c77c47fae5.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/3d677644b941454f900c58859c40a762"
+      },
+      "description": "Low-poly rusty metal barrel created as a game-ready environmental prop. \nSuitable for post-apocalyptic, industrial, abandoned factory, survival and urban environments.\nThe model is optimized for real-time projects and can be used in games, animations and environment scenes.\nCreated in Blender.",
+      "faceCount": 760,
+      "createdAt": "2026-07-16T15:35:28.798520",
+      "vertexCount": 382,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 3,
+          "size": 62515344,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 760,
+          "vertexCount": 714
+        },
+        "gltf": {
+          "textureCount": 3,
+          "size": 62474704,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 760,
+          "vertexCount": 714
+        },
+        "source": {
+          "textureCount": null,
+          "size": 142078021,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 6589829,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/278efec0806149bc89ebb12868a09688",
+      "uid": "278efec0806149bc89ebb12868a09688",
+      "name": "(Free)Rusty Oil drum",
+      "staffpickedAt": null,
+      "viewCount": 53,
+      "likeCount": 2,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-278efec0806149bc89ebb12868a09688",
+      "embedUrl": "https://sketchfab.com/models/278efec0806149bc89ebb12868a09688/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-07-06T11:17:56.304482",
+      "tags": [
+        {
+          "name": "drum",
+          "slug": "drum",
+          "uri": "https://api.sketchfab.com/v3/tags/drum"
+        },
+        {
+          "name": "storage",
+          "slug": "storage",
+          "uri": "https://api.sketchfab.com/v3/tags/storage"
+        },
+        {
+          "name": "barrel",
+          "slug": "barrel",
+          "uri": "https://api.sketchfab.com/v3/tags/barrel"
+        },
+        {
+          "name": "oil",
+          "slug": "oil",
+          "uri": "https://api.sketchfab.com/v3/tags/oil"
+        },
+        {
+          "name": "apocalyptic",
+          "slug": "apocalyptic",
+          "uri": "https://api.sketchfab.com/v3/tags/apocalyptic"
+        },
+        {
+          "name": "prop",
+          "slug": "prop",
+          "uri": "https://api.sketchfab.com/v3/tags/prop"
+        },
+        {
+          "name": "warehouse",
+          "slug": "warehouse",
+          "uri": "https://api.sketchfab.com/v3/tags/warehouse"
+        },
+        {
+          "name": "urban",
+          "slug": "urban",
+          "uri": "https://api.sketchfab.com/v3/tags/urban"
+        },
+        {
+          "name": "post",
+          "slug": "post",
+          "uri": "https://api.sketchfab.com/v3/tags/post"
+        },
+        {
+          "name": "unreal",
+          "slug": "unreal",
+          "uri": "https://api.sketchfab.com/v3/tags/unreal"
+        },
+        {
+          "name": "ready",
+          "slug": "ready",
+          "uri": "https://api.sketchfab.com/v3/tags/ready"
+        },
+        {
+          "name": "fuel",
+          "slug": "fuel",
+          "uri": "https://api.sketchfab.com/v3/tags/fuel"
+        },
+        {
+          "name": "metal",
+          "slug": "metal",
+          "uri": "https://api.sketchfab.com/v3/tags/metal"
+        },
+        {
+          "name": "realistic",
+          "slug": "realistic",
+          "uri": "https://api.sketchfab.com/v3/tags/realistic"
+        },
+        {
+          "name": "engine",
+          "slug": "engine",
+          "uri": "https://api.sketchfab.com/v3/tags/engine"
+        },
+        {
+          "name": "unity",
+          "slug": "unity",
+          "uri": "https://api.sketchfab.com/v3/tags/unity"
+        },
+        {
+          "name": "asset",
+          "slug": "asset",
+          "uri": "https://api.sketchfab.com/v3/tags/asset"
+        },
+        {
+          "name": "game",
+          "slug": "game",
+          "uri": "https://api.sketchfab.com/v3/tags/game"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "pbr",
+          "slug": "pbr",
+          "uri": "https://api.sketchfab.com/v3/tags/pbr"
+        },
+        {
+          "name": "factory",
+          "slug": "factory",
+          "uri": "https://api.sketchfab.com/v3/tags/factory"
+        },
+        {
+          "name": "industrial",
+          "slug": "industrial",
+          "uri": "https://api.sketchfab.com/v3/tags/industrial"
+        },
+        {
+          "name": "environment",
+          "slug": "environment",
+          "uri": "https://api.sketchfab.com/v3/tags/environment"
+        }
+      ],
+      "categories": [
+        {
+          "name": "art-abstract"
+        },
+        {
+          "name": "weapons-military"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "d3bcb6f413e2455fbf533d7a9c7bbf4f",
+            "size": 232317,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/278efec0806149bc89ebb12868a09688/thumbnails/a188fae21677474184e29ba071ecbd1b/8b73133c86584765b3dc60b02c21986b.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "3c1cc5b94a254603bb555611c57257d3",
+            "size": 58365,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/278efec0806149bc89ebb12868a09688/thumbnails/a188fae21677474184e29ba071ecbd1b/9f80a0243a754f2fbd452178f74353dc.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "134cb48f0f084efbbcb8416a082f878e",
+            "size": 26851,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/278efec0806149bc89ebb12868a09688/thumbnails/a188fae21677474184e29ba071ecbd1b/c69a312444a242b8a60924ad79e5d5f7.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "21ab4b6570a74b039fbc838d4441bba1",
+            "size": 3876,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/278efec0806149bc89ebb12868a09688/thumbnails/a188fae21677474184e29ba071ecbd1b/3ed12ab7275b4f46b676bd748f65f29e.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "016cf64f792f487eb33e0ef297909410",
+            "size": 953,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/278efec0806149bc89ebb12868a09688/thumbnails/a188fae21677474184e29ba071ecbd1b/2d022bd4a8b84dd681fe1eca07437f25.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "fb2e56ab46074083a4950b7031bf7697",
+        "username": "tonoy787",
+        "displayName": "tonoy787",
+        "profileUrl": "https://sketchfab.com/tonoy787",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/51af6a870cce449eb75b0345feebaebb",
+          "images": [
+            {
+              "size": 5719,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/2ef0f894055b4bb69123b2a27fa2d379.jpeg",
+              "height": 90
+            },
+            {
+              "size": 6496,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/ab11eedf96374486acb544f71a23b165.jpeg",
+              "height": 100
+            },
+            {
+              "size": 1359,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/35f6f9b6c9a14a548ce472582d8a9bb5.jpeg",
+              "height": 32
+            },
+            {
+              "size": 2584,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/a8072a51447c4d41ab177b357111b420.jpeg",
+              "height": 48
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/fb2e56ab46074083a4950b7031bf7697"
+      },
+      "description": "A high-quality Oil Drum 3D model designed for industrial, urban, post-apocalyptic, warehouse, and construction environments. Featuring realistic details, clean topology, and optimized geometry, this asset is ideal for games, architectural visualization, animations, and cinematic scenes.\n\nWhether used as an environmental prop, storage barrel, hazardous material container, or industrial decoration, this model fits seamlessly into factories, garages, docks, workshops, and abandoned locations. Optimized for real-time rendering, it delivers excellent performance without compromising visual quality.",
+      "faceCount": 6044,
+      "createdAt": "2026-07-06T11:15:34.980442",
+      "vertexCount": 3024,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 4,
+          "size": 5355300,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 6044,
+          "vertexCount": 3824
+        },
+        "gltf": {
+          "textureCount": 4,
+          "size": 5211826,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 6044,
+          "vertexCount": 3824
+        },
+        "source": {
+          "textureCount": null,
+          "size": 5448176,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 2164256,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/8ae54ce93b6742bd83fa51405c499cd6",
+      "uid": "8ae54ce93b6742bd83fa51405c499cd6",
+      "name": "OIL Barrel",
+      "staffpickedAt": null,
+      "viewCount": 701,
+      "likeCount": 21,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-8ae54ce93b6742bd83fa51405c499cd6",
+      "embedUrl": "https://sketchfab.com/models/8ae54ce93b6742bd83fa51405c499cd6/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-06-27T21:59:07.520968",
+      "tags": [
+        {
+          "name": "storage",
+          "slug": "storage",
+          "uri": "https://api.sketchfab.com/v3/tags/storage"
+        },
+        {
+          "name": "barrel",
+          "slug": "barrel",
+          "uri": "https://api.sketchfab.com/v3/tags/barrel"
+        },
+        {
+          "name": "oil",
+          "slug": "oil",
+          "uri": "https://api.sketchfab.com/v3/tags/oil"
+        },
+        {
+          "name": "apocalyptic",
+          "slug": "apocalyptic",
+          "uri": "https://api.sketchfab.com/v3/tags/apocalyptic"
+        },
+        {
+          "name": "rust",
+          "slug": "rust",
+          "uri": "https://api.sketchfab.com/v3/tags/rust"
+        },
+        {
+          "name": "warehouse",
+          "slug": "warehouse",
+          "uri": "https://api.sketchfab.com/v3/tags/warehouse"
+        },
+        {
+          "name": "post",
+          "slug": "post",
+          "uri": "https://api.sketchfab.com/v3/tags/post"
+        },
+        {
+          "name": "unreal",
+          "slug": "unreal",
+          "uri": "https://api.sketchfab.com/v3/tags/unreal"
+        },
+        {
+          "name": "rusty",
+          "slug": "rusty",
+          "uri": "https://api.sketchfab.com/v3/tags/rusty"
+        },
+        {
+          "name": "realtime",
+          "slug": "realtime",
+          "uri": "https://api.sketchfab.com/v3/tags/realtime"
+        },
+        {
+          "name": "survival",
+          "slug": "survival",
+          "uri": "https://api.sketchfab.com/v3/tags/survival"
+        },
+        {
+          "name": "gamedev",
+          "slug": "gamedev",
+          "uri": "https://api.sketchfab.com/v3/tags/gamedev"
+        },
+        {
+          "name": "fuel",
+          "slug": "fuel",
+          "uri": "https://api.sketchfab.com/v3/tags/fuel"
+        },
+        {
+          "name": "metal",
+          "slug": "metal",
+          "uri": "https://api.sketchfab.com/v3/tags/metal"
+        },
+        {
+          "name": "engine",
+          "slug": "engine",
+          "uri": "https://api.sketchfab.com/v3/tags/engine"
+        },
+        {
+          "name": "petroleum",
+          "slug": "petroleum",
+          "uri": "https://api.sketchfab.com/v3/tags/petroleum"
+        },
+        {
+          "name": "unity",
+          "slug": "unity",
+          "uri": "https://api.sketchfab.com/v3/tags/unity"
+        },
+        {
+          "name": "asset",
+          "slug": "asset",
+          "uri": "https://api.sketchfab.com/v3/tags/asset"
+        },
+        {
+          "name": "game",
+          "slug": "game",
+          "uri": "https://api.sketchfab.com/v3/tags/game"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "pbr",
+          "slug": "pbr",
+          "uri": "https://api.sketchfab.com/v3/tags/pbr"
+        },
+        {
+          "name": "low",
+          "slug": "low",
+          "uri": "https://api.sketchfab.com/v3/tags/low"
+        },
+        {
+          "name": "poly",
+          "slug": "poly",
+          "uri": "https://api.sketchfab.com/v3/tags/poly"
+        },
+        {
+          "name": "industrial",
+          "slug": "industrial",
+          "uri": "https://api.sketchfab.com/v3/tags/industrial"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "furniture-home"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "474bef75c47c4701812078497c43ffe1",
+            "size": 282728,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/8ae54ce93b6742bd83fa51405c499cd6/thumbnails/0761f0cb7e4b40b181425c4bb7577d67/6e96b361fb7d45a1b4231445a794ac5f.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "ee643bdced974bdf854b6d5b2c4c4b47",
+            "size": 42368,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/8ae54ce93b6742bd83fa51405c499cd6/thumbnails/0761f0cb7e4b40b181425c4bb7577d67/c91d20bb06a94398947b3de59e9a3a58.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "5252da7a172d49f493af6afb74ee1bbb",
+            "size": 19829,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/8ae54ce93b6742bd83fa51405c499cd6/thumbnails/0761f0cb7e4b40b181425c4bb7577d67/0094cc565ebb44e1b98f684b6e9dbaa8.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "e08d5a8d111b4e9c840eb8bdbec7979f",
+            "size": 3395,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/8ae54ce93b6742bd83fa51405c499cd6/thumbnails/0761f0cb7e4b40b181425c4bb7577d67/a821431a3d724a8d911d67dab6ad1750.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "5a63c8ab85b144eda4529043cabfeb86",
+            "size": 1031,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/8ae54ce93b6742bd83fa51405c499cd6/thumbnails/0761f0cb7e4b40b181425c4bb7577d67/696c6e5de427464a80c48489a9c8e819.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "9702394eccbd4a2ea3907af54bfae9d3",
+        "username": "dominikfonta",
+        "displayName": "DOM",
+        "profileUrl": "https://sketchfab.com/dominikfonta",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/51af6a870cce449eb75b0345feebaebb",
+          "images": [
+            {
+              "size": 5719,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/2ef0f894055b4bb69123b2a27fa2d379.jpeg",
+              "height": 90
+            },
+            {
+              "size": 6496,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/ab11eedf96374486acb544f71a23b165.jpeg",
+              "height": 100
+            },
+            {
+              "size": 1359,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/35f6f9b6c9a14a548ce472582d8a9bb5.jpeg",
+              "height": 32
+            },
+            {
+              "size": 2584,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/a8072a51447c4d41ab177b357111b420.jpeg",
+              "height": 48
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/9702394eccbd4a2ea3907af54bfae9d3"
+      },
+      "description": "Oil Barrel is a realistic, game-ready rusty metal barrel with a weathered appearance and an oil warning symbol. Perfect for industrial, post-apocalyptic, survival, and warehouse environments. Includes PBR textures and is optimized for real-time use.",
+      "faceCount": 1792,
+      "createdAt": "2026-06-27T21:45:51.853556",
+      "vertexCount": 1355,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 9,
+          "size": 28354960,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 1792,
+          "vertexCount": 1723
+        },
+        "gltf": {
+          "textureCount": 9,
+          "size": 28176847,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 1792,
+          "vertexCount": 1723
+        },
+        "source": {
+          "textureCount": null,
+          "size": 56302200,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 4268214,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/7363cd0c69ec4ee0be98bc3ff1d51f11",
+      "uid": "7363cd0c69ec4ee0be98bc3ff1d51f11",
+      "name": "Biohazard Barrel",
+      "staffpickedAt": null,
+      "viewCount": 183,
+      "likeCount": 6,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-7363cd0c69ec4ee0be98bc3ff1d51f11",
+      "embedUrl": "https://sketchfab.com/models/7363cd0c69ec4ee0be98bc3ff1d51f11/embed",
+      "commentCount": 1,
+      "isDownloadable": true,
+      "publishedAt": "2026-06-27T21:31:28.082404",
+      "tags": [
+        {
+          "name": "barrel",
+          "slug": "barrel",
+          "uri": "https://api.sketchfab.com/v3/tags/barrel"
+        },
+        {
+          "name": "apocalyptic",
+          "slug": "apocalyptic",
+          "uri": "https://api.sketchfab.com/v3/tags/apocalyptic"
+        },
+        {
+          "name": "rust",
+          "slug": "rust",
+          "uri": "https://api.sketchfab.com/v3/tags/rust"
+        },
+        {
+          "name": "warehouse",
+          "slug": "warehouse",
+          "uri": "https://api.sketchfab.com/v3/tags/warehouse"
+        },
+        {
+          "name": "post",
+          "slug": "post",
+          "uri": "https://api.sketchfab.com/v3/tags/post"
+        },
+        {
+          "name": "unreal",
+          "slug": "unreal",
+          "uri": "https://api.sketchfab.com/v3/tags/unreal"
+        },
+        {
+          "name": "laboratory",
+          "slug": "laboratory",
+          "uri": "https://api.sketchfab.com/v3/tags/laboratory"
+        },
+        {
+          "name": "rusty",
+          "slug": "rusty",
+          "uri": "https://api.sketchfab.com/v3/tags/rusty"
+        },
+        {
+          "name": "realtime",
+          "slug": "realtime",
+          "uri": "https://api.sketchfab.com/v3/tags/realtime"
+        },
+        {
+          "name": "apocalypse",
+          "slug": "apocalypse",
+          "uri": "https://api.sketchfab.com/v3/tags/apocalypse"
+        },
+        {
+          "name": "chemical",
+          "slug": "chemical",
+          "uri": "https://api.sketchfab.com/v3/tags/chemical"
+        },
+        {
+          "name": "survival",
+          "slug": "survival",
+          "uri": "https://api.sketchfab.com/v3/tags/survival"
+        },
+        {
+          "name": "gamedev",
+          "slug": "gamedev",
+          "uri": "https://api.sketchfab.com/v3/tags/gamedev"
+        },
+        {
+          "name": "waste",
+          "slug": "waste",
+          "uri": "https://api.sketchfab.com/v3/tags/waste"
+        },
+        {
+          "name": "metal",
+          "slug": "metal",
+          "uri": "https://api.sketchfab.com/v3/tags/metal"
+        },
+        {
+          "name": "biohazard",
+          "slug": "biohazard",
+          "uri": "https://api.sketchfab.com/v3/tags/biohazard"
+        },
+        {
+          "name": "toxic",
+          "slug": "toxic",
+          "uri": "https://api.sketchfab.com/v3/tags/toxic"
+        },
+        {
+          "name": "engine",
+          "slug": "engine",
+          "uri": "https://api.sketchfab.com/v3/tags/engine"
+        },
+        {
+          "name": "radioactive",
+          "slug": "radioactive",
+          "uri": "https://api.sketchfab.com/v3/tags/radioactive"
+        },
+        {
+          "name": "hazardous",
+          "slug": "hazardous",
+          "uri": "https://api.sketchfab.com/v3/tags/hazardous"
+        },
+        {
+          "name": "unity",
+          "slug": "unity",
+          "uri": "https://api.sketchfab.com/v3/tags/unity"
+        },
+        {
+          "name": "asset",
+          "slug": "asset",
+          "uri": "https://api.sketchfab.com/v3/tags/asset"
+        },
+        {
+          "name": "game",
+          "slug": "game",
+          "uri": "https://api.sketchfab.com/v3/tags/game"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "pbr",
+          "slug": "pbr",
+          "uri": "https://api.sketchfab.com/v3/tags/pbr"
+        },
+        {
+          "name": "low",
+          "slug": "low",
+          "uri": "https://api.sketchfab.com/v3/tags/low"
+        },
+        {
+          "name": "poly",
+          "slug": "poly",
+          "uri": "https://api.sketchfab.com/v3/tags/poly"
+        },
+        {
+          "name": "industrial",
+          "slug": "industrial",
+          "uri": "https://api.sketchfab.com/v3/tags/industrial"
+        },
+        {
+          "name": "contaminated",
+          "slug": "contaminated",
+          "uri": "https://api.sketchfab.com/v3/tags/contaminated"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "weapons-military"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "95085f2dcca343c8924a63c57ce26aa8",
+            "size": 288140,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/7363cd0c69ec4ee0be98bc3ff1d51f11/thumbnails/8b282198097f4ed787bc41b58000f071/5f83b16804b643519c95305acb1bbb43.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "5f9a48163b1e4fd697feadfd9d194853",
+            "size": 43192,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/7363cd0c69ec4ee0be98bc3ff1d51f11/thumbnails/8b282198097f4ed787bc41b58000f071/867d390347714abb8168d7f6adaf5874.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "5679bff36d3946fc91201e2c165e0ab9",
+            "size": 20001,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/7363cd0c69ec4ee0be98bc3ff1d51f11/thumbnails/8b282198097f4ed787bc41b58000f071/02778a854f77487688028d27d62f0963.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "82e8efe1e15240efbb21e1fc3fc2759f",
+            "size": 3583,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/7363cd0c69ec4ee0be98bc3ff1d51f11/thumbnails/8b282198097f4ed787bc41b58000f071/dab5ef34530b45e18cfa4f3e259e93d4.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "7939985d58d54c76815834f05fd36a38",
+            "size": 1006,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/7363cd0c69ec4ee0be98bc3ff1d51f11/thumbnails/8b282198097f4ed787bc41b58000f071/8f60b432c9a64d8aad2075600b50802b.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "9702394eccbd4a2ea3907af54bfae9d3",
+        "username": "dominikfonta",
+        "displayName": "DOM",
+        "profileUrl": "https://sketchfab.com/dominikfonta",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/51af6a870cce449eb75b0345feebaebb",
+          "images": [
+            {
+              "size": 5719,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/2ef0f894055b4bb69123b2a27fa2d379.jpeg",
+              "height": 90
+            },
+            {
+              "size": 6496,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/ab11eedf96374486acb544f71a23b165.jpeg",
+              "height": 100
+            },
+            {
+              "size": 1359,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/35f6f9b6c9a14a548ce472582d8a9bb5.jpeg",
+              "height": 32
+            },
+            {
+              "size": 2584,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/a8072a51447c4d41ab177b357111b420.jpeg",
+              "height": 48
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/9702394eccbd4a2ea3907af54bfae9d3"
+      },
+      "description": "Biohazard Barrel is a realistic, game-ready rusty metal barrel with a weathered appearance and a biohazard warning symbol. Perfect for post-apocalyptic, industrial, laboratory, and survival environments. Includes PBR textures and is optimized for real-time use.",
+      "faceCount": 1792,
+      "createdAt": "2026-06-27T21:18:50.832939",
+      "vertexCount": 1355,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 9,
+          "size": 29138828,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 1792,
+          "vertexCount": 1723
+        },
+        "gltf": {
+          "textureCount": 9,
+          "size": 28950906,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 1792,
+          "vertexCount": 1723
+        },
+        "source": {
+          "textureCount": null,
+          "size": 57889605,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 4988161,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/b3250ccf3ef54809bd4d48c6f248a784",
+      "uid": "b3250ccf3ef54809bd4d48c6f248a784",
+      "name": "Flammable Barrel",
+      "staffpickedAt": null,
+      "viewCount": 33,
+      "likeCount": 2,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-b3250ccf3ef54809bd4d48c6f248a784",
+      "embedUrl": "https://sketchfab.com/models/b3250ccf3ef54809bd4d48c6f248a784/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-06-27T21:17:38.105660",
+      "tags": [],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "weapons-military"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "975f1e83035e4ef3a731bde1eda88034",
+            "size": 126180,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/b3250ccf3ef54809bd4d48c6f248a784/thumbnails/33d411fc6f334c6c8b01d1b6b634542b/c53f347879d8443db90a7834391deaec.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "3c535d7416de46dfb256c3bd088e8ffa",
+            "size": 29791,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/b3250ccf3ef54809bd4d48c6f248a784/thumbnails/33d411fc6f334c6c8b01d1b6b634542b/8de5f946e1a440ff99b50c1d6717d773.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "932c013c73fb4aa69ac86a18254a3f08",
+            "size": 15480,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/b3250ccf3ef54809bd4d48c6f248a784/thumbnails/33d411fc6f334c6c8b01d1b6b634542b/9ada238c790e43f2bdfaf81506d3cd72.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "342d89ce34d24ae6b6e2e8a8412c8cde",
+            "size": 3223,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/b3250ccf3ef54809bd4d48c6f248a784/thumbnails/33d411fc6f334c6c8b01d1b6b634542b/c275fc613f274a79bc5917c385c982b6.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "39ace88f71b14eff9a987044e1278c03",
+            "size": 1018,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/b3250ccf3ef54809bd4d48c6f248a784/thumbnails/33d411fc6f334c6c8b01d1b6b634542b/2ed7954677ae4100974b0e898aeb1422.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "9702394eccbd4a2ea3907af54bfae9d3",
+        "username": "dominikfonta",
+        "displayName": "DOM",
+        "profileUrl": "https://sketchfab.com/dominikfonta",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/51af6a870cce449eb75b0345feebaebb",
+          "images": [
+            {
+              "size": 5719,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/2ef0f894055b4bb69123b2a27fa2d379.jpeg",
+              "height": 90
+            },
+            {
+              "size": 6496,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/ab11eedf96374486acb544f71a23b165.jpeg",
+              "height": 100
+            },
+            {
+              "size": 1359,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/35f6f9b6c9a14a548ce472582d8a9bb5.jpeg",
+              "height": 32
+            },
+            {
+              "size": 2584,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/a8072a51447c4d41ab177b357111b420.jpeg",
+              "height": 48
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/9702394eccbd4a2ea3907af54bfae9d3"
+      },
+      "description": "Flammable Barrel is a realistic, game-ready rusty metal barrel with a weathered appearance. Perfect for post-apocalyptic, industrial, and survival environments. Includes PBR textures and is optimized for real-time use.",
+      "faceCount": 1792,
+      "createdAt": "2026-06-27T21:08:44.183412",
+      "vertexCount": 1355,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 9,
+          "size": 27947336,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 1792,
+          "vertexCount": 1723
+        },
+        "gltf": {
+          "textureCount": 9,
+          "size": 27767967,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 1792,
+          "vertexCount": 1723
+        },
+        "source": {
+          "textureCount": null,
+          "size": 55581470,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 4172247,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/7fc82fd212784302a384925c97472a16",
+      "uid": "7fc82fd212784302a384925c97472a16",
+      "name": "Realistic Wooden Barrel (Game Ready 3D Asset)",
+      "staffpickedAt": null,
+      "viewCount": 20,
+      "likeCount": 0,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-7fc82fd212784302a384925c97472a16",
+      "embedUrl": "https://sketchfab.com/models/7fc82fd212784302a384925c97472a16/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-06-23T17:15:01.501536",
+      "tags": [
+        {
+          "name": "wooden",
+          "slug": "wooden",
+          "uri": "https://api.sketchfab.com/v3/tags/wooden"
+        },
+        {
+          "name": "barrel",
+          "slug": "barrel",
+          "uri": "https://api.sketchfab.com/v3/tags/barrel"
+        },
+        {
+          "name": "high",
+          "slug": "high",
+          "uri": "https://api.sketchfab.com/v3/tags/high"
+        },
+        {
+          "name": "prop",
+          "slug": "prop",
+          "uri": "https://api.sketchfab.com/v3/tags/prop"
+        },
+        {
+          "name": "vintage",
+          "slug": "vintage",
+          "uri": "https://api.sketchfab.com/v3/tags/vintage"
+        },
+        {
+          "name": "medieval",
+          "slug": "medieval",
+          "uri": "https://api.sketchfab.com/v3/tags/medieval"
+        },
+        {
+          "name": "unreal",
+          "slug": "unreal",
+          "uri": "https://api.sketchfab.com/v3/tags/unreal"
+        },
+        {
+          "name": "rusty",
+          "slug": "rusty",
+          "uri": "https://api.sketchfab.com/v3/tags/rusty"
+        },
+        {
+          "name": "ready",
+          "slug": "ready",
+          "uri": "https://api.sketchfab.com/v3/tags/ready"
+        },
+        {
+          "name": "metal",
+          "slug": "metal",
+          "uri": "https://api.sketchfab.com/v3/tags/metal"
+        },
+        {
+          "name": "realistic",
+          "slug": "realistic",
+          "uri": "https://api.sketchfab.com/v3/tags/realistic"
+        },
+        {
+          "name": "engine",
+          "slug": "engine",
+          "uri": "https://api.sketchfab.com/v3/tags/engine"
+        },
+        {
+          "name": "quality",
+          "slug": "quality",
+          "uri": "https://api.sketchfab.com/v3/tags/quality"
+        },
+        {
+          "name": "substance",
+          "slug": "substance",
+          "uri": "https://api.sketchfab.com/v3/tags/substance"
+        },
+        {
+          "name": "painter",
+          "slug": "painter",
+          "uri": "https://api.sketchfab.com/v3/tags/painter"
+        },
+        {
+          "name": "maya",
+          "slug": "maya",
+          "uri": "https://api.sketchfab.com/v3/tags/maya"
+        },
+        {
+          "name": "asset",
+          "slug": "asset",
+          "uri": "https://api.sketchfab.com/v3/tags/asset"
+        },
+        {
+          "name": "game",
+          "slug": "game",
+          "uri": "https://api.sketchfab.com/v3/tags/game"
+        },
+        {
+          "name": "3d",
+          "slug": "3d",
+          "uri": "https://api.sketchfab.com/v3/tags/3d"
+        },
+        {
+          "name": "pbr",
+          "slug": "pbr",
+          "uri": "https://api.sketchfab.com/v3/tags/pbr"
+        },
+        {
+          "name": "low",
+          "slug": "low",
+          "uri": "https://api.sketchfab.com/v3/tags/low"
+        },
+        {
+          "name": "poly",
+          "slug": "poly",
+          "uri": "https://api.sketchfab.com/v3/tags/poly"
+        },
+        {
+          "name": "model",
+          "slug": "model",
+          "uri": "https://api.sketchfab.com/v3/tags/model"
+        },
+        {
+          "name": "zbrush",
+          "slug": "zbrush",
+          "uri": "https://api.sketchfab.com/v3/tags/zbrush"
+        },
+        {
+          "name": "wood",
+          "slug": "wood",
+          "uri": "https://api.sketchfab.com/v3/tags/wood"
+        },
+        {
+          "name": "material",
+          "slug": "material",
+          "uri": "https://api.sketchfab.com/v3/tags/material"
+        },
+        {
+          "name": "environment",
+          "slug": "environment",
+          "uri": "https://api.sketchfab.com/v3/tags/environment"
+        },
+        {
+          "name": "sampler3d",
+          "slug": "sampler3d",
+          "uri": "https://api.sketchfab.com/v3/tags/sampler3d"
+        }
+      ],
+      "categories": [
+        {
+          "name": "furniture-home"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "48c866f9fc8946b5a334a59a3d2d8f67",
+            "size": 115480,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/7fc82fd212784302a384925c97472a16/thumbnails/23c911ec5b49445e93a31d6e2023bd68/4ac84366d42440198ae0900b56514df3.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "5dce7741c36d4c7780479e800cbb33bc",
+            "size": 34351,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/7fc82fd212784302a384925c97472a16/thumbnails/23c911ec5b49445e93a31d6e2023bd68/6434ea2df7d341908dc06e7efedfa311.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "31074693e3694f35b5bd5d0a0bc7ab24",
+            "size": 18899,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/7fc82fd212784302a384925c97472a16/thumbnails/23c911ec5b49445e93a31d6e2023bd68/8f85d030cb204665913b9c08ca75dc95.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "9b6cacc8a3234137b645ae86d07343e3",
+            "size": 3759,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/7fc82fd212784302a384925c97472a16/thumbnails/23c911ec5b49445e93a31d6e2023bd68/bab2eba78aa7431db3b39c335cec12ca.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "83be0ae3f03c4a489bc441bd9e5faadb",
+            "size": 983,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/7fc82fd212784302a384925c97472a16/thumbnails/23c911ec5b49445e93a31d6e2023bd68/247cff6f1c314435ad889d2e6cbfa83e.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "2043c28d24a84831bd23c91211de7e16",
+        "username": "ThE-BeAsT45459",
+        "displayName": "ThE-BeAsT45459",
+        "profileUrl": "https://sketchfab.com/ThE-BeAsT45459",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/3ef1bd11d3eb4b57a0b353e8f2e5fc3e",
+          "images": [
+            {
+              "size": 680,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/3ef1bd11d3eb4b57a0b353e8f2e5fc3e/116042a0854e40538adab302b593683d.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1253,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/3ef1bd11d3eb4b57a0b353e8f2e5fc3e/efea16be51d04eb7a00cb9ea0b43b87f.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2797,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/3ef1bd11d3eb4b57a0b353e8f2e5fc3e/ac9b469ccec74caf923a81fb2f0be3ed.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3215,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/3ef1bd11d3eb4b57a0b353e8f2e5fc3e/a075e1d43d2f446c949b5967b470c757.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/2043c28d24a84831bd23c91211de7e16"
+      },
+      "description": "3D barrel asset created using a complete production pipeline. Modeled in Autodesk Maya, sculpted in ZBrush, and textured using Substance 3D Painter with additional material refinement in Substance 3D Sampler. Final asset prepared and rendered in Unreal Engine.\n\nDesigned with attention to realistic wood and metal surface detail, clean topology, and real-time rendering optimization.",
+      "faceCount": 3840,
+      "createdAt": "2026-06-23T17:05:30.284368",
+      "vertexCount": 3268,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 12,
+          "size": 53240004,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 3840,
+          "vertexCount": 5204
+        },
+        "gltf": {
+          "textureCount": 12,
+          "size": 52938047,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 3840,
+          "vertexCount": 5204
+        },
+        "source": {
+          "textureCount": null,
+          "size": 79723976,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 7860388,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/30ecf43584ce43e7bc46cf52bd96da18",
+      "uid": "30ecf43584ce43e7bc46cf52bd96da18",
+      "name": "oil dram",
+      "staffpickedAt": null,
+      "viewCount": 127,
+      "likeCount": 4,
+      "animationCount": 1,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-30ecf43584ce43e7bc46cf52bd96da18",
+      "embedUrl": "https://sketchfab.com/models/30ecf43584ce43e7bc46cf52bd96da18/embed",
+      "commentCount": 1,
+      "isDownloadable": true,
+      "publishedAt": "2026-06-20T08:46:48.016576",
+      "tags": [
+        {
+          "name": "barrel",
+          "slug": "barrel",
+          "uri": "https://api.sketchfab.com/v3/tags/barrel"
+        },
+        {
+          "name": "rust",
+          "slug": "rust",
+          "uri": "https://api.sketchfab.com/v3/tags/rust"
+        },
+        {
+          "name": "prop",
+          "slug": "prop",
+          "uri": "https://api.sketchfab.com/v3/tags/prop"
+        },
+        {
+          "name": "rusty",
+          "slug": "rusty",
+          "uri": "https://api.sketchfab.com/v3/tags/rusty"
+        },
+        {
+          "name": "hard-surface",
+          "slug": "hard-surface",
+          "uri": "https://api.sketchfab.com/v3/tags/hard-surface"
+        },
+        {
+          "name": "metal",
+          "slug": "metal",
+          "uri": "https://api.sketchfab.com/v3/tags/metal"
+        },
+        {
+          "name": "realistic",
+          "slug": "realistic",
+          "uri": "https://api.sketchfab.com/v3/tags/realistic"
+        },
+        {
+          "name": "3d-model",
+          "slug": "3d-model",
+          "uri": "https://api.sketchfab.com/v3/tags/3d-model"
+        },
+        {
+          "name": "game-asset",
+          "slug": "game-asset",
+          "uri": "https://api.sketchfab.com/v3/tags/game-asset"
+        },
+        {
+          "name": "oil-drum",
+          "slug": "oil-drum",
+          "uri": "https://api.sketchfab.com/v3/tags/oil-drum"
+        },
+        {
+          "name": "weathering",
+          "slug": "weathering",
+          "uri": "https://api.sketchfab.com/v3/tags/weathering"
+        },
+        {
+          "name": "texture",
+          "slug": "texture",
+          "uri": "https://api.sketchfab.com/v3/tags/texture"
+        },
+        {
+          "name": "pbr",
+          "slug": "pbr",
+          "uri": "https://api.sketchfab.com/v3/tags/pbr"
+        },
+        {
+          "name": "blender3d",
+          "slug": "blender3d",
+          "uri": "https://api.sketchfab.com/v3/tags/blender3d"
+        },
+        {
+          "name": "industrial",
+          "slug": "industrial",
+          "uri": "https://api.sketchfab.com/v3/tags/industrial"
+        },
+        {
+          "name": "environment",
+          "slug": "environment",
+          "uri": "https://api.sketchfab.com/v3/tags/environment"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        },
+        {
+          "name": "art-abstract"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "62d53a3c7fe849ebb3565a0acad1d411",
+            "size": 81345,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/30ecf43584ce43e7bc46cf52bd96da18/thumbnails/ac8d3652c3584ea88a6ddfe46f10e2a7/47fcf2cf0def411aaa1525c10efcc964.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "57ddf88f57bc43a58ac5aa9560f488a1",
+            "size": 24235,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/30ecf43584ce43e7bc46cf52bd96da18/thumbnails/ac8d3652c3584ea88a6ddfe46f10e2a7/470c9b7e3e9c4b529c0b85b0350e3ed8.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "8a30e4698d384db4b38565013a5cab8b",
+            "size": 13390,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/30ecf43584ce43e7bc46cf52bd96da18/thumbnails/ac8d3652c3584ea88a6ddfe46f10e2a7/40726141b2824fe8bf5d8f43e5008ea9.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "bbe4de40974c43a3b68af78085e83b64",
+            "size": 2743,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/30ecf43584ce43e7bc46cf52bd96da18/thumbnails/ac8d3652c3584ea88a6ddfe46f10e2a7/efa1fd003f68461eb2c12be33b4e3185.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "35b819ec6fbb4b21813909fd5e1c56c2",
+            "size": 902,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/30ecf43584ce43e7bc46cf52bd96da18/thumbnails/ac8d3652c3584ea88a6ddfe46f10e2a7/b3326453f8ec49d5802a27a0ba9a7507.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "b36792f783c245a28744094e3cef10da",
+        "username": "vishalrajyadav1007",
+        "displayName": "vishalrajyadav1007",
+        "profileUrl": "https://sketchfab.com/vishalrajyadav1007",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/3ef1bd11d3eb4b57a0b353e8f2e5fc3e",
+          "images": [
+            {
+              "size": 680,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/3ef1bd11d3eb4b57a0b353e8f2e5fc3e/116042a0854e40538adab302b593683d.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1253,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/3ef1bd11d3eb4b57a0b353e8f2e5fc3e/efea16be51d04eb7a00cb9ea0b43b87f.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2797,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/3ef1bd11d3eb4b57a0b353e8f2e5fc3e/ac9b469ccec74caf923a81fb2f0be3ed.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3215,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/3ef1bd11d3eb4b57a0b353e8f2e5fc3e/a075e1d43d2f446c949b5967b470c757.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/b36792f783c245a28744094e3cef10da"
+      },
+      "description": "Rusty Oil Drum \u2013 3D Prop Asset\n\nA realistic industrial oil drum created from scratch using a complete 3D workflow. The asset features detailed rust buildup, worn paint, scratches, and weathering effects to achieve an aged and believable appearance. The model was carefully UV unwrapped and textured using a PBR workflow to create realistic material response and surface variation.\n\nThis project was created as a game-ready prop suitable for industrial, post-apocalyptic, warehouse, and environment scenes.",
+      "faceCount": 185424,
+      "createdAt": "2026-06-20T08:27:20.356441",
+      "vertexCount": 93136,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 4,
+          "size": 15710024,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 185424,
+          "vertexCount": 103470
+        },
+        "gltf": {
+          "textureCount": 4,
+          "size": 12717596,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 185424,
+          "vertexCount": 103470
+        },
+        "source": {
+          "textureCount": null,
+          "size": 13893840,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 5936598,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/473027ce7bd24d48a8fc7f3e98e0be67",
+      "uid": "473027ce7bd24d48a8fc7f3e98e0be67",
+      "name": "red old barrel",
+      "staffpickedAt": null,
+      "viewCount": 23,
+      "likeCount": 2,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-473027ce7bd24d48a8fc7f3e98e0be67",
+      "embedUrl": "https://sketchfab.com/models/473027ce7bd24d48a8fc7f3e98e0be67/embed",
+      "commentCount": 1,
+      "isDownloadable": true,
+      "publishedAt": "2026-06-12T19:31:45.200880",
+      "tags": [
+        {
+          "name": "lowpolymodel",
+          "slug": "lowpolymodel",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpolymodel"
+        },
+        {
+          "name": "oldbarrel",
+          "slug": "oldbarrel",
+          "uri": "https://api.sketchfab.com/v3/tags/oldbarrel"
+        },
+        {
+          "name": "barrel-props",
+          "slug": "barrel-props",
+          "uri": "https://api.sketchfab.com/v3/tags/barrel-props"
+        },
+        {
+          "name": "props-game-assets",
+          "slug": "props-game-assets",
+          "uri": "https://api.sketchfab.com/v3/tags/props-game-assets"
+        },
+        {
+          "name": "low-poly",
+          "slug": "low-poly",
+          "uri": "https://api.sketchfab.com/v3/tags/low-poly"
+        },
+        {
+          "name": "asset",
+          "slug": "asset",
+          "uri": "https://api.sketchfab.com/v3/tags/asset"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        },
+        {
+          "name": "science-technology"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "5308f0409ad4404599bde9991f4352af",
+            "size": 90796,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/473027ce7bd24d48a8fc7f3e98e0be67/thumbnails/132f21e9981d472baac8311b536931a2/ee93b267227d4c139425e569a59263bb.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "a3b7a79be49b4701b22f60597f4f0b0b",
+            "size": 31791,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/473027ce7bd24d48a8fc7f3e98e0be67/thumbnails/132f21e9981d472baac8311b536931a2/cf111f68c0ea4e298e94783dbcbd69cc.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "09a7c941fa254c16a04421eb28fbb7ef",
+            "size": 18571,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/473027ce7bd24d48a8fc7f3e98e0be67/thumbnails/132f21e9981d472baac8311b536931a2/260a9b11bdaa4b6487087a362c5ed1c2.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "ff3f1be2fd63436486be5ff5f44b8172",
+            "size": 3871,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/473027ce7bd24d48a8fc7f3e98e0be67/thumbnails/132f21e9981d472baac8311b536931a2/2eea7eefb1a34452a431044a0a049a2f.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "d13abf47e81f4508a7638ebe89ca4692",
+            "size": 1067,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/473027ce7bd24d48a8fc7f3e98e0be67/thumbnails/132f21e9981d472baac8311b536931a2/ab2b65daec1b42f1b6eb29dc4cb843ff.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "019eddcebd7c466e887c2a7adcb80d7e",
+        "username": "2sday",
+        "displayName": "2sday",
+        "profileUrl": "https://sketchfab.com/2sday",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/6062ddbbe11a47adb973ab2333efb804",
+          "images": [
+            {
+              "size": 602,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/6062ddbbe11a47adb973ab2333efb804/97ad38a0766c48568d98223263d980e3.jpeg",
+              "height": 32
+            },
+            {
+              "size": 837,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/6062ddbbe11a47adb973ab2333efb804/03dec124a60345ddb6c6fcd360100951.jpeg",
+              "height": 48
+            },
+            {
+              "size": 1759,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/6062ddbbe11a47adb973ab2333efb804/b267ea5dc1894f82a20b9442be8e3a9c.jpeg",
+              "height": 90
+            },
+            {
+              "size": 1987,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/6062ddbbe11a47adb973ab2333efb804/24b99dfb4ad644b2a80b442380018e03.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/019eddcebd7c466e887c2a7adcb80d7e"
+      },
+      "description": "Low-poly rusty props red metal barrel with a worn and weathered appearance. Features simple optimized geometry, scratches, faded paint, and signs of long-term outdoor use. Suitable for urban environments, industrial areas, post-apocalyptic scenes, construction sites, and stylized game worlds. Game-ready asset optimized for real-time applications.",
+      "faceCount": 2236,
+      "createdAt": "2026-06-12T19:13:17.718033",
+      "vertexCount": 1120,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 464456,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 2236,
+          "vertexCount": 3924
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 333102,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 2236,
+          "vertexCount": 3924
+        },
+        "source": {
+          "textureCount": null,
+          "size": 863735,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 447695,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    }
+  ]
+}

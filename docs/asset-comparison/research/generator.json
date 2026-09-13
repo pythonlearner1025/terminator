@@ -1,0 +1,2588 @@
+{
+  "cursors": {
+    "next": "12",
+    "previous": null
+  },
+  "next": "https://api.sketchfab.com/v3/search?count=12&cursor=12&downloadable=true&q=diesel+generator&sort_by=-relevance&type=models",
+  "previous": null,
+  "results": [
+    {
+      "uri": "https://api.sketchfab.com/v3/models/30a093c821e04af28fde96aec06bc257",
+      "uid": "30a093c821e04af28fde96aec06bc257",
+      "name": "CONSTRUCTION 100 PROPS ASSET PACK",
+      "staffpickedAt": null,
+      "viewCount": 510,
+      "likeCount": 12,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-30a093c821e04af28fde96aec06bc257",
+      "embedUrl": "https://sketchfab.com/models/30a093c821e04af28fde96aec06bc257/embed",
+      "commentCount": 1,
+      "isDownloadable": true,
+      "publishedAt": "2026-07-02T21:48:07.271047",
+      "tags": [
+        {
+          "name": "pack",
+          "slug": "pack",
+          "uri": "https://api.sketchfab.com/v3/tags/pack"
+        },
+        {
+          "name": "simulator",
+          "slug": "simulator",
+          "uri": "https://api.sketchfab.com/v3/tags/simulator"
+        },
+        {
+          "name": "fbx",
+          "slug": "fbx",
+          "uri": "https://api.sketchfab.com/v3/tags/fbx"
+        },
+        {
+          "name": "godot",
+          "slug": "godot",
+          "uri": "https://api.sketchfab.com/v3/tags/godot"
+        },
+        {
+          "name": "unity",
+          "slug": "unity",
+          "uri": "https://api.sketchfab.com/v3/tags/unity"
+        },
+        {
+          "name": "low-poly",
+          "slug": "low-poly",
+          "uri": "https://api.sketchfab.com/v3/tags/low-poly"
+        },
+        {
+          "name": "asset",
+          "slug": "asset",
+          "uri": "https://api.sketchfab.com/v3/tags/asset"
+        },
+        {
+          "name": "3d",
+          "slug": "3d",
+          "uri": "https://api.sketchfab.com/v3/tags/3d"
+        },
+        {
+          "name": "building",
+          "slug": "building",
+          "uri": "https://api.sketchfab.com/v3/tags/building"
+        },
+        {
+          "name": "construction",
+          "slug": "construction",
+          "uri": "https://api.sketchfab.com/v3/tags/construction"
+        },
+        {
+          "name": "horror",
+          "slug": "horror",
+          "uri": "https://api.sketchfab.com/v3/tags/horror"
+        },
+        {
+          "name": "city-bul",
+          "slug": "city-bul",
+          "uri": "https://api.sketchfab.com/v3/tags/city-bul"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cultural-heritage-history"
+        },
+        {
+          "name": "furniture-home"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "d8db6c603c5b47e9990ab606efd1612b",
+            "size": 133738,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/30a093c821e04af28fde96aec06bc257/thumbnails/9e2515ffcfb94ffcb76680e689685752/9802ad346cf143e88c5568231deecbb0.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "e4dbd838c1974174be27872f6456b97d",
+            "size": 29074,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/30a093c821e04af28fde96aec06bc257/thumbnails/9e2515ffcfb94ffcb76680e689685752/f6d68c09c8474c59b26c944d772d5083.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "d4eefb97c4b4402bbfc505a728b6d199",
+            "size": 14589,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/30a093c821e04af28fde96aec06bc257/thumbnails/9e2515ffcfb94ffcb76680e689685752/00efd43655254e139be6e12916e410c8.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "4c85deb954b94caca925932d9b2ec6b9",
+            "size": 3085,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/30a093c821e04af28fde96aec06bc257/thumbnails/9e2515ffcfb94ffcb76680e689685752/fb370c2e25cc4ab98b5b99817c5e3379.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "20724c9ae9c049c2a64487f8fd8c3031",
+            "size": 931,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/30a093c821e04af28fde96aec06bc257/thumbnails/9e2515ffcfb94ffcb76680e689685752/cd2627f38f7d44beb3ef28e05a20f710.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "f8d0b0b16f574db59de5b8a85c0e38d3",
+        "username": "oxygen3d",
+        "displayName": "Oxygen3D",
+        "profileUrl": "https://sketchfab.com/oxygen3d",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/0f3f3f4df6c84cf9883f76a5b23ba03c",
+          "images": [
+            {
+              "size": 1131,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/0f3f3f4df6c84cf9883f76a5b23ba03c/49876a6fb6c14c95b5864397c46a107c.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1637,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/0f3f3f4df6c84cf9883f76a5b23ba03c/5aaad8f1335f48c6b2f85ed6e744721b.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3172,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/0f3f3f4df6c84cf9883f76a5b23ba03c/60ef0bc716a54aefb970f1a5161a72c9.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3636,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/0f3f3f4df6c84cf9883f76a5b23ba03c/bac7e0e6cccf4519ad048ebbde2055db.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/f8d0b0b16f574db59de5b8a85c0e38d3"
+      },
+      "description": "Includes: \n\n* Concrete Barrier\n* Concrete Fencing Part 1\n* Concrete Fencing Part 2\n* Construction Site Sign\n* Danger Sign\n* Exit Sign\n* Hard Hats Required Sign\n* Mesh Fencing Part 1\n* Mesh Fencing Part 2\n* Metal Barrier\n* No Entry Sign\n* Plastic Barrier\n* Portable Traffic Light\n* Signal Post Sign\n* Traffic Cone\n* Warning Tape\n* Wooden Shield\n* Work Light 1\n* Work Light 2\n* Barrier\n* Concrete Mixer\n* Construction Site Container\n* Diesel Generator\n* Extendable Staircase\n* Hand Truck\n* Industrial Fan\n* Metal Barrel\n* Metal Pallet\n* Metal Scaffolding\n* Metal Staircase\n* Plastic Barrel\n* Security Booth\n* Tower Crane\n* Warehouse Shelf\n* Wheelbarrow\n* Wooden Scaffolding\n* Wooden Staircase\n* Armature Bundle\n* Bag Of Cement\n* Brick Pile\n* Bucket\n* Bucket Of Mortar\n* Coil Of Cable\n* Concrete Blocks\n* Concrete Slab\n* Construction Mesh\n* Drywall Sheets\n* Metal Beam\n* Metal Pipe\n* Nails Box\n* Piles Of Crushed Stone\n* Plastic Pipe\n* Sandbag\n* Screws Box\ne.t.c",
+      "faceCount": 85644,
+      "createdAt": "2026-07-02T21:39:25.395608",
+      "vertexCount": 50507,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 2,
+          "size": 7707724,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 85619,
+          "vertexCount": 116895
+        },
+        "gltf": {
+          "textureCount": 2,
+          "size": 4227524,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 85619,
+          "vertexCount": 116895
+        },
+        "source": {
+          "textureCount": null,
+          "size": 19472340,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 5610047,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/8e0d449d9cbc4c798997f06d2de3a935",
+      "uid": "8e0d449d9cbc4c798997f06d2de3a935",
+      "name": "Diesel d'ultime Secours - W.I.P.",
+      "staffpickedAt": null,
+      "viewCount": 72,
+      "likeCount": 3,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-8e0d449d9cbc4c798997f06d2de3a935",
+      "embedUrl": "https://sketchfab.com/models/8e0d449d9cbc4c798997f06d2de3a935/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-05-31T19:08:06.691579",
+      "tags": [
+        {
+          "name": "mechanical",
+          "slug": "mechanical",
+          "uri": "https://api.sketchfab.com/v3/tags/mechanical"
+        },
+        {
+          "name": "generator",
+          "slug": "generator",
+          "uri": "https://api.sketchfab.com/v3/tags/generator"
+        },
+        {
+          "name": "electricity",
+          "slug": "electricity",
+          "uri": "https://api.sketchfab.com/v3/tags/electricity"
+        },
+        {
+          "name": "diesel",
+          "slug": "diesel",
+          "uri": "https://api.sketchfab.com/v3/tags/diesel"
+        },
+        {
+          "name": "engine",
+          "slug": "engine",
+          "uri": "https://api.sketchfab.com/v3/tags/engine"
+        }
+      ],
+      "categories": [
+        {
+          "name": "science-technology"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "5ed21e1d6bf14e9897d2d8570311f386",
+            "size": 58119,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/8e0d449d9cbc4c798997f06d2de3a935/thumbnails/19c564028bb149e89d677d933126f080/7baa1947b49448e6bfd40c961f436fde.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "78eafa495468425dbe11f2a4de040789",
+            "size": 20954,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/8e0d449d9cbc4c798997f06d2de3a935/thumbnails/19c564028bb149e89d677d933126f080/27202d726c1544f4868a7f8a3ad74c69.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "b7456c2e477c4d78886ff9c2eead4583",
+            "size": 12548,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/8e0d449d9cbc4c798997f06d2de3a935/thumbnails/19c564028bb149e89d677d933126f080/43db55b6677b47d19142e8d1801dd381.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "923aff55f2ae4dba9f378ac40a0b7e4b",
+            "size": 3108,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/8e0d449d9cbc4c798997f06d2de3a935/thumbnails/19c564028bb149e89d677d933126f080/c3792808ab2f4a9abbe2f5b035a5f8b9.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "fd65160ba4fb4f53aa4136703a18cf3d",
+            "size": 1010,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/8e0d449d9cbc4c798997f06d2de3a935/thumbnails/19c564028bb149e89d677d933126f080/aa1bc604da9b4c4db35c3b0dfb8f14f5.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "74ef9d8f996846df898dc818da1a6ad1",
+        "username": "Psychatome60co",
+        "displayName": "Psychatome60co",
+        "profileUrl": "https://sketchfab.com/Psychatome60co",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/bd99dde6c27940c7809f7e43dd3f5fdc",
+          "images": [
+            {
+              "size": 2420,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/bd99dde6c27940c7809f7e43dd3f5fdc/6143e0a35a304669aa50effffaf70a05.png",
+              "height": 32
+            },
+            {
+              "size": 4997,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/bd99dde6c27940c7809f7e43dd3f5fdc/5a161cf2163049c99be0700e32e99b93.png",
+              "height": 48
+            },
+            {
+              "size": 15824,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/bd99dde6c27940c7809f7e43dd3f5fdc/cdc941f0bb8c410faeddc4a45606f848.png",
+              "height": 90
+            },
+            {
+              "size": 19178,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/bd99dde6c27940c7809f7e43dd3f5fdc/3e3c0da5072d42e6841d0cbcd217c836.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/74ef9d8f996846df898dc818da1a6ad1"
+      },
+      "description": "Mod\u00e9lis\u00e9 sur roblox, travail en cours, publi\u00e9 \u00e0 titre de vitrine.",
+      "faceCount": 121864,
+      "createdAt": "2026-05-31T19:06:22.044234",
+      "vertexCount": 62035,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 7697516,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 121864,
+          "vertexCount": 120612
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 789792,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 121864,
+          "vertexCount": 120612
+        },
+        "source": {
+          "textureCount": null,
+          "size": 2562107,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 658839,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "34b725081a6a4184957efaec2cb84ed3",
+        "label": "CC Attribution-NonCommercial-NoDerivs"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/f58a747f1f8448b59961a496f0dc3bc2",
+      "uid": "f58a747f1f8448b59961a496f0dc3bc2",
+      "name": "Un injecteur pour le groupe \u00e9lectrog\u00e8ne",
+      "staffpickedAt": null,
+      "viewCount": 9,
+      "likeCount": 0,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-f58a747f1f8448b59961a496f0dc3bc2",
+      "embedUrl": "https://sketchfab.com/models/f58a747f1f8448b59961a496f0dc3bc2/embed",
+      "commentCount": 1,
+      "isDownloadable": true,
+      "publishedAt": "2026-05-31T15:15:30.885110",
+      "tags": [
+        {
+          "name": "do",
+          "slug": "do",
+          "uri": "https://api.sketchfab.com/v3/tags/do"
+        },
+        {
+          "name": "mechanical",
+          "slug": "mechanical",
+          "uri": "https://api.sketchfab.com/v3/tags/mechanical"
+        },
+        {
+          "name": "generator",
+          "slug": "generator",
+          "uri": "https://api.sketchfab.com/v3/tags/generator"
+        },
+        {
+          "name": "renault",
+          "slug": "renault",
+          "uri": "https://api.sketchfab.com/v3/tags/renault"
+        },
+        {
+          "name": "diesel",
+          "slug": "diesel",
+          "uri": "https://api.sketchfab.com/v3/tags/diesel"
+        },
+        {
+          "name": "injector",
+          "slug": "injector",
+          "uri": "https://api.sketchfab.com/v3/tags/injector"
+        },
+        {
+          "name": "engine",
+          "slug": "engine",
+          "uri": "https://api.sketchfab.com/v3/tags/engine"
+        }
+      ],
+      "categories": [
+        {
+          "name": "science-technology"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "5ad8c00b76dd4c2c96db61f000353cfb",
+            "size": 46544,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/f58a747f1f8448b59961a496f0dc3bc2/thumbnails/3053be3feb7c49ec87c24c5c97924194/f5fd93c754b64fae88c2bb56d787276d.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "fcf94347e10440f1b3c0a0293aa5dcbb",
+            "size": 15774,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/f58a747f1f8448b59961a496f0dc3bc2/thumbnails/3053be3feb7c49ec87c24c5c97924194/418812f15553488dbc17a9d1eb80eae6.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "266d31fb1dfa4273ac7a4406bf3279f7",
+            "size": 9265,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/f58a747f1f8448b59961a496f0dc3bc2/thumbnails/3053be3feb7c49ec87c24c5c97924194/af24fc36a8f748568a776164ba757102.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "cce3e7f28cee47c68145954374432ca6",
+            "size": 2612,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/f58a747f1f8448b59961a496f0dc3bc2/thumbnails/3053be3feb7c49ec87c24c5c97924194/a5cbbded17ad48819d55dd377eb37cf7.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "7b01df24df844ecbb62c26435fe3af98",
+            "size": 976,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/f58a747f1f8448b59961a496f0dc3bc2/thumbnails/3053be3feb7c49ec87c24c5c97924194/26837792b64144faa0c76174274a3b88.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "74ef9d8f996846df898dc818da1a6ad1",
+        "username": "Psychatome60co",
+        "displayName": "Psychatome60co",
+        "profileUrl": "https://sketchfab.com/Psychatome60co",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/bd99dde6c27940c7809f7e43dd3f5fdc",
+          "images": [
+            {
+              "size": 2420,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/bd99dde6c27940c7809f7e43dd3f5fdc/6143e0a35a304669aa50effffaf70a05.png",
+              "height": 32
+            },
+            {
+              "size": 4997,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/bd99dde6c27940c7809f7e43dd3f5fdc/5a161cf2163049c99be0700e32e99b93.png",
+              "height": 48
+            },
+            {
+              "size": 15824,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/bd99dde6c27940c7809f7e43dd3f5fdc/cdc941f0bb8c410faeddc4a45606f848.png",
+              "height": 90
+            },
+            {
+              "size": 19178,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/bd99dde6c27940c7809f7e43dd3f5fdc/3e3c0da5072d42e6841d0cbcd217c836.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/74ef9d8f996846df898dc818da1a6ad1"
+      },
+      "description": "Un injecteur mod\u00e9lis\u00e9 \u00e0 la rache sans mod\u00e8le avec ma m\u00e9moire visuelle et technique pas tr\u00e8s fiable mdr...",
+      "faceCount": 5400,
+      "createdAt": "2026-05-31T15:13:32.966607",
+      "vertexCount": 2724,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 348820,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 5400,
+          "vertexCount": 5408
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 36642,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 5400,
+          "vertexCount": 5408
+        },
+        "source": {
+          "textureCount": null,
+          "size": 132869,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 49013,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "bbfe3f7dbcdd4122b966b85b9786a989",
+        "label": "CC Attribution-NonCommercial"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/3da7e1f5b4f24b11b71e7c09944ab800",
+      "uid": "3da7e1f5b4f24b11b71e7c09944ab800",
+      "name": "Diesel-X-Locomotive_Gamma",
+      "staffpickedAt": null,
+      "viewCount": 131,
+      "likeCount": 2,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-3da7e1f5b4f24b11b71e7c09944ab800",
+      "embedUrl": "https://sketchfab.com/models/3da7e1f5b4f24b11b71e7c09944ab800/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-05-27T12:16:05.290622",
+      "tags": [
+        {
+          "name": "train",
+          "slug": "train",
+          "uri": "https://api.sketchfab.com/v3/tags/train"
+        },
+        {
+          "name": "vehicles",
+          "slug": "vehicles",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicles"
+        },
+        {
+          "name": "locomotive",
+          "slug": "locomotive",
+          "uri": "https://api.sketchfab.com/v3/tags/locomotive"
+        },
+        {
+          "name": "cars",
+          "slug": "cars",
+          "uri": "https://api.sketchfab.com/v3/tags/cars"
+        },
+        {
+          "name": "wagon",
+          "slug": "wagon",
+          "uri": "https://api.sketchfab.com/v3/tags/wagon"
+        },
+        {
+          "name": "railway",
+          "slug": "railway",
+          "uri": "https://api.sketchfab.com/v3/tags/railway"
+        },
+        {
+          "name": "railways",
+          "slug": "railways",
+          "uri": "https://api.sketchfab.com/v3/tags/railways"
+        },
+        {
+          "name": "dieselpunk",
+          "slug": "dieselpunk",
+          "uri": "https://api.sketchfab.com/v3/tags/dieselpunk"
+        },
+        {
+          "name": "trains",
+          "slug": "trains",
+          "uri": "https://api.sketchfab.com/v3/tags/trains"
+        },
+        {
+          "name": "locomotives",
+          "slug": "locomotives",
+          "uri": "https://api.sketchfab.com/v3/tags/locomotives"
+        },
+        {
+          "name": "railcar",
+          "slug": "railcar",
+          "uri": "https://api.sketchfab.com/v3/tags/railcar"
+        },
+        {
+          "name": "locomotive-train-transport",
+          "slug": "locomotive-train-transport",
+          "uri": "https://api.sketchfab.com/v3/tags/locomotive-train-transport"
+        },
+        {
+          "name": "diesel-generator",
+          "slug": "diesel-generator",
+          "uri": "https://api.sketchfab.com/v3/tags/diesel-generator"
+        },
+        {
+          "name": "electronics-gadgets",
+          "slug": "electronics-gadgets",
+          "uri": "https://api.sketchfab.com/v3/tags/electronics-gadgets"
+        },
+        {
+          "name": "traincar",
+          "slug": "traincar",
+          "uri": "https://api.sketchfab.com/v3/tags/traincar"
+        },
+        {
+          "name": "train-locomotive",
+          "slug": "train-locomotive",
+          "uri": "https://api.sketchfab.com/v3/tags/train-locomotive"
+        },
+        {
+          "name": "rail-wagon",
+          "slug": "rail-wagon",
+          "uri": "https://api.sketchfab.com/v3/tags/rail-wagon"
+        },
+        {
+          "name": "citytrain",
+          "slug": "citytrain",
+          "uri": "https://api.sketchfab.com/v3/tags/citytrain"
+        },
+        {
+          "name": "vehicle",
+          "slug": "vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "railwagon",
+          "slug": "railwagon",
+          "uri": "https://api.sketchfab.com/v3/tags/railwagon"
+        },
+        {
+          "name": "train-car",
+          "slug": "train-car",
+          "uri": "https://api.sketchfab.com/v3/tags/train-car"
+        },
+        {
+          "name": "diesel-locomotive",
+          "slug": "diesel-locomotive",
+          "uri": "https://api.sketchfab.com/v3/tags/diesel-locomotive"
+        },
+        {
+          "name": "stylized-vehicle",
+          "slug": "stylized-vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/stylized-vehicle"
+        },
+        {
+          "name": "diesel-engine",
+          "slug": "diesel-engine",
+          "uri": "https://api.sketchfab.com/v3/tags/diesel-engine"
+        },
+        {
+          "name": "diesellocomotive",
+          "slug": "diesellocomotive",
+          "uri": "https://api.sketchfab.com/v3/tags/diesellocomotive"
+        },
+        {
+          "name": "stylizedvehicle",
+          "slug": "stylizedvehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/stylizedvehicle"
+        },
+        {
+          "name": "best-cars",
+          "slug": "best-cars",
+          "uri": "https://api.sketchfab.com/v3/tags/best-cars"
+        },
+        {
+          "name": "train-cart",
+          "slug": "train-cart",
+          "uri": "https://api.sketchfab.com/v3/tags/train-cart"
+        },
+        {
+          "name": "createdwithai",
+          "slug": "createdwithai",
+          "uri": "https://api.sketchfab.com/v3/tags/createdwithai"
+        },
+        {
+          "name": "sloyd",
+          "slug": "sloyd",
+          "uri": "https://api.sketchfab.com/v3/tags/sloyd"
+        },
+        {
+          "name": "sloydai",
+          "slug": "sloydai",
+          "uri": "https://api.sketchfab.com/v3/tags/sloydai"
+        },
+        {
+          "name": "stylizedtrain",
+          "slug": "stylizedtrain",
+          "uri": "https://api.sketchfab.com/v3/tags/stylizedtrain"
+        },
+        {
+          "name": "heavy-rail",
+          "slug": "heavy-rail",
+          "uri": "https://api.sketchfab.com/v3/tags/heavy-rail"
+        },
+        {
+          "name": "trainwagon",
+          "slug": "trainwagon",
+          "uri": "https://api.sketchfab.com/v3/tags/trainwagon"
+        },
+        {
+          "name": "xx696",
+          "slug": "xx696",
+          "uri": "https://api.sketchfab.com/v3/tags/xx696"
+        },
+        {
+          "name": "xscorngames",
+          "slug": "xscorngames",
+          "uri": "https://api.sketchfab.com/v3/tags/xscorngames"
+        },
+        {
+          "name": "sloyd3d",
+          "slug": "sloyd3d",
+          "uri": "https://api.sketchfab.com/v3/tags/sloyd3d"
+        },
+        {
+          "name": "bestcars",
+          "slug": "bestcars",
+          "uri": "https://api.sketchfab.com/v3/tags/bestcars"
+        },
+        {
+          "name": "sloyd3dai",
+          "slug": "sloyd3dai",
+          "uri": "https://api.sketchfab.com/v3/tags/sloyd3dai"
+        },
+        {
+          "name": "sloyd-models",
+          "slug": "sloyd-models",
+          "uri": "https://api.sketchfab.com/v3/tags/sloyd-models"
+        },
+        {
+          "name": "trainwagons",
+          "slug": "trainwagons",
+          "uri": "https://api.sketchfab.com/v3/tags/trainwagons"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "electronics-gadgets"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "3ea5ec5b5e37497fb1a06c9105428778",
+            "size": 375549,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/3da7e1f5b4f24b11b71e7c09944ab800/thumbnails/f5d877fb63ee4ea0a9888c0a27308267/2590a14978654aad8bcf26be92d5f3ae.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "4c5afd65fe9c4b46a19805a93bccb8f1",
+            "size": 75909,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/3da7e1f5b4f24b11b71e7c09944ab800/thumbnails/f5d877fb63ee4ea0a9888c0a27308267/e2ebfd8d680a43e5a8f8c4381c8074de.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "1930ffd59e6742af8fa6713b9ed683dc",
+            "size": 39874,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/3da7e1f5b4f24b11b71e7c09944ab800/thumbnails/f5d877fb63ee4ea0a9888c0a27308267/b6a6314d26fd4aa69f6c10facbbbf004.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "9ea212f1c1fb4af6a65740e99f57a14c",
+            "size": 7260,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/3da7e1f5b4f24b11b71e7c09944ab800/thumbnails/f5d877fb63ee4ea0a9888c0a27308267/f1304adbaf7a49f4bd50257bc04af838.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "db016689591a41259db5d267f714617c",
+            "size": 1371,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/3da7e1f5b4f24b11b71e7c09944ab800/thumbnails/f5d877fb63ee4ea0a9888c0a27308267/95bc16381aa247e9920b63a286b1712e.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "0f948ce31b8247c09fae5b0e365fb73b",
+        "username": "XX-XX",
+        "displayName": "-X-ScornGames",
+        "profileUrl": "https://sketchfab.com/XX-XX",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/1830a5a007f342d09c2d3379f8380304",
+          "images": [
+            {
+              "size": 3150,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/1830a5a007f342d09c2d3379f8380304/92ed7abc975a4b40bec4363214c82e06.png",
+              "height": 32
+            },
+            {
+              "size": 6798,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/1830a5a007f342d09c2d3379f8380304/aee6e17a02c8494994c900a7dd0d73a6.png",
+              "height": 48
+            },
+            {
+              "size": 22680,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/1830a5a007f342d09c2d3379f8380304/27a89f4ad196410aa77a07f6f0d743ce.png",
+              "height": 90
+            },
+            {
+              "size": 27690,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/1830a5a007f342d09c2d3379f8380304/29611b5df2fa48dabaa6974fc3739e41.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/0f948ce31b8247c09fae5b0e365fb73b"
+      },
+      "description": "[![](https://img.itch.zone/aW1nLzE4MTA0NzkzLnBuZw==/original/CxHN5A.png)](https://xx696.itch.io/)\n\n# Contact:#\n\n[https://westream.at/xx696](http://)\n\n[https://xx696.itch.io](http://)\n\n[https://www.youtube.com/@xscorngames](http://)\n\n[https://gamejolt.com/@-X-ScornGames](http://)\n\n[https://gravatar.com/xx696](http://)\n\n[https://bsky.app/profile/xx696.itch.io](http://)\n\n[https://sketchfab.com/XX-XX](http://)\n\n[https://x-scorngames.newgrounds.com](http://)\n\n[https://www.twitch.tv/xx696](http://)\n\n[![](https://img.itch.zone/aW1nLzE4MTgwMTM5LnBuZw==/original/nU2Ahe.png)](https://westream.at/xx696/)",
+      "faceCount": 498288,
+      "createdAt": "2026-05-27T11:51:42.812267",
+      "vertexCount": 248674,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 31561288,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 498288,
+          "vertexCount": 336251
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 25097486,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 498288,
+          "vertexCount": 336251
+        },
+        "source": {
+          "textureCount": null,
+          "size": 51809395,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 14369615,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/23cb7c44e3e540e5b34defd7e5192f50",
+      "uid": "23cb7c44e3e540e5b34defd7e5192f50",
+      "name": "Maschinensatz 8 kW f\u00fcr Flakscheinwerfer 60 cm",
+      "staffpickedAt": null,
+      "viewCount": 170,
+      "likeCount": 8,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-23cb7c44e3e540e5b34defd7e5192f50",
+      "embedUrl": "https://sketchfab.com/models/23cb7c44e3e540e5b34defd7e5192f50/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-02-20T20:43:48.927433",
+      "tags": [
+        {
+          "name": "world",
+          "slug": "world",
+          "uri": "https://api.sketchfab.com/v3/tags/world"
+        },
+        {
+          "name": "power",
+          "slug": "power",
+          "uri": "https://api.sketchfab.com/v3/tags/power"
+        },
+        {
+          "name": "field",
+          "slug": "field",
+          "uri": "https://api.sketchfab.com/v3/tags/field"
+        },
+        {
+          "name": "historic",
+          "slug": "historic",
+          "uri": "https://api.sketchfab.com/v3/tags/historic"
+        },
+        {
+          "name": "machinery",
+          "slug": "machinery",
+          "uri": "https://api.sketchfab.com/v3/tags/machinery"
+        },
+        {
+          "name": "volt",
+          "slug": "volt",
+          "uri": "https://api.sketchfab.com/v3/tags/volt"
+        },
+        {
+          "name": "8",
+          "slug": "8",
+          "uri": "https://api.sketchfab.com/v3/tags/8"
+        },
+        {
+          "name": "vintage",
+          "slug": "vintage",
+          "uri": "https://api.sketchfab.com/v3/tags/vintage"
+        },
+        {
+          "name": "german",
+          "slug": "german",
+          "uri": "https://api.sketchfab.com/v3/tags/german"
+        },
+        {
+          "name": "generator",
+          "slug": "generator",
+          "uri": "https://api.sketchfab.com/v3/tags/generator"
+        },
+        {
+          "name": "wwii",
+          "slug": "wwii",
+          "uri": "https://api.sketchfab.com/v3/tags/wwii"
+        },
+        {
+          "name": "diesel",
+          "slug": "diesel",
+          "uri": "https://api.sketchfab.com/v3/tags/diesel"
+        },
+        {
+          "name": "equipment",
+          "slug": "equipment",
+          "uri": "https://api.sketchfab.com/v3/tags/equipment"
+        },
+        {
+          "name": "anti",
+          "slug": "anti",
+          "uri": "https://api.sketchfab.com/v3/tags/anti"
+        },
+        {
+          "name": "wehrmacht",
+          "slug": "wehrmacht",
+          "uri": "https://api.sketchfab.com/v3/tags/wehrmacht"
+        },
+        {
+          "name": "aircraft",
+          "slug": "aircraft",
+          "uri": "https://api.sketchfab.com/v3/tags/aircraft"
+        },
+        {
+          "name": "engine",
+          "slug": "engine",
+          "uri": "https://api.sketchfab.com/v3/tags/engine"
+        },
+        {
+          "name": "2",
+          "slug": "2",
+          "uri": "https://api.sketchfab.com/v3/tags/2"
+        },
+        {
+          "name": "searchlight",
+          "slug": "searchlight",
+          "uri": "https://api.sketchfab.com/v3/tags/searchlight"
+        },
+        {
+          "name": "85",
+          "slug": "85",
+          "uri": "https://api.sketchfab.com/v3/tags/85"
+        },
+        {
+          "name": "kw",
+          "slug": "kw",
+          "uri": "https://api.sketchfab.com/v3/tags/kw"
+        },
+        {
+          "name": "military",
+          "slug": "military",
+          "uri": "https://api.sketchfab.com/v3/tags/military"
+        },
+        {
+          "name": "war",
+          "slug": "war",
+          "uri": "https://api.sketchfab.com/v3/tags/war"
+        },
+        {
+          "name": "flakscheinwerfer",
+          "slug": "flakscheinwerfer",
+          "uri": "https://api.sketchfab.com/v3/tags/flakscheinwerfer"
+        },
+        {
+          "name": "60cm",
+          "slug": "60cm",
+          "uri": "https://api.sketchfab.com/v3/tags/60cm"
+        },
+        {
+          "name": "maschinensatz",
+          "slug": "maschinensatz",
+          "uri": "https://api.sketchfab.com/v3/tags/maschinensatz"
+        }
+      ],
+      "categories": [
+        {
+          "name": "science-technology"
+        },
+        {
+          "name": "weapons-military"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "e7ac24e995d843599abfc377fae781f1",
+            "size": 124012,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/23cb7c44e3e540e5b34defd7e5192f50/thumbnails/f5cb9b61002740f1a773e20ee9b7e5b1/5a01cdee600b46a9ad20964e02e45c8e.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "259bfcd0b477473eb63f6f2f95f12763",
+            "size": 39401,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/23cb7c44e3e540e5b34defd7e5192f50/thumbnails/f5cb9b61002740f1a773e20ee9b7e5b1/783f497e4c4041fc976490a4c1f0aa9f.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "929148e442294f1f996422afe227afde",
+            "size": 22421,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/23cb7c44e3e540e5b34defd7e5192f50/thumbnails/f5cb9b61002740f1a773e20ee9b7e5b1/4da1aba36ded4e02bdebe278b5ec71e7.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "a89f9115fa58405d9ee429e617c707a3",
+            "size": 4761,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/23cb7c44e3e540e5b34defd7e5192f50/thumbnails/f5cb9b61002740f1a773e20ee9b7e5b1/5f6a514362704956bd583ba9c6738bb9.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "4c73f309173345d09394019356490ddf",
+            "size": 1184,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/23cb7c44e3e540e5b34defd7e5192f50/thumbnails/f5cb9b61002740f1a773e20ee9b7e5b1/ed61ebd137854a06908cec0a8773a2a1.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "9702394eccbd4a2ea3907af54bfae9d3",
+        "username": "dominikfonta",
+        "displayName": "DOM",
+        "profileUrl": "https://sketchfab.com/dominikfonta",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/51af6a870cce449eb75b0345feebaebb",
+          "images": [
+            {
+              "size": 5719,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/2ef0f894055b4bb69123b2a27fa2d379.jpeg",
+              "height": 90
+            },
+            {
+              "size": 6496,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/ab11eedf96374486acb544f71a23b165.jpeg",
+              "height": 100
+            },
+            {
+              "size": 1359,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/35f6f9b6c9a14a548ce472582d8a9bb5.jpeg",
+              "height": 32
+            },
+            {
+              "size": 2584,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/a8072a51447c4d41ab177b357111b420.jpeg",
+              "height": 48
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/9702394eccbd4a2ea3907af54bfae9d3"
+      },
+      "description": "Maschinensatz 85 Volt, 8 kW \u2013 German WWII Generator\n\nThis 3D model represents a German WWII Maschinensatz 85 Volt, 8 kW, a portable power generator unit used to operate 60 cm anti-aircraft searchlights (Flakscheinwerfer).\n\nThese generator sets were designed to provide stable 85V electrical output required for military searchlight systems. They were typically deployed alongside anti-aircraft units and used for nighttime air defense operations.\n\nThe model is based on historical references and available photographic material.\n\n\u26a0 Disclaimer: This model is not 100% historically accurate. Some proportions, details, and components may differ from the original due to limited reference material.",
+      "faceCount": 384920,
+      "createdAt": "2026-02-20T20:34:29.117966",
+      "vertexCount": 192324,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 12,
+          "size": 60221668,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 384563,
+          "vertexCount": 266684
+        },
+        "gltf": {
+          "textureCount": 12,
+          "size": 50966480,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 384563,
+          "vertexCount": 266684
+        },
+        "source": {
+          "textureCount": null,
+          "size": 120686372,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 9568336,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/dcc0b46fa8ed4134ab18e35c8bdede75",
+      "uid": "dcc0b46fa8ed4134ab18e35c8bdede75",
+      "name": "Maschinensatz 8 kW f\u00fcr Flakscheinwerfer 60 cm",
+      "staffpickedAt": null,
+      "viewCount": 31,
+      "likeCount": 3,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-dcc0b46fa8ed4134ab18e35c8bdede75",
+      "embedUrl": "https://sketchfab.com/models/dcc0b46fa8ed4134ab18e35c8bdede75/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-02-19T21:41:40.296241",
+      "tags": [
+        {
+          "name": "world",
+          "slug": "world",
+          "uri": "https://api.sketchfab.com/v3/tags/world"
+        },
+        {
+          "name": "power",
+          "slug": "power",
+          "uri": "https://api.sketchfab.com/v3/tags/power"
+        },
+        {
+          "name": "field",
+          "slug": "field",
+          "uri": "https://api.sketchfab.com/v3/tags/field"
+        },
+        {
+          "name": "historic",
+          "slug": "historic",
+          "uri": "https://api.sketchfab.com/v3/tags/historic"
+        },
+        {
+          "name": "machinery",
+          "slug": "machinery",
+          "uri": "https://api.sketchfab.com/v3/tags/machinery"
+        },
+        {
+          "name": "volt",
+          "slug": "volt",
+          "uri": "https://api.sketchfab.com/v3/tags/volt"
+        },
+        {
+          "name": "8",
+          "slug": "8",
+          "uri": "https://api.sketchfab.com/v3/tags/8"
+        },
+        {
+          "name": "vintage",
+          "slug": "vintage",
+          "uri": "https://api.sketchfab.com/v3/tags/vintage"
+        },
+        {
+          "name": "german",
+          "slug": "german",
+          "uri": "https://api.sketchfab.com/v3/tags/german"
+        },
+        {
+          "name": "generator",
+          "slug": "generator",
+          "uri": "https://api.sketchfab.com/v3/tags/generator"
+        },
+        {
+          "name": "wwii",
+          "slug": "wwii",
+          "uri": "https://api.sketchfab.com/v3/tags/wwii"
+        },
+        {
+          "name": "diesel",
+          "slug": "diesel",
+          "uri": "https://api.sketchfab.com/v3/tags/diesel"
+        },
+        {
+          "name": "equipment",
+          "slug": "equipment",
+          "uri": "https://api.sketchfab.com/v3/tags/equipment"
+        },
+        {
+          "name": "anti",
+          "slug": "anti",
+          "uri": "https://api.sketchfab.com/v3/tags/anti"
+        },
+        {
+          "name": "wehrmacht",
+          "slug": "wehrmacht",
+          "uri": "https://api.sketchfab.com/v3/tags/wehrmacht"
+        },
+        {
+          "name": "aircraft",
+          "slug": "aircraft",
+          "uri": "https://api.sketchfab.com/v3/tags/aircraft"
+        },
+        {
+          "name": "engine",
+          "slug": "engine",
+          "uri": "https://api.sketchfab.com/v3/tags/engine"
+        },
+        {
+          "name": "2",
+          "slug": "2",
+          "uri": "https://api.sketchfab.com/v3/tags/2"
+        },
+        {
+          "name": "searchlight",
+          "slug": "searchlight",
+          "uri": "https://api.sketchfab.com/v3/tags/searchlight"
+        },
+        {
+          "name": "85",
+          "slug": "85",
+          "uri": "https://api.sketchfab.com/v3/tags/85"
+        },
+        {
+          "name": "kw",
+          "slug": "kw",
+          "uri": "https://api.sketchfab.com/v3/tags/kw"
+        },
+        {
+          "name": "military",
+          "slug": "military",
+          "uri": "https://api.sketchfab.com/v3/tags/military"
+        },
+        {
+          "name": "war",
+          "slug": "war",
+          "uri": "https://api.sketchfab.com/v3/tags/war"
+        },
+        {
+          "name": "flakscheinwerfer",
+          "slug": "flakscheinwerfer",
+          "uri": "https://api.sketchfab.com/v3/tags/flakscheinwerfer"
+        },
+        {
+          "name": "60cm",
+          "slug": "60cm",
+          "uri": "https://api.sketchfab.com/v3/tags/60cm"
+        },
+        {
+          "name": "maschinensatz",
+          "slug": "maschinensatz",
+          "uri": "https://api.sketchfab.com/v3/tags/maschinensatz"
+        }
+      ],
+      "categories": [
+        {
+          "name": "science-technology"
+        },
+        {
+          "name": "weapons-military"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "a58d33250a72437b817eddef14a3273c",
+            "size": 255596,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/dcc0b46fa8ed4134ab18e35c8bdede75/thumbnails/d1adb896ac144fd7b0d72a002a81fb08/4ead98a5d26b483a8eaa3df82fb52931.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "49147dd68401447c8212663199bb6d3f",
+            "size": 68953,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/dcc0b46fa8ed4134ab18e35c8bdede75/thumbnails/d1adb896ac144fd7b0d72a002a81fb08/57c1f6df9bb542b5ae6118cc53c8bf6e.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "9e1e9a6bbb7645fe8b33771021d83a30",
+            "size": 32045,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/dcc0b46fa8ed4134ab18e35c8bdede75/thumbnails/d1adb896ac144fd7b0d72a002a81fb08/1ea0af41f3714ea381471caffd233fc5.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "7b8e30d6b9914f47b520b18b7c8de584",
+            "size": 4370,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/dcc0b46fa8ed4134ab18e35c8bdede75/thumbnails/d1adb896ac144fd7b0d72a002a81fb08/929d4e28f16c4760bd7ac1b822f0ad83.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "0976ae4c5ff94777bcad3950df8289d7",
+            "size": 1005,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/dcc0b46fa8ed4134ab18e35c8bdede75/thumbnails/d1adb896ac144fd7b0d72a002a81fb08/5f28daf5e84a4132828bab8e2d800175.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "9702394eccbd4a2ea3907af54bfae9d3",
+        "username": "dominikfonta",
+        "displayName": "DOM",
+        "profileUrl": "https://sketchfab.com/dominikfonta",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/51af6a870cce449eb75b0345feebaebb",
+          "images": [
+            {
+              "size": 5719,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/2ef0f894055b4bb69123b2a27fa2d379.jpeg",
+              "height": 90
+            },
+            {
+              "size": 6496,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/ab11eedf96374486acb544f71a23b165.jpeg",
+              "height": 100
+            },
+            {
+              "size": 1359,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/35f6f9b6c9a14a548ce472582d8a9bb5.jpeg",
+              "height": 32
+            },
+            {
+              "size": 2584,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/a8072a51447c4d41ab177b357111b420.jpeg",
+              "height": 48
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/9702394eccbd4a2ea3907af54bfae9d3"
+      },
+      "description": "> Maschinensatz 85 Volt, 8 kW \u2013 German WWII Generator\n\nThis 3D model represents a German WWII Maschinensatz 85 Volt, 8 kW, a portable power generator unit used to operate 60 cm anti-aircraft searchlights (Flakscheinwerfer).\n\nThese generator sets were designed to provide stable 85V electrical output required for military searchlight systems. They were typically deployed alongside anti-aircraft units and used for nighttime air defense operations.\n\nThe model is based on historical references and available photographic material.\n\n\u26a0 Disclaimer:\nThis model is not 100% historically accurate. Some proportions, details, and components may differ from the original due to limited reference material.\n\n![](https://live.staticflickr.com/4708/24820763257_6d16b03e31_b.jpg)",
+      "faceCount": 517634,
+      "createdAt": "2026-02-19T21:33:43.912206",
+      "vertexCount": 260053,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 18725824,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 517211,
+          "vertexCount": 371969
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 7175110,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 517211,
+          "vertexCount": 371969
+        },
+        "source": {
+          "textureCount": null,
+          "size": 34073736,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 8766407,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/3ae60e52e4d44b37915fc94d1bc1e6c1",
+      "uid": "3ae60e52e4d44b37915fc94d1bc1e6c1",
+      "name": "Generator R3 - Hard Surface (200k)",
+      "staffpickedAt": null,
+      "viewCount": 456,
+      "likeCount": 9,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-3ae60e52e4d44b37915fc94d1bc1e6c1",
+      "embedUrl": "https://sketchfab.com/models/3ae60e52e4d44b37915fc94d1bc1e6c1/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-01-29T18:00:37.991072",
+      "tags": [
+        {
+          "name": "topology",
+          "slug": "topology",
+          "uri": "https://api.sketchfab.com/v3/tags/topology"
+        },
+        {
+          "name": "generator",
+          "slug": "generator",
+          "uri": "https://api.sketchfab.com/v3/tags/generator"
+        },
+        {
+          "name": "caterpillar",
+          "slug": "caterpillar",
+          "uri": "https://api.sketchfab.com/v3/tags/caterpillar"
+        },
+        {
+          "name": "diesel",
+          "slug": "diesel",
+          "uri": "https://api.sketchfab.com/v3/tags/diesel"
+        },
+        {
+          "name": "optimized",
+          "slug": "optimized",
+          "uri": "https://api.sketchfab.com/v3/tags/optimized"
+        },
+        {
+          "name": "r3",
+          "slug": "r3",
+          "uri": "https://api.sketchfab.com/v3/tags/r3"
+        },
+        {
+          "name": "hardsurface",
+          "slug": "hardsurface",
+          "uri": "https://api.sketchfab.com/v3/tags/hardsurface"
+        }
+      ],
+      "categories": [],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "dc2aebbd0842492ead8b1525d212f743",
+            "size": 112191,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/3ae60e52e4d44b37915fc94d1bc1e6c1/thumbnails/60b9dd1a530a46daacc2cefe8c953e05/acfc60821391498f8ef05cef60dd55c0.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "60b179a3bfde47fdb4984c8c274b3e0c",
+            "size": 39748,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/3ae60e52e4d44b37915fc94d1bc1e6c1/thumbnails/60b9dd1a530a46daacc2cefe8c953e05/bfc50aa2fdb243868b610a06e4003344.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "d971e4b57d1d4a02b965f9f8a0aaeddb",
+            "size": 23392,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/3ae60e52e4d44b37915fc94d1bc1e6c1/thumbnails/60b9dd1a530a46daacc2cefe8c953e05/1a13f581d05a44518f6cd0a79d71a5be.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "c0feb9a94413479da2e9ac055fff25ad",
+            "size": 5176,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/3ae60e52e4d44b37915fc94d1bc1e6c1/thumbnails/60b9dd1a530a46daacc2cefe8c953e05/fca400d0dbb64bc69837da5c525a4ad9.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "51ad24a51d094ff7a4c0f7526d9f608c",
+            "size": 1127,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/3ae60e52e4d44b37915fc94d1bc1e6c1/thumbnails/60b9dd1a530a46daacc2cefe8c953e05/ef2bd2429a8c4a1ebeece43f382fa78b.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "3d14cd49c174401ea73bbe244b175cc5",
+        "username": "adam-q-kane",
+        "displayName": "adam-q-kane",
+        "profileUrl": "https://sketchfab.com/adam-q-kane",
+        "account": "prem",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/51af6a870cce449eb75b0345feebaebb",
+          "images": [
+            {
+              "size": 5719,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/2ef0f894055b4bb69123b2a27fa2d379.jpeg",
+              "height": 90
+            },
+            {
+              "size": 6496,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/ab11eedf96374486acb544f71a23b165.jpeg",
+              "height": 100
+            },
+            {
+              "size": 1359,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/35f6f9b6c9a14a548ce472582d8a9bb5.jpeg",
+              "height": 32
+            },
+            {
+              "size": 2584,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/a8072a51447c4d41ab177b357111b420.jpeg",
+              "height": 48
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/3d14cd49c174401ea73bbe244b175cc5"
+      },
+      "description": "TOPOLOGY OPTIMIZED: Hard-surface modeling with clean edge loops and mechanical topology. Caterpillar 3516B diesel generator 200k polygons. Prompt-optimized for proper edge flow addressing judge criticism.",
+      "faceCount": 190579,
+      "createdAt": "2026-01-29T08:05:37.158636",
+      "vertexCount": 94738,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 11521424,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 190579,
+          "vertexCount": 189219
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 8865729,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 190579,
+          "vertexCount": 189219
+        },
+        "gltf-ar": {
+          "textureCount": null,
+          "size": 6556,
+          "type": "gltf-ar",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "source": {
+          "textureCount": null,
+          "size": 16822172,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 9681812,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/cdfb1586c5374f55a3c2ad9f7f1e147b",
+      "uid": "cdfb1586c5374f55a3c2ad9f7f1e147b",
+      "name": "Diesel Generator Power Plant R3 (80k)",
+      "staffpickedAt": null,
+      "viewCount": 155,
+      "likeCount": 2,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-cdfb1586c5374f55a3c2ad9f7f1e147b",
+      "embedUrl": "https://sketchfab.com/models/cdfb1586c5374f55a3c2ad9f7f1e147b/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-02-04T21:48:55.063136",
+      "tags": [
+        {
+          "name": "power",
+          "slug": "power",
+          "uri": "https://api.sketchfab.com/v3/tags/power"
+        },
+        {
+          "name": "generator",
+          "slug": "generator",
+          "uri": "https://api.sketchfab.com/v3/tags/generator"
+        },
+        {
+          "name": "caterpillar",
+          "slug": "caterpillar",
+          "uri": "https://api.sketchfab.com/v3/tags/caterpillar"
+        },
+        {
+          "name": "competition",
+          "slug": "competition",
+          "uri": "https://api.sketchfab.com/v3/tags/competition"
+        },
+        {
+          "name": "diesel",
+          "slug": "diesel",
+          "uri": "https://api.sketchfab.com/v3/tags/diesel"
+        },
+        {
+          "name": "finals",
+          "slug": "finals",
+          "uri": "https://api.sketchfab.com/v3/tags/finals"
+        },
+        {
+          "name": "80k",
+          "slug": "80k",
+          "uri": "https://api.sketchfab.com/v3/tags/80k"
+        },
+        {
+          "name": "r3",
+          "slug": "r3",
+          "uri": "https://api.sketchfab.com/v3/tags/r3"
+        },
+        {
+          "name": "industrial",
+          "slug": "industrial",
+          "uri": "https://api.sketchfab.com/v3/tags/industrial"
+        },
+        {
+          "name": "revision3",
+          "slug": "revision3",
+          "uri": "https://api.sketchfab.com/v3/tags/revision3"
+        },
+        {
+          "name": "forgefx",
+          "slug": "forgefx",
+          "uri": "https://api.sketchfab.com/v3/tags/forgefx"
+        }
+      ],
+      "categories": [],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "de4734191bf945ecb0466524e32ff535",
+            "size": 132054,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/cdfb1586c5374f55a3c2ad9f7f1e147b/thumbnails/e736d27443b64ac8a5fcf4aa5677d87b/51ebf68751d14a88b823df28433e938e.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "d11f2c6324b74e97ba07b4e65902f31c",
+            "size": 44935,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/cdfb1586c5374f55a3c2ad9f7f1e147b/thumbnails/e736d27443b64ac8a5fcf4aa5677d87b/6ad6ec9a9c0042d78c410fd9493d97cc.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "28f1b0c0a72d4682be5d0c32a9212557",
+            "size": 26573,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/cdfb1586c5374f55a3c2ad9f7f1e147b/thumbnails/e736d27443b64ac8a5fcf4aa5677d87b/b039301293ab420d9f585b78290bd987.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "14cf511405064efa9df3cdb15c15724a",
+            "size": 5525,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/cdfb1586c5374f55a3c2ad9f7f1e147b/thumbnails/e736d27443b64ac8a5fcf4aa5677d87b/ba70bc15e84a4df19ec837cf15705b38.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "3e1ff2a13aff4a7dbabd4eb3299a0062",
+            "size": 1106,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/cdfb1586c5374f55a3c2ad9f7f1e147b/thumbnails/e736d27443b64ac8a5fcf4aa5677d87b/4f0acf55cfd3492fbe5738418737d1ee.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "3d14cd49c174401ea73bbe244b175cc5",
+        "username": "adam-q-kane",
+        "displayName": "adam-q-kane",
+        "profileUrl": "https://sketchfab.com/adam-q-kane",
+        "account": "prem",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/51af6a870cce449eb75b0345feebaebb",
+          "images": [
+            {
+              "size": 5719,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/2ef0f894055b4bb69123b2a27fa2d379.jpeg",
+              "height": 90
+            },
+            {
+              "size": 6496,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/ab11eedf96374486acb544f71a23b165.jpeg",
+              "height": 100
+            },
+            {
+              "size": 1359,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/35f6f9b6c9a14a548ce472582d8a9bb5.jpeg",
+              "height": 32
+            },
+            {
+              "size": 2584,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/a8072a51447c4d41ab177b357111b420.jpeg",
+              "height": 48
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/3d14cd49c174401ea73bbe244b175cc5"
+      },
+      "description": "FINALS SUBMISSION (80k polygons): Caterpillar 3516B diesel generator with OEM-level detail. Optimized for 80,000 polygon target.",
+      "faceCount": 76828,
+      "createdAt": "2026-01-29T08:00:10.428135",
+      "vertexCount": 37985,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 9961972,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 76828,
+          "vertexCount": 86508
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 8457269,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 76828,
+          "vertexCount": 86508
+        },
+        "gltf-ar": {
+          "textureCount": null,
+          "size": 5271,
+          "type": "gltf-ar",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "source": {
+          "textureCount": null,
+          "size": 18899226,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 4606202,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/4a1b2a793b174475803d637d4c996bac",
+      "uid": "4a1b2a793b174475803d637d4c996bac",
+      "name": "Industry: Diesel Generator Power Plant R3 (800k)",
+      "staffpickedAt": null,
+      "viewCount": 690,
+      "likeCount": 11,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-4a1b2a793b174475803d637d4c996bac",
+      "embedUrl": "https://sketchfab.com/models/4a1b2a793b174475803d637d4c996bac/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-01-29T04:52:31.385052",
+      "tags": [
+        {
+          "name": "power",
+          "slug": "power",
+          "uri": "https://api.sketchfab.com/v3/tags/power"
+        },
+        {
+          "name": "generator",
+          "slug": "generator",
+          "uri": "https://api.sketchfab.com/v3/tags/generator"
+        },
+        {
+          "name": "caterpillar",
+          "slug": "caterpillar",
+          "uri": "https://api.sketchfab.com/v3/tags/caterpillar"
+        },
+        {
+          "name": "competition",
+          "slug": "competition",
+          "uri": "https://api.sketchfab.com/v3/tags/competition"
+        },
+        {
+          "name": "diesel",
+          "slug": "diesel",
+          "uri": "https://api.sketchfab.com/v3/tags/diesel"
+        },
+        {
+          "name": "finals",
+          "slug": "finals",
+          "uri": "https://api.sketchfab.com/v3/tags/finals"
+        },
+        {
+          "name": "r3",
+          "slug": "r3",
+          "uri": "https://api.sketchfab.com/v3/tags/r3"
+        },
+        {
+          "name": "industrial",
+          "slug": "industrial",
+          "uri": "https://api.sketchfab.com/v3/tags/industrial"
+        },
+        {
+          "name": "800k",
+          "slug": "800k",
+          "uri": "https://api.sketchfab.com/v3/tags/800k"
+        },
+        {
+          "name": "revision3",
+          "slug": "revision3",
+          "uri": "https://api.sketchfab.com/v3/tags/revision3"
+        },
+        {
+          "name": "forgefx",
+          "slug": "forgefx",
+          "uri": "https://api.sketchfab.com/v3/tags/forgefx"
+        }
+      ],
+      "categories": [],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "05917c9bfed84e14907465472263ec48",
+            "size": 102731,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/4a1b2a793b174475803d637d4c996bac/thumbnails/a12b25a3dc244bb7ac63fc65654144a5/b5eda658c5004d2f897794e68226f8d7.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "5810d6bf917647b380cb25482dc1383c",
+            "size": 36242,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/4a1b2a793b174475803d637d4c996bac/thumbnails/a12b25a3dc244bb7ac63fc65654144a5/a7db8e02048942d5a326f900361f33c5.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "7c47a923c4a840e0b0eb341dc1f02491",
+            "size": 21038,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/4a1b2a793b174475803d637d4c996bac/thumbnails/a12b25a3dc244bb7ac63fc65654144a5/29583f4804a84ced822808c2b89e275d.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "668e3f1fb896473ea00219323a2b97aa",
+            "size": 4593,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/4a1b2a793b174475803d637d4c996bac/thumbnails/a12b25a3dc244bb7ac63fc65654144a5/d3c617d4711545f98c07177a38f7a224.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "ff14efb471d641639ccfeff75264f330",
+            "size": 1095,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/4a1b2a793b174475803d637d4c996bac/thumbnails/a12b25a3dc244bb7ac63fc65654144a5/ed496bd6e047447aaa4d728019dd4868.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "3d14cd49c174401ea73bbe244b175cc5",
+        "username": "adam-q-kane",
+        "displayName": "adam-q-kane",
+        "profileUrl": "https://sketchfab.com/adam-q-kane",
+        "account": "prem",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/51af6a870cce449eb75b0345feebaebb",
+          "images": [
+            {
+              "size": 5719,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/2ef0f894055b4bb69123b2a27fa2d379.jpeg",
+              "height": 90
+            },
+            {
+              "size": 6496,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/ab11eedf96374486acb544f71a23b165.jpeg",
+              "height": 100
+            },
+            {
+              "size": 1359,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/35f6f9b6c9a14a548ce472582d8a9bb5.jpeg",
+              "height": 32
+            },
+            {
+              "size": 2584,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/a8072a51447c4d41ab177b357111b420.jpeg",
+              "height": 48
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/3d14cd49c174401ea73bbe244b175cc5"
+      },
+      "description": "FINALS SUBMISSION (800k polygons): Caterpillar 3516B diesel generator with OEM-level detail. Yellow industrial paint, detailed V16 engine block with visible valve covers and bolt patterns showing CAT logo, turbocharger with wastegate, exhaust manifolds, fuel day tank with sight glass, dual Racor fuel filters, heavy-duty radiator with 42-inch cooling fan, Deep Sea 8610 digital control panel, spring vibration isolators, exhaust silencer, battery rack, oil filters, air intake, engine data plate, ASME labels. Optimized for 800,000 polygon target while maintaining visual fidelity.",
+      "faceCount": 298418,
+      "createdAt": "2026-01-29T04:52:04.596033",
+      "vertexCount": 148707,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 15045480,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 298418,
+          "vertexCount": 262180
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 11307249,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 298418,
+          "vertexCount": 262180
+        },
+        "source": {
+          "textureCount": null,
+          "size": 19702784,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 12187175,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/517230d9d3d343ae95390109bd6faa18",
+      "uid": "517230d9d3d343ae95390109bd6faa18",
+      "name": "Industry: Diesel Generator - R2",
+      "staffpickedAt": null,
+      "viewCount": 1412,
+      "likeCount": 19,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-517230d9d3d343ae95390109bd6faa18",
+      "embedUrl": "https://sketchfab.com/models/517230d9d3d343ae95390109bd6faa18/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-01-29T01:56:43.706257",
+      "tags": [
+        {
+          "name": "mining",
+          "slug": "mining",
+          "uri": "https://api.sketchfab.com/v3/tags/mining"
+        },
+        {
+          "name": "round2",
+          "slug": "round2",
+          "uri": "https://api.sketchfab.com/v3/tags/round2"
+        },
+        {
+          "name": "generator",
+          "slug": "generator",
+          "uri": "https://api.sketchfab.com/v3/tags/generator"
+        },
+        {
+          "name": "competition",
+          "slug": "competition",
+          "uri": "https://api.sketchfab.com/v3/tags/competition"
+        },
+        {
+          "name": "industry",
+          "slug": "industry",
+          "uri": "https://api.sketchfab.com/v3/tags/industry"
+        },
+        {
+          "name": "diesel",
+          "slug": "diesel",
+          "uri": "https://api.sketchfab.com/v3/tags/diesel"
+        },
+        {
+          "name": "equipment",
+          "slug": "equipment",
+          "uri": "https://api.sketchfab.com/v3/tags/equipment"
+        },
+        {
+          "name": "textured",
+          "slug": "textured",
+          "uri": "https://api.sketchfab.com/v3/tags/textured"
+        },
+        {
+          "name": "construction",
+          "slug": "construction",
+          "uri": "https://api.sketchfab.com/v3/tags/construction"
+        },
+        {
+          "name": "industrial",
+          "slug": "industrial",
+          "uri": "https://api.sketchfab.com/v3/tags/industrial"
+        },
+        {
+          "name": "forgefx",
+          "slug": "forgefx",
+          "uri": "https://api.sketchfab.com/v3/tags/forgefx"
+        }
+      ],
+      "categories": [],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "9797a476431f4e5a88e3d70584f4a0a5",
+            "size": 107710,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/517230d9d3d343ae95390109bd6faa18/thumbnails/be32b5a79afb47c9b4a00f3e9138ff7f/52ca1d5042b6404781f91e665ae9c698.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "e19f49e481b14cc1842759047fbad812",
+            "size": 36029,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/517230d9d3d343ae95390109bd6faa18/thumbnails/be32b5a79afb47c9b4a00f3e9138ff7f/17dce100c91642478cd2d35def15b3fa.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "577f7d741c9d45ff86576c2d81aeaf3c",
+            "size": 20835,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/517230d9d3d343ae95390109bd6faa18/thumbnails/be32b5a79afb47c9b4a00f3e9138ff7f/159d919efb2344d5b6fcb08647678112.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "760db930a5864d4c86047373cc62262a",
+            "size": 4434,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/517230d9d3d343ae95390109bd6faa18/thumbnails/be32b5a79afb47c9b4a00f3e9138ff7f/6149676b10dc4926bbd94df283155fb1.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "ebe0b815774949a4bac2c92c1eaab06d",
+            "size": 1046,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/517230d9d3d343ae95390109bd6faa18/thumbnails/be32b5a79afb47c9b4a00f3e9138ff7f/71134dc523824aa992fa164d3da10751.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "3d14cd49c174401ea73bbe244b175cc5",
+        "username": "adam-q-kane",
+        "displayName": "adam-q-kane",
+        "profileUrl": "https://sketchfab.com/adam-q-kane",
+        "account": "prem",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/51af6a870cce449eb75b0345feebaebb",
+          "images": [
+            {
+              "size": 5719,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/2ef0f894055b4bb69123b2a27fa2d379.jpeg",
+              "height": 90
+            },
+            {
+              "size": 6496,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/ab11eedf96374486acb544f71a23b165.jpeg",
+              "height": 100
+            },
+            {
+              "size": 1359,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/35f6f9b6c9a14a548ce472582d8a9bb5.jpeg",
+              "height": 32
+            },
+            {
+              "size": 2584,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/a8072a51447c4d41ab177b357111b420.jpeg",
+              "height": 48
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/3d14cd49c174401ea73bbe244b175cc5"
+      },
+      "description": "ROUND 2 INDUSTRIAL EMERGENCY: Diesel generator power plant. Full PBR textures.",
+      "faceCount": 2663851,
+      "createdAt": "2026-01-29T01:55:13.034073",
+      "vertexCount": 1329371,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 107751784,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 2663851,
+          "vertexCount": 2286947
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 74300734,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 2663851,
+          "vertexCount": 2286947
+        },
+        "source": {
+          "textureCount": null,
+          "size": 103080370,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 82035880,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/0bdbd4ce120c4440ba2a343572b7bf7a",
+      "uid": "0bdbd4ce120c4440ba2a343572b7bf7a",
+      "name": "Red October",
+      "staffpickedAt": null,
+      "viewCount": 230,
+      "likeCount": 0,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-0bdbd4ce120c4440ba2a343572b7bf7a",
+      "embedUrl": "https://sketchfab.com/models/0bdbd4ce120c4440ba2a343572b7bf7a/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2025-10-01T17:57:16.350221",
+      "tags": [
+        {
+          "name": "sovietunion",
+          "slug": "sovietunion",
+          "uri": "https://api.sketchfab.com/v3/tags/sovietunion"
+        },
+        {
+          "name": "tomclancy",
+          "slug": "tomclancy",
+          "uri": "https://api.sketchfab.com/v3/tags/tomclancy"
+        },
+        {
+          "name": "submarine",
+          "slug": "submarine",
+          "uri": "https://api.sketchfab.com/v3/tags/submarine"
+        },
+        {
+          "name": "thehuntforredoctober",
+          "slug": "thehuntforredoctober",
+          "uri": "https://api.sketchfab.com/v3/tags/thehuntforredoctober"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "weapons-military"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "3a426095977a49208d729a9cffdc8e6f",
+            "size": 39330,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/0bdbd4ce120c4440ba2a343572b7bf7a/thumbnails/d3d1f4113a434d3b93ecc45edef82926/5966212b5ee941b08935bafb9ffa3cca.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "3634a850679d4c0998b199d77ceb9422",
+            "size": 12500,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/0bdbd4ce120c4440ba2a343572b7bf7a/thumbnails/d3d1f4113a434d3b93ecc45edef82926/5cc5fb86338844d98a2d171a08063b8e.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "3f6df16164de447eb409b92e97486997",
+            "size": 7189,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/0bdbd4ce120c4440ba2a343572b7bf7a/thumbnails/d3d1f4113a434d3b93ecc45edef82926/0b5dc5dff1294504bbf8519386865008.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "d397d14c271d41e69913129b8bf238bf",
+            "size": 1850,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/0bdbd4ce120c4440ba2a343572b7bf7a/thumbnails/d3d1f4113a434d3b93ecc45edef82926/aa6aa9c3279d4587b9246e1247e711c5.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "9b9198b8be724fbb99624d238c53de95",
+            "size": 840,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/0bdbd4ce120c4440ba2a343572b7bf7a/thumbnails/d3d1f4113a434d3b93ecc45edef82926/c76a4c499f034770924db8b26d1ed031.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "07579a3335ae49e0a8e236b424c406be",
+        "username": "DigitalGreaseMonkey",
+        "displayName": "DigitalGreaseMonkey",
+        "profileUrl": "https://sketchfab.com/DigitalGreaseMonkey",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/3b11452413a440a6a97904c3d43b5cc2",
+          "images": [
+            {
+              "size": 1115,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/3b11452413a440a6a97904c3d43b5cc2/e7cde91bda06450ca146f128f715afd4.png",
+              "height": 32
+            },
+            {
+              "size": 1751,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/3b11452413a440a6a97904c3d43b5cc2/c0fc02f02f5a440e9d785e2930855311.png",
+              "height": 48
+            },
+            {
+              "size": 3554,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/3b11452413a440a6a97904c3d43b5cc2/5864bcae3ae04f66ab9a25d8870bec45.png",
+              "height": 90
+            },
+            {
+              "size": 3918,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/3b11452413a440a6a97904c3d43b5cc2/3fcc373992ed4f4eb80bac5d27d0a45e.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/07579a3335ae49e0a8e236b424c406be"
+      },
+      "description": "Operator: Soviet Navy\nPerformance: 1,073 HP\nTop Speed: 26 knots\nExtra Features: Twin OK-650VV Nuclear Reactors, Twin Diesel Backup Generators, Twin Magnetohydrodynamic \"Caterpillar\" Drives, Variable Sweep Diving Planes, 20 R-39 Submarine-Launched Ballistic Missiles, 6 533mm Torpedo Tubes, Reinforced Sail for Ice-Breaking, Anti-Torpedo Countermeasures, Twin Escape Capsules, Life Rafts.\nType: Modified Typhoon-Class Submarine",
+      "faceCount": 3418,
+      "createdAt": "2025-10-01T16:28:48.112116",
+      "vertexCount": 1784,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 170232,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 3418,
+          "vertexCount": 3067
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 70366,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 3418,
+          "vertexCount": 3067
+        },
+        "source": {
+          "textureCount": null,
+          "size": 354560,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 580440,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/99c36d2a66694c1592bfbee16a1eebfb",
+      "uid": "99c36d2a66694c1592bfbee16a1eebfb",
+      "name": "Big Diesel Generator",
+      "staffpickedAt": null,
+      "viewCount": 271,
+      "likeCount": 8,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-99c36d2a66694c1592bfbee16a1eebfb",
+      "embedUrl": "https://sketchfab.com/models/99c36d2a66694c1592bfbee16a1eebfb/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2025-09-19T18:55:31.710918",
+      "tags": [
+        {
+          "name": "oil",
+          "slug": "oil",
+          "uri": "https://api.sketchfab.com/v3/tags/oil"
+        },
+        {
+          "name": "generator",
+          "slug": "generator",
+          "uri": "https://api.sketchfab.com/v3/tags/generator"
+        },
+        {
+          "name": "big",
+          "slug": "big",
+          "uri": "https://api.sketchfab.com/v3/tags/big"
+        },
+        {
+          "name": "diesel",
+          "slug": "diesel",
+          "uri": "https://api.sketchfab.com/v3/tags/diesel"
+        },
+        {
+          "name": "lowpoly-gameasset-gameready",
+          "slug": "lowpoly-gameasset-gameready",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpoly-gameasset-gameready"
+        },
+        {
+          "name": "lowpolymodel",
+          "slug": "lowpolymodel",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpolymodel"
+        },
+        {
+          "name": "freemodel",
+          "slug": "freemodel",
+          "uri": "https://api.sketchfab.com/v3/tags/freemodel"
+        },
+        {
+          "name": "gameready-lowpoly",
+          "slug": "gameready-lowpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/gameready-lowpoly"
+        },
+        {
+          "name": "asset",
+          "slug": "asset",
+          "uri": "https://api.sketchfab.com/v3/tags/asset"
+        },
+        {
+          "name": "lowpoly",
+          "slug": "lowpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpoly"
+        },
+        {
+          "name": "low",
+          "slug": "low",
+          "uri": "https://api.sketchfab.com/v3/tags/low"
+        },
+        {
+          "name": "poly",
+          "slug": "poly",
+          "uri": "https://api.sketchfab.com/v3/tags/poly"
+        },
+        {
+          "name": "gameasset",
+          "slug": "gameasset",
+          "uri": "https://api.sketchfab.com/v3/tags/gameasset"
+        },
+        {
+          "name": "free",
+          "slug": "free",
+          "uri": "https://api.sketchfab.com/v3/tags/free"
+        }
+      ],
+      "categories": [
+        {
+          "name": "electronics-gadgets"
+        },
+        {
+          "name": "science-technology"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "cf7bbb46eea84b17be4b2fc8e645a925",
+            "size": 58973,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/99c36d2a66694c1592bfbee16a1eebfb/thumbnails/5af0560b4f974c698464807ebf86b3d6/1c8cf2e86e48458ab0a7befd5b64d5bd.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "ff093358527b4c029c26a263c1a5510e",
+            "size": 18929,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/99c36d2a66694c1592bfbee16a1eebfb/thumbnails/5af0560b4f974c698464807ebf86b3d6/d45cfa4a1304496b81a892943d8dfec4.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "1d140121863e489c96eba92df71a08b3",
+            "size": 11029,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/99c36d2a66694c1592bfbee16a1eebfb/thumbnails/5af0560b4f974c698464807ebf86b3d6/87c6afdbd7a844468da61245a7dc7930.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "5af3df9d383044639782b4d0e5e3440b",
+            "size": 2552,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/99c36d2a66694c1592bfbee16a1eebfb/thumbnails/5af0560b4f974c698464807ebf86b3d6/c6679e4bf95f4c5d90b66e3f81d1d2d8.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "a2e7aebb7c3144569537cb40651c4d71",
+            "size": 921,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/99c36d2a66694c1592bfbee16a1eebfb/thumbnails/5af0560b4f974c698464807ebf86b3d6/ff86fceae927490d8209a532c31c0094.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "42faec9986d149c18a9bdd5cbf18a4ff",
+        "username": "usedm",
+        "displayName": "usedm",
+        "profileUrl": "https://sketchfab.com/usedm",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/33ada52cfed8403883e1f28433a0072c",
+          "images": [
+            {
+              "size": 1136,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/33ada52cfed8403883e1f28433a0072c/68fe5c933fce48cd888b8b5b6d8c6189.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1685,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/33ada52cfed8403883e1f28433a0072c/db9b526d45cf4880ba75dfddfc0493d7.jpeg",
+              "height": 48
+            },
+            {
+              "size": 4002,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/33ada52cfed8403883e1f28433a0072c/6f5477125c2c495497246432a6df63e8.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4699,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/33ada52cfed8403883e1f28433a0072c/4efb0c2a9c0e49ae89cf90f9b41ef68b.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/42faec9986d149c18a9bdd5cbf18a4ff"
+      },
+      "description": "You can download the models from this website or from my Telegram channel - t.me/usedmcgi \nI also publish textures there.",
+      "faceCount": 9490,
+      "createdAt": "2025-09-19T18:53:35.251243",
+      "vertexCount": 5979,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 3896828,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 9490,
+          "vertexCount": 11061
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 3520201,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 9490,
+          "vertexCount": 11061
+        },
+        "source": {
+          "textureCount": null,
+          "size": 20870610,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 970328,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    }
+  ]
+}

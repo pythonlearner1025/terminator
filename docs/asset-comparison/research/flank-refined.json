@@ -1,0 +1,4270 @@
+{
+  "cursors": {
+    "next": "18",
+    "previous": null
+  },
+  "next": "https://api.sketchfab.com/v3/search?count=18&cursor=18&downloadable=true&q=%22damaged+wall%22&sort_by=-likeCount&type=models",
+  "previous": null,
+  "results": [
+    {
+      "uri": "https://api.sketchfab.com/v3/models/11616746d0ea4bd59a2d9cf9a2b2fdfa",
+      "uid": "11616746d0ea4bd59a2d9cf9a2b2fdfa",
+      "name": "Damaged Wall",
+      "staffpickedAt": null,
+      "viewCount": 38172,
+      "likeCount": 587,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-11616746d0ea4bd59a2d9cf9a2b2fdfa",
+      "embedUrl": "https://sketchfab.com/models/11616746d0ea4bd59a2d9cf9a2b2fdfa/embed",
+      "commentCount": 5,
+      "isDownloadable": true,
+      "publishedAt": "2020-01-17T03:09:47.396741",
+      "tags": [
+        {
+          "name": "bricks",
+          "slug": "bricks",
+          "uri": "https://api.sketchfab.com/v3/tags/bricks"
+        },
+        {
+          "name": "game-ready",
+          "slug": "game-ready",
+          "uri": "https://api.sketchfab.com/v3/tags/game-ready"
+        },
+        {
+          "name": "substancepainter",
+          "slug": "substancepainter",
+          "uri": "https://api.sketchfab.com/v3/tags/substancepainter"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "pbr",
+          "slug": "pbr",
+          "uri": "https://api.sketchfab.com/v3/tags/pbr"
+        },
+        {
+          "name": "gameart",
+          "slug": "gameart",
+          "uri": "https://api.sketchfab.com/v3/tags/gameart"
+        },
+        {
+          "name": "zbrush",
+          "slug": "zbrush",
+          "uri": "https://api.sketchfab.com/v3/tags/zbrush"
+        },
+        {
+          "name": "gameready",
+          "slug": "gameready",
+          "uri": "https://api.sketchfab.com/v3/tags/gameready"
+        },
+        {
+          "name": "wall",
+          "slug": "wall",
+          "uri": "https://api.sketchfab.com/v3/tags/wall"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "4eb9b3ca3402444592ed98d755df1571",
+            "size": 273220,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/11616746d0ea4bd59a2d9cf9a2b2fdfa/thumbnails/60c129a3dc904b2286de8b0e1d0f213e/e229253c0b8249a780374b05c1bbe275.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "e8a3aa1b373046d2972f4367451b764d",
+            "size": 73338,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/11616746d0ea4bd59a2d9cf9a2b2fdfa/thumbnails/60c129a3dc904b2286de8b0e1d0f213e/74faf078cf564454b6b27b4117d826ed.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "1b46a8a20382469c8eaa32095bbbbdbb",
+            "size": 39285,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/11616746d0ea4bd59a2d9cf9a2b2fdfa/thumbnails/60c129a3dc904b2286de8b0e1d0f213e/e3f23530f33e4f05bc7a4df8f859b972.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "a893192173c647dcbb8c3bda5bec5832",
+            "size": 5563,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/11616746d0ea4bd59a2d9cf9a2b2fdfa/thumbnails/60c129a3dc904b2286de8b0e1d0f213e/d6c3fec2a3fe499896e1f0c3ac99713e.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "d48b7359dbd442a4a5a6cb0fdde06ade",
+            "size": 814,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/11616746d0ea4bd59a2d9cf9a2b2fdfa/thumbnails/60c129a3dc904b2286de8b0e1d0f213e/838ca61ff4264bbfbfbe07edd31ea320.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "3576938694f5492681d0f905e413cbc0",
+        "username": "WoTiger",
+        "displayName": "Philipp Busse",
+        "profileUrl": "https://sketchfab.com/WoTiger",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/bb28cb5229d44602b1a4a178ff0da4e8",
+          "images": [
+            {
+              "size": 2094,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/bb28cb5229d44602b1a4a178ff0da4e8/7d17c390266f4a76a9af9977938678ba.png",
+              "height": 32
+            },
+            {
+              "size": 3957,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/bb28cb5229d44602b1a4a178ff0da4e8/b7f4c6894ff74487a23389209503b403.png",
+              "height": 48
+            },
+            {
+              "size": 10999,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/bb28cb5229d44602b1a4a178ff0da4e8/0d8a4cea3b19407b8c90985354679d22.png",
+              "height": 90
+            },
+            {
+              "size": 13079,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/bb28cb5229d44602b1a4a178ff0da4e8/e2a9d1e6138647749e873f56ecbc71eb.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/3576938694f5492681d0f905e413cbc0"
+      },
+      "description": "A old damaged wall which I made for a scene which I am currently working on.\n\nCreated in January 2020.\n\nProgramms Used:\n\n- Blender\n\n- Z-Brush\n\n- Substance Painter",
+      "faceCount": 2226,
+      "createdAt": "2020-01-17T02:22:05.603583",
+      "vertexCount": 1115,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 3,
+          "size": 13810336,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 2226,
+          "vertexCount": 1203
+        },
+        "gltf": {
+          "textureCount": 3,
+          "size": 13772988,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 2226,
+          "vertexCount": 1203
+        },
+        "source": {
+          "textureCount": null,
+          "size": 13990578,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 4630494,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/56618176e1d946479490b1931539d3c5",
+      "uid": "56618176e1d946479490b1931539d3c5",
+      "name": "AssetsPackHospital",
+      "staffpickedAt": null,
+      "viewCount": 12616,
+      "likeCount": 473,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-56618176e1d946479490b1931539d3c5",
+      "embedUrl": "https://sketchfab.com/models/56618176e1d946479490b1931539d3c5/embed",
+      "commentCount": 7,
+      "isDownloadable": true,
+      "publishedAt": "2025-05-18T09:05:05.870428",
+      "tags": [
+        {
+          "name": "bed",
+          "slug": "bed",
+          "uri": "https://api.sketchfab.com/v3/tags/bed"
+        },
+        {
+          "name": "balloon",
+          "slug": "balloon",
+          "uri": "https://api.sketchfab.com/v3/tags/balloon"
+        },
+        {
+          "name": "gameprop",
+          "slug": "gameprop",
+          "uri": "https://api.sketchfab.com/v3/tags/gameprop"
+        },
+        {
+          "name": "walls",
+          "slug": "walls",
+          "uri": "https://api.sketchfab.com/v3/tags/walls"
+        },
+        {
+          "name": "dirty",
+          "slug": "dirty",
+          "uri": "https://api.sketchfab.com/v3/tags/dirty"
+        },
+        {
+          "name": "postapocalyptic",
+          "slug": "postapocalyptic",
+          "uri": "https://api.sketchfab.com/v3/tags/postapocalyptic"
+        },
+        {
+          "name": "damaged",
+          "slug": "damaged",
+          "uri": "https://api.sketchfab.com/v3/tags/damaged"
+        },
+        {
+          "name": "pipes",
+          "slug": "pipes",
+          "uri": "https://api.sketchfab.com/v3/tags/pipes"
+        },
+        {
+          "name": "emergency",
+          "slug": "emergency",
+          "uri": "https://api.sketchfab.com/v3/tags/emergency"
+        },
+        {
+          "name": "hospital",
+          "slug": "hospital",
+          "uri": "https://api.sketchfab.com/v3/tags/hospital"
+        },
+        {
+          "name": "oxygen",
+          "slug": "oxygen",
+          "uri": "https://api.sketchfab.com/v3/tags/oxygen"
+        },
+        {
+          "name": "metal",
+          "slug": "metal",
+          "uri": "https://api.sketchfab.com/v3/tags/metal"
+        },
+        {
+          "name": "props",
+          "slug": "props",
+          "uri": "https://api.sketchfab.com/v3/tags/props"
+        },
+        {
+          "name": "realistic",
+          "slug": "realistic",
+          "uri": "https://api.sketchfab.com/v3/tags/realistic"
+        },
+        {
+          "name": "unrealengine",
+          "slug": "unrealengine",
+          "uri": "https://api.sketchfab.com/v3/tags/unrealengine"
+        },
+        {
+          "name": "3dasset",
+          "slug": "3dasset",
+          "uri": "https://api.sketchfab.com/v3/tags/3dasset"
+        },
+        {
+          "name": "pipes-set",
+          "slug": "pipes-set",
+          "uri": "https://api.sketchfab.com/v3/tags/pipes-set"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "pbr",
+          "slug": "pbr",
+          "uri": "https://api.sketchfab.com/v3/tags/pbr"
+        },
+        {
+          "name": "lowpoly",
+          "slug": "lowpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpoly"
+        },
+        {
+          "name": "gameasset",
+          "slug": "gameasset",
+          "uri": "https://api.sketchfab.com/v3/tags/gameasset"
+        },
+        {
+          "name": "medical",
+          "slug": "medical",
+          "uri": "https://api.sketchfab.com/v3/tags/medical"
+        },
+        {
+          "name": "3dmodel",
+          "slug": "3dmodel",
+          "uri": "https://api.sketchfab.com/v3/tags/3dmodel"
+        },
+        {
+          "name": "gameready",
+          "slug": "gameready",
+          "uri": "https://api.sketchfab.com/v3/tags/gameready"
+        },
+        {
+          "name": "environment",
+          "slug": "environment",
+          "uri": "https://api.sketchfab.com/v3/tags/environment"
+        },
+        {
+          "name": "ballons",
+          "slug": "ballons",
+          "uri": "https://api.sketchfab.com/v3/tags/ballons"
+        },
+        {
+          "name": "medicalequipment",
+          "slug": "medicalequipment",
+          "uri": "https://api.sketchfab.com/v3/tags/medicalequipment"
+        },
+        {
+          "name": "medicalbed",
+          "slug": "medicalbed",
+          "uri": "https://api.sketchfab.com/v3/tags/medicalbed"
+        },
+        {
+          "name": "hospitalprop",
+          "slug": "hospitalprop",
+          "uri": "https://api.sketchfab.com/v3/tags/hospitalprop"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        },
+        {
+          "name": "furniture-home"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "b5a9df89c46344229d6c746f02acc7a4",
+            "size": 315563,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/56618176e1d946479490b1931539d3c5/thumbnails/64c254324bd0420fb59d86b58e03b2bc/1650af6de16447b3af4a7e3316b64b61.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "c728accb146543b0add1f9c79844ad4b",
+            "size": 53485,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/56618176e1d946479490b1931539d3c5/thumbnails/64c254324bd0420fb59d86b58e03b2bc/6d5851867c7f415daf2d4337eca077a9.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "cf1d535f8e0f44ca86b3285278aee5c0",
+            "size": 30641,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/56618176e1d946479490b1931539d3c5/thumbnails/64c254324bd0420fb59d86b58e03b2bc/73cf10ed943b4370a341252b1f9805d5.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "d61fd4de61e547ebbe2b4396938d6b12",
+            "size": 6551,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/56618176e1d946479490b1931539d3c5/thumbnails/64c254324bd0420fb59d86b58e03b2bc/57e8c56c98994fc383ceda987bea600a.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "d19f5057cc9f448db2673ac497329c63",
+            "size": 1306,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/56618176e1d946479490b1931539d3c5/thumbnails/64c254324bd0420fb59d86b58e03b2bc/31b7163cb48840d89dbe399b9c646dc5.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "946a7bfb20544c13a187c534741415fa",
+        "username": "glimpseskq",
+        "displayName": "glimpseskq",
+        "profileUrl": "https://sketchfab.com/glimpseskq",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/9d035c4b737f455babf3e579ec47a271",
+          "images": [
+            {
+              "size": 944,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/9d035c4b737f455babf3e579ec47a271/aecd8f016b4b4ff3b0c43efb20cc1751.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1326,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/9d035c4b737f455babf3e579ec47a271/6cc554db55934addb6363feaa60ec2a0.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2748,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/9d035c4b737f455babf3e579ec47a271/4b59cc3be2c94fca893ccb20b851836d.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3156,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/9d035c4b737f455babf3e579ec47a271/dae77e95216e463aac8a8ec705e7e4be.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/946a7bfb20544c13a187c534741415fa"
+      },
+      "description": "Part of a larger hospital environment project.\n\nYou can see how this asset was used in the final composition here:\n(I will be glad if you appreciate the resulting composition)\n\n\ud83d\udc49 https://www.artstation.com/artwork/OvR66J",
+      "faceCount": 104560,
+      "createdAt": "2025-05-18T08:39:20.671443",
+      "vertexCount": 52859,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 40,
+          "size": 155530860,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 104554,
+          "vertexCount": 83345
+        },
+        "gltf": {
+          "textureCount": 40,
+          "size": 150240582,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 104554,
+          "vertexCount": 83345
+        },
+        "source": {
+          "textureCount": null,
+          "size": 61247616,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 8054305,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/672f1db750594c7dba905805b203fc75",
+      "uid": "672f1db750594c7dba905805b203fc75",
+      "name": "Privacy Fence Pack (with damaged sections)",
+      "staffpickedAt": null,
+      "viewCount": 9504,
+      "likeCount": 473,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-672f1db750594c7dba905805b203fc75",
+      "embedUrl": "https://sketchfab.com/models/672f1db750594c7dba905805b203fc75/embed",
+      "commentCount": 5,
+      "isDownloadable": true,
+      "publishedAt": "2023-07-12T23:37:25.266600",
+      "tags": [
+        {
+          "name": "fence",
+          "slug": "fence",
+          "uri": "https://api.sketchfab.com/v3/tags/fence"
+        },
+        {
+          "name": "residential",
+          "slug": "residential",
+          "uri": "https://api.sketchfab.com/v3/tags/residential"
+        },
+        {
+          "name": "prop",
+          "slug": "prop",
+          "uri": "https://api.sketchfab.com/v3/tags/prop"
+        },
+        {
+          "name": "urban",
+          "slug": "urban",
+          "uri": "https://api.sketchfab.com/v3/tags/urban"
+        },
+        {
+          "name": "unreal",
+          "slug": "unreal",
+          "uri": "https://api.sketchfab.com/v3/tags/unreal"
+        },
+        {
+          "name": "barrier",
+          "slug": "barrier",
+          "uri": "https://api.sketchfab.com/v3/tags/barrier"
+        },
+        {
+          "name": "damaged",
+          "slug": "damaged",
+          "uri": "https://api.sketchfab.com/v3/tags/damaged"
+        },
+        {
+          "name": "rural",
+          "slug": "rural",
+          "uri": "https://api.sketchfab.com/v3/tags/rural"
+        },
+        {
+          "name": "props",
+          "slug": "props",
+          "uri": "https://api.sketchfab.com/v3/tags/props"
+        },
+        {
+          "name": "escape",
+          "slug": "escape",
+          "uri": "https://api.sketchfab.com/v3/tags/escape"
+        },
+        {
+          "name": "barricade",
+          "slug": "barricade",
+          "uri": "https://api.sketchfab.com/v3/tags/barricade"
+        },
+        {
+          "name": "game-ready",
+          "slug": "game-ready",
+          "uri": "https://api.sketchfab.com/v3/tags/game-ready"
+        },
+        {
+          "name": "railing",
+          "slug": "railing",
+          "uri": "https://api.sketchfab.com/v3/tags/railing"
+        },
+        {
+          "name": "unreal-engine",
+          "slug": "unreal-engine",
+          "uri": "https://api.sketchfab.com/v3/tags/unreal-engine"
+        },
+        {
+          "name": "game-asset",
+          "slug": "game-asset",
+          "uri": "https://api.sketchfab.com/v3/tags/game-asset"
+        },
+        {
+          "name": "roadblock",
+          "slug": "roadblock",
+          "uri": "https://api.sketchfab.com/v3/tags/roadblock"
+        },
+        {
+          "name": "barrier-wall",
+          "slug": "barrier-wall",
+          "uri": "https://api.sketchfab.com/v3/tags/barrier-wall"
+        },
+        {
+          "name": "maya",
+          "slug": "maya",
+          "uri": "https://api.sketchfab.com/v3/tags/maya"
+        },
+        {
+          "name": "low-poly",
+          "slug": "low-poly",
+          "uri": "https://api.sketchfab.com/v3/tags/low-poly"
+        },
+        {
+          "name": "house",
+          "slug": "house",
+          "uri": "https://api.sketchfab.com/v3/tags/house"
+        },
+        {
+          "name": "city",
+          "slug": "city",
+          "uri": "https://api.sketchfab.com/v3/tags/city"
+        },
+        {
+          "name": "wood",
+          "slug": "wood",
+          "uri": "https://api.sketchfab.com/v3/tags/wood"
+        },
+        {
+          "name": "building",
+          "slug": "building",
+          "uri": "https://api.sketchfab.com/v3/tags/building"
+        },
+        {
+          "name": "privacy-screen",
+          "slug": "privacy-screen",
+          "uri": "https://api.sketchfab.com/v3/tags/privacy-screen"
+        },
+        {
+          "name": "commercial-buildings",
+          "slug": "commercial-buildings",
+          "uri": "https://api.sketchfab.com/v3/tags/commercial-buildings"
+        },
+        {
+          "name": "noai",
+          "slug": "noai",
+          "uri": "https://api.sketchfab.com/v3/tags/noai"
+        },
+        {
+          "name": "privacy-fence",
+          "slug": "privacy-fence",
+          "uri": "https://api.sketchfab.com/v3/tags/privacy-fence"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        },
+        {
+          "name": "furniture-home"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "f8509e5b85e042efad7b338e43490712",
+            "size": 404662,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/672f1db750594c7dba905805b203fc75/thumbnails/5746b4e4ef3f455caa02749570fd9c05/c748010cbe484e7eb8867ff6c812c8eb.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "3e000605aff6436198ce0db5f2560f35",
+            "size": 113436,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/672f1db750594c7dba905805b203fc75/thumbnails/5746b4e4ef3f455caa02749570fd9c05/58807349a1584963b7becfff5247d4d0.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "380e66fbf9ae47f3ae955772d0721862",
+            "size": 56157,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/672f1db750594c7dba905805b203fc75/thumbnails/5746b4e4ef3f455caa02749570fd9c05/e7dcc2478bd340e18f29d0fe06211b79.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "b88a02ed63b34478b487d10f428d058d",
+            "size": 8110,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/672f1db750594c7dba905805b203fc75/thumbnails/5746b4e4ef3f455caa02749570fd9c05/8ab1107d3d11476882f9298e899a2878.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "6285854b192645f9b73890ff773f4cd7",
+            "size": 1247,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/672f1db750594c7dba905805b203fc75/thumbnails/5746b4e4ef3f455caa02749570fd9c05/a24ab95705bf4d2b96bb3d3caba95b01.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "7285e4ed793a4cb782223e6315c082fc",
+        "username": "TampaJoey",
+        "displayName": "TampaJoey",
+        "profileUrl": "https://sketchfab.com/TampaJoey",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/c2f291a9678e4f3eabe12c88fd34fc5d",
+          "images": [
+            {
+              "size": 1246,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/c2f291a9678e4f3eabe12c88fd34fc5d/b481d3bf73b743bf88613bd0b8fc7645.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1768,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/c2f291a9678e4f3eabe12c88fd34fc5d/53f33208fa074cc39e5c3a7de6892546.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3493,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/c2f291a9678e4f3eabe12c88fd34fc5d/340a31bb22c845158cf98230b7ccdf28.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3971,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/c2f291a9678e4f3eabe12c88fd34fc5d/4eefcabaaa814b0f84f7ddaeb4733cf3.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/7285e4ed793a4cb782223e6315c082fc"
+      },
+      "description": "This modular privacy fence pack includes doors that can open and close, and two damaged fence sections. Damaged fence sections are designed for game projects allowing players or NPCs to get through the fence if required. Low-poly, game ready with each fence section between 100 - 1100 polygons. \n\n***This modular fence pack also includes 4 different texture options including both wood and stylized wood texture maps.***\n\nAll fence sections have PBR materials (Diffuse, Emissive, Normal, and OcclusionRoughMet maps).\n**Note - the texture naming convention is: ** (mesh name)_(mesh name + map)_(texture type)\n\nFeel free to use for any project. All feedback is welcome and appreciated. Check out my other models to populate your project. Thanks for checking out my stuff and the likes.\n\n![https://sketchfab.com/TampaJoey](https://tampajoey.com/images/TU.jpg)\n\n# Check out all my other models including this most recent model. \n![](http://tampajoey.com/images/Sketchfab/latest_model.jpg)",
+      "faceCount": 22296,
+      "createdAt": "2023-07-12T22:52:05.965299",
+      "vertexCount": 12588,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 38,
+          "size": 27572412,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 22296,
+          "vertexCount": 39850
+        },
+        "gltf": {
+          "textureCount": 38,
+          "size": 26127447,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 22296,
+          "vertexCount": 39850
+        },
+        "source": {
+          "textureCount": null,
+          "size": 64470250,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 4120641,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/6ac088dcd828410c92f11a8710133a4d",
+      "uid": "6ac088dcd828410c92f11a8710133a4d",
+      "name": "Decayed concrete train shed with graffiti",
+      "staffpickedAt": null,
+      "viewCount": 14889,
+      "likeCount": 430,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-6ac088dcd828410c92f11a8710133a4d",
+      "embedUrl": "https://sketchfab.com/models/6ac088dcd828410c92f11a8710133a4d/embed",
+      "commentCount": 7,
+      "isDownloadable": true,
+      "publishedAt": "2024-09-18T18:34:05.930515",
+      "tags": [
+        {
+          "name": "fence",
+          "slug": "fence",
+          "uri": "https://api.sketchfab.com/v3/tags/fence"
+        },
+        {
+          "name": "raw",
+          "slug": "raw",
+          "uri": "https://api.sketchfab.com/v3/tags/raw"
+        },
+        {
+          "name": "3d-scan",
+          "slug": "3d-scan",
+          "uri": "https://api.sketchfab.com/v3/tags/3d-scan"
+        },
+        {
+          "name": "prop",
+          "slug": "prop",
+          "uri": "https://api.sketchfab.com/v3/tags/prop"
+        },
+        {
+          "name": "urban",
+          "slug": "urban",
+          "uri": "https://api.sketchfab.com/v3/tags/urban"
+        },
+        {
+          "name": "gameprop",
+          "slug": "gameprop",
+          "uri": "https://api.sketchfab.com/v3/tags/gameprop"
+        },
+        {
+          "name": "concrete",
+          "slug": "concrete",
+          "uri": "https://api.sketchfab.com/v3/tags/concrete"
+        },
+        {
+          "name": "historical",
+          "slug": "historical",
+          "uri": "https://api.sketchfab.com/v3/tags/historical"
+        },
+        {
+          "name": "rough",
+          "slug": "rough",
+          "uri": "https://api.sketchfab.com/v3/tags/rough"
+        },
+        {
+          "name": "graffiti",
+          "slug": "graffiti",
+          "uri": "https://api.sketchfab.com/v3/tags/graffiti"
+        },
+        {
+          "name": "bricks",
+          "slug": "bricks",
+          "uri": "https://api.sketchfab.com/v3/tags/bricks"
+        },
+        {
+          "name": "dirty",
+          "slug": "dirty",
+          "uri": "https://api.sketchfab.com/v3/tags/dirty"
+        },
+        {
+          "name": "grunge",
+          "slug": "grunge",
+          "uri": "https://api.sketchfab.com/v3/tags/grunge"
+        },
+        {
+          "name": "plaster",
+          "slug": "plaster",
+          "uri": "https://api.sketchfab.com/v3/tags/plaster"
+        },
+        {
+          "name": "decay",
+          "slug": "decay",
+          "uri": "https://api.sketchfab.com/v3/tags/decay"
+        },
+        {
+          "name": "downloadable",
+          "slug": "downloadable",
+          "uri": "https://api.sketchfab.com/v3/tags/downloadable"
+        },
+        {
+          "name": "decayed",
+          "slug": "decayed",
+          "uri": "https://api.sketchfab.com/v3/tags/decayed"
+        },
+        {
+          "name": "grit",
+          "slug": "grit",
+          "uri": "https://api.sketchfab.com/v3/tags/grit"
+        },
+        {
+          "name": "leaks",
+          "slug": "leaks",
+          "uri": "https://api.sketchfab.com/v3/tags/leaks"
+        },
+        {
+          "name": "old-house",
+          "slug": "old-house",
+          "uri": "https://api.sketchfab.com/v3/tags/old-house"
+        },
+        {
+          "name": "filthy",
+          "slug": "filthy",
+          "uri": "https://api.sketchfab.com/v3/tags/filthy"
+        },
+        {
+          "name": "brick-wall",
+          "slug": "brick-wall",
+          "uri": "https://api.sketchfab.com/v3/tags/brick-wall"
+        },
+        {
+          "name": "stone-wall",
+          "slug": "stone-wall",
+          "uri": "https://api.sketchfab.com/v3/tags/stone-wall"
+        },
+        {
+          "name": "reinforcedconcrete",
+          "slug": "reinforcedconcrete",
+          "uri": "https://api.sketchfab.com/v3/tags/reinforcedconcrete"
+        },
+        {
+          "name": "downloadable-model",
+          "slug": "downloadable-model",
+          "uri": "https://api.sketchfab.com/v3/tags/downloadable-model"
+        },
+        {
+          "name": "concrete-fence",
+          "slug": "concrete-fence",
+          "uri": "https://api.sketchfab.com/v3/tags/concrete-fence"
+        },
+        {
+          "name": "photogrammetry",
+          "slug": "photogrammetry",
+          "uri": "https://api.sketchfab.com/v3/tags/photogrammetry"
+        },
+        {
+          "name": "asset",
+          "slug": "asset",
+          "uri": "https://api.sketchfab.com/v3/tags/asset"
+        },
+        {
+          "name": "model",
+          "slug": "model",
+          "uri": "https://api.sketchfab.com/v3/tags/model"
+        },
+        {
+          "name": "gameasset",
+          "slug": "gameasset",
+          "uri": "https://api.sketchfab.com/v3/tags/gameasset"
+        },
+        {
+          "name": "city",
+          "slug": "city",
+          "uri": "https://api.sketchfab.com/v3/tags/city"
+        },
+        {
+          "name": "street",
+          "slug": "street",
+          "uri": "https://api.sketchfab.com/v3/tags/street"
+        },
+        {
+          "name": "village",
+          "slug": "village",
+          "uri": "https://api.sketchfab.com/v3/tags/village"
+        },
+        {
+          "name": "wall",
+          "slug": "wall",
+          "uri": "https://api.sketchfab.com/v3/tags/wall"
+        },
+        {
+          "name": "train-tracks",
+          "slug": "train-tracks",
+          "uri": "https://api.sketchfab.com/v3/tags/train-tracks"
+        },
+        {
+          "name": "dirty-3d-props",
+          "slug": "dirty-3d-props",
+          "uri": "https://api.sketchfab.com/v3/tags/dirty-3d-props"
+        },
+        {
+          "name": "damaged-wall",
+          "slug": "damaged-wall",
+          "uri": "https://api.sketchfab.com/v3/tags/damaged-wall"
+        },
+        {
+          "name": "decayed-wall",
+          "slug": "decayed-wall",
+          "uri": "https://api.sketchfab.com/v3/tags/decayed-wall"
+        },
+        {
+          "name": "exposed-bricks",
+          "slug": "exposed-bricks",
+          "uri": "https://api.sketchfab.com/v3/tags/exposed-bricks"
+        },
+        {
+          "name": "dirty-concrete",
+          "slug": "dirty-concrete",
+          "uri": "https://api.sketchfab.com/v3/tags/dirty-concrete"
+        },
+        {
+          "name": "train-shed",
+          "slug": "train-shed",
+          "uri": "https://api.sketchfab.com/v3/tags/train-shed"
+        },
+        {
+          "name": "train-garage",
+          "slug": "train-garage",
+          "uri": "https://api.sketchfab.com/v3/tags/train-garage"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "23c8ba9b138144ac96c3e614a357eb80",
+            "size": 517339,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/6ac088dcd828410c92f11a8710133a4d/thumbnails/a44413902684411784f3a233ffcdf36b/4293b9ea86cd46d38aa149ee96bdc451.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "ca46103e8f054e259f0955602701d06c",
+            "size": 152682,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/6ac088dcd828410c92f11a8710133a4d/thumbnails/a44413902684411784f3a233ffcdf36b/79ebb977a0be4e29b075f79066e382ba.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "911876209e004bfdb6e5589928f8c528",
+            "size": 78986,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/6ac088dcd828410c92f11a8710133a4d/thumbnails/a44413902684411784f3a233ffcdf36b/88c2edbcb8154390a2003539965f8810.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "58d34b3e47614735a2d98213431b426b",
+            "size": 11023,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/6ac088dcd828410c92f11a8710133a4d/thumbnails/a44413902684411784f3a233ffcdf36b/1e3cc44bd9964eac99e0f2f512d5f763.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "d88e672ccb0f4a05a8b228b353fdf041",
+            "size": 1543,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/6ac088dcd828410c92f11a8710133a4d/thumbnails/a44413902684411784f3a233ffcdf36b/e0861a958a8a4287b3799a65b0d7c4ab.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "5ae4d1be9adc4706abb9243d5705f85c",
+        "username": "orphanrtg",
+        "displayName": "\u041er\u0440\u043d\u0434\u043f \u042f\u0422G",
+        "profileUrl": "https://sketchfab.com/orphanrtg",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/9563576e3d7d4c4aa454721234d3320f",
+          "images": [
+            {
+              "size": 982,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/9563576e3d7d4c4aa454721234d3320f/98201f72aa8c4788b4bc0126d88ca331.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1184,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/9563576e3d7d4c4aa454721234d3320f/68191577eed34491ad9597cb9e63657f.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2040,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/9563576e3d7d4c4aa454721234d3320f/ffd62d479c97472588af9b999162d04e.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2256,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/9563576e3d7d4c4aa454721234d3320f/daf3e0017da14f8fa86ed4237094fd7b.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/5ae4d1be9adc4706abb9243d5705f85c"
+      },
+      "description": "* Decayed concrete train shed with graffiti\n* 8x8k texture \n* autumn season\n* location : Slovakia\n\n3d scan made of 156 photos @ S24 Ultra",
+      "faceCount": 49973,
+      "createdAt": "2024-09-18T14:34:08.538620",
+      "vertexCount": 34471,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 8,
+          "size": 197367248,
+          "type": "glb",
+          "textureMaxResolution": 8192,
+          "faceCount": 49973,
+          "vertexCount": 50454
+        },
+        "gltf": {
+          "textureCount": 8,
+          "size": 196256352,
+          "type": "gltf",
+          "textureMaxResolution": 8192,
+          "faceCount": 49973,
+          "vertexCount": 50454
+        },
+        "source": {
+          "textureCount": null,
+          "size": 245799973,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 3432559,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/7fbfe67ec4864d439f25303b50697189",
+      "uid": "7fbfe67ec4864d439f25303b50697189",
+      "name": "Rocca Calascio - RAWscan",
+      "staffpickedAt": "2018-03-09T10:12:34.727645",
+      "viewCount": 50929,
+      "likeCount": 417,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-7fbfe67ec4864d439f25303b50697189",
+      "embedUrl": "https://sketchfab.com/models/7fbfe67ec4864d439f25303b50697189/embed",
+      "commentCount": 8,
+      "isDownloadable": true,
+      "publishedAt": "2018-03-05T20:00:04.437212",
+      "tags": [
+        {
+          "name": "castle",
+          "slug": "castle",
+          "uri": "https://api.sketchfab.com/v3/tags/castle"
+        },
+        {
+          "name": "mountain",
+          "slug": "mountain",
+          "uri": "https://api.sketchfab.com/v3/tags/mountain"
+        },
+        {
+          "name": "italy",
+          "slug": "italy",
+          "uri": "https://api.sketchfab.com/v3/tags/italy"
+        },
+        {
+          "name": "fortress",
+          "slug": "fortress",
+          "uri": "https://api.sketchfab.com/v3/tags/fortress"
+        },
+        {
+          "name": "aquila",
+          "slug": "aquila",
+          "uri": "https://api.sketchfab.com/v3/tags/aquila"
+        },
+        {
+          "name": "apennine",
+          "slug": "apennine",
+          "uri": "https://api.sketchfab.com/v3/tags/apennine"
+        },
+        {
+          "name": "photogrammetry",
+          "slug": "photogrammetry",
+          "uri": "https://api.sketchfab.com/v3/tags/photogrammetry"
+        },
+        {
+          "name": "3dscan",
+          "slug": "3dscan",
+          "uri": "https://api.sketchfab.com/v3/tags/3dscan"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        },
+        {
+          "name": "cultural-heritage-history"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "f58d4ab229954dd195f884b6fe45a7d0",
+            "size": 685218,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/7fbfe67ec4864d439f25303b50697189/thumbnails/86b3b337391a476aa8d91683aa795fa1/cb4b62608dee4689ba2bbda8f943e971.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "9cff259d8f6a469389d41996ccc85581",
+            "size": 190618,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/7fbfe67ec4864d439f25303b50697189/thumbnails/86b3b337391a476aa8d91683aa795fa1/d4e37abf6b824965903b32f407c79ccd.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "1d904dd5550d437ab4a3d60818116e65",
+            "size": 96732,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/7fbfe67ec4864d439f25303b50697189/thumbnails/86b3b337391a476aa8d91683aa795fa1/661b668e76ee4a74ad3f1938c55332c0.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "7008a138982d43e38b9d265d2afcb09c",
+            "size": 13001,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/7fbfe67ec4864d439f25303b50697189/thumbnails/86b3b337391a476aa8d91683aa795fa1/8c2e9a8af52347f8b2749c4f8c395343.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "b38ced7f9f1f4733bad22413c260edb8",
+            "size": 1311,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/7fbfe67ec4864d439f25303b50697189/thumbnails/86b3b337391a476aa8d91683aa795fa1/664cd26c70834509983d243f223fd86e.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "31356005ae604b7594b7f7d6ffb620d4",
+        "username": "spogna",
+        "displayName": "Andrea Spognetta (Spogna)",
+        "profileUrl": "https://sketchfab.com/spogna",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/4878eb622af9437196e0db819da1d522",
+          "images": [
+            {
+              "size": 781,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/4878eb622af9437196e0db819da1d522/e983bf9b8a514bb9ae7a338d42ed70eb.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1259,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/4878eb622af9437196e0db819da1d522/e27db1126a374dbc8e29944332fb42a3.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3235,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/4878eb622af9437196e0db819da1d522/0559ec81fdbb468aa8b644b6c44d6ac9.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3791,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/4878eb622af9437196e0db819da1d522/65d0b988b7b54567860d6cdd10c1c623.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/31356005ae604b7594b7f7d6ffb620d4"
+      },
+      "description": "Rocca Calascio is a mountaintop fortress or rocca in the Province of L'Aquila in Abruzzo, Italy.\nBuilt of stone and masonry exclusively for military purposes and intended only to accommodate troops and never as residence for nobles, the fortress overlooks the Plain of Navelli at one of the highest points in the ancient Barony of Carapelle.\nSanta Maria della Piet\u00e0 and Rocca Calascio.\nConstruction of the fortress started in the tenth century as a single watchtower. A walled courtyard with four cylindrical towers at the corners around a taller inner tower was added in the thirteenth century. The lower half of the fortress is built with distinctively larger stones than its upper half. It is believed that this feature was to make its base impenetrable to invaders. The fortress was never tested in battle. However, it was badly damaged in November 1461 by an earthquake with an estimated magnitude of 7 to 8 on the Richter Scale.\nwikipedia\n\ncoordinates: 42.328889, 13.688944\n\nphotogrammetry from  video",
+      "faceCount": 985462,
+      "createdAt": "2018-03-05T19:52:19.221943",
+      "vertexCount": 492497,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 56914224,
+          "type": "glb",
+          "textureMaxResolution": 8192,
+          "faceCount": 985456,
+          "vertexCount": 732607
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 44589101,
+          "type": "gltf",
+          "textureMaxResolution": 8192,
+          "faceCount": 985456,
+          "vertexCount": 732607
+        },
+        "source": {
+          "textureCount": null,
+          "size": 50574181,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 29840920,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "bbfe3f7dbcdd4122b966b85b9786a989",
+        "label": "CC Attribution-NonCommercial"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/b4c4862bd1aa4618ac6ef600a21adedf",
+      "uid": "b4c4862bd1aa4618ac6ef600a21adedf",
+      "name": "Super long brick wall with damaged plaster",
+      "staffpickedAt": null,
+      "viewCount": 10924,
+      "likeCount": 392,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-b4c4862bd1aa4618ac6ef600a21adedf",
+      "embedUrl": "https://sketchfab.com/models/b4c4862bd1aa4618ac6ef600a21adedf/embed",
+      "commentCount": 5,
+      "isDownloadable": true,
+      "publishedAt": "2024-05-06T08:28:40.491668",
+      "tags": [
+        {
+          "name": "fence",
+          "slug": "fence",
+          "uri": "https://api.sketchfab.com/v3/tags/fence"
+        },
+        {
+          "name": "raw",
+          "slug": "raw",
+          "uri": "https://api.sketchfab.com/v3/tags/raw"
+        },
+        {
+          "name": "3d-scan",
+          "slug": "3d-scan",
+          "uri": "https://api.sketchfab.com/v3/tags/3d-scan"
+        },
+        {
+          "name": "prop",
+          "slug": "prop",
+          "uri": "https://api.sketchfab.com/v3/tags/prop"
+        },
+        {
+          "name": "urban",
+          "slug": "urban",
+          "uri": "https://api.sketchfab.com/v3/tags/urban"
+        },
+        {
+          "name": "gameprop",
+          "slug": "gameprop",
+          "uri": "https://api.sketchfab.com/v3/tags/gameprop"
+        },
+        {
+          "name": "concrete",
+          "slug": "concrete",
+          "uri": "https://api.sketchfab.com/v3/tags/concrete"
+        },
+        {
+          "name": "rough",
+          "slug": "rough",
+          "uri": "https://api.sketchfab.com/v3/tags/rough"
+        },
+        {
+          "name": "bricks",
+          "slug": "bricks",
+          "uri": "https://api.sketchfab.com/v3/tags/bricks"
+        },
+        {
+          "name": "dirty",
+          "slug": "dirty",
+          "uri": "https://api.sketchfab.com/v3/tags/dirty"
+        },
+        {
+          "name": "grunge",
+          "slug": "grunge",
+          "uri": "https://api.sketchfab.com/v3/tags/grunge"
+        },
+        {
+          "name": "plaster",
+          "slug": "plaster",
+          "uri": "https://api.sketchfab.com/v3/tags/plaster"
+        },
+        {
+          "name": "decay",
+          "slug": "decay",
+          "uri": "https://api.sketchfab.com/v3/tags/decay"
+        },
+        {
+          "name": "downloadable",
+          "slug": "downloadable",
+          "uri": "https://api.sketchfab.com/v3/tags/downloadable"
+        },
+        {
+          "name": "decayed",
+          "slug": "decayed",
+          "uri": "https://api.sketchfab.com/v3/tags/decayed"
+        },
+        {
+          "name": "grit",
+          "slug": "grit",
+          "uri": "https://api.sketchfab.com/v3/tags/grit"
+        },
+        {
+          "name": "leaks",
+          "slug": "leaks",
+          "uri": "https://api.sketchfab.com/v3/tags/leaks"
+        },
+        {
+          "name": "filthy",
+          "slug": "filthy",
+          "uri": "https://api.sketchfab.com/v3/tags/filthy"
+        },
+        {
+          "name": "brick-wall",
+          "slug": "brick-wall",
+          "uri": "https://api.sketchfab.com/v3/tags/brick-wall"
+        },
+        {
+          "name": "stone-wall",
+          "slug": "stone-wall",
+          "uri": "https://api.sketchfab.com/v3/tags/stone-wall"
+        },
+        {
+          "name": "reinforcedconcrete",
+          "slug": "reinforcedconcrete",
+          "uri": "https://api.sketchfab.com/v3/tags/reinforcedconcrete"
+        },
+        {
+          "name": "downloadable-model",
+          "slug": "downloadable-model",
+          "uri": "https://api.sketchfab.com/v3/tags/downloadable-model"
+        },
+        {
+          "name": "concrete-fence",
+          "slug": "concrete-fence",
+          "uri": "https://api.sketchfab.com/v3/tags/concrete-fence"
+        },
+        {
+          "name": "photogrammetry",
+          "slug": "photogrammetry",
+          "uri": "https://api.sketchfab.com/v3/tags/photogrammetry"
+        },
+        {
+          "name": "asset",
+          "slug": "asset",
+          "uri": "https://api.sketchfab.com/v3/tags/asset"
+        },
+        {
+          "name": "model",
+          "slug": "model",
+          "uri": "https://api.sketchfab.com/v3/tags/model"
+        },
+        {
+          "name": "gameasset",
+          "slug": "gameasset",
+          "uri": "https://api.sketchfab.com/v3/tags/gameasset"
+        },
+        {
+          "name": "city",
+          "slug": "city",
+          "uri": "https://api.sketchfab.com/v3/tags/city"
+        },
+        {
+          "name": "free",
+          "slug": "free",
+          "uri": "https://api.sketchfab.com/v3/tags/free"
+        },
+        {
+          "name": "street",
+          "slug": "street",
+          "uri": "https://api.sketchfab.com/v3/tags/street"
+        },
+        {
+          "name": "wall",
+          "slug": "wall",
+          "uri": "https://api.sketchfab.com/v3/tags/wall"
+        },
+        {
+          "name": "dirty-3d-props",
+          "slug": "dirty-3d-props",
+          "uri": "https://api.sketchfab.com/v3/tags/dirty-3d-props"
+        },
+        {
+          "name": "decayed-wall",
+          "slug": "decayed-wall",
+          "uri": "https://api.sketchfab.com/v3/tags/decayed-wall"
+        },
+        {
+          "name": "exposed-bricks",
+          "slug": "exposed-bricks",
+          "uri": "https://api.sketchfab.com/v3/tags/exposed-bricks"
+        },
+        {
+          "name": "dirty-concrete",
+          "slug": "dirty-concrete",
+          "uri": "https://api.sketchfab.com/v3/tags/dirty-concrete"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "9b6c1b86b953457b8e138762df2ce691",
+            "size": 740792,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/b4c4862bd1aa4618ac6ef600a21adedf/thumbnails/a9f406425d294d6091ead3800e6339c8/23e6e23e1a9b43a0b754491ab4517c13.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "dde2eabb19c84caebed09c00f6c83966",
+            "size": 190257,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/b4c4862bd1aa4618ac6ef600a21adedf/thumbnails/a9f406425d294d6091ead3800e6339c8/3904848bd5ef4e5294b5b38e2802a279.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "75b8b81c964b4a1792465afe169a2ebe",
+            "size": 93422,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/b4c4862bd1aa4618ac6ef600a21adedf/thumbnails/a9f406425d294d6091ead3800e6339c8/71b2a428acd441269d526110faf22f9a.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "e9f993b266704888bd1e3d37d3419f59",
+            "size": 12708,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/b4c4862bd1aa4618ac6ef600a21adedf/thumbnails/a9f406425d294d6091ead3800e6339c8/92a4c3b42359400fb2ea37828d66c5bb.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "6d32ef2dc5bc40bf9a961bf80cf7393d",
+            "size": 1601,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/b4c4862bd1aa4618ac6ef600a21adedf/thumbnails/a9f406425d294d6091ead3800e6339c8/faafc865ccbd4849bbadb3bc2f5f71ea.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "5ae4d1be9adc4706abb9243d5705f85c",
+        "username": "orphanrtg",
+        "displayName": "\u041er\u0440\u043d\u0434\u043f \u042f\u0422G",
+        "profileUrl": "https://sketchfab.com/orphanrtg",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/9563576e3d7d4c4aa454721234d3320f",
+          "images": [
+            {
+              "size": 982,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/9563576e3d7d4c4aa454721234d3320f/98201f72aa8c4788b4bc0126d88ca331.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1184,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/9563576e3d7d4c4aa454721234d3320f/68191577eed34491ad9597cb9e63657f.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2040,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/9563576e3d7d4c4aa454721234d3320f/ffd62d479c97472588af9b999162d04e.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2256,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/9563576e3d7d4c4aa454721234d3320f/daf3e0017da14f8fa86ed4237094fd7b.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/5ae4d1be9adc4706abb9243d5705f85c"
+      },
+      "description": "* Super long brick wall with damaged plaster\n* 4x8k texture \n* spring season\n* location : Slovakia\n\n3d scan made of 345 photos @ Samsung Galaxy A33 5G",
+      "faceCount": 29010,
+      "createdAt": "2024-05-05T15:55:30.841401",
+      "vertexCount": 17322,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 8,
+          "size": 269359728,
+          "type": "glb",
+          "textureMaxResolution": 8192,
+          "faceCount": 29010,
+          "vertexCount": 22473
+        },
+        "gltf": {
+          "textureCount": 8,
+          "size": 268326460,
+          "type": "gltf",
+          "textureMaxResolution": 8192,
+          "faceCount": 29010,
+          "vertexCount": 22473
+        },
+        "source": {
+          "textureCount": null,
+          "size": 228155027,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 5726074,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/746f5c5173ce4f47ad0970b62ee4106e",
+      "uid": "746f5c5173ce4f47ad0970b62ee4106e",
+      "name": "Spider animated character",
+      "staffpickedAt": null,
+      "viewCount": 13975,
+      "likeCount": 298,
+      "animationCount": 7,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-746f5c5173ce4f47ad0970b62ee4106e",
+      "embedUrl": "https://sketchfab.com/models/746f5c5173ce4f47ad0970b62ee4106e/embed",
+      "commentCount": 10,
+      "isDownloadable": true,
+      "publishedAt": "2020-06-02T08:28:34.329088",
+      "tags": [
+        {
+          "name": "insect",
+          "slug": "insect",
+          "uri": "https://api.sketchfab.com/v3/tags/insect"
+        },
+        {
+          "name": "forest",
+          "slug": "forest",
+          "uri": "https://api.sketchfab.com/v3/tags/forest"
+        },
+        {
+          "name": "little",
+          "slug": "little",
+          "uri": "https://api.sketchfab.com/v3/tags/little"
+        },
+        {
+          "name": "spider",
+          "slug": "spider",
+          "uri": "https://api.sketchfab.com/v3/tags/spider"
+        },
+        {
+          "name": "small",
+          "slug": "small",
+          "uri": "https://api.sketchfab.com/v3/tags/small"
+        },
+        {
+          "name": "gamedev",
+          "slug": "gamedev",
+          "uri": "https://api.sketchfab.com/v3/tags/gamedev"
+        },
+        {
+          "name": "animation",
+          "slug": "animation",
+          "uri": "https://api.sketchfab.com/v3/tags/animation"
+        }
+      ],
+      "categories": [
+        {
+          "name": "animals-pets"
+        },
+        {
+          "name": "nature-plants"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "0f186f6d44674163b7b9849f0e4063df",
+            "size": 183538,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/746f5c5173ce4f47ad0970b62ee4106e/thumbnails/71c555d2f4bd482189e65c006fef9e30/d9790abb4ca7498cb06227928378c074.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "296a00b78b494313bb32457db716879b",
+            "size": 46651,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/746f5c5173ce4f47ad0970b62ee4106e/thumbnails/71c555d2f4bd482189e65c006fef9e30/374299c30b964e35b74b93b2255bcea0.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "b4ac9194fff24be291f5f7359d3c2b60",
+            "size": 25382,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/746f5c5173ce4f47ad0970b62ee4106e/thumbnails/71c555d2f4bd482189e65c006fef9e30/0b4968b541214dc9993a8d8f605bc49d.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "3adbb6749d2b41fc8d8d0a40f9f4fa13",
+            "size": 4719,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/746f5c5173ce4f47ad0970b62ee4106e/thumbnails/71c555d2f4bd482189e65c006fef9e30/6f90d7195ab24bb09ed1d71a459197a9.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "390fcd60f45f46d3ad4503b155721807",
+            "size": 759,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/746f5c5173ce4f47ad0970b62ee4106e/thumbnails/71c555d2f4bd482189e65c006fef9e30/9dd4b9b3110d4d94953c95a96cf940e4.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "3f948bfe49044355878b342402b3d794",
+        "username": "TheGameAssets",
+        "displayName": "TheGameAssets",
+        "profileUrl": "https://sketchfab.com/TheGameAssets",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/497854b890d8494ba64b98bc70acc40f",
+          "images": [
+            {
+              "size": 1864,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/497854b890d8494ba64b98bc70acc40f/da001ed7d3ce46a78a0e4402786665f1.png",
+              "height": 32
+            },
+            {
+              "size": 3573,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/497854b890d8494ba64b98bc70acc40f/866a370b5bc2424a9abb08285cb364a3.png",
+              "height": 48
+            },
+            {
+              "size": 9352,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/497854b890d8494ba64b98bc70acc40f/1ac18ce460d34b22aa49b4d21a8c1538.png",
+              "height": 90
+            },
+            {
+              "size": 11135,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/497854b890d8494ba64b98bc70acc40f/d2a8c4b029714a8097c9c173761b1220.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/3f948bfe49044355878b342402b3d794"
+      },
+      "description": "Animations\n\n* idle\n* idle long\n* walk\n* attack 1\n* attack 2\n* Damage\n* Death\n\nTextures\n\n* 512x512\n\nPolygons\n\n* 1552\n\nUse it for your incredible games! Enjoy!",
+      "faceCount": 1554,
+      "createdAt": "2020-06-02T08:13:42.675489",
+      "vertexCount": 868,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 2,
+          "size": 1481244,
+          "type": "glb",
+          "textureMaxResolution": 512,
+          "faceCount": 1554,
+          "vertexCount": 1230
+        },
+        "gltf": {
+          "textureCount": 2,
+          "size": 904362,
+          "type": "gltf",
+          "textureMaxResolution": 512,
+          "faceCount": 1554,
+          "vertexCount": 1230
+        },
+        "source": {
+          "textureCount": null,
+          "size": 8036017,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 491388,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/16d8f865f0614ec59110dd31eed40530",
+      "uid": "16d8f865f0614ec59110dd31eed40530",
+      "name": "Worn Sci-Fi Retro Travel Poster",
+      "staffpickedAt": null,
+      "viewCount": 8409,
+      "likeCount": 263,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-16d8f865f0614ec59110dd31eed40530",
+      "embedUrl": "https://sketchfab.com/models/16d8f865f0614ec59110dd31eed40530/embed",
+      "commentCount": 4,
+      "isDownloadable": true,
+      "publishedAt": "2023-06-13T07:54:15.928350",
+      "tags": [
+        {
+          "name": "modern",
+          "slug": "modern",
+          "uri": "https://api.sketchfab.com/v3/tags/modern"
+        },
+        {
+          "name": "hanging",
+          "slug": "hanging",
+          "uri": "https://api.sketchfab.com/v3/tags/hanging"
+        },
+        {
+          "name": "retro",
+          "slug": "retro",
+          "uri": "https://api.sketchfab.com/v3/tags/retro"
+        },
+        {
+          "name": "paper",
+          "slug": "paper",
+          "uri": "https://api.sketchfab.com/v3/tags/paper"
+        },
+        {
+          "name": "sf",
+          "slug": "sf",
+          "uri": "https://api.sketchfab.com/v3/tags/sf"
+        },
+        {
+          "name": "worn",
+          "slug": "worn",
+          "uri": "https://api.sketchfab.com/v3/tags/worn"
+        },
+        {
+          "name": "used",
+          "slug": "used",
+          "uri": "https://api.sketchfab.com/v3/tags/used"
+        },
+        {
+          "name": "folded",
+          "slug": "folded",
+          "uri": "https://api.sketchfab.com/v3/tags/folded"
+        },
+        {
+          "name": "damaged",
+          "slug": "damaged",
+          "uri": "https://api.sketchfab.com/v3/tags/damaged"
+        },
+        {
+          "name": "graphic",
+          "slug": "graphic",
+          "uri": "https://api.sketchfab.com/v3/tags/graphic"
+        },
+        {
+          "name": "grunge",
+          "slug": "grunge",
+          "uri": "https://api.sketchfab.com/v3/tags/grunge"
+        },
+        {
+          "name": "decor",
+          "slug": "decor",
+          "uri": "https://api.sketchfab.com/v3/tags/decor"
+        },
+        {
+          "name": "old",
+          "slug": "old",
+          "uri": "https://api.sketchfab.com/v3/tags/old"
+        },
+        {
+          "name": "wrinkled",
+          "slug": "wrinkled",
+          "uri": "https://api.sketchfab.com/v3/tags/wrinkled"
+        },
+        {
+          "name": "poster",
+          "slug": "poster",
+          "uri": "https://api.sketchfab.com/v3/tags/poster"
+        },
+        {
+          "name": "fictional",
+          "slug": "fictional",
+          "uri": "https://api.sketchfab.com/v3/tags/fictional"
+        },
+        {
+          "name": "retrofuturism",
+          "slug": "retrofuturism",
+          "uri": "https://api.sketchfab.com/v3/tags/retrofuturism"
+        },
+        {
+          "name": "retrofuturistic",
+          "slug": "retrofuturistic",
+          "uri": "https://api.sketchfab.com/v3/tags/retrofuturistic"
+        },
+        {
+          "name": "hinode",
+          "slug": "hinode",
+          "uri": "https://api.sketchfab.com/v3/tags/hinode"
+        },
+        {
+          "name": "lowpoly",
+          "slug": "lowpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpoly"
+        },
+        {
+          "name": "scifi",
+          "slug": "scifi",
+          "uri": "https://api.sketchfab.com/v3/tags/scifi"
+        },
+        {
+          "name": "sci-fi",
+          "slug": "sci-fi",
+          "uri": "https://api.sketchfab.com/v3/tags/sci-fi"
+        },
+        {
+          "name": "decoration",
+          "slug": "decoration",
+          "uri": "https://api.sketchfab.com/v3/tags/decoration"
+        },
+        {
+          "name": "gameready",
+          "slug": "gameready",
+          "uri": "https://api.sketchfab.com/v3/tags/gameready"
+        },
+        {
+          "name": "wall",
+          "slug": "wall",
+          "uri": "https://api.sketchfab.com/v3/tags/wall"
+        },
+        {
+          "name": "windsofhinode",
+          "slug": "windsofhinode",
+          "uri": "https://api.sketchfab.com/v3/tags/windsofhinode"
+        }
+      ],
+      "categories": [
+        {
+          "name": "fashion-style"
+        },
+        {
+          "name": "furniture-home"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "e1142818f39c4537aa6a7b85b5799b34",
+            "size": 345225,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/16d8f865f0614ec59110dd31eed40530/thumbnails/bec5d19515b7450091525977b54de994/ee1e2473d4684a1cbc97161b297fdab2.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "e8d28586e5574dbfaee19c5a17b7ffab",
+            "size": 68942,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/16d8f865f0614ec59110dd31eed40530/thumbnails/bec5d19515b7450091525977b54de994/07065a789c604a6cb7228c2614b9cc53.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "1706094f1fba4356ba5a1cc3b52b558d",
+            "size": 35991,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/16d8f865f0614ec59110dd31eed40530/thumbnails/bec5d19515b7450091525977b54de994/70d1ed13fa56472bb5025d61a7c38150.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "f04521ea51ac4380b4272db45c158bd3",
+            "size": 7192,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/16d8f865f0614ec59110dd31eed40530/thumbnails/bec5d19515b7450091525977b54de994/bc19ff3f4f4a4076b6bcea7e5a8ab117.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "2482c9b894624768a1acc5882083d979",
+            "size": 1480,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/16d8f865f0614ec59110dd31eed40530/thumbnails/bec5d19515b7450091525977b54de994/b6ba9bdd0380444fb32124f455936273.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "c1475327b4194ec89bc8c2b8bcec63b8",
+        "username": "kuroderuta",
+        "displayName": "Kami Rapacz",
+        "profileUrl": "https://sketchfab.com/kuroderuta",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/3b4c05d6fb79452898790f846d7f517b",
+          "images": [
+            {
+              "size": 1786,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/3b4c05d6fb79452898790f846d7f517b/60a050684a0048109f232c66a3d8a22c.png",
+              "height": 32
+            },
+            {
+              "size": 3965,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/3b4c05d6fb79452898790f846d7f517b/17330558e1774863980d8b334718f193.png",
+              "height": 48
+            },
+            {
+              "size": 10979,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/3b4c05d6fb79452898790f846d7f517b/842cc4f082854b4894a328b791cb2082.png",
+              "height": 90
+            },
+            {
+              "size": 13027,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/3b4c05d6fb79452898790f846d7f517b/08f1551ced3e46f79914fd14f54708fc.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/c1475327b4194ec89bc8c2b8bcec63b8"
+      },
+      "description": "# GRANTING COLONIES A WHOLE NEW LI(F)E\n\nPoster from an unreleased project. Enjoy and don't forget to credit!\n\n**Like my work and want to hire me for your project? Contact me at [kamilbubela@gmail.com](http://)**",
+      "faceCount": 360,
+      "createdAt": "2023-06-11T13:06:21.696517",
+      "vertexCount": 203,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 3,
+          "size": 17088452,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 360,
+          "vertexCount": 224
+        },
+        "gltf": {
+          "textureCount": 3,
+          "size": 17062870,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 360,
+          "vertexCount": 224
+        },
+        "source": {
+          "textureCount": null,
+          "size": 59724421,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 11897669,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/153e02454f424a3aa772c61799a93e52",
+      "uid": "153e02454f424a3aa772c61799a93e52",
+      "name": "Old Creepy Doll House",
+      "staffpickedAt": null,
+      "viewCount": 7625,
+      "likeCount": 228,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-153e02454f424a3aa772c61799a93e52",
+      "embedUrl": "https://sketchfab.com/models/153e02454f424a3aa772c61799a93e52/embed",
+      "commentCount": 1,
+      "isDownloadable": true,
+      "publishedAt": "2017-06-07T18:02:21.268212",
+      "tags": [
+        {
+          "name": "fireplace",
+          "slug": "fireplace",
+          "uri": "https://api.sketchfab.com/v3/tags/fireplace"
+        },
+        {
+          "name": "bathroom",
+          "slug": "bathroom",
+          "uri": "https://api.sketchfab.com/v3/tags/bathroom"
+        },
+        {
+          "name": "stairs",
+          "slug": "stairs",
+          "uri": "https://api.sketchfab.com/v3/tags/stairs"
+        },
+        {
+          "name": "bedroom",
+          "slug": "bedroom",
+          "uri": "https://api.sketchfab.com/v3/tags/bedroom"
+        },
+        {
+          "name": "playing",
+          "slug": "playing",
+          "uri": "https://api.sketchfab.com/v3/tags/playing"
+        },
+        {
+          "name": "mold",
+          "slug": "mold",
+          "uri": "https://api.sketchfab.com/v3/tags/mold"
+        },
+        {
+          "name": "textures",
+          "slug": "textures",
+          "uri": "https://api.sketchfab.com/v3/tags/textures"
+        },
+        {
+          "name": "bath",
+          "slug": "bath",
+          "uri": "https://api.sketchfab.com/v3/tags/bath"
+        },
+        {
+          "name": "toys",
+          "slug": "toys",
+          "uri": "https://api.sketchfab.com/v3/tags/toys"
+        },
+        {
+          "name": "doll",
+          "slug": "doll",
+          "uri": "https://api.sketchfab.com/v3/tags/doll"
+        },
+        {
+          "name": "miniature",
+          "slug": "miniature",
+          "uri": "https://api.sketchfab.com/v3/tags/miniature"
+        },
+        {
+          "name": "sink",
+          "slug": "sink",
+          "uri": "https://api.sketchfab.com/v3/tags/sink"
+        },
+        {
+          "name": "walls",
+          "slug": "walls",
+          "uri": "https://api.sketchfab.com/v3/tags/walls"
+        },
+        {
+          "name": "table",
+          "slug": "table",
+          "uri": "https://api.sketchfab.com/v3/tags/table"
+        },
+        {
+          "name": "tub",
+          "slug": "tub",
+          "uri": "https://api.sketchfab.com/v3/tags/tub"
+        },
+        {
+          "name": "pipes",
+          "slug": "pipes",
+          "uri": "https://api.sketchfab.com/v3/tags/pipes"
+        },
+        {
+          "name": "dollhouse",
+          "slug": "dollhouse",
+          "uri": "https://api.sketchfab.com/v3/tags/dollhouse"
+        },
+        {
+          "name": "old",
+          "slug": "old",
+          "uri": "https://api.sketchfab.com/v3/tags/old"
+        },
+        {
+          "name": "normal",
+          "slug": "normal",
+          "uri": "https://api.sketchfab.com/v3/tags/normal"
+        },
+        {
+          "name": "scenes",
+          "slug": "scenes",
+          "uri": "https://api.sketchfab.com/v3/tags/scenes"
+        },
+        {
+          "name": "jvdb",
+          "slug": "jvdb",
+          "uri": "https://api.sketchfab.com/v3/tags/jvdb"
+        },
+        {
+          "name": "substance",
+          "slug": "substance",
+          "uri": "https://api.sketchfab.com/v3/tags/substance"
+        },
+        {
+          "name": "painter",
+          "slug": "painter",
+          "uri": "https://api.sketchfab.com/v3/tags/painter"
+        },
+        {
+          "name": "architecture",
+          "slug": "architecture",
+          "uri": "https://api.sketchfab.com/v3/tags/architecture"
+        },
+        {
+          "name": "3dsmax",
+          "slug": "3dsmax",
+          "uri": "https://api.sketchfab.com/v3/tags/3dsmax"
+        },
+        {
+          "name": "art",
+          "slug": "art",
+          "uri": "https://api.sketchfab.com/v3/tags/art"
+        },
+        {
+          "name": "chair",
+          "slug": "chair",
+          "uri": "https://api.sketchfab.com/v3/tags/chair"
+        },
+        {
+          "name": "house",
+          "slug": "house",
+          "uri": "https://api.sketchfab.com/v3/tags/house"
+        },
+        {
+          "name": "wood",
+          "slug": "wood",
+          "uri": "https://api.sketchfab.com/v3/tags/wood"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        },
+        {
+          "name": "places-travel"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "1386d3ce97a54e5ba995ea83ad731381",
+            "size": 62925,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/153e02454f424a3aa772c61799a93e52/thumbnails/eaa95e1278cf4e75a3701573261b131f/1024x576.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "96b86d0e8d1e4fcd8091b89545a6856c",
+            "size": 31120,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/153e02454f424a3aa772c61799a93e52/thumbnails/eaa95e1278cf4e75a3701573261b131f/720x405.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "f6e0908d1da34e32b1272a39e1262adc",
+            "size": 5494,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/153e02454f424a3aa772c61799a93e52/thumbnails/eaa95e1278cf4e75a3701573261b131f/256x144.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "58f6f65250f34d91ace098c48e04728a",
+            "size": 939,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/153e02454f424a3aa772c61799a93e52/thumbnails/eaa95e1278cf4e75a3701573261b131f/64x36.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "136a7e6b86d8494ea2b6210867639cb9",
+        "username": "JvdB",
+        "displayName": "Jana vdBeucken",
+        "profileUrl": "https://sketchfab.com/JvdB",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/63892f90371d4960940972440ac7cfe5",
+          "images": [
+            {
+              "size": 582,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/63892f90371d4960940972440ac7cfe5/91865c41b917420ea3c6a2c4b7920856.jpeg",
+              "height": 32
+            },
+            {
+              "size": 799,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/63892f90371d4960940972440ac7cfe5/f4416aaae9b14d7d95f20fe3a484af23.jpeg",
+              "height": 48
+            },
+            {
+              "size": 1581,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/63892f90371d4960940972440ac7cfe5/7f111efa1a0e48ad895d8584b830ef6c.jpeg",
+              "height": 90
+            },
+            {
+              "size": 1808,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/63892f90371d4960940972440ac7cfe5/3960733617994799b55fc1f86930990a.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/136a7e6b86d8494ea2b6210867639cb9"
+      },
+      "description": "I tried to create a very old and creepy looking doll house for my portfolio. Using a lot of cracks, mold and dirt stains I tried to make it look as squirmy as possible. \nThis could be an old forgotten doll house which stood in a basement for over a couple decades. The basement has collected alot of rain and dirt over the years which explains why the doll house, even though it's standing on a podium, is quite a bit damaged and suffered from the environment surrounding it.\n\nThis model was created with 3ds Max and Substance Painter 2.",
+      "faceCount": 22393,
+      "createdAt": "2017-06-07T15:17:30.735527",
+      "vertexCount": 7579,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 177,
+          "size": 92972216,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 44521,
+          "vertexCount": 47169
+        },
+        "gltf": {
+          "textureCount": 177,
+          "size": 90611118,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 44521,
+          "vertexCount": 47169
+        },
+        "source": {
+          "textureCount": null,
+          "size": 214355681,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 3333596,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "bbfe3f7dbcdd4122b966b85b9786a989",
+        "label": "CC Attribution-NonCommercial"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/bcf707b0f2ce41e295c9d19ff021fa04",
+      "uid": "bcf707b0f2ce41e295c9d19ff021fa04",
+      "name": "Entrance to abandoned Machine Factory Swiderski",
+      "staffpickedAt": null,
+      "viewCount": 4419,
+      "likeCount": 180,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-bcf707b0f2ce41e295c9d19ff021fa04",
+      "embedUrl": "https://sketchfab.com/models/bcf707b0f2ce41e295c9d19ff021fa04/embed",
+      "commentCount": 1,
+      "isDownloadable": true,
+      "publishedAt": "2022-03-15T20:40:11.132636",
+      "tags": [
+        {
+          "name": "abandoned",
+          "slug": "abandoned",
+          "uri": "https://api.sketchfab.com/v3/tags/abandoned"
+        },
+        {
+          "name": "machinery",
+          "slug": "machinery",
+          "uri": "https://api.sketchfab.com/v3/tags/machinery"
+        },
+        {
+          "name": "broken",
+          "slug": "broken",
+          "uri": "https://api.sketchfab.com/v3/tags/broken"
+        },
+        {
+          "name": "historical",
+          "slug": "historical",
+          "uri": "https://api.sketchfab.com/v3/tags/historical"
+        },
+        {
+          "name": "industry",
+          "slug": "industry",
+          "uri": "https://api.sketchfab.com/v3/tags/industry"
+        },
+        {
+          "name": "rusted",
+          "slug": "rusted",
+          "uri": "https://api.sketchfab.com/v3/tags/rusted"
+        },
+        {
+          "name": "graffiti",
+          "slug": "graffiti",
+          "uri": "https://api.sketchfab.com/v3/tags/graffiti"
+        },
+        {
+          "name": "germany",
+          "slug": "germany",
+          "uri": "https://api.sketchfab.com/v3/tags/germany"
+        },
+        {
+          "name": "damaged",
+          "slug": "damaged",
+          "uri": "https://api.sketchfab.com/v3/tags/damaged"
+        },
+        {
+          "name": "realistic",
+          "slug": "realistic",
+          "uri": "https://api.sketchfab.com/v3/tags/realistic"
+        },
+        {
+          "name": "old",
+          "slug": "old",
+          "uri": "https://api.sketchfab.com/v3/tags/old"
+        },
+        {
+          "name": "free3dmodel",
+          "slug": "free3dmodel",
+          "uri": "https://api.sketchfab.com/v3/tags/free3dmodel"
+        },
+        {
+          "name": "freedownload",
+          "slug": "freedownload",
+          "uri": "https://api.sketchfab.com/v3/tags/freedownload"
+        },
+        {
+          "name": "free-download",
+          "slug": "free-download",
+          "uri": "https://api.sketchfab.com/v3/tags/free-download"
+        },
+        {
+          "name": "leipzig",
+          "slug": "leipzig",
+          "uri": "https://api.sketchfab.com/v3/tags/leipzig"
+        },
+        {
+          "name": "architecture",
+          "slug": "architecture",
+          "uri": "https://api.sketchfab.com/v3/tags/architecture"
+        },
+        {
+          "name": "free",
+          "slug": "free",
+          "uri": "https://api.sketchfab.com/v3/tags/free"
+        },
+        {
+          "name": "industrial",
+          "slug": "industrial",
+          "uri": "https://api.sketchfab.com/v3/tags/industrial"
+        },
+        {
+          "name": "door",
+          "slug": "door",
+          "uri": "https://api.sketchfab.com/v3/tags/door"
+        },
+        {
+          "name": "noai",
+          "slug": "noai",
+          "uri": "https://api.sketchfab.com/v3/tags/noai"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        },
+        {
+          "name": "cultural-heritage-history"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "af0b2d0962f243f086b29ed0ba1ab581",
+            "size": 631480,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/bcf707b0f2ce41e295c9d19ff021fa04/thumbnails/6702c8895db848febd1370e6fcf1f086/00a1980131354f23917644243a06f15e.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "99f938b140d544cc93319e4bdacb9a07",
+            "size": 187750,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/bcf707b0f2ce41e295c9d19ff021fa04/thumbnails/6702c8895db848febd1370e6fcf1f086/cca1a4ef103a4b78a9f1a7f93c917ef4.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "61cca2420368409781abc5b814ed5cb3",
+            "size": 103286,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/bcf707b0f2ce41e295c9d19ff021fa04/thumbnails/6702c8895db848febd1370e6fcf1f086/7aa810741dad4ed9b26af1b0a35d3495.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "f0206532442f4c7ab88e093d81a6dfc8",
+            "size": 15930,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/bcf707b0f2ce41e295c9d19ff021fa04/thumbnails/6702c8895db848febd1370e6fcf1f086/e3bc985879ba4e9bb0fefba17e2e0f0b.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "9bfcac981d344decaea345d65ca417f9",
+            "size": 1740,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/bcf707b0f2ce41e295c9d19ff021fa04/thumbnails/6702c8895db848febd1370e6fcf1f086/1c438a764a4d4cfbb94a74949103dd20.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "5e8fbbedf4064509b044b132a287a644",
+        "username": "ExploringEuropeAndBeyond",
+        "displayName": "Exploring Europe and Beyond",
+        "profileUrl": "https://sketchfab.com/ExploringEuropeAndBeyond",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/ec5ddcaae0f0477cabfb0da70bab3938",
+          "images": [
+            {
+              "size": 1114,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/ec5ddcaae0f0477cabfb0da70bab3938/05b85361d690439bb3f55533aff34be4.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1678,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/ec5ddcaae0f0477cabfb0da70bab3938/4f3757e59338481c84cdb3d053abdc3f.jpeg",
+              "height": 48
+            },
+            {
+              "size": 4306,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/ec5ddcaae0f0477cabfb0da70bab3938/8203b1be972640438582906d21370c70.jpeg",
+              "height": 90
+            },
+            {
+              "size": 5019,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/ec5ddcaae0f0477cabfb0da70bab3938/a3d5c51a85c0481ea582bf6eada527fd.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/5e8fbbedf4064509b044b132a287a644"
+      },
+      "description": "The front door of the abandoned Machine Factory Swiderski which was built in 1888 in Plagwitz, Leipzig.\nWhile the outer walls still stand the inside is mostly in ruins. The walls and doors are covered in graffiti.\n\n*P.S. You can download this and other models from my [profile](https://www.fab.com/sellers/Exploring%20Europe%20and%20Beyond) at the Fab Store.*",
+      "faceCount": 79683,
+      "createdAt": "2022-03-15T19:59:38.878049",
+      "vertexCount": 41445,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 4,
+          "size": 49967876,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 79683,
+          "vertexCount": 55851
+        },
+        "gltf": {
+          "textureCount": 4,
+          "size": 48669258,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 79683,
+          "vertexCount": 55851
+        },
+        "source": {
+          "textureCount": null,
+          "size": 30913463,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 7235865,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "72eb2b1960364637901eacce19283624",
+        "label": "Free Standard"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/62f1637181cb4f6aa38897f5b7ab5edf",
+      "uid": "62f1637181cb4f6aa38897f5b7ab5edf",
+      "name": "Low-poly orc",
+      "staffpickedAt": null,
+      "viewCount": 6828,
+      "likeCount": 158,
+      "animationCount": 9,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-62f1637181cb4f6aa38897f5b7ab5edf",
+      "embedUrl": "https://sketchfab.com/models/62f1637181cb4f6aa38897f5b7ab5edf/embed",
+      "commentCount": 5,
+      "isDownloadable": true,
+      "publishedAt": "2021-12-17T11:17:14.835242",
+      "tags": [
+        {
+          "name": "troll",
+          "slug": "troll",
+          "uri": "https://api.sketchfab.com/v3/tags/troll"
+        },
+        {
+          "name": "orc",
+          "slug": "orc",
+          "uri": "https://api.sketchfab.com/v3/tags/orc"
+        },
+        {
+          "name": "medieval",
+          "slug": "medieval",
+          "uri": "https://api.sketchfab.com/v3/tags/medieval"
+        },
+        {
+          "name": "ogr",
+          "slug": "ogr",
+          "uri": "https://api.sketchfab.com/v3/tags/ogr"
+        },
+        {
+          "name": "low-poly",
+          "slug": "low-poly",
+          "uri": "https://api.sketchfab.com/v3/tags/low-poly"
+        },
+        {
+          "name": "axe",
+          "slug": "axe",
+          "uri": "https://api.sketchfab.com/v3/tags/axe"
+        },
+        {
+          "name": "creature",
+          "slug": "creature",
+          "uri": "https://api.sketchfab.com/v3/tags/creature"
+        },
+        {
+          "name": "free",
+          "slug": "free",
+          "uri": "https://api.sketchfab.com/v3/tags/free"
+        },
+        {
+          "name": "monster",
+          "slug": "monster",
+          "uri": "https://api.sketchfab.com/v3/tags/monster"
+        },
+        {
+          "name": "fantasy",
+          "slug": "fantasy",
+          "uri": "https://api.sketchfab.com/v3/tags/fantasy"
+        }
+      ],
+      "categories": [
+        {
+          "name": "characters-creatures"
+        },
+        {
+          "name": "weapons-military"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "65f372cbbbee4d9eb81649e389a5065b",
+            "size": 419045,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/62f1637181cb4f6aa38897f5b7ab5edf/thumbnails/fe630faec90e4a09a28e71fddfb888ba/491313324b7d4650802972a9d579ad6c.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "a6edbb87f13a4839bea64842e0ebe555",
+            "size": 73124,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/62f1637181cb4f6aa38897f5b7ab5edf/thumbnails/fe630faec90e4a09a28e71fddfb888ba/efcd413160e4436ea2e68c09bbd8e2b2.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "0af708b60b7341639e1e5090f525cd3e",
+            "size": 41661,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/62f1637181cb4f6aa38897f5b7ab5edf/thumbnails/fe630faec90e4a09a28e71fddfb888ba/273b362f5f7c45168719fbacd559111f.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "b29ff1a31d0841f28bf08111e339e42c",
+            "size": 8508,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/62f1637181cb4f6aa38897f5b7ab5edf/thumbnails/fe630faec90e4a09a28e71fddfb888ba/6e1cdd58ada04fdeb67aaf9bb8ce9833.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "bf4013f8faed486b99b6a992bfab74c5",
+            "size": 1548,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/62f1637181cb4f6aa38897f5b7ab5edf/thumbnails/fe630faec90e4a09a28e71fddfb888ba/9b154845f5b143eaae1276849abb695e.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "215c134f53c7413a806772a311163d33",
+        "username": "Riltariki",
+        "displayName": "Riltariki",
+        "profileUrl": "https://sketchfab.com/Riltariki",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/f9bc9c9f7488441a9c286a267629d410",
+          "images": [
+            {
+              "size": 822,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/f9bc9c9f7488441a9c286a267629d410/45ea93cea4a94003873450f6ef02b915.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1442,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/f9bc9c9f7488441a9c286a267629d410/3ab80bcb300f4075b8bd8f618519b02f.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3730,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/f9bc9c9f7488441a9c286a267629d410/4e8a7b6f157c40d1aeca4d361fa54e82.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4374,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/f9bc9c9f7488441a9c286a267629d410/bbe474e5b5da4954843403667852b08c.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/215c134f53c7413a806772a311163d33"
+      },
+      "description": "Details of the model:\n\nLow poly:\n\nOrc: Verts-10.249, Tris-20.140.\n\nAxe: Verts-721, Tris-1.437.\n\n4K Textures - Ambient occlusion, diffuse, normal, gloss, metal, specular, subsurface scattering.\n\n2 Sets of textures: Axe and Body.\n\nRigged with 3d's Max biped\n\n9 animations unique animations: Idle, Walk, Run, Light attack, Second light attack, Critical attack, Damaged, Fear, Death.\n\nYou can check animations and my artworks in artstation: https://www.artstation.com/riltariki\n\nFile Includes:\n\n3D's Max files.\nFBX files (Animations and Models).\n4k Textures.\nObj files.\nUasset files.\n9 beatiful gifs.\nHigh-res renders (Including with transparent background)",
+      "faceCount": 21590,
+      "createdAt": "2021-12-17T10:52:15.437535",
+      "vertexCount": 10959,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 8,
+          "size": 117224224,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 21590,
+          "vertexCount": 13334
+        },
+        "gltf": {
+          "textureCount": 8,
+          "size": 114016215,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 21590,
+          "vertexCount": 13334
+        },
+        "source": {
+          "textureCount": null,
+          "size": 119190952,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 12109449,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/979ebf83e6814741a3eebda17d895d31",
+      "uid": "979ebf83e6814741a3eebda17d895d31",
+      "name": "Ringtheaterbrand",
+      "staffpickedAt": null,
+      "viewCount": 2917,
+      "likeCount": 153,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-979ebf83e6814741a3eebda17d895d31",
+      "embedUrl": "https://sketchfab.com/models/979ebf83e6814741a3eebda17d895d31/embed",
+      "commentCount": 7,
+      "isDownloadable": true,
+      "publishedAt": "2020-09-29T13:33:02.530425",
+      "tags": [
+        {
+          "name": "grave",
+          "slug": "grave",
+          "uri": "https://api.sketchfab.com/v3/tags/grave"
+        },
+        {
+          "name": "cc0",
+          "slug": "cc0",
+          "uri": "https://api.sketchfab.com/v3/tags/cc0"
+        },
+        {
+          "name": "vindobona",
+          "slug": "vindobona",
+          "uri": "https://api.sketchfab.com/v3/tags/vindobona"
+        },
+        {
+          "name": "ringtheater",
+          "slug": "ringtheater",
+          "uri": "https://api.sketchfab.com/v3/tags/ringtheater"
+        },
+        {
+          "name": "vienna-3d",
+          "slug": "vienna-3d",
+          "uri": "https://api.sketchfab.com/v3/tags/vienna-3d"
+        },
+        {
+          "name": "vienna-heritage",
+          "slug": "vienna-heritage",
+          "uri": "https://api.sketchfab.com/v3/tags/vienna-heritage"
+        },
+        {
+          "name": "vienna-central-cemetery",
+          "slug": "vienna-central-cemetery",
+          "uri": "https://api.sketchfab.com/v3/tags/vienna-central-cemetery"
+        },
+        {
+          "name": "noai",
+          "slug": "noai",
+          "uri": "https://api.sketchfab.com/v3/tags/noai"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cultural-heritage-history"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "935bc607aa704302a916040c6218ea0f",
+            "size": 357165,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/979ebf83e6814741a3eebda17d895d31/thumbnails/fded1ffa258b4f43914c4d9b26a8b215/12fa16abc84244adbc19c6cb0c56cd97.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "49c5cba7b67545ab96fc15f78eaa3a2c",
+            "size": 68647,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/979ebf83e6814741a3eebda17d895d31/thumbnails/fded1ffa258b4f43914c4d9b26a8b215/c57c544368b9499fa0092709113dfa2a.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "c72116acd63943cabdde6f554b891df1",
+            "size": 35245,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/979ebf83e6814741a3eebda17d895d31/thumbnails/fded1ffa258b4f43914c4d9b26a8b215/aae6250709b74660b52c67174b765476.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "0d028ee951284d4a98594927c03184ae",
+            "size": 5994,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/979ebf83e6814741a3eebda17d895d31/thumbnails/fded1ffa258b4f43914c4d9b26a8b215/77a7e7bfe69741fb95447e270616c4c5.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "8503a488d43947c6956608238e12a036",
+            "size": 939,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/979ebf83e6814741a3eebda17d895d31/thumbnails/fded1ffa258b4f43914c4d9b26a8b215/8f7178371a054bf8b198e1feab9cc244.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "8d731463710c49b88837b9c8f355e3a6",
+        "username": "www.noe-3d.at",
+        "displayName": "noe-3d.at",
+        "profileUrl": "https://sketchfab.com/www.noe-3d.at",
+        "account": "prem",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/4ff5da1808d64620a3c823cc37fbc284",
+          "images": [
+            {
+              "size": 790,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/4ff5da1808d64620a3c823cc37fbc284/fc29b80bad134b35aba207a2ee493552.jpeg",
+              "height": 32
+            },
+            {
+              "size": 900,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/4ff5da1808d64620a3c823cc37fbc284/cbfa8757755743fcb2734dc2f971de34.jpeg",
+              "height": 48
+            },
+            {
+              "size": 1276,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/4ff5da1808d64620a3c823cc37fbc284/5608ad563cb74094932040bbb5d7075e.jpeg",
+              "height": 90
+            },
+            {
+              "size": 1374,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/4ff5da1808d64620a3c823cc37fbc284/e477198d12b3483694f30874051aa563.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/8d731463710c49b88837b9c8f355e3a6"
+      },
+      "description": "Grave of the 386 people who lost their lives in the fire of the Ringtheater on December 8, 1881. The mourning Vindobona sits on a pedestal above a sarcophagus. In her right hand she holds the coat of arms of the city of Vienna. A wreath of flowers is wrapped around her left hand. The tomb was created by the sculptor Rudolf Weyr. Originally designed with a balustrade, stairs and a wall with the names of the victims, only the middle part remained after the severe damage in 1945. The grave is located at the Vienna Central Cemetery.\n\n![](https://wien.noe-3d.at/SF/zentral_ringtheater.jpg)",
+      "faceCount": 487128,
+      "createdAt": "2020-09-29T13:00:56.215258",
+      "vertexCount": 244937,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 80054884,
+          "type": "glb",
+          "textureMaxResolution": 8192,
+          "faceCount": 487128,
+          "vertexCount": 353992
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 73427192,
+          "type": "gltf",
+          "textureMaxResolution": 8192,
+          "faceCount": 487128,
+          "vertexCount": 353992
+        },
+        "source": {
+          "textureCount": null,
+          "size": 192736585,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 15250605,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/6f20ca3ead094e75ae059781d220ba03",
+      "uid": "6f20ca3ead094e75ae059781d220ba03",
+      "name": "Drake's Steps",
+      "staffpickedAt": null,
+      "viewCount": 2194,
+      "likeCount": 141,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-6f20ca3ead094e75ae059781d220ba03",
+      "embedUrl": "https://sketchfab.com/models/6f20ca3ead094e75ae059781d220ba03/embed",
+      "commentCount": 1,
+      "isDownloadable": true,
+      "publishedAt": "2020-06-08T12:20:29.762223",
+      "tags": [],
+      "categories": [
+        {
+          "name": "cultural-heritage-history"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "963280e4b3084b77a3039bd3965f9214",
+            "size": 357746,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/6f20ca3ead094e75ae059781d220ba03/thumbnails/990bf606bff24445a9833b1cd6d2c5ab/8aa88c11d4da4132808df0b8996f6a9b.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "f3d3819fbecd467fa11b0c82cedebdd5",
+            "size": 93439,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/6f20ca3ead094e75ae059781d220ba03/thumbnails/990bf606bff24445a9833b1cd6d2c5ab/96d513cdbc0a469db72542f4daf5b5d3.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "e6feac9311414e558f9ec8c09f5454f1",
+            "size": 48207,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/6f20ca3ead094e75ae059781d220ba03/thumbnails/990bf606bff24445a9833b1cd6d2c5ab/6774950282174c14950bf6829d6df058.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "9049795a4fdc454cae5eb4ddbb229e4a",
+            "size": 7279,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/6f20ca3ead094e75ae059781d220ba03/thumbnails/990bf606bff24445a9833b1cd6d2c5ab/cec26542247747bc9dba0527075f7683.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "3f1280f4308a4226b0a38b47f386cb85",
+            "size": 1066,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/6f20ca3ead094e75ae059781d220ba03/thumbnails/990bf606bff24445a9833b1cd6d2c5ab/3349461ee20f48ecabd8c6d8e46d7139.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "1c734ba3d55c44b18696db71d7cc0e9e",
+        "username": "artfletch",
+        "displayName": "artfletch",
+        "profileUrl": "https://sketchfab.com/artfletch",
+        "account": "pro",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/18cc9f16e36f4cf58576717fc9853017",
+          "images": [
+            {
+              "size": 821,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/18cc9f16e36f4cf58576717fc9853017/fcb9741be2c34f6580b42ef9c8e79614.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1350,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/18cc9f16e36f4cf58576717fc9853017/549597bc0f6e4affb3989341619740a9.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3597,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/18cc9f16e36f4cf58576717fc9853017/d445e30fe42f48f49e283c3a57da58e0.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4218,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/18cc9f16e36f4cf58576717fc9853017/6fef76d680e04c90936c3bb825e05041.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/1c734ba3d55c44b18696db71d7cc0e9e"
+      },
+      "description": "The stairs and causeway at Deptford Wharf known as Drake's Steps. Here in 1581 Queen Elizabeth I visited Francis Drake (aboard The Golden Hinde) to bestow his Knighthood.\n\n\"In 1811 a 90m section of the Royal Victualling Yard\u2019s river wall collapsed; the wall was rebuilt to a design by John Rennie in 2 phases, a 240m stretch to the north of the river stairs in 1816\u201317, a 105m southern stretch in 1818\u201320. The new wall was built out 5m in front of the old one, using coffer dams and pumping steam engines.  https://historicengland.org.uk/listing/the-list/list-entry/1416598  We think the causeway shows damage from the Blitz - a V1? landed in the river nearby.\" COLAS\n\nA white 1 meter ruler can be seen at the base and corner of the right hand foreshore wall (when looking toward the stairs).\n\n1725 photos taken in June 2020 with a Sony a6000 and processed in Agisoft Metashape. The foreshore was very muddy at the time as there had been fewer boats on the river for several months due to the coronavirus lockdown.",
+      "faceCount": 1858970,
+      "createdAt": "2020-06-08T11:28:13.699595",
+      "vertexCount": 930844,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 2,
+          "size": 84079836,
+          "type": "glb",
+          "textureMaxResolution": 8192,
+          "faceCount": 1858988,
+          "vertexCount": 1274247
+        },
+        "gltf": {
+          "textureCount": 2,
+          "size": 59886651,
+          "type": "gltf",
+          "textureMaxResolution": 8192,
+          "faceCount": 1858988,
+          "vertexCount": 1274247
+        },
+        "source": {
+          "textureCount": null,
+          "size": 42075461,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 47111563,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/6cb93339af5f44e4b36dcf979c8afe31",
+      "uid": "6cb93339af5f44e4b36dcf979c8afe31",
+      "name": "Mid-Poly Weathered Bookshelf",
+      "staffpickedAt": null,
+      "viewCount": 2397,
+      "likeCount": 134,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-6cb93339af5f44e4b36dcf979c8afe31",
+      "embedUrl": "https://sketchfab.com/models/6cb93339af5f44e4b36dcf979c8afe31/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2022-06-08T22:33:18.887930",
+      "tags": [
+        {
+          "name": "shelf",
+          "slug": "shelf",
+          "uri": "https://api.sketchfab.com/v3/tags/shelf"
+        },
+        {
+          "name": "prop",
+          "slug": "prop",
+          "uri": "https://api.sketchfab.com/v3/tags/prop"
+        },
+        {
+          "name": "furniture",
+          "slug": "furniture",
+          "uri": "https://api.sketchfab.com/v3/tags/furniture"
+        },
+        {
+          "name": "damaged",
+          "slug": "damaged",
+          "uri": "https://api.sketchfab.com/v3/tags/damaged"
+        },
+        {
+          "name": "old",
+          "slug": "old",
+          "uri": "https://api.sketchfab.com/v3/tags/old"
+        },
+        {
+          "name": "bookshelf",
+          "slug": "bookshelf",
+          "uri": "https://api.sketchfab.com/v3/tags/bookshelf"
+        },
+        {
+          "name": "weathered",
+          "slug": "weathered",
+          "uri": "https://api.sketchfab.com/v3/tags/weathered"
+        },
+        {
+          "name": "asset",
+          "slug": "asset",
+          "uri": "https://api.sketchfab.com/v3/tags/asset"
+        },
+        {
+          "name": "wood",
+          "slug": "wood",
+          "uri": "https://api.sketchfab.com/v3/tags/wood"
+        },
+        {
+          "name": "noai",
+          "slug": "noai",
+          "uri": "https://api.sketchfab.com/v3/tags/noai"
+        }
+      ],
+      "categories": [
+        {
+          "name": "furniture-home"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "b329ace783ff41e8842beea1493925cf",
+            "size": 143346,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/6cb93339af5f44e4b36dcf979c8afe31/thumbnails/7453b6b7864c49f88bf3a7c776d345b1/909289031875446c9eeacad9a6c493f6.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "ab800868e3184c67880bbc106516fc3a",
+            "size": 42175,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/6cb93339af5f44e4b36dcf979c8afe31/thumbnails/7453b6b7864c49f88bf3a7c776d345b1/15ae7fd5b7784d42901623f3425c91e6.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "248f6ffc0e04445a8d852c3988c15752",
+            "size": 22934,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/6cb93339af5f44e4b36dcf979c8afe31/thumbnails/7453b6b7864c49f88bf3a7c776d345b1/c36eb6ac26c64c81bb1a6feb31496cef.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "456268fbfa0c4412bc36cba171ae82af",
+            "size": 4184,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/6cb93339af5f44e4b36dcf979c8afe31/thumbnails/7453b6b7864c49f88bf3a7c776d345b1/61656bc36a58463abd472cab0a550fa0.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "c0b85de1c9d744a1a587bbc0e3f66b2e",
+            "size": 1014,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/6cb93339af5f44e4b36dcf979c8afe31/thumbnails/7453b6b7864c49f88bf3a7c776d345b1/300f4c2adf104f19bc2c050d0fbd7fd8.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "9bf9df6a05804c3caeffae9df08286dd",
+        "username": "pakwilliam2002",
+        "displayName": "ch33s3",
+        "profileUrl": "https://sketchfab.com/pakwilliam2002",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/3ef1bd11d3eb4b57a0b353e8f2e5fc3e",
+          "images": [
+            {
+              "size": 680,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/3ef1bd11d3eb4b57a0b353e8f2e5fc3e/116042a0854e40538adab302b593683d.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1253,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/3ef1bd11d3eb4b57a0b353e8f2e5fc3e/efea16be51d04eb7a00cb9ea0b43b87f.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2797,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/3ef1bd11d3eb4b57a0b353e8f2e5fc3e/ac9b469ccec74caf923a81fb2f0be3ed.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3215,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/3ef1bd11d3eb4b57a0b353e8f2e5fc3e/a075e1d43d2f446c949b5967b470c757.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/9bf9df6a05804c3caeffae9df08286dd"
+      },
+      "description": "An old, damaged bookshelf to use as a prop. Its shelves are empty, so you may place any smaller props you want on them. The bottom and back sides are deleted to save UV space and cut down triangles, so only use this asset if you are planning on placing it on the ground and against a wall.\n\nPart of a personal environment art project : https://www.artstation.com/artwork/nEOQEo",
+      "faceCount": 8226,
+      "createdAt": "2022-06-08T22:16:56.806551",
+      "vertexCount": 4445,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 3,
+          "size": 74337628,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 8226,
+          "vertexCount": 6208
+        },
+        "gltf": {
+          "textureCount": 3,
+          "size": 74155765,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 8226,
+          "vertexCount": 6208
+        },
+        "source": {
+          "textureCount": null,
+          "size": 69796258,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 6664728,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/51c6567b2d524f179254667176f60a3a",
+      "uid": "51c6567b2d524f179254667176f60a3a",
+      "name": "Worn concrete wall",
+      "staffpickedAt": null,
+      "viewCount": 5204,
+      "likeCount": 132,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-51c6567b2d524f179254667176f60a3a",
+      "embedUrl": "https://sketchfab.com/models/51c6567b2d524f179254667176f60a3a/embed",
+      "commentCount": 3,
+      "isDownloadable": true,
+      "publishedAt": "2023-02-15T12:47:06.780141",
+      "tags": [
+        {
+          "name": "abandoned",
+          "slug": "abandoned",
+          "uri": "https://api.sketchfab.com/v3/tags/abandoned"
+        },
+        {
+          "name": "stairs",
+          "slug": "stairs",
+          "uri": "https://api.sketchfab.com/v3/tags/stairs"
+        },
+        {
+          "name": "apocalyptic",
+          "slug": "apocalyptic",
+          "uri": "https://api.sketchfab.com/v3/tags/apocalyptic"
+        },
+        {
+          "name": "tag",
+          "slug": "tag",
+          "uri": "https://api.sketchfab.com/v3/tags/tag"
+        },
+        {
+          "name": "post-apocalyptic",
+          "slug": "post-apocalyptic",
+          "uri": "https://api.sketchfab.com/v3/tags/post-apocalyptic"
+        },
+        {
+          "name": "urban",
+          "slug": "urban",
+          "uri": "https://api.sketchfab.com/v3/tags/urban"
+        },
+        {
+          "name": "road",
+          "slug": "road",
+          "uri": "https://api.sketchfab.com/v3/tags/road"
+        },
+        {
+          "name": "concrete",
+          "slug": "concrete",
+          "uri": "https://api.sketchfab.com/v3/tags/concrete"
+        },
+        {
+          "name": "worn",
+          "slug": "worn",
+          "uri": "https://api.sketchfab.com/v3/tags/worn"
+        },
+        {
+          "name": "rough",
+          "slug": "rough",
+          "uri": "https://api.sketchfab.com/v3/tags/rough"
+        },
+        {
+          "name": "wet",
+          "slug": "wet",
+          "uri": "https://api.sketchfab.com/v3/tags/wet"
+        },
+        {
+          "name": "alley",
+          "slug": "alley",
+          "uri": "https://api.sketchfab.com/v3/tags/alley"
+        },
+        {
+          "name": "damaged",
+          "slug": "damaged",
+          "uri": "https://api.sketchfab.com/v3/tags/damaged"
+        },
+        {
+          "name": "town",
+          "slug": "town",
+          "uri": "https://api.sketchfab.com/v3/tags/town"
+        },
+        {
+          "name": "realistic",
+          "slug": "realistic",
+          "uri": "https://api.sketchfab.com/v3/tags/realistic"
+        },
+        {
+          "name": "spray",
+          "slug": "spray",
+          "uri": "https://api.sketchfab.com/v3/tags/spray"
+        },
+        {
+          "name": "ghetto",
+          "slug": "ghetto",
+          "uri": "https://api.sketchfab.com/v3/tags/ghetto"
+        },
+        {
+          "name": "weathered",
+          "slug": "weathered",
+          "uri": "https://api.sketchfab.com/v3/tags/weathered"
+        },
+        {
+          "name": "passage",
+          "slug": "passage",
+          "uri": "https://api.sketchfab.com/v3/tags/passage"
+        },
+        {
+          "name": "neighborhood",
+          "slug": "neighborhood",
+          "uri": "https://api.sketchfab.com/v3/tags/neighborhood"
+        },
+        {
+          "name": "concrete-block",
+          "slug": "concrete-block",
+          "uri": "https://api.sketchfab.com/v3/tags/concrete-block"
+        },
+        {
+          "name": "pbr-texturing",
+          "slug": "pbr-texturing",
+          "uri": "https://api.sketchfab.com/v3/tags/pbr-texturing"
+        },
+        {
+          "name": "sprayed",
+          "slug": "sprayed",
+          "uri": "https://api.sketchfab.com/v3/tags/sprayed"
+        },
+        {
+          "name": "substancepainter",
+          "slug": "substancepainter",
+          "uri": "https://api.sketchfab.com/v3/tags/substancepainter"
+        },
+        {
+          "name": "substance",
+          "slug": "substance",
+          "uri": "https://api.sketchfab.com/v3/tags/substance"
+        },
+        {
+          "name": "pbr",
+          "slug": "pbr",
+          "uri": "https://api.sketchfab.com/v3/tags/pbr"
+        },
+        {
+          "name": "lowpoly",
+          "slug": "lowpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpoly"
+        },
+        {
+          "name": "gameasset",
+          "slug": "gameasset",
+          "uri": "https://api.sketchfab.com/v3/tags/gameasset"
+        },
+        {
+          "name": "city",
+          "slug": "city",
+          "uri": "https://api.sketchfab.com/v3/tags/city"
+        },
+        {
+          "name": "street",
+          "slug": "street",
+          "uri": "https://api.sketchfab.com/v3/tags/street"
+        },
+        {
+          "name": "dark",
+          "slug": "dark",
+          "uri": "https://api.sketchfab.com/v3/tags/dark"
+        },
+        {
+          "name": "gameready",
+          "slug": "gameready",
+          "uri": "https://api.sketchfab.com/v3/tags/gameready"
+        },
+        {
+          "name": "wall",
+          "slug": "wall",
+          "uri": "https://api.sketchfab.com/v3/tags/wall"
+        },
+        {
+          "name": "concrete-wall",
+          "slug": "concrete-wall",
+          "uri": "https://api.sketchfab.com/v3/tags/concrete-wall"
+        },
+        {
+          "name": "noai",
+          "slug": "noai",
+          "uri": "https://api.sketchfab.com/v3/tags/noai"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        },
+        {
+          "name": "furniture-home"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "75c68445d5f14ee0b4d9a19b0e1e98a4",
+            "size": 457868,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/51c6567b2d524f179254667176f60a3a/thumbnails/c3950753b7504990986bea6b055a9058/2507185602804048aa631db5181a1d06.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "f784d70f8f5b44fca132b8d265af624f",
+            "size": 78982,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/51c6567b2d524f179254667176f60a3a/thumbnails/c3950753b7504990986bea6b055a9058/039f14c42b8c4aa49126e88d2c21e8e1.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "10b48d9603954b128cb1da9a216fee47",
+            "size": 36219,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/51c6567b2d524f179254667176f60a3a/thumbnails/c3950753b7504990986bea6b055a9058/907796ad0a6f46a88090a7364f90d138.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "4ebc58909c3746e5b99b31bc5bfbccfa",
+            "size": 4918,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/51c6567b2d524f179254667176f60a3a/thumbnails/c3950753b7504990986bea6b055a9058/3e831457a3e14d72aa71401c3add47ed.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "d340961636024de9ba10cc4841f7ea55",
+            "size": 1097,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/51c6567b2d524f179254667176f60a3a/thumbnails/c3950753b7504990986bea6b055a9058/c184372a54d348d7a02e7eb69276a9e8.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "26bbdd4d8c24417bae682075ef39cce0",
+        "username": "sousinho",
+        "displayName": "Sousinho",
+        "profileUrl": "https://sketchfab.com/sousinho",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/4c5e2b35cb9142ac8fefd448b337a710",
+          "images": [
+            {
+              "size": 1207,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/4c5e2b35cb9142ac8fefd448b337a710/9c619dc504ae4c00828e9864da1eaf6a.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1678,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/4c5e2b35cb9142ac8fefd448b337a710/66da4c07ef9b44d0b6635b6d7d3fb4d5.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3494,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/4c5e2b35cb9142ac8fefd448b337a710/9e6aa3375cfa438494e6ed7ec2c14067.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4079,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/4c5e2b35cb9142ac8fefd448b337a710/3e52abf0a28842b8bfeb6d036bf2e31e.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/26bbdd4d8c24417bae682075ef39cce0"
+      },
+      "description": "A simple Worn concrete wall with damag and graffiti.  Handy prop for any sort of post apocalyptic / abandoned environment. \n\nPBE textures @4k",
+      "faceCount": 16,
+      "createdAt": "2023-02-15T12:26:50.222532",
+      "vertexCount": 15,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 3,
+          "size": 37459080,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 16,
+          "vertexCount": 30
+        },
+        "gltf": {
+          "textureCount": 3,
+          "size": 37138242,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 16,
+          "vertexCount": 30
+        },
+        "source": {
+          "textureCount": null,
+          "size": 57190901,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 5121527,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/87e21c64e53d4d099f5a606e6131d36f",
+      "uid": "87e21c64e53d4d099f5a606e6131d36f",
+      "name": "White wall texture",
+      "staffpickedAt": null,
+      "viewCount": 5717,
+      "likeCount": 124,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-87e21c64e53d4d099f5a606e6131d36f",
+      "embedUrl": "https://sketchfab.com/models/87e21c64e53d4d099f5a606e6131d36f/embed",
+      "commentCount": 1,
+      "isDownloadable": true,
+      "publishedAt": "2018-06-11T20:26:43.252223",
+      "tags": [
+        {
+          "name": "tile",
+          "slug": "tile",
+          "uri": "https://api.sketchfab.com/v3/tags/tile"
+        },
+        {
+          "name": "pattern",
+          "slug": "pattern",
+          "uri": "https://api.sketchfab.com/v3/tags/pattern"
+        },
+        {
+          "name": "damaged",
+          "slug": "damaged",
+          "uri": "https://api.sketchfab.com/v3/tags/damaged"
+        },
+        {
+          "name": "plaster",
+          "slug": "plaster",
+          "uri": "https://api.sketchfab.com/v3/tags/plaster"
+        },
+        {
+          "name": "scratch",
+          "slug": "scratch",
+          "uri": "https://api.sketchfab.com/v3/tags/scratch"
+        },
+        {
+          "name": "stucco",
+          "slug": "stucco",
+          "uri": "https://api.sketchfab.com/v3/tags/stucco"
+        },
+        {
+          "name": "cracks",
+          "slug": "cracks",
+          "uri": "https://api.sketchfab.com/v3/tags/cracks"
+        },
+        {
+          "name": "game",
+          "slug": "game",
+          "uri": "https://api.sketchfab.com/v3/tags/game"
+        },
+        {
+          "name": "wall",
+          "slug": "wall",
+          "uri": "https://api.sketchfab.com/v3/tags/wall"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cultural-heritage-history"
+        },
+        {
+          "name": "furniture-home"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "057382ed1f1c4be1b4acec37ce88041e",
+            "size": 298753,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/87e21c64e53d4d099f5a606e6131d36f/thumbnails/ae0eae2316a240af9e881fea74483eb7/b3cd7839a2ec4987a6f3572986db827e.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "10ba16fbb22d423f9ff6f5df103af930",
+            "size": 54539,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/87e21c64e53d4d099f5a606e6131d36f/thumbnails/ae0eae2316a240af9e881fea74483eb7/bfb82f2a5cab4e8caf1dae0ad004dc58.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "c40014ed80674c6da623802f26618a6a",
+            "size": 29905,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/87e21c64e53d4d099f5a606e6131d36f/thumbnails/ae0eae2316a240af9e881fea74483eb7/6ecafd1d75204aef976726e99d70b6b2.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "7e474e25c23648d5a67bc0e9ed3a9c72",
+            "size": 4638,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/87e21c64e53d4d099f5a606e6131d36f/thumbnails/ae0eae2316a240af9e881fea74483eb7/bfee4c9bfb5e42dd951d1bc64a4513ca.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "4cf1eb746b28499e8cddfb3a33b03c8b",
+            "size": 714,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/87e21c64e53d4d099f5a606e6131d36f/thumbnails/ae0eae2316a240af9e881fea74483eb7/54178007bbb24152a982c591fdc3fba1.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "a66c386c6ba24f46bb5cdbb5c2e431bf",
+        "username": "pixelator111",
+        "displayName": "PixelatoR",
+        "profileUrl": "https://sketchfab.com/pixelator111",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/d346a06e8fb64e86b3d44c953284a397",
+          "images": [
+            {
+              "size": 560,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/d346a06e8fb64e86b3d44c953284a397/f8ef78f9346d4845af54379fb89c1d6f.jpeg",
+              "height": 32
+            },
+            {
+              "size": 853,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/d346a06e8fb64e86b3d44c953284a397/98c16ddf6fc248b588e2556f6b90a638.jpeg",
+              "height": 48
+            },
+            {
+              "size": 1849,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/d346a06e8fb64e86b3d44c953284a397/59b3c5dea1fa40789b504f625595d919.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2210,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/d346a06e8fb64e86b3d44c953284a397/9fb0a67a3c9440b19d7c9b5d886adb9d.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/a66c386c6ba24f46bb5cdbb5c2e431bf"
+      },
+      "description": "Tileable pbr white wall texture. 4096x4096px. Files: - Basecolor - Normal map - Height map - Roughness map - Ambient Occlusion map",
+      "faceCount": 76800,
+      "createdAt": "2018-06-11T14:48:41.999018",
+      "vertexCount": 38402,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 3,
+          "size": 28201332,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 76800,
+          "vertexCount": 38961
+        },
+        "gltf": {
+          "textureCount": 3,
+          "size": 25825890,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 76800,
+          "vertexCount": 38961
+        },
+        "source": {
+          "textureCount": null,
+          "size": 5474032,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 4244911,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/c0cf464b0eef4e8eab36cea6469f3443",
+      "uid": "c0cf464b0eef4e8eab36cea6469f3443",
+      "name": "Santa Maria di Collemaggio (L'Aquila - Italy)",
+      "staffpickedAt": null,
+      "viewCount": 2589,
+      "likeCount": 120,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-c0cf464b0eef4e8eab36cea6469f3443",
+      "embedUrl": "https://sketchfab.com/models/c0cf464b0eef4e8eab36cea6469f3443/embed",
+      "commentCount": 2,
+      "isDownloadable": true,
+      "publishedAt": "2018-02-23T21:54:17.980183",
+      "tags": [
+        {
+          "name": "medieval",
+          "slug": "medieval",
+          "uri": "https://api.sketchfab.com/v3/tags/medieval"
+        },
+        {
+          "name": "romanesque",
+          "slug": "romanesque",
+          "uri": "https://api.sketchfab.com/v3/tags/romanesque"
+        },
+        {
+          "name": "basilica",
+          "slug": "basilica",
+          "uri": "https://api.sketchfab.com/v3/tags/basilica"
+        },
+        {
+          "name": "photogrammetry",
+          "slug": "photogrammetry",
+          "uri": "https://api.sketchfab.com/v3/tags/photogrammetry"
+        },
+        {
+          "name": "3dscan",
+          "slug": "3dscan",
+          "uri": "https://api.sketchfab.com/v3/tags/3dscan"
+        },
+        {
+          "name": "church",
+          "slug": "church",
+          "uri": "https://api.sketchfab.com/v3/tags/church"
+        },
+        {
+          "name": "wall",
+          "slug": "wall",
+          "uri": "https://api.sketchfab.com/v3/tags/wall"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        },
+        {
+          "name": "cultural-heritage-history"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "298006b127e34407abd46434c6c9da55",
+            "size": 542613,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/c0cf464b0eef4e8eab36cea6469f3443/thumbnails/40166c2b9e5a49e1895fdd0a37aee690/7986c3efc00644d3b9b58ef0bbb79a89.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "318e34c3b76243dfb24d60c8c43b8110",
+            "size": 165859,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/c0cf464b0eef4e8eab36cea6469f3443/thumbnails/40166c2b9e5a49e1895fdd0a37aee690/0eeaca0d4d2247398468344559487c00.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "16c6cf191bf8414c8a0c8c4cfd6b3f77",
+            "size": 91121,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/c0cf464b0eef4e8eab36cea6469f3443/thumbnails/40166c2b9e5a49e1895fdd0a37aee690/bec50f9123da4935a21b0078b08bbd71.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "ede8b8fe351e4aeb81a01f13a2c6077d",
+            "size": 13371,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/c0cf464b0eef4e8eab36cea6469f3443/thumbnails/40166c2b9e5a49e1895fdd0a37aee690/096de57a9a7e4272a3eaa0c53ca513e3.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "88abde90f5174c1bbfcaa5d91d4d5125",
+            "size": 1218,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/c0cf464b0eef4e8eab36cea6469f3443/thumbnails/40166c2b9e5a49e1895fdd0a37aee690/d3b03c13a86840579bce916d3033d41f.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "31356005ae604b7594b7f7d6ffb620d4",
+        "username": "spogna",
+        "displayName": "Andrea Spognetta (Spogna)",
+        "profileUrl": "https://sketchfab.com/spogna",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/4878eb622af9437196e0db819da1d522",
+          "images": [
+            {
+              "size": 781,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/4878eb622af9437196e0db819da1d522/e983bf9b8a514bb9ae7a338d42ed70eb.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1259,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/4878eb622af9437196e0db819da1d522/e27db1126a374dbc8e29944332fb42a3.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3235,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/4878eb622af9437196e0db819da1d522/0559ec81fdbb468aa8b644b6c44d6ac9.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3791,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/4878eb622af9437196e0db819da1d522/65d0b988b7b54567860d6cdd10c1c623.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/31356005ae604b7594b7f7d6ffb620d4"
+      },
+      "description": "S. Maria di Collemaggio is a large medieval church in L'Aquila, central Italy. It was the site of the original Papal Jubilee, a penitential observation devised by Pope Celestine V, who is buried there. The church, which therefore ranks as a basilica because of its importance in religious history, sits in isolation at the end of a long rectangular sward of grass at the southwest edge of the town.\nThe church is a masterpiece of Abruzzese Romanesque and Gothic architecture and one of the chief sights of L'Aquila. The striking jewel-box effect of the exterior is due to a pattern of blocks of alternating pink and white stone; the interior, on the other hand, is massive and austere. Outbuildings include a colonnaded cloister, with the central fountain typical of many other similar Italian cloisters, and the former monastic refectory.\nParts of the structure were significantly damaged in the 2009 earthquake in L'Aquila. \n\ncoordinates: 42.342890, 13.404106\n\nphotogrammetry: 167 photos",
+      "faceCount": 500000,
+      "createdAt": "2018-02-23T21:45:34.848268",
+      "vertexCount": 252554,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 50477856,
+          "type": "glb",
+          "textureMaxResolution": 8192,
+          "faceCount": 500000,
+          "vertexCount": 364875
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 43982744,
+          "type": "gltf",
+          "textureMaxResolution": 8192,
+          "faceCount": 500000,
+          "vertexCount": 364875
+        },
+        "source": {
+          "textureCount": null,
+          "size": 57869112,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 17661099,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "bbfe3f7dbcdd4122b966b85b9786a989",
+        "label": "CC Attribution-NonCommercial"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/4227ff1692c147fb808df92ba99b0a12",
+      "uid": "4227ff1692c147fb808df92ba99b0a12",
+      "name": "3 concrete railway crossings",
+      "staffpickedAt": null,
+      "viewCount": 3620,
+      "likeCount": 114,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-4227ff1692c147fb808df92ba99b0a12",
+      "embedUrl": "https://sketchfab.com/models/4227ff1692c147fb808df92ba99b0a12/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2024-05-17T22:22:40.803585",
+      "tags": [
+        {
+          "name": "3d-scan",
+          "slug": "3d-scan",
+          "uri": "https://api.sketchfab.com/v3/tags/3d-scan"
+        },
+        {
+          "name": "prop",
+          "slug": "prop",
+          "uri": "https://api.sketchfab.com/v3/tags/prop"
+        },
+        {
+          "name": "urban",
+          "slug": "urban",
+          "uri": "https://api.sketchfab.com/v3/tags/urban"
+        },
+        {
+          "name": "gameprop",
+          "slug": "gameprop",
+          "uri": "https://api.sketchfab.com/v3/tags/gameprop"
+        },
+        {
+          "name": "concrete",
+          "slug": "concrete",
+          "uri": "https://api.sketchfab.com/v3/tags/concrete"
+        },
+        {
+          "name": "rough",
+          "slug": "rough",
+          "uri": "https://api.sketchfab.com/v3/tags/rough"
+        },
+        {
+          "name": "railway",
+          "slug": "railway",
+          "uri": "https://api.sketchfab.com/v3/tags/railway"
+        },
+        {
+          "name": "dirty",
+          "slug": "dirty",
+          "uri": "https://api.sketchfab.com/v3/tags/dirty"
+        },
+        {
+          "name": "grunge",
+          "slug": "grunge",
+          "uri": "https://api.sketchfab.com/v3/tags/grunge"
+        },
+        {
+          "name": "railways",
+          "slug": "railways",
+          "uri": "https://api.sketchfab.com/v3/tags/railways"
+        },
+        {
+          "name": "decay",
+          "slug": "decay",
+          "uri": "https://api.sketchfab.com/v3/tags/decay"
+        },
+        {
+          "name": "trains",
+          "slug": "trains",
+          "uri": "https://api.sketchfab.com/v3/tags/trains"
+        },
+        {
+          "name": "crossing",
+          "slug": "crossing",
+          "uri": "https://api.sketchfab.com/v3/tags/crossing"
+        },
+        {
+          "name": "downloadable",
+          "slug": "downloadable",
+          "uri": "https://api.sketchfab.com/v3/tags/downloadable"
+        },
+        {
+          "name": "decayed",
+          "slug": "decayed",
+          "uri": "https://api.sketchfab.com/v3/tags/decayed"
+        },
+        {
+          "name": "filthy",
+          "slug": "filthy",
+          "uri": "https://api.sketchfab.com/v3/tags/filthy"
+        },
+        {
+          "name": "railway-model",
+          "slug": "railway-model",
+          "uri": "https://api.sketchfab.com/v3/tags/railway-model"
+        },
+        {
+          "name": "reinforcedconcrete",
+          "slug": "reinforcedconcrete",
+          "uri": "https://api.sketchfab.com/v3/tags/reinforcedconcrete"
+        },
+        {
+          "name": "downloadable-model",
+          "slug": "downloadable-model",
+          "uri": "https://api.sketchfab.com/v3/tags/downloadable-model"
+        },
+        {
+          "name": "photogrammetry",
+          "slug": "photogrammetry",
+          "uri": "https://api.sketchfab.com/v3/tags/photogrammetry"
+        },
+        {
+          "name": "asset",
+          "slug": "asset",
+          "uri": "https://api.sketchfab.com/v3/tags/asset"
+        },
+        {
+          "name": "model",
+          "slug": "model",
+          "uri": "https://api.sketchfab.com/v3/tags/model"
+        },
+        {
+          "name": "gameasset",
+          "slug": "gameasset",
+          "uri": "https://api.sketchfab.com/v3/tags/gameasset"
+        },
+        {
+          "name": "city",
+          "slug": "city",
+          "uri": "https://api.sketchfab.com/v3/tags/city"
+        },
+        {
+          "name": "free",
+          "slug": "free",
+          "uri": "https://api.sketchfab.com/v3/tags/free"
+        },
+        {
+          "name": "street",
+          "slug": "street",
+          "uri": "https://api.sketchfab.com/v3/tags/street"
+        },
+        {
+          "name": "railway-tracks",
+          "slug": "railway-tracks",
+          "uri": "https://api.sketchfab.com/v3/tags/railway-tracks"
+        },
+        {
+          "name": "train-tracks",
+          "slug": "train-tracks",
+          "uri": "https://api.sketchfab.com/v3/tags/train-tracks"
+        },
+        {
+          "name": "railway-crossing",
+          "slug": "railway-crossing",
+          "uri": "https://api.sketchfab.com/v3/tags/railway-crossing"
+        },
+        {
+          "name": "dirty-3d-props",
+          "slug": "dirty-3d-props",
+          "uri": "https://api.sketchfab.com/v3/tags/dirty-3d-props"
+        },
+        {
+          "name": "exposed-bricks",
+          "slug": "exposed-bricks",
+          "uri": "https://api.sketchfab.com/v3/tags/exposed-bricks"
+        },
+        {
+          "name": "dirty-concrete",
+          "slug": "dirty-concrete",
+          "uri": "https://api.sketchfab.com/v3/tags/dirty-concrete"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "b9393f7f4dab4f9fb8648a7a07b252bf",
+            "size": 843399,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/4227ff1692c147fb808df92ba99b0a12/thumbnails/32c931a3d39247e0864d179bad911f65/a2c7704cd40f4281a707198e5511fec2.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "ba9e6f74df8349f9906dd118d9c06fd8",
+            "size": 233889,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/4227ff1692c147fb808df92ba99b0a12/thumbnails/32c931a3d39247e0864d179bad911f65/1232ba2f5ce74d998fb9e16a976d1cf4.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "45cc9005d5c7427d89477b486f803046",
+            "size": 110234,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/4227ff1692c147fb808df92ba99b0a12/thumbnails/32c931a3d39247e0864d179bad911f65/4e10dbefe1df40edb32c69563c6dedae.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "fd053184d82e4a24a275b4191c75881e",
+            "size": 10395,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/4227ff1692c147fb808df92ba99b0a12/thumbnails/32c931a3d39247e0864d179bad911f65/14e2dd442de1423bb3ddac5fefcb9a29.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "19f034a4527e41418056392cc5f0c430",
+            "size": 1223,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/4227ff1692c147fb808df92ba99b0a12/thumbnails/32c931a3d39247e0864d179bad911f65/66a67182bdd34e7484d99a5f84d0bcd0.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "5ae4d1be9adc4706abb9243d5705f85c",
+        "username": "orphanrtg",
+        "displayName": "\u041er\u0440\u043d\u0434\u043f \u042f\u0422G",
+        "profileUrl": "https://sketchfab.com/orphanrtg",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/9563576e3d7d4c4aa454721234d3320f",
+          "images": [
+            {
+              "size": 982,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/9563576e3d7d4c4aa454721234d3320f/98201f72aa8c4788b4bc0126d88ca331.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1184,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/9563576e3d7d4c4aa454721234d3320f/68191577eed34491ad9597cb9e63657f.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2040,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/9563576e3d7d4c4aa454721234d3320f/ffd62d479c97472588af9b999162d04e.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2256,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/9563576e3d7d4c4aa454721234d3320f/daf3e0017da14f8fa86ed4237094fd7b.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/5ae4d1be9adc4706abb9243d5705f85c"
+      },
+      "description": "* Super long brick wall with damaged plaster\n* 2x8k texture \n* spring season\n* location : Slovakia\n\n3d scan made of 161 photos @ Samsung Galaxy A33 5G",
+      "faceCount": 48983,
+      "createdAt": "2024-05-17T21:55:08.914897",
+      "vertexCount": 27548,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 2,
+          "size": 68771292,
+          "type": "glb",
+          "textureMaxResolution": 8192,
+          "faceCount": 48979,
+          "vertexCount": 34795
+        },
+        "gltf": {
+          "textureCount": 2,
+          "size": 67989967,
+          "type": "gltf",
+          "textureMaxResolution": 8192,
+          "faceCount": 48979,
+          "vertexCount": 34795
+        },
+        "source": {
+          "textureCount": null,
+          "size": 82757465,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 3436117,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    }
+  ]
+}

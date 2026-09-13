@@ -1,0 +1,5705 @@
+{
+  "cursors": {
+    "next": "24",
+    "previous": null
+  },
+  "next": "https://api.sketchfab.com/v3/search?count=24&cursor=24&downloadable=true&q=wrecked+truck&sort_by=-likeCount&type=models",
+  "previous": null,
+  "results": [
+    {
+      "uri": "https://api.sketchfab.com/v3/models/8a540625b599428796cda78578040deb",
+      "uid": "8a540625b599428796cda78578040deb",
+      "name": "Red car wreck",
+      "staffpickedAt": null,
+      "viewCount": 72255,
+      "likeCount": 1306,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-8a540625b599428796cda78578040deb",
+      "embedUrl": "https://sketchfab.com/models/8a540625b599428796cda78578040deb/embed",
+      "commentCount": 75,
+      "isDownloadable": true,
+      "publishedAt": "2021-03-08T10:44:48.778236",
+      "tags": [
+        {
+          "name": "automobile",
+          "slug": "automobile",
+          "uri": "https://api.sketchfab.com/v3/tags/automobile"
+        },
+        {
+          "name": "abandoned",
+          "slug": "abandoned",
+          "uri": "https://api.sketchfab.com/v3/tags/abandoned"
+        },
+        {
+          "name": "red",
+          "slug": "red",
+          "uri": "https://api.sketchfab.com/v3/tags/red"
+        },
+        {
+          "name": "lost",
+          "slug": "lost",
+          "uri": "https://api.sketchfab.com/v3/tags/lost"
+        },
+        {
+          "name": "cars",
+          "slug": "cars",
+          "uri": "https://api.sketchfab.com/v3/tags/cars"
+        },
+        {
+          "name": "3d-scan",
+          "slug": "3d-scan",
+          "uri": "https://api.sketchfab.com/v3/tags/3d-scan"
+        },
+        {
+          "name": "rust",
+          "slug": "rust",
+          "uri": "https://api.sketchfab.com/v3/tags/rust"
+        },
+        {
+          "name": "traffic",
+          "slug": "traffic",
+          "uri": "https://api.sketchfab.com/v3/tags/traffic"
+        },
+        {
+          "name": "photorealistic",
+          "slug": "photorealistic",
+          "uri": "https://api.sketchfab.com/v3/tags/photorealistic"
+        },
+        {
+          "name": "broken",
+          "slug": "broken",
+          "uri": "https://api.sketchfab.com/v3/tags/broken"
+        },
+        {
+          "name": "wreck",
+          "slug": "wreck",
+          "uri": "https://api.sketchfab.com/v3/tags/wreck"
+        },
+        {
+          "name": "megane",
+          "slug": "megane",
+          "uri": "https://api.sketchfab.com/v3/tags/megane"
+        },
+        {
+          "name": "renault",
+          "slug": "renault",
+          "uri": "https://api.sketchfab.com/v3/tags/renault"
+        },
+        {
+          "name": "scrap",
+          "slug": "scrap",
+          "uri": "https://api.sketchfab.com/v3/tags/scrap"
+        },
+        {
+          "name": "crash",
+          "slug": "crash",
+          "uri": "https://api.sketchfab.com/v3/tags/crash"
+        },
+        {
+          "name": "damage",
+          "slug": "damage",
+          "uri": "https://api.sketchfab.com/v3/tags/damage"
+        },
+        {
+          "name": "metal",
+          "slug": "metal",
+          "uri": "https://api.sketchfab.com/v3/tags/metal"
+        },
+        {
+          "name": "props",
+          "slug": "props",
+          "uri": "https://api.sketchfab.com/v3/tags/props"
+        },
+        {
+          "name": "fire",
+          "slug": "fire",
+          "uri": "https://api.sketchfab.com/v3/tags/fire"
+        },
+        {
+          "name": "scanned",
+          "slug": "scanned",
+          "uri": "https://api.sketchfab.com/v3/tags/scanned"
+        },
+        {
+          "name": "machine",
+          "slug": "machine",
+          "uri": "https://api.sketchfab.com/v3/tags/machine"
+        },
+        {
+          "name": "destroyed",
+          "slug": "destroyed",
+          "uri": "https://api.sketchfab.com/v3/tags/destroyed"
+        },
+        {
+          "name": "accident",
+          "slug": "accident",
+          "uri": "https://api.sketchfab.com/v3/tags/accident"
+        },
+        {
+          "name": "crashed",
+          "slug": "crashed",
+          "uri": "https://api.sketchfab.com/v3/tags/crashed"
+        },
+        {
+          "name": "free3dmodel",
+          "slug": "free3dmodel",
+          "uri": "https://api.sketchfab.com/v3/tags/free3dmodel"
+        },
+        {
+          "name": "authentic",
+          "slug": "authentic",
+          "uri": "https://api.sketchfab.com/v3/tags/authentic"
+        },
+        {
+          "name": "derelict",
+          "slug": "derelict",
+          "uri": "https://api.sketchfab.com/v3/tags/derelict"
+        },
+        {
+          "name": "freedownload",
+          "slug": "freedownload",
+          "uri": "https://api.sketchfab.com/v3/tags/freedownload"
+        },
+        {
+          "name": "16k",
+          "slug": "16k",
+          "uri": "https://api.sketchfab.com/v3/tags/16k"
+        },
+        {
+          "name": "dented",
+          "slug": "dented",
+          "uri": "https://api.sketchfab.com/v3/tags/dented"
+        },
+        {
+          "name": "freemodel",
+          "slug": "freemodel",
+          "uri": "https://api.sketchfab.com/v3/tags/freemodel"
+        },
+        {
+          "name": "cars-vehicles",
+          "slug": "cars-vehicles",
+          "uri": "https://api.sketchfab.com/v3/tags/cars-vehicles"
+        },
+        {
+          "name": "photoscan",
+          "slug": "photoscan",
+          "uri": "https://api.sketchfab.com/v3/tags/photoscan"
+        },
+        {
+          "name": "photogrammetry",
+          "slug": "photogrammetry",
+          "uri": "https://api.sketchfab.com/v3/tags/photogrammetry"
+        },
+        {
+          "name": "asset",
+          "slug": "asset",
+          "uri": "https://api.sketchfab.com/v3/tags/asset"
+        },
+        {
+          "name": "vehicle",
+          "slug": "vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+        },
+        {
+          "name": "gameasset",
+          "slug": "gameasset",
+          "uri": "https://api.sketchfab.com/v3/tags/gameasset"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "free",
+          "slug": "free",
+          "uri": "https://api.sketchfab.com/v3/tags/free"
+        },
+        {
+          "name": "interior",
+          "slug": "interior",
+          "uri": "https://api.sketchfab.com/v3/tags/interior"
+        },
+        {
+          "name": "download",
+          "slug": "download",
+          "uri": "https://api.sketchfab.com/v3/tags/download"
+        },
+        {
+          "name": "abandoned-car",
+          "slug": "abandoned-car",
+          "uri": "https://api.sketchfab.com/v3/tags/abandoned-car"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "science-technology"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "5413983663c042efb2f068b66521b951",
+            "size": 675925,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/8a540625b599428796cda78578040deb/thumbnails/995bf3097776415fa11f905ccd213e77/e8ae751991f34898abd16809b8cb54ff.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "5fd307dcbb844c9187d18b4a85611337",
+            "size": 155997,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/8a540625b599428796cda78578040deb/thumbnails/995bf3097776415fa11f905ccd213e77/4301645b9903499db74bebfc540c833c.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "0a629246ca7d4df99af6c92268d13b72",
+            "size": 77749,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/8a540625b599428796cda78578040deb/thumbnails/995bf3097776415fa11f905ccd213e77/acf778851dcc4bf294286700f650e76d.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "a789fa933d944d15bebd783eee26e6e5",
+            "size": 11175,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/8a540625b599428796cda78578040deb/thumbnails/995bf3097776415fa11f905ccd213e77/1af7f0a4eb7742a4852ea40d8ea9b89d.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "dd26d56b2e9a4188b88b34a8fb4c8848",
+            "size": 1320,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/8a540625b599428796cda78578040deb/thumbnails/995bf3097776415fa11f905ccd213e77/5ef30a5f777043ae94361c3bf984ba68.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "01c3a3d216ed4051b1f85787bcf76fba",
+        "username": "matousekfoto",
+        "displayName": "matousekfoto",
+        "profileUrl": "https://sketchfab.com/matousekfoto",
+        "account": "pro",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/75a0bb33b625418eadeeabf5171a6e5f",
+          "images": [
+            {
+              "size": 716,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/75a0bb33b625418eadeeabf5171a6e5f/c8424889ac9b489da27721a6e38780a3.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1089,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/75a0bb33b625418eadeeabf5171a6e5f/f7656e9c4430494fb0342c832dfeb9b1.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2575,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/75a0bb33b625418eadeeabf5171a6e5f/b99c14eaac7a4c10be7c1c93e9bb676e.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2950,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/75a0bb33b625418eadeeabf5171a6e5f/380cd8c41e11417fb49f28d709131be6.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/01c3a3d216ed4051b1f85787bcf76fba"
+      },
+      "description": "Red renault megane derelict car wreck wreckage crashed accident broken vehicle, engine trunk open\n\nRaw Photogrammetry scan 650x24MP, 4x16K texture.\n\n\n\u2757 Download:  https://sketchfab.com/3d-models/red-renault-carwreck-b3fdf29e9711412e8036c87f712a9d6f/\n\n\nIf you download and enjoy the free model, please hit Like\nConsider buying me a coffee https://www.buymeacoffee.com/matousekfoto",
+      "faceCount": 1255701,
+      "createdAt": "2021-03-08T09:04:43.396792",
+      "vertexCount": 877776,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 4,
+          "size": 155958088,
+          "type": "glb",
+          "textureMaxResolution": 8192,
+          "faceCount": 1255701,
+          "vertexCount": 1090333
+        },
+        "gltf": {
+          "textureCount": 4,
+          "size": 138598828,
+          "type": "gltf",
+          "textureMaxResolution": 8192,
+          "faceCount": 1255701,
+          "vertexCount": 1090333
+        },
+        "source": {
+          "textureCount": null,
+          "size": 347577004,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 42677067,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/66ef51a84c9843dda53bf0b4b9020011",
+      "uid": "66ef51a84c9843dda53bf0b4b9020011",
+      "name": "Crashed Abandoned Car - Game Ready",
+      "staffpickedAt": null,
+      "viewCount": 14482,
+      "likeCount": 447,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-66ef51a84c9843dda53bf0b4b9020011",
+      "embedUrl": "https://sketchfab.com/models/66ef51a84c9843dda53bf0b4b9020011/embed",
+      "commentCount": 5,
+      "isDownloadable": true,
+      "publishedAt": "2024-11-25T20:14:53.783876",
+      "tags": [
+        {
+          "name": "truck",
+          "slug": "truck",
+          "uri": "https://api.sketchfab.com/v3/tags/truck"
+        },
+        {
+          "name": "abandoned",
+          "slug": "abandoned",
+          "uri": "https://api.sketchfab.com/v3/tags/abandoned"
+        },
+        {
+          "name": "suv",
+          "slug": "suv",
+          "uri": "https://api.sketchfab.com/v3/tags/suv"
+        },
+        {
+          "name": "apocalyptic",
+          "slug": "apocalyptic",
+          "uri": "https://api.sketchfab.com/v3/tags/apocalyptic"
+        },
+        {
+          "name": "traffic",
+          "slug": "traffic",
+          "uri": "https://api.sketchfab.com/v3/tags/traffic"
+        },
+        {
+          "name": "prop",
+          "slug": "prop",
+          "uri": "https://api.sketchfab.com/v3/tags/prop"
+        },
+        {
+          "name": "road",
+          "slug": "road",
+          "uri": "https://api.sketchfab.com/v3/tags/road"
+        },
+        {
+          "name": "jeep",
+          "slug": "jeep",
+          "uri": "https://api.sketchfab.com/v3/tags/jeep"
+        },
+        {
+          "name": "wreck",
+          "slug": "wreck",
+          "uri": "https://api.sketchfab.com/v3/tags/wreck"
+        },
+        {
+          "name": "rusty",
+          "slug": "rusty",
+          "uri": "https://api.sketchfab.com/v3/tags/rusty"
+        },
+        {
+          "name": "way",
+          "slug": "way",
+          "uri": "https://api.sketchfab.com/v3/tags/way"
+        },
+        {
+          "name": "survival",
+          "slug": "survival",
+          "uri": "https://api.sketchfab.com/v3/tags/survival"
+        },
+        {
+          "name": "dirty",
+          "slug": "dirty",
+          "uri": "https://api.sketchfab.com/v3/tags/dirty"
+        },
+        {
+          "name": "4k",
+          "slug": "4k",
+          "uri": "https://api.sketchfab.com/v3/tags/4k"
+        },
+        {
+          "name": "old",
+          "slug": "old",
+          "uri": "https://api.sketchfab.com/v3/tags/old"
+        },
+        {
+          "name": "wrecked",
+          "slug": "wrecked",
+          "uri": "https://api.sketchfab.com/v3/tags/wrecked"
+        },
+        {
+          "name": "crashed",
+          "slug": "crashed",
+          "uri": "https://api.sketchfab.com/v3/tags/crashed"
+        },
+        {
+          "name": "smashed",
+          "slug": "smashed",
+          "uri": "https://api.sketchfab.com/v3/tags/smashed"
+        },
+        {
+          "name": "4ktextures",
+          "slug": "4ktextures",
+          "uri": "https://api.sketchfab.com/v3/tags/4ktextures"
+        },
+        {
+          "name": "autobahn",
+          "slug": "autobahn",
+          "uri": "https://api.sketchfab.com/v3/tags/autobahn"
+        },
+        {
+          "name": "abondoned",
+          "slug": "abondoned",
+          "uri": "https://api.sketchfab.com/v3/tags/abondoned"
+        },
+        {
+          "name": "vehicle",
+          "slug": "vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+        },
+        {
+          "name": "lowpoly",
+          "slug": "lowpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpoly"
+        },
+        {
+          "name": "gameasset",
+          "slug": "gameasset",
+          "uri": "https://api.sketchfab.com/v3/tags/gameasset"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "gameready",
+          "slug": "gameready",
+          "uri": "https://api.sketchfab.com/v3/tags/gameready"
+        },
+        {
+          "name": "wrecked-car",
+          "slug": "wrecked-car",
+          "uri": "https://api.sketchfab.com/v3/tags/wrecked-car"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "cultural-heritage-history"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "842b930def9f43f2b56741d6bb5e6b90",
+            "size": 332098,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/66ef51a84c9843dda53bf0b4b9020011/thumbnails/b70e75af19174dd49ff31f21a45df5d6/eb780eaf440f429ea5ed65937003fa4d.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "c00a44a54d264af3bbad0d75f5fb2c22",
+            "size": 73350,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/66ef51a84c9843dda53bf0b4b9020011/thumbnails/b70e75af19174dd49ff31f21a45df5d6/ea60f2cbc4144b2dbb98f6550d8ca8ac.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "e6c775a6d49d47d0acc17808daa42cd6",
+            "size": 35738,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/66ef51a84c9843dda53bf0b4b9020011/thumbnails/b70e75af19174dd49ff31f21a45df5d6/fcb36db9a2ac4639a87f2df8a965adff.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "208cda31504741b08bd82d3f547a1758",
+            "size": 5796,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/66ef51a84c9843dda53bf0b4b9020011/thumbnails/b70e75af19174dd49ff31f21a45df5d6/45e2ae63949641af820738b0e08e9580.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "70464ab41e8f441b8e22988c0d4ef5ff",
+            "size": 1156,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/66ef51a84c9843dda53bf0b4b9020011/thumbnails/b70e75af19174dd49ff31f21a45df5d6/9a6fa13bad21457cb77261e49c24cae2.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "3744e0f32795426d9c0827ba3aa65cf5",
+        "username": "rashad-brahimli",
+        "displayName": "Rashad Ibrahimli",
+        "profileUrl": "https://sketchfab.com/rashad-brahimli",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/b305ee38c92f4ca6b51488bd5020c2b4",
+          "images": [
+            {
+              "size": 881,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/b305ee38c92f4ca6b51488bd5020c2b4/44612c93522945ccb66510531444dd38.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1114,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/b305ee38c92f4ca6b51488bd5020c2b4/66d12fc3f3a443139a3c21508ef035d5.jpeg",
+              "height": 48
+            },
+            {
+              "size": 1839,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/b305ee38c92f4ca6b51488bd5020c2b4/5dfdbc1350b34930bf1dc1427840be34.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2060,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/b305ee38c92f4ca6b51488bd5020c2b4/0b31a80fbcf24760ae87e1cef05f7fb7.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/3744e0f32795426d9c0827ba3aa65cf5"
+      },
+      "description": "Lowpoly Smashed SUV Car with Interior with 4K Textures for free use. Doors, trunk and hood can be opened. Bumpers, steering wheel and wheels are separated.\n\nMade in Blender, Painted in Substance Painter.",
+      "faceCount": 8334,
+      "createdAt": "2024-11-25T20:04:31.809541",
+      "vertexCount": 4367,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 3,
+          "size": 51300680,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 8330,
+          "vertexCount": 9088
+        },
+        "gltf": {
+          "textureCount": 3,
+          "size": 51067527,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 8330,
+          "vertexCount": 9088
+        },
+        "source": {
+          "textureCount": null,
+          "size": 173352566,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 5761601,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/6a2169dafc254f399387a679305bb1bf",
+      "uid": "6a2169dafc254f399387a679305bb1bf",
+      "name": "Abandoned Generic Sedan 1 - Game Ready",
+      "staffpickedAt": null,
+      "viewCount": 12851,
+      "likeCount": 391,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-6a2169dafc254f399387a679305bb1bf",
+      "embedUrl": "https://sketchfab.com/models/6a2169dafc254f399387a679305bb1bf/embed",
+      "commentCount": 8,
+      "isDownloadable": true,
+      "publishedAt": "2024-12-08T21:42:45.786628",
+      "tags": [
+        {
+          "name": "automobile",
+          "slug": "automobile",
+          "uri": "https://api.sketchfab.com/v3/tags/automobile"
+        },
+        {
+          "name": "abandoned",
+          "slug": "abandoned",
+          "uri": "https://api.sketchfab.com/v3/tags/abandoned"
+        },
+        {
+          "name": "forest",
+          "slug": "forest",
+          "uri": "https://api.sketchfab.com/v3/tags/forest"
+        },
+        {
+          "name": "apocalyptic",
+          "slug": "apocalyptic",
+          "uri": "https://api.sketchfab.com/v3/tags/apocalyptic"
+        },
+        {
+          "name": "sedan",
+          "slug": "sedan",
+          "uri": "https://api.sketchfab.com/v3/tags/sedan"
+        },
+        {
+          "name": "rust",
+          "slug": "rust",
+          "uri": "https://api.sketchfab.com/v3/tags/rust"
+        },
+        {
+          "name": "traffic",
+          "slug": "traffic",
+          "uri": "https://api.sketchfab.com/v3/tags/traffic"
+        },
+        {
+          "name": "prop",
+          "slug": "prop",
+          "uri": "https://api.sketchfab.com/v3/tags/prop"
+        },
+        {
+          "name": "road",
+          "slug": "road",
+          "uri": "https://api.sketchfab.com/v3/tags/road"
+        },
+        {
+          "name": "unreal",
+          "slug": "unreal",
+          "uri": "https://api.sketchfab.com/v3/tags/unreal"
+        },
+        {
+          "name": "gameprop",
+          "slug": "gameprop",
+          "uri": "https://api.sketchfab.com/v3/tags/gameprop"
+        },
+        {
+          "name": "generic",
+          "slug": "generic",
+          "uri": "https://api.sketchfab.com/v3/tags/generic"
+        },
+        {
+          "name": "wreck",
+          "slug": "wreck",
+          "uri": "https://api.sketchfab.com/v3/tags/wreck"
+        },
+        {
+          "name": "rusty",
+          "slug": "rusty",
+          "uri": "https://api.sketchfab.com/v3/tags/rusty"
+        },
+        {
+          "name": "way",
+          "slug": "way",
+          "uri": "https://api.sketchfab.com/v3/tags/way"
+        },
+        {
+          "name": "survival",
+          "slug": "survival",
+          "uri": "https://api.sketchfab.com/v3/tags/survival"
+        },
+        {
+          "name": "audio",
+          "slug": "audio",
+          "uri": "https://api.sketchfab.com/v3/tags/audio"
+        },
+        {
+          "name": "dirty",
+          "slug": "dirty",
+          "uri": "https://api.sketchfab.com/v3/tags/dirty"
+        },
+        {
+          "name": "4k",
+          "slug": "4k",
+          "uri": "https://api.sketchfab.com/v3/tags/4k"
+        },
+        {
+          "name": "old",
+          "slug": "old",
+          "uri": "https://api.sketchfab.com/v3/tags/old"
+        },
+        {
+          "name": "moss",
+          "slug": "moss",
+          "uri": "https://api.sketchfab.com/v3/tags/moss"
+        },
+        {
+          "name": "mossy",
+          "slug": "mossy",
+          "uri": "https://api.sketchfab.com/v3/tags/mossy"
+        },
+        {
+          "name": "wrecked",
+          "slug": "wrecked",
+          "uri": "https://api.sketchfab.com/v3/tags/wrecked"
+        },
+        {
+          "name": "crashed",
+          "slug": "crashed",
+          "uri": "https://api.sketchfab.com/v3/tags/crashed"
+        },
+        {
+          "name": "smashed",
+          "slug": "smashed",
+          "uri": "https://api.sketchfab.com/v3/tags/smashed"
+        },
+        {
+          "name": "4ktextures",
+          "slug": "4ktextures",
+          "uri": "https://api.sketchfab.com/v3/tags/4ktextures"
+        },
+        {
+          "name": "autobahn",
+          "slug": "autobahn",
+          "uri": "https://api.sketchfab.com/v3/tags/autobahn"
+        },
+        {
+          "name": "genericvehicle",
+          "slug": "genericvehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/genericvehicle"
+        },
+        {
+          "name": "abondoned",
+          "slug": "abondoned",
+          "uri": "https://api.sketchfab.com/v3/tags/abondoned"
+        },
+        {
+          "name": "vehicle",
+          "slug": "vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+        },
+        {
+          "name": "lowpoly",
+          "slug": "lowpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpoly"
+        },
+        {
+          "name": "gameasset",
+          "slug": "gameasset",
+          "uri": "https://api.sketchfab.com/v3/tags/gameasset"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "interior",
+          "slug": "interior",
+          "uri": "https://api.sketchfab.com/v3/tags/interior"
+        },
+        {
+          "name": "gameready",
+          "slug": "gameready",
+          "uri": "https://api.sketchfab.com/v3/tags/gameready"
+        },
+        {
+          "name": "carinterior",
+          "slug": "carinterior",
+          "uri": "https://api.sketchfab.com/v3/tags/carinterior"
+        },
+        {
+          "name": "wrecked-car",
+          "slug": "wrecked-car",
+          "uri": "https://api.sketchfab.com/v3/tags/wrecked-car"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "786d76b9980a4a03abdc1673ac7c2a27",
+            "size": 338157,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/6a2169dafc254f399387a679305bb1bf/thumbnails/f5f1ccdf5f9c4d0cbfeda3d809b43364/c809064354e24496832d1127ce76fa3b.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "6f4f5436623148ceaf73c11f57eafab1",
+            "size": 76116,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/6a2169dafc254f399387a679305bb1bf/thumbnails/f5f1ccdf5f9c4d0cbfeda3d809b43364/64b778dfffe54218b01981f26bdebcad.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "8ebeaa1df3d746b09911f2645fe5b9f6",
+            "size": 37681,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/6a2169dafc254f399387a679305bb1bf/thumbnails/f5f1ccdf5f9c4d0cbfeda3d809b43364/539267166c5f4d60a790e0d6d67fd0a8.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "f0888d5c12ef443ab2a478e3ef71b81e",
+            "size": 6107,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/6a2169dafc254f399387a679305bb1bf/thumbnails/f5f1ccdf5f9c4d0cbfeda3d809b43364/2729a4f9242247b6a12b4deff5344d42.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "6d801a78e2874a2a8def546667be36be",
+            "size": 1171,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/6a2169dafc254f399387a679305bb1bf/thumbnails/f5f1ccdf5f9c4d0cbfeda3d809b43364/f011a1faf3144d45b12db4f5c2b7ca9b.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "3744e0f32795426d9c0827ba3aa65cf5",
+        "username": "rashad-brahimli",
+        "displayName": "Rashad Ibrahimli",
+        "profileUrl": "https://sketchfab.com/rashad-brahimli",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/b305ee38c92f4ca6b51488bd5020c2b4",
+          "images": [
+            {
+              "size": 881,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/b305ee38c92f4ca6b51488bd5020c2b4/44612c93522945ccb66510531444dd38.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1114,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/b305ee38c92f4ca6b51488bd5020c2b4/66d12fc3f3a443139a3c21508ef035d5.jpeg",
+              "height": 48
+            },
+            {
+              "size": 1839,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/b305ee38c92f4ca6b51488bd5020c2b4/5dfdbc1350b34930bf1dc1427840be34.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2060,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/b305ee38c92f4ca6b51488bd5020c2b4/0b31a80fbcf24760ae87e1cef05f7fb7.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/3744e0f32795426d9c0827ba3aa65cf5"
+      },
+      "description": "Lowpoly Generic Sedan with Interior for free use. Doors, trunk and hood can be opened. Bumpers, steering wheel and wheels are separated. The car has been left in the forest for a long time, so it has rusted and become wrecked. Additionally, the front right wheel is missing, causing it to lean slightly to one side.\n\nMade in Blender, Painted in Substance Painter",
+      "faceCount": 9597,
+      "createdAt": "2024-12-08T21:30:11.254532",
+      "vertexCount": 5289,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 3,
+          "size": 11601908,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 9591,
+          "vertexCount": 9500
+        },
+        "gltf": {
+          "textureCount": 3,
+          "size": 11316808,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 9591,
+          "vertexCount": 9500
+        },
+        "source": {
+          "textureCount": null,
+          "size": 36002636,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 4131480,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/3520cc4960d14ba98c886bb1ed619877",
+      "uid": "3520cc4960d14ba98c886bb1ed619877",
+      "name": "Soviet Military Forklift",
+      "staffpickedAt": null,
+      "viewCount": 7614,
+      "likeCount": 325,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-3520cc4960d14ba98c886bb1ed619877",
+      "embedUrl": "https://sketchfab.com/models/3520cc4960d14ba98c886bb1ed619877/embed",
+      "commentCount": 3,
+      "isDownloadable": true,
+      "publishedAt": "2016-03-11T17:19:32.803194",
+      "tags": [
+        {
+          "name": "truck",
+          "slug": "truck",
+          "uri": "https://api.sketchfab.com/v3/tags/truck"
+        },
+        {
+          "name": "soviet",
+          "slug": "soviet",
+          "uri": "https://api.sketchfab.com/v3/tags/soviet"
+        },
+        {
+          "name": "forklift",
+          "slug": "forklift",
+          "uri": "https://api.sketchfab.com/v3/tags/forklift"
+        },
+        {
+          "name": "rusty",
+          "slug": "rusty",
+          "uri": "https://api.sketchfab.com/v3/tags/rusty"
+        },
+        {
+          "name": "russian",
+          "slug": "russian",
+          "uri": "https://api.sketchfab.com/v3/tags/russian"
+        },
+        {
+          "name": "damaged",
+          "slug": "damaged",
+          "uri": "https://api.sketchfab.com/v3/tags/damaged"
+        },
+        {
+          "name": "grunge",
+          "slug": "grunge",
+          "uri": "https://api.sketchfab.com/v3/tags/grunge"
+        },
+        {
+          "name": "cargo",
+          "slug": "cargo",
+          "uri": "https://api.sketchfab.com/v3/tags/cargo"
+        },
+        {
+          "name": "wrecked",
+          "slug": "wrecked",
+          "uri": "https://api.sketchfab.com/v3/tags/wrecked"
+        },
+        {
+          "name": "substancepainter",
+          "slug": "substancepainter",
+          "uri": "https://api.sketchfab.com/v3/tags/substancepainter"
+        },
+        {
+          "name": "vehicle",
+          "slug": "vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+        },
+        {
+          "name": "pbr",
+          "slug": "pbr",
+          "uri": "https://api.sketchfab.com/v3/tags/pbr"
+        },
+        {
+          "name": "lowpoly",
+          "slug": "lowpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpoly"
+        },
+        {
+          "name": "military",
+          "slug": "military",
+          "uri": "https://api.sketchfab.com/v3/tags/military"
+        },
+        {
+          "name": "industrial",
+          "slug": "industrial",
+          "uri": "https://api.sketchfab.com/v3/tags/industrial"
+        },
+        {
+          "name": "noai",
+          "slug": "noai",
+          "uri": "https://api.sketchfab.com/v3/tags/noai"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "d10197837bd046baa56f44e1b7a6523f",
+            "size": 22354,
+            "width": 640,
+            "url": "https://media.sketchfab.com/models/3520cc4960d14ba98c886bb1ed619877/thumbnails/881014ea1a16475c84a7efad0e2d781e/640x360.jpeg",
+            "height": 360
+          },
+          {
+            "uid": "6dbd4f13ca104c84a5419ec4bba44093",
+            "size": 6826,
+            "width": 200,
+            "url": "https://media.sketchfab.com/models/3520cc4960d14ba98c886bb1ed619877/thumbnails/881014ea1a16475c84a7efad0e2d781e/200x200.jpeg",
+            "height": 200
+          },
+          {
+            "uid": "1563558df0674a2e9ff64c2a14a21654",
+            "size": 1055,
+            "width": 50,
+            "url": "https://media.sketchfab.com/models/3520cc4960d14ba98c886bb1ed619877/thumbnails/881014ea1a16475c84a7efad0e2d781e/50x50.jpeg",
+            "height": 50
+          },
+          {
+            "uid": "a4ddcb746a1042bb8b04b62369d56f6f",
+            "size": 2464,
+            "width": 100,
+            "url": "https://media.sketchfab.com/models/3520cc4960d14ba98c886bb1ed619877/thumbnails/881014ea1a16475c84a7efad0e2d781e/100x100.jpeg",
+            "height": 100
+          },
+          {
+            "uid": "22f55f57651148eda4415e1542ee1481",
+            "size": 12026,
+            "width": 448,
+            "url": "https://media.sketchfab.com/models/3520cc4960d14ba98c886bb1ed619877/thumbnails/881014ea1a16475c84a7efad0e2d781e/448x252.jpeg",
+            "height": 252
+          },
+          {
+            "uid": "2480f613bb9c435ea1dbc2801aeba8aa",
+            "size": 39551,
+            "width": 864,
+            "url": "https://media.sketchfab.com/models/3520cc4960d14ba98c886bb1ed619877/thumbnails/881014ea1a16475c84a7efad0e2d781e/864x486.jpeg",
+            "height": 486
+          },
+          {
+            "uid": "fa349f170d9646a280d976912ef74c1c",
+            "size": 55602,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/3520cc4960d14ba98c886bb1ed619877/thumbnails/881014ea1a16475c84a7efad0e2d781e/1024x576.jpeg",
+            "height": 576
+          }
+        ]
+      },
+      "user": {
+        "uid": "5b06ae86be194a68a962e55c51757915",
+        "username": "kryik1023",
+        "displayName": "Renafox",
+        "profileUrl": "https://sketchfab.com/kryik1023",
+        "account": "prem",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/e774711c6a8a485d9cbd75f64d49f977",
+          "images": [
+            {
+              "size": 2281,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/e774711c6a8a485d9cbd75f64d49f977/142d7bd3b371421a8384eb1fbf2a8f88.png",
+              "height": 32
+            },
+            {
+              "size": 4132,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/e774711c6a8a485d9cbd75f64d49f977/8acef796e21c448ebabc470b1d250ba6.png",
+              "height": 48
+            },
+            {
+              "size": 8956,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/e774711c6a8a485d9cbd75f64d49f977/66aa6369461448b4a5eaeb452b549831.png",
+              "height": 90
+            },
+            {
+              "size": 10321,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/e774711c6a8a485d9cbd75f64d49f977/5224be636a394b8183a874792f86b297.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/5b06ae86be194a68a962e55c51757915"
+      },
+      "description": "Lowpoly bent-up derelict forklift. Not a whole lot I can say for this one. Enjoy it, regardless.\n\nModeled in 3DS Max 2012, and Textured in Substance Painter.",
+      "faceCount": 3412,
+      "createdAt": "2016-03-11T17:09:04.504462",
+      "vertexCount": 1841,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 5,
+          "size": 10603648,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 3412,
+          "vertexCount": 3863
+        },
+        "gltf": {
+          "textureCount": 5,
+          "size": 10481284,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 3412,
+          "vertexCount": 3863
+        },
+        "source": {
+          "textureCount": null,
+          "size": 14511590,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 7763149,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "bbfe3f7dbcdd4122b966b85b9786a989",
+        "label": "CC Attribution-NonCommercial"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/1e9afcb999814bcfa2ea27b22df14059",
+      "uid": "1e9afcb999814bcfa2ea27b22df14059",
+      "name": "Crashed Abandoned Truck - Game Ready",
+      "staffpickedAt": null,
+      "viewCount": 8668,
+      "likeCount": 299,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-1e9afcb999814bcfa2ea27b22df14059",
+      "embedUrl": "https://sketchfab.com/models/1e9afcb999814bcfa2ea27b22df14059/embed",
+      "commentCount": 5,
+      "isDownloadable": true,
+      "publishedAt": "2024-11-29T21:32:19.174889",
+      "tags": [
+        {
+          "name": "truck",
+          "slug": "truck",
+          "uri": "https://api.sketchfab.com/v3/tags/truck"
+        },
+        {
+          "name": "abandoned",
+          "slug": "abandoned",
+          "uri": "https://api.sketchfab.com/v3/tags/abandoned"
+        },
+        {
+          "name": "ford",
+          "slug": "ford",
+          "uri": "https://api.sketchfab.com/v3/tags/ford"
+        },
+        {
+          "name": "suv",
+          "slug": "suv",
+          "uri": "https://api.sketchfab.com/v3/tags/suv"
+        },
+        {
+          "name": "apocalyptic",
+          "slug": "apocalyptic",
+          "uri": "https://api.sketchfab.com/v3/tags/apocalyptic"
+        },
+        {
+          "name": "prop",
+          "slug": "prop",
+          "uri": "https://api.sketchfab.com/v3/tags/prop"
+        },
+        {
+          "name": "jeep",
+          "slug": "jeep",
+          "uri": "https://api.sketchfab.com/v3/tags/jeep"
+        },
+        {
+          "name": "wreck",
+          "slug": "wreck",
+          "uri": "https://api.sketchfab.com/v3/tags/wreck"
+        },
+        {
+          "name": "rusty",
+          "slug": "rusty",
+          "uri": "https://api.sketchfab.com/v3/tags/rusty"
+        },
+        {
+          "name": "survival",
+          "slug": "survival",
+          "uri": "https://api.sketchfab.com/v3/tags/survival"
+        },
+        {
+          "name": "dirty",
+          "slug": "dirty",
+          "uri": "https://api.sketchfab.com/v3/tags/dirty"
+        },
+        {
+          "name": "4k",
+          "slug": "4k",
+          "uri": "https://api.sketchfab.com/v3/tags/4k"
+        },
+        {
+          "name": "old",
+          "slug": "old",
+          "uri": "https://api.sketchfab.com/v3/tags/old"
+        },
+        {
+          "name": "wrecked",
+          "slug": "wrecked",
+          "uri": "https://api.sketchfab.com/v3/tags/wrecked"
+        },
+        {
+          "name": "accident",
+          "slug": "accident",
+          "uri": "https://api.sketchfab.com/v3/tags/accident"
+        },
+        {
+          "name": "crashed",
+          "slug": "crashed",
+          "uri": "https://api.sketchfab.com/v3/tags/crashed"
+        },
+        {
+          "name": "smashed",
+          "slug": "smashed",
+          "uri": "https://api.sketchfab.com/v3/tags/smashed"
+        },
+        {
+          "name": "4ktextures",
+          "slug": "4ktextures",
+          "uri": "https://api.sketchfab.com/v3/tags/4ktextures"
+        },
+        {
+          "name": "american-car",
+          "slug": "american-car",
+          "uri": "https://api.sketchfab.com/v3/tags/american-car"
+        },
+        {
+          "name": "abondoned",
+          "slug": "abondoned",
+          "uri": "https://api.sketchfab.com/v3/tags/abondoned"
+        },
+        {
+          "name": "vehicle",
+          "slug": "vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+        },
+        {
+          "name": "lowpoly",
+          "slug": "lowpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpoly"
+        },
+        {
+          "name": "gameasset",
+          "slug": "gameasset",
+          "uri": "https://api.sketchfab.com/v3/tags/gameasset"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "interior",
+          "slug": "interior",
+          "uri": "https://api.sketchfab.com/v3/tags/interior"
+        },
+        {
+          "name": "gameready",
+          "slug": "gameready",
+          "uri": "https://api.sketchfab.com/v3/tags/gameready"
+        },
+        {
+          "name": "carinterior",
+          "slug": "carinterior",
+          "uri": "https://api.sketchfab.com/v3/tags/carinterior"
+        },
+        {
+          "name": "wrecked-car",
+          "slug": "wrecked-car",
+          "uri": "https://api.sketchfab.com/v3/tags/wrecked-car"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "cultural-heritage-history"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "c1cd0a16451b432a94cf6720276d9bce",
+            "size": 348763,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/1e9afcb999814bcfa2ea27b22df14059/thumbnails/a4249af433654d0baa8efc2e7fc18255/8df741fc4ffc4c31a6083c0ea7b40c0a.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "758053c4d75f4d26ae62636dcdf19cf1",
+            "size": 79192,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/1e9afcb999814bcfa2ea27b22df14059/thumbnails/a4249af433654d0baa8efc2e7fc18255/70a23182dbd2460a8a161a1d09c361cf.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "4d7162822c0a43f898e7dc6bebbc8e8a",
+            "size": 38857,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/1e9afcb999814bcfa2ea27b22df14059/thumbnails/a4249af433654d0baa8efc2e7fc18255/595edbaf89634ea196c098ab1ee86ba4.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "4ac60cd9bf5a47208216cd2755cc0a20",
+            "size": 6468,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/1e9afcb999814bcfa2ea27b22df14059/thumbnails/a4249af433654d0baa8efc2e7fc18255/3dcd77160b1544d7ace75cc876e0263f.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "ea4d615adbdf44819c049cf11c26cded",
+            "size": 1221,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/1e9afcb999814bcfa2ea27b22df14059/thumbnails/a4249af433654d0baa8efc2e7fc18255/8c3364efe5b7432ebefc8e64fa9fd4f8.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "3744e0f32795426d9c0827ba3aa65cf5",
+        "username": "rashad-brahimli",
+        "displayName": "Rashad Ibrahimli",
+        "profileUrl": "https://sketchfab.com/rashad-brahimli",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/b305ee38c92f4ca6b51488bd5020c2b4",
+          "images": [
+            {
+              "size": 881,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/b305ee38c92f4ca6b51488bd5020c2b4/44612c93522945ccb66510531444dd38.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1114,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/b305ee38c92f4ca6b51488bd5020c2b4/66d12fc3f3a443139a3c21508ef035d5.jpeg",
+              "height": 48
+            },
+            {
+              "size": 1839,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/b305ee38c92f4ca6b51488bd5020c2b4/5dfdbc1350b34930bf1dc1427840be34.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2060,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/b305ee38c92f4ca6b51488bd5020c2b4/0b31a80fbcf24760ae87e1cef05f7fb7.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/3744e0f32795426d9c0827ba3aa65cf5"
+      },
+      "description": "Lowpoly Crashed American Truck with Interior with 4K Textures for free use. Doors, trunk and hood can be opened. Bumpers, headlights, steering wheel and wheels are separated.\n\nMade in Blender, Painted in Substance Painter\n\n[Accident-Free Version in Sketchfab](https://sketchfab.com/3d-models/rusty-abondoned-truck-with-interior-game-ready-68f715c39c07464db59e099bb8dc2d4e)",
+      "faceCount": 9362,
+      "createdAt": "2024-11-29T21:15:39.318960",
+      "vertexCount": 5216,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 3,
+          "size": 35432652,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 9360,
+          "vertexCount": 11834
+        },
+        "gltf": {
+          "textureCount": 3,
+          "size": 34838068,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 9360,
+          "vertexCount": 11834
+        },
+        "source": {
+          "textureCount": null,
+          "size": 151932393,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 3415636,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/db2df46c49f9441286c84c66208ef7ac",
+      "uid": "db2df46c49f9441286c84c66208ef7ac",
+      "name": "Abandoned Generic Sedan 2 - Game Ready",
+      "staffpickedAt": null,
+      "viewCount": 8236,
+      "likeCount": 291,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-db2df46c49f9441286c84c66208ef7ac",
+      "embedUrl": "https://sketchfab.com/models/db2df46c49f9441286c84c66208ef7ac/embed",
+      "commentCount": 10,
+      "isDownloadable": true,
+      "publishedAt": "2024-12-08T21:47:20.498952",
+      "tags": [
+        {
+          "name": "automobile",
+          "slug": "automobile",
+          "uri": "https://api.sketchfab.com/v3/tags/automobile"
+        },
+        {
+          "name": "abandoned",
+          "slug": "abandoned",
+          "uri": "https://api.sketchfab.com/v3/tags/abandoned"
+        },
+        {
+          "name": "forest",
+          "slug": "forest",
+          "uri": "https://api.sketchfab.com/v3/tags/forest"
+        },
+        {
+          "name": "apocalyptic",
+          "slug": "apocalyptic",
+          "uri": "https://api.sketchfab.com/v3/tags/apocalyptic"
+        },
+        {
+          "name": "sedan",
+          "slug": "sedan",
+          "uri": "https://api.sketchfab.com/v3/tags/sedan"
+        },
+        {
+          "name": "rust",
+          "slug": "rust",
+          "uri": "https://api.sketchfab.com/v3/tags/rust"
+        },
+        {
+          "name": "traffic",
+          "slug": "traffic",
+          "uri": "https://api.sketchfab.com/v3/tags/traffic"
+        },
+        {
+          "name": "prop",
+          "slug": "prop",
+          "uri": "https://api.sketchfab.com/v3/tags/prop"
+        },
+        {
+          "name": "road",
+          "slug": "road",
+          "uri": "https://api.sketchfab.com/v3/tags/road"
+        },
+        {
+          "name": "unreal",
+          "slug": "unreal",
+          "uri": "https://api.sketchfab.com/v3/tags/unreal"
+        },
+        {
+          "name": "gameprop",
+          "slug": "gameprop",
+          "uri": "https://api.sketchfab.com/v3/tags/gameprop"
+        },
+        {
+          "name": "generic",
+          "slug": "generic",
+          "uri": "https://api.sketchfab.com/v3/tags/generic"
+        },
+        {
+          "name": "wreck",
+          "slug": "wreck",
+          "uri": "https://api.sketchfab.com/v3/tags/wreck"
+        },
+        {
+          "name": "rusty",
+          "slug": "rusty",
+          "uri": "https://api.sketchfab.com/v3/tags/rusty"
+        },
+        {
+          "name": "way",
+          "slug": "way",
+          "uri": "https://api.sketchfab.com/v3/tags/way"
+        },
+        {
+          "name": "survival",
+          "slug": "survival",
+          "uri": "https://api.sketchfab.com/v3/tags/survival"
+        },
+        {
+          "name": "audio",
+          "slug": "audio",
+          "uri": "https://api.sketchfab.com/v3/tags/audio"
+        },
+        {
+          "name": "dirty",
+          "slug": "dirty",
+          "uri": "https://api.sketchfab.com/v3/tags/dirty"
+        },
+        {
+          "name": "4k",
+          "slug": "4k",
+          "uri": "https://api.sketchfab.com/v3/tags/4k"
+        },
+        {
+          "name": "old",
+          "slug": "old",
+          "uri": "https://api.sketchfab.com/v3/tags/old"
+        },
+        {
+          "name": "moss",
+          "slug": "moss",
+          "uri": "https://api.sketchfab.com/v3/tags/moss"
+        },
+        {
+          "name": "mossy",
+          "slug": "mossy",
+          "uri": "https://api.sketchfab.com/v3/tags/mossy"
+        },
+        {
+          "name": "wrecked",
+          "slug": "wrecked",
+          "uri": "https://api.sketchfab.com/v3/tags/wrecked"
+        },
+        {
+          "name": "crashed",
+          "slug": "crashed",
+          "uri": "https://api.sketchfab.com/v3/tags/crashed"
+        },
+        {
+          "name": "smashed",
+          "slug": "smashed",
+          "uri": "https://api.sketchfab.com/v3/tags/smashed"
+        },
+        {
+          "name": "4ktextures",
+          "slug": "4ktextures",
+          "uri": "https://api.sketchfab.com/v3/tags/4ktextures"
+        },
+        {
+          "name": "autobahn",
+          "slug": "autobahn",
+          "uri": "https://api.sketchfab.com/v3/tags/autobahn"
+        },
+        {
+          "name": "genericvehicle",
+          "slug": "genericvehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/genericvehicle"
+        },
+        {
+          "name": "abondoned",
+          "slug": "abondoned",
+          "uri": "https://api.sketchfab.com/v3/tags/abondoned"
+        },
+        {
+          "name": "vehicle",
+          "slug": "vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+        },
+        {
+          "name": "lowpoly",
+          "slug": "lowpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpoly"
+        },
+        {
+          "name": "gameasset",
+          "slug": "gameasset",
+          "uri": "https://api.sketchfab.com/v3/tags/gameasset"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "interior",
+          "slug": "interior",
+          "uri": "https://api.sketchfab.com/v3/tags/interior"
+        },
+        {
+          "name": "gameready",
+          "slug": "gameready",
+          "uri": "https://api.sketchfab.com/v3/tags/gameready"
+        },
+        {
+          "name": "carinterior",
+          "slug": "carinterior",
+          "uri": "https://api.sketchfab.com/v3/tags/carinterior"
+        },
+        {
+          "name": "wrecked-car",
+          "slug": "wrecked-car",
+          "uri": "https://api.sketchfab.com/v3/tags/wrecked-car"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "a82c2975d66c4d40b57b48bde3b690d6",
+            "size": 308485,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/db2df46c49f9441286c84c66208ef7ac/thumbnails/a23e1e660aeb4ec587d3951e0cd30658/289ac5d8880e49dab353a6c51d4ad275.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "2a2890fa29984e9993cd1dc00da7029b",
+            "size": 82482,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/db2df46c49f9441286c84c66208ef7ac/thumbnails/a23e1e660aeb4ec587d3951e0cd30658/42bd97ce0c834537a4cb9c7c99b6b0ac.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "26a5ece2666f48c48e43c5e00556db03",
+            "size": 40346,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/db2df46c49f9441286c84c66208ef7ac/thumbnails/a23e1e660aeb4ec587d3951e0cd30658/0756b4f55a464231bc3a77a2dde77d9b.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "07eb0de31f9942df9819356be7451087",
+            "size": 6186,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/db2df46c49f9441286c84c66208ef7ac/thumbnails/a23e1e660aeb4ec587d3951e0cd30658/6a03ced0df3d4a478d1115ff4472723b.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "613bcb405c354d0c8c6d4a4b16022094",
+            "size": 1168,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/db2df46c49f9441286c84c66208ef7ac/thumbnails/a23e1e660aeb4ec587d3951e0cd30658/24234412aa184fdcbb179479ca16a523.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "3744e0f32795426d9c0827ba3aa65cf5",
+        "username": "rashad-brahimli",
+        "displayName": "Rashad Ibrahimli",
+        "profileUrl": "https://sketchfab.com/rashad-brahimli",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/b305ee38c92f4ca6b51488bd5020c2b4",
+          "images": [
+            {
+              "size": 881,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/b305ee38c92f4ca6b51488bd5020c2b4/44612c93522945ccb66510531444dd38.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1114,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/b305ee38c92f4ca6b51488bd5020c2b4/66d12fc3f3a443139a3c21508ef035d5.jpeg",
+              "height": 48
+            },
+            {
+              "size": 1839,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/b305ee38c92f4ca6b51488bd5020c2b4/5dfdbc1350b34930bf1dc1427840be34.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2060,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/b305ee38c92f4ca6b51488bd5020c2b4/0b31a80fbcf24760ae87e1cef05f7fb7.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/3744e0f32795426d9c0827ba3aa65cf5"
+      },
+      "description": "Lowpoly Generic Sedan with Interior for free use. Doors, trunk and hood can be opened. Bumpers, steering wheel and wheels are separated.\nThe car has been left in the forest for a long time, so it has rusted and become wrecked. Additionally, all its wheels have been stolen, leaving it abandoned.\n\nModelling referance: [90s Unmarked Police sedan - Low poly model](https://sketchfab.com/3d-models/90s-unmarked-police-sedan-low-poly-model-d604871eee5b4181bb298163b0b675b7), \nPainted in Substance Painter.",
+      "faceCount": 16487,
+      "createdAt": "2024-12-02T20:41:56.124805",
+      "vertexCount": 10497,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 3,
+          "size": 13194420,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 16463,
+          "vertexCount": 18660
+        },
+        "gltf": {
+          "textureCount": 3,
+          "size": 12507247,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 16463,
+          "vertexCount": 18660
+        },
+        "source": {
+          "textureCount": null,
+          "size": 40918916,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 4490502,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/c7d911536e6042b09dda6b47dbeab6b9",
+      "uid": "c7d911536e6042b09dda6b47dbeab6b9",
+      "name": "Xantho Engine Final",
+      "staffpickedAt": null,
+      "viewCount": 4544,
+      "likeCount": 60,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-c7d911536e6042b09dda6b47dbeab6b9",
+      "embedUrl": "https://sketchfab.com/models/c7d911536e6042b09dda6b47dbeab6b9/embed",
+      "commentCount": 3,
+      "isDownloadable": true,
+      "publishedAt": "2017-08-04T23:40:29.442038",
+      "tags": [],
+      "categories": [
+        {
+          "name": "cultural-heritage-history"
+        },
+        {
+          "name": "science-technology"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "4f09448dcf7749ce8c0ed5f3d64e1d04",
+            "size": 79288,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/c7d911536e6042b09dda6b47dbeab6b9/thumbnails/149c9da82f2c41eaa1949bcaaa641579/1024x576.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "4a91785b43994a37baa8381f377883f3",
+            "size": 45054,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/c7d911536e6042b09dda6b47dbeab6b9/thumbnails/149c9da82f2c41eaa1949bcaaa641579/720x405.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "5d9ef4674aba408d81a6a923434d8edd",
+            "size": 9933,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/c7d911536e6042b09dda6b47dbeab6b9/thumbnails/149c9da82f2c41eaa1949bcaaa641579/256x144.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "41257ae21fda4cb9a0a288a4bd3f17f7",
+            "size": 1655,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/c7d911536e6042b09dda6b47dbeab6b9/thumbnails/149c9da82f2c41eaa1949bcaaa641579/64x36.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "e102a6ee9d754ee99cce45dc0d6b036b",
+        "username": "kevin_edw2002",
+        "displayName": "Kevin_edw2002",
+        "profileUrl": "https://sketchfab.com/kevin_edw2002",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/2e1376b88d134a36b007bd6591eb0e93",
+          "images": [
+            {
+              "size": 15365,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/2e1376b88d134a36b007bd6591eb0e93/fee5abb38d0d4583a76e41864a78b1e5.jpeg",
+              "height": 48
+            },
+            {
+              "size": 17560,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/2e1376b88d134a36b007bd6591eb0e93/708eaafb238a414eb11a8d40852d5d6e.jpeg",
+              "height": 90
+            },
+            {
+              "size": 14683,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/2e1376b88d134a36b007bd6591eb0e93/7029afc8bde847098d3569413beba7c8.jpeg",
+              "height": 32
+            },
+            {
+              "size": 18186,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/2e1376b88d134a36b007bd6591eb0e93/6d3e81fc76aa4b5bab791ed71f967eb3.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/e102a6ee9d754ee99cce45dc0d6b036b"
+      },
+      "description": "Model of the horizontal trunk engine recovered from the wreck of SS Xantho (1848-1872).\n\nThe model was constructed primarily in CAD (Rhino3D) and Blender.  Additional elements were generated using structured light (Artec EVA) and laser scanning (NextEngine 2020).",
+      "faceCount": 1862628,
+      "createdAt": "2017-08-04T23:29:54.490909",
+      "vertexCount": 1165582,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 136849484,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 2334198,
+          "vertexCount": 2463983
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 30737977,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 2334198,
+          "vertexCount": 2463983
+        },
+        "source": {
+          "textureCount": null,
+          "size": 66646684,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 64727123,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/e8211c298a1a4f318b77e2e624e560bd",
+      "uid": "e8211c298a1a4f318b77e2e624e560bd",
+      "name": "Wrecked truck that had bad luck",
+      "staffpickedAt": null,
+      "viewCount": 2188,
+      "likeCount": 52,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-e8211c298a1a4f318b77e2e624e560bd",
+      "embedUrl": "https://sketchfab.com/models/e8211c298a1a4f318b77e2e624e560bd/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2025-06-08T09:14:28.112430",
+      "tags": [
+        {
+          "name": "truck",
+          "slug": "truck",
+          "uri": "https://api.sketchfab.com/v3/tags/truck"
+        },
+        {
+          "name": "wreck",
+          "slug": "wreck",
+          "uri": "https://api.sketchfab.com/v3/tags/wreck"
+        },
+        {
+          "name": "scrap",
+          "slug": "scrap",
+          "uri": "https://api.sketchfab.com/v3/tags/scrap"
+        },
+        {
+          "name": "damaged",
+          "slug": "damaged",
+          "uri": "https://api.sketchfab.com/v3/tags/damaged"
+        },
+        {
+          "name": "decay",
+          "slug": "decay",
+          "uri": "https://api.sketchfab.com/v3/tags/decay"
+        },
+        {
+          "name": "wrecked",
+          "slug": "wrecked",
+          "uri": "https://api.sketchfab.com/v3/tags/wrecked"
+        },
+        {
+          "name": "lorry",
+          "slug": "lorry",
+          "uri": "https://api.sketchfab.com/v3/tags/lorry"
+        },
+        {
+          "name": "smashed",
+          "slug": "smashed",
+          "uri": "https://api.sketchfab.com/v3/tags/smashed"
+        },
+        {
+          "name": "freedownload",
+          "slug": "freedownload",
+          "uri": "https://api.sketchfab.com/v3/tags/freedownload"
+        },
+        {
+          "name": "props-assets",
+          "slug": "props-assets",
+          "uri": "https://api.sketchfab.com/v3/tags/props-assets"
+        },
+        {
+          "name": "scrapyard",
+          "slug": "scrapyard",
+          "uri": "https://api.sketchfab.com/v3/tags/scrapyard"
+        },
+        {
+          "name": "freemodel",
+          "slug": "freemodel",
+          "uri": "https://api.sketchfab.com/v3/tags/freemodel"
+        },
+        {
+          "name": "demolished",
+          "slug": "demolished",
+          "uri": "https://api.sketchfab.com/v3/tags/demolished"
+        },
+        {
+          "name": "car-vehicle",
+          "slug": "car-vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/car-vehicle"
+        },
+        {
+          "name": "gameasset",
+          "slug": "gameasset",
+          "uri": "https://api.sketchfab.com/v3/tags/gameasset"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "free",
+          "slug": "free",
+          "uri": "https://api.sketchfab.com/v3/tags/free"
+        },
+        {
+          "name": "gameready",
+          "slug": "gameready",
+          "uri": "https://api.sketchfab.com/v3/tags/gameready"
+        },
+        {
+          "name": "wrecked-car",
+          "slug": "wrecked-car",
+          "uri": "https://api.sketchfab.com/v3/tags/wrecked-car"
+        },
+        {
+          "name": "car-prop",
+          "slug": "car-prop",
+          "uri": "https://api.sketchfab.com/v3/tags/car-prop"
+        },
+        {
+          "name": "wrecked-truck",
+          "slug": "wrecked-truck",
+          "uri": "https://api.sketchfab.com/v3/tags/wrecked-truck"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        },
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "d54655d40abc408c98180675e906c2c5",
+            "size": 475759,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/e8211c298a1a4f318b77e2e624e560bd/thumbnails/00375af58dac4ae3a06cbb95576f1add/97f8285e674f4c7cab6f7b8eeda2cfbe.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "0477d73d3df64368abf07f2100fa4354",
+            "size": 124582,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/e8211c298a1a4f318b77e2e624e560bd/thumbnails/00375af58dac4ae3a06cbb95576f1add/9aa285afe3a74b179d8cad89dd496e7d.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "dc1c02278904437a9bc7dbcaa47958eb",
+            "size": 65778,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/e8211c298a1a4f318b77e2e624e560bd/thumbnails/00375af58dac4ae3a06cbb95576f1add/617365320b994d679d4ca43d635832b9.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "e2c9d788f7a44df3a68c5e61003b666d",
+            "size": 9863,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/e8211c298a1a4f318b77e2e624e560bd/thumbnails/00375af58dac4ae3a06cbb95576f1add/4da428e7480040d09d185f858ca633f1.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "64ded27bea0b4bc19be700bcb1f8ed0c",
+            "size": 1448,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/e8211c298a1a4f318b77e2e624e560bd/thumbnails/00375af58dac4ae3a06cbb95576f1add/8146be563aa24ed1bc659b7bcf3bc309.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "5ae4d1be9adc4706abb9243d5705f85c",
+        "username": "orphanrtg",
+        "displayName": "\u041er\u0440\u043d\u0434\u043f \u042f\u0422G",
+        "profileUrl": "https://sketchfab.com/orphanrtg",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/9563576e3d7d4c4aa454721234d3320f",
+          "images": [
+            {
+              "size": 982,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/9563576e3d7d4c4aa454721234d3320f/98201f72aa8c4788b4bc0126d88ca331.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1184,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/9563576e3d7d4c4aa454721234d3320f/68191577eed34491ad9597cb9e63657f.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2040,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/9563576e3d7d4c4aa454721234d3320f/ffd62d479c97472588af9b999162d04e.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2256,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/9563576e3d7d4c4aa454721234d3320f/daf3e0017da14f8fa86ed4237094fd7b.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/5ae4d1be9adc4706abb9243d5705f85c"
+      },
+      "description": "* Wrecked truck that had bad luck\n* 10x8k texture \n* blooming spring season\n* location : Slovakia\n3d scan made of 296 photos @ Dji Mini 4 Pro",
+      "faceCount": 2790187,
+      "createdAt": "2025-05-09T08:50:07.015719",
+      "vertexCount": 1637705,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 10,
+          "size": 430427492,
+          "type": "glb",
+          "textureMaxResolution": 8192,
+          "faceCount": 2790187,
+          "vertexCount": 2722333
+        },
+        "gltf": {
+          "textureCount": 10,
+          "size": 381566373,
+          "type": "gltf",
+          "textureMaxResolution": 8192,
+          "faceCount": 2790187,
+          "vertexCount": 2722333
+        },
+        "source": {
+          "textureCount": null,
+          "size": 442285338,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 97645768,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/dd6ee450adfc400c91c524e74ed28de9",
+      "uid": "dd6ee450adfc400c91c524e74ed28de9",
+      "name": "Wrecked",
+      "staffpickedAt": null,
+      "viewCount": 967,
+      "likeCount": 51,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-dd6ee450adfc400c91c524e74ed28de9",
+      "embedUrl": "https://sketchfab.com/models/dd6ee450adfc400c91c524e74ed28de9/embed",
+      "commentCount": 1,
+      "isDownloadable": true,
+      "publishedAt": "2017-10-31T18:02:51.421716",
+      "tags": [
+        {
+          "name": "object",
+          "slug": "object",
+          "uri": "https://api.sketchfab.com/v3/tags/object"
+        },
+        {
+          "name": "tree",
+          "slug": "tree",
+          "uri": "https://api.sketchfab.com/v3/tags/tree"
+        },
+        {
+          "name": "wooden",
+          "slug": "wooden",
+          "uri": "https://api.sketchfab.com/v3/tags/wooden"
+        },
+        {
+          "name": "forest",
+          "slug": "forest",
+          "uri": "https://api.sketchfab.com/v3/tags/forest"
+        },
+        {
+          "name": "prop",
+          "slug": "prop",
+          "uri": "https://api.sketchfab.com/v3/tags/prop"
+        },
+        {
+          "name": "reality",
+          "slug": "reality",
+          "uri": "https://api.sketchfab.com/v3/tags/reality"
+        },
+        {
+          "name": "heritage",
+          "slug": "heritage",
+          "uri": "https://api.sketchfab.com/v3/tags/heritage"
+        },
+        {
+          "name": "cz",
+          "slug": "cz",
+          "uri": "https://api.sketchfab.com/v3/tags/cz"
+        },
+        {
+          "name": "hipoly",
+          "slug": "hipoly",
+          "uri": "https://api.sketchfab.com/v3/tags/hipoly"
+        },
+        {
+          "name": "vr",
+          "slug": "vr",
+          "uri": "https://api.sketchfab.com/v3/tags/vr"
+        },
+        {
+          "name": "reference",
+          "slug": "reference",
+          "uri": "https://api.sketchfab.com/v3/tags/reference"
+        },
+        {
+          "name": "trunk",
+          "slug": "trunk",
+          "uri": "https://api.sketchfab.com/v3/tags/trunk"
+        },
+        {
+          "name": "statue",
+          "slug": "statue",
+          "uri": "https://api.sketchfab.com/v3/tags/statue"
+        },
+        {
+          "name": "realistic",
+          "slug": "realistic",
+          "uri": "https://api.sketchfab.com/v3/tags/realistic"
+        },
+        {
+          "name": "real",
+          "slug": "real",
+          "uri": "https://api.sketchfab.com/v3/tags/real"
+        },
+        {
+          "name": "czech",
+          "slug": "czech",
+          "uri": "https://api.sketchfab.com/v3/tags/czech"
+        },
+        {
+          "name": "wrecked",
+          "slug": "wrecked",
+          "uri": "https://api.sketchfab.com/v3/tags/wrecked"
+        },
+        {
+          "name": "place",
+          "slug": "place",
+          "uri": "https://api.sketchfab.com/v3/tags/place"
+        },
+        {
+          "name": "scann3d",
+          "slug": "scann3d",
+          "uri": "https://api.sketchfab.com/v3/tags/scann3d"
+        },
+        {
+          "name": "brno",
+          "slug": "brno",
+          "uri": "https://api.sketchfab.com/v3/tags/brno"
+        },
+        {
+          "name": "location",
+          "slug": "location",
+          "uri": "https://api.sketchfab.com/v3/tags/location"
+        },
+        {
+          "name": "stalk",
+          "slug": "stalk",
+          "uri": "https://api.sketchfab.com/v3/tags/stalk"
+        },
+        {
+          "name": "realitycapture",
+          "slug": "realitycapture",
+          "uri": "https://api.sketchfab.com/v3/tags/realitycapture"
+        },
+        {
+          "name": "render",
+          "slug": "render",
+          "uri": "https://api.sketchfab.com/v3/tags/render"
+        },
+        {
+          "name": "architecture",
+          "slug": "architecture",
+          "uri": "https://api.sketchfab.com/v3/tags/architecture"
+        },
+        {
+          "name": "photogrammetry",
+          "slug": "photogrammetry",
+          "uri": "https://api.sketchfab.com/v3/tags/photogrammetry"
+        },
+        {
+          "name": "asset",
+          "slug": "asset",
+          "uri": "https://api.sketchfab.com/v3/tags/asset"
+        },
+        {
+          "name": "game",
+          "slug": "game",
+          "uri": "https://api.sketchfab.com/v3/tags/game"
+        },
+        {
+          "name": "art",
+          "slug": "art",
+          "uri": "https://api.sketchfab.com/v3/tags/art"
+        },
+        {
+          "name": "texture",
+          "slug": "texture",
+          "uri": "https://api.sketchfab.com/v3/tags/texture"
+        },
+        {
+          "name": "gameart",
+          "slug": "gameart",
+          "uri": "https://api.sketchfab.com/v3/tags/gameart"
+        },
+        {
+          "name": "scan",
+          "slug": "scan",
+          "uri": "https://api.sketchfab.com/v3/tags/scan"
+        },
+        {
+          "name": "wood",
+          "slug": "wood",
+          "uri": "https://api.sketchfab.com/v3/tags/wood"
+        },
+        {
+          "name": "free",
+          "slug": "free",
+          "uri": "https://api.sketchfab.com/v3/tags/free"
+        },
+        {
+          "name": "textured",
+          "slug": "textured",
+          "uri": "https://api.sketchfab.com/v3/tags/textured"
+        },
+        {
+          "name": "sculpture",
+          "slug": "sculpture",
+          "uri": "https://api.sketchfab.com/v3/tags/sculpture"
+        },
+        {
+          "name": "history",
+          "slug": "history",
+          "uri": "https://api.sketchfab.com/v3/tags/history"
+        },
+        {
+          "name": "rendering",
+          "slug": "rendering",
+          "uri": "https://api.sketchfab.com/v3/tags/rendering"
+        }
+      ],
+      "categories": [
+        {
+          "name": "art-abstract"
+        },
+        {
+          "name": "nature-plants"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "31fc16a95122416f805c1b7c341de940",
+            "size": 125842,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/dd6ee450adfc400c91c524e74ed28de9/thumbnails/4eecf76469a24e6196bcf57dcd944ed8/1024x576.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "e3d3c564068842a99e56d0073107d2b1",
+            "size": 67644,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/dd6ee450adfc400c91c524e74ed28de9/thumbnails/4eecf76469a24e6196bcf57dcd944ed8/720x405.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "d202367652214635abdad29606331624",
+            "size": 11142,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/dd6ee450adfc400c91c524e74ed28de9/thumbnails/4eecf76469a24e6196bcf57dcd944ed8/256x144.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "7fcf40d3288242ac99913af662ce4b41",
+            "size": 1590,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/dd6ee450adfc400c91c524e74ed28de9/thumbnails/4eecf76469a24e6196bcf57dcd944ed8/64x36.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "56b017a4f5a94a12b029692e61ec3dab",
+        "username": "3dhdscan",
+        "displayName": "3dhdscan",
+        "profileUrl": "https://sketchfab.com/3dhdscan",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/8a719802f04443328e6f851e04c97f0d",
+          "images": [
+            {
+              "size": 1252,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/8a719802f04443328e6f851e04c97f0d/651d16522ad54854bf2b9401855dae45.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1803,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/8a719802f04443328e6f851e04c97f0d/1e5ad91e53ed4b68b6cebeea44327471.jpeg",
+              "height": 48
+            },
+            {
+              "size": 4066,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/8a719802f04443328e6f851e04c97f0d/6ae506f72563454e9dbc7c4fbc38984d.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4600,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/8a719802f04443328e6f851e04c97f0d/629d3393be2c48a1b6f244a5f661ebbb.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/56b017a4f5a94a12b029692e61ec3dab"
+      },
+      "description": "**Wrecked** - part of the sculpture\n\n![](http://plener.prygl.net/foto/dalsi/ztroskotano1-v.jpg)\n\nAutor: Norbert Maringer\n\nStaffed: 2000 \n\nMaterial: Wood\n\nPlace: Brno dam, Czech Republic\n\nThe work of this Austrian sculptor is sensitively tucked into the dark woods - five coarsely machined sawdust trunks lie between the living trees and crawl like caterpillars.\n\n4k difuse map, normal map, ambient occlusion map...\n\nPhotogrammetry from 543 photos.",
+      "faceCount": 76888,
+      "createdAt": "2017-10-31T14:35:26.059962",
+      "vertexCount": 39079,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 3,
+          "size": 50597024,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 76888,
+          "vertexCount": 44233
+        },
+        "gltf": {
+          "textureCount": 3,
+          "size": 49583692,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 76888,
+          "vertexCount": 44233
+        },
+        "source": {
+          "textureCount": null,
+          "size": 72457239,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 10003082,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/87533e4208a247c9bccee1999c772a12",
+      "uid": "87533e4208a247c9bccee1999c772a12",
+      "name": "Truck wheel with rusty rim",
+      "staffpickedAt": null,
+      "viewCount": 1498,
+      "likeCount": 46,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-87533e4208a247c9bccee1999c772a12",
+      "embedUrl": "https://sketchfab.com/models/87533e4208a247c9bccee1999c772a12/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2024-04-24T08:06:04.924161",
+      "tags": [
+        {
+          "name": "wheel",
+          "slug": "wheel",
+          "uri": "https://api.sketchfab.com/v3/tags/wheel"
+        },
+        {
+          "name": "tire",
+          "slug": "tire",
+          "uri": "https://api.sketchfab.com/v3/tags/tire"
+        },
+        {
+          "name": "sicily",
+          "slug": "sicily",
+          "uri": "https://api.sketchfab.com/v3/tags/sicily"
+        },
+        {
+          "name": "van",
+          "slug": "van",
+          "uri": "https://api.sketchfab.com/v3/tags/van"
+        },
+        {
+          "name": "3d-scan",
+          "slug": "3d-scan",
+          "uri": "https://api.sketchfab.com/v3/tags/3d-scan"
+        },
+        {
+          "name": "rust",
+          "slug": "rust",
+          "uri": "https://api.sketchfab.com/v3/tags/rust"
+        },
+        {
+          "name": "prop",
+          "slug": "prop",
+          "uri": "https://api.sketchfab.com/v3/tags/prop"
+        },
+        {
+          "name": "transport",
+          "slug": "transport",
+          "uri": "https://api.sketchfab.com/v3/tags/transport"
+        },
+        {
+          "name": "road",
+          "slug": "road",
+          "uri": "https://api.sketchfab.com/v3/tags/road"
+        },
+        {
+          "name": "gameprop",
+          "slug": "gameprop",
+          "uri": "https://api.sketchfab.com/v3/tags/gameprop"
+        },
+        {
+          "name": "wreck",
+          "slug": "wreck",
+          "uri": "https://api.sketchfab.com/v3/tags/wreck"
+        },
+        {
+          "name": "rusty",
+          "slug": "rusty",
+          "uri": "https://api.sketchfab.com/v3/tags/rusty"
+        },
+        {
+          "name": "scrap",
+          "slug": "scrap",
+          "uri": "https://api.sketchfab.com/v3/tags/scrap"
+        },
+        {
+          "name": "rough",
+          "slug": "rough",
+          "uri": "https://api.sketchfab.com/v3/tags/rough"
+        },
+        {
+          "name": "debris",
+          "slug": "debris",
+          "uri": "https://api.sketchfab.com/v3/tags/debris"
+        },
+        {
+          "name": "dirty",
+          "slug": "dirty",
+          "uri": "https://api.sketchfab.com/v3/tags/dirty"
+        },
+        {
+          "name": "damaged",
+          "slug": "damaged",
+          "uri": "https://api.sketchfab.com/v3/tags/damaged"
+        },
+        {
+          "name": "grunge",
+          "slug": "grunge",
+          "uri": "https://api.sketchfab.com/v3/tags/grunge"
+        },
+        {
+          "name": "rubble",
+          "slug": "rubble",
+          "uri": "https://api.sketchfab.com/v3/tags/rubble"
+        },
+        {
+          "name": "old",
+          "slug": "old",
+          "uri": "https://api.sketchfab.com/v3/tags/old"
+        },
+        {
+          "name": "decay",
+          "slug": "decay",
+          "uri": "https://api.sketchfab.com/v3/tags/decay"
+        },
+        {
+          "name": "wrecked",
+          "slug": "wrecked",
+          "uri": "https://api.sketchfab.com/v3/tags/wrecked"
+        },
+        {
+          "name": "old-car",
+          "slug": "old-car",
+          "uri": "https://api.sketchfab.com/v3/tags/old-car"
+        },
+        {
+          "name": "downloadable",
+          "slug": "downloadable",
+          "uri": "https://api.sketchfab.com/v3/tags/downloadable"
+        },
+        {
+          "name": "decayed",
+          "slug": "decayed",
+          "uri": "https://api.sketchfab.com/v3/tags/decayed"
+        },
+        {
+          "name": "wreckage",
+          "slug": "wreckage",
+          "uri": "https://api.sketchfab.com/v3/tags/wreckage"
+        },
+        {
+          "name": "corroded",
+          "slug": "corroded",
+          "uri": "https://api.sketchfab.com/v3/tags/corroded"
+        },
+        {
+          "name": "veteran",
+          "slug": "veteran",
+          "uri": "https://api.sketchfab.com/v3/tags/veteran"
+        },
+        {
+          "name": "car-wreck",
+          "slug": "car-wreck",
+          "uri": "https://api.sketchfab.com/v3/tags/car-wreck"
+        },
+        {
+          "name": "rusty-metal",
+          "slug": "rusty-metal",
+          "uri": "https://api.sketchfab.com/v3/tags/rusty-metal"
+        },
+        {
+          "name": "photogrammetry",
+          "slug": "photogrammetry",
+          "uri": "https://api.sketchfab.com/v3/tags/photogrammetry"
+        },
+        {
+          "name": "asset",
+          "slug": "asset",
+          "uri": "https://api.sketchfab.com/v3/tags/asset"
+        },
+        {
+          "name": "vehicle",
+          "slug": "vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+        },
+        {
+          "name": "model",
+          "slug": "model",
+          "uri": "https://api.sketchfab.com/v3/tags/model"
+        },
+        {
+          "name": "gameasset",
+          "slug": "gameasset",
+          "uri": "https://api.sketchfab.com/v3/tags/gameasset"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "city",
+          "slug": "city",
+          "uri": "https://api.sketchfab.com/v3/tags/city"
+        },
+        {
+          "name": "free",
+          "slug": "free",
+          "uri": "https://api.sketchfab.com/v3/tags/free"
+        },
+        {
+          "name": "street",
+          "slug": "street",
+          "uri": "https://api.sketchfab.com/v3/tags/street"
+        },
+        {
+          "name": "decayed-car",
+          "slug": "decayed-car",
+          "uri": "https://api.sketchfab.com/v3/tags/decayed-car"
+        },
+        {
+          "name": "dirty-3d-props",
+          "slug": "dirty-3d-props",
+          "uri": "https://api.sketchfab.com/v3/tags/dirty-3d-props"
+        },
+        {
+          "name": "damaged-cars",
+          "slug": "damaged-cars",
+          "uri": "https://api.sketchfab.com/v3/tags/damaged-cars"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        },
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "d7645fbc1f9140afbe84c7b0bfe50201",
+            "size": 269579,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/87533e4208a247c9bccee1999c772a12/thumbnails/f1e57ba39699488f955ebd794476e180/6d75b63621574c14b275851e70df53d1.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "039ecfee93d14594b0e380e828f4c21d",
+            "size": 78061,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/87533e4208a247c9bccee1999c772a12/thumbnails/f1e57ba39699488f955ebd794476e180/d007ea15665440eb97525a09c5d8941e.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "185a85733c814ea3aed08e7624bab4f5",
+            "size": 39614,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/87533e4208a247c9bccee1999c772a12/thumbnails/f1e57ba39699488f955ebd794476e180/7007fb5936224764b7ca2997a1528af7.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "525a531c4a294a18881ab07b8f836977",
+            "size": 5757,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/87533e4208a247c9bccee1999c772a12/thumbnails/f1e57ba39699488f955ebd794476e180/67dc8faefaad4de6a4a41307a0313619.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "c319bce332954fceb9faeb89a63ddbc7",
+            "size": 1153,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/87533e4208a247c9bccee1999c772a12/thumbnails/f1e57ba39699488f955ebd794476e180/2ea9b319e3164cd7bea56f2d7770fe61.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "5ae4d1be9adc4706abb9243d5705f85c",
+        "username": "orphanrtg",
+        "displayName": "\u041er\u0440\u043d\u0434\u043f \u042f\u0422G",
+        "profileUrl": "https://sketchfab.com/orphanrtg",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/9563576e3d7d4c4aa454721234d3320f",
+          "images": [
+            {
+              "size": 982,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/9563576e3d7d4c4aa454721234d3320f/98201f72aa8c4788b4bc0126d88ca331.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1184,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/9563576e3d7d4c4aa454721234d3320f/68191577eed34491ad9597cb9e63657f.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2040,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/9563576e3d7d4c4aa454721234d3320f/ffd62d479c97472588af9b999162d04e.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2256,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/9563576e3d7d4c4aa454721234d3320f/daf3e0017da14f8fa86ed4237094fd7b.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/5ae4d1be9adc4706abb9243d5705f85c"
+      },
+      "description": "* truck wheel with rusty rim\n* 1x8k texture \n* spring season\n* location : Sicily\n\n3d scan made of 76 photos @ Samsung Galaxy A33 5G",
+      "faceCount": 49991,
+      "createdAt": "2024-04-24T07:44:39.194910",
+      "vertexCount": 25053,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 33451460,
+          "type": "glb",
+          "textureMaxResolution": 8192,
+          "faceCount": 49991,
+          "vertexCount": 40836
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 32800444,
+          "type": "gltf",
+          "textureMaxResolution": 8192,
+          "faceCount": 49991,
+          "vertexCount": 40836
+        },
+        "source": {
+          "textureCount": null,
+          "size": 39692073,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 4344797,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/47fd963028384551b96d859cc2162927",
+      "uid": "47fd963028384551b96d859cc2162927",
+      "name": "Armoured Truck - Wrecked",
+      "staffpickedAt": null,
+      "viewCount": 1150,
+      "likeCount": 34,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-47fd963028384551b96d859cc2162927",
+      "embedUrl": "https://sketchfab.com/models/47fd963028384551b96d859cc2162927/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2022-10-06T19:19:05.714554",
+      "tags": [
+        {
+          "name": "automobile",
+          "slug": "automobile",
+          "uri": "https://api.sketchfab.com/v3/tags/automobile"
+        },
+        {
+          "name": "armour",
+          "slug": "armour",
+          "uri": "https://api.sketchfab.com/v3/tags/armour"
+        },
+        {
+          "name": "army",
+          "slug": "army",
+          "uri": "https://api.sketchfab.com/v3/tags/army"
+        },
+        {
+          "name": "wreck",
+          "slug": "wreck",
+          "uri": "https://api.sketchfab.com/v3/tags/wreck"
+        },
+        {
+          "name": "rusty",
+          "slug": "rusty",
+          "uri": "https://api.sketchfab.com/v3/tags/rusty"
+        },
+        {
+          "name": "old",
+          "slug": "old",
+          "uri": "https://api.sketchfab.com/v3/tags/old"
+        },
+        {
+          "name": "riot",
+          "slug": "riot",
+          "uri": "https://api.sketchfab.com/v3/tags/riot"
+        },
+        {
+          "name": "photogrammetry",
+          "slug": "photogrammetry",
+          "uri": "https://api.sketchfab.com/v3/tags/photogrammetry"
+        },
+        {
+          "name": "3d",
+          "slug": "3d",
+          "uri": "https://api.sketchfab.com/v3/tags/3d"
+        },
+        {
+          "name": "vehicle",
+          "slug": "vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+        },
+        {
+          "name": "scan",
+          "slug": "scan",
+          "uri": "https://api.sketchfab.com/v3/tags/scan"
+        },
+        {
+          "name": "military",
+          "slug": "military",
+          "uri": "https://api.sketchfab.com/v3/tags/military"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "history",
+          "slug": "history",
+          "uri": "https://api.sketchfab.com/v3/tags/history"
+        },
+        {
+          "name": "polycam",
+          "slug": "polycam",
+          "uri": "https://api.sketchfab.com/v3/tags/polycam"
+        },
+        {
+          "name": "polycamai",
+          "slug": "polycamai",
+          "uri": "https://api.sketchfab.com/v3/tags/polycamai"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "cultural-heritage-history"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "925e88c67004494d81891d69db636af7",
+            "size": 119721,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/47fd963028384551b96d859cc2162927/thumbnails/f5c2106086b040518d741a277c34ec1c/fd98395d849840c5abf508a17a319dd9.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "48bb083fc9d843f485ce5cb53079479b",
+            "size": 38881,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/47fd963028384551b96d859cc2162927/thumbnails/f5c2106086b040518d741a277c34ec1c/ee9721b6d004423e94618780cf293fa6.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "9e0b155f6a6442e8b5b5172469216fcd",
+            "size": 22358,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/47fd963028384551b96d859cc2162927/thumbnails/f5c2106086b040518d741a277c34ec1c/d90b11e3594a403d9527c86b7637631b.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "cc410e013ae94958aa03bb78486f7b55",
+            "size": 4475,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/47fd963028384551b96d859cc2162927/thumbnails/f5c2106086b040518d741a277c34ec1c/81d82d6cf6fb477eb432e207d8963575.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "2b44391e0762495fb48ad7446e673947",
+            "size": 1049,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/47fd963028384551b96d859cc2162927/thumbnails/f5c2106086b040518d741a277c34ec1c/896303225f684a8f956efcc01c3df3f9.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "ace1e46f75c0474f855571d273c76e0c",
+        "username": "robertmasiboda",
+        "displayName": "robertmasiboda",
+        "profileUrl": "https://sketchfab.com/robertmasiboda",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/eab487e62ee34e76b01e3e74cb98d30e",
+          "images": [
+            {
+              "size": 1050,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/eab487e62ee34e76b01e3e74cb98d30e/63c7a430421148df943c02de9dc6a52b.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1385,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/eab487e62ee34e76b01e3e74cb98d30e/26d2d3a4e3bf4bc2a018feb2775f581d.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2298,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/eab487e62ee34e76b01e3e74cb98d30e/f86c38fda567459d935bd168b9a996a1.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2627,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/eab487e62ee34e76b01e3e74cb98d30e/e08684afde9e4cf3a2e44e18c17bbcf2.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/ace1e46f75c0474f855571d273c76e0c"
+      },
+      "description": "A 3D scan of an old/wrecked military armoured truck.\n\nPhotogrammetry processed in Polycam.\n\nRemoved surrounding geometry, and fixed texture on roof.\n\nGreat for use as a prop or a reference for modelling.",
+      "faceCount": 75294,
+      "createdAt": "2022-10-06T19:06:22.389984",
+      "vertexCount": 37357,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 10927308,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 75293,
+          "vertexCount": 45741
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 10224160,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 75293,
+          "vertexCount": 45741
+        },
+        "source": {
+          "textureCount": null,
+          "size": 13395706,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 10333752,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/6ed5b9b4a8d74033beefea458494493d",
+      "uid": "6ed5b9b4a8d74033beefea458494493d",
+      "name": "Red Car Wreck (3d Scan)",
+      "staffpickedAt": null,
+      "viewCount": 2248,
+      "likeCount": 31,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-6ed5b9b4a8d74033beefea458494493d",
+      "embedUrl": "https://sketchfab.com/models/6ed5b9b4a8d74033beefea458494493d/embed",
+      "commentCount": 2,
+      "isDownloadable": true,
+      "publishedAt": "2025-08-14T17:17:22.779782",
+      "tags": [
+        {
+          "name": "automobile",
+          "slug": "automobile",
+          "uri": "https://api.sketchfab.com/v3/tags/automobile"
+        },
+        {
+          "name": "abandoned",
+          "slug": "abandoned",
+          "uri": "https://api.sketchfab.com/v3/tags/abandoned"
+        },
+        {
+          "name": "red",
+          "slug": "red",
+          "uri": "https://api.sketchfab.com/v3/tags/red"
+        },
+        {
+          "name": "lost",
+          "slug": "lost",
+          "uri": "https://api.sketchfab.com/v3/tags/lost"
+        },
+        {
+          "name": "cars",
+          "slug": "cars",
+          "uri": "https://api.sketchfab.com/v3/tags/cars"
+        },
+        {
+          "name": "3d-scan",
+          "slug": "3d-scan",
+          "uri": "https://api.sketchfab.com/v3/tags/3d-scan"
+        },
+        {
+          "name": "rust",
+          "slug": "rust",
+          "uri": "https://api.sketchfab.com/v3/tags/rust"
+        },
+        {
+          "name": "traffic",
+          "slug": "traffic",
+          "uri": "https://api.sketchfab.com/v3/tags/traffic"
+        },
+        {
+          "name": "photorealistic",
+          "slug": "photorealistic",
+          "uri": "https://api.sketchfab.com/v3/tags/photorealistic"
+        },
+        {
+          "name": "broken",
+          "slug": "broken",
+          "uri": "https://api.sketchfab.com/v3/tags/broken"
+        },
+        {
+          "name": "wreck",
+          "slug": "wreck",
+          "uri": "https://api.sketchfab.com/v3/tags/wreck"
+        },
+        {
+          "name": "megane",
+          "slug": "megane",
+          "uri": "https://api.sketchfab.com/v3/tags/megane"
+        },
+        {
+          "name": "renault",
+          "slug": "renault",
+          "uri": "https://api.sketchfab.com/v3/tags/renault"
+        },
+        {
+          "name": "scrap",
+          "slug": "scrap",
+          "uri": "https://api.sketchfab.com/v3/tags/scrap"
+        },
+        {
+          "name": "crash",
+          "slug": "crash",
+          "uri": "https://api.sketchfab.com/v3/tags/crash"
+        },
+        {
+          "name": "damage",
+          "slug": "damage",
+          "uri": "https://api.sketchfab.com/v3/tags/damage"
+        },
+        {
+          "name": "metal",
+          "slug": "metal",
+          "uri": "https://api.sketchfab.com/v3/tags/metal"
+        },
+        {
+          "name": "props",
+          "slug": "props",
+          "uri": "https://api.sketchfab.com/v3/tags/props"
+        },
+        {
+          "name": "fire",
+          "slug": "fire",
+          "uri": "https://api.sketchfab.com/v3/tags/fire"
+        },
+        {
+          "name": "scanned",
+          "slug": "scanned",
+          "uri": "https://api.sketchfab.com/v3/tags/scanned"
+        },
+        {
+          "name": "machine",
+          "slug": "machine",
+          "uri": "https://api.sketchfab.com/v3/tags/machine"
+        },
+        {
+          "name": "destroyed",
+          "slug": "destroyed",
+          "uri": "https://api.sketchfab.com/v3/tags/destroyed"
+        },
+        {
+          "name": "accident",
+          "slug": "accident",
+          "uri": "https://api.sketchfab.com/v3/tags/accident"
+        },
+        {
+          "name": "crashed",
+          "slug": "crashed",
+          "uri": "https://api.sketchfab.com/v3/tags/crashed"
+        },
+        {
+          "name": "free3dmodel",
+          "slug": "free3dmodel",
+          "uri": "https://api.sketchfab.com/v3/tags/free3dmodel"
+        },
+        {
+          "name": "authentic",
+          "slug": "authentic",
+          "uri": "https://api.sketchfab.com/v3/tags/authentic"
+        },
+        {
+          "name": "derelict",
+          "slug": "derelict",
+          "uri": "https://api.sketchfab.com/v3/tags/derelict"
+        },
+        {
+          "name": "freedownload",
+          "slug": "freedownload",
+          "uri": "https://api.sketchfab.com/v3/tags/freedownload"
+        },
+        {
+          "name": "16k",
+          "slug": "16k",
+          "uri": "https://api.sketchfab.com/v3/tags/16k"
+        },
+        {
+          "name": "dented",
+          "slug": "dented",
+          "uri": "https://api.sketchfab.com/v3/tags/dented"
+        },
+        {
+          "name": "freemodel",
+          "slug": "freemodel",
+          "uri": "https://api.sketchfab.com/v3/tags/freemodel"
+        },
+        {
+          "name": "cars-vehicles",
+          "slug": "cars-vehicles",
+          "uri": "https://api.sketchfab.com/v3/tags/cars-vehicles"
+        },
+        {
+          "name": "photoscan",
+          "slug": "photoscan",
+          "uri": "https://api.sketchfab.com/v3/tags/photoscan"
+        },
+        {
+          "name": "photogrammetry",
+          "slug": "photogrammetry",
+          "uri": "https://api.sketchfab.com/v3/tags/photogrammetry"
+        },
+        {
+          "name": "asset",
+          "slug": "asset",
+          "uri": "https://api.sketchfab.com/v3/tags/asset"
+        },
+        {
+          "name": "vehicle",
+          "slug": "vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+        },
+        {
+          "name": "gameasset",
+          "slug": "gameasset",
+          "uri": "https://api.sketchfab.com/v3/tags/gameasset"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "free",
+          "slug": "free",
+          "uri": "https://api.sketchfab.com/v3/tags/free"
+        },
+        {
+          "name": "interior",
+          "slug": "interior",
+          "uri": "https://api.sketchfab.com/v3/tags/interior"
+        },
+        {
+          "name": "download",
+          "slug": "download",
+          "uri": "https://api.sketchfab.com/v3/tags/download"
+        },
+        {
+          "name": "abandoned-car",
+          "slug": "abandoned-car",
+          "uri": "https://api.sketchfab.com/v3/tags/abandoned-car"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "science-technology"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "fa3b0a60c5f446ffae1d718b0a78adf0",
+            "size": 366687,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/6ed5b9b4a8d74033beefea458494493d/thumbnails/9e84e573c09347a996a8b83bc39481ed/10930cb930e04bd48eabf2d7e93d23e6.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "81a645d4265745b29321dff3712dc8fb",
+            "size": 67664,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/6ed5b9b4a8d74033beefea458494493d/thumbnails/9e84e573c09347a996a8b83bc39481ed/1c33acef922a45b69786b32d423a0520.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "5e818cbec02c42f9bfcf9caa36e3360b",
+            "size": 35297,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/6ed5b9b4a8d74033beefea458494493d/thumbnails/9e84e573c09347a996a8b83bc39481ed/19bca0fae3b24ccca1d99ec9dcd42720.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "de1ce52d3a984c5e9e52ed64d6c305b2",
+            "size": 6604,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/6ed5b9b4a8d74033beefea458494493d/thumbnails/9e84e573c09347a996a8b83bc39481ed/b716afe174604c0597364e6f35749fdf.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "04a12b56c78e4caf986988e4518e5281",
+            "size": 1274,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/6ed5b9b4a8d74033beefea458494493d/thumbnails/9e84e573c09347a996a8b83bc39481ed/aa085a31383641a99dd53453415b148c.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "b6a12b932d5847468c268ac97fa14979",
+        "username": "ChoochooLi-sketchfab",
+        "displayName": "ChoochooLi Models",
+        "profileUrl": "https://sketchfab.com/ChoochooLi-sketchfab",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/6a076a84d6f9406d863f4ad98fbf9c05",
+          "images": [
+            {
+              "size": 2263,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/6a076a84d6f9406d863f4ad98fbf9c05/b992a72621e3450faf0586764d9dbf75.png",
+              "height": 32
+            },
+            {
+              "size": 4174,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/6a076a84d6f9406d863f4ad98fbf9c05/65751f0ad1d244debc86ff6c765570bc.png",
+              "height": 48
+            },
+            {
+              "size": 10292,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/6a076a84d6f9406d863f4ad98fbf9c05/7f4ea5a4024444ca8dde1df9b8b555d2.png",
+              "height": 90
+            },
+            {
+              "size": 12015,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/6a076a84d6f9406d863f4ad98fbf9c05/f7d0100bc2914097b03063f06b26772c.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/b6a12b932d5847468c268ac97fa14979"
+      },
+      "description": "Red renault megane derelict car wreck wreckage crashed accident broken vehicle, engine trunk open",
+      "faceCount": 1255701,
+      "createdAt": "2025-08-14T17:08:36.403469",
+      "vertexCount": 939408,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 4,
+          "size": 53231408,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 1255701,
+          "vertexCount": 1090333
+        },
+        "gltf": {
+          "textureCount": 4,
+          "size": 36527237,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 1255701,
+          "vertexCount": 1090333
+        },
+        "source": {
+          "textureCount": null,
+          "size": 58751156,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 41562757,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/3b73fdc3fea04dd0b48fc0e86e64419a",
+      "uid": "3b73fdc3fea04dd0b48fc0e86e64419a",
+      "name": "Wrecked Truck (low poly)",
+      "staffpickedAt": null,
+      "viewCount": 1164,
+      "likeCount": 29,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-3b73fdc3fea04dd0b48fc0e86e64419a",
+      "embedUrl": "https://sketchfab.com/models/3b73fdc3fea04dd0b48fc0e86e64419a/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2014-09-08T02:21:38",
+      "tags": [
+        {
+          "name": "wreck",
+          "slug": "wreck",
+          "uri": "https://api.sketchfab.com/v3/tags/wreck"
+        },
+        {
+          "name": "junk",
+          "slug": "junk",
+          "uri": "https://api.sketchfab.com/v3/tags/junk"
+        },
+        {
+          "name": "crashed",
+          "slug": "crashed",
+          "uri": "https://api.sketchfab.com/v3/tags/crashed"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "8dbe0f21ac2543a8a46e95e8f6cd02f6",
+            "size": 177169,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/3b73fdc3fea04dd0b48fc0e86e64419a/thumbnails/8f5140bf8fea47a3bbb3db6d2cde2467/47c2ce9c0bd84e5ba214748d3c477033.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "a069c3e88a3c46aa8855f96c17bdd1ed",
+            "size": 46453,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/3b73fdc3fea04dd0b48fc0e86e64419a/thumbnails/8f5140bf8fea47a3bbb3db6d2cde2467/255a8cf89d814742a0495960ef577473.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "e95bc00c0a4646678dbad8ac2cbe8075",
+            "size": 24007,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/3b73fdc3fea04dd0b48fc0e86e64419a/thumbnails/8f5140bf8fea47a3bbb3db6d2cde2467/cd73fd98b70a48a58884733873eb2ca6.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "e4db6b269f9545968ddf5a402daa3909",
+            "size": 4132,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/3b73fdc3fea04dd0b48fc0e86e64419a/thumbnails/8f5140bf8fea47a3bbb3db6d2cde2467/f12aa94d40c9441395ba2171c0031aeb.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "4dd9298d8e894f9984c58fec6f25577a",
+            "size": 1053,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/3b73fdc3fea04dd0b48fc0e86e64419a/thumbnails/8f5140bf8fea47a3bbb3db6d2cde2467/52ccfeeb9a0c470f852198adcb07e05c.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "f8dcfcd9e26d40c09a03c22b8f5716e9",
+        "username": "olga_poloukhine",
+        "displayName": "olga_poloukhine",
+        "profileUrl": "https://sketchfab.com/olga_poloukhine",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/7d91779e4d7548e7900f693e3aee29ea",
+          "images": [
+            {
+              "size": 7785,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/7d91779e4d7548e7900f693e3aee29ea/6544264677b44be0ba6e418e229c09c1.jpeg",
+              "height": 100
+            },
+            {
+              "size": 4069,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/7d91779e4d7548e7900f693e3aee29ea/f24cbbbb2c0d439ab3ab5bd834e2a23f.jpeg",
+              "height": 32
+            },
+            {
+              "size": 4683,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/7d91779e4d7548e7900f693e3aee29ea/3afdba0ab2704761b7bf71bf638a9469.jpeg",
+              "height": 48
+            },
+            {
+              "size": 7194,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/7d91779e4d7548e7900f693e3aee29ea/475679c3d96c4b5fa1e12ba212da3282.jpeg",
+              "height": 90
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/f8dcfcd9e26d40c09a03c22b8f5716e9"
+      },
+      "description": "\"Wrecked Cars\"\n(2013)\n\"concept to completion\" Senior Project exercise.\n\nhttp://www.olgapoloukhine.co/assets",
+      "faceCount": 14141,
+      "createdAt": "2014-09-08T02:21:36",
+      "vertexCount": 7401,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 3,
+          "size": 16979448,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 14141,
+          "vertexCount": 8500
+        },
+        "gltf": {
+          "textureCount": 3,
+          "size": 16713708,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 14141,
+          "vertexCount": 8500
+        },
+        "source": {
+          "textureCount": null,
+          "size": 38026420,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 10403645,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/c731a20b1f594c73bfb114d78fbdda95",
+      "uid": "c731a20b1f594c73bfb114d78fbdda95",
+      "name": "mazda furai",
+      "staffpickedAt": null,
+      "viewCount": 285,
+      "likeCount": 22,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-c731a20b1f594c73bfb114d78fbdda95",
+      "embedUrl": "https://sketchfab.com/models/c731a20b1f594c73bfb114d78fbdda95/embed",
+      "commentCount": 10,
+      "isDownloadable": true,
+      "publishedAt": "2026-07-11T18:25:47.954636",
+      "tags": [
+        {
+          "name": "track",
+          "slug": "track",
+          "uri": "https://api.sketchfab.com/v3/tags/track"
+        },
+        {
+          "name": "asphalt",
+          "slug": "asphalt",
+          "uri": "https://api.sketchfab.com/v3/tags/asphalt"
+        },
+        {
+          "name": "racing",
+          "slug": "racing",
+          "uri": "https://api.sketchfab.com/v3/tags/racing"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "asphalt-8",
+          "slug": "asphalt-8",
+          "uri": "https://api.sketchfab.com/v3/tags/asphalt-8"
+        },
+        {
+          "name": "asphalt8",
+          "slug": "asphalt8",
+          "uri": "https://api.sketchfab.com/v3/tags/asphalt8"
+        }
+      ],
+      "categories": [
+        {
+          "name": "art-abstract"
+        },
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "acd76ebb3e3340209ecad64ed42f1260",
+            "size": 118316,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/c731a20b1f594c73bfb114d78fbdda95/thumbnails/8833e981b7d441e398e21d7e44ea4ed2/aa46b8f43d104505b831bab4bb517159.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "c208a7e440444281b08a0bd9408570c2",
+            "size": 41247,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/c731a20b1f594c73bfb114d78fbdda95/thumbnails/8833e981b7d441e398e21d7e44ea4ed2/73993c06304a4062ad4b5b7382aa08e8.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "f076c81560904d2f80ba5cc2a8dfa5ae",
+            "size": 24429,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/c731a20b1f594c73bfb114d78fbdda95/thumbnails/8833e981b7d441e398e21d7e44ea4ed2/4a3504909822499692f7897232bdd18f.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "5394ec0d3500433498fc33fab9861c1e",
+            "size": 5175,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/c731a20b1f594c73bfb114d78fbdda95/thumbnails/8833e981b7d441e398e21d7e44ea4ed2/14e6c69dfc0846fc95c7b66e980af43d.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "ae2903d90727445bb29af7089cbe34bf",
+            "size": 1136,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/c731a20b1f594c73bfb114d78fbdda95/thumbnails/8833e981b7d441e398e21d7e44ea4ed2/992a990df91e47d8a6cee3b96525857d.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "a3f53ccb4bbd4b20adb3212a3e039799",
+        "username": "amogusstrikesback2",
+        "displayName": "amogusstrikesback2",
+        "profileUrl": "https://sketchfab.com/amogusstrikesback2",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/1e86f6ba160c4c7ba2f2466cf9129512",
+          "images": [
+            {
+              "size": 2236,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/1e86f6ba160c4c7ba2f2466cf9129512/9bb265aa88194112a83577fdf18308f5.png",
+              "height": 32
+            },
+            {
+              "size": 4490,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/1e86f6ba160c4c7ba2f2466cf9129512/aeb9f312f1ac4133bd3b51ffdc3aa1c4.png",
+              "height": 48
+            },
+            {
+              "size": 13455,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/1e86f6ba160c4c7ba2f2466cf9129512/02c7cedec824424abd925b65c37418d7.png",
+              "height": 90
+            },
+            {
+              "size": 16128,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/1e86f6ba160c4c7ba2f2466cf9129512/e9f778f720e14ed4889f244f8bb23f18.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/a3f53ccb4bbd4b20adb3212a3e039799"
+      },
+      "description": "all of the existing copies of this car were unfortunately wrecked",
+      "faceCount": 38414,
+      "createdAt": "2026-07-11T18:23:37.170150",
+      "vertexCount": 22671,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 9,
+          "size": 3911456,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 38405,
+          "vertexCount": 32535
+        },
+        "gltf": {
+          "textureCount": 9,
+          "size": 3103598,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 38405,
+          "vertexCount": 32535
+        },
+        "source": {
+          "textureCount": null,
+          "size": 5803559,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 1946936,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/ce12305ef9d54da3a9d924dd0966f351",
+      "uid": "ce12305ef9d54da3a9d924dd0966f351",
+      "name": "Metroid Prime>Creatures>Chozo Ghost",
+      "staffpickedAt": null,
+      "viewCount": 1242,
+      "likeCount": 19,
+      "animationCount": 1,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-ce12305ef9d54da3a9d924dd0966f351",
+      "embedUrl": "https://sketchfab.com/models/ce12305ef9d54da3a9d924dd0966f351/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2023-11-02T03:36:16.567030",
+      "tags": [
+        {
+          "name": "metroid",
+          "slug": "metroid",
+          "uri": "https://api.sketchfab.com/v3/tags/metroid"
+        },
+        {
+          "name": "creatures",
+          "slug": "creatures",
+          "uri": "https://api.sketchfab.com/v3/tags/creatures"
+        },
+        {
+          "name": "prime",
+          "slug": "prime",
+          "uri": "https://api.sketchfab.com/v3/tags/prime"
+        },
+        {
+          "name": "chozo",
+          "slug": "chozo",
+          "uri": "https://api.sketchfab.com/v3/tags/chozo"
+        },
+        {
+          "name": "ghost",
+          "slug": "ghost",
+          "uri": "https://api.sketchfab.com/v3/tags/ghost"
+        }
+      ],
+      "categories": [
+        {
+          "name": "characters-creatures"
+        },
+        {
+          "name": "people"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "1d7bc78d543546fdb77076c64ee84b86",
+            "size": 54414,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/ce12305ef9d54da3a9d924dd0966f351/thumbnails/31e28cbaa02c4bb0a71f4935067f7f31/f58ce4e1b0734156a357799cf1eb4af1.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "18110ffda98140a6a3fac738665a81e9",
+            "size": 17365,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/ce12305ef9d54da3a9d924dd0966f351/thumbnails/31e28cbaa02c4bb0a71f4935067f7f31/888c0356d95e464abdc15c36b9e55fa0.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "5704275432e340348d5aea65db7322fc",
+            "size": 9753,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/ce12305ef9d54da3a9d924dd0966f351/thumbnails/31e28cbaa02c4bb0a71f4935067f7f31/7e10da7e2bd6403980d4c647cf1a0fe8.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "c4a37c99f7be47a0b5905a6011e578a3",
+            "size": 2190,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/ce12305ef9d54da3a9d924dd0966f351/thumbnails/31e28cbaa02c4bb0a71f4935067f7f31/c9856434a64e4c98ac6a8d29dcec7e55.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "b3186b8b6c484895845b106b1096a3cc",
+            "size": 867,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/ce12305ef9d54da3a9d924dd0966f351/thumbnails/31e28cbaa02c4bb0a71f4935067f7f31/04070c8ea8d84e3a90a3be577d5abf1c.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "881b61365a0c4e7eb218b1793e83648e",
+        "username": "jameslucino117",
+        "displayName": "Bornstellar Makes Eternallasting",
+        "profileUrl": "https://sketchfab.com/jameslucino117",
+        "account": "pro",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/7c53bf19e9074f4ca306853a68c2c555",
+          "images": [
+            {
+              "size": 1065,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/7c53bf19e9074f4ca306853a68c2c555/712136dc8f1848ee9061ca19195f553c.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1515,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/7c53bf19e9074f4ca306853a68c2c555/6dc09fbc4285419f94bbd31453007113.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3402,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/7c53bf19e9074f4ca306853a68c2c555/3f9d56e496874c0e91b267cac04dfe91.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3934,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/7c53bf19e9074f4ca306853a68c2c555/26943411236f438c96c59de96c7bdfc4.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/881b61365a0c4e7eb218b1793e83648e"
+      },
+      "description": "Aberration: Chozo Ghost\n\nSpectral entity. Bioelectric field invulnerable to natural energies.\n\nAs these entities phase in and out of existence, the only way to track them accurately is with x-ray scanning. This partially phased nature makes them invulnerable to natural energy types, such as fire, ice, and electricity. Their aggressive and erratic behavior is most likely due to the corrupting effects of Phazon in the Tallon IV environment. They appear to be drawn to Chozo religious sites, where they wreak havoc upon anything that dares enter the area.",
+      "faceCount": 1313,
+      "createdAt": "2023-11-02T03:30:21.477678",
+      "vertexCount": 697,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 2,
+          "size": 2653060,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 1313,
+          "vertexCount": 3797
+        },
+        "gltf": {
+          "textureCount": 2,
+          "size": 2323881,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 1313,
+          "vertexCount": 3797
+        },
+        "source": {
+          "textureCount": null,
+          "size": 6106656,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 789160,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/bc9c7bf770854ccc807695172e572afb",
+      "uid": "bc9c7bf770854ccc807695172e572afb",
+      "name": "Survivor- demolition derby car",
+      "staffpickedAt": null,
+      "viewCount": 632,
+      "likeCount": 18,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-bc9c7bf770854ccc807695172e572afb",
+      "embedUrl": "https://sketchfab.com/models/bc9c7bf770854ccc807695172e572afb/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2025-03-26T15:59:32.688861",
+      "tags": [],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "5f106036f65b4b4cb395925bdd3490a5",
+            "size": 152017,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/bc9c7bf770854ccc807695172e572afb/thumbnails/abf3e5a780cd40fab042c94a74b82460/9d97c436c8c543709eaac7ce00e66eef.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "7bec03c9373346199d795cda0f29627b",
+            "size": 53768,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/bc9c7bf770854ccc807695172e572afb/thumbnails/abf3e5a780cd40fab042c94a74b82460/9abfd4e6659e4424b0902ceaf3136a2f.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "4e671a93415c43658a63c1d7854c0a25",
+            "size": 31842,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/bc9c7bf770854ccc807695172e572afb/thumbnails/abf3e5a780cd40fab042c94a74b82460/514b575db0ab4c3bb8c21d5d28db80fe.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "87f0bc475ad642a3af45f7667d8136f0",
+            "size": 6838,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/bc9c7bf770854ccc807695172e572afb/thumbnails/abf3e5a780cd40fab042c94a74b82460/c1b5a26560ec4ec5b32a1a8b421af893.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "200e2e6a836c447e96fc0b78b5c79520",
+            "size": 1363,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/bc9c7bf770854ccc807695172e572afb/thumbnails/abf3e5a780cd40fab042c94a74b82460/646c8bdcfdbc40c58f9df1898b5efc55.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "97940a6dfa434d689838641c6c168fa4",
+        "username": "CMBC",
+        "displayName": "Brian Trepanier",
+        "profileUrl": "https://sketchfab.com/CMBC",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/ade567e10ef64375b161d0643e1022c1",
+          "images": [
+            {
+              "size": 1088,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/ade567e10ef64375b161d0643e1022c1/c05e99b953a4434b851214a3210bc857.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1577,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/ade567e10ef64375b161d0643e1022c1/a533f6ed9b064b7cbc69810930aa884b.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3730,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/ade567e10ef64375b161d0643e1022c1/9e9de1ad43894ab1ae4e209ec49d2925.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4309,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/ade567e10ef64375b161d0643e1022c1/906497c62ca4436da40577f57abdea0a.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/97940a6dfa434d689838641c6c168fa4"
+      },
+      "description": "The Survivor: A Derby Car\u2019s Last Stand\n\nOnce a roaring beast on the track, this demolition derby car now sits battered and broken, a testament to the chaos it endured. Its frame is twisted, with deep dents and torn metal where rival cars collided. The hood barely clings to the chassis, exposing a smoking, oil-splattered engine.\n\nThe windshield is shattered, its spiderweb cracks catching the light, while a single flickering headlight struggles to stay alive. Layers of paint are scraped away, revealing rusted steel beneath. Flat tires and bent rims mark its final moments of battle. Inside, the stripped-down interior tells its own story\u2014loose wires dangle, the steering wheel barely holds, and the seat is torn from years of punishment.\n\nThough it may never race again, this wreck is more than just scrap\u2014it\u2019s a warrior\u2019s trophy, proof of a brutal but glorious final ride.",
+      "faceCount": 627840,
+      "createdAt": "2025-03-26T15:25:04.332671",
+      "vertexCount": 312862,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 23757248,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 627840,
+          "vertexCount": 427928
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 14972269,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 627840,
+          "vertexCount": 427928
+        },
+        "source": {
+          "textureCount": null,
+          "size": 41131751,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 17752565,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/697c27752e3446be98375ba9578df1ad",
+      "uid": "697c27752e3446be98375ba9578df1ad",
+      "name": "Vintage truck wreck",
+      "staffpickedAt": null,
+      "viewCount": 485,
+      "likeCount": 15,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-697c27752e3446be98375ba9578df1ad",
+      "embedUrl": "https://sketchfab.com/models/697c27752e3446be98375ba9578df1ad/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2022-11-06T14:20:09.460770",
+      "tags": [
+        {
+          "name": "truck",
+          "slug": "truck",
+          "uri": "https://api.sketchfab.com/v3/tags/truck"
+        },
+        {
+          "name": "ruin",
+          "slug": "ruin",
+          "uri": "https://api.sketchfab.com/v3/tags/ruin"
+        },
+        {
+          "name": "vehicles",
+          "slug": "vehicles",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicles"
+        },
+        {
+          "name": "van",
+          "slug": "van",
+          "uri": "https://api.sketchfab.com/v3/tags/van"
+        },
+        {
+          "name": "vintage",
+          "slug": "vintage",
+          "uri": "https://api.sketchfab.com/v3/tags/vintage"
+        },
+        {
+          "name": "classic",
+          "slug": "classic",
+          "uri": "https://api.sketchfab.com/v3/tags/classic"
+        },
+        {
+          "name": "old",
+          "slug": "old",
+          "uri": "https://api.sketchfab.com/v3/tags/old"
+        },
+        {
+          "name": "photoscan",
+          "slug": "photoscan",
+          "uri": "https://api.sketchfab.com/v3/tags/photoscan"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "cultural-heritage-history"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "86a1af2624d0430d8be105cdcc971c5c",
+            "size": 241434,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/697c27752e3446be98375ba9578df1ad/thumbnails/7f41062a455f49deac65ad98a56c5c79/58687dd76ec947e1aaff46bd0102f1bd.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "a1505ac7c63d4acfad361306f96dc172",
+            "size": 76683,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/697c27752e3446be98375ba9578df1ad/thumbnails/7f41062a455f49deac65ad98a56c5c79/18c62e7425224f36a71306118c67931a.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "d3fb0576a3e04548bdaa12923609a2d4",
+            "size": 43158,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/697c27752e3446be98375ba9578df1ad/thumbnails/7f41062a455f49deac65ad98a56c5c79/789678e8c23441fe863d3c4b4fff0ded.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "2a6b821a3e2740408fb7f55c829fb98a",
+            "size": 7482,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/697c27752e3446be98375ba9578df1ad/thumbnails/7f41062a455f49deac65ad98a56c5c79/62c07341298849b6a5b695f37405eeec.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "3317c1669e9f47309cacebc94b60e857",
+            "size": 1307,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/697c27752e3446be98375ba9578df1ad/thumbnails/7f41062a455f49deac65ad98a56c5c79/b77412e6b90a433997b38a706bbc3a6c.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "a1b47555d21844e8bb9f56f105fdca0a",
+        "username": "The_Real_Model_Guy",
+        "displayName": "The_Model_Guy2.3",
+        "profileUrl": "https://sketchfab.com/The_Real_Model_Guy",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/78fa317e46024a5283765aa34df5e508",
+          "images": [
+            {
+              "size": 6421,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/78fa317e46024a5283765aa34df5e508/aec92fe9a74e499c98d759362cd7f02f.jpeg",
+              "height": 100
+            },
+            {
+              "size": 2518,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/78fa317e46024a5283765aa34df5e508/17fa177ffaa344a2b2fc8e78efd40fbb.jpeg",
+              "height": 48
+            },
+            {
+              "size": 5653,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/78fa317e46024a5283765aa34df5e508/02162695bdc840faa3bcb2d418309c5e.jpeg",
+              "height": 90
+            },
+            {
+              "size": 1350,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/78fa317e46024a5283765aa34df5e508/6fde876cbded4cd48d36a76029e3aa02.jpeg",
+              "height": 32
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/a1b47555d21844e8bb9f56f105fdca0a"
+      },
+      "description": "3D model of the ruin of an abandoned 50s vehicle",
+      "faceCount": 93968,
+      "createdAt": "2022-11-06T14:08:17.606019",
+      "vertexCount": 46865,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 2,
+          "size": 45818284,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 93968,
+          "vertexCount": 86767
+        },
+        "gltf": {
+          "textureCount": 2,
+          "size": 41930422,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 93968,
+          "vertexCount": 86767
+        },
+        "source": {
+          "textureCount": null,
+          "size": 27789822,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 8192547,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/4132cc3095af4dbd8af354634e99cff4",
+      "uid": "4132cc3095af4dbd8af354634e99cff4",
+      "name": "suv c150 hvy (burnout revenge)",
+      "staffpickedAt": null,
+      "viewCount": 155,
+      "likeCount": 14,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-4132cc3095af4dbd8af354634e99cff4",
+      "embedUrl": "https://sketchfab.com/models/4132cc3095af4dbd8af354634e99cff4/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-02-23T15:38:02.284655",
+      "tags": [
+        {
+          "name": "track",
+          "slug": "track",
+          "uri": "https://api.sketchfab.com/v3/tags/track"
+        },
+        {
+          "name": "burnout",
+          "slug": "burnout",
+          "uri": "https://api.sketchfab.com/v3/tags/burnout"
+        },
+        {
+          "name": "racing",
+          "slug": "racing",
+          "uri": "https://api.sketchfab.com/v3/tags/racing"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "burnoutrevenge",
+          "slug": "burnoutrevenge",
+          "uri": "https://api.sketchfab.com/v3/tags/burnoutrevenge"
+        }
+      ],
+      "categories": [
+        {
+          "name": "art-abstract"
+        },
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "a7399686eaf8479ab0f5bfcfa0b9ea6d",
+            "size": 113422,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/4132cc3095af4dbd8af354634e99cff4/thumbnails/12a541426ecf470f89adee401606edfa/296d0a5e1fba44148df0d68a136f4380.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "062798cf43e442fa896472c39ad08544",
+            "size": 38732,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/4132cc3095af4dbd8af354634e99cff4/thumbnails/12a541426ecf470f89adee401606edfa/70e4db4494a049339f7b2d1296be8243.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "1ed459ebb4454146ab1e800ffec7fccd",
+            "size": 22554,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/4132cc3095af4dbd8af354634e99cff4/thumbnails/12a541426ecf470f89adee401606edfa/b48d54d72c0547e99a1687daad3ef48e.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "31924b3281fb4ad59dba07772c72b731",
+            "size": 4721,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/4132cc3095af4dbd8af354634e99cff4/thumbnails/12a541426ecf470f89adee401606edfa/95e170c3c2cd4f749a3c7bbe1d7e8062.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "64de018984874588a535f12a76a9f201",
+            "size": 1097,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/4132cc3095af4dbd8af354634e99cff4/thumbnails/12a541426ecf470f89adee401606edfa/03077beffc764ea991f87870db505d0c.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "a3f53ccb4bbd4b20adb3212a3e039799",
+        "username": "amogusstrikesback2",
+        "displayName": "amogusstrikesback2",
+        "profileUrl": "https://sketchfab.com/amogusstrikesback2",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/1e86f6ba160c4c7ba2f2466cf9129512",
+          "images": [
+            {
+              "size": 2236,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/1e86f6ba160c4c7ba2f2466cf9129512/9bb265aa88194112a83577fdf18308f5.png",
+              "height": 32
+            },
+            {
+              "size": 4490,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/1e86f6ba160c4c7ba2f2466cf9129512/aeb9f312f1ac4133bd3b51ffdc3aa1c4.png",
+              "height": 48
+            },
+            {
+              "size": 13455,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/1e86f6ba160c4c7ba2f2466cf9129512/02c7cedec824424abd925b65c37418d7.png",
+              "height": 90
+            },
+            {
+              "size": 16128,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/1e86f6ba160c4c7ba2f2466cf9129512/e9f778f720e14ed4889f244f8bb23f18.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/a3f53ccb4bbd4b20adb3212a3e039799"
+      },
+      "description": "doesn't look wrecked at all",
+      "faceCount": 19537,
+      "createdAt": "2026-02-23T15:34:27.308204",
+      "vertexCount": 14111,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 12,
+          "size": 1790032,
+          "type": "glb",
+          "textureMaxResolution": 512,
+          "faceCount": 19529,
+          "vertexCount": 18107
+        },
+        "gltf": {
+          "textureCount": 12,
+          "size": 1288689,
+          "type": "gltf",
+          "textureMaxResolution": 512,
+          "faceCount": 19529,
+          "vertexCount": 18107
+        },
+        "source": {
+          "textureCount": null,
+          "size": 7453785,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 880526,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/4e4726fbac59437a8a8967dcde6e4ff3",
+      "uid": "4e4726fbac59437a8a8967dcde6e4ff3",
+      "name": "Goniastrea pectinata",
+      "staffpickedAt": null,
+      "viewCount": 567,
+      "likeCount": 13,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-4e4726fbac59437a8a8967dcde6e4ff3",
+      "embedUrl": "https://sketchfab.com/models/4e4726fbac59437a8a8967dcde6e4ff3/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2017-05-22T20:14:56.953564",
+      "tags": [
+        {
+          "name": "coral",
+          "slug": "coral",
+          "uri": "https://api.sketchfab.com/v3/tags/coral"
+        },
+        {
+          "name": "deep",
+          "slug": "deep",
+          "uri": "https://api.sketchfab.com/v3/tags/deep"
+        },
+        {
+          "name": "museum",
+          "slug": "museum",
+          "uri": "https://api.sketchfab.com/v3/tags/museum"
+        },
+        {
+          "name": "science",
+          "slug": "science",
+          "uri": "https://api.sketchfab.com/v3/tags/science"
+        },
+        {
+          "name": "reef",
+          "slug": "reef",
+          "uri": "https://api.sketchfab.com/v3/tags/reef"
+        },
+        {
+          "name": "california",
+          "slug": "california",
+          "uri": "https://api.sketchfab.com/v3/tags/california"
+        },
+        {
+          "name": "coralreef",
+          "slug": "coralreef",
+          "uri": "https://api.sketchfab.com/v3/tags/coralreef"
+        },
+        {
+          "name": "academy",
+          "slug": "academy",
+          "uri": "https://api.sketchfab.com/v3/tags/academy"
+        },
+        {
+          "name": "ship",
+          "slug": "ship",
+          "uri": "https://api.sketchfab.com/v3/tags/ship"
+        }
+      ],
+      "categories": [
+        {
+          "name": "places-travel"
+        },
+        {
+          "name": "science-technology"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "26832a01956049ccae3a014d6d58b147",
+            "size": 34876,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/4e4726fbac59437a8a8967dcde6e4ff3/thumbnails/e486665548a64a97900f53e0e559ef4d/1024x576.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "409c1c53c5294022b88ca169bcbdb46a",
+            "size": 22023,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/4e4726fbac59437a8a8967dcde6e4ff3/thumbnails/e486665548a64a97900f53e0e559ef4d/720x405.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "59c71f554a6649888240e0c0e5a92236",
+            "size": 4749,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/4e4726fbac59437a8a8967dcde6e4ff3/thumbnails/e486665548a64a97900f53e0e559ef4d/256x144.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "f427cf51adbc4f6bb7bfc9a8f281deca",
+            "size": 1112,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/4e4726fbac59437a8a8967dcde6e4ff3/thumbnails/e486665548a64a97900f53e0e559ef4d/64x36.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "1105d7273311446284024420d710d78a",
+        "username": "thehydro.us",
+        "displayName": "thehydrous",
+        "profileUrl": "https://sketchfab.com/thehydro.us",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/16d8d819ec7e455b925451ff53f98ec3",
+          "images": [
+            {
+              "size": 1516,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/16d8d819ec7e455b925451ff53f98ec3/d3a3c3a1e8ab4557ac3af23b2974d698.jpeg",
+              "height": 32
+            },
+            {
+              "size": 2432,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/16d8d819ec7e455b925451ff53f98ec3/30b02a34d8594d64a8c208bc8a522f1e.jpeg",
+              "height": 48
+            },
+            {
+              "size": 4713,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/16d8d819ec7e455b925451ff53f98ec3/d72d10f0595544eea11660ee09062eb6.jpeg",
+              "height": 90
+            },
+            {
+              "size": 5110,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/16d8d819ec7e455b925451ff53f98ec3/fae7865852c84a34978406c77915f06b.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/1105d7273311446284024420d710d78a"
+      },
+      "description": "This specimen was collected in 1975 by Sylvia Earle and Al Giddings from the the wreck of the Japanese ship, \"Fujikawa Maru\" in Truk Lagoon, Caroline Islands at a depth of 70-110 ft.\n\nFrom the California Academy of Sciences Collection. Specimen number: CASIZ 098538",
+      "faceCount": 308663,
+      "createdAt": "2017-05-22T16:07:30.959886",
+      "vertexCount": 154369,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 19819832,
+          "type": "glb",
+          "textureMaxResolution": 8192,
+          "faceCount": 308663,
+          "vertexCount": 168223
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 15854328,
+          "type": "gltf",
+          "textureMaxResolution": 8192,
+          "faceCount": 308663,
+          "vertexCount": 168223
+        },
+        "source": {
+          "textureCount": null,
+          "size": 35351117,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 7906082,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "2628dbe5140a4e9592126c8df566c0b7",
+        "label": "CC Attribution-NonCommercial-ShareAlike"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/2b594f46dd0e42faab75420dd7015dad",
+      "uid": "2b594f46dd0e42faab75420dd7015dad",
+      "name": "\ud83d\udd04>-{Wrecker}-<\u29c8(-\ud83d\udee0-)\u29c8>-[I.D.:105-645-73]-<\ud83d\udd04",
+      "staffpickedAt": null,
+      "viewCount": 318,
+      "likeCount": 10,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-2b594f46dd0e42faab75420dd7015dad",
+      "embedUrl": "https://sketchfab.com/models/2b594f46dd0e42faab75420dd7015dad/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-02-06T03:57:32.130599",
+      "tags": [
+        {
+          "name": "buggy",
+          "slug": "buggy",
+          "uri": "https://api.sketchfab.com/v3/tags/buggy"
+        },
+        {
+          "name": "truck",
+          "slug": "truck",
+          "uri": "https://api.sketchfab.com/v3/tags/truck"
+        },
+        {
+          "name": "trucks",
+          "slug": "trucks",
+          "uri": "https://api.sketchfab.com/v3/tags/trucks"
+        },
+        {
+          "name": "rodin",
+          "slug": "rodin",
+          "uri": "https://api.sketchfab.com/v3/tags/rodin"
+        },
+        {
+          "name": "steampunkvehicle",
+          "slug": "steampunkvehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/steampunkvehicle"
+        },
+        {
+          "name": "wrecker",
+          "slug": "wrecker",
+          "uri": "https://api.sketchfab.com/v3/tags/wrecker"
+        },
+        {
+          "name": "truck-trucks",
+          "slug": "truck-trucks",
+          "uri": "https://api.sketchfab.com/v3/tags/truck-trucks"
+        },
+        {
+          "name": "towtruck",
+          "slug": "towtruck",
+          "uri": "https://api.sketchfab.com/v3/tags/towtruck"
+        },
+        {
+          "name": "pbr-texturing",
+          "slug": "pbr-texturing",
+          "uri": "https://api.sketchfab.com/v3/tags/pbr-texturing"
+        },
+        {
+          "name": "2ktextures",
+          "slug": "2ktextures",
+          "uri": "https://api.sketchfab.com/v3/tags/2ktextures"
+        },
+        {
+          "name": "city-car",
+          "slug": "city-car",
+          "uri": "https://api.sketchfab.com/v3/tags/city-car"
+        },
+        {
+          "name": "steampunk-car",
+          "slug": "steampunk-car",
+          "uri": "https://api.sketchfab.com/v3/tags/steampunk-car"
+        },
+        {
+          "name": "pbr-shaders",
+          "slug": "pbr-shaders",
+          "uri": "https://api.sketchfab.com/v3/tags/pbr-shaders"
+        },
+        {
+          "name": "truck-heavy-vehicle",
+          "slug": "truck-heavy-vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/truck-heavy-vehicle"
+        },
+        {
+          "name": "tow-truck",
+          "slug": "tow-truck",
+          "uri": "https://api.sketchfab.com/v3/tags/tow-truck"
+        },
+        {
+          "name": "vehicle",
+          "slug": "vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "old-truck",
+          "slug": "old-truck",
+          "uri": "https://api.sketchfab.com/v3/tags/old-truck"
+        },
+        {
+          "name": "tow-truck-winch",
+          "slug": "tow-truck-winch",
+          "uri": "https://api.sketchfab.com/v3/tags/tow-truck-winch"
+        },
+        {
+          "name": "truck-tow-barrel",
+          "slug": "truck-tow-barrel",
+          "uri": "https://api.sketchfab.com/v3/tags/truck-tow-barrel"
+        },
+        {
+          "name": "rusty-vehicles",
+          "slug": "rusty-vehicles",
+          "uri": "https://api.sketchfab.com/v3/tags/rusty-vehicles"
+        },
+        {
+          "name": "rusty-truck",
+          "slug": "rusty-truck",
+          "uri": "https://api.sketchfab.com/v3/tags/rusty-truck"
+        },
+        {
+          "name": "steampunk-vehicle",
+          "slug": "steampunk-vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/steampunk-vehicle"
+        },
+        {
+          "name": "old-trucks",
+          "slug": "old-trucks",
+          "uri": "https://api.sketchfab.com/v3/tags/old-trucks"
+        },
+        {
+          "name": "flatbedtruck",
+          "slug": "flatbedtruck",
+          "uri": "https://api.sketchfab.com/v3/tags/flatbedtruck"
+        },
+        {
+          "name": "createdwithai",
+          "slug": "createdwithai",
+          "uri": "https://api.sketchfab.com/v3/tags/createdwithai"
+        },
+        {
+          "name": "city-truck",
+          "slug": "city-truck",
+          "uri": "https://api.sketchfab.com/v3/tags/city-truck"
+        },
+        {
+          "name": "truck-model",
+          "slug": "truck-model",
+          "uri": "https://api.sketchfab.com/v3/tags/truck-model"
+        },
+        {
+          "name": "wreckers",
+          "slug": "wreckers",
+          "uri": "https://api.sketchfab.com/v3/tags/wreckers"
+        },
+        {
+          "name": "city-van",
+          "slug": "city-van",
+          "uri": "https://api.sketchfab.com/v3/tags/city-van"
+        },
+        {
+          "name": "rustyvehicle",
+          "slug": "rustyvehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/rustyvehicle"
+        },
+        {
+          "name": "vintagetruck",
+          "slug": "vintagetruck",
+          "uri": "https://api.sketchfab.com/v3/tags/vintagetruck"
+        },
+        {
+          "name": "rodinai",
+          "slug": "rodinai",
+          "uri": "https://api.sketchfab.com/v3/tags/rodinai"
+        },
+        {
+          "name": "hyper3d",
+          "slug": "hyper3d",
+          "uri": "https://api.sketchfab.com/v3/tags/hyper3d"
+        },
+        {
+          "name": "wrecked-truck",
+          "slug": "wrecked-truck",
+          "uri": "https://api.sketchfab.com/v3/tags/wrecked-truck"
+        },
+        {
+          "name": "truck-car",
+          "slug": "truck-car",
+          "uri": "https://api.sketchfab.com/v3/tags/truck-car"
+        },
+        {
+          "name": "xx696",
+          "slug": "xx696",
+          "uri": "https://api.sketchfab.com/v3/tags/xx696"
+        },
+        {
+          "name": "xscorngames",
+          "slug": "xscorngames",
+          "uri": "https://api.sketchfab.com/v3/tags/xscorngames"
+        },
+        {
+          "name": "hyper3dai",
+          "slug": "hyper3dai",
+          "uri": "https://api.sketchfab.com/v3/tags/hyper3dai"
+        },
+        {
+          "name": "rodin_gen2",
+          "slug": "rodin_gen2",
+          "uri": "https://api.sketchfab.com/v3/tags/rodin_gen2"
+        },
+        {
+          "name": "rodin3d",
+          "slug": "rodin3d",
+          "uri": "https://api.sketchfab.com/v3/tags/rodin3d"
+        },
+        {
+          "name": "specialvehicle",
+          "slug": "specialvehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/specialvehicle"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "news-politics"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "518fbc491dfc413181bf8deffdb7c727",
+            "size": 374362,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/2b594f46dd0e42faab75420dd7015dad/thumbnails/4220582b5ff14db09caee88c6391165d/564ddcb5caf94ab39245a0ee7eca0402.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "aa9a4cc1065043d583030b84e9edced9",
+            "size": 84756,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/2b594f46dd0e42faab75420dd7015dad/thumbnails/4220582b5ff14db09caee88c6391165d/e7c2ce22aa674ca09a4d9814c7d73161.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "07bce8f8f58045a0aa28658b2f5702e8",
+            "size": 47172,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/2b594f46dd0e42faab75420dd7015dad/thumbnails/4220582b5ff14db09caee88c6391165d/9bcc03cffda04d37b07d9854805bf61b.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "dcaf477228414e0b87e756fc97829ede",
+            "size": 9426,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/2b594f46dd0e42faab75420dd7015dad/thumbnails/4220582b5ff14db09caee88c6391165d/f003de5a96e149c0beaf7ad0a5082232.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "a376d933caed46afae31d3527d156c48",
+            "size": 1737,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/2b594f46dd0e42faab75420dd7015dad/thumbnails/4220582b5ff14db09caee88c6391165d/2bd1f5287c214d0c95b922a3966352ab.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "0f948ce31b8247c09fae5b0e365fb73b",
+        "username": "XX-XX",
+        "displayName": "-X-ScornGames",
+        "profileUrl": "https://sketchfab.com/XX-XX",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/1830a5a007f342d09c2d3379f8380304",
+          "images": [
+            {
+              "size": 3150,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/1830a5a007f342d09c2d3379f8380304/92ed7abc975a4b40bec4363214c82e06.png",
+              "height": 32
+            },
+            {
+              "size": 6798,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/1830a5a007f342d09c2d3379f8380304/aee6e17a02c8494994c900a7dd0d73a6.png",
+              "height": 48
+            },
+            {
+              "size": 22680,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/1830a5a007f342d09c2d3379f8380304/27a89f4ad196410aa77a07f6f0d743ce.png",
+              "height": 90
+            },
+            {
+              "size": 27690,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/1830a5a007f342d09c2d3379f8380304/29611b5df2fa48dabaa6974fc3739e41.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/0f948ce31b8247c09fae5b0e365fb73b"
+      },
+      "description": "[![](https://img.itch.zone/aW1nLzE4MTA0NzkzLnBuZw==/original/CxHN5A.png)](https://xx696.itch.io/)\n\n# Contact:#\n\n[https://westream.at/xx696](http://)\n\n[https://xx696.itch.io](http://)\n\n[https://www.youtube.com/@xscorngames](http://)\n\n[https://gamejolt.com/@-X-ScornGames](http://)\n\n[https://gravatar.com/xx696](http://)\n\n[https://bsky.app/profile/xx696.itch.io](http://)\n\n[https://sketchfab.com/XX-XX](http://)\n\n[https://x-scorngames.newgrounds.com](http://)\n\n[https://www.twitch.tv/xx696](http://)\n\n[![](https://img.itch.zone/aW1nLzE4MTgwMTM5LnBuZw==/original/nU2Ahe.png)](https://westream.at/xx696/)",
+      "faceCount": 499664,
+      "createdAt": "2026-02-06T03:42:37.889368",
+      "vertexCount": 249679,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 3,
+          "size": 24166028,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 499613,
+          "vertexCount": 337583
+        },
+        "gltf": {
+          "textureCount": 3,
+          "size": 17940429,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 499613,
+          "vertexCount": 337583
+        },
+        "source": {
+          "textureCount": null,
+          "size": 94874113,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 13735291,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/c1924ebcb67b4711bc3ca20dd2b7bb6d",
+      "uid": "c1924ebcb67b4711bc3ca20dd2b7bb6d",
+      "name": "Futagami salvage tug at Truk Lagoon (Chuuk)",
+      "staffpickedAt": null,
+      "viewCount": 235,
+      "likeCount": 10,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-c1924ebcb67b4711bc3ca20dd2b7bb6d",
+      "embedUrl": "https://sketchfab.com/models/c1924ebcb67b4711bc3ca20dd2b7bb6d/embed",
+      "commentCount": 2,
+      "isDownloadable": true,
+      "publishedAt": "2025-04-09T10:55:49.189241",
+      "tags": [
+        {
+          "name": "diving",
+          "slug": "diving",
+          "uri": "https://api.sketchfab.com/v3/tags/diving"
+        },
+        {
+          "name": "shipwreck",
+          "slug": "shipwreck",
+          "uri": "https://api.sketchfab.com/v3/tags/shipwreck"
+        },
+        {
+          "name": "wreck",
+          "slug": "wreck",
+          "uri": "https://api.sketchfab.com/v3/tags/wreck"
+        },
+        {
+          "name": "scuba",
+          "slug": "scuba",
+          "uri": "https://api.sketchfab.com/v3/tags/scuba"
+        },
+        {
+          "name": "tug",
+          "slug": "tug",
+          "uri": "https://api.sketchfab.com/v3/tags/tug"
+        },
+        {
+          "name": "ijn",
+          "slug": "ijn",
+          "uri": "https://api.sketchfab.com/v3/tags/ijn"
+        },
+        {
+          "name": "maru",
+          "slug": "maru",
+          "uri": "https://api.sketchfab.com/v3/tags/maru"
+        },
+        {
+          "name": "chuuk",
+          "slug": "chuuk",
+          "uri": "https://api.sketchfab.com/v3/tags/chuuk"
+        },
+        {
+          "name": "slavage",
+          "slug": "slavage",
+          "uri": "https://api.sketchfab.com/v3/tags/slavage"
+        },
+        {
+          "name": "agisoft",
+          "slug": "agisoft",
+          "uri": "https://api.sketchfab.com/v3/tags/agisoft"
+        },
+        {
+          "name": "photogrammetry",
+          "slug": "photogrammetry",
+          "uri": "https://api.sketchfab.com/v3/tags/photogrammetry"
+        },
+        {
+          "name": "truklagoon",
+          "slug": "truklagoon",
+          "uri": "https://api.sketchfab.com/v3/tags/truklagoon"
+        },
+        {
+          "name": "truk-lagoon",
+          "slug": "truk-lagoon",
+          "uri": "https://api.sketchfab.com/v3/tags/truk-lagoon"
+        },
+        {
+          "name": "dive3d",
+          "slug": "dive3d",
+          "uri": "https://api.sketchfab.com/v3/tags/dive3d"
+        },
+        {
+          "name": "truk-wreck-photogrammetry-project",
+          "slug": "truk-wreck-photogrammetry-project",
+          "uri": "https://api.sketchfab.com/v3/tags/truk-wreck-photogrammetry-project"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cultural-heritage-history"
+        },
+        {
+          "name": "places-travel"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "75e861cff9bb4632b1f2103f01e4937e",
+            "size": 370538,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/c1924ebcb67b4711bc3ca20dd2b7bb6d/thumbnails/63503f5b11694368a230526fa56f773e/4cf6516a3d1a44a2a42f238b8e8c1000.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "9bf2f4a3b156451b81e18bdacced609c",
+            "size": 75278,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/c1924ebcb67b4711bc3ca20dd2b7bb6d/thumbnails/63503f5b11694368a230526fa56f773e/48b26d39560e4aedb3147e35d50e9206.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "bd9801395eb3426abce46b9f3ddb1e18",
+            "size": 39121,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/c1924ebcb67b4711bc3ca20dd2b7bb6d/thumbnails/63503f5b11694368a230526fa56f773e/d7430dd295d446b9bb288e7209c439f0.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "02f10d28f6814107a9eebd96510160b2",
+            "size": 6864,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/c1924ebcb67b4711bc3ca20dd2b7bb6d/thumbnails/63503f5b11694368a230526fa56f773e/b9e6cf64a83e4875b44e98705ec012b5.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "560829dcf2b942ae965b2da9af9b6a37",
+            "size": 1342,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/c1924ebcb67b4711bc3ca20dd2b7bb6d/thumbnails/63503f5b11694368a230526fa56f773e/f33bb31be32b46a2b01151e3d22d3f1e.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "18aab9e9a6994cb098c2c36bdd335f42",
+        "username": "holger.buss",
+        "displayName": "holger.buss",
+        "profileUrl": "https://sketchfab.com/holger.buss",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/7a48ea9315784232bc4b58d3402bacc2",
+          "images": [
+            {
+              "size": 2627,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/7a48ea9315784232bc4b58d3402bacc2/597362d0c74449358ed22ead75216ddb.png",
+              "height": 32
+            },
+            {
+              "size": 5316,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/7a48ea9315784232bc4b58d3402bacc2/fa307823adfc4cd1afbdf9c863a4ce10.png",
+              "height": 48
+            },
+            {
+              "size": 16104,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/7a48ea9315784232bc4b58d3402bacc2/cf122a0d61724c26897f64e016642a01.png",
+              "height": 90
+            },
+            {
+              "size": 19429,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/7a48ea9315784232bc4b58d3402bacc2/d6c3dfdbe475425bb79f1ebb25eceeb7.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/18aab9e9a6994cb098c2c36bdd335f42"
+      },
+      "description": "The IJN Futagami was a salvage tug built for the Imperial Japanese Navy and launched 1939. The vessel was equipped with two 2-ton and one 5-ton salvage derricks. She was fitted with de-watering salvage pumps and many hoses still stored in aft hold.\nThe Futagami was undamaged during the war, to be left anchored but unattended in channel west of Dublon. Little information is known of her eventual sinking, whether by vandals or inattentions. \nThe wreck starts in shallow 30ft water at the stern and descends to 100 fsw at the bow, and is lying at about a 45 deg list to port. \nVisibility in the channel is often limited to about 20-30 ft and then good at other times.\n\nIJN FUTAGAMI HASHIMA CLASS FLEET SALVAGE TUG\nDisplacement: 625 tons\nLength: 131 feet\nBeam 32 feet\nEngine: 2 coal/heavy oil fired reciprocating engines, 2 shafts\nMax Speed: 14.5 kts.\nMission: Salvage. Armament\n2-25 MM anti-aircraft guns; depth charges. Crew: 59. Launched: 1939.\n\nhttps://dive3d.eu/models/chuuk-lagoon-truk/futagami-tug/",
+      "faceCount": 2452329,
+      "createdAt": "2025-04-09T10:47:03.826341",
+      "vertexCount": 1227377,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 282114524,
+          "type": "glb",
+          "textureMaxResolution": 8192,
+          "faceCount": 2452329,
+          "vertexCount": 7350391
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 97061390,
+          "type": "gltf",
+          "textureMaxResolution": 8192,
+          "faceCount": 2452329,
+          "vertexCount": 7350391
+        },
+        "source": {
+          "textureCount": null,
+          "size": 89467486,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 237790694,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/d3ace0dc754441aca0e58f61bea73b48",
+      "uid": "d3ace0dc754441aca0e58f61bea73b48",
+      "name": "Wreck of SS Zeitieh (1911 - 1915)",
+      "staffpickedAt": null,
+      "viewCount": 620,
+      "likeCount": 10,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-d3ace0dc754441aca0e58f61bea73b48",
+      "embedUrl": "https://sketchfab.com/models/d3ace0dc754441aca0e58f61bea73b48/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2024-07-23T11:39:55.343144",
+      "tags": [
+        {
+          "name": "diving",
+          "slug": "diving",
+          "uri": "https://api.sketchfab.com/v3/tags/diving"
+        },
+        {
+          "name": "shipwreck",
+          "slug": "shipwreck",
+          "uri": "https://api.sketchfab.com/v3/tags/shipwreck"
+        },
+        {
+          "name": "wreck",
+          "slug": "wreck",
+          "uri": "https://api.sketchfab.com/v3/tags/wreck"
+        },
+        {
+          "name": "scuba",
+          "slug": "scuba",
+          "uri": "https://api.sketchfab.com/v3/tags/scuba"
+        },
+        {
+          "name": "steamship",
+          "slug": "steamship",
+          "uri": "https://api.sketchfab.com/v3/tags/steamship"
+        },
+        {
+          "name": "steamer",
+          "slug": "steamer",
+          "uri": "https://api.sketchfab.com/v3/tags/steamer"
+        },
+        {
+          "name": "redsea",
+          "slug": "redsea",
+          "uri": "https://api.sketchfab.com/v3/tags/redsea"
+        },
+        {
+          "name": "agisoft",
+          "slug": "agisoft",
+          "uri": "https://api.sketchfab.com/v3/tags/agisoft"
+        },
+        {
+          "name": "dive3d",
+          "slug": "dive3d",
+          "uri": "https://api.sketchfab.com/v3/tags/dive3d"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "cultural-heritage-history"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "4316e8bf82a745af88bc395118c0caab",
+            "size": 445628,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/d3ace0dc754441aca0e58f61bea73b48/thumbnails/3c56aa05749e44b2b23e3cb9a7d5b241/e4fc33d2d53045c2b606b970868b6de4.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "4e9e6fd91a444ca4acd970f135846703",
+            "size": 125539,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/d3ace0dc754441aca0e58f61bea73b48/thumbnails/3c56aa05749e44b2b23e3cb9a7d5b241/863ac61c9e5b4c209f79ec35c3cebc4c.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "8c38ea10c3984f25857f686bd42c82cb",
+            "size": 65930,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/d3ace0dc754441aca0e58f61bea73b48/thumbnails/3c56aa05749e44b2b23e3cb9a7d5b241/026bffed0cfe4866ae779f4b7316d585.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "349f47d7311040668bade067ca9872c6",
+            "size": 10405,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/d3ace0dc754441aca0e58f61bea73b48/thumbnails/3c56aa05749e44b2b23e3cb9a7d5b241/531c84ffdf0c45bea8d284cb605d1ca3.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "1ef34f21d0474163adc3558c9a8525f2",
+            "size": 1482,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/d3ace0dc754441aca0e58f61bea73b48/thumbnails/3c56aa05749e44b2b23e3cb9a7d5b241/b6628216949046449b402c2785761c65.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "18aab9e9a6994cb098c2c36bdd335f42",
+        "username": "holger.buss",
+        "displayName": "holger.buss",
+        "profileUrl": "https://sketchfab.com/holger.buss",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/7a48ea9315784232bc4b58d3402bacc2",
+          "images": [
+            {
+              "size": 2627,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/7a48ea9315784232bc4b58d3402bacc2/597362d0c74449358ed22ead75216ddb.png",
+              "height": 32
+            },
+            {
+              "size": 5316,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/7a48ea9315784232bc4b58d3402bacc2/fa307823adfc4cd1afbdf9c863a4ce10.png",
+              "height": 48
+            },
+            {
+              "size": 16104,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/7a48ea9315784232bc4b58d3402bacc2/cf122a0d61724c26897f64e016642a01.png",
+              "height": 90
+            },
+            {
+              "size": 19429,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/7a48ea9315784232bc4b58d3402bacc2/d6c3dfdbe475425bb79f1ebb25eceeb7.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/18aab9e9a6994cb098c2c36bdd335f42"
+      },
+      "description": "Steam ship for the tranport of materials and equipment in the oil industry. 37 meters in length and 6.7m wide.\nOn January 26th, 1915, the British steel cargo ZEITIEH, built in 1911 at Maryport on voyage from Zeitieh to Gemsah with a cargo of piping and railway \nmaterial, caught fire and sank, off Rassin Island. \nShe was on anchor during a routine boiler burner change-out a fire started in the machinery space. The fire went out of control and eventually the ship developed a port list, either from fire-fighting water accumulating in the ship\u2019s bilges, or machinery breaking loose and shifting. The port list was severe enough that the ship starting taking on water over the port side, causing her to roll and finally sink to the bottom, spilling its cargo of train track rails on the way down near position 27.42.0N/33.41.6E in 12 meters of water.\n\nI scanned the wreck in July 2024 during one dive.\n\nhttps://dive3d.eu/models/egypt/zeitieh/\n\n![](https://dive3d.eu/wp-content/uploads/SS-Zeithie-1024x683.jpg)",
+      "faceCount": 2429628,
+      "createdAt": "2024-07-23T11:10:51.435703",
+      "vertexCount": 1214391,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 285821632,
+          "type": "glb",
+          "textureMaxResolution": 8192,
+          "faceCount": 2429628,
+          "vertexCount": 7279452
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 116698030,
+          "type": "gltf",
+          "textureMaxResolution": 8192,
+          "faceCount": 2429628,
+          "vertexCount": 7279452
+        },
+        "source": {
+          "textureCount": null,
+          "size": 97553125,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 236613434,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/9a211393539541c0b81c8a60625e8730",
+      "uid": "9a211393539541c0b81c8a60625e8730",
+      "name": "Mobile - Wreck-It Ralph Storybook Deluxe - Track",
+      "staffpickedAt": null,
+      "viewCount": 2059,
+      "likeCount": 9,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-9a211393539541c0b81c8a60625e8730",
+      "embedUrl": "https://sketchfab.com/models/9a211393539541c0b81c8a60625e8730/embed",
+      "commentCount": 2,
+      "isDownloadable": true,
+      "publishedAt": "2025-01-01T20:00:51.039386",
+      "tags": [],
+      "categories": [],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "631f22f241e1464085e04d43f0a2be88",
+            "size": 229574,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/9a211393539541c0b81c8a60625e8730/thumbnails/fd7bfc8e62ae41d69f9be83cd377f074/2e3e54ea83f647e29bb42944de63ad2c.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "4c453db855f04cd8a92871e85e7043d6",
+            "size": 81203,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/9a211393539541c0b81c8a60625e8730/thumbnails/fd7bfc8e62ae41d69f9be83cd377f074/3fc55f2362b3498db2217ce307f2902c.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "181ce881a57c446db8621987fb114768",
+            "size": 48753,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/9a211393539541c0b81c8a60625e8730/thumbnails/fd7bfc8e62ae41d69f9be83cd377f074/02143f96828b47a4a5fc8c665552d374.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "0021e6eb3a614c45bd25bf857ad26d3e",
+            "size": 9538,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/9a211393539541c0b81c8a60625e8730/thumbnails/fd7bfc8e62ae41d69f9be83cd377f074/888c5b23e5f941cfa0a0e86807747ff1.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "9d8f2b1ad6434b748a7705bcf77c7e8e",
+            "size": 1414,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/9a211393539541c0b81c8a60625e8730/thumbnails/fd7bfc8e62ae41d69f9be83cd377f074/df8057960efa48b08ccf71bc98ba52b0.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "7514915b243a4a03a11e1f3293ad834e",
+        "username": "myodakush420",
+        "displayName": "Frederick do not hack on this channel",
+        "profileUrl": "https://sketchfab.com/myodakush420",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/789c3ac67fdc4ac28656360f5fc74dff",
+          "images": [
+            {
+              "size": 978,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/789c3ac67fdc4ac28656360f5fc74dff/01fd9de4d6554298856dc4f8f87289e3.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1299,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/789c3ac67fdc4ac28656360f5fc74dff/af4753c574074fbb82bbe2c53f0946e4.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2500,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/789c3ac67fdc4ac28656360f5fc74dff/ead05f27c7a64bcb89d9e47f4213601d.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2810,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/789c3ac67fdc4ac28656360f5fc74dff/81351dc2fec1400392db57756f8f4b86.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/7514915b243a4a03a11e1f3293ad834e"
+      },
+      "description": "",
+      "faceCount": 31697,
+      "createdAt": "2025-01-01T19:56:52.859097",
+      "vertexCount": 21917,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 12,
+          "size": 4662876,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 31697,
+          "vertexCount": 27192
+        },
+        "gltf": {
+          "textureCount": 12,
+          "size": 3884569,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 31697,
+          "vertexCount": 27192
+        },
+        "source": {
+          "textureCount": null,
+          "size": 35652214,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 4285262,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/d6f4731b354840a4b1b62e921a80cdf4",
+      "uid": "d6f4731b354840a4b1b62e921a80cdf4",
+      "name": "Fishig Vessel BEAU at Truk Lagoon",
+      "staffpickedAt": null,
+      "viewCount": 285,
+      "likeCount": 8,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-d6f4731b354840a4b1b62e921a80cdf4",
+      "embedUrl": "https://sketchfab.com/models/d6f4731b354840a4b1b62e921a80cdf4/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2025-04-09T09:32:41.912879",
+      "tags": [
+        {
+          "name": "diving",
+          "slug": "diving",
+          "uri": "https://api.sketchfab.com/v3/tags/diving"
+        },
+        {
+          "name": "shipwreck",
+          "slug": "shipwreck",
+          "uri": "https://api.sketchfab.com/v3/tags/shipwreck"
+        },
+        {
+          "name": "wreck",
+          "slug": "wreck",
+          "uri": "https://api.sketchfab.com/v3/tags/wreck"
+        },
+        {
+          "name": "scuba",
+          "slug": "scuba",
+          "uri": "https://api.sketchfab.com/v3/tags/scuba"
+        },
+        {
+          "name": "maru",
+          "slug": "maru",
+          "uri": "https://api.sketchfab.com/v3/tags/maru"
+        },
+        {
+          "name": "chuuk",
+          "slug": "chuuk",
+          "uri": "https://api.sketchfab.com/v3/tags/chuuk"
+        },
+        {
+          "name": "agisoft",
+          "slug": "agisoft",
+          "uri": "https://api.sketchfab.com/v3/tags/agisoft"
+        },
+        {
+          "name": "truklagoon",
+          "slug": "truklagoon",
+          "uri": "https://api.sketchfab.com/v3/tags/truklagoon"
+        },
+        {
+          "name": "truk-lagoon",
+          "slug": "truk-lagoon",
+          "uri": "https://api.sketchfab.com/v3/tags/truk-lagoon"
+        },
+        {
+          "name": "dive3d",
+          "slug": "dive3d",
+          "uri": "https://api.sketchfab.com/v3/tags/dive3d"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cultural-heritage-history"
+        },
+        {
+          "name": "places-travel"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "7843dd43c4764733a8a8eaa8b96094d4",
+            "size": 390915,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/d6f4731b354840a4b1b62e921a80cdf4/thumbnails/4b36caff48e64cb29b2a692946631ffe/6d46a59fa16b48e390ef13ecdc76289d.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "33ef179a9e55412c9335aff743882695",
+            "size": 84844,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/d6f4731b354840a4b1b62e921a80cdf4/thumbnails/4b36caff48e64cb29b2a692946631ffe/bd4fe3b264254340806afb00c54d9ea2.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "5f388e4b896f4495b562305da7204abf",
+            "size": 45000,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/d6f4731b354840a4b1b62e921a80cdf4/thumbnails/4b36caff48e64cb29b2a692946631ffe/988602d4b9784e618343680b66cd694a.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "f5f27b15ec3a4e31aea859ea09cccc44",
+            "size": 7708,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/d6f4731b354840a4b1b62e921a80cdf4/thumbnails/4b36caff48e64cb29b2a692946631ffe/3f2e6f6ab61b451aab73e3309706f4cd.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "992950e9af1e473189ccc410a62deb7c",
+            "size": 1398,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/d6f4731b354840a4b1b62e921a80cdf4/thumbnails/4b36caff48e64cb29b2a692946631ffe/03f5eace6c2945ef9ac4ab1187084c40.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "18aab9e9a6994cb098c2c36bdd335f42",
+        "username": "holger.buss",
+        "displayName": "holger.buss",
+        "profileUrl": "https://sketchfab.com/holger.buss",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/7a48ea9315784232bc4b58d3402bacc2",
+          "images": [
+            {
+              "size": 2627,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/7a48ea9315784232bc4b58d3402bacc2/597362d0c74449358ed22ead75216ddb.png",
+              "height": 32
+            },
+            {
+              "size": 5316,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/7a48ea9315784232bc4b58d3402bacc2/fa307823adfc4cd1afbdf9c863a4ce10.png",
+              "height": 48
+            },
+            {
+              "size": 16104,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/7a48ea9315784232bc4b58d3402bacc2/cf122a0d61724c26897f64e016642a01.png",
+              "height": 90
+            },
+            {
+              "size": 19429,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/7a48ea9315784232bc4b58d3402bacc2/d6c3dfdbe475425bb79f1ebb25eceeb7.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/18aab9e9a6994cb098c2c36bdd335f42"
+      },
+      "description": "One of the non WW2 wrecks, this is a fishing vessel sitting upright in 18 mtrs of water which foundered in a\nstorm. It was used as a training ship.\n\nIt is totally intact and it is difficult to see how or why it sank.It lies close to the resort and thus makes a\ngreat 3 rd dive. About 40 mtrs long.\n\nhttps://dive3d.eu/models/chuuk-lagoon-truk/m-v-beau/",
+      "faceCount": 2378102,
+      "createdAt": "2025-04-09T09:15:32.677641",
+      "vertexCount": 1188049,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 103015840,
+          "type": "glb",
+          "textureMaxResolution": 8192,
+          "faceCount": 2378102,
+          "vertexCount": 1700706
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 67608112,
+          "type": "gltf",
+          "textureMaxResolution": 8192,
+          "faceCount": 2378102,
+          "vertexCount": 1700706
+        },
+        "source": {
+          "textureCount": null,
+          "size": 74210977,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 64333965,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    }
+  ]
+}

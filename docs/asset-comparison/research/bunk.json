@@ -1,0 +1,2292 @@
+{
+  "cursors": {
+    "next": "12",
+    "previous": null
+  },
+  "next": "https://api.sketchfab.com/v3/search?count=12&cursor=12&downloadable=true&q=military+bed&sort_by=-relevance&type=models",
+  "previous": null,
+  "results": [
+    {
+      "uri": "https://api.sketchfab.com/v3/models/47b02ef0fa8d41028d84e89bbd2072fe",
+      "uid": "47b02ef0fa8d41028d84e89bbd2072fe",
+      "name": "Sci fi assault bi bed mech",
+      "staffpickedAt": null,
+      "viewCount": 7,
+      "likeCount": 0,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-47b02ef0fa8d41028d84e89bbd2072fe",
+      "embedUrl": "https://sketchfab.com/models/47b02ef0fa8d41028d84e89bbd2072fe/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-07-30T19:17:27.453720",
+      "tags": [
+        {
+          "name": "firearm",
+          "slug": "firearm",
+          "uri": "https://api.sketchfab.com/v3/tags/firearm"
+        },
+        {
+          "name": "firearms",
+          "slug": "firearms",
+          "uri": "https://api.sketchfab.com/v3/tags/firearms"
+        },
+        {
+          "name": "science-fiction",
+          "slug": "science-fiction",
+          "uri": "https://api.sketchfab.com/v3/tags/science-fiction"
+        },
+        {
+          "name": "military",
+          "slug": "military",
+          "uri": "https://api.sketchfab.com/v3/tags/military"
+        }
+      ],
+      "categories": [
+        {
+          "name": "weapons-military"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "d1aacfea68fd46989e768218c1f27489",
+            "size": 56098,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/47b02ef0fa8d41028d84e89bbd2072fe/thumbnails/655a46dd54d344e5bc5180347377d9ce/b950b73b07a04a82ab62188e3b224085.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "ce29eb47b43046aeb4d9d43762303336",
+            "size": 19580,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/47b02ef0fa8d41028d84e89bbd2072fe/thumbnails/655a46dd54d344e5bc5180347377d9ce/97f46bb1bf3a48e19d38d11695e10f3d.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "7ac7da1a5cd34203a3505fb8143a73d5",
+            "size": 11369,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/47b02ef0fa8d41028d84e89bbd2072fe/thumbnails/655a46dd54d344e5bc5180347377d9ce/cd85f46f87814491a142aa4390696b97.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "4d20d5397ea64669840ea01fabc6aa12",
+            "size": 2652,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/47b02ef0fa8d41028d84e89bbd2072fe/thumbnails/655a46dd54d344e5bc5180347377d9ce/4fe51e6dba1045a7a429afddad3a1d62.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "8b6f528093e24ab78d62d33c5c1fc560",
+            "size": 834,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/47b02ef0fa8d41028d84e89bbd2072fe/thumbnails/655a46dd54d344e5bc5180347377d9ce/b4fb773950cb48c9bedf07877adb1d51.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "b06a0771ca40426da3eb5e6b58ac4b70",
+        "username": "oarfish54",
+        "displayName": "oarfish",
+        "profileUrl": "https://sketchfab.com/oarfish54",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/0857bedbfa704169af1680bc9137f861",
+          "images": [
+            {
+              "size": 978,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/0857bedbfa704169af1680bc9137f861/edf0056a43014734aadf3879fc6298c1.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1298,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/0857bedbfa704169af1680bc9137f861/49961539f42a45b7b8080a5f12ccc04a.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2573,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/0857bedbfa704169af1680bc9137f861/4f04108f806b4b3eb50e1e9a6471d976.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2876,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/0857bedbfa704169af1680bc9137f861/53f9d021b1f6491ea837da095d3a3c67.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/b06a0771ca40426da3eb5e6b58ac4b70"
+      },
+      "description": "Sci fi assault bi bed mech - orginal design",
+      "faceCount": 11240,
+      "createdAt": "2026-07-30T19:17:07.367341",
+      "vertexCount": 4516,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 395556,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 11240,
+          "vertexCount": 10796
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 161081,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 11240,
+          "vertexCount": 10796
+        },
+        "source": {
+          "textureCount": null,
+          "size": 562402,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 288828,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/ae4052ba38ea4243ac84a882e1232c9a",
+      "uid": "ae4052ba38ea4243ac84a882e1232c9a",
+      "name": "Niva Arta",
+      "staffpickedAt": null,
+      "viewCount": 110,
+      "likeCount": 8,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-ae4052ba38ea4243ac84a882e1232c9a",
+      "embedUrl": "https://sketchfab.com/models/ae4052ba38ea4243ac84a882e1232c9a/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-07-09T20:08:07.400011",
+      "tags": [
+        {
+          "name": "buggy",
+          "slug": "buggy",
+          "uri": "https://api.sketchfab.com/v3/tags/buggy"
+        },
+        {
+          "name": "blockbench",
+          "slug": "blockbench",
+          "uri": "https://api.sketchfab.com/v3/tags/blockbench"
+        },
+        {
+          "name": "minecraft",
+          "slug": "minecraft",
+          "uri": "https://api.sketchfab.com/v3/tags/minecraft"
+        },
+        {
+          "name": "vehicle",
+          "slug": "vehicle",
+          "uri": "https://api.sketchfab.com/v3/tags/vehicle"
+        },
+        {
+          "name": "lowpoly",
+          "slug": "lowpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpoly"
+        },
+        {
+          "name": "military",
+          "slug": "military",
+          "uri": "https://api.sketchfab.com/v3/tags/military"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "weapons-military"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "813991d5d54949d48c6b5349bd95d934",
+            "size": 83646,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/ae4052ba38ea4243ac84a882e1232c9a/thumbnails/bc5e83048690445896564a971d31439a/23d2d71f14a14e998e477c198e727a2a.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "5cde64fcb0b241c08a263ada9f1815dc",
+            "size": 30279,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/ae4052ba38ea4243ac84a882e1232c9a/thumbnails/bc5e83048690445896564a971d31439a/9739aad97bc748e3bb4353cc3d430e66.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "7a37f3ce7607440e9b37843dcbb52755",
+            "size": 17989,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/ae4052ba38ea4243ac84a882e1232c9a/thumbnails/bc5e83048690445896564a971d31439a/5714700442b84bb3881cb02431bcb0ca.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "cda54545f4a24bfebb82204df877f648",
+            "size": 4036,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/ae4052ba38ea4243ac84a882e1232c9a/thumbnails/bc5e83048690445896564a971d31439a/50785d2c04354fb2824c462a7f3baafc.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "df7d0a1d377649f48137e8ce4def67ae",
+            "size": 1028,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/ae4052ba38ea4243ac84a882e1232c9a/thumbnails/bc5e83048690445896564a971d31439a/e0cf18979056419fb0e383f763ad752d.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "197914f6c700426c9ebf78e8fa074628",
+        "username": "ROIF9",
+        "displayName": "ROIF",
+        "profileUrl": "https://sketchfab.com/ROIF9",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/e59732fb5a264414ba2efdc54a2aa828",
+          "images": [
+            {
+              "size": 2091,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/e59732fb5a264414ba2efdc54a2aa828/2d5a57db6cf84c3e872895b8d2249d21.png",
+              "height": 32
+            },
+            {
+              "size": 4067,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/e59732fb5a264414ba2efdc54a2aa828/e7592288d6104392b9e0eccc69a3645a.png",
+              "height": 48
+            },
+            {
+              "size": 10776,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/e59732fb5a264414ba2efdc54a2aa828/7f3bbbde20f04d06a1d77ba3722eab14.png",
+              "height": 90
+            },
+            {
+              "size": 12605,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/e59732fb5a264414ba2efdc54a2aa828/79f0ac272e37484b9b37589a6fd3227d.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/197914f6c700426c9ebf78e8fa074628"
+      },
+      "description": "The Niva Arta is based on the classic three-door Lada Niva SUV. Its doors were removed, ground clearance was increased, the suspension was reinforced, the wheel arches were cut off, and the rear was transformed into something resembling a pickup truck. The cargo bed can accommodate an anti-tank missile turret or other weapons.\n\nThe model was made by my friend ZZimbaba, the textures were created by me (Roif).\n\nCredits - t.me/RoifsWorkshop\n\n\u00ab\u041d\u0438\u0432\u0430 \u0410\u0440\u0442\u0430\u00bb \u0441\u043e\u0437\u0434\u0430\u043d\u0430 \u043d\u0430 \u0431\u0430\u0437\u0435 \u043a\u043b\u0430\u0441\u0441\u0438\u0447\u0435\u0441\u043a\u043e\u0439 \u0442\u0440\u0435\u0445\u0434\u0432\u0435\u0440\u043d\u043e\u0439 Lada Niva \u041f\u0438\u043a\u0430\u043f. \u0415\u0435 \u043b\u0438\u0448\u0438\u043b\u0438 \u0434\u0432\u0435\u0440\u0435\u0439, \u0443\u0432\u0435\u043b\u0438\u0447\u0438\u043b\u0438 \u0434\u043e\u0440\u043e\u0436\u043d\u044b\u0439 \u043f\u0440\u043e\u0441\u0432\u0435\u0442, \u0443\u0441\u0438\u043b\u0438\u043b\u0438 \u043f\u043e\u0434\u0432\u0435\u0441\u043a\u0443, \u0441\u0440\u0435\u0437\u0430\u043b\u0438 \u043a\u043e\u043b\u0435\u0441\u043d\u044b\u0435 \u0430\u0440\u043a\u0438, \u0430 \u0437\u0430\u0434\u043d\u044e\u044e \u0447\u0430\u0441\u0442\u044c \u043f\u0440\u0435\u0432\u0440\u0430\u0442\u0438\u043b\u0438 \u0432 \u043f\u043e\u0434\u043e\u0431\u0438\u0435 \u043f\u0438\u043a\u0430\u043f\u0430. \u041d\u0430 \u0433\u0440\u0443\u0437\u043e\u0432\u043e\u0439 \u043f\u043b\u0430\u0442\u0444\u043e\u0440\u043c\u0435 \u043c\u043e\u0436\u043d\u043e \u0440\u0430\u0437\u043c\u0435\u0441\u0442\u0438\u0442\u044c \u0442\u0443\u0440\u0435\u043b\u044c \u0434\u043b\u044f \u043f\u0440\u043e\u0442\u0438\u0432\u043e\u0442\u0430\u043d\u043a\u043e\u0432\u043e\u0433\u043e \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0441\u0430 \u0438\u043b\u0438 \u0438\u043d\u043e\u0435 \u0432\u043e\u043e\u0440\u0443\u0436\u0435\u043d\u0438\u0435.\n\n\u043c\u043e\u0434\u0435\u043b\u044c \u0434\u0435\u043b\u0430\u043b \u043c\u043e\u0439 \u0434\u0440\u0443\u0433 \u0417\u0417\u0438\u043c\u0431\u0430\u0431\u0430, \u0442\u0435\u043a\u0441\u0442\u0443\u0440\u0443 \u042f (\u0440\u043e\u0439\u0444)",
+      "faceCount": 2626,
+      "createdAt": "2026-07-09T20:00:04.512812",
+      "vertexCount": 1752,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 413392,
+          "type": "glb",
+          "textureMaxResolution": 128,
+          "faceCount": 2626,
+          "vertexCount": 5252
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 57196,
+          "type": "gltf",
+          "textureMaxResolution": 128,
+          "faceCount": 2626,
+          "vertexCount": 5252
+        },
+        "source": {
+          "textureCount": null,
+          "size": 489279,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 157081,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/cd853783747a46e5ab2042254494bdf6",
+      "uid": "cd853783747a46e5ab2042254494bdf6",
+      "name": "Zastava M70 Pistol",
+      "staffpickedAt": null,
+      "viewCount": 122,
+      "likeCount": 1,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-cd853783747a46e5ab2042254494bdf6",
+      "embedUrl": "https://sketchfab.com/models/cd853783747a46e5ab2042254494bdf6/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-07-05T00:19:53.532315",
+      "tags": [
+        {
+          "name": "police",
+          "slug": "police",
+          "uri": "https://api.sketchfab.com/v3/tags/police"
+        },
+        {
+          "name": "handgun",
+          "slug": "handgun",
+          "uri": "https://api.sketchfab.com/v3/tags/handgun"
+        },
+        {
+          "name": "bee",
+          "slug": "bee",
+          "uri": "https://api.sketchfab.com/v3/tags/bee"
+        },
+        {
+          "name": "unique",
+          "slug": "unique",
+          "uri": "https://api.sketchfab.com/v3/tags/unique"
+        },
+        {
+          "name": "serbia",
+          "slug": "serbia",
+          "uri": "https://api.sketchfab.com/v3/tags/serbia"
+        },
+        {
+          "name": "cop",
+          "slug": "cop",
+          "uri": "https://api.sketchfab.com/v3/tags/cop"
+        },
+        {
+          "name": "tiny",
+          "slug": "tiny",
+          "uri": "https://api.sketchfab.com/v3/tags/tiny"
+        },
+        {
+          "name": "wars",
+          "slug": "wars",
+          "uri": "https://api.sketchfab.com/v3/tags/wars"
+        },
+        {
+          "name": "yugo",
+          "slug": "yugo",
+          "uri": "https://api.sketchfab.com/v3/tags/yugo"
+        },
+        {
+          "name": "yugoslavia",
+          "slug": "yugoslavia",
+          "uri": "https://api.sketchfab.com/v3/tags/yugoslavia"
+        },
+        {
+          "name": "military",
+          "slug": "military",
+          "uri": "https://api.sketchfab.com/v3/tags/military"
+        }
+      ],
+      "categories": [
+        {
+          "name": "electronics-gadgets"
+        },
+        {
+          "name": "weapons-military"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "5a47addbdabe4c93a2fa9e588a77cf1d",
+            "size": 113065,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/cd853783747a46e5ab2042254494bdf6/thumbnails/1a089aa00824423e8d0f93f0f16109f4/3522b536109d4b32acaa614507a4d440.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "094d1800028142c69f710afa34d610ed",
+            "size": 29404,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/cd853783747a46e5ab2042254494bdf6/thumbnails/1a089aa00824423e8d0f93f0f16109f4/45f585bc8e70448f9019e0f143a170b5.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "494ca0e5768f46959e4185c8805ff920",
+            "size": 15293,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/cd853783747a46e5ab2042254494bdf6/thumbnails/1a089aa00824423e8d0f93f0f16109f4/35184ad975164182af76bfacd5dea7b8.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "0f788a83afee4db287d7e902f57e77ad",
+            "size": 2983,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/cd853783747a46e5ab2042254494bdf6/thumbnails/1a089aa00824423e8d0f93f0f16109f4/36de4cba9b1a4eef8450743e2c31c689.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "1f38ce5dd31e42808e7703595003a26d",
+            "size": 911,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/cd853783747a46e5ab2042254494bdf6/thumbnails/1a089aa00824423e8d0f93f0f16109f4/84fd483ad1a74c0286847b1480897264.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "f10adf967988479d9fa87e7d92470f35",
+        "username": "calcman",
+        "displayName": "thecalcman",
+        "profileUrl": "https://sketchfab.com/calcman",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/a14af4f54a1f4ade8db4086b47288aa2",
+          "images": [
+            {
+              "size": 1023,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/a14af4f54a1f4ade8db4086b47288aa2/08b9b5323fc545cfaac4b3fad532ee3d.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1351,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/a14af4f54a1f4ade8db4086b47288aa2/a8017e1eb7bf44af90c1fb78691b4b4e.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2797,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/a14af4f54a1f4ade8db4086b47288aa2/3837303f5d394be0a126a70dd1d47627.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3261,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/a14af4f54a1f4ade8db4086b47288aa2/624576a57ad94e0caf47212fee6d7430.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/f10adf967988479d9fa87e7d92470f35"
+      },
+      "description": "An extremely low-poly model of a Yugoslav pistol, chambered in .32 ACP apparently for use with the Milicija police and not to be confused with the M70 rifle. It was modeled specifically for the [We Were Brothers](https://steamcommunity.com/workshop/filedetails/?id=3486576445) modpack for Easy Red 2, meaning it is already optimized for usage in games. The texture is from an image I pulled online.\n\nIt is completely free to use and modify for any purposes, no need to credit me.",
+      "faceCount": 6469,
+      "createdAt": "2026-07-05T00:16:36.795738",
+      "vertexCount": 3589,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 1418916,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 6446,
+          "vertexCount": 6686
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 1236669,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 6446,
+          "vertexCount": 6686
+        },
+        "source": {
+          "textureCount": null,
+          "size": 5657940,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 424166,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "72eb2b1960364637901eacce19283624",
+        "label": "Free Standard"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/1adb4b659119482ba4e3c4845051a054",
+      "uid": "1adb4b659119482ba4e3c4845051a054",
+      "name": "Military Goggles",
+      "staffpickedAt": null,
+      "viewCount": 59,
+      "likeCount": 1,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-1adb4b659119482ba4e3c4845051a054",
+      "embedUrl": "https://sketchfab.com/models/1adb4b659119482ba4e3c4845051a054/embed",
+      "commentCount": 1,
+      "isDownloadable": true,
+      "publishedAt": "2026-04-30T21:32:29.551555",
+      "tags": [
+        {
+          "name": "googles",
+          "slug": "googles",
+          "uri": "https://api.sketchfab.com/v3/tags/googles"
+        },
+        {
+          "name": "ai",
+          "slug": "ai",
+          "uri": "https://api.sketchfab.com/v3/tags/ai"
+        },
+        {
+          "name": "military",
+          "slug": "military",
+          "uri": "https://api.sketchfab.com/v3/tags/military"
+        },
+        {
+          "name": "createdwithai",
+          "slug": "createdwithai",
+          "uri": "https://api.sketchfab.com/v3/tags/createdwithai"
+        },
+        {
+          "name": "meshy",
+          "slug": "meshy",
+          "uri": "https://api.sketchfab.com/v3/tags/meshy"
+        }
+      ],
+      "categories": [
+        {
+          "name": "fashion-style"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "7719c97744d34f20b8170797e63cea2c",
+            "size": 5925,
+            "width": 448,
+            "url": "https://media.sketchfab.com/thumbnails/4c57687b657445e1b46c83b35e494ad4/448.jpg",
+            "height": 280
+          },
+          {
+            "uid": "a6b20474be7c402db8f8a5a6b9ff4730",
+            "size": 2275,
+            "width": 200,
+            "url": "https://media.sketchfab.com/thumbnails/4c57687b657445e1b46c83b35e494ad4/200x200.jpg",
+            "height": 200
+          },
+          {
+            "uid": "98095b18341b4f49affb313ad9843d70",
+            "size": 841,
+            "width": 100,
+            "url": "https://media.sketchfab.com/thumbnails/4c57687b657445e1b46c83b35e494ad4/100x100.jpg",
+            "height": 100
+          },
+          {
+            "uid": "af9d9afad4f1427a8a6e68dffa18c236",
+            "size": 421,
+            "width": 50,
+            "url": "https://media.sketchfab.com/thumbnails/4c57687b657445e1b46c83b35e494ad4/50x50.jpg",
+            "height": 50
+          },
+          {
+            "uid": "b0855968e7eb4421b1d57761d0f2e2f1",
+            "size": 12257,
+            "width": 640,
+            "url": "https://media.sketchfab.com/thumbnails/4c57687b657445e1b46c83b35e494ad4/640.jpg",
+            "height": 400
+          },
+          {
+            "uid": "4cfc787dbb4a4a0190430bca9721c6cf",
+            "size": 28643,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/thumbnails/4c57687b657445e1b46c83b35e494ad4/1024.jpg",
+            "height": 640
+          },
+          {
+            "uid": "bdbd1b7885db45ba959aede0fd468199",
+            "size": 21153,
+            "width": 854,
+            "url": "https://media.sketchfab.com/thumbnails/4c57687b657445e1b46c83b35e494ad4/854.jpg",
+            "height": 534
+          }
+        ]
+      },
+      "user": {
+        "uid": "baf9618ebdba4ea4ab4797c81923fa51",
+        "username": "matrux11",
+        "displayName": "matrux11",
+        "profileUrl": "https://sketchfab.com/matrux11",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/2e77a312534741abb53e4be359aeb586",
+          "images": [
+            {
+              "size": 2396,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/2e77a312534741abb53e4be359aeb586/0d9626cb0e8a446e842ee6540cef3289.png",
+              "height": 32
+            },
+            {
+              "size": 4990,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/2e77a312534741abb53e4be359aeb586/5838727be3434432bbf22430f03965cc.png",
+              "height": 48
+            },
+            {
+              "size": 15896,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/2e77a312534741abb53e4be359aeb586/a26ec48d0e634714b5ddb714c081cced.png",
+              "height": 90
+            },
+            {
+              "size": 19204,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/2e77a312534741abb53e4be359aeb586/45963e172c7b480d8768d8cad00d00de.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/baf9618ebdba4ea4ab4797c81923fa51"
+      },
+      "description": "This model was generated using IA Meshy AI toolkit. It provides tools that effortlessly turn human imagination into stunning 3D models.\r\n\r\nIf you're interested in this model, visit the model page on Meshy to explore more about it: [https://www.meshy.ai/3d-models/Sky-Reflected-in-Goggles-v2-019ddbc4-be0d-72ef-a4f8-b4aae0fea056?utm_source=sketchfab](https://www.meshy.ai/3d-models/Sky-Reflected-in-Goggles-v2-019ddbc4-be0d-72ef-a4f8-b4aae0fea056?utm_source=sketchfab)",
+      "faceCount": 434804,
+      "createdAt": "2026-04-30T21:29:37.159903",
+      "vertexCount": 217165,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 4,
+          "size": 72330760,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 434798,
+          "vertexCount": 267742
+        },
+        "gltf": {
+          "textureCount": 4,
+          "size": 58895784,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 434798,
+          "vertexCount": 267742
+        },
+        "source": {
+          "textureCount": null,
+          "size": 119015754,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 12792744,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "72eb2b1960364637901eacce19283624",
+        "label": "Free Standard"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/06f59ff7e52d462ea3b5f737f68a747f",
+      "uid": "06f59ff7e52d462ea3b5f737f68a747f",
+      "name": "Desert Operative",
+      "staffpickedAt": null,
+      "viewCount": 18,
+      "likeCount": 0,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-06f59ff7e52d462ea3b5f737f68a747f",
+      "embedUrl": "https://sketchfab.com/models/06f59ff7e52d462ea3b5f737f68a747f/embed",
+      "commentCount": 2,
+      "isDownloadable": true,
+      "publishedAt": "2025-11-16T19:16:23.719499",
+      "tags": [
+        {
+          "name": "soldier",
+          "slug": "soldier",
+          "uri": "https://api.sketchfab.com/v3/tags/soldier"
+        },
+        {
+          "name": "desert",
+          "slug": "desert",
+          "uri": "https://api.sketchfab.com/v3/tags/desert"
+        },
+        {
+          "name": "detailed",
+          "slug": "detailed",
+          "uri": "https://api.sketchfab.com/v3/tags/detailed"
+        },
+        {
+          "name": "figurine",
+          "slug": "figurine",
+          "uri": "https://api.sketchfab.com/v3/tags/figurine"
+        },
+        {
+          "name": "realistic",
+          "slug": "realistic",
+          "uri": "https://api.sketchfab.com/v3/tags/realistic"
+        },
+        {
+          "name": "actionfigure",
+          "slug": "actionfigure",
+          "uri": "https://api.sketchfab.com/v3/tags/actionfigure"
+        },
+        {
+          "name": "operative",
+          "slug": "operative",
+          "uri": "https://api.sketchfab.com/v3/tags/operative"
+        },
+        {
+          "name": "tactical",
+          "slug": "tactical",
+          "uri": "https://api.sketchfab.com/v3/tags/tactical"
+        },
+        {
+          "name": "camouflage",
+          "slug": "camouflage",
+          "uri": "https://api.sketchfab.com/v3/tags/camouflage"
+        },
+        {
+          "name": "ai",
+          "slug": "ai",
+          "uri": "https://api.sketchfab.com/v3/tags/ai"
+        },
+        {
+          "name": "military",
+          "slug": "military",
+          "uri": "https://api.sketchfab.com/v3/tags/military"
+        },
+        {
+          "name": "createdwithai",
+          "slug": "createdwithai",
+          "uri": "https://api.sketchfab.com/v3/tags/createdwithai"
+        },
+        {
+          "name": "meshy",
+          "slug": "meshy",
+          "uri": "https://api.sketchfab.com/v3/tags/meshy"
+        }
+      ],
+      "categories": [],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "870d4a9b41bd4ff180c797080331501a",
+            "size": 68388,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/06f59ff7e52d462ea3b5f737f68a747f/thumbnails/5ddfa73843d44ac6897da5bae12c12a2/87214a8a28c94949a01ba69c14a452f4.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "a47d6d0431d34483a7446c0c36ea4221",
+            "size": 23402,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/06f59ff7e52d462ea3b5f737f68a747f/thumbnails/5ddfa73843d44ac6897da5bae12c12a2/aba8f72c9aee4861ac2e9a14caf614ff.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "b8a2af2d42be4df5b7d334a104dbcd3b",
+            "size": 13595,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/06f59ff7e52d462ea3b5f737f68a747f/thumbnails/5ddfa73843d44ac6897da5bae12c12a2/2820c8a6885f45d697474380a3021c02.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "45eead5dbee24a6d8565d0758e097013",
+            "size": 2817,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/06f59ff7e52d462ea3b5f737f68a747f/thumbnails/5ddfa73843d44ac6897da5bae12c12a2/a584e973d51e45e381a7a7591221710b.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "12546b5c83224520a28d3449eba4c6ee",
+            "size": 831,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/06f59ff7e52d462ea3b5f737f68a747f/thumbnails/5ddfa73843d44ac6897da5bae12c12a2/64fd93da729d4709bbb9f2fd58092e82.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "e8df3bdf929d4a32b03e5618f95c42b1",
+        "username": "korediroma",
+        "displayName": "korediroma",
+        "profileUrl": "https://sketchfab.com/korediroma",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/78fa317e46024a5283765aa34df5e508",
+          "images": [
+            {
+              "size": 6421,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/78fa317e46024a5283765aa34df5e508/aec92fe9a74e499c98d759362cd7f02f.jpeg",
+              "height": 100
+            },
+            {
+              "size": 2518,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/78fa317e46024a5283765aa34df5e508/17fa177ffaa344a2b2fc8e78efd40fbb.jpeg",
+              "height": 48
+            },
+            {
+              "size": 5653,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/78fa317e46024a5283765aa34df5e508/02162695bdc840faa3bcb2d418309c5e.jpeg",
+              "height": 90
+            },
+            {
+              "size": 1350,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/78fa317e46024a5283765aa34df5e508/6fde876cbded4cd48d36a76029e3aa02.jpeg",
+              "height": 32
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/e8df3bdf929d4a32b03e5618f95c42b1"
+      },
+      "description": "This model was generated using Meshy(https://www.meshy.ai)'s AI toolkit. It provides tools that effortlessly turn human imagination into stunning 3D models.\r\n\r\nIf you're interested in this model, visit the model page on Meshy to explore more about it: [https://www.meshy.ai/3d-models/Desert-Operative-v2-019a8e16-bed5-741e-b375-98e6cf4497a7?utm_source=sketchfab](https://www.meshy.ai/3d-models/Desert-Operative-v2-019a8e16-bed5-741e-b375-98e6cf4497a7?utm_source=sketchfab)",
+      "faceCount": 772936,
+      "createdAt": "2025-11-16T19:15:58.218576",
+      "vertexCount": 386388,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 21027296,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 772936,
+          "vertexCount": 489414
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 12427450,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 772936,
+          "vertexCount": 489414
+        },
+        "source": {
+          "textureCount": null,
+          "size": 13912818,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 13899634,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/f4890c76df644017932502a0812fd32a",
+      "uid": "f4890c76df644017932502a0812fd32a",
+      "name": "Ukrainian M998 Humvee pickup",
+      "staffpickedAt": null,
+      "viewCount": 2163,
+      "likeCount": 59,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-f4890c76df644017932502a0812fd32a",
+      "embedUrl": "https://sketchfab.com/models/f4890c76df644017932502a0812fd32a/embed",
+      "commentCount": 1,
+      "isDownloadable": true,
+      "publishedAt": "2025-10-14T18:46:45.241657",
+      "tags": [
+        {
+          "name": "truck",
+          "slug": "truck",
+          "uri": "https://api.sketchfab.com/v3/tags/truck"
+        },
+        {
+          "name": "wheels",
+          "slug": "wheels",
+          "uri": "https://api.sketchfab.com/v3/tags/wheels"
+        },
+        {
+          "name": "armored",
+          "slug": "armored",
+          "uri": "https://api.sketchfab.com/v3/tags/armored"
+        },
+        {
+          "name": "army",
+          "slug": "army",
+          "uri": "https://api.sketchfab.com/v3/tags/army"
+        },
+        {
+          "name": "4x4",
+          "slug": "4x4",
+          "uri": "https://api.sketchfab.com/v3/tags/4x4"
+        },
+        {
+          "name": "pickup",
+          "slug": "pickup",
+          "uri": "https://api.sketchfab.com/v3/tags/pickup"
+        },
+        {
+          "name": "humvee",
+          "slug": "humvee",
+          "uri": "https://api.sketchfab.com/v3/tags/humvee"
+        },
+        {
+          "name": "hummer",
+          "slug": "hummer",
+          "uri": "https://api.sketchfab.com/v3/tags/hummer"
+        },
+        {
+          "name": "combat",
+          "slug": "combat",
+          "uri": "https://api.sketchfab.com/v3/tags/combat"
+        },
+        {
+          "name": "cargo",
+          "slug": "cargo",
+          "uri": "https://api.sketchfab.com/v3/tags/cargo"
+        },
+        {
+          "name": "ukraine",
+          "slug": "ukraine",
+          "uri": "https://api.sketchfab.com/v3/tags/ukraine"
+        },
+        {
+          "name": "ukrainian",
+          "slug": "ukrainian",
+          "uri": "https://api.sketchfab.com/v3/tags/ukrainian"
+        },
+        {
+          "name": "parade",
+          "slug": "parade",
+          "uri": "https://api.sketchfab.com/v3/tags/parade"
+        },
+        {
+          "name": "wheeled",
+          "slug": "wheeled",
+          "uri": "https://api.sketchfab.com/v3/tags/wheeled"
+        },
+        {
+          "name": "afu",
+          "slug": "afu",
+          "uri": "https://api.sketchfab.com/v3/tags/afu"
+        },
+        {
+          "name": "hmmwv",
+          "slug": "hmmwv",
+          "uri": "https://api.sketchfab.com/v3/tags/hmmwv"
+        },
+        {
+          "name": "military",
+          "slug": "military",
+          "uri": "https://api.sketchfab.com/v3/tags/military"
+        },
+        {
+          "name": "pixel",
+          "slug": "pixel",
+          "uri": "https://api.sketchfab.com/v3/tags/pixel"
+        },
+        {
+          "name": "war",
+          "slug": "war",
+          "uri": "https://api.sketchfab.com/v3/tags/war"
+        },
+        {
+          "name": "m998",
+          "slug": "m998",
+          "uri": "https://api.sketchfab.com/v3/tags/m998"
+        },
+        {
+          "name": "ukrainewar",
+          "slug": "ukrainewar",
+          "uri": "https://api.sketchfab.com/v3/tags/ukrainewar"
+        },
+        {
+          "name": "digitalcamo",
+          "slug": "digitalcamo",
+          "uri": "https://api.sketchfab.com/v3/tags/digitalcamo"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "weapons-military"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "4dde01631634459aaf62b0eb32085d5b",
+            "size": 136079,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/f4890c76df644017932502a0812fd32a/thumbnails/d00b74eab3b74528946ca80f5f8a7ba1/8a53d4b05f724a9eab3ed6c263db212e.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "eac5f5288ae1453eaee59103e8020e26",
+            "size": 44700,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/f4890c76df644017932502a0812fd32a/thumbnails/d00b74eab3b74528946ca80f5f8a7ba1/3c21fdea598d4a30b2f1066c02cd9b4c.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "56e1b885094c48508e58f800a0618769",
+            "size": 26150,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/f4890c76df644017932502a0812fd32a/thumbnails/d00b74eab3b74528946ca80f5f8a7ba1/f3f1d4c5f4694787bb21bb3970056d12.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "301647236efe4257928138cdc378ad38",
+            "size": 5340,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/f4890c76df644017932502a0812fd32a/thumbnails/d00b74eab3b74528946ca80f5f8a7ba1/ae67f32577134470b14d8efbc6d28aad.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "d6da334d7a8e45059c76d19f4bf7e57f",
+            "size": 1115,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/f4890c76df644017932502a0812fd32a/thumbnails/d00b74eab3b74528946ca80f5f8a7ba1/d2ce38a370d84f25a5ff26f66637defe.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "2a533251481140f298a62e3cbc74f969",
+        "username": "42manako",
+        "displayName": "42manako",
+        "profileUrl": "https://sketchfab.com/42manako",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/c76ccfda41594e33a6061999bef721f8",
+          "images": [
+            {
+              "size": 2452,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/c76ccfda41594e33a6061999bef721f8/a10ecf71005441f5ab40cd4fec112b87.png",
+              "height": 32
+            },
+            {
+              "size": 5116,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/c76ccfda41594e33a6061999bef721f8/1a43aee079a64949b5beee32b8a7f718.png",
+              "height": 48
+            },
+            {
+              "size": 16273,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/c76ccfda41594e33a6061999bef721f8/3c38e4c917514314a3af758ebee23240.png",
+              "height": 90
+            },
+            {
+              "size": 19604,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/c76ccfda41594e33a6061999bef721f8/587ddc7678dc46fe9ab6e6f774f6e4c8.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/2a533251481140f298a62e3cbc74f969"
+      },
+      "description": "The M998 Humvee is an American 4x4 military utility vehicle. This variant has a pickup bed. Model from BUTTHE4D.\n\n**Join the Discord!** https://discord.gg/rMvs8u6vpx",
+      "faceCount": 24820,
+      "createdAt": "2025-10-14T18:40:56.069318",
+      "vertexCount": 15509,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 16,
+          "size": 11253012,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 24820,
+          "vertexCount": 33506
+        },
+        "gltf": {
+          "textureCount": 16,
+          "size": 10381277,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 24820,
+          "vertexCount": 33506
+        },
+        "source": {
+          "textureCount": null,
+          "size": 23580012,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 3197603,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "bbfe3f7dbcdd4122b966b85b9786a989",
+        "label": "CC Attribution-NonCommercial"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/717aa5804c82414d814172ab2fdc2a56",
+      "uid": "717aa5804c82414d814172ab2fdc2a56",
+      "name": "GAME READY BED ASSET",
+      "staffpickedAt": null,
+      "viewCount": 70,
+      "likeCount": 1,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-717aa5804c82414d814172ab2fdc2a56",
+      "embedUrl": "https://sketchfab.com/models/717aa5804c82414d814172ab2fdc2a56/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2025-09-25T20:32:00.895530",
+      "tags": [
+        {
+          "name": "armchair",
+          "slug": "armchair",
+          "uri": "https://api.sketchfab.com/v3/tags/armchair"
+        },
+        {
+          "name": "post-apocalyptic",
+          "slug": "post-apocalyptic",
+          "uri": "https://api.sketchfab.com/v3/tags/post-apocalyptic"
+        },
+        {
+          "name": "safe",
+          "slug": "safe",
+          "uri": "https://api.sketchfab.com/v3/tags/safe"
+        },
+        {
+          "name": "unreal",
+          "slug": "unreal",
+          "uri": "https://api.sketchfab.com/v3/tags/unreal"
+        },
+        {
+          "name": "millitary",
+          "slug": "millitary",
+          "uri": "https://api.sketchfab.com/v3/tags/millitary"
+        },
+        {
+          "name": "fbx",
+          "slug": "fbx",
+          "uri": "https://api.sketchfab.com/v3/tags/fbx"
+        },
+        {
+          "name": "engines",
+          "slug": "engines",
+          "uri": "https://api.sketchfab.com/v3/tags/engines"
+        },
+        {
+          "name": "godot",
+          "slug": "godot",
+          "uri": "https://api.sketchfab.com/v3/tags/godot"
+        },
+        {
+          "name": "unity",
+          "slug": "unity",
+          "uri": "https://api.sketchfab.com/v3/tags/unity"
+        },
+        {
+          "name": "low-poly",
+          "slug": "low-poly",
+          "uri": "https://api.sketchfab.com/v3/tags/low-poly"
+        },
+        {
+          "name": "3d",
+          "slug": "3d",
+          "uri": "https://api.sketchfab.com/v3/tags/3d"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "shop",
+          "slug": "shop",
+          "uri": "https://api.sketchfab.com/v3/tags/shop"
+        },
+        {
+          "name": "interior",
+          "slug": "interior",
+          "uri": "https://api.sketchfab.com/v3/tags/interior"
+        },
+        {
+          "name": "horror",
+          "slug": "horror",
+          "uri": "https://api.sketchfab.com/v3/tags/horror"
+        },
+        {
+          "name": "zombie",
+          "slug": "zombie",
+          "uri": "https://api.sketchfab.com/v3/tags/zombie"
+        }
+      ],
+      "categories": [
+        {
+          "name": "fashion-style"
+        },
+        {
+          "name": "furniture-home"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "f226b8fdca6a4c61a6936192546d92a6",
+            "size": 81173,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/717aa5804c82414d814172ab2fdc2a56/thumbnails/9a8a572982164cea9c5672ce28568ffc/fda423a4f4cb4843a56dac7105324946.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "ecce93a330834288884baf686a448dc3",
+            "size": 26816,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/717aa5804c82414d814172ab2fdc2a56/thumbnails/9a8a572982164cea9c5672ce28568ffc/dfb136c10cd341bfbfb9307a8b0cf526.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "eed6689d83b74bc8ae9667351fe04a02",
+            "size": 15458,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/717aa5804c82414d814172ab2fdc2a56/thumbnails/9a8a572982164cea9c5672ce28568ffc/be144ba9e16644f09c01591d67a2935c.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "9e35fb64e02046a0a6f086888797f21b",
+            "size": 3099,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/717aa5804c82414d814172ab2fdc2a56/thumbnails/9a8a572982164cea9c5672ce28568ffc/63e11e26de4940c2b020ee3f7214b0e5.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "96b1cdeb70484f0cb9ec2b615f614176",
+            "size": 921,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/717aa5804c82414d814172ab2fdc2a56/thumbnails/9a8a572982164cea9c5672ce28568ffc/a192b86135c34708a01ca04387f9ac89.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "f8d0b0b16f574db59de5b8a85c0e38d3",
+        "username": "oxygen3d",
+        "displayName": "Oxygen3D",
+        "profileUrl": "https://sketchfab.com/oxygen3d",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/0f3f3f4df6c84cf9883f76a5b23ba03c",
+          "images": [
+            {
+              "size": 1131,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/0f3f3f4df6c84cf9883f76a5b23ba03c/49876a6fb6c14c95b5864397c46a107c.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1637,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/0f3f3f4df6c84cf9883f76a5b23ba03c/5aaad8f1335f48c6b2f85ed6e744721b.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3172,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/0f3f3f4df6c84cf9883f76a5b23ba03c/60ef0bc716a54aefb970f1a5161a72c9.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3636,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/0f3f3f4df6c84cf9883f76a5b23ba03c/bac7e0e6cccf4519ad048ebbde2055db.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/f8d0b0b16f574db59de5b8a85c0e38d3"
+      },
+      "description": "3D model of a bed, great for interior scenes, games. Modeled in Blender and compatible with most game engines.",
+      "faceCount": 3468,
+      "createdAt": "2025-09-25T20:30:50.034218",
+      "vertexCount": 1768,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 2,
+          "size": 3653188,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 3468,
+          "vertexCount": 3212
+        },
+        "gltf": {
+          "textureCount": 2,
+          "size": 3482136,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 3468,
+          "vertexCount": 3212
+        },
+        "source": {
+          "textureCount": null,
+          "size": 8587042,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 1249503,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/f46e1d9b414644e4b5f7375f5de068af",
+      "uid": "f46e1d9b414644e4b5f7375f5de068af",
+      "name": "Headless statue of Ashurbel",
+      "staffpickedAt": null,
+      "viewCount": 129,
+      "likeCount": 8,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-f46e1d9b414644e4b5f7375f5de068af",
+      "embedUrl": "https://sketchfab.com/models/f46e1d9b414644e4b5f7375f5de068af/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2025-06-28T00:34:32.115751",
+      "tags": [
+        {
+          "name": "statue",
+          "slug": "statue",
+          "uri": "https://api.sketchfab.com/v3/tags/statue"
+        },
+        {
+          "name": "iraq",
+          "slug": "iraq",
+          "uri": "https://api.sketchfab.com/v3/tags/iraq"
+        },
+        {
+          "name": "assyrian",
+          "slug": "assyrian",
+          "uri": "https://api.sketchfab.com/v3/tags/assyrian"
+        },
+        {
+          "name": "hatra",
+          "slug": "hatra",
+          "uri": "https://api.sketchfab.com/v3/tags/hatra"
+        }
+      ],
+      "categories": [
+        {
+          "name": "art-abstract"
+        },
+        {
+          "name": "cultural-heritage-history"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "38ac611c916e4b3083a021015eebf572",
+            "size": 416316,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/f46e1d9b414644e4b5f7375f5de068af/thumbnails/b5b3c792b9c34b75a48150afbe60a824/c786449af703441d8ccfd128fd905162.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "4f4e588712c64f1cb59804bb3a02dac7",
+            "size": 50890,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/f46e1d9b414644e4b5f7375f5de068af/thumbnails/b5b3c792b9c34b75a48150afbe60a824/9878ce1c857843908d64869b4ee1cef5.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "85e4f9e1cbb74abaa2ff3b66268e453f",
+            "size": 21349,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/f46e1d9b414644e4b5f7375f5de068af/thumbnails/b5b3c792b9c34b75a48150afbe60a824/56387749880740a1849bb2a78219a0ae.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "58f26a94e0054ee29d110706a066be60",
+            "size": 3241,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/f46e1d9b414644e4b5f7375f5de068af/thumbnails/b5b3c792b9c34b75a48150afbe60a824/0c479478118c48aeb268e581adc35472.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "19d4b825aa0e494dabca223761995419",
+            "size": 981,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/f46e1d9b414644e4b5f7375f5de068af/thumbnails/b5b3c792b9c34b75a48150afbe60a824/e21bb21327864c8cb01f3ecc3ff3af81.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "6070c98a579341ee9f33862363d0e16c",
+        "username": "HusseinYaseen",
+        "displayName": "Hussein Yaseen",
+        "profileUrl": "https://sketchfab.com/HusseinYaseen",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/19c0124e421e4cb28cc3383572933899",
+          "images": [
+            {
+              "size": 909,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/19c0124e421e4cb28cc3383572933899/532b1cadc8b94743b4601aa548646d1a.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1121,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/19c0124e421e4cb28cc3383572933899/3bdc021a635341d5b6d5a73529377027.jpeg",
+              "height": 48
+            },
+            {
+              "size": 1963,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/19c0124e421e4cb28cc3383572933899/91a7b40f7dab48e9b9cb4c9a7560b42b.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2193,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/19c0124e421e4cb28cc3383572933899/986247a1155046e0b70fdf9d3182204f.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/6070c98a579341ee9f33862363d0e16c"
+      },
+      "description": "Headless statue of a god ( ASHUR-BEL ) from Hatra northern Iraq, wearing a Roman military dress, his long beard is like the Assyrians, on his chest the god Shamash, dated to the Hellenistic period (312-139 BC) Iraqi museum, Hatra Gallery",
+      "faceCount": 478536,
+      "createdAt": "2025-06-28T00:26:14.688867",
+      "vertexCount": 239270,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 38607276,
+          "type": "glb",
+          "textureMaxResolution": 8192,
+          "faceCount": 478536,
+          "vertexCount": 298503
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 28947431,
+          "type": "gltf",
+          "textureMaxResolution": 8192,
+          "faceCount": 478536,
+          "vertexCount": 298503
+        },
+        "source": {
+          "textureCount": null,
+          "size": 21272312,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 14351977,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "2628dbe5140a4e9592126c8df566c0b7",
+        "label": "CC Attribution-NonCommercial-ShareAlike"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/32bb85e852064ec4ab7c389264524d9b",
+      "uid": "32bb85e852064ec4ab7c389264524d9b",
+      "name": "Ukrainian Novator-2",
+      "staffpickedAt": null,
+      "viewCount": 1236,
+      "likeCount": 35,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-32bb85e852064ec4ab7c389264524d9b",
+      "embedUrl": "https://sketchfab.com/models/32bb85e852064ec4ab7c389264524d9b/embed",
+      "commentCount": 7,
+      "isDownloadable": true,
+      "publishedAt": "2025-05-07T14:08:29.831997",
+      "tags": [
+        {
+          "name": "modern",
+          "slug": "modern",
+          "uri": "https://api.sketchfab.com/v3/tags/modern"
+        },
+        {
+          "name": "truck",
+          "slug": "truck",
+          "uri": "https://api.sketchfab.com/v3/tags/truck"
+        },
+        {
+          "name": "armored",
+          "slug": "armored",
+          "uri": "https://api.sketchfab.com/v3/tags/armored"
+        },
+        {
+          "name": "4x4",
+          "slug": "4x4",
+          "uri": "https://api.sketchfab.com/v3/tags/4x4"
+        },
+        {
+          "name": "russia",
+          "slug": "russia",
+          "uri": "https://api.sketchfab.com/v3/tags/russia"
+        },
+        {
+          "name": "combat",
+          "slug": "combat",
+          "uri": "https://api.sketchfab.com/v3/tags/combat"
+        },
+        {
+          "name": "antitank",
+          "slug": "antitank",
+          "uri": "https://api.sketchfab.com/v3/tags/antitank"
+        },
+        {
+          "name": "ukraine",
+          "slug": "ukraine",
+          "uri": "https://api.sketchfab.com/v3/tags/ukraine"
+        },
+        {
+          "name": "ukrainian",
+          "slug": "ukrainian",
+          "uri": "https://api.sketchfab.com/v3/tags/ukrainian"
+        },
+        {
+          "name": "wheeled",
+          "slug": "wheeled",
+          "uri": "https://api.sketchfab.com/v3/tags/wheeled"
+        },
+        {
+          "name": "afu",
+          "slug": "afu",
+          "uri": "https://api.sketchfab.com/v3/tags/afu"
+        },
+        {
+          "name": "atgm",
+          "slug": "atgm",
+          "uri": "https://api.sketchfab.com/v3/tags/atgm"
+        },
+        {
+          "name": "military",
+          "slug": "military",
+          "uri": "https://api.sketchfab.com/v3/tags/military"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "war",
+          "slug": "war",
+          "uri": "https://api.sketchfab.com/v3/tags/war"
+        },
+        {
+          "name": "ukrainewar",
+          "slug": "ukrainewar",
+          "uri": "https://api.sketchfab.com/v3/tags/ukrainewar"
+        },
+        {
+          "name": "stugna",
+          "slug": "stugna",
+          "uri": "https://api.sketchfab.com/v3/tags/stugna"
+        },
+        {
+          "name": "novator",
+          "slug": "novator",
+          "uri": "https://api.sketchfab.com/v3/tags/novator"
+        },
+        {
+          "name": "novator-2",
+          "slug": "novator-2",
+          "uri": "https://api.sketchfab.com/v3/tags/novator-2"
+        },
+        {
+          "name": "pava90",
+          "slug": "pava90",
+          "uri": "https://api.sketchfab.com/v3/tags/pava90"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "weapons-military"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "6eeff1deb38b48f4a8eb254eda1d9cb8",
+            "size": 127676,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/32bb85e852064ec4ab7c389264524d9b/thumbnails/52b119de42804ee082e887b097550150/7dcf8844738f480db32d6ccf84d00032.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "d1a2ebaa66534ccbb6199f19a08933f7",
+            "size": 42609,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/32bb85e852064ec4ab7c389264524d9b/thumbnails/52b119de42804ee082e887b097550150/4968b6469c624199b138c1df7effcfc7.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "9c27c9c2f36d4a04a3cf34851669f221",
+            "size": 25471,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/32bb85e852064ec4ab7c389264524d9b/thumbnails/52b119de42804ee082e887b097550150/e2d08165ee424d8c979d8434abc55ada.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "04f6786869dd49078c7827ede0818e8e",
+            "size": 5417,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/32bb85e852064ec4ab7c389264524d9b/thumbnails/52b119de42804ee082e887b097550150/1e38505023f646018fd55c2cffeeee1e.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "a31323d3a3ad43ffa5ee427a956caa23",
+            "size": 1196,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/32bb85e852064ec4ab7c389264524d9b/thumbnails/52b119de42804ee082e887b097550150/df9dc7d48e164999a464b7709b22daf0.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "2a533251481140f298a62e3cbc74f969",
+        "username": "42manako",
+        "displayName": "42manako",
+        "profileUrl": "https://sketchfab.com/42manako",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/c76ccfda41594e33a6061999bef721f8",
+          "images": [
+            {
+              "size": 2452,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/c76ccfda41594e33a6061999bef721f8/a10ecf71005441f5ab40cd4fec112b87.png",
+              "height": 32
+            },
+            {
+              "size": 5116,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/c76ccfda41594e33a6061999bef721f8/1a43aee079a64949b5beee32b8a7f718.png",
+              "height": 48
+            },
+            {
+              "size": 16273,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/c76ccfda41594e33a6061999bef721f8/3c38e4c917514314a3af758ebee23240.png",
+              "height": 90
+            },
+            {
+              "size": 19604,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/c76ccfda41594e33a6061999bef721f8/587ddc7678dc46fe9ab6e6f774f6e4c8.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/2a533251481140f298a62e3cbc74f969"
+      },
+      "description": "The Novator is a Ukrainian-designed armored vehicle. This particular variant, the Novator-2, has a closed rear bed for transporting troops and equipment. Texture edited by pava90 on gamemodding.ru , not my original model.\n\n**Join the Discord!** https://discord.gg/yFmUkcYb",
+      "faceCount": 73189,
+      "createdAt": "2025-05-06T21:02:41.809517",
+      "vertexCount": 40151,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 4,
+          "size": 11799628,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 73185,
+          "vertexCount": 103306
+        },
+        "gltf": {
+          "textureCount": 4,
+          "size": 8564530,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 73185,
+          "vertexCount": 103306
+        },
+        "source": {
+          "textureCount": null,
+          "size": 10075980,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 4378444,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "bbfe3f7dbcdd4122b966b85b9786a989",
+        "label": "CC Attribution-NonCommercial"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/8d98d0ea981f49ec95be0b94083abe55",
+      "uid": "8d98d0ea981f49ec95be0b94083abe55",
+      "name": "Metal Bunkbeds",
+      "staffpickedAt": null,
+      "viewCount": 1322,
+      "likeCount": 23,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-8d98d0ea981f49ec95be0b94083abe55",
+      "embedUrl": "https://sketchfab.com/models/8d98d0ea981f49ec95be0b94083abe55/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2025-04-17T12:46:42.974351",
+      "tags": [
+        {
+          "name": "bed",
+          "slug": "bed",
+          "uri": "https://api.sketchfab.com/v3/tags/bed"
+        },
+        {
+          "name": "metal",
+          "slug": "metal",
+          "uri": "https://api.sketchfab.com/v3/tags/metal"
+        },
+        {
+          "name": "bunkbed",
+          "slug": "bunkbed",
+          "uri": "https://api.sketchfab.com/v3/tags/bunkbed"
+        },
+        {
+          "name": "military",
+          "slug": "military",
+          "uri": "https://api.sketchfab.com/v3/tags/military"
+        }
+      ],
+      "categories": [
+        {
+          "name": "furniture-home"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "b491d19851be4bd0b7d39a281ef5cd5c",
+            "size": 147021,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/8d98d0ea981f49ec95be0b94083abe55/thumbnails/7c5fe9d46f904455897655e3a51b5fc3/a23cf3c1e1f5409c89f34ed136390920.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "54f8b1ce073e482891557552b3aacc24",
+            "size": 38385,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/8d98d0ea981f49ec95be0b94083abe55/thumbnails/7c5fe9d46f904455897655e3a51b5fc3/4008824dc8a04275a444d05da678b802.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "e9b84da1f4364225bfb09952ccf506a9",
+            "size": 21160,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/8d98d0ea981f49ec95be0b94083abe55/thumbnails/7c5fe9d46f904455897655e3a51b5fc3/d666e6470eb24e4da30a2be194d2fbce.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "0b5e19aa189b4d908a6235d78783267a",
+            "size": 4599,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/8d98d0ea981f49ec95be0b94083abe55/thumbnails/7c5fe9d46f904455897655e3a51b5fc3/fe581b84e19a4d8d9cb65735ba89a9e4.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "57debb3d71d34e57bdb9ca97a6d76a08",
+            "size": 1090,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/8d98d0ea981f49ec95be0b94083abe55/thumbnails/7c5fe9d46f904455897655e3a51b5fc3/60691e2156f64547a4641fe205c081ba.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "0b698caee37549209e3517bf3e765096",
+        "username": "ngdkh",
+        "displayName": "Khoa Nguyen",
+        "profileUrl": "https://sketchfab.com/ngdkh",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/f6ab405db3ab4b33aa5341e12ebf8120",
+          "images": [
+            {
+              "size": 962,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/f6ab405db3ab4b33aa5341e12ebf8120/2ee88d2ae01e4132ac2a4bf10ed54f2b.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1178,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/f6ab405db3ab4b33aa5341e12ebf8120/50107e7f930645938c61e68b3fcef518.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2188,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/f6ab405db3ab4b33aa5341e12ebf8120/51088353ab124f7fad452ad2c1ed57ba.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2433,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/f6ab405db3ab4b33aa5341e12ebf8120/e03cfc3675b940f1a4b81d7c49eb8f9c.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/0b698caee37549209e3517bf3e765096"
+      },
+      "description": "OBS assets",
+      "faceCount": 1185,
+      "createdAt": "2025-04-17T12:38:06.231189",
+      "vertexCount": 789,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 3,
+          "size": 2490688,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 1185,
+          "vertexCount": 1482
+        },
+        "gltf": {
+          "textureCount": 3,
+          "size": 2432481,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 1185,
+          "vertexCount": 1482
+        },
+        "source": {
+          "textureCount": null,
+          "size": 3385881,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 1296782,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/9c05091f02074a908120600e5dbbf5d8",
+      "uid": "9c05091f02074a908120600e5dbbf5d8",
+      "name": "Metal Bunk Bed",
+      "staffpickedAt": null,
+      "viewCount": 1098,
+      "likeCount": 10,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-9c05091f02074a908120600e5dbbf5d8",
+      "embedUrl": "https://sketchfab.com/models/9c05091f02074a908120600e5dbbf5d8/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2025-02-18T17:43:39.830523",
+      "tags": [
+        {
+          "name": "bunk",
+          "slug": "bunk",
+          "uri": "https://api.sketchfab.com/v3/tags/bunk"
+        },
+        {
+          "name": "bed",
+          "slug": "bed",
+          "uri": "https://api.sketchfab.com/v3/tags/bed"
+        },
+        {
+          "name": "assets",
+          "slug": "assets",
+          "uri": "https://api.sketchfab.com/v3/tags/assets"
+        },
+        {
+          "name": "rusty",
+          "slug": "rusty",
+          "uri": "https://api.sketchfab.com/v3/tags/rusty"
+        },
+        {
+          "name": "metal",
+          "slug": "metal",
+          "uri": "https://api.sketchfab.com/v3/tags/metal"
+        },
+        {
+          "name": "old",
+          "slug": "old",
+          "uri": "https://api.sketchfab.com/v3/tags/old"
+        },
+        {
+          "name": "game",
+          "slug": "game",
+          "uri": "https://api.sketchfab.com/v3/tags/game"
+        },
+        {
+          "name": "3d",
+          "slug": "3d",
+          "uri": "https://api.sketchfab.com/v3/tags/3d"
+        },
+        {
+          "name": "military",
+          "slug": "military",
+          "uri": "https://api.sketchfab.com/v3/tags/military"
+        }
+      ],
+      "categories": [
+        {
+          "name": "furniture-home"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "77a349734a68435a8950b56269c77a51",
+            "size": 72310,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/9c05091f02074a908120600e5dbbf5d8/thumbnails/ffcf6b9dff4748559d90a6f2f5d2c236/416d44dfba1741a58bb662280b2916f1.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "2255905df5bc4d508c5bb3b41f0b3e3f",
+            "size": 26285,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/9c05091f02074a908120600e5dbbf5d8/thumbnails/ffcf6b9dff4748559d90a6f2f5d2c236/4c5902ecd9ed4217b7dec772fe74a13b.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "f80337ec6aea467089cb9c152e9304ce",
+            "size": 15782,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/9c05091f02074a908120600e5dbbf5d8/thumbnails/ffcf6b9dff4748559d90a6f2f5d2c236/aeb68220011d4312bf1392db51e99717.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "5edc7834e0364d0eb8a193c889ce94f8",
+            "size": 3763,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/9c05091f02074a908120600e5dbbf5d8/thumbnails/ffcf6b9dff4748559d90a6f2f5d2c236/bce4c3fb2402482fb90a7478d31fc640.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "4881313de7764a5d82b84d605a0bf560",
+            "size": 1065,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/9c05091f02074a908120600e5dbbf5d8/thumbnails/ffcf6b9dff4748559d90a6f2f5d2c236/7fe3b97d14d84b508827407f3ea573e0.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "8338a44b247e4918adee4afd979ee6d9",
+        "username": "grimaudk",
+        "displayName": "Grimaud",
+        "profileUrl": "https://sketchfab.com/grimaudk",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/bcf10fc93df94fe3ac66986deae6c203",
+          "images": [
+            {
+              "size": 1089,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/bcf10fc93df94fe3ac66986deae6c203/f1838901e1ac4524add9a94d71c4fff2.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1402,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/bcf10fc93df94fe3ac66986deae6c203/d4e200fbdb9745c092ec12cf41706841.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2559,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/bcf10fc93df94fe3ac66986deae6c203/b398fb10e5df407e8ea0c12be003d77e.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2929,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/bcf10fc93df94fe3ac66986deae6c203/c7d90edbbb4f4aee866db539a4762db6.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/8338a44b247e4918adee4afd979ee6d9"
+      },
+      "description": "This is a realistic metal bunk bed designed for use in games, architectural visualization, and interior design projects. The model features a sturdy metal frame with a simple yet functional design, making it suitable for various environments such as military barracks, dormitories, prisons, or survival-themed games.\n\nFeatures:-High-quality textures for a realistic look-Optimized polygon count for efficient performance in real-time engines-Fabric mattress and pillows with detailed material work-PBR-ready materials for accurate lighting and shading-Compatible with Blender, Unity, Unreal Engine, and morePerfect for realistic and low-poly scenes, game environments, or animation projects.",
+      "faceCount": 4384,
+      "createdAt": "2025-02-18T17:41:12.376553",
+      "vertexCount": 2244,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 173676,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 4384,
+          "vertexCount": 3716
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 77660,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 4384,
+          "vertexCount": 3716
+        },
+        "source": {
+          "textureCount": null,
+          "size": 29305435,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 100494,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/8fa236c43fe7487499d35b1bd2d2c0a2",
+      "uid": "8fa236c43fe7487499d35b1bd2d2c0a2",
+      "name": "Military bed",
+      "staffpickedAt": null,
+      "viewCount": 117,
+      "likeCount": 2,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-8fa236c43fe7487499d35b1bd2d2c0a2",
+      "embedUrl": "https://sketchfab.com/models/8fa236c43fe7487499d35b1bd2d2c0a2/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2025-02-13T17:54:11.880585",
+      "tags": [],
+      "categories": [
+        {
+          "name": "weapons-military"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "448673ec52a54d4da582de656a4a93b7",
+            "size": 374631,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/8fa236c43fe7487499d35b1bd2d2c0a2/thumbnails/e259628f19c746cca76fca3676569e4b/aee961e8231a4a73900019081ea67308.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "292fa77e1e994a66a5c140bdb77e2c04",
+            "size": 83779,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/8fa236c43fe7487499d35b1bd2d2c0a2/thumbnails/e259628f19c746cca76fca3676569e4b/210ab084a9e14edd89d283831cb76df2.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "a49771d8dad848a1b3676bfe5756a918",
+            "size": 40276,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/8fa236c43fe7487499d35b1bd2d2c0a2/thumbnails/e259628f19c746cca76fca3676569e4b/51d51862273a49e4bfd63ac14e4b0418.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "1a04316290224b2aab9d2f4aa7f99154",
+            "size": 5920,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/8fa236c43fe7487499d35b1bd2d2c0a2/thumbnails/e259628f19c746cca76fca3676569e4b/495dcb25389742cab743daf9e0d18212.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "096b83e81ceb4718966727c295a39705",
+            "size": 1136,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/8fa236c43fe7487499d35b1bd2d2c0a2/thumbnails/e259628f19c746cca76fca3676569e4b/429f758495f248f68b0a18f0f67c6cee.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "e0f9578d908d4f76908b0bddf8436e11",
+        "username": "turn_ye",
+        "displayName": "turn_ye",
+        "profileUrl": "https://sketchfab.com/turn_ye",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/9c438e4740e141b2bf0a2ee2aa35bc2b",
+          "images": [
+            {
+              "size": 1069,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/9c438e4740e141b2bf0a2ee2aa35bc2b/f2a952b89d27428682061d29d558c105.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1512,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/9c438e4740e141b2bf0a2ee2aa35bc2b/c9ca0f20454c42829a4643501ce1b616.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3237,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/9c438e4740e141b2bf0a2ee2aa35bc2b/399bb4d71f8f405e8c91e9fe59b42980.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3664,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/9c438e4740e141b2bf0a2ee2aa35bc2b/ddc2df3d765646eb91f1bc3ababb6595.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/e0f9578d908d4f76908b0bddf8436e11"
+      },
+      "description": "",
+      "faceCount": 3428,
+      "createdAt": "2025-02-13T17:48:26.870751",
+      "vertexCount": 1766,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 3,
+          "size": 62709192,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 3425,
+          "vertexCount": 2206
+        },
+        "gltf": {
+          "textureCount": 3,
+          "size": 62599702,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 3425,
+          "vertexCount": 2206
+        },
+        "source": {
+          "textureCount": null,
+          "size": 60854665,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 7164904,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    }
+  ]
+}

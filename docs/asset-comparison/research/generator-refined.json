@@ -1,0 +1,3615 @@
+{
+  "cursors": {
+    "next": "18",
+    "previous": null
+  },
+  "next": "https://api.sketchfab.com/v3/search?count=18&cursor=18&downloadable=true&q=%22generator%22&sort_by=-likeCount&type=models",
+  "previous": null,
+  "results": [
+    {
+      "uri": "https://api.sketchfab.com/v3/models/9127ac84a3c84d56be6e3993ed350eff",
+      "uid": "9127ac84a3c84d56be6e3993ed350eff",
+      "name": "Generator LP",
+      "staffpickedAt": null,
+      "viewCount": 27405,
+      "likeCount": 979,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-9127ac84a3c84d56be6e3993ed350eff",
+      "embedUrl": "https://sketchfab.com/models/9127ac84a3c84d56be6e3993ed350eff/embed",
+      "commentCount": 21,
+      "isDownloadable": true,
+      "publishedAt": "2019-11-07T21:40:31.024822",
+      "tags": [
+        {
+          "name": "generator",
+          "slug": "generator",
+          "uri": "https://api.sketchfab.com/v3/tags/generator"
+        },
+        {
+          "name": "substancepainter",
+          "slug": "substancepainter",
+          "uri": "https://api.sketchfab.com/v3/tags/substancepainter"
+        },
+        {
+          "name": "low-poly",
+          "slug": "low-poly",
+          "uri": "https://api.sketchfab.com/v3/tags/low-poly"
+        }
+      ],
+      "categories": [
+        {
+          "name": "electronics-gadgets"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "140cd79938a84f9293740fbc2fc3afd8",
+            "size": 167794,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/9127ac84a3c84d56be6e3993ed350eff/thumbnails/776d559e73a34f21b075295c18d7d8fa/ff38f66ec5ff4aeaa036aec1ac9fe34b.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "2f26515b81a1417b829cca8b6d49954b",
+            "size": 50456,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/9127ac84a3c84d56be6e3993ed350eff/thumbnails/776d559e73a34f21b075295c18d7d8fa/1a36b7d753224a3eb33b8bea602b06d5.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "1244dd6448554436a8c0f353e1637068",
+            "size": 28973,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/9127ac84a3c84d56be6e3993ed350eff/thumbnails/776d559e73a34f21b075295c18d7d8fa/a9a3751181e04c3181064aa7ca4a50e5.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "2d4df0a5b9a24e0bb1a0d48ab3db8fae",
+            "size": 5488,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/9127ac84a3c84d56be6e3993ed350eff/thumbnails/776d559e73a34f21b075295c18d7d8fa/23e460cf17dd48a582eb2179e56b6ee8.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "1844385cd18e4ad59268daa8793bd301",
+            "size": 859,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/9127ac84a3c84d56be6e3993ed350eff/thumbnails/776d559e73a34f21b075295c18d7d8fa/a56bcdd8c6d04e4aab0c5a91d83e7512.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "457a498583914ff589db347b137f69ce",
+        "username": "YoeriBervoets",
+        "displayName": "YoeriBervoets",
+        "profileUrl": "https://sketchfab.com/YoeriBervoets",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/45b8f46d622245eaaee7c9abb0fce630",
+          "images": [
+            {
+              "size": 1008,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/45b8f46d622245eaaee7c9abb0fce630/6983345776ea417fad5966c02ba2329f.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1347,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/45b8f46d622245eaaee7c9abb0fce630/a65c36d30d5041028e4312bf2525bfd5.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2593,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/45b8f46d622245eaaee7c9abb0fce630/6aa56e8ff3df44ccb6fadc478ce84763.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2995,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/45b8f46d622245eaaee7c9abb0fce630/9112d37d43d14eeda1a0d19e94412e9c.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/457a498583914ff589db347b137f69ce"
+      },
+      "description": "A low poly Generator I made.",
+      "faceCount": 10907,
+      "createdAt": "2019-11-07T21:28:05.897402",
+      "vertexCount": 6015,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 3,
+          "size": 48098888,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 10902,
+          "vertexCount": 12479
+        },
+        "gltf": {
+          "textureCount": 3,
+          "size": 47585036,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 10902,
+          "vertexCount": 12479
+        },
+        "source": {
+          "textureCount": null,
+          "size": 61987100,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 4384692,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/eccb92b88be04334a8aefd3751612800",
+      "uid": "eccb92b88be04334a8aefd3751612800",
+      "name": "Lowpoly Buildings",
+      "staffpickedAt": null,
+      "viewCount": 38881,
+      "likeCount": 977,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-eccb92b88be04334a8aefd3751612800",
+      "embedUrl": "https://sketchfab.com/models/eccb92b88be04334a8aefd3751612800/embed",
+      "commentCount": 23,
+      "isDownloadable": true,
+      "publishedAt": "2022-12-25T08:43:02.037444",
+      "tags": [
+        {
+          "name": "generator",
+          "slug": "generator",
+          "uri": "https://api.sketchfab.com/v3/tags/generator"
+        },
+        {
+          "name": "concrete",
+          "slug": "concrete",
+          "uri": "https://api.sketchfab.com/v3/tags/concrete"
+        },
+        {
+          "name": "apocalypse",
+          "slug": "apocalypse",
+          "uri": "https://api.sketchfab.com/v3/tags/apocalypse"
+        },
+        {
+          "name": "barn",
+          "slug": "barn",
+          "uri": "https://api.sketchfab.com/v3/tags/barn"
+        },
+        {
+          "name": "hut",
+          "slug": "hut",
+          "uri": "https://api.sketchfab.com/v3/tags/hut"
+        },
+        {
+          "name": "metal",
+          "slug": "metal",
+          "uri": "https://api.sketchfab.com/v3/tags/metal"
+        },
+        {
+          "name": "old",
+          "slug": "old",
+          "uri": "https://api.sketchfab.com/v3/tags/old"
+        },
+        {
+          "name": "box",
+          "slug": "box",
+          "uri": "https://api.sketchfab.com/v3/tags/box"
+        },
+        {
+          "name": "cement",
+          "slug": "cement",
+          "uri": "https://api.sketchfab.com/v3/tags/cement"
+        },
+        {
+          "name": "pylon",
+          "slug": "pylon",
+          "uri": "https://api.sketchfab.com/v3/tags/pylon"
+        },
+        {
+          "name": "shack",
+          "slug": "shack",
+          "uri": "https://api.sketchfab.com/v3/tags/shack"
+        },
+        {
+          "name": "zombies",
+          "slug": "zombies",
+          "uri": "https://api.sketchfab.com/v3/tags/zombies"
+        },
+        {
+          "name": "brickwall",
+          "slug": "brickwall",
+          "uri": "https://api.sketchfab.com/v3/tags/brickwall"
+        },
+        {
+          "name": "fusebox",
+          "slug": "fusebox",
+          "uri": "https://api.sketchfab.com/v3/tags/fusebox"
+        },
+        {
+          "name": "house",
+          "slug": "house",
+          "uri": "https://api.sketchfab.com/v3/tags/house"
+        },
+        {
+          "name": "city",
+          "slug": "city",
+          "uri": "https://api.sketchfab.com/v3/tags/city"
+        },
+        {
+          "name": "wood",
+          "slug": "wood",
+          "uri": "https://api.sketchfab.com/v3/tags/wood"
+        },
+        {
+          "name": "building",
+          "slug": "building",
+          "uri": "https://api.sketchfab.com/v3/tags/building"
+        },
+        {
+          "name": "street",
+          "slug": "street",
+          "uri": "https://api.sketchfab.com/v3/tags/street"
+        },
+        {
+          "name": "container",
+          "slug": "container",
+          "uri": "https://api.sketchfab.com/v3/tags/container"
+        },
+        {
+          "name": "village",
+          "slug": "village",
+          "uri": "https://api.sketchfab.com/v3/tags/village"
+        },
+        {
+          "name": "noai",
+          "slug": "noai",
+          "uri": "https://api.sketchfab.com/v3/tags/noai"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "2c0922b88a84464cbcd6631bb1a95b52",
+            "size": 214545,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/eccb92b88be04334a8aefd3751612800/thumbnails/f03b0bfa61e945be907cd2aff336c778/9181cb8a79ad403d9e7fd67784de9fcb.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "84ed964155204ad1acac767c553a04b0",
+            "size": 62607,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/eccb92b88be04334a8aefd3751612800/thumbnails/f03b0bfa61e945be907cd2aff336c778/634a44b1352349f38734229c82792b4c.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "f644fb98db9243bf87c371201472170f",
+            "size": 33955,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/eccb92b88be04334a8aefd3751612800/thumbnails/f03b0bfa61e945be907cd2aff336c778/05520c3964014a9f8d31baf77e9f6af1.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "9a9f8a0f082a4bdda418ae71b752c8b8",
+            "size": 6190,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/eccb92b88be04334a8aefd3751612800/thumbnails/f03b0bfa61e945be907cd2aff336c778/a6251c883230460b816ea7c1f32d466d.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "5db7a2f26cf54cf19947313b2c127b73",
+            "size": 1201,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/eccb92b88be04334a8aefd3751612800/thumbnails/f03b0bfa61e945be907cd2aff336c778/9e97c2d1d9714dbb870c75f760cda561.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "7f42c117136c4ea4bbdf03f8ec26f343",
+        "username": "l0wpoly",
+        "displayName": "badd",
+        "profileUrl": "https://sketchfab.com/l0wpoly",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/d118c93ab20b4f6cac55545b813dd1c2",
+          "images": [
+            {
+              "size": 3731,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/d118c93ab20b4f6cac55545b813dd1c2/2466fced2fbf4e8ca8b019afacba3072.png",
+              "height": 32
+            },
+            {
+              "size": 4419,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/d118c93ab20b4f6cac55545b813dd1c2/a7a574dcbc8542adace4c584972856a5.png",
+              "height": 48
+            },
+            {
+              "size": 5603,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/d118c93ab20b4f6cac55545b813dd1c2/95bb4c3f869e48eea202437c805c7cc8.png",
+              "height": 90
+            },
+            {
+              "size": 5768,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/d118c93ab20b4f6cac55545b813dd1c2/a172f87724cd478188a9319565fc515b.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/7f42c117136c4ea4bbdf03f8ec26f343"
+      },
+      "description": "45 simple, lowpoly models.\n\nOne diffuse texture 2048x2048\n\nGreat for prototyping or as a distant background objects.",
+      "faceCount": 2336,
+      "createdAt": "2022-12-25T08:23:29.965637",
+      "vertexCount": 1572,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 6682832,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 2336,
+          "vertexCount": 3999
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 6539746,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 2336,
+          "vertexCount": 3999
+        },
+        "source": {
+          "textureCount": null,
+          "size": 6832342,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 1366227,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "72eb2b1960364637901eacce19283624",
+        "label": "Free Standard"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/cd75d662c61e47be9b7eed198bbc4653",
+      "uid": "cd75d662c61e47be9b7eed198bbc4653",
+      "name": "Horse running",
+      "staffpickedAt": null,
+      "viewCount": 107361,
+      "likeCount": 922,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-cd75d662c61e47be9b7eed198bbc4653",
+      "embedUrl": "https://sketchfab.com/models/cd75d662c61e47be9b7eed198bbc4653/embed",
+      "commentCount": 17,
+      "isDownloadable": true,
+      "publishedAt": "2019-02-13T11:24:21.710514",
+      "tags": [
+        {
+          "name": "hair",
+          "slug": "hair",
+          "uri": "https://api.sketchfab.com/v3/tags/hair"
+        },
+        {
+          "name": "sculpt",
+          "slug": "sculpt",
+          "uri": "https://api.sketchfab.com/v3/tags/sculpt"
+        },
+        {
+          "name": "flower",
+          "slug": "flower",
+          "uri": "https://api.sketchfab.com/v3/tags/flower"
+        },
+        {
+          "name": "flow",
+          "slug": "flow",
+          "uri": "https://api.sketchfab.com/v3/tags/flow"
+        },
+        {
+          "name": "pet",
+          "slug": "pet",
+          "uri": "https://api.sketchfab.com/v3/tags/pet"
+        },
+        {
+          "name": "wild",
+          "slug": "wild",
+          "uri": "https://api.sketchfab.com/v3/tags/wild"
+        },
+        {
+          "name": "jump",
+          "slug": "jump",
+          "uri": "https://api.sketchfab.com/v3/tags/jump"
+        },
+        {
+          "name": "run",
+          "slug": "run",
+          "uri": "https://api.sketchfab.com/v3/tags/run"
+        },
+        {
+          "name": "running",
+          "slug": "running",
+          "uri": "https://api.sketchfab.com/v3/tags/running"
+        },
+        {
+          "name": "jumping",
+          "slug": "jumping",
+          "uri": "https://api.sketchfab.com/v3/tags/jumping"
+        },
+        {
+          "name": "mane",
+          "slug": "mane",
+          "uri": "https://api.sketchfab.com/v3/tags/mane"
+        },
+        {
+          "name": "flowmap",
+          "slug": "flowmap",
+          "uri": "https://api.sketchfab.com/v3/tags/flowmap"
+        },
+        {
+          "name": "horse",
+          "slug": "horse",
+          "uri": "https://api.sketchfab.com/v3/tags/horse"
+        },
+        {
+          "name": "model",
+          "slug": "model",
+          "uri": "https://api.sketchfab.com/v3/tags/model"
+        },
+        {
+          "name": "female",
+          "slug": "female",
+          "uri": "https://api.sketchfab.com/v3/tags/female"
+        },
+        {
+          "name": "animal",
+          "slug": "animal",
+          "uri": "https://api.sketchfab.com/v3/tags/animal"
+        },
+        {
+          "name": "free",
+          "slug": "free",
+          "uri": "https://api.sketchfab.com/v3/tags/free"
+        }
+      ],
+      "categories": [
+        {
+          "name": "animals-pets"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "0497eb711893475384e7c63a6d8ef6cb",
+            "size": 176970,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/cd75d662c61e47be9b7eed198bbc4653/thumbnails/667f87b887e645ef83fc2de1072f6e77/bf2f42affdd34730b290563075aa8199.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "12536e1edb874886b96e72c5fdb8cbbd",
+            "size": 45604,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/cd75d662c61e47be9b7eed198bbc4653/thumbnails/667f87b887e645ef83fc2de1072f6e77/84bea7fcc17d4e068a63ec50d4bf4e33.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "a1341d0e31a34f46b833476371564a21",
+            "size": 26824,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/cd75d662c61e47be9b7eed198bbc4653/thumbnails/667f87b887e645ef83fc2de1072f6e77/b970166d0ead4f39bf2e6186af14e003.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "521d1b0b164e440baed10e4b4750a0ca",
+            "size": 5965,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/cd75d662c61e47be9b7eed198bbc4653/thumbnails/667f87b887e645ef83fc2de1072f6e77/aa0e3e1418f249678b2478f56292895f.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "99e2b3de31504142b61902f5ec542c43",
+            "size": 1094,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/cd75d662c61e47be9b7eed198bbc4653/thumbnails/667f87b887e645ef83fc2de1072f6e77/2c800b11171d44d4bcbbaa01721ed487.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "f9a97bd59dc44deab1f590f767ecd46c",
+        "username": "kling",
+        "displayName": "verena stabel",
+        "profileUrl": "https://sketchfab.com/kling",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/f5e90b5fd2d74fd0a4ba9849c240a5ba",
+          "images": [
+            {
+              "size": 3410,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/f5e90b5fd2d74fd0a4ba9849c240a5ba/791e78e8ee104440a9213a7ffd7f8cf9.jpeg",
+              "height": 100
+            },
+            {
+              "size": 2947,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/f5e90b5fd2d74fd0a4ba9849c240a5ba/5b3abb27a5014a5aac6d9fff10ba1a92.jpeg",
+              "height": 90
+            },
+            {
+              "size": 1245,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/f5e90b5fd2d74fd0a4ba9849c240a5ba/afc57260f75f4d7688ac0b9147aa4273.jpeg",
+              "height": 48
+            },
+            {
+              "size": 853,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/f5e90b5fd2d74fd0a4ba9849c240a5ba/05994c2536b24a77b8d4f8f2ff7ec6b0.jpeg",
+              "height": 32
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/f9a97bd59dc44deab1f590f767ecd46c"
+      },
+      "description": "Horse sculpt for fun. Posed liked \"Secretarian\" statue.\nFlowmap used for handpainted fur.\nMane and tail sculpted for sketchfab exclusively (and pretty roughly). \"Real\" Horse has xgen-created hair.\ncheck out Romain Lemaire for awesome substance fur material:\nhttps://80.lv/articles/fur-generator-for-substance-painter/",
+      "faceCount": 2277192,
+      "createdAt": "2019-02-12T21:27:19.071565",
+      "vertexCount": 1138773,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 7,
+          "size": 217316712,
+          "type": "glb",
+          "textureMaxResolution": 8192,
+          "faceCount": 2277192,
+          "vertexCount": 1249963
+        },
+        "gltf": {
+          "textureCount": 7,
+          "size": 184899283,
+          "type": "gltf",
+          "textureMaxResolution": 8192,
+          "faceCount": 2277192,
+          "vertexCount": 1249963
+        },
+        "source": {
+          "textureCount": null,
+          "size": 203680411,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 45431563,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/c8f056e093f74be99b2e83034099c40a",
+      "uid": "c8f056e093f74be99b2e83034099c40a",
+      "name": "Old Map 3D Model",
+      "staffpickedAt": null,
+      "viewCount": 37489,
+      "likeCount": 856,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-c8f056e093f74be99b2e83034099c40a",
+      "embedUrl": "https://sketchfab.com/models/c8f056e093f74be99b2e83034099c40a/embed",
+      "commentCount": 13,
+      "isDownloadable": true,
+      "publishedAt": "2019-05-26T13:11:20.812820",
+      "tags": [
+        {
+          "name": "vintage",
+          "slug": "vintage",
+          "uri": "https://api.sketchfab.com/v3/tags/vintage"
+        },
+        {
+          "name": "map",
+          "slug": "map",
+          "uri": "https://api.sketchfab.com/v3/tags/map"
+        },
+        {
+          "name": "old",
+          "slug": "old",
+          "uri": "https://api.sketchfab.com/v3/tags/old"
+        },
+        {
+          "name": "game-of-thrones",
+          "slug": "game-of-thrones",
+          "uri": "https://api.sketchfab.com/v3/tags/game-of-thrones"
+        },
+        {
+          "name": "parchment",
+          "slug": "parchment",
+          "uri": "https://api.sketchfab.com/v3/tags/parchment"
+        },
+        {
+          "name": "pirate",
+          "slug": "pirate",
+          "uri": "https://api.sketchfab.com/v3/tags/pirate"
+        },
+        {
+          "name": "game-map",
+          "slug": "game-map",
+          "uri": "https://api.sketchfab.com/v3/tags/game-map"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cultural-heritage-history"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "c4ca684690854df3918ae409e137089e",
+            "size": 452121,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/c8f056e093f74be99b2e83034099c40a/thumbnails/d9d29565d9cb40e1a731d30751d7578e/bdeb39056d3344b8b751ed2b9a154141.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "b6143cbc503144c08d4eca6ab3a15afd",
+            "size": 92769,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/c8f056e093f74be99b2e83034099c40a/thumbnails/d9d29565d9cb40e1a731d30751d7578e/ac3966b92e1043948812cbf004699103.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "f661fc9d563f4d55937ee3d3dde2725b",
+            "size": 47639,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/c8f056e093f74be99b2e83034099c40a/thumbnails/d9d29565d9cb40e1a731d30751d7578e/934039be4254407bb466fd2bf32204ff.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "5d7c5d8432c0453f971848d690f598bc",
+            "size": 6839,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/c8f056e093f74be99b2e83034099c40a/thumbnails/d9d29565d9cb40e1a731d30751d7578e/2c91c47550c040d3a18bf6dd14aed59e.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "5bc3eddfd64e4e4c8705eeb70a84bfe8",
+            "size": 966,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/c8f056e093f74be99b2e83034099c40a/thumbnails/d9d29565d9cb40e1a731d30751d7578e/a56d288c8fd6473d906c83f14e69a2c6.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "71d1578a21ad4514bf12032fe5f49f09",
+        "username": "Johana-PS",
+        "displayName": "Johana-PS",
+        "profileUrl": "https://sketchfab.com/Johana-PS",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/3ceed229e2fa4773849201942e408013",
+          "images": [
+            {
+              "size": 621,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/3ceed229e2fa4773849201942e408013/628fbd9461f04186b1f46f0c8b587bbb.jpeg",
+              "height": 32
+            },
+            {
+              "size": 882,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/3ceed229e2fa4773849201942e408013/3cce339ed9d34d12a1c155e21d9cfacc.jpeg",
+              "height": 48
+            },
+            {
+              "size": 1898,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/3ceed229e2fa4773849201942e408013/c6fa1d1bc50241a985b55c1ce59a50da.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2233,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/3ceed229e2fa4773849201942e408013/4932602efb4f4659985ae67b13269e17.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/71d1578a21ad4514bf12032fe5f49f09"
+      },
+      "description": "Free old map scroll 3D model. I've made this model using a few awesome old paper textures:\n\n* [Vintage paper texture](https://www.photoshopsupply.com/patterns-textures/vintage-paper-textures)\n\n* [Old map texture](http://www.textures4photoshop.com/tex/paper/vintage-old-map-texture-free-background.aspx)\n\nHere's another attempt:\n\nExplorers and swashbucklers of old used maps like this to navigate the high seas, and their journeys often ended in lasting mementos - tattoos that told tales of their adventures. [AI Tattoo Generator](https://www.mockofun.com/ai-tattoo-generator/) may not be able to replicate the salty ocean air or the creaking of wooden decks, but it can help modern-day buccaneers design their own treasure-worthy ink.",
+      "faceCount": 1966,
+      "createdAt": "2019-05-26T12:21:02.724600",
+      "vertexCount": 1322,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 2084112,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 1966,
+          "vertexCount": 3988
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 1985741,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 1966,
+          "vertexCount": 3988
+        },
+        "source": {
+          "textureCount": null,
+          "size": 6432312,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 2061678,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/1d9310352e9942528f4199b5c8e20a88",
+      "uid": "1d9310352e9942528f4199b5c8e20a88",
+      "name": "Horror Game Floor Generator (Free)",
+      "staffpickedAt": null,
+      "viewCount": 26911,
+      "likeCount": 817,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-1d9310352e9942528f4199b5c8e20a88",
+      "embedUrl": "https://sketchfab.com/models/1d9310352e9942528f4199b5c8e20a88/embed",
+      "commentCount": 28,
+      "isDownloadable": true,
+      "publishedAt": "2020-11-18T01:08:14.728097",
+      "tags": [
+        {
+          "name": "kit",
+          "slug": "kit",
+          "uri": "https://api.sketchfab.com/v3/tags/kit"
+        },
+        {
+          "name": "lamp",
+          "slug": "lamp",
+          "uri": "https://api.sketchfab.com/v3/tags/lamp"
+        },
+        {
+          "name": "wooden",
+          "slug": "wooden",
+          "uri": "https://api.sketchfab.com/v3/tags/wooden"
+        },
+        {
+          "name": "b3d",
+          "slug": "b3d",
+          "uri": "https://api.sketchfab.com/v3/tags/b3d"
+        },
+        {
+          "name": "indie",
+          "slug": "indie",
+          "uri": "https://api.sketchfab.com/v3/tags/indie"
+        },
+        {
+          "name": "mode",
+          "slug": "mode",
+          "uri": "https://api.sketchfab.com/v3/tags/mode"
+        },
+        {
+          "name": "generator",
+          "slug": "generator",
+          "uri": "https://api.sketchfab.com/v3/tags/generator"
+        },
+        {
+          "name": "unreal",
+          "slug": "unreal",
+          "uri": "https://api.sketchfab.com/v3/tags/unreal"
+        },
+        {
+          "name": "floor",
+          "slug": "floor",
+          "uri": "https://api.sketchfab.com/v3/tags/floor"
+        },
+        {
+          "name": "window",
+          "slug": "window",
+          "uri": "https://api.sketchfab.com/v3/tags/window"
+        },
+        {
+          "name": "vr",
+          "slug": "vr",
+          "uri": "https://api.sketchfab.com/v3/tags/vr"
+        },
+        {
+          "name": "cardboard",
+          "slug": "cardboard",
+          "uri": "https://api.sketchfab.com/v3/tags/cardboard"
+        },
+        {
+          "name": "ar",
+          "slug": "ar",
+          "uri": "https://api.sketchfab.com/v3/tags/ar"
+        },
+        {
+          "name": "soul",
+          "slug": "soul",
+          "uri": "https://api.sketchfab.com/v3/tags/soul"
+        },
+        {
+          "name": "box",
+          "slug": "box",
+          "uri": "https://api.sketchfab.com/v3/tags/box"
+        },
+        {
+          "name": "creator",
+          "slug": "creator",
+          "uri": "https://api.sketchfab.com/v3/tags/creator"
+        },
+        {
+          "name": "starter",
+          "slug": "starter",
+          "uri": "https://api.sketchfab.com/v3/tags/starter"
+        },
+        {
+          "name": "indiedev",
+          "slug": "indiedev",
+          "uri": "https://api.sketchfab.com/v3/tags/indiedev"
+        },
+        {
+          "name": "developer",
+          "slug": "developer",
+          "uri": "https://api.sketchfab.com/v3/tags/developer"
+        },
+        {
+          "name": "fear",
+          "slug": "fear",
+          "uri": "https://api.sketchfab.com/v3/tags/fear"
+        },
+        {
+          "name": "optimized",
+          "slug": "optimized",
+          "uri": "https://api.sketchfab.com/v3/tags/optimized"
+        },
+        {
+          "name": "darksouls",
+          "slug": "darksouls",
+          "uri": "https://api.sketchfab.com/v3/tags/darksouls"
+        },
+        {
+          "name": "vr-game",
+          "slug": "vr-game",
+          "uri": "https://api.sketchfab.com/v3/tags/vr-game"
+        },
+        {
+          "name": "horror-game",
+          "slug": "horror-game",
+          "uri": "https://api.sketchfab.com/v3/tags/horror-game"
+        },
+        {
+          "name": "unity",
+          "slug": "unity",
+          "uri": "https://api.sketchfab.com/v3/tags/unity"
+        },
+        {
+          "name": "stair",
+          "slug": "stair",
+          "uri": "https://api.sketchfab.com/v3/tags/stair"
+        },
+        {
+          "name": "game",
+          "slug": "game",
+          "uri": "https://api.sketchfab.com/v3/tags/game"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "lowpoly",
+          "slug": "lowpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpoly"
+        },
+        {
+          "name": "model",
+          "slug": "model",
+          "uri": "https://api.sketchfab.com/v3/tags/model"
+        },
+        {
+          "name": "mobile",
+          "slug": "mobile",
+          "uri": "https://api.sketchfab.com/v3/tags/mobile"
+        },
+        {
+          "name": "wood",
+          "slug": "wood",
+          "uri": "https://api.sketchfab.com/v3/tags/wood"
+        },
+        {
+          "name": "dark",
+          "slug": "dark",
+          "uri": "https://api.sketchfab.com/v3/tags/dark"
+        },
+        {
+          "name": "concept",
+          "slug": "concept",
+          "uri": "https://api.sketchfab.com/v3/tags/concept"
+        },
+        {
+          "name": "modular",
+          "slug": "modular",
+          "uri": "https://api.sketchfab.com/v3/tags/modular"
+        },
+        {
+          "name": "light",
+          "slug": "light",
+          "uri": "https://api.sketchfab.com/v3/tags/light"
+        },
+        {
+          "name": "horror",
+          "slug": "horror",
+          "uri": "https://api.sketchfab.com/v3/tags/horror"
+        },
+        {
+          "name": "wall",
+          "slug": "wall",
+          "uri": "https://api.sketchfab.com/v3/tags/wall"
+        },
+        {
+          "name": "phasmophobia",
+          "slug": "phasmophobia",
+          "uri": "https://api.sketchfab.com/v3/tags/phasmophobia"
+        },
+        {
+          "name": "berkgedik",
+          "slug": "berkgedik",
+          "uri": "https://api.sketchfab.com/v3/tags/berkgedik"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        },
+        {
+          "name": "furniture-home"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "08c23a5bb7194fa0b587f42c7acd80d2",
+            "size": 173375,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/1d9310352e9942528f4199b5c8e20a88/thumbnails/db6ff7af52c54dc38f71030e7f75680d/f9c4ac0b94e74f0985ee21384ce78f54.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "d0f136f0502c407c8757fdf81ce77626",
+            "size": 55803,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/1d9310352e9942528f4199b5c8e20a88/thumbnails/db6ff7af52c54dc38f71030e7f75680d/507468397cc44800ab2c9eedc13fcc70.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "3af48c74fcca4a97a770d078e359d9a7",
+            "size": 32374,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/1d9310352e9942528f4199b5c8e20a88/thumbnails/db6ff7af52c54dc38f71030e7f75680d/a9579ae82ca94e86a225f9b487a3ecff.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "21d317c5296f4dc2b0124ffa2243c2db",
+            "size": 7000,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/1d9310352e9942528f4199b5c8e20a88/thumbnails/db6ff7af52c54dc38f71030e7f75680d/0aff14a72afd43b29d5ee3be22a30b97.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "345ffb24d39b44e782574cb2147e82d4",
+            "size": 1394,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/1d9310352e9942528f4199b5c8e20a88/thumbnails/db6ff7af52c54dc38f71030e7f75680d/782b8028688c46de809ad693a13188f0.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "5ce8867c4bb4416fa849ca7a50b8c497",
+        "username": "berkgedik",
+        "displayName": "Berk Gedik",
+        "profileUrl": "https://sketchfab.com/berkgedik",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/631eea2916204d6799108cc5580b9a46",
+          "images": [
+            {
+              "size": 2407,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/631eea2916204d6799108cc5580b9a46/641782229b254602a663e1dc92f499dd.png",
+              "height": 32
+            },
+            {
+              "size": 4803,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/631eea2916204d6799108cc5580b9a46/5842d0942ee04ed4b2d32c23ed6a7f44.png",
+              "height": 48
+            },
+            {
+              "size": 14538,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/631eea2916204d6799108cc5580b9a46/c1d74ee237fb489ea41e8c5b65d8b9f5.png",
+              "height": 90
+            },
+            {
+              "size": 17526,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/631eea2916204d6799108cc5580b9a46/aea99996a0164f0494038a54c3270365.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/5ce8867c4bb4416fa849ca7a50b8c497"
+      },
+      "description": "Horror Game Modular Starter Kit (Floor Generator)\n\nLow Poly - Optimized\n\nModeling with Blender <br>\nPainting with Substance Painter. <br>\n\nExample scene:\n![](https://i.imgur.com/ZmzoZA5.png)\n\n![](https://i.imgur.com/dpgJhmf.jpg)",
+      "faceCount": 7408,
+      "createdAt": "2020-11-17T23:49:54.717872",
+      "vertexCount": 3793,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 52,
+          "size": 98735384,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 7394,
+          "vertexCount": 9825
+        },
+        "gltf": {
+          "textureCount": 52,
+          "size": 97679421,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 7394,
+          "vertexCount": 9825
+        },
+        "source": {
+          "textureCount": null,
+          "size": 67861375,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 11342068,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/12cb749961974f94a4063e67dafb2d76",
+      "uid": "12cb749961974f94a4063e67dafb2d76",
+      "name": "PSX Industrial Pack",
+      "staffpickedAt": null,
+      "viewCount": 23826,
+      "likeCount": 761,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-12cb749961974f94a4063e67dafb2d76",
+      "embedUrl": "https://sketchfab.com/models/12cb749961974f94a4063e67dafb2d76/embed",
+      "commentCount": 17,
+      "isDownloadable": true,
+      "publishedAt": "2026-04-02T01:05:43.194835",
+      "tags": [
+        {
+          "name": "crate",
+          "slug": "crate",
+          "uri": "https://api.sketchfab.com/v3/tags/crate"
+        },
+        {
+          "name": "barrel",
+          "slug": "barrel",
+          "uri": "https://api.sketchfab.com/v3/tags/barrel"
+        },
+        {
+          "name": "retro",
+          "slug": "retro",
+          "uri": "https://api.sketchfab.com/v3/tags/retro"
+        },
+        {
+          "name": "trash",
+          "slug": "trash",
+          "uri": "https://api.sketchfab.com/v3/tags/trash"
+        },
+        {
+          "name": "psx",
+          "slug": "psx",
+          "uri": "https://api.sketchfab.com/v3/tags/psx"
+        },
+        {
+          "name": "metal",
+          "slug": "metal",
+          "uri": "https://api.sketchfab.com/v3/tags/metal"
+        },
+        {
+          "name": "props",
+          "slug": "props",
+          "uri": "https://api.sketchfab.com/v3/tags/props"
+        },
+        {
+          "name": "low-poly",
+          "slug": "low-poly",
+          "uri": "https://api.sketchfab.com/v3/tags/low-poly"
+        },
+        {
+          "name": "wood",
+          "slug": "wood",
+          "uri": "https://api.sketchfab.com/v3/tags/wood"
+        },
+        {
+          "name": "industrial",
+          "slug": "industrial",
+          "uri": "https://api.sketchfab.com/v3/tags/industrial"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "414220fe634d46ea843213363fdce60c",
+            "size": 225552,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/12cb749961974f94a4063e67dafb2d76/thumbnails/501f05d373634529aeeafda204234ba8/b3a0cac8d3db41fe94acdefd6bfc1c13.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "60acf1a713734a8394f4432db30df451",
+            "size": 71509,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/12cb749961974f94a4063e67dafb2d76/thumbnails/501f05d373634529aeeafda204234ba8/529ca754081e435b874456c77f603c87.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "b9727357762c45a4b216e63db49fb4da",
+            "size": 40117,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/12cb749961974f94a4063e67dafb2d76/thumbnails/501f05d373634529aeeafda204234ba8/0babbacad530481c88b03d93e4b2d246.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "9b263f93b57548a9a3bfe4cc808e4030",
+            "size": 7580,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/12cb749961974f94a4063e67dafb2d76/thumbnails/501f05d373634529aeeafda204234ba8/a3ad446c39304b15b270342cc69aa58a.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "e8e726004fce4ba88ec00ddd80b90ce8",
+            "size": 1430,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/12cb749961974f94a4063e67dafb2d76/thumbnails/501f05d373634529aeeafda204234ba8/bf6947ca7fe741ec9958a6aaebd64a24.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "586409bb63274df0bcce9964ae8db837",
+        "username": "Tomitos_",
+        "displayName": "Tomitos",
+        "profileUrl": "https://sketchfab.com/Tomitos_",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/f0e998dd50ca4834a179b269a1804c12",
+          "images": [
+            {
+              "size": 2355,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/f0e998dd50ca4834a179b269a1804c12/7e910a577cba427484eb9dd7a843e0ba.png",
+              "height": 32
+            },
+            {
+              "size": 4674,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/f0e998dd50ca4834a179b269a1804c12/466fafdd5d344bac9cfcaa59f0f27f54.png",
+              "height": 48
+            },
+            {
+              "size": 14010,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/f0e998dd50ca4834a179b269a1804c12/7586440cb00f43dfa2d6242dee15dfae.png",
+              "height": 90
+            },
+            {
+              "size": 16836,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/f0e998dd50ca4834a179b269a1804c12/426fa932ba2946d1b2a44bd731fe4fd6.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/586409bb63274df0bcce9964ae8db837"
+      },
+      "description": "**Low-Poly PSX Industrial Pack for retro-style games**\n\n* Texture 512x512\n\n**List of Models**\n\nRock\n\nBricks\n\nPlanks\n\nPile of Debris\n\nJerrycan\n\nSmall Propane Tank\n\nBarrels\n\nCrates\n\nTires\n\nTrash Can\n\nDumpster\n\nPile of Trash\n\nGenerators\n\nLockers\n\nMetal Sheet\n\nPipes\n\nSpool\n\nPropane Tank\n\nContainers",
+      "faceCount": 8622,
+      "createdAt": "2026-03-31T14:27:06.643933",
+      "vertexCount": 4825,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 2,
+          "size": 1361848,
+          "type": "glb",
+          "textureMaxResolution": 512,
+          "faceCount": 8618,
+          "vertexCount": 11063
+        },
+        "gltf": {
+          "textureCount": 2,
+          "size": 996121,
+          "type": "gltf",
+          "textureMaxResolution": 512,
+          "faceCount": 8618,
+          "vertexCount": 11063
+        },
+        "source": {
+          "textureCount": null,
+          "size": 2189194,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 572249,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/50c3313a16c740a4b02d0ff2e2441889",
+      "uid": "50c3313a16c740a4b02d0ff2e2441889",
+      "name": "Dreamy Bridge",
+      "staffpickedAt": null,
+      "viewCount": 17755,
+      "likeCount": 735,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-50c3313a16c740a4b02d0ff2e2441889",
+      "embedUrl": "https://sketchfab.com/models/50c3313a16c740a4b02d0ff2e2441889/embed",
+      "commentCount": 17,
+      "isDownloadable": true,
+      "publishedAt": "2015-08-08T10:01:06",
+      "tags": [
+        {
+          "name": "ivy",
+          "slug": "ivy",
+          "uri": "https://api.sketchfab.com/v3/tags/ivy"
+        },
+        {
+          "name": "asset",
+          "slug": "asset",
+          "uri": "https://api.sketchfab.com/v3/tags/asset"
+        },
+        {
+          "name": "game",
+          "slug": "game",
+          "uri": "https://api.sketchfab.com/v3/tags/game"
+        },
+        {
+          "name": "bridge",
+          "slug": "bridge",
+          "uri": "https://api.sketchfab.com/v3/tags/bridge"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "e2bf511848864100b7ec78a7e92cf48f",
+            "size": 3371,
+            "width": 100,
+            "url": "https://media.sketchfab.com/models/50c3313a16c740a4b02d0ff2e2441889/thumbnails/d817b02e79184008b37cc32a0bb48a93/100x100.jpeg",
+            "height": 100
+          },
+          {
+            "uid": "cf9c36aad16e46b4911e03f5ebea8d52",
+            "size": 1324,
+            "width": 50,
+            "url": "https://media.sketchfab.com/models/50c3313a16c740a4b02d0ff2e2441889/thumbnails/d817b02e79184008b37cc32a0bb48a93/50x50.jpeg",
+            "height": 50
+          },
+          {
+            "uid": "a4c8a1ce20e847f783ae6070aaa0b79e",
+            "size": 10248,
+            "width": 200,
+            "url": "https://media.sketchfab.com/models/50c3313a16c740a4b02d0ff2e2441889/thumbnails/d817b02e79184008b37cc32a0bb48a93/200x200.jpeg",
+            "height": 200
+          },
+          {
+            "uid": "80f772e32dde464886d6e87e8e772c74",
+            "size": 70796,
+            "width": 854,
+            "url": "https://media.sketchfab.com/models/50c3313a16c740a4b02d0ff2e2441889/thumbnails/d817b02e79184008b37cc32a0bb48a93/854.jpeg",
+            "height": 478
+          },
+          {
+            "uid": "2b8e5a18a7b04d85980baebb53e493ad",
+            "size": 42070,
+            "width": 640,
+            "url": "https://media.sketchfab.com/models/50c3313a16c740a4b02d0ff2e2441889/thumbnails/d817b02e79184008b37cc32a0bb48a93/640.jpeg",
+            "height": 358
+          },
+          {
+            "uid": "662454e43cfc4128a1a92f3ac0a0cfeb",
+            "size": 22428,
+            "width": 448,
+            "url": "https://media.sketchfab.com/models/50c3313a16c740a4b02d0ff2e2441889/thumbnails/d817b02e79184008b37cc32a0bb48a93/448.jpeg",
+            "height": 251
+          },
+          {
+            "uid": "abc8dbbd35d4490a87eff62b16b63293",
+            "size": 98596,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/50c3313a16c740a4b02d0ff2e2441889/thumbnails/d817b02e79184008b37cc32a0bb48a93/1024.jpeg",
+            "height": 573
+          }
+        ]
+      },
+      "user": {
+        "uid": "acad72547c694cd09ac5c5d6e47aa6de",
+        "username": "lowpolyme",
+        "displayName": "Lowpolyme",
+        "profileUrl": "https://sketchfab.com/lowpolyme",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/625a4cf769714a94bb934a6849f54b53",
+          "images": [
+            {
+              "size": 740,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/625a4cf769714a94bb934a6849f54b53/3aff122efebd4113981ce5594b032890.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1200,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/625a4cf769714a94bb934a6849f54b53/7e5306f47b7e417cab1e87698939b8d0.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2946,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/625a4cf769714a94bb934a6849f54b53/0f55098ea1e94ad9838ea34c79f92878.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3338,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/625a4cf769714a94bb934a6849f54b53/3f5ab459d7dc4ba3a374eb2f64ea16be.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/acad72547c694cd09ac5c5d6e47aa6de"
+      },
+      "description": "A small brick bridge with added lanterns and some decorative ivy to set a romantic mood. The bridge itself consists of about 2k vertices, most of the polycount is caused by the ivy, which was generated with guruwares ivy generator in 3ds Max.",
+      "faceCount": 16426,
+      "createdAt": "2015-08-08T09:25:57",
+      "vertexCount": 15117,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 10,
+          "size": 37879604,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 16176,
+          "vertexCount": 40651
+        },
+        "gltf": {
+          "textureCount": 10,
+          "size": 35817988,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 16176,
+          "vertexCount": 40651
+        },
+        "source": {
+          "textureCount": null,
+          "size": 9810065,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 6265156,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "bbfe3f7dbcdd4122b966b85b9786a989",
+        "label": "CC Attribution-NonCommercial"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/bf2e1a087adb4628a376ffbed17c41ff",
+      "uid": "bf2e1a087adb4628a376ffbed17c41ff",
+      "name": "SCIFI GENERATOR",
+      "staffpickedAt": null,
+      "viewCount": 19435,
+      "likeCount": 710,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-bf2e1a087adb4628a376ffbed17c41ff",
+      "embedUrl": "https://sketchfab.com/models/bf2e1a087adb4628a376ffbed17c41ff/embed",
+      "commentCount": 13,
+      "isDownloadable": true,
+      "publishedAt": "2019-12-11T03:54:28.132778",
+      "tags": [
+        {
+          "name": "generator",
+          "slug": "generator",
+          "uri": "https://api.sketchfab.com/v3/tags/generator"
+        },
+        {
+          "name": "highquality",
+          "slug": "highquality",
+          "uri": "https://api.sketchfab.com/v3/tags/highquality"
+        },
+        {
+          "name": "lowpoly",
+          "slug": "lowpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpoly"
+        },
+        {
+          "name": "gameart",
+          "slug": "gameart",
+          "uri": "https://api.sketchfab.com/v3/tags/gameart"
+        },
+        {
+          "name": "scifi",
+          "slug": "scifi",
+          "uri": "https://api.sketchfab.com/v3/tags/scifi"
+        },
+        {
+          "name": "gameasset",
+          "slug": "gameasset",
+          "uri": "https://api.sketchfab.com/v3/tags/gameasset"
+        },
+        {
+          "name": "textured",
+          "slug": "textured",
+          "uri": "https://api.sketchfab.com/v3/tags/textured"
+        },
+        {
+          "name": "highpoly",
+          "slug": "highpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/highpoly"
+        },
+        {
+          "name": "gameready",
+          "slug": "gameready",
+          "uri": "https://api.sketchfab.com/v3/tags/gameready"
+        },
+        {
+          "name": "generator-technology-sci-fi",
+          "slug": "generator-technology-sci-fi",
+          "uri": "https://api.sketchfab.com/v3/tags/generator-technology-sci-fi"
+        }
+      ],
+      "categories": [
+        {
+          "name": "electronics-gadgets"
+        },
+        {
+          "name": "science-technology"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "ca547172d0a94d05993b805400ee698f",
+            "size": 409722,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/bf2e1a087adb4628a376ffbed17c41ff/thumbnails/146e94f39d1f4914bd7dd229a74969d7/ca473439a1aa495c8a0faccb06164cc1.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "5bd25364aaff4b31ab6233cf3e648456",
+            "size": 68437,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/bf2e1a087adb4628a376ffbed17c41ff/thumbnails/146e94f39d1f4914bd7dd229a74969d7/ae16d8211fa3452fbec47a8d469470bd.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "64246aadc2144465838de7464aaf3f13",
+            "size": 33726,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/bf2e1a087adb4628a376ffbed17c41ff/thumbnails/146e94f39d1f4914bd7dd229a74969d7/417dfac0cf174acb87c06aaecff048b5.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "b5ccaf3c39344944b95571e72b89144f",
+            "size": 6194,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/bf2e1a087adb4628a376ffbed17c41ff/thumbnails/146e94f39d1f4914bd7dd229a74969d7/efec0e09e82d4f4a91f18ac35778cc71.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "9e840d1ac6af4975ba689a3a7a289c6f",
+            "size": 1308,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/bf2e1a087adb4628a376ffbed17c41ff/thumbnails/146e94f39d1f4914bd7dd229a74969d7/d7add4c4acde46b6b13e754c68cdfd86.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "227b9e7c98b24f978b9a319905e53cb2",
+        "username": "LordCinn",
+        "displayName": "LordCinn",
+        "profileUrl": "https://sketchfab.com/LordCinn",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/71737e6ddaaf47c786cc24d835ea16ae",
+          "images": [
+            {
+              "size": 798,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/71737e6ddaaf47c786cc24d835ea16ae/5d0d3bea1a5448e995707688b06c4100.png",
+              "height": 32
+            },
+            {
+              "size": 1806,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/71737e6ddaaf47c786cc24d835ea16ae/ad6276772f1f4ee9a6d4e8779afa1e51.png",
+              "height": 48
+            },
+            {
+              "size": 3672,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/71737e6ddaaf47c786cc24d835ea16ae/cf9833ee92cc44d4b25276cbfb886d2d.png",
+              "height": 90
+            },
+            {
+              "size": 4283,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/71737e6ddaaf47c786cc24d835ea16ae/582210668a2d4271bb0039f1b760de47.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/227b9e7c98b24f978b9a319905e53cb2"
+      },
+      "description": "scifi generator model\nive been working on this model for over more than 24 hours.\n4k premium quality textures - diffuse - roughness - normal /\n((((( ALL FOR FREE :D )))))\nhope you like it and support my work. :)",
+      "faceCount": 68574,
+      "createdAt": "2019-12-11T03:43:33.425674",
+      "vertexCount": 37375,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 22,
+          "size": 107674304,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 68566,
+          "vertexCount": 47743
+        },
+        "gltf": {
+          "textureCount": 22,
+          "size": 105378572,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 68566,
+          "vertexCount": 47743
+        },
+        "source": {
+          "textureCount": null,
+          "size": 164830241,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 5618719,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/60d34cf693084564848e64eb8eeae0b8",
+      "uid": "60d34cf693084564848e64eb8eeae0b8",
+      "name": "Solarpunk Village",
+      "staffpickedAt": null,
+      "viewCount": 21974,
+      "likeCount": 656,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-60d34cf693084564848e64eb8eeae0b8",
+      "embedUrl": "https://sketchfab.com/models/60d34cf693084564848e64eb8eeae0b8/embed",
+      "commentCount": 7,
+      "isDownloadable": true,
+      "publishedAt": "2023-10-05T10:06:41.183617",
+      "tags": [
+        {
+          "name": "fruit",
+          "slug": "fruit",
+          "uri": "https://api.sketchfab.com/v3/tags/fruit"
+        },
+        {
+          "name": "solar",
+          "slug": "solar",
+          "uri": "https://api.sketchfab.com/v3/tags/solar"
+        },
+        {
+          "name": "punk",
+          "slug": "punk",
+          "uri": "https://api.sketchfab.com/v3/tags/punk"
+        },
+        {
+          "name": "generator",
+          "slug": "generator",
+          "uri": "https://api.sketchfab.com/v3/tags/generator"
+        },
+        {
+          "name": "pack",
+          "slug": "pack",
+          "uri": "https://api.sketchfab.com/v3/tags/pack"
+        },
+        {
+          "name": "windturbine",
+          "slug": "windturbine",
+          "uri": "https://api.sketchfab.com/v3/tags/windturbine"
+        },
+        {
+          "name": "vegetation",
+          "slug": "vegetation",
+          "uri": "https://api.sketchfab.com/v3/tags/vegetation"
+        },
+        {
+          "name": "isometric",
+          "slug": "isometric",
+          "uri": "https://api.sketchfab.com/v3/tags/isometric"
+        },
+        {
+          "name": "stylize",
+          "slug": "stylize",
+          "uri": "https://api.sketchfab.com/v3/tags/stylize"
+        },
+        {
+          "name": "container-box",
+          "slug": "container-box",
+          "uri": "https://api.sketchfab.com/v3/tags/container-box"
+        },
+        {
+          "name": "solarpunk",
+          "slug": "solarpunk",
+          "uri": "https://api.sketchfab.com/v3/tags/solarpunk"
+        },
+        {
+          "name": "container-cargo",
+          "slug": "container-cargo",
+          "uri": "https://api.sketchfab.com/v3/tags/container-cargo"
+        },
+        {
+          "name": "asset",
+          "slug": "asset",
+          "uri": "https://api.sketchfab.com/v3/tags/asset"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "blender3d",
+          "slug": "blender3d",
+          "uri": "https://api.sketchfab.com/v3/tags/blender3d"
+        },
+        {
+          "name": "house",
+          "slug": "house",
+          "uri": "https://api.sketchfab.com/v3/tags/house"
+        },
+        {
+          "name": "animal",
+          "slug": "animal",
+          "uri": "https://api.sketchfab.com/v3/tags/animal"
+        },
+        {
+          "name": "stylized",
+          "slug": "stylized",
+          "uri": "https://api.sketchfab.com/v3/tags/stylized"
+        },
+        {
+          "name": "noai",
+          "slug": "noai",
+          "uri": "https://api.sketchfab.com/v3/tags/noai"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        },
+        {
+          "name": "art-abstract"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "7cd61c5193d54e898d262f5becabb323",
+            "size": 551849,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/60d34cf693084564848e64eb8eeae0b8/thumbnails/27fb1de7d65f4d9d9c8d131840cdda0a/9629b2f86df6469b8fe405391dada16d.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "b5c37808444c44698100b46c2f9f0fbb",
+            "size": 157051,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/60d34cf693084564848e64eb8eeae0b8/thumbnails/27fb1de7d65f4d9d9c8d131840cdda0a/d35716cffec447adad29b487f4e86ac4.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "8cc005abe7c04c8c8a13f700130f9bb2",
+            "size": 88504,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/60d34cf693084564848e64eb8eeae0b8/thumbnails/27fb1de7d65f4d9d9c8d131840cdda0a/3e127a1eac83482b971369f8dffafa24.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "547e1000aa2848078999aa0526a790cf",
+            "size": 14978,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/60d34cf693084564848e64eb8eeae0b8/thumbnails/27fb1de7d65f4d9d9c8d131840cdda0a/cf8034d96fc84209b469e2cd99fa3512.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "f5e32fbb30774d0ca3e2723ec6a5ebc1",
+            "size": 1851,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/60d34cf693084564848e64eb8eeae0b8/thumbnails/27fb1de7d65f4d9d9c8d131840cdda0a/68db26403a31434286181b290fdb4a62.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "fe8cf807f20a4d59a4abd6ff89b728a7",
+        "username": "lowPolyBoy",
+        "displayName": "LowPolyBoy",
+        "profileUrl": "https://sketchfab.com/lowPolyBoy",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/e50c70eb7b99419e95dc3c11edcd4da5",
+          "images": [
+            {
+              "size": 1132,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/e50c70eb7b99419e95dc3c11edcd4da5/31ff1d200a384c95a1104704146e3f39.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1650,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/e50c70eb7b99419e95dc3c11edcd4da5/2c544b0136954defb617eb68331652a8.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3436,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/e50c70eb7b99419e95dc3c11edcd4da5/d28072c39c1c4b31ab818d9411c12bfb.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3899,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/e50c70eb7b99419e95dc3c11edcd4da5/b7358b0cbd044ca1aaf1c668391d02e4.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/fe8cf807f20a4d59a4abd6ff89b728a7"
+      },
+      "description": "**Thank you!** to all my followers and to the people who support my art. \n\nIf you want to purchase the complete assets here are the links\n\n* [Solarpunk Asset Pack](https://skfb.ly/oLVyq)\n* [Nature Asset Pack](https://skfb.ly/oIIUD)\n* [Animal Air Balloons](https://skfb.ly/oL6VZ)\n\nModeled and textured in blender. Feel free to use it in anyway you like. If you love this model you can give it a like or comment. let\u2019s be friends ^_^, you can also **visit my profile** for more **free stuff** or if you want to support me you can buy some of my paid asset. I hope you have a great day.\n\n**Follow me** for more free stuf in the future. ^_^",
+      "faceCount": 171408,
+      "createdAt": "2023-10-05T09:12:04.077724",
+      "vertexCount": 120532,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 9,
+          "size": 13763212,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 171364,
+          "vertexCount": 261784
+        },
+        "gltf": {
+          "textureCount": 9,
+          "size": 6103696,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 171364,
+          "vertexCount": 261784
+        },
+        "source": {
+          "textureCount": null,
+          "size": 24011714,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 9657946,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/0fd0fdbd068d45ff9fd076ba5bf36a9f",
+      "uid": "0fd0fdbd068d45ff9fd076ba5bf36a9f",
+      "name": "Power Generator thing",
+      "staffpickedAt": null,
+      "viewCount": 16917,
+      "likeCount": 625,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-0fd0fdbd068d45ff9fd076ba5bf36a9f",
+      "embedUrl": "https://sketchfab.com/models/0fd0fdbd068d45ff9fd076ba5bf36a9f/embed",
+      "commentCount": 9,
+      "isDownloadable": true,
+      "publishedAt": "2020-11-27T18:21:54.748556",
+      "tags": [
+        {
+          "name": "substancepainter",
+          "slug": "substancepainter",
+          "uri": "https://api.sketchfab.com/v3/tags/substancepainter"
+        },
+        {
+          "name": "substance",
+          "slug": "substance",
+          "uri": "https://api.sketchfab.com/v3/tags/substance"
+        }
+      ],
+      "categories": [],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "0aee00357b69423b8e6ceb056d9b92ea",
+            "size": 197001,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/0fd0fdbd068d45ff9fd076ba5bf36a9f/thumbnails/5964691011c44d268d63cdd9ffe9f94e/a47560d6d39846c6a144a729b88c6083.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "de74ba09c68e4044a7fefd56749db0b0",
+            "size": 45005,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/0fd0fdbd068d45ff9fd076ba5bf36a9f/thumbnails/5964691011c44d268d63cdd9ffe9f94e/c75587eb228f406db5a609ba2420026a.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "4d242681990c46c995532bc2a5c7078f",
+            "size": 25242,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/0fd0fdbd068d45ff9fd076ba5bf36a9f/thumbnails/5964691011c44d268d63cdd9ffe9f94e/bf1e43982a764426904d01ac9f21214b.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "f8186e35b5e742a79f37641133d8fa0f",
+            "size": 5236,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/0fd0fdbd068d45ff9fd076ba5bf36a9f/thumbnails/5964691011c44d268d63cdd9ffe9f94e/bf4a62a0ce414c1aab1f4c652bd1f66e.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "81a837f064324458a9b6b0b30c321362",
+            "size": 911,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/0fd0fdbd068d45ff9fd076ba5bf36a9f/thumbnails/5964691011c44d268d63cdd9ffe9f94e/d1ce7cb6bf9c4033a6e2703b8082ea8b.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "9563a544c79147b0bf2ef335fcd8c446",
+        "username": "tboiston",
+        "displayName": "tboiston",
+        "profileUrl": "https://sketchfab.com/tboiston",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/46d142cce89f4110b1bc82b524d5deeb",
+          "images": [
+            {
+              "size": 683,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/46d142cce89f4110b1bc82b524d5deeb/cefd884e3ed54b8c95368f0199cc5345.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1073,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/46d142cce89f4110b1bc82b524d5deeb/8f3a8910452a4bef84b6d7c3e02b93cc.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2677,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/46d142cce89f4110b1bc82b524d5deeb/4cf85386601e4b3b8b983fbbc686db02.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3137,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/46d142cce89f4110b1bc82b524d5deeb/bdc17da9cb904831ade6ead1e556702c.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/9563a544c79147b0bf2ef335fcd8c446"
+      },
+      "description": "A power generator for a Uni project.",
+      "faceCount": 2122,
+      "createdAt": "2020-11-27T17:47:58.053802",
+      "vertexCount": 1220,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 3,
+          "size": 23864296,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 2122,
+          "vertexCount": 2350
+        },
+        "gltf": {
+          "textureCount": 3,
+          "size": 23721547,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 2122,
+          "vertexCount": 2350
+        },
+        "source": {
+          "textureCount": null,
+          "size": 18286459,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 2493716,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/7a0b72c7d01944a8aafab59d44eb120e",
+      "uid": "7a0b72c7d01944a8aafab59d44eb120e",
+      "name": "Diesel generator",
+      "staffpickedAt": null,
+      "viewCount": 13380,
+      "likeCount": 567,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-7a0b72c7d01944a8aafab59d44eb120e",
+      "embedUrl": "https://sketchfab.com/models/7a0b72c7d01944a8aafab59d44eb120e/embed",
+      "commentCount": 8,
+      "isDownloadable": true,
+      "publishedAt": "2021-03-17T22:10:13.113923",
+      "tags": [
+        {
+          "name": "power",
+          "slug": "power",
+          "uri": "https://api.sketchfab.com/v3/tags/power"
+        },
+        {
+          "name": "generator",
+          "slug": "generator",
+          "uri": "https://api.sketchfab.com/v3/tags/generator"
+        },
+        {
+          "name": "electricity",
+          "slug": "electricity",
+          "uri": "https://api.sketchfab.com/v3/tags/electricity"
+        },
+        {
+          "name": "substancepainter",
+          "slug": "substancepainter",
+          "uri": "https://api.sketchfab.com/v3/tags/substancepainter"
+        },
+        {
+          "name": "substance",
+          "slug": "substance",
+          "uri": "https://api.sketchfab.com/v3/tags/substance"
+        },
+        {
+          "name": "industrial",
+          "slug": "industrial",
+          "uri": "https://api.sketchfab.com/v3/tags/industrial"
+        },
+        {
+          "name": "noai",
+          "slug": "noai",
+          "uri": "https://api.sketchfab.com/v3/tags/noai"
+        }
+      ],
+      "categories": [
+        {
+          "name": "electronics-gadgets"
+        },
+        {
+          "name": "science-technology"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "f2797912cd5845849161f6850255e3dd",
+            "size": 180676,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/7a0b72c7d01944a8aafab59d44eb120e/thumbnails/bd721b50cc214aaf98a0b29587f6567a/45af8cf3605f4bb884e975da2c63c411.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "9716610e275c431d88514065d211f676",
+            "size": 50500,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/7a0b72c7d01944a8aafab59d44eb120e/thumbnails/bd721b50cc214aaf98a0b29587f6567a/d89c88584b924e96a245524b06f59ae9.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "18340dd95b2d421796afa14dfe0104e6",
+            "size": 28473,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/7a0b72c7d01944a8aafab59d44eb120e/thumbnails/bd721b50cc214aaf98a0b29587f6567a/825e0fef79364e958450891f41102fcd.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "5436c1f432414d1e9ff448b2d7e41570",
+            "size": 5627,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/7a0b72c7d01944a8aafab59d44eb120e/thumbnails/bd721b50cc214aaf98a0b29587f6567a/354e0eef2f364a37a905ad7248aa706c.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "151ed29551f241e4835a017c15f89390",
+            "size": 926,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/7a0b72c7d01944a8aafab59d44eb120e/thumbnails/bd721b50cc214aaf98a0b29587f6567a/015df48f4ed2468b9963239adebc956e.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "58ace1843f1d46ffaddc997dff9c821e",
+        "username": "epilogueronin",
+        "displayName": "epilogueronin",
+        "profileUrl": "https://sketchfab.com/epilogueronin",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/0910b50d525c4b56bd307a7140f5e81d",
+          "images": [
+            {
+              "size": 1802,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/0910b50d525c4b56bd307a7140f5e81d/5dcca6617a8247d3b3eeaae78f457df3.png",
+              "height": 32
+            },
+            {
+              "size": 3415,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/0910b50d525c4b56bd307a7140f5e81d/e4bd20f71537405abf53d948d89d3039.png",
+              "height": 48
+            },
+            {
+              "size": 9788,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/0910b50d525c4b56bd307a7140f5e81d/15e199c14b1244379d1c183602ac8e70.png",
+              "height": 90
+            },
+            {
+              "size": 11516,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/0910b50d525c4b56bd307a7140f5e81d/30b4e7a2fbc445fa9c0d2c5dd02aa081.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/58ace1843f1d46ffaddc997dff9c821e"
+      },
+      "description": "Model I decided to polish a little bit after a rushed project",
+      "faceCount": 10428,
+      "createdAt": "2021-03-17T22:03:06.351447",
+      "vertexCount": 5558,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 4,
+          "size": 25988888,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 10428,
+          "vertexCount": 9078
+        },
+        "gltf": {
+          "textureCount": 4,
+          "size": 25249661,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 10428,
+          "vertexCount": 9078
+        },
+        "source": {
+          "textureCount": null,
+          "size": 32617776,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 2554747,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/05cb0187751541f195d8b7cf3c4736ef",
+      "uid": "05cb0187751541f195d8b7cf3c4736ef",
+      "name": "PE-77-D Generator",
+      "staffpickedAt": null,
+      "viewCount": 9685,
+      "likeCount": 537,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-05cb0187751541f195d8b7cf3c4736ef",
+      "embedUrl": "https://sketchfab.com/models/05cb0187751541f195d8b7cf3c4736ef/embed",
+      "commentCount": 6,
+      "isDownloadable": true,
+      "publishedAt": "2021-06-29T18:35:42.640320",
+      "tags": [
+        {
+          "name": "generator",
+          "slug": "generator",
+          "uri": "https://api.sketchfab.com/v3/tags/generator"
+        },
+        {
+          "name": "props",
+          "slug": "props",
+          "uri": "https://api.sketchfab.com/v3/tags/props"
+        },
+        {
+          "name": "machine",
+          "slug": "machine",
+          "uri": "https://api.sketchfab.com/v3/tags/machine"
+        },
+        {
+          "name": "substancepainter",
+          "slug": "substancepainter",
+          "uri": "https://api.sketchfab.com/v3/tags/substancepainter"
+        },
+        {
+          "name": "substance",
+          "slug": "substance",
+          "uri": "https://api.sketchfab.com/v3/tags/substance"
+        },
+        {
+          "name": "hardsurface",
+          "slug": "hardsurface",
+          "uri": "https://api.sketchfab.com/v3/tags/hardsurface"
+        },
+        {
+          "name": "gameready",
+          "slug": "gameready",
+          "uri": "https://api.sketchfab.com/v3/tags/gameready"
+        }
+      ],
+      "categories": [],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "fbc2e62120584c50aed7745edd4b328b",
+            "size": 164101,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/05cb0187751541f195d8b7cf3c4736ef/thumbnails/59ad86397f86499698daadc1e3385c05/c6bfcb8d8663434d953f7e442296a361.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "dc85d4e316a54d7f8f96274a6e8cd47d",
+            "size": 40961,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/05cb0187751541f195d8b7cf3c4736ef/thumbnails/59ad86397f86499698daadc1e3385c05/a33e247ab7a84d86a9f4886f98992662.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "6262a43816824524a73dd5e93e0f2e1c",
+            "size": 23037,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/05cb0187751541f195d8b7cf3c4736ef/thumbnails/59ad86397f86499698daadc1e3385c05/7023f90c880a49a0abfee760307ac7f6.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "6a92e0e3ee9a45a887fb81a094689478",
+            "size": 4656,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/05cb0187751541f195d8b7cf3c4736ef/thumbnails/59ad86397f86499698daadc1e3385c05/c226d80413fa48f7b312fbca21234c57.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "2eeee2ae6fc24f24893557568a9618f3",
+            "size": 1097,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/05cb0187751541f195d8b7cf3c4736ef/thumbnails/59ad86397f86499698daadc1e3385c05/973d1f6f77cc4e34955cd852f1c0bb2b.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "baefd85324ec45439c28abc0afa3258e",
+        "username": "krambulini",
+        "displayName": "krambulini",
+        "profileUrl": "https://sketchfab.com/krambulini",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/104520338aa247848fc5052d83a2cf3b",
+          "images": [
+            {
+              "size": 1118,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/104520338aa247848fc5052d83a2cf3b/bbcd7e2f3d104244942e81cfb4f5f969.png",
+              "height": 32
+            },
+            {
+              "size": 1646,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/104520338aa247848fc5052d83a2cf3b/f97f331514e747e898bf7de06c4ddb89.png",
+              "height": 48
+            },
+            {
+              "size": 2677,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/104520338aa247848fc5052d83a2cf3b/14fa4b8c370047c5b7f9fc32ba5947e4.png",
+              "height": 90
+            },
+            {
+              "size": 2752,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/104520338aa247848fc5052d83a2cf3b/aa23fcd22456440186edf69d41827448.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/baefd85324ec45439c28abc0afa3258e"
+      },
+      "description": "",
+      "faceCount": 17543,
+      "createdAt": "2021-06-29T18:34:37.556411",
+      "vertexCount": 10155,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 6,
+          "size": 65834216,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 17543,
+          "vertexCount": 16194
+        },
+        "gltf": {
+          "textureCount": 6,
+          "size": 65329587,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 17543,
+          "vertexCount": 16194
+        },
+        "source": {
+          "textureCount": null,
+          "size": 73893849,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 11482698,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/eda91f75faae470e8d6461e0e6fc86fa",
+      "uid": "eda91f75faae470e8d6461e0e6fc86fa",
+      "name": "Simple Generator(Fixed)",
+      "staffpickedAt": null,
+      "viewCount": 17464,
+      "likeCount": 522,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-eda91f75faae470e8d6461e0e6fc86fa",
+      "embedUrl": "https://sketchfab.com/models/eda91f75faae470e8d6461e0e6fc86fa/embed",
+      "commentCount": 11,
+      "isDownloadable": true,
+      "publishedAt": "2018-06-10T23:55:46.523494",
+      "tags": [
+        {
+          "name": "generator",
+          "slug": "generator",
+          "uri": "https://api.sketchfab.com/v3/tags/generator"
+        }
+      ],
+      "categories": [
+        {
+          "name": "electronics-gadgets"
+        },
+        {
+          "name": "science-technology"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "4b73f178bffd46409a94c6ac7574a24e",
+            "size": 157347,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/eda91f75faae470e8d6461e0e6fc86fa/thumbnails/064b1597620e4937813efcb03c595fb1/e7033980338d4eb09dc103a33a0b3e0e.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "2efe2e2f18364e5b97ee09bf259d10b7",
+            "size": 43387,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/eda91f75faae470e8d6461e0e6fc86fa/thumbnails/064b1597620e4937813efcb03c595fb1/9d8bff4bbd0549d4a0793b08e38c985f.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "9b5f5dbeba55462ab40cfa1e8e09efab",
+            "size": 23719,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/eda91f75faae470e8d6461e0e6fc86fa/thumbnails/064b1597620e4937813efcb03c595fb1/5b29dd1d2c594ef8b5aa5cd0fc3afbcd.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "14a39d601adf4517b21f301636672ad4",
+            "size": 4529,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/eda91f75faae470e8d6461e0e6fc86fa/thumbnails/064b1597620e4937813efcb03c595fb1/500396e45b9243138e33e835fa1b783b.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "2a73a51354944394bafc16e1ae0b48df",
+            "size": 805,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/eda91f75faae470e8d6461e0e6fc86fa/thumbnails/064b1597620e4937813efcb03c595fb1/c627038d0ed14b32a4bb388acd6f726d.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "61033c6269b94cecb6ffaf9ea5819303",
+        "username": "Blender3D",
+        "displayName": "Blender3D",
+        "profileUrl": "https://sketchfab.com/Blender3D",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/cd7881584cca4cb894c7b6612f84a199",
+          "images": [
+            {
+              "size": 966,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/cd7881584cca4cb894c7b6612f84a199/3c3663617ff148dea1e7bc215d5103f0.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1321,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/cd7881584cca4cb894c7b6612f84a199/4c3c6ef919464e36a8f872f038f4519c.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2589,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/cd7881584cca4cb894c7b6612f84a199/38b5d25f16c54ae3a22b52dca2aca9f6.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2916,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/cd7881584cca4cb894c7b6612f84a199/69383b51c8d348928c14f77e92a0db72.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/61033c6269b94cecb6ffaf9ea5819303"
+      },
+      "description": "Here is a Generator i created hope you like it :P. I fixed the normals and UV's, now it looks much better.",
+      "faceCount": 4946,
+      "createdAt": "2018-06-10T23:41:48.787818",
+      "vertexCount": 2919,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 4,
+          "size": 39200620,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 4946,
+          "vertexCount": 5584
+        },
+        "gltf": {
+          "textureCount": 4,
+          "size": 38991693,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 4946,
+          "vertexCount": 5584
+        },
+        "source": {
+          "textureCount": null,
+          "size": 87729591,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 22862484,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/1c54abb1c6824f26a0a087d2bd7a635a",
+      "uid": "1c54abb1c6824f26a0a087d2bd7a635a",
+      "name": "Star Wars Endor Bunker",
+      "staffpickedAt": null,
+      "viewCount": 22742,
+      "likeCount": 515,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-1c54abb1c6824f26a0a087d2bd7a635a",
+      "embedUrl": "https://sketchfab.com/models/1c54abb1c6824f26a0a087d2bd7a635a/embed",
+      "commentCount": 8,
+      "isDownloadable": true,
+      "publishedAt": "2019-07-02T23:16:28.495951",
+      "tags": [
+        {
+          "name": "empire",
+          "slug": "empire",
+          "uri": "https://api.sketchfab.com/v3/tags/empire"
+        },
+        {
+          "name": "bunker",
+          "slug": "bunker",
+          "uri": "https://api.sketchfab.com/v3/tags/bunker"
+        },
+        {
+          "name": "endor",
+          "slug": "endor",
+          "uri": "https://api.sketchfab.com/v3/tags/endor"
+        },
+        {
+          "name": "star-wars",
+          "slug": "star-wars",
+          "uri": "https://api.sketchfab.com/v3/tags/star-wars"
+        },
+        {
+          "name": "substancepainter",
+          "slug": "substancepainter",
+          "uri": "https://api.sketchfab.com/v3/tags/substancepainter"
+        }
+      ],
+      "categories": [
+        {
+          "name": "science-technology"
+        },
+        {
+          "name": "weapons-military"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "5390c6b80236444f91e417cda91f2764",
+            "size": 806,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/1c54abb1c6824f26a0a087d2bd7a635a/thumbnails/af8b87dd2fca4072978699f0876b8893/c453dba4be174fb2b4bbd30dcea204f0.jpeg",
+            "height": 36
+          },
+          {
+            "uid": "c0353036485a4bd7b8b10d6714a8a10e",
+            "size": 5657,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/1c54abb1c6824f26a0a087d2bd7a635a/thumbnails/af8b87dd2fca4072978699f0876b8893/4fb14c07ddb34e3e8ce2cb150133fefc.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "c336e2471c684de681976c7f2b93304b",
+            "size": 35027,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/1c54abb1c6824f26a0a087d2bd7a635a/thumbnails/af8b87dd2fca4072978699f0876b8893/bea6a6fc9f074356a9b58eaf81bbb512.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "4c67917b316d4d7b96ead329af1f51f8",
+            "size": 64444,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/1c54abb1c6824f26a0a087d2bd7a635a/thumbnails/af8b87dd2fca4072978699f0876b8893/73df107d36e24b53a735664caa93154e.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "6632d6ce0d554854b24f42e8e53a4413",
+            "size": 227929,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/1c54abb1c6824f26a0a087d2bd7a635a/thumbnails/af8b87dd2fca4072978699f0876b8893/4f22517fdf9243b1b579b74ddaa7d296.jpeg",
+            "height": 1080
+          }
+        ]
+      },
+      "user": {
+        "uid": "732a528fdd5c48a9a5dbf50ea64df1f0",
+        "username": "aclarke064",
+        "displayName": "aclarke064",
+        "profileUrl": "https://sketchfab.com/aclarke064",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/8611ae7d1ced47aeae0cd70cc7d3c025",
+          "images": [
+            {
+              "size": 731,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/8611ae7d1ced47aeae0cd70cc7d3c025/13f728c67c964f7b8bbb3fa6b49537bd.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1109,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/8611ae7d1ced47aeae0cd70cc7d3c025/90f7810171164c828cd22715d579b8be.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2911,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/8611ae7d1ced47aeae0cd70cc7d3c025/73e446c6b2534ca09307addd21821236.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3421,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/8611ae7d1ced47aeae0cd70cc7d3c025/0cfd68c691ae4c9eb849a437a24e048c.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/732a528fdd5c48a9a5dbf50ea64df1f0"
+      },
+      "description": "This is a replica of an Endor Shield Generator Bunker from Star Wars: Episode VI. I love the angular design of these bunkers so I decided to make one in 3DS Max and texture it in Substance Painter.",
+      "faceCount": 23886,
+      "createdAt": "2019-07-02T22:54:07.860335",
+      "vertexCount": 11930,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 3,
+          "size": 48727320,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 23886,
+          "vertexCount": 24206
+        },
+        "gltf": {
+          "textureCount": 3,
+          "size": 48006258,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 23886,
+          "vertexCount": 24206
+        },
+        "source": {
+          "textureCount": null,
+          "size": 68698037,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 7489843,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "2628dbe5140a4e9592126c8df566c0b7",
+        "label": "CC Attribution-NonCommercial-ShareAlike"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/4b50a06663fe44079503ca53f7eb399f",
+      "uid": "4b50a06663fe44079503ca53f7eb399f",
+      "name": "Generator",
+      "staffpickedAt": null,
+      "viewCount": 9656,
+      "likeCount": 510,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-4b50a06663fe44079503ca53f7eb399f",
+      "embedUrl": "https://sketchfab.com/models/4b50a06663fe44079503ca53f7eb399f/embed",
+      "commentCount": 7,
+      "isDownloadable": true,
+      "publishedAt": "2021-08-09T19:46:01.273903",
+      "tags": [
+        {
+          "name": "props-game",
+          "slug": "props-game",
+          "uri": "https://api.sketchfab.com/v3/tags/props-game"
+        },
+        {
+          "name": "gameready",
+          "slug": "gameready",
+          "uri": "https://api.sketchfab.com/v3/tags/gameready"
+        }
+      ],
+      "categories": [
+        {
+          "name": "electronics-gadgets"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "7c01d084cd6b4d30a39b8872eff02c53",
+            "size": 305544,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/4b50a06663fe44079503ca53f7eb399f/thumbnails/2f2f96db7fa3468f9d7ce197cc0be1aa/0cc33799439749bfaf562fa26555ec38.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "e0261de16626454a8c68ab525f660a1b",
+            "size": 77153,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/4b50a06663fe44079503ca53f7eb399f/thumbnails/2f2f96db7fa3468f9d7ce197cc0be1aa/1e241c3f95ab457b84fede3def62ff00.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "35737f61a2554a98959d98cf0030fbd6",
+            "size": 36265,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/4b50a06663fe44079503ca53f7eb399f/thumbnails/2f2f96db7fa3468f9d7ce197cc0be1aa/5f185c662d1245f3adafa5b7740d3a3a.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "664ecf3f9e6d41bea835ec8f4c61a1b7",
+            "size": 5038,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/4b50a06663fe44079503ca53f7eb399f/thumbnails/2f2f96db7fa3468f9d7ce197cc0be1aa/076db7c4eff94db796ab1ffeeb9132c1.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "9e69b928a6644c96a9033a88596e3949",
+            "size": 1042,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/4b50a06663fe44079503ca53f7eb399f/thumbnails/2f2f96db7fa3468f9d7ce197cc0be1aa/34c705ff8a734a3e94c76087f3978789.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "6a927738448e4f07a920177aab7f7716",
+        "username": "bumstrum",
+        "displayName": "DJMaesen",
+        "profileUrl": "https://sketchfab.com/bumstrum",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/86bd800397fb455fb38914eb5aa60cb8",
+          "images": [
+            {
+              "size": 839,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/86bd800397fb455fb38914eb5aa60cb8/7fa4143fedaa4c39b6ea9dba94e9de27.png",
+              "height": 32
+            },
+            {
+              "size": 1252,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/86bd800397fb455fb38914eb5aa60cb8/957ad024d1c94ab8a1ccee6111609251.png",
+              "height": 48
+            },
+            {
+              "size": 2189,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/86bd800397fb455fb38914eb5aa60cb8/385c9f4b18454e4dac200a51da88fdb4.png",
+              "height": 90
+            },
+            {
+              "size": 2435,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/86bd800397fb455fb38914eb5aa60cb8/fbf10bfab1fd4d4dbb50fb744e450514.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/6a927738448e4f07a920177aab7f7716"
+      },
+      "description": "low poly generator\n\nrework of this model  by krambulini>\n\nhttps://sketchfab.com/3d-models/pe-77-d-generator-05cb0187751541f195d8b7cf3c4736ef\n\nfixed some topology, redid UVS and textures\n\nsuch a cool machine",
+      "faceCount": 15628,
+      "createdAt": "2021-08-09T19:41:10.570715",
+      "vertexCount": 8914,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 3,
+          "size": 47204432,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 15625,
+          "vertexCount": 16945
+        },
+        "gltf": {
+          "textureCount": 3,
+          "size": 46691976,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 15625,
+          "vertexCount": 16945
+        },
+        "source": {
+          "textureCount": null,
+          "size": 47676300,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 4322121,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/86644810fea046e788b9679122c3bf69",
+      "uid": "86644810fea046e788b9679122c3bf69",
+      "name": "Wind Turbine",
+      "staffpickedAt": null,
+      "viewCount": 19995,
+      "likeCount": 497,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-86644810fea046e788b9679122c3bf69",
+      "embedUrl": "https://sketchfab.com/models/86644810fea046e788b9679122c3bf69/embed",
+      "commentCount": 24,
+      "isDownloadable": true,
+      "publishedAt": "2018-10-16T18:45:20.789314",
+      "tags": [
+        {
+          "name": "green",
+          "slug": "green",
+          "uri": "https://api.sketchfab.com/v3/tags/green"
+        },
+        {
+          "name": "cat",
+          "slug": "cat",
+          "uri": "https://api.sketchfab.com/v3/tags/cat"
+        },
+        {
+          "name": "bed",
+          "slug": "bed",
+          "uri": "https://api.sketchfab.com/v3/tags/bed"
+        },
+        {
+          "name": "ao",
+          "slug": "ao",
+          "uri": "https://api.sketchfab.com/v3/tags/ao"
+        },
+        {
+          "name": "small",
+          "slug": "small",
+          "uri": "https://api.sketchfab.com/v3/tags/small"
+        },
+        {
+          "name": "generator",
+          "slug": "generator",
+          "uri": "https://api.sketchfab.com/v3/tags/generator"
+        },
+        {
+          "name": "store",
+          "slug": "store",
+          "uri": "https://api.sketchfab.com/v3/tags/store"
+        },
+        {
+          "name": "window",
+          "slug": "window",
+          "uri": "https://api.sketchfab.com/v3/tags/window"
+        },
+        {
+          "name": "spiral",
+          "slug": "spiral",
+          "uri": "https://api.sketchfab.com/v3/tags/spiral"
+        },
+        {
+          "name": "cozy",
+          "slug": "cozy",
+          "uri": "https://api.sketchfab.com/v3/tags/cozy"
+        },
+        {
+          "name": "renewable",
+          "slug": "renewable",
+          "uri": "https://api.sketchfab.com/v3/tags/renewable"
+        },
+        {
+          "name": "architecture",
+          "slug": "architecture",
+          "uri": "https://api.sketchfab.com/v3/tags/architecture"
+        },
+        {
+          "name": "book",
+          "slug": "book",
+          "uri": "https://api.sketchfab.com/v3/tags/book"
+        },
+        {
+          "name": "blender3d",
+          "slug": "blender3d",
+          "uri": "https://api.sketchfab.com/v3/tags/blender3d"
+        },
+        {
+          "name": "house",
+          "slug": "house",
+          "uri": "https://api.sketchfab.com/v3/tags/house"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "2b9f3502115b42fea1187956d88502d1",
+            "size": 329216,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/86644810fea046e788b9679122c3bf69/thumbnails/b0c8fd20c65d4f508a8aee14ef0fc591/9cb1b25edf8c4232b96f7dacf0395742.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "a4ae7f408ca24abda475cea8ef970104",
+            "size": 87964,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/86644810fea046e788b9679122c3bf69/thumbnails/b0c8fd20c65d4f508a8aee14ef0fc591/34fdf7640e474b2ea30ad37e46400b26.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "e43904a162f34f5bac611d39c2b23f36",
+            "size": 44661,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/86644810fea046e788b9679122c3bf69/thumbnails/b0c8fd20c65d4f508a8aee14ef0fc591/ffd0f4200b254d09b2e66cdbc2fade3d.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "b715ebc7fff145b988b513631b1b42d0",
+            "size": 7044,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/86644810fea046e788b9679122c3bf69/thumbnails/b0c8fd20c65d4f508a8aee14ef0fc591/5c5477ef52cf466bbcd382d1443fef64.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "c663f78e06e04d41ad1df9a623ac5af7",
+            "size": 987,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/86644810fea046e788b9679122c3bf69/thumbnails/b0c8fd20c65d4f508a8aee14ef0fc591/264391e7a434487a814aff15bd23b716.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "664296f296d94c21ba48ffaa5f306e03",
+        "username": "davidju",
+        "displayName": "David Junghanns",
+        "profileUrl": "https://sketchfab.com/davidju",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/eb106941d2904b08b6a0b7e15241bca0",
+          "images": [
+            {
+              "size": 619,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/eb106941d2904b08b6a0b7e15241bca0/34911d74c7e04c6f8778d569d46dc97c.jpeg",
+              "height": 32
+            },
+            {
+              "size": 856,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/eb106941d2904b08b6a0b7e15241bca0/efc3fcbf55f9482184ca3c6055cd4648.jpeg",
+              "height": 48
+            },
+            {
+              "size": 1433,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/eb106941d2904b08b6a0b7e15241bca0/7971e7cbb59f430f8519c0080735e206.jpeg",
+              "height": 90
+            },
+            {
+              "size": 1540,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/eb106941d2904b08b6a0b7e15241bca0/30e514a36fd24bbc92967abf8a457706.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/664296f296d94c21ba48ffaa5f306e03"
+      },
+      "description": "![](https://cdnb.artstation.com/p/assets/images/images/002/216/091/large/pascal-miller-aeolian.jpg?1458815501)\n\nI really liked [this](https://www.artstation.com/artwork/G6J2Q) piece by Pascal Miller, so I decided to recreated it in blender. It was loads of fun, but I don'T know when I'll pull through with the texturing.",
+      "faceCount": 632192,
+      "createdAt": "2018-10-16T18:19:57.475596",
+      "vertexCount": 319459,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 26866768,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 632094,
+          "vertexCount": 602253
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 12334889,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 632094,
+          "vertexCount": 602253
+        },
+        "source": {
+          "textureCount": null,
+          "size": 27612490,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 15514316,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "b9ddc40b93e34cdca1fc152f39b9f375",
+        "label": "CC Attribution-ShareAlike"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/a121a4701ea04dcf88468a8927554620",
+      "uid": "a121a4701ea04dcf88468a8927554620",
+      "name": "Haunted Mansion Project: The Greenhouse",
+      "staffpickedAt": null,
+      "viewCount": 12289,
+      "likeCount": 487,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-a121a4701ea04dcf88468a8927554620",
+      "embedUrl": "https://sketchfab.com/models/a121a4701ea04dcf88468a8927554620/embed",
+      "commentCount": 7,
+      "isDownloadable": true,
+      "publishedAt": "2024-01-16T09:30:50.534872",
+      "tags": [
+        {
+          "name": "victorian",
+          "slug": "victorian",
+          "uri": "https://api.sketchfab.com/v3/tags/victorian"
+        },
+        {
+          "name": "conservatory",
+          "slug": "conservatory",
+          "uri": "https://api.sketchfab.com/v3/tags/conservatory"
+        },
+        {
+          "name": "greenhouse",
+          "slug": "greenhouse",
+          "uri": "https://api.sketchfab.com/v3/tags/greenhouse"
+        },
+        {
+          "name": "disney",
+          "slug": "disney",
+          "uri": "https://api.sketchfab.com/v3/tags/disney"
+        },
+        {
+          "name": "disneyland",
+          "slug": "disneyland",
+          "uri": "https://api.sketchfab.com/v3/tags/disneyland"
+        },
+        {
+          "name": "disneyworld",
+          "slug": "disneyworld",
+          "uri": "https://api.sketchfab.com/v3/tags/disneyworld"
+        },
+        {
+          "name": "ghost",
+          "slug": "ghost",
+          "uri": "https://api.sketchfab.com/v3/tags/ghost"
+        },
+        {
+          "name": "halloween",
+          "slug": "halloween",
+          "uri": "https://api.sketchfab.com/v3/tags/halloween"
+        },
+        {
+          "name": "spooky",
+          "slug": "spooky",
+          "uri": "https://api.sketchfab.com/v3/tags/spooky"
+        },
+        {
+          "name": "glass-building",
+          "slug": "glass-building",
+          "uri": "https://api.sketchfab.com/v3/tags/glass-building"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        },
+        {
+          "name": "cultural-heritage-history"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "527c46e52fac41cf94b29a4e75c8d226",
+            "size": 316993,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/a121a4701ea04dcf88468a8927554620/thumbnails/5b34319e1a1f4f409419bff9227c126a/42679f1c1ff74783bc0d1ba80bc7dc09.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "cd7410fe7cd44d98a3cdf3edbcd32712",
+            "size": 91913,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/a121a4701ea04dcf88468a8927554620/thumbnails/5b34319e1a1f4f409419bff9227c126a/80716a1dc53349eba8da7ba898a26ae3.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "65c0a75b65c34fbeaae296fbbd7b002d",
+            "size": 46682,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/a121a4701ea04dcf88468a8927554620/thumbnails/5b34319e1a1f4f409419bff9227c126a/56325d878463404fac75cbe314256f10.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "0a4d24de3f284234b73483b5e7ebac3f",
+            "size": 6678,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/a121a4701ea04dcf88468a8927554620/thumbnails/5b34319e1a1f4f409419bff9227c126a/9ef679637fbc4e02a4bfa4c788c7ebf1.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "a6f964a61cb04ae28a518e74531402b2",
+            "size": 1093,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/a121a4701ea04dcf88468a8927554620/thumbnails/5b34319e1a1f4f409419bff9227c126a/ff45628418fc482eab3bdf4ee2fd3d21.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "461d68c8709d40a5ad74bf803bcd45cc",
+        "username": "wed-designs",
+        "displayName": "WED Designs",
+        "profileUrl": "https://sketchfab.com/wed-designs",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/4f2769ac51e44424b2f48b55680f8b44",
+          "images": [
+            {
+              "size": 862,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/4f2769ac51e44424b2f48b55680f8b44/c49a62f597c14b5aa1544361001d968b.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1125,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/4f2769ac51e44424b2f48b55680f8b44/01119614572a4d6699d64e72f1e7dcd1.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2332,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/4f2769ac51e44424b2f48b55680f8b44/471e0eed09a8410b8e33976e4d7bd004.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2723,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/4f2769ac51e44424b2f48b55680f8b44/3acaa4b1c07c44198b526a1bcd28943b.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/461d68c8709d40a5ad74bf803bcd45cc"
+      },
+      "description": "For the past several months, I have been doing research, Finding old HM concept art, discovering long lost lore, and eventually modeling the results to create a new Haunted Mansion dedicated to the Imagineers who brought it to life. Unlike many of the other components of the project, this is not based on an old concept, but is in fact my own addition.  This greenhouse, long abandoned, will be the centerpiece of the mansion's backyard. In it, you can find a variety of flora, from small parasitic buds like the hydnora to larger specimens such as the magnificent corpse flower. The top of the greenhouse is designed to match the conservatory built into MK's Haunted Mansion.\n\nThis is my first attempt at using generative flora in Blender, using the built in IvyGen add-on. I originally wanted to use the BagPie Ivy generator which produced a much more filled result and looked amazing, but the result was a 12 million polygon 3.2GB monstrosity so IvyGen appears to be much better for uploading to sketchfab. Enjoy!",
+      "faceCount": 3351616,
+      "createdAt": "2024-01-16T08:46:42.825099",
+      "vertexCount": 2309771,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 8,
+          "size": 176127232,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 3351552,
+          "vertexCount": 2486968
+        },
+        "gltf": {
+          "textureCount": 8,
+          "size": 99866447,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 3351552,
+          "vertexCount": 2486968
+        },
+        "source": {
+          "textureCount": null,
+          "size": 133711059,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 68358167,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/685fc34284574996b09ae0f826367e90",
+      "uid": "685fc34284574996b09ae0f826367e90",
+      "name": "Sci-fi Generator",
+      "staffpickedAt": null,
+      "viewCount": 12188,
+      "likeCount": 461,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-685fc34284574996b09ae0f826367e90",
+      "embedUrl": "https://sketchfab.com/models/685fc34284574996b09ae0f826367e90/embed",
+      "commentCount": 4,
+      "isDownloadable": true,
+      "publishedAt": "2022-06-02T08:19:15.066276",
+      "tags": [
+        {
+          "name": "prop",
+          "slug": "prop",
+          "uri": "https://api.sketchfab.com/v3/tags/prop"
+        },
+        {
+          "name": "draft",
+          "slug": "draft",
+          "uri": "https://api.sketchfab.com/v3/tags/draft"
+        },
+        {
+          "name": "generator",
+          "slug": "generator",
+          "uri": "https://api.sketchfab.com/v3/tags/generator"
+        },
+        {
+          "name": "cyber",
+          "slug": "cyber",
+          "uri": "https://api.sketchfab.com/v3/tags/cyber"
+        },
+        {
+          "name": "tech",
+          "slug": "tech",
+          "uri": "https://api.sketchfab.com/v3/tags/tech"
+        },
+        {
+          "name": "cyberpunk",
+          "slug": "cyberpunk",
+          "uri": "https://api.sketchfab.com/v3/tags/cyberpunk"
+        },
+        {
+          "name": "props",
+          "slug": "props",
+          "uri": "https://api.sketchfab.com/v3/tags/props"
+        },
+        {
+          "name": "hi-tech",
+          "slug": "hi-tech",
+          "uri": "https://api.sketchfab.com/v3/tags/hi-tech"
+        },
+        {
+          "name": "xyz",
+          "slug": "xyz",
+          "uri": "https://api.sketchfab.com/v3/tags/xyz"
+        },
+        {
+          "name": "utilitarian",
+          "slug": "utilitarian",
+          "uri": "https://api.sketchfab.com/v3/tags/utilitarian"
+        },
+        {
+          "name": "low-poly-model",
+          "slug": "low-poly-model",
+          "uri": "https://api.sketchfab.com/v3/tags/low-poly-model"
+        },
+        {
+          "name": "factory-building",
+          "slug": "factory-building",
+          "uri": "https://api.sketchfab.com/v3/tags/factory-building"
+        },
+        {
+          "name": "city-building",
+          "slug": "city-building",
+          "uri": "https://api.sketchfab.com/v3/tags/city-building"
+        },
+        {
+          "name": "city-furniture",
+          "slug": "city-furniture",
+          "uri": "https://api.sketchfab.com/v3/tags/city-furniture"
+        },
+        {
+          "name": "xyz-school",
+          "slug": "xyz-school",
+          "uri": "https://api.sketchfab.com/v3/tags/xyz-school"
+        },
+        {
+          "name": "architecture",
+          "slug": "architecture",
+          "uri": "https://api.sketchfab.com/v3/tags/architecture"
+        },
+        {
+          "name": "low-poly",
+          "slug": "low-poly",
+          "uri": "https://api.sketchfab.com/v3/tags/low-poly"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "lowpoly",
+          "slug": "lowpoly",
+          "uri": "https://api.sketchfab.com/v3/tags/lowpoly"
+        },
+        {
+          "name": "blender3d",
+          "slug": "blender3d",
+          "uri": "https://api.sketchfab.com/v3/tags/blender3d"
+        },
+        {
+          "name": "scifi",
+          "slug": "scifi",
+          "uri": "https://api.sketchfab.com/v3/tags/scifi"
+        },
+        {
+          "name": "sci-fi",
+          "slug": "sci-fi",
+          "uri": "https://api.sketchfab.com/v3/tags/sci-fi"
+        },
+        {
+          "name": "technology",
+          "slug": "technology",
+          "uri": "https://api.sketchfab.com/v3/tags/technology"
+        },
+        {
+          "name": "building",
+          "slug": "building",
+          "uri": "https://api.sketchfab.com/v3/tags/building"
+        },
+        {
+          "name": "factory",
+          "slug": "factory",
+          "uri": "https://api.sketchfab.com/v3/tags/factory"
+        },
+        {
+          "name": "electric",
+          "slug": "electric",
+          "uri": "https://api.sketchfab.com/v3/tags/electric"
+        },
+        {
+          "name": "environment",
+          "slug": "environment",
+          "uri": "https://api.sketchfab.com/v3/tags/environment"
+        },
+        {
+          "name": "draftpunk",
+          "slug": "draftpunk",
+          "uri": "https://api.sketchfab.com/v3/tags/draftpunk"
+        },
+        {
+          "name": "xyzhomework",
+          "slug": "xyzhomework",
+          "uri": "https://api.sketchfab.com/v3/tags/xyzhomework"
+        },
+        {
+          "name": "electrycity",
+          "slug": "electrycity",
+          "uri": "https://api.sketchfab.com/v3/tags/electrycity"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        },
+        {
+          "name": "electronics-gadgets"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "792a4c54e0a04e0bab4fbeb9ec6302e6",
+            "size": 103559,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/685fc34284574996b09ae0f826367e90/thumbnails/d8a756766fa2445994ec670c232f8b7b/ea1697bbef434179b41f2c704b5cb662.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "4bba31e9a2ee4b5e8fa7477b531d4b26",
+            "size": 34584,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/685fc34284574996b09ae0f826367e90/thumbnails/d8a756766fa2445994ec670c232f8b7b/57188caaa1df488fa97faa529e0a704e.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "fec2a64e8ea34f2186cbc25166763717",
+            "size": 20122,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/685fc34284574996b09ae0f826367e90/thumbnails/d8a756766fa2445994ec670c232f8b7b/b43b4c9ad1904ddf89812faa2dafd30c.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "563aa8b7d36e456f9fb5de55f5880d06",
+            "size": 4377,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/685fc34284574996b09ae0f826367e90/thumbnails/d8a756766fa2445994ec670c232f8b7b/3a18b487d9644f958b49561ddca75852.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "03cc1f3a7ae04445b522d4145b91e0f4",
+            "size": 1074,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/685fc34284574996b09ae0f826367e90/thumbnails/d8a756766fa2445994ec670c232f8b7b/3161d6ff73af4ef6b0cd0424bc5f3983.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "53ec824e275e4b9d8cecc4e72e526346",
+        "username": "Just_Eh",
+        "displayName": "Eh",
+        "profileUrl": "https://sketchfab.com/Just_Eh",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/795603381fcf4df59d5bbe944dde3e8c",
+          "images": [
+            {
+              "size": 1104,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/795603381fcf4df59d5bbe944dde3e8c/c813d2bd78f84de49b24669f057bb539.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1618,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/795603381fcf4df59d5bbe944dde3e8c/4e3f84475cd140be8ee0c08b07d3c72b.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3622,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/795603381fcf4df59d5bbe944dde3e8c/a3f11533aed94db69d334a31f1f5388e.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4232,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/795603381fcf4df59d5bbe944dde3e8c/6560acd19de4426ca2e12471a2f44c9c.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/53ec824e275e4b9d8cecc4e72e526346"
+      },
+      "description": "Just quick draft for XYZ school\n\nAppreciate [Callum Dainty](https://www.artstation.com/callumdainty) for his great [concept](https://www.artstation.com/artwork/Z58oom)",
+      "faceCount": 14628,
+      "createdAt": "2022-06-02T07:52:03.581707",
+      "vertexCount": 10406,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 1093400,
+          "type": "glb",
+          "textureMaxResolution": 512,
+          "faceCount": 14551,
+          "vertexCount": 22480
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 376069,
+          "type": "gltf",
+          "textureMaxResolution": 512,
+          "faceCount": 14551,
+          "vertexCount": 22480
+        },
+        "source": {
+          "textureCount": null,
+          "size": 2313077,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 718034,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    }
+  ]
+}

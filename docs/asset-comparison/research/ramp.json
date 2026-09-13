@@ -1,0 +1,2185 @@
+{
+  "cursors": {
+    "next": "12",
+    "previous": null
+  },
+  "next": "https://api.sketchfab.com/v3/search?count=12&cursor=12&downloadable=true&q=loading+ramp&sort_by=-relevance&type=models",
+  "previous": null,
+  "results": [
+    {
+      "uri": "https://api.sketchfab.com/v3/models/c5dd26bc4ce54f97bb4422092ab9c17a",
+      "uid": "c5dd26bc4ce54f97bb4422092ab9c17a",
+      "name": "Casque TAC-V9,HADES-V4",
+      "staffpickedAt": null,
+      "viewCount": 13,
+      "likeCount": 0,
+      "animationCount": 2,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-c5dd26bc4ce54f97bb4422092ab9c17a",
+      "embedUrl": "https://sketchfab.com/models/c5dd26bc4ce54f97bb4422092ab9c17a/embed",
+      "commentCount": 1,
+      "isDownloadable": true,
+      "publishedAt": "2026-06-30T08:28:45.620875",
+      "tags": [
+        {
+          "name": "casque",
+          "slug": "casque",
+          "uri": "https://api.sketchfab.com/v3/tags/casque"
+        }
+      ],
+      "categories": [
+        {
+          "name": "electronics-gadgets"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "b1748d245b784b35831c750ce756a38c",
+            "size": 54253,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/c5dd26bc4ce54f97bb4422092ab9c17a/thumbnails/d510f55439a0417da83c20238c45ab08/486f7f668c224c258cbe2222aa2db258.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "ee14074b03474ee683eb9a866c7b9a3e",
+            "size": 19256,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/c5dd26bc4ce54f97bb4422092ab9c17a/thumbnails/d510f55439a0417da83c20238c45ab08/20745a45c10c43539ccf51a2492331e3.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "1e6f7f6904374ed28abe46716ca3f7d6",
+            "size": 11536,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/c5dd26bc4ce54f97bb4422092ab9c17a/thumbnails/d510f55439a0417da83c20238c45ab08/f53dd81d89f845fe9b21bf4494b3aad9.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "0502b45e854a40ce8fbeb76748111f89",
+            "size": 3074,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/c5dd26bc4ce54f97bb4422092ab9c17a/thumbnails/d510f55439a0417da83c20238c45ab08/f991d8b10c844acf83bd2b7117789493.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "4d96e7aff0c6480cb95d077d5d24dd11",
+            "size": 986,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/c5dd26bc4ce54f97bb4422092ab9c17a/thumbnails/d510f55439a0417da83c20238c45ab08/19bb59ca1e3342409eec03a6d9534752.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "31e6687cf8a24b2189b190a5bc0baa4c",
+        "username": "Elbuildor",
+        "displayName": "Elbuildor098",
+        "profileUrl": "https://sketchfab.com/Elbuildor",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/0e100682471c4507a0d36caa863e7808",
+          "images": [
+            {
+              "size": 1240,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/0e100682471c4507a0d36caa863e7808/ae6d6d7884f042fcbd6b23f2bb76c159.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1875,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/0e100682471c4507a0d36caa863e7808/6c699b4956db45da93c659c5e93c8cf4.jpeg",
+              "height": 48
+            },
+            {
+              "size": 4629,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/0e100682471c4507a0d36caa863e7808/8fa2ae49fe634674a4553a1a14e788f8.jpeg",
+              "height": 90
+            },
+            {
+              "size": 5372,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/0e100682471c4507a0d36caa863e7808/31d490bc8c1b43508687ba9f65b8156f.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/31e6687cf8a24b2189b190a5bc0baa4c"
+      },
+      "description": "TAC-1 Tactical Helmet | Game-Ready Asset\n\n\ud83d\udcca SPECS\n\u2022 4,800 Tris / 2,400 Polys\n\u2022 141 KB - Mobile Optimized\n\u2022 PBR Materials - 2K Textures\n\u2022 Shade Smooth + 30\u00b0 Auto Smooth\n\n\u2699\ufe0f FEATURES\n\u2022 Animated Visor Toggle [0-60 frames]\n\u2022 Clean Topology - Rig/Animation Ready\n\u2022 LOD0 - No LOD needed under 5K tris\n\u2022 Works in Unity / Unreal / Godot / Blender\n\n\ud83d\udcf1 PERFORMANCE\nMobile: 60 FPS tested\nPC: 120+ FPS\nVR Ready\n\n\ud83c\udf0d STORY\nModeled in Blender 3.6 on 8GB RAM\nFrom Ambola, Madagascar \ud83c\uddf2\ud83c\uddec\nProof that constraints = creativity\n\n\ud83d\udcc4 LICENSE: CC-BY 4.0\n\u2705 Free for Indie/Personal Use\n\ud83d\udcbc Commercial: DM for license\n\n#gamedev #lowpoly #mobileoptimized #tactical #blender3d #madagascar",
+      "faceCount": 4897,
+      "createdAt": "2026-06-30T08:26:55.440058",
+      "vertexCount": 2505,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 249584,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 4603,
+          "vertexCount": 4376
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 71655,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 4603,
+          "vertexCount": 4376
+        },
+        "source": {
+          "textureCount": null,
+          "size": 247186,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 103603,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/19f20015a6a040c68863c77c21dff202",
+      "uid": "19f20015a6a040c68863c77c21dff202",
+      "name": "Lord Ram",
+      "staffpickedAt": null,
+      "viewCount": 83,
+      "likeCount": 0,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-19f20015a6a040c68863c77c21dff202",
+      "embedUrl": "https://sketchfab.com/models/19f20015a6a040c68863c77c21dff202/embed",
+      "commentCount": 1,
+      "isDownloadable": true,
+      "publishedAt": "2026-05-05T11:02:42.196706",
+      "tags": [],
+      "categories": [
+        {
+          "name": "cultural-heritage-history"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "614f6a0ec81e4fc09cfb2814a0e22906",
+            "size": 67572,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/19f20015a6a040c68863c77c21dff202/thumbnails/2c5f25452c184dc5a0301cdc015c9737/b8aaa23303274ea49b0f51281622b1b4.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "294cf811d0164809a39cfcc81f631164",
+            "size": 23040,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/19f20015a6a040c68863c77c21dff202/thumbnails/2c5f25452c184dc5a0301cdc015c9737/e481ac54788841c590bcbad42f18d910.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "1a3171295b90431e987cce39dc8b335f",
+            "size": 13396,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/19f20015a6a040c68863c77c21dff202/thumbnails/2c5f25452c184dc5a0301cdc015c9737/5cf9f3bcc99842a5afbd0a7325f94685.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "55707e07987b49e4b450b5fbb016a54e",
+            "size": 3030,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/19f20015a6a040c68863c77c21dff202/thumbnails/2c5f25452c184dc5a0301cdc015c9737/c9bceec671004589b99fa3a2aa6d1095.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "7b943a6ec49545faae729cca6724930f",
+            "size": 901,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/19f20015a6a040c68863c77c21dff202/thumbnails/2c5f25452c184dc5a0301cdc015c9737/c998b368122a4c2f8d2010107af30b3c.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "1c2f9ffe434e427a800720f9c4a77bb7",
+        "username": "Deepu5510",
+        "displayName": "Deepu5510",
+        "profileUrl": "https://sketchfab.com/Deepu5510",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/51af6a870cce449eb75b0345feebaebb",
+          "images": [
+            {
+              "size": 5719,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/2ef0f894055b4bb69123b2a27fa2d379.jpeg",
+              "height": 90
+            },
+            {
+              "size": 6496,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/ab11eedf96374486acb544f71a23b165.jpeg",
+              "height": 100
+            },
+            {
+              "size": 1359,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/35f6f9b6c9a14a548ce472582d8a9bb5.jpeg",
+              "height": 32
+            },
+            {
+              "size": 2584,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/a8072a51447c4d41ab177b357111b420.jpeg",
+              "height": 48
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/1c2f9ffe434e427a800720f9c4a77bb7"
+      },
+      "description": "Everyone can use it for free",
+      "faceCount": 1995070,
+      "createdAt": "2026-05-05T10:57:34.091309",
+      "vertexCount": 997505,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 147530064,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 1995070,
+          "vertexCount": 1050563
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 111414230,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 1995070,
+          "vertexCount": 1050563
+        },
+        "source": {
+          "textureCount": null,
+          "size": 85588940,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 41427094,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/dbe8eabbe65d442e92a6e056c9bd41f8",
+      "uid": "dbe8eabbe65d442e92a6e056c9bd41f8",
+      "name": "Lord Hanuman",
+      "staffpickedAt": null,
+      "viewCount": 3539,
+      "likeCount": 24,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-dbe8eabbe65d442e92a6e056c9bd41f8",
+      "embedUrl": "https://sketchfab.com/models/dbe8eabbe65d442e92a6e056c9bd41f8/embed",
+      "commentCount": 1,
+      "isDownloadable": true,
+      "publishedAt": "2026-03-27T13:51:50.665835",
+      "tags": [
+        {
+          "name": "monkey",
+          "slug": "monkey",
+          "uri": "https://api.sketchfab.com/v3/tags/monkey"
+        },
+        {
+          "name": "avatar",
+          "slug": "avatar",
+          "uri": "https://api.sketchfab.com/v3/tags/avatar"
+        },
+        {
+          "name": "warrior",
+          "slug": "warrior",
+          "uri": "https://api.sketchfab.com/v3/tags/warrior"
+        },
+        {
+          "name": "god",
+          "slug": "god",
+          "uri": "https://api.sketchfab.com/v3/tags/god"
+        },
+        {
+          "name": "mystic",
+          "slug": "mystic",
+          "uri": "https://api.sketchfab.com/v3/tags/mystic"
+        },
+        {
+          "name": "mythology",
+          "slug": "mythology",
+          "uri": "https://api.sketchfab.com/v3/tags/mythology"
+        },
+        {
+          "name": "lord",
+          "slug": "lord",
+          "uri": "https://api.sketchfab.com/v3/tags/lord"
+        },
+        {
+          "name": "ai",
+          "slug": "ai",
+          "uri": "https://api.sketchfab.com/v3/tags/ai"
+        },
+        {
+          "name": "mythical",
+          "slug": "mythical",
+          "uri": "https://api.sketchfab.com/v3/tags/mythical"
+        },
+        {
+          "name": "hindu",
+          "slug": "hindu",
+          "uri": "https://api.sketchfab.com/v3/tags/hindu"
+        },
+        {
+          "name": "hanuman",
+          "slug": "hanuman",
+          "uri": "https://api.sketchfab.com/v3/tags/hanuman"
+        },
+        {
+          "name": "ascetic",
+          "slug": "ascetic",
+          "uri": "https://api.sketchfab.com/v3/tags/ascetic"
+        }
+      ],
+      "categories": [
+        {
+          "name": "animals-pets"
+        },
+        {
+          "name": "characters-creatures"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "9278a06e372f47f6ac706f3a9732a343",
+            "size": 98078,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/dbe8eabbe65d442e92a6e056c9bd41f8/thumbnails/76d965131bf445c4b9167065f6c2ebbb/6730b48c75414b729d69528c15960d20.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "6d38c94a47d04aebbe5de0d8b8684bc1",
+            "size": 31831,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/dbe8eabbe65d442e92a6e056c9bd41f8/thumbnails/76d965131bf445c4b9167065f6c2ebbb/710d9cb3e1554d75a8ebab5ba66ae394.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "372073f555694e70b1161883e92536c5",
+            "size": 18677,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/dbe8eabbe65d442e92a6e056c9bd41f8/thumbnails/76d965131bf445c4b9167065f6c2ebbb/ff2c53ea2fe54e0c92b5a4a9e4d82376.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "4a3ef33cd30b40a99ffdb49b5e3c54ae",
+            "size": 3915,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/dbe8eabbe65d442e92a6e056c9bd41f8/thumbnails/76d965131bf445c4b9167065f6c2ebbb/29b539f771384dd881de2b6cae6284a8.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "96131241aae94bda85e16174e14646f9",
+            "size": 1008,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/dbe8eabbe65d442e92a6e056c9bd41f8/thumbnails/76d965131bf445c4b9167065f6c2ebbb/f43a2c7d143347738f688faba1d231fa.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "19582ce57059454484f1d648cc3358b5",
+        "username": "rt699448",
+        "displayName": "iRahulRajput",
+        "profileUrl": "https://sketchfab.com/rt699448",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/1e0c6525f9a94071b9f6191153fb15e7",
+          "images": [
+            {
+              "size": 1063,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/1e0c6525f9a94071b9f6191153fb15e7/5fbc88a5b3444533b62c14ce2127754b.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1487,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/1e0c6525f9a94071b9f6191153fb15e7/546586c697ec43028150dc9ab59f7e20.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3380,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/1e0c6525f9a94071b9f6191153fb15e7/32b6d484942a4619ba13e4be743830c7.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3898,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/1e0c6525f9a94071b9f6191153fb15e7/7e522f6026ad486fbd6e730abf3396fa.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/19582ce57059454484f1d648cc3358b5"
+      },
+      "description": "Hanuman is a revered Hindu deity, celebrated as the epitome of devotion (bhakti), strength, and selfless service to Lord Rama. A central figure in the Ramayana, he is a Chiranjivi (immortal) vanara (monkey-humanoid) known for his immense courage, shapeshifting abilities, and loyalty. He is worshipped for removing obstacles, providing strength, and embodying mastery over senses.",
+      "faceCount": 667803,
+      "createdAt": "2026-03-27T13:50:17.368106",
+      "vertexCount": 333857,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 3,
+          "size": 54640600,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 667803,
+          "vertexCount": 406844
+        },
+        "gltf": {
+          "textureCount": 3,
+          "size": 36237334,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 667803,
+          "vertexCount": 406844
+        },
+        "source": {
+          "textureCount": null,
+          "size": 59482194,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 16541496,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/db204dcab19347e683151216a2b7c0f7",
+      "uid": "db204dcab19347e683151216a2b7c0f7",
+      "name": "shivaji maharaj cloth",
+      "staffpickedAt": null,
+      "viewCount": 296,
+      "likeCount": 8,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-db204dcab19347e683151216a2b7c0f7",
+      "embedUrl": "https://sketchfab.com/models/db204dcab19347e683151216a2b7c0f7/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2025-10-06T19:15:14.232209",
+      "tags": [
+        {
+          "name": "cloth",
+          "slug": "cloth",
+          "uri": "https://api.sketchfab.com/v3/tags/cloth"
+        },
+        {
+          "name": "indian",
+          "slug": "indian",
+          "uri": "https://api.sketchfab.com/v3/tags/indian"
+        },
+        {
+          "name": "model",
+          "slug": "model",
+          "uri": "https://api.sketchfab.com/v3/tags/model"
+        },
+        {
+          "name": "maharaj",
+          "slug": "maharaj",
+          "uri": "https://api.sketchfab.com/v3/tags/maharaj"
+        },
+        {
+          "name": "shivajimaharaj",
+          "slug": "shivajimaharaj",
+          "uri": "https://api.sketchfab.com/v3/tags/shivajimaharaj"
+        },
+        {
+          "name": "shivajimaharajhistory",
+          "slug": "shivajimaharajhistory",
+          "uri": "https://api.sketchfab.com/v3/tags/shivajimaharajhistory"
+        },
+        {
+          "name": "marathaempire",
+          "slug": "marathaempire",
+          "uri": "https://api.sketchfab.com/v3/tags/marathaempire"
+        }
+      ],
+      "categories": [],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "0d87bc1eaa9c4610b72c8cdd16b7ae9a",
+            "size": 78921,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/db204dcab19347e683151216a2b7c0f7/thumbnails/c3de27cfed3d456c971c7d746ab4fbde/993dafb2a5394f4698c89642a2a1d83e.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "59c66ef681664399864a16f99fa73935",
+            "size": 26439,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/db204dcab19347e683151216a2b7c0f7/thumbnails/c3de27cfed3d456c971c7d746ab4fbde/f373a3b949664aa388b326daa215c3fb.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "d8a982188aa54372800a8be450866109",
+            "size": 16159,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/db204dcab19347e683151216a2b7c0f7/thumbnails/c3de27cfed3d456c971c7d746ab4fbde/748386e58b21471198e1217550a81f4e.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "f17fff1ba9d8423e91a34393c02e394a",
+            "size": 4154,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/db204dcab19347e683151216a2b7c0f7/thumbnails/c3de27cfed3d456c971c7d746ab4fbde/6848ce832c084845b3363ffb5ed39a71.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "55b43fb45393495e8c055eb7e60f2ded",
+            "size": 1142,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/db204dcab19347e683151216a2b7c0f7/thumbnails/c3de27cfed3d456c971c7d746ab4fbde/67105fb3ecb04016abc82ce106df0f95.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "73cca60d95c8456c8dad5d06ce7b7428",
+        "username": "artistsunny",
+        "displayName": "Artist Sunny",
+        "profileUrl": "https://sketchfab.com/artistsunny",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/af0d396e48794d50af37de430f9b04be",
+          "images": [
+            {
+              "size": 1172,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/af0d396e48794d50af37de430f9b04be/9de78e4e62b44eec833a0f2ec47665ff.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1731,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/af0d396e48794d50af37de430f9b04be/777f8ad0f9aa485698e0732c6fd5e450.jpeg",
+              "height": 48
+            },
+            {
+              "size": 4079,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/af0d396e48794d50af37de430f9b04be/193a1c63cd004cab954d2d4629779e0e.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4731,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/af0d396e48794d50af37de430f9b04be/fdc778965701451e8bee30d868a20b63.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/73cca60d95c8456c8dad5d06ce7b7428"
+      },
+      "description": "shivaji maharaj cloth\n\nARTIST SUNNY\n\"From imagination to reality \u2013 our journey, with you.\" in realistic animarion \n\nWelcome to Artist Sunny \u2013 a YouTube channel where Indian mythology, history, and creativity come alive through cinematic Animation storytelling.\n\nWe bring you powerful animated 3D visuals, divine stories, and devotional music that aim to touch your heart and awaken your spirit.\n\n What you\u2019ll find on this channel :\nanimated Short films created with Unreal Engine\nDevotional songs & rap music inspired by Shivaji Maharaj, Lord Ram, Krishna, Mahadev, and Hanuman\nEmotional and historical stories \nSoulful and artistic storytelling with meaningful visuals \n\n Our Mission:\nTo present India\u2019s rich culture, spirituality, and history in a modern and creative way through digital art and cinematic content.\n\nYour support through likes, comments, and subscriptions motivates us to create even more inspiring content.\nJoin us on this divine journey \u2013 and experience the essence of India like never before.",
+      "faceCount": 132691,
+      "createdAt": "2025-10-06T17:22:21.834471",
+      "vertexCount": 66624,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 24,
+          "size": 48810832,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 132679,
+          "vertexCount": 74827
+        },
+        "gltf": {
+          "textureCount": 24,
+          "size": 44052585,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 132679,
+          "vertexCount": 74827
+        },
+        "source": {
+          "textureCount": null,
+          "size": 78914852,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 4810920,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/aa3d9d519b34425ea5dd1456c4c67eaf",
+      "uid": "aa3d9d519b34425ea5dd1456c4c67eaf",
+      "name": "Zoey | Fortnite | Kpop Demon Hunters 3D Model",
+      "staffpickedAt": null,
+      "viewCount": 50777,
+      "likeCount": 780,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-aa3d9d519b34425ea5dd1456c4c67eaf",
+      "embedUrl": "https://sketchfab.com/models/aa3d9d519b34425ea5dd1456c4c67eaf/embed",
+      "commentCount": 33,
+      "isDownloadable": true,
+      "publishedAt": "2025-10-03T00:09:58.409495",
+      "tags": [
+        {
+          "name": "sony",
+          "slug": "sony",
+          "uri": "https://api.sketchfab.com/v3/tags/sony"
+        },
+        {
+          "name": "props",
+          "slug": "props",
+          "uri": "https://api.sketchfab.com/v3/tags/props"
+        },
+        {
+          "name": "netflix",
+          "slug": "netflix",
+          "uri": "https://api.sketchfab.com/v3/tags/netflix"
+        },
+        {
+          "name": "kpop",
+          "slug": "kpop",
+          "uri": "https://api.sketchfab.com/v3/tags/kpop"
+        },
+        {
+          "name": "fortnite",
+          "slug": "fortnite",
+          "uri": "https://api.sketchfab.com/v3/tags/fortnite"
+        },
+        {
+          "name": "fortnite-skin",
+          "slug": "fortnite-skin",
+          "uri": "https://api.sketchfab.com/v3/tags/fortnite-skin"
+        },
+        {
+          "name": "character",
+          "slug": "character",
+          "uri": "https://api.sketchfab.com/v3/tags/character"
+        },
+        {
+          "name": "rigged",
+          "slug": "rigged",
+          "uri": "https://api.sketchfab.com/v3/tags/rigged"
+        },
+        {
+          "name": "kpopdemonhunters",
+          "slug": "kpopdemonhunters",
+          "uri": "https://api.sketchfab.com/v3/tags/kpopdemonhunters"
+        },
+        {
+          "name": "kpdh",
+          "slug": "kpdh",
+          "uri": "https://api.sketchfab.com/v3/tags/kpdh"
+        }
+      ],
+      "categories": [
+        {
+          "name": "characters-creatures"
+        },
+        {
+          "name": "music"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "611d72a78d7646729123dc17f4efc659",
+            "size": 108058,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/aa3d9d519b34425ea5dd1456c4c67eaf/thumbnails/e144143e5cc74827b67b8a4cf5ce9486/4ca9c98f441d40d6b94edf7d27c45c15.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "54a209841b534528998f4ec4c34fce34",
+            "size": 38158,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/aa3d9d519b34425ea5dd1456c4c67eaf/thumbnails/e144143e5cc74827b67b8a4cf5ce9486/648aeed0cc2b47b594327ddbefe998b9.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "beb0f585cef3419f9dcbc1d250e40cec",
+            "size": 22901,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/aa3d9d519b34425ea5dd1456c4c67eaf/thumbnails/e144143e5cc74827b67b8a4cf5ce9486/7de3b9ee5866479ba1a78248c3c15632.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "f7410d0fbe23479fb5046438a5379cc1",
+            "size": 5165,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/aa3d9d519b34425ea5dd1456c4c67eaf/thumbnails/e144143e5cc74827b67b8a4cf5ce9486/6e8352c846a846118c4e33caaac5cc52.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "f56922957069498fb87d4c2042801a0f",
+            "size": 1186,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/aa3d9d519b34425ea5dd1456c4c67eaf/thumbnails/e144143e5cc74827b67b8a4cf5ce9486/17ca0208c01f45c29989da429c0c05bd.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "20b75a3b0c6646449246c607c9fb7fef",
+        "username": "CentrixeTheDodo",
+        "displayName": "Centrixe the Dodo",
+        "profileUrl": "https://sketchfab.com/CentrixeTheDodo",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/3659380768294598a84b43597906fec2",
+          "images": [
+            {
+              "size": 1158,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/3659380768294598a84b43597906fec2/d54c1cce7082479e9baa451e70212907.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1735,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/3659380768294598a84b43597906fec2/6f3e85c1732643eeb7feff6838f24af3.jpeg",
+              "height": 48
+            },
+            {
+              "size": 4075,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/3659380768294598a84b43597906fec2/fd113f3b083144e591e94d3beb6a4caa.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4816,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/3659380768294598a84b43597906fec2/6bc6f119d45343938cac3ffd7fcd172f.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/20b75a3b0c6646449246c607c9fb7fef"
+      },
+      "description": "*The lead rapper and maknae of HUNTR/X.*\n\nMy third Sketchfab rip: Zoey from the KPDH x Fortnite collaboration!\n\n[Click here for my Fortnite x KPDH models collection](https://skfb.ly/pBLCY).\n\nThis download includes 1 character skin, 1 LOD, and 2 object models:\n\n* Zoey (HUNTRIX)\n* Zoey's Ramyeon [Backpack]\n* Zoey's Shin-Kal [Pickaxe]\n\nZoey and her props are **rigged**, **all textures** are included + properly split for your convenience. I've also kept in the **.JSON** materials as **.TXT** with additional FX textures in folders named \"Parameters\" for accuracy / completeness sake.\n\nIf you use this model, please credit me by mentioning my name. However, the main credits go to *Epic Games*, *Sony*, and *Netflix* for releasing this collab \u2013 definitely mention 'em first!",
+      "faceCount": 55781,
+      "createdAt": "2025-10-02T23:57:00.124420",
+      "vertexCount": 28650,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 21,
+          "size": 29958260,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 55781,
+          "vertexCount": 35156
+        },
+        "gltf": {
+          "textureCount": 21,
+          "size": 28858034,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 55781,
+          "vertexCount": 35156
+        },
+        "source": {
+          "textureCount": null,
+          "size": 81673932,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 5343783,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/ba0bd6134b4a470da5efb5e1e3770b9f",
+      "uid": "ba0bd6134b4a470da5efb5e1e3770b9f",
+      "name": "Lord Hanuman Gada (mace)",
+      "staffpickedAt": null,
+      "viewCount": 1008,
+      "likeCount": 11,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-ba0bd6134b4a470da5efb5e1e3770b9f",
+      "embedUrl": "https://sketchfab.com/models/ba0bd6134b4a470da5efb5e1e3770b9f/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2025-09-17T05:20:22.648514",
+      "tags": [
+        {
+          "name": "mace",
+          "slug": "mace",
+          "uri": "https://api.sketchfab.com/v3/tags/mace"
+        },
+        {
+          "name": "mythology",
+          "slug": "mythology",
+          "uri": "https://api.sketchfab.com/v3/tags/mythology"
+        },
+        {
+          "name": "spiritual",
+          "slug": "spiritual",
+          "uri": "https://api.sketchfab.com/v3/tags/spiritual"
+        },
+        {
+          "name": "ramayana",
+          "slug": "ramayana",
+          "uri": "https://api.sketchfab.com/v3/tags/ramayana"
+        },
+        {
+          "name": "ancientweapon",
+          "slug": "ancientweapon",
+          "uri": "https://api.sketchfab.com/v3/tags/ancientweapon"
+        },
+        {
+          "name": "divine",
+          "slug": "divine",
+          "uri": "https://api.sketchfab.com/v3/tags/divine"
+        },
+        {
+          "name": "hanuman",
+          "slug": "hanuman",
+          "uri": "https://api.sketchfab.com/v3/tags/hanuman"
+        },
+        {
+          "name": "fantasyweapon",
+          "slug": "fantasyweapon",
+          "uri": "https://api.sketchfab.com/v3/tags/fantasyweapon"
+        },
+        {
+          "name": "shakti",
+          "slug": "shakti",
+          "uri": "https://api.sketchfab.com/v3/tags/shakti"
+        },
+        {
+          "name": "gada",
+          "slug": "gada",
+          "uri": "https://api.sketchfab.com/v3/tags/gada"
+        },
+        {
+          "name": "weapon",
+          "slug": "weapon",
+          "uri": "https://api.sketchfab.com/v3/tags/weapon"
+        },
+        {
+          "name": "gameasset",
+          "slug": "gameasset",
+          "uri": "https://api.sketchfab.com/v3/tags/gameasset"
+        },
+        {
+          "name": "3dmodel",
+          "slug": "3dmodel",
+          "uri": "https://api.sketchfab.com/v3/tags/3dmodel"
+        },
+        {
+          "name": "indianculture",
+          "slug": "indianculture",
+          "uri": "https://api.sketchfab.com/v3/tags/indianculture"
+        },
+        {
+          "name": "indianweapon",
+          "slug": "indianweapon",
+          "uri": "https://api.sketchfab.com/v3/tags/indianweapon"
+        },
+        {
+          "name": "hanumanji",
+          "slug": "hanumanji",
+          "uri": "https://api.sketchfab.com/v3/tags/hanumanji"
+        },
+        {
+          "name": "hindumythology",
+          "slug": "hindumythology",
+          "uri": "https://api.sketchfab.com/v3/tags/hindumythology"
+        },
+        {
+          "name": "bhakti",
+          "slug": "bhakti",
+          "uri": "https://api.sketchfab.com/v3/tags/bhakti"
+        },
+        {
+          "name": "lordhanuman",
+          "slug": "lordhanuman",
+          "uri": "https://api.sketchfab.com/v3/tags/lordhanuman"
+        },
+        {
+          "name": "sacredweapon",
+          "slug": "sacredweapon",
+          "uri": "https://api.sketchfab.com/v3/tags/sacredweapon"
+        }
+      ],
+      "categories": [
+        {
+          "name": "art-abstract"
+        },
+        {
+          "name": "cultural-heritage-history"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "1bfdf40579b744de9a69a3230e403c88",
+            "size": 59948,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/ba0bd6134b4a470da5efb5e1e3770b9f/thumbnails/dda13d3c962e451ea887c637f2761a2f/2c6f7aca3f77404bb4dc7e9f5740d611.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "a03a2cd7c67849a09e4e090bf6669664",
+            "size": 18659,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/ba0bd6134b4a470da5efb5e1e3770b9f/thumbnails/dda13d3c962e451ea887c637f2761a2f/6e0c5211e5cf4b909c8a10812c0c5340.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "df63d6bff4d240f392b2382a6452a640",
+            "size": 10439,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/ba0bd6134b4a470da5efb5e1e3770b9f/thumbnails/dda13d3c962e451ea887c637f2761a2f/592eeaf3efa74f8b941357302f2462cf.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "37ecba7278c84f9781bc8c29ace67865",
+            "size": 2196,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/ba0bd6134b4a470da5efb5e1e3770b9f/thumbnails/dda13d3c962e451ea887c637f2761a2f/9b5591dfeb1e4358ba989b4a2dd3fcd8.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "afbf1d4dfccc4cd9ae1b68a15602cc54",
+            "size": 816,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/ba0bd6134b4a470da5efb5e1e3770b9f/thumbnails/dda13d3c962e451ea887c637f2761a2f/7f48381a0fc546eea550b4be13995539.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "73cca60d95c8456c8dad5d06ce7b7428",
+        "username": "artistsunny",
+        "displayName": "Artist Sunny",
+        "profileUrl": "https://sketchfab.com/artistsunny",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/af0d396e48794d50af37de430f9b04be",
+          "images": [
+            {
+              "size": 1172,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/af0d396e48794d50af37de430f9b04be/9de78e4e62b44eec833a0f2ec47665ff.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1731,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/af0d396e48794d50af37de430f9b04be/777f8ad0f9aa485698e0732c6fd5e450.jpeg",
+              "height": 48
+            },
+            {
+              "size": 4079,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/af0d396e48794d50af37de430f9b04be/193a1c63cd004cab954d2d4629779e0e.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4731,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/af0d396e48794d50af37de430f9b04be/fdc778965701451e8bee30d868a20b63.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/73cca60d95c8456c8dad5d06ce7b7428"
+      },
+      "description": "This is a 3D model of the sacred Gada (mace), the eternal weapon of Lord Hanuman, symbolizing unmatched strength, devotion, and protection.\n\nIn Hindu mythology, the Gada is more than a weapon \u2013 it represents power, courage, and righteousness. Lord Hanuman, the devoted bhakt of Shree Ram, carried this mighty mace as a sign of his divine authority and unshakable faith.\n\nLegends describe the Gada as capable of destroying evil forces, shattering mountains, and protecting the righteous. It is not just a tool of battle, but a reminder of Bhakti (devotion) and Shakti (power).\n\nThis 3D recreation captures the timeless spiritual and mythological essence of Hanuman Ji\u2019s weapon, bringing ancient symbolism into the digital era.",
+      "faceCount": 11821,
+      "createdAt": "2025-09-17T05:16:43.364387",
+      "vertexCount": 6240,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 3,
+          "size": 5843968,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 11821,
+          "vertexCount": 7460
+        },
+        "gltf": {
+          "textureCount": 3,
+          "size": 5616948,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 11821,
+          "vertexCount": 7460
+        },
+        "source": {
+          "textureCount": null,
+          "size": 11386166,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 3077130,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/8c3d623adc424113a4ebac74d0819e59",
+      "uid": "8c3d623adc424113a4ebac74d0819e59",
+      "name": "Relief of Khabekhnet (W927)",
+      "staffpickedAt": null,
+      "viewCount": 113,
+      "likeCount": 2,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-8c3d623adc424113a4ebac74d0819e59",
+      "embedUrl": "https://sketchfab.com/models/8c3d623adc424113a4ebac74d0819e59/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2025-09-08T11:29:29.767475",
+      "tags": [
+        {
+          "name": "egypt",
+          "slug": "egypt",
+          "uri": "https://api.sketchfab.com/v3/tags/egypt"
+        },
+        {
+          "name": "relief",
+          "slug": "relief",
+          "uri": "https://api.sketchfab.com/v3/tags/relief"
+        },
+        {
+          "name": "isis",
+          "slug": "isis",
+          "uri": "https://api.sketchfab.com/v3/tags/isis"
+        },
+        {
+          "name": "museumcollection",
+          "slug": "museumcollection",
+          "uri": "https://api.sketchfab.com/v3/tags/museumcollection"
+        },
+        {
+          "name": "ptah",
+          "slug": "ptah",
+          "uri": "https://api.sketchfab.com/v3/tags/ptah"
+        },
+        {
+          "name": "deir-el-medina",
+          "slug": "deir-el-medina",
+          "uri": "https://api.sketchfab.com/v3/tags/deir-el-medina"
+        },
+        {
+          "name": "new-kingdon",
+          "slug": "new-kingdon",
+          "uri": "https://api.sketchfab.com/v3/tags/new-kingdon"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cultural-heritage-history"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "273c7df3d96c4ab1a43cc175955ffef5",
+            "size": 365666,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/8c3d623adc424113a4ebac74d0819e59/thumbnails/c4a7485f98a94184a30fbec9e3d413c6/cd0bcb41956449a48a0455e058193267.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "c228d0715b304339a77139fea79d5ccb",
+            "size": 81974,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/8c3d623adc424113a4ebac74d0819e59/thumbnails/c4a7485f98a94184a30fbec9e3d413c6/dc93f236db6243a0b699919dee0b5a95.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "7d6cafed3fa84cbea41d38d4befb96fa",
+            "size": 38766,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/8c3d623adc424113a4ebac74d0819e59/thumbnails/c4a7485f98a94184a30fbec9e3d413c6/9ecf47760ca040c498b93aafcfc4d9c2.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "4868e3d997e24008b433ad0b8b355d86",
+            "size": 5984,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/8c3d623adc424113a4ebac74d0819e59/thumbnails/c4a7485f98a94184a30fbec9e3d413c6/5ef1d12e2254413e94aefc6ecf93d59f.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "db8d8e072307496b812256d37b6dc2ab",
+            "size": 1252,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/8c3d623adc424113a4ebac74d0819e59/thumbnails/c4a7485f98a94184a30fbec9e3d413c6/08f0e18da03845e9992818debc8ccab1.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "fe46d0925edc4b77bca309d2b7af616e",
+        "username": "TheEgyptCentre",
+        "displayName": "The Egypt Centre",
+        "profileUrl": "https://sketchfab.com/TheEgyptCentre",
+        "account": "prem",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/952befc4d09f43a58341f9c26b146689",
+          "images": [
+            {
+              "size": 1113,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/952befc4d09f43a58341f9c26b146689/593f1ee5d8e84492b6d08e1f3ebffda2.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1622,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/952befc4d09f43a58341f9c26b146689/4d4f45b0cf224c9c8e681e8d9d05665b.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3515,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/952befc4d09f43a58341f9c26b146689/3dd4d7b341d6465db9ec9a018a5a0ff4.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4070,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/952befc4d09f43a58341f9c26b146689/70ea85122b284093bc67e84c3f80f830.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/fe46d0925edc4b77bca309d2b7af616e"
+      },
+      "description": "Painted limestone relief depicting Khabekhnet and his wife Sahte (to the right) presenting offerings to the gods Ptah (painted green), Ptah-Sokar (wearing a headdress consisting of ram horns and double plumes), and Isis (holding a menat-collar and ankh). Both Ptah and Ptah-Sokar hold long papyrus stems. Several enthroned deities are also depicted in the scene above, although only their feet are preserved. Khabekhnet is identified in the hieroglyphs as the \u201cServant of the Lord of the Two Lands\u201d. The exact provenance of this relief is unknown, although it is likely from a tomb chapel at Deir el-Medina where Khabekhnet was buried (TT 2). Khabekhnet was the eldest son of Sennedjem, whose well-known tomb (TT 1) at Deir el-Medina was discovered undisturbed in 1886. While Ptah was the main deity at Memphis, he was also the patron god to the villagers of Deir el-Medina. The relief was purchased by Sir Henry Wellcome in 1906 from the collection of Robert de Rustafjaell (lot 404).",
+      "faceCount": 604132,
+      "createdAt": "2025-09-08T11:26:39.419140",
+      "vertexCount": 302068,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 44971624,
+          "type": "glb",
+          "textureMaxResolution": 8192,
+          "faceCount": 604132,
+          "vertexCount": 372174
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 35956092,
+          "type": "gltf",
+          "textureMaxResolution": 8192,
+          "faceCount": 604132,
+          "vertexCount": 372174
+        },
+        "gltf-ar": {
+          "textureCount": null,
+          "size": 11238,
+          "type": "gltf-ar",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "source": {
+          "textureCount": null,
+          "size": 188325488,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 16011193,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/9adb3750a5974a468bda8cbbbf516982",
+      "uid": "9adb3750a5974a468bda8cbbbf516982",
+      "name": "An RC car ramp for driving up and down",
+      "staffpickedAt": null,
+      "viewCount": 76,
+      "likeCount": 0,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-9adb3750a5974a468bda8cbbbf516982",
+      "embedUrl": "https://sketchfab.com/models/9adb3750a5974a468bda8cbbbf516982/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2025-09-06T18:09:54.653609",
+      "tags": [
+        {
+          "name": "rc",
+          "slug": "rc",
+          "uri": "https://api.sketchfab.com/v3/tags/rc"
+        },
+        {
+          "name": "ramp",
+          "slug": "ramp",
+          "uri": "https://api.sketchfab.com/v3/tags/ramp"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "mn82",
+          "slug": "mn82",
+          "uri": "https://api.sketchfab.com/v3/tags/mn82"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "e031347381a34e71b3c5ed3242bf2132",
+            "size": 48803,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/9adb3750a5974a468bda8cbbbf516982/thumbnails/ba3ebc72abc24925b911c09bd0c2c336/b411feae240b47b19f1081e1e323c9cc.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "96eda2e520f9426e82bfd826e890c569",
+            "size": 15879,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/9adb3750a5974a468bda8cbbbf516982/thumbnails/ba3ebc72abc24925b911c09bd0c2c336/2ab0111da65e4d8397f9c7c93ba8d364.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "1b54c757ebd14cc0ae73b1810d66d2d3",
+            "size": 8793,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/9adb3750a5974a468bda8cbbbf516982/thumbnails/ba3ebc72abc24925b911c09bd0c2c336/55c0fc5bbb4a46cdbc789e9656ce9162.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "2436aaf6be2042549e5c14dc17182b6a",
+            "size": 1803,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/9adb3750a5974a468bda8cbbbf516982/thumbnails/ba3ebc72abc24925b911c09bd0c2c336/185f56a37f7840d680d9a45f62d20afa.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "42be4c49cc354062b803364a23898c20",
+            "size": 759,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/9adb3750a5974a468bda8cbbbf516982/thumbnails/ba3ebc72abc24925b911c09bd0c2c336/0b38364368cf485b94f1bd3a69bdcf7f.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "552b450d5ff1441e94e7c2d3cf9dbd52",
+        "username": "ManfredAabye",
+        "displayName": "ManfredAabye",
+        "profileUrl": "https://sketchfab.com/ManfredAabye",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/73c0ab48dd42477b9e86447f4c20ce48",
+          "images": [
+            {
+              "size": 2115,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/73c0ab48dd42477b9e86447f4c20ce48/75cba0f4c7ad458393b80944a990a0c1.png",
+              "height": 32
+            },
+            {
+              "size": 3515,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/73c0ab48dd42477b9e86447f4c20ce48/852cb3036c92457b911542aa68cfa52a.png",
+              "height": 48
+            },
+            {
+              "size": 7127,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/73c0ab48dd42477b9e86447f4c20ce48/d4e1aeaa81f941d098e2f301b9ed3fc9.png",
+              "height": 90
+            },
+            {
+              "size": 8080,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/73c0ab48dd42477b9e86447f4c20ce48/4ca21c19497b48e690e4094ecf420d67.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/552b450d5ff1441e94e7c2d3cf9dbd52"
+      },
+      "description": "**An RC car ramp for driving up and down**\n\n**Instructions: **\n1. Load the file into your slicer.  \n2. Scale it to your desired size.  \n3. Save the project for safety.  \n4. Print the parts two or four times.  \n5. Glue the pieces together.",
+      "faceCount": 2340,
+      "createdAt": "2025-09-06T17:58:09.916018",
+      "vertexCount": 1028,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 111576,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 2142,
+          "vertexCount": 3512
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 24024,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 2142,
+          "vertexCount": 3512
+        },
+        "source": {
+          "textureCount": null,
+          "size": 4431136,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 97853,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/47f74edfa9b14c0295a20a35c384eb5d",
+      "uid": "47f74edfa9b14c0295a20a35c384eb5d",
+      "name": "\ud83d\ude4f Hanuman 3D Model",
+      "staffpickedAt": null,
+      "viewCount": 188,
+      "likeCount": 2,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-47f74edfa9b14c0295a20a35c384eb5d",
+      "embedUrl": "https://sketchfab.com/models/47f74edfa9b14c0295a20a35c384eb5d/embed",
+      "commentCount": 1,
+      "isDownloadable": true,
+      "publishedAt": "2025-08-27T14:14:46.463086",
+      "tags": [
+        {
+          "name": "indian",
+          "slug": "indian",
+          "uri": "https://api.sketchfab.com/v3/tags/indian"
+        },
+        {
+          "name": "god",
+          "slug": "god",
+          "uri": "https://api.sketchfab.com/v3/tags/god"
+        },
+        {
+          "name": "mythology",
+          "slug": "mythology",
+          "uri": "https://api.sketchfab.com/v3/tags/mythology"
+        },
+        {
+          "name": "lord",
+          "slug": "lord",
+          "uri": "https://api.sketchfab.com/v3/tags/lord"
+        },
+        {
+          "name": "ramayana",
+          "slug": "ramayana",
+          "uri": "https://api.sketchfab.com/v3/tags/ramayana"
+        },
+        {
+          "name": "hindu",
+          "slug": "hindu",
+          "uri": "https://api.sketchfab.com/v3/tags/hindu"
+        },
+        {
+          "name": "deity",
+          "slug": "deity",
+          "uri": "https://api.sketchfab.com/v3/tags/deity"
+        },
+        {
+          "name": "hanuman",
+          "slug": "hanuman",
+          "uri": "https://api.sketchfab.com/v3/tags/hanuman"
+        },
+        {
+          "name": "3d",
+          "slug": "3d",
+          "uri": "https://api.sketchfab.com/v3/tags/3d"
+        },
+        {
+          "name": "model",
+          "slug": "model",
+          "uri": "https://api.sketchfab.com/v3/tags/model"
+        }
+      ],
+      "categories": [
+        {
+          "name": "art-abstract"
+        },
+        {
+          "name": "cultural-heritage-history"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "f5e489417ea94b9481b41f47d96b7c80",
+            "size": 70271,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/47f74edfa9b14c0295a20a35c384eb5d/thumbnails/1ad0a6b5701b47b4910a77ba96bbe0de/a4ebf5da1e5f43d483a182e46b83cec6.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "23b2e97a8a20424ab992dce570943ccd",
+            "size": 23396,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/47f74edfa9b14c0295a20a35c384eb5d/thumbnails/1ad0a6b5701b47b4910a77ba96bbe0de/70a611764b2946d5b79d65ef95767b36.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "751790dd4fa5488cad086771d567e82a",
+            "size": 13576,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/47f74edfa9b14c0295a20a35c384eb5d/thumbnails/1ad0a6b5701b47b4910a77ba96bbe0de/645a79e05f5f478685f8782fd344e0da.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "bd94e59392ab4e97a40e8efe45fbeef3",
+            "size": 3160,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/47f74edfa9b14c0295a20a35c384eb5d/thumbnails/1ad0a6b5701b47b4910a77ba96bbe0de/e630ff54eeff45289ea5cb06fca7ba37.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "12dc3b8be3ad4f87a02d1531de78fced",
+            "size": 947,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/47f74edfa9b14c0295a20a35c384eb5d/thumbnails/1ad0a6b5701b47b4910a77ba96bbe0de/2dee78a0c02448e5ab201aa70ea2a500.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "c9566c742b7a4b66a20540c85a595107",
+        "username": "prabinpandey631",
+        "displayName": "prabinpandey631",
+        "profileUrl": "https://sketchfab.com/prabinpandey631",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/cb801b73b1a140708892cd2cd393a9bd",
+          "images": [
+            {
+              "size": 877,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/cb801b73b1a140708892cd2cd393a9bd/a60ef74619c94f25a738a2d6d7dd6aa2.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1056,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/cb801b73b1a140708892cd2cd393a9bd/aa5f76c7424145b0834663a06ee0d73f.jpeg",
+              "height": 48
+            },
+            {
+              "size": 1820,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/cb801b73b1a140708892cd2cd393a9bd/e6f10293285f4a979f2210f6163d5f52.jpeg",
+              "height": 90
+            },
+            {
+              "size": 1986,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/cb801b73b1a140708892cd2cd393a9bd/d81ea14d6bc5464e9c377a347c2fa1ad.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/c9566c742b7a4b66a20540c85a595107"
+      },
+      "description": "\ud83d\ude4f Hanuman 3D Model\n\nA detailed 3D representation of Lord Hanuman, the divine devotee of Lord Rama, symbolizing strength, devotion, and protection.\n\n\ud83d\udd39 Features:\n\nIntricately sculpted body, ornaments, and facial details\n\nTraditional attire with gada (mace) and divine accessories\n\nHigh-quality PBR materials (metal, cloth, skin, ornaments)\n\nOptimized for games, VR/AR, cinematic rendering, and devotional projects\n\n\ud83d\udd39 Use Cases:\n\nReligious & cultural visualizations\n\nDevotional animations & storytelling\n\nEducational and heritage projects\n\nGames, AR/VR, and cinematic art",
+      "faceCount": 292387,
+      "createdAt": "2025-08-27T09:56:09.737931",
+      "vertexCount": 146151,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 3,
+          "size": 24682208,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 292387,
+          "vertexCount": 174211
+        },
+        "gltf": {
+          "textureCount": 3,
+          "size": 20102656,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 292387,
+          "vertexCount": 174211
+        },
+        "source": {
+          "textureCount": null,
+          "size": 28304290,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 9012176,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/ca813d52b5294a77b54c376e4e9a18a7",
+      "uid": "ca813d52b5294a77b54c376e4e9a18a7",
+      "name": "Lord Ram",
+      "staffpickedAt": null,
+      "viewCount": 265,
+      "likeCount": 0,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-ca813d52b5294a77b54c376e4e9a18a7",
+      "embedUrl": "https://sketchfab.com/models/ca813d52b5294a77b54c376e4e9a18a7/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2025-06-25T10:50:33.756647",
+      "tags": [],
+      "categories": [],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "56d6ac02bf4b4d83b1c2de5e307730c3",
+            "size": 109149,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/ca813d52b5294a77b54c376e4e9a18a7/thumbnails/d1c15c76efd949259803e9b925a5dad2/91897e5fdd294a64b9b0c29514c3740b.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "6f6590f7d8734f6c9eecf712949f1952",
+            "size": 38683,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/ca813d52b5294a77b54c376e4e9a18a7/thumbnails/d1c15c76efd949259803e9b925a5dad2/3aaf22c0f30c4f9aba8429a00451ca77.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "d3a155a891784a538a6acdd417b82c1a",
+            "size": 23265,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/ca813d52b5294a77b54c376e4e9a18a7/thumbnails/d1c15c76efd949259803e9b925a5dad2/7db28c6a14a44cf8a03bda0f3fdc2d6b.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "439afda992c74315973cce47092e317d",
+            "size": 5252,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/ca813d52b5294a77b54c376e4e9a18a7/thumbnails/d1c15c76efd949259803e9b925a5dad2/480edce61e8b4e44903d8b61835fe42a.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "185c9514e0684724a8541269349f1c9e",
+            "size": 1235,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/ca813d52b5294a77b54c376e4e9a18a7/thumbnails/d1c15c76efd949259803e9b925a5dad2/2d7ca8149e7049359bf8fe38e7288aaf.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "1e4f8441decd401eb985c4e4b4b6c2cd",
+        "username": "vneducation",
+        "displayName": "Vivek Narzary",
+        "profileUrl": "https://sketchfab.com/vneducation",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/d2f6e98643da492b810460bf0bf6c77f",
+          "images": [
+            {
+              "size": 1039,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/d2f6e98643da492b810460bf0bf6c77f/2e63e05228854cc594272fd5c7004a21.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1338,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/d2f6e98643da492b810460bf0bf6c77f/dffe803e1fcf4ff2bc5b6396e035aee0.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2616,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/d2f6e98643da492b810460bf0bf6c77f/d6bcb3c9a70546858c7c55c9f5b2860b.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2932,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/d2f6e98643da492b810460bf0bf6c77f/a7634e3ee8d8452190315ce56d61c8ff.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/1e4f8441decd401eb985c4e4b4b6c2cd"
+      },
+      "description": "",
+      "faceCount": 1015931,
+      "createdAt": "2025-06-25T10:46:53.977808",
+      "vertexCount": 553967,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 10,
+          "size": 72375832,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 1015931,
+          "vertexCount": 1374986
+        },
+        "gltf": {
+          "textureCount": 10,
+          "size": 36941366,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 1015931,
+          "vertexCount": 1374986
+        },
+        "source": {
+          "textureCount": null,
+          "size": 77876327,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 48766446,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/60c429bc181742378c1888515c103819",
+      "uid": "60c429bc181742378c1888515c103819",
+      "name": "Monster Truck",
+      "staffpickedAt": null,
+      "viewCount": 494,
+      "likeCount": 5,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-60c429bc181742378c1888515c103819",
+      "embedUrl": "https://sketchfab.com/models/60c429bc181742378c1888515c103819/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2025-02-12T04:37:39.194164",
+      "tags": [
+        {
+          "name": "truck",
+          "slug": "truck",
+          "uri": "https://api.sketchfab.com/v3/tags/truck"
+        },
+        {
+          "name": "free3dmodel",
+          "slug": "free3dmodel",
+          "uri": "https://api.sketchfab.com/v3/tags/free3dmodel"
+        },
+        {
+          "name": "blender3dmodel",
+          "slug": "blender3dmodel",
+          "uri": "https://api.sketchfab.com/v3/tags/blender3dmodel"
+        },
+        {
+          "name": "cars-vehicles",
+          "slug": "cars-vehicles",
+          "uri": "https://api.sketchfab.com/v3/tags/cars-vehicles"
+        },
+        {
+          "name": "monster",
+          "slug": "monster",
+          "uri": "https://api.sketchfab.com/v3/tags/monster"
+        },
+        {
+          "name": "sketchfab",
+          "slug": "sketchfab",
+          "uri": "https://api.sketchfab.com/v3/tags/sketchfab"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "82724a5bde7d45588a7f22d00b02e1da",
+            "size": 79095,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/60c429bc181742378c1888515c103819/thumbnails/7ef49dfd8f9d40ac8460e4c794b5e6a3/dc9de6333539448b9615994e7a72964a.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "9bb21ee3b12142d39dbf12b851692e23",
+            "size": 26927,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/60c429bc181742378c1888515c103819/thumbnails/7ef49dfd8f9d40ac8460e4c794b5e6a3/bfe15e6e755740f9ace18e12d7f01f87.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "578c685f8fd04e3bb63736bd22e0a26d",
+            "size": 15789,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/60c429bc181742378c1888515c103819/thumbnails/7ef49dfd8f9d40ac8460e4c794b5e6a3/09b1256a7bd44f5eb11fd19680f2d34b.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "6b60571a3b1c4f8c8f3e0c35a2345cc5",
+            "size": 3682,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/60c429bc181742378c1888515c103819/thumbnails/7ef49dfd8f9d40ac8460e4c794b5e6a3/2b7a463f39e64ed09bd965b8e21b68e1.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "8f2755e077ce41fa8603ddd9dcd71cd8",
+            "size": 1058,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/60c429bc181742378c1888515c103819/thumbnails/7ef49dfd8f9d40ac8460e4c794b5e6a3/b3859e6ade2d47b7bc516fb46bba780f.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "2200574b6f764d9e8ba45016dbed9271",
+        "username": "HardikMagade",
+        "displayName": "magadehardik2004.katargam",
+        "profileUrl": "https://sketchfab.com/HardikMagade",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/3ef1bd11d3eb4b57a0b353e8f2e5fc3e",
+          "images": [
+            {
+              "size": 680,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/3ef1bd11d3eb4b57a0b353e8f2e5fc3e/116042a0854e40538adab302b593683d.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1253,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/3ef1bd11d3eb4b57a0b353e8f2e5fc3e/efea16be51d04eb7a00cb9ea0b43b87f.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2797,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/3ef1bd11d3eb4b57a0b353e8f2e5fc3e/ac9b469ccec74caf923a81fb2f0be3ed.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3215,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/3ef1bd11d3eb4b57a0b353e8f2e5fc3e/a075e1d43d2f446c949b5967b470c757.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/2200574b6f764d9e8ba45016dbed9271"
+      },
+      "description": "Monster truck \n\nA monster truck is a massive, heavily modified pickup truck or SUV designed for off-road and stunt performances. These vehicles feature oversized tires, high ground clearance, and reinforced suspension systems, allowing them to crush smaller cars, jump over ramps, and navigate extreme terrain. Monster trucks are commonly used in competitive events, such as freestyle stunt shows and races, where they perform gravity-defying tricks like wheelies, flips, and long jumps. With their loud, roaring engines and eye-catching custom designs, monster trucks are a thrilling spectacle for motorsports enthusiasts.",
+      "faceCount": 322175,
+      "createdAt": "2025-02-12T04:36:36.693035",
+      "vertexCount": 170742,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 20190108,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 322111,
+          "vertexCount": 346858
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 7769923,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 322111,
+          "vertexCount": 346858
+        },
+        "source": {
+          "textureCount": null,
+          "size": 14984450,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 7905638,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/d9f1a889b67c487dbbc1bcf2aca551da",
+      "uid": "d9f1a889b67c487dbbc1bcf2aca551da",
+      "name": "Lord Sri Ram in the Forest",
+      "staffpickedAt": null,
+      "viewCount": 890,
+      "likeCount": 0,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-d9f1a889b67c487dbbc1bcf2aca551da",
+      "embedUrl": "https://sketchfab.com/models/d9f1a889b67c487dbbc1bcf2aca551da/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2025-01-26T23:28:39.418006",
+      "tags": [
+        {
+          "name": "arrow",
+          "slug": "arrow",
+          "uri": "https://api.sketchfab.com/v3/tags/arrow"
+        },
+        {
+          "name": "forest",
+          "slug": "forest",
+          "uri": "https://api.sketchfab.com/v3/tags/forest"
+        },
+        {
+          "name": "bow",
+          "slug": "bow",
+          "uri": "https://api.sketchfab.com/v3/tags/bow"
+        },
+        {
+          "name": "god",
+          "slug": "god",
+          "uri": "https://api.sketchfab.com/v3/tags/god"
+        },
+        {
+          "name": "day",
+          "slug": "day",
+          "uri": "https://api.sketchfab.com/v3/tags/day"
+        },
+        {
+          "name": "ram",
+          "slug": "ram",
+          "uri": "https://api.sketchfab.com/v3/tags/ram"
+        },
+        {
+          "name": "outer",
+          "slug": "outer",
+          "uri": "https://api.sketchfab.com/v3/tags/outer"
+        },
+        {
+          "name": "lord",
+          "slug": "lord",
+          "uri": "https://api.sketchfab.com/v3/tags/lord"
+        },
+        {
+          "name": "jungle",
+          "slug": "jungle",
+          "uri": "https://api.sketchfab.com/v3/tags/jungle"
+        },
+        {
+          "name": "ai",
+          "slug": "ai",
+          "uri": "https://api.sketchfab.com/v3/tags/ai"
+        },
+        {
+          "name": "bows",
+          "slug": "bows",
+          "uri": "https://api.sketchfab.com/v3/tags/bows"
+        },
+        {
+          "name": "hanuman",
+          "slug": "hanuman",
+          "uri": "https://api.sketchfab.com/v3/tags/hanuman"
+        },
+        {
+          "name": "animation",
+          "slug": "animation",
+          "uri": "https://api.sketchfab.com/v3/tags/animation"
+        },
+        {
+          "name": "createdwithai",
+          "slug": "createdwithai",
+          "uri": "https://api.sketchfab.com/v3/tags/createdwithai"
+        },
+        {
+          "name": "meshy",
+          "slug": "meshy",
+          "uri": "https://api.sketchfab.com/v3/tags/meshy"
+        },
+        {
+          "name": "exteror",
+          "slug": "exteror",
+          "uri": "https://api.sketchfab.com/v3/tags/exteror"
+        },
+        {
+          "name": "lordram",
+          "slug": "lordram",
+          "uri": "https://api.sketchfab.com/v3/tags/lordram"
+        },
+        {
+          "name": "surajit",
+          "slug": "surajit",
+          "uri": "https://api.sketchfab.com/v3/tags/surajit"
+        },
+        {
+          "name": "animationodisha",
+          "slug": "animationodisha",
+          "uri": "https://api.sketchfab.com/v3/tags/animationodisha"
+        },
+        {
+          "name": "dophic",
+          "slug": "dophic",
+          "uri": "https://api.sketchfab.com/v3/tags/dophic"
+        }
+      ],
+      "categories": [
+        {
+          "name": "characters-creatures"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "a13eb7d295394018bd2b4c24f99859fb",
+            "size": 60946,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/d9f1a889b67c487dbbc1bcf2aca551da/thumbnails/1be86e1edc0d4a2a9585b31eec7809f7/7e1979d5e4c44788bd6deb8d229053d2.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "94b6767b59d642edae05cd9a660c0679",
+            "size": 20552,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/d9f1a889b67c487dbbc1bcf2aca551da/thumbnails/1be86e1edc0d4a2a9585b31eec7809f7/792eb23962fb422ebc8b6dfbbfb13daf.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "43bb2c6701ea4216aa7983ccf50e0e98",
+            "size": 11931,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/d9f1a889b67c487dbbc1bcf2aca551da/thumbnails/1be86e1edc0d4a2a9585b31eec7809f7/f8c7d1a63a8c4fd8b4b651677e53b632.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "4cf4b8a7341d46bf99a205ad702af223",
+            "size": 2715,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/d9f1a889b67c487dbbc1bcf2aca551da/thumbnails/1be86e1edc0d4a2a9585b31eec7809f7/607d3bd2f402454c913891e45082e920.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "5397317e8bc74811a40a1dbf85d87806",
+            "size": 884,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/d9f1a889b67c487dbbc1bcf2aca551da/thumbnails/1be86e1edc0d4a2a9585b31eec7809f7/f196e70c0e594530b3a28ac21c16aea4.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "e2bab643a7f24c3a91c7863a8b7aae7e",
+        "username": "Surajit3",
+        "displayName": "Surajit3",
+        "profileUrl": "https://sketchfab.com/Surajit3",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/8ade9f78c91a437ea9540cc29f3c1bb3",
+          "images": [
+            {
+              "size": 598,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/8ade9f78c91a437ea9540cc29f3c1bb3/193b52f9b0ff4b168341fbc4eec8a5e3.jpeg",
+              "height": 32
+            },
+            {
+              "size": 877,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/8ade9f78c91a437ea9540cc29f3c1bb3/4d85b2abb53f4a8c8d3ece15fee81397.jpeg",
+              "height": 48
+            },
+            {
+              "size": 1761,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/8ade9f78c91a437ea9540cc29f3c1bb3/49840a42cc6f4b10b5920d5c56ff7597.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2068,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/8ade9f78c91a437ea9540cc29f3c1bb3/4aadf7bd3ffc4d86a2bd722c6c2051fa.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/e2bab643a7f24c3a91c7863a8b7aae7e"
+      },
+      "description": "This model was generated using Meshy(https://www.meshy.ai)'s AI toolkit. It provides tools that effortlessly turn human imagination into stunning 3D models.\nThis is an experimental model.\n\nIf you're interested in this model, then contact me, i can make 3D animated detailed model, in **CG Trader** you can see my profile for my skil,  Thnx. **surajit**",
+      "faceCount": 21439,
+      "createdAt": "2025-01-26T23:28:26.371211",
+      "vertexCount": 10692,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 2333448,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 21439,
+          "vertexCount": 16037
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 1976313,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 21439,
+          "vertexCount": 16037
+        },
+        "source": {
+          "textureCount": null,
+          "size": 3874681,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 2166068,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    }
+  ]
+}

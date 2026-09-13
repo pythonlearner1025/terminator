@@ -1,0 +1,2480 @@
+{
+  "cursors": {
+    "next": "12",
+    "previous": null
+  },
+  "next": "https://api.sketchfab.com/v3/search?count=12&cursor=12&downloadable=true&q=work+light&sort_by=-relevance&type=models",
+  "previous": null,
+  "results": [
+    {
+      "uri": "https://api.sketchfab.com/v3/models/3bdf2065c1f64cbbb508e59da94dfc97",
+      "uid": "3bdf2065c1f64cbbb508e59da94dfc97",
+      "name": "Floor lamp - Vargov LC0593-2 #2",
+      "staffpickedAt": null,
+      "viewCount": 1,
+      "likeCount": 0,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-3bdf2065c1f64cbbb508e59da94dfc97",
+      "embedUrl": "https://sketchfab.com/models/3bdf2065c1f64cbbb508e59da94dfc97/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-09-09T21:39:03.845136",
+      "tags": [
+        {
+          "name": "lamp",
+          "slug": "lamp",
+          "uri": "https://api.sketchfab.com/v3/tags/lamp"
+        },
+        {
+          "name": "led",
+          "slug": "led",
+          "uri": "https://api.sketchfab.com/v3/tags/led"
+        },
+        {
+          "name": "floor",
+          "slug": "floor",
+          "uri": "https://api.sketchfab.com/v3/tags/floor"
+        },
+        {
+          "name": "table",
+          "slug": "table",
+          "uri": "https://api.sketchfab.com/v3/tags/table"
+        },
+        {
+          "name": "decor",
+          "slug": "decor",
+          "uri": "https://api.sketchfab.com/v3/tags/decor"
+        },
+        {
+          "name": "lighting",
+          "slug": "lighting",
+          "uri": "https://api.sketchfab.com/v3/tags/lighting"
+        },
+        {
+          "name": "design",
+          "slug": "design",
+          "uri": "https://api.sketchfab.com/v3/tags/design"
+        },
+        {
+          "name": "interior",
+          "slug": "interior",
+          "uri": "https://api.sketchfab.com/v3/tags/interior"
+        },
+        {
+          "name": "vargov",
+          "slug": "vargov",
+          "uri": "https://api.sketchfab.com/v3/tags/vargov"
+        },
+        {
+          "name": "lc0593-2",
+          "slug": "lc0593-2",
+          "uri": "https://api.sketchfab.com/v3/tags/lc0593-2"
+        }
+      ],
+      "categories": [
+        {
+          "name": "furniture-home"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "452bc48f262d40f5beaf9aba545de2eb",
+            "size": 101586,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/3bdf2065c1f64cbbb508e59da94dfc97/thumbnails/efbf9186b6834d648d999c7a0ae34437/97d33f0c84b54dd48624346c99e9bbef.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "8cf50901b61c4deabc07ecdb827a1fdc",
+            "size": 31508,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/3bdf2065c1f64cbbb508e59da94dfc97/thumbnails/efbf9186b6834d648d999c7a0ae34437/c4a4f5e034cd40e684d4651a2aa119d5.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "4e9fb7972aa944a998332db478a3193c",
+            "size": 16893,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/3bdf2065c1f64cbbb508e59da94dfc97/thumbnails/efbf9186b6834d648d999c7a0ae34437/a0698366fba84d8e8033bf6a95eb5d31.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "43c2d1df629c4be6aa159fb34d76548e",
+            "size": 3045,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/3bdf2065c1f64cbbb508e59da94dfc97/thumbnails/efbf9186b6834d648d999c7a0ae34437/8de486d599e34e75833aa5cec5c5680e.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "68b5e983e81c48eb92ccdf7287af283e",
+            "size": 967,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/3bdf2065c1f64cbbb508e59da94dfc97/thumbnails/efbf9186b6834d648d999c7a0ae34437/4de6a93873084a15b61df08e07517eec.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "0598bba697074cc98d7de94cd137cc01",
+        "username": "vargov",
+        "displayName": "Vargov\u00aeDesign",
+        "profileUrl": "https://sketchfab.com/vargov",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/694e93fd792a4ae1b23e94a52c5001f9",
+          "images": [
+            {
+              "size": 625,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/74432462c2e7482fa8705c9d19942fc9.png",
+              "height": 32
+            },
+            {
+              "size": 916,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/c822a82c4bad414194bd11b40f3c089d.png",
+              "height": 48
+            },
+            {
+              "size": 1677,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/f77e222a59574b71ac92c34b1691b902.png",
+              "height": 90
+            },
+            {
+              "size": 1818,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/2826eadef4944b58aab99abe788dce73.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/0598bba697074cc98d7de94cd137cc01"
+      },
+      "description": "Floor lamp. Vargov(R)Design, article LC0593-2.\n\nThe same bouquet, gathered more quietly. The umbrellas stand closer together and almost at one level \u2014 not a scattered inflorescence but a dense head from which the light comes out in a single broad pool. The change in spacing between the discs changes the whole character of the piece: there it was a garden, here it is one flower. The stems rise from the base in a strict bunch, and the vertical reads cleaner than in the loose version. By day it is graphic work in pleated discs on golden stems: the relief is read through light and shade, the silhouette is compact and spare. In the evening light from the cores runs out along the folds and gathers into one shared glow \u2014 the lamp gives not a scatter of haloes but an even warm circle beside the armchair.\nWhere it works\n\nMade to order in any size and colour.\nProduct page: https://vargov.ru/en/catalog/lc0593-2\nBuild your own composition: https://configurator.vargov.ru\nAll models: https://vargov.ru",
+      "faceCount": 79686,
+      "createdAt": "2026-09-09T21:38:51.119617",
+      "vertexCount": 37060,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 6871460,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 79686,
+          "vertexCount": 184594
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 2117991,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 79686,
+          "vertexCount": 184594
+        },
+        "source": {
+          "textureCount": null,
+          "size": 2911548,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 4436611,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/3983b46240ec407b9bc40da2ddcf914a",
+      "uid": "3983b46240ec407b9bc40da2ddcf914a",
+      "name": "Lighting composition \u2014 olive - Vargov LC0360 #11",
+      "staffpickedAt": null,
+      "viewCount": 1,
+      "likeCount": 0,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-3983b46240ec407b9bc40da2ddcf914a",
+      "embedUrl": "https://sketchfab.com/models/3983b46240ec407b9bc40da2ddcf914a/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-09-08T00:49:16.985677",
+      "tags": [
+        {
+          "name": "led",
+          "slug": "led",
+          "uri": "https://api.sketchfab.com/v3/tags/led"
+        },
+        {
+          "name": "ceiling",
+          "slug": "ceiling",
+          "uri": "https://api.sketchfab.com/v3/tags/ceiling"
+        },
+        {
+          "name": "olive",
+          "slug": "olive",
+          "uri": "https://api.sketchfab.com/v3/tags/olive"
+        },
+        {
+          "name": "pendant",
+          "slug": "pendant",
+          "uri": "https://api.sketchfab.com/v3/tags/pendant"
+        },
+        {
+          "name": "suspension",
+          "slug": "suspension",
+          "uri": "https://api.sketchfab.com/v3/tags/suspension"
+        },
+        {
+          "name": "branch",
+          "slug": "branch",
+          "uri": "https://api.sketchfab.com/v3/tags/branch"
+        },
+        {
+          "name": "chandelier",
+          "slug": "chandelier",
+          "uri": "https://api.sketchfab.com/v3/tags/chandelier"
+        },
+        {
+          "name": "decor",
+          "slug": "decor",
+          "uri": "https://api.sketchfab.com/v3/tags/decor"
+        },
+        {
+          "name": "lighting",
+          "slug": "lighting",
+          "uri": "https://api.sketchfab.com/v3/tags/lighting"
+        },
+        {
+          "name": "design",
+          "slug": "design",
+          "uri": "https://api.sketchfab.com/v3/tags/design"
+        },
+        {
+          "name": "wood",
+          "slug": "wood",
+          "uri": "https://api.sketchfab.com/v3/tags/wood"
+        },
+        {
+          "name": "interior",
+          "slug": "interior",
+          "uri": "https://api.sketchfab.com/v3/tags/interior"
+        },
+        {
+          "name": "vargov",
+          "slug": "vargov",
+          "uri": "https://api.sketchfab.com/v3/tags/vargov"
+        },
+        {
+          "name": "lc0360",
+          "slug": "lc0360",
+          "uri": "https://api.sketchfab.com/v3/tags/lc0360"
+        }
+      ],
+      "categories": [
+        {
+          "name": "furniture-home"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "9786b393bd664bb29d5f0b735193abf7",
+            "size": 89989,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/3983b46240ec407b9bc40da2ddcf914a/thumbnails/627df8e022744f6d9b5b306764cc9ece/3e160e38859048a0b01f762994f5d760.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "64257a7d1dfe4d6f9936ad9281f5bf9c",
+            "size": 30024,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/3983b46240ec407b9bc40da2ddcf914a/thumbnails/627df8e022744f6d9b5b306764cc9ece/dc0bcefcebdc4c05bddbf5dcb64e9740.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "9fe78d099b4f4d748663a0bbc9339894",
+            "size": 16841,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/3983b46240ec407b9bc40da2ddcf914a/thumbnails/627df8e022744f6d9b5b306764cc9ece/7df07f79f7e64ff2bdc4b0c9feb527f3.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "4b3fa2f4349f46d0ab608045ca443ebc",
+            "size": 3200,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/3983b46240ec407b9bc40da2ddcf914a/thumbnails/627df8e022744f6d9b5b306764cc9ece/1e693dbee91d46d6b53f12933d62a673.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "2594240602e44edbb56eb55fc2dbc99d",
+            "size": 931,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/3983b46240ec407b9bc40da2ddcf914a/thumbnails/627df8e022744f6d9b5b306764cc9ece/e78f13ebe72341029ffcdccab233aebc.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "0598bba697074cc98d7de94cd137cc01",
+        "username": "vargov",
+        "displayName": "Vargov\u00aeDesign",
+        "profileUrl": "https://sketchfab.com/vargov",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/694e93fd792a4ae1b23e94a52c5001f9",
+          "images": [
+            {
+              "size": 625,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/74432462c2e7482fa8705c9d19942fc9.png",
+              "height": 32
+            },
+            {
+              "size": 916,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/c822a82c4bad414194bd11b40f3c089d.png",
+              "height": 48
+            },
+            {
+              "size": 1677,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/f77e222a59574b71ac92c34b1691b902.png",
+              "height": 90
+            },
+            {
+              "size": 1818,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/2826eadef4944b58aab99abe788dce73.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/0598bba697074cc98d7de94cd137cc01"
+      },
+      "description": "Lighting composition \u2014 olive, wood. Vargov(R)Design, article LC0360.\n\nA composition about rain through foliage. Two tiers work toward one image: above, a dense ring of leaves with the sources hidden between them; below, dozens of faceted clear drops. Light from the canopy passes through them and ignites them from within \u2014 the effect of rain lit by a setting sun through branches. The contrast is set firmly: warm matte foliage above, cold transparency below. Neither repeats the other; they complement each other in temperature. By day it is a wreath with a clear fringe \u2014 gold and transparency, a piece read as silhouette. In the evening it becomes a glowing cloud with water pouring out of it; the drops sway with the movement of air and the highlights run about constantly.\nWhere it works\n\nMade to order in any size and colour.\nProduct page: https://vargov.ru/en/catalog/lc0360\nBuild your own composition: https://configurator.vargov.ru\nAll models: https://vargov.ru",
+      "faceCount": 1939756,
+      "createdAt": "2026-09-08T00:47:23.322623",
+      "vertexCount": 980227,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 56041804,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 1939756,
+          "vertexCount": 1023318
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 27756024,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 1939756,
+          "vertexCount": 1023318
+        },
+        "source": {
+          "textureCount": null,
+          "size": 61732286,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 24709530,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/229eed32731d4e4484a6522a4603fbe0",
+      "uid": "229eed32731d4e4484a6522a4603fbe0",
+      "name": "Lighting composition \u2014 olive - Vargov LC0360 #10",
+      "staffpickedAt": null,
+      "viewCount": 1,
+      "likeCount": 0,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-229eed32731d4e4484a6522a4603fbe0",
+      "embedUrl": "https://sketchfab.com/models/229eed32731d4e4484a6522a4603fbe0/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-09-08T00:48:24.070438",
+      "tags": [
+        {
+          "name": "led",
+          "slug": "led",
+          "uri": "https://api.sketchfab.com/v3/tags/led"
+        },
+        {
+          "name": "ceiling",
+          "slug": "ceiling",
+          "uri": "https://api.sketchfab.com/v3/tags/ceiling"
+        },
+        {
+          "name": "olive",
+          "slug": "olive",
+          "uri": "https://api.sketchfab.com/v3/tags/olive"
+        },
+        {
+          "name": "pendant",
+          "slug": "pendant",
+          "uri": "https://api.sketchfab.com/v3/tags/pendant"
+        },
+        {
+          "name": "suspension",
+          "slug": "suspension",
+          "uri": "https://api.sketchfab.com/v3/tags/suspension"
+        },
+        {
+          "name": "branch",
+          "slug": "branch",
+          "uri": "https://api.sketchfab.com/v3/tags/branch"
+        },
+        {
+          "name": "chandelier",
+          "slug": "chandelier",
+          "uri": "https://api.sketchfab.com/v3/tags/chandelier"
+        },
+        {
+          "name": "decor",
+          "slug": "decor",
+          "uri": "https://api.sketchfab.com/v3/tags/decor"
+        },
+        {
+          "name": "lighting",
+          "slug": "lighting",
+          "uri": "https://api.sketchfab.com/v3/tags/lighting"
+        },
+        {
+          "name": "design",
+          "slug": "design",
+          "uri": "https://api.sketchfab.com/v3/tags/design"
+        },
+        {
+          "name": "wood",
+          "slug": "wood",
+          "uri": "https://api.sketchfab.com/v3/tags/wood"
+        },
+        {
+          "name": "interior",
+          "slug": "interior",
+          "uri": "https://api.sketchfab.com/v3/tags/interior"
+        },
+        {
+          "name": "vargov",
+          "slug": "vargov",
+          "uri": "https://api.sketchfab.com/v3/tags/vargov"
+        },
+        {
+          "name": "lc0360",
+          "slug": "lc0360",
+          "uri": "https://api.sketchfab.com/v3/tags/lc0360"
+        }
+      ],
+      "categories": [
+        {
+          "name": "furniture-home"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "7402ba739374412cab38f1afe9daae60",
+            "size": 87716,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/229eed32731d4e4484a6522a4603fbe0/thumbnails/6521b2f7e60b493c81e5c9a2ff49ae22/f29b83950763449f94d9c23ff4ca37bf.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "5718424addec4c679d60a08f3a87d81e",
+            "size": 29218,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/229eed32731d4e4484a6522a4603fbe0/thumbnails/6521b2f7e60b493c81e5c9a2ff49ae22/4e47be474f6e45fcb0833a10e58cc315.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "7985349216784877ae599d659192e346",
+            "size": 16358,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/229eed32731d4e4484a6522a4603fbe0/thumbnails/6521b2f7e60b493c81e5c9a2ff49ae22/140299d7fdec4e75a45a68a13aa3ba3a.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "3e51341ec2de49ae892847a1a27b0eb1",
+            "size": 3157,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/229eed32731d4e4484a6522a4603fbe0/thumbnails/6521b2f7e60b493c81e5c9a2ff49ae22/150fd77b0bce4795838847bdc05bbdb4.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "8626cce311484fea9e82cd137d1d284d",
+            "size": 912,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/229eed32731d4e4484a6522a4603fbe0/thumbnails/6521b2f7e60b493c81e5c9a2ff49ae22/718b9f23f64145659749a4c02b3815a2.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "0598bba697074cc98d7de94cd137cc01",
+        "username": "vargov",
+        "displayName": "Vargov\u00aeDesign",
+        "profileUrl": "https://sketchfab.com/vargov",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/694e93fd792a4ae1b23e94a52c5001f9",
+          "images": [
+            {
+              "size": 625,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/74432462c2e7482fa8705c9d19942fc9.png",
+              "height": 32
+            },
+            {
+              "size": 916,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/c822a82c4bad414194bd11b40f3c089d.png",
+              "height": 48
+            },
+            {
+              "size": 1677,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/f77e222a59574b71ac92c34b1691b902.png",
+              "height": 90
+            },
+            {
+              "size": 1818,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/2826eadef4944b58aab99abe788dce73.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/0598bba697074cc98d7de94cd137cc01"
+      },
+      "description": "Lighting composition \u2014 olive, wood. Vargov(R)Design, article LC0360.\n\nA composition about rain through foliage. Two tiers work toward one image: above, a dense ring of leaves with the sources hidden between them; below, dozens of faceted clear drops. Light from the canopy passes through them and ignites them from within \u2014 the effect of rain lit by a setting sun through branches. The contrast is set firmly: warm matte foliage above, cold transparency below. Neither repeats the other; they complement each other in temperature. By day it is a wreath with a clear fringe \u2014 gold and transparency, a piece read as silhouette. In the evening it becomes a glowing cloud with water pouring out of it; the drops sway with the movement of air and the highlights run about constantly.\nWhere it works\n\nMade to order in any size and colour.\nProduct page: https://vargov.ru/en/catalog/lc0360\nBuild your own composition: https://configurator.vargov.ru\nAll models: https://vargov.ru",
+      "faceCount": 1179836,
+      "createdAt": "2026-09-08T00:47:07.836796",
+      "vertexCount": 594305,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 33782864,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 1179836,
+          "vertexCount": 612920
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 15319338,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 1179836,
+          "vertexCount": 612920
+        },
+        "source": {
+          "textureCount": null,
+          "size": 38463886,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 14773742,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/c7eb83d92f3e49689c3f062ef6f467ff",
+      "uid": "c7eb83d92f3e49689c3f062ef6f467ff",
+      "name": "Lighting composition \u2014 olive - Vargov LC0360 #9",
+      "staffpickedAt": null,
+      "viewCount": 1,
+      "likeCount": 0,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-c7eb83d92f3e49689c3f062ef6f467ff",
+      "embedUrl": "https://sketchfab.com/models/c7eb83d92f3e49689c3f062ef6f467ff/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-09-08T00:47:44.658006",
+      "tags": [
+        {
+          "name": "led",
+          "slug": "led",
+          "uri": "https://api.sketchfab.com/v3/tags/led"
+        },
+        {
+          "name": "ceiling",
+          "slug": "ceiling",
+          "uri": "https://api.sketchfab.com/v3/tags/ceiling"
+        },
+        {
+          "name": "olive",
+          "slug": "olive",
+          "uri": "https://api.sketchfab.com/v3/tags/olive"
+        },
+        {
+          "name": "pendant",
+          "slug": "pendant",
+          "uri": "https://api.sketchfab.com/v3/tags/pendant"
+        },
+        {
+          "name": "suspension",
+          "slug": "suspension",
+          "uri": "https://api.sketchfab.com/v3/tags/suspension"
+        },
+        {
+          "name": "branch",
+          "slug": "branch",
+          "uri": "https://api.sketchfab.com/v3/tags/branch"
+        },
+        {
+          "name": "chandelier",
+          "slug": "chandelier",
+          "uri": "https://api.sketchfab.com/v3/tags/chandelier"
+        },
+        {
+          "name": "decor",
+          "slug": "decor",
+          "uri": "https://api.sketchfab.com/v3/tags/decor"
+        },
+        {
+          "name": "lighting",
+          "slug": "lighting",
+          "uri": "https://api.sketchfab.com/v3/tags/lighting"
+        },
+        {
+          "name": "design",
+          "slug": "design",
+          "uri": "https://api.sketchfab.com/v3/tags/design"
+        },
+        {
+          "name": "wood",
+          "slug": "wood",
+          "uri": "https://api.sketchfab.com/v3/tags/wood"
+        },
+        {
+          "name": "interior",
+          "slug": "interior",
+          "uri": "https://api.sketchfab.com/v3/tags/interior"
+        },
+        {
+          "name": "vargov",
+          "slug": "vargov",
+          "uri": "https://api.sketchfab.com/v3/tags/vargov"
+        },
+        {
+          "name": "lc0360",
+          "slug": "lc0360",
+          "uri": "https://api.sketchfab.com/v3/tags/lc0360"
+        }
+      ],
+      "categories": [
+        {
+          "name": "furniture-home"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "a257071a3bf34883966c7e905fb084fb",
+            "size": 74821,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/c7eb83d92f3e49689c3f062ef6f467ff/thumbnails/51694d14dfce4243bf96b61ef9b2e33f/3cc8a3adee084a1f864703ea979de5e4.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "c10005864c2546c4a19b32ec4b51cc67",
+            "size": 25140,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/c7eb83d92f3e49689c3f062ef6f467ff/thumbnails/51694d14dfce4243bf96b61ef9b2e33f/546cd43bf6d3463f917e9b2f7334ea49.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "9d958a303e1c453ba14f81cda681cd57",
+            "size": 14277,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/c7eb83d92f3e49689c3f062ef6f467ff/thumbnails/51694d14dfce4243bf96b61ef9b2e33f/5cf8dfbd99ad4fdcaeac3ebf970b1e51.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "fd2cad117bec4d3f9d4cb598b35f608a",
+            "size": 2858,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/c7eb83d92f3e49689c3f062ef6f467ff/thumbnails/51694d14dfce4243bf96b61ef9b2e33f/df2b4fd761a64f8f92d54ad66e97de23.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "334e662ad15741ccafe424cb1fee4846",
+            "size": 874,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/c7eb83d92f3e49689c3f062ef6f467ff/thumbnails/51694d14dfce4243bf96b61ef9b2e33f/0727fbf0bad64d13b4b575c5390c3106.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "0598bba697074cc98d7de94cd137cc01",
+        "username": "vargov",
+        "displayName": "Vargov\u00aeDesign",
+        "profileUrl": "https://sketchfab.com/vargov",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/694e93fd792a4ae1b23e94a52c5001f9",
+          "images": [
+            {
+              "size": 625,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/74432462c2e7482fa8705c9d19942fc9.png",
+              "height": 32
+            },
+            {
+              "size": 916,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/c822a82c4bad414194bd11b40f3c089d.png",
+              "height": 48
+            },
+            {
+              "size": 1677,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/f77e222a59574b71ac92c34b1691b902.png",
+              "height": 90
+            },
+            {
+              "size": 1818,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/2826eadef4944b58aab99abe788dce73.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/0598bba697074cc98d7de94cd137cc01"
+      },
+      "description": "Lighting composition \u2014 olive, wood. Vargov(R)Design, article LC0360.\n\nA composition about rain through foliage. Two tiers work toward one image: above, a dense ring of leaves with the sources hidden between them; below, dozens of faceted clear drops. Light from the canopy passes through them and ignites them from within \u2014 the effect of rain lit by a setting sun through branches. The contrast is set firmly: warm matte foliage above, cold transparency below. Neither repeats the other; they complement each other in temperature. By day it is a wreath with a clear fringe \u2014 gold and transparency, a piece read as silhouette. In the evening it becomes a glowing cloud with water pouring out of it; the drops sway with the movement of air and the highlights run about constantly.\nWhere it works\n\nMade to order in any size and colour.\nProduct page: https://vargov.ru/en/catalog/lc0360\nBuild your own composition: https://configurator.vargov.ru\nAll models: https://vargov.ru",
+      "faceCount": 747964,
+      "createdAt": "2026-09-08T00:46:55.835080",
+      "vertexCount": 383264,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 21666380,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 747964,
+          "vertexCount": 396275
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 11459305,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 747964,
+          "vertexCount": 396275
+        },
+        "source": {
+          "textureCount": null,
+          "size": 24882234,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 9596859,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/fab214c8ef6a45a996daef527d3b70ef",
+      "uid": "fab214c8ef6a45a996daef527d3b70ef",
+      "name": "Wall composition \u2014 wreath - Vargov LC0120 #3",
+      "staffpickedAt": null,
+      "viewCount": 2,
+      "likeCount": 0,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-fab214c8ef6a45a996daef527d3b70ef",
+      "embedUrl": "https://sketchfab.com/models/fab214c8ef6a45a996daef527d3b70ef/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-09-07T21:46:05.767205",
+      "tags": [
+        {
+          "name": "installation",
+          "slug": "installation",
+          "uri": "https://api.sketchfab.com/v3/tags/installation"
+        },
+        {
+          "name": "wreath",
+          "slug": "wreath",
+          "uri": "https://api.sketchfab.com/v3/tags/wreath"
+        },
+        {
+          "name": "mounted",
+          "slug": "mounted",
+          "uri": "https://api.sketchfab.com/v3/tags/mounted"
+        },
+        {
+          "name": "decor",
+          "slug": "decor",
+          "uri": "https://api.sketchfab.com/v3/tags/decor"
+        },
+        {
+          "name": "sconce",
+          "slug": "sconce",
+          "uri": "https://api.sketchfab.com/v3/tags/sconce"
+        },
+        {
+          "name": "feather",
+          "slug": "feather",
+          "uri": "https://api.sketchfab.com/v3/tags/feather"
+        },
+        {
+          "name": "lighting",
+          "slug": "lighting",
+          "uri": "https://api.sketchfab.com/v3/tags/lighting"
+        },
+        {
+          "name": "art",
+          "slug": "art",
+          "uri": "https://api.sketchfab.com/v3/tags/art"
+        },
+        {
+          "name": "design",
+          "slug": "design",
+          "uri": "https://api.sketchfab.com/v3/tags/design"
+        },
+        {
+          "name": "sculpture",
+          "slug": "sculpture",
+          "uri": "https://api.sketchfab.com/v3/tags/sculpture"
+        },
+        {
+          "name": "interior",
+          "slug": "interior",
+          "uri": "https://api.sketchfab.com/v3/tags/interior"
+        },
+        {
+          "name": "wall",
+          "slug": "wall",
+          "uri": "https://api.sketchfab.com/v3/tags/wall"
+        },
+        {
+          "name": "vargov",
+          "slug": "vargov",
+          "uri": "https://api.sketchfab.com/v3/tags/vargov"
+        },
+        {
+          "name": "lc0120",
+          "slug": "lc0120",
+          "uri": "https://api.sketchfab.com/v3/tags/lc0120"
+        }
+      ],
+      "categories": [
+        {
+          "name": "furniture-home"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "4889dd1e7ebb4d0caa99054ca58838d8",
+            "size": 103372,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/fab214c8ef6a45a996daef527d3b70ef/thumbnails/8b511eb2e85e45a184d243bbbc33d9f4/248e2eb5eb6a42638fd44d54518fef0f.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "11c59811964c4e2eaafcbabb1cbc12aa",
+            "size": 36082,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/fab214c8ef6a45a996daef527d3b70ef/thumbnails/8b511eb2e85e45a184d243bbbc33d9f4/d3bc7055b63f4ef5b1e813e0b642e4c8.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "bed4d050fccd42d5af5b066285031659",
+            "size": 20921,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/fab214c8ef6a45a996daef527d3b70ef/thumbnails/8b511eb2e85e45a184d243bbbc33d9f4/c4389d3d5d8245a584f6e2ed76f2c520.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "0c5b76fec7684a0a9b80f0f5273030b7",
+            "size": 4173,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/fab214c8ef6a45a996daef527d3b70ef/thumbnails/8b511eb2e85e45a184d243bbbc33d9f4/f12274958c0843ee8c0d88c5617ac057.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "11c7702cede74869934347802199c711",
+            "size": 1053,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/fab214c8ef6a45a996daef527d3b70ef/thumbnails/8b511eb2e85e45a184d243bbbc33d9f4/b1bacf14ed5e412bbc4d523f5fbd6626.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "0598bba697074cc98d7de94cd137cc01",
+        "username": "vargov",
+        "displayName": "Vargov\u00aeDesign",
+        "profileUrl": "https://sketchfab.com/vargov",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/694e93fd792a4ae1b23e94a52c5001f9",
+          "images": [
+            {
+              "size": 625,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/74432462c2e7482fa8705c9d19942fc9.png",
+              "height": 32
+            },
+            {
+              "size": 916,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/c822a82c4bad414194bd11b40f3c089d.png",
+              "height": 48
+            },
+            {
+              "size": 1677,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/f77e222a59574b71ac92c34b1691b902.png",
+              "height": 90
+            },
+            {
+              "size": 1818,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/2826eadef4944b58aab99abe788dce73.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/0598bba697074cc98d7de94cd137cc01"
+      },
+      "description": "Wall composition \u2014 wreath, wall-mounted. Vargov(R)Design, article LC0120.\n\nThe same wreath, but shedding downward. The direction is reversed: instead of wind carrying feathers sideways, weight and fall do the work. The stream separates below, thinning as it goes, and the last feathers hang alone far from the mass. The palette is cool \u2014 subdued moss green, silver-grey, matte white, with gold inclusions around the ring. The transition between tones is gradual, with no boundaries. By day the panel reads as graphics: the worked shafts and barbs give a continuously ribbed surface that catches the light in bands. In the evening the ring lights up along its contour while the falling feathers stay dark \u2014 and the movement becomes more legible than it is by daylight. Light here works as direction rather than decoration.\nWhere it works\n\nMade to order in any size and colour.\nProduct page: https://vargov.ru/en/catalog/lc0120\nBuild your own composition: https://configurator.vargov.ru\nAll models: https://vargov.ru",
+      "faceCount": 1410372,
+      "createdAt": "2026-09-07T21:44:33.893246",
+      "vertexCount": 705672,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 40701964,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 1410372,
+          "vertexCount": 742661
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 24019047,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 1410372,
+          "vertexCount": 742661
+        },
+        "source": {
+          "textureCount": null,
+          "size": 50003386,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 19099000,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/ed5a64966a0b4eada1e276075592e53f",
+      "uid": "ed5a64966a0b4eada1e276075592e53f",
+      "name": "Wall composition - Vargov LC0120 #2",
+      "staffpickedAt": null,
+      "viewCount": 2,
+      "likeCount": 0,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-ed5a64966a0b4eada1e276075592e53f",
+      "embedUrl": "https://sketchfab.com/models/ed5a64966a0b4eada1e276075592e53f/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-09-07T21:42:18.713117",
+      "tags": [
+        {
+          "name": "composition",
+          "slug": "composition",
+          "uri": "https://api.sketchfab.com/v3/tags/composition"
+        },
+        {
+          "name": "mounted",
+          "slug": "mounted",
+          "uri": "https://api.sketchfab.com/v3/tags/mounted"
+        },
+        {
+          "name": "decor",
+          "slug": "decor",
+          "uri": "https://api.sketchfab.com/v3/tags/decor"
+        },
+        {
+          "name": "sconce",
+          "slug": "sconce",
+          "uri": "https://api.sketchfab.com/v3/tags/sconce"
+        },
+        {
+          "name": "feather",
+          "slug": "feather",
+          "uri": "https://api.sketchfab.com/v3/tags/feather"
+        },
+        {
+          "name": "fluff",
+          "slug": "fluff",
+          "uri": "https://api.sketchfab.com/v3/tags/fluff"
+        },
+        {
+          "name": "lighting",
+          "slug": "lighting",
+          "uri": "https://api.sketchfab.com/v3/tags/lighting"
+        },
+        {
+          "name": "art",
+          "slug": "art",
+          "uri": "https://api.sketchfab.com/v3/tags/art"
+        },
+        {
+          "name": "design",
+          "slug": "design",
+          "uri": "https://api.sketchfab.com/v3/tags/design"
+        },
+        {
+          "name": "sculpture",
+          "slug": "sculpture",
+          "uri": "https://api.sketchfab.com/v3/tags/sculpture"
+        },
+        {
+          "name": "interior",
+          "slug": "interior",
+          "uri": "https://api.sketchfab.com/v3/tags/interior"
+        },
+        {
+          "name": "wall",
+          "slug": "wall",
+          "uri": "https://api.sketchfab.com/v3/tags/wall"
+        },
+        {
+          "name": "vargov",
+          "slug": "vargov",
+          "uri": "https://api.sketchfab.com/v3/tags/vargov"
+        },
+        {
+          "name": "lc0120",
+          "slug": "lc0120",
+          "uri": "https://api.sketchfab.com/v3/tags/lc0120"
+        }
+      ],
+      "categories": [
+        {
+          "name": "furniture-home"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "e04ac57f69584c9792886507598635b2",
+            "size": 103371,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/ed5a64966a0b4eada1e276075592e53f/thumbnails/c83434e6fb46436798d96cb658a51c6e/c1b0bc00953447cdb7238d5d517b8538.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "0251b1f38d464272b372e82702a21538",
+            "size": 36115,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/ed5a64966a0b4eada1e276075592e53f/thumbnails/c83434e6fb46436798d96cb658a51c6e/f87d9e1a4ef54dabaa13b43cc7a537cf.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "1c410eeff4714e3785472e74752e64b1",
+            "size": 20921,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/ed5a64966a0b4eada1e276075592e53f/thumbnails/c83434e6fb46436798d96cb658a51c6e/549fa927bab04f1f9716bca4bbaf3aab.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "dbf7ca20e7ec40858bf98cff3f746aee",
+            "size": 4176,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/ed5a64966a0b4eada1e276075592e53f/thumbnails/c83434e6fb46436798d96cb658a51c6e/0b4c3b0b2e7c47758af6f60c0ebf3e61.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "3dcb662e916d45eda658a121d950fc35",
+            "size": 1055,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/ed5a64966a0b4eada1e276075592e53f/thumbnails/c83434e6fb46436798d96cb658a51c6e/c2861b40166e4a7ea0f0166fa640fd9c.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "0598bba697074cc98d7de94cd137cc01",
+        "username": "vargov",
+        "displayName": "Vargov\u00aeDesign",
+        "profileUrl": "https://sketchfab.com/vargov",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/694e93fd792a4ae1b23e94a52c5001f9",
+          "images": [
+            {
+              "size": 625,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/74432462c2e7482fa8705c9d19942fc9.png",
+              "height": 32
+            },
+            {
+              "size": 916,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/c822a82c4bad414194bd11b40f3c089d.png",
+              "height": 48
+            },
+            {
+              "size": 1677,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/f77e222a59574b71ac92c34b1691b902.png",
+              "height": 90
+            },
+            {
+              "size": 1818,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/2826eadef4944b58aab99abe788dce73.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/0598bba697074cc98d7de94cd137cc01"
+      },
+      "description": "Wall composition \u2014 wall-mounted, feather. Vargov(R)Design, article LC0120.\n\nThe same wreath, but shedding downward. The direction is reversed: instead of wind carrying feathers sideways, weight and fall do the work. The stream separates below, thinning as it goes, and the last feathers hang alone far from the mass. The palette is cool \u2014 subdued moss green, silver-grey, matte white, with gold inclusions around the ring. The transition between tones is gradual, with no boundaries. By day the panel reads as graphics: the worked shafts and barbs give a continuously ribbed surface that catches the light in bands. In the evening the ring lights up along its contour while the falling feathers stay dark \u2014 and the movement becomes more legible than it is by daylight. Light here works as direction rather than decoration.\nWhere it works\n\nMade to order in any size and colour.\nProduct page: https://vargov.ru/en/catalog/lc0120\nBuild your own composition: https://configurator.vargov.ru\nAll models: https://vargov.ru",
+      "faceCount": 1410372,
+      "createdAt": "2026-09-07T21:40:52.108432",
+      "vertexCount": 705672,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 40701948,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 1410372,
+          "vertexCount": 742661
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 24019018,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 1410372,
+          "vertexCount": 742661
+        },
+        "source": {
+          "textureCount": null,
+          "size": 50003384,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 19098986,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/5d656f1e3e234389868d31d2f7eb77e0",
+      "uid": "5d656f1e3e234389868d31d2f7eb77e0",
+      "name": "Decorative composition - Vargov LC0001 #3",
+      "staffpickedAt": null,
+      "viewCount": 0,
+      "likeCount": 0,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-5d656f1e3e234389868d31d2f7eb77e0",
+      "embedUrl": "https://sketchfab.com/models/5d656f1e3e234389868d31d2f7eb77e0/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-09-07T14:04:08.780625",
+      "tags": [
+        {
+          "name": "decorative",
+          "slug": "decorative",
+          "uri": "https://api.sketchfab.com/v3/tags/decorative"
+        },
+        {
+          "name": "chandelier",
+          "slug": "chandelier",
+          "uri": "https://api.sketchfab.com/v3/tags/chandelier"
+        },
+        {
+          "name": "decor",
+          "slug": "decor",
+          "uri": "https://api.sketchfab.com/v3/tags/decor"
+        },
+        {
+          "name": "lighting",
+          "slug": "lighting",
+          "uri": "https://api.sketchfab.com/v3/tags/lighting"
+        },
+        {
+          "name": "glass",
+          "slug": "glass",
+          "uri": "https://api.sketchfab.com/v3/tags/glass"
+        },
+        {
+          "name": "design",
+          "slug": "design",
+          "uri": "https://api.sketchfab.com/v3/tags/design"
+        },
+        {
+          "name": "sculpture",
+          "slug": "sculpture",
+          "uri": "https://api.sketchfab.com/v3/tags/sculpture"
+        },
+        {
+          "name": "interior",
+          "slug": "interior",
+          "uri": "https://api.sketchfab.com/v3/tags/interior"
+        },
+        {
+          "name": "light",
+          "slug": "light",
+          "uri": "https://api.sketchfab.com/v3/tags/light"
+        },
+        {
+          "name": "vargov",
+          "slug": "vargov",
+          "uri": "https://api.sketchfab.com/v3/tags/vargov"
+        },
+        {
+          "name": "lc0001",
+          "slug": "lc0001",
+          "uri": "https://api.sketchfab.com/v3/tags/lc0001"
+        }
+      ],
+      "categories": [
+        {
+          "name": "furniture-home"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "3fbd0c43b45f40e7804c48d7fa567a4b",
+            "size": 119151,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/5d656f1e3e234389868d31d2f7eb77e0/thumbnails/a8c2e53dc4404524954870142328eb70/6b3fc6091c354120b1ccf35d1e25bc2c.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "216878601b3c43718d875f0aa962f172",
+            "size": 34358,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/5d656f1e3e234389868d31d2f7eb77e0/thumbnails/a8c2e53dc4404524954870142328eb70/a0ac75b10855415f80edd5938123121b.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "c3459649e19c4a2094a78cb37d841368",
+            "size": 17627,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/5d656f1e3e234389868d31d2f7eb77e0/thumbnails/a8c2e53dc4404524954870142328eb70/22f817b2311b49d4acda1200a8c966c8.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "87b3aaf040b2467885330028def2d2a6",
+            "size": 2665,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/5d656f1e3e234389868d31d2f7eb77e0/thumbnails/a8c2e53dc4404524954870142328eb70/5fe7ab1512db46788bade9e40b5e0065.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "9f3acde2d603466abd3f62dd1fb4a08f",
+            "size": 784,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/5d656f1e3e234389868d31d2f7eb77e0/thumbnails/a8c2e53dc4404524954870142328eb70/f73f81faf357424888f1c87c207c3cdb.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "0598bba697074cc98d7de94cd137cc01",
+        "username": "vargov",
+        "displayName": "Vargov\u00aeDesign",
+        "profileUrl": "https://sketchfab.com/vargov",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/694e93fd792a4ae1b23e94a52c5001f9",
+          "images": [
+            {
+              "size": 625,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/74432462c2e7482fa8705c9d19942fc9.png",
+              "height": 32
+            },
+            {
+              "size": 916,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/c822a82c4bad414194bd11b40f3c089d.png",
+              "height": 48
+            },
+            {
+              "size": 1677,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/f77e222a59574b71ac92c34b1691b902.png",
+              "height": 90
+            },
+            {
+              "size": 1818,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/2826eadef4944b58aab99abe788dce73.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/0598bba697074cc98d7de94cd137cc01"
+      },
+      "description": "Decorative composition. Vargov(R)Design, article LC0001.\n\nA composition about a current. The arc rises at one end, sags in the middle and lifts again; the petals are turned along that line, in layers. Density grows toward the centre and falls toward the ends, where single elements break away and hang alone \u2014 a flock moving as one. The surface is smooth, without texture of any kind: only form and finish are at work. White gloss and polished gold \u2014 two ways of meeting light, and nothing more. By day it is the pure contrast of two surfaces: opaque gloss beside mirrored gold, read through silhouette and highlight. In the evening the gold petals reflect the light and flare into radiant stars, while the white ones diffuse it and stay soft patches. A current in which every second element burns.\nWhere it works\n\nMade to order in any size and colour.\nProduct page: https://vargov.ru/en/catalog/lc0001\nBuild your own composition: https://configurator.vargov.ru\nAll models: https://vargov.ru",
+      "faceCount": 706056,
+      "createdAt": "2026-09-07T14:03:18.765767",
+      "vertexCount": 387558,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 21067248,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 706056,
+          "vertexCount": 393326
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 12784286,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 706056,
+          "vertexCount": 393326
+        },
+        "source": {
+          "textureCount": null,
+          "size": 32398766,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 9623953,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/3f3985671fb24eaa99d19a266e131d42",
+      "uid": "3f3985671fb24eaa99d19a266e131d42",
+      "name": "Decorative composition - Vargov LC0001 #2",
+      "staffpickedAt": null,
+      "viewCount": 0,
+      "likeCount": 0,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-3f3985671fb24eaa99d19a266e131d42",
+      "embedUrl": "https://sketchfab.com/models/3f3985671fb24eaa99d19a266e131d42/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-09-07T14:01:32.444486",
+      "tags": [
+        {
+          "name": "decorative",
+          "slug": "decorative",
+          "uri": "https://api.sketchfab.com/v3/tags/decorative"
+        },
+        {
+          "name": "chandelier",
+          "slug": "chandelier",
+          "uri": "https://api.sketchfab.com/v3/tags/chandelier"
+        },
+        {
+          "name": "decor",
+          "slug": "decor",
+          "uri": "https://api.sketchfab.com/v3/tags/decor"
+        },
+        {
+          "name": "lighting",
+          "slug": "lighting",
+          "uri": "https://api.sketchfab.com/v3/tags/lighting"
+        },
+        {
+          "name": "glass",
+          "slug": "glass",
+          "uri": "https://api.sketchfab.com/v3/tags/glass"
+        },
+        {
+          "name": "design",
+          "slug": "design",
+          "uri": "https://api.sketchfab.com/v3/tags/design"
+        },
+        {
+          "name": "sculpture",
+          "slug": "sculpture",
+          "uri": "https://api.sketchfab.com/v3/tags/sculpture"
+        },
+        {
+          "name": "interior",
+          "slug": "interior",
+          "uri": "https://api.sketchfab.com/v3/tags/interior"
+        },
+        {
+          "name": "light",
+          "slug": "light",
+          "uri": "https://api.sketchfab.com/v3/tags/light"
+        },
+        {
+          "name": "vargov",
+          "slug": "vargov",
+          "uri": "https://api.sketchfab.com/v3/tags/vargov"
+        },
+        {
+          "name": "lc0001",
+          "slug": "lc0001",
+          "uri": "https://api.sketchfab.com/v3/tags/lc0001"
+        }
+      ],
+      "categories": [
+        {
+          "name": "furniture-home"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "f6de8fffb44e456aa40ac1c45e90e858",
+            "size": 53928,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/3f3985671fb24eaa99d19a266e131d42/thumbnails/e9897efd760345a08c2fae34bacdc1e4/7b2f992c4bf44b699163dfc2ae176c0f.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "ef38f8f523f843ffa822673b43cd752c",
+            "size": 16317,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/3f3985671fb24eaa99d19a266e131d42/thumbnails/e9897efd760345a08c2fae34bacdc1e4/1a8f1a464a9742a5967d8431a658ba48.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "3d2aa16b56a44e8d911187a4f8cc2723",
+            "size": 8900,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/3f3985671fb24eaa99d19a266e131d42/thumbnails/e9897efd760345a08c2fae34bacdc1e4/a8818fd9ec354688a47478638bbf7329.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "2ac9115db2634987bd06e7b8ec574797",
+            "size": 1800,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/3f3985671fb24eaa99d19a266e131d42/thumbnails/e9897efd760345a08c2fae34bacdc1e4/20e7475bf26b4efba1a7178052ed6292.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "e9429a7158054c09987eb94b25010932",
+            "size": 771,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/3f3985671fb24eaa99d19a266e131d42/thumbnails/e9897efd760345a08c2fae34bacdc1e4/3e6d686cfa624a4a85cf0e1fed05c269.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "0598bba697074cc98d7de94cd137cc01",
+        "username": "vargov",
+        "displayName": "Vargov\u00aeDesign",
+        "profileUrl": "https://sketchfab.com/vargov",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/694e93fd792a4ae1b23e94a52c5001f9",
+          "images": [
+            {
+              "size": 625,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/74432462c2e7482fa8705c9d19942fc9.png",
+              "height": 32
+            },
+            {
+              "size": 916,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/c822a82c4bad414194bd11b40f3c089d.png",
+              "height": 48
+            },
+            {
+              "size": 1677,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/f77e222a59574b71ac92c34b1691b902.png",
+              "height": 90
+            },
+            {
+              "size": 1818,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/2826eadef4944b58aab99abe788dce73.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/0598bba697074cc98d7de94cd137cc01"
+      },
+      "description": "Decorative composition. Vargov(R)Design, article LC0001.\n\nA composition about a current. The arc rises at one end, sags in the middle and lifts again; the petals are turned along that line, in layers. Density grows toward the centre and falls toward the ends, where single elements break away and hang alone \u2014 a flock moving as one. The surface is smooth, without texture of any kind: only form and finish are at work. White gloss and polished gold \u2014 two ways of meeting light, and nothing more. By day it is the pure contrast of two surfaces: opaque gloss beside mirrored gold, read through silhouette and highlight. In the evening the gold petals reflect the light and flare into radiant stars, while the white ones diffuse it and stay soft patches. A current in which every second element burns.\nWhere it works\n\nMade to order in any size and colour.\nProduct page: https://vargov.ru/en/catalog/lc0001\nBuild your own composition: https://configurator.vargov.ru\nAll models: https://vargov.ru",
+      "faceCount": 649730,
+      "createdAt": "2026-09-07T14:00:56.326338",
+      "vertexCount": 356663,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 16489004,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 649730,
+          "vertexCount": 361883
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 9585397,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 649730,
+          "vertexCount": 361883
+        },
+        "source": {
+          "textureCount": null,
+          "size": 23826778,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 8897199,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/93216ea99b694431bb44927705d16467",
+      "uid": "93216ea99b694431bb44927705d16467",
+      "name": "Decorative composition \u2014 reef - Vargov LC0089 #5",
+      "staffpickedAt": null,
+      "viewCount": 1,
+      "likeCount": 0,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-93216ea99b694431bb44927705d16467",
+      "embedUrl": "https://sketchfab.com/models/93216ea99b694431bb44927705d16467/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-09-07T13:16:50.994679",
+      "tags": [
+        {
+          "name": "fish",
+          "slug": "fish",
+          "uri": "https://api.sketchfab.com/v3/tags/fish"
+        },
+        {
+          "name": "composition",
+          "slug": "composition",
+          "uri": "https://api.sketchfab.com/v3/tags/composition"
+        },
+        {
+          "name": "ocean",
+          "slug": "ocean",
+          "uri": "https://api.sketchfab.com/v3/tags/ocean"
+        },
+        {
+          "name": "decorative",
+          "slug": "decorative",
+          "uri": "https://api.sketchfab.com/v3/tags/decorative"
+        },
+        {
+          "name": "decor",
+          "slug": "decor",
+          "uri": "https://api.sketchfab.com/v3/tags/decor"
+        },
+        {
+          "name": "reef",
+          "slug": "reef",
+          "uri": "https://api.sketchfab.com/v3/tags/reef"
+        },
+        {
+          "name": "lighting",
+          "slug": "lighting",
+          "uri": "https://api.sketchfab.com/v3/tags/lighting"
+        },
+        {
+          "name": "glass",
+          "slug": "glass",
+          "uri": "https://api.sketchfab.com/v3/tags/glass"
+        },
+        {
+          "name": "design",
+          "slug": "design",
+          "uri": "https://api.sketchfab.com/v3/tags/design"
+        },
+        {
+          "name": "sculpture",
+          "slug": "sculpture",
+          "uri": "https://api.sketchfab.com/v3/tags/sculpture"
+        },
+        {
+          "name": "interior",
+          "slug": "interior",
+          "uri": "https://api.sketchfab.com/v3/tags/interior"
+        },
+        {
+          "name": "light",
+          "slug": "light",
+          "uri": "https://api.sketchfab.com/v3/tags/light"
+        },
+        {
+          "name": "vargov",
+          "slug": "vargov",
+          "uri": "https://api.sketchfab.com/v3/tags/vargov"
+        },
+        {
+          "name": "lc0089",
+          "slug": "lc0089",
+          "uri": "https://api.sketchfab.com/v3/tags/lc0089"
+        }
+      ],
+      "categories": [
+        {
+          "name": "furniture-home"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "414e5a8d18bb4600bbd2014bb4f99958",
+            "size": 154099,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/93216ea99b694431bb44927705d16467/thumbnails/23ef650da2ce4cdd83cd0f5cbd3b9675/e6766bc6025740628f56ca483df894aa.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "539c889fee094816a570ba0d483c6762",
+            "size": 44480,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/93216ea99b694431bb44927705d16467/thumbnails/23ef650da2ce4cdd83cd0f5cbd3b9675/6f74081995b14495b0e7998794bc3a71.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "1983efff7ef342ac978f8d1f065a828c",
+            "size": 23514,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/93216ea99b694431bb44927705d16467/thumbnails/23ef650da2ce4cdd83cd0f5cbd3b9675/500b57da214e445c9bab05dfa69ec749.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "883f703e2fe74068a4ad088e874b2fd1",
+            "size": 3811,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/93216ea99b694431bb44927705d16467/thumbnails/23ef650da2ce4cdd83cd0f5cbd3b9675/110be68b16654f7983d9c5aca2b77daa.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "74e680500c0042bebe1fec4cc57d5fb7",
+            "size": 950,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/93216ea99b694431bb44927705d16467/thumbnails/23ef650da2ce4cdd83cd0f5cbd3b9675/8205afef53974c008b1ef9ad36c6cf1c.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "0598bba697074cc98d7de94cd137cc01",
+        "username": "vargov",
+        "displayName": "Vargov\u00aeDesign",
+        "profileUrl": "https://sketchfab.com/vargov",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/694e93fd792a4ae1b23e94a52c5001f9",
+          "images": [
+            {
+              "size": 625,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/74432462c2e7482fa8705c9d19942fc9.png",
+              "height": 32
+            },
+            {
+              "size": 916,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/c822a82c4bad414194bd11b40f3c089d.png",
+              "height": 48
+            },
+            {
+              "size": 1677,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/f77e222a59574b71ac92c34b1691b902.png",
+              "height": 90
+            },
+            {
+              "size": 1818,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/2826eadef4944b58aab99abe788dce73.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/0598bba697074cc98d7de94cd137cc01"
+      },
+      "description": "Decorative composition \u2014 reef, fish. Vargov(R)Design, article LC0089.\n\nA composition about the way soft coral grows. Long curved stems with a swelling at the tip are each turned differently: some hook over, some stay almost straight. This is not ornament but behaviour \u2014 it is how everything living reaches toward light, each shoot on its own. The array is dense, level at the top and deeply sagging below. Among the white mass are a few coral-orange elements, scattered unevenly, like fish in a thicket. By day it is a coral colony \u2014 matte, white, calm, read through silhouette and a few points of colour. In the evening the matte surface diffuses the light and every stem glows along its full length in an even milky tone without flare, while the orange ones fill with dense colour and work as accents. A thicket lit from the depths.\n\nMade to order in any size and colour.\nProduct page: https://vargov.ru/en/catalog/lc0089\nBuild your own composition: https://configurator.vargov.ru\nAll models: https://vargov.ru",
+      "faceCount": 825816,
+      "createdAt": "2026-09-07T13:15:54.929018",
+      "vertexCount": 417552,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 26496988,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 825816,
+          "vertexCount": 518057
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 11736677,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 825816,
+          "vertexCount": 518057
+        },
+        "source": {
+          "textureCount": null,
+          "size": 25934374,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 12662743,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/243543441e034664a96ff46d7260b675",
+      "uid": "243543441e034664a96ff46d7260b675",
+      "name": "Decorative composition \u2014 reef - Vargov LC0089 #4",
+      "staffpickedAt": null,
+      "viewCount": 1,
+      "likeCount": 0,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-243543441e034664a96ff46d7260b675",
+      "embedUrl": "https://sketchfab.com/models/243543441e034664a96ff46d7260b675/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-09-07T13:16:10.213735",
+      "tags": [
+        {
+          "name": "fish",
+          "slug": "fish",
+          "uri": "https://api.sketchfab.com/v3/tags/fish"
+        },
+        {
+          "name": "composition",
+          "slug": "composition",
+          "uri": "https://api.sketchfab.com/v3/tags/composition"
+        },
+        {
+          "name": "ocean",
+          "slug": "ocean",
+          "uri": "https://api.sketchfab.com/v3/tags/ocean"
+        },
+        {
+          "name": "decorative",
+          "slug": "decorative",
+          "uri": "https://api.sketchfab.com/v3/tags/decorative"
+        },
+        {
+          "name": "decor",
+          "slug": "decor",
+          "uri": "https://api.sketchfab.com/v3/tags/decor"
+        },
+        {
+          "name": "reef",
+          "slug": "reef",
+          "uri": "https://api.sketchfab.com/v3/tags/reef"
+        },
+        {
+          "name": "lighting",
+          "slug": "lighting",
+          "uri": "https://api.sketchfab.com/v3/tags/lighting"
+        },
+        {
+          "name": "glass",
+          "slug": "glass",
+          "uri": "https://api.sketchfab.com/v3/tags/glass"
+        },
+        {
+          "name": "design",
+          "slug": "design",
+          "uri": "https://api.sketchfab.com/v3/tags/design"
+        },
+        {
+          "name": "sculpture",
+          "slug": "sculpture",
+          "uri": "https://api.sketchfab.com/v3/tags/sculpture"
+        },
+        {
+          "name": "interior",
+          "slug": "interior",
+          "uri": "https://api.sketchfab.com/v3/tags/interior"
+        },
+        {
+          "name": "light",
+          "slug": "light",
+          "uri": "https://api.sketchfab.com/v3/tags/light"
+        },
+        {
+          "name": "vargov",
+          "slug": "vargov",
+          "uri": "https://api.sketchfab.com/v3/tags/vargov"
+        },
+        {
+          "name": "lc0089",
+          "slug": "lc0089",
+          "uri": "https://api.sketchfab.com/v3/tags/lc0089"
+        }
+      ],
+      "categories": [
+        {
+          "name": "furniture-home"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "415d9be420234d22ac563585ad79943d",
+            "size": 86103,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/243543441e034664a96ff46d7260b675/thumbnails/522e09315b434e4dbfa95d33c4932e25/c02515ae65dd4b91b80d9c955199a96c.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "cffebcb38b4f40c19f21fa9c421bd120",
+            "size": 26874,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/243543441e034664a96ff46d7260b675/thumbnails/522e09315b434e4dbfa95d33c4932e25/94891d6374e2406795c104d1738a87a9.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "d5b03045be1d4071b62be782362cf445",
+            "size": 15118,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/243543441e034664a96ff46d7260b675/thumbnails/522e09315b434e4dbfa95d33c4932e25/4d9489fb24ff44209dc51f7a9447693b.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "759f130d5016416d8933b5c3bf4a3360",
+            "size": 2980,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/243543441e034664a96ff46d7260b675/thumbnails/522e09315b434e4dbfa95d33c4932e25/7190e6592b534f6a84deafd164a007ab.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "de8514848d6e494686c1c169ebc3ce14",
+            "size": 873,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/243543441e034664a96ff46d7260b675/thumbnails/522e09315b434e4dbfa95d33c4932e25/fd337371cbba4016a0c81ce5ae84e778.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "0598bba697074cc98d7de94cd137cc01",
+        "username": "vargov",
+        "displayName": "Vargov\u00aeDesign",
+        "profileUrl": "https://sketchfab.com/vargov",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/694e93fd792a4ae1b23e94a52c5001f9",
+          "images": [
+            {
+              "size": 625,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/74432462c2e7482fa8705c9d19942fc9.png",
+              "height": 32
+            },
+            {
+              "size": 916,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/c822a82c4bad414194bd11b40f3c089d.png",
+              "height": 48
+            },
+            {
+              "size": 1677,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/f77e222a59574b71ac92c34b1691b902.png",
+              "height": 90
+            },
+            {
+              "size": 1818,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/2826eadef4944b58aab99abe788dce73.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/0598bba697074cc98d7de94cd137cc01"
+      },
+      "description": "Decorative composition \u2014 reef, fish. Vargov(R)Design, article LC0089.\n\nA composition about the way soft coral grows. Long curved stems with a swelling at the tip are each turned differently: some hook over, some stay almost straight. This is not ornament but behaviour \u2014 it is how everything living reaches toward light, each shoot on its own. The array is dense, level at the top and deeply sagging below. Among the white mass are a few coral-orange elements, scattered unevenly, like fish in a thicket. By day it is a coral colony \u2014 matte, white, calm, read through silhouette and a few points of colour. In the evening the matte surface diffuses the light and every stem glows along its full length in an even milky tone without flare, while the orange ones fill with dense colour and work as accents. A thicket lit from the depths.\n\nMade to order in any size and colour.\nProduct page: https://vargov.ru/en/catalog/lc0089\nBuild your own composition: https://configurator.vargov.ru\nAll models: https://vargov.ru",
+      "faceCount": 281248,
+      "createdAt": "2026-09-07T13:15:46.548375",
+      "vertexCount": 142226,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 9063452,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 281248,
+          "vertexCount": 177604
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 4065911,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 281248,
+          "vertexCount": 177604
+        },
+        "source": {
+          "textureCount": null,
+          "size": 8874582,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 4305038,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/008b45b4b1d143e094036ce9dd26fe5d",
+      "uid": "008b45b4b1d143e094036ce9dd26fe5d",
+      "name": "Decorative composition \u2014 reef - Vargov LC0089 #3",
+      "staffpickedAt": null,
+      "viewCount": 1,
+      "likeCount": 0,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-008b45b4b1d143e094036ce9dd26fe5d",
+      "embedUrl": "https://sketchfab.com/models/008b45b4b1d143e094036ce9dd26fe5d/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-09-07T13:16:18.968447",
+      "tags": [
+        {
+          "name": "fish",
+          "slug": "fish",
+          "uri": "https://api.sketchfab.com/v3/tags/fish"
+        },
+        {
+          "name": "composition",
+          "slug": "composition",
+          "uri": "https://api.sketchfab.com/v3/tags/composition"
+        },
+        {
+          "name": "ocean",
+          "slug": "ocean",
+          "uri": "https://api.sketchfab.com/v3/tags/ocean"
+        },
+        {
+          "name": "decorative",
+          "slug": "decorative",
+          "uri": "https://api.sketchfab.com/v3/tags/decorative"
+        },
+        {
+          "name": "decor",
+          "slug": "decor",
+          "uri": "https://api.sketchfab.com/v3/tags/decor"
+        },
+        {
+          "name": "reef",
+          "slug": "reef",
+          "uri": "https://api.sketchfab.com/v3/tags/reef"
+        },
+        {
+          "name": "lighting",
+          "slug": "lighting",
+          "uri": "https://api.sketchfab.com/v3/tags/lighting"
+        },
+        {
+          "name": "glass",
+          "slug": "glass",
+          "uri": "https://api.sketchfab.com/v3/tags/glass"
+        },
+        {
+          "name": "design",
+          "slug": "design",
+          "uri": "https://api.sketchfab.com/v3/tags/design"
+        },
+        {
+          "name": "sculpture",
+          "slug": "sculpture",
+          "uri": "https://api.sketchfab.com/v3/tags/sculpture"
+        },
+        {
+          "name": "interior",
+          "slug": "interior",
+          "uri": "https://api.sketchfab.com/v3/tags/interior"
+        },
+        {
+          "name": "light",
+          "slug": "light",
+          "uri": "https://api.sketchfab.com/v3/tags/light"
+        },
+        {
+          "name": "vargov",
+          "slug": "vargov",
+          "uri": "https://api.sketchfab.com/v3/tags/vargov"
+        },
+        {
+          "name": "lc0089",
+          "slug": "lc0089",
+          "uri": "https://api.sketchfab.com/v3/tags/lc0089"
+        }
+      ],
+      "categories": [
+        {
+          "name": "furniture-home"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "beb4b86e7cc94f7d939fd39c5f23fa7a",
+            "size": 133233,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/008b45b4b1d143e094036ce9dd26fe5d/thumbnails/0aed9fdd1a23437a8610484764a414c4/9739b6a92cc54b03aa8ec0c1c372db10.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "bdad58685a5c4aad8937f491a70d46bf",
+            "size": 36745,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/008b45b4b1d143e094036ce9dd26fe5d/thumbnails/0aed9fdd1a23437a8610484764a414c4/022a4e214bfc428191f14142b8a0b351.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "8ad210e6a1e24af386cf98d78f94a1a4",
+            "size": 19496,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/008b45b4b1d143e094036ce9dd26fe5d/thumbnails/0aed9fdd1a23437a8610484764a414c4/c876bdfbec904076b6702289255bfa08.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "0b844e80cbcd493fb46ed41e92b32b25",
+            "size": 3125,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/008b45b4b1d143e094036ce9dd26fe5d/thumbnails/0aed9fdd1a23437a8610484764a414c4/94e9f40732474d649b29058bd328c596.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "3e9873eeaffb49c3a1533c8bed50d645",
+            "size": 868,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/008b45b4b1d143e094036ce9dd26fe5d/thumbnails/0aed9fdd1a23437a8610484764a414c4/da73812055d646d9b618e8428b7a8593.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "0598bba697074cc98d7de94cd137cc01",
+        "username": "vargov",
+        "displayName": "Vargov\u00aeDesign",
+        "profileUrl": "https://sketchfab.com/vargov",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/694e93fd792a4ae1b23e94a52c5001f9",
+          "images": [
+            {
+              "size": 625,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/74432462c2e7482fa8705c9d19942fc9.png",
+              "height": 32
+            },
+            {
+              "size": 916,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/c822a82c4bad414194bd11b40f3c089d.png",
+              "height": 48
+            },
+            {
+              "size": 1677,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/f77e222a59574b71ac92c34b1691b902.png",
+              "height": 90
+            },
+            {
+              "size": 1818,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/2826eadef4944b58aab99abe788dce73.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/0598bba697074cc98d7de94cd137cc01"
+      },
+      "description": "Decorative composition \u2014 reef, fish. Vargov(R)Design, article LC0089.\n\nA composition about the way soft coral grows. Long curved stems with a swelling at the tip are each turned differently: some hook over, some stay almost straight. This is not ornament but behaviour \u2014 it is how everything living reaches toward light, each shoot on its own. The array is dense, level at the top and deeply sagging below. Among the white mass are a few coral-orange elements, scattered unevenly, like fish in a thicket. By day it is a coral colony \u2014 matte, white, calm, read through silhouette and a few points of colour. In the evening the matte surface diffuses the light and every stem glows along its full length in an even milky tone without flare, while the orange ones fill with dense colour and work as accents. A thicket lit from the depths.\n\nMade to order in any size and colour.\nProduct page: https://vargov.ru/en/catalog/lc0089\nBuild your own composition: https://configurator.vargov.ru\nAll models: https://vargov.ru",
+      "faceCount": 1239408,
+      "createdAt": "2026-09-07T13:15:00.367710",
+      "vertexCount": 626751,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 39948312,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 1239408,
+          "vertexCount": 783185
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 17804115,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 1239408,
+          "vertexCount": 783185
+        },
+        "source": {
+          "textureCount": null,
+          "size": 38855750,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 19094464,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/4024310be76e42ff897b51178462dee0",
+      "uid": "4024310be76e42ff897b51178462dee0",
+      "name": "Decorative composition \u2014 reef - Vargov LC0089 #2",
+      "staffpickedAt": null,
+      "viewCount": 0,
+      "likeCount": 0,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-4024310be76e42ff897b51178462dee0",
+      "embedUrl": "https://sketchfab.com/models/4024310be76e42ff897b51178462dee0/embed",
+      "commentCount": 0,
+      "isDownloadable": true,
+      "publishedAt": "2026-09-07T13:15:27.195717",
+      "tags": [
+        {
+          "name": "fish",
+          "slug": "fish",
+          "uri": "https://api.sketchfab.com/v3/tags/fish"
+        },
+        {
+          "name": "composition",
+          "slug": "composition",
+          "uri": "https://api.sketchfab.com/v3/tags/composition"
+        },
+        {
+          "name": "ocean",
+          "slug": "ocean",
+          "uri": "https://api.sketchfab.com/v3/tags/ocean"
+        },
+        {
+          "name": "decorative",
+          "slug": "decorative",
+          "uri": "https://api.sketchfab.com/v3/tags/decorative"
+        },
+        {
+          "name": "decor",
+          "slug": "decor",
+          "uri": "https://api.sketchfab.com/v3/tags/decor"
+        },
+        {
+          "name": "reef",
+          "slug": "reef",
+          "uri": "https://api.sketchfab.com/v3/tags/reef"
+        },
+        {
+          "name": "lighting",
+          "slug": "lighting",
+          "uri": "https://api.sketchfab.com/v3/tags/lighting"
+        },
+        {
+          "name": "glass",
+          "slug": "glass",
+          "uri": "https://api.sketchfab.com/v3/tags/glass"
+        },
+        {
+          "name": "design",
+          "slug": "design",
+          "uri": "https://api.sketchfab.com/v3/tags/design"
+        },
+        {
+          "name": "sculpture",
+          "slug": "sculpture",
+          "uri": "https://api.sketchfab.com/v3/tags/sculpture"
+        },
+        {
+          "name": "interior",
+          "slug": "interior",
+          "uri": "https://api.sketchfab.com/v3/tags/interior"
+        },
+        {
+          "name": "light",
+          "slug": "light",
+          "uri": "https://api.sketchfab.com/v3/tags/light"
+        },
+        {
+          "name": "vargov",
+          "slug": "vargov",
+          "uri": "https://api.sketchfab.com/v3/tags/vargov"
+        },
+        {
+          "name": "lc0089",
+          "slug": "lc0089",
+          "uri": "https://api.sketchfab.com/v3/tags/lc0089"
+        }
+      ],
+      "categories": [
+        {
+          "name": "furniture-home"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "ed360a31923e4d4e8aa2a58d0ba5b499",
+            "size": 132734,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/4024310be76e42ff897b51178462dee0/thumbnails/f0d2dd9f20384881979112eeca70497e/8fdb31f1995741e8a852f2a7891ca214.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "eaffe45028d944ec902ab5c1fe272f38",
+            "size": 39137,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/4024310be76e42ff897b51178462dee0/thumbnails/f0d2dd9f20384881979112eeca70497e/33ff0c7f4e6344b485ddfc56dad902a0.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "1b32d9cd0e104d55bd488878b472d502",
+            "size": 20993,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/4024310be76e42ff897b51178462dee0/thumbnails/f0d2dd9f20384881979112eeca70497e/f11b57ef03d84fbf9c79ca3de15b4576.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "41d102890f874077aa65c91a26e139c3",
+            "size": 3500,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/4024310be76e42ff897b51178462dee0/thumbnails/f0d2dd9f20384881979112eeca70497e/0f0059670eec4d2381c9c0b59606f497.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "2edef27b62b04ba19c7488fe6f0a7473",
+            "size": 881,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/4024310be76e42ff897b51178462dee0/thumbnails/f0d2dd9f20384881979112eeca70497e/f25ef3747b004060b5e84f44a05cc5ea.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "0598bba697074cc98d7de94cd137cc01",
+        "username": "vargov",
+        "displayName": "Vargov\u00aeDesign",
+        "profileUrl": "https://sketchfab.com/vargov",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/694e93fd792a4ae1b23e94a52c5001f9",
+          "images": [
+            {
+              "size": 625,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/74432462c2e7482fa8705c9d19942fc9.png",
+              "height": 32
+            },
+            {
+              "size": 916,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/c822a82c4bad414194bd11b40f3c089d.png",
+              "height": 48
+            },
+            {
+              "size": 1677,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/f77e222a59574b71ac92c34b1691b902.png",
+              "height": 90
+            },
+            {
+              "size": 1818,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/694e93fd792a4ae1b23e94a52c5001f9/2826eadef4944b58aab99abe788dce73.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/0598bba697074cc98d7de94cd137cc01"
+      },
+      "description": "Decorative composition \u2014 reef, fish. Vargov(R)Design, article LC0089.\n\nA composition about the way soft coral grows. Long curved stems with a swelling at the tip are each turned differently: some hook over, some stay almost straight. This is not ornament but behaviour \u2014 it is how everything living reaches toward light, each shoot on its own. The array is dense, level at the top and deeply sagging below. Among the white mass are a few coral-orange elements, scattered unevenly, like fish in a thicket. By day it is a coral colony \u2014 matte, white, calm, read through silhouette and a few points of colour. In the evening the matte surface diffuses the light and every stem glows along its full length in an even milky tone without flare, while the orange ones fill with dense colour and work as accents. A thicket lit from the depths.\n\nMade to order in any size and colour.\nProduct page: https://vargov.ru/en/catalog/lc0089\nBuild your own composition: https://configurator.vargov.ru\nAll models: https://vargov.ru",
+      "faceCount": 479808,
+      "createdAt": "2026-09-07T13:14:50.726639",
+      "vertexCount": 242631,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 15449636,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 479808,
+          "vertexCount": 302661
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 6750401,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 479808,
+          "vertexCount": 302661
+        },
+        "source": {
+          "textureCount": null,
+          "size": 14941010,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 7325938,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    }
+  ]
+}

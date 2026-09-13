@@ -1,0 +1,3343 @@
+{
+  "cursors": {
+    "next": "18",
+    "previous": null
+  },
+  "next": "https://api.sketchfab.com/v3/search?count=18&cursor=18&downloadable=true&q=%22tunnel%22&sort_by=-likeCount&type=models",
+  "previous": null,
+  "results": [
+    {
+      "uri": "https://api.sketchfab.com/v3/models/8fbe12c61ff0407fa74adf81bc8cd706",
+      "uid": "8fbe12c61ff0407fa74adf81bc8cd706",
+      "name": "Leake Street Graffiti Tunnel",
+      "staffpickedAt": null,
+      "viewCount": 62040,
+      "likeCount": 1640,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-8fbe12c61ff0407fa74adf81bc8cd706",
+      "embedUrl": "https://sketchfab.com/models/8fbe12c61ff0407fa74adf81bc8cd706/embed",
+      "commentCount": 53,
+      "isDownloadable": true,
+      "publishedAt": "2020-07-04T11:48:34.456909",
+      "tags": [],
+      "categories": [
+        {
+          "name": "art-abstract"
+        },
+        {
+          "name": "cultural-heritage-history"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "0299c2e4534a4ee4b01f2c1156e21fb6",
+            "size": 478115,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/8fbe12c61ff0407fa74adf81bc8cd706/thumbnails/89a4f16e15b7411e800b2afc408ece33/fb0e463d040d486fae940abecb6a68b1.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "f36f8a8f59ab4d90a82fd174f004b909",
+            "size": 145007,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/8fbe12c61ff0407fa74adf81bc8cd706/thumbnails/89a4f16e15b7411e800b2afc408ece33/bd3725abaf2f420cb408281aea1d4164.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "511d4c7b36284bab82b3448ea40256e2",
+            "size": 79767,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/8fbe12c61ff0407fa74adf81bc8cd706/thumbnails/89a4f16e15b7411e800b2afc408ece33/5df88e8f96de4d59b423a6580b09b676.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "3a6942c0f1464c1fa633b40a2a3fc3ac",
+            "size": 12373,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/8fbe12c61ff0407fa74adf81bc8cd706/thumbnails/89a4f16e15b7411e800b2afc408ece33/d879084baa914ae288bcb50f301e8811.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "00edc66ee6d3417cb8eeb99c30b2b4dd",
+            "size": 1261,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/8fbe12c61ff0407fa74adf81bc8cd706/thumbnails/89a4f16e15b7411e800b2afc408ece33/64098b98b66f4e3da462728ff6ce77cf.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "1c734ba3d55c44b18696db71d7cc0e9e",
+        "username": "artfletch",
+        "displayName": "artfletch",
+        "profileUrl": "https://sketchfab.com/artfletch",
+        "account": "pro",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/18cc9f16e36f4cf58576717fc9853017",
+          "images": [
+            {
+              "size": 821,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/18cc9f16e36f4cf58576717fc9853017/fcb9741be2c34f6580b42ef9c8e79614.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1350,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/18cc9f16e36f4cf58576717fc9853017/549597bc0f6e4affb3989341619740a9.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3597,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/18cc9f16e36f4cf58576717fc9853017/d445e30fe42f48f49e283c3a57da58e0.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4218,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/18cc9f16e36f4cf58576717fc9853017/6fef76d680e04c90936c3bb825e05041.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/1c734ba3d55c44b18696db71d7cc0e9e"
+      },
+      "description": "The tunnel and arches below Waterloo Station, London that are completely coated in graffiti.\n\nThe graffiti began during the Cans Festival organised by Banksy on 3\u20135 May 2008.\n\nhttps://en.wikipedia.org/wiki/Leake_Street\nhttps://www.leakestreetarches.london/\n\n1732 photos taken on 3rd July 2020 with a Sony a6000 and processed in Agisoft Metashape.",
+      "faceCount": 1982663,
+      "createdAt": "2020-07-04T11:38:21.697423",
+      "vertexCount": 991269,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 90789440,
+          "type": "glb",
+          "textureMaxResolution": 8192,
+          "faceCount": 1982663,
+          "vertexCount": 1268948
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 66930629,
+          "type": "gltf",
+          "textureMaxResolution": 8192,
+          "faceCount": 1982663,
+          "vertexCount": 1268948
+        },
+        "source": {
+          "textureCount": null,
+          "size": 49363447,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 50769005,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/4a226cc5bacf4ac59e7c3492619c068b",
+      "uid": "4a226cc5bacf4ac59e7c3492619c068b",
+      "name": "Kannonzaki Battery Historic Site",
+      "staffpickedAt": "2021-06-25T06:38:06.677338",
+      "viewCount": 41081,
+      "likeCount": 1251,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-4a226cc5bacf4ac59e7c3492619c068b",
+      "embedUrl": "https://sketchfab.com/models/4a226cc5bacf4ac59e7c3492619c068b/embed",
+      "commentCount": 22,
+      "isDownloadable": true,
+      "publishedAt": "2021-06-23T11:08:37.074602",
+      "tags": [
+        {
+          "name": "realitycapture",
+          "slug": "realitycapture",
+          "uri": "https://api.sketchfab.com/v3/tags/realitycapture"
+        },
+        {
+          "name": "photogrammetry",
+          "slug": "photogrammetry",
+          "uri": "https://api.sketchfab.com/v3/tags/photogrammetry"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cultural-heritage-history"
+        },
+        {
+          "name": "weapons-military"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "426f7f922cb941989bb8f53651c2bfc4",
+            "size": 698355,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/4a226cc5bacf4ac59e7c3492619c068b/thumbnails/996623520b0e4d9a97a66777f22e76e6/4a15c598713344018dcf8d36dd511e0d.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "c812c3c16d214536aa9bbe4167b17687",
+            "size": 183505,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/4a226cc5bacf4ac59e7c3492619c068b/thumbnails/996623520b0e4d9a97a66777f22e76e6/200da07602814a82a3641687112ef478.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "beaad6e21c0742e1bf7286d12fe70770",
+            "size": 94838,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/4a226cc5bacf4ac59e7c3492619c068b/thumbnails/996623520b0e4d9a97a66777f22e76e6/d50dcdf7acdb40489247001a441a3d25.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "67fc226fc9b04ba0a4344c7f8a31264f",
+            "size": 12784,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/4a226cc5bacf4ac59e7c3492619c068b/thumbnails/996623520b0e4d9a97a66777f22e76e6/c4621270500a4c1c9777172be5244aa1.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "4c6a00afe3964281bce26ac442cfa1bc",
+            "size": 1434,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/4a226cc5bacf4ac59e7c3492619c068b/thumbnails/996623520b0e4d9a97a66777f22e76e6/b64f38898c8a450ab83ac3e09ace5a5c.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "87f0ca11278243b999fab9f8cfbe7c6b",
+        "username": "DuckbillStudio",
+        "displayName": "STUDIO DUCKBILL",
+        "profileUrl": "https://sketchfab.com/DuckbillStudio",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/d179b8fd6de84056a5a88ff651a0410f",
+          "images": [
+            {
+              "size": 2078,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/d179b8fd6de84056a5a88ff651a0410f/60d2b322e5f74f7fa7ac9112c895ef7a.png",
+              "height": 32
+            },
+            {
+              "size": 3659,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/d179b8fd6de84056a5a88ff651a0410f/6ff04a04a04c400eaf815b9673200bf0.png",
+              "height": 48
+            },
+            {
+              "size": 8380,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/d179b8fd6de84056a5a88ff651a0410f/9ab823a030e940eabe3f2914d2998918.png",
+              "height": 90
+            },
+            {
+              "size": 9467,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/d179b8fd6de84056a5a88ff651a0410f/773e16d32ebe45b9bff6b4f258f3b145.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/87f0ca11278243b999fab9f8cfbe7c6b"
+      },
+      "description": "This is a photogrammetry of the remains of the Kannonzaki Battery No. 3 in Yokosuka City, Japan.\nThe site of a gun battery and the brick tunnel remain in Kannonzaki Park.\nTwo howitzers were installed in the mortar-shaped turret.\n\nI attached a 20mm prime lens and a clip-on flash to a Sony A1 on a tripod and took 650 photos. The photos were taken on a lightly cloudy day, and the tunnel lighting and de-lighting the outside of the tunnel was done using flash light.\n\nLocation: https://goo.gl/maps/e15sdJR4pfKpTRvz8",
+      "faceCount": 884095,
+      "createdAt": "2021-06-23T07:04:08.796811",
+      "vertexCount": 818992,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 4,
+          "size": 209232012,
+          "type": "glb",
+          "textureMaxResolution": 8192,
+          "faceCount": 884095,
+          "vertexCount": 1242863
+        },
+        "gltf": {
+          "textureCount": 4,
+          "size": 190640264,
+          "type": "gltf",
+          "textureMaxResolution": 8192,
+          "faceCount": 884095,
+          "vertexCount": 1242863
+        },
+        "source": {
+          "textureCount": null,
+          "size": 110646357,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 49340814,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "34b725081a6a4184957efaec2cb84ed3",
+        "label": "CC Attribution-NonCommercial-NoDerivs"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/46b6647a48c74a05a793875a3baf045a",
+      "uid": "46b6647a48c74a05a793875a3baf045a",
+      "name": "metro tube",
+      "staffpickedAt": null,
+      "viewCount": 34432,
+      "likeCount": 1201,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-46b6647a48c74a05a793875a3baf045a",
+      "embedUrl": "https://sketchfab.com/models/46b6647a48c74a05a793875a3baf045a/embed",
+      "commentCount": 15,
+      "isDownloadable": true,
+      "publishedAt": "2017-04-12T19:07:16.120412",
+      "tags": [
+        {
+          "name": "underground",
+          "slug": "underground",
+          "uri": "https://api.sketchfab.com/v3/tags/underground"
+        },
+        {
+          "name": "post-apocalyptic",
+          "slug": "post-apocalyptic",
+          "uri": "https://api.sketchfab.com/v3/tags/post-apocalyptic"
+        },
+        {
+          "name": "metro",
+          "slug": "metro",
+          "uri": "https://api.sketchfab.com/v3/tags/metro"
+        },
+        {
+          "name": "tube",
+          "slug": "tube",
+          "uri": "https://api.sketchfab.com/v3/tags/tube"
+        },
+        {
+          "name": "tunnel",
+          "slug": "tunnel",
+          "uri": "https://api.sketchfab.com/v3/tags/tunnel"
+        },
+        {
+          "name": "asset",
+          "slug": "asset",
+          "uri": "https://api.sketchfab.com/v3/tags/asset"
+        },
+        {
+          "name": "game",
+          "slug": "game",
+          "uri": "https://api.sketchfab.com/v3/tags/game"
+        },
+        {
+          "name": "substance-painter",
+          "slug": "substance-painter",
+          "uri": "https://api.sketchfab.com/v3/tags/substance-painter"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "464d819a6b5e48039458e00190185a9c",
+            "size": 92316,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/46b6647a48c74a05a793875a3baf045a/thumbnails/4ae279797cbe4780ad9f11b6ad9a2ee5/1024x576.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "9c59146589574580946218c4b37dc02b",
+            "size": 53048,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/46b6647a48c74a05a793875a3baf045a/thumbnails/4ae279797cbe4780ad9f11b6ad9a2ee5/720x405.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "32282a0e24a9453181b8cd0039fb53b7",
+            "size": 9592,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/46b6647a48c74a05a793875a3baf045a/thumbnails/4ae279797cbe4780ad9f11b6ad9a2ee5/256x144.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "7935722dc60546c4868840e4c9589e1e",
+            "size": 1172,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/46b6647a48c74a05a793875a3baf045a/thumbnails/4ae279797cbe4780ad9f11b6ad9a2ee5/64x36.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "37bb1e4010c944dea02bfd33765683fb",
+        "username": "nofaced3d",
+        "displayName": "nofaced3d",
+        "profileUrl": "https://sketchfab.com/nofaced3d",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/51af6a870cce449eb75b0345feebaebb",
+          "images": [
+            {
+              "size": 5719,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/2ef0f894055b4bb69123b2a27fa2d379.jpeg",
+              "height": 90
+            },
+            {
+              "size": 6496,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/ab11eedf96374486acb544f71a23b165.jpeg",
+              "height": 100
+            },
+            {
+              "size": 1359,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/35f6f9b6c9a14a548ce472582d8a9bb5.jpeg",
+              "height": 32
+            },
+            {
+              "size": 2584,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/a8072a51447c4d41ab177b357111b420.jpeg",
+              "height": 48
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/37bb1e4010c944dea02bfd33765683fb"
+      },
+      "description": "",
+      "faceCount": 38276,
+      "createdAt": "2017-04-12T18:43:58.210793",
+      "vertexCount": 24140,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 13,
+          "size": 127217644,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 38276,
+          "vertexCount": 43363
+        },
+        "gltf": {
+          "textureCount": 13,
+          "size": 123825704,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 38276,
+          "vertexCount": 43363
+        },
+        "source": {
+          "textureCount": null,
+          "size": 120294432,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 6568222,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/784358d2b44a43398079770d316b6de7",
+      "uid": "784358d2b44a43398079770d316b6de7",
+      "name": "modular kit city builder starter kit",
+      "staffpickedAt": null,
+      "viewCount": 37370,
+      "likeCount": 1108,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-784358d2b44a43398079770d316b6de7",
+      "embedUrl": "https://sketchfab.com/models/784358d2b44a43398079770d316b6de7/embed",
+      "commentCount": 33,
+      "isDownloadable": true,
+      "publishedAt": "2023-08-29T19:39:54.267354",
+      "tags": [
+        {
+          "name": "kit",
+          "slug": "kit",
+          "uri": "https://api.sketchfab.com/v3/tags/kit"
+        },
+        {
+          "name": "gamedev",
+          "slug": "gamedev",
+          "uri": "https://api.sketchfab.com/v3/tags/gamedev"
+        },
+        {
+          "name": "builder",
+          "slug": "builder",
+          "uri": "https://api.sketchfab.com/v3/tags/builder"
+        },
+        {
+          "name": "game-ready",
+          "slug": "game-ready",
+          "uri": "https://api.sketchfab.com/v3/tags/game-ready"
+        },
+        {
+          "name": "citymodel",
+          "slug": "citymodel",
+          "uri": "https://api.sketchfab.com/v3/tags/citymodel"
+        },
+        {
+          "name": "citybuilder",
+          "slug": "citybuilder",
+          "uri": "https://api.sketchfab.com/v3/tags/citybuilder"
+        },
+        {
+          "name": "modular-construction",
+          "slug": "modular-construction",
+          "uri": "https://api.sketchfab.com/v3/tags/modular-construction"
+        },
+        {
+          "name": "starterkit",
+          "slug": "starterkit",
+          "uri": "https://api.sketchfab.com/v3/tags/starterkit"
+        },
+        {
+          "name": "city-building",
+          "slug": "city-building",
+          "uri": "https://api.sketchfab.com/v3/tags/city-building"
+        },
+        {
+          "name": "modular-assets",
+          "slug": "modular-assets",
+          "uri": "https://api.sketchfab.com/v3/tags/modular-assets"
+        },
+        {
+          "name": "gameasset",
+          "slug": "gameasset",
+          "uri": "https://api.sketchfab.com/v3/tags/gameasset"
+        },
+        {
+          "name": "modular-kit",
+          "slug": "modular-kit",
+          "uri": "https://api.sketchfab.com/v3/tags/modular-kit"
+        },
+        {
+          "name": "gamekit",
+          "slug": "gamekit",
+          "uri": "https://api.sketchfab.com/v3/tags/gamekit"
+        },
+        {
+          "name": "cnstruction",
+          "slug": "cnstruction",
+          "uri": "https://api.sketchfab.com/v3/tags/cnstruction"
+        },
+        {
+          "name": "noai",
+          "slug": "noai",
+          "uri": "https://api.sketchfab.com/v3/tags/noai"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "8cece35c507945fa822620977dbf63f8",
+            "size": 296940,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/784358d2b44a43398079770d316b6de7/thumbnails/a43fb885402a443a855879d2d44f0384/222bdeb555d345b8b2b8feb851b3d94b.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "c13c00c0cc634dcf8ea0dda7993b3a7b",
+            "size": 86237,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/784358d2b44a43398079770d316b6de7/thumbnails/a43fb885402a443a855879d2d44f0384/0d80adce10e541a8a0e3f326c4e0b63c.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "3623a312b42b4b83a3ffd651cabb2b0a",
+            "size": 47385,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/784358d2b44a43398079770d316b6de7/thumbnails/a43fb885402a443a855879d2d44f0384/3d70afc3e1bd4f37bbbd06216ed293d0.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "d5456f43314c475a806f64296ac7da95",
+            "size": 8477,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/784358d2b44a43398079770d316b6de7/thumbnails/a43fb885402a443a855879d2d44f0384/2f016dab56b442768121de9f9c21e2f8.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "78ecd7027c3c4636825f9d0d311f306a",
+            "size": 1335,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/784358d2b44a43398079770d316b6de7/thumbnails/a43fb885402a443a855879d2d44f0384/b8e3f26843e6405181a32480ae9d4760.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "f984102bca594d288c8d011db94fde68",
+        "username": "Badboy17Aiden",
+        "displayName": "Pieter Ferreira",
+        "profileUrl": "https://sketchfab.com/Badboy17Aiden",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/2cb2019a66ae4fb3924104a15dde2158",
+          "images": [
+            {
+              "size": 626,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/2cb2019a66ae4fb3924104a15dde2158/c4e8a1b166cd4dc4b7aeaedf26d0ff34.jpeg",
+              "height": 32
+            },
+            {
+              "size": 927,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/2cb2019a66ae4fb3924104a15dde2158/ebe6f4949de84ff889a1a9d2b2d2958c.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2158,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/2cb2019a66ae4fb3924104a15dde2158/c3a06a0120e64365a8a87ce2bc72fd87.jpeg",
+              "height": 90
+            },
+            {
+              "size": 2556,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/2cb2019a66ae4fb3924104a15dde2158/ec0c0c46a14e40c39d09a57135931e34.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/f984102bca594d288c8d011db94fde68"
+      },
+      "description": "# ****modular kit city builder starter kit\n\nBuild your own city with the new modular kit city builder starter kit. Have fun making cities!\n\nThe kit consist of 321 parts. The starter kit include bridges, roads, highway, tunnels, pillars, road signs, Damaged roads, curved roads, railways, etc. The kit is game ready, The textures is 4096x4096, The kit consist of one material.\n\nPlease leave a like and subsribe for more models coming soon!",
+      "faceCount": 198528,
+      "createdAt": "2023-08-29T19:12:15.527776",
+      "vertexCount": 125203,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 3,
+          "size": 41881820,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 198524,
+          "vertexCount": 247181
+        },
+        "gltf": {
+          "textureCount": 3,
+          "size": 30739180,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 198524,
+          "vertexCount": 247181
+        },
+        "source": {
+          "textureCount": null,
+          "size": 85250059,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 9554046,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/4749ba1722774d3eb101199d51bd39b8",
+      "uid": "4749ba1722774d3eb101199d51bd39b8",
+      "name": "Futatsugoya Tunnel \u201cAbandoned road\u201d japan",
+      "staffpickedAt": "2020-04-29T15:30:17.486744",
+      "viewCount": 64409,
+      "likeCount": 1043,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-4749ba1722774d3eb101199d51bd39b8",
+      "embedUrl": "https://sketchfab.com/models/4749ba1722774d3eb101199d51bd39b8/embed",
+      "commentCount": 38,
+      "isDownloadable": true,
+      "publishedAt": "2020-04-27T15:02:12.407674",
+      "tags": [
+        {
+          "name": "abandoned",
+          "slug": "abandoned",
+          "uri": "https://api.sketchfab.com/v3/tags/abandoned"
+        },
+        {
+          "name": "japan",
+          "slug": "japan",
+          "uri": "https://api.sketchfab.com/v3/tags/japan"
+        },
+        {
+          "name": "road",
+          "slug": "road",
+          "uri": "https://api.sketchfab.com/v3/tags/road"
+        },
+        {
+          "name": "heritage",
+          "slug": "heritage",
+          "uri": "https://api.sketchfab.com/v3/tags/heritage"
+        },
+        {
+          "name": "old",
+          "slug": "old",
+          "uri": "https://api.sketchfab.com/v3/tags/old"
+        },
+        {
+          "name": "fukushima",
+          "slug": "fukushima",
+          "uri": "https://api.sketchfab.com/v3/tags/fukushima"
+        },
+        {
+          "name": "tunnel",
+          "slug": "tunnel",
+          "uri": "https://api.sketchfab.com/v3/tags/tunnel"
+        },
+        {
+          "name": "heritage-photogrammetry",
+          "slug": "heritage-photogrammetry",
+          "uri": "https://api.sketchfab.com/v3/tags/heritage-photogrammetry"
+        },
+        {
+          "name": "photoscan",
+          "slug": "photoscan",
+          "uri": "https://api.sketchfab.com/v3/tags/photoscan"
+        },
+        {
+          "name": "realitycapture",
+          "slug": "realitycapture",
+          "uri": "https://api.sketchfab.com/v3/tags/realitycapture"
+        },
+        {
+          "name": "photogrammetry",
+          "slug": "photogrammetry",
+          "uri": "https://api.sketchfab.com/v3/tags/photogrammetry"
+        },
+        {
+          "name": "scan",
+          "slug": "scan",
+          "uri": "https://api.sketchfab.com/v3/tags/scan"
+        },
+        {
+          "name": "construction",
+          "slug": "construction",
+          "uri": "https://api.sketchfab.com/v3/tags/construction"
+        },
+        {
+          "name": "history",
+          "slug": "history",
+          "uri": "https://api.sketchfab.com/v3/tags/history"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        },
+        {
+          "name": "cultural-heritage-history"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "6eebb81875fb41cd80a9ec2eb901f69e",
+            "size": 750722,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/4749ba1722774d3eb101199d51bd39b8/thumbnails/2495ca0130e145a78e3b967bf30d1ad7/2dd3876e98dd40c5a4ba55ac91a78345.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "db31a6a1c8664daca126bcfe22408b2a",
+            "size": 201514,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/4749ba1722774d3eb101199d51bd39b8/thumbnails/2495ca0130e145a78e3b967bf30d1ad7/7f7ad0de54254afdbd7dedeeed01c9ae.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "37732c3c7697476a9edbe1d14fdf3b22",
+            "size": 101382,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/4749ba1722774d3eb101199d51bd39b8/thumbnails/2495ca0130e145a78e3b967bf30d1ad7/decb7e6e2c4e4e15ac3ee3a4eb100f58.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "1363fe3df04a4e50bf08363cad80ec0b",
+            "size": 12435,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/4749ba1722774d3eb101199d51bd39b8/thumbnails/2495ca0130e145a78e3b967bf30d1ad7/7da70a32535449d59601ec601ff6f0b7.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "cef1947d56bb4be2b0363a90fbbf3b5e",
+            "size": 1204,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/4749ba1722774d3eb101199d51bd39b8/thumbnails/2495ca0130e145a78e3b967bf30d1ad7/3b382491391a42628c8d4c2e2d59089b.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "981f1212aefe431687438f6d11c0c757",
+        "username": "fujisan",
+        "displayName": "Fujihiko Matsumoto",
+        "profileUrl": "https://sketchfab.com/fujisan",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/5d9a312203544fc8a1bbf43384bc1c2d",
+          "images": [
+            {
+              "size": 670,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/5d9a312203544fc8a1bbf43384bc1c2d/665450b6c241408ba9ca37ae0f1580b6.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1068,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/5d9a312203544fc8a1bbf43384bc1c2d/5095f61dc16c442bbb0ca059019cfe6d.jpeg",
+              "height": 48
+            },
+            {
+              "size": 2685,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/5d9a312203544fc8a1bbf43384bc1c2d/e85ff0a2160e4e8c9235bbfb055866eb.jpeg",
+              "height": 90
+            },
+            {
+              "size": 3166,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/5d9a312203544fc8a1bbf43384bc1c2d/8149369d5af545d1aa512e712d01b4a6.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/981f1212aefe431687438f6d11c0c757"
+      },
+      "description": "# \u571f\u6728\u5b66\u4f1a\u9078\u5968\u571f\u6728\u907a\u7523\u3000\u4e07\u4e16\u5927\u8def(\u4e8c\u30c4\u5c0f\u5c4b\u96a7\u9053)\n# Japan Society of Civil Engineers Heritage\nThe road which connects Fukushima city, Fukushima prefecture to Yonezawa city, Yamagata prefecture was opened in 1881(\u660e\u6cbb14\u5e74) and named after \u201cBanseitairo  Road\u201d by the Emperor Meiji.Futatsugoya Tunnel is one of the two tunnels which are located in Banseitairo  Road. It was taken expansion work to motor vehicles can go through in 1934(\u662d\u548c9\u5e74). In 1966(\u662d\u548c41\u5e74), an another tunnel was opened at new place to they can go through if it has heavy snow and Banseitairo Road became the \u201cAbandoned road\u201d after finished its role.  \n\n![Image from Gyazo](https://i.gyazo.com/6fee71412c237d0e8fdfa281128ac31a.jpg)  \n\n\n3D digitizing methods : Photogrammetry  \nSoftware : Reality Capture  \nEquipment : Nikon D750,NIKKOR 16-35mm f/4G,SB-910  \nImages:  1916 photos  \nDate : Apr. 2020",
+      "faceCount": 392594,
+      "createdAt": "2020-04-25T11:12:50.954331",
+      "vertexCount": 331277,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 12,
+          "size": 98407604,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 392594,
+          "vertexCount": 392897
+        },
+        "gltf": {
+          "textureCount": 12,
+          "size": 94178095,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 392594,
+          "vertexCount": 392897
+        },
+        "source": {
+          "textureCount": null,
+          "size": 93273405,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 18197809,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/22cd27eafed24b4ca48155ba37fb8c40",
+      "uid": "22cd27eafed24b4ca48155ba37fb8c40",
+      "name": "Braithwaite Street Tunnel",
+      "staffpickedAt": null,
+      "viewCount": 36177,
+      "likeCount": 960,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-22cd27eafed24b4ca48155ba37fb8c40",
+      "embedUrl": "https://sketchfab.com/models/22cd27eafed24b4ca48155ba37fb8c40/embed",
+      "commentCount": 15,
+      "isDownloadable": true,
+      "publishedAt": "2020-10-14T15:17:17.454631",
+      "tags": [],
+      "categories": [
+        {
+          "name": "art-abstract"
+        },
+        {
+          "name": "cultural-heritage-history"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "b8c814e6ed374e17ba5a6f8aba1a87a3",
+            "size": 548701,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/22cd27eafed24b4ca48155ba37fb8c40/thumbnails/c1ad1b4a1e0b418688835fdd5d040ec3/69d90cd4d99a491e920418ab62020446.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "0f096082444949d391edd95966ddcacf",
+            "size": 159104,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/22cd27eafed24b4ca48155ba37fb8c40/thumbnails/c1ad1b4a1e0b418688835fdd5d040ec3/74b232ae07b64d7ca77795a658f287c5.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "d8985ac7ebbd4589b65e77ea3221ceed",
+            "size": 85280,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/22cd27eafed24b4ca48155ba37fb8c40/thumbnails/c1ad1b4a1e0b418688835fdd5d040ec3/f36db4182d03414288c76b54eab4ede7.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "22ffb1417f234a389717ea14258dc513",
+            "size": 12278,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/22cd27eafed24b4ca48155ba37fb8c40/thumbnails/c1ad1b4a1e0b418688835fdd5d040ec3/348b99b73d1e4050b57149b5265a8b06.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "9b9ef14ae3b44a71a534f1ca9b9b1617",
+            "size": 1203,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/22cd27eafed24b4ca48155ba37fb8c40/thumbnails/c1ad1b4a1e0b418688835fdd5d040ec3/63db0753b75b4819be944ecad9ce2208.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "1c734ba3d55c44b18696db71d7cc0e9e",
+        "username": "artfletch",
+        "displayName": "artfletch",
+        "profileUrl": "https://sketchfab.com/artfletch",
+        "account": "pro",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/18cc9f16e36f4cf58576717fc9853017",
+          "images": [
+            {
+              "size": 821,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/18cc9f16e36f4cf58576717fc9853017/fcb9741be2c34f6580b42ef9c8e79614.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1350,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/18cc9f16e36f4cf58576717fc9853017/549597bc0f6e4affb3989341619740a9.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3597,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/18cc9f16e36f4cf58576717fc9853017/d445e30fe42f48f49e283c3a57da58e0.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4218,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/18cc9f16e36f4cf58576717fc9853017/6fef76d680e04c90936c3bb825e05041.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/1c734ba3d55c44b18696db71d7cc0e9e"
+      },
+      "description": "A railway bridge tunnel by Shoreditch High Street Station that is decorated with graffiti and street art. \n\n2211 photos taken in October 2020 with a Sony a6000 and processed in Agisoft Metashape.",
+      "faceCount": 1427560,
+      "createdAt": "2020-10-14T15:11:06.065726",
+      "vertexCount": 716867,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 71039328,
+          "type": "glb",
+          "textureMaxResolution": 8192,
+          "faceCount": 1427560,
+          "vertexCount": 953768
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 53104732,
+          "type": "gltf",
+          "textureMaxResolution": 8192,
+          "faceCount": 1427560,
+          "vertexCount": 953768
+        },
+        "source": {
+          "textureCount": null,
+          "size": 40954896,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 38556166,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/7733bbe1ddd146fd8657272f8247a6bf",
+      "uid": "7733bbe1ddd146fd8657272f8247a6bf",
+      "name": "Sci-fi Spaceship Corridor",
+      "staffpickedAt": null,
+      "viewCount": 31423,
+      "likeCount": 838,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-7733bbe1ddd146fd8657272f8247a6bf",
+      "embedUrl": "https://sketchfab.com/models/7733bbe1ddd146fd8657272f8247a6bf/embed",
+      "commentCount": 10,
+      "isDownloadable": true,
+      "publishedAt": "2022-04-20T05:17:38.183790",
+      "tags": [
+        {
+          "name": "corridor",
+          "slug": "corridor",
+          "uri": "https://api.sketchfab.com/v3/tags/corridor"
+        },
+        {
+          "name": "tunnel",
+          "slug": "tunnel",
+          "uri": "https://api.sketchfab.com/v3/tags/tunnel"
+        },
+        {
+          "name": "sci-fi",
+          "slug": "sci-fi",
+          "uri": "https://api.sketchfab.com/v3/tags/sci-fi"
+        },
+        {
+          "name": "space",
+          "slug": "space",
+          "uri": "https://api.sketchfab.com/v3/tags/space"
+        },
+        {
+          "name": "spaceship",
+          "slug": "spaceship",
+          "uri": "https://api.sketchfab.com/v3/tags/spaceship"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        },
+        {
+          "name": "science-technology"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "bd2a6158bdb74d29b26056c428f23750",
+            "size": 328874,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/7733bbe1ddd146fd8657272f8247a6bf/thumbnails/86408d6cfbec45878c5ed274da1d51ab/259635aa07dd48938db9ca3ba8f5d427.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "cf9574d3f5ec4ea4a94c79f018340909",
+            "size": 95329,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/7733bbe1ddd146fd8657272f8247a6bf/thumbnails/86408d6cfbec45878c5ed274da1d51ab/ab764ca8e43444249150f103a2637bed.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "dc20b44e92e549d3bbdf5653b36fd8b7",
+            "size": 54675,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/7733bbe1ddd146fd8657272f8247a6bf/thumbnails/86408d6cfbec45878c5ed274da1d51ab/e3f855e07aee45cea6b076a8ea59cecd.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "d817b9a95b9e4bebb57128b450f6f322",
+            "size": 10439,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/7733bbe1ddd146fd8657272f8247a6bf/thumbnails/86408d6cfbec45878c5ed274da1d51ab/1b1cafab136a4f8097b40bd9e00c098a.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "58c5821b616b4c6dac8c18401e2a09be",
+            "size": 1612,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/7733bbe1ddd146fd8657272f8247a6bf/thumbnails/86408d6cfbec45878c5ed274da1d51ab/f083a6da8799463e837a984ea95a0a0b.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "8dd1616f276a4e3db39f2eb4ea479f60",
+        "username": "J4747",
+        "displayName": "J4747",
+        "profileUrl": "https://sketchfab.com/J4747",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/5dd6f8c045574e88af7b953bb70b3a36",
+          "images": [
+            {
+              "size": 1117,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/5dd6f8c045574e88af7b953bb70b3a36/8f3cac7415fa4fa58a5c8b6fa8dbb130.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1701,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/5dd6f8c045574e88af7b953bb70b3a36/d71b6add39684217ad82e8975e37ce58.jpeg",
+              "height": 48
+            },
+            {
+              "size": 4157,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/5dd6f8c045574e88af7b953bb70b3a36/4e769a44dfd84922bfdc637bfa214a1c.jpeg",
+              "height": 90
+            },
+            {
+              "size": 1117,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/5dd6f8c045574e88af7b953bb70b3a36/8d1bb7f085504e91af1bec5d9c30ea98.jpeg",
+              "height": 32
+            },
+            {
+              "size": 4885,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/5dd6f8c045574e88af7b953bb70b3a36/c9080e10df994d7bbbe80561b26b5718.jpeg",
+              "height": 100
+            },
+            {
+              "size": 1701,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/5dd6f8c045574e88af7b953bb70b3a36/09e4db05c317473481473404d7bae8e9.jpeg",
+              "height": 48
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/8dd1616f276a4e3db39f2eb4ea479f60"
+      },
+      "description": "Sci-fi Spaceship Corridor",
+      "faceCount": 102096,
+      "createdAt": "2022-04-19T18:23:51.764831",
+      "vertexCount": 50689,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 9138904,
+          "type": "glb",
+          "textureMaxResolution": 8192,
+          "faceCount": 101916,
+          "vertexCount": 142406
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 3304957,
+          "type": "gltf",
+          "textureMaxResolution": 8192,
+          "faceCount": 101916,
+          "vertexCount": 142406
+        },
+        "source": {
+          "textureCount": null,
+          "size": 4855125,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 4601878,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/e9c1824a218d4befaa6acef9a2a64ce0",
+      "uid": "e9c1824a218d4befaa6acef9a2a64ce0",
+      "name": "Betsey Trotwood Pub",
+      "staffpickedAt": null,
+      "viewCount": 21150,
+      "likeCount": 779,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-e9c1824a218d4befaa6acef9a2a64ce0",
+      "embedUrl": "https://sketchfab.com/models/e9c1824a218d4befaa6acef9a2a64ce0/embed",
+      "commentCount": 16,
+      "isDownloadable": true,
+      "publishedAt": "2020-07-21T13:20:13.346361",
+      "tags": [],
+      "categories": [
+        {
+          "name": "architecture"
+        },
+        {
+          "name": "cultural-heritage-history"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "688b7c6e28014197bcfa40070fd35123",
+            "size": 193697,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/e9c1824a218d4befaa6acef9a2a64ce0/thumbnails/4fb5d9495e43488fae1cb9d44319cb24/0b7350041d9c486fbfdc8f2b2c570480.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "07f2514d4bf0496b903776f87a9aa855",
+            "size": 57140,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/e9c1824a218d4befaa6acef9a2a64ce0/thumbnails/4fb5d9495e43488fae1cb9d44319cb24/2546c125c36c413bb074d18f2095dcd5.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "bca5e716d1db4959bce36289611aa81a",
+            "size": 31445,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/e9c1824a218d4befaa6acef9a2a64ce0/thumbnails/4fb5d9495e43488fae1cb9d44319cb24/81ddbe0cc47c4acabc23f115a8bc3cf6.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "82d68d537e894833b753bb8f032f6997",
+            "size": 5787,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/e9c1824a218d4befaa6acef9a2a64ce0/thumbnails/4fb5d9495e43488fae1cb9d44319cb24/71d633623a8144c39195cb62211a0c04.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "86b767cf607a4966831639d727c396e2",
+            "size": 947,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/e9c1824a218d4befaa6acef9a2a64ce0/thumbnails/4fb5d9495e43488fae1cb9d44319cb24/6a08f0df2d6345b798b1facbc0dbe252.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "1c734ba3d55c44b18696db71d7cc0e9e",
+        "username": "artfletch",
+        "displayName": "artfletch",
+        "profileUrl": "https://sketchfab.com/artfletch",
+        "account": "pro",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/18cc9f16e36f4cf58576717fc9853017",
+          "images": [
+            {
+              "size": 821,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/18cc9f16e36f4cf58576717fc9853017/fcb9741be2c34f6580b42ef9c8e79614.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1350,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/18cc9f16e36f4cf58576717fc9853017/549597bc0f6e4affb3989341619740a9.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3597,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/18cc9f16e36f4cf58576717fc9853017/d445e30fe42f48f49e283c3a57da58e0.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4218,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/18cc9f16e36f4cf58576717fc9853017/6fef76d680e04c90936c3bb825e05041.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/1c734ba3d55c44b18696db71d7cc0e9e"
+      },
+      "description": "The Betsey Trotwood pub on the corner of Farringdon Road and Farringdon Lane, London.\n\nThe pub is named after the character from David Copperfield by Charles Dickens. Betsey is David's Great Aunt and present at his birth.\n\nThe pub is particular interesting as it sits directly over the 'cut and cover' tunnel of the Metropolitan London Undeground line as well as (partly over) the lower tunnel of the Thameslink railway.\n\nDate: 1865\n\nhttps://www.betsey.pub/\n\n624 photos taken in July 2020 with a Sony a6000 and processed in Reality Capture.\nThe roof area texture has been largely repainted due to photos being taken from ground level.",
+      "faceCount": 1363302,
+      "createdAt": "2020-07-21T13:12:00.450368",
+      "vertexCount": 681335,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 69352704,
+          "type": "glb",
+          "textureMaxResolution": 8192,
+          "faceCount": 1363286,
+          "vertexCount": 1177880
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 48999927,
+          "type": "gltf",
+          "textureMaxResolution": 8192,
+          "faceCount": 1363286,
+          "vertexCount": 1177880
+        },
+        "source": {
+          "textureCount": null,
+          "size": 32102026,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 44646143,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/81a79d29815246a58b9e1dbad5bd5b37",
+      "uid": "81a79d29815246a58b9e1dbad5bd5b37",
+      "name": "( FREE ) Lamborghini Terzo Millennio Wind tunnel",
+      "staffpickedAt": null,
+      "viewCount": 35063,
+      "likeCount": 707,
+      "animationCount": 2,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-81a79d29815246a58b9e1dbad5bd5b37",
+      "embedUrl": "https://sketchfab.com/models/81a79d29815246a58b9e1dbad5bd5b37/embed",
+      "commentCount": 12,
+      "isDownloadable": true,
+      "publishedAt": "2021-01-24T14:36:33.305585",
+      "tags": [
+        {
+          "name": "fiction",
+          "slug": "fiction",
+          "uri": "https://api.sketchfab.com/v3/tags/fiction"
+        },
+        {
+          "name": "studio",
+          "slug": "studio",
+          "uri": "https://api.sketchfab.com/v3/tags/studio"
+        },
+        {
+          "name": "lamborghini",
+          "slug": "lamborghini",
+          "uri": "https://api.sketchfab.com/v3/tags/lamborghini"
+        },
+        {
+          "name": "sound",
+          "slug": "sound",
+          "uri": "https://api.sketchfab.com/v3/tags/sound"
+        },
+        {
+          "name": "9",
+          "slug": "9",
+          "uri": "https://api.sketchfab.com/v3/tags/9"
+        },
+        {
+          "name": "cyberpunk",
+          "slug": "cyberpunk",
+          "uri": "https://api.sketchfab.com/v3/tags/cyberpunk"
+        },
+        {
+          "name": "futur",
+          "slug": "futur",
+          "uri": "https://api.sketchfab.com/v3/tags/futur"
+        },
+        {
+          "name": "supercar",
+          "slug": "supercar",
+          "uri": "https://api.sketchfab.com/v3/tags/supercar"
+        },
+        {
+          "name": "vr",
+          "slug": "vr",
+          "uri": "https://api.sketchfab.com/v3/tags/vr"
+        },
+        {
+          "name": "carbon",
+          "slug": "carbon",
+          "uri": "https://api.sketchfab.com/v3/tags/carbon"
+        },
+        {
+          "name": "science",
+          "slug": "science",
+          "uri": "https://api.sketchfab.com/v3/tags/science"
+        },
+        {
+          "name": "anim",
+          "slug": "anim",
+          "uri": "https://api.sketchfab.com/v3/tags/anim"
+        },
+        {
+          "name": "lambo",
+          "slug": "lambo",
+          "uri": "https://api.sketchfab.com/v3/tags/lambo"
+        },
+        {
+          "name": "hypercar",
+          "slug": "hypercar",
+          "uri": "https://api.sketchfab.com/v3/tags/hypercar"
+        },
+        {
+          "name": "technologie",
+          "slug": "technologie",
+          "uri": "https://api.sketchfab.com/v3/tags/technologie"
+        },
+        {
+          "name": "3000",
+          "slug": "3000",
+          "uri": "https://api.sketchfab.com/v3/tags/3000"
+        },
+        {
+          "name": "dowload",
+          "slug": "dowload",
+          "uri": "https://api.sketchfab.com/v3/tags/dowload"
+        },
+        {
+          "name": "asphalt",
+          "slug": "asphalt",
+          "uri": "https://api.sketchfab.com/v3/tags/asphalt"
+        },
+        {
+          "name": "terzo",
+          "slug": "terzo",
+          "uri": "https://api.sketchfab.com/v3/tags/terzo"
+        },
+        {
+          "name": "millennio",
+          "slug": "millennio",
+          "uri": "https://api.sketchfab.com/v3/tags/millennio"
+        },
+        {
+          "name": "game",
+          "slug": "game",
+          "uri": "https://api.sketchfab.com/v3/tags/game"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "poly",
+          "slug": "poly",
+          "uri": "https://api.sketchfab.com/v3/tags/poly"
+        },
+        {
+          "name": "car",
+          "slug": "car",
+          "uri": "https://api.sketchfab.com/v3/tags/car"
+        },
+        {
+          "name": "animation",
+          "slug": "animation",
+          "uri": "https://api.sketchfab.com/v3/tags/animation"
+        },
+        {
+          "name": "free",
+          "slug": "free",
+          "uri": "https://api.sketchfab.com/v3/tags/free"
+        },
+        {
+          "name": "sport",
+          "slug": "sport",
+          "uri": "https://api.sketchfab.com/v3/tags/sport"
+        },
+        {
+          "name": "electric",
+          "slug": "electric",
+          "uri": "https://api.sketchfab.com/v3/tags/electric"
+        },
+        {
+          "name": "race",
+          "slug": "race",
+          "uri": "https://api.sketchfab.com/v3/tags/race"
+        },
+        {
+          "name": "milenio",
+          "slug": "milenio",
+          "uri": "https://api.sketchfab.com/v3/tags/milenio"
+        },
+        {
+          "name": "terzor",
+          "slug": "terzor",
+          "uri": "https://api.sketchfab.com/v3/tags/terzor"
+        }
+      ],
+      "categories": [
+        {
+          "name": "cars-vehicles"
+        },
+        {
+          "name": "science-technology"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "3897b3ef95984700b2adaf3b8434e816",
+            "size": 346513,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/81a79d29815246a58b9e1dbad5bd5b37/thumbnails/b405f88a43564f89b4992dd10f904bc4/80ef1ec3bf654cb792b2bd7d904048cd.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "31191d9b07724cd4a941e2cfdd53fea2",
+            "size": 56667,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/81a79d29815246a58b9e1dbad5bd5b37/thumbnails/b405f88a43564f89b4992dd10f904bc4/6575a1b215fe4fa5874a686c00dbfdfe.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "5ee3c85f04ff4248a534af9e40fb7d9c",
+            "size": 30231,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/81a79d29815246a58b9e1dbad5bd5b37/thumbnails/b405f88a43564f89b4992dd10f904bc4/cff7698e49484c2681e0f3a33da5456e.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "4e1f4f5b9fcf4773928f03c30a1872f3",
+            "size": 6242,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/81a79d29815246a58b9e1dbad5bd5b37/thumbnails/b405f88a43564f89b4992dd10f904bc4/a06a8959e67841468f67874877c6bf4d.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "367166aa7e484e2e864740b9dac5f2c6",
+            "size": 1305,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/81a79d29815246a58b9e1dbad5bd5b37/thumbnails/b405f88a43564f89b4992dd10f904bc4/978e940783a4420282fcb6af4397c79a.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "0eac470f764b42dca8e90f95d9a1d5e0",
+        "username": "Lambo_SC04",
+        "displayName": "SDC PERFORMANCE\u2122\ufe0f",
+        "profileUrl": "https://sketchfab.com/Lambo_SC04",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/b1ea2f74ae18478793b561f11d30fe9d",
+          "images": [
+            {
+              "size": 970,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/b1ea2f74ae18478793b561f11d30fe9d/752f2c4f6ebc49f4bc4c461b0d56ee8f.png",
+              "height": 32
+            },
+            {
+              "size": 1431,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/b1ea2f74ae18478793b561f11d30fe9d/8dc15fd51e784ecf921fb282d544426d.png",
+              "height": 48
+            },
+            {
+              "size": 2532,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/b1ea2f74ae18478793b561f11d30fe9d/dc6011f09ee641eab3be2a285252a1ec.png",
+              "height": 90
+            },
+            {
+              "size": 2801,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/b1ea2f74ae18478793b561f11d30fe9d/79536a6667dd47f68dee71f0874cc72e.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/0eac470f764b42dca8e90f95d9a1d5e0"
+      },
+      "description": "**Lamborghini Terzo Millennio (Wind tunnel) + Animation+Sound**\n\n*The Lamborghini Terzo Millennio is a concept car under development, invented by Lamborghini, it adopts a carbon fiber body, which is able to store electricity (to replace the batteries and reduce the weight).*\n\nThe model was modeled with a wind tunnel, (which is used to study aerodynamics) the whole was inspired by a photo taken by Lamborghini, in the studio.\n\n**Everything was done on Blender 2.9, download and free and royalty free;)**\n\n\nNB: the rendering displayed on your screen (on sketchfab) may be different from that of Blender, I spent more time on that of Sketchfab.",
+      "faceCount": 300994,
+      "createdAt": "2021-01-24T14:00:31.831975",
+      "vertexCount": 161612,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 3,
+          "size": 15040040,
+          "type": "glb",
+          "textureMaxResolution": 4096,
+          "faceCount": 300989,
+          "vertexCount": 214922
+        },
+        "gltf": {
+          "textureCount": 3,
+          "size": 9384946,
+          "type": "gltf",
+          "textureMaxResolution": 4096,
+          "faceCount": 300989,
+          "vertexCount": 214922
+        },
+        "source": {
+          "textureCount": null,
+          "size": 41654112,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 10029849,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/d4af744ae72d4eaa9dd9ddf8a8addfb0",
+      "uid": "d4af744ae72d4eaa9dd9ddf8a8addfb0",
+      "name": "Tunnel",
+      "staffpickedAt": null,
+      "viewCount": 23714,
+      "likeCount": 591,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-d4af744ae72d4eaa9dd9ddf8a8addfb0",
+      "embedUrl": "https://sketchfab.com/models/d4af744ae72d4eaa9dd9ddf8a8addfb0/embed",
+      "commentCount": 5,
+      "isDownloadable": true,
+      "publishedAt": "2019-12-08T16:43:51.959032",
+      "tags": [
+        {
+          "name": "tunnel",
+          "slug": "tunnel",
+          "uri": "https://api.sketchfab.com/v3/tags/tunnel"
+        },
+        {
+          "name": "3december",
+          "slug": "3december",
+          "uri": "https://api.sketchfab.com/v3/tags/3december"
+        },
+        {
+          "name": "3december2019",
+          "slug": "3december2019",
+          "uri": "https://api.sketchfab.com/v3/tags/3december2019"
+        },
+        {
+          "name": "3december2019-city",
+          "slug": "3december2019-city",
+          "uri": "https://api.sketchfab.com/v3/tags/3december2019-city"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "86a07af19a4148f2b67c6627d2847c72",
+            "size": 301223,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/d4af744ae72d4eaa9dd9ddf8a8addfb0/thumbnails/b296c65487f047ca932db5a7ba2ee328/5080f7a47f954fb081ae82dacb9fdc35.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "09e923fe9ec244d8ba88eb5c2a004b52",
+            "size": 85217,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/d4af744ae72d4eaa9dd9ddf8a8addfb0/thumbnails/b296c65487f047ca932db5a7ba2ee328/aa4ebe7063e846fa93643cd1316d0872.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "a51342293ddb4cd48e9a7f42b28c37c3",
+            "size": 45666,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/d4af744ae72d4eaa9dd9ddf8a8addfb0/thumbnails/b296c65487f047ca932db5a7ba2ee328/c453c7322db0473f8d2a36e0b6599dba.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "8467ba6f513d4f6e9a1c7ff306bf7a4c",
+            "size": 6931,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/d4af744ae72d4eaa9dd9ddf8a8addfb0/thumbnails/b296c65487f047ca932db5a7ba2ee328/01cf81c965d54c429189ede309e204ac.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "777d08c7fdf34bb98f44777b0070214c",
+            "size": 873,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/d4af744ae72d4eaa9dd9ddf8a8addfb0/thumbnails/b296c65487f047ca932db5a7ba2ee328/fde7c5ab684144e0ace949435a130843.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "521107031e804604be2227dda58e97ba",
+        "username": "helsingr",
+        "displayName": "Helsingr",
+        "profileUrl": "https://sketchfab.com/helsingr",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/199a5526b768410f9e9ae222126f2280",
+          "images": [
+            {
+              "size": 881,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/199a5526b768410f9e9ae222126f2280/0787e9f581f945d897c78a4421dd4b6d.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1492,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/199a5526b768410f9e9ae222126f2280/6fb6d1a28e9846019749e60ac95641f9.jpeg",
+              "height": 48
+            },
+            {
+              "size": 4286,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/199a5526b768410f9e9ae222126f2280/9dc10c5e66ae4ba2b62a6562e79c46cd.jpeg",
+              "height": 90
+            },
+            {
+              "size": 5057,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/199a5526b768410f9e9ae222126f2280/fc83e9575b45440bb87fc084e82f81b3.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/521107031e804604be2227dda58e97ba"
+      },
+      "description": "Utility tunnel. Made for 3December 2019. Represnts a more unseen part of a city",
+      "faceCount": 44568,
+      "createdAt": "2019-12-07T16:38:46.985294",
+      "vertexCount": 23060,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 9,
+          "size": 47615424,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 44568,
+          "vertexCount": 45809
+        },
+        "gltf": {
+          "textureCount": 9,
+          "size": 46437175,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 44568,
+          "vertexCount": 45809
+        },
+        "source": {
+          "textureCount": null,
+          "size": 96100844,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 20179875,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/9022ca0e48924aad96123389d5322a7d",
+      "uid": "9022ca0e48924aad96123389d5322a7d",
+      "name": "Tunnel Road",
+      "staffpickedAt": null,
+      "viewCount": 36372,
+      "likeCount": 555,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-9022ca0e48924aad96123389d5322a7d",
+      "embedUrl": "https://sketchfab.com/models/9022ca0e48924aad96123389d5322a7d/embed",
+      "commentCount": 8,
+      "isDownloadable": true,
+      "publishedAt": "2024-04-15T08:18:35.585815",
+      "tags": [
+        {
+          "name": "road",
+          "slug": "road",
+          "uri": "https://api.sketchfab.com/v3/tags/road"
+        },
+        {
+          "name": "roads",
+          "slug": "roads",
+          "uri": "https://api.sketchfab.com/v3/tags/roads"
+        },
+        {
+          "name": "tunnel",
+          "slug": "tunnel",
+          "uri": "https://api.sketchfab.com/v3/tags/tunnel"
+        },
+        {
+          "name": "roadway",
+          "slug": "roadway",
+          "uri": "https://api.sketchfab.com/v3/tags/roadway"
+        },
+        {
+          "name": "tunnels",
+          "slug": "tunnels",
+          "uri": "https://api.sketchfab.com/v3/tags/tunnels"
+        },
+        {
+          "name": "texture",
+          "slug": "texture",
+          "uri": "https://api.sketchfab.com/v3/tags/texture"
+        },
+        {
+          "name": "road-texture",
+          "slug": "road-texture",
+          "uri": "https://api.sketchfab.com/v3/tags/road-texture"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        },
+        {
+          "name": "places-travel"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "4a4df305266a4064803a12753518b743",
+            "size": 245840,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/9022ca0e48924aad96123389d5322a7d/thumbnails/c1302f2d443b4ce3876a94a0fb3d48f5/90139bffc2b64cd08189f5acf145330a.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "9279716649aa4e22aaa714d271a195fb",
+            "size": 68341,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/9022ca0e48924aad96123389d5322a7d/thumbnails/c1302f2d443b4ce3876a94a0fb3d48f5/ba943529bb86453f9f8a28852782cf10.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "6dc46ce440dd4865abe2ff5d5b2d9412",
+            "size": 36736,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/9022ca0e48924aad96123389d5322a7d/thumbnails/c1302f2d443b4ce3876a94a0fb3d48f5/19ca1af1a2614b5690145b5df6ff41c7.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "a4689506cd134bd08b79d1a957366dba",
+            "size": 6041,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/9022ca0e48924aad96123389d5322a7d/thumbnails/c1302f2d443b4ce3876a94a0fb3d48f5/2b66e24ba15b49bebdb5997022db3685.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "32faff162483441eb5f52d8269ac1fc9",
+            "size": 1122,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/9022ca0e48924aad96123389d5322a7d/thumbnails/c1302f2d443b4ce3876a94a0fb3d48f5/075ef58aec2e44509ebf75de6d2e1cdb.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "2ed10b4648764fc3b48b5f2968a6e8c2",
+        "username": "lowpoly3dmodels",
+        "displayName": "Low poly 3d Models",
+        "profileUrl": "https://sketchfab.com/lowpoly3dmodels",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/e021728a857f4b1da5a4aae95a677685",
+          "images": [
+            {
+              "size": 2386,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/e021728a857f4b1da5a4aae95a677685/cc1ea7999b52420b8365b2bbab3ff20d.png",
+              "height": 32
+            },
+            {
+              "size": 5097,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/e021728a857f4b1da5a4aae95a677685/39506a923d6b430c84e63570c7c52938.png",
+              "height": 48
+            },
+            {
+              "size": 16930,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/e021728a857f4b1da5a4aae95a677685/d9b0587f67d54500817262e629f52ac6.png",
+              "height": 90
+            },
+            {
+              "size": 20595,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/e021728a857f4b1da5a4aae95a677685/c2a62dac0b424323a48a9d3cce5a3dcd.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/2ed10b4648764fc3b48b5f2968a6e8c2"
+      },
+      "description": "Low poly Tunnel Road track for games, renders or anu kind of 3d use. Its totally free.",
+      "faceCount": 688,
+      "createdAt": "2024-04-15T07:50:01.524886",
+      "vertexCount": 399,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 2586492,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 688,
+          "vertexCount": 674
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 2540892,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 688,
+          "vertexCount": 674
+        },
+        "source": {
+          "textureCount": null,
+          "size": 5674037,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 2579966,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/1e9b10f9e463454498e0f44e6ea2947d",
+      "uid": "1e9b10f9e463454498e0f44e6ea2947d",
+      "name": "Lights Shining in Darkness",
+      "staffpickedAt": null,
+      "viewCount": 19181,
+      "likeCount": 549,
+      "animationCount": 1,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-1e9b10f9e463454498e0f44e6ea2947d",
+      "embedUrl": "https://sketchfab.com/models/1e9b10f9e463454498e0f44e6ea2947d/embed",
+      "commentCount": 1,
+      "isDownloadable": true,
+      "publishedAt": "2023-04-16T12:35:47.339250",
+      "tags": [
+        {
+          "name": "train",
+          "slug": "train",
+          "uri": "https://api.sketchfab.com/v3/tags/train"
+        },
+        {
+          "name": "rail",
+          "slug": "rail",
+          "uri": "https://api.sketchfab.com/v3/tags/rail"
+        },
+        {
+          "name": "railroad",
+          "slug": "railroad",
+          "uri": "https://api.sketchfab.com/v3/tags/railroad"
+        },
+        {
+          "name": "track",
+          "slug": "track",
+          "uri": "https://api.sketchfab.com/v3/tags/track"
+        },
+        {
+          "name": "concrete",
+          "slug": "concrete",
+          "uri": "https://api.sketchfab.com/v3/tags/concrete"
+        },
+        {
+          "name": "subway",
+          "slug": "subway",
+          "uri": "https://api.sketchfab.com/v3/tags/subway"
+        },
+        {
+          "name": "tunnel",
+          "slug": "tunnel",
+          "uri": "https://api.sketchfab.com/v3/tags/tunnel"
+        },
+        {
+          "name": "mrt",
+          "slug": "mrt",
+          "uri": "https://api.sketchfab.com/v3/tags/mrt"
+        },
+        {
+          "name": "subwayscene",
+          "slug": "subwayscene",
+          "uri": "https://api.sketchfab.com/v3/tags/subwayscene"
+        },
+        {
+          "name": "substancepainter",
+          "slug": "substancepainter",
+          "uri": "https://api.sketchfab.com/v3/tags/substancepainter"
+        },
+        {
+          "name": "blender",
+          "slug": "blender",
+          "uri": "https://api.sketchfab.com/v3/tags/blender"
+        },
+        {
+          "name": "animated",
+          "slug": "animated",
+          "uri": "https://api.sketchfab.com/v3/tags/animated"
+        },
+        {
+          "name": "dark",
+          "slug": "dark",
+          "uri": "https://api.sketchfab.com/v3/tags/dark"
+        },
+        {
+          "name": "dioarama",
+          "slug": "dioarama",
+          "uri": "https://api.sketchfab.com/v3/tags/dioarama"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        },
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "16ca6836fc1e444fa86a85980c6ccced",
+            "size": 179654,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/1e9b10f9e463454498e0f44e6ea2947d/thumbnails/72a150754e114eed8d295d995aefcb41/b509fd3c003047b5948dc7d204ce2e3b.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "4ada44c21006433bb2f5e3428eac089d",
+            "size": 35281,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/1e9b10f9e463454498e0f44e6ea2947d/thumbnails/72a150754e114eed8d295d995aefcb41/74351831094c49aaa0c2e6779799784c.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "62ffcd42fe404593b855a3e09879e02b",
+            "size": 18908,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/1e9b10f9e463454498e0f44e6ea2947d/thumbnails/72a150754e114eed8d295d995aefcb41/a6709bf7f7914b09888fb4e12a8e9605.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "e8cd27dfc26b4fedad8f07fb24a2a388",
+            "size": 3804,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/1e9b10f9e463454498e0f44e6ea2947d/thumbnails/72a150754e114eed8d295d995aefcb41/63b07f2f87a442eeb137ac6bf737fa4c.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "3ed7167122f74e328c104f54f0f63aa4",
+            "size": 1014,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/1e9b10f9e463454498e0f44e6ea2947d/thumbnails/72a150754e114eed8d295d995aefcb41/d822a6c7db5240ae8edf3d5c3162813a.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "ecd046686ef842299f62ec41b97f168c",
+        "username": "billionlioe",
+        "displayName": "billionlioe",
+        "profileUrl": "https://sketchfab.com/billionlioe",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/3b219d7c40ca46adafc04fe159457aaa",
+          "images": [
+            {
+              "size": 2329,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/3b219d7c40ca46adafc04fe159457aaa/94fa6330a5934884985ca41b89e8e778.png",
+              "height": 32
+            },
+            {
+              "size": 4790,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/3b219d7c40ca46adafc04fe159457aaa/ad92fce075834e64beecdbb62fcbb03c.png",
+              "height": 48
+            },
+            {
+              "size": 15131,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/3b219d7c40ca46adafc04fe159457aaa/64deb3a575764ceaa54f2caf5bbaef48.png",
+              "height": 90
+            },
+            {
+              "size": 18317,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/3b219d7c40ca46adafc04fe159457aaa/3bb02bca380d4aaa8d7cc194810a07a7.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/ecd046686ef842299f62ec41b97f168c"
+      },
+      "description": "One day during my MRT commute, the tunnel lights were switched on. This is my rendition of the view I had that evening. That was like last month, real life be  kicking my butt really hard.\n\nAnimation is achieved by rotating a curved array of tunnel segments around a point (Inspired by some other entries I had found previously).\n\nModelled in Blender and textured in Substance Painter. Free to download but its really nothing fancy :)",
+      "faceCount": 238680,
+      "createdAt": "2023-04-16T06:11:01.348308",
+      "vertexCount": 131577,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 3,
+          "size": 14999992,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 238680,
+          "vertexCount": 206856
+        },
+        "gltf": {
+          "textureCount": 3,
+          "size": 8073448,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 238680,
+          "vertexCount": 206856
+        },
+        "source": {
+          "textureCount": null,
+          "size": 9627693,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 7124955,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/246a4c7ca47442d4a74761e1b2a19f7d",
+      "uid": "246a4c7ca47442d4a74761e1b2a19f7d",
+      "name": "KBE001 Utility Tunnel With Elevated Catwalk",
+      "staffpickedAt": null,
+      "viewCount": 14790,
+      "likeCount": 549,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-246a4c7ca47442d4a74761e1b2a19f7d",
+      "embedUrl": "https://sketchfab.com/models/246a4c7ca47442d4a74761e1b2a19f7d/embed",
+      "commentCount": 12,
+      "isDownloadable": true,
+      "publishedAt": "2019-03-09T14:27:24.487419",
+      "tags": [
+        {
+          "name": "scenery",
+          "slug": "scenery",
+          "uri": "https://api.sketchfab.com/v3/tags/scenery"
+        },
+        {
+          "name": "tunnel",
+          "slug": "tunnel",
+          "uri": "https://api.sketchfab.com/v3/tags/tunnel"
+        },
+        {
+          "name": "catwalk",
+          "slug": "catwalk",
+          "uri": "https://api.sketchfab.com/v3/tags/catwalk"
+        },
+        {
+          "name": "kitbash",
+          "slug": "kitbash",
+          "uri": "https://api.sketchfab.com/v3/tags/kitbash"
+        },
+        {
+          "name": "scifi",
+          "slug": "scifi",
+          "uri": "https://api.sketchfab.com/v3/tags/scifi"
+        },
+        {
+          "name": "modular",
+          "slug": "modular",
+          "uri": "https://api.sketchfab.com/v3/tags/modular"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "9907ce5d24954b54beecdb32bca02d82",
+            "size": 359244,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/246a4c7ca47442d4a74761e1b2a19f7d/thumbnails/e744bf7f63b945119e9698fa147b5484/bcd1350a61cd4f09994fc5dd3c5442fb.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "a4ae205c56d5420580f9e74e67738367",
+            "size": 117158,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/246a4c7ca47442d4a74761e1b2a19f7d/thumbnails/e744bf7f63b945119e9698fa147b5484/f1f908514def4822aa1139a16ce25a91.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "84a1bc13feba4b15a0e78fc08ffde674",
+            "size": 66934,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/246a4c7ca47442d4a74761e1b2a19f7d/thumbnails/e744bf7f63b945119e9698fa147b5484/f51614a343024351993f9d05e65066b9.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "107b124d1a8848cd9547bfaa5ba8098b",
+            "size": 10993,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/246a4c7ca47442d4a74761e1b2a19f7d/thumbnails/e744bf7f63b945119e9698fa147b5484/c79d74f6718a417680f9c71a3b8ceac7.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "5a451f08a90a455681efabfbea189e1d",
+            "size": 1122,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/246a4c7ca47442d4a74761e1b2a19f7d/thumbnails/e744bf7f63b945119e9698fa147b5484/499c8d2667d04f25939ab819f702f7f5.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "3f02d9e2df824a1aa4acde4d7556104e",
+        "username": "distance880",
+        "displayName": "d880",
+        "profileUrl": "https://sketchfab.com/distance880",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/f495088309b045d3bf278b37096c7b24",
+          "images": [
+            {
+              "size": 742,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/f495088309b045d3bf278b37096c7b24/64a13e4bce5f49c1b5e6834f42b1fe56.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1265,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/f495088309b045d3bf278b37096c7b24/d434fb3f1104436ab5ebfb56c7a4da6a.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3473,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/f495088309b045d3bf278b37096c7b24/3fe0ed9275294401914b0424952a5c08.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4135,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/f495088309b045d3bf278b37096c7b24/1c3a052dab8342b08a97b15a0862469c.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/3f02d9e2df824a1aa4acde4d7556104e"
+      },
+      "description": "",
+      "faceCount": 2150060,
+      "createdAt": "2019-03-09T11:55:28.453436",
+      "vertexCount": 1069521,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 0,
+          "size": 79535240,
+          "type": "glb",
+          "textureMaxResolution": 0,
+          "faceCount": 2140787,
+          "vertexCount": 2242505
+        },
+        "gltf": {
+          "textureCount": 0,
+          "size": 20252544,
+          "type": "gltf",
+          "textureMaxResolution": 0,
+          "faceCount": 2140787,
+          "vertexCount": 2242505
+        },
+        "source": {
+          "textureCount": null,
+          "size": 126104354,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 56631902,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/e5d9e1315a4643f5bee7a019d2086b99",
+      "uid": "e5d9e1315a4643f5bee7a019d2086b99",
+      "name": "Victorian era-inspired modular environment",
+      "staffpickedAt": null,
+      "viewCount": 10685,
+      "likeCount": 496,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-e5d9e1315a4643f5bee7a019d2086b99",
+      "embedUrl": "https://sketchfab.com/models/e5d9e1315a4643f5bee7a019d2086b99/embed",
+      "commentCount": 4,
+      "isDownloadable": true,
+      "publishedAt": "2020-02-03T01:59:57.012478",
+      "tags": [
+        {
+          "name": "tunnel",
+          "slug": "tunnel",
+          "uri": "https://api.sketchfab.com/v3/tags/tunnel"
+        },
+        {
+          "name": "environment",
+          "slug": "environment",
+          "uri": "https://api.sketchfab.com/v3/tags/environment"
+        },
+        {
+          "name": "modular-kit",
+          "slug": "modular-kit",
+          "uri": "https://api.sketchfab.com/v3/tags/modular-kit"
+        },
+        {
+          "name": "victorian-street",
+          "slug": "victorian-street",
+          "uri": "https://api.sketchfab.com/v3/tags/victorian-street"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "e148187597934c94b28a85944a91b92e",
+            "size": 567150,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/e5d9e1315a4643f5bee7a019d2086b99/thumbnails/b766890abaa341b9b95f6527aff424b8/c4c2bc964be043929d748a1f5b4af5b9.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "7c42d93e96254763ae87273b0fb300a5",
+            "size": 136900,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/e5d9e1315a4643f5bee7a019d2086b99/thumbnails/b766890abaa341b9b95f6527aff424b8/7411cfc014f0473c8058648742d2b41a.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "de61f59027ff46efbe49b427349cde90",
+            "size": 68143,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/e5d9e1315a4643f5bee7a019d2086b99/thumbnails/b766890abaa341b9b95f6527aff424b8/fd58f024d301449dbc9e65a9a3a86da5.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "71eb0453009742ecb1734b255ef0641a",
+            "size": 7966,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/e5d9e1315a4643f5bee7a019d2086b99/thumbnails/b766890abaa341b9b95f6527aff424b8/4637da50096e4b6b87cb4b0942f83265.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "6891e3ac84b548779262edb4184b9cf9",
+            "size": 885,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/e5d9e1315a4643f5bee7a019d2086b99/thumbnails/b766890abaa341b9b95f6527aff424b8/fe2526f2859e46469762efdbdc5408d8.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "55db6c58d2ee429791af55dd6568fa45",
+        "username": "tasius",
+        "displayName": "Ignacio",
+        "profileUrl": "https://sketchfab.com/tasius",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/922ed6c90a304aa9b5e53d6ea0f239d5",
+          "images": [
+            {
+              "size": 873,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/922ed6c90a304aa9b5e53d6ea0f239d5/89d513b6d5954146a8b6a539cf595585.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1519,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/922ed6c90a304aa9b5e53d6ea0f239d5/a8a53be906db48bfb1c2287c9a8f78c3.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3925,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/922ed6c90a304aa9b5e53d6ea0f239d5/36ac00d0ca144f2eae86b4a4a18f9063.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4708,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/922ed6c90a304aa9b5e53d6ea0f239d5/89398672d227454cacfb0dedcce28dda.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/55db6c58d2ee429791af55dd6568fa45"
+      },
+      "description": "Modular environment exercise. This is a composition, by way of example, to see how the pieces of the modular kit can look. A tunnel type environment, designed to be seen from within. I will update it.",
+      "faceCount": 15737,
+      "createdAt": "2020-02-02T23:58:48.263023",
+      "vertexCount": 11361,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 9,
+          "size": 12027088,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 15736,
+          "vertexCount": 23402
+        },
+        "gltf": {
+          "textureCount": 9,
+          "size": 10847645,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 15736,
+          "vertexCount": 23402
+        },
+        "source": {
+          "textureCount": null,
+          "size": 14916638,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 6159271,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/26668039209f41a1a793e0e28ed8589c",
+      "uid": "26668039209f41a1a793e0e28ed8589c",
+      "name": "Urban Series \u2013 Subway Section: Train Tunnel",
+      "staffpickedAt": null,
+      "viewCount": 18049,
+      "likeCount": 493,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-26668039209f41a1a793e0e28ed8589c",
+      "embedUrl": "https://sketchfab.com/models/26668039209f41a1a793e0e28ed8589c/embed",
+      "commentCount": 6,
+      "isDownloadable": true,
+      "publishedAt": "2021-12-12T16:21:11.492646",
+      "tags": [
+        {
+          "name": "train",
+          "slug": "train",
+          "uri": "https://api.sketchfab.com/v3/tags/train"
+        },
+        {
+          "name": "lights",
+          "slug": "lights",
+          "uri": "https://api.sketchfab.com/v3/tags/lights"
+        },
+        {
+          "name": "rails",
+          "slug": "rails",
+          "uri": "https://api.sketchfab.com/v3/tags/rails"
+        },
+        {
+          "name": "section",
+          "slug": "section",
+          "uri": "https://api.sketchfab.com/v3/tags/section"
+        },
+        {
+          "name": "underground",
+          "slug": "underground",
+          "uri": "https://api.sketchfab.com/v3/tags/underground"
+        },
+        {
+          "name": "module",
+          "slug": "module",
+          "uri": "https://api.sketchfab.com/v3/tags/module"
+        },
+        {
+          "name": "lamps",
+          "slug": "lamps",
+          "uri": "https://api.sketchfab.com/v3/tags/lamps"
+        },
+        {
+          "name": "railway",
+          "slug": "railway",
+          "uri": "https://api.sketchfab.com/v3/tags/railway"
+        },
+        {
+          "name": "pipes",
+          "slug": "pipes",
+          "uri": "https://api.sketchfab.com/v3/tags/pipes"
+        },
+        {
+          "name": "sectional",
+          "slug": "sectional",
+          "uri": "https://api.sketchfab.com/v3/tags/sectional"
+        },
+        {
+          "name": "subway",
+          "slug": "subway",
+          "uri": "https://api.sketchfab.com/v3/tags/subway"
+        },
+        {
+          "name": "tunnel",
+          "slug": "tunnel",
+          "uri": "https://api.sketchfab.com/v3/tags/tunnel"
+        },
+        {
+          "name": "wires",
+          "slug": "wires",
+          "uri": "https://api.sketchfab.com/v3/tags/wires"
+        },
+        {
+          "name": "modular-construction",
+          "slug": "modular-construction",
+          "uri": "https://api.sketchfab.com/v3/tags/modular-construction"
+        },
+        {
+          "name": "isometrical",
+          "slug": "isometrical",
+          "uri": "https://api.sketchfab.com/v3/tags/isometrical"
+        },
+        {
+          "name": "architecture",
+          "slug": "architecture",
+          "uri": "https://api.sketchfab.com/v3/tags/architecture"
+        },
+        {
+          "name": "modular",
+          "slug": "modular",
+          "uri": "https://api.sketchfab.com/v3/tags/modular"
+        },
+        {
+          "name": "subway-station",
+          "slug": "subway-station",
+          "uri": "https://api.sketchfab.com/v3/tags/subway-station"
+        },
+        {
+          "name": "subway-train",
+          "slug": "subway-train",
+          "uri": "https://api.sketchfab.com/v3/tags/subway-train"
+        },
+        {
+          "name": "ortogonal",
+          "slug": "ortogonal",
+          "uri": "https://api.sketchfab.com/v3/tags/ortogonal"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        },
+        {
+          "name": "art-abstract"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "0e8e6682f9f542139df8a9891d990332",
+            "size": 287554,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/26668039209f41a1a793e0e28ed8589c/thumbnails/9add293939634cde83b30f8e4704e9bc/34dfb46f85c44991bf2756de1bea7be6.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "329a2b3cc653490483c43bb05c7c9898",
+            "size": 44498,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/26668039209f41a1a793e0e28ed8589c/thumbnails/9add293939634cde83b30f8e4704e9bc/3582491baafe410daa181a5c1d55ab69.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "3de2f00356674d608a47cc531037d164",
+            "size": 23249,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/26668039209f41a1a793e0e28ed8589c/thumbnails/9add293939634cde83b30f8e4704e9bc/ab44e06a8beb4ee2a7d6ebaa50c3f7b2.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "3c51926556c6467b922e2f6aa07dae14",
+            "size": 4445,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/26668039209f41a1a793e0e28ed8589c/thumbnails/9add293939634cde83b30f8e4704e9bc/e230c1423f484857b04a3917f1200a1e.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "3c5887a1d916471aa716470f6d41838e",
+            "size": 1056,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/26668039209f41a1a793e0e28ed8589c/thumbnails/9add293939634cde83b30f8e4704e9bc/1f9437061b644331b0f606b68cc5561b.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "8cc2eef6200941b99d3cba38243c2172",
+        "username": "spazio_silvestre",
+        "displayName": "UPWARD",
+        "profileUrl": "https://sketchfab.com/spazio_silvestre",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/e63545405453470fa1fac45ae45a36c6",
+          "images": [
+            {
+              "size": 1416,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/e63545405453470fa1fac45ae45a36c6/0e5741527a36423b90c0f8f12f53f11a.png",
+              "height": 32
+            },
+            {
+              "size": 2495,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/e63545405453470fa1fac45ae45a36c6/8a1976c694a24fc0889512a5bfd417ab.png",
+              "height": 48
+            },
+            {
+              "size": 6180,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/e63545405453470fa1fac45ae45a36c6/1b9d0054f6284dd0b2c4a03066df308f.png",
+              "height": 90
+            },
+            {
+              "size": 7174,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/e63545405453470fa1fac45ae45a36c6/dc5fd3b34f2d468683289f4dd4e81d0d.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/8cc2eef6200941b99d3cba38243c2172"
+      },
+      "description": "**Urban Series - Subway Section: Train Tunnel**\n\nSubway Section: Train Tunnel is a conceptual 3D environment focused on urban infrastructure and spatial abstraction. The model reduces visual complexity to highlight structure, rhythm, and spatial perception, transforming a functional system into an experimental composition.\nPart of the Urban Series, this asset reflects an ongoing exploration of modular systems, repetition, and perception in 3D space.\n\n**Support**\n\nIf you need assistance or have any questions about the model, feel free to reach out via Instagram DM: @spazio_silvestre\n\n**Potential Uses**\n\n* Conceptual visualizations\n* Motion graphics and animations\n* Background environments\n* Prototyping scenes\n* Educational or experimental projects\n\n**Project Approach**\n\nThis model is intentionally low in detail but strong in concept. It is designed as a flexible base that can be expanded, modified, or integrated into larger projects.\n\n**Designer**\n\nLuigi Maria di Silvestre \u2014 Spazio Silvestre",
+      "faceCount": 33232,
+      "createdAt": "2021-12-10T12:28:06.428769",
+      "vertexCount": 17650,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 1,
+          "size": 1214020,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 33232,
+          "vertexCount": 22390
+        },
+        "gltf": {
+          "textureCount": 1,
+          "size": 455616,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 33232,
+          "vertexCount": 22390
+        },
+        "source": {
+          "textureCount": null,
+          "size": 3568984,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 584137,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/552c7f999ee94669817a99f7c3f00320",
+      "uid": "552c7f999ee94669817a99f7c3f00320",
+      "name": "Bridge Over Tunnel",
+      "staffpickedAt": null,
+      "viewCount": 14784,
+      "likeCount": 475,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-552c7f999ee94669817a99f7c3f00320",
+      "embedUrl": "https://sketchfab.com/models/552c7f999ee94669817a99f7c3f00320/embed",
+      "commentCount": 3,
+      "isDownloadable": true,
+      "publishedAt": "2022-02-20T20:41:09.088496",
+      "tags": [
+        {
+          "name": "road",
+          "slug": "road",
+          "uri": "https://api.sketchfab.com/v3/tags/road"
+        },
+        {
+          "name": "concrete",
+          "slug": "concrete",
+          "uri": "https://api.sketchfab.com/v3/tags/concrete"
+        },
+        {
+          "name": "tunnel",
+          "slug": "tunnel",
+          "uri": "https://api.sketchfab.com/v3/tags/tunnel"
+        },
+        {
+          "name": "freemodel",
+          "slug": "freemodel",
+          "uri": "https://api.sketchfab.com/v3/tags/freemodel"
+        },
+        {
+          "name": "street",
+          "slug": "street",
+          "uri": "https://api.sketchfab.com/v3/tags/street"
+        },
+        {
+          "name": "bridge",
+          "slug": "bridge",
+          "uri": "https://api.sketchfab.com/v3/tags/bridge"
+        },
+        {
+          "name": "gameready",
+          "slug": "gameready",
+          "uri": "https://api.sketchfab.com/v3/tags/gameready"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        },
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "2f1f25da0a0c4fa7993484a398d3ecf7",
+            "size": 314949,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/552c7f999ee94669817a99f7c3f00320/thumbnails/b8a9e4af318e415ab7fec5d34f1ad80c/904afef819274e57afa188e909c740b1.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "2b1ec3874c1742d9b0ec1703e70cd5a7",
+            "size": 85530,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/552c7f999ee94669817a99f7c3f00320/thumbnails/b8a9e4af318e415ab7fec5d34f1ad80c/9543bc2524094b4d920dc9b46e0d07df.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "4f9f1af7b501413b91cb38ddad9cd577",
+            "size": 45573,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/552c7f999ee94669817a99f7c3f00320/thumbnails/b8a9e4af318e415ab7fec5d34f1ad80c/929d1ef502304e7bbe3d0dcea4b44521.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "76d980914a4f458fbe1271344823f055",
+            "size": 7449,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/552c7f999ee94669817a99f7c3f00320/thumbnails/b8a9e4af318e415ab7fec5d34f1ad80c/0c5558caf0f440f4bbb61d5375893c1f.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "5aa98dde48a54f75a6f9503b19cbd840",
+            "size": 1252,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/552c7f999ee94669817a99f7c3f00320/thumbnails/b8a9e4af318e415ab7fec5d34f1ad80c/48fa5853aaf248fe94d3a5f7a66fcd88.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "b5d1067b1d2e4676a78b28b4e75a1fd8",
+        "username": "jimbogies",
+        "displayName": "jimbogies",
+        "profileUrl": "https://sketchfab.com/jimbogies",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/3a9e0c579f5f4e69997b1ee7fe217065",
+          "images": [
+            {
+              "size": 1586,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/3a9e0c579f5f4e69997b1ee7fe217065/9c1a3d46da744b5bac6d9a70b88c85e3.png",
+              "height": 32
+            },
+            {
+              "size": 2573,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/3a9e0c579f5f4e69997b1ee7fe217065/eaed81795fa24c6da24292a6073bb81d.png",
+              "height": 48
+            },
+            {
+              "size": 5518,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/3a9e0c579f5f4e69997b1ee7fe217065/dfbaa4518c554459880e8df1ae609df5.png",
+              "height": 90
+            },
+            {
+              "size": 6320,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/3a9e0c579f5f4e69997b1ee7fe217065/49330bcac05a4df594d55423dbce53d3.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/b5d1067b1d2e4676a78b28b4e75a1fd8"
+      },
+      "description": "# Bridge Over Tunnel\n\nIf you'd like to make a small donation through **PayPal**,\nI'd very much appreciate it: [Make a small donation here](https://www.paypal.com/paypalme/JimboGies)\n\n![Tunnel](https://i.imgur.com/og8QkCA.png)",
+      "faceCount": 10750,
+      "createdAt": "2022-02-20T10:51:47.855034",
+      "vertexCount": 3563,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 26,
+          "size": 115943048,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 10674,
+          "vertexCount": 16752
+        },
+        "gltf": {
+          "textureCount": 26,
+          "size": 115157306,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 10674,
+          "vertexCount": 16752
+        },
+        "source": {
+          "textureCount": null,
+          "size": 147110670,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 13666611,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/2cf0e0e042ba48a1b9b70ce90c6cc6ec",
+      "uid": "2cf0e0e042ba48a1b9b70ce90c6cc6ec",
+      "name": "American Road through Tunnel",
+      "staffpickedAt": null,
+      "viewCount": 25114,
+      "likeCount": 458,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-2cf0e0e042ba48a1b9b70ce90c6cc6ec",
+      "embedUrl": "https://sketchfab.com/models/2cf0e0e042ba48a1b9b70ce90c6cc6ec/embed",
+      "commentCount": 4,
+      "isDownloadable": true,
+      "publishedAt": "2022-03-05T18:17:04.692068",
+      "tags": [
+        {
+          "name": "highway",
+          "slug": "highway",
+          "uri": "https://api.sketchfab.com/v3/tags/highway"
+        },
+        {
+          "name": "road",
+          "slug": "road",
+          "uri": "https://api.sketchfab.com/v3/tags/road"
+        },
+        {
+          "name": "night",
+          "slug": "night",
+          "uri": "https://api.sketchfab.com/v3/tags/night"
+        },
+        {
+          "name": "american",
+          "slug": "american",
+          "uri": "https://api.sketchfab.com/v3/tags/american"
+        },
+        {
+          "name": "tunnel",
+          "slug": "tunnel",
+          "uri": "https://api.sketchfab.com/v3/tags/tunnel"
+        },
+        {
+          "name": "freeway",
+          "slug": "freeway",
+          "uri": "https://api.sketchfab.com/v3/tags/freeway"
+        },
+        {
+          "name": "underpass",
+          "slug": "underpass",
+          "uri": "https://api.sketchfab.com/v3/tags/underpass"
+        },
+        {
+          "name": "roadway",
+          "slug": "roadway",
+          "uri": "https://api.sketchfab.com/v3/tags/roadway"
+        },
+        {
+          "name": "freemodel",
+          "slug": "freemodel",
+          "uri": "https://api.sketchfab.com/v3/tags/freemodel"
+        },
+        {
+          "name": "street",
+          "slug": "street",
+          "uri": "https://api.sketchfab.com/v3/tags/street"
+        },
+        {
+          "name": "gameready",
+          "slug": "gameready",
+          "uri": "https://api.sketchfab.com/v3/tags/gameready"
+        },
+        {
+          "name": "exteriorscene",
+          "slug": "exteriorscene",
+          "uri": "https://api.sketchfab.com/v3/tags/exteriorscene"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        },
+        {
+          "name": "cars-vehicles"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "0522fe60566848238f4058a05872645a",
+            "size": 387766,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/2cf0e0e042ba48a1b9b70ce90c6cc6ec/thumbnails/88918f3076e84980b64577b3ab51fe54/f4134c47ac20455fb4f3f055c1bc3a73.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "406577c02f59483ca2e776678dd35764",
+            "size": 99370,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/2cf0e0e042ba48a1b9b70ce90c6cc6ec/thumbnails/88918f3076e84980b64577b3ab51fe54/7863aaaa81a54da2bc500413288b5fb1.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "dba154a8165841f88016f91bf0d2c01b",
+            "size": 50610,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/2cf0e0e042ba48a1b9b70ce90c6cc6ec/thumbnails/88918f3076e84980b64577b3ab51fe54/c030642a90624f5d8084c2dca14bb683.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "de8b5ce884a74022958903f4837ca39b",
+            "size": 7345,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/2cf0e0e042ba48a1b9b70ce90c6cc6ec/thumbnails/88918f3076e84980b64577b3ab51fe54/ac067da175484ab2894f5ff2ca2d2b12.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "4c771591b1cc404f8282e55f0155d8e6",
+            "size": 1197,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/2cf0e0e042ba48a1b9b70ce90c6cc6ec/thumbnails/88918f3076e84980b64577b3ab51fe54/47c5414ead5947c882bfe7d620831317.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "b5d1067b1d2e4676a78b28b4e75a1fd8",
+        "username": "jimbogies",
+        "displayName": "jimbogies",
+        "profileUrl": "https://sketchfab.com/jimbogies",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/3a9e0c579f5f4e69997b1ee7fe217065",
+          "images": [
+            {
+              "size": 1586,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/3a9e0c579f5f4e69997b1ee7fe217065/9c1a3d46da744b5bac6d9a70b88c85e3.png",
+              "height": 32
+            },
+            {
+              "size": 2573,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/3a9e0c579f5f4e69997b1ee7fe217065/eaed81795fa24c6da24292a6073bb81d.png",
+              "height": 48
+            },
+            {
+              "size": 5518,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/3a9e0c579f5f4e69997b1ee7fe217065/dfbaa4518c554459880e8df1ae609df5.png",
+              "height": 90
+            },
+            {
+              "size": 6320,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/3a9e0c579f5f4e69997b1ee7fe217065/49330bcac05a4df594d55423dbce53d3.png",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/b5d1067b1d2e4676a78b28b4e75a1fd8"
+      },
+      "description": "# **American Road through Tunnel**",
+      "faceCount": 8744,
+      "createdAt": "2022-03-05T10:34:16.012385",
+      "vertexCount": 2995,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 25,
+          "size": 112108216,
+          "type": "glb",
+          "textureMaxResolution": 2048,
+          "faceCount": 8700,
+          "vertexCount": 10145
+        },
+        "gltf": {
+          "textureCount": 25,
+          "size": 111596061,
+          "type": "gltf",
+          "textureMaxResolution": 2048,
+          "faceCount": 8700,
+          "vertexCount": 10145
+        },
+        "source": {
+          "textureCount": null,
+          "size": 150800477,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 14581824,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    },
+    {
+      "uri": "https://api.sketchfab.com/v3/models/e69f66eecbe74619b6859265ef05c216",
+      "uid": "e69f66eecbe74619b6859265ef05c216",
+      "name": "Victorian era-inspired modular environment kit",
+      "staffpickedAt": null,
+      "viewCount": 9266,
+      "likeCount": 451,
+      "animationCount": 0,
+      "viewerUrl": "https://sketchfab.com/3d-models/none-e69f66eecbe74619b6859265ef05c216",
+      "embedUrl": "https://sketchfab.com/models/e69f66eecbe74619b6859265ef05c216/embed",
+      "commentCount": 12,
+      "isDownloadable": true,
+      "publishedAt": "2020-02-02T12:43:19.727979",
+      "tags": [
+        {
+          "name": "environment-art",
+          "slug": "environment-art",
+          "uri": "https://api.sketchfab.com/v3/tags/environment-art"
+        },
+        {
+          "name": "streets",
+          "slug": "streets",
+          "uri": "https://api.sketchfab.com/v3/tags/streets"
+        },
+        {
+          "name": "modular",
+          "slug": "modular",
+          "uri": "https://api.sketchfab.com/v3/tags/modular"
+        },
+        {
+          "name": "environment",
+          "slug": "environment",
+          "uri": "https://api.sketchfab.com/v3/tags/environment"
+        },
+        {
+          "name": "modular-kit",
+          "slug": "modular-kit",
+          "uri": "https://api.sketchfab.com/v3/tags/modular-kit"
+        },
+        {
+          "name": "victorian-street",
+          "slug": "victorian-street",
+          "uri": "https://api.sketchfab.com/v3/tags/victorian-street"
+        }
+      ],
+      "categories": [
+        {
+          "name": "architecture"
+        }
+      ],
+      "thumbnails": {
+        "images": [
+          {
+            "uid": "59a101418ab34720a501c0ef437ebb54",
+            "size": 393183,
+            "width": 1920,
+            "url": "https://media.sketchfab.com/models/e69f66eecbe74619b6859265ef05c216/thumbnails/c42b7796f99945c5ba19ae2fbe26c420/7b490869f05f4ed6948e8ef5391f2fa2.jpeg",
+            "height": 1080
+          },
+          {
+            "uid": "bf33bb7ab6a247e385dc1d2ebccbb36c",
+            "size": 86742,
+            "width": 1024,
+            "url": "https://media.sketchfab.com/models/e69f66eecbe74619b6859265ef05c216/thumbnails/c42b7796f99945c5ba19ae2fbe26c420/838edec01d974f4cbcffb0582fab553a.jpeg",
+            "height": 576
+          },
+          {
+            "uid": "b3d6ca64b1684bdca390ee0a34f6b8ea",
+            "size": 40185,
+            "width": 720,
+            "url": "https://media.sketchfab.com/models/e69f66eecbe74619b6859265ef05c216/thumbnails/c42b7796f99945c5ba19ae2fbe26c420/ebf7365c57a148a09e185b32add68f8b.jpeg",
+            "height": 405
+          },
+          {
+            "uid": "920f1374216642a5996be55bef8583e3",
+            "size": 5950,
+            "width": 256,
+            "url": "https://media.sketchfab.com/models/e69f66eecbe74619b6859265ef05c216/thumbnails/c42b7796f99945c5ba19ae2fbe26c420/cc8618b18659408ea0b46e0aee7364f8.jpeg",
+            "height": 144
+          },
+          {
+            "uid": "81d57b0b540e4d2983f190df2969c7bc",
+            "size": 914,
+            "width": 64,
+            "url": "https://media.sketchfab.com/models/e69f66eecbe74619b6859265ef05c216/thumbnails/c42b7796f99945c5ba19ae2fbe26c420/08f48fbf73f04f629bcd0e995b49e8e3.jpeg",
+            "height": 36
+          }
+        ]
+      },
+      "user": {
+        "uid": "55db6c58d2ee429791af55dd6568fa45",
+        "username": "tasius",
+        "displayName": "Ignacio",
+        "profileUrl": "https://sketchfab.com/tasius",
+        "account": "basic",
+        "avatar": {
+          "uri": "https://api.sketchfab.com/v3/avatars/922ed6c90a304aa9b5e53d6ea0f239d5",
+          "images": [
+            {
+              "size": 873,
+              "width": 32,
+              "url": "https://media.sketchfab.com/avatars/922ed6c90a304aa9b5e53d6ea0f239d5/89d513b6d5954146a8b6a539cf595585.jpeg",
+              "height": 32
+            },
+            {
+              "size": 1519,
+              "width": 48,
+              "url": "https://media.sketchfab.com/avatars/922ed6c90a304aa9b5e53d6ea0f239d5/a8a53be906db48bfb1c2287c9a8f78c3.jpeg",
+              "height": 48
+            },
+            {
+              "size": 3925,
+              "width": 90,
+              "url": "https://media.sketchfab.com/avatars/922ed6c90a304aa9b5e53d6ea0f239d5/36ac00d0ca144f2eae86b4a4a18f9063.jpeg",
+              "height": 90
+            },
+            {
+              "size": 4708,
+              "width": 100,
+              "url": "https://media.sketchfab.com/avatars/922ed6c90a304aa9b5e53d6ea0f239d5/89398672d227454cacfb0dedcce28dda.jpeg",
+              "height": 100
+            }
+          ]
+        },
+        "uri": "https://api.sketchfab.com/v3/users/55db6c58d2ee429791af55dd6568fa45"
+      },
+      "description": "Modular kit that tries to evoke tunnels and alleys of the firt constructions of the victorian era.\nI will update. A tunnel type environment designed to be seen from within.",
+      "faceCount": 7416,
+      "createdAt": "2020-02-02T11:29:15.945583",
+      "vertexCount": 5394,
+      "isAgeRestricted": false,
+      "archives": {
+        "glb": {
+          "textureCount": 9,
+          "size": 11086452,
+          "type": "glb",
+          "textureMaxResolution": 1024,
+          "faceCount": 7415,
+          "vertexCount": 10148
+        },
+        "gltf": {
+          "textureCount": 9,
+          "size": 10631726,
+          "type": "gltf",
+          "textureMaxResolution": 1024,
+          "faceCount": 7415,
+          "vertexCount": 10148
+        },
+        "source": {
+          "textureCount": null,
+          "size": 11656487,
+          "type": "source",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        },
+        "usdz": {
+          "textureCount": null,
+          "size": 6089343,
+          "type": "usdz",
+          "textureMaxResolution": null,
+          "faceCount": null,
+          "vertexCount": null
+        }
+      },
+      "license": {
+        "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+        "label": "CC Attribution"
+      }
+    }
+  ]
+}

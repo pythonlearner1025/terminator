@@ -1,0 +1,1415 @@
+[
+  {
+    "id": "map-floor-60x0p5x60",
+    "path": "assets/models/map/floor-60x0p5x60/floor-60x0p5x60.gltf",
+    "names": [
+      "Floor slab 1"
+    ],
+    "image": "images/original-map-floor-60x0p5x60.png",
+    "render": {
+      "size": [
+        60,
+        0.5,
+        60
+      ],
+      "triangles": 12
+    }
+  },
+  {
+    "id": "map-wall-12x3x1",
+    "path": "assets/models/map/wall-12x3x1/wall-12x3x1.gltf",
+    "names": [
+      "Wall segment 1",
+      "Wall segment 3"
+    ],
+    "image": "images/original-map-wall-12x3x1.png",
+    "render": {
+      "size": [
+        12,
+        3,
+        1
+      ],
+      "triangles": 48
+    }
+  },
+  {
+    "id": "map-wall-28x3x1",
+    "path": "assets/models/map/wall-28x3x1/wall-28x3x1.gltf",
+    "names": [
+      "Wall segment 2"
+    ],
+    "image": "images/original-map-wall-28x3x1.png",
+    "render": {
+      "size": [
+        28,
+        3,
+        1
+      ],
+      "triangles": 108
+    }
+  },
+  {
+    "id": "map-wall-18x3x1",
+    "path": "assets/models/map/wall-18x3x1/wall-18x3x1.gltf",
+    "names": [
+      "Wall segment 4",
+      "Wall segment 6"
+    ],
+    "image": "images/original-map-wall-18x3x1.png",
+    "render": {
+      "size": [
+        18,
+        3,
+        1
+      ],
+      "triangles": 72
+    }
+  },
+  {
+    "id": "map-wall-16x3x1",
+    "path": "assets/models/map/wall-16x3x1/wall-16x3x1.gltf",
+    "names": [
+      "Wall segment 5"
+    ],
+    "image": "images/original-map-wall-16x3x1.png",
+    "render": {
+      "size": [
+        16,
+        3,
+        1
+      ],
+      "triangles": 72
+    }
+  },
+  {
+    "id": "map-wall-1x3x16",
+    "path": "assets/models/map/wall-1x3x16/wall-1x3x16.gltf",
+    "names": [
+      "Wall segment 7"
+    ],
+    "image": "images/original-map-wall-1x3x16.png",
+    "render": {
+      "size": [
+        1,
+        3,
+        16
+      ],
+      "triangles": 72
+    }
+  },
+  {
+    "id": "map-wall-1x3x13",
+    "path": "assets/models/map/wall-1x3x13/wall-1x3x13.gltf",
+    "names": [
+      "Wall segment 8"
+    ],
+    "image": "images/original-map-wall-1x3x13.png",
+    "render": {
+      "size": [
+        1,
+        3,
+        13
+      ],
+      "triangles": 60
+    }
+  },
+  {
+    "id": "map-wall-1x3x6p4",
+    "path": "assets/models/map/wall-1x3x6p4/wall-1x3x6p4.gltf",
+    "names": [
+      "Wall segment 9",
+      "Wall segment 10"
+    ],
+    "image": "images/original-map-wall-1x3x6p4.png",
+    "render": {
+      "size": [
+        1,
+        3,
+        6.400000095367432
+      ],
+      "triangles": 36
+    }
+  },
+  {
+    "id": "map-rubble-1x1p5x12-zh655b",
+    "path": "assets/models/map/rubble-1x1p5x12-zh655b/rubble-1x1p5x12-zh655b.gltf",
+    "names": [
+      "Rubble bank 1"
+    ],
+    "image": "images/original-map-rubble-1x1p5x12-zh655b.png",
+    "render": {
+      "size": [
+        1,
+        1.4020770192146301,
+        12
+      ],
+      "triangles": 516
+    }
+  },
+  {
+    "id": "map-rubble-nw",
+    "path": "assets/models/map/rubble-nw/rubble-nw.gltf",
+    "names": [
+      "Rubble bank 2"
+    ],
+    "image": "images/original-map-rubble-nw.png",
+    "render": {
+      "size": [
+        4,
+        1.2492318153381348,
+        2
+      ],
+      "triangles": 516
+    }
+  },
+  {
+    "id": "map-rubble-se",
+    "path": "assets/models/map/rubble-se/rubble-se.gltf",
+    "names": [
+      "Rubble bank 3"
+    ],
+    "image": "images/original-map-rubble-se.png",
+    "render": {
+      "size": [
+        5,
+        1.0285327434539795,
+        2.5
+      ],
+      "triangles": 516
+    }
+  },
+  {
+    "id": "map-truck-5p5x2p4x2p4-m0jo9i",
+    "path": "assets/models/map/truck-5p5x2p4x2p4-m0jo9i/truck-5p5x2p4x2p4-m0jo9i.gltf",
+    "names": [
+      "Wrecked truck 1"
+    ],
+    "image": "images/original-map-truck-5p5x2p4x2p4-m0jo9i.png",
+    "render": {
+      "size": [
+        5.449999809265137,
+        2.350000023841858,
+        2.4000000953674316
+      ],
+      "triangles": 328
+    }
+  },
+  {
+    "id": "map-barrel-0p8x1p3x0p8-103qszk",
+    "path": "assets/models/map/barrel-0p8x1p3x0p8-103qszk/barrel-0p8x1p3x0p8-103qszk.gltf",
+    "names": [
+      "Barrel 1",
+      "Barrel 2",
+      "Barrel 3",
+      "Barrel 4"
+    ],
+    "image": "images/original-map-barrel-0p8x1p3x0p8-103qszk.png",
+    "render": {
+      "size": [
+        0.7900000214576721,
+        1.2619999647140503,
+        0.7900000214576721
+      ],
+      "triangles": 320
+    }
+  },
+  {
+    "id": "map-bunker-shell",
+    "path": "assets/models/map/bunker-shell/bunker-shell.gltf",
+    "names": [
+      "Bunker shell 1",
+      "Bunker shell 2",
+      "Bunker shell 3",
+      "Bunker shell 4",
+      "Bunker shell 5",
+      "Bunker shell 6",
+      "Bunker shell 7",
+      "Bunker shell 8",
+      "Bunker shell 9",
+      "Bunker shell 10",
+      "Bunker shell 11",
+      "Bunker shell 12",
+      "Bunker shell 13",
+      "Bunker shell 14",
+      "Bunker shell 15",
+      "Bunker shell 16",
+      "Bunker shell 17",
+      "Bunker shell 18",
+      "Bunker shell 19",
+      "Bunker shell 20",
+      "Bunker shell 21",
+      "Bunker shell 22",
+      "Bunker shell 23",
+      "Bunker shell 24",
+      "Bunker shell 25",
+      "Bunker shell 26",
+      "Bunker shell 27",
+      "Bunker shell 28",
+      "Bunker shell 29",
+      "Bunker shell 30",
+      "Bunker shell 31",
+      "Bunker shell 32",
+      "Bunker shell 33",
+      "Bunker shell 34",
+      "Bunker shell 35",
+      "Bunker shell 36",
+      "Bunker shell 37",
+      "Bunker shell 38",
+      "Bunker shell 39",
+      "Bunker shell 40",
+      "Bunker shell 41",
+      "Bunker shell 42",
+      "Bunker shell 43",
+      "Bunker shell 44",
+      "Bunker shell 45",
+      "Bunker shell 46",
+      "Bunker shell 47",
+      "Bunker shell 48",
+      "Bunker shell 49",
+      "Bunker shell 50",
+      "Bunker shell 51",
+      "Bunker shell 52",
+      "Bunker shell 53",
+      "Bunker shell 54",
+      "Bunker shell 55",
+      "Bunker shell 56",
+      "Bunker shell 57",
+      "Bunker shell 58",
+      "Bunker shell 59",
+      "Bunker shell 60",
+      "Bunker shell 61",
+      "Bunker shell 62",
+      "Bunker shell 63",
+      "Bunker shell 64",
+      "Bunker shell 65",
+      "Bunker shell 66",
+      "Bunker shell 67",
+      "Bunker shell 68",
+      "Bunker shell 69",
+      "Bunker shell 70",
+      "Bunker shell 71",
+      "Bunker shell 72",
+      "Bunker shell 73",
+      "Bunker shell 74",
+      "Bunker shell 75",
+      "Bunker shell 76",
+      "Bunker shell 77",
+      "Bunker shell 78",
+      "Bunker shell 79",
+      "Bunker shell 80",
+      "Bunker shell 81",
+      "Bunker shell 82",
+      "Bunker shell 83",
+      "Bunker shell 84",
+      "Bunker shell 85",
+      "Bunker shell 86",
+      "Bunker shell 87",
+      "Bunker shell 88",
+      "Bunker shell 89",
+      "Bunker shell 90",
+      "Bunker shell 91",
+      "Bunker shell 92",
+      "Bunker shell 93",
+      "Bunker shell 94",
+      "Bunker shell 95",
+      "Bunker shell 96",
+      "Bunker shell 97",
+      "Bunker shell 98",
+      "Bunker shell 99"
+    ],
+    "image": "images/original-map-bunker-shell.png",
+    "render": {
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "triangles": 12
+    }
+  },
+  {
+    "id": "map-floor-28x0p1x10",
+    "path": "assets/models/map/floor-28x0p1x10/floor-28x0p1x10.gltf",
+    "names": [
+      "Floor slab 2"
+    ],
+    "image": "images/original-map-floor-28x0p1x10.png",
+    "render": {
+      "size": [
+        28,
+        0.10000000149011612,
+        10
+      ],
+      "triangles": 12
+    }
+  },
+  {
+    "id": "map-floor-28x0p2x10",
+    "path": "assets/models/map/floor-28x0p2x10/floor-28x0p2x10.gltf",
+    "names": [
+      "Floor slab 3"
+    ],
+    "image": "images/original-map-floor-28x0p2x10.png",
+    "render": {
+      "size": [
+        28,
+        0.20000000298023224,
+        10
+      ],
+      "triangles": 12
+    }
+  },
+  {
+    "id": "map-floor-20x0p2x2",
+    "path": "assets/models/map/floor-20x0p2x2/floor-20x0p2x2.gltf",
+    "names": [
+      "Floor slab 4"
+    ],
+    "image": "images/original-map-floor-20x0p2x2.png",
+    "render": {
+      "size": [
+        20,
+        0.20000000298023224,
+        2
+      ],
+      "triangles": 12
+    }
+  },
+  {
+    "id": "map-stair-3x0p5x1",
+    "path": "assets/models/map/stair-3x0p5x1/stair-3x0p5x1.gltf",
+    "names": [
+      "Stair tread 1",
+      "Stair tread 7",
+      "Stair tread 8",
+      "Stair tread 9",
+      "Stair tread 10",
+      "Stair tread 11",
+      "Stair tread 12",
+      "Stair tread 13",
+      "Stair tread 14",
+      "Stair tread 15",
+      "Stair tread 16",
+      "Stair tread 17",
+      "Stair tread 18",
+      "Stair tread 19",
+      "Stair tread 20",
+      "Stair tread 21",
+      "Stair tread 22",
+      "Stair tread 23",
+      "Stair tread 24",
+      "Stair tread 25",
+      "Stair tread 26",
+      "Stair tread 27",
+      "Stair tread 28",
+      "Stair tread 29",
+      "Stair tread 30",
+      "Stair tread 31",
+      "Stair tread 32"
+    ],
+    "image": "images/original-map-stair-3x0p5x1.png",
+    "render": {
+      "size": [
+        3,
+        0.5,
+        1
+      ],
+      "triangles": 12
+    }
+  },
+  {
+    "id": "map-stair-3x1x1",
+    "path": "assets/models/map/stair-3x1x1/stair-3x1x1.gltf",
+    "names": [
+      "Stair tread 2"
+    ],
+    "image": "images/original-map-stair-3x1x1.png",
+    "render": {
+      "size": [
+        3,
+        1,
+        1
+      ],
+      "triangles": 12
+    }
+  },
+  {
+    "id": "map-stair-3x1p5x1",
+    "path": "assets/models/map/stair-3x1p5x1/stair-3x1p5x1.gltf",
+    "names": [
+      "Stair tread 3"
+    ],
+    "image": "images/original-map-stair-3x1p5x1.png",
+    "render": {
+      "size": [
+        3,
+        1.5,
+        1
+      ],
+      "triangles": 12
+    }
+  },
+  {
+    "id": "map-stair-3x2x1",
+    "path": "assets/models/map/stair-3x2x1/stair-3x2x1.gltf",
+    "names": [
+      "Stair tread 4"
+    ],
+    "image": "images/original-map-stair-3x2x1.png",
+    "render": {
+      "size": [
+        3,
+        2,
+        1
+      ],
+      "triangles": 12
+    }
+  },
+  {
+    "id": "map-stair-3x2p5x1",
+    "path": "assets/models/map/stair-3x2p5x1/stair-3x2p5x1.gltf",
+    "names": [
+      "Stair tread 5"
+    ],
+    "image": "images/original-map-stair-3x2p5x1.png",
+    "render": {
+      "size": [
+        3,
+        2.5,
+        1
+      ],
+      "triangles": 12
+    }
+  },
+  {
+    "id": "map-stair-3x3x1",
+    "path": "assets/models/map/stair-3x3x1/stair-3x3x1.gltf",
+    "names": [
+      "Stair tread 6"
+    ],
+    "image": "images/original-map-stair-3x3x1.png",
+    "render": {
+      "size": [
+        3,
+        3,
+        1
+      ],
+      "triangles": 12
+    }
+  },
+  {
+    "id": "map-floor-10x0p7x18",
+    "path": "assets/models/map/floor-10x0p7x18/floor-10x0p7x18.gltf",
+    "names": [
+      "Floor slab 5"
+    ],
+    "image": "images/original-map-floor-10x0p7x18.png",
+    "render": {
+      "size": [
+        10,
+        0.699999988079071,
+        18
+      ],
+      "triangles": 12
+    }
+  },
+  {
+    "id": "map-container-red",
+    "path": "assets/models/map/container-red/container-red.gltf",
+    "names": [
+      "Container 1"
+    ],
+    "image": "images/original-map-container-red.png",
+    "render": {
+      "size": [
+        2.5999999046325684,
+        2.9000000953674316,
+        6
+      ],
+      "triangles": 60
+    }
+  },
+  {
+    "id": "map-container-blue",
+    "path": "assets/models/map/container-blue/container-blue.gltf",
+    "names": [
+      "Container 2"
+    ],
+    "image": "images/original-map-container-blue.png",
+    "render": {
+      "size": [
+        2.5999999046325684,
+        2.9000000953674316,
+        7
+      ],
+      "triangles": 60
+    }
+  },
+  {
+    "id": "map-container-gray",
+    "path": "assets/models/map/container-gray/container-gray.gltf",
+    "names": [
+      "Container 3"
+    ],
+    "image": "images/original-map-container-gray.png",
+    "render": {
+      "size": [
+        2.5999999046325684,
+        2.9000000953674316,
+        6
+      ],
+      "triangles": 60
+    }
+  },
+  {
+    "id": "map-ramp-2x0p6x6",
+    "path": "assets/models/map/ramp-2x0p6x6/ramp-2x0p6x6.gltf",
+    "names": [
+      "Ramp slab 1"
+    ],
+    "image": "images/original-map-ramp-2x0p6x6.png",
+    "render": {
+      "size": [
+        2,
+        0.6000000238418579,
+        6
+      ],
+      "triangles": 320
+    }
+  },
+  {
+    "id": "map-tunnel-wall-10x3x0p6",
+    "path": "assets/models/map/tunnel-wall-10x3x0p6/tunnel-wall-10x3x0p6.gltf",
+    "names": [
+      "Tunnel wall 1",
+      "Tunnel wall 2"
+    ],
+    "image": "images/original-map-tunnel-wall-10x3x0p6.png",
+    "render": {
+      "size": [
+        10,
+        3,
+        0.6000000238418579
+      ],
+      "triangles": 48
+    }
+  },
+  {
+    "id": "map-floor-10x0p4x8",
+    "path": "assets/models/map/floor-10x0p4x8/floor-10x0p4x8.gltf",
+    "names": [
+      "Floor slab 6"
+    ],
+    "image": "images/original-map-floor-10x0p4x8.png",
+    "render": {
+      "size": [
+        10,
+        0.4000000059604645,
+        8
+      ],
+      "triangles": 12
+    }
+  },
+  {
+    "id": "map-floor-12x0p5x60-1ehthkr",
+    "path": "assets/models/map/floor-12x0p5x60-1ehthkr/floor-12x0p5x60-1ehthkr.gltf",
+    "names": [
+      "Floor slab 7"
+    ],
+    "image": "images/original-map-floor-12x0p5x60-1ehthkr.png",
+    "render": {
+      "size": [
+        12,
+        0.5,
+        60
+      ],
+      "triangles": 60
+    }
+  },
+  {
+    "id": "map-floor-12x0p5x60",
+    "path": "assets/models/map/floor-12x0p5x60/floor-12x0p5x60.gltf",
+    "names": [
+      "Floor slab 8"
+    ],
+    "image": "images/original-map-floor-12x0p5x60.png",
+    "render": {
+      "size": [
+        12,
+        0.5,
+        60
+      ],
+      "triangles": 12
+    }
+  },
+  {
+    "id": "map-floor-7p4x0p4x31p4",
+    "path": "assets/models/map/floor-7p4x0p4x31p4/floor-7p4x0p4x31p4.gltf",
+    "names": [
+      "Floor slab 9"
+    ],
+    "image": "images/original-map-floor-7p4x0p4x31p4.png",
+    "render": {
+      "size": [
+        7.400000095367432,
+        0.4000000059604645,
+        31.399999618530273
+      ],
+      "triangles": 12
+    }
+  },
+  {
+    "id": "map-wall-1x3x15",
+    "path": "assets/models/map/wall-1x3x15/wall-1x3x15.gltf",
+    "names": [
+      "Wall segment 11",
+      "Wall segment 12"
+    ],
+    "image": "images/original-map-wall-1x3x15.png",
+    "render": {
+      "size": [
+        1,
+        3,
+        15
+      ],
+      "triangles": 60
+    }
+  },
+  {
+    "id": "map-wall-1x3x6",
+    "path": "assets/models/map/wall-1x3x6/wall-1x3x6.gltf",
+    "names": [
+      "Wall segment 13"
+    ],
+    "image": "images/original-map-wall-1x3x6.png",
+    "render": {
+      "size": [
+        1,
+        3,
+        6
+      ],
+      "triangles": 36
+    }
+  },
+  {
+    "id": "map-wall-1x3x7",
+    "path": "assets/models/map/wall-1x3x7/wall-1x3x7.gltf",
+    "names": [
+      "Wall segment 14"
+    ],
+    "image": "images/original-map-wall-1x3x7.png",
+    "render": {
+      "size": [
+        1,
+        3,
+        7
+      ],
+      "triangles": 36
+    }
+  },
+  {
+    "id": "map-wall-1x3x1",
+    "path": "assets/models/map/wall-1x3x1/wall-1x3x1.gltf",
+    "names": [
+      "Wall segment 15",
+      "Wall segment 16"
+    ],
+    "image": "images/original-map-wall-1x3x1.png",
+    "render": {
+      "size": [
+        1,
+        3,
+        1
+      ],
+      "triangles": 12
+    }
+  },
+  {
+    "id": "map-wall-0p6x3p6x16",
+    "path": "assets/models/map/wall-0p6x3p6x16/wall-0p6x3p6x16.gltf",
+    "names": [
+      "Wall segment 17",
+      "Wall segment 21"
+    ],
+    "image": "images/original-map-wall-0p6x3p6x16.png",
+    "render": {
+      "size": [
+        0.6000000238418579,
+        3.5999999046325684,
+        16
+      ],
+      "triangles": 72
+    }
+  },
+  {
+    "id": "map-wall-0p6x3p6x6",
+    "path": "assets/models/map/wall-0p6x3p6x6/wall-0p6x3p6x6.gltf",
+    "names": [
+      "Wall segment 18",
+      "Wall segment 22"
+    ],
+    "image": "images/original-map-wall-0p6x3p6x6.png",
+    "render": {
+      "size": [
+        0.6000000238418579,
+        3.5999999046325684,
+        6
+      ],
+      "triangles": 36
+    }
+  },
+  {
+    "id": "map-wall-0p6x3p6x12",
+    "path": "assets/models/map/wall-0p6x3p6x12/wall-0p6x3p6x12.gltf",
+    "names": [
+      "Wall segment 19",
+      "Wall segment 23"
+    ],
+    "image": "images/original-map-wall-0p6x3p6x12.png",
+    "render": {
+      "size": [
+        0.6000000238418579,
+        3.5999999046325684,
+        12
+      ],
+      "triangles": 48
+    }
+  },
+  {
+    "id": "map-wall-0p6x3p6x8",
+    "path": "assets/models/map/wall-0p6x3p6x8/wall-0p6x3p6x8.gltf",
+    "names": [
+      "Wall segment 20",
+      "Wall segment 24"
+    ],
+    "image": "images/original-map-wall-0p6x3p6x8.png",
+    "render": {
+      "size": [
+        0.6000000238418579,
+        3.5999999046325684,
+        8
+      ],
+      "triangles": 36
+    }
+  },
+  {
+    "id": "map-wall-12x3p6x0p6",
+    "path": "assets/models/map/wall-12x3p6x0p6/wall-12x3p6x0p6.gltf",
+    "names": [
+      "Wall segment 25",
+      "Wall segment 26",
+      "Wall segment 27"
+    ],
+    "image": "images/original-map-wall-12x3p6x0p6.png",
+    "render": {
+      "size": [
+        12,
+        3.5999999046325684,
+        0.6000000238418579
+      ],
+      "triangles": 48
+    }
+  },
+  {
+    "id": "map-wall-2p5x3p6x0p6",
+    "path": "assets/models/map/wall-2p5x3p6x0p6/wall-2p5x3p6x0p6.gltf",
+    "names": [
+      "Wall segment 28",
+      "Wall segment 29"
+    ],
+    "image": "images/original-map-wall-2p5x3p6x0p6.png",
+    "render": {
+      "size": [
+        2.5,
+        3.5999999046325684,
+        0.6000000238418579
+      ],
+      "triangles": 24
+    }
+  },
+  {
+    "id": "map-floor-10x0p2x20-1v1svwu",
+    "path": "assets/models/map/floor-10x0p2x20-1v1svwu/floor-10x0p2x20-1v1svwu.gltf",
+    "names": [
+      "Floor slab 10"
+    ],
+    "image": "images/original-map-floor-10x0p2x20-1v1svwu.png",
+    "render": {
+      "size": [
+        10,
+        0.20000000298023224,
+        20
+      ],
+      "triangles": 36
+    }
+  },
+  {
+    "id": "map-floor-10x0p2x20-134p795",
+    "path": "assets/models/map/floor-10x0p2x20-134p795/floor-10x0p2x20-134p795.gltf",
+    "names": [
+      "Floor slab 11"
+    ],
+    "image": "images/original-map-floor-10x0p2x20-134p795.png",
+    "render": {
+      "size": [
+        10,
+        0.20000000298023224,
+        20
+      ],
+      "triangles": 36
+    }
+  },
+  {
+    "id": "map-floor-18x0p3x6",
+    "path": "assets/models/map/floor-18x0p3x6/floor-18x0p3x6.gltf",
+    "names": [
+      "Floor slab 12"
+    ],
+    "image": "images/original-map-floor-18x0p3x6.png",
+    "render": {
+      "size": [
+        18,
+        0.30000001192092896,
+        6
+      ],
+      "triangles": 12
+    }
+  },
+  {
+    "id": "map-column-0p7x4x0p7",
+    "path": "assets/models/map/column-0p7x4x0p7/column-0p7x4x0p7.gltf",
+    "names": [
+      "Column 1",
+      "Column 2",
+      "Column 3",
+      "Column 4",
+      "Column 5",
+      "Column 6",
+      "Column 7",
+      "Column 8",
+      "Column 9",
+      "Column 10"
+    ],
+    "image": "images/original-map-column-0p7x4x0p7.png",
+    "render": {
+      "size": [
+        0.699999988079071,
+        4,
+        0.699999988079071
+      ],
+      "triangles": 36
+    }
+  },
+  {
+    "id": "map-floor-10x0p3x4p8",
+    "path": "assets/models/map/floor-10x0p3x4p8/floor-10x0p3x4p8.gltf",
+    "names": [
+      "Floor slab 13"
+    ],
+    "image": "images/original-map-floor-10x0p3x4p8.png",
+    "render": {
+      "size": [
+        10,
+        0.30000001192092896,
+        4.800000190734863
+      ],
+      "triangles": 12
+    }
+  },
+  {
+    "id": "map-floor-10x0p3x1p6",
+    "path": "assets/models/map/floor-10x0p3x1p6/floor-10x0p3x1p6.gltf",
+    "names": [
+      "Floor slab 14",
+      "Floor slab 15"
+    ],
+    "image": "images/original-map-floor-10x0p3x1p6.png",
+    "render": {
+      "size": [
+        10,
+        0.30000001192092896,
+        1.600000023841858
+      ],
+      "triangles": 12
+    }
+  },
+  {
+    "id": "map-supply-2p6x1p28x1p1",
+    "path": "assets/models/map/supply-2p6x1p28x1p1/supply-2p6x1p28x1p1.gltf",
+    "names": [
+      "Supply chests 1",
+      "Supply chests 2",
+      "Supply chests 3",
+      "Supply chests 4",
+      "Supply chests 5",
+      "Supply chests 6",
+      "Supply chests 7",
+      "Supply chests 8"
+    ],
+    "image": "images/original-map-supply-2p6x1p28x1p1.png",
+    "render": {
+      "size": [
+        2.5999999046325684,
+        1.2799999713897705,
+        1.100000023841858
+      ],
+      "triangles": 72
+    }
+  },
+  {
+    "id": "map-sandbags-3p2x1p3x1p2",
+    "path": "assets/models/map/sandbags-3p2x1p3x1p2/sandbags-3p2x1p3x1p2.gltf",
+    "names": [
+      "Sandbag stack 1",
+      "Sandbag stack 2",
+      "Sandbag stack 3",
+      "Sandbag stack 4",
+      "Sandbag stack 5"
+    ],
+    "image": "images/original-map-sandbags-3p2x1p3x1p2.png",
+    "render": {
+      "size": [
+        3.200000047683716,
+        1.2999999523162842,
+        1.2000000476837158
+      ],
+      "triangles": 768
+    }
+  },
+  {
+    "id": "map-generator-1p6x1p6x2p4",
+    "path": "assets/models/map/generator-1p6x1p6x2p4/generator-1p6x1p6x2p4.gltf",
+    "names": [
+      "Generator 1",
+      "Generator 2",
+      "Generator 3",
+      "Generator 4"
+    ],
+    "image": "images/original-map-generator-1p6x1p6x2p4.png",
+    "render": {
+      "size": [
+        1.600000023841858,
+        1.600000023841858,
+        2.4000000953674316
+      ],
+      "triangles": 36
+    }
+  },
+  {
+    "id": "map-spool-1p2x1p2x1p2-awmfnx",
+    "path": "assets/models/map/spool-1p2x1p2x1p2-awmfnx/spool-1p2x1p2x1p2-awmfnx.gltf",
+    "names": [
+      "Cable spool 1",
+      "Cable spool 2",
+      "Cable spool 3",
+      "Cable spool 4"
+    ],
+    "image": "images/original-map-spool-1p2x1p2x1p2-awmfnx.png",
+    "render": {
+      "size": [
+        1.2000000476837158,
+        1.2000000476837158,
+        1.2000000476837158
+      ],
+      "triangles": 1792
+    }
+  },
+  {
+    "id": "map-bunk-1p1x0p7x2p2",
+    "path": "assets/models/map/bunk-1p1x0p7x2p2/bunk-1p1x0p7x2p2.gltf",
+    "names": [
+      "Field bed 1",
+      "Field bed 2",
+      "Field bed 3",
+      "Field bed 4",
+      "Field bed 5",
+      "Field bed 6",
+      "Field bed 7",
+      "Field bed 8"
+    ],
+    "image": "images/original-map-bunk-1p1x0p7x2p2.png",
+    "render": {
+      "size": [
+        1.100000023841858,
+        0.699999988079071,
+        2.200000047683716
+      ],
+      "triangles": 60
+    }
+  },
+  {
+    "id": "map-rubble-3x1x2-1qfgh79",
+    "path": "assets/models/map/rubble-3x1x2-1qfgh79/rubble-3x1x2-1qfgh79.gltf",
+    "names": [
+      "Rubble bank 4"
+    ],
+    "image": "images/original-map-rubble-3x1x2-1qfgh79.png",
+    "render": {
+      "size": [
+        3,
+        0.9528462886810303,
+        2
+      ],
+      "triangles": 516
+    }
+  },
+  {
+    "id": "map-trader-2x1p3x1p2-3mxpxd",
+    "path": "assets/models/map/trader-2x1p3x1p2-3mxpxd/trader-2x1p3x1p2-3mxpxd.gltf",
+    "names": [
+      "Trader crate 1"
+    ],
+    "image": "images/original-map-trader-2x1p3x1p2-3mxpxd.png",
+    "render": {
+      "size": [
+        2,
+        1.2999999776482583,
+        1.2000000476837158
+      ],
+      "triangles": 24
+    }
+  },
+  {
+    "id": "map-door-0p4x2p7x7p2",
+    "path": "assets/models/map/door-0p4x2p7x7p2/door-0p4x2p7x7p2.gltf",
+    "names": [
+      "Door tunnel_w",
+      "Door tunnel_e"
+    ],
+    "image": "images/original-map-door-0p4x2p7x7p2.png",
+    "render": {
+      "size": [
+        0.40000000596046603,
+        2.640000104904175,
+        7.119999885559082
+      ],
+      "triangles": 120
+    }
+  },
+  {
+    "id": "map-door-3x2p7x0p4",
+    "path": "assets/models/map/door-3x2p7x0p4/door-3x2p7x0p4.gltf",
+    "names": [
+      "Door building_ground"
+    ],
+    "image": "images/original-map-door-3x2p7x0p4.png",
+    "render": {
+      "size": [
+        2.9200000762939453,
+        2.640000104904175,
+        0.4000000059604645
+      ],
+      "triangles": 120
+    }
+  },
+  {
+    "id": "map-door-3x2x0p3",
+    "path": "assets/models/map/door-3x2x0p3/door-3x2x0p3.gltf",
+    "names": [
+      "Door building_balcony"
+    ],
+    "image": "images/original-map-door-3x2x0p3.png",
+    "render": {
+      "size": [
+        2.9200000762939453,
+        1.940000057220459,
+        0.30000001192092896
+      ],
+      "triangles": 96
+    }
+  },
+  {
+    "id": "map-gate-4x3",
+    "path": "assets/models/map/gate-4x3/gate-4x3.gltf",
+    "names": [
+      "Gate N1",
+      "Gate N2",
+      "Gate E1",
+      "Gate S1",
+      "Gate S2",
+      "Gate W1",
+      "Gate E2",
+      "Gate W2"
+    ],
+    "image": "images/original-map-gate-4x3.png",
+    "render": {
+      "size": [
+        3.950000047683716,
+        3,
+        0.1899999986588956
+      ],
+      "triangles": 120
+    }
+  },
+  {
+    "id": "map-gate-7x4p8",
+    "path": "assets/models/map/gate-7x4p8/gate-7x4p8.gltf",
+    "names": [
+      "Gate S3"
+    ],
+    "image": "images/original-map-gate-7x4p8.png",
+    "render": {
+      "size": [
+        6.949999809265137,
+        4.800000190734863,
+        0.1899999986588956
+      ],
+      "triangles": 192
+    }
+  },
+  {
+    "id": "map-hazard-5x0p1x5",
+    "path": "assets/models/map/hazard-5x0p1x5/hazard-5x0p1x5.gltf",
+    "names": [
+      "Hazard fixture courtyard_center"
+    ],
+    "image": "images/original-map-hazard-5x0p1x5.png",
+    "render": {
+      "size": [
+        5,
+        0.05999999865889549,
+        5
+      ],
+      "triangles": 180
+    }
+  },
+  {
+    "id": "map-hazard-3x0p1x6",
+    "path": "assets/models/map/hazard-3x0p1x6/hazard-3x0p1x6.gltf",
+    "names": [
+      "Hazard fixture dock_ramp"
+    ],
+    "image": "images/original-map-hazard-3x0p1x6.png",
+    "render": {
+      "size": [
+        3,
+        0.05999999865889549,
+        6
+      ],
+      "triangles": 108
+    }
+  },
+  {
+    "id": "map-flank-4x3x1",
+    "path": "assets/models/map/flank-4x3x1/flank-4x3x1.gltf",
+    "names": [
+      "Breakable flank wall"
+    ],
+    "image": "images/original-map-flank-4x3x1.png",
+    "render": {
+      "size": [
+        3.9749999841054278,
+        2.975000023841858,
+        1
+      ],
+      "triangles": 288
+    }
+  },
+  {
+    "id": "map-light-fixture-tube",
+    "path": "assets/models/map/light-fixture-tube/light-fixture-tube.gltf",
+    "names": [
+      "Light fixture service-0",
+      "Light fixture service-1",
+      "Light fixture service-3",
+      "Light fixture barracks-0-0",
+      "Light fixture barracks-0-3.2",
+      "Light fixture barracks-1-0",
+      "Light fixture barracks-1-3.2",
+      "Light fixture barracks-2-0",
+      "Light fixture barracks-2-3.2"
+    ],
+    "image": "images/original-map-light-fixture-tube.png",
+    "render": {
+      "size": [
+        1.7000000476837158,
+        0.2800000086426735,
+        0.2800000011920929
+      ],
+      "triangles": 140
+    }
+  },
+  {
+    "id": "map-light-fixture-emergency",
+    "path": "assets/models/map/light-fixture-emergency/light-fixture-emergency.gltf",
+    "names": [
+      "Light fixture service-2"
+    ],
+    "image": "images/original-map-light-fixture-emergency.png",
+    "render": {
+      "size": [
+        0.5,
+        0.2800000086426735,
+        0.2800000011920929
+      ],
+      "triangles": 24
+    }
+  },
+  {
+    "id": "map-light-fixture-work",
+    "path": "assets/models/map/light-fixture-work/light-fixture-work.gltf",
+    "names": [
+      "Light fixture link-0",
+      "Light fixture link-1",
+      "Light fixture link-2",
+      "Light fixture depot"
+    ],
+    "image": "images/original-map-light-fixture-work.png",
+    "render": {
+      "size": [
+        0.5,
+        0.2800000086426735,
+        0.2800000011920929
+      ],
+      "triangles": 24
+    }
+  },
+  {
+    "id": "map-pipe-0p26x0p26x30p4",
+    "path": "assets/models/map/pipe-0p26x0p26x30p4/pipe-0p26x0p26x30p4.gltf",
+    "names": [
+      "Service pipe 1",
+      "Service pipe 2",
+      "Service pipe 3",
+      "Service pipe 4"
+    ],
+    "image": "images/original-map-pipe-0p26x0p26x30p4.png",
+    "render": {
+      "size": [
+        0.3328000009059906,
+        0.3328000009059906,
+        30.399999618530273
+      ],
+      "triangles": 576
+    }
+  },
+  {
+    "id": "map-cable-8x0p75x0p06",
+    "path": "assets/models/map/cable-8x0p75x0p06/cable-8x0p75x0p06.gltf",
+    "names": [
+      "Electrical cable 1",
+      "Electrical cable 2"
+    ],
+    "image": "images/original-map-cable-8x0p75x0p06.png",
+    "render": {
+      "size": [
+        8.012544631958008,
+        0.7467104997485876,
+        0.04522542469203472
+      ],
+      "triangles": 240
+    }
+  },
+  {
+    "id": "unit-scout",
+    "path": "assets/models/units/scout/scout.gltf",
+    "names": [
+      "Unit T-600 Scout"
+    ],
+    "image": "images/original-unit-scout.png",
+    "render": {
+      "size": [
+        0.712816557455063,
+        1.8289705283794553,
+        0.37147259439155467
+      ],
+      "triangles": 36236
+    }
+  },
+  {
+    "id": "unit-endo",
+    "path": "assets/models/units/endo/endo.gltf",
+    "names": [
+      "Unit T-800 Endo"
+    ],
+    "image": "images/original-unit-endo.png",
+    "render": {
+      "size": [
+        0.9152925753593445,
+        1.9666349767521025,
+        0.841829448863864
+      ],
+      "triangles": 37924
+    }
+  },
+  {
+    "id": "unit-heavy",
+    "path": "assets/models/units/heavy/heavy.gltf",
+    "names": [
+      "Unit T-800 Heavy"
+    ],
+    "image": "images/original-unit-heavy.png",
+    "render": {
+      "size": [
+        1.246826354217529,
+        2.222297523729875,
+        1.1830341670952735
+      ],
+      "triangles": 40068
+    }
+  },
+  {
+    "id": "unit-t1000",
+    "path": "assets/models/units/t1000/t1000.gltf",
+    "names": [
+      "Unit T-1000"
+    ],
+    "image": "images/original-unit-t1000.png",
+    "render": {
+      "size": [
+        0.8500000381469727,
+        1.9619999847654255,
+        0.37300001047551634
+      ],
+      "triangles": 41880
+    }
+  },
+  {
+    "id": "unit-hkaerial",
+    "path": "assets/models/units/hkaerial/hkaerial.gltf",
+    "names": [
+      "Unit HK-Aerial"
+    ],
+    "image": "images/original-unit-hkaerial.png",
+    "render": {
+      "size": [
+        4.050665378570557,
+        0.8844999547302723,
+        1.6837999820709229
+      ],
+      "triangles": 13744
+    }
+  },
+  {
+    "id": "unit-hktank",
+    "path": "assets/models/units/hktank/hktank.gltf",
+    "names": [
+      "Unit HK-Tank"
+    ],
+    "image": "images/original-unit-hktank.png",
+    "render": {
+      "size": [
+        4.012999895095826,
+        2.166500081539154,
+        4.926499925613403
+      ],
+      "triangles": 27104
+    }
+  },
+  {
+    "id": "unit-soldier",
+    "path": "assets/models/units/soldier/soldier.gltf",
+    "names": [
+      "Unit Resistance Soldier"
+    ],
+    "image": "images/original-unit-soldier.png",
+    "render": {
+      "size": [
+        0.6790000145435333,
+        1.7840000098571183,
+        0.4755000025033951
+      ],
+      "triangles": 15592
+    }
+  }
+]

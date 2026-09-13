@@ -1,0 +1,28 @@
+<!doctype html><html><head><meta charset="utf-8"><style>body{margin:0;background:#151c23}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/node_modules/three/build/three.module.js","three/addons/":"/node_modules/three/examples/jsm/"}}</script></head><body>
+<script type="module">
+import * as THREE from 'three';
+import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import {RGBELoader} from 'three/addons/loaders/RGBELoader.js';
+const renderer = new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true});
+renderer.setSize(640,400);renderer.setPixelRatio(1);renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.25;document.body.append(renderer.domElement);
+const scene = new THREE.Scene();scene.background=new THREE.Color('#151c23');
+scene.add(new THREE.HemisphereLight(0xdcecff,0x72706b,2.2));
+for(const [pos,color,intensity] of [[[4,8,6],0xffedda,3], [[-5,3,-3],0x81baff,2]]){const l=new THREE.DirectionalLight(color,intensity);l.position.set(...pos);scene.add(l)}
+const pmrem=new THREE.PMREMGenerator(renderer);const hdr=await new RGBELoader().loadAsync('/assets/textures/units/studio_small_09_1k.hdr');scene.environment=pmrem.fromEquirectangular(hdr).texture;hdr.dispose();
+const camera=new THREE.OrthographicCamera(-1,1,1,-1,.01,10000);let model;
+const loading=new THREE.LoadingManager();
+loading.setURLModifier(url=>url.replace(/\/assets\/models\/units\/[^/]+\/textures\//,'/assets/textures/'));
+loading.onError=url=>{throw new Error('Asset resource failed: '+url)};
+const loader=new GLTFLoader(loading);
+window.renderAsset=async(path)=>{
+ if(model){scene.remove(model);model.traverse(o=>{o.geometry?.dispose();for(const m of (Array.isArray(o.material)?o.material:[o.material]).filter(Boolean)){for(const v of Object.values(m))if(v?.isTexture)v.dispose();m.dispose()}})}
+ model=(await loader.loadAsync('/'+path)).scene;scene.add(model);model.updateMatrixWorld(true);
+ const box=new THREE.Box3().setFromObject(model),center=box.getCenter(new THREE.Vector3()),size=box.getSize(new THREE.Vector3());
+ const max=Math.max(size.x,size.y,size.z);camera.position.copy(center).add(new THREE.Vector3(.85,.6,1.3).normalize().multiplyScalar(max*3));camera.lookAt(center);camera.updateMatrixWorld(true);
+ let minX=Infinity,maxX=-Infinity,minY=Infinity,maxY=-Infinity;
+ for(const x of [box.min.x,box.max.x])for(const y of [box.min.y,box.max.y])for(const z of [box.min.z,box.max.z]){const v=new THREE.Vector3(x,y,z).applyMatrix4(camera.matrixWorldInverse);minX=Math.min(minX,v.x);maxX=Math.max(maxX,v.x);minY=Math.min(minY,v.y);maxY=Math.max(maxY,v.y)}
+ const h=Math.max(maxY-minY,(maxX-minX)/1.6)*1.15;camera.left=-h*.8;camera.right=h*.8;camera.top=h/2;camera.bottom=-h/2;camera.updateProjectionMatrix();renderer.render(scene,camera);
+ return {size:size.toArray(),triangles:renderer.info.render.triangles};
+};window.ready=true;
+</script></body></html>
