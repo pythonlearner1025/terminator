@@ -1,0 +1,72 @@
+{
+  "schema": "v2-public-gallery-copy-1",
+  "as_of_milestone": "r8-interior-lighting-16",
+  "recap_title": "Toward V2 — progress through milestone 16",
+  "recap": [
+    "This is a work in progress toward the blue-black Future War ruins of James Cameron’s original The Terminator (1984). The user first asked for better scene assets, then for five screenshots showing what the player actually sees. Those gameplay views guided AI-generated targets; the user chose V2 and asked us to refactor the real Kite3D / Three.js game toward them. The middle column is that generated ambition. The right column contains unretouched game pixels, not generated replacements. The latest reviewed result is milestone 16: Needs revision, not visual parity.",
+    "The comparison keeps the same five player cameras, a 72° field of view, 1.65 m eye height, seed 2029 and tick 120, at the high preset and 1920 × 1080 resolution. The original before images came from the Mac. A separate unchanged baseline on the same Linux device supports performance comparisons; hardware changes are not credited as improvements. The coordinating agent reviews the native screenshots against V2, while the user sets the art direction and gives feedback. Masked, multiscale RGB pixel error is a diagnostic for differences, not a measure of semantic quality or percentage complete.",
+    "Astra high CLI workers on the 650s Linux machine have separate worktree branches for architecture, materials, lighting, effects, integration and review. Only integration runs GPU captures. Work so far includes photographic assets with physically based materials, corrected texture coordinates and safe resource ownership; broader planar concrete slabs, chipped edges and ruined openings; ground, ceiling and damp-surface treatments; and more restrained blue fog and interior lighting. Renderer fixes corrected fog color-space handling and transparent alpha compositing. Collision consistency, asset readiness, repeated start/stop cleanup, and editing and saving validation accompany the visible changes.",
+    "Milestone 16 retains the reviewed wall and material improvements and makes the service stairs clearer while removing the excessive white interior haze. Rejected experiments remain in the records: angular fractures and thin rubble aprons, smooth smoke blobs, and extra geometry, ambient occlusion or shadow detail with little visible benefit. The newer R10 piles add real mass and pass mechanical checks, but repeated printed sacks, flat stacked sheets and partly buried bunks failed visual review. Milestone 17 has not been promoted.",
+    "A frame from a real simulated VDB smoke volume has now been baked; its game appearance still awaits review. Wall surfaces, skyline, ground depth and atmosphere remain substantial gaps. After a machine freeze and user restart, work is limited to two agents under a shared 20 GiB memory cap, with one capture browser. A previous guarded run peaked around 6.4 GiB with no recorded out-of-memory events; that does not establish the earlier freeze’s cause. Further changes need the same practical checks, coordinating-agent visual review and user review."
+  ],
+  "source_note": "User-message excerpts verified against the original session record. UTC timestamps and line references are retained; the private transcript and attachment paths are not included. Original spelling and casing are preserved.",
+  "excerpts": [
+    {
+      "id": "initial-assets",
+      "label": "Initial asset request",
+      "text": "help me find better assets for all the scene assets in the terminator scene. in a new html page, per asset row show in the first col the original asset and in 3 cols 3 diff alternative assets you found on the internet",
+      "timestamp": "2026-09-13T06:12:52.172Z",
+      "line": 9,
+      "record_type": "response_item"
+    },
+    {
+      "id": "original-prompt",
+      "label": "Original scene-refactor prompt",
+      "text": "we need to seriously revamp and improve the scene. take multiple screenshots of the scene from different angles from the perspective the player would see right now. then write a prompt describing the ambitious final outcome we want from the scene (treat the screenshot almost like a depth map that steers the image generator to follow structure, that's how little detail and quality it has right now). do this for at least 5 different player POVs around the map. each POV shoudl show major parts of the map, enough to grasp the \"gestalt\" of the map. then show pairs of 5 screenshots -> 5 image gneerations (before/after) in a html file. we'll use the generated images as target refernece from now on when refactoring the scene. the plaeyr POVs should show what the play actually sees right now.",
+      "timestamp": "2026-09-13T19:31:05.976Z",
+      "line": 1257,
+      "record_type": "response_item"
+    },
+    {
+      "id": "capture-script",
+      "label": "Repeatable capture and pixel comparison",
+      "text": "and the script used to take the SC should be saved, so we can compare before/after after actually doing the refactor, so we can use the pixel-diff agains the reference images as error to hill climb",
+      "timestamp": "2026-09-13T19:31:39.786Z",
+      "line": 1265,
+      "record_type": "response_item"
+    },
+    {
+      "id": "style-correction",
+      "label": "Film-style correction",
+      "text": "no these image styles are bad. specifically mention james cameron and the graphics style of the original terminator movie, \"https://sites.pitt.edu/~goscilo/Sci-Fi/FilmStills/TheTerminator.html\". try agian. it should give vibe of this image: [Image #1]",
+      "timestamp": "2026-09-13T19:50:20.394Z",
+      "line": 1495,
+      "record_type": "response_item",
+      "omission": "text portion; attachment omitted"
+    },
+    {
+      "id": "v2-selection",
+      "label": "V2 selection",
+      "text": "lets just go with v2. what's your plan for converging on v2?",
+      "timestamp": "2026-09-13T20:14:46.970Z",
+      "line": 1753,
+      "record_type": "response_item"
+    },
+    {
+      "id": "remote-worktrees",
+      "label": "Remote Astra high worktrees",
+      "text": "how will you parallelize against multiple astra high agents? i prefer you spawn agents in the 650s machine for all work (use the cli on that machine) and only integrate here when their work is up to standards. each agent should work in a worktree branch and should work on orthogonal part of the entire task. tldr ur plan",
+      "timestamp": "2026-09-13T20:20:56.693Z",
+      "line": 1787,
+      "record_type": "response_item"
+    },
+    {
+      "id": "milestone-columns",
+      "label": "Major milestone comparison columns",
+      "text": "can you update the html periodically at major milestons to show the updated scene? add a new column (before | new target | latest progress)",
+      "timestamp": "2026-09-13T22:15:08.359Z",
+      "line": 2549,
+      "record_type": "response_item"
+    }
+  ]
+}
