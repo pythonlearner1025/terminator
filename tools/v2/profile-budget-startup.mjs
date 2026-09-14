@@ -4,6 +4,7 @@ import {execFileSync} from 'node:child_process'
 import {dirname,resolve} from 'node:path'
 import assert from 'node:assert/strict'
 import {launchCaptureBrowser,rendererInfo} from './capture-browser.mjs'
+import {startupTiming} from './startup-timing.mjs'
 if(process.env.STARTUP_GPU_GRANTED!=='1')throw Error('Explicit GPU lane grant required (STARTUP_GPU_GRANTED=1)')
 // This path selects an untouched source worktree/server, not intercepted assets.
 const projectRoot=resolve(process.env.STARTUP_PROJECT_ROOT||'.')
@@ -18,7 +19,7 @@ await readFile(output).then(()=>{throw Error('Refusing to replace evidence')},e=
 const config=JSON.parse(await readFile(projectRoot+'/docs/scene-targets/views.json','utf8'))
 const ownGroup=process.platform==='linux'?(await readFile('/proc/self/cgroup','utf8')).split('\n').find(x=>x.startsWith('0::'))?.slice(3):null
 const memory=async()=>!ownGroup?null:Object.fromEntries(await Promise.all(['memory.current','memory.max','memory.events'].map(async key=>[key,await readFile(`/sys/fs/cgroup${ownGroup}/../${key}`,'utf8')])) )
-const report={source:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8',cwd:projectRoot}).trim(),dirty:execFileSync('git',['status','--porcelain'],{encoding:'utf8',cwd:projectRoot}).trim(),settings:config.settings,viewport:config.viewport,memoryBefore:await memory(),runs:[]}
+const report={schema:2,timingMethod:'timing.actualStartToReadyMs starts at captured DOM Play click (manager.start for restart); legacy editorToWorldMs starts before Playwright actionability waiting. Readiness gates unchanged.',source:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8',cwd:projectRoot}).trim(),dirty:execFileSync('git',['status','--porcelain'],{encoding:'utf8',cwd:projectRoot}).trim(),settings:config.settings,viewport:config.viewport,memoryBefore:await memory(),runs:[]}
 if(process.platform==='linux'){const ownership=JSON.parse(await readFile('../coordination/perf-budget-gpu.json','utf8'));assert.equal(ownership.owner,'perf-budget-startup')}
 const profiling=process.env.STARTUP_CPU_PROFILE==='1'
 const deviceScaleFactor=Number(process.env.STARTUP_DPR||1)
@@ -127,7 +128,8 @@ try {
     result.responsiveAt=await page.evaluate(()=>performance.now())
     result.walkDistance=Math.hypot(result.position.x-ready.position.x,result.position.z-ready.position.z)
     delete result.profile?.measure;delete result.profile?.mark
-    report.runs.push({mode,cpuFile,cpuFunctions,menuDwellMs:0,profiling,editorToMenuMs:menuAt-ready.editorAt,menuPlayToWorldMs:ready.at-ready.menuPlayAt,editorToWorldMs:ready.at-ready.editorAt,ready,result,requests:[...requests.values()],errors,pageErrors})
+    const timing=startupTiming(mode,ready,menuAt)
+    report.runs.push({mode,timing,cpuFile,cpuFunctions,menuDwellMs:0,profiling,editorToMenuMs:menuAt-ready.editorAt,menuPlayToWorldMs:ready.at-ready.menuPlayAt,editorToWorldMs:ready.at-ready.editorAt,ready,result,requests:[...requests.values()],errors,pageErrors})
     assert(result.tick>ready.tick);assert(result.enemies>=4);assert(result.walkDistance>.1)
     assert(result.ownedEnemyMeshes.length>=4);assert(result.ownedEnemyMeshes.every(v=>v.owned&&v.meshes>0))
     assert(result.drawingBuffer.every(n=>n>0));assert.equal(result.renderEnabled,true);assert.deepEqual(pageErrors,[])
@@ -144,7 +146,7 @@ try {
     assert([...requests.values()].filter(r=>r.status>=400).every(r=>r.status===404&&['/favicon.ico','/files/.kite3d/console.log'].includes(r.path)||r.status===412&&r.path==='/files/.kite3d/state.json'),'Unexpected failed HTTP asset')
     assert.equal(result.quality,'high');assert.equal(result.fov,72)
     await page.screenshot({path:output.replace(/\.json$/,'')+'-'+mode+'.png'})
-    console.log(JSON.stringify({mode,editorToMenuMs:menuAt-ready.editorAt,menuPlayToWorldMs:ready.at-ready.menuPlayAt,enemies:result.enemies,visuals:result.visuals}))
+    console.log(JSON.stringify({mode,timing,editorToMenuMs:menuAt-ready.editorAt,menuPlayToWorldMs:ready.at-ready.menuPlayAt,enemies:result.enemies,visuals:result.visuals}))
     if(mode==='cold-editor')await page.getByTestId('play').click()
   }
   if(await page.evaluate(()=>window.terminator?.manager?.started))await page.getByTestId('play').click()
