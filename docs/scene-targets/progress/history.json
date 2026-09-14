@@ -1,0 +1,125 @@
+{
+  "schema": "v2-review-gallery-1",
+  "milestones": [
+    {
+      "id": "r2",
+      "label": "R2 integrated milestone",
+      "revision": "R2",
+      "review_status": "needs-revision",
+      "source_commit": "0d495c78fb24f4b44414916a8153dccbec810dac",
+      "path": "snapshots/r2/index.html",
+      "generated_at": "2026-09-13T22:21:47+00:00"
+    },
+    {
+      "id": "r3-diagnostic",
+      "label": "R3 combined pilot \u2014 DIAGNOSTIC",
+      "revision": "R3",
+      "review_status": "needs-revision",
+      "source_commit": null,
+      "base_commit": "561f035f13b7ed87c82979af6e3f22c58e6c0637",
+      "diagnostic": true,
+      "path": "snapshots/r3-diagnostic/index.html",
+      "generated_at": "2026-09-13T22:34:44+00:00"
+    },
+    {
+      "id": "r3-light-fix",
+      "label": "R3 authoring-light fix \u2014 DIAGNOSTIC",
+      "revision": "R3",
+      "review_status": "needs-revision",
+      "source_commit": null,
+      "base_commit": "cfdf6821e17869b16f492478ce6fe4cf82be1128",
+      "diagnostic": true,
+      "path": "snapshots/r3-light-fix/index.html",
+      "generated_at": "2026-09-13T22:53:33+00:00"
+    },
+    {
+      "id": "r3-ground-field",
+      "label": "R3 broader ground field \u2014 DIAGNOSTIC",
+      "revision": "R3",
+      "review_status": "needs-revision",
+      "source_commit": null,
+      "base_commit": "cfdf6821e17869b16f492478ce6fe4cf82be1128",
+      "diagnostic": true,
+      "path": "snapshots/r3-ground-field/index.html",
+      "generated_at": "2026-09-13T23:01:39+00:00"
+    },
+    {
+      "id": "r3-ground-separated",
+      "label": "R3 separated ground \u2014 DIAGNOSTIC",
+      "revision": "R3",
+      "review_status": "needs-revision",
+      "source_commit": null,
+      "base_commit": "91e7327429b8ac219ae75c47cb104f4914794965",
+      "diagnostic": true,
+      "path": "snapshots/r3-ground-separated/index.html",
+      "generated_at": "2026-09-13T23:15:07+00:00"
+    },
+    {
+      "id": "r3-light-ground-depth",
+      "label": "R3 lighting and ground depth \u2014 DIAGNOSTIC",
+      "revision": "R3",
+      "review_status": "needs-revision",
+      "source_commit": null,
+      "base_commit": "5610d8d7741235c1bec364eea9e4569f9355ad21",
+      "diagnostic": true,
+      "path": "snapshots/r3-light-ground-depth/index.html",
+      "generated_at": "2026-09-13T23:23:47+00:00"
+    },
+    {
+      "id": "r4-rubble-substrate",
+      "label": "R4 continuous rubble substrate \u2014 DIAGNOSTIC",
+      "revision": "R4",
+      "review_status": "needs-revision",
+      "source_commit": null,
+      "base_commit": "5610d8d7741235c1bec364eea9e4569f9355ad21",
+      "diagnostic": true,
+      "path": "snapshots/r4-rubble-substrate/index.html",
+      "generated_at": "2026-09-13T23:26:43+00:00"
+    },
+    {
+      "id": "r4-fog-binding-defect",
+      "label": "R4 fog participation; known floor sampler defect \u2014 DIAGNOSTIC",
+      "revision": "R4",
+      "review_status": "needs-revision",
+      "source_commit": null,
+      "base_commit": "e2b7f564da49cae3519c1a8f3dec21cf75614762",
+      "diagnostic": true,
+      "path": "snapshots/r4-fog-binding-defect/index.html",
+      "generated_at": "2026-09-13T23:52:27+00:00"
+    },
+    {
+      "id": "r4-corrected-bindings-smoke",
+      "label": "R4 corrected floor and ceiling; smoke needs revision \u2014 DIAGNOSTIC",
+      "revision": "R4",
+      "review_status": "needs-revision",
+      "source_commit": null,
+      "base_commit": "952bc3de8590ccf7939fb3005744a60d7b0917fd",
+      "diagnostic": true,
+      "path": "snapshots/r4-corrected-bindings-smoke/index.html",
+      "generated_at": "2026-09-13T23:52:28+00:00"
+    },
+    {
+      "id": "r4-repaired-walls-quiet-sky",
+      "label": "R4 repaired wall shapes and quieter smoke; fog encoding defect identified \u2014 DIAGNOSTIC",
+      "revision": "R4",
+      "review_status": "needs-revision",
+      "source_commit": null,
+      "base_commit": "9c636b46f5d28b9aa536b42174540aaee683938f",
+      "diagnostic": true,
+      "path": "snapshots/r4-repaired-walls-quiet-sky/index.html",
+      "generated_at": "2026-09-14T00:12:20+00:00"
+    },
+    {
+      "id": "r5-linear-fog-spall",
+      "label": "R5 linear fog restores depth; localized concrete detail \u2014 DIAGNOSTIC",
+      "revision": "R5",
+      "review_status": "needs-revision",
+      "source_commit": null,
+      "base_commit": "311d3ed842ad8c7d202a69d6265637bace8c8155",
+      "diagnostic": true,
+      "path": "snapshots/r5-linear-fog-spall/index.html",
+      "generated_at": "2026-09-14T00:14:03+00:00"
+    }
+  ],
+  "latest": "r5-linear-fog-spall"
+}
