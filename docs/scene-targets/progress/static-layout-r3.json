@@ -1,0 +1,193 @@
+{
+  "title": "R3 combined pilot — DIAGNOSTIC · R3",
+  "status": "DIAGNOSTIC / Needs revision. No scene approval.",
+  "columns": [
+    "Before",
+    "New target",
+    "Latest progress"
+  ],
+  "images": [
+    {
+      "src": "snapshots/r3-diagnostic/images/original-01-courtyard.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "src": "snapshots/r3-diagnostic/images/target-01-courtyard.png",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "snapshots/r3-diagnostic/images/candidate-01-courtyard.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "src": "snapshots/r3-diagnostic/images/original-02-cargo.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "src": "snapshots/r3-diagnostic/images/target-02-cargo.png",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "snapshots/r3-diagnostic/images/candidate-02-cargo.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "src": "snapshots/r3-diagnostic/images/original-03-barracks.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "src": "snapshots/r3-diagnostic/images/target-03-barracks.png",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "snapshots/r3-diagnostic/images/candidate-03-barracks.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "src": "snapshots/r3-diagnostic/images/original-04-service.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "src": "snapshots/r3-diagnostic/images/target-04-service.png",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "snapshots/r3-diagnostic/images/candidate-04-service.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "src": "snapshots/r3-diagnostic/images/original-05-rooftop.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "src": "snapshots/r3-diagnostic/images/target-05-rooftop.png",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "src": "snapshots/r3-diagnostic/images/candidate-05-rooftop.png",
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "rows": [
+    {
+      "view": "01-courtyard",
+      "figures": [
+        {
+          "group": "original",
+          "x": 24,
+          "width": 616
+        },
+        {
+          "group": "target",
+          "x": 652,
+          "width": 616
+        },
+        {
+          "group": "candidate",
+          "x": 1280,
+          "width": 616
+        }
+      ]
+    },
+    {
+      "view": "02-cargo",
+      "figures": [
+        {
+          "group": "original",
+          "x": 24,
+          "width": 616
+        },
+        {
+          "group": "target",
+          "x": 652,
+          "width": 616
+        },
+        {
+          "group": "candidate",
+          "x": 1280,
+          "width": 616
+        }
+      ]
+    },
+    {
+      "view": "03-barracks",
+      "figures": [
+        {
+          "group": "original",
+          "x": 24,
+          "width": 616
+        },
+        {
+          "group": "target",
+          "x": 652,
+          "width": 616
+        },
+        {
+          "group": "candidate",
+          "x": 1280,
+          "width": 616
+        }
+      ]
+    },
+    {
+      "view": "04-service",
+      "figures": [
+        {
+          "group": "original",
+          "x": 24,
+          "width": 616
+        },
+        {
+          "group": "target",
+          "x": 652,
+          "width": 616
+        },
+        {
+          "group": "candidate",
+          "x": 1280,
+          "width": 616
+        }
+      ]
+    },
+    {
+      "view": "05-rooftop",
+      "figures": [
+        {
+          "group": "original",
+          "x": 24,
+          "width": 616
+        },
+        {
+          "group": "target",
+          "x": 652,
+          "width": 616
+        },
+        {
+          "group": "candidate",
+          "x": 1280,
+          "width": 616
+        }
+      ]
+    }
+  ],
+  "canvasCount": 0,
+  "provenance": "Expand exact base + owner commits and routed file hashes{\n  \"base_commit\": \"561f035f13b7ed87c82979af6e3f22c58e6c0637\",\n  \"mode\": \"Diagnostic browser module overrides; Actual PlayerView; first-wave start held still; default map state; fixed presentation tick; no enemies advanced\",\n  \"owners\": [\n    {\n      \"owner\": \"architecture\",\n      \"commit\": \"de2d1a47f47e6e1da5f438bf3d202037c5fc9390\",\n      \"sourceFiles\": {\n        \"assets/v2/architecture/LICENSE.txt\": \"9000ef79bbd4e1ad058ccb5c88750520c99fd9b717406a33863cf102af59dff5\",\n        \"assets/v2/architecture/rubble-patches.json\": \"f5ee7875a9de5b803a5b753928ee5e20401712179c0544287175c26d03df076a\",\n        \"lib/view/v2/architecture-bake.js\": \"455b9622766e2be654da25a167834964a139bf550030a214a13c465ca636384f\",\n        \"lib/view/v2/architecture-layout.js\": \"eec54e2bb4be7b6987c9424475d51ad83484264a3cc9831417416b26e73f16c4\",\n        \"lib/view/v2/architecture-rubble.js\": \"21174b4acabe0f99bef84ffaed6941c7aea970da2198d992a18e551a9b281dd5\",\n        \"lib/view/v2/architecture-shells.js\": \"2ff892e3d7db9627f85512e9fe35769877954acf682effb293946761f4207616\",\n        \"lib/view/v2/architecture.js\": \"7ba23cb38131e2c04de1a8a66fe74e74b5284afe8d62f59ea5b5922e4a4ec43d\"\n      }\n    },\n    {\n      \"owner\": \"materials\",\n      \"commit\": \"056880634d9e0797395c7a5d538aba249f0cd9f3\",\n      \"sourceFiles\": {\n        \"assets/v2/materials/concrete-albedo.jpg\": \"136999c1feaf47cdfaec91e492522d7ceea653bba61ab2d903772c3025b60d40\",\n        \"assets/v2/materials/concrete-surface.png\": \"82c155c2e2c5b268cc32bcf4b994464e4564efca4da901c6a2a6cd1b4661fa57\",\n        \"assets/v2/materials/ground-albedo.jpg\": \"bb7888963f2134c5025bf056111cacb0d91b20af1837418a59dd2874c1d15682\",\n        \"assets/v2/materials/ground-surface.png\": \"412fcc8911ba038340f22916e8dbd0582c91d2ce77374f95dd83ba3626a91e78\",\n        \"assets/v2/materials/photo-leaking-LICENSE.txt\": \"799101068c143f87455bbda9e9482dcadd1b17cef6f06bff01850c8b4ebaa456\",\n        \"assets/v2/materials/photo-provenance.json\": \"950b1ed091f365f27d0b7a88a660cbf7311dea7f6b7c81c4fb9972f698dac3e8\",\n        \"assets/v2/materials/photo-worn-LICENSE.txt\": \"4358adca4c173de5717482607b3cd0e88ff33746bf97fb09be1ee98d0f658ec2\",\n        \"assets/v2/materials/photo-worn-albedo.jpg\": \"a7d583a3b1c5608fc04cf7d425ff6abeb6d82de8d62ccb1446af5f95ccfc86f1\",\n        \"assets/v2/materials/photo-worn-normal.png\": \"8de9fa5fa13f7520367129c796c55181c17ccd7e2d7f4bbdb30a8fba6482e392\",\n        \"assets/v2/materials/photo-worn-orm.png\": \"cf82a4dbd211d6b67967d43760a6cde27bd8eb74aa877de4b8fb96653a411894\",\n        \"assets/v2/materials/provenance.json\": \"b2a2268d7c338df3ce44baf88eed76119f6d683c1f361275e91b602fc0455cb5\",\n        \"lib/view/v2/materials-shader.js\": \"e94fbcc2c4366637c24ac8f2eef57664b1d34d5f17e9b9da6f9652eab15f3e78\",\n        \"lib/view/v2/materials-weathering.js\": \"e6d6ccf26a759cbfde6ff15cd4429cf1c9043aa71b87f00ed20b814d7f969838\",\n        \"lib/view/v2/materials.js\": \"aa40bc9bdded8abcde1c57fe1a3dd829ce31c2c5ca1ca3edc2ef8c9d8a42c72e\"\n      }\n    },\n    {\n      \"owner\": \"lighting\",\n      \"commit\": \"52142d79d414fce6a774b11fcc72fa17842252d4\",\n      \"sourceFiles\": {\n        \"lib/view/v2/lighting-noise.js\": \"13f78b3b270eb2b3e146f470497d3ebe2556b2b2e34e106e9e0944483ad85349\",\n        \"lib/view/v2/lighting.js\": \"c938d4e3583c96ad82fb88fb143269fd79a364c753e011f4d2adbf7d36c02ea0\"\n      }\n    }\n  ],\n  \"base_source_files\": {\n    \"assets/main.scene.gltf\": \"cc912950518e6712a00d3e735a7dca54b1ede6fdd54c88c9950347b9d86a3287\",\n    \"assets/v2/effects/particles.png\": \"c51d4f212ef0be4336b9321f7bc17416679bbe7f925a46d7d8b6ad602ede8fc9\",\n    \"assets/v2/effects/provenance.json\": \"2ec3364d98fa49c2aa8537709ea31a18bd63d658352a2a17536bb9735383750f\",\n    \"assets/v2/materials/concrete-albedo.jpg\": \"136999c1feaf47cdfaec91e492522d7ceea653bba61ab2d903772c3025b60d40\",\n    \"assets/v2/materials/concrete-surface.png\": \"82c155c2e2c5b268cc32bcf4b994464e4564efca4da901c6a2a6cd1b4661fa57\",\n    \"assets/v2/materials/ground-albedo.jpg\": \"bb7888963f2134c5025bf056111cacb0d91b20af1837418a59dd2874c1d15682\",\n    \"assets/v2/materials/ground-surface.png\": \"412fcc8911ba038340f22916e8dbd0582c91d2ce77374f95dd83ba3626a91e78\",\n    \"assets/v2/materials/provenance.json\": \"b2a2268d7c338df3ce44baf88eed76119f6d683c1f361275e91b602fc0455cb5\",\n    \"generators/v2-preview.js\": \"6b91cb58abb7b739ddb8a6f08b66b6ecbb4faf4c4045cd630a5ea18b99e98f4a\",\n    \"lib/view/map.js\": \"edcc12e24284c14e0fe1cd2ee2afa34aa2201198c4c4ffbad1c8fd58237d9571\",\n    \"lib/view/v2/architecture-layout.js\": \"eec54e2bb4be7b6987c9424475d51ad83484264a3cc9831417416b26e73f16c4\",\n    \"lib/view/v2/architecture.js\": \"1c39c5cd4597feffe4ffc455b69d8e3798c069ae7998a6f98c2424e7b346ebf3\",\n    \"lib/view/v2/effects-simulation.js\": \"6b00ad123c0209e823dc1f01d431242eadbf5b274973b268d6b89f8590ddc60c\",\n    \"lib/view/v2/effects-textures.js\": \"e84f88eb64206681207eb3d7ed4aaa07de15e8cd04b17a9cd1d2be38f875aed7\",\n    \"lib/view/v2/effects.js\": \"ae9601ca4f3ee4a69a07b1bb4b81158ba1caec167c56879d7cda14ae58385257\",\n    \"lib/view/v2/lighting-noise.js\": \"f9d6e4b5e46687667d9cffd6bc2df3ca0dff1fea07c4a372786ba4e761ec9d2b\",\n    \"lib/view/v2/lighting.js\": \"61214668919a2c027cb6b48a86411b642234571e376423567eb77b013f66d885\",\n    \"lib/view/v2/materials-shader.js\": \"256caf1a7980562484a8b4b36b7e8d693b895f8d9e33827352fe45d81bd3306f\",\n    \"lib/view/v2/materials-weathering.js\": \"a4bb5165cc52df12cb3b326a6a6ffb84e858804d10aa3a02098357e9b3896d00\",\n    \"lib/view/v2/materials.js\": \"5baff3e7fc86ec71bf257843291cdda8af5af68bb9fed7d7a3cf165f0619dd9e\",\n    \"main.js\": \"1ad1075417655a59138f08b8afa577076bd3556af41248ef005614111a6f77f6\",\n    \"package.json\": \"53bba145dd7cfe3eabf97a2f647235748727fb6a086483e64b0e6fd4612b76ca\"\n  },\n  \"harness_sources\": {\n    \"tools/capture-scene-targets.mjs\": \"e7408fb056cb029ad65f7cdba003f62edd6ccd7f7d2af7f6bfafd11bda382ed8\",\n    \"tools/v2/capture-browser.mjs\": \"cd4b99b8b610eff03de9b23ced57f39987e81a1033873e7b9fa0163ceccc683f\",\n    \"tools/v2/capture-gpu-timing.mjs\": \"b1af3d4cb6d1eba997bc60cc33bcb3db889391ccfbbba065ffb09957565dd35f\",\n    \"tools/v2/capture-pilot-overrides.mjs\": \"9a4d4036e34df46cac8e9bb26ec4ce180311ca74489b4518fd768a1fd837309c\"\n  }\n}",
+  "chrome": "141.0.7390.54",
+  "gpuDisabled": true,
+  "webglDisabled": true
+}
