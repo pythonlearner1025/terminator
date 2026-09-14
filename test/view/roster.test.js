@@ -119,3 +119,32 @@ test('boss wave announcement remains without enemy health overlay',()=>{
   for(const current of [5,10])assert.equal(waveBannerTitle({current}),'HK-TANK INBOUND')
   assert.equal(waveBannerTitle({current:4}),'WAVE 4')
 })
+
+test('match priming allocates live aerial optics before death paths and retains those exact pools for first spawn',async()=>{
+  const {UnitView}=await import('../../lib/view/units.js')
+  const {defaultMap}=await import('../../lib/core/map.js')
+  const scene=new E.Scene();scene.modelRoot=new E.Group();scene.add(scene.modelRoot);scene.mainCamera=new E.PerspectiveCamera()
+  for(const [type,name] of Object.entries(TEMPLATE_NAMES)){
+    const source=(await loadUnitAsset(type)).clone();source.name=name;scene.modelRoot.add(source)
+  }
+  window.addEventListener??=()=>{};window.removeEventListener??=()=>{}
+  const viewer={scene,addEventListener(){},removeEventListener(){}}
+  const view=new UnitView(viewer)
+  try{
+    view.start({map:defaultMap,eventLog:[],tick:0})
+    await Promise.all([view.fx.materials.ready,view.rosterFx.ready,view.fx.gore.ready])
+    const release=view.primeWarmup(),beam=view.optics.rosterPools.beam,spot=view.optics.rosterPools.spot
+    assert(beam?.mesh.isInstancedMesh);assert(spot?.mesh.isInstancedMesh)
+    assert.equal(beam.mesh.instanceMatrix.count,64);assert.equal(spot.mesh.instanceMatrix.count,64)
+    assert.equal(view.warmupReport.pooledRigs,54)
+    assert.equal(view.warmupReport.rosterDeaths,3);assert.equal(view.warmupReport.skullCrunch,1)
+    release()
+    assert.equal(beam.mesh.count,0);assert.equal(spot.mesh.count,0)
+    const visual=view.cloneTemplateFigure({id:'first-aerial',type:'hkaerial',pos:{x:0,y:4,z:0},yaw:0})
+    view.visuals.set('first-aerial',visual)
+    view.optics.update([visual])
+    assert.equal(view.optics.rosterPools.beam,beam);assert.equal(view.optics.rosterPools.spot,spot)
+    assert.equal(beam.mesh.count,1);assert.equal(spot.mesh.count,1)
+  }finally{view.stop()}
+  assert.equal(scene.children.length,1)
+})

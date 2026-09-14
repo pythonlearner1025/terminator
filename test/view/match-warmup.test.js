@@ -5,11 +5,11 @@ globalThis.ImageData ??= class {}
 globalThis.WebGLRenderingContext ??= class {}
 globalThis.requestAnimationFrame = fn => setTimeout(fn, 0)
 globalThis.cancelAnimationFrame = clearTimeout
-const {warmupMatch} = await import('../../lib/view/match-warmup.js')
+const {warmupMatch,compileWarmupTargets} = await import('../../lib/view/match-warmup.js')
 const tick = () => new Promise(resolve => setImmediate(resolve))
 function fixture() {
   const controller = new AbortController(), events = []
-  const object = {isMesh:true, isInstancedMesh:true, count:0, visible:false, frustumCulled:true}
+  const object = {material:{isMaterial:true},isMesh:true, isInstancedMesh:true, count:0, visible:false, frustumCulled:true}
   const scene = {isObject3D:true, mainCamera:{}, traverse(fn){fn(object)}}
   const renderer = {shadowMap:{}, info:{programs:[]},
     compile(){events.push('compile')},
@@ -120,4 +120,70 @@ test('upload failure restores state and observes a later compile failure', async
   assert.deepEqual([f.object.count,f.object.visible,f.object.frustumCulled],[0,false,true])
   ready.reject(Error('late compile failure'));await tick()
   assert(!f.events.includes('finish'))
+})
+
+function compileFixture(rgbm=true) {
+  const events=[],opaque={name:'opaque'},transparent={name:'transparent'},previous={name:'previous'}
+  let target=previous,face=3,level=2
+  const renderer={getRenderTarget:()=>target,getActiveCubeFace:()=>face,getActiveMipmapLevel:()=>level,
+    setRenderTarget(value,nextFace=0,nextLevel=0){target=value;face=nextFace;level=nextLevel},
+    compile(root,camera,scene){root.traverse(object=>events.push({target,object,material:object.material,defines:{...object.material.defines}}))},
+    async compileAsync(...args){this.compile(...args)}}
+  const viewer={scene:{mainCamera:{}},renderManager:{webglRenderer:renderer,rgbm,composerTarget:opaque,renderPass:{transparentTarget:transparent}}}
+  return {events,renderer,viewer,opaque,transparent,previous}
+}
+
+test('compile uses compositor output and draw hooks for each material on a mixed skinned mesh',async()=>{
+  const f=compileFixture(),calls=[]
+  const materials=[{isMaterial:true},{isMaterial:true,transparent:true},{isMaterial:true,transmission:1}]
+  const object={geometry:{},isSkinnedMesh:true,skeleton:{},material:materials}
+  for(const material of materials){
+    material.onBeforeRender=(renderer,scene,camera,geometry,source)=>{
+      assert.equal(source,object);assert.equal(geometry,object.geometry)
+      material.defines={SSAO_ENABLED:1,INVERSE_ALPHAMAP:0};calls.push('before')
+    }
+    material.onAfterRender=()=>calls.push('after')
+  }
+  await compileWarmupTargets(f.viewer,[object])
+  assert.deepEqual(f.events.map(e=>e.target),[f.opaque,f.transparent,f.transparent])
+  assert.deepEqual(f.events.map(e=>e.material),materials)
+  assert(f.events.every(e=>e.object.isSkinnedMesh&&e.object.skeleton===object.skeleton&&e.defines.SSAO_ENABLED===1))
+  assert.deepEqual(calls,['before','after','before','after','before','after'])
+  assert.equal(object.material,materials);assert.equal(f.renderer.getRenderTarget(),f.previous)
+  assert.equal(f.renderer.getActiveCubeFace(),3);assert.equal(f.renderer.getActiveMipmapLevel(),2)
+})
+
+test('non-RGBM compile keeps transparency on the ordinary compositor target',async()=>{
+  const f=compileFixture(false),material={isMaterial:true,transparent:true}
+  Object.defineProperty(f.viewer.renderManager.renderPass,'transparentTarget',{get(){throw Error('RGBM-only target was touched')}})
+  await compileWarmupTargets(f.viewer,[{material}])
+  assert.equal(f.events[0].target,f.opaque)
+})
+
+test('pending parallel compilation restores framebuffer immediately and Stop observes both late failures',async()=>{
+  const f=compileFixture(),controller=new AbortController(),gates=[Promise.withResolvers(),Promise.withResolvers()]
+  let index=0
+  f.renderer.compileAsync=function(...args){this.compile(...args);return gates[index++].promise}
+  const ready=compileWarmupTargets(f.viewer,[{material:{isMaterial:true}},{material:{isMaterial:true,transparent:true}}],{signal:controller.signal})
+  assert.equal(index,2);assert.equal(f.renderer.getRenderTarget(),f.previous)
+  controller.abort();await assert.rejects(ready,{name:'AbortError'})
+  for(const gate of gates)gate.reject(Error('late driver failure'))
+  await tick();assert.equal(f.renderer.getRenderTarget(),f.previous)
+})
+
+test('a later compile hook failure balances hooks, restores target and observes earlier compilation',async()=>{
+  const f=compileFixture(),gate=Promise.withResolvers();let after=0
+  const first={material:{isMaterial:true}},second={material:{isMaterial:true,transparent:true,
+    onBeforeRender(){throw Error('hook failed')},onAfterRender(){after++}}}
+  f.renderer.compileAsync=function(...args){this.compile(...args);return gate.promise}
+  assert.throws(()=>compileWarmupTargets(f.viewer,[first,second]),/hook failed/)
+  assert.equal(after,1);assert.equal(f.renderer.getRenderTarget(),f.previous)
+  gate.reject(Error('late driver failure'));await tick()
+})
+
+test('warmup suspends automatic pool rendering between requested compositor frames',async()=>{
+  const f=fixture(),states=[],viewer=f.manager.ctx.viewer;viewer.renderEnabled=true
+  f.renderer.compileAsync=async()=>{states.push(viewer.renderEnabled)}
+  await f.run()
+  assert.deepEqual(states,[false,false]);assert.equal(viewer.renderEnabled,true)
 })
