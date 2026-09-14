@@ -31,6 +31,12 @@ try {
     localStorage.setItem('terminator.settings.v1',JSON.stringify({...settings,controlsSeen:true}))
     performance.setResourceTimingBufferSize(5000)
     window.__startupLongTasks=[]
+    document.addEventListener('click',event=>{
+      const id=event.target.closest?.('[data-testid]')?.getAttribute('data-testid')
+      if(id==='play')window.__actualEditorClickAt=performance.now()
+      if(id==='menu-play')window.__actualMenuClickAt=performance.now()
+      if(id==='start-match')window.__actualLobbyClickAt=performance.now()
+    },true)
     new PerformanceObserver(list=>{for(const e of list.getEntries())if(window.__startupLongTasks.length<2000)window.__startupLongTasks.push({start:e.startTime,ms:e.duration})}).observe({type:'longtask',buffered:true})
   },config.settings)
   const page=await context.newPage(),cdp=await context.newCDPSession(page)
@@ -55,11 +61,11 @@ try {
       await page.waitForFunction(async()=>{const state=await fetch('/api/state').then(r=>r.json());return state.projectLoaded&&!state.lastLoadError},null,{timeout:180000})
       await page.waitForFunction(()=>{const node=document.querySelector('[data-testid="play"]');return node&&!node.disabled},null,{timeout:180000})
       if(profiling)await cdp.send('Profiler.start')
-      await page.evaluate(()=>{window.__editorPlayAt=performance.now()})
+      await page.evaluate(()=>{window.__startupAuthoringViewer=window.viewer;window.__editorPlayAt=performance.now()})
       await page.getByTestId('play').click()
     } else {
       if(profiling)await cdp.send('Profiler.start')
-      await page.evaluate(()=>{window.__startupLongTasks=[];performance.clearResourceTimings();window.__editorPlayAt=performance.now();window.terminator.manager.start()})
+      await page.evaluate(()=>{window.__startupLongTasks=[];performance.clearResourceTimings();window.__editorPlayAt=performance.now();window.__actualEditorClickAt=window.__editorPlayAt;window.terminator.manager.start()})
     }
     await page.waitForFunction(()=>window.terminator?.manager?.ui?.screens?.route==='main'||window.terminator?.manager?.ui?.menuLoadError,null,{timeout:180000})
     const menuError=await page.evaluate(()=>window.terminator?.manager?.ui?.menuLoadError)
@@ -72,7 +78,7 @@ try {
     await page.waitForFunction(()=>{const m=window.terminator?.manager;return m?.director.phase==='wave'&&m.viewsStarted&&m.visualWarmupReport&&!m.ui.screens.route},null,{timeout:180000})
     const ready=await page.evaluate(()=>{
       const m=window.terminator.manager
-      return {at:performance.now(),position:{...m.world.player.pos},tick:m.world.tick,editorAt:window.__editorPlayAt,menuPlayAt:window.__menuPlayAt}
+      return {at:performance.now(),position:{...m.world.player.pos},tick:m.world.tick,editorAt:window.__editorPlayAt,menuPlayAt:window.__menuPlayAt,actualEditorClickAt:window.__actualEditorClickAt,actualMenuClickAt:window.__actualMenuClickAt,actualLobbyClickAt:window.__actualLobbyClickAt}
     })
     const {profile:cpu}=profiling?await cdp.send('Profiler.stop'):{profile:{nodes:[],samples:[],timeDeltas:[]}}
     const cpuFile=output.replace(/\.json$/,'')+'-'+mode+'.cpuprofile'
@@ -114,7 +120,9 @@ try {
       };for(const m of materials)visit(m)
       return [...textures.values()]
     })
+    result.imageSourceSharing=await page.evaluate(()=>({runtime:{...window.terminator.manager.ctx.viewer.getPlugin('V2ExactImageSourceSharing')?.stats},editor:{...window.__startupAuthoringViewer?.getPlugin('V2ExactImageSourceSharing')?.stats}}))
     result.observedEnemyDrawIds=observedDraws
+    result.editorOverlayMarks=await page.evaluate(()=>performance.getEntriesByType('mark').filter(e=>e.name.startsWith('terminator:editor-')).map(e=>({name:e.name,at:e.startTime})))
     result.inputAt=inputAt;result.firstUseLongTasks=result.longTasks.filter(t=>t.start>=ready.at)
     result.responsiveAt=await page.evaluate(()=>performance.now())
     result.walkDistance=Math.hypot(result.position.x-ready.position.x,result.position.z-ready.position.z)
@@ -125,10 +133,15 @@ try {
     assert(result.drawingBuffer.every(n=>n>0));assert.equal(result.renderEnabled,true);assert.deepEqual(pageErrors,[])
     // The existing unavailable lobby falls back to built-in Skynet. Preserve
     // those network errors, while rejecting shader/render and other failures.
-    assert(errors.every(e=>e.includes('net::ERR_CONNECTION_REFUSED')||e.includes('status of 404')),JSON.stringify(errors))
+    // Editor file previews may read the heartbeat file through a stale revision.
+    // Record this exact volatile-metadata race, never whitelist gameplay assets.
+    const metadataFailures=[...requests.values()].filter(r=>r.status===412&&r.path==='/files/.kite3d/state.json')
+    report.runs.at(-1).editorMetadataFailures=metadataFailures
+    const onlyMetadata412=[...requests.values()].filter(r=>r.status===412).every(r=>r.path==='/files/.kite3d/state.json')
+    assert(errors.every(e=>e.includes('net::ERR_CONNECTION_REFUSED')||e.includes('status of 404')||e.includes('status of 412')&&metadataFailures.length&&onlyMetadata412),JSON.stringify(errors))
     if(process.env.STARTUP_EXPECT_BAKED==='1'){assert(result.v2Stats[0].bakedReuse);assert(result.v2Stats[1].bakedReuse)}
     if(process.env.STARTUP_EXPECT_NO_ENEMY_OVERLAYS==='1')assert.equal(result.enemyPlates,0)
-    assert([...requests.values()].filter(r=>r.status>=400).every(r=>r.status===404&&['/favicon.ico','/files/.kite3d/console.log'].includes(r.path)),'Unexpected failed HTTP asset')
+    assert([...requests.values()].filter(r=>r.status>=400).every(r=>r.status===404&&['/favicon.ico','/files/.kite3d/console.log'].includes(r.path)||r.status===412&&r.path==='/files/.kite3d/state.json'),'Unexpected failed HTTP asset')
     assert.equal(result.quality,'high');assert.equal(result.fov,72)
     await page.screenshot({path:output.replace(/\.json$/,'')+'-'+mode+'.png'})
     console.log(JSON.stringify({mode,editorToMenuMs:menuAt-ready.editorAt,menuPlayToWorldMs:ready.at-ready.menuPlayAt,enemies:result.enemies,visuals:result.visuals}))
