@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "command": "python3 tools/v2/build-materials.py --selected <receipt-directory>",
+  "normal_convention": "OpenGL tangent-space; no normal/roughness invented for color-only leaking scan",
+  "projection_meters": {
+    "worn": [
+      10.92,
+      3.87
+    ],
+    "leaking": [
+      8.1,
+      0.81
+    ]
+  },
+  "sources": [
+    {
+      "id": "51c6567b2d524f179254667176f60a3a",
+      "family": "worn",
+      "archive_sha256": "057dcee9bf6b816acc7ce81cabfe8f016bf373a9e6b71ed090dd0a903df528aa",
+      "archive_bytes": 37138242,
+      "license": "CC-BY-4.0",
+      "attribution": "Model Information:\n* title:\tWorn concrete wall\n* source:\thttps://sketchfab.com/3d-models/worn-concrete-wall-51c6567b2d524f179254667176f60a3a\n* author:\tSousinho (https://sketchfab.com/sousinho)\n\nModel License:\n* license type:\tCC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)\n* requirements:\tAuthor must be credited. Commercial use is allowed.\n\nIf you use this 3D model in your project be sure to copy paste this credit wherever you share it:\nThis work is based on \"Worn concrete wall\" (https://sketchfab.com/3d-models/worn-concrete-wall-51c6567b2d524f179254667176f60a3a) by Sousinho (https://sketchfab.com/sousinho) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source_members": {
+        "albedo": {
+          "path": "textures/M_back_wall_1001_baseColor.jpeg",
+          "sha256": "5c1fd07916466dbc5f53f6118b173491eaeb24174db70d1983322f3cb5a8063b"
+        },
+        "normal": {
+          "path": "textures/M_back_wall_1001_normal.png",
+          "sha256": "b9648de813312be2b56b579db2853921f2c819de2b88b1917e88b28340ced5d5"
+        },
+        "orm": {
+          "path": "textures/M_back_wall_1001_metallicRoughness.png",
+          "sha256": "23cb5828c9ff5a7d9a578f0c4a2c0ed1aa0a85fdf75db3d9bdc5912be74380c8"
+        }
+      },
+      "source_position_bounds": [
+        -0.0,
+        11.150020599365234,
+        -0.0,
+        4.045316219329834
+      ],
+      "source_uv_min": [
+        0.0019529999699443579,
+        0.0019529999699443579
+      ],
+      "source_uv_max": [
+        0.8991379737854004,
+        0.9980469942092896
+      ],
+      "raster_size": [
+        1536,
+        560
+      ],
+      "trim_pixels": [
+        16,
+        12,
+        1520,
+        548
+      ],
+      "covered_before_hole_fill": 1.0,
+      "preparation": "Barycentric glTF POSITION/TEXCOORD_0 planar rectification, bilinear photo resampling; worn normals rotated by original TANGENT/NORMAL frame; edge trim; scan microholes filled along scanline. No synthetic cracks, color lighting, or invented photographic detail.",
+      "outputs": {
+        "photo-worn-albedo.jpg": {
+          "sha256": "a7d583a3b1c5608fc04cf7d425ff6abeb6d82de8d62ccb1446af5f95ccfc86f1",
+          "size": [
+            1504,
+            536
+          ],
+          "bytes": 297793
+        },
+        "photo-worn-normal.png": {
+          "sha256": "8de9fa5fa13f7520367129c796c55181c17ccd7e2d7f4bbdb30a8fba6482e392",
+          "size": [
+            1504,
+            536
+          ],
+          "bytes": 1345700
+        },
+        "photo-worn-orm.png": {
+          "sha256": "cf82a4dbd211d6b67967d43760a6cde27bd8eb74aa877de4b8fb96653a411894",
+          "size": [
+            1504,
+            536
+          ],
+          "bytes": 1030268
+        }
+      }
+    },
+    {
+      "id": "893893fc88104dd8a3bd66333411acd2",
+      "family": "leaking",
+      "archive_sha256": "5fc61ba60dc5173bf5e7317db9e5882e360fd0788734a31106fb58e585e50b69",
+      "archive_bytes": 60953765,
+      "license": "CC-BY-4.0",
+      "attribution": "Model Information:\n* title:\tDirty leaking concrete wall\n* source:\thttps://sketchfab.com/3d-models/dirty-leaking-concrete-wall-893893fc88104dd8a3bd66333411acd2\n* author:\tОrрндп ЯТG (https://sketchfab.com/orphanrtg)\n\nModel License:\n* license type:\tCC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)\n* requirements:\tAuthor must be credited. Commercial use is allowed.\n\nIf you use this 3D model in your project be sure to copy paste this credit wherever you share it:\nThis work is based on \"Dirty leaking concrete wall\" (https://sketchfab.com/3d-models/dirty-leaking-concrete-wall-893893fc88104dd8a3bd66333411acd2) by Оrрндп ЯТG (https://sketchfab.com/orphanrtg) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "excluded_reason": "Disconnected scanned wall panels and color-only unlit material; not used for generic PBR projection. Worn source provides complete aligned albedo/normal/roughness.",
+      "outputs": {}
+    }
+  ]
+}

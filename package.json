@@ -41,18 +41,19 @@
   "devDependencies": {
     "@gltf-transform/core": "^4.5.0",
     "concurrently": "^9.2.1",
-    "kite3d": "0.18.0"
+    "kite3d": "0.19.0-alpha.2",
+    "meshoptimizer": "0.20.0"
   },
   "dependencies": {
     "@jitl/quickjs-wasmfile-release-sync": "^0.32.0",
-    "@kite3d/engine": "0.18.0",
+    "@kite3d/engine": "0.19.0-alpha.2",
     "cannon-es": "0.20.0",
     "quickjs-emscripten": "0.32.0",
     "threepipe": "0.5.1",
     "ws": "^8.21.3"
   },
   "kite3d": {
-    "version": "0.18.0",
+    "version": "0.19.0-alpha.2",
     "name": "Terminator: human vs Skynet",
     "imports": {
       "#quickjs-core": "https://esm.sh/quickjs-emscripten-core@0.32.0?bundle",
@@ -61,7 +62,8 @@
       "@jitl/quickjs-wasmfile-release-sync/emscripten-module": "https://cdn.jsdelivr.net/npm/@jitl/quickjs-wasmfile-release-sync@0.32.0/dist/emscripten-module.browser.mjs"
     },
     "scripts": [
-      "./scripts/GameManager.script.js"
+      "./scripts/GameManager.script.js",
+      "./generators/v2-preview.js"
     ],
     "viewer": {
       "msaa": 2,

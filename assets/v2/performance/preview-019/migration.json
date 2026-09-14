@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "reason": "Kite3D 0.19 removed Generator; required stopped preview migration only",
+  "sourceHead": "d33e0e4",
+  "journalEntriesRead": 1,
+  "originalNode": {
+    "name": "V2 Environment Preview",
+    "extras": {
+      "gltfUUID": "terminator-v2-environment-preview",
+      "kite3dAuthoring": {
+        "role": "generator",
+        "id": "terminator-v2-environment-preview"
+      },
+      "EntityComponentPlugin": {
+        "terminator-v2-preview-generator": {
+          "type": "Generator",
+          "state": {
+            "module": "generators/v2-preview.js",
+            "params": {}
+          }
+        }
+      }
+    }
+  },
+  "triangles": 1258935,
+  "meshes": 341,
+  "bytes": 150731520,
+  "attributesSha256": "2a5380fcac4e9f4430d1dbc73f2cf74382d17dc543785df16e7dc7f2fd1afc7f",
+  "architecture": {
+    "colliders": 140,
+    "wallSkins": 280,
+    "fragments": 5309,
+    "rods": 1395,
+    "skylineBuildings": 16,
+    "triangles": 986731,
+    "meshes": 336,
+    "materials": 15,
+    "collapseClusters": 61,
+    "coarseSlabs": 203,
+    "mediumSlabs": 942,
+    "fineChips": 2147,
+    "spallCavities": 65,
+    "volumeWalls": 6,
+    "volumeWallTriangles": 266064,
+    "volumeCuts": 936,
+    "skylineOpenings": 374,
+    "skylineFloorRemnants": 68,
+    "replacedWallBatches": 0,
+    "scannedPatches": 190,
+    "scannedTriangles": 116583,
+    "borrowedAtlases": 5,
+    "coverPiles": 7,
+    "coverTriangles": 423815,
+    "coverGeometryBytes": 40686240
+  },
+  "ground": {
+    "patches": 11900,
+    "triangles": 272204,
+    "topTriangles": 142800,
+    "edgeTriangles": 129404,
+    "solidFragments": 4946,
+    "draws": 5,
+    "materials": 5,
+    "textures": 5,
+    "sharedImages": 5,
+    "coverageM2": 483.8776886511196,
+    "footprintM2": 1015.6114801298341,
+    "maxHeight": 0.07497704647248613,
+    "bySupport": {
+      "ground": 6500,
+      "dock_floor": 1000,
+      "exp_west_yard": 1000,
+      "exp_east_yard": 1000,
+      "exp_service_floor": 900,
+      "exp_barracks_roof": 900,
+      "exp_colonnade_canopy": 600
+    },
+    "ready": true,
+    "disposed": false
+  },
+  "cpuBuildMs": 5703.740554
+}

@@ -20,7 +20,8 @@
         280,
         281,
         282,
-        283
+        283,
+        284
       ]
     }
   ],
@@ -11331,6 +11332,32 @@
           "role": "direct",
           "id": "terminator-saved-camera"
         }
+      }
+    },
+    {
+      "name": "V2 Environment Preview",
+      "extras": {
+        "gltfUUID": "terminator-v2-environment-preview",
+        "kite3dAuthoring": {
+          "role": "direct",
+          "id": "terminator-v2-environment-preview"
+        },
+        "kite3dBakedFrom": {
+          "componentId": "terminator-v2-preview-generator",
+          "type": "Generator",
+          "state": {
+            "module": "generators/v2-preview.js",
+            "params": {}
+          }
+        },
+        "rootPath": "/kite3d/@v2-stopped-preview-019/f.gltf",
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ]
       }
     }
   ],

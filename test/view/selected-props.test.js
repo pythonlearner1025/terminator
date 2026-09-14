@@ -41,10 +41,15 @@ test('selected props resolve locally and fit the preserved authored collider ext
           for (let i = 0; i < positions.length; i += 3) box.expandByPoint(point.fromArray(positions, i).applyMatrix4(matrix))
         }
       }
-      const size = box.getSize(new Vector3()), center = box.getCenter(new Vector3()), expected = registry.assets[id].size
+      const size = box.getSize(new Vector3()), center = box.getCenter(new Vector3()), entry = registry.assets[id]
+      // A rubble visible-volume box may be shorter and offset from its nominal
+      // asset envelope. Existing legacy imports within 5 cm are measured by the
+      // core collider test; a repaired/new fit records its exact volume here.
+      const fittedVolume = source.extras.selectedSource.fitCenter && asset.family === 'rubble' ? entry.collider.shapes[0] : null
+      const expected = fittedVolume?.size || entry.size, expectedCenter = fittedVolume?.offset || {x:0,y:0,z:0}
       for (const axis of ['x', 'y', 'z']) {
         assert.ok(Math.abs(size[axis] - expected[axis]) < .001, `${id} ${axis}: ${size[axis]} vs ${expected[axis]}`)
-        assert.ok(Math.abs(center[axis]) < .001, `${id} ${axis} center: ${center[axis]}`)
+        assert.ok(Math.abs(center[axis] - expectedCenter[axis]) < .001, `${id} ${axis} center: ${center[axis]} vs ${expectedCenter[axis]}`)
       }
     }
   }

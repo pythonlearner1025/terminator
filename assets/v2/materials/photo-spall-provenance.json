@@ -1,0 +1,180 @@
+{
+  "source": "https://polyhaven.com/a/concrete_layers_02",
+  "author": "Rob Tuytel / Poly Haven",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://polyhaven.com/license",
+  "sourceUvBounds": [
+    0.71875,
+    0.078125,
+    0.96875,
+    0.328125
+  ],
+  "sourceBlend": {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/blend/2k/concrete_layers_02/concrete_layers_02_2k.blend",
+    "sha256": "b63478eae0a53beb589210a9b25e116ed5d68948d8a7605ca000e79c6f1ed0bc"
+  },
+  "sourceMaterialSettings": [
+    {
+      "material": "concrete_layers_02",
+      "node": "Displacement",
+      "type": "DISPLACEMENT",
+      "inputs": {
+        "Height": 0.0,
+        "Midlevel": 0.5,
+        "Scale": 0.019999999552965164,
+        "Normal": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "material": "concrete_layers_02",
+      "node": "Normal Map",
+      "type": "NORMAL_MAP",
+      "inputs": {
+        "Strength": 1.0,
+        "Color": [
+          0.5,
+          0.5,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "material": "concrete_layers_02",
+      "node": "Mapping",
+      "type": "MAPPING",
+      "inputs": {
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    }
+  ],
+  "patch": {
+    "widthMeters": 0.5,
+    "heightMeters": 0.5,
+    "cropPixels": [
+      1472,
+      160,
+      1984,
+      672
+    ],
+    "sourceTileWidthMeters": 2,
+    "displacementScaleMeters": 0.019999999552965164,
+    "midpoint": 0.5,
+    "insetOriginOffsetMeters": 0.008557411878613256,
+    "heightRangeMeters": [
+      -0.017883573263199184,
+      0.0
+    ],
+    "heightP05P50P95Meters": [
+      -0.0038818950837524527,
+      -0.0024017699928562735,
+      -0.0016662851538748738
+    ],
+    "normalSlopeDegreesP50P95P99": [
+      6.355155861403022,
+      31.971820316130007,
+      52.232940035088056
+    ],
+    "normalAreaAbove15": 0.18001556396484375,
+    "normalAreaAbove30": 0.0574951171875,
+    "vertices": 4225,
+    "triangles": 8192,
+    "sampleBounds": [
+      [
+        -0.25,
+        -0.25,
+        -0.016945676878094673
+      ],
+      [
+        0.25,
+        0.25,
+        -0.0007010757690295577
+      ]
+    ],
+    "sampleDepthRangeMeters": 0.016244601757908893
+  },
+  "study_commit": "3e479643ef6b1ddcbd99f522e09d9d93ed514ee5",
+  "sourceFiles": [
+    {
+      "asset": "concrete_layers_02",
+      "channel": "diff",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_layers_02/concrete_layers_02_diff_2k.jpg",
+      "sha256": "f70070187573ad05457c65c3efe7fb25fe1e071a5490c760e5b90f845aab9b91",
+      "bytes": 2555097
+    },
+    {
+      "asset": "concrete_layers_02",
+      "channel": "disp",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/concrete_layers_02/concrete_layers_02_disp_2k.png",
+      "sha256": "4c69d0bd5978751dc8305fc298c1ff091a47707fc02cd2046f3df18d30d6ead5",
+      "bytes": 6219040
+    },
+    {
+      "asset": "concrete_layers_02",
+      "channel": "nor_gl",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/concrete_layers_02/concrete_layers_02_nor_gl_2k.png",
+      "sha256": "7652237cbe4cfc00201dbf8509620906600737fdd36f267628d4c5b2df9c58a2",
+      "bytes": 24800490
+    },
+    {
+      "asset": "concrete_layers_02",
+      "channel": "arm",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/concrete_layers_02/concrete_layers_02_arm_2k.png",
+      "sha256": "587eb3486faa1a34c8ad94e43b8388d58024d0165987a026f39546395b3c687c",
+      "bytes": 16404650
+    },
+    {
+      "asset": "concrete_layers_02",
+      "channel": "rough",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/concrete_layers_02/concrete_layers_02_rough_2k.png",
+      "sha256": "d445331f16dc7feb1c95fb7405c971ddf51bda3df2e7c1b811bb3beb8dba522a",
+      "bytes": 7038359
+    }
+  ],
+  "outputs": [
+    {
+      "file": "photo-spall-albedo.png",
+      "study_file": "basecolor.png",
+      "sha256": "7e583dd25ae231549d439c1545de59e4718a4f55314f35ecab38ac48123361a0",
+      "bytes": 346869
+    },
+    {
+      "file": "photo-spall-normal.png",
+      "study_file": "normal-gl.png",
+      "sha256": "9972090216d7086dcb25c265dbbc5810412a4059836a8edd011a4890b6aa8fa8",
+      "bytes": 521308
+    },
+    {
+      "file": "photo-spall-orm.png",
+      "study_file": "arm.png",
+      "sha256": "69099fe17618f71e756007ad59112567c25d7625e74fcc9ada9887fa1873f51b",
+      "bytes": 328277
+    }
+  ],
+  "preparation": "Exact bytes of verified 512-square study crop [1472,160,1984,672], no map transformation; UV0..1 corresponds to 0.5 x 0.5 metres. Original 2K crop recipe preserved in study commit tools/v2/study-wall-relief.py. No height texture/mesh is loaded by materials.",
+  "runtime": "Sparse jittered, quarter-rotated 0.5m patches over eligible world-metric UVs; inverse normal rotation plus derivative tangent basis. Source normal strength <=1. No geometry displacement.",
+  "additional_gpu_mib_rgba8_with_mips": 4
+}

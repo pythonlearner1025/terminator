@@ -2,6 +2,7 @@
 import {readFile, writeFile, mkdir} from 'node:fs/promises'
 import {dirname, resolve} from 'node:path'
 import {fileURLToPath, pathToFileURL} from 'node:url'
+import {NodeIO} from '@gltf-transform/core'
 
 const root = new URL('../', import.meta.url)
 const STRUCTURAL_KINDS = new Set(['floor', 'wall', 'building_wall', 'tunnel_wall', 'stair', 'ramp'])
@@ -336,12 +337,12 @@ async function placedVisualBounds(E, placements) {
   const cache = new Map()
   const result = new Map()
   for (const placement of placements.filter(item => ['collider', 'trader'].includes(item.role))) {
-    let local = cache.get(placement.assetId)
-    if (!local) {
+    let document = cache.get(placement.assetId)
+    if (!document) {
       const entry = manifest.files[placement.assetId]
       if (!entry) throw new Error(`Missing asset manifest entry ${placement.assetId}`)
-      local = gltfBounds(E, JSON.parse(await readFile(new URL(entry.path, root), 'utf8')))
-      cache.set(placement.assetId, local)
+      document = await loadVisualGeometry(entry.path)
+      cache.set(placement.assetId, document)
     }
     const matrix = new E.Matrix4()
     const position = new E.Vector3().fromArray(placement.translation)
@@ -349,51 +350,40 @@ async function placedVisualBounds(E, placements) {
     const quaternion = new E.Quaternion().setFromEuler(rotation)
     const scale = new E.Vector3().fromArray(placement.scale || [1, 1, 1])
     matrix.compose(position, quaternion, scale)
-    result.set(placement.id, plainBounds(transformBounds(E, local, matrix)))
+    result.set(placement.id, measureVisualBounds(E, document, matrix))
   }
   return result
 }
 
-function gltfBounds(E, document) {
-  const result = new E.Box3()
-  const roots = document.scenes?.[document.scene || 0]?.nodes || []
-  const walk = (index, parentMatrix) => {
-    const node = document.nodes[index]
-    const local = new E.Matrix4()
-    if (node.matrix) local.fromArray(node.matrix)
-    else local.compose(
-      new E.Vector3().fromArray(node.translation || [0, 0, 0]),
-      new E.Quaternion().fromArray(node.rotation || [0, 0, 0, 1]),
-      new E.Vector3().fromArray(node.scale || [1, 1, 1]),
-    )
-    const world = parentMatrix.clone().multiply(local)
-    if (node.mesh !== undefined) {
-      for (const primitive of document.meshes[node.mesh].primitives || []) {
-        const accessor = document.accessors[primitive.attributes.POSITION]
-        if (!accessor?.min || !accessor?.max) continue
-        result.union(transformBounds(E, box3(E, accessor.min, accessor.max), world))
-      }
+async function loadVisualGeometry(path) {
+  const source = JSON.parse(await readFile(new URL(path, root), 'utf8')), resources = {}
+  for (const buffer of source.buffers || []) {
+    const uri = buffer.uri.startsWith('/kite3d/') ? new URL(buffer.uri.slice(8), root) : new URL(buffer.uri, new URL(path, root))
+    resources[buffer.uri] = new Uint8Array(await readFile(uri))
+  }
+  // Measurement is CPU geometry only: preserve nodes and accessors, omit textures.
+  delete source.extensions; delete source.extensionsUsed; delete source.extensionsRequired
+  delete source.images; delete source.textures; delete source.materials
+  for (const mesh of source.meshes || []) for (const primitive of mesh.primitives) delete primitive.material
+  return new NodeIO().readJSON({json:source, resources})
+}
+
+export function measureVisualBounds(E, document, placementMatrix = new E.Matrix4()) {
+  const box = new E.Box3(), point = new E.Vector3()
+  const scene = document.getRoot().getDefaultScene() || document.getRoot().listScenes()[0]
+  const walk = node => {
+    const world = placementMatrix.clone().multiply(new E.Matrix4().fromArray(node.getWorldMatrix()))
+    for (const primitive of node.getMesh()?.listPrimitives() || []) {
+      const positions = primitive.getAttribute('POSITION')?.getArray()
+      if (!positions) throw new Error(`Missing POSITION geometry on ${node.getName()}`)
+      // Transform actual vertices through the complete chain before taking bounds.
+      // Rotated accessor/aggregate AABB corners can describe empty space.
+      for (let i = 0; i < positions.length; i += 3) box.expandByPoint(point.fromArray(positions, i).applyMatrix4(world))
     }
-    for (const child of node.children || []) walk(child, world)
+    for (const child of node.listChildren()) walk(child)
   }
-  for (const index of roots) walk(index, new E.Matrix4())
-  return result
-}
-
-function transformBounds(E, source, matrix) {
-  const result = new E.Box3()
-  const point = new E.Vector3()
-  for (const x of [source.min.x, source.max.x]) for (const y of [source.min.y, source.max.y]) for (const z of [source.min.z, source.max.z]) {
-    result.expandByPoint(point.set(x, y, z).applyMatrix4(matrix))
-  }
-  return result
-}
-
-function box3(E, min, max) {
-  return new E.Box3(new E.Vector3().fromArray(min), new E.Vector3().fromArray(max))
-}
-
-function plainBounds(box) {
+  for (const node of scene?.listChildren() || []) walk(node)
+  if (box.isEmpty()) throw new Error('No visual POSITION geometry in default scene')
   return bounds(box.min.toArray(), box.max.toArray())
 }
 

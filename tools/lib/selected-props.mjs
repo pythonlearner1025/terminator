@@ -1,10 +1,46 @@
 import {readFile, writeFile} from 'node:fs/promises'
-import {resolve} from 'node:path'
+import {dirname, resolve} from 'node:path'
 import {NodeIO} from '@gltf-transform/core'
 
 globalThis.ImageData ??= class {}
 const {Box3, Vector3, Matrix4} = await import('three')
 const lists = ['buffers', 'bufferViews', 'accessors', 'samplers', 'images', 'textures', 'materials', 'meshes', 'nodes']
+
+// Rubble has a single authored visible-volume box which can be shorter than
+// the nominal asset envelope. Keep its offset so a shorter fit stays grounded.
+export function selectedPropFitBounds(family, entry) {
+  const shape = family === 'rubble' && entry.collider?.shapes?.length === 1 ? entry.collider.shapes[0] : null
+  if (shape?.shape === 'box' && !shape.yaw) return {size:{...shape.size}, center:{x:0, y:0, z:0, ...shape.offset}}
+  return {size:{...entry.size}, center:{x:0, y:0, z:0}}
+}
+
+// Targeted repair of an already imported visual: no blanket rebuild, no source
+// mesh/texture changes, and no edits to authored placement or anchor transforms.
+export async function refitSelectedProp(root, id) {
+  const selection = JSON.parse(await readFile(resolve(root, 'assets/sources/selected-assets.json'), 'utf8'))
+  const asset = selection.assets.find(asset => asset.preparedModel && asset.targets.includes(id))
+  if (!asset || asset.family !== 'rubble') throw new Error(`No bounded rubble refit for ${id}`)
+  const manifest = JSON.parse(await readFile(resolve(root, 'assets.json'), 'utf8')).files
+  const entry = JSON.parse(await readFile(resolve(root, 'lib/core/data/map-piece-registry.json'), 'utf8')).assets[id]
+  const path = resolve(root, manifest[id].path), target = JSON.parse(await readFile(path, 'utf8'))
+  const parent = target.nodes[target.scenes[target.scene || 0].nodes[0]]
+  if (parent.extras?.selectedSource?.id !== asset.id) throw new Error(`Selected source mismatch for ${id}`)
+  const wrappers = (parent.children || []).map(i => target.nodes[i]).filter(node => /^Selected rubble \d+-\d+$/.test(node.name))
+  if (wrappers.length !== parent.extras.selectedSource.tileCount || !wrappers.every(node => node.matrix && !node.translation && !node.rotation && !node.scale)) throw new Error(`Unexpected fitted hierarchy for ${id}`)
+  const {size, center} = selectedPropFitBounds(asset.family, entry)
+  const current = await geometryBounds(root, target, dirname(path))
+  const extent = current.getSize(new Vector3()), origin = current.getCenter(new Vector3())
+  if (['x','y','z'].every(axis => Math.abs(extent[axis] - size[axis]) < 1e-8 && Math.abs(origin[axis] - center[axis]) < 1e-8)) return {changed:false, id}
+  const scale = new Vector3(size.x, size.y, size.z).divide(extent)
+  if (!scale.toArray().every(v => Number.isFinite(v) && v > 0)) throw new Error(`Invalid refit bounds for ${id}`)
+  const correction = new Matrix4().makeTranslation(center.x, center.y, center.z)
+    .multiply(new Matrix4().makeScale(...scale.toArray()))
+    .multiply(new Matrix4().makeTranslation(...origin.clone().negate().toArray()))
+  for (const node of wrappers) node.matrix = correction.clone().multiply(new Matrix4().fromArray(node.matrix)).toArray()
+  parent.extras.selectedSource = {...parent.extras.selectedSource, fitBounds:[size.x,size.y,size.z], fitCenter:[center.x,center.y,center.z]}
+  await writeFile(path, JSON.stringify(target, null, 2) + '\n')
+  return {changed:true, id, scale:scale.toArray(), fitBounds:[size.x,size.y,size.z], fitCenter:[center.x,center.y,center.z]}
+}
 
 export async function applySelectedProps(root) {
   const path = resolve(root, 'assets/sources/selected-assets.json')
@@ -21,7 +57,7 @@ export async function applySelectedProps(root) {
       const rootIndex = target.scenes[target.scene || 0].nodes[0]
       const parent = target.nodes[rootIndex]
       if (parent.extras?.selectedSource?.id === asset.id) continue
-      const size = registry[id].size
+      const {size, center:fitCenter} = selectedPropFitBounds(asset.family, registry[id])
       if (!size || !['rubble', 'truck', 'barrel', 'container', 'supply', 'sandbags', 'generator', 'spool'].includes(asset.family)) throw new Error(`No prop fit adapter for ${id}`)
       // Retain original names, transforms, extras and node indices as stable anchors.
       // Only their mesh references are replaced by the selected visual geometry.
@@ -50,7 +86,7 @@ export async function applySelectedProps(root) {
             target.nodes.push(copy)
           }
         }
-        const translation = new Vector3(-size.x / 2 + tileSize.x * (x + .5), 0, -size.z / 2 + tileSize.z * (z + .5))
+        const translation = new Vector3(-size.x / 2 + tileSize.x * (x + .5) + fitCenter.x, fitCenter.y, -size.z / 2 + tileSize.z * (z + .5) + fitCenter.z)
         const transform = new Matrix4().makeTranslation(...translation.toArray())
           .multiply(new Matrix4().makeScale(...scale.toArray()))
           .multiply(new Matrix4().makeTranslation(...center.clone().negate().toArray()))
@@ -59,7 +95,7 @@ export async function applySelectedProps(root) {
         target.nodes.push({name: `Selected ${asset.family} ${x + 1}-${z + 1}`, matrix: transform.toArray(), children})
         parent.children = [...(parent.children || []), index]
       }
-      parent.extras = {...parent.extras, selectedSource: {id: asset.id, family: asset.family, source: asset.url, tileCount: tilesX * tilesZ, fitBounds: [size.x, size.y, size.z]}}
+      parent.extras = {...parent.extras, selectedSource: {id: asset.id, family: asset.family, source: asset.url, tileCount: tilesX * tilesZ, fitBounds: [size.x, size.y, size.z], fitCenter:[fitCenter.x,fitCenter.y,fitCenter.z]}}
       await writeFile(targetPath, JSON.stringify(target, null, 2) + '\n')
       changed++
     }
@@ -69,13 +105,13 @@ export async function applySelectedProps(root) {
   return {changed}
 }
 
-async function geometryBounds(root, source) {
+async function geometryBounds(root, source, directory = root) {
   const clean = structuredClone(source)
   delete clean.extensions; delete clean.extensionsUsed; delete clean.extensionsRequired
   delete clean.images; delete clean.textures; delete clean.materials
   for (const mesh of clean.meshes) for (const primitive of mesh.primitives) delete primitive.material
   const resources = {}
-  for (const buffer of clean.buffers) resources[buffer.uri] = new Uint8Array(await readFile(resolve(root, buffer.uri.replace(/^\/kite3d\//, ''))))
+  for (const buffer of clean.buffers) resources[buffer.uri] = new Uint8Array(await readFile(buffer.uri.startsWith('/kite3d/') ? resolve(root, buffer.uri.slice(8)) : resolve(directory, buffer.uri)))
   const doc = await new NodeIO().readJSON({json: clean, resources})
   const bounds = new Box3(), point = new Vector3()
   for (const node of doc.getRoot().listNodes()) {

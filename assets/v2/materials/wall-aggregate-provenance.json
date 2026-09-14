@@ -1,0 +1,64 @@
+{
+  "source": "https://polyhaven.com/a/gravel_concrete_02",
+  "authors": {
+    "photography": "Charlotte Baglioni",
+    "processing": "Dario Barresi"
+  },
+  "license": "CC0-1.0",
+  "licenseUrl": "https://polyhaven.com/license",
+  "metres": [
+    2.1,
+    2.1
+  ],
+  "sourceFiles": [
+    {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/gravel_concrete_02/gravel_concrete_02_diff_1k.jpg",
+      "sha256": "33b2e975dee169d7c8e994415d3957d6c311698f72106ac664880d9e0b5021bf",
+      "bytes": 998590,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/gravel_concrete_02/gravel_concrete_02_nor_gl_1k.png",
+      "sha256": "6a8854bd3c11d03cbb41ca539b3774eeae609b7e42d81e8c2513ce751cdeae81",
+      "bytes": 5973814,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/gravel_concrete_02/gravel_concrete_02_arm_1k.png",
+      "sha256": "da8b7cf90d5995712f16f6eab5181b3c0fceb5fceb1a2924eea47b2a3fbc4464",
+      "bytes": 4336192,
+      "size": [
+        1024,
+        1024
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "file": "wall-aggregate-albedo.jpg",
+      "sha256": "33b2e975dee169d7c8e994415d3957d6c311698f72106ac664880d9e0b5021bf",
+      "bytes": 998590
+    },
+    {
+      "file": "wall-aggregate-normal.png",
+      "sha256": "008287aac97e2edccf7636aa7650d39c1a18e12d306902f7adf25f433b9f2b8d",
+      "bytes": 2455453
+    },
+    {
+      "file": "wall-aggregate-orm.png",
+      "sha256": "3c5b36f16363bffced57dc0b1dc1afa1528a77127c7b44ebf7bedabbe7bff731",
+      "bytes": 1557840
+    }
+  ],
+  "preparation": "Complete 1K source image, no crop/rescale/relief amplification. Original JPEG exact; source PNG decoded to 8-bit RGB and losslessly re-encoded. GL normal unrotated, ARM channels R AO / G roughness / B metalness. No baked lighting or synthetic grain.",
+  "context": "Provider context_01.jpg inspected locally: aggregate embedded in cast pavement, not loose rubble or coursed masonry. Used as exposed cast-concrete mineral substrate on walls; suitability judged by actual game pair.",
+  "contextUrl": "https://cdn.polyhaven.com/asset_img/renders/gravel_concrete_02/context_01.jpg",
+  "runtime": "Two continuous inverse-rotated native-scale samples. World-consistent smooth-cast retention, vertical near-wall scope only. Source normal strength <=1; no displacement.",
+  "additional_gpu_mib_rgba8_with_mips": 16
+}

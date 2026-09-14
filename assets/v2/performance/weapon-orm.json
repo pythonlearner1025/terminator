@@ -1,0 +1,25 @@
+{
+  "size": [
+    2048,
+    2048
+  ],
+  "channels": {
+    "R": {
+      "source": "weapon-ao.png",
+      "channel": "R",
+      "decodedSha256": "203063ece07433d4bc69db304e93f6cd27cebbeba132ad19858c177e343f6d2e"
+    },
+    "G": {
+      "source": "weapon-roughness.png",
+      "channel": "G",
+      "decodedSha256": "7467a65b5a2b63870a4263255bd81b0632c01c8f422afeca82923ab4da7cbdc9"
+    },
+    "B": {
+      "source": "weapon-metalness.png",
+      "channel": "B",
+      "decodedSha256": "66e9969d5c285e6e0f6b46056fc4d8d03982add6855319b5cfb83f675e184283"
+    }
+  },
+  "removedRgba8UploadBytes": 33554432,
+  "note": "All channel pixels exact; no resize, quantization or color conversion of samples"
+}

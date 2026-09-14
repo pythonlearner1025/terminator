@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "seed": 19842029,
+  "resolution": [
+    1024,
+    1024
+  ],
+  "generator": "tools/v2/build-materials.py",
+  "license": "Derived from existing Poly Haven CC0 1.0 maps, with original deterministic procedural fracture, soot, dust and aggregate layers. No downloads or paid assets.",
+  "license_url": "https://polyhaven.com/license",
+  "sources": [
+    {
+      "file": "assets/textures/map/hangar_concrete_floor_diff_1k.jpg",
+      "sha256": "8c365cc65bc3026045c4e3ecba9642cbe0bee1cf705edafe4a8fed5b78c08a4d",
+      "source": "https://polyhaven.com/a/hangar_concrete_floor"
+    },
+    {
+      "file": "assets/textures/map/concrete_wall_007_diff_1k.jpg",
+      "sha256": "1a5ff668a66e147d9fb795d8407ca67a144a1ca010779a5b8386137a4917a086",
+      "source": "https://polyhaven.com/a/concrete_wall_007"
+    },
+    {
+      "file": "assets/textures/map/asphalt_02_diff_1k.jpg",
+      "sha256": "1aa5ce99f58a625c71d48cfc3e68b65ca85ccb00f39e045c0a928608a0ea25ed",
+      "source": "https://polyhaven.com/a/asphalt_02"
+    }
+  ],
+  "maps": {
+    "*-albedo.jpg": "sRGB base color",
+    "*-surface.png": "linear R height, G roughness, B cavity"
+  },
+  "physical_scale_meters": {
+    "ground": 2,
+    "concrete": 2.8
+  },
+  "outputs": {
+    "concrete-albedo.jpg": "136999c1feaf47cdfaec91e492522d7ceea653bba61ab2d903772c3025b60d40",
+    "concrete-surface.png": "82c155c2e2c5b268cc32bcf4b994464e4564efca4da901c6a2a6cd1b4661fa57",
+    "ground-albedo.jpg": "bb7888963f2134c5025bf056111cacb0d91b20af1837418a59dd2874c1d15682",
+    "ground-surface.png": "412fcc8911ba038340f22916e8dbd0582c91d2ce77374f95dd83ba3626a91e78"
+  }
+}
