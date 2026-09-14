@@ -119,7 +119,18 @@
       "diagnostic": true,
       "path": "snapshots/r5-linear-fog-spall/index.html",
       "generated_at": "2026-09-14T00:14:03+00:00"
+    },
+    {
+      "id": "r5-premultiplied-fractures",
+      "label": "Connected wall damage / rooted smoke / compositor diagnostic",
+      "revision": "R5",
+      "review_status": "needs-revision",
+      "source_commit": null,
+      "base_commit": "0fc512355683c659748963bae1d0382cb8efa4ea",
+      "diagnostic": true,
+      "path": "snapshots/r5-premultiplied-fractures/index.html",
+      "generated_at": "2026-09-14T00:47:09+00:00"
     }
   ],
-  "latest": "r5-linear-fog-spall"
+  "latest": "r5-premultiplied-fractures"
 }
