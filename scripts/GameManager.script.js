@@ -1,7 +1,8 @@
 import {Object3DComponent} from 'threepipe'
 import mapRules from '../lib/core/data/map.json' with {type: 'json'}
 import mapPieceRegistry from '../lib/core/data/map-piece-registry.json' with {type: 'json'}
-import {buildMapFromPlacements, scenePlacements} from '../lib/core/map.js'
+import {scenePlacements} from '../lib/core/map.js'
+import {buildV2PlayableMap} from '../lib/core/v2-map.js'
 import {BuiltinSkynet} from '../lib/core/builtin-skynet.js'
 import {projectViewModel} from '../lib/core/viewmodel.js'
 import {WaveDirector} from '../lib/core/waves.js'
@@ -19,6 +20,8 @@ import {MapView} from '../lib/view/map.js'
 import {PlayerView} from '../lib/view/player.js'
 import {UnitView} from '../lib/view/units.js'
 import {mountPlayersView} from '../lib/view/players.js'
+import {createStartupProfile} from '../lib/ui/startup-profile.js'
+import {holdStartupRendering,holdCoveredEditorRendering} from '../lib/view/startup-rendering.js'
 import {warmupMatch} from '../lib/view/match-warmup.js'
 
 export class GameManager extends Object3DComponent {
@@ -52,8 +55,25 @@ export class GameManager extends Object3DComponent {
   viewsStarted = false
   uiProjectionTick = null
 
+  init(object, state) {
+    super.init(object, state)
+    this.releaseCoveredEditor?.()
+    this.releaseCoveredEditor=holdCoveredEditorRendering(this.ctx.viewer)
+    // The editor uses a separate runtime canvas for Play. Keep its imported
+    // authoring copies off the GPU until the real menu owns the camera. The
+    // stopped editor and createStoppedGame retain their normal rendering.
+    if (this.ctx.viewer.canvas?.classList?.contains('game-canvas-overlay')) {
+      this.releaseLoadRender = holdStartupRendering(this.ctx.viewer)
+    }
+  }
+
   start() {
+    const releaseLoadRender = this.releaseLoadRender
+    this.releaseLoadRender = null
     this.stop()
+    this.releaseLoadRender = releaseLoadRender
+    const profile = this.startup = createStartupProfile()
+    profile.mark('manager-start')
     const viewer = this.ctx.viewer
     this.hiddenUnitSources = []
     viewer.scene.modelRoot.traverse(object => {
@@ -63,8 +83,8 @@ export class GameManager extends Object3DComponent {
     })
     const mapRoot = viewer.scene.modelRoot.getObjectByName('Map')
     if (!mapRoot) throw new Error('Map authored node not found')
-    this.mapData = buildMapFromPlacements(mapRules, mapPieceRegistry, scenePlacements(mapRoot))
-    this.world = new World({map: this.mapData, seed: this.seed})
+    this.mapData = profile.measure('map-collision-build', () => buildV2PlayableMap(mapRules, mapPieceRegistry, scenePlacements(mapRoot)))
+    this.world = profile.measure('world-build', () => new World({map: this.mapData, seed: this.seed}))
     this.sessionMode = 'single'
     this.localPlayerId = this.world.hostPlayerId
     this.partyState = null
@@ -73,7 +93,6 @@ export class GameManager extends Object3DComponent {
       intermissionSeconds: this.intermissionSeconds,
     })
     this.mapView = new MapView(viewer, this.mapData)
-    this.mapView.start()
     this.unitView = new UnitView(viewer)
     this.playerView = new PlayerView(viewer)
     this.grenadeView = new GrenadeView(viewer)
@@ -88,9 +107,20 @@ export class GameManager extends Object3DComponent {
     this.syncViews()
   }
 
+  prepareMap() {
+    if (!this.mapView || this.mapView.root) return
+    try {this.startup.measure('map-batching', () => this.mapView.start())}
+    catch (error) {this.mapView.stop(); throw error}
+  }
+
   startViews() {
     if (this.viewsStarted || !this.world) return false
+    this.warmupAbort = new AbortController()
+    const signal = this.warmupAbort.signal
+    const profile = this.startup
+    const before = performance.now()
     try {
+      this.prepareMap()
       this.mapView.startEffects()
       this.unitView.start(this.world)
       this.playerView.start(this.world)
@@ -99,21 +129,32 @@ export class GameManager extends Object3DComponent {
         () => this.localPlayerId ?? this.world?.localPlayerId ?? this.world?.player?.id ?? 'player')
       this.viewsStarted = true
       this.syncViews()
-      this.visualWarmup = warmupMatch(this).then(report => {
-        if(this.viewsStarted)this.visualWarmupReport=report
+      profile.spans.push({name:'view-construction',start:before,end:performance.now(),ms:performance.now()-before,status:'ready'})
+      this.visualWarmup = profile.measure('visual-warmup', () => warmupMatch(this, {signal})).then(report => {
+        if(!signal.aborted && this.viewsStarted)this.visualWarmupReport=report
         return report
+      }).catch(error => {
+        if (!signal.aborted) {this.stopViews(); this.mapView?.stop()}
+        throw error
       })
+      // Observe rejection even when preparation is initiated outside startMatch.
+      this.visualWarmup.catch(() => {})
       return true
     } catch (error) {
+      this.warmupAbort.abort()
+      this.viewsStarted = false
       this.playersView?.stop(); this.playersView = null
       this.grenadeView?.stop()
       this.playerView?.stop()
       this.unitView?.stop()
+      this.mapView?.stop()
       throw error
     }
   }
 
   stopViews() {
+    this.warmupAbort?.abort()
+    this.warmupAbort = null
     if (!this.viewsStarted) return
     this.viewsStarted = false
     this.playersView?.stop(); this.playersView = null
@@ -185,7 +226,7 @@ export class GameManager extends Object3DComponent {
     if(!this.world)return
     if(!force&&this.uiProjectionTick!==null&&this.world.tick>=this.uiProjectionTick&&this.world.tick-this.uiProjectionTick<2)return
     this.uiProjectionTick=this.world.tick
-    const view=projectViewModel(this.world,this.localPlayerId)
+    const view=projectViewModel(this.world,this.localPlayerId,{includeEnemyNameplates:false})
     if(this.ui)this.ui.sync(view)
     else this.hud?.render(view)
   }
@@ -242,18 +283,24 @@ export class GameManager extends Object3DComponent {
     const players = this.party.state().players
     if (!override && !players.every((player) => player.ready)) return {ok: false, error: 'Every player must be ready'}
     this.matchStarting = true
+    const party = this.party, world = this.world
     try {
       this.ui?.preparePartyMatch()
       const preparation = this.party.prepareMatch({hostLoaded: false})
       try {
         this.startViews()
-        await Promise.all([this.visualWarmup, prepareAudio()])
-        this.party.acceptLoaded(this.localPlayerId)
+        const [warmup] = await Promise.all([this.visualWarmup, prepareAudio()])
+        if (warmup?.cancelled || this.party !== party || this.world !== world) {
+          party.cancelPreparing('Match preparation stopped')
+          return {ok:false, cancelled:true}
+        }
+        party.acceptLoaded(this.localPlayerId)
       } catch (error) {
-        this.party.cancelPreparing(error)
+        party.cancelPreparing(error)
         throw error
       }
       const prepared = await preparation
+      if (this.party !== party || this.world !== world) return {ok:false, cancelled:true}
       if (prepared?.ok === false) return prepared
       const result = this.director.start()
       if (result === false || result?.ok === false) return result || {ok: false, error: 'Match could not start'}
@@ -261,7 +308,7 @@ export class GameManager extends Object3DComponent {
       this._acceptPartyState(this.party.state(), 'host')
       return {ok: true}
     } finally {
-      this.matchStarting = false
+      if (this.world === world) this.matchStarting = false
     }
   }
 
@@ -306,7 +353,12 @@ export class GameManager extends Object3DComponent {
     this.partyOffs.push(party.on('match-prepare', () => {
       this.ui?.preparePartyMatch()
       this.startViews()
-      party.loaded?.()
+      const signal = this.warmupAbort.signal
+      Promise.all([this.visualWarmup, prepareAudio()]).then(([warmup]) => {
+        if (!signal.aborted && !warmup?.cancelled && this.party === party) party.loaded?.()
+      }).catch(error => {
+        if (this.started && this.party === party) this._setPartyState({...this.partyState, status:'error', error:{message:error.message}})
+      })
     }))
     this.partyOffs.push(party.on('return-lobby', () => {
       this.director.phase = this.world.phase
@@ -366,6 +418,8 @@ export class GameManager extends Object3DComponent {
   }
 
   stop() {
+    this.warmupAbort?.abort()
+    this.releaseLoadRender?.(); this.releaseLoadRender = null
     this.started = false
     this.matchStarting = false
     this.visualWarmup = null
@@ -400,6 +454,7 @@ export class GameManager extends Object3DComponent {
   }
 
   destroy() {
+    this.releaseCoveredEditor?.();this.releaseCoveredEditor=null
     this.stop()
     return super.destroy()
   }

@@ -31,23 +31,29 @@
     "e2e:webrtc": "node test/e2e/webrtc.mjs",
     "e2e:coop": "node test/e2e/coop.mjs",
     "e2e:coop-three": "node test/e2e/coop-three.mjs",
-    "proof:core": "node tools/prove-core-roster.mjs"
+    "proof:core": "node tools/prove-core-roster.mjs",
+    "assets:selected:fetch": "node tools/fetch-selected-assets.mjs",
+    "assets:selected:fetch-models": "node tools/fetch-selected-assets.mjs --models",
+    "assets:selected:apply-floor": "node tools/apply-selected-floor.mjs",
+    "assets:selected:prepare-props": "python3 tools/prepare-selected-props.py",
+    "assets:selected:apply-props": "node tools/apply-selected-props.mjs"
   },
   "devDependencies": {
     "@gltf-transform/core": "^4.5.0",
     "concurrently": "^9.2.1",
-    "kite3d": "0.18.0"
+    "kite3d": "0.19.0-alpha.2",
+    "meshoptimizer": "0.20.0"
   },
   "dependencies": {
     "@jitl/quickjs-wasmfile-release-sync": "^0.32.0",
-    "@kite3d/engine": "0.18.0",
+    "@kite3d/engine": "0.19.0-alpha.2",
     "cannon-es": "0.20.0",
     "quickjs-emscripten": "0.32.0",
     "threepipe": "0.5.1",
     "ws": "^8.21.3"
   },
   "kite3d": {
-    "version": "0.18.0",
+    "version": "0.19.0-alpha.2",
     "name": "Terminator: human vs Skynet",
     "imports": {
       "#quickjs-core": "https://esm.sh/quickjs-emscripten-core@0.32.0?bundle",
@@ -56,7 +62,8 @@
       "@jitl/quickjs-wasmfile-release-sync/emscripten-module": "https://cdn.jsdelivr.net/npm/@jitl/quickjs-wasmfile-release-sync@0.32.0/dist/emscripten-module.browser.mjs"
     },
     "scripts": [
-      "./scripts/GameManager.script.js"
+      "./scripts/GameManager.script.js",
+      "./generators/v2-preview.js"
     ],
     "viewer": {
       "msaa": 2,
@@ -86,6 +93,7 @@
       ]
     },
     "plugins": [
+      "./lib/view/v2/exact-image-source.plugin.js",
       "./scripts/FirstPerson.plugin.js"
     ]
   }

@@ -1,0 +1,37 @@
+{
+  "description": "Immutable review baseline. Hashes preserve authored semantics and original camera/target bytes without depending on worker Git history. Generated from the recorded source commits; do not regenerate to bless a change.",
+  "collision": {
+    "sourceCommit": "89c1d8e01d48a175d8c3f3498662dbca8d1bbbd7",
+    "sourcePath": "lib/core/collision.js",
+    "fixture": "collision-89c1d8e.js",
+    "sha256": "69ff78de105d5709063ae4cc475696652171bc11aeb8b9cef35708e1dcd73eb1"
+  },
+  "authored": {
+    "sourceCommit": "cd47f65ef4963d95452ba3869a7b39eb9e0fe596",
+    "sourcePath": "assets/main.scene.gltf",
+    "sourceSha256": "add4cd601d55453fc62f0e7a3514cbecc5734418c7c51b136f202a06e1bcf9e7",
+    "nodeCount": 284,
+    "semanticHashes": {
+      "nodes": "f7d6e280b11b94e3e70875a260fa8a1a2be831729980280cf067e3bbce8908d0",
+      "cameras": "9e3742bc6bbc4f98224ee479fb66382a6ceaba26bc02d90afadc7fc1a7213540",
+      "materials": null,
+      "meshes": null,
+      "buffers": null,
+      "bufferViews": null,
+      "accessors": null,
+      "textures": null,
+      "images": null,
+      "extensions": "e4556ff41f2671bfafa49737ed4fa7ca5a4f258b22fea3fa0632805d1e5f2f37"
+    }
+  },
+  "immutableFiles": {
+    "docs/scene-targets/targets-v2/01-courtyard.png": "b11f51359fb5029f09b2e887126cb881cb11071a4121e8aecbfc7be15bfbecf6",
+    "docs/scene-targets/targets-v2/02-cargo.png": "5db779c1b443198f21c6105cb58e240f62f8578b8b9c528832c5a3220ac7c227",
+    "docs/scene-targets/targets-v2/03-barracks.png": "ca1e436d3767c8cad52d6a29b390e71ced3017d5b88d86a971e2617228251501",
+    "docs/scene-targets/targets-v2/04-service.png": "93e48560e63d0ee828a338e46f83b5e7be4fb0e413b2aee1793f9b9bd99e7f0d",
+    "docs/scene-targets/targets-v2/05-rooftop.png": "92b0e8dd6d1f1450beec3696509e8ebfa3f0b1582b0efd7469aaa762a32b6360",
+    "docs/scene-targets/targets-v2/generation.json": "47b6ae03dbab7648bdc802fbe128194c3b4621767477471b8dcd7ad9005a99f2",
+    "docs/scene-targets/views.json": "2135dccccd164b112bc488dcaf9e77a1bacfa2dea32abaee500558a3f93c3087",
+    "lib/view/player.js": "5e542b2fbbe57224bb9ae614e1cbbb1f9f121abe113b4bd0ed6aebe187ba5db3"
+  }
+}

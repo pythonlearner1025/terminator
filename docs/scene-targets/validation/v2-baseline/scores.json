@@ -1,0 +1,55 @@
+{
+  "candidate": "docs/scene-targets/before",
+  "reference": "/Users/minjunes/games/terminator-wt/selected-assets/docs/scene-targets/targets-v2",
+  "candidate_git": "f11f329bc1d8b7c04f23707f52bacd59721f7866",
+  "formula": "0.2 * MAE + 0.3 * MAE at 1/4 size + 0.5 * MAE at 1/16 size; masked RGB, percent of 255; lower is better",
+  "reference_resize": "Lanczos to capture size, no crop or registration",
+  "views": [
+    {
+      "mae_percent": 12.772935337976346,
+      "mae_4x_percent": 12.485475175948293,
+      "mae_16x_percent": 12.167953086662672,
+      "loss": 12.384206163711093,
+      "id": "01-courtyard",
+      "baseline_loss": 12.384206163711093,
+      "improvement": 0.0
+    },
+    {
+      "mae_percent": 13.658945914120846,
+      "mae_4x_percent": 13.429570736571698,
+      "mae_16x_percent": 13.158014510857305,
+      "loss": 13.33966765922433,
+      "id": "02-cargo",
+      "baseline_loss": 13.33966765922433,
+      "improvement": 0.0
+    },
+    {
+      "mae_percent": 13.325584414367754,
+      "mae_4x_percent": 13.157094841929503,
+      "mae_16x_percent": 12.865670722193897,
+      "loss": 13.04508069654935,
+      "id": "03-barracks",
+      "baseline_loss": 13.04508069654935,
+      "improvement": 0.0
+    },
+    {
+      "mae_percent": 9.252412532306199,
+      "mae_4x_percent": 9.061098459956586,
+      "mae_16x_percent": 8.790228574324667,
+      "loss": 8.96392633161055,
+      "id": "04-service",
+      "baseline_loss": 8.96392633161055,
+      "improvement": 0.0
+    },
+    {
+      "mae_percent": 14.405706156679408,
+      "mae_4x_percent": 14.098979604837142,
+      "mae_16x_percent": 13.729425478569107,
+      "loss": 13.975547852071578,
+      "id": "05-rooftop",
+      "baseline_loss": 13.975547852071578,
+      "improvement": 0.0
+    }
+  ],
+  "mean_loss": 12.34168574063338
+}

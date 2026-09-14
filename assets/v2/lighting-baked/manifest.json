@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "format": "gzip of concatenated unchanged Uint8 RGBA; straight alpha, original color-space assignment retained by lighting.js",
+  "sourceFile": "lib/view/v2/lighting-noise.js",
+  "sourceSha256": "651161371ace171186b60a61a856f1a434c6350f69fb068aa449ffcd5b395452",
+  "rawByteLength": 13811712,
+  "rawSha256": "6db4d09c419547db751dc83938e08e8302ee8e7ba8c48d2279c1c9e04438d642",
+  "compressedByteLength": 1163022,
+  "compressedSha256": "68a49ca3c972b296adcddd5c5c42a287f2c3ee38dbc72f18a91c26425568183d",
+  "url": "/files/assets/v2/lighting-baked/production.rgba.gz",
+  "maps": {
+    "sky": {
+      "width": 2048,
+      "height": 1024,
+      "offset": 0,
+      "byteLength": 8388608,
+      "sha256": "99915ccc926e03f135afae282e5c8741b6902a068c1e8dc13a83aa6c17561a96",
+      "recipe": "bakeSky",
+      "args": []
+    },
+    "smoke-4": {
+      "width": 384,
+      "height": 384,
+      "offset": 8388608,
+      "byteLength": 589824,
+      "sha256": "8e98b17ce49af01753c3283ffc38b1984d5287d3cf51360c9d8b74619f4847fe",
+      "recipe": "bakeSmoke",
+      "args": [
+        384,
+        4
+      ]
+    },
+    "smoke-5": {
+      "width": 384,
+      "height": 384,
+      "offset": 8978432,
+      "byteLength": 589824,
+      "sha256": "9b0032d6e384c9aa7edea0979b69ac9b608a9c72f775c054d68631fb30c67d84",
+      "recipe": "bakeSmoke",
+      "args": [
+        384,
+        5
+      ]
+    },
+    "mist": {
+      "width": 96,
+      "height": 96,
+      "offset": 9568256,
+      "byteLength": 36864,
+      "sha256": "636d868809850f372958017933fdd9aca0aa762be263fbe74958e9954744c93b",
+      "recipe": "bakeMist",
+      "args": []
+    },
+    "horizon": {
+      "width": 32,
+      "height": 96,
+      "offset": 9605120,
+      "byteLength": 12288,
+      "sha256": "e8f50970372b4b81c20b0918a3db7f54ff747264bb3622f59e7633fed6d5727d",
+      "recipe": "bakeHorizonHaze",
+      "args": []
+    },
+    "plume-0": {
+      "width": 512,
+      "height": 512,
+      "offset": 9617408,
+      "byteLength": 1048576,
+      "sha256": "b25fe316202f9e7dfcd84f14d3619b90b184b7fb07b850fa398a7b65ed382260",
+      "sourceFile": "assets/v2/lighting/plume-0.rgba",
+      "sourceSha256": "b25fe316202f9e7dfcd84f14d3619b90b184b7fb07b850fa398a7b65ed382260"
+    },
+    "plume-1": {
+      "width": 512,
+      "height": 512,
+      "offset": 10665984,
+      "byteLength": 1048576,
+      "sha256": "8b7aa80cdbc2b7d4b9127f8aa61f5dc57bc03171bc699a2c0bf9f8d0e41d8471",
+      "sourceFile": "assets/v2/lighting/plume-1.rgba",
+      "sourceSha256": "8b7aa80cdbc2b7d4b9127f8aa61f5dc57bc03171bc699a2c0bf9f8d0e41d8471"
+    },
+    "plume-2": {
+      "width": 512,
+      "height": 512,
+      "offset": 11714560,
+      "byteLength": 1048576,
+      "sha256": "17df3092a51979857e8bb39d3786e268bda63251160b6f0f1acac395ae58732f",
+      "sourceFile": "assets/v2/lighting/plume-2.rgba",
+      "sourceSha256": "17df3092a51979857e8bb39d3786e268bda63251160b6f0f1acac395ae58732f"
+    },
+    "plume-3": {
+      "width": 512,
+      "height": 512,
+      "offset": 12763136,
+      "byteLength": 1048576,
+      "sha256": "004fcbe1f3a193e3a28703d14c07e20aa798d492e200dde3724da42fae238c06",
+      "sourceFile": "assets/v2/lighting/plume-3.rgba",
+      "sourceSha256": "004fcbe1f3a193e3a28703d14c07e20aa798d492e200dde3724da42fae238c06"
+    }
+  }
+}

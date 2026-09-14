@@ -1,0 +1,376 @@
+{
+  "schema": 1,
+  "config": {
+    "version": 1,
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "seed": 2029,
+    "tick": 120,
+    "settings": {
+      "quality": "high",
+      "fov": 72,
+      "controlsSeen": true
+    },
+    "views": [
+      {
+        "id": "01-courtyard",
+        "title": "Courtyard / resistance stronghold",
+        "feet": [
+          -12,
+          0,
+          -17
+        ],
+        "lookAt": [
+          5,
+          2,
+          18
+        ],
+        "description": "Ground-level diagonal across the central combat yard toward the command building and eastern structures."
+      },
+      {
+        "id": "02-cargo",
+        "title": "Cargo approach / eastern flank",
+        "feet": [
+          15,
+          0,
+          -19
+        ],
+        "lookAt": [
+          25,
+          2,
+          7
+        ],
+        "description": "Ground-level approach to the container dock, with cover, cargo silhouettes and the barracks beyond."
+      },
+      {
+        "id": "03-barracks",
+        "title": "Barracks / inhabited shelter",
+        "feet": [
+          36,
+          0,
+          5.5
+        ],
+        "lookAt": [
+          36,
+          1.65,
+          22
+        ],
+        "description": "Standing inside the barracks, looking along the occupied room toward its stairs."
+      },
+      {
+        "id": "04-service",
+        "title": "Service trench / underground route",
+        "feet": [
+          -36,
+          -3.5,
+          -12.5
+        ],
+        "lookAt": [
+          -35.7,
+          -1.85,
+          10
+        ],
+        "description": "Standing on the sunken service floor, looking along the long maintenance route."
+      },
+      {
+        "id": "05-rooftop",
+        "title": "Barracks roof / battlefield overview",
+        "feet": [
+          31.6,
+          6.4,
+          6
+        ],
+        "lookAt": [
+          -6,
+          1,
+          0
+        ],
+        "description": "Standing on the stair-accessible barracks roof, looking across the dock and central yard. Eye height remains 1.65 m above the roof."
+      }
+    ]
+  },
+  "git": "f11f329bc1d8b7c04f23707f52bacd59721f7866",
+  "browser": "153.0.8010.37",
+  "platform": "darwin",
+  "deviceScaleFactor": 1,
+  "mode": "Actual PlayerView; first-wave start held still; default map state; fixed presentation tick; no enemies advanced",
+  "views": [
+    {
+      "id": "01-courtyard",
+      "feet": {
+        "x": -12,
+        "y": 0,
+        "z": -17
+      },
+      "support": {
+        "id": "ground",
+        "colliderId": "ground",
+        "level": "ground",
+        "y": 0
+      },
+      "camera": {
+        "position": [
+          -12,
+          1.65,
+          -17
+        ],
+        "quaternion": [
+          -0.001008120250475641,
+          0.9745434156304543,
+          -0.0043829601100625806,
+          -0.22415375170976232
+        ],
+        "fov": 72,
+        "near": 0.05,
+        "far": 180
+      },
+      "tick": 120,
+      "mapState": {
+        "doors": {
+          "tunnel_w": "unlocked",
+          "tunnel_e": "unlocked",
+          "building_ground": "unlocked",
+          "building_balcony": "locked"
+        },
+        "lights": {
+          "courtyard": "on",
+          "building": "on",
+          "dock": "on"
+        },
+        "fog": 0,
+        "hazards": [],
+        "flankWallBroken": false,
+        "gates": [
+          "N1",
+          "N2"
+        ]
+      },
+      "weapon": "pistol",
+      "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Max, Unspecified Version)",
+      "sha256": "94ddff09a27b2771182530b8d0191bd635b6fe3a23b548a9bbc5cd6fb3520ee7",
+      "errors": []
+    },
+    {
+      "id": "02-cargo",
+      "feet": {
+        "x": 15,
+        "y": 0,
+        "z": -19
+      },
+      "support": {
+        "id": "ground",
+        "colliderId": "ground",
+        "level": "ground",
+        "y": 0
+      },
+      "camera": {
+        "position": [
+          15,
+          1.65,
+          -19
+        ],
+        "quaternion": [
+          -0.0011467820176869615,
+          0.9831758020192692,
+          -0.0061761982883134295,
+          -0.18255377780115672
+        ],
+        "fov": 72,
+        "near": 0.05,
+        "far": 180
+      },
+      "tick": 120,
+      "mapState": {
+        "doors": {
+          "tunnel_w": "unlocked",
+          "tunnel_e": "unlocked",
+          "building_ground": "unlocked",
+          "building_balcony": "locked"
+        },
+        "lights": {
+          "courtyard": "on",
+          "building": "on",
+          "dock": "on"
+        },
+        "fog": 0,
+        "hazards": [],
+        "flankWallBroken": false,
+        "gates": [
+          "N1",
+          "N2"
+        ]
+      },
+      "weapon": "pistol",
+      "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Max, Unspecified Version)",
+      "sha256": "04926e866fe7aff750203cc9387fbee7012eb7d6acca29279b36869dad32e066",
+      "errors": []
+    },
+    {
+      "id": "03-barracks",
+      "feet": {
+        "x": 36,
+        "y": 0,
+        "z": 5.5
+      },
+      "support": {
+        "id": "exp_east_yard",
+        "colliderId": "exp_east_yard",
+        "level": "ground",
+        "y": 0
+      },
+      "camera": {
+        "position": [
+          36,
+          1.65,
+          5.5
+        ],
+        "quaternion": [
+          0,
+          1,
+          0,
+          6.123233995736766e-17
+        ],
+        "fov": 72,
+        "near": 0.05,
+        "far": 180
+      },
+      "tick": 120,
+      "mapState": {
+        "doors": {
+          "tunnel_w": "unlocked",
+          "tunnel_e": "unlocked",
+          "building_ground": "unlocked",
+          "building_balcony": "locked"
+        },
+        "lights": {
+          "courtyard": "on",
+          "building": "on",
+          "dock": "on"
+        },
+        "fog": 0,
+        "hazards": [],
+        "flankWallBroken": false,
+        "gates": [
+          "N1",
+          "N2"
+        ]
+      },
+      "weapon": "pistol",
+      "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Max, Unspecified Version)",
+      "sha256": "6fdf2a6a0a80e8cd0f8eb3ae3505e107c821edd2b5c3c83d1a2b64f3a969ae4c",
+      "errors": []
+    },
+    {
+      "id": "04-service",
+      "feet": {
+        "x": -36,
+        "y": -3.5,
+        "z": -12.5
+      },
+      "support": {
+        "id": "exp_service_floor",
+        "colliderId": "exp_service_floor",
+        "level": "service",
+        "y": -3.5
+      },
+      "camera": {
+        "position": [
+          -36,
+          -1.85,
+          -12.5
+        ],
+        "quaternion": [
+          0,
+          0.9999777804934487,
+          0,
+          -0.006666222273243964
+        ],
+        "fov": 72,
+        "near": 0.05,
+        "far": 180
+      },
+      "tick": 120,
+      "mapState": {
+        "doors": {
+          "tunnel_w": "unlocked",
+          "tunnel_e": "unlocked",
+          "building_ground": "unlocked",
+          "building_balcony": "locked"
+        },
+        "lights": {
+          "courtyard": "on",
+          "building": "on",
+          "dock": "on"
+        },
+        "fog": 0,
+        "hazards": [],
+        "flankWallBroken": false,
+        "gates": [
+          "N1",
+          "N2"
+        ]
+      },
+      "weapon": "pistol",
+      "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Max, Unspecified Version)",
+      "sha256": "00abced4b8453d2bccbe886286753b6cba72b76431c98f9dbcc42f87790ecd2f",
+      "errors": []
+    },
+    {
+      "id": "05-rooftop",
+      "feet": {
+        "x": 31.6,
+        "y": 6.4,
+        "z": 6
+      },
+      "support": {
+        "id": "exp_barracks_roof",
+        "colliderId": "exp_barracks_roof",
+        "level": "barracks_roof",
+        "y": 6.3999999999999995
+      },
+      "camera": {
+        "position": [
+          31.6,
+          8.05,
+          6
+        ],
+        "quaternion": [
+          -0.06954632658140851,
+          0.6462892228822031,
+          0.05932840649659592,
+          0.7575973132396423
+        ],
+        "fov": 72,
+        "near": 0.05,
+        "far": 180
+      },
+      "tick": 120,
+      "mapState": {
+        "doors": {
+          "tunnel_w": "unlocked",
+          "tunnel_e": "unlocked",
+          "building_ground": "unlocked",
+          "building_balcony": "locked"
+        },
+        "lights": {
+          "courtyard": "on",
+          "building": "on",
+          "dock": "on"
+        },
+        "fog": 0,
+        "hazards": [],
+        "flankWallBroken": false,
+        "gates": [
+          "N1",
+          "N2"
+        ]
+      },
+      "weapon": "pistol",
+      "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Max, Unspecified Version)",
+      "sha256": "bc9e506b0e4a255d896eaf31da5ae42ad8f759adde4c4f2fa7c04f2b44bb4b99",
+      "errors": []
+    }
+  ]
+}

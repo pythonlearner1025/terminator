@@ -14,7 +14,7 @@ const {RosterFx,rosterDeathPhase}=await import('../../lib/view/roster-fx.js')
 const {RagdollSystem}=await import('../../lib/view/ragdoll.js')
 const {goreDecision}=await import('../../lib/view/gore.js')
 const {TEMPLATE_NAMES}=await import('../../lib/view/units.js')
-const {BOSS_MARKUP,renderBoss,waveBannerTitle}=await import('../../lib/ui/boss.js')
+const {waveBannerTitle}=await import('../../lib/ui/boss.js')
 const types=['t1000','hkaerial','hktank']
 const sources=new Map(await Promise.all(types.map(async type=>[type,await loadUnitAsset(type)])))
 const spec=JSON.parse(await readFile(new URL('../../lib/core/data/units.json',import.meta.url),'utf8'))
@@ -115,16 +115,7 @@ test('vehicle deaths use resident piece physics and keep fire through the wreck 
   }
 })
 
-test('boss viewmodel renders name, health, weak core hint, and null visibility',()=>{
-  const node=()=>({hidden:true,textContent:'',style:{},attributes:{},setAttribute(k,v){this.attributes[k]=String(v)}})
-  const elements=Object.fromEntries(['boss','bossName','bossHealth','bossMeter','bossFill'].map(k=>[k,node()]))
-  const viewmodel={boss:{name:'HK-Tank',hp:4500,hpMax:6000}}
-  renderBoss(elements,viewmodel.boss)
-  assert.equal(elements.boss.hidden,false);assert.equal(elements.bossName.textContent,'HK-TANK')
-  assert.equal(elements.bossHealth.textContent,'4500 / 6000');assert.equal(elements.bossFill.style.transform,'scaleX(0.75)')
-  assert.equal(elements.bossMeter.attributes['aria-valuenow'],'4500');assert.match(BOSS_MARKUP,/REAR POWER CORE/)
-  renderBoss(elements,null);assert.equal(elements.boss.hidden,true)
-  renderBoss(elements,{name:'HK-Tank',hp:NaN,hpMax:0});assert.equal(elements.bossFill.style.transform,'scaleX(0)')
+test('boss wave announcement remains without enemy health overlay',()=>{
   for(const current of [5,10])assert.equal(waveBannerTitle({current}),'HK-TANK INBOUND')
   assert.equal(waveBannerTitle({current:4}),'WAVE 4')
 })

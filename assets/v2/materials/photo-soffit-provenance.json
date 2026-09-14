@@ -1,0 +1,50 @@
+{
+  "source": "Worn concrete wall / Sousinho, CC-BY-4.0; photo-provenance.json / photo-worn-LICENSE.txt",
+  "crop_source_pixels": [
+    15,
+    316,
+    361,
+    531
+  ],
+  "metres": [
+    2.51,
+    1.55
+  ],
+  "pixels": [
+    512,
+    320
+  ],
+  "preparation": "Quiet lower-left original UV crop. Periodic-plus-smooth boundary correction in linear albedo/vector-normal/linear ARM; Lanczos resize; normals renormalized. No universal noise, invented relief or whole-map blur.",
+  "inputs": [
+    {
+      "file": "photo-worn-albedo.jpg",
+      "sha256": "a7d583a3b1c5608fc04cf7d425ff6abeb6d82de8d62ccb1446af5f95ccfc86f1"
+    },
+    {
+      "file": "photo-worn-normal.png",
+      "sha256": "8de9fa5fa13f7520367129c796c55181c17ccd7e2d7f4bbdb30a8fba6482e392"
+    },
+    {
+      "file": "photo-worn-orm.png",
+      "sha256": "cf82a4dbd211d6b67967d43760a6cde27bd8eb74aa877de4b8fb96653a411894"
+    }
+  ],
+  "outputs": [
+    {
+      "file": "photo-soffit-albedo.jpg",
+      "bytes": 58704,
+      "sha256": "a0b064e43c9c485ad28ac366bd413d9360aba9094c1afa33ce33ca3647e2e202"
+    },
+    {
+      "file": "photo-soffit-normal.png",
+      "bytes": 292003,
+      "sha256": "bc458f1a141363a1fe963933ef6d2b84214d5a9b3fb7db4b2914c05697bdab93"
+    },
+    {
+      "file": "photo-soffit-orm.png",
+      "bytes": 159036,
+      "sha256": "54d9021f5178eef258dfda6eb7edfb4f821a4f0c72f2b0e06e7f793ebff441f4"
+    }
+  ],
+  "additional_gpu_mib_rgba8_with_mips": 2.5
+}

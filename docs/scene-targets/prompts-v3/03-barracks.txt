@@ -1,0 +1,22 @@
+Use case: precise-object-edit.
+Version 3 — improve debris formation and material variation; reduce grain and visual noise.
+
+INPUT ROLES
+Image 1 is the matching VERSION 2 TARGET and is the edit target. Its James Cameron / original The Terminator (1984) blue-black Future War atmosphere, lighting, composition and design are approved. Preserve them.
+Image 2 is the user's REAL-WORLD DEBRIS photograph. Study its collapse mechanics, fragment sizes, surface organization and material differences. Use those properties only. Do not copy its tilted camera, building layout, arches, daylight, neutral color grade or foreground tape.
+Image 3 is the original gameplay screenshot. It anchors the unchanged camera, openings, floor elevations and cover positions. Retain the v2 environment while keeping those structural anchors intact.
+
+SPECIFIC CHANGE
+Replace v2's uniformly crunchy, sparkling, pebbled texture treatment with physically readable rubble and calmer material surfaces. Remove visible film grain, digital speckling, sharpening halos and the blanket of tiny bright edge highlights. Render cleanly, with natural optical softness and smooth blue smoke gradients; do not blur the whole image or erase real object detail. Keep exactly the same overall exposure, cold blue palette, dark silhouettes, smoke placement, backlight direction and localized faint fires as Image 1.
+
+LEARN FROM THE REAL DEBRIS PHOTO
+The rubble is a gravity-settled collapse, not scattered identical rocks: a few substantial broken wall/slab sections establish the mass; angular masonry blocks and flat plaster fragments wedge underneath and between them; small chips, sand and fine dust fill low pockets. Broad slab faces remain relatively smooth and readable, while only fracture edges reveal coarse aggregate. Bricks/block fragments retain traces of straight manufactured edges. Some plaster remains attached to masonry. Large pieces lie tilted and overlap with deep occluded gaps, giving each pile weight, direction and a plausible source in the nearby damaged wall. Fine debris spreads in a thinning apron at the pile's foot. Bent reinforcement belongs to fractured slabs; cable lengths sag under gravity. Vary fragment size, thickness and orientation substantially, with irregular local clustering and quiet gaps.
+
+SURFACE HIERARCHY
+Give walls large coherent areas of surviving plaster or cast concrete, localized cracks and impact zones, exposed brick/block patches, and broad irregular soot or water stains. Damage relates to corners, joints, loads and collapse; do not emboss identical pits over every face. Ground routes have broad quieter dusty surfaces interrupted by localized rubble fans and isolated fragments, not an evenly dense rubble carpet. Concrete, brick, dust, painted metal and corroded steel each have distinct roughness and wear. Dust softens most highlights. Reserve sharper cold glints for a few actual exposed metal edges. Eliminate visible texture tiling, recurring crack stamps, repeated stone shapes, equally spaced damage and identical roughness across materials. Let small texture detail diminish naturally with distance; avoid glinting detail in every pixel.
+
+PRESERVE
+Keep Image 1's major rubble/cover footprints and cover heights; reform the pieces within those bounds. Keep the same framing, 16:9 aspect ratio, field of view, horizon, perspective, buildings, truck, containers, openings, stairs, pipes and props. Keep the player weapon, hands and HUD unchanged in position, shape and design. Keep all paths and sightlines traversable. Preserve enclosed ceilings in the interiors. Add no new structures, characters, enemies, laser beams, signage or lighting scheme. No warm relighting, glossy wet paving, heavy film grain, global blur or denoising smear. Improve only debris realism, surface variation and image cleanliness. Output one complete polished player POV, not a collage.
+
+POV-SPECIFIC CONSTRAINTS
+Barracks: preserve the continuous low ceiling, rectangular window openings, broad partitions, narrow columns and distant stairs/doorway. Retain large surviving wall/plaster areas on the partitions. Group fallen masonry at their existing bases and side bays, keep a quieter dusty central aisle. The flat ceiling needs broad concrete planes with a few meaningful seams, not pebbled noise.

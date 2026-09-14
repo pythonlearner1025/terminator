@@ -1,0 +1,33 @@
+{
+  "id": "hangar_concrete_floor",
+  "source": "https://polyhaven.com/a/hangar_concrete_floor",
+  "author": "Dimitrios Savva",
+  "license": "CC0-1.0",
+  "tileSizeMeters": 2,
+  "resources": [
+    {
+      "channel": "Diffuse",
+      "path": "assets/textures/map/hangar_concrete_floor_diff_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/hangar_concrete_floor/hangar_concrete_floor_diff_1k.jpg",
+      "md5": "a073051aeaf7242f5e354ca4c89ac179",
+      "bytes": 614854,
+      "sha256": "8c365cc65bc3026045c4e3ecba9642cbe0bee1cf705edafe4a8fed5b78c08a4d"
+    },
+    {
+      "channel": "nor_gl",
+      "path": "assets/textures/map/hangar_concrete_floor_nor_gl_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/hangar_concrete_floor/hangar_concrete_floor_nor_gl_1k.jpg",
+      "md5": "28309c8eaf4dbf8647255d75a5bb8282",
+      "bytes": 792876,
+      "sha256": "b1fc3146e62c5d5cd7859eb0d8174480e1ea87c80c92ba4364229547d1f8dda7"
+    },
+    {
+      "channel": "arm",
+      "path": "assets/textures/map/hangar_concrete_floor_arm_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/hangar_concrete_floor/hangar_concrete_floor_arm_1k.jpg",
+      "md5": "9e2c31aa6bb89204e5d2ebd3fa27bbf8",
+      "bytes": 686273,
+      "sha256": "1ab24eea5a341ee35e19e766600b75bf06ddd03f2dc4d76633795c5a6b10a660"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "generator": "lib/view/v2/lighting-bake.js",
+  "sourceSha256": "651161371ace171186b60a61a856f1a434c6350f69fb068aa449ffcd5b395452",
+  "width": 512,
+  "height": 512,
+  "sampling": {
+    "resolution": 192,
+    "depth": 128
+  },
+  "encoding": "RGBA8 straight-alpha linear RGB, no header",
+  "files": [
+    {
+      "file": "plume-0.rgba",
+      "seed": 0,
+      "bytes": 1048576,
+      "sha256": "b25fe316202f9e7dfcd84f14d3619b90b184b7fb07b850fa398a7b65ed382260"
+    },
+    {
+      "file": "plume-1.rgba",
+      "seed": 1,
+      "bytes": 1048576,
+      "sha256": "8b7aa80cdbc2b7d4b9127f8aa61f5dc57bc03171bc699a2c0bf9f8d0e41d8471"
+    },
+    {
+      "file": "plume-2.rgba",
+      "seed": 2,
+      "bytes": 1048576,
+      "sha256": "17df3092a51979857e8bb39d3786e268bda63251160b6f0f1acac395ae58732f"
+    },
+    {
+      "file": "plume-3.rgba",
+      "seed": 3,
+      "bytes": 1048576,
+      "sha256": "004fcbe1f3a193e3a28703d14c07e20aa798d492e200dde3724da42fae238c06"
+    }
+  ]
+}

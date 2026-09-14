@@ -1,0 +1,96 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>V2 scene milestone gallery</title>
+<style>body{background:#0c1119;color:#dae2ed;font:15px system-ui;margin:24px}h1{font-size:24px}section{margin:28px 0}.views,.columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;min-width:750px}.columns{position:sticky;top:0;background:#0c1119;padding:14px 0;z-index:1;font-size:19px;font-weight:bold}.comparison{overflow-x:auto}figure{margin:0}img{display:block;width:100%;height:auto}figcaption{padding:8px 0;color:#b9c8d9}a{color:#8bc5fa}code{overflow-wrap:anywhere}.status{color:#ffd18d}nav{line-height:1.8}</style></head><body><h1>R3 lighting and ground depth — DIAGNOSTIC · R3</h1><p class="status"><strong>DIAGNOSTIC / Needs revision. No scene approval.</strong></p><p>Capture date range (UTC): 2026-09-13T23:21:07+00:00 — 2026-09-13T23:22:54+00:00<br><small>Source PNG file modification times; capture manifest does not record acquisition timestamps.</small><br>Diagnostic base SHA (plus routed owner revisions below): <code>5610d8d7741235c1bec364eea9e4569f9355ad21</code><br>Capture source: <code>v2-combined-r3-pilot-05</code><br>Gallery built: 2026-09-13T23:23:47+00:00</p><p class="status"><strong>DIAGNOSTIC / Needs revision. Browser-routed module overrides; this is not a clean integrated scene commit. Independent review pending.</strong></p><details><summary>Expand exact base + owner commits and routed file hashes</summary><pre style="white-space:pre-wrap;overflow-wrap:anywhere">{
+  &quot;base_commit&quot;: &quot;5610d8d7741235c1bec364eea9e4569f9355ad21&quot;,
+  &quot;mode&quot;: &quot;Diagnostic browser module overrides; Actual PlayerView; first-wave start held still; default map state; fixed presentation tick; no enemies advanced&quot;,
+  &quot;owners&quot;: [
+    {
+      &quot;owner&quot;: &quot;architecture&quot;,
+      &quot;commit&quot;: &quot;3880a0957713d33e8c229c2c0008f0ebc5c7b377&quot;,
+      &quot;sourceFiles&quot;: {
+        &quot;assets/v2/architecture/LICENSE.txt&quot;: &quot;9000ef79bbd4e1ad058ccb5c88750520c99fd9b717406a33863cf102af59dff5&quot;,
+        &quot;assets/v2/architecture/rubble-patches.json&quot;: &quot;0d41a1f506c812ce9a1ee073c6f06c93537f40c081db38d6aaf8505b072e7077&quot;,
+        &quot;lib/view/v2/architecture-bake.js&quot;: &quot;7d9b0173dd9475c3a130b41f079848bc48e7f580c0898a1c3c2123eb82b30be4&quot;,
+        &quot;lib/view/v2/architecture-layout.js&quot;: &quot;eec54e2bb4be7b6987c9424475d51ad83484264a3cc9831417416b26e73f16c4&quot;,
+        &quot;lib/view/v2/architecture-rubble.js&quot;: &quot;72d90eeeea52170f8262c58a49aa7bd276dff23eb804cc7fd44a2c69dca8fe26&quot;,
+        &quot;lib/view/v2/architecture-shells.js&quot;: &quot;4a3b50121f8381621fc2284e78cb337fd349d76dc72033fe530086f05878c414&quot;,
+        &quot;lib/view/v2/architecture.js&quot;: &quot;19ea99d69708ea6657969686a83cb8e13d9359f6d6939d7e3cdefbc08691853c&quot;
+      }
+    },
+    {
+      &quot;owner&quot;: &quot;ground&quot;,
+      &quot;commit&quot;: &quot;86b4374c3774a2f3fc1e76e5937be26e285b2bf6&quot;,
+      &quot;sourceFiles&quot;: {
+        &quot;assets/v2/ground/coverage.json&quot;: &quot;8f472a147602206517bae5e529f919b962ca0c48bbf08bb911d60311e0c5e469&quot;,
+        &quot;assets/v2/ground/fragments.json&quot;: &quot;734bf57d8fb4917954caf237686f601eda91b020628b683647d28b32b3869b87&quot;,
+        &quot;lib/view/v2/ground-layout.js&quot;: &quot;e1bef0bf98ab1b96a691b1a4d78039e12f0b3f14d027d96124b1c6da7340fcdc&quot;,
+        &quot;lib/view/v2/ground.js&quot;: &quot;98bfc904da036ff47a55341293eb7820c24f55489e1da0bdf1ac4fae2d7d65ca&quot;
+      }
+    },
+    {
+      &quot;owner&quot;: &quot;materials&quot;,
+      &quot;commit&quot;: &quot;92fb7189cbd309dbc625583f093f491527072194&quot;,
+      &quot;sourceFiles&quot;: {
+        &quot;assets/v2/materials/concrete-albedo.jpg&quot;: &quot;136999c1feaf47cdfaec91e492522d7ceea653bba61ab2d903772c3025b60d40&quot;,
+        &quot;assets/v2/materials/concrete-surface.png&quot;: &quot;82c155c2e2c5b268cc32bcf4b994464e4564efca4da901c6a2a6cd1b4661fa57&quot;,
+        &quot;assets/v2/materials/ground-albedo.jpg&quot;: &quot;bb7888963f2134c5025bf056111cacb0d91b20af1837418a59dd2874c1d15682&quot;,
+        &quot;assets/v2/materials/ground-surface.png&quot;: &quot;412fcc8911ba038340f22916e8dbd0582c91d2ce77374f95dd83ba3626a91e78&quot;,
+        &quot;assets/v2/materials/photo-leaking-LICENSE.txt&quot;: &quot;799101068c143f87455bbda9e9482dcadd1b17cef6f06bff01850c8b4ebaa456&quot;,
+        &quot;assets/v2/materials/photo-provenance.json&quot;: &quot;950b1ed091f365f27d0b7a88a660cbf7311dea7f6b7c81c4fb9972f698dac3e8&quot;,
+        &quot;assets/v2/materials/photo-worn-LICENSE.txt&quot;: &quot;4358adca4c173de5717482607b3cd0e88ff33746bf97fb09be1ee98d0f658ec2&quot;,
+        &quot;assets/v2/materials/photo-worn-albedo.jpg&quot;: &quot;a7d583a3b1c5608fc04cf7d425ff6abeb6d82de8d62ccb1446af5f95ccfc86f1&quot;,
+        &quot;assets/v2/materials/photo-worn-normal.png&quot;: &quot;8de9fa5fa13f7520367129c796c55181c17ccd7e2d7f4bbdb30a8fba6482e392&quot;,
+        &quot;assets/v2/materials/photo-worn-orm.png&quot;: &quot;cf82a4dbd211d6b67967d43760a6cde27bd8eb74aa877de4b8fb96653a411894&quot;,
+        &quot;assets/v2/materials/provenance.json&quot;: &quot;b2a2268d7c338df3ce44baf88eed76119f6d683c1f361275e91b602fc0455cb5&quot;,
+        &quot;lib/view/v2/materials-shader.js&quot;: &quot;edfb0fad4c8c6f8c2ef34f131f80aa3a3fd3c05d6032abf19067b89dd1709728&quot;,
+        &quot;lib/view/v2/materials-weathering.js&quot;: &quot;e6d6ccf26a759cbfde6ff15cd4429cf1c9043aa71b87f00ed20b814d7f969838&quot;,
+        &quot;lib/view/v2/materials.js&quot;: &quot;d3f3cdbe7e342769ebe9cf28125ca50e1be226ed2c5d687f22b358eff55f637e&quot;
+      }
+    },
+    {
+      &quot;owner&quot;: &quot;lighting&quot;,
+      &quot;commit&quot;: &quot;259c75497aeb19dcff77a8a632aa9c337cf00c48&quot;,
+      &quot;sourceFiles&quot;: {
+        &quot;lib/view/v2/lighting-noise.js&quot;: &quot;4ec54a2049db5665cfe1440663a449bfee3ba34ef82863fcb5f786a095c3f18d&quot;,
+        &quot;lib/view/v2/lighting.js&quot;: &quot;d11eed8dbd2c33c6131b69eba1df432afe4a956042daea960701ceb43a6ee6d5&quot;
+      }
+    }
+  ],
+  &quot;base_source_files&quot;: {
+    &quot;assets/main.scene.gltf&quot;: &quot;cc912950518e6712a00d3e735a7dca54b1ede6fdd54c88c9950347b9d86a3287&quot;,
+    &quot;assets/models/map/rubble-1x1p5x12-zh655b/rubble-1x1p5x12-zh655b.gltf&quot;: &quot;60d4db6cbdfce6270c088979ccbde152130a6cd7a0f7ac16a1ccafba5e205b63&quot;,
+    &quot;assets/v2/effects/particles.png&quot;: &quot;c51d4f212ef0be4336b9321f7bc17416679bbe7f925a46d7d8b6ad602ede8fc9&quot;,
+    &quot;assets/v2/effects/provenance.json&quot;: &quot;2ec3364d98fa49c2aa8537709ea31a18bd63d658352a2a17536bb9735383750f&quot;,
+    &quot;assets/v2/materials/concrete-albedo.jpg&quot;: &quot;136999c1feaf47cdfaec91e492522d7ceea653bba61ab2d903772c3025b60d40&quot;,
+    &quot;assets/v2/materials/concrete-surface.png&quot;: &quot;82c155c2e2c5b268cc32bcf4b994464e4564efca4da901c6a2a6cd1b4661fa57&quot;,
+    &quot;assets/v2/materials/ground-albedo.jpg&quot;: &quot;bb7888963f2134c5025bf056111cacb0d91b20af1837418a59dd2874c1d15682&quot;,
+    &quot;assets/v2/materials/ground-surface.png&quot;: &quot;412fcc8911ba038340f22916e8dbd0582c91d2ce77374f95dd83ba3626a91e78&quot;,
+    &quot;assets/v2/materials/photo-leaking-LICENSE.txt&quot;: &quot;799101068c143f87455bbda9e9482dcadd1b17cef6f06bff01850c8b4ebaa456&quot;,
+    &quot;assets/v2/materials/photo-provenance.json&quot;: &quot;950b1ed091f365f27d0b7a88a660cbf7311dea7f6b7c81c4fb9972f698dac3e8&quot;,
+    &quot;assets/v2/materials/photo-worn-LICENSE.txt&quot;: &quot;4358adca4c173de5717482607b3cd0e88ff33746bf97fb09be1ee98d0f658ec2&quot;,
+    &quot;assets/v2/materials/photo-worn-albedo.jpg&quot;: &quot;a7d583a3b1c5608fc04cf7d425ff6abeb6d82de8d62ccb1446af5f95ccfc86f1&quot;,
+    &quot;assets/v2/materials/photo-worn-normal.png&quot;: &quot;8de9fa5fa13f7520367129c796c55181c17ccd7e2d7f4bbdb30a8fba6482e392&quot;,
+    &quot;assets/v2/materials/photo-worn-orm.png&quot;: &quot;cf82a4dbd211d6b67967d43760a6cde27bd8eb74aa877de4b8fb96653a411894&quot;,
+    &quot;assets/v2/materials/provenance.json&quot;: &quot;b2a2268d7c338df3ce44baf88eed76119f6d683c1f361275e91b602fc0455cb5&quot;,
+    &quot;generators/v2-preview.js&quot;: &quot;c99b2b88b1a7fa3b19e80042472edc3e9fc330fcd029fd5e8d61ce2dc66970c3&quot;,
+    &quot;lib/view/map-batching.js&quot;: &quot;b9ae35ad2a1600c2192bc1355a4ec502d3b62373ccea9f857931d6adb759ff69&quot;,
+    &quot;lib/view/map.js&quot;: &quot;c4dbc936822623acbd0ccc2e589e26edb8cb4e161fe9e9eba06d7684e9a20aa4&quot;,
+    &quot;lib/view/v2/architecture-layout.js&quot;: &quot;eec54e2bb4be7b6987c9424475d51ad83484264a3cc9831417416b26e73f16c4&quot;,
+    &quot;lib/view/v2/architecture.js&quot;: &quot;1c39c5cd4597feffe4ffc455b69d8e3798c069ae7998a6f98c2424e7b346ebf3&quot;,
+    &quot;lib/view/v2/effects-simulation.js&quot;: &quot;6b00ad123c0209e823dc1f01d431242eadbf5b274973b268d6b89f8590ddc60c&quot;,
+    &quot;lib/view/v2/effects-textures.js&quot;: &quot;e84f88eb64206681207eb3d7ed4aaa07de15e8cd04b17a9cd1d2be38f875aed7&quot;,
+    &quot;lib/view/v2/effects.js&quot;: &quot;ae9601ca4f3ee4a69a07b1bb4b81158ba1caec167c56879d7cda14ae58385257&quot;,
+    &quot;lib/view/v2/lighting-noise.js&quot;: &quot;f9d6e4b5e46687667d9cffd6bc2df3ca0dff1fea07c4a372786ba4e761ec9d2b&quot;,
+    &quot;lib/view/v2/lighting.js&quot;: &quot;61214668919a2c027cb6b48a86411b642234571e376423567eb77b013f66d885&quot;,
+    &quot;lib/view/v2/materials-shader.js&quot;: &quot;edfb0fad4c8c6f8c2ef34f131f80aa3a3fd3c05d6032abf19067b89dd1709728&quot;,
+    &quot;lib/view/v2/materials-weathering.js&quot;: &quot;e6d6ccf26a759cbfde6ff15cd4429cf1c9043aa71b87f00ed20b814d7f969838&quot;,
+    &quot;lib/view/v2/materials.js&quot;: &quot;d3f3cdbe7e342769ebe9cf28125ca50e1be226ed2c5d687f22b358eff55f637e&quot;,
+    &quot;main.js&quot;: &quot;bba9791a2e6c6851561b9e80b05d2a5d628e7c7135fe816da0b51cda9d280af6&quot;,
+    &quot;package.json&quot;: &quot;53bba145dd7cfe3eabf97a2f647235748727fb6a086483e64b0e6fd4612b76ca&quot;
+  },
+  &quot;harness_sources&quot;: {
+    &quot;tools/capture-scene-targets.mjs&quot;: &quot;9dba34947bc15f856f0210dc3d932cfa543794187d652e3359d4ee945f7f7021&quot;,
+    &quot;tools/v2/capture-browser.mjs&quot;: &quot;cd4b99b8b610eff03de9b23ced57f39987e81a1033873e7b9fa0163ceccc683f&quot;,
+    &quot;tools/v2/capture-gpu-timing.mjs&quot;: &quot;eb7db58b6d30c0b4d548ba19e1634e6606cd774e40890c17533b63361bea5f4a&quot;,
+    &quot;tools/v2/capture-pilot-overrides.mjs&quot;: &quot;c4543fd882cbd97fd704bfa9ae288d08d29c981025bded6284bb78a2809ac361&quot;
+  }
+}</pre></details><p>Before is the original real Mac capture. New target is the immutable selected V2 <strong>generated reference</strong>. Latest progress is an <strong>actual Linux game capture</strong>. All five original player POVs; images copied byte-for-byte without edits. Strict camera/config/device/render and source-hash checks passed. Lower RGB MAE alone is not semantic success.</p><nav aria-label="Milestone history">Milestones: <a href="../../snapshots/r2/index.html">R2 integrated milestone</a> · <a href="../../snapshots/r3-diagnostic/index.html">R3 combined pilot — DIAGNOSTIC</a> · <a href="../../snapshots/r3-light-fix/index.html">R3 authoring-light fix — DIAGNOSTIC</a> · <a href="../../snapshots/r3-ground-field/index.html">R3 broader ground field — DIAGNOSTIC</a> · <a href="../../snapshots/r3-ground-separated/index.html">R3 separated ground — DIAGNOSTIC</a> · <a href="../../snapshots/r3-light-ground-depth/index.html">R3 lighting and ground depth — DIAGNOSTIC</a> · <a href="../../index.html">Latest page</a> · <a href="../../history.json">History manifest</a></nav><div class="comparison"><div class="columns"><span>Before</span><span>New target</span><span>Latest progress</span></div><section><h2>01-courtyard</h2><div class="views"><figure data-group="original"><a href="images/original-01-courtyard.png" target="_blank"><img loading="lazy" src="images/original-01-courtyard.png" alt="Original real before · Mac: 01-courtyard"></a><figcaption>Original real before · Mac · click for original resolution</figcaption></figure><figure data-group="target"><a href="images/target-01-courtyard.png" target="_blank"><img loading="lazy" src="images/target-01-courtyard.png" alt="Selected V2 · generated target: 01-courtyard"></a><figcaption>Selected V2 · generated target · click for original resolution</figcaption></figure><figure data-group="candidate"><a href="images/candidate-01-courtyard.png" target="_blank"><img loading="lazy" src="images/candidate-01-courtyard.png" alt="Actual latest progress · Linux · DIAGNOSTIC / Needs revision: 01-courtyard"></a><figcaption>Actual latest progress · Linux · DIAGNOSTIC / Needs revision · click for original resolution</figcaption></figure></div></section><section><h2>02-cargo</h2><div class="views"><figure data-group="original"><a href="images/original-02-cargo.png" target="_blank"><img loading="lazy" src="images/original-02-cargo.png" alt="Original real before · Mac: 02-cargo"></a><figcaption>Original real before · Mac · click for original resolution</figcaption></figure><figure data-group="target"><a href="images/target-02-cargo.png" target="_blank"><img loading="lazy" src="images/target-02-cargo.png" alt="Selected V2 · generated target: 02-cargo"></a><figcaption>Selected V2 · generated target · click for original resolution</figcaption></figure><figure data-group="candidate"><a href="images/candidate-02-cargo.png" target="_blank"><img loading="lazy" src="images/candidate-02-cargo.png" alt="Actual latest progress · Linux · DIAGNOSTIC / Needs revision: 02-cargo"></a><figcaption>Actual latest progress · Linux · DIAGNOSTIC / Needs revision · click for original resolution</figcaption></figure></div></section><section><h2>03-barracks</h2><div class="views"><figure data-group="original"><a href="images/original-03-barracks.png" target="_blank"><img loading="lazy" src="images/original-03-barracks.png" alt="Original real before · Mac: 03-barracks"></a><figcaption>Original real before · Mac · click for original resolution</figcaption></figure><figure data-group="target"><a href="images/target-03-barracks.png" target="_blank"><img loading="lazy" src="images/target-03-barracks.png" alt="Selected V2 · generated target: 03-barracks"></a><figcaption>Selected V2 · generated target · click for original resolution</figcaption></figure><figure data-group="candidate"><a href="images/candidate-03-barracks.png" target="_blank"><img loading="lazy" src="images/candidate-03-barracks.png" alt="Actual latest progress · Linux · DIAGNOSTIC / Needs revision: 03-barracks"></a><figcaption>Actual latest progress · Linux · DIAGNOSTIC / Needs revision · click for original resolution</figcaption></figure></div></section><section><h2>04-service</h2><div class="views"><figure data-group="original"><a href="images/original-04-service.png" target="_blank"><img loading="lazy" src="images/original-04-service.png" alt="Original real before · Mac: 04-service"></a><figcaption>Original real before · Mac · click for original resolution</figcaption></figure><figure data-group="target"><a href="images/target-04-service.png" target="_blank"><img loading="lazy" src="images/target-04-service.png" alt="Selected V2 · generated target: 04-service"></a><figcaption>Selected V2 · generated target · click for original resolution</figcaption></figure><figure data-group="candidate"><a href="images/candidate-04-service.png" target="_blank"><img loading="lazy" src="images/candidate-04-service.png" alt="Actual latest progress · Linux · DIAGNOSTIC / Needs revision: 04-service"></a><figcaption>Actual latest progress · Linux · DIAGNOSTIC / Needs revision · click for original resolution</figcaption></figure></div></section><section><h2>05-rooftop</h2><div class="views"><figure data-group="original"><a href="images/original-05-rooftop.png" target="_blank"><img loading="lazy" src="images/original-05-rooftop.png" alt="Original real before · Mac: 05-rooftop"></a><figcaption>Original real before · Mac · click for original resolution</figcaption></figure><figure data-group="target"><a href="images/target-05-rooftop.png" target="_blank"><img loading="lazy" src="images/target-05-rooftop.png" alt="Selected V2 · generated target: 05-rooftop"></a><figcaption>Selected V2 · generated target · click for original resolution</figcaption></figure><figure data-group="candidate"><a href="images/candidate-05-rooftop.png" target="_blank"><img loading="lazy" src="images/candidate-05-rooftop.png" alt="Actual latest progress · Linux · DIAGNOSTIC / Needs revision: 05-rooftop"></a><figcaption>Actual latest progress · Linux · DIAGNOSTIC / Needs revision · click for original resolution</figcaption></figure></div></section></div><p><a href="gallery.json">Image hashes and source provenance</a>. Matched unchanged Linux baseline is retained as supporting evidence:</p><ul><li><a href="images/linux-01-courtyard.png">01-courtyard</a></li><li><a href="images/linux-02-cargo.png">02-cargo</a></li><li><a href="images/linux-03-barracks.png">03-barracks</a></li><li><a href="images/linux-04-service.png">04-service</a></li><li><a href="images/linux-05-rooftop.png">05-rooftop</a></li></ul></body></html>

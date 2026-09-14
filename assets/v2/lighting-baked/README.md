@@ -1,0 +1,9 @@
+# Lossless production atmosphere data
+
+Generated with `node --max-old-space-size=768 tools/v2/bake-lighting-noise.mjs`. Use `--check` to validate the committed gzip length/digest, compare its decompressed bytes with every recomputed recipe/source, and verify all JSON metadata and the complete generated JS manifest without writing changes. Gzip encodings can differ across Node/zlib/platform versions; newly compressed bytes are not a correctness oracle. A normal rebake preserves the existing gzip when its raw pixels are unchanged and writes only changed files.
+
+This is offline computation, not new art. The concatenated gzip stream contains the exact default 2048×1024 `bakeSky`, 384×384 `bakeSmoke` seeds 4 and 5, 96×96 `bakeMist`, 32×96 `bakeHorizonHaze`, and four unchanged 512×512 production plume RGBA files. The plumes were already baked at the higher production sampling configuration; they are copied from the existing assets rather than replaced by the lower-resolution procedural fallback.
+
+`manifest.json` records each source/recipe, dimensions, offset, raw SHA-256, the original noise source hash and complete raw/gzip hashes. No color conversion, quantization, alpha association or image codec is involved. The loader returns the same Uint8 RGBA values. Lighting retains its original sRGB sky / linear smoke assignments, filters, wrapping, opacity, material and transforms.
+
+The nine maps occupy 13,811,712 decoded bytes and 1,163,022 gzip bytes. A completed decoded payload is cached once per module, sharing typed-array storage while each mount owns its textures. Failed or aborted loads do not populate the cache. The atmosphere root stays hidden until all full textures are ready; the existing MapView readiness and match warmup gate then upload, compile and render them before gameplay input. Custom/Node tests retain the original procedural fallback. Existing source/plume files remain untouched.

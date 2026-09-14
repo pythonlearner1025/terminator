@@ -71,6 +71,77 @@
       "count": 4800,
       "bufferView": 1,
       "byteOffset": 24
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 1758,
+      "max": [
+        0.44301098585128784,
+        0.44301098585128784,
+        0.8900020122528076
+      ],
+      "min": [
+        -0.44301098585128784,
+        -0.44301098585128784,
+        0.003980000037699938
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 4,
+      "byteOffset": 21096,
+      "componentType": 5126,
+      "count": 1758,
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 1758,
+      "max": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1,
+        1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 1758,
+      "max": [
+        0.9941290020942688,
+        0.7167860269546509
+      ],
+      "min": [
+        0.00587099976837635,
+        0.00587099976837635
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5125,
+      "count": 4992,
+      "type": "SCALAR"
     }
   ],
   "bufferViews": [
@@ -87,10 +158,46 @@
       "byteLength": 153600,
       "byteStride": 32,
       "target": 34962
+    },
+    {
+      "buffer": 1,
+      "byteLength": 19968,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 1,
+      "byteLength": 14064,
+      "byteOffset": 19968,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 1,
+      "byteLength": 42192,
+      "byteOffset": 34032,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 1,
+      "byteLength": 28128,
+      "byteOffset": 76224,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
     }
   ],
   "samplers": [
     {
+      "wrapS": 10497,
+      "wrapT": 10497
+    },
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
       "wrapS": 10497,
       "wrapT": 10497
     }
@@ -119,6 +226,22 @@
     {
       "source": 5,
       "sampler": 0
+    },
+    {
+      "sampler": 1,
+      "source": 6
+    },
+    {
+      "sampler": 1,
+      "source": 7
+    },
+    {
+      "sampler": 1,
+      "source": 8
+    },
+    {
+      "sampler": 1,
+      "source": 9
     }
   ],
   "images": [
@@ -151,6 +274,18 @@
       "name": "asphalt_02_arm_1k.jpg",
       "mimeType": "image/jpeg",
       "uri": "/kite3d/assets/textures/map/asphalt_02_arm_1k.jpg"
+    },
+    {
+      "uri": "/kite3d/assets/models/selected/22ddb8e02f944fb7b5662f14fdc50e5e/CableSpool_baseColor.png"
+    },
+    {
+      "uri": "/kite3d/assets/models/selected/22ddb8e02f944fb7b5662f14fdc50e5e/CableSpool_metallicRoughness.png"
+    },
+    {
+      "uri": "/kite3d/assets/models/selected/22ddb8e02f944fb7b5662f14fdc50e5e/CableSpool_emissive.jpeg"
+    },
+    {
+      "uri": "/kite3d/assets/models/selected/22ddb8e02f944fb7b5662f14fdc50e5e/CableSpool_normal.png"
     }
   ],
   "buffers": [
@@ -158,6 +293,10 @@
       "name": "Map piece geometry",
       "uri": "spool-1p2x1p2x1p2-awmfnx.bin",
       "byteLength": 172032
+    },
+    {
+      "byteLength": 104352,
+      "uri": "/kite3d/assets/models/selected/22ddb8e02f944fb7b5662f14fdc50e5e/scene.bin"
     }
   ],
   "materials": [
@@ -209,6 +348,33 @@
       "occlusionTexture": {
         "index": 5
       }
+    },
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "emissiveFactor": [
+        1,
+        1,
+        1
+      ],
+      "emissiveTexture": {
+        "index": 8
+      },
+      "name": "Selected spool 1: CableSpool",
+      "normalTexture": {
+        "index": 9
+      },
+      "occlusionTexture": {
+        "index": 7
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 6
+        },
+        "metallicRoughnessTexture": {
+          "index": 7
+        }
+      }
     }
   ],
   "meshes": [
@@ -239,32 +405,158 @@
           "material": 1
         }
       ]
+    },
+    {
+      "name": "defaultMaterial",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 7,
+            "POSITION": 6,
+            "TANGENT": 8,
+            "TEXCOORD_0": 9
+          },
+          "indices": 10,
+          "material": 2,
+          "mode": 4
+        }
+      ]
     }
   ],
   "nodes": [
     {
       "name": "Cable spool asset",
       "extras": {
-        "mapPieceAsset": true
+        "mapPieceAsset": true,
+        "selectedSource": {
+          "id": "22ddb8e02f944fb7b5662f14fdc50e5e",
+          "family": "spool",
+          "source": "https://sketchfab.com/3d-models/cable-spool-22ddb8e02f944fb7b5662f14fdc50e5e",
+          "tileCount": 1,
+          "fitBounds": [
+            1.2,
+            1.2,
+            1.2
+          ]
+        }
       },
       "children": [
         1,
-        2
+        2,
+        7
       ]
     },
     {
       "name": "Cable spool concrete",
       "extras": {
         "material": "concrete"
-      },
-      "mesh": 0
+      }
     },
     {
       "name": "Cable spool rubber",
       "extras": {
         "material": "rubber"
-      },
-      "mesh": 1
+      }
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2.220446049250313e-16,
+        -1,
+        0,
+        0,
+        1,
+        2.220446049250313e-16,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        5
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        -4.371139006309477e-8,
+        0.999999999999999,
+        0,
+        0,
+        -0.999999999999999,
+        -4.371139006309477e-8,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "Collada visual scene group"
+    },
+    {
+      "children": [
+        6
+      ],
+      "matrix": [
+        100,
+        0,
+        0,
+        0,
+        0,
+        -0.000016,
+        -100,
+        0,
+        0,
+        100,
+        -0.000016,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "CableSpool"
+    },
+    {
+      "mesh": 2,
+      "name": "defaultMaterial"
+    },
+    {
+      "name": "Selected spool 1-1",
+      "matrix": [
+        0.013543682192147962,
+        0,
+        0,
+        0,
+        0,
+        0.013543680013688412,
+        0,
+        0,
+        0,
+        0,
+        0.013543680632882324,
+        0,
+        0,
+        -0.6053903156227985,
+        7.039999919647946e-8,
+        1
+      ],
+      "children": [
+        3
+      ]
     }
   ],
   "scenes": [

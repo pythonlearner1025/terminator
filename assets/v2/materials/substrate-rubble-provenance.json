@@ -1,0 +1,56 @@
+{
+  "asset": "Rubble",
+  "author": "Amal Kumar",
+  "source": "https://polyhaven.com/a/rubble",
+  "license": "CC0-1.0",
+  "license_url": "https://polyhaven.com/license",
+  "license_deed": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source_dimensions_metres": [
+    2,
+    2
+  ],
+  "prepared_size": [
+    1024,
+    1024
+  ],
+  "sources": [
+    {
+      "channel": "Diffuse",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/rubble/rubble_diff_2k.png",
+      "bytes": 25585051,
+      "sha256": "3311b4fa4d234c1ad0f834ba2c8dfd0270bfe3c3be63b9f95121a863cc5e27c8"
+    },
+    {
+      "channel": "nor_gl",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/rubble/rubble_nor_gl_2k.png",
+      "bytes": 26212923,
+      "sha256": "37919108373da79d2e7a2a9d2f495878f2f8ea2521373deb877d0e0a792911e7"
+    },
+    {
+      "channel": "arm",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/rubble/rubble_arm_2k.png",
+      "bytes": 15114506,
+      "sha256": "9d2b5de25e9c2b50ae2861d7293e5af3f7e7f77abb618571b07e65a02eb1e24b"
+    }
+  ],
+  "outputs": [
+    {
+      "file": "substrate-rubble-albedo.jpg",
+      "bytes": 471574,
+      "sha256": "8d3d674936965e0ea6463b319109b12b2668370e1817dc5a54f4ebc4d025f7c1"
+    },
+    {
+      "file": "substrate-rubble-normal.png",
+      "bytes": 2232705,
+      "sha256": "e55623a2e6101067faad327f5d5c6531c503e77bceb9cde32e2545d7ba0a318f"
+    },
+    {
+      "file": "substrate-rubble-orm.png",
+      "bytes": 1361509,
+      "sha256": "79f6551d9653daddd9c51d93f169aede3833834f5f1d8a47756e1832bbd7e11d"
+    }
+  ],
+  "preparation": "2048 to 1024 Lanczos; diffuse neutralized 75% toward luminance in linear light, no baked lighting/AO; GL normals resized as vectors and renormalized; original ARM channels retained. Alpha was opaque. No height or displacement.",
+  "runtime": "Two fixed orthogonal rotations/offsets at native 2 m scan width, blended by broad world-space noise; inverse-rotated tangent normals. Upward floor/roof only; no geometry/UV edits.",
+  "additional_gpu_mib_rgba8_with_mips": 16
+}

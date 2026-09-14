@@ -1,0 +1,19 @@
+# Convergence on v2
+
+Selected reference: `targets-v2/`. V1 and V3 remain archived. No scene refactor has been implemented by this selection step.
+
+1. **Lock the evaluation.** Retain all five original player cameras, FOV, resolution, quality and presentation tick. Save target hashes and a current-versus-v2 baseline. Extend evaluation to score sky/atmosphere, architecture, cover and floor separately, excluding HUD/weapon. Report every view and the worst view, not only an average. Keep gameplay/collision checks independent of image scores.
+2. **Match the large lighting and atmosphere shapes.** Start with courtyard and rooftop together. In the map, weather and postprocessing code, tune sky background, blue ambient/key balance, backlight placement, exposure and fog. Replace the empty black sky with layered blue smoke and distant ruined silhouettes. Replace square fire/steam particles with soft textured effects and reduce dominant orange barrel spill. Use the same world-space lighting from every camera.
+3. **Match architectural and cover silhouettes.** Replace featureless slabs with damaged modular walls, interrupted rooflines, exposed framing and credible broken cross-sections. Preserve existing floor levels, openings, stairs, navigation and major cover footprints. Keep the service route enclosed. Use authored named pieces or deterministic Generator previews so the stopped editor remains useful. Retain current truck/container placements while improving their grounding and material response.
+4. **Match materials and debris.** Introduce a consistent concrete/soot/steel palette with controlled world-scale textures, blended macro variation and localized damage. Shape rubble around the v2 cover zones, using a few distinct meshes and instancing for repeated pieces. Add contact shadows and sparse metal highlights. Match scene detail at player distance before investing in small decoration.
+5. **Apply and refine across all five views.** Use the shared treatment in cargo, barracks and service interiors; tune physically placed local lights, dust and steam where required. Inspect intermediate walking views to catch effects that only work from a reference camera.
+6. **Run a bounded optimization loop.** Change one parameter family at a time, capture five views, compare each against v2, inspect overlays/heatmaps, retain improvements and checkpoint. Use coarse image structure early; finer detail later. Sweep bounded lighting/material parameters automatically once controls are exposed. Art-directed geometry changes remain explicit edits. Reject a lower pixel loss achieved by flattening contrast, excessive blur or masking missing geometry.
+7. **Verify delivery.** Track GPU frame time, draw calls, texture memory and particle overdraw against the current baseline. Preserve material batching, add LODs/instancing and budget smoke layers. Walk the map, then Stop and run Kite3D checks for Playable, Editable and Persisted, including reload and cleanup.
+
+## Measurement
+
+Current tool: masked RGB MAE at full, quarter and sixteenth resolution. Lower is closer to the generated reference; it does not mean percent complete. The reference is resized to capture dimensions with no perspective warp. The unchanged-scene repeatability result (~0.03%) is only a noise-floor check.
+
+Planned additions: per-region scores, coarse silhouette/edge comparisons, explicit landmark alignment and a perceptual similarity metric. Whole-frame MAE alone is insufficient: much of these images is dark sky, generated small geometry is not exactly registered, and a blurred image can have a lower MAE. Camera/collision truth comes from the real scene; art and lighting goals come from v2.
+
+First reviewable milestone: actual in-engine courtyard and rooftop captures with v2-like cold backlit smoke, strong silhouette separation and subdued warm lights, before the large asset/detail pass.

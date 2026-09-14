@@ -1,0 +1,77 @@
+{
+  "schema": "v2-public-gallery-copy-1",
+  "as_of_milestone": "r11-engine019-performance-18",
+  "recap_title": "Toward V2 — performance milestone 18",
+  "recap": [
+    "Goal: the Future War look of The Terminator (1984). Compare the original game, selected V2 references and actual Mac progress below.",
+    "Kite3D 0.19.0-alpha.2 reduces repeated transforms and two redundant render passes. V2 lighting, smoke, geometry and gameplay remain; enemy overlays stay removed.",
+    "Mac M3 Max: 90.9 FPS in 60 seconds of moving combat, at the High preset’s actual 1512×982 buffer. CPU p95 was 13.7 ms; this is not physical Retina resolution.",
+    "Targets remain 75 FPS / 13.33 ms and under 10 seconds to gameplay. Latest cold startup: 14.96 seconds. Final acceptance is pending; art refinement is deferred to issue #2."
+  ],
+  "source_note": "User-message excerpts verified against the original session record. UTC timestamps and line references are retained; the private transcript and attachment paths are not included. Original spelling and casing are preserved.",
+  "excerpts": [
+    {
+      "id": "initial-assets",
+      "label": "Initial asset request",
+      "text": "help me find better assets for all the scene assets in the terminator scene. in a new html page, per asset row show in the first col the original asset and in 3 cols 3 diff alternative assets you found on the internet",
+      "timestamp": "2026-09-13T06:12:52.172Z",
+      "line": 9,
+      "record_type": "response_item"
+    },
+    {
+      "id": "original-prompt",
+      "label": "Original scene-refactor prompt",
+      "text": "we need to seriously revamp and improve the scene. take multiple screenshots of the scene from different angles from the perspective the player would see right now. then write a prompt describing the ambitious final outcome we want from the scene (treat the screenshot almost like a depth map that steers the image generator to follow structure, that's how little detail and quality it has right now). do this for at least 5 different player POVs around the map. each POV shoudl show major parts of the map, enough to grasp the \"gestalt\" of the map. then show pairs of 5 screenshots -> 5 image gneerations (before/after) in a html file. we'll use the generated images as target refernece from now on when refactoring the scene. the plaeyr POVs should show what the play actually sees right now.",
+      "timestamp": "2026-09-13T19:31:05.976Z",
+      "line": 1257,
+      "record_type": "response_item"
+    },
+    {
+      "id": "capture-script",
+      "label": "Repeatable capture and pixel comparison",
+      "text": "and the script used to take the SC should be saved, so we can compare before/after after actually doing the refactor, so we can use the pixel-diff agains the reference images as error to hill climb",
+      "timestamp": "2026-09-13T19:31:39.786Z",
+      "line": 1265,
+      "record_type": "response_item"
+    },
+    {
+      "id": "style-correction",
+      "label": "Film-style correction",
+      "text": "no these image styles are bad. specifically mention james cameron and the graphics style of the original terminator movie, \"https://sites.pitt.edu/~goscilo/Sci-Fi/FilmStills/TheTerminator.html\". try agian. it should give vibe of this image: [Image #1]",
+      "timestamp": "2026-09-13T19:50:20.394Z",
+      "line": 1495,
+      "record_type": "response_item",
+      "omission": "text portion; attachment omitted"
+    },
+    {
+      "id": "v2-selection",
+      "label": "V2 selection",
+      "text": "lets just go with v2. what's your plan for converging on v2?",
+      "timestamp": "2026-09-13T20:14:46.970Z",
+      "line": 1753,
+      "record_type": "response_item"
+    },
+    {
+      "id": "remote-worktrees",
+      "label": "Remote Astra high worktrees",
+      "text": "how will you parallelize against multiple astra high agents? i prefer you spawn agents in the 650s machine for all work (use the cli on that machine) and only integrate here when their work is up to standards. each agent should work in a worktree branch and should work on orthogonal part of the entire task. tldr ur plan",
+      "timestamp": "2026-09-13T20:20:56.693Z",
+      "line": 1787,
+      "record_type": "response_item"
+    },
+    {
+      "id": "milestone-columns",
+      "label": "Major milestone comparison columns",
+      "text": "can you update the html periodically at major milestons to show the updated scene? add a new column (before | new target | latest progress)",
+      "timestamp": "2026-09-13T22:15:08.359Z",
+      "line": 2549,
+      "record_type": "response_item"
+    }
+  ],
+  "performance_notes": [
+    "Provisional 650s timing: possible interference from accidentally auto-opened peer tabs was discovered after collection. No Linux performance acceptance or clean comparative speedup is claimed. 650s Linux, NVIDIA RTX 3090 Ti, 1920×1080: engine-only populated combat 24.5 FPS; final dynamic-light frame candidate 30.0 FPS, CPU median/p95 12.9/15.3 ms. A separate 60-second moving route covered 299 metres with 24 actors at 29.2 FPS. These are not Mac acceptance numbers.",
+    "Apple M3 Max: combined-build measurements varied from 31.9 to 74.3 FPS in headless moving runs. The later normal headed 120 Hz-display run reached 90.9 FPS over 60 seconds with 24 actors and 299 metres of movement; CPU median/p95 10.3/13.7 ms. High actually rendered 1512×982 pixels, not the display’s physical 3024×1964 pixels. Final-build repeat and frame-tail margin remain to verify.",
+    "Targets remain sustained 75 FPS (13.33 ms frame budget) and under 10 seconds from editor Play to responsive gameplay. Actual immediate-transition startup remains over budget: the latest unprofiled Mac combined measurement was 14.96 seconds. Startup profiling and image-upload work continue; no synthetic three-second menu wait is included in this acceptance total.",
+    "This is an intermediate performance milestone, not final acceptance. The five progress images show the combined dynamic-light source on Mac; fixed images, populated timings and startup measurements are labeled separately. Art and smoke refinement remain deferred to issue #2. Original visual targets and all 17 earlier milestones are retained."
+  ]
+}

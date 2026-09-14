@@ -1,0 +1,20 @@
+{
+  "asset": "particles.png",
+  "origin": "Original mathematical density fields and flame profiles generated for this project; no external image inputs",
+  "builder": "tools/v2/build-effects.mjs",
+  "dimensions": [
+    512,
+    256
+  ],
+  "tiles": [
+    "smoke 0",
+    "smoke 1",
+    "smoke 2",
+    "smoke 3",
+    "flame 0",
+    "flame 1",
+    "flame 2",
+    "spark"
+  ],
+  "license": "Project-owned original procedural artwork"
+}

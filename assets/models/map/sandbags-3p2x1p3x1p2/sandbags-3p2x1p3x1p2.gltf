@@ -37,6 +37,207 @@
       "count": 2304,
       "bufferView": 0,
       "byteOffset": 24
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 1419,
+      "max": [
+        36.59819793701172,
+        161.8539276123047,
+        125.20794677734375
+      ],
+      "min": [
+        -38.989707946777344,
+        -163.71810913085938,
+        -4.264750003814697
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 17028,
+      "componentType": 5126,
+      "count": 1419,
+      "max": [
+        0.9998038411140442,
+        0.9999520778656006,
+        0.9996310472488403
+      ],
+      "min": [
+        -0.9999247789382935,
+        -0.9990625977516174,
+        -0.9984480142593384
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 1419,
+      "max": [
+        0.9951539635658264,
+        0.9987601041793823
+      ],
+      "min": [
+        0.008392281830310822,
+        0.010897134430706501
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 11352,
+      "componentType": 5126,
+      "count": 1419,
+      "max": [
+        0.9951539635658264,
+        0.9987601041793823
+      ],
+      "min": [
+        0.008392281830310822,
+        0.010897134430706501
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5125,
+      "count": 7290,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 34056,
+      "componentType": 5126,
+      "count": 1419,
+      "max": [
+        36.59819793701172,
+        161.8539276123047,
+        125.20794677734375
+      ],
+      "min": [
+        -38.989707946777344,
+        -163.71810913085938,
+        -4.264750003814697
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 51084,
+      "componentType": 5126,
+      "count": 1419,
+      "max": [
+        0.9998038411140442,
+        0.9999520778656006,
+        0.9996310472488403
+      ],
+      "min": [
+        -0.9999247789382935,
+        -0.9990625977516174,
+        -0.9984480142593384
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 22704,
+      "componentType": 5126,
+      "count": 1419,
+      "max": [
+        0.9951539635658264,
+        0.9987601041793823
+      ],
+      "min": [
+        0.008392281830310822,
+        0.010897134430706501
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 34056,
+      "componentType": 5126,
+      "count": 1419,
+      "max": [
+        0.9951539635658264,
+        0.9987601041793823
+      ],
+      "min": [
+        0.008392281830310822,
+        0.010897134430706501
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 29160,
+      "componentType": 5125,
+      "count": 7290,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 1,
+      "max": [
+        0
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 1,
+      "max": [
+        -0.5241794586181641,
+        0.4745646119117737,
+        0.47433289885520935,
+        0.5244355201721191
+      ],
+      "min": [
+        -0.5241794586181641,
+        0.4745646119117737,
+        0.47433289885520935,
+        0.5244355201721191
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 4,
+      "byteOffset": 4,
+      "componentType": 5126,
+      "count": 1,
+      "max": [
+        0
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 5,
+      "byteOffset": 16,
+      "componentType": 5126,
+      "count": 1,
+      "max": [
+        -0.5241794586181641,
+        0.4745646119117737,
+        0.47433289885520935,
+        0.5244355201721191
+      ],
+      "min": [
+        -0.5241794586181641,
+        0.4745646119117737,
+        0.47433289885520935,
+        0.5244355201721191
+      ],
+      "type": "VEC4"
     }
   ],
   "bufferViews": [
@@ -46,10 +247,51 @@
       "byteLength": 73728,
       "byteStride": 32,
       "target": 34962
+    },
+    {
+      "buffer": 1,
+      "byteLength": 58320,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 1,
+      "byteLength": 45408,
+      "byteOffset": 58320,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 1,
+      "byteLength": 68112,
+      "byteOffset": 103728,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 1,
+      "byteLength": 8,
+      "byteOffset": 171840,
+      "name": "floatBufferViews"
+    },
+    {
+      "buffer": 1,
+      "byteLength": 32,
+      "byteOffset": 171848,
+      "byteStride": 16,
+      "name": "floatBufferViews"
     }
   ],
   "samplers": [
     {
+      "wrapS": 10497,
+      "wrapT": 10497
+    },
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
       "wrapS": 10497,
       "wrapT": 10497
     }
@@ -66,6 +308,10 @@
     {
       "source": 2,
       "sampler": 0
+    },
+    {
+      "sampler": 1,
+      "source": 3
     }
   ],
   "images": [
@@ -83,6 +329,9 @@
       "name": "canvas_arm.jpg",
       "mimeType": "image/jpeg",
       "uri": "/kite3d/assets/textures/map/canvas_arm.jpg"
+    },
+    {
+      "uri": "/kite3d/assets/models/selected/b917a79cdc884eee9d44018c38b4df5e/Material_38_baseColor.png"
     }
   ],
   "buffers": [
@@ -90,6 +339,10 @@
       "name": "Map piece geometry",
       "uri": "sandbags-3p2x1p3x1p2.bin",
       "byteLength": 73728
+    },
+    {
+      "byteLength": 171880,
+      "uri": "/kite3d/assets/models/selected/b917a79cdc884eee9d44018c38b4df5e/scene.bin"
     }
   ],
   "materials": [
@@ -116,6 +369,17 @@
       "occlusionTexture": {
         "index": 2
       }
+    },
+    {
+      "doubleSided": true,
+      "name": "Selected sandbags 1: Material_38",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 3
+        },
+        "metallicFactor": 0,
+        "roughnessFactor": 0.8929713596497552
+      }
     }
   ],
   "meshes": [
@@ -132,24 +396,182 @@
           "material": 0
         }
       ]
+    },
+    {
+      "name": "model_lod0_Material #38_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 4,
+            "POSITION": 3,
+            "TEXCOORD_0": 5,
+            "TEXCOORD_1": 6
+          },
+          "indices": 7,
+          "material": 1,
+          "mode": 4
+        }
+      ]
     }
   ],
   "nodes": [
     {
       "name": "Sandbag stack asset",
       "extras": {
-        "mapPieceAsset": true
+        "mapPieceAsset": true,
+        "selectedSource": {
+          "id": "b917a79cdc884eee9d44018c38b4df5e",
+          "family": "sandbags",
+          "source": "https://sketchfab.com/3d-models/sandbags-b917a79cdc884eee9d44018c38b4df5e",
+          "tileCount": 1,
+          "fitBounds": [
+            3.2,
+            1.3,
+            1.2
+          ]
+        }
       },
       "children": [
-        1
+        1,
+        10
       ]
     },
     {
       "name": "Sandbag stack canvas",
       "extras": {
         "material": "canvas"
-      },
-      "mesh": 0
+      }
+    },
+    {
+      "children": [
+        3
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2.220446049250313e-16,
+        -1,
+        0,
+        0,
+        1,
+        2.220446049250313e-16,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        0.02539999969303608,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0.02539999969303608,
+        0,
+        0,
+        -0.02539999969303608,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "sandbags.fbx"
+    },
+    {
+      "children": [
+        5
+      ],
+      "name": "Object_2"
+    },
+    {
+      "children": [
+        6,
+        8
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        7
+      ],
+      "name": "model_lod0",
+      "rotation": [
+        -0.5241794586181641,
+        0.47433289885520935,
+        0.4745646119117737,
+        0.5244355201721191
+      ],
+      "scale": [
+        0.3937009871006012,
+        0.3937009871006012,
+        0.3937009871006012
+      ]
+    },
+    {
+      "mesh": 1,
+      "name": "model_lod0_Material #38_0"
+    },
+    {
+      "children": [
+        9
+      ],
+      "name": "model_lod001",
+      "rotation": [
+        -0.5241794586181641,
+        0.47433289885520935,
+        0.4745646119117737,
+        0.5244355201721191
+      ],
+      "scale": [
+        0.3937009871006012,
+        0.3937009871006012,
+        0.3937009871006012
+      ],
+      "translation": [
+        -126.9849853515625,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "model_lod001_Material #25_0"
+    },
+    {
+      "name": "Selected sandbags 1-1",
+      "matrix": [
+        0.9851740228244429,
+        0,
+        0,
+        0,
+        0,
+        1.0041201289257657,
+        0,
+        0,
+        0,
+        0,
+        1.217698706852112,
+        0,
+        -0.015220145341260089,
+        -0.6071365836353885,
+        -0.03959542533515646,
+        1
+      ],
+      "children": [
+        2
+      ]
     }
   ],
   "scenes": [

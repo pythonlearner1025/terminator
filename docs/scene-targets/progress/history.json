@@ -1,0 +1,213 @@
+{
+  "schema": "v2-review-gallery-1",
+  "milestones": [
+    {
+      "id": "r2",
+      "label": "R2 integrated milestone",
+      "revision": "R2",
+      "review_status": "needs-revision",
+      "source_commit": "0d495c78fb24f4b44414916a8153dccbec810dac",
+      "path": "snapshots/r2/index.html",
+      "generated_at": "2026-09-13T22:21:47+00:00"
+    },
+    {
+      "id": "r3-diagnostic",
+      "label": "R3 combined pilot — DIAGNOSTIC",
+      "revision": "R3",
+      "review_status": "needs-revision",
+      "source_commit": null,
+      "base_commit": "561f035f13b7ed87c82979af6e3f22c58e6c0637",
+      "diagnostic": true,
+      "path": "snapshots/r3-diagnostic/index.html",
+      "generated_at": "2026-09-13T22:34:44+00:00"
+    },
+    {
+      "id": "r3-light-fix",
+      "label": "R3 authoring-light fix — DIAGNOSTIC",
+      "revision": "R3",
+      "review_status": "needs-revision",
+      "source_commit": null,
+      "base_commit": "cfdf6821e17869b16f492478ce6fe4cf82be1128",
+      "diagnostic": true,
+      "path": "snapshots/r3-light-fix/index.html",
+      "generated_at": "2026-09-13T22:53:33+00:00"
+    },
+    {
+      "id": "r3-ground-field",
+      "label": "R3 broader ground field — DIAGNOSTIC",
+      "revision": "R3",
+      "review_status": "needs-revision",
+      "source_commit": null,
+      "base_commit": "cfdf6821e17869b16f492478ce6fe4cf82be1128",
+      "diagnostic": true,
+      "path": "snapshots/r3-ground-field/index.html",
+      "generated_at": "2026-09-13T23:01:39+00:00"
+    },
+    {
+      "id": "r3-ground-separated",
+      "label": "R3 separated ground — DIAGNOSTIC",
+      "revision": "R3",
+      "review_status": "needs-revision",
+      "source_commit": null,
+      "base_commit": "91e7327429b8ac219ae75c47cb104f4914794965",
+      "diagnostic": true,
+      "path": "snapshots/r3-ground-separated/index.html",
+      "generated_at": "2026-09-13T23:15:07+00:00"
+    },
+    {
+      "id": "r3-light-ground-depth",
+      "label": "R3 lighting and ground depth — DIAGNOSTIC",
+      "revision": "R3",
+      "review_status": "needs-revision",
+      "source_commit": null,
+      "base_commit": "5610d8d7741235c1bec364eea9e4569f9355ad21",
+      "diagnostic": true,
+      "path": "snapshots/r3-light-ground-depth/index.html",
+      "generated_at": "2026-09-13T23:23:47+00:00"
+    },
+    {
+      "id": "r4-rubble-substrate",
+      "label": "R4 continuous rubble substrate — DIAGNOSTIC",
+      "revision": "R4",
+      "review_status": "needs-revision",
+      "source_commit": null,
+      "base_commit": "5610d8d7741235c1bec364eea9e4569f9355ad21",
+      "diagnostic": true,
+      "path": "snapshots/r4-rubble-substrate/index.html",
+      "generated_at": "2026-09-13T23:26:43+00:00"
+    },
+    {
+      "id": "r4-fog-binding-defect",
+      "label": "R4 fog participation; known floor sampler defect — DIAGNOSTIC",
+      "revision": "R4",
+      "review_status": "needs-revision",
+      "source_commit": null,
+      "base_commit": "e2b7f564da49cae3519c1a8f3dec21cf75614762",
+      "diagnostic": true,
+      "path": "snapshots/r4-fog-binding-defect/index.html",
+      "generated_at": "2026-09-13T23:52:27+00:00"
+    },
+    {
+      "id": "r4-corrected-bindings-smoke",
+      "label": "R4 corrected floor and ceiling; smoke needs revision — DIAGNOSTIC",
+      "revision": "R4",
+      "review_status": "needs-revision",
+      "source_commit": null,
+      "base_commit": "952bc3de8590ccf7939fb3005744a60d7b0917fd",
+      "diagnostic": true,
+      "path": "snapshots/r4-corrected-bindings-smoke/index.html",
+      "generated_at": "2026-09-13T23:52:28+00:00"
+    },
+    {
+      "id": "r4-repaired-walls-quiet-sky",
+      "label": "R4 repaired wall shapes and quieter smoke; fog encoding defect identified — DIAGNOSTIC",
+      "revision": "R4",
+      "review_status": "needs-revision",
+      "source_commit": null,
+      "base_commit": "9c636b46f5d28b9aa536b42174540aaee683938f",
+      "diagnostic": true,
+      "path": "snapshots/r4-repaired-walls-quiet-sky/index.html",
+      "generated_at": "2026-09-14T00:12:20+00:00"
+    },
+    {
+      "id": "r5-linear-fog-spall",
+      "label": "R5 linear fog restores depth; localized concrete detail — DIAGNOSTIC",
+      "revision": "R5",
+      "review_status": "needs-revision",
+      "source_commit": null,
+      "base_commit": "311d3ed842ad8c7d202a69d6265637bace8c8155",
+      "diagnostic": true,
+      "path": "snapshots/r5-linear-fog-spall/index.html",
+      "generated_at": "2026-09-14T00:14:03+00:00"
+    },
+    {
+      "id": "r5-premultiplied-fractures",
+      "label": "Connected wall damage / rooted smoke / compositor diagnostic",
+      "revision": "R5",
+      "review_status": "needs-revision",
+      "source_commit": null,
+      "base_commit": "0fc512355683c659748963bae1d0382cb8efa4ea",
+      "diagnostic": true,
+      "path": "snapshots/r5-premultiplied-fractures/index.html",
+      "generated_at": "2026-09-14T00:47:09+00:00"
+    },
+    {
+      "id": "r6-open-ruins-dense-smoke",
+      "label": "Opened distant ruins / dense smoke / damp surfaces",
+      "revision": "R6",
+      "review_status": "needs-revision",
+      "source_commit": null,
+      "base_commit": "273372260c79bb454d25fe629cd9b39dda72f829",
+      "diagnostic": true,
+      "path": "snapshots/r6-open-ruins-dense-smoke/index.html",
+      "generated_at": "2026-09-14T01:10:49+00:00"
+    },
+    {
+      "id": "r8-narrow-smoke-14",
+      "label": "Narrow smoke columns and R7 concrete response",
+      "revision": "R8",
+      "review_status": "needs-revision",
+      "source_commit": null,
+      "base_commit": "44cdb6781a07b2bb719d542e1a11a53e68d2c78b",
+      "diagnostic": true,
+      "path": "snapshots/r8-narrow-smoke-14/index.html",
+      "generated_at": "2026-09-14T01:59:28+00:00"
+    },
+    {
+      "id": "r8-rectangular-walls-15",
+      "label": "Rectangular ruined slabs and photographed concrete",
+      "revision": "R8",
+      "review_status": "needs-revision",
+      "source_commit": null,
+      "base_commit": "94e0161efca47ed11bee6b1de1146c02a104a064",
+      "diagnostic": true,
+      "path": "snapshots/r8-rectangular-walls-15/index.html",
+      "generated_at": "2026-09-14T02:28:41+00:00"
+    },
+    {
+      "id": "r8-interior-lighting-16",
+      "label": "Legible service stairs and restrained window lighting",
+      "revision": "R8",
+      "review_status": "needs-revision",
+      "source_commit": "b7de63b5b3f7ec094f73af92160142a8e569fee5",
+      "base_commit": "b7de63b5b3f7ec094f73af92160142a8e569fee5",
+      "diagnostic": false,
+      "path": "snapshots/r8-interior-lighting-16/index.html",
+      "generated_at": "2026-09-14T04:05:17+00:00"
+    },
+    {
+      "id": "r10-performance-17",
+      "label": "R10 performance and startup improvements",
+      "revision": "R10",
+      "review_status": "needs-revision",
+      "source_commit": "fbb69eb9554b887c8789aa345004e5907c657a9c",
+      "base_commit": "fbb69eb9554b887c8789aa345004e5907c657a9c",
+      "diagnostic": false,
+      "path": "snapshots/r10-performance-17/index.html",
+      "generated_at": "2026-09-14T07:55:10+00:00"
+    },
+    {
+      "id": "r11-engine019-performance-18",
+      "label": "Kite3D 0.19 alpha 2 — frame and startup work",
+      "revision": "R11",
+      "review_status": "needs-revision",
+      "source_commit": "6552518fe50b1cd4f818e1db5a03097b15b88f8b",
+      "base_commit": "6552518fe50b1cd4f818e1db5a03097b15b88f8b",
+      "diagnostic": false,
+      "path": "snapshots/r11-engine019-performance-18/index.html",
+      "generated_at": "2026-09-14T10:22:40+00:00"
+    },
+    {
+      "id": "r12-loading-performance-19",
+      "label": "V2 appearance retained — loading and Mac validation",
+      "revision": "R12",
+      "review_status": "needs-revision",
+      "source_commit": "927fc43fa0ee864752cfb1a5ac2dde6feaefdef2",
+      "base_commit": "927fc43fa0ee864752cfb1a5ac2dde6feaefdef2",
+      "diagnostic": false,
+      "path": "snapshots/r12-loading-performance-19/index.html",
+      "generated_at": "2026-09-14T11:19:32+00:00"
+    }
+  ],
+  "latest": "r12-loading-performance-19"
+}

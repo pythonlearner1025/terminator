@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
-import {rayCollider,colliderSurfacesAt,pointInsideColliderFootprint} from '../../lib/core/collision.js'
+import {rayCollider,colliderSurfacesAt,pointInsideColliderFootprint,sweepSphereCollider} from '../../lib/core/collision.js'
 
 test('axis-aligned wall queries match equivalent compound shapes at faces and corners',()=>{
   const box={id:'wall',center:{x:-35,y:-2,z:8},size:{x:3,y:4,z:.6}}
@@ -22,4 +22,18 @@ test('axis-aligned wall queries match equivalent compound shapes at faces and co
   const pos={x:-32,y:-1,z:5},direction={x:0,y:0,z:1}
   assert.equal(pointInsideColliderFootprint(pos,shifted,.4),pointInsideColliderFootprint(pos,moved,.4))
   assert.equal(rayCollider(pos,direction,shifted,20).distance,rayCollider(pos,direction,moved,20).distance)
+})
+
+test('allocation-free swept wall rejection preserves hits, tangencies, zero and tiny motion',()=>{
+ const box={center:{x:3,y:2,z:-4},size:{x:4,y:3,z:2}},compound={...box,shapes:[{offset:{x:0,y:0,z:0},size:box.size}]}
+ const hit=(p,d,r,c)=>{const h=sweepSphereCollider(p,d,r,c);return h&&{fraction:h.fraction,normal:h.normal}}
+ let seed=718
+ const rand=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/4294967296}
+ for(let i=0;i<3000;i++){
+  const p={x:rand()*20-10,y:rand()*10-5,z:rand()*20-10},d={x:rand()*10-5,y:rand()*10-5,z:rand()*10-5},r=rand()
+  assert.deepEqual(hit(p,d,r,box),hit(p,d,r,compound))
+ }
+ for(const radius of [0,.38,1])for(const x of [5+radius,5+radius+1e-10,5+radius-1e-10])for(const dx of [0,1e-10,-1e-10,1,-1]){
+  const p={x,y:2,z:-4},d={x:dx,y:0,z:0};assert.deepEqual(hit(p,d,radius,box),hit(p,d,radius,compound))
+ }
 })

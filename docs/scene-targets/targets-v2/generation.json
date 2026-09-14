@@ -1,0 +1,53 @@
+{
+  "version": 2,
+  "generator": "built-in image_gen",
+  "reference": "references/terminator-1984-user-reference.png",
+  "views": [
+    {
+      "id": "01-courtyard",
+      "image": "targets-v2/01-courtyard.png",
+      "sha256": "b11f51359fb5029f09b2e887126cb881cb11071a4121e8aecbfc7be15bfbecf6",
+      "prompts": [
+        "prompts/01-courtyard.txt"
+      ],
+      "structure": "before/01-courtyard.png"
+    },
+    {
+      "id": "02-cargo",
+      "image": "targets-v2/02-cargo.png",
+      "sha256": "5db779c1b443198f21c6105cb58e240f62f8578b8b9c528832c5a3220ac7c227",
+      "prompts": [
+        "prompts/02-cargo.txt"
+      ],
+      "structure": "before/02-cargo.png"
+    },
+    {
+      "id": "03-barracks",
+      "image": "targets-v2/03-barracks.png",
+      "sha256": "ca1e436d3767c8cad52d6a29b390e71ced3017d5b88d86a971e2617228251501",
+      "prompts": [
+        "prompts/03-barracks.txt"
+      ],
+      "structure": "before/03-barracks.png"
+    },
+    {
+      "id": "04-service",
+      "image": "targets-v2/04-service.png",
+      "sha256": "93e48560e63d0ee828a338e46f83b5e7be4fb0e413b2aee1793f9b9bd99e7f0d",
+      "prompts": [
+        "prompts/04-service.txt",
+        "prompts/04-service-correction.txt"
+      ],
+      "structure": "before/04-service.png"
+    },
+    {
+      "id": "05-rooftop",
+      "image": "targets-v2/05-rooftop.png",
+      "sha256": "92b0e8dd6d1f1450beec3696509e8ebfa3f0b1582b0efd7469aaa762a32b6360",
+      "prompts": [
+        "prompts/05-rooftop.txt"
+      ],
+      "structure": "before/05-rooftop.png"
+    }
+  ]
+}

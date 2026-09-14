@@ -1,0 +1,80 @@
+{
+  "method": "Center-sampled triangle projection union at 2.5 cm per cell per support. Denominator is gross static slab area (includes occupied cover footprints). No image-space or GPU inference.",
+  "cellMeters": 0.025,
+  "stats": {
+    "patches": 11900,
+    "triangles": 269880,
+    "topTriangles": 142800,
+    "edgeTriangles": 127080,
+    "solidFragments": 4853,
+    "draws": 5,
+    "materials": 5,
+    "textures": 0,
+    "sharedImages": 0,
+    "coverageM2": 480.67000875765547,
+    "footprintM2": 1007.6732749850626,
+    "maxHeight": 0.07496138481656091,
+    "bySupport": {
+      "ground": 6500,
+      "dock_floor": 1000,
+      "exp_west_yard": 1000,
+      "exp_east_yard": 1000,
+      "exp_service_floor": 900,
+      "exp_barracks_roof": 900,
+      "exp_colonnade_canopy": 600
+    },
+    "ready": true,
+    "disposed": false
+  },
+  "regions": {
+    "ground": {
+      "patches": 6500,
+      "projectedAreaM2": 269.33964433188436,
+      "approximateUnionM2": 246.43875000000003,
+      "staticSlabAreaM2": 3600,
+      "approximateSlabCoverage": 0.06845520833333334
+    },
+    "dock_floor": {
+      "patches": 1000,
+      "projectedAreaM2": 38.48551496348019,
+      "approximateUnionM2": 30.172500000000003,
+      "staticSlabAreaM2": 180,
+      "approximateSlabCoverage": 0.16762500000000002
+    },
+    "exp_west_yard": {
+      "patches": 1000,
+      "projectedAreaM2": 40.68450339035555,
+      "approximateUnionM2": 37.83625,
+      "staticSlabAreaM2": 661.1999999999999,
+      "approximateSlabCoverage": 0.05722360859044163
+    },
+    "exp_east_yard": {
+      "patches": 1000,
+      "projectedAreaM2": 38.82955903461403,
+      "approximateUnionM2": 36.82625000000001,
+      "staticSlabAreaM2": 720,
+      "approximateSlabCoverage": 0.05114756944444446
+    },
+    "exp_service_floor": {
+      "patches": 900,
+      "projectedAreaM2": 35.37749289609913,
+      "approximateUnionM2": 31.114375000000003,
+      "staticSlabAreaM2": 232.36,
+      "approximateSlabCoverage": 0.13390590032707866
+    },
+    "exp_barracks_roof": {
+      "patches": 900,
+      "projectedAreaM2": 34.09280335526819,
+      "approximateUnionM2": 28.8,
+      "staticSlabAreaM2": 180.77999999999997,
+      "approximateSlabCoverage": 0.15930965814802525
+    },
+    "exp_colonnade_canopy": {
+      "patches": 600,
+      "projectedAreaM2": 23.860490785958245,
+      "approximateUnionM2": 18.661250000000003,
+      "staticSlabAreaM2": 108,
+      "approximateSlabCoverage": 0.17278935185185187
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "candidate": "docs/evidence/scene-repeatability",
+  "reference": "docs/scene-targets/before",
+  "candidate_git": "f11f329bc1d8b7c04f23707f52bacd59721f7866",
+  "formula": "0.2 * MAE + 0.3 * MAE at 1/4 size + 0.5 * MAE at 1/16 size; masked RGB, percent of 255; lower is better",
+  "reference_resize": "Lanczos to capture size, no crop or registration",
+  "views": [
+    {
+      "mae_percent": 0.011520619472945831,
+      "mae_4x_percent": 0.010965359717160684,
+      "mae_16x_percent": 0.007234559730333773,
+      "loss": 0.009211011674904257,
+      "id": "01-courtyard",
+      "baseline_loss": 0.0,
+      "improvement": -0.009211011674904257
+    },
+    {
+      "mae_percent": 0.032680507716099164,
+      "mae_4x_percent": 0.030415701981513617,
+      "mae_16x_percent": 0.018921156217796022,
+      "loss": 0.02512139024657193,
+      "id": "02-cargo",
+      "baseline_loss": 0.0,
+      "improvement": -0.02512139024657193
+    },
+    {
+      "mae_percent": 0.0665819705039591,
+      "mae_4x_percent": 0.06254981911403266,
+      "mae_16x_percent": 0.03470203650868893,
+      "loss": 0.04943235808934608,
+      "id": "03-barracks",
+      "baseline_loss": 0.0,
+      "improvement": -0.04943235808934608
+    },
+    {
+      "mae_percent": 0.07415444554018125,
+      "mae_4x_percent": 0.06793771532889709,
+      "mae_16x_percent": 0.03398653060129328,
+      "loss": 0.05220546900735201,
+      "id": "04-service",
+      "baseline_loss": 0.0,
+      "improvement": -0.05220546900735201
+    },
+    {
+      "mae_percent": 0.020242749004418588,
+      "mae_4x_percent": 0.01895057396112356,
+      "mae_16x_percent": 0.012720105020367072,
+      "loss": 0.01609377449940432,
+      "id": "05-rooftop",
+      "baseline_loss": 0.0,
+      "improvement": -0.01609377449940432
+    }
+  ],
+  "mean_loss": 0.030412800703515718
+}
