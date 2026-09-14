@@ -279,7 +279,7 @@ test('local baked-plume loading exposes ready and survives disposal before compl
     assert.equal(requests.length,4)
     const map=h.root.getObjectByName('V2 distant smoke bank 1').material.map
     for(const [i,r] of requests.entries()) {
-      assert.equal(r.url,`/files/assets/v2/lighting/plume-${i}.rgba`)
+      assert.equal(r.url,new URL(`../assets/v2/lighting/plume-${i}.rgba`,import.meta.url).href)
       r.resolve({ok:true,arrayBuffer:async()=>new ArrayBuffer(512*512*4)})
     }
     await h.ready;assert.equal(map.image.width,512);assert.equal(map.premultiplyAlpha,false)
