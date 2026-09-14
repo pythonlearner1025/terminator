@@ -163,7 +163,18 @@
       "diagnostic": true,
       "path": "snapshots/r8-rectangular-walls-15/index.html",
       "generated_at": "2026-09-14T02:28:41+00:00"
+    },
+    {
+      "id": "r8-interior-lighting-16",
+      "label": "Legible service stairs and restrained window lighting",
+      "revision": "R8",
+      "review_status": "needs-revision",
+      "source_commit": "b7de63b5b3f7ec094f73af92160142a8e569fee5",
+      "base_commit": "b7de63b5b3f7ec094f73af92160142a8e569fee5",
+      "diagnostic": false,
+      "path": "snapshots/r8-interior-lighting-16/index.html",
+      "generated_at": "2026-09-14T04:05:17+00:00"
     }
   ],
-  "latest": "r8-rectangular-walls-15"
+  "latest": "r8-interior-lighting-16"
 }

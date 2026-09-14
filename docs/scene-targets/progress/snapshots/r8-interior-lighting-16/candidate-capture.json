@@ -1,0 +1,2054 @@
+{
+  "schema": 3,
+  "config": {
+    "version": 1,
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "seed": 2029,
+    "tick": 120,
+    "settings": {
+      "quality": "high",
+      "fov": 72,
+      "controlsSeen": true
+    },
+    "views": [
+      {
+        "id": "01-courtyard",
+        "title": "Courtyard / resistance stronghold",
+        "feet": [
+          -12,
+          0,
+          -17
+        ],
+        "lookAt": [
+          5,
+          2,
+          18
+        ],
+        "description": "Ground-level diagonal across the central combat yard toward the command building and eastern structures."
+      },
+      {
+        "id": "02-cargo",
+        "title": "Cargo approach / eastern flank",
+        "feet": [
+          15,
+          0,
+          -19
+        ],
+        "lookAt": [
+          25,
+          2,
+          7
+        ],
+        "description": "Ground-level approach to the container dock, with cover, cargo silhouettes and the barracks beyond."
+      },
+      {
+        "id": "03-barracks",
+        "title": "Barracks / inhabited shelter",
+        "feet": [
+          36,
+          0,
+          5.5
+        ],
+        "lookAt": [
+          36,
+          1.65,
+          22
+        ],
+        "description": "Standing inside the barracks, looking along the occupied room toward its stairs."
+      },
+      {
+        "id": "04-service",
+        "title": "Service trench / underground route",
+        "feet": [
+          -36,
+          -3.5,
+          -12.5
+        ],
+        "lookAt": [
+          -35.7,
+          -1.85,
+          10
+        ],
+        "description": "Standing on the sunken service floor, looking along the long maintenance route."
+      },
+      {
+        "id": "05-rooftop",
+        "title": "Barracks roof / battlefield overview",
+        "feet": [
+          31.6,
+          6.4,
+          6
+        ],
+        "lookAt": [
+          -6,
+          1,
+          0
+        ],
+        "description": "Standing on the stair-accessible barracks roof, looking across the dock and central yard. Eye height remains 1.65 m above the roof."
+      }
+    ]
+  },
+  "launch": {
+    "executablePath": "/usr/bin/google-chrome",
+    "headless": true,
+    "args": [
+      "--use-angle=vulkan",
+      "--enable-features=Vulkan",
+      "--disable-vulkan-surface",
+      "--ignore-gpu-blocklist",
+      "--disable-dev-shm-usage"
+    ]
+  },
+  "captureEnvironment": {
+    "headless": true,
+    "browserArgs": [
+      "--use-angle=vulkan",
+      "--enable-features=Vulkan",
+      "--disable-vulkan-surface",
+      "--ignore-gpu-blocklist",
+      "--disable-dev-shm-usage"
+    ]
+  },
+  "sourceCommit": "b7de63b5b3f7ec094f73af92160142a8e569fee5",
+  "sourceFiles": {
+    "assets/main.scene.gltf": "cc912950518e6712a00d3e735a7dca54b1ede6fdd54c88c9950347b9d86a3287",
+    "assets/models/map/rubble-1x1p5x12-zh655b/rubble-1x1p5x12-zh655b.gltf": "60d4db6cbdfce6270c088979ccbde152130a6cd7a0f7ac16a1ccafba5e205b63",
+    "assets/v2/architecture/LICENSE.txt": "9000ef79bbd4e1ad058ccb5c88750520c99fd9b717406a33863cf102af59dff5",
+    "assets/v2/architecture/rubble-patches.json": "0d41a1f506c812ce9a1ee073c6f06c93537f40c081db38d6aaf8505b072e7077",
+    "assets/v2/effects/particles.png": "c51d4f212ef0be4336b9321f7bc17416679bbe7f925a46d7d8b6ad602ede8fc9",
+    "assets/v2/effects/provenance.json": "2ec3364d98fa49c2aa8537709ea31a18bd63d658352a2a17536bb9735383750f",
+    "assets/v2/ground/coverage.json": "8f472a147602206517bae5e529f919b962ca0c48bbf08bb911d60311e0c5e469",
+    "assets/v2/ground/fragments.json": "734bf57d8fb4917954caf237686f601eda91b020628b683647d28b32b3869b87",
+    "assets/v2/lighting/PROVENANCE.txt": "aae48bdc73f88127f03cd56eb29b87af52abe7b012c76179ff2c1704ccab8e51",
+    "assets/v2/lighting/manifest.json": "1241acbf90826145c6306e11d213dd1ec3fef6780c5946d13d6428b7a3be3794",
+    "assets/v2/lighting/plume-0.rgba": "b25fe316202f9e7dfcd84f14d3619b90b184b7fb07b850fa398a7b65ed382260",
+    "assets/v2/lighting/plume-1.rgba": "8b7aa80cdbc2b7d4b9127f8aa61f5dc57bc03171bc699a2c0bf9f8d0e41d8471",
+    "assets/v2/lighting/plume-2.rgba": "17df3092a51979857e8bb39d3786e268bda63251160b6f0f1acac395ae58732f",
+    "assets/v2/lighting/plume-3.rgba": "004fcbe1f3a193e3a28703d14c07e20aa798d492e200dde3724da42fae238c06",
+    "assets/v2/materials/concrete-albedo.jpg": "136999c1feaf47cdfaec91e492522d7ceea653bba61ab2d903772c3025b60d40",
+    "assets/v2/materials/concrete-surface.png": "82c155c2e2c5b268cc32bcf4b994464e4564efca4da901c6a2a6cd1b4661fa57",
+    "assets/v2/materials/ground-albedo.jpg": "bb7888963f2134c5025bf056111cacb0d91b20af1837418a59dd2874c1d15682",
+    "assets/v2/materials/ground-surface.png": "412fcc8911ba038340f22916e8dbd0582c91d2ce77374f95dd83ba3626a91e78",
+    "assets/v2/materials/photo-leaking-LICENSE.txt": "799101068c143f87455bbda9e9482dcadd1b17cef6f06bff01850c8b4ebaa456",
+    "assets/v2/materials/photo-provenance.json": "950b1ed091f365f27d0b7a88a660cbf7311dea7f6b7c81c4fb9972f698dac3e8",
+    "assets/v2/materials/photo-soffit-albedo.jpg": "a0b064e43c9c485ad28ac366bd413d9360aba9094c1afa33ce33ca3647e2e202",
+    "assets/v2/materials/photo-soffit-normal.png": "bc458f1a141363a1fe963933ef6d2b84214d5a9b3fb7db4b2914c05697bdab93",
+    "assets/v2/materials/photo-soffit-orm.png": "54d9021f5178eef258dfda6eb7edfb4f821a4f0c72f2b0e06e7f793ebff441f4",
+    "assets/v2/materials/photo-soffit-provenance.json": "8c3d8337bab706c50ce94052caa5d3c009079dce746ba0fa0f3592c1fed6bbbd",
+    "assets/v2/materials/photo-spall-LICENSE.txt": "f46dfb02b2c2723589afa6e94522f7b1dba22fd382c5a1a3df4b22da30e0f12c",
+    "assets/v2/materials/photo-spall-albedo.png": "7e583dd25ae231549d439c1545de59e4718a4f55314f35ecab38ac48123361a0",
+    "assets/v2/materials/photo-spall-normal.png": "9972090216d7086dcb25c265dbbc5810412a4059836a8edd011a4890b6aa8fa8",
+    "assets/v2/materials/photo-spall-orm.png": "69099fe17618f71e756007ad59112567c25d7625e74fcc9ada9887fa1873f51b",
+    "assets/v2/materials/photo-spall-provenance.json": "d4648c77bfe3989cffe5c582da73d44c444e791aa2795438693e8a5e45cc8d2c",
+    "assets/v2/materials/photo-worn-LICENSE.txt": "4358adca4c173de5717482607b3cd0e88ff33746bf97fb09be1ee98d0f658ec2",
+    "assets/v2/materials/photo-worn-albedo.jpg": "a7d583a3b1c5608fc04cf7d425ff6abeb6d82de8d62ccb1446af5f95ccfc86f1",
+    "assets/v2/materials/photo-worn-normal.png": "8de9fa5fa13f7520367129c796c55181c17ccd7e2d7f4bbdb30a8fba6482e392",
+    "assets/v2/materials/photo-worn-orm.png": "cf82a4dbd211d6b67967d43760a6cde27bd8eb74aa877de4b8fb96653a411894",
+    "assets/v2/materials/provenance.json": "b2a2268d7c338df3ce44baf88eed76119f6d683c1f361275e91b602fc0455cb5",
+    "assets/v2/materials/substrate-rubble-LICENSE.txt": "0d1d27db6d24bfb3a02824678c5f2d01595aea03b9c20f50f4be10bfb571fd56",
+    "assets/v2/materials/substrate-rubble-albedo.jpg": "8d3d674936965e0ea6463b319109b12b2668370e1817dc5a54f4ebc4d025f7c1",
+    "assets/v2/materials/substrate-rubble-normal.png": "e55623a2e6101067faad327f5d5c6531c503e77bceb9cde32e2545d7ba0a318f",
+    "assets/v2/materials/substrate-rubble-orm.png": "79f6551d9653daddd9c51d93f169aede3833834f5f1d8a47756e1832bbd7e11d",
+    "assets/v2/materials/substrate-rubble-provenance.json": "189facc917f32976a038db640ce467cde1d0844234139b2a444fe4e2ede0af4b",
+    "assets/v2/materials/wall-aggregate-LICENSE.txt": "dc5f9e049d1aa957e4c13daa4d92e66699dde0d0794e63e83003b66b30d64cbd",
+    "assets/v2/materials/wall-aggregate-albedo.jpg": "33b2e975dee169d7c8e994415d3957d6c311698f72106ac664880d9e0b5021bf",
+    "assets/v2/materials/wall-aggregate-normal.png": "008287aac97e2edccf7636aa7650d39c1a18e12d306902f7adf25f433b9f2b8d",
+    "assets/v2/materials/wall-aggregate-orm.png": "3c5b36f16363bffced57dc0b1dc1afa1528a77127c7b44ebf7bedabbe7bff731",
+    "assets/v2/materials/wall-aggregate-provenance.json": "54fbfeb45d38b4cb71535edb03deee61aaefe85265ce9e3f61a9bdaf79c90057",
+    "generators/v2-preview.js": "01da663bd75e4e65ed9db145ed059beadfade819f3ca03273f496b6e276c0968",
+    "lib/view/map-batching.js": "b9ae35ad2a1600c2192bc1355a4ec502d3b62373ccea9f857931d6adb759ff69",
+    "lib/view/map.js": "06674110a900308870a477b57c63ad152e6f4393f5ba1f0e3dca43f1fdd951b9",
+    "lib/view/v2/architecture-bake.js": "7d9b0173dd9475c3a130b41f079848bc48e7f580c0898a1c3c2123eb82b30be4",
+    "lib/view/v2/architecture-layout.js": "eec54e2bb4be7b6987c9424475d51ad83484264a3cc9831417416b26e73f16c4",
+    "lib/view/v2/architecture-mass.js": "23ee8a90c255a73d9dc6edbd250745a7c110d7a15efdd306e207349bedf21c04",
+    "lib/view/v2/architecture-morphology.js": "25191728ed9ed7a87aeba1edb9c831a779a9cd512a62de1bbad103224dd91749",
+    "lib/view/v2/architecture-rubble.js": "7842872094efb565fb49fe0c377bf76cb54e4c6043cc1591ad271580d5f78dd3",
+    "lib/view/v2/architecture-shells.js": "4a3b50121f8381621fc2284e78cb337fd349d76dc72033fe530086f05878c414",
+    "lib/view/v2/architecture-skyline.js": "a3ca3de1d31c81eb0d4dfbd5f0697b0bf779f0f020deb89ffca5bcfec4fe5603",
+    "lib/view/v2/architecture.js": "5171c4994c35a9b0af60a0a9e54c356ea407ebbeb6a7fe3621296cca4485e6e5",
+    "lib/view/v2/effects-simulation.js": "6b00ad123c0209e823dc1f01d431242eadbf5b274973b268d6b89f8590ddc60c",
+    "lib/view/v2/effects-textures.js": "e84f88eb64206681207eb3d7ed4aaa07de15e8cd04b17a9cd1d2be38f875aed7",
+    "lib/view/v2/effects.js": "ae9601ca4f3ee4a69a07b1bb4b81158ba1caec167c56879d7cda14ae58385257",
+    "lib/view/v2/fog.js": "ac2bae21ec6893a53eaa9b22ccbdb81c6c494b591c8fb77e498c064a64ded1d5",
+    "lib/view/v2/ground-layout.js": "e1bef0bf98ab1b96a691b1a4d78039e12f0b3f14d027d96124b1c6da7340fcdc",
+    "lib/view/v2/ground.js": "f8ff76f1ef5ec9e9cbce41d92534c13be1750e27c0c90678362d359d412fa365",
+    "lib/view/v2/lighting-bake.js": "a6d7cc093b784e28ee3fc68b04f232984e87e8737fe8f3fa66810a14ee5b79da",
+    "lib/view/v2/lighting-noise.js": "651161371ace171186b60a61a856f1a434c6350f69fb068aa449ffcd5b395452",
+    "lib/view/v2/lighting.js": "0de49b345c98b84db4aea7a494ffdb205027653322dbc208dd2b2611078a40e8",
+    "lib/view/v2/materials-moisture.js": "94a5f8781dafe86d9a3ddb336e17251d9f3a2feaeb15a8d7bb0c62f459b90681",
+    "lib/view/v2/materials-shader.js": "fb3829b2b183dc3ba29e945c73dd4023f7b3527485ab2471385b90662b6e394c",
+    "lib/view/v2/materials-spall.js": "fa2bce186e0d3828d921d47c3f860330376db5223ce968f4e7518585c9bdbc44",
+    "lib/view/v2/materials-substrate.js": "debc04a92676dbc95c56e29c12774eeafea7318ad93bdf6eb412c23ffa65c4c4",
+    "lib/view/v2/materials-wall.js": "901e9378d87a559242ebd291b71486f0c00058407bd67ed615d94e038216b972",
+    "lib/view/v2/materials-weathering.js": "e6d6ccf26a759cbfde6ff15cd4429cf1c9043aa71b87f00ed20b814d7f969838",
+    "lib/view/v2/materials.js": "8ce4e9ccd568c82840e669429bfe54c391d8f29852a72d1a20268e94b2ff92f8",
+    "lib/view/v2/transparency.js": "96c91f37de88204435863aae1e59401a1c54729030bd4f69b4e36c26808fdf2f",
+    "main.js": "4c666d789c038e6c3a7d3248cfd36ab28dcd2234168dc229fd042395280a7950",
+    "package.json": "53bba145dd7cfe3eabf97a2f647235748727fb6a086483e64b0e6fd4612b76ca"
+  },
+  "harnessSha256": "8f43da329e352f1a8b66adf2a7fb8c4488648845220631b306e2b58407e201f7",
+  "worktreeStatus": "",
+  "git": "b7de63b5b3f7ec094f73af92160142a8e569fee5",
+  "browser": "141.0.7390.54",
+  "platform": "linux",
+  "deviceScaleFactor": 1,
+  "mode": "Actual PlayerView; first-wave start held still; default map state; fixed presentation tick; no enemies advanced",
+  "views": [
+    {
+      "id": "01-courtyard",
+      "renderSettings": {
+        "drawingBuffer": [
+          1920,
+          1080
+        ],
+        "pixelRatio": 1,
+        "renderScale": 1,
+        "maxRenderScale": null,
+        "antialias": false,
+        "msaa": true,
+        "outputColorSpace": "",
+        "quality": {
+          "id": "high",
+          "renderScale": 1,
+          "shadowMapSize": 1024,
+          "gbufferScale": 0.2,
+          "ssaoScale": 0.2,
+          "ssaoSamples": 2,
+          "ssaoEnabled": true,
+          "bloomScale": 0.2,
+          "particleDensity": 0.65,
+          "lodDistance": 5,
+          "animationLodDistance": 7,
+          "animationHz": 30,
+          "farAnimationHz": 24
+        }
+      },
+      "moduleStats": {
+        "architecture": {
+          "colliders": 140,
+          "wallSkins": 280,
+          "fragments": 5309,
+          "rods": 1395,
+          "skylineBuildings": 16,
+          "triangles": 562916,
+          "meshes": 81,
+          "materials": 10,
+          "collapseClusters": 61,
+          "coarseSlabs": 203,
+          "mediumSlabs": 942,
+          "fineChips": 2147,
+          "spallCavities": 65,
+          "volumeWalls": 6,
+          "volumeWallTriangles": 266064,
+          "volumeCuts": 936,
+          "skylineOpenings": 374,
+          "skylineFloorRemnants": 68,
+          "replacedWallBatches": 2,
+          "scannedPatches": 190,
+          "scannedTriangles": 116583,
+          "borrowedAtlases": 5
+        },
+        "ground": {
+          "patches": 11900,
+          "triangles": 270696,
+          "topTriangles": 142800,
+          "edgeTriangles": 127896,
+          "solidFragments": 4878,
+          "draws": 5,
+          "materials": 5,
+          "textures": 5,
+          "sharedImages": 5,
+          "coverageM2": 478.0146334390768,
+          "footprintM2": 1003.8179902688302,
+          "maxHeight": 0.07497704647248613,
+          "bySupport": {
+            "ground": 6500,
+            "dock_floor": 1000,
+            "exp_west_yard": 1000,
+            "exp_east_yard": 1000,
+            "exp_service_floor": 900,
+            "exp_barracks_roof": 900,
+            "exp_colonnade_canopy": 600
+          },
+          "ready": true,
+          "disposed": false
+        },
+        "materials": {
+          "meshes": 273,
+          "materials": 39,
+          "textures": 15,
+          "bySurface": {
+            "metal": 5,
+            "concrete": 3,
+            "ground": 11,
+            "imported": 18,
+            "fracture-masked": 1,
+            "fracture": 1
+          },
+          "preview": false,
+          "ready": true,
+          "disposed": false
+        },
+        "lighting": {},
+        "effects": {
+          "emitters": 19,
+          "particles": 228,
+          "maxDrawCalls": 19,
+          "materials": 1,
+          "textures": 1,
+          "atlasBytesWithMipmaps": 699051
+        }
+      },
+      "atmosphereTextures": [
+        {
+          "name": "V2 independent smoke volume 1",
+          "width": 512,
+          "height": 512,
+          "colorSpace": "",
+          "bytes": 1048576
+        },
+        {
+          "name": "V2 independent smoke volume 2",
+          "width": 512,
+          "height": 512,
+          "colorSpace": "",
+          "bytes": 1048576
+        },
+        {
+          "name": "V2 independent smoke volume 3",
+          "width": 512,
+          "height": 512,
+          "colorSpace": "",
+          "bytes": 1048576
+        },
+        {
+          "name": "V2 independent smoke volume 4",
+          "width": 512,
+          "height": 512,
+          "colorSpace": "",
+          "bytes": 1048576
+        },
+        {
+          "name": "V2 independent smoke volume 5",
+          "width": 384,
+          "height": 384,
+          "colorSpace": "",
+          "bytes": 589824
+        },
+        {
+          "name": "V2 independent smoke volume 6",
+          "width": 384,
+          "height": 384,
+          "colorSpace": "",
+          "bytes": 589824
+        }
+      ],
+      "plugins": {
+        "ssao": {
+          "present": true,
+          "enabled": true,
+          "intensity": 0.32,
+          "occlusionWorldRadius": 0.8,
+          "numSamples": 2,
+          "bias": 0.001,
+          "target": {
+            "width": 384,
+            "height": 216,
+            "sizeMultiplier": 0.2
+          }
+        },
+        "gbuffer": {
+          "present": true,
+          "enabled": true,
+          "target": {
+            "width": 384,
+            "height": 216,
+            "sizeMultiplier": 0.2
+          }
+        }
+      },
+      "feet": {
+        "x": -12,
+        "y": 0,
+        "z": -17
+      },
+      "support": {
+        "id": "ground",
+        "colliderId": "ground",
+        "level": "ground",
+        "y": 0
+      },
+      "camera": {
+        "position": [
+          -12,
+          1.65,
+          -17
+        ],
+        "quaternion": [
+          -0.001008120250475641,
+          0.9745434156304543,
+          -0.0043829601100625806,
+          -0.22415375170976232
+        ],
+        "fov": 72,
+        "near": 0.05,
+        "far": 180
+      },
+      "tick": 120,
+      "mapState": {
+        "doors": {
+          "tunnel_w": "unlocked",
+          "tunnel_e": "unlocked",
+          "building_ground": "unlocked",
+          "building_balcony": "locked"
+        },
+        "lights": {
+          "courtyard": "on",
+          "building": "on",
+          "dock": "on"
+        },
+        "fog": 0,
+        "hazards": [],
+        "flankWallBroken": false,
+        "gates": [
+          "N1",
+          "N2"
+        ]
+      },
+      "weapon": "pistol",
+      "renderer": "ANGLE (NVIDIA, Vulkan 1.4.312 (NVIDIA NVIDIA GeForce RTX 3090 Ti (0x00002203)), NVIDIA)",
+      "volumeDraws": [],
+      "performance": {
+        "samplesMs": [
+          33.400000000001455,
+          33.29999999999927,
+          50,
+          33.29999999999927,
+          33.29999999999927,
+          50.10000000000218,
+          33.20000000000073,
+          33.39999999999782,
+          50,
+          33.29999999999927,
+          33.30000000000291,
+          50,
+          33.39999999999782,
+          33.29999999999927,
+          50,
+          33.30000000000291,
+          33.39999999999782,
+          50,
+          33.29999999999927,
+          33.30000000000291,
+          33.39999999999782,
+          33.29999999999927,
+          50,
+          33.30000000000291,
+          33.39999999999782,
+          33.29999999999927,
+          33.30000000000291,
+          33.39999999999782,
+          50,
+          33.29999999999927,
+          33.30000000000291,
+          33.29999999999927,
+          33.39999999999782,
+          50,
+          33.30000000000291,
+          33.29999999999927,
+          50,
+          50,
+          33.39999999999782,
+          33.400000000001455,
+          49.900000000001455,
+          33.39999999999782,
+          33.20000000000073,
+          50.099999999998545,
+          33.30000000000291,
+          33.29999999999927,
+          50,
+          33.29999999999927,
+          33.400000000001455,
+          50,
+          33.29999999999927,
+          33.29999999999927,
+          50,
+          33.400000000001455,
+          33.29999999999927,
+          50,
+          33.29999999999927,
+          50.099999999998545,
+          33.30000000000291,
+          33.39999999999782,
+          49.900000000001455,
+          33.39999999999782,
+          33.30000000000291,
+          50,
+          33.29999999999927,
+          33.29999999999927,
+          50,
+          33.29999999999927,
+          33.400000000001455,
+          50,
+          33.39999999999782,
+          49.900000000001455,
+          33.400000000001455,
+          33.29999999999927,
+          50,
+          33.39999999999782,
+          33.20000000000073,
+          50,
+          33.400000000001455,
+          33.29999999999927,
+          50,
+          33.400000000001455,
+          33.29999999999927,
+          49.89999999999782,
+          33.5,
+          49.900000000001455,
+          33.400000000001455,
+          33.19999999999709,
+          33.400000000001455,
+          50,
+          33.400000000001455,
+          50,
+          33.29999999999927,
+          33.29999999999927,
+          50,
+          33.29999999999927,
+          50,
+          33.29999999999927,
+          33.400000000001455,
+          50,
+          33.400000000001455,
+          33.19999999999709,
+          50.10000000000218,
+          33.29999999999927,
+          33.29999999999927,
+          33.29999999999927,
+          50.10000000000218,
+          33.29999999999927,
+          33.29999999999927,
+          50,
+          33.29999999999927,
+          50.10000000000218,
+          33.20000000000073,
+          33.39999999999782,
+          50,
+          33.29999999999927,
+          33.30000000000291,
+          50.099999999998545,
+          33.29999999999927,
+          33.400000000001455
+        ],
+        "medianMs": 33.39999999999782,
+        "p95Ms": 50.099999999998545,
+        "meanMs": 38.74916666666668,
+        "render": {
+          "frame": 5887,
+          "calls": 1,
+          "triangles": 1,
+          "points": 0,
+          "lines": 0
+        },
+        "memory": {
+          "geometries": 657,
+          "textures": 298
+        }
+      },
+      "sha256": "888f1275a6903e5d45449b5aa77bc0ba9e1eea5efb5e994dde0d8c004471a2cd",
+      "errors": []
+    },
+    {
+      "id": "02-cargo",
+      "renderSettings": {
+        "drawingBuffer": [
+          1920,
+          1080
+        ],
+        "pixelRatio": 1,
+        "renderScale": 1,
+        "maxRenderScale": null,
+        "antialias": false,
+        "msaa": true,
+        "outputColorSpace": "",
+        "quality": {
+          "id": "high",
+          "renderScale": 1,
+          "shadowMapSize": 1024,
+          "gbufferScale": 0.2,
+          "ssaoScale": 0.2,
+          "ssaoSamples": 2,
+          "ssaoEnabled": true,
+          "bloomScale": 0.2,
+          "particleDensity": 0.65,
+          "lodDistance": 5,
+          "animationLodDistance": 7,
+          "animationHz": 30,
+          "farAnimationHz": 24
+        }
+      },
+      "moduleStats": {
+        "architecture": {
+          "colliders": 140,
+          "wallSkins": 280,
+          "fragments": 5309,
+          "rods": 1395,
+          "skylineBuildings": 16,
+          "triangles": 562916,
+          "meshes": 81,
+          "materials": 10,
+          "collapseClusters": 61,
+          "coarseSlabs": 203,
+          "mediumSlabs": 942,
+          "fineChips": 2147,
+          "spallCavities": 65,
+          "volumeWalls": 6,
+          "volumeWallTriangles": 266064,
+          "volumeCuts": 936,
+          "skylineOpenings": 374,
+          "skylineFloorRemnants": 68,
+          "replacedWallBatches": 2,
+          "scannedPatches": 190,
+          "scannedTriangles": 116583,
+          "borrowedAtlases": 5
+        },
+        "ground": {
+          "patches": 11900,
+          "triangles": 270696,
+          "topTriangles": 142800,
+          "edgeTriangles": 127896,
+          "solidFragments": 4878,
+          "draws": 5,
+          "materials": 5,
+          "textures": 5,
+          "sharedImages": 5,
+          "coverageM2": 478.0146334390768,
+          "footprintM2": 1003.8179902688302,
+          "maxHeight": 0.07497704647248613,
+          "bySupport": {
+            "ground": 6500,
+            "dock_floor": 1000,
+            "exp_west_yard": 1000,
+            "exp_east_yard": 1000,
+            "exp_service_floor": 900,
+            "exp_barracks_roof": 900,
+            "exp_colonnade_canopy": 600
+          },
+          "ready": true,
+          "disposed": false
+        },
+        "materials": {
+          "meshes": 273,
+          "materials": 39,
+          "textures": 15,
+          "bySurface": {
+            "metal": 5,
+            "concrete": 3,
+            "ground": 11,
+            "imported": 18,
+            "fracture-masked": 1,
+            "fracture": 1
+          },
+          "preview": false,
+          "ready": true,
+          "disposed": false
+        },
+        "lighting": {},
+        "effects": {
+          "emitters": 19,
+          "particles": 228,
+          "maxDrawCalls": 19,
+          "materials": 1,
+          "textures": 1,
+          "atlasBytesWithMipmaps": 699051
+        }
+      },
+      "atmosphereTextures": [
+        {
+          "name": "V2 independent smoke volume 1",
+          "width": 512,
+          "height": 512,
+          "colorSpace": "",
+          "bytes": 1048576
+        },
+        {
+          "name": "V2 independent smoke volume 2",
+          "width": 512,
+          "height": 512,
+          "colorSpace": "",
+          "bytes": 1048576
+        },
+        {
+          "name": "V2 independent smoke volume 3",
+          "width": 512,
+          "height": 512,
+          "colorSpace": "",
+          "bytes": 1048576
+        },
+        {
+          "name": "V2 independent smoke volume 4",
+          "width": 512,
+          "height": 512,
+          "colorSpace": "",
+          "bytes": 1048576
+        },
+        {
+          "name": "V2 independent smoke volume 5",
+          "width": 384,
+          "height": 384,
+          "colorSpace": "",
+          "bytes": 589824
+        },
+        {
+          "name": "V2 independent smoke volume 6",
+          "width": 384,
+          "height": 384,
+          "colorSpace": "",
+          "bytes": 589824
+        }
+      ],
+      "plugins": {
+        "ssao": {
+          "present": true,
+          "enabled": true,
+          "intensity": 0.32,
+          "occlusionWorldRadius": 0.8,
+          "numSamples": 2,
+          "bias": 0.001,
+          "target": {
+            "width": 384,
+            "height": 216,
+            "sizeMultiplier": 0.2
+          }
+        },
+        "gbuffer": {
+          "present": true,
+          "enabled": true,
+          "target": {
+            "width": 384,
+            "height": 216,
+            "sizeMultiplier": 0.2
+          }
+        }
+      },
+      "feet": {
+        "x": 15,
+        "y": 0,
+        "z": -19
+      },
+      "support": {
+        "id": "ground",
+        "colliderId": "ground",
+        "level": "ground",
+        "y": 0
+      },
+      "camera": {
+        "position": [
+          15,
+          1.65,
+          -19
+        ],
+        "quaternion": [
+          -0.0011467820176869613,
+          0.9831758020192692,
+          -0.006176198288313429,
+          -0.18255377780115672
+        ],
+        "fov": 72,
+        "near": 0.05,
+        "far": 180
+      },
+      "tick": 120,
+      "mapState": {
+        "doors": {
+          "tunnel_w": "unlocked",
+          "tunnel_e": "unlocked",
+          "building_ground": "unlocked",
+          "building_balcony": "locked"
+        },
+        "lights": {
+          "courtyard": "on",
+          "building": "on",
+          "dock": "on"
+        },
+        "fog": 0,
+        "hazards": [],
+        "flankWallBroken": false,
+        "gates": [
+          "N1",
+          "N2"
+        ]
+      },
+      "weapon": "pistol",
+      "renderer": "ANGLE (NVIDIA, Vulkan 1.4.312 (NVIDIA NVIDIA GeForce RTX 3090 Ti (0x00002203)), NVIDIA)",
+      "volumeDraws": [],
+      "performance": {
+        "samplesMs": [
+          33.29999999999927,
+          49.89999999999782,
+          33.30000000000291,
+          33.39999999999782,
+          50.10000000000218,
+          33.19999999999709,
+          33.400000000001455,
+          33.29999999999927,
+          33.29999999999927,
+          50,
+          33.400000000001455,
+          33.29999999999927,
+          33.29999999999927,
+          50,
+          33.400000000001455,
+          33.29999999999927,
+          33.400000000001455,
+          49.89999999999782,
+          33.400000000001455,
+          33.20000000000073,
+          50.099999999998545,
+          33.29999999999927,
+          33.30000000000291,
+          50,
+          33.29999999999927,
+          33.5,
+          33.29999999999927,
+          33.29999999999927,
+          33.400000000001455,
+          33.20000000000073,
+          33.29999999999927,
+          33.39999999999782,
+          33.30000000000291,
+          50,
+          33.39999999999782,
+          33.29999999999927,
+          33.400000000001455,
+          50,
+          33.20000000000073,
+          33.39999999999782,
+          50,
+          33.30000000000291,
+          33.39999999999782,
+          49.900000000001455,
+          50.099999999998545,
+          33.29999999999927,
+          33.400000000001455,
+          33.20000000000073,
+          50.099999999998545,
+          33.29999999999927,
+          33.30000000000291,
+          50,
+          33.39999999999782,
+          33.20000000000073,
+          33.400000000001455,
+          50,
+          33.39999999999782,
+          33.20000000000073,
+          50.099999999998545,
+          33.30000000000291,
+          33.29999999999927,
+          33.29999999999927,
+          50.099999999998545,
+          33.30000000000291,
+          33.29999999999927,
+          50,
+          33.29999999999927,
+          33.400000000001455,
+          33.29999999999927,
+          50,
+          33.39999999999782,
+          33.30000000000291,
+          50,
+          33.29999999999927,
+          33.39999999999782,
+          33.30000000000291,
+          50,
+          33.29999999999927,
+          33.39999999999782,
+          50,
+          33.30000000000291,
+          33.29999999999927,
+          50,
+          33.29999999999927,
+          33.400000000001455,
+          33.29999999999927,
+          49.89999999999782,
+          33.400000000001455,
+          33.29999999999927,
+          50,
+          33.29999999999927,
+          33.400000000001455,
+          50,
+          33.400000000001455,
+          33.29999999999927,
+          33.29999999999927,
+          50,
+          33.400000000001455,
+          33.19999999999709,
+          33.400000000001455,
+          50,
+          33.29999999999927,
+          33.400000000001455,
+          33.20000000000073,
+          50,
+          33.39999999999782,
+          33.29999999999927,
+          50.10000000000218,
+          33.29999999999927,
+          50,
+          66.59999999999854,
+          50,
+          50.10000000000218,
+          33.20000000000073,
+          50,
+          33.39999999999782,
+          33.29999999999927,
+          33.400000000001455,
+          49.900000000001455,
+          33.39999999999782
+        ],
+        "medianMs": 33.39999999999782,
+        "p95Ms": 50.099999999998545,
+        "meanMs": 38.469999999999985,
+        "render": {
+          "frame": 5981,
+          "calls": 1,
+          "triangles": 1,
+          "points": 0,
+          "lines": 0
+        },
+        "memory": {
+          "geometries": 658,
+          "textures": 298
+        }
+      },
+      "sha256": "a6ae6b7b7ab46adc140078242d31d9a9286250deb3a25b14aae4ace870458d1b",
+      "errors": []
+    },
+    {
+      "id": "03-barracks",
+      "renderSettings": {
+        "drawingBuffer": [
+          1920,
+          1080
+        ],
+        "pixelRatio": 1,
+        "renderScale": 1,
+        "maxRenderScale": null,
+        "antialias": false,
+        "msaa": true,
+        "outputColorSpace": "",
+        "quality": {
+          "id": "high",
+          "renderScale": 1,
+          "shadowMapSize": 1024,
+          "gbufferScale": 0.2,
+          "ssaoScale": 0.2,
+          "ssaoSamples": 2,
+          "ssaoEnabled": true,
+          "bloomScale": 0.2,
+          "particleDensity": 0.65,
+          "lodDistance": 5,
+          "animationLodDistance": 7,
+          "animationHz": 30,
+          "farAnimationHz": 24
+        }
+      },
+      "moduleStats": {
+        "architecture": {
+          "colliders": 140,
+          "wallSkins": 280,
+          "fragments": 5309,
+          "rods": 1395,
+          "skylineBuildings": 16,
+          "triangles": 562916,
+          "meshes": 81,
+          "materials": 10,
+          "collapseClusters": 61,
+          "coarseSlabs": 203,
+          "mediumSlabs": 942,
+          "fineChips": 2147,
+          "spallCavities": 65,
+          "volumeWalls": 6,
+          "volumeWallTriangles": 266064,
+          "volumeCuts": 936,
+          "skylineOpenings": 374,
+          "skylineFloorRemnants": 68,
+          "replacedWallBatches": 2,
+          "scannedPatches": 190,
+          "scannedTriangles": 116583,
+          "borrowedAtlases": 5
+        },
+        "ground": {
+          "patches": 11900,
+          "triangles": 270696,
+          "topTriangles": 142800,
+          "edgeTriangles": 127896,
+          "solidFragments": 4878,
+          "draws": 5,
+          "materials": 5,
+          "textures": 5,
+          "sharedImages": 5,
+          "coverageM2": 478.0146334390768,
+          "footprintM2": 1003.8179902688302,
+          "maxHeight": 0.07497704647248613,
+          "bySupport": {
+            "ground": 6500,
+            "dock_floor": 1000,
+            "exp_west_yard": 1000,
+            "exp_east_yard": 1000,
+            "exp_service_floor": 900,
+            "exp_barracks_roof": 900,
+            "exp_colonnade_canopy": 600
+          },
+          "ready": true,
+          "disposed": false
+        },
+        "materials": {
+          "meshes": 273,
+          "materials": 39,
+          "textures": 15,
+          "bySurface": {
+            "metal": 5,
+            "concrete": 3,
+            "ground": 11,
+            "imported": 18,
+            "fracture-masked": 1,
+            "fracture": 1
+          },
+          "preview": false,
+          "ready": true,
+          "disposed": false
+        },
+        "lighting": {},
+        "effects": {
+          "emitters": 19,
+          "particles": 228,
+          "maxDrawCalls": 19,
+          "materials": 1,
+          "textures": 1,
+          "atlasBytesWithMipmaps": 699051
+        }
+      },
+      "atmosphereTextures": [
+        {
+          "name": "V2 independent smoke volume 1",
+          "width": 512,
+          "height": 512,
+          "colorSpace": "",
+          "bytes": 1048576
+        },
+        {
+          "name": "V2 independent smoke volume 2",
+          "width": 512,
+          "height": 512,
+          "colorSpace": "",
+          "bytes": 1048576
+        },
+        {
+          "name": "V2 independent smoke volume 3",
+          "width": 512,
+          "height": 512,
+          "colorSpace": "",
+          "bytes": 1048576
+        },
+        {
+          "name": "V2 independent smoke volume 4",
+          "width": 512,
+          "height": 512,
+          "colorSpace": "",
+          "bytes": 1048576
+        },
+        {
+          "name": "V2 independent smoke volume 5",
+          "width": 384,
+          "height": 384,
+          "colorSpace": "",
+          "bytes": 589824
+        },
+        {
+          "name": "V2 independent smoke volume 6",
+          "width": 384,
+          "height": 384,
+          "colorSpace": "",
+          "bytes": 589824
+        }
+      ],
+      "plugins": {
+        "ssao": {
+          "present": true,
+          "enabled": true,
+          "intensity": 0.32,
+          "occlusionWorldRadius": 0.8,
+          "numSamples": 2,
+          "bias": 0.001,
+          "target": {
+            "width": 384,
+            "height": 216,
+            "sizeMultiplier": 0.2
+          }
+        },
+        "gbuffer": {
+          "present": true,
+          "enabled": true,
+          "target": {
+            "width": 384,
+            "height": 216,
+            "sizeMultiplier": 0.2
+          }
+        }
+      },
+      "feet": {
+        "x": 36,
+        "y": 0,
+        "z": 5.5
+      },
+      "support": {
+        "id": "exp_east_yard",
+        "colliderId": "exp_east_yard",
+        "level": "ground",
+        "y": 0
+      },
+      "camera": {
+        "position": [
+          36,
+          1.65,
+          5.5
+        ],
+        "quaternion": [
+          0,
+          1,
+          0,
+          6.123233995736766e-17
+        ],
+        "fov": 72,
+        "near": 0.05,
+        "far": 180
+      },
+      "tick": 120,
+      "mapState": {
+        "doors": {
+          "tunnel_w": "unlocked",
+          "tunnel_e": "unlocked",
+          "building_ground": "unlocked",
+          "building_balcony": "locked"
+        },
+        "lights": {
+          "courtyard": "on",
+          "building": "on",
+          "dock": "on"
+        },
+        "fog": 0,
+        "hazards": [],
+        "flankWallBroken": false,
+        "gates": [
+          "N1",
+          "N2"
+        ]
+      },
+      "weapon": "pistol",
+      "renderer": "ANGLE (NVIDIA, Vulkan 1.4.312 (NVIDIA NVIDIA GeForce RTX 3090 Ti (0x00002203)), NVIDIA)",
+      "volumeDraws": [],
+      "performance": {
+        "samplesMs": [
+          33.30000000000291,
+          33.39999999999782,
+          33.29999999999927,
+          33.30000000000291,
+          50,
+          33.39999999999782,
+          33.29999999999927,
+          33.400000000001455,
+          50,
+          33.20000000000073,
+          33.39999999999782,
+          33.30000000000291,
+          33.39999999999782,
+          33.29999999999927,
+          50,
+          33.30000000000291,
+          33.29999999999927,
+          33.39999999999782,
+          33.30000000000291,
+          33.29999999999927,
+          33.39999999999782,
+          33.30000000000291,
+          33.29999999999927,
+          33.39999999999782,
+          33.30000000000291,
+          33.39999999999782,
+          33.29999999999927,
+          33.30000000000291,
+          16.69999999999709,
+          33.30000000000291,
+          50,
+          16.69999999999709,
+          33.30000000000291,
+          33.29999999999927,
+          33.29999999999927,
+          33.400000000001455,
+          50,
+          33.29999999999927,
+          33.39999999999782,
+          33.30000000000291,
+          33.29999999999927,
+          50,
+          33.39999999999782,
+          33.20000000000073,
+          33.400000000001455,
+          33.29999999999927,
+          33.400000000001455,
+          50,
+          33.29999999999927,
+          33.29999999999927,
+          33.400000000001455,
+          33.29999999999927,
+          33.39999999999782,
+          33.30000000000291,
+          33.29999999999927,
+          50,
+          33.29999999999927,
+          33.29999999999927,
+          33.29999999999927,
+          33.5,
+          50,
+          33.20000000000073,
+          33.400000000001455,
+          33.39999999999782,
+          33.20000000000073,
+          33.400000000001455,
+          33.29999999999927,
+          50,
+          33.29999999999927,
+          33.29999999999927,
+          33.400000000001455,
+          33.400000000001455,
+          49.89999999999782,
+          33.400000000001455,
+          33.29999999999927,
+          33.29999999999927,
+          33.400000000001455,
+          33.29999999999927,
+          33.400000000001455,
+          50,
+          33.29999999999927,
+          33.29999999999927,
+          33.29999999999927,
+          33.400000000001455,
+          50,
+          33.29999999999927,
+          33.29999999999927,
+          33.400000000001455,
+          33.29999999999927,
+          33.29999999999927,
+          50,
+          33.400000000001455,
+          33.20000000000073,
+          33.39999999999782,
+          33.400000000001455,
+          50,
+          33.20000000000073,
+          50,
+          50.099999999998545,
+          50,
+          49.900000000001455,
+          33.39999999999782,
+          33.29999999999927,
+          33.30000000000291,
+          50.099999999998545,
+          33.29999999999927,
+          33.29999999999927,
+          33.400000000001455,
+          33.29999999999927,
+          33.29999999999927,
+          50,
+          33.400000000001455,
+          33.29999999999927,
+          33.29999999999927,
+          33.30000000000291,
+          33.39999999999782,
+          33.29999999999927,
+          50,
+          33.400000000001455,
+          33.29999999999927
+        ],
+        "medianMs": 33.30000000000291,
+        "p95Ms": 50,
+        "meanMs": 36.11000000000001,
+        "render": {
+          "frame": 6043,
+          "calls": 1,
+          "triangles": 1,
+          "points": 0,
+          "lines": 0
+        },
+        "memory": {
+          "geometries": 660,
+          "textures": 302
+        }
+      },
+      "sha256": "2c9e6ed0d10f08ea5cd0b7be49ffe172faee5ff489fc6be883e09189bedfabea",
+      "errors": []
+    },
+    {
+      "id": "04-service",
+      "renderSettings": {
+        "drawingBuffer": [
+          1920,
+          1080
+        ],
+        "pixelRatio": 1,
+        "renderScale": 1,
+        "maxRenderScale": null,
+        "antialias": false,
+        "msaa": true,
+        "outputColorSpace": "",
+        "quality": {
+          "id": "high",
+          "renderScale": 1,
+          "shadowMapSize": 1024,
+          "gbufferScale": 0.2,
+          "ssaoScale": 0.2,
+          "ssaoSamples": 2,
+          "ssaoEnabled": true,
+          "bloomScale": 0.2,
+          "particleDensity": 0.65,
+          "lodDistance": 5,
+          "animationLodDistance": 7,
+          "animationHz": 30,
+          "farAnimationHz": 24
+        }
+      },
+      "moduleStats": {
+        "architecture": {
+          "colliders": 140,
+          "wallSkins": 280,
+          "fragments": 5309,
+          "rods": 1395,
+          "skylineBuildings": 16,
+          "triangles": 562916,
+          "meshes": 81,
+          "materials": 10,
+          "collapseClusters": 61,
+          "coarseSlabs": 203,
+          "mediumSlabs": 942,
+          "fineChips": 2147,
+          "spallCavities": 65,
+          "volumeWalls": 6,
+          "volumeWallTriangles": 266064,
+          "volumeCuts": 936,
+          "skylineOpenings": 374,
+          "skylineFloorRemnants": 68,
+          "replacedWallBatches": 2,
+          "scannedPatches": 190,
+          "scannedTriangles": 116583,
+          "borrowedAtlases": 5
+        },
+        "ground": {
+          "patches": 11900,
+          "triangles": 270696,
+          "topTriangles": 142800,
+          "edgeTriangles": 127896,
+          "solidFragments": 4878,
+          "draws": 5,
+          "materials": 5,
+          "textures": 5,
+          "sharedImages": 5,
+          "coverageM2": 478.0146334390768,
+          "footprintM2": 1003.8179902688302,
+          "maxHeight": 0.07497704647248613,
+          "bySupport": {
+            "ground": 6500,
+            "dock_floor": 1000,
+            "exp_west_yard": 1000,
+            "exp_east_yard": 1000,
+            "exp_service_floor": 900,
+            "exp_barracks_roof": 900,
+            "exp_colonnade_canopy": 600
+          },
+          "ready": true,
+          "disposed": false
+        },
+        "materials": {
+          "meshes": 273,
+          "materials": 39,
+          "textures": 15,
+          "bySurface": {
+            "metal": 5,
+            "concrete": 3,
+            "ground": 11,
+            "imported": 18,
+            "fracture-masked": 1,
+            "fracture": 1
+          },
+          "preview": false,
+          "ready": true,
+          "disposed": false
+        },
+        "lighting": {},
+        "effects": {
+          "emitters": 19,
+          "particles": 228,
+          "maxDrawCalls": 19,
+          "materials": 1,
+          "textures": 1,
+          "atlasBytesWithMipmaps": 699051
+        }
+      },
+      "atmosphereTextures": [
+        {
+          "name": "V2 independent smoke volume 1",
+          "width": 512,
+          "height": 512,
+          "colorSpace": "",
+          "bytes": 1048576
+        },
+        {
+          "name": "V2 independent smoke volume 2",
+          "width": 512,
+          "height": 512,
+          "colorSpace": "",
+          "bytes": 1048576
+        },
+        {
+          "name": "V2 independent smoke volume 3",
+          "width": 512,
+          "height": 512,
+          "colorSpace": "",
+          "bytes": 1048576
+        },
+        {
+          "name": "V2 independent smoke volume 4",
+          "width": 512,
+          "height": 512,
+          "colorSpace": "",
+          "bytes": 1048576
+        },
+        {
+          "name": "V2 independent smoke volume 5",
+          "width": 384,
+          "height": 384,
+          "colorSpace": "",
+          "bytes": 589824
+        },
+        {
+          "name": "V2 independent smoke volume 6",
+          "width": 384,
+          "height": 384,
+          "colorSpace": "",
+          "bytes": 589824
+        }
+      ],
+      "plugins": {
+        "ssao": {
+          "present": true,
+          "enabled": true,
+          "intensity": 0.32,
+          "occlusionWorldRadius": 0.8,
+          "numSamples": 2,
+          "bias": 0.001,
+          "target": {
+            "width": 384,
+            "height": 216,
+            "sizeMultiplier": 0.2
+          }
+        },
+        "gbuffer": {
+          "present": true,
+          "enabled": true,
+          "target": {
+            "width": 384,
+            "height": 216,
+            "sizeMultiplier": 0.2
+          }
+        }
+      },
+      "feet": {
+        "x": -36,
+        "y": -3.5,
+        "z": -12.5
+      },
+      "support": {
+        "id": "exp_service_floor",
+        "colliderId": "exp_service_floor",
+        "level": "service",
+        "y": -3.5
+      },
+      "camera": {
+        "position": [
+          -36,
+          -1.85,
+          -12.5
+        ],
+        "quaternion": [
+          0,
+          0.9999777804934487,
+          0,
+          -0.006666222273243964
+        ],
+        "fov": 72,
+        "near": 0.05,
+        "far": 180
+      },
+      "tick": 120,
+      "mapState": {
+        "doors": {
+          "tunnel_w": "unlocked",
+          "tunnel_e": "unlocked",
+          "building_ground": "unlocked",
+          "building_balcony": "locked"
+        },
+        "lights": {
+          "courtyard": "on",
+          "building": "on",
+          "dock": "on"
+        },
+        "fog": 0,
+        "hazards": [],
+        "flankWallBroken": false,
+        "gates": [
+          "N1",
+          "N2"
+        ]
+      },
+      "weapon": "pistol",
+      "renderer": "ANGLE (NVIDIA, Vulkan 1.4.312 (NVIDIA NVIDIA GeForce RTX 3090 Ti (0x00002203)), NVIDIA)",
+      "volumeDraws": [],
+      "performance": {
+        "samplesMs": [
+          33.39999999999782,
+          50,
+          33.30000000000291,
+          33.29999999999927,
+          33.39999999999782,
+          33.30000000000291,
+          33.29999999999927,
+          33.39999999999782,
+          33.30000000000291,
+          33.29999999999927,
+          33.39999999999782,
+          50,
+          33.30000000000291,
+          33.29999999999927,
+          33.39999999999782,
+          33.30000000000291,
+          33.29999999999927,
+          33.29999999999927,
+          33.29999999999927,
+          33.400000000001455,
+          33.39999999999782,
+          33.30000000000291,
+          33.29999999999927,
+          33.29999999999927,
+          33.400000000001455,
+          33.29999999999927,
+          50,
+          33.29999999999927,
+          33.29999999999927,
+          33.400000000001455,
+          33.29999999999927,
+          33.29999999999927,
+          33.400000000001455,
+          33.29999999999927,
+          33.400000000001455,
+          49.89999999999782,
+          33.400000000001455,
+          33.29999999999927,
+          33.29999999999927,
+          33.29999999999927,
+          33.400000000001455,
+          33.400000000001455,
+          33.29999999999927,
+          33.29999999999927,
+          33.29999999999927,
+          50,
+          33.400000000001455,
+          33.29999999999927,
+          33.29999999999927,
+          33.400000000001455,
+          33.29999999999927,
+          33.29999999999927,
+          33.29999999999927,
+          50.10000000000218,
+          33.20000000000073,
+          33.39999999999782,
+          33.29999999999927,
+          33.400000000001455,
+          33.29999999999927,
+          33.29999999999927,
+          33.400000000001455,
+          33.29999999999927,
+          50,
+          33.29999999999927,
+          33.400000000001455,
+          33.29999999999927,
+          33.400000000001455,
+          33.29999999999927,
+          33.29999999999927,
+          33.29999999999927,
+          33.400000000001455,
+          33.29999999999927,
+          33.400000000001455,
+          50,
+          33.29999999999927,
+          33.29999999999927,
+          33.29999999999927,
+          33.400000000001455,
+          33.29999999999927,
+          33.29999999999927,
+          33.400000000001455,
+          33.20000000000073,
+          33.39999999999782,
+          33.400000000001455,
+          50,
+          33.29999999999927,
+          33.29999999999927,
+          33.400000000001455,
+          33.29999999999927,
+          33.29999999999927,
+          33.30000000000291,
+          33.39999999999782,
+          33.29999999999927,
+          33.400000000001455,
+          49.900000000001455,
+          33.29999999999927,
+          33.39999999999782,
+          33.30000000000291,
+          33.29999999999927,
+          33.39999999999782,
+          33.30000000000291,
+          33.39999999999782,
+          33.20000000000073,
+          50.099999999998545,
+          33.30000000000291,
+          33.39999999999782,
+          33.29999999999927,
+          33.400000000001455,
+          33.20000000000073,
+          33.39999999999782,
+          33.30000000000291,
+          50,
+          33.29999999999927,
+          50.099999999998545,
+          49.900000000001455,
+          50,
+          33.29999999999927,
+          50,
+          33.400000000001455,
+          33.29999999999927
+        ],
+        "medianMs": 33.30000000000291,
+        "p95Ms": 50,
+        "meanMs": 35.55416666666667,
+        "render": {
+          "frame": 6119,
+          "calls": 1,
+          "triangles": 1,
+          "points": 0,
+          "lines": 0
+        },
+        "memory": {
+          "geometries": 660,
+          "textures": 302
+        }
+      },
+      "sha256": "65e70bdff56bbae0744404b784699eb9333cea4933144aab6fa8bf177f730a14",
+      "errors": []
+    },
+    {
+      "id": "05-rooftop",
+      "renderSettings": {
+        "drawingBuffer": [
+          1920,
+          1080
+        ],
+        "pixelRatio": 1,
+        "renderScale": 1,
+        "maxRenderScale": null,
+        "antialias": false,
+        "msaa": true,
+        "outputColorSpace": "",
+        "quality": {
+          "id": "high",
+          "renderScale": 1,
+          "shadowMapSize": 1024,
+          "gbufferScale": 0.2,
+          "ssaoScale": 0.2,
+          "ssaoSamples": 2,
+          "ssaoEnabled": true,
+          "bloomScale": 0.2,
+          "particleDensity": 0.65,
+          "lodDistance": 5,
+          "animationLodDistance": 7,
+          "animationHz": 30,
+          "farAnimationHz": 24
+        }
+      },
+      "moduleStats": {
+        "architecture": {
+          "colliders": 140,
+          "wallSkins": 280,
+          "fragments": 5309,
+          "rods": 1395,
+          "skylineBuildings": 16,
+          "triangles": 562916,
+          "meshes": 81,
+          "materials": 10,
+          "collapseClusters": 61,
+          "coarseSlabs": 203,
+          "mediumSlabs": 942,
+          "fineChips": 2147,
+          "spallCavities": 65,
+          "volumeWalls": 6,
+          "volumeWallTriangles": 266064,
+          "volumeCuts": 936,
+          "skylineOpenings": 374,
+          "skylineFloorRemnants": 68,
+          "replacedWallBatches": 2,
+          "scannedPatches": 190,
+          "scannedTriangles": 116583,
+          "borrowedAtlases": 5
+        },
+        "ground": {
+          "patches": 11900,
+          "triangles": 270696,
+          "topTriangles": 142800,
+          "edgeTriangles": 127896,
+          "solidFragments": 4878,
+          "draws": 5,
+          "materials": 5,
+          "textures": 5,
+          "sharedImages": 5,
+          "coverageM2": 478.0146334390768,
+          "footprintM2": 1003.8179902688302,
+          "maxHeight": 0.07497704647248613,
+          "bySupport": {
+            "ground": 6500,
+            "dock_floor": 1000,
+            "exp_west_yard": 1000,
+            "exp_east_yard": 1000,
+            "exp_service_floor": 900,
+            "exp_barracks_roof": 900,
+            "exp_colonnade_canopy": 600
+          },
+          "ready": true,
+          "disposed": false
+        },
+        "materials": {
+          "meshes": 273,
+          "materials": 39,
+          "textures": 15,
+          "bySurface": {
+            "metal": 5,
+            "concrete": 3,
+            "ground": 11,
+            "imported": 18,
+            "fracture-masked": 1,
+            "fracture": 1
+          },
+          "preview": false,
+          "ready": true,
+          "disposed": false
+        },
+        "lighting": {},
+        "effects": {
+          "emitters": 19,
+          "particles": 228,
+          "maxDrawCalls": 19,
+          "materials": 1,
+          "textures": 1,
+          "atlasBytesWithMipmaps": 699051
+        }
+      },
+      "atmosphereTextures": [
+        {
+          "name": "V2 independent smoke volume 1",
+          "width": 512,
+          "height": 512,
+          "colorSpace": "",
+          "bytes": 1048576
+        },
+        {
+          "name": "V2 independent smoke volume 2",
+          "width": 512,
+          "height": 512,
+          "colorSpace": "",
+          "bytes": 1048576
+        },
+        {
+          "name": "V2 independent smoke volume 3",
+          "width": 512,
+          "height": 512,
+          "colorSpace": "",
+          "bytes": 1048576
+        },
+        {
+          "name": "V2 independent smoke volume 4",
+          "width": 512,
+          "height": 512,
+          "colorSpace": "",
+          "bytes": 1048576
+        },
+        {
+          "name": "V2 independent smoke volume 5",
+          "width": 384,
+          "height": 384,
+          "colorSpace": "",
+          "bytes": 589824
+        },
+        {
+          "name": "V2 independent smoke volume 6",
+          "width": 384,
+          "height": 384,
+          "colorSpace": "",
+          "bytes": 589824
+        }
+      ],
+      "plugins": {
+        "ssao": {
+          "present": true,
+          "enabled": true,
+          "intensity": 0.32,
+          "occlusionWorldRadius": 0.8,
+          "numSamples": 2,
+          "bias": 0.001,
+          "target": {
+            "width": 384,
+            "height": 216,
+            "sizeMultiplier": 0.2
+          }
+        },
+        "gbuffer": {
+          "present": true,
+          "enabled": true,
+          "target": {
+            "width": 384,
+            "height": 216,
+            "sizeMultiplier": 0.2
+          }
+        }
+      },
+      "feet": {
+        "x": 31.6,
+        "y": 6.4,
+        "z": 6
+      },
+      "support": {
+        "id": "exp_barracks_roof",
+        "colliderId": "exp_barracks_roof",
+        "level": "barracks_roof",
+        "y": 6.3999999999999995
+      },
+      "camera": {
+        "position": [
+          31.6,
+          8.05,
+          6
+        ],
+        "quaternion": [
+          -0.06954632658140851,
+          0.6462892228822031,
+          0.05932840649659593,
+          0.7575973132396423
+        ],
+        "fov": 72,
+        "near": 0.05,
+        "far": 180
+      },
+      "tick": 120,
+      "mapState": {
+        "doors": {
+          "tunnel_w": "unlocked",
+          "tunnel_e": "unlocked",
+          "building_ground": "unlocked",
+          "building_balcony": "locked"
+        },
+        "lights": {
+          "courtyard": "on",
+          "building": "on",
+          "dock": "on"
+        },
+        "fog": 0,
+        "hazards": [],
+        "flankWallBroken": false,
+        "gates": [
+          "N1",
+          "N2"
+        ]
+      },
+      "weapon": "pistol",
+      "renderer": "ANGLE (NVIDIA, Vulkan 1.4.312 (NVIDIA NVIDIA GeForce RTX 3090 Ti (0x00002203)), NVIDIA)",
+      "volumeDraws": [],
+      "performance": {
+        "samplesMs": [
+          33.29999999999927,
+          33.400000000001455,
+          33.29999999999927,
+          50,
+          33.400000000001455,
+          33.19999999999709,
+          33.400000000001455,
+          33.29999999999927,
+          33.400000000001455,
+          33.29999999999927,
+          33.400000000001455,
+          33.29999999999927,
+          33.29999999999927,
+          33.29999999999927,
+          33.400000000001455,
+          33.29999999999927,
+          33.29999999999927,
+          33.400000000001455,
+          49.89999999999782,
+          33.400000000001455,
+          33.29999999999927,
+          33.29999999999927,
+          33.400000000001455,
+          33.29999999999927,
+          33.29999999999927,
+          33.400000000001455,
+          33.29999999999927,
+          33.400000000001455,
+          33.29999999999927,
+          33.29999999999927,
+          33.29999999999927,
+          33.400000000001455,
+          33.29999999999927,
+          50,
+          33.29999999999927,
+          33.30000000000291,
+          33.39999999999782,
+          33.29999999999927,
+          33.400000000001455,
+          33.29999999999927,
+          33.400000000001455,
+          33.29999999999927,
+          49.900000000001455,
+          50.099999999998545,
+          33.29999999999927,
+          33.29999999999927,
+          33.400000000001455,
+          33.29999999999927,
+          50,
+          33.29999999999927,
+          33.30000000000291,
+          33.29999999999927,
+          33.39999999999782,
+          33.30000000000291,
+          50,
+          33.29999999999927,
+          33.39999999999782,
+          33.30000000000291,
+          33.39999999999782,
+          49.900000000001455,
+          33.39999999999782,
+          33.400000000001455,
+          33.29999999999927,
+          33.29999999999927,
+          33.30000000000291,
+          33.29999999999927,
+          50,
+          33.39999999999782,
+          33.30000000000291,
+          33.29999999999927,
+          50.099999999998545,
+          49.900000000001455,
+          33.29999999999927,
+          50.099999999998545,
+          33.30000000000291,
+          50,
+          50,
+          33.39999999999782,
+          50,
+          33.29999999999927,
+          50,
+          49.900000000001455,
+          33.400000000001455,
+          50,
+          50,
+          33.39999999999782,
+          49.900000000001455,
+          33.29999999999927,
+          50.099999999998545,
+          49.900000000001455,
+          33.400000000001455,
+          50,
+          50,
+          33.29999999999927,
+          66.70000000000073,
+          66.59999999999854,
+          50,
+          50,
+          33.400000000001455,
+          50,
+          50,
+          33.29999999999927,
+          50,
+          50,
+          33.29999999999927,
+          50,
+          50,
+          33.400000000001455,
+          50,
+          50,
+          33.29999999999927,
+          49.89999999999782,
+          50.10000000000218,
+          33.29999999999927,
+          50,
+          50,
+          33.29999999999927,
+          50,
+          50,
+          33.29999999999927
+        ],
+        "medianMs": 33.400000000001455,
+        "p95Ms": 50.099999999998545,
+        "meanMs": 39.44249999999999,
+        "render": {
+          "frame": 6153,
+          "calls": 1,
+          "triangles": 1,
+          "points": 0,
+          "lines": 0
+        },
+        "memory": {
+          "geometries": 661,
+          "textures": 303
+        }
+      },
+      "sha256": "4ce8d8dbabda25c42f1f4740f991aa6510e8ca30e2d5a137e0da3b4fedf049fa",
+      "errors": []
+    }
+  ],
+  "browserCgroup": {
+    "parent": "/user.slice/user-1000.slice/user@1000.service/terminator.slice/terminator-v2.slice/terminator-v2-integration-reboot.service",
+    "processes": [
+      {
+        "pid": 12815,
+        "type": "browser",
+        "cgroup": "/user.slice/user-1000.slice/user@1000.service/terminator.slice/terminator-v2.slice/terminator-v2-integration-reboot.service"
+      },
+      {
+        "pid": 12853,
+        "type": "GPU",
+        "cgroup": "/user.slice/user-1000.slice/user@1000.service/terminator.slice/terminator-v2.slice/terminator-v2-integration-reboot.service"
+      },
+      {
+        "pid": 12855,
+        "type": "network.mojom.NetworkService",
+        "cgroup": "/user.slice/user-1000.slice/user@1000.service/terminator.slice/terminator-v2.slice/terminator-v2-integration-reboot.service"
+      }
+    ],
+    "sessionBus": "disabled for child only"
+  },
+  "harnessSources": {
+    "tools/capture-scene-targets.mjs": "8f43da329e352f1a8b66adf2a7fb8c4488648845220631b306e2b58407e201f7",
+    "tools/v2/capture-browser.mjs": "a4c570107e00b033d83c8dbfd1ea42fe0c0c91afb23c9069b3fa94067779ba1a",
+    "tools/v2/capture-gpu-timing.mjs": "26e9ed747e88e9f05fa9b5b565b405030872d7a4d7d12d558a0fbd04518bd3e0",
+    "tools/v2/capture-pilot-overrides.mjs": "45fc074d6c79d773de87819a7ac792b6b91c86db981958b979729e83fb8669aa",
+    "tools/v2/capture-transparency-diagnostic.mjs": "b59c000e255c148ee1da434e948cb621286485c0249a05a35abe5f762579f443"
+  }
+}
