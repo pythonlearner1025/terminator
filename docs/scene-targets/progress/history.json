@@ -174,7 +174,18 @@
       "diagnostic": false,
       "path": "snapshots/r8-interior-lighting-16/index.html",
       "generated_at": "2026-09-14T04:05:17+00:00"
+    },
+    {
+      "id": "r10-performance-17",
+      "label": "R10 performance and startup improvements",
+      "revision": "R10",
+      "review_status": "needs-revision",
+      "source_commit": "fbb69eb9554b887c8789aa345004e5907c657a9c",
+      "base_commit": "fbb69eb9554b887c8789aa345004e5907c657a9c",
+      "diagnostic": false,
+      "path": "snapshots/r10-performance-17/index.html",
+      "generated_at": "2026-09-14T07:55:10+00:00"
     }
   ],
-  "latest": "r8-interior-lighting-16"
+  "latest": "r10-performance-17"
 }

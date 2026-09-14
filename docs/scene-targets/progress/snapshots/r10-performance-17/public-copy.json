@@ -4,7 +4,7 @@
   "recap_title": "Toward V2 — performance milestone 17",
   "recap": [
     "Goal: bring V2 into the Future War style of James Cameron’s original The Terminator (1984). The middle column is AI-generated reference; the right column shows actual game pixels.",
-    "Performance work: reduced collision and traversal costs, shortened startup, and removed enemy health bars and labels. R10 assets and high quality remain.",
+    "Performance work: reduced collision and scene traversal costs, shortened startup, and removed enemy health bars and labels while retaining the current R10 assets and high quality.",
     "Measured on Linux with an NVIDIA RTX 3090 Ti: combined native combat 20.9 FPS; cold/warm editor Play to control 31.8/30.3 seconds, including a fixed 3-second menu dwell. Mac performance is unmeasured.",
     "Remaining: R10 supersedes milestone 16. Art and smoke refinement are deferred to GitHub issue #2. Visual parity and user approval are not claimed; milestone 17 remains Needs revision."
   ],
