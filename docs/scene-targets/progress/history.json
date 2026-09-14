@@ -141,7 +141,18 @@
       "diagnostic": true,
       "path": "snapshots/r6-open-ruins-dense-smoke/index.html",
       "generated_at": "2026-09-14T01:10:49+00:00"
+    },
+    {
+      "id": "r8-narrow-smoke-14",
+      "label": "Narrow smoke columns and R7 concrete response",
+      "revision": "R8",
+      "review_status": "needs-revision",
+      "source_commit": null,
+      "base_commit": "44cdb6781a07b2bb719d542e1a11a53e68d2c78b",
+      "diagnostic": true,
+      "path": "snapshots/r8-narrow-smoke-14/index.html",
+      "generated_at": "2026-09-14T01:59:28+00:00"
     }
   ],
-  "latest": "r6-open-ruins-dense-smoke"
+  "latest": "r8-narrow-smoke-14"
 }

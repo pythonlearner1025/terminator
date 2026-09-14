@@ -1,0 +1,292 @@
+{
+  "schema": "v2-review-gallery-1",
+  "milestone": "r8-narrow-smoke-14",
+  "label": "Narrow smoke columns and R7 concrete response",
+  "revision": "R8",
+  "review_status": "needs-revision",
+  "status_label": "DIAGNOSTIC / Needs revision",
+  "reviewed_commit": null,
+  "base_commit": "44cdb6781a07b2bb719d542e1a11a53e68d2c78b",
+  "capture_mode": "Diagnostic browser module overrides; Actual PlayerView; first-wave start held still; default map state; fixed presentation tick; no enemies advanced",
+  "diagnostic_overrides": [
+    {
+      "owner": "architecture",
+      "commit": "446828c6eb73d90e6d70ee16e47aa8b29bf05a6b",
+      "sourceFiles": {
+        "assets/v2/architecture/LICENSE.txt": "9000ef79bbd4e1ad058ccb5c88750520c99fd9b717406a33863cf102af59dff5",
+        "assets/v2/architecture/rubble-patches.json": "0d41a1f506c812ce9a1ee073c6f06c93537f40c081db38d6aaf8505b072e7077",
+        "lib/view/v2/architecture-bake.js": "7d9b0173dd9475c3a130b41f079848bc48e7f580c0898a1c3c2123eb82b30be4",
+        "lib/view/v2/architecture-layout.js": "eec54e2bb4be7b6987c9424475d51ad83484264a3cc9831417416b26e73f16c4",
+        "lib/view/v2/architecture-morphology.js": "25191728ed9ed7a87aeba1edb9c831a779a9cd512a62de1bbad103224dd91749",
+        "lib/view/v2/architecture-rubble.js": "7842872094efb565fb49fe0c377bf76cb54e4c6043cc1591ad271580d5f78dd3",
+        "lib/view/v2/architecture-shells.js": "4a3b50121f8381621fc2284e78cb337fd349d76dc72033fe530086f05878c414",
+        "lib/view/v2/architecture-skyline.js": "a3ca3de1d31c81eb0d4dfbd5f0697b0bf779f0f020deb89ffca5bcfec4fe5603",
+        "lib/view/v2/architecture.js": "95d1f245e22a652f34a9a0fd485f2cc01fef444c60af46690413d621cd34d8d6"
+      }
+    },
+    {
+      "owner": "lighting",
+      "commit": "1a2f13fc9c534fade1119cbcbfee5f1c2c249de0",
+      "sourceFiles": {
+        "assets/v2/lighting/PROVENANCE.txt": "aae48bdc73f88127f03cd56eb29b87af52abe7b012c76179ff2c1704ccab8e51",
+        "assets/v2/lighting/manifest.json": "1241acbf90826145c6306e11d213dd1ec3fef6780c5946d13d6428b7a3be3794",
+        "assets/v2/lighting/plume-0.rgba": "b25fe316202f9e7dfcd84f14d3619b90b184b7fb07b850fa398a7b65ed382260",
+        "assets/v2/lighting/plume-1.rgba": "8b7aa80cdbc2b7d4b9127f8aa61f5dc57bc03171bc699a2c0bf9f8d0e41d8471",
+        "assets/v2/lighting/plume-2.rgba": "17df3092a51979857e8bb39d3786e268bda63251160b6f0f1acac395ae58732f",
+        "assets/v2/lighting/plume-3.rgba": "004fcbe1f3a193e3a28703d14c07e20aa798d492e200dde3724da42fae238c06",
+        "lib/view/v2/lighting-bake.js": "a6d7cc093b784e28ee3fc68b04f232984e87e8737fe8f3fa66810a14ee5b79da",
+        "lib/view/v2/lighting-noise.js": "651161371ace171186b60a61a856f1a434c6350f69fb068aa449ffcd5b395452",
+        "lib/view/v2/lighting.js": "ece472d694df0fc510545eeef9b5b1c62dd5fdea88bf6c92809833066f1d9674"
+      }
+    }
+  ],
+  "transparency_diagnostic": null,
+  "harness_sources": {
+    "tools/capture-scene-targets.mjs": "90ad7ebe521d0512e5586dca3b57b55ac30145fb04576159a24a24cdee776c05",
+    "tools/v2/capture-browser.mjs": "cd4b99b8b610eff03de9b23ced57f39987e81a1033873e7b9fa0163ceccc683f",
+    "tools/v2/capture-gpu-timing.mjs": "26e9ed747e88e9f05fa9b5b565b405030872d7a4d7d12d558a0fbd04518bd3e0",
+    "tools/v2/capture-pilot-overrides.mjs": "d70653ebf752f970e802389cabdd4342f7e2f03b0315b192eedb5982ac1880fb",
+    "tools/v2/capture-transparency-diagnostic.mjs": "b59c000e255c148ee1da434e948cb621286485c0249a05a35abe5f762579f443"
+  },
+  "scene_approved": false,
+  "diagnostic": true,
+  "generated_at": "2026-09-14T01:59:28+00:00",
+  "pairing_source_review": null,
+  "capture_dates": {
+    "first": "2026-09-14T01:59:28+00:00",
+    "last": "2026-09-14T01:59:28+00:00",
+    "basis": "Source PNG file modification times; capture manifest does not record acquisition timestamps."
+  },
+  "candidate_source": "v2-narrow-smoke-full-01",
+  "baseline_source": "v2-linux-baseline-02",
+  "candidate_manifest_sha256": "8c4ed84fd4002c42ba50b5f7fbf49b0b5e6e6ae696355b70475ebd8180e498a0",
+  "baseline_manifest_sha256": "e306646ee6a459336045685051c5e2acba43763ad9f83b9c6fc9406b6f829edb",
+  "verified_source_files": {
+    "assets/main.scene.gltf": "cc912950518e6712a00d3e735a7dca54b1ede6fdd54c88c9950347b9d86a3287",
+    "assets/models/map/rubble-1x1p5x12-zh655b/rubble-1x1p5x12-zh655b.gltf": "60d4db6cbdfce6270c088979ccbde152130a6cd7a0f7ac16a1ccafba5e205b63",
+    "assets/v2/architecture/LICENSE.txt": "9000ef79bbd4e1ad058ccb5c88750520c99fd9b717406a33863cf102af59dff5",
+    "assets/v2/architecture/rubble-patches.json": "0d41a1f506c812ce9a1ee073c6f06c93537f40c081db38d6aaf8505b072e7077",
+    "assets/v2/effects/particles.png": "c51d4f212ef0be4336b9321f7bc17416679bbe7f925a46d7d8b6ad602ede8fc9",
+    "assets/v2/effects/provenance.json": "2ec3364d98fa49c2aa8537709ea31a18bd63d658352a2a17536bb9735383750f",
+    "assets/v2/ground/coverage.json": "8f472a147602206517bae5e529f919b962ca0c48bbf08bb911d60311e0c5e469",
+    "assets/v2/ground/fragments.json": "734bf57d8fb4917954caf237686f601eda91b020628b683647d28b32b3869b87",
+    "assets/v2/materials/concrete-albedo.jpg": "136999c1feaf47cdfaec91e492522d7ceea653bba61ab2d903772c3025b60d40",
+    "assets/v2/materials/concrete-surface.png": "82c155c2e2c5b268cc32bcf4b994464e4564efca4da901c6a2a6cd1b4661fa57",
+    "assets/v2/materials/ground-albedo.jpg": "bb7888963f2134c5025bf056111cacb0d91b20af1837418a59dd2874c1d15682",
+    "assets/v2/materials/ground-surface.png": "412fcc8911ba038340f22916e8dbd0582c91d2ce77374f95dd83ba3626a91e78",
+    "assets/v2/materials/photo-leaking-LICENSE.txt": "799101068c143f87455bbda9e9482dcadd1b17cef6f06bff01850c8b4ebaa456",
+    "assets/v2/materials/photo-provenance.json": "950b1ed091f365f27d0b7a88a660cbf7311dea7f6b7c81c4fb9972f698dac3e8",
+    "assets/v2/materials/photo-soffit-albedo.jpg": "a0b064e43c9c485ad28ac366bd413d9360aba9094c1afa33ce33ca3647e2e202",
+    "assets/v2/materials/photo-soffit-normal.png": "bc458f1a141363a1fe963933ef6d2b84214d5a9b3fb7db4b2914c05697bdab93",
+    "assets/v2/materials/photo-soffit-orm.png": "54d9021f5178eef258dfda6eb7edfb4f821a4f0c72f2b0e06e7f793ebff441f4",
+    "assets/v2/materials/photo-soffit-provenance.json": "8c3d8337bab706c50ce94052caa5d3c009079dce746ba0fa0f3592c1fed6bbbd",
+    "assets/v2/materials/photo-spall-LICENSE.txt": "f46dfb02b2c2723589afa6e94522f7b1dba22fd382c5a1a3df4b22da30e0f12c",
+    "assets/v2/materials/photo-spall-albedo.png": "7e583dd25ae231549d439c1545de59e4718a4f55314f35ecab38ac48123361a0",
+    "assets/v2/materials/photo-spall-normal.png": "9972090216d7086dcb25c265dbbc5810412a4059836a8edd011a4890b6aa8fa8",
+    "assets/v2/materials/photo-spall-orm.png": "69099fe17618f71e756007ad59112567c25d7625e74fcc9ada9887fa1873f51b",
+    "assets/v2/materials/photo-spall-provenance.json": "d4648c77bfe3989cffe5c582da73d44c444e791aa2795438693e8a5e45cc8d2c",
+    "assets/v2/materials/photo-worn-LICENSE.txt": "4358adca4c173de5717482607b3cd0e88ff33746bf97fb09be1ee98d0f658ec2",
+    "assets/v2/materials/photo-worn-albedo.jpg": "a7d583a3b1c5608fc04cf7d425ff6abeb6d82de8d62ccb1446af5f95ccfc86f1",
+    "assets/v2/materials/photo-worn-normal.png": "8de9fa5fa13f7520367129c796c55181c17ccd7e2d7f4bbdb30a8fba6482e392",
+    "assets/v2/materials/photo-worn-orm.png": "cf82a4dbd211d6b67967d43760a6cde27bd8eb74aa877de4b8fb96653a411894",
+    "assets/v2/materials/provenance.json": "b2a2268d7c338df3ce44baf88eed76119f6d683c1f361275e91b602fc0455cb5",
+    "assets/v2/materials/substrate-rubble-LICENSE.txt": "0d1d27db6d24bfb3a02824678c5f2d01595aea03b9c20f50f4be10bfb571fd56",
+    "assets/v2/materials/substrate-rubble-albedo.jpg": "8d3d674936965e0ea6463b319109b12b2668370e1817dc5a54f4ebc4d025f7c1",
+    "assets/v2/materials/substrate-rubble-normal.png": "e55623a2e6101067faad327f5d5c6531c503e77bceb9cde32e2545d7ba0a318f",
+    "assets/v2/materials/substrate-rubble-orm.png": "79f6551d9653daddd9c51d93f169aede3833834f5f1d8a47756e1832bbd7e11d",
+    "assets/v2/materials/substrate-rubble-provenance.json": "189facc917f32976a038db640ce467cde1d0844234139b2a444fe4e2ede0af4b",
+    "generators/v2-preview.js": "01da663bd75e4e65ed9db145ed059beadfade819f3ca03273f496b6e276c0968",
+    "lib/view/map-batching.js": "b9ae35ad2a1600c2192bc1355a4ec502d3b62373ccea9f857931d6adb759ff69",
+    "lib/view/map.js": "06674110a900308870a477b57c63ad152e6f4393f5ba1f0e3dca43f1fdd951b9",
+    "lib/view/v2/architecture-bake.js": "7d9b0173dd9475c3a130b41f079848bc48e7f580c0898a1c3c2123eb82b30be4",
+    "lib/view/v2/architecture-layout.js": "eec54e2bb4be7b6987c9424475d51ad83484264a3cc9831417416b26e73f16c4",
+    "lib/view/v2/architecture-morphology.js": "1a48b8e6fc5d2acd46a54e7eeb375b34e1d983e7471af05db1488bb2733568d0",
+    "lib/view/v2/architecture-rubble.js": "7842872094efb565fb49fe0c377bf76cb54e4c6043cc1591ad271580d5f78dd3",
+    "lib/view/v2/architecture-shells.js": "4a3b50121f8381621fc2284e78cb337fd349d76dc72033fe530086f05878c414",
+    "lib/view/v2/architecture.js": "a85576e72d183942b1f38b68f90390ad7e20ba38f44e0d0bc8239ea00f279e62",
+    "lib/view/v2/effects-simulation.js": "6b00ad123c0209e823dc1f01d431242eadbf5b274973b268d6b89f8590ddc60c",
+    "lib/view/v2/effects-textures.js": "e84f88eb64206681207eb3d7ed4aaa07de15e8cd04b17a9cd1d2be38f875aed7",
+    "lib/view/v2/effects.js": "ae9601ca4f3ee4a69a07b1bb4b81158ba1caec167c56879d7cda14ae58385257",
+    "lib/view/v2/fog.js": "ac2bae21ec6893a53eaa9b22ccbdb81c6c494b591c8fb77e498c064a64ded1d5",
+    "lib/view/v2/ground-layout.js": "e1bef0bf98ab1b96a691b1a4d78039e12f0b3f14d027d96124b1c6da7340fcdc",
+    "lib/view/v2/ground.js": "f8ff76f1ef5ec9e9cbce41d92534c13be1750e27c0c90678362d359d412fa365",
+    "lib/view/v2/lighting-noise.js": "f9d6e4b5e46687667d9cffd6bc2df3ca0dff1fea07c4a372786ba4e761ec9d2b",
+    "lib/view/v2/lighting.js": "61214668919a2c027cb6b48a86411b642234571e376423567eb77b013f66d885",
+    "lib/view/v2/materials-moisture.js": "94a5f8781dafe86d9a3ddb336e17251d9f3a2feaeb15a8d7bb0c62f459b90681",
+    "lib/view/v2/materials-shader.js": "fb3829b2b183dc3ba29e945c73dd4023f7b3527485ab2471385b90662b6e394c",
+    "lib/view/v2/materials-spall.js": "fa2bce186e0d3828d921d47c3f860330376db5223ce968f4e7518585c9bdbc44",
+    "lib/view/v2/materials-substrate.js": "debc04a92676dbc95c56e29c12774eeafea7318ad93bdf6eb412c23ffa65c4c4",
+    "lib/view/v2/materials-weathering.js": "e6d6ccf26a759cbfde6ff15cd4429cf1c9043aa71b87f00ed20b814d7f969838",
+    "lib/view/v2/materials.js": "96d3fc2579d1f3324e894dc15db72303c90ea819c701e4171ac435dc2dd009da",
+    "lib/view/v2/transparency.js": "96c91f37de88204435863aae1e59401a1c54729030bd4f69b4e36c26808fdf2f",
+    "main.js": "4c666d789c038e6c3a7d3248cfd36ab28dcd2234168dc229fd042395280a7950",
+    "package.json": "53bba145dd7cfe3eabf97a2f647235748727fb6a086483e64b0e6fd4612b76ca"
+  },
+  "harness_sha256": "90ad7ebe521d0512e5586dca3b57b55ac30145fb04576159a24a24cdee776c05",
+  "views": [
+    "01-courtyard",
+    "02-cargo",
+    "03-barracks",
+    "04-service",
+    "05-rooftop"
+  ],
+  "images": [
+    {
+      "view": "01-courtyard",
+      "group": "original",
+      "path": "images/original-01-courtyard.png",
+      "source": "before/01-courtyard.png",
+      "sha256": "94ddff09a27b2771182530b8d0191bd635b6fe3a23b548a9bbc5cd6fb3520ee7"
+    },
+    {
+      "view": "02-cargo",
+      "group": "original",
+      "path": "images/original-02-cargo.png",
+      "source": "before/02-cargo.png",
+      "sha256": "04926e866fe7aff750203cc9387fbee7012eb7d6acca29279b36869dad32e066"
+    },
+    {
+      "view": "03-barracks",
+      "group": "original",
+      "path": "images/original-03-barracks.png",
+      "source": "before/03-barracks.png",
+      "sha256": "6fdf2a6a0a80e8cd0f8eb3ae3505e107c821edd2b5c3c83d1a2b64f3a969ae4c"
+    },
+    {
+      "view": "04-service",
+      "group": "original",
+      "path": "images/original-04-service.png",
+      "source": "before/04-service.png",
+      "sha256": "00abced4b8453d2bccbe886286753b6cba72b76431c98f9dbcc42f87790ecd2f"
+    },
+    {
+      "view": "05-rooftop",
+      "group": "original",
+      "path": "images/original-05-rooftop.png",
+      "source": "before/05-rooftop.png",
+      "sha256": "bc9e506b0e4a255d896eaf31da5ae42ad8f759adde4c4f2fa7c04f2b44bb4b99"
+    },
+    {
+      "view": "01-courtyard",
+      "group": "target",
+      "path": "images/target-01-courtyard.png",
+      "source": "targets-v2/01-courtyard.png",
+      "sha256": "b11f51359fb5029f09b2e887126cb881cb11071a4121e8aecbfc7be15bfbecf6"
+    },
+    {
+      "view": "02-cargo",
+      "group": "target",
+      "path": "images/target-02-cargo.png",
+      "source": "targets-v2/02-cargo.png",
+      "sha256": "5db779c1b443198f21c6105cb58e240f62f8578b8b9c528832c5a3220ac7c227"
+    },
+    {
+      "view": "03-barracks",
+      "group": "target",
+      "path": "images/target-03-barracks.png",
+      "source": "targets-v2/03-barracks.png",
+      "sha256": "ca1e436d3767c8cad52d6a29b390e71ced3017d5b88d86a971e2617228251501"
+    },
+    {
+      "view": "04-service",
+      "group": "target",
+      "path": "images/target-04-service.png",
+      "source": "targets-v2/04-service.png",
+      "sha256": "93e48560e63d0ee828a338e46f83b5e7be4fb0e413b2aee1793f9b9bd99e7f0d"
+    },
+    {
+      "view": "05-rooftop",
+      "group": "target",
+      "path": "images/target-05-rooftop.png",
+      "source": "targets-v2/05-rooftop.png",
+      "sha256": "92b0e8dd6d1f1450beec3696509e8ebfa3f0b1582b0efd7469aaa762a32b6360"
+    },
+    {
+      "view": "01-courtyard",
+      "group": "candidate",
+      "path": "images/candidate-01-courtyard.png",
+      "source": "v2-narrow-smoke-full-01/01-courtyard.png",
+      "sha256": "da73776d1e11bf5e7e9be897ab1781c6e69bff227f3e684ea318714b5cf0e921"
+    },
+    {
+      "view": "02-cargo",
+      "group": "candidate",
+      "path": "images/candidate-02-cargo.png",
+      "source": "v2-narrow-smoke-full-01/02-cargo.png",
+      "sha256": "f376a2bc01f278cdc3de3242f4b9feab2e80428157203565e31b54d60f827116"
+    },
+    {
+      "view": "03-barracks",
+      "group": "candidate",
+      "path": "images/candidate-03-barracks.png",
+      "source": "v2-narrow-smoke-full-01/03-barracks.png",
+      "sha256": "f8638053d11085bf04ddd8f5f984658280d12b2d109af8a637a383b0d53875dc"
+    },
+    {
+      "view": "04-service",
+      "group": "candidate",
+      "path": "images/candidate-04-service.png",
+      "source": "v2-narrow-smoke-full-01/04-service.png",
+      "sha256": "a13a4bd8739dc3ab3172f480c39dcf81f2de062a96db0f4947689d5a4e4ff5f5"
+    },
+    {
+      "view": "05-rooftop",
+      "group": "candidate",
+      "path": "images/candidate-05-rooftop.png",
+      "source": "v2-narrow-smoke-full-01/05-rooftop.png",
+      "sha256": "b99411103746e109ab5897d5c0c671bd42ed3f8ea6d8bb3d5c85a06771988987"
+    },
+    {
+      "view": "01-courtyard",
+      "group": "linux",
+      "path": "images/linux-01-courtyard.png",
+      "source": "v2-linux-baseline-02/01-courtyard.png",
+      "sha256": "3e3bc915e82900511519f664c6d756a228a3b549aa0cab43b675118e5c95e100"
+    },
+    {
+      "view": "02-cargo",
+      "group": "linux",
+      "path": "images/linux-02-cargo.png",
+      "source": "v2-linux-baseline-02/02-cargo.png",
+      "sha256": "e0c3ceeec082e66367c90b9e74fc2db3d2ee6dbd0cae2da88b767fd51c1edadf"
+    },
+    {
+      "view": "03-barracks",
+      "group": "linux",
+      "path": "images/linux-03-barracks.png",
+      "source": "v2-linux-baseline-02/03-barracks.png",
+      "sha256": "e8247cc854ee514a46642f93b66138cbb77c4bb0fcb36c8ba664c5a7e97d618a"
+    },
+    {
+      "view": "04-service",
+      "group": "linux",
+      "path": "images/linux-04-service.png",
+      "source": "v2-linux-baseline-02/04-service.png",
+      "sha256": "e9ef494e4a3ed645c25ee0e62013ab09f5d6ba6851ebb3ced6c6683fb780f19c"
+    },
+    {
+      "view": "05-rooftop",
+      "group": "linux",
+      "path": "images/linux-05-rooftop.png",
+      "source": "v2-linux-baseline-02/05-rooftop.png",
+      "sha256": "dfd14e26da68ac33e72ae1b606dc0f0df3e3574059efe5f99e6100a9eff584fa"
+    }
+  ],
+  "manifests": [
+    {
+      "group": "original",
+      "path": "original-capture.json",
+      "sha256": "a47a0a3cc25d14c07e1e0888a380326ba5071cf81a6961c66dcbaa664b268038"
+    },
+    {
+      "group": "candidate",
+      "path": "candidate-capture.json",
+      "sha256": "8c4ed84fd4002c42ba50b5f7fbf49b0b5e6e6ae696355b70475ebd8180e498a0"
+    },
+    {
+      "group": "linux",
+      "path": "linux-capture.json",
+      "sha256": "e306646ee6a459336045685051c5e2acba43763ad9f83b9c6fc9406b6f829edb"
+    }
+  ]
+}
