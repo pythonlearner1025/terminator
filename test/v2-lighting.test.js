@@ -275,7 +275,7 @@ test('local baked-plume loading exposes ready and survives disposal before compl
     window.location={origin:'http://v2-unit.invalid'}
     const requests=[]
     globalThis.fetch=(url,options)=>new Promise(resolve=>requests.push({url,options,resolve}))
-    const f=fixture(),h=mountV2Lighting(f)
+    const f=fixture(),h=mountV2Lighting({...f,loadNoisePixels:null})
     assert.equal(requests.length,4)
     const map=h.root.getObjectByName('V2 distant smoke bank 1').material.map
     for(const [i,r] of requests.entries()) {
@@ -285,7 +285,7 @@ test('local baked-plume loading exposes ready and survives disposal before compl
     await h.ready;assert.equal(map.image.width,512);assert.equal(map.premultiplyAlpha,false)
     h.dispose()
     requests.length=0
-    const early=mountV2Lighting(f),earlyMap=early.root.getObjectByName('V2 distant smoke bank 1').material.map
+    const early=mountV2Lighting({...f,loadNoisePixels:null}),earlyMap=early.root.getObjectByName('V2 distant smoke bank 1').material.map
     const before=earlyMap.image;let count=0
     earlyMap.addEventListener('dispose',()=>count++)
     early.dispose()

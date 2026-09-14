@@ -96,3 +96,28 @@ test('idle-light warmup preserves a fixed visible zero-intensity light policy', 
   const states=[];f.renderer.compileAsync=async()=>states.push([light.visible,light.intensity])
   await f.run();assert.deepEqual(states,[[true,1.4],[true,0]]);assert.deepEqual([light.visible,light.intensity],[true,0])
 })
+
+test('active compilation overlaps uploads but gates rendering and the idle variant', async () => {
+  const f=fixture(),ready=Promise.withResolvers()
+  f.object.material={isMaterial:true,map:{isTexture:true,image:{width:1,height:1,complete:true}}}
+  let calls=0
+  f.renderer.compileAsync=()=>{f.events.push(++calls===1?'active':'idle');return calls===1?ready.promise:Promise.resolve()}
+  f.renderer.initTexture=()=>f.events.push('upload')
+  f.manager.ctx.viewer.setDirty=()=>f.events.push('render')
+  const pending=f.run();await tick()
+  assert(f.events.indexOf('active')<f.events.indexOf('upload'))
+  assert(!f.events.includes('render'));assert(!f.events.includes('idle'));assert(!f.events.includes('finish'))
+  ready.resolve();await pending
+  assert(f.events.indexOf('render')<f.events.indexOf('idle'));assert(f.events.includes('finish'))
+})
+
+test('upload failure restores state and observes a later compile failure', async () => {
+  const f=fixture(),ready=Promise.withResolvers()
+  f.object.material={isMaterial:true,map:{isTexture:true,image:{width:1,height:1,complete:true}}}
+  f.renderer.compileAsync=()=>ready.promise
+  f.renderer.initTexture=()=>{throw Error('upload failed')}
+  await assert.rejects(f.run(),/upload failed/)
+  assert.deepEqual([f.object.count,f.object.visible,f.object.frustumCulled],[0,false,true])
+  ready.reject(Error('late compile failure'));await tick()
+  assert(!f.events.includes('finish'))
+})

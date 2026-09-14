@@ -93,6 +93,7 @@
       ]
     },
     "plugins": [
+      "./lib/view/v2/exact-image-source.plugin.js",
       "./scripts/FirstPerson.plugin.js"
     ]
   }
