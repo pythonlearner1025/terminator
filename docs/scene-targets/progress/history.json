@@ -12,7 +12,7 @@
     },
     {
       "id": "r3-diagnostic",
-      "label": "R3 combined pilot \u2014 DIAGNOSTIC",
+      "label": "R3 combined pilot — DIAGNOSTIC",
       "revision": "R3",
       "review_status": "needs-revision",
       "source_commit": null,
@@ -23,7 +23,7 @@
     },
     {
       "id": "r3-light-fix",
-      "label": "R3 authoring-light fix \u2014 DIAGNOSTIC",
+      "label": "R3 authoring-light fix — DIAGNOSTIC",
       "revision": "R3",
       "review_status": "needs-revision",
       "source_commit": null,
@@ -34,7 +34,7 @@
     },
     {
       "id": "r3-ground-field",
-      "label": "R3 broader ground field \u2014 DIAGNOSTIC",
+      "label": "R3 broader ground field — DIAGNOSTIC",
       "revision": "R3",
       "review_status": "needs-revision",
       "source_commit": null,
@@ -45,7 +45,7 @@
     },
     {
       "id": "r3-ground-separated",
-      "label": "R3 separated ground \u2014 DIAGNOSTIC",
+      "label": "R3 separated ground — DIAGNOSTIC",
       "revision": "R3",
       "review_status": "needs-revision",
       "source_commit": null,
@@ -56,7 +56,7 @@
     },
     {
       "id": "r3-light-ground-depth",
-      "label": "R3 lighting and ground depth \u2014 DIAGNOSTIC",
+      "label": "R3 lighting and ground depth — DIAGNOSTIC",
       "revision": "R3",
       "review_status": "needs-revision",
       "source_commit": null,
@@ -67,7 +67,7 @@
     },
     {
       "id": "r4-rubble-substrate",
-      "label": "R4 continuous rubble substrate \u2014 DIAGNOSTIC",
+      "label": "R4 continuous rubble substrate — DIAGNOSTIC",
       "revision": "R4",
       "review_status": "needs-revision",
       "source_commit": null,
@@ -78,7 +78,7 @@
     },
     {
       "id": "r4-fog-binding-defect",
-      "label": "R4 fog participation; known floor sampler defect \u2014 DIAGNOSTIC",
+      "label": "R4 fog participation; known floor sampler defect — DIAGNOSTIC",
       "revision": "R4",
       "review_status": "needs-revision",
       "source_commit": null,
@@ -89,7 +89,7 @@
     },
     {
       "id": "r4-corrected-bindings-smoke",
-      "label": "R4 corrected floor and ceiling; smoke needs revision \u2014 DIAGNOSTIC",
+      "label": "R4 corrected floor and ceiling; smoke needs revision — DIAGNOSTIC",
       "revision": "R4",
       "review_status": "needs-revision",
       "source_commit": null,
@@ -100,7 +100,7 @@
     },
     {
       "id": "r4-repaired-walls-quiet-sky",
-      "label": "R4 repaired wall shapes and quieter smoke; fog encoding defect identified \u2014 DIAGNOSTIC",
+      "label": "R4 repaired wall shapes and quieter smoke; fog encoding defect identified — DIAGNOSTIC",
       "revision": "R4",
       "review_status": "needs-revision",
       "source_commit": null,
@@ -111,7 +111,7 @@
     },
     {
       "id": "r5-linear-fog-spall",
-      "label": "R5 linear fog restores depth; localized concrete detail \u2014 DIAGNOSTIC",
+      "label": "R5 linear fog restores depth; localized concrete detail — DIAGNOSTIC",
       "revision": "R5",
       "review_status": "needs-revision",
       "source_commit": null,
@@ -188,7 +188,7 @@
     },
     {
       "id": "r11-engine019-performance-18",
-      "label": "Kite3D 0.19 alpha 2 \u2014 frame and startup work",
+      "label": "Kite3D 0.19 alpha 2 — frame and startup work",
       "revision": "R11",
       "review_status": "needs-revision",
       "source_commit": "6552518fe50b1cd4f818e1db5a03097b15b88f8b",
@@ -196,7 +196,18 @@
       "diagnostic": false,
       "path": "snapshots/r11-engine019-performance-18/index.html",
       "generated_at": "2026-09-14T10:22:40+00:00"
+    },
+    {
+      "id": "r12-loading-performance-19",
+      "label": "V2 appearance retained — loading and Mac validation",
+      "revision": "R12",
+      "review_status": "needs-revision",
+      "source_commit": "927fc43fa0ee864752cfb1a5ac2dde6feaefdef2",
+      "base_commit": "927fc43fa0ee864752cfb1a5ac2dde6feaefdef2",
+      "diagnostic": false,
+      "path": "snapshots/r12-loading-performance-19/index.html",
+      "generated_at": "2026-09-14T11:19:32+00:00"
     }
   ],
-  "latest": "r11-engine019-performance-18"
+  "latest": "r12-loading-performance-19"
 }
