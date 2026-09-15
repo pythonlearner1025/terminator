@@ -1,0 +1,246 @@
+{
+  "productionFileSha256": {
+    "lib/view/ragdoll.js": "097d68ec03239e9c66ef90d6c54712ab99c49b263c2814ea5fa85bc6d081a625",
+    "lib/view/units.js": "1410b3ceba7582ccfddbc317218841b62fbb52dd029ad74892d4859f1810525e"
+  },
+  "cause": "Synchronous Mesh2 materialChanged unregister disposed last-use pooled materials and shared textures. Warmup variants existed, then warmup reset released all six active/idle fade program references. Later fade keys match exactly.",
+  "naturalSoakComparison": [
+    {
+      "naturalProgramId": 236,
+      "name": "Gore piece fade",
+      "probeWarmupId": 206,
+      "cacheKeyDifferences": []
+    },
+    {
+      "naturalProgramId": 238,
+      "name": "Pooled fading wreck metal",
+      "probeWarmupId": 216,
+      "cacheKeyDifferences": []
+    },
+    {
+      "naturalProgramId": 241,
+      "name": "Pooled HK debris",
+      "probeWarmupId": 209,
+      "cacheKeyDifferences": []
+    }
+  ],
+  "old": {
+    "startInputReadyMs": 5139.0999999940395,
+    "warmupBeforeReset": 223,
+    "warmupAfterReset": 217,
+    "rounds": [
+      {
+        "round": 1,
+        "actualFadeDraws": [
+          {
+            "material": "Pooled fading wreck metal",
+            "id": 236,
+            "inStartInventory": false,
+            "exactWarmupKeyMatch": true,
+            "warmupId": 216,
+            "cacheKeySha256": "0681febe577cfc9d0aa715ccd613c3854f45e821451b9e78adee1ac62bdb74e7"
+          },
+          {
+            "material": "Pooled HK debris",
+            "id": 237,
+            "inStartInventory": false,
+            "exactWarmupKeyMatch": true,
+            "warmupId": 209,
+            "cacheKeySha256": "e22d84f20a726a72e1338a2df06fbafd8aa4985848eda3b9dc324ad67cfdc98f"
+          },
+          {
+            "material": "Gore piece fade",
+            "id": 238,
+            "inStartInventory": false,
+            "exactWarmupKeyMatch": true,
+            "warmupId": 206,
+            "cacheKeySha256": "1076b139f572438165adeb3ef2b696868df154c2511584f414094cb667ceac5b"
+          }
+        ],
+        "disposedMaterials": 17,
+        "recordsAfterExpiry": 0
+      },
+      {
+        "round": 2,
+        "actualFadeDraws": [
+          {
+            "material": "Pooled fading wreck metal",
+            "id": 239,
+            "inStartInventory": false,
+            "exactWarmupKeyMatch": true,
+            "warmupId": 216,
+            "cacheKeySha256": "0681febe577cfc9d0aa715ccd613c3854f45e821451b9e78adee1ac62bdb74e7"
+          },
+          {
+            "material": "Gore piece fade",
+            "id": 240,
+            "inStartInventory": false,
+            "exactWarmupKeyMatch": true,
+            "warmupId": 206,
+            "cacheKeySha256": "1076b139f572438165adeb3ef2b696868df154c2511584f414094cb667ceac5b"
+          },
+          {
+            "material": "Pooled HK debris",
+            "id": 241,
+            "inStartInventory": false,
+            "exactWarmupKeyMatch": true,
+            "warmupId": 209,
+            "cacheKeySha256": "e22d84f20a726a72e1338a2df06fbafd8aa4985848eda3b9dc324ad67cfdc98f"
+          }
+        ],
+        "disposedMaterials": 17,
+        "recordsAfterExpiry": 0
+      }
+    ],
+    "stop": {
+      "runtimeRoots": [],
+      "world": null,
+      "owner": null,
+      "dormantRoot": null,
+      "ragdolls": null,
+      "programCount": 81,
+      "fadeKeysRemaining": 0
+    },
+    "globalProgramEvents": null,
+    "peakCgroupBytes": 3758972928,
+    "postStageAbort": "memory >3.5GiB",
+    "errors": []
+  },
+  "fixed": {
+    "startInputReadyMs": 5245.300000011921,
+    "warmupBeforeReset": 223,
+    "warmupAfterReset": 223,
+    "rounds": [
+      {
+        "round": 1,
+        "actualFadeDraws": [
+          {
+            "material": "Pooled fading wreck metal",
+            "id": 216,
+            "inStartInventory": true,
+            "exactWarmupKeyMatch": true,
+            "warmupId": 216,
+            "cacheKeySha256": "0681febe577cfc9d0aa715ccd613c3854f45e821451b9e78adee1ac62bdb74e7"
+          },
+          {
+            "material": "Gore piece fade",
+            "id": 206,
+            "inStartInventory": true,
+            "exactWarmupKeyMatch": true,
+            "warmupId": 206,
+            "cacheKeySha256": "1076b139f572438165adeb3ef2b696868df154c2511584f414094cb667ceac5b"
+          },
+          {
+            "material": "Pooled HK debris",
+            "id": 209,
+            "inStartInventory": true,
+            "exactWarmupKeyMatch": true,
+            "warmupId": 209,
+            "cacheKeySha256": "e22d84f20a726a72e1338a2df06fbafd8aa4985848eda3b9dc324ad67cfdc98f"
+          }
+        ],
+        "disposedMaterials": 0,
+        "recordsAfterExpiry": 0
+      },
+      {
+        "round": 2,
+        "actualFadeDraws": [
+          {
+            "material": "Pooled fading wreck metal",
+            "id": 216,
+            "inStartInventory": true,
+            "exactWarmupKeyMatch": true,
+            "warmupId": 216,
+            "cacheKeySha256": "0681febe577cfc9d0aa715ccd613c3854f45e821451b9e78adee1ac62bdb74e7"
+          },
+          {
+            "material": "Pooled HK debris",
+            "id": 209,
+            "inStartInventory": true,
+            "exactWarmupKeyMatch": true,
+            "warmupId": 209,
+            "cacheKeySha256": "e22d84f20a726a72e1338a2df06fbafd8aa4985848eda3b9dc324ad67cfdc98f"
+          },
+          {
+            "material": "Gore piece fade",
+            "id": 206,
+            "inStartInventory": true,
+            "exactWarmupKeyMatch": true,
+            "warmupId": 206,
+            "cacheKeySha256": "1076b139f572438165adeb3ef2b696868df154c2511584f414094cb667ceac5b"
+          }
+        ],
+        "disposedMaterials": 0,
+        "recordsAfterExpiry": 0
+      }
+    ],
+    "stop": {
+      "runtimeRoots": [],
+      "world": null,
+      "owner": null,
+      "dormantRoot": null,
+      "ragdolls": null,
+      "programCount": 81,
+      "fadeKeysRemaining": 0
+    },
+    "globalProgramEvents": [],
+    "peakCgroupBytes": 3271516160,
+    "postStageAbort": null,
+    "errors": []
+  },
+  "limits": {
+    "accelerated": "Only settled corpse age; normal update/render, combat damage/death, natural two-second fade and expiry, reset between rounds.",
+    "runtimeBrowsers": "Sequential only. Memory guard closures required fresh retry processes; old and final fixed completed stages used separate processes.",
+    "memory": "Hard/high 4GiB; Tasks384; close >3.5GiB. Final run reclaims task inactive file cache above3GiB, swap disabled; no global drops.",
+    "claims": "No sustained FPS/75FPS claim. Bounded fade test, not a new four-minute soak.",
+    "guardAttempts": [
+      {
+        "stage": "old startup only",
+        "startMs": 5160.4,
+        "peakBytes": 3758276608
+      },
+      {
+        "stage": "old complete; aborted during fixed reload",
+        "peakBytes": 3758972928
+      },
+      {
+        "stage": "fixed startup only",
+        "startMs": 4984.1
+      },
+      {
+        "stage": "fixed startup only; unsupported reclaim option",
+        "startMs": 5019.9,
+        "peakBytes": 3762438144
+      }
+    ]
+  },
+  "officialCheck": {
+    "mode": "headless",
+    "ok": true,
+    "outcomes": [
+      {
+        "name": "Playable",
+        "status": "pass"
+      },
+      {
+        "name": "Editable",
+        "status": "pass"
+      },
+      {
+        "name": "Persisted",
+        "status": "pass"
+      }
+    ],
+    "policy": {
+      "policy": "One 480x270 browser; official sequential headless check; JS old-space768MiB; own-cgroup abort3.5GiB",
+      "peakCgroupBytes": 3239395328,
+      "fileReclaims": 1
+    }
+  },
+  "cpuTests": {
+    "pass": 60,
+    "fail": 0,
+    "maxOldSpaceMiB": 512,
+    "concurrency": 1
+  }
+}
