@@ -9,7 +9,7 @@ not ok 1 - gore: fade swaps retain pooled materials and shared maps through rese
   error: |-
     fade entry must not dispose the old material or shared textures
     + actual - expected
-    
+
       {
         fade: 0,
     +   map: 1,
@@ -17,7 +17,7 @@ not ok 1 - gore: fade swaps retain pooled materials and shared maps through rese
     -   map: 0,
     -   original: 0
       }
-    
+
   code: 'ERR_ASSERTION'
   name: 'AssertionError'
   expected:
@@ -46,7 +46,7 @@ not ok 2 - skinned: fade swaps retain pooled materials and shared maps through r
   error: |-
     fade entry must not dispose the old material or shared textures
     + actual - expected
-    
+
       {
         fade: 0,
     +   map: 1,
@@ -54,7 +54,7 @@ not ok 2 - skinned: fade swaps retain pooled materials and shared maps through r
     -   map: 0,
     -   original: 0
       }
-    
+
   code: 'ERR_ASSERTION'
   name: 'AssertionError'
   expected:
@@ -85,7 +85,7 @@ not ok 3 - HK debris: fade swaps retain pooled materials and shared maps through
   error: |-
     fade entry must not dispose the old material or shared textures
     + actual - expected
-    
+
       {
         fade: 0,
     +   map: 1,
@@ -93,7 +93,7 @@ not ok 3 - HK debris: fade swaps retain pooled materials and shared maps through
     -   map: 0,
     -   original: 0
       }
-    
+
   code: 'ERR_ASSERTION'
   name: 'AssertionError'
   expected:
