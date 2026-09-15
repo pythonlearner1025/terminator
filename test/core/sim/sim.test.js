@@ -125,3 +125,39 @@ test('24 alive units simulate at least 30 times faster than real time', () => {
   assert.equal(result.player_died, false)
   assert.ok(speed >= 30, `expected at least 30x, measured ${speed.toFixed(1)}x`)
 })
+
+test('simulation summaries count early kills after their corpses retire', () => {
+  const map = structuredClone(new World({brains: {scout: idleBrain}}).map)
+  map.playerStart.pos = {x: 10, y: 0, z: 5}
+  map.spawnGates.find(gate => gate.id === 'N1').pos = {x: 10, y: 0, z: 0}
+  const result = simulate({
+    mapData: map,
+    waveConfig: {spawns: [
+      {t: 0, gate: 'N1', unit: 'scout', count: 1},
+      {t: 8, gate: 'N1', unit: 'scout', count: 1},
+    ], knobs: {gates: ['N1']}},
+    ghost: {inputs: Array.from({length: 12 * 60}, (_, tick) => ({
+      fire: [0, 30, 60, 480, 510, 540].includes(tick),
+    })), accuracy: {pistol: 1}},
+    brainFactory: nativeFactory,
+    maxSeconds: 12,
+  })
+  assert.equal(result.units.scout.spawned, 2)
+  assert.equal(result.units.scout.killed, 2)
+  assert.ok(result.time_to_clear >= 8)
+})
+
+test('simulation releases surviving script runtimes on completion and timeout', () => {
+  for (const maxWallSeconds of [10, -1]) {
+    let destroyed = 0
+    const run = () => simulate({
+      waveConfig: {spawns: [{t: 0, gate: 'N1', unit: 'scout', count: 1}], knobs: {gates: ['N1']}},
+      brainFactory: () => ({tick() {}, destroy() { destroyed++ }}),
+      maxSeconds: .1,
+      maxWallSeconds,
+    })
+    if (maxWallSeconds < 0) assert.throws(run, /wall-time limit/)
+    else run()
+    assert.equal(destroyed, 1, 'the spawned runtime must be released when simulate exits')
+  }
+})

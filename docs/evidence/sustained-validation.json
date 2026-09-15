@@ -1,0 +1,3062 @@
+{
+  "startedAt": "2026-09-14T23:55:27.950Z",
+  "durationSeconds": 240,
+  "viewport": [
+    480,
+    270
+  ],
+  "samples": [
+    {
+      "elapsedSeconds": 10.02190000000596,
+      "simulationSeconds": 10.266666666666667,
+      "activeEnemies": 6,
+      "units": 7,
+      "eventLog": 298,
+      "replay": 616,
+      "projectiles": 14,
+      "framesMs": {
+        "n": 596,
+        "p50": 16.5,
+        "p95": 20.399999991059303,
+        "p99": 22.200000002980232,
+        "max": 52.80000001192093
+      },
+      "drawCalls": {
+        "n": 596,
+        "p50": 381,
+        "p95": 418,
+        "p99": 423,
+        "max": 425
+      },
+      "corpseDrawCalls": {
+        "n": 596,
+        "p50": 0,
+        "p95": 2,
+        "p99": 2,
+        "max": 2
+      },
+      "skinUpdates": {
+        "n": 596,
+        "p50": 24,
+        "p95": 27,
+        "p99": 27,
+        "max": 27
+      },
+      "corpseSkinUpdates": {
+        "n": 596,
+        "p50": 0,
+        "p95": 3,
+        "p99": 3,
+        "max": 3
+      },
+      "skinCpuMs": {
+        "n": 596,
+        "p50": 0,
+        "p95": 0.20000000298023224,
+        "p99": 0.20000001788139343,
+        "max": 0.3999999910593033
+      },
+      "corpseSkinCpuMs": {
+        "n": 596,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0.10000000894069672,
+        "max": 0.10000000894069672
+      },
+      "memory": {
+        "geometries": 849,
+        "textures": 229
+      },
+      "programs": 217,
+      "heapBytes": 1016888022,
+      "visuals": 7,
+      "pools": {
+        "scout": 10,
+        "endo": 11,
+        "heavy": 11,
+        "t1000": 7,
+        "hkaerial": 7,
+        "hktank": 1
+      },
+      "ragdolls": {
+        "records": 5,
+        "active": 3,
+        "settled": 2,
+        "unitCorpses": 1,
+        "freeUnit": 0,
+        "freeLimb": 92,
+        "clock": 10.266666666666756,
+        "stats": {
+          "frames": 605,
+          "steps": 616,
+          "totalMs": 71.69999997317791,
+          "lastMs": 0.5,
+          "maxMs": 4.700000002980232,
+          "active": 1,
+          "settled": 2,
+          "recycled": 0
+        }
+      },
+      "rosterDeaths": 0,
+      "route": {
+        "distance": 49.99999999999998,
+        "index": 53,
+        "wraps": 0,
+        "samples": 601,
+        "pathLength": 142,
+        "feet": {
+          "x": 15.499999999999995,
+          "y": 0,
+          "z": -10.399402819527335
+        }
+      },
+      "workload": {
+        "spawns": 7,
+        "forcedDeaths": 1,
+        "cycle": 1
+      },
+      "kills": 1
+    },
+    {
+      "elapsedSeconds": 20.03310000000894,
+      "simulationSeconds": 20.233333333333334,
+      "activeEnemies": 6,
+      "units": 6,
+      "eventLog": 704,
+      "replay": 1214,
+      "projectiles": 2,
+      "framesMs": {
+        "n": 599,
+        "p50": 16.599999994039536,
+        "p95": 19.69999998807907,
+        "p99": 21.599999994039536,
+        "max": 23.299999997019768
+      },
+      "drawCalls": {
+        "n": 599,
+        "p50": 354,
+        "p95": 387,
+        "p99": 407,
+        "max": 411
+      },
+      "corpseDrawCalls": {
+        "n": 599,
+        "p50": 3,
+        "p95": 5,
+        "p99": 5,
+        "max": 5
+      },
+      "skinUpdates": {
+        "n": 599,
+        "p50": 28,
+        "p95": 28,
+        "p99": 30,
+        "max": 30
+      },
+      "corpseSkinUpdates": {
+        "n": 599,
+        "p50": 4,
+        "p95": 7,
+        "p99": 7,
+        "max": 7
+      },
+      "skinCpuMs": {
+        "n": 599,
+        "p50": 0,
+        "p95": 0.20000000298023224,
+        "p99": 0.20000001788139343,
+        "max": 0.5
+      },
+      "corpseSkinCpuMs": {
+        "n": 599,
+        "p50": 0,
+        "p95": 0.10000000894069672,
+        "p99": 0.10000000894069672,
+        "max": 0.20000000298023224
+      },
+      "memory": {
+        "geometries": 849,
+        "textures": 229
+      },
+      "programs": 217,
+      "heapBytes": 1060419069,
+      "visuals": 8,
+      "pools": {
+        "scout": 10,
+        "endo": 10,
+        "heavy": 11,
+        "t1000": 7,
+        "hkaerial": 7,
+        "hktank": 1
+      },
+      "ragdolls": {
+        "records": 7,
+        "active": 1,
+        "settled": 6,
+        "unitCorpses": 2,
+        "freeUnit": 0,
+        "freeLimb": 91,
+        "clock": 20.233333333333466,
+        "stats": {
+          "frames": 1202,
+          "steps": 1214,
+          "totalMs": 329.8000000268221,
+          "lastMs": 0.29999999701976776,
+          "maxMs": 4.700000002980232,
+          "active": 1,
+          "settled": 6,
+          "recycled": 0
+        }
+      },
+      "rosterDeaths": 0,
+      "route": {
+        "distance": 99.83333333333167,
+        "index": 105,
+        "wraps": 0,
+        "samples": 1199,
+        "pathLength": 142,
+        "feet": {
+          "x": -8.945580876092656,
+          "y": 0,
+          "z": 14.500000000004249
+        }
+      },
+      "workload": {
+        "spawns": 9,
+        "forcedDeaths": 2,
+        "cycle": 2
+      },
+      "kills": 3
+    },
+    {
+      "elapsedSeconds": 30.04380000001192,
+      "simulationSeconds": 30.233333333333334,
+      "activeEnemies": 6,
+      "units": 6,
+      "eventLog": 933,
+      "replay": 1814,
+      "projectiles": 0,
+      "framesMs": {
+        "n": 593,
+        "p50": 16.599999994039536,
+        "p95": 20.400000005960464,
+        "p99": 22.600000008940697,
+        "max": 29.100000008940697
+      },
+      "drawCalls": {
+        "n": 593,
+        "p50": 395,
+        "p95": 432,
+        "p99": 436,
+        "max": 439
+      },
+      "corpseDrawCalls": {
+        "n": 593,
+        "p50": 8,
+        "p95": 10,
+        "p99": 10,
+        "max": 10
+      },
+      "skinUpdates": {
+        "n": 593,
+        "p50": 36,
+        "p95": 39,
+        "p99": 39,
+        "max": 39
+      },
+      "corpseSkinUpdates": {
+        "n": 593,
+        "p50": 12,
+        "p95": 15,
+        "p99": 15,
+        "max": 15
+      },
+      "skinCpuMs": {
+        "n": 593,
+        "p50": 0.09999999403953552,
+        "p95": 0.20000001788139343,
+        "p99": 0.30000001192092896,
+        "max": 0.5
+      },
+      "corpseSkinCpuMs": {
+        "n": 593,
+        "p50": 0,
+        "p95": 0.10000000894069672,
+        "p99": 0.20000001788139343,
+        "max": 0.5
+      },
+      "memory": {
+        "geometries": 847,
+        "textures": 229
+      },
+      "programs": 217,
+      "heapBytes": 1103429754,
+      "visuals": 11,
+      "pools": {
+        "scout": 9,
+        "endo": 10,
+        "heavy": 10,
+        "t1000": 6,
+        "hkaerial": 7,
+        "hktank": 1
+      },
+      "ragdolls": {
+        "records": 9,
+        "active": 1,
+        "settled": 8,
+        "unitCorpses": 4,
+        "freeUnit": 0,
+        "freeLimb": 91,
+        "clock": 30.233333333332897,
+        "stats": {
+          "frames": 1795,
+          "steps": 1814,
+          "totalMs": 603.1000001132488,
+          "lastMs": 0.29999999701976776,
+          "maxMs": 4.700000002980232,
+          "active": 1,
+          "settled": 8,
+          "recycled": 0
+        }
+      },
+      "rosterDeaths": 1,
+      "route": {
+        "distance": 143.95218182914584,
+        "index": 0,
+        "wraps": 1,
+        "samples": 1799,
+        "pathLength": 142,
+        "feet": {
+          "x": -7.0250895274392935,
+          "y": 0,
+          "z": -6.548559248447315
+        }
+      },
+      "workload": {
+        "spawns": 12,
+        "forcedDeaths": 3,
+        "cycle": 3
+      },
+      "kills": 6
+    },
+    {
+      "elapsedSeconds": 40.05280000001192,
+      "simulationSeconds": 40.25,
+      "activeEnemies": 6,
+      "units": 7,
+      "eventLog": 1104,
+      "replay": 2415,
+      "projectiles": 0,
+      "framesMs": {
+        "n": 590,
+        "p50": 16.599999994039536,
+        "p95": 21.299999997019768,
+        "p99": 23.400000005960464,
+        "max": 25.700000002980232
+      },
+      "drawCalls": {
+        "n": 590,
+        "p50": 395,
+        "p95": 401,
+        "p99": 401,
+        "max": 416
+      },
+      "corpseDrawCalls": {
+        "n": 590,
+        "p50": 9,
+        "p95": 10,
+        "p99": 10,
+        "max": 22
+      },
+      "skinUpdates": {
+        "n": 590,
+        "p50": 37,
+        "p95": 39,
+        "p99": 39,
+        "max": 39
+      },
+      "corpseSkinUpdates": {
+        "n": 590,
+        "p50": 13,
+        "p95": 15,
+        "p99": 15,
+        "max": 15
+      },
+      "skinCpuMs": {
+        "n": 590,
+        "p50": 0.09999999403953552,
+        "p95": 0.29999999701976776,
+        "p99": 0.4000000059604645,
+        "max": 0.7000000327825546
+      },
+      "corpseSkinCpuMs": {
+        "n": 590,
+        "p50": 0,
+        "p95": 0.19999998807907104,
+        "p99": 0.20000001788139343,
+        "max": 0.40000002086162567
+      },
+      "memory": {
+        "geometries": 847,
+        "textures": 229
+      },
+      "programs": 217,
+      "heapBytes": 1152614719,
+      "visuals": 11,
+      "pools": {
+        "scout": 9,
+        "endo": 10,
+        "heavy": 10,
+        "t1000": 7,
+        "hkaerial": 6,
+        "hktank": 1
+      },
+      "ragdolls": {
+        "records": 15,
+        "active": 6,
+        "settled": 9,
+        "unitCorpses": 4,
+        "freeUnit": 0,
+        "freeLimb": 85,
+        "clock": 40.249999999999,
+        "stats": {
+          "frames": 2385,
+          "steps": 2415,
+          "totalMs": 683.3000002503395,
+          "lastMs": 0.4000000059604645,
+          "maxMs": 4.700000002980232,
+          "active": 0,
+          "settled": 9,
+          "recycled": 0
+        }
+      },
+      "rosterDeaths": 1,
+      "route": {
+        "distance": 143.95218182914584,
+        "index": 0,
+        "wraps": 1,
+        "samples": 2400,
+        "pathLength": 142,
+        "feet": {
+          "x": -7.0250895274392935,
+          "y": 0,
+          "z": -6.548559248447315
+        }
+      },
+      "workload": {
+        "spawns": 14,
+        "forcedDeaths": 5,
+        "cycle": 5
+      },
+      "kills": 8
+    },
+    {
+      "elapsedSeconds": 50.0655,
+      "simulationSeconds": 50.21666666666667,
+      "activeEnemies": 6,
+      "units": 6,
+      "eventLog": 1277,
+      "replay": 3013,
+      "projectiles": 0,
+      "framesMs": {
+        "n": 596,
+        "p50": 16.400000005960464,
+        "p95": 20,
+        "p99": 22.299999997019768,
+        "max": 29.200000002980232
+      },
+      "drawCalls": {
+        "n": 596,
+        "p50": 406,
+        "p95": 417,
+        "p99": 418,
+        "max": 418
+      },
+      "corpseDrawCalls": {
+        "n": 596,
+        "p50": 24,
+        "p95": 28,
+        "p99": 28,
+        "max": 28
+      },
+      "skinUpdates": {
+        "n": 596,
+        "p50": 42,
+        "p95": 45,
+        "p99": 45,
+        "max": 45
+      },
+      "corpseSkinUpdates": {
+        "n": 596,
+        "p50": 18,
+        "p95": 21,
+        "p99": 21,
+        "max": 21
+      },
+      "skinCpuMs": {
+        "n": 596,
+        "p50": 0.09999999403953552,
+        "p95": 0.29999998211860657,
+        "p99": 0.30000001192092896,
+        "max": 0.3999999910593033
+      },
+      "corpseSkinCpuMs": {
+        "n": 596,
+        "p50": 0,
+        "p95": 0.19999998807907104,
+        "p99": 0.20000000298023224,
+        "max": 0.29999999701976776
+      },
+      "memory": {
+        "geometries": 847,
+        "textures": 229
+      },
+      "programs": 217,
+      "heapBytes": 1195306279,
+      "visuals": 13,
+      "pools": {
+        "scout": 8,
+        "endo": 10,
+        "heavy": 10,
+        "t1000": 7,
+        "hkaerial": 6,
+        "hktank": 0
+      },
+      "ragdolls": {
+        "records": 18,
+        "active": 1,
+        "settled": 17,
+        "unitCorpses": 5,
+        "freeUnit": 0,
+        "freeLimb": 83,
+        "clock": 50.2166666666651,
+        "stats": {
+          "frames": 2979,
+          "steps": 3013,
+          "totalMs": 939.9000005126,
+          "lastMs": 0.4000000059604645,
+          "maxMs": 4.700000002980232,
+          "active": 0,
+          "settled": 17,
+          "recycled": 0
+        }
+      },
+      "rosterDeaths": 2,
+      "route": {
+        "distance": 143.95218182914584,
+        "index": 0,
+        "wraps": 1,
+        "samples": 2998,
+        "pathLength": 142,
+        "feet": {
+          "x": -7.0250895274392935,
+          "y": 0,
+          "z": -6.548559248447315
+        }
+      },
+      "workload": {
+        "spawns": 16,
+        "forcedDeaths": 6,
+        "cycle": 6
+      },
+      "kills": 10
+    },
+    {
+      "elapsedSeconds": 60.084,
+      "simulationSeconds": 60.233333333333334,
+      "activeEnemies": 6,
+      "units": 6,
+      "eventLog": 1477,
+      "replay": 3614,
+      "projectiles": 0,
+      "framesMs": {
+        "n": 600,
+        "p50": 16.299999997019768,
+        "p95": 20.299999997019768,
+        "p99": 21.900000005960464,
+        "max": 31.400000005960464
+      },
+      "drawCalls": {
+        "n": 600,
+        "p50": 389,
+        "p95": 408,
+        "p99": 410,
+        "max": 417
+      },
+      "corpseDrawCalls": {
+        "n": 600,
+        "p50": 21,
+        "p95": 27,
+        "p99": 28,
+        "max": 28
+      },
+      "skinUpdates": {
+        "n": 600,
+        "p50": 41,
+        "p95": 43,
+        "p99": 44,
+        "max": 47
+      },
+      "corpseSkinUpdates": {
+        "n": 600,
+        "p50": 17,
+        "p95": 19,
+        "p99": 20,
+        "max": 20
+      },
+      "skinCpuMs": {
+        "n": 600,
+        "p50": 0.09999999403953552,
+        "p95": 0.29999999701976776,
+        "p99": 0.3999999910593033,
+        "max": 0.40000002086162567
+      },
+      "corpseSkinCpuMs": {
+        "n": 600,
+        "p50": 0,
+        "p95": 0.20000000298023224,
+        "p99": 0.29999998211860657,
+        "max": 0.29999999701976776
+      },
+      "memory": {
+        "geometries": 846,
+        "textures": 229
+      },
+      "programs": 217,
+      "heapBytes": 1224082438,
+      "visuals": 14,
+      "pools": {
+        "scout": 7,
+        "endo": 10,
+        "heavy": 10,
+        "t1000": 7,
+        "hkaerial": 6,
+        "hktank": 0
+      },
+      "ragdolls": {
+        "records": 23,
+        "active": 3,
+        "settled": 20,
+        "unitCorpses": 6,
+        "freeUnit": 0,
+        "freeLimb": 79,
+        "clock": 60.233333333331196,
+        "stats": {
+          "frames": 3579,
+          "steps": 3614,
+          "totalMs": 1068.7000004053116,
+          "lastMs": 0.3999999910593033,
+          "maxMs": 4.700000002980232,
+          "active": 1,
+          "settled": 20,
+          "recycled": 0
+        }
+      },
+      "rosterDeaths": 2,
+      "route": {
+        "distance": 143.95218182914584,
+        "index": 0,
+        "wraps": 1,
+        "samples": 3599,
+        "pathLength": 142,
+        "feet": {
+          "x": -7.0250895274392935,
+          "y": 0,
+          "z": -6.548559248447315
+        }
+      },
+      "workload": {
+        "spawns": 18,
+        "forcedDeaths": 7,
+        "cycle": 7
+      },
+      "kills": 12
+    },
+    {
+      "elapsedSeconds": 70.104,
+      "simulationSeconds": 70.2,
+      "activeEnemies": 6,
+      "units": 6,
+      "eventLog": 1632,
+      "replay": 4212,
+      "projectiles": 0,
+      "framesMs": {
+        "n": 542,
+        "p50": 17.600000008940697,
+        "p95": 24.400000005960464,
+        "p99": 41.79999999701977,
+        "max": 55.599999994039536
+      },
+      "drawCalls": {
+        "n": 542,
+        "p50": 404,
+        "p95": 420,
+        "p99": 423,
+        "max": 423
+      },
+      "corpseDrawCalls": {
+        "n": 542,
+        "p50": 31,
+        "p95": 31,
+        "p99": 31,
+        "max": 31
+      },
+      "skinUpdates": {
+        "n": 542,
+        "p50": 49,
+        "p95": 49,
+        "p99": 49,
+        "max": 49
+      },
+      "corpseSkinUpdates": {
+        "n": 542,
+        "p50": 25,
+        "p95": 25,
+        "p99": 25,
+        "max": 25
+      },
+      "skinCpuMs": {
+        "n": 542,
+        "p50": 0.10000000894069672,
+        "p95": 0.3999999910593033,
+        "p99": 0.5000000149011612,
+        "max": 0.6999999731779099
+      },
+      "corpseSkinCpuMs": {
+        "n": 542,
+        "p50": 0.09999999403953552,
+        "p95": 0.20000001788139343,
+        "p99": 0.3999999761581421,
+        "max": 0.5999999791383743
+      },
+      "memory": {
+        "geometries": 845,
+        "textures": 229
+      },
+      "programs": 217,
+      "heapBytes": 989773962,
+      "visuals": 15,
+      "pools": {
+        "scout": 7,
+        "endo": 9,
+        "heavy": 10,
+        "t1000": 7,
+        "hkaerial": 6,
+        "hktank": 0
+      },
+      "ragdolls": {
+        "records": 25,
+        "active": 1,
+        "settled": 24,
+        "unitCorpses": 7,
+        "freeUnit": 0,
+        "freeLimb": 78,
+        "clock": 70.1999999999973,
+        "stats": {
+          "frames": 4119,
+          "steps": 4212,
+          "totalMs": 1343.7000005245209,
+          "lastMs": 0.3999999910593033,
+          "maxMs": 5.299999997019768,
+          "active": 1,
+          "settled": 24,
+          "recycled": 0
+        }
+      },
+      "rosterDeaths": 2,
+      "route": {
+        "distance": 143.95218182914584,
+        "index": 0,
+        "wraps": 1,
+        "samples": 4197,
+        "pathLength": 142,
+        "feet": {
+          "x": -7.0250895274392935,
+          "y": 0,
+          "z": -6.548559248447315
+        }
+      },
+      "workload": {
+        "spawns": 19,
+        "forcedDeaths": 8,
+        "cycle": 8
+      },
+      "kills": 13
+    },
+    {
+      "elapsedSeconds": 80.11880000001192,
+      "simulationSeconds": 80.16666666666667,
+      "activeEnemies": 6,
+      "units": 7,
+      "eventLog": 1834,
+      "replay": 4810,
+      "projectiles": 0,
+      "framesMs": {
+        "n": 589,
+        "p50": 16.400000005960464,
+        "p95": 20.900000005960464,
+        "p99": 26.099999994039536,
+        "max": 46
+      },
+      "drawCalls": {
+        "n": 589,
+        "p50": 359,
+        "p95": 413,
+        "p99": 416,
+        "max": 417
+      },
+      "corpseDrawCalls": {
+        "n": 589,
+        "p50": 21,
+        "p95": 31,
+        "p99": 31,
+        "max": 36
+      },
+      "skinUpdates": {
+        "n": 589,
+        "p50": 27,
+        "p95": 49,
+        "p99": 49,
+        "max": 56
+      },
+      "corpseSkinUpdates": {
+        "n": 589,
+        "p50": 17,
+        "p95": 25,
+        "p99": 25,
+        "max": 32
+      },
+      "skinCpuMs": {
+        "n": 589,
+        "p50": 0.09999999403953552,
+        "p95": 0.29999999701976776,
+        "p99": 0.3999999910593033,
+        "max": 0.40000002086162567
+      },
+      "corpseSkinCpuMs": {
+        "n": 589,
+        "p50": 0,
+        "p95": 0.20000000298023224,
+        "p99": 0.30000001192092896,
+        "max": 0.30000002682209015
+      },
+      "memory": {
+        "geometries": 844,
+        "textures": 229
+      },
+      "programs": 217,
+      "heapBytes": 998742942,
+      "visuals": 18,
+      "pools": {
+        "scout": 6,
+        "endo": 9,
+        "heavy": 9,
+        "t1000": 6,
+        "hkaerial": 6,
+        "hktank": 0
+      },
+      "ragdolls": {
+        "records": 28,
+        "active": 1,
+        "settled": 27,
+        "unitCorpses": 9,
+        "freeUnit": 0,
+        "freeLimb": 77,
+        "clock": 80.1666666666634,
+        "stats": {
+          "frames": 4706,
+          "steps": 4810,
+          "totalMs": 1633.3000006377697,
+          "lastMs": 0.5,
+          "maxMs": 5.299999997019768,
+          "active": 1,
+          "settled": 27,
+          "recycled": 0
+        }
+      },
+      "rosterDeaths": 3,
+      "route": {
+        "distance": 143.95218182914584,
+        "index": 0,
+        "wraps": 1,
+        "samples": 4795,
+        "pathLength": 142,
+        "feet": {
+          "x": -7.0250895274392935,
+          "y": 0,
+          "z": -6.548559248447315
+        }
+      },
+      "workload": {
+        "spawns": 22,
+        "forcedDeaths": 10,
+        "cycle": 10
+      },
+      "kills": 16
+    },
+    {
+      "elapsedSeconds": 90.13620000000299,
+      "simulationSeconds": 90.18333333333334,
+      "activeEnemies": 6,
+      "units": 6,
+      "eventLog": 1989,
+      "replay": 5411,
+      "projectiles": 0,
+      "framesMs": {
+        "n": 591,
+        "p50": 16.30000001192093,
+        "p95": 20.30000001192093,
+        "p99": 32.900000005960464,
+        "max": 50.20000000298023
+      },
+      "drawCalls": {
+        "n": 591,
+        "p50": 418,
+        "p95": 433,
+        "p99": 438,
+        "max": 440
+      },
+      "corpseDrawCalls": {
+        "n": 591,
+        "p50": 35,
+        "p95": 48,
+        "p99": 48,
+        "max": 48
+      },
+      "skinUpdates": {
+        "n": 591,
+        "p50": 54,
+        "p95": 56,
+        "p99": 58,
+        "max": 58
+      },
+      "corpseSkinUpdates": {
+        "n": 591,
+        "p50": 30,
+        "p95": 32,
+        "p99": 34,
+        "max": 34
+      },
+      "skinCpuMs": {
+        "n": 591,
+        "p50": 0.10000000894069672,
+        "p95": 0.30000001192092896,
+        "p99": 0.4999999850988388,
+        "max": 0.6000000089406967
+      },
+      "corpseSkinCpuMs": {
+        "n": 591,
+        "p50": 0.09999999403953552,
+        "p95": 0.20000001788139343,
+        "p99": 0.3999999910593033,
+        "max": 0.40000002086162567
+      },
+      "memory": {
+        "geometries": 845,
+        "textures": 229
+      },
+      "programs": 217,
+      "heapBytes": 972952669,
+      "visuals": 18,
+      "pools": {
+        "scout": 6,
+        "endo": 9,
+        "heavy": 9,
+        "t1000": 7,
+        "hkaerial": 5,
+        "hktank": 0
+      },
+      "ragdolls": {
+        "records": 34,
+        "active": 4,
+        "settled": 30,
+        "unitCorpses": 9,
+        "freeUnit": 0,
+        "freeLimb": 71,
+        "clock": 90.1833333333295,
+        "stats": {
+          "frames": 5297,
+          "steps": 5411,
+          "totalMs": 1711.5000006854534,
+          "lastMs": 0.4000000059604645,
+          "maxMs": 5.299999997019768,
+          "active": 0,
+          "settled": 30,
+          "recycled": 0
+        }
+      },
+      "rosterDeaths": 3,
+      "route": {
+        "distance": 143.95218182914584,
+        "index": 0,
+        "wraps": 1,
+        "samples": 5396,
+        "pathLength": 142,
+        "feet": {
+          "x": -7.0250895274392935,
+          "y": 0,
+          "z": -6.548559248447315
+        }
+      },
+      "workload": {
+        "spawns": 23,
+        "forcedDeaths": 11,
+        "cycle": 11
+      },
+      "kills": 17
+    },
+    {
+      "elapsedSeconds": 100.14640000000595,
+      "simulationSeconds": 100.15,
+      "activeEnemies": 6,
+      "units": 6,
+      "eventLog": 2167,
+      "replay": 6009,
+      "projectiles": 0,
+      "framesMs": {
+        "n": 569,
+        "p50": 16.700000002980232,
+        "p95": 21.700000002980232,
+        "p99": 28.799999997019768,
+        "max": 59.79999999701977
+      },
+      "drawCalls": {
+        "n": 569,
+        "p50": 432,
+        "p95": 442,
+        "p99": 446,
+        "max": 446
+      },
+      "corpseDrawCalls": {
+        "n": 569,
+        "p50": 47,
+        "p95": 54,
+        "p99": 54,
+        "max": 54
+      },
+      "skinUpdates": {
+        "n": 569,
+        "p50": 54,
+        "p95": 62,
+        "p99": 62,
+        "max": 62
+      },
+      "corpseSkinUpdates": {
+        "n": 569,
+        "p50": 30,
+        "p95": 38,
+        "p99": 38,
+        "max": 38
+      },
+      "skinCpuMs": {
+        "n": 569,
+        "p50": 0.10000000894069672,
+        "p95": 0.3999999761581421,
+        "p99": 0.5,
+        "max": 0.699999988079071
+      },
+      "corpseSkinCpuMs": {
+        "n": 569,
+        "p50": 0.09999999403953552,
+        "p95": 0.29999999701976776,
+        "p99": 0.4000000059604645,
+        "max": 0.5999999940395355
+      },
+      "memory": {
+        "geometries": 845,
+        "textures": 231
+      },
+      "programs": 217,
+      "heapBytes": 1002473105,
+      "visuals": 20,
+      "pools": {
+        "scout": 5,
+        "endo": 9,
+        "heavy": 9,
+        "t1000": 7,
+        "hkaerial": 5,
+        "hktank": 0
+      },
+      "ragdolls": {
+        "records": 37,
+        "active": 0,
+        "settled": 37,
+        "unitCorpses": 10,
+        "freeUnit": 0,
+        "freeLimb": 69,
+        "clock": 100.1499999999956,
+        "stats": {
+          "frames": 5865,
+          "steps": 6009,
+          "totalMs": 1840.3000008016825,
+          "lastMs": 0,
+          "maxMs": 8,
+          "active": 0,
+          "settled": 37,
+          "recycled": 0
+        }
+      },
+      "rosterDeaths": 4,
+      "route": {
+        "distance": 143.95218182914584,
+        "index": 0,
+        "wraps": 1,
+        "samples": 5994,
+        "pathLength": 142,
+        "feet": {
+          "x": -7.0250895274392935,
+          "y": 0,
+          "z": -6.548559248447315
+        }
+      },
+      "workload": {
+        "spawns": 25,
+        "forcedDeaths": 12,
+        "cycle": 12
+      },
+      "kills": 19
+    },
+    {
+      "elapsedSeconds": 110.16480000001192,
+      "simulationSeconds": 110.16666666666667,
+      "activeEnemies": 6,
+      "units": 6,
+      "eventLog": 2380,
+      "replay": 6610,
+      "projectiles": 0,
+      "framesMs": {
+        "n": 583,
+        "p50": 16.599999994039536,
+        "p95": 21.099999994039536,
+        "p99": 24.100000008940697,
+        "max": 44.8999999910593
+      },
+      "drawCalls": {
+        "n": 583,
+        "p50": 434,
+        "p95": 443,
+        "p99": 447,
+        "max": 447
+      },
+      "corpseDrawCalls": {
+        "n": 583,
+        "p50": 47,
+        "p95": 58,
+        "p99": 58,
+        "max": 58
+      },
+      "skinUpdates": {
+        "n": 583,
+        "p50": 52,
+        "p95": 67,
+        "p99": 67,
+        "max": 67
+      },
+      "corpseSkinUpdates": {
+        "n": 583,
+        "p50": 36,
+        "p95": 43,
+        "p99": 43,
+        "max": 43
+      },
+      "skinCpuMs": {
+        "n": 583,
+        "p50": 0.10000000894069672,
+        "p95": 0.4000000059604645,
+        "p99": 0.5,
+        "max": 0.699999988079071
+      },
+      "corpseSkinCpuMs": {
+        "n": 583,
+        "p50": 0.09999999403953552,
+        "p95": 0.30000001192092896,
+        "p99": 0.4000000059604645,
+        "max": 0.5
+      },
+      "memory": {
+        "geometries": 843,
+        "textures": 231
+      },
+      "programs": 217,
+      "heapBytes": 977876272,
+      "visuals": 22,
+      "pools": {
+        "scout": 4,
+        "endo": 8,
+        "heavy": 9,
+        "t1000": 7,
+        "hkaerial": 5,
+        "hktank": 0
+      },
+      "ragdolls": {
+        "records": 43,
+        "active": 3,
+        "settled": 40,
+        "unitCorpses": 12,
+        "freeUnit": 0,
+        "freeLimb": 65,
+        "clock": 110.1666666666617,
+        "stats": {
+          "frames": 6448,
+          "steps": 6610,
+          "totalMs": 2022.3000007420778,
+          "lastMs": 0.800000011920929,
+          "maxMs": 8,
+          "active": 2,
+          "settled": 40,
+          "recycled": 0
+        }
+      },
+      "rosterDeaths": 4,
+      "route": {
+        "distance": 143.95218182914584,
+        "index": 0,
+        "wraps": 1,
+        "samples": 6595,
+        "pathLength": 142,
+        "feet": {
+          "x": -7.0250895274392935,
+          "y": 0,
+          "z": -6.548559248447315
+        }
+      },
+      "workload": {
+        "spawns": 28,
+        "forcedDeaths": 13,
+        "cycle": 13
+      },
+      "kills": 22
+    },
+    {
+      "elapsedSeconds": 120.1705,
+      "simulationSeconds": 120.1,
+      "activeEnemies": 6,
+      "units": 7,
+      "eventLog": 2549,
+      "replay": 7206,
+      "projectiles": 0,
+      "framesMs": {
+        "n": 551,
+        "p50": 17.200000002980232,
+        "p95": 23.5,
+        "p99": 40.099999994039536,
+        "max": 52.400000005960464
+      },
+      "drawCalls": {
+        "n": 551,
+        "p50": 442,
+        "p95": 446,
+        "p99": 447,
+        "max": 451
+      },
+      "corpseDrawCalls": {
+        "n": 551,
+        "p50": 59,
+        "p95": 59,
+        "p99": 59,
+        "max": 60
+      },
+      "skinUpdates": {
+        "n": 551,
+        "p50": 69,
+        "p95": 69,
+        "p99": 69,
+        "max": 70
+      },
+      "corpseSkinUpdates": {
+        "n": 551,
+        "p50": 45,
+        "p95": 45,
+        "p99": 45,
+        "max": 46
+      },
+      "skinCpuMs": {
+        "n": 551,
+        "p50": 0.19999998807907104,
+        "p95": 0.4000000059604645,
+        "p99": 0.5000000149011612,
+        "max": 1.3999999910593033
+      },
+      "corpseSkinCpuMs": {
+        "n": 551,
+        "p50": 0.10000000894069672,
+        "p95": 0.30000001192092896,
+        "p99": 0.5,
+        "max": 1.2999999970197678
+      },
+      "memory": {
+        "geometries": 842,
+        "textures": 231
+      },
+      "programs": 217,
+      "heapBytes": 958308138,
+      "visuals": 24,
+      "pools": {
+        "scout": 4,
+        "endo": 7,
+        "heavy": 8,
+        "t1000": 7,
+        "hkaerial": 5,
+        "hktank": 0
+      },
+      "ragdolls": {
+        "records": 46,
+        "active": 2,
+        "settled": 44,
+        "unitCorpses": 14,
+        "freeUnit": 0,
+        "freeLimb": 64,
+        "clock": 120.09999999999447,
+        "stats": {
+          "frames": 6997,
+          "steps": 7206,
+          "totalMs": 2291.100000679493,
+          "lastMs": 0.5,
+          "maxMs": 8,
+          "active": 2,
+          "settled": 44,
+          "recycled": 0
+        }
+      },
+      "rosterDeaths": 4,
+      "route": {
+        "distance": 143.95218182914584,
+        "index": 0,
+        "wraps": 1,
+        "samples": 7191,
+        "pathLength": 142,
+        "feet": {
+          "x": -7.0250895274392935,
+          "y": 0,
+          "z": -6.548559248447315
+        }
+      },
+      "workload": {
+        "spawns": 30,
+        "forcedDeaths": 15,
+        "cycle": 15
+      },
+      "kills": 24
+    },
+    {
+      "elapsedSeconds": 130.192,
+      "simulationSeconds": 130.13333333333333,
+      "activeEnemies": 6,
+      "units": 6,
+      "eventLog": 2756,
+      "replay": 7808,
+      "projectiles": 0,
+      "framesMs": {
+        "n": 567,
+        "p50": 17,
+        "p95": 22.100000008940697,
+        "p99": 33,
+        "max": 46.599999994039536
+      },
+      "drawCalls": {
+        "n": 567,
+        "p50": 370,
+        "p95": 447,
+        "p99": 450,
+        "max": 451
+      },
+      "corpseDrawCalls": {
+        "n": 567,
+        "p50": 40,
+        "p95": 63,
+        "p99": 65,
+        "max": 65
+      },
+      "skinUpdates": {
+        "n": 567,
+        "p50": 43,
+        "p95": 74,
+        "p99": 78,
+        "max": 78
+      },
+      "corpseSkinUpdates": {
+        "n": 567,
+        "p50": 33,
+        "p95": 50,
+        "p99": 54,
+        "max": 54
+      },
+      "skinCpuMs": {
+        "n": 567,
+        "p50": 0.19999998807907104,
+        "p95": 0.4000000059604645,
+        "p99": 0.5000000149011612,
+        "max": 0.7000000029802322
+      },
+      "corpseSkinCpuMs": {
+        "n": 567,
+        "p50": 0.10000000894069672,
+        "p95": 0.30000001192092896,
+        "p99": 0.5,
+        "max": 0.5999999940395355
+      },
+      "memory": {
+        "geometries": 841,
+        "textures": 231
+      },
+      "programs": 217,
+      "heapBytes": 962207231,
+      "visuals": 26,
+      "pools": {
+        "scout": 3,
+        "endo": 7,
+        "heavy": 8,
+        "t1000": 6,
+        "hkaerial": 5,
+        "hktank": 0
+      },
+      "ragdolls": {
+        "records": 47,
+        "active": 0,
+        "settled": 47,
+        "unitCorpses": 15,
+        "freeUnit": 0,
+        "freeLimb": 64,
+        "clock": 130.13333333332903,
+        "stats": {
+          "frames": 7564,
+          "steps": 7808,
+          "totalMs": 2595.700000554323,
+          "lastMs": 0,
+          "maxMs": 8,
+          "active": 0,
+          "settled": 47,
+          "recycled": 0
+        }
+      },
+      "rosterDeaths": 5,
+      "route": {
+        "distance": 143.95218182914584,
+        "index": 0,
+        "wraps": 1,
+        "samples": 7793,
+        "pathLength": 142,
+        "feet": {
+          "x": -7.0250895274392935,
+          "y": 0,
+          "z": -6.548559248447315
+        }
+      },
+      "workload": {
+        "spawns": 32,
+        "forcedDeaths": 16,
+        "cycle": 16
+      },
+      "kills": 26
+    },
+    {
+      "elapsedSeconds": 140.20180000001193,
+      "simulationSeconds": 140.15,
+      "activeEnemies": 6,
+      "units": 6,
+      "eventLog": 2923,
+      "replay": 8409,
+      "projectiles": 0,
+      "framesMs": {
+        "n": 575,
+        "p50": 16.80000001192093,
+        "p95": 21.100000008940697,
+        "p99": 23.69999998807907,
+        "max": 43.400000005960464
+      },
+      "drawCalls": {
+        "n": 575,
+        "p50": 443,
+        "p95": 460,
+        "p99": 460,
+        "max": 462
+      },
+      "corpseDrawCalls": {
+        "n": 575,
+        "p50": 63,
+        "p95": 76,
+        "p99": 76,
+        "max": 76
+      },
+      "skinUpdates": {
+        "n": 575,
+        "p50": 74,
+        "p95": 76,
+        "p99": 76,
+        "max": 76
+      },
+      "corpseSkinUpdates": {
+        "n": 575,
+        "p50": 50,
+        "p95": 52,
+        "p99": 52,
+        "max": 52
+      },
+      "skinCpuMs": {
+        "n": 575,
+        "p50": 0.19999998807907104,
+        "p95": 0.40000002086162567,
+        "p99": 0.5000000149011612,
+        "max": 0.5999999940395355
+      },
+      "corpseSkinCpuMs": {
+        "n": 575,
+        "p50": 0.10000000894069672,
+        "p95": 0.3999999910593033,
+        "p99": 0.4999999701976776,
+        "max": 0.5000000149011612
+      },
+      "memory": {
+        "geometries": 842,
+        "textures": 231
+      },
+      "programs": 217,
+      "heapBytes": 1007071250,
+      "visuals": 26,
+      "pools": {
+        "scout": 3,
+        "endo": 7,
+        "heavy": 8,
+        "t1000": 7,
+        "hkaerial": 4,
+        "hktank": 0
+      },
+      "ragdolls": {
+        "records": 53,
+        "active": 0,
+        "settled": 53,
+        "unitCorpses": 15,
+        "freeUnit": 0,
+        "freeLimb": 58,
+        "clock": 140.15000000000367,
+        "stats": {
+          "frames": 8139,
+          "steps": 8409,
+          "totalMs": 2663.400000333786,
+          "lastMs": 0,
+          "maxMs": 8,
+          "active": 0,
+          "settled": 53,
+          "recycled": 0
+        }
+      },
+      "rosterDeaths": 5,
+      "route": {
+        "distance": 143.95218182914584,
+        "index": 0,
+        "wraps": 1,
+        "samples": 8394,
+        "pathLength": 142,
+        "feet": {
+          "x": -7.0250895274392935,
+          "y": 0,
+          "z": -6.548559248447315
+        }
+      },
+      "workload": {
+        "spawns": 33,
+        "forcedDeaths": 17,
+        "cycle": 17
+      },
+      "kills": 27
+    },
+    {
+      "elapsedSeconds": 150.22010000000893,
+      "simulationSeconds": 150.11666666666667,
+      "activeEnemies": 6,
+      "units": 6,
+      "eventLog": 3093,
+      "replay": 9007,
+      "projectiles": 0,
+      "framesMs": {
+        "n": 538,
+        "p50": 17.799999997019768,
+        "p95": 24.200000002980232,
+        "p99": 33.29999999701977,
+        "max": 49.1000000089407
+      },
+      "drawCalls": {
+        "n": 538,
+        "p50": 460,
+        "p95": 472,
+        "p99": 473,
+        "max": 473
+      },
+      "corpseDrawCalls": {
+        "n": 538,
+        "p50": 81,
+        "p95": 83,
+        "p99": 84,
+        "max": 84
+      },
+      "skinUpdates": {
+        "n": 538,
+        "p50": 80,
+        "p95": 84,
+        "p99": 86,
+        "max": 86
+      },
+      "corpseSkinUpdates": {
+        "n": 538,
+        "p50": 56,
+        "p95": 60,
+        "p99": 62,
+        "max": 62
+      },
+      "skinCpuMs": {
+        "n": 538,
+        "p50": 0.20000000298023224,
+        "p95": 0.40000002086162567,
+        "p99": 0.5000000149011612,
+        "max": 0.7000000029802322
+      },
+      "corpseSkinCpuMs": {
+        "n": 538,
+        "p50": 0.10000000894069672,
+        "p95": 0.3999999910593033,
+        "p99": 0.40000002086162567,
+        "max": 0.5000000149011612
+      },
+      "memory": {
+        "geometries": 842,
+        "textures": 233
+      },
+      "programs": 217,
+      "heapBytes": 1006039381,
+      "visuals": 28,
+      "pools": {
+        "scout": 2,
+        "endo": 7,
+        "heavy": 8,
+        "t1000": 7,
+        "hkaerial": 4,
+        "hktank": 0
+      },
+      "ragdolls": {
+        "records": 56,
+        "active": 0,
+        "settled": 56,
+        "unitCorpses": 16,
+        "freeUnit": 0,
+        "freeLimb": 56,
+        "clock": 150.11666666667827,
+        "stats": {
+          "frames": 8675,
+          "steps": 9007,
+          "totalMs": 2785.4000003784895,
+          "lastMs": 0,
+          "maxMs": 8,
+          "active": 0,
+          "settled": 56,
+          "recycled": 0
+        }
+      },
+      "rosterDeaths": 6,
+      "route": {
+        "distance": 143.95218182914584,
+        "index": 0,
+        "wraps": 1,
+        "samples": 8992,
+        "pathLength": 142,
+        "feet": {
+          "x": -7.0250895274392935,
+          "y": 0,
+          "z": -6.548559248447315
+        }
+      },
+      "workload": {
+        "spawns": 35,
+        "forcedDeaths": 18,
+        "cycle": 18
+      },
+      "kills": 29
+    },
+    {
+      "elapsedSeconds": 160.23870000000298,
+      "simulationSeconds": 160.08333333333334,
+      "activeEnemies": 6,
+      "units": 7,
+      "eventLog": 3351,
+      "replay": 9605,
+      "projectiles": 0,
+      "framesMs": {
+        "n": 507,
+        "p50": 19,
+        "p95": 26,
+        "p99": 34.099999994039536,
+        "max": 62.70000000298023
+      },
+      "drawCalls": {
+        "n": 507,
+        "p50": 443,
+        "p95": 472,
+        "p99": 476,
+        "max": 476
+      },
+      "corpseDrawCalls": {
+        "n": 507,
+        "p50": 67,
+        "p95": 86,
+        "p99": 87,
+        "max": 87
+      },
+      "skinUpdates": {
+        "n": 507,
+        "p50": 68,
+        "p95": 87,
+        "p99": 89,
+        "max": 89
+      },
+      "corpseSkinUpdates": {
+        "n": 507,
+        "p50": 56,
+        "p95": 63,
+        "p99": 65,
+        "max": 65
+      },
+      "skinCpuMs": {
+        "n": 507,
+        "p50": 0.20000000298023224,
+        "p95": 0.5000000149011612,
+        "p99": 0.6000000089406967,
+        "max": 0.800000011920929
+      },
+      "corpseSkinCpuMs": {
+        "n": 507,
+        "p50": 0.19999998807907104,
+        "p95": 0.4000000059604645,
+        "p99": 0.5999999791383743,
+        "max": 0.699999988079071
+      },
+      "memory": {
+        "geometries": 839,
+        "textures": 233
+      },
+      "programs": 217,
+      "heapBytes": 979531945,
+      "visuals": 31,
+      "pools": {
+        "scout": 1,
+        "endo": 5,
+        "heavy": 8,
+        "t1000": 7,
+        "hkaerial": 4,
+        "hktank": 0
+      },
+      "ragdolls": {
+        "records": 64,
+        "active": 4,
+        "settled": 60,
+        "unitCorpses": 19,
+        "freeUnit": 0,
+        "freeLimb": 51,
+        "clock": 160.08333333335287,
+        "stats": {
+          "frames": 9180,
+          "steps": 9605,
+          "totalMs": 2997.800000473857,
+          "lastMs": 0.5,
+          "maxMs": 8,
+          "active": 3,
+          "settled": 60,
+          "recycled": 0
+        }
+      },
+      "rosterDeaths": 6,
+      "route": {
+        "distance": 143.95218182914584,
+        "index": 0,
+        "wraps": 1,
+        "samples": 9590,
+        "pathLength": 142,
+        "feet": {
+          "x": -7.0250895274392935,
+          "y": 0,
+          "z": -6.548559248447315
+        }
+      },
+      "workload": {
+        "spawns": 39,
+        "forcedDeaths": 20,
+        "cycle": 20
+      },
+      "kills": 33
+    },
+    {
+      "elapsedSeconds": 170.26520000000298,
+      "simulationSeconds": 170.11666666666667,
+      "activeEnemies": 6,
+      "units": 6,
+      "eventLog": 3507,
+      "replay": 10207,
+      "projectiles": 0,
+      "framesMs": {
+        "n": 511,
+        "p50": 18.900000005960464,
+        "p95": 24.100000008940697,
+        "p99": 28.299999997019768,
+        "max": 61.5
+      },
+      "drawCalls": {
+        "n": 511,
+        "p50": 466,
+        "p95": 474,
+        "p99": 475,
+        "max": 477
+      },
+      "corpseDrawCalls": {
+        "n": 511,
+        "p50": 87,
+        "p95": 89,
+        "p99": 89,
+        "max": 92
+      },
+      "skinUpdates": {
+        "n": 511,
+        "p50": 89,
+        "p95": 92,
+        "p99": 92,
+        "max": 94
+      },
+      "corpseSkinUpdates": {
+        "n": 511,
+        "p50": 65,
+        "p95": 68,
+        "p99": 70,
+        "max": 74
+      },
+      "skinCpuMs": {
+        "n": 511,
+        "p50": 0.20000000298023224,
+        "p95": 0.5000000149011612,
+        "p99": 0.6000000089406967,
+        "max": 0.7999999970197678
+      },
+      "corpseSkinCpuMs": {
+        "n": 511,
+        "p50": 0.19999998807907104,
+        "p95": 0.40000002086162567,
+        "p99": 0.5999999791383743,
+        "max": 0.6000000089406967
+      },
+      "memory": {
+        "geometries": 839,
+        "textures": 233
+      },
+      "programs": 217,
+      "heapBytes": 995597507,
+      "visuals": 32,
+      "pools": {
+        "scout": 1,
+        "endo": 5,
+        "heavy": 7,
+        "t1000": 7,
+        "hkaerial": 4,
+        "hktank": 0
+      },
+      "ragdolls": {
+        "records": 65,
+        "active": 2,
+        "settled": 63,
+        "unitCorpses": 20,
+        "freeUnit": 0,
+        "freeLimb": 51,
+        "clock": 170.1166666666942,
+        "stats": {
+          "frames": 9691,
+          "steps": 10207,
+          "totalMs": 3304.3000005334616,
+          "lastMs": 1.2999999970197678,
+          "maxMs": 8,
+          "active": 2,
+          "settled": 63,
+          "recycled": 0
+        }
+      },
+      "rosterDeaths": 6,
+      "route": {
+        "distance": 143.95218182914584,
+        "index": 0,
+        "wraps": 1,
+        "samples": 10192,
+        "pathLength": 142,
+        "feet": {
+          "x": -7.0250895274392935,
+          "y": 0,
+          "z": -6.548559248447315
+        }
+      },
+      "workload": {
+        "spawns": 40,
+        "forcedDeaths": 21,
+        "cycle": 21
+      },
+      "kills": 34
+    },
+    {
+      "elapsedSeconds": 180.27210000000895,
+      "simulationSeconds": 180.06666666666666,
+      "activeEnemies": 6,
+      "units": 6,
+      "eventLog": 3675,
+      "replay": 10804,
+      "projectiles": 0,
+      "framesMs": {
+        "n": 509,
+        "p50": 19.099999994039536,
+        "p95": 24.299999997019768,
+        "p99": 27.600000008940697,
+        "max": 53.900000005960464
+      },
+      "drawCalls": {
+        "n": 509,
+        "p50": 469,
+        "p95": 483,
+        "p99": 486,
+        "max": 487
+      },
+      "corpseDrawCalls": {
+        "n": 509,
+        "p50": 90,
+        "p95": 91,
+        "p99": 92,
+        "max": 93
+      },
+      "skinUpdates": {
+        "n": 509,
+        "p50": 93,
+        "p95": 94,
+        "p99": 95,
+        "max": 97
+      },
+      "corpseSkinUpdates": {
+        "n": 509,
+        "p50": 69,
+        "p95": 71,
+        "p99": 75,
+        "max": 77
+      },
+      "skinCpuMs": {
+        "n": 509,
+        "p50": 0.29999998211860657,
+        "p95": 0.5000000149011612,
+        "p99": 0.7000000029802322,
+        "max": 0.8000000268220901
+      },
+      "corpseSkinCpuMs": {
+        "n": 509,
+        "p50": 0.20000000298023224,
+        "p95": 0.4999999850988388,
+        "p99": 0.5999999940395355,
+        "max": 0.7000000029802322
+      },
+      "memory": {
+        "geometries": 838,
+        "textures": 233
+      },
+      "programs": 217,
+      "heapBytes": 1025452049,
+      "visuals": 34,
+      "pools": {
+        "scout": 0,
+        "endo": 5,
+        "heavy": 7,
+        "t1000": 6,
+        "hkaerial": 4,
+        "hktank": 0
+      },
+      "ragdolls": {
+        "records": 67,
+        "active": 1,
+        "settled": 66,
+        "unitCorpses": 21,
+        "freeUnit": 0,
+        "freeLimb": 50,
+        "clock": 180.0666666667021,
+        "stats": {
+          "frames": 10198,
+          "steps": 10804,
+          "totalMs": 3588.5000005960464,
+          "lastMs": 0.7000000029802322,
+          "maxMs": 8,
+          "active": 1,
+          "settled": 66,
+          "recycled": 0
+        }
+      },
+      "rosterDeaths": 7,
+      "route": {
+        "distance": 143.95218182914584,
+        "index": 0,
+        "wraps": 1,
+        "samples": 10789,
+        "pathLength": 142,
+        "feet": {
+          "x": -7.0250895274392935,
+          "y": 0,
+          "z": -6.548559248447315
+        }
+      },
+      "workload": {
+        "spawns": 42,
+        "forcedDeaths": 22,
+        "cycle": 22
+      },
+      "kills": 36
+    },
+    {
+      "elapsedSeconds": 190.28120000000297,
+      "simulationSeconds": 190.06666666666666,
+      "activeEnemies": 6,
+      "units": 7,
+      "eventLog": 3847,
+      "replay": 11404,
+      "projectiles": 0,
+      "framesMs": {
+        "n": 510,
+        "p50": 19.100000008940697,
+        "p95": 24.19999998807907,
+        "p99": 29,
+        "max": 62.80000001192093
+      },
+      "drawCalls": {
+        "n": 510,
+        "p50": 471,
+        "p95": 490,
+        "p99": 494,
+        "max": 494
+      },
+      "corpseDrawCalls": {
+        "n": 510,
+        "p50": 92,
+        "p95": 104,
+        "p99": 106,
+        "max": 106
+      },
+      "skinUpdates": {
+        "n": 510,
+        "p50": 94,
+        "p95": 96,
+        "p99": 99,
+        "max": 102
+      },
+      "corpseSkinUpdates": {
+        "n": 510,
+        "p50": 70,
+        "p95": 72,
+        "p99": 75,
+        "max": 78
+      },
+      "skinCpuMs": {
+        "n": 510,
+        "p50": 0.29999998211860657,
+        "p95": 0.5000000149011612,
+        "p99": 0.7000000178813934,
+        "max": 0.800000011920929
+      },
+      "corpseSkinCpuMs": {
+        "n": 510,
+        "p50": 0.20000000298023224,
+        "p95": 0.40000002086162567,
+        "p99": 0.6000000089406967,
+        "max": 0.7000000178813934
+      },
+      "memory": {
+        "geometries": 839,
+        "textures": 234
+      },
+      "programs": 217,
+      "heapBytes": 1009314757,
+      "visuals": 35,
+      "pools": {
+        "scout": 0,
+        "endo": 5,
+        "heavy": 7,
+        "t1000": 7,
+        "hkaerial": 3,
+        "hktank": 0
+      },
+      "ragdolls": {
+        "records": 75,
+        "active": 2,
+        "settled": 73,
+        "unitCorpses": 22,
+        "freeUnit": 0,
+        "freeLimb": 43,
+        "clock": 190.06666666671006,
+        "stats": {
+          "frames": 10707,
+          "steps": 11404,
+          "totalMs": 3704.9000008255243,
+          "lastMs": 0.8999999910593033,
+          "maxMs": 8,
+          "active": 1,
+          "settled": 73,
+          "recycled": 0
+        }
+      },
+      "rosterDeaths": 7,
+      "route": {
+        "distance": 143.95218182914584,
+        "index": 0,
+        "wraps": 1,
+        "samples": 11389,
+        "pathLength": 142,
+        "feet": {
+          "x": -7.0250895274392935,
+          "y": 0,
+          "z": -6.548559248447315
+        }
+      },
+      "workload": {
+        "spawns": 44,
+        "forcedDeaths": 23,
+        "cycle": 23
+      },
+      "kills": 38
+    },
+    {
+      "elapsedSeconds": 200.29970000000299,
+      "simulationSeconds": 199.91666666666666,
+      "activeEnemies": 6,
+      "units": 7,
+      "eventLog": 4027,
+      "replay": 11995,
+      "projectiles": 0,
+      "framesMs": {
+        "n": 466,
+        "p50": 20,
+        "p95": 26.5,
+        "p99": 43.3999999910593,
+        "max": 255.59999999403954
+      },
+      "drawCalls": {
+        "n": 466,
+        "p50": 486,
+        "p95": 501,
+        "p99": 505,
+        "max": 506
+      },
+      "corpseDrawCalls": {
+        "n": 466,
+        "p50": 103,
+        "p95": 116,
+        "p99": 118,
+        "max": 118
+      },
+      "skinUpdates": {
+        "n": 466,
+        "p50": 100,
+        "p95": 102,
+        "p99": 106,
+        "max": 108
+      },
+      "corpseSkinUpdates": {
+        "n": 466,
+        "p50": 76,
+        "p95": 78,
+        "p99": 82,
+        "max": 84
+      },
+      "skinCpuMs": {
+        "n": 466,
+        "p50": 0.29999998211860657,
+        "p95": 0.5999999940395355,
+        "p99": 0.7000000178813934,
+        "max": 0.800000011920929
+      },
+      "corpseSkinCpuMs": {
+        "n": 466,
+        "p50": 0.20000000298023224,
+        "p95": 0.5000000149011612,
+        "p99": 0.6000000238418579,
+        "max": 0.7000000029802322
+      },
+      "memory": {
+        "geometries": 840,
+        "textures": 237
+      },
+      "programs": 218,
+      "heapBytes": 990013402,
+      "visuals": 37,
+      "pools": {
+        "scout": 0,
+        "endo": 5,
+        "heavy": 7,
+        "t1000": 7,
+        "hkaerial": 3,
+        "hktank": 0
+      },
+      "ragdolls": {
+        "records": 77,
+        "active": 6,
+        "settled": 71,
+        "unitCorpses": 23,
+        "freeUnit": 0,
+        "freeLimb": 42,
+        "clock": 199.9166666667179,
+        "stats": {
+          "frames": 11173,
+          "steps": 11995,
+          "totalMs": 3940.8000010997057,
+          "lastMs": 0.5,
+          "maxMs": 8,
+          "active": 2,
+          "settled": 75,
+          "recycled": 4
+        }
+      },
+      "rosterDeaths": 8,
+      "route": {
+        "distance": 143.95218182914584,
+        "index": 0,
+        "wraps": 1,
+        "samples": 11980,
+        "pathLength": 142,
+        "feet": {
+          "x": -7.0250895274392935,
+          "y": 0,
+          "z": -6.548559248447315
+        }
+      },
+      "workload": {
+        "spawns": 46,
+        "forcedDeaths": 25,
+        "cycle": 25
+      },
+      "kills": 40
+    },
+    {
+      "elapsedSeconds": 210.31030000001192,
+      "simulationSeconds": 209.86666666666667,
+      "activeEnemies": 6,
+      "units": 6,
+      "eventLog": 4244,
+      "replay": 12592,
+      "projectiles": 0,
+      "framesMs": {
+        "n": 482,
+        "p50": 20,
+        "p95": 25.19999998807907,
+        "p99": 31,
+        "max": 54.5
+      },
+      "drawCalls": {
+        "n": 482,
+        "p50": 487,
+        "p95": 497,
+        "p99": 500,
+        "max": 504
+      },
+      "corpseDrawCalls": {
+        "n": 482,
+        "p50": 109,
+        "p95": 111,
+        "p99": 111,
+        "max": 111
+      },
+      "skinUpdates": {
+        "n": 482,
+        "p50": 100,
+        "p95": 107,
+        "p99": 109,
+        "max": 109
+      },
+      "corpseSkinUpdates": {
+        "n": 482,
+        "p50": 76,
+        "p95": 85,
+        "p99": 85,
+        "max": 85
+      },
+      "skinCpuMs": {
+        "n": 482,
+        "p50": 0.29999999701976776,
+        "p95": 0.6000000089406967,
+        "p99": 0.7999999970197678,
+        "max": 0.9000000208616257
+      },
+      "corpseSkinCpuMs": {
+        "n": 482,
+        "p50": 0.20000001788139343,
+        "p95": 0.5000000149011612,
+        "p99": 0.7000000029802322,
+        "max": 0.8000000268220901
+      },
+      "memory": {
+        "geometries": 839,
+        "textures": 237
+      },
+      "programs": 217,
+      "heapBytes": 1013537146,
+      "visuals": 36,
+      "pools": {
+        "scout": 2,
+        "endo": 4,
+        "heavy": 7,
+        "t1000": 7,
+        "hkaerial": 3,
+        "hktank": 0
+      },
+      "ragdolls": {
+        "records": 76,
+        "active": 3,
+        "settled": 73,
+        "unitCorpses": 22,
+        "freeUnit": 1,
+        "freeLimb": 42,
+        "clock": 209.86666666672582,
+        "stats": {
+          "frames": 11654,
+          "steps": 12592,
+          "totalMs": 4231.70000103116,
+          "lastMs": 0.5,
+          "maxMs": 8,
+          "active": 2,
+          "settled": 81,
+          "recycled": 8
+        }
+      },
+      "rosterDeaths": 8,
+      "route": {
+        "distance": 143.95218182914584,
+        "index": 0,
+        "wraps": 1,
+        "samples": 12577,
+        "pathLength": 142,
+        "feet": {
+          "x": -7.0250895274392935,
+          "y": 0,
+          "z": -6.548559248447315
+        }
+      },
+      "workload": {
+        "spawns": 49,
+        "forcedDeaths": 26,
+        "cycle": 26
+      },
+      "kills": 43
+    },
+    {
+      "elapsedSeconds": 220.330700000003,
+      "simulationSeconds": 219.85,
+      "activeEnemies": 6,
+      "units": 7,
+      "eventLog": 4416,
+      "replay": 13191,
+      "projectiles": 0,
+      "framesMs": {
+        "n": 465,
+        "p50": 20.799999997019768,
+        "p95": 26.899999991059303,
+        "p99": 39.3999999910593,
+        "max": 63.900000005960464
+      },
+      "drawCalls": {
+        "n": 465,
+        "p50": 488,
+        "p95": 502,
+        "p99": 506,
+        "max": 506
+      },
+      "corpseDrawCalls": {
+        "n": 465,
+        "p50": 109,
+        "p95": 110,
+        "p99": 111,
+        "max": 111
+      },
+      "skinUpdates": {
+        "n": 465,
+        "p50": 100,
+        "p95": 101,
+        "p99": 106,
+        "max": 106
+      },
+      "corpseSkinUpdates": {
+        "n": 465,
+        "p50": 76,
+        "p95": 77,
+        "p99": 82,
+        "max": 82
+      },
+      "skinCpuMs": {
+        "n": 465,
+        "p50": 0.29999999701976776,
+        "p95": 0.6000000089406967,
+        "p99": 0.7999999821186066,
+        "max": 3.499999985098839
+      },
+      "corpseSkinCpuMs": {
+        "n": 465,
+        "p50": 0.20000000298023224,
+        "p95": 0.5000000298023224,
+        "p99": 0.699999988079071,
+        "max": 0.800000011920929
+      },
+      "memory": {
+        "geometries": 838,
+        "textures": 237
+      },
+      "programs": 217,
+      "heapBytes": 965996742,
+      "visuals": 37,
+      "pools": {
+        "scout": 1,
+        "endo": 4,
+        "heavy": 7,
+        "t1000": 7,
+        "hkaerial": 3,
+        "hktank": 0
+      },
+      "ragdolls": {
+        "records": 78,
+        "active": 2,
+        "settled": 76,
+        "unitCorpses": 23,
+        "freeUnit": 0,
+        "freeLimb": 41,
+        "clock": 219.8500000000671,
+        "stats": {
+          "frames": 12118,
+          "steps": 13191,
+          "totalMs": 4456.5000009685755,
+          "lastMs": 1.2000000029802322,
+          "maxMs": 8,
+          "active": 1,
+          "settled": 85,
+          "recycled": 9
+        }
+      },
+      "rosterDeaths": 8,
+      "route": {
+        "distance": 143.95218182914584,
+        "index": 0,
+        "wraps": 1,
+        "samples": 13176,
+        "pathLength": 142,
+        "feet": {
+          "x": -7.0250895274392935,
+          "y": 0,
+          "z": -6.548559248447315
+        }
+      },
+      "workload": {
+        "spawns": 51,
+        "forcedDeaths": 27,
+        "cycle": 27
+      },
+      "kills": 45
+    },
+    {
+      "elapsedSeconds": 230.34960000000893,
+      "simulationSeconds": 229.86666666666667,
+      "activeEnemies": 6,
+      "units": 6,
+      "eventLog": 4593,
+      "replay": 13792,
+      "projectiles": 0,
+      "framesMs": {
+        "n": 511,
+        "p50": 18.899999991059303,
+        "p95": 24.5,
+        "p99": 29,
+        "max": 45.1000000089407
+      },
+      "drawCalls": {
+        "n": 511,
+        "p50": 475,
+        "p95": 495,
+        "p99": 499,
+        "max": 499
+      },
+      "corpseDrawCalls": {
+        "n": 511,
+        "p50": 97,
+        "p95": 110,
+        "p99": 110,
+        "max": 110
+      },
+      "skinUpdates": {
+        "n": 511,
+        "p50": 99,
+        "p95": 101,
+        "p99": 111,
+        "max": 111
+      },
+      "corpseSkinUpdates": {
+        "n": 511,
+        "p50": 75,
+        "p95": 77,
+        "p99": 87,
+        "max": 87
+      },
+      "skinCpuMs": {
+        "n": 511,
+        "p50": 0.29999999701976776,
+        "p95": 0.5999999940395355,
+        "p99": 0.7999999672174454,
+        "max": 0.9000000059604645
+      },
+      "corpseSkinCpuMs": {
+        "n": 511,
+        "p50": 0.20000001788139343,
+        "p95": 0.5000000149011612,
+        "p99": 0.6000000089406967,
+        "max": 0.9000000059604645
+      },
+      "memory": {
+        "geometries": 838,
+        "textures": 237
+      },
+      "programs": 217,
+      "heapBytes": 1004973376,
+      "visuals": 36,
+      "pools": {
+        "scout": 1,
+        "endo": 4,
+        "heavy": 7,
+        "t1000": 7,
+        "hkaerial": 4,
+        "hktank": 0
+      },
+      "ragdolls": {
+        "records": 71,
+        "active": 0,
+        "settled": 71,
+        "unitCorpses": 23,
+        "freeUnit": 0,
+        "freeLimb": 48,
+        "clock": 229.86666666674174,
+        "stats": {
+          "frames": 12629,
+          "steps": 13792,
+          "totalMs": 4507.000001117587,
+          "lastMs": 0,
+          "maxMs": 8,
+          "active": 0,
+          "settled": 87,
+          "recycled": 16
+        }
+      },
+      "rosterDeaths": 7,
+      "route": {
+        "distance": 143.95218182914584,
+        "index": 0,
+        "wraps": 1,
+        "samples": 13777,
+        "pathLength": 142,
+        "feet": {
+          "x": -7.0250895274392935,
+          "y": 0,
+          "z": -6.548559248447315
+        }
+      },
+      "workload": {
+        "spawns": 52,
+        "forcedDeaths": 28,
+        "cycle": 28
+      },
+      "kills": 46
+    },
+    {
+      "elapsedSeconds": 240.37210000000894,
+      "simulationSeconds": 239.78333333333333,
+      "activeEnemies": 6,
+      "units": 7,
+      "eventLog": 4767,
+      "replay": 14387,
+      "projectiles": 0,
+      "framesMs": {
+        "n": 498,
+        "p50": 19.400000005960464,
+        "p95": 24.5,
+        "p99": 27.400000005960464,
+        "max": 154.70000000298023
+      },
+      "drawCalls": {
+        "n": 498,
+        "p50": 485,
+        "p95": 498,
+        "p99": 503,
+        "max": 503
+      },
+      "corpseDrawCalls": {
+        "n": 498,
+        "p50": 104,
+        "p95": 111,
+        "p99": 113,
+        "max": 113
+      },
+      "skinUpdates": {
+        "n": 498,
+        "p50": 95,
+        "p95": 103,
+        "p99": 103,
+        "max": 105
+      },
+      "corpseSkinUpdates": {
+        "n": 498,
+        "p50": 71,
+        "p95": 79,
+        "p99": 79,
+        "max": 81
+      },
+      "skinCpuMs": {
+        "n": 498,
+        "p50": 0.29999999701976776,
+        "p95": 0.5999999940395355,
+        "p99": 0.7000000029802322,
+        "max": 0.7999999970197678
+      },
+      "corpseSkinCpuMs": {
+        "n": 498,
+        "p50": 0.20000000298023224,
+        "p95": 0.5,
+        "p99": 0.699999988079071,
+        "max": 0.7000000029802322
+      },
+      "memory": {
+        "geometries": 838,
+        "textures": 237
+      },
+      "programs": 218,
+      "heapBytes": 1041050005,
+      "visuals": 37,
+      "pools": {
+        "scout": 1,
+        "endo": 4,
+        "heavy": 7,
+        "t1000": 7,
+        "hkaerial": 3,
+        "hktank": 0
+      },
+      "ragdolls": {
+        "records": 77,
+        "active": 2,
+        "settled": 75,
+        "unitCorpses": 23,
+        "freeUnit": 0,
+        "freeLimb": 42,
+        "clock": 239.7833333334163,
+        "stats": {
+          "frames": 13126,
+          "steps": 14387,
+          "totalMs": 4643.800001069903,
+          "lastMs": 0.5,
+          "maxMs": 8,
+          "active": 1,
+          "settled": 94,
+          "recycled": 19
+        }
+      },
+      "rosterDeaths": 8,
+      "route": {
+        "distance": 143.95218182914584,
+        "index": 0,
+        "wraps": 1,
+        "samples": 14372,
+        "pathLength": 142,
+        "feet": {
+          "x": -7.0250895274392935,
+          "y": 0,
+          "z": -6.548559248447315
+        }
+      },
+      "workload": {
+        "spawns": 55,
+        "forcedDeaths": 30,
+        "cycle": 30
+      },
+      "kills": 49
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [
+    "Failed to load resource: net::ERR_CONNECTION_REFUSED",
+    "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "resourceFailures": [
+    {
+      "path": "/api/lobby",
+      "error": "net::ERR_CONNECTION_REFUSED"
+    },
+    {
+      "path": "/api/lobby",
+      "error": "net::ERR_CONNECTION_REFUSED"
+    }
+  ],
+  "cgroup": {
+    "memoryMax": 4294967296,
+    "tasksMax": 384,
+    "abortAboveBytes": 3758096384
+  },
+  "peakCgroupBytes": 3859386368,
+  "start": {
+    "clickedAt": 7822.5,
+    "inputReadyMs": 5051.5,
+    "nextFrameMs": 5071.5999999940395,
+    "keyAcceptedMs": 5134.399999991059,
+    "lastInputs": {
+      "move": {
+        "x": 0,
+        "z": 1
+      },
+      "yaw": 0,
+      "pitch": 0,
+      "fire": false,
+      "aim": false,
+      "reload": false,
+      "switchTo": null,
+      "sprint": false,
+      "crouch": false,
+      "jump": false,
+      "grenade": false,
+      "melee": false,
+      "ready": false
+    },
+    "renderer": "ANGLE (NVIDIA, Vulkan 1.4.312 (NVIDIA NVIDIA GeForce RTX 3090 Ti (0x00002203)), NVIDIA)",
+    "warmup": {
+      "textures": 221,
+      "materials": 556,
+      "programs": 219,
+      "resources": {
+        "objects": 3308,
+        "renderables": 1146,
+        "materials": 537,
+        "geometries": 565,
+        "skinned": 80,
+        "instanced": 26,
+        "batched": 1,
+        "largestMaterialFamilies": [
+          {
+            "name": "Optical scattering",
+            "targets": 267
+          },
+          {
+            "name": "Endoskeleton 1K worn metal atlas",
+            "targets": 140
+          },
+          {
+            "name": "Map rust · V2 surface",
+            "targets": 111
+          },
+          {
+            "name": "Machined red optical glass",
+            "targets": 85
+          },
+          {
+            "name": "B7 worn phosphate, machined steel, molded polymer and woven gloves",
+            "targets": 56
+          },
+          {
+            "name": "M67 worn phosphate and safety hardware",
+            "targets": 51
+          },
+          {
+            "name": "Pooled HK debris",
+            "targets": 50
+          },
+          {
+            "name": "MeshBasicMaterial",
+            "targets": 41
+          }
+        ]
+      },
+      "stages": [
+        {
+          "name": "before-compile",
+          "programs": 31,
+          "geometries": 468,
+          "textures": 37
+        },
+        {
+          "name": "compile-active-lights",
+          "programs": 109,
+          "geometries": 467,
+          "textures": 133
+        },
+        {
+          "name": "render-active-lights",
+          "programs": 132,
+          "geometries": 847,
+          "textures": 229
+        },
+        {
+          "name": "compile-inactive-lights",
+          "programs": 209,
+          "geometries": 847,
+          "textures": 229
+        },
+        {
+          "name": "render-inactive-lights",
+          "programs": 219,
+          "geometries": 847,
+          "textures": 229
+        }
+      ],
+      "deathPath": {
+        "ragdolls": 1,
+        "detachedLimbs": 6,
+        "fixedLimbMeshes": 96,
+        "skullCrunch": 1,
+        "limb": 5,
+        "torsoSplit": 1,
+        "dent": 1,
+        "vertexCap": 384,
+        "rosterDeaths": 3,
+        "pooledRigs": 54,
+        "aerialOptics": [
+          "beam",
+          "spot"
+        ]
+      }
+    },
+    "startup": {
+      "startedAt": 3888.0999999940395,
+      "spans": [
+        {
+          "name": "map-collision-build",
+          "start": 3888.3999999910593,
+          "end": 3891.5999999940395,
+          "ms": 3.2000000029802322,
+          "status": "ready"
+        },
+        {
+          "name": "world-build",
+          "start": 3891.699999988079,
+          "end": 3935.3999999910593,
+          "ms": 43.70000000298023,
+          "status": "ready"
+        },
+        {
+          "name": "menu-lighting-decode",
+          "start": 3954.699999988079,
+          "end": 5076.399999991059,
+          "ms": 1121.7000000029802,
+          "status": "ready"
+        },
+        {
+          "name": "menu-assets-and-build",
+          "start": 3954.3999999910593,
+          "end": 6093.5,
+          "ms": 2139.1000000089407,
+          "status": "ready"
+        },
+        {
+          "name": "map-batching",
+          "start": 6490,
+          "end": 7143.699999988079,
+          "ms": 653.6999999880791,
+          "status": "ready"
+        },
+        {
+          "name": "menu-weapon-preload",
+          "start": 6489.899999991059,
+          "end": 7512,
+          "ms": 1022.1000000089407,
+          "status": "ready"
+        },
+        {
+          "name": "view-construction",
+          "start": 7823.699999988079,
+          "end": 8249.79999999702,
+          "ms": 426.1000000089407,
+          "status": "ready"
+        },
+        {
+          "name": "lobby-plan",
+          "start": 7822.899999991059,
+          "end": 8250.29999999702,
+          "ms": 427.40000000596046,
+          "status": "ready"
+        },
+        {
+          "name": "audio-ready",
+          "start": 8250,
+          "end": 8273.199999988079,
+          "ms": 23.19999998807907,
+          "status": "ready"
+        },
+        {
+          "name": "asset-readiness",
+          "start": 8250,
+          "end": 8717.09999999404,
+          "ms": 467.09999999403954,
+          "status": "ready"
+        },
+        {
+          "name": "prime-unit-pools",
+          "start": 8717.09999999404,
+          "end": 9135.89999999106,
+          "ms": 418.79999999701977,
+          "status": "ready"
+        },
+        {
+          "name": "prime-grenade-pools",
+          "start": 9135.89999999106,
+          "end": 9135.89999999106,
+          "ms": 0,
+          "status": "ready"
+        },
+        {
+          "name": "prime-weapon-pools",
+          "start": 9135.89999999106,
+          "end": 9136.5,
+          "ms": 0.6000000089406967,
+          "status": "ready"
+        },
+        {
+          "name": "prime-gameplay-pools",
+          "start": 8717.09999999404,
+          "end": 9136.59999999404,
+          "ms": 419.5,
+          "status": "ready"
+        },
+        {
+          "name": "collect-resources",
+          "start": 9137.199999988079,
+          "end": 9173.5,
+          "ms": 36.30000001192093,
+          "status": "ready"
+        },
+        {
+          "name": "image-readiness",
+          "start": 9173.5,
+          "end": 9173.699999988079,
+          "ms": 0.19999998807907104,
+          "status": "ready"
+        },
+        {
+          "name": "texture-upload",
+          "start": 9562.29999999702,
+          "end": 10757.89999999106,
+          "ms": 1195.5999999940395,
+          "status": "ready"
+        },
+        {
+          "name": "compile-active-lights",
+          "start": 9178,
+          "end": 10758.89999999106,
+          "ms": 1580.8999999910593,
+          "status": "ready"
+        },
+        {
+          "name": "render-active-lights",
+          "start": 10758.89999999106,
+          "end": 11948.89999999106,
+          "ms": 1190,
+          "status": "ready"
+        },
+        {
+          "name": "compile-inactive-lights",
+          "start": 11949.09999999404,
+          "end": 12489.09999999404,
+          "ms": 540,
+          "status": "ready"
+        },
+        {
+          "name": "render-inactive-lights",
+          "start": 12489.09999999404,
+          "end": 12741.39999999106,
+          "ms": 252.29999999701977,
+          "status": "ready"
+        },
+        {
+          "name": "gpu-finish",
+          "start": 12741.39999999106,
+          "end": 12741.5,
+          "ms": 0.10000000894069672,
+          "status": "ready"
+        },
+        {
+          "name": "visual-warmup",
+          "start": 8249.79999999702,
+          "end": 12791.699999988079,
+          "ms": 4541.899999991059,
+          "status": "ready"
+        }
+      ],
+      "marks": {
+        "manager-start": 3888.0999999940395,
+        "menu-ready": 6096.5999999940395,
+        "start-click": 7822.5999999940395,
+        "match-request": 7822.899999991059,
+        "match-ready": 12819.39999999106,
+        "input-ready": 12827.29999999702
+      },
+      "navigationAt": 0,
+      "attempts": [
+        {
+          "trigger": "dom-start-click",
+          "clickAt": 7821.5,
+          "requestedAt": 7822.5999999940395,
+          "status": "ready",
+          "inputReadyAt": 12827.29999999702,
+          "clickToInputReadyMs": 5005.79999999702,
+          "requestToInputReadyMs": 5004.70000000298,
+          "navigationToInputReadyMs": 12827.29999999702,
+          "managerToInputReadyMs": 8939.20000000298
+        }
+      ],
+      "menuPreparation": {
+        "total": 47,
+        "started": 20,
+        "completed": 20,
+        "failed": 0,
+        "active": 0,
+        "promoted": true,
+        "cancelled": false
+      },
+      "attempt": {
+        "trigger": "dom-start-click",
+        "clickAt": 7821.5,
+        "requestedAt": 7822.5999999940395,
+        "status": "ready",
+        "inputReadyAt": 12827.29999999702,
+        "clickToInputReadyMs": 5005.79999999702,
+        "requestToInputReadyMs": 5004.70000000298,
+        "navigationToInputReadyMs": 12827.29999999702,
+        "managerToInputReadyMs": 8939.20000000298
+      }
+    },
+    "memory": {
+      "geometries": 847,
+      "textures": 229
+    },
+    "programs": 217
+  },
+  "fixture": {
+    "types": [
+      "scout",
+      "endo",
+      "heavy",
+      "t1000",
+      "hkaerial",
+      "hktank"
+    ],
+    "base": {
+      "x": 0,
+      "y": 0,
+      "z": 9.41666666666667
+    },
+    "description": "240 wall-clock seconds; normal GameManager accumulator, World.step, AI, route collision/movement, M4 fire/reload. Sandbox invulnerability and wave scheduling pause only. Replenish one live unit per six types; force one rotating death every 8 real seconds in addition to weapon kills. Corpse lifetime and quality unchanged.",
+    "sampleArrays": "Drained every ten seconds; no retained per-frame history",
+    "routePoints": 142
+  },
+  "stop": {
+    "renderEnabled": true,
+    "runtimeRoots": [],
+    "memory": {
+      "geometries": 601,
+      "textures": 85
+    },
+    "programs": 84,
+    "managerWorld": null,
+    "started": false,
+    "ragdollRecords": null
+  },
+  "aborted": "cgroup above 3.5 GiB",
+  "error": "page.waitForFunction: Target page, context or browser has been closed\n    at domStart (/home/minjune/games/terminator-v2/sustained-validation/tools/v2/verify-sustained.mjs:46:14)\n    at async file:///home/minjune/games/terminator-v2/sustained-validation/tools/v2/verify-sustained.mjs:105:17",
+  "finishedAt": "2026-09-14T23:59:46.748Z"
+}

@@ -1,0 +1,370 @@
+TAP version 13
+# Subtest: gore: fade swaps retain pooled materials and shared maps through reset
+ok 1 - gore: fade swaps retain pooled materials and shared maps through reset
+  ---
+  duration_ms: 7.178009
+  type: 'test'
+  ...
+# Subtest: skinned: fade swaps retain pooled materials and shared maps through reset
+ok 2 - skinned: fade swaps retain pooled materials and shared maps through reset
+  ---
+  duration_ms: 2.26623
+  type: 'test'
+  ...
+# Subtest: HK debris: fade swaps retain pooled materials and shared maps through reset
+ok 3 - HK debris: fade swaps retain pooled materials and shared maps through reset
+  ---
+  duration_ms: 1.41367
+  type: 'test'
+  ...
+# Subtest: an unprepared transient fade still disposes its owned clone at release
+ok 4 - an unprepared transient fade still disposes its owned clone at release
+  ---
+  duration_ms: 1.0034
+  type: 'test'
+  ...
+# Subtest: head kills crunch only on headshot, independently of weapon damage
+ok 5 - head kills crunch only on headshot, independently of weapon damage
+  ---
+  duration_ms: 0.57197
+  type: 'test'
+  ...
+# Subtest: both arms and legs detach at exactly 60 percent of scaled maximum HP
+ok 6 - both arms and legs detach at exactly 60 percent of scaled maximum HP
+  ---
+  duration_ms: 0.11465
+  type: 'test'
+  ...
+# Subtest: shotgun kills cut the struck limb; blast kills cut four limbs and split the waist
+ok 7 - shotgun kills cut the struck limb; blast kills cut four limbs and split the waist
+  ---
+  duration_ms: 0.15247
+  type: 'test'
+  ...
+# Subtest: unknown parts degrade without claiming a humanoid head
+ok 8 - unknown parts degrade without claiming a humanoid head
+  ---
+  duration_ms: 0.10151
+  type: 'test'
+  ...
+# Subtest: vehicle hulls without a humanoid rig degrade to bounded effect bursts
+ok 9 - vehicle hulls without a humanoid rig degrade to bounded effect bursts
+  ---
+  duration_ms: 0.41886
+  type: 'test'
+  ...
+# Subtest: the retained piece pool never grows and evicts the oldest record only when full
+ok 10 - the retained piece pool never grows and evicts the oldest record only when full
+  ---
+  duration_ms: 2.04017
+  type: 'test'
+  ...
+# Subtest: crunch progresses over time, changes real vertices, and preserves source and buffers
+ok 11 - crunch progresses over time, changes real vertices, and preserves source and buffers
+  ---
+  duration_ms: 9.75114
+  type: 'test'
+  ...
+# Subtest: dents accumulate, recycle at the cap, and reset without geometry replacement
+ok 12 - dents accumulate, recycle at the cap, and reset without geometry replacement
+  ---
+  duration_ms: 11.611689
+  type: 'test'
+  ...
+# Subtest: match warmup reaches skull crunch, one limb, a torso split, and a real dent
+ok 13 - match warmup reaches skull crunch, one limb, a torso split, and a real dent
+  ---
+  duration_ms: 1.27779
+  type: 'test'
+  ...
+# Subtest: both light variants compile once, render, and restore pooled state
+ok 14 - both light variants compile once, render, and restore pooled state
+  ---
+  duration_ms: 6.90642
+  type: 'test'
+  ...
+# Subtest: asset failure prevents priming and compilation
+ok 15 - asset failure prevents priming and compilation
+  ---
+  duration_ms: 0.37319
+  type: 'test'
+  ...
+# Subtest: stop settles pending readiness immediately and observes late failure
+ok 16 - stop settles pending readiness immediately and observes late failure
+  ---
+  duration_ms: 0.52281
+  type: 'test'
+  ...
+# Subtest: stop during compile restores synchronously and cannot resume into restart
+ok 17 - stop during compile restores synchronously and cannot resume into restart
+  ---
+  duration_ms: 5.133749
+  type: 'test'
+  ...
+# Subtest: image timeout path can be stopped without leaking primed pools
+ok 18 - image timeout path can be stopped without leaking primed pools
+  ---
+  duration_ms: 1.63293
+  type: 'test'
+  ...
+# Subtest: warmup excludes hidden authored copies but keeps runtime borrowers and visible authored lights
+ok 19 - warmup excludes hidden authored copies but keeps runtime borrowers and visible authored lights
+  ---
+  duration_ms: 0.25349
+  type: 'test'
+  ...
+# Subtest: nested render holds release once and preserve a pre-suspended viewer
+ok 20 - nested render holds release once and preserve a pre-suspended viewer
+  ---
+  duration_ms: 0.14949
+  type: 'test'
+  ...
+# Subtest: idle-light compositor warmup keeps tracer geometry primed until both variants render
+ok 21 - idle-light compositor warmup keeps tracer geometry primed until both variants render
+  ---
+  duration_ms: 4.03273
+  type: 'test'
+  ...
+# Subtest: idle-light warmup preserves a fixed visible zero-intensity light policy
+ok 22 - idle-light warmup preserves a fixed visible zero-intensity light policy
+  ---
+  duration_ms: 4.97995
+  type: 'test'
+  ...
+# Subtest: active compilation overlaps uploads but gates rendering and the idle variant
+ok 23 - active compilation overlaps uploads but gates rendering and the idle variant
+  ---
+  duration_ms: 5.02333
+  type: 'test'
+  ...
+# Subtest: upload failure restores state and observes a later compile failure
+ok 24 - upload failure restores state and observes a later compile failure
+  ---
+  duration_ms: 0.476159
+  type: 'test'
+  ...
+# Subtest: compile uses compositor output and draw hooks for each material on a mixed skinned mesh
+ok 25 - compile uses compositor output and draw hooks for each material on a mixed skinned mesh
+  ---
+  duration_ms: 0.32556
+  type: 'test'
+  ...
+# Subtest: non-RGBM compile keeps transparency on the ordinary compositor target
+ok 26 - non-RGBM compile keeps transparency on the ordinary compositor target
+  ---
+  duration_ms: 0.10618
+  type: 'test'
+  ...
+# Subtest: pending parallel compilation restores framebuffer immediately and Stop observes both late failures
+ok 27 - pending parallel compilation restores framebuffer immediately and Stop observes both late failures
+  ---
+  duration_ms: 0.7728
+  type: 'test'
+  ...
+# Subtest: a later compile hook failure balances hooks, restores target and observes earlier compilation
+ok 28 - a later compile hook failure balances hooks, restores target and observes earlier compilation
+  ---
+  duration_ms: 0.3481
+  type: 'test'
+  ...
+# Subtest: warmup suspends automatic pool rendering between requested compositor frames
+ok 29 - warmup suspends automatic pool rendering between requested compositor frames
+  ---
+  duration_ms: 4.78008
+  type: 'test'
+  ...
+# Subtest: mounted pooled fades upload and traverse both light/compositor gates without extra scene compiles
+ok 30 - mounted pooled fades upload and traverse both light/compositor gates without extra scene compiles
+  ---
+  duration_ms: 5.28654
+  type: 'test'
+  ...
+# Subtest: Stop during idle fade compilation restores pooled material synchronously and observes late rejection
+ok 31 - Stop during idle fade compilation restores pooled material synchronously and observes late rejection
+  ---
+  duration_ms: 2.806359
+  type: 'test'
+  ...
+# Subtest: death preserves the posed rig, inherits velocity, and applies localized head torque
+ok 32 - death preserves the posed rig, inherits velocity, and applies localized head torque
+  ---
+  duration_ms: 100.851823
+  type: 'test'
+  ...
+# Subtest: terrain matches treads and leaves the actual stairwell open
+ok 33 - terrain matches treads and leaves the actual stairwell open
+  ---
+  duration_ms: 3.83058
+  type: 'test'
+  ...
+# Subtest: eight active cap freezes the oldest pose and retains it for 180 seconds before a two second fade
+ok 34 - eight active cap freezes the oldest pose and retains it for 180 seconds before a two second fade
+  ---
+  duration_ms: 744.554622
+  type: 'test'
+  ...
+# Subtest: a detached limb settles on a tread, keeps its lifetime, and reuses a physics body
+ok 35 - a detached limb settles on a tread, keeps its lifetime, and reuses a physics body
+  ---
+  duration_ms: 30.837478
+  type: 'test'
+  ...
+# Subtest: delayed skull detachment removes its body and constraint without restarting the corpse
+ok 36 - delayed skull detachment removes its body and constraint without restarting the corpse
+  ---
+  duration_ms: 4.094139
+  type: 'test'
+  ...
+# Subtest: blast-split torsos omit the waist joint and receive divergent velocities
+ok 37 - blast-split torsos omit the waist joint and receive divergent velocities
+  ---
+  duration_ms: 2.71444
+  type: 'test'
+  ...
+# Subtest: 24 active pieces retain frozen records and reuse the primed physics pool
+ok 38 - 24 active pieces retain frozen records and reuse the primed physics pool
+  ---
+  duration_ms: 4.31529
+  type: 'test'
+  ...
+# Subtest: repeated deaths, revivals and corpse expiry reuse bounded ragdoll records
+ok 39 - repeated deaths, revivals and corpse expiry reuse bounded ragdoll records
+  ---
+  duration_ms: 12.456339
+  type: 'test'
+  ...
+# Subtest: real Object3DManager reparent retains warmed geometry, material and texture until owner disposal
+ok 40 - real Object3DManager reparent retains warmed geometry, material and texture until owner disposal
+  ---
+  duration_ms: 4.15421
+  type: 'test'
+  ...
+# Subtest: retention scope restores mixed settings on nested calls and exceptions
+ok 41 - retention scope restores mixed settings on nested calls and exceptions
+  ---
+  duration_ms: 0.28239
+  type: 'test'
+  ...
+# Subtest: restoring authored preview before its borrower is removed protects their shared geometry
+ok 42 - restoring authored preview before its borrower is removed protects their shared geometry
+  ---
+  duration_ms: 0.969699
+  type: 'test'
+  ...
+# Subtest: three roster templates register authored sources and all core part names
+ok 43 - three roster templates register authored sources and all core part names
+  ---
+  duration_ms: 7.347749
+  type: 'test'
+  ...
+# Subtest: roster surfaces carry shared complete PBR maps with no vertex colors
+ok 44 - roster surfaces carry shared complete PBR maps with no vertex colors
+  ---
+  duration_ms: 11.17821
+  type: 'test'
+  ...
+# Subtest: all twenty authored part bounds and both settled poses fit within five centimetres
+ok 45 - all twenty authored part bounds and both settled poses fit within five centimetres
+  ---
+  duration_ms: 165.075079
+  type: 'test'
+  ...
+# Subtest: liquid blades morph on attack, ripple on impact, and shimmer as HP rises without changing core state
+ok 46 - liquid blades morph on attack, ripple on impact, and shimmer as HP rises without changing core state
+  ---
+  duration_ms: 2.10077
+  type: 'test'
+  ...
+# Subtest: aerial banks, turns its turret, spins intakes, and points a bounded searchlight
+ok 47 - aerial banks, turns its turret, spins intakes, and points a bounded searchlight
+  ---
+  duration_ms: 1.47669
+  type: 'test'
+  ...
+# Subtest: tank scrolls the shared tread atlas, recoils both guns, and flares its rear core
+ok 48 - tank scrolls the shared tread atlas, recoils both guns, and flares its rear core
+  ---
+  duration_ms: 0.76141
+  type: 'test'
+  ...
+# Subtest: liquid collapse creates a growing pool, sinks, and releases without metal debris
+ok 49 - liquid collapse creates a growing pool, sinks, and releases without metal debris
+  ---
+  duration_ms: 2.06509
+  type: 'test'
+  ...
+# Subtest: vehicle deaths use resident piece physics and keep fire through the wreck lifetime
+ok 50 - vehicle deaths use resident piece physics and keep fire through the wreck lifetime
+  ---
+  duration_ms: 23.254498
+  type: 'test'
+  ...
+# Subtest: boss wave announcement remains without enemy health overlay
+ok 51 - boss wave announcement remains without enemy health overlay
+  ---
+  duration_ms: 0.19025
+  type: 'test'
+  ...
+# Subtest: match priming allocates live aerial optics before death paths and retains those exact pools for first spawn
+ok 52 - match priming allocates live aerial optics before death paths and retains those exact pools for first spawn
+  ---
+  duration_ms: 347.282478
+  type: 'test'
+  ...
+# Subtest: 600 unchanged frames skip bone math/upload invalidation with exact pose
+ok 53 - 600 unchanged frames skip bone math/upload invalidation with exact pose
+  ---
+  duration_ms: 12.075379
+  type: 'test'
+  ...
+# Subtest: actual bone/parent/manual/inverse/resource changes invalidate; explicit world updates retain semantics
+ok 54 - actual bone/parent/manual/inverse/resource changes invalidate; explicit world updates retain semantics
+  ---
+  duration_ms: 1.11936
+  type: 'test'
+  ...
+# Subtest: cache deduplicates shared skins and restores own methods without overwriting a later owner
+ok 55 - cache deduplicates shared skins and restores own methods without overwriting a later owner
+  ---
+  duration_ms: 0.48679
+  type: 'test'
+  ...
+# Subtest: a later instrumentation wrapper can retain the method while disposal restores live updates
+ok 56 - a later instrumentation wrapper can retain the method while disposal restores live updates
+  ---
+  duration_ms: 0.22756
+  type: 'test'
+  ...
+# Subtest: early eight-body-cap freeze preserves pending crunch, head detach, hit bursts, fade, and recycle
+ok 57 - early eight-body-cap freeze preserves pending crunch, head detach, hit bursts, fade, and recycle
+  ---
+  duration_ms: 473.70597
+  type: 'test'
+  ...
+# Subtest: actual scout/endo/heavy limb, blast split, and dent paths match uncached poses; reset releases leases
+ok 58 - actual scout/endo/heavy limb, blast split, and dent paths match uncached poses; reset releases leases
+  ---
+  duration_ms: 789.414369
+  type: 'test'
+  ...
+# Subtest: repeated revival reuses the record, restores every skin, and Stop releases the final cache
+ok 59 - repeated revival reuses the record, restores every skin, and Stop releases the final cache
+  ---
+  duration_ms: 64.017626
+  type: 'test'
+  ...
+# Subtest: a recycled rig stops scene matrix traversal, reactivates without allocation, and returns to owner cleanup
+ok 60 - a recycled rig stops scene matrix traversal, reactivates without allocation, and returns to owner cleanup
+  ---
+  duration_ms: 2.29597
+  type: 'test'
+  ...
+1..60
+# tests 60
+# suites 0
+# pass 60
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 4955.31619

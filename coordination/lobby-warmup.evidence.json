@@ -1,0 +1,480 @@
+{
+  "baseline": {
+    "source": "c51bc46",
+    "mode": "local createGame runtime, fresh controlled browser, immediate programmatic startMatch",
+    "viewport": [
+      480,
+      270
+    ],
+    "cpuAffinity": [
+      0,
+      1
+    ],
+    "renderer": "ANGLE (NVIDIA, Vulkan 1.4.312 (NVIDIA NVIDIA GeForce RTX 3090 Ti (0x00002203)), NVIDIA)",
+    "startToReadyMs": 6917.899999991059,
+    "warmup": {
+      "textures": 209,
+      "materials": 541,
+      "programs": 362,
+      "deathPath": {
+        "ragdolls": 1,
+        "detachedLimbs": 6,
+        "fixedLimbMeshes": 96,
+        "skullCrunch": 1,
+        "limb": 5,
+        "torsoSplit": 1,
+        "dent": 1,
+        "vertexCap": 384,
+        "rosterDeaths": 3
+      }
+    },
+    "spans": [
+      {
+        "name": "lobby-plan",
+        "ms": 0,
+        "programsBefore": 33,
+        "programsAfter": 33
+      },
+      {
+        "name": "map-batching",
+        "ms": 681.0999999940395,
+        "programsBefore": 33,
+        "programsAfter": 33
+      },
+      {
+        "name": "audio-ready",
+        "ms": 641.5,
+        "programsBefore": 33,
+        "programsAfter": 24
+      },
+      {
+        "name": "menu-weapon-preload",
+        "ms": 263.6000000089407,
+        "programsBefore": 24,
+        "programsAfter": 24
+      },
+      {
+        "name": "asset-readiness",
+        "ms": 796,
+        "programsBefore": 33,
+        "programsAfter": 24
+      },
+      {
+        "name": "prime-gameplay-pools",
+        "ms": 439.20000000298023,
+        "programsBefore": 24,
+        "programsAfter": 24
+      },
+      {
+        "name": "collect-resources",
+        "ms": 58,
+        "programsBefore": 24,
+        "programsAfter": 24
+      },
+      {
+        "name": "image-readiness",
+        "ms": 0.29999999701976776,
+        "programsBefore": 24,
+        "programsAfter": 24
+      },
+      {
+        "name": "texture-upload",
+        "ms": 1117.7999999970198,
+        "programsBefore": 118,
+        "programsAfter": 118
+      },
+      {
+        "name": "compile-active-lights",
+        "ms": 1757.6000000089407,
+        "programsBefore": 24,
+        "programsAfter": 118
+      },
+      {
+        "name": "render-active-lights",
+        "ms": 1683.2999999970198,
+        "programsBefore": 118,
+        "programsAfter": 208
+      },
+      {
+        "name": "compile-inactive-lights",
+        "ms": 984.0999999940395,
+        "programsBefore": 208,
+        "programsAfter": 362
+      },
+      {
+        "name": "render-inactive-lights",
+        "ms": 75.40000000596046,
+        "programsBefore": 362,
+        "programsAfter": 362
+      },
+      {
+        "name": "gpu-finish",
+        "ms": 0,
+        "programsBefore": 362,
+        "programsAfter": 362
+      },
+      {
+        "name": "visual-warmup",
+        "ms": 5826.20000000298,
+        "programsBefore": 33,
+        "programsAfter": 358
+      }
+    ],
+    "priming": [
+      {
+        "ms": 438.40000000596046,
+        "clones": 54,
+        "cloneMs": 317.70000000298023
+      }
+    ]
+  },
+  "candidate": {
+    "mode": "local createGame runtime, new controlled browser, actual DOM START click to next playable frame; driver cache may be warm",
+    "viewport": [
+      480,
+      270
+    ],
+    "cpuAffinity": [
+      0,
+      1
+    ],
+    "renderer": "ANGLE (NVIDIA, Vulkan 1.4.312 (NVIDIA NVIDIA GeForce RTX 3090 Ti (0x00002203)), NVIDIA)",
+    "startToFrameMs": 4907.20000000298,
+    "warmup": {
+      "textures": 221,
+      "materials": 556,
+      "programs": 219,
+      "resources": {
+        "objects": 3308,
+        "renderables": 1146,
+        "materials": 537,
+        "geometries": 565,
+        "skinned": 80,
+        "instanced": 26,
+        "batched": 1,
+        "largestMaterialFamilies": [
+          {
+            "name": "Optical scattering",
+            "targets": 267
+          },
+          {
+            "name": "Endoskeleton 1K worn metal atlas",
+            "targets": 140
+          },
+          {
+            "name": "Map rust · V2 surface",
+            "targets": 111
+          },
+          {
+            "name": "Machined red optical glass",
+            "targets": 85
+          },
+          {
+            "name": "B7 worn phosphate, machined steel, molded polymer and woven gloves",
+            "targets": 56
+          },
+          {
+            "name": "M67 worn phosphate and safety hardware",
+            "targets": 51
+          },
+          {
+            "name": "Pooled HK debris",
+            "targets": 50
+          },
+          {
+            "name": "MeshBasicMaterial",
+            "targets": 41
+          }
+        ]
+      },
+      "stages": [
+        {
+          "name": "before-compile",
+          "programs": 31,
+          "geometries": 468,
+          "textures": 37
+        },
+        {
+          "name": "compile-active-lights",
+          "programs": 109,
+          "geometries": 467,
+          "textures": 133
+        },
+        {
+          "name": "render-active-lights",
+          "programs": 132,
+          "geometries": 847,
+          "textures": 229
+        },
+        {
+          "name": "compile-inactive-lights",
+          "programs": 209,
+          "geometries": 847,
+          "textures": 229
+        },
+        {
+          "name": "render-inactive-lights",
+          "programs": 219,
+          "geometries": 847,
+          "textures": 229
+        }
+      ],
+      "deathPath": {
+        "ragdolls": 1,
+        "detachedLimbs": 6,
+        "fixedLimbMeshes": 96,
+        "skullCrunch": 1,
+        "limb": 5,
+        "torsoSplit": 1,
+        "dent": 1,
+        "vertexCap": 384,
+        "rosterDeaths": 3,
+        "pooledRigs": 54,
+        "aerialOptics": [
+          "beam",
+          "spot"
+        ]
+      }
+    },
+    "spans": [
+      {
+        "name": "map-collision-build",
+        "ms": 3.1000000089406967,
+        "status": "ready"
+      },
+      {
+        "name": "world-build",
+        "ms": 43.70000000298023,
+        "status": "ready"
+      },
+      {
+        "name": "menu-assets-and-build",
+        "ms": 1754.0999999940395,
+        "status": "ready"
+      },
+      {
+        "name": "map-batching",
+        "ms": 691.5,
+        "status": "ready"
+      },
+      {
+        "name": "view-construction",
+        "ms": 377.20000000298023,
+        "status": "ready"
+      },
+      {
+        "name": "lobby-plan",
+        "ms": 378.6000000089407,
+        "status": "ready"
+      },
+      {
+        "name": "audio-ready",
+        "ms": 1.2000000029802322,
+        "status": "ready"
+      },
+      {
+        "name": "menu-weapon-preload",
+        "ms": 1350.4000000059605,
+        "status": "ready"
+      },
+      {
+        "name": "asset-readiness",
+        "ms": 560.1000000089407,
+        "status": "ready"
+      },
+      {
+        "name": "prime-unit-pools",
+        "ms": 429.29999999701977,
+        "status": "ready"
+      },
+      {
+        "name": "prime-grenade-pools",
+        "ms": 0.10000000894069672,
+        "status": "ready"
+      },
+      {
+        "name": "prime-weapon-pools",
+        "ms": 0.5999999940395355,
+        "status": "ready"
+      },
+      {
+        "name": "prime-gameplay-pools",
+        "ms": 430.29999999701977,
+        "status": "ready"
+      },
+      {
+        "name": "collect-resources",
+        "ms": 39.30000001192093,
+        "status": "ready"
+      },
+      {
+        "name": "image-readiness",
+        "ms": 0.29999999701976776,
+        "status": "ready"
+      },
+      {
+        "name": "texture-upload",
+        "ms": 1109.2000000029802,
+        "status": "ready"
+      },
+      {
+        "name": "compile-active-lights",
+        "ms": 1536.2999999970198,
+        "status": "ready"
+      },
+      {
+        "name": "render-active-lights",
+        "ms": 1093.2000000029802,
+        "status": "ready"
+      },
+      {
+        "name": "compile-inactive-lights",
+        "ms": 448.59999999403954,
+        "status": "ready"
+      },
+      {
+        "name": "render-inactive-lights",
+        "ms": 246.29999999701977,
+        "status": "ready"
+      },
+      {
+        "name": "gpu-finish",
+        "ms": 4.200000002980232,
+        "status": "ready"
+      },
+      {
+        "name": "visual-warmup",
+        "ms": 4416.899999991059,
+        "status": "ready"
+      }
+    ],
+    "combat": {
+      "phases": [
+        {
+          "name": "spawn-six-types",
+          "workMs": 18.100000008940697,
+          "maxFrameMs": 20.799999997019768,
+          "meanFrameMs": 16.133333332836628,
+          "newPrograms": []
+        },
+        {
+          "name": "first-pistol",
+          "workMs": 2.2999999970197678,
+          "maxFrameMs": 22.400000005960464,
+          "meanFrameMs": 16.933333333581686,
+          "newPrograms": []
+        },
+        {
+          "name": "first-plasma",
+          "workMs": 1.0999999940395355,
+          "maxFrameMs": 21.900000005960464,
+          "meanFrameMs": 16.108333333084982,
+          "newPrograms": []
+        },
+        {
+          "name": "six-deaths",
+          "workMs": 8.299999997019768,
+          "maxFrameMs": 42.5,
+          "meanFrameMs": 18.66333333303531,
+          "newPrograms": []
+        }
+      ],
+      "deathPath": {
+        "gore": {
+          "crunches": 1,
+          "limbs": 4,
+          "splits": 1,
+          "dents": 2,
+          "fallbacks": 2,
+          "stains": 82,
+          "wreckHits": 0,
+          "maxVertices": 222,
+          "frames": 72,
+          "totalMs": 10.399999961256981,
+          "maxMs": 1.0999999940395355
+        },
+        "rosterDeaths": 3
+      },
+      "units": [
+        {
+          "id": "scout-2",
+          "type": "scout",
+          "alive": false
+        },
+        {
+          "id": "endo-3",
+          "type": "endo",
+          "alive": false
+        },
+        {
+          "id": "heavy-4",
+          "type": "heavy",
+          "alive": false
+        },
+        {
+          "id": "t1000-5",
+          "type": "t1000",
+          "alive": false
+        },
+        {
+          "id": "hkaerial-6",
+          "type": "hkaerial",
+          "alive": false
+        },
+        {
+          "id": "hktank-7",
+          "type": "hktank",
+          "alive": false
+        }
+      ],
+      "tick": 80
+    },
+    "stop": {
+      "renderEnabled": true,
+      "runtimeRoots": [],
+      "memory": {
+        "geometries": 599,
+        "textures": 85
+      }
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+    ]
+  },
+  "check": {
+    "ok": true,
+    "mode": "editor",
+    "checkedAt": "2026-09-14T23:33:15.413Z",
+    "outcomes": [
+      {
+        "name": "Playable",
+        "status": "pass",
+        "summary": "The game booted and ran 30 frames without errors.",
+        "cleanup": {
+          "ok": true,
+          "status": "pass",
+          "summary": "Runtime cleanup passed.",
+          "issues": [],
+          "trackedObjectCount": 0,
+          "outsideRenderableCount": 0
+        }
+      },
+      {
+        "name": "Editable",
+        "status": "pass",
+        "summary": "Stopped-mode authored representation passed."
+      },
+      {
+        "name": "Persisted",
+        "status": "pass",
+        "summary": "Save/Reload semantic equivalence passed.",
+        "changes": []
+      }
+    ]
+  },
+  "limits": [
+    "Local RTX measurements do not establish published cold-start performance on Mac or the 75 FPS target.",
+    "Baseline and candidate shader-cache state is unequal; program reduction is causal evidence, wall-time difference is not a controlled cold-start comparison.",
+    "One expected unavailable local lobby connection was observed; no shader/page errors."
+  ]
+}
