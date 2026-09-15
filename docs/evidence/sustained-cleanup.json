@@ -1,0 +1,196 @@
+{
+  "startedAt": "2026-09-15T00:11:43.711Z",
+  "errors": [],
+  "starts": [
+    {
+      "clickToNextFrameMs": 4892.5,
+      "memory": {
+        "geometries": 847,
+        "textures": 229
+      },
+      "programs": 217,
+      "heap": 972094503
+    },
+    {
+      "clickToNextFrameMs": 3358.2999999970198,
+      "memory": {
+        "geometries": 851,
+        "textures": 238
+      },
+      "programs": 235,
+      "heap": 1223330422
+    }
+  ],
+  "stops": [
+    {
+      "runtimeRoots": [],
+      "memory": {
+        "geometries": 598,
+        "textures": 85
+      },
+      "programs": 81,
+      "heap": 989569792,
+      "started": false,
+      "world": null,
+      "renderEnabled": true,
+      "afterExplicitGc": {
+        "memory": {
+          "geometries": 598,
+          "textures": 85
+        },
+        "programs": 81,
+        "heap": 592885175
+      }
+    },
+    {
+      "runtimeRoots": [],
+      "memory": {
+        "geometries": 598,
+        "textures": 85
+      },
+      "programs": 82,
+      "heap": 1239372871,
+      "started": false,
+      "world": null,
+      "renderEnabled": true,
+      "afterExplicitGc": {
+        "memory": {
+          "geometries": 598,
+          "textures": 85
+        },
+        "programs": 82,
+        "heap": 835225346
+      }
+    }
+  ],
+  "notes": [
+    "Follow-up after the natural sustained restart hit the memory guard. Explicit GC occurs only after Stop and is recorded; this tests reachable cleanup, not automatic GC behavior."
+  ],
+  "chromeArgs": [
+    "--use-angle=vulkan",
+    "--enable-features=Vulkan",
+    "--disable-vulkan-surface",
+    "--ignore-gpu-blocklist",
+    "--disable-dev-shm-usage",
+    "--js-flags=--max-old-space-size=768"
+  ],
+  "peakCgroupBytes": 3792859136,
+  "browserProcesses": [
+    {
+      "pid": 205785,
+      "type": "browser",
+      "cgroup": "/user.slice/user-1000.slice/user@1000.service/terminator.slice/terminator-v2.slice/terminator-v2-sustained-validation.service"
+    },
+    {
+      "pid": 205824,
+      "type": "GPU",
+      "cgroup": "/user.slice/user-1000.slice/user@1000.service/terminator.slice/terminator-v2.slice/terminator-v2-sustained-validation.service"
+    },
+    {
+      "pid": 205826,
+      "type": "network.mojom.NetworkService",
+      "cgroup": "/user.slice/user-1000.slice/user@1000.service/terminator.slice/terminator-v2.slice/terminator-v2-sustained-validation.service"
+    },
+    {
+      "pid": 205827,
+      "type": "storage.mojom.StorageService",
+      "cgroup": "/user.slice/user-1000.slice/user@1000.service/terminator.slice/terminator-v2.slice/terminator-v2-sustained-validation.service"
+    }
+  ],
+  "diagnostics": [
+    {
+      "at": "2026-09-15T00:11:59.975Z",
+      "pending": [
+        "/api/events",
+        "/files/assets/audio/sfx/pistol_9mm-1.ogg",
+        "/files/assets/audio/sfx/pistol_9mm-2.ogg",
+        "/files/assets/audio/sfx/m4_rifle-1.ogg",
+        "/files/assets/audio/sfx/m4_rifle-2.ogg",
+        "/files/assets/audio/sfx/shotgun_fire-1.ogg",
+        "/files/assets/audio/sfx/shotgun_fire-2.ogg",
+        "/files/assets/audio/sfx/shotgun_pump-1.ogg",
+        "/files/assets/audio/sfx/shotgun_pump-2.ogg",
+        "/files/assets/audio/sfx/plasma_bolt-1.ogg",
+        "/files/assets/audio/sfx/plasma_bolt-2.ogg",
+        "/files/assets/audio/sfx/minigun_spinup-1.ogg",
+        "/files/assets/audio/sfx/minigun_spinup-2.ogg",
+        "/files/assets/audio/sfx/minigun_loop-1.ogg",
+        "/files/assets/audio/sfx/minigun_loop-2.ogg",
+        "/files/assets/audio/sfx/minigun_spindown-1.ogg",
+        "/files/assets/audio/sfx/minigun_spindown-2.ogg",
+        "/files/assets/audio/sfx/reload_pistol-1.ogg",
+        "/files/assets/audio/sfx/reload_pistol-2.ogg",
+        "/files/assets/audio/sfx/reload_m4-1.ogg"
+      ],
+      "state": {
+        "ready": "complete",
+        "manager": true,
+        "route": "loading",
+        "renderEnabled": true,
+        "viewsStarted": false,
+        "spans": [
+          {
+            "name": "map-collision-build",
+            "status": "ready",
+            "ms": 4
+          },
+          {
+            "name": "world-build",
+            "status": "ready",
+            "ms": 33.099999994039536
+          },
+          {
+            "name": "menu-lighting-decode",
+            "status": "ready",
+            "ms": 1027.4000000059605
+          }
+        ],
+        "canvas": [
+          {
+            "width": 213,
+            "height": 197,
+            "classes": ""
+          },
+          {
+            "width": 80,
+            "height": 48,
+            "classes": ""
+          },
+          {
+            "width": 80,
+            "height": 48,
+            "classes": ""
+          },
+          {
+            "width": 80,
+            "height": 48,
+            "classes": ""
+          },
+          {
+            "width": 600,
+            "height": 300,
+            "classes": ""
+          },
+          {
+            "width": 1,
+            "height": 1,
+            "classes": ""
+          },
+          {
+            "width": 470,
+            "height": 270,
+            "classes": ""
+          }
+        ]
+      }
+    }
+  ],
+  "editorSetupGc": true,
+  "beforeCheckCgroupBytes": 759201792,
+  "checkExit": null,
+  "checkError": "cgroup >3.5 GiB",
+  "browserDisconnectedAt": "2026-09-15T00:12:02.331Z",
+  "checkAbort": "cgroup >3.5 GiB",
+  "finishedAt": "2026-09-15T00:12:26.237Z",
+  "memoryEvents": "low 0\nhigh 1229\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+}

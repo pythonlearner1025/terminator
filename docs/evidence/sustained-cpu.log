@@ -1,0 +1,639 @@
+TAP version 13
+# [Terminator sandbox] scout rev 1 ticked in QuickJS
+# [Terminator sandbox] heavy rev 1 ticked in QuickJS
+# [Terminator sandbox] scout rev 2 ticked in QuickJS
+# [Terminator sandbox] endo rev 1 ticked in QuickJS
+# Subtest: sense hides the player outside the vision cone and behind an occluder
+ok 1 - sense hides the player outside the vision cone and behind an occluder
+  ---
+  duration_ms: 88.981312
+  type: 'test'
+  ...
+# Subtest: act.face on every brain tick still obeys the Heavy turn rate
+ok 2 - act.face on every brain tick still obeys the Heavy turn rate
+  ---
+  duration_ms: 39.063541
+  type: 'test'
+  ...
+# Subtest: script acceptance rejects missing tick and smoke errors, then versions new spawns
+ok 3 - script acceptance rejects missing tick and smoke errors, then versions new spawns
+  ---
+  duration_ms: 152.221674
+  type: 'test'
+  ...
+# Subtest: 24 units tick at 10 Hz in deterministic staggered groups
+ok 4 - 24 units tick at 10 Hz in deterministic staggered groups
+  ---
+  duration_ms: 101.249342
+  type: 'test'
+  ...
+# Subtest: ghost replays recorded movement and look within one centimeter
+ok 5 - ghost replays recorded movement and look within one centimeter
+  ---
+  duration_ms: 198.830811
+  type: 'test'
+  ...
+# Subtest: last, best, and numeric ghost selectors choose the intended replay
+ok 6 - last, best, and numeric ghost selectors choose the intended replay
+  ---
+  duration_ms: 0.366081
+  type: 'test'
+  ...
+# Subtest: simulation is deterministic for a seed and returns the protocol result shape
+ok 7 - simulation is deterministic for a seed and returns the protocol result shape
+  ---
+  duration_ms: 441.508177
+  type: 'test'
+  ...
+# Subtest: simulator uses the injected brain factory for submitted scripts
+ok 8 - simulator uses the injected brain factory for submitted scripts
+  ---
+  duration_ms: 35.900799
+  type: 'test'
+  ...
+# Subtest: simulator uses the live sandbox path for submitted source by default
+ok 9 - simulator uses the live sandbox path for submitted source by default
+  ---
+  duration_ms: 43.983626
+  type: 'test'
+  ...
+# Subtest: 24 alive units simulate at least 30 times faster than real time
+ok 10 - 24 alive units simulate at least 30 times faster than real time
+  ---
+  duration_ms: 973.899287
+  type: 'test'
+  ...
+# Subtest: simulation summaries count early kills after their corpses retire
+ok 11 - simulation summaries count early kills after their corpses retire
+  ---
+  duration_ms: 132.727268
+  type: 'test'
+  ...
+# Subtest: simulation releases surviving script runtimes on completion and timeout
+ok 12 - simulation releases surviving script runtimes on completion and timeout
+  ---
+  duration_ms: 90.220523
+  type: 'test'
+  ...
+# Subtest: fixed live workload does not scan or snapshot every past death
+ok 13 - fixed live workload does not scan or snapshot every past death
+  ---
+  duration_ms: 4775.357327
+  type: 'test'
+  ...
+# [{"seconds":60,"retained":6,"indexed":6,"loopReads":2126,"snapshotUnits":6,"unitBytes":4529},{"seconds":300,"retained":6,"indexed":6,"loopReads":2126,"snapshotUnits":6,"unitBytes":4547},{"seconds":600,"retained":6,"indexed":6,"loopReads":2126,"snapshotUnits":6,"unitBytes":4547}]
+# Subtest: recent corpses survive snapshots and brains are destroyed exactly once
+ok 14 - recent corpses survive snapshots and brains are destroyed exactly once
+  ---
+  duration_ms: 94.023715
+  type: 'test'
+  ...
+# Subtest: a dead projectile owner survives retirement until its final impact
+ok 15 - a dead projectile owner survives retirement until its final impact
+  ---
+  duration_ms: 46.705738
+  type: 'test'
+  ...
+# Subtest: one host and two headless guests join and receive a snapshot over the real relay
+ok 16 - one host and two headless guests join and receive a snapshot over the real relay
+  ---
+  duration_ms: 252.846754
+  type: 'test'
+  ...
+# Subtest: guest input reaches the host and prediction reconciles within one snapshot
+ok 17 - guest input reaches the host and prediction reconciles within one snapshot
+  ---
+  duration_ms: 114.497892
+  type: 'test'
+  ...
+# Subtest: host schedules twenty authoritative snapshots for sixty simulation ticks
+ok 18 - host schedules twenty authoritative snapshots for sixty simulation ticks
+  ---
+  duration_ms: 443.016077
+  type: 'test'
+  ...
+# Subtest: network snapshots omit growing history and remain within the WebRTC message limit
+ok 19 - network snapshots omit growing history and remain within the WebRTC message limit
+  ---
+  duration_ms: 897.945535
+  type: 'test'
+  ...
+# Subtest: guest local hitscan reports a hit that damages the unit on the host
+ok 20 - guest local hitscan reports a hit that damages the unit on the host
+  ---
+  duration_ms: 116.620114
+  type: 'test'
+  ...
+# Subtest: guest shot cadence follows elapsed time when input delivery is slower than sixty hertz
+ok 21 - guest shot cadence follows elapsed time when input delivery is slower than sixty hertz
+  ---
+  duration_ms: 62.763461
+  type: 'test'
+  ...
+# Subtest: guest launcher fire creates one authoritative shell on the reliable host path
+ok 22 - guest launcher fire creates one authoritative shell on the reliable host path
+  ---
+  duration_ms: 102.588002
+  type: 'test'
+  ...
+# Subtest: guest sniper fire resolves all penetration hits authoritatively
+ok 23 - guest sniper fire resolves all penetration hits authoritatively
+  ---
+  duration_ms: 117.002815
+  type: 'test'
+  ...
+# Subtest: guest ready and purchase messages update authoritative party and player state
+ok 24 - guest ready and purchase messages update authoritative party and player state
+  ---
+  duration_ms: 85.463129
+  type: 'test'
+  ...
+# Subtest: guest reconnects with the same player id during the grace period
+ok 25 - guest reconnects with the same player id during the grace period
+  ---
+  duration_ms: 119.753426
+  type: 'test'
+  ...
+# Subtest: a transient guest socket drop reconnects automatically with its player id and input sequence
+ok 26 - a transient guest socket drop reconnects automatically with its player id and input sequence
+  ---
+  duration_ms: 298.547521
+  type: 'test'
+  ...
+# Subtest: host waits for its own view and every connected guest view before starting a match
+ok 27 - host waits for its own view and every connected guest view before starting a match
+  ---
+  duration_ms: 77.714423
+  type: 'test'
+  ...
+# Subtest: an ended match returns the connected roster to the same ready-reset party
+ok 28 - an ended match returns the connected roster to the same ready-reset party
+  ---
+  duration_ms: 186.1514
+  type: 'test'
+  ...
+# Subtest: guest disconnect keeps a ten-second-grace slot before removal and host leave ends the party
+ok 29 - guest disconnect keeps a ten-second-grace slot before removal and host leave ends the party
+  ---
+  duration_ms: 176.210732
+  type: 'test'
+  ...
+# Subtest: party relay forwards guest messages, targeted host messages, and peer notices
+ok 30 - party relay forwards guest messages, targeted host messages, and peer notices
+  ---
+  duration_ms: 107.341466
+  type: 'test'
+  ...
+# Subtest: party relay rejects missing hosts and a third guest
+ok 31 - party relay rejects missing hosts and a third guest
+  ---
+  duration_ms: 5.999285
+  type: 'test'
+  ...
+# Subtest: party invite endpoint reports LAN and registered Quick Tunnel relay URLs
+ok 32 - party invite endpoint reports LAN and registered Quick Tunnel relay URLs
+  ---
+  duration_ms: 9.813028
+  type: 'test'
+  ...
+# Subtest: asset manifest contains only existing, unique project assets
+ok 33 - asset manifest contains only existing, unique project assets
+  ---
+  duration_ms: 2.699452
+  type: 'test'
+  ...
+# Subtest: optional queue bounds concurrency, yields between assets and promotes without a readiness gate
+ok 34 - optional queue bounds concurrency, yields between assets and promotes without a readiness gate
+  ---
+  duration_ms: 0.694621
+  type: 'test'
+  ...
+# Subtest: Stop aborts owned loads, clears scheduled jobs and observes late rejections
+ok 35 - Stop aborts owned loads, clears scheduled jobs and observes late rejections
+  ---
+  duration_ms: 0.3375
+  type: 'test'
+  ...
+# Subtest: an optional asset failure does not poison the next queue or block remaining hints
+ok 36 - an optional asset failure does not poison the next queue or block remaining hints
+  ---
+  duration_ms: 0.441241
+  type: 'test'
+  ...
+# Subtest: image warming uses decode and releases its image on completion and cancellation
+ok 37 - image warming uses decode and releases its image on completion and cancellation
+  ---
+  duration_ms: 0.74414
+  type: 'test'
+  ...
+# Subtest: HDR warming drains low-priority responses and preserves loader ownership
+ok 38 - HDR warming drains low-priority responses and preserves loader ownership
+  ---
+  duration_ms: 1.012041
+  type: 'test'
+  ...
+# Subtest: input telemetry includes controls/menu waiting and keeps missing clicks distinct
+ok 39 - input telemetry includes controls/menu waiting and keeps missing clicks distinct
+  ---
+  duration_ms: 0.49394
+  type: 'test'
+  ...
+# Subtest: solo Start stays behind real warmup while optional preparation does not gate it
+ok 40 - solo Start stays behind real warmup while optional preparation does not gate it
+  ---
+  duration_ms: 0.97374
+  type: 'test'
+  ...
+# Subtest: Stop before readiness cannot launch a wave, and a retry consumes new readiness
+ok 41 - Stop before readiness cannot launch a wave, and a retry consumes new readiness
+  ---
+  duration_ms: 0.429081
+  type: 'test'
+  ...
+# Subtest: stopping views clears stale party warmup before retry
+ok 42 - stopping views clears stale party warmup before retry
+  ---
+  duration_ms: 0.15656
+  type: 'test'
+  ...
+# Subtest: returning to main cancels pending guest preparation before restoring menu presentation
+ok 43 - returning to main cancels pending guest preparation before restoring menu presentation
+  ---
+  duration_ms: 0.125
+  type: 'test'
+  ...
+# Subtest: a guest warmup that finishes after leaving never sends loaded
+ok 44 - a guest warmup that finishes after leaving never sends loaded
+  ---
+  duration_ms: 2.079252
+  type: 'test'
+  ...
+# Subtest: manager shares pending lighting preparation and Stop isolates a retry from late failure
+ok 45 - manager shares pending lighting preparation and Stop isolates a retry from late failure
+  ---
+  duration_ms: 0.45685
+  type: 'test'
+  ...
+# Subtest: menu readiness does not wait for background assets or take the gameplay camera
+ok 46 - menu readiness does not wait for background assets or take the gameplay camera
+  ---
+  duration_ms: 0.60847
+  type: 'test'
+  ...
+# Subtest: DOM capture measures actual Start rather than party creation or disabled buttons
+ok 47 - DOM capture measures actual Start rather than party creation or disabled buttons
+  ---
+  duration_ms: 0.15957
+  type: 'test'
+  ...
+# Subtest: incremental presentation equals full history, with legacy attribution and exact sums
+ok 48 - incremental presentation equals full history, with legacy attribution and exact sums
+  ---
+  duration_ms: 8.471127
+  type: 'test'
+  ...
+# Subtest: joins, leaves, roster order, late names and returning players preserve two-pass scoreboard semantics
+ok 49 - joins, leaves, roster order, late names and returning players preserve two-pass scoreboard semantics
+  ---
+  duration_ms: 0.548501
+  type: 'test'
+  ...
+# Subtest: catalog mutations, replacements, additions/removals and wave changes reprice full history exactly
+ok 50 - catalog mutations, replacements, additions/removals and wave changes reprice full history exactly
+  ---
+  duration_ms: 1.424281
+  type: 'test'
+  ...
+# Subtest: replacement, shrink, same-length overwrite and truncate/refill beyond cursor invalidate
+ok 51 - replacement, shrink, same-length overwrite and truncate/refill beyond cursor invalidate
+  ---
+  duration_ms: 0.40184
+  type: 'test'
+  ...
+# Subtest: actual co-op applySnapshot overlaps, gaps and retry match the full-history projection
+ok 52 - actual co-op applySnapshot overlaps, gaps and retry match the full-history projection
+  ---
+  duration_ms: 233.892249
+  type: 'test'
+  ...
+# Subtest: warm history reads stay bounded and only the appended delta is traversed
+ok 53 - warm history reads stay bounded and only the appended delta is traversed
+  ---
+  duration_ms: 16.619183
+  type: 'test'
+  ...
+# Subtest: standalone scoreboard accepts its original minimal world shape
+ok 54 - standalone scoreboard accepts its original minimal world shape
+  ---
+  duration_ms: 0.18514
+  type: 'test'
+  ...
+# Subtest: deterministic mixed history changes stay equivalent to the original full scan
+ok 55 - deterministic mixed history changes stay equivalent to the original full scan
+  ---
+  duration_ms: 12.45475
+  type: 'test'
+  ...
+# Subtest: public menu opens built-in Skynet without a probe, error or premature match
+ok 56 - public menu opens built-in Skynet without a probe, error or premature match
+  ---
+  duration_ms: 13.198141
+  type: 'test'
+  ...
+# Subtest: stopped menu never runs scheduled preparation; a live menu prepares once
+ok 57 - stopped menu never runs scheduled preparation; a live menu prepares once
+  ---
+  duration_ms: 0.22854
+  type: 'test'
+  ...
+# Subtest: repeated start requests share readiness and allow a subsequent retry
+ok 58 - repeated start requests share readiness and allow a subsequent retry
+  ---
+  duration_ms: 0.301401
+  type: 'test'
+  ...
+# Subtest: enemy plates are removed before projection and no new enemy DOM is created
+ok 59 - enemy plates are removed before projection and no new enemy DOM is created
+  ---
+  duration_ms: 0.16748
+  type: 'test'
+  ...
+# Subtest: profile executes void work once and records failures
+ok 60 - profile executes void work once and records failures
+  ---
+  duration_ms: 0.40423
+  type: 'test'
+  ...
+# Subtest: synchronous view-construction failure restores the map and stops partial views
+ok 61 - synchronous view-construction failure restores the map and stops partial views
+  ---
+  duration_ms: 0.752631
+  type: 'test'
+  ...
+# Subtest: repeated roster teardown releases uploaded particle instance buffers
+ok 62 - repeated roster teardown releases uploaded particle instance buffers
+  ---
+  duration_ms: 3.850033
+  type: 'test'
+  ...
+# Subtest: repeated gore teardown releases uploaded stain and stump instance buffers
+ok 63 - repeated gore teardown releases uploaded stain and stump instance buffers
+  ---
+  duration_ms: 2.556682
+  type: 'test'
+  ...
+# Subtest: both light variants compile once, render, and restore pooled state
+ok 64 - both light variants compile once, render, and restore pooled state
+  ---
+  duration_ms: 6.910116
+  type: 'test'
+  ...
+# Subtest: asset failure prevents priming and compilation
+ok 65 - asset failure prevents priming and compilation
+  ---
+  duration_ms: 0.45129
+  type: 'test'
+  ...
+# Subtest: stop settles pending readiness immediately and observes late failure
+ok 66 - stop settles pending readiness immediately and observes late failure
+  ---
+  duration_ms: 0.558901
+  type: 'test'
+  ...
+# Subtest: stop during compile restores synchronously and cannot resume into restart
+ok 67 - stop during compile restores synchronously and cannot resume into restart
+  ---
+  duration_ms: 5.079534
+  type: 'test'
+  ...
+# Subtest: image timeout path can be stopped without leaking primed pools
+ok 68 - image timeout path can be stopped without leaking primed pools
+  ---
+  duration_ms: 1.255581
+  type: 'test'
+  ...
+# Subtest: warmup excludes hidden authored copies but keeps runtime borrowers and visible authored lights
+ok 69 - warmup excludes hidden authored copies but keeps runtime borrowers and visible authored lights
+  ---
+  duration_ms: 0.19969
+  type: 'test'
+  ...
+# Subtest: nested render holds release once and preserve a pre-suspended viewer
+ok 70 - nested render holds release once and preserve a pre-suspended viewer
+  ---
+  duration_ms: 0.12971
+  type: 'test'
+  ...
+# Subtest: idle-light compositor warmup keeps tracer geometry primed until both variants render
+ok 71 - idle-light compositor warmup keeps tracer geometry primed until both variants render
+  ---
+  duration_ms: 4.958604
+  type: 'test'
+  ...
+# Subtest: idle-light warmup preserves a fixed visible zero-intensity light policy
+ok 72 - idle-light warmup preserves a fixed visible zero-intensity light policy
+  ---
+  duration_ms: 4.912474
+  type: 'test'
+  ...
+# Subtest: active compilation overlaps uploads but gates rendering and the idle variant
+ok 73 - active compilation overlaps uploads but gates rendering and the idle variant
+  ---
+  duration_ms: 5.252255
+  type: 'test'
+  ...
+# Subtest: upload failure restores state and observes a later compile failure
+ok 74 - upload failure restores state and observes a later compile failure
+  ---
+  duration_ms: 0.45496
+  type: 'test'
+  ...
+# Subtest: compile uses compositor output and draw hooks for each material on a mixed skinned mesh
+ok 75 - compile uses compositor output and draw hooks for each material on a mixed skinned mesh
+  ---
+  duration_ms: 0.32861
+  type: 'test'
+  ...
+# Subtest: non-RGBM compile keeps transparency on the ordinary compositor target
+ok 76 - non-RGBM compile keeps transparency on the ordinary compositor target
+  ---
+  duration_ms: 0.10244
+  type: 'test'
+  ...
+# Subtest: pending parallel compilation restores framebuffer immediately and Stop observes both late failures
+ok 77 - pending parallel compilation restores framebuffer immediately and Stop observes both late failures
+  ---
+  duration_ms: 0.694681
+  type: 'test'
+  ...
+# Subtest: a later compile hook failure balances hooks, restores target and observes earlier compilation
+ok 78 - a later compile hook failure balances hooks, restores target and observes earlier compilation
+  ---
+  duration_ms: 0.3402
+  type: 'test'
+  ...
+# Subtest: warmup suspends automatic pool rendering between requested compositor frames
+ok 79 - warmup suspends automatic pool rendering between requested compositor frames
+  ---
+  duration_ms: 3.729493
+  type: 'test'
+  ...
+# Subtest: death preserves the posed rig, inherits velocity, and applies localized head torque
+ok 80 - death preserves the posed rig, inherits velocity, and applies localized head torque
+  ---
+  duration_ms: 100.920571
+  type: 'test'
+  ...
+# Subtest: terrain matches treads and leaves the actual stairwell open
+ok 81 - terrain matches treads and leaves the actual stairwell open
+  ---
+  duration_ms: 4.096093
+  type: 'test'
+  ...
+# Subtest: eight active cap freezes the oldest pose and retains it for 180 seconds before a two second fade
+ok 82 - eight active cap freezes the oldest pose and retains it for 180 seconds before a two second fade
+  ---
+  duration_ms: 755.704849
+  type: 'test'
+  ...
+# Subtest: a detached limb settles on a tread, keeps its lifetime, and reuses a physics body
+ok 83 - a detached limb settles on a tread, keeps its lifetime, and reuses a physics body
+  ---
+  duration_ms: 26.814052
+  type: 'test'
+  ...
+# Subtest: delayed skull detachment removes its body and constraint without restarting the corpse
+ok 84 - delayed skull detachment removes its body and constraint without restarting the corpse
+  ---
+  duration_ms: 4.085173
+  type: 'test'
+  ...
+# Subtest: blast-split torsos omit the waist joint and receive divergent velocities
+ok 85 - blast-split torsos omit the waist joint and receive divergent velocities
+  ---
+  duration_ms: 2.445802
+  type: 'test'
+  ...
+# Subtest: 24 active pieces retain frozen records and reuse the primed physics pool
+ok 86 - 24 active pieces retain frozen records and reuse the primed physics pool
+  ---
+  duration_ms: 3.943163
+  type: 'test'
+  ...
+# Subtest: repeated deaths, revivals and corpse expiry reuse bounded ragdoll records
+ok 87 - repeated deaths, revivals and corpse expiry reuse bounded ragdoll records
+  ---
+  duration_ms: 11.74384
+  type: 'test'
+  ...
+# Subtest: real Object3DManager reparent retains warmed geometry, material and texture until owner disposal
+ok 88 - real Object3DManager reparent retains warmed geometry, material and texture until owner disposal
+  ---
+  duration_ms: 3.977013
+  type: 'test'
+  ...
+# Subtest: retention scope restores mixed settings on nested calls and exceptions
+ok 89 - retention scope restores mixed settings on nested calls and exceptions
+  ---
+  duration_ms: 0.28151
+  type: 'test'
+  ...
+# Subtest: restoring authored preview before its borrower is removed protects their shared geometry
+ok 90 - restoring authored preview before its borrower is removed protects their shared geometry
+  ---
+  duration_ms: 0.955661
+  type: 'test'
+  ...
+# Subtest: three roster templates register authored sources and all core part names
+ok 91 - three roster templates register authored sources and all core part names
+  ---
+  duration_ms: 7.079615
+  type: 'test'
+  ...
+# Subtest: roster surfaces carry shared complete PBR maps with no vertex colors
+ok 92 - roster surfaces carry shared complete PBR maps with no vertex colors
+  ---
+  duration_ms: 9.601577
+  type: 'test'
+  ...
+# Subtest: all twenty authored part bounds and both settled poses fit within five centimetres
+ok 93 - all twenty authored part bounds and both settled poses fit within five centimetres
+  ---
+  duration_ms: 160.031849
+  type: 'test'
+  ...
+# Subtest: liquid blades morph on attack, ripple on impact, and shimmer as HP rises without changing core state
+ok 94 - liquid blades morph on attack, ripple on impact, and shimmer as HP rises without changing core state
+  ---
+  duration_ms: 2.062582
+  type: 'test'
+  ...
+# Subtest: aerial banks, turns its turret, spins intakes, and points a bounded searchlight
+ok 95 - aerial banks, turns its turret, spins intakes, and points a bounded searchlight
+  ---
+  duration_ms: 1.256861
+  type: 'test'
+  ...
+# Subtest: tank scrolls the shared tread atlas, recoils both guns, and flares its rear core
+ok 96 - tank scrolls the shared tread atlas, recoils both guns, and flares its rear core
+  ---
+  duration_ms: 0.750311
+  type: 'test'
+  ...
+# Subtest: liquid collapse creates a growing pool, sinks, and releases without metal debris
+ok 97 - liquid collapse creates a growing pool, sinks, and releases without metal debris
+  ---
+  duration_ms: 2.132861
+  type: 'test'
+  ...
+# Subtest: vehicle deaths use resident piece physics and keep fire through the wreck lifetime
+ok 98 - vehicle deaths use resident piece physics and keep fire through the wreck lifetime
+  ---
+  duration_ms: 23.410679
+  type: 'test'
+  ...
+# Subtest: boss wave announcement remains without enemy health overlay
+ok 99 - boss wave announcement remains without enemy health overlay
+  ---
+  duration_ms: 0.16235
+  type: 'test'
+  ...
+# Subtest: match priming allocates live aerial optics before death paths and retains those exact pools for first spawn
+ok 100 - match priming allocates live aerial optics before death paths and retains those exact pools for first spawn
+  ---
+  duration_ms: 378.765055
+  type: 'test'
+  ...
+# Subtest: actual click latency excludes only proven pre-event automation waiting, retaining the legacy total
+ok 101 - actual click latency excludes only proven pre-event automation waiting, retaining the legacy total
+  ---
+  duration_ms: 0.48381
+  type: 'test'
+  ...
+# Subtest: missing or unordered actual events cannot silently fall back to an intent timestamp
+ok 102 - missing or unordered actual events cannot silently fall back to an intent timestamp
+  ---
+  duration_ms: 0.177841
+  type: 'test'
+  ...
+# Subtest: manager restart is explicitly labeled and retains all preparation before readiness
+ok 103 - manager restart is explicitly labeled and retains all preparation before readiness
+  ---
+  duration_ms: 0.13579
+  type: 'test'
+  ...
+# Subtest: a recycled rig stops scene matrix traversal, reactivates without allocation, and returns to owner cleanup
+ok 104 - a recycled rig stops scene matrix traversal, reactivates without allocation, and returns to owner cleanup
+  ---
+  duration_ms: 2.243642
+  type: 'test'
+  ...
+1..104
+# tests 104
+# suites 0
+# pass 104
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 14798.005164
