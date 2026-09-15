@@ -187,3 +187,63 @@ test('warmup suspends automatic pool rendering between requested compositor fram
   await f.run()
   assert.deepEqual(states,[false,false]);assert.equal(viewer.renderEnabled,true)
 })
+
+function fadingFixture() {
+  const f=fixture(),viewer=f.manager.ctx.viewer,original=f.object.material
+  const fade={isMaterial:true,name:'pooled fade',transparent:true,depthWrite:false,opacity:1,
+    map:{isTexture:true,image:{width:1,height:1,complete:true}}}
+  const light={visible:true,intensity:0},compiled=[],frames=[],uploaded=[]
+  viewer.renderEnabled=true
+  viewer.renderManager.rgbm=true
+  viewer.renderManager.composerTarget={name:'opaque'}
+  viewer.renderManager.renderPass={transparentTarget:{name:'transparent'}}
+  let target=null
+  f.renderer.getRenderTarget=()=>target
+  f.renderer.setRenderTarget=value=>{target=value}
+  f.renderer.initTexture=texture=>uploaded.push(texture)
+  f.renderer.compileAsync=async root=>root.traverse(object=>compiled.push({material:object.material,
+    target,light:light.intensity,geometry:object.geometry,skeleton:object.skeleton}))
+  f.object.geometry={attributes:{skinIndex:{},skinWeight:{}}};f.object.isSkinnedMesh=true;f.object.skeleton={}
+  f.manager.unitView.primeWarmup=()=>{
+    f.object.material=fade;fade.opacity=.5
+    return()=>{f.object.material=original;fade.opacity=1;f.events.push('units-release')}
+  }
+  f.manager.playerView.weapons.projectiles={lights:[light]}
+  f.manager.playerView.weapons.primeWarmup=()=>{light.intensity=1.4;return()=>{light.intensity=0}}
+  viewer.setDirty=owner=>{
+    if(owner===f.manager){assert.equal(viewer.renderEnabled,true);frames.push([f.object.material,light.intensity,f.object.visible])}
+  }
+  return {...f,fade,original,compiled,frames,uploaded}
+}
+
+test('mounted pooled fades upload and traverse both light/compositor gates without extra scene compiles',async()=>{
+  const f=fadingFixture()
+  await f.run()
+  assert.equal(f.compiled.length,2)
+  for(const entry of f.compiled){
+    assert.equal(entry.material,f.fade);assert.equal(entry.target,f.manager.ctx.viewer.renderManager.renderPass.transparentTarget)
+    assert.equal(entry.geometry,f.object.geometry);assert.equal(entry.skeleton,f.object.skeleton)
+  }
+  assert.deepEqual(f.compiled.map(entry=>entry.light),[1.4,0])
+  assert.deepEqual(f.frames,[[f.fade,1.4,true],[f.fade,1.4,true],[f.fade,0,true],[f.fade,0,true]])
+  assert(f.uploaded.includes(f.fade.map));assert.equal(f.object.material,f.original);assert.equal(f.fade.opacity,1)
+})
+
+test('Stop during idle fade compilation restores pooled material synchronously and observes late rejection',async()=>{
+  const f=fadingFixture(),gate=Promise.withResolvers(),idle=Promise.withResolvers()
+  const compile=f.renderer.compileAsync;let calls=0
+  f.renderer.compileAsync=(...args)=>{
+    const result=compile(...args)
+    if(++calls===2){idle.resolve();return gate.promise}
+    return result
+  }
+  const run=f.run();await idle.promise
+  assert.equal(f.object.material,f.fade);assert.equal(f.frames.length,2)
+  f.controller.abort()
+  assert.equal(f.object.material,f.original);assert.equal(f.fade.opacity,1)
+  assert.equal(f.manager.ctx.viewer.renderEnabled,true)
+  assert.deepEqual(await run,{cancelled:true})
+  gate.reject(Error('late fade compile failure'));await tick()
+  assert.equal(f.events.filter(event=>event==='units-release').length,1)
+  assert(!f.events.includes('finish'));assert.equal(f.frames.length,2)
+})

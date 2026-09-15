@@ -11,7 +11,7 @@ const {rosterMaterials}=await import('../../lib/view/roster-materials.js')
 const {bindUnitRig,animateUnit,disposeUnitRig}=await import('../../lib/view/units-animation.js')
 const {resetRosterRig,rosterHit}=await import('../../lib/view/roster-animation.js')
 const {RosterFx,rosterDeathPhase}=await import('../../lib/view/roster-fx.js')
-const {RagdollSystem}=await import('../../lib/view/ragdoll.js')
+const {RagdollSystem,WRECK_SECONDS}=await import('../../lib/view/ragdoll.js')
 const {goreDecision}=await import('../../lib/view/gore.js')
 const {TEMPLATE_NAMES}=await import('../../lib/view/units.js')
 const {waveBannerTitle}=await import('../../lib/ui/boss.js')
@@ -138,13 +138,52 @@ test('match priming allocates live aerial optics before death paths and retains 
     assert.equal(beam.mesh.instanceMatrix.count,64);assert.equal(spot.mesh.instanceMatrix.count,64)
     assert.equal(view.warmupReport.pooledRigs,54)
     assert.equal(view.warmupReport.rosterDeaths,3);assert.equal(view.warmupReport.skullCrunch,1)
+    const fading=[...view.ragdolls.records].filter(record=>record.fadeMaterial)
+    const gore=view.fx.gore.pieces.items.filter(item=>item.record)
+    assert.equal(gore.filter(item=>item.record.fadeMaterial).length,1,'prime the individual gore fade draw')
+    assert(gore.some(item=>view.fx.gore.pieceBatch.getVisibleAt(item.batchId)),'retain the opaque batched gore draw')
+    assert.equal(fading.filter(record=>record.object.name.startsWith('Detached hkaerial')).length,6)
+    assert.equal(fading.filter(record=>record.object.name.startsWith('Detached hktank')).length,1)
+    assert.equal(fading.filter(record=>record.visual).length,1,'retain the skinned heavy fade')
+    let disposed=0
+    const saved=fading.map(record=>{
+      const mesh=record.fadeMesh,material=record.fadeMaterial,original=record.fadeOriginal
+      assert.equal(material,record.visual?.rig.wreckMaterial||mesh.userData.wreckMaterial)
+      assert.equal(mesh.material,material);assert.equal(material.transparent,true);assert.equal(material.depthWrite,false)
+      assert(Math.abs(material.opacity-.5)<1e-8);assert.equal(record.fadeOwned,false)
+      assert.equal(material.map,original.map);assert.equal(material.normalMap,original.normalMap)
+      assert.equal(material.userData.renderToGBuffer,original.userData.renderToGBuffer)
+      material.addEventListener('dispose',()=>disposed++)
+      return {mesh,material,original,geometry:mesh.geometry}
+    })
     release()
+    assert.equal(view.ragdolls.records.size,0);assert.equal(view.ragdolls.clock,0)
+    for(const {mesh,material,original,geometry} of saved){
+      assert.equal(mesh.material,original);assert.equal(material.opacity,1);assert.equal(mesh.geometry,geometry)
+    }
+    assert.equal(disposed,0,'pooled fade materials survive cleanup')
+    assert.deepEqual(view.warmupReport.fades,{skinned:1,gore:1,vehiclePieces:7})
     assert.equal(beam.mesh.count,0);assert.equal(spot.mesh.count,0)
     const visual=view.cloneTemplateFigure({id:'first-aerial',type:'hkaerial',pos:{x:0,y:4,z:0},yaw:0})
     view.visuals.set('first-aerial',visual)
     view.optics.update([visual])
     assert.equal(view.optics.rosterPools.beam,beam);assert.equal(view.optics.rosterPools.spot,spot)
     assert.equal(beam.mesh.count,1);assert.equal(spot.mesh.count,1)
+    // Reuse an actual detached pool item at the first fade boundary. Advance
+    // only its settled age; the ordinary update must perform the material swap.
+    const item=gore.find(item=>saved.some(entry=>entry.mesh===item.mesh))
+    const record=view.ragdolls.addDetached(item.mesh,new E.Vector3(),item.onRelease)
+    item.record=record
+    view.ragdolls.freeze(record)
+    record.settledAt=view.ragdolls.clock-WRECK_SECONDS
+    view.ragdolls.update(0)
+    assert.equal(record.fadeMaterial,null);assert.equal(item.mesh.material,view.fx.gore.materials.metal)
+    view.ragdolls.update(1/60)
+    assert.equal(record.fadeMaterial,item.fade);assert.equal(item.mesh.material,item.fade)
+    assert(item.fade.opacity<1&&item.fade.opacity>.98);assert.equal(item.mesh.visible,true)
+    assert.equal(view.fx.gore.pieceBatch.getVisibleAt(item.batchId),false)
+    view.ragdolls.release(record)
+    assert.equal(item.fade.opacity,1);assert.equal(disposed,0)
   }finally{view.stop()}
   assert.equal(scene.children.length,1)
 })
