@@ -1,6 +1,6 @@
 # HD swing-out revolver review
 
-This is a separate lab variant. The original candidate and shipped 1858 remain unchanged.
+This is a separate lab variant. The original candidate and legacy 1858 asset remain unchanged.
 Review uses headless Blender 5.2.1 and headless Chromium Vulkan on the RTX 3090 Ti.
 
 ## Reference observations

@@ -82,7 +82,7 @@ test('world case has an open mouth and recessed strike geometry',()=>{
  assert.ok(Array.from({length:p.count},(_,i)=>Math.hypot(p.getX(i),p.getY(i))).every(r=>r>.0006))
  assert.ok(Array.from({length:p.count},(_,i)=>p.getZ(i)).some(z=>z<-.0007));g.dispose()
 })
-test('registration does not change default gameplay weapon or the 1858 source',async()=>{
+test('registration preserves the legacy pistol asset as an explicit variant',async()=>{
  const registry=JSON.parse(await readFile('assets.json','utf8'));assert.equal(registry.files['weapon-pistol'].path,'assets/models/weapons/pistol/pistol.gltf');assert.equal(registry.files['weapon-swingout'].path,'assets/models/weapons/swingout/swingout.gltf')
  const vm=raw.nodes.find(n=>n.extras?.viewModel).extras.viewModel;assert.equal(vm.gameplayWeapon,'pistol');assert.equal(vm.mechanism,'swingout')
 })
