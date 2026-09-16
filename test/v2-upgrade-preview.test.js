@@ -8,6 +8,14 @@ test('0.19 preview migration retains attributes, provenance, scene ids and selec
  const dir='assets/v2/performance/preview-019',g=await read(`${dir}/preview.gltf`),r=await read(`${dir}/migration.json`),s=await read('assets/main.scene.gltf')
  const node=s.nodes.find(n=>n.extras?.gltfUUID===r.originalNode.extras.gltfUUID)
  assert.equal(node.name,r.originalNode.name)
+ // The scene node is a stand-in, not an import. It used to carry a rootPath, so
+ // every editor load pulled in 341 preview meshes and 121.3 MB of vertex data
+ // that Play never draws. Play now builds the same environment from the baked
+ // recipes; test/view/baked-environment.test.js proves the two agree triangle
+ // for triangle. Dropped by tools/v2/drop-preview-subtree.mjs.
+ assert.equal(node.extras.rootPath,undefined)
+ assert.equal(node.extras.rootPathOptions,undefined)
+ assert.equal(node.children,undefined)
  assert.deepEqual(node.extras.kite3dBakedFrom,{componentId:'terminator-v2-preview-generator',...r.originalNode.extras.EntityComponentPlugin['terminator-v2-preview-generator']})
  assert.equal(node.extras.kite3dAuthoring.id,r.originalNode.extras.kite3dAuthoring.id)
  assert(!s.nodes.some(n=>Object.values(n.extras?.EntityComponentPlugin||{}).some(c=>c.type==='Generator')))

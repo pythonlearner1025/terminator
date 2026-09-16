@@ -33,11 +33,15 @@ test('pilot04 refinement: deterministic bounded geometry with original UVs and m
 
 test('all actual vertices and rotated footprint corners retain exact simulator floor support',()=>{
  const world=new World({seed:11}),h=mountV2Ground({root:new Group(),map:defaultMap})
- for(const p of h.root.userData.aggregateFragments){
-  const cs=Math.cos(p.yaw),sn=Math.sin(p.yaw)
+ // The fine field is now eleven typed arrays plus a source table, not 11,900
+ // objects of boxed numbers. Same values, one tenth of the bytes.
+ const f=h.root.userData.aggregateFragments
+ assert.equal(f.count,11900);assert.ok(f.x instanceof Float64Array)
+ for(let i=0;i<f.count;i++){
+  const cs=Math.cos(f.yaw[i]),sn=Math.sin(f.yaw[i]),source=f.source[f.sourceIndex[i]]
   for(const [u,v]of [[0,0],[-.5,-.5],[-.5,.5],[.5,-.5],[.5,.5]]){
-   const pos={x:p.x+u*p.width*cs+v*p.depth*sn,y:p.y,z:p.z-u*p.width*sn+v*p.depth*cs}
-   assert.ok(world.playerSupportAt(pos,p.y,{radius:0,maxAbove:.025,maxBelow:.025}),p.source)
+   const pos={x:f.x[i]+u*f.width[i]*cs+v*f.depth[i]*sn,y:f.y[i],z:f.z[i]-u*f.width[i]*sn+v*f.depth[i]*cs}
+   assert.ok(world.playerSupportAt(pos,f.y[i],{radius:0,maxAbove:.025,maxBelow:.025}),source)
   }
  }
  for(const mesh of h.root.children){const pos=mesh.geometry.attributes.position.array;for(let i=0;i<pos.length;i+=3){
