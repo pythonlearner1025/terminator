@@ -54,10 +54,7 @@ export class WeaponsLab extends E.Object3DComponent {
     this.playerView = new PlayerView(viewer)
     const source = viewer.scene.modelRoot.getObjectByName('Firing_Line')
     this.playerView.start(this.world, source)
-    // Select the separately registered rebuild when its authored template is loaded.
-    let rebuildAvailable = false
-    viewer.scene.modelRoot.traverse(n => {if (n.userData?.weaponAsset === 'revolver-rebuild') rebuildAvailable = true})
-    this.playerView.weapons.selectVariant(rebuildAvailable ? 'revolver-rebuild' : 'swingout')
+    // PlayerView applies the same rebuilt-revolver default and URL overrides as the game.
     this.mapView.bindWeapon(this.playerView.weapons.materials)
     this.grenadeView = new GrenadeView(viewer); this.grenadeView.start(this.world, this.playerView.weapons.material, source)
     this.cameraFeel = new CameraFeel(); this.input = new InputController(viewer); this.hud = new Hud(viewer)

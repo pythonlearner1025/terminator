@@ -4,7 +4,7 @@ import assert from 'node:assert/strict'
 globalThis.ImageData??=class {}
 globalThis.window??={}
 const E=await import('threepipe')
-const {createWeaponRigs,WEAPON_IDS}=await import('../../lib/view/weapons.js')
+const {createWeaponRigs,DEFAULT_REVOLVER_VARIANT,revolverVariantFromSearch,WEAPON_IDS}=await import('../../lib/view/weapons.js')
 const {GrenadeView}=await import('../../lib/view/grenade.js')
 const {WeaponAnimation}=await import('../../lib/view/weapons-animation.js')
 
@@ -24,6 +24,14 @@ function animationFixture(){
   const animation=new WeaponAnimation(rigs,effects);animation.sync(world)
   return {rigs,world,effects,animation,step(n=1){world.tick+=n;animation.sync(world)}}
 }
+
+test('rebuilt revolver is default while pistol and swingout remain explicit overrides',()=>{
+  assert.equal(DEFAULT_REVOLVER_VARIANT,'revolver-rebuild')
+  assert.equal(revolverVariantFromSearch(''),'revolver-rebuild')
+  assert.equal(revolverVariantFromSearch('?weapon=revolver-rebuild'),'revolver-rebuild')
+  assert.equal(revolverVariantFromSearch('?weapon=pistol'),'pistol')
+  assert.equal(revolverVariantFromSearch('?weapon=swingout'),'swingout')
+})
 
 test('all eight models have distinct mechanisms and finite vertices',()=>{
   const rigs=createWeaponRigs(new E.Group(),new E.PhysicalMaterial(),weaponFixture)

@@ -3358,21 +3358,23 @@
           "mechanism": "swingout",
           "gameplayWeapon": "pistol",
           "forwardAxis": "-Z",
-          "fov": 54,
+          "scale": 0.75,
+          "fov": 32.31,
+          "aimFov": 45,
           "hip": [
-            0.11,
-            -0.13,
-            -0.47
+            0.08094,
+            -0.08751,
+            -0.55522
           ],
           "hipRotation": [
-            0,
+            0.15,
             0.06,
             0
           ],
           "sight": {
-            "height": 0.08919863876254801,
-            "distance": 0.4,
-            "pitch": -0.002948619890206472
+            "height": 0.0213,
+            "distance": 1.2,
+            "pitch": 0.15
           },
           "fire": {
             "discharge": 0.05
@@ -3399,7 +3401,7 @@
           "handSource": "DJMaesen e3c42c05b22944e5839deb8e003f0987 CC BY 4.0"
         },
         "EmbeddedHands": true,
-        "buildSources": "{\"animations.py\": \"f92ab15bab2e8cda8601764d29b2a89c066bc30a253a903376d391c93dcf1f9c\", \"assemble.py\": \"0f1fc867aea78e84c665e6403e0a09d7979ba9832bcd61452ff38bc5d904356f\", \"gun.py\": \"5c9c0d55f40d10914976569172217b4241dc957deb74ecc2ea51e063bc28d0b0\", \"imported_hands.py\": \"dd4788697878861499205368a82040fa4a9395eaa30e8df3e2ee0c6c3df2d449\"}",
+        "buildSources": "{\"animations.py\": \"f92ab15bab2e8cda8601764d29b2a89c066bc30a253a903376d391c93dcf1f9c\", \"assemble.py\": \"d96f073373fc00aabeabd5d4500aa019eb40115e565efa73ed0bc3aaf3e3e97f\", \"gun.py\": \"5c9c0d55f40d10914976569172217b4241dc957deb74ecc2ea51e063bc28d0b0\", \"imported_hands.py\": \"dd4788697878861499205368a82040fa4a9395eaa30e8df3e2ee0c6c3df2d449\"}",
         "gltfUUID": "weapon-revolver-rebuild-RevolverRebuildRig"
       },
       "name": "RevolverRebuildRig"

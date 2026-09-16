@@ -113,7 +113,10 @@ def assemble(gun_module,hands_module,contract=None,material_inputs=None):
     def move_left(result,delta,release,contact=None):
         hands_module.move_support(result,motion,delta,release,contact)
     root['weaponAsset']='revolver-rebuild'
-    root['viewModel']={'embeddedHands':True,'cartridgePresentation':'separate-replacements','embeddedHandMeshes':[m.name for m in hands['meshes']],'mechanism':'swingout','gameplayWeapon':'pistol','forwardAxis':'-Z','fov':54,'hip':[.11,-.13,-.47],'hipRotation':[0,.06,0], 'sight':{'height':sight_height,'distance':.40,'pitch':sight_pitch},'fire':{'discharge':.05},'reload':{'eject':.35},'clipContacts':animations.CONTACTS,'revision':'imported-hands-retarget-v2','handSource':'DJMaesen e3c42c05b22944e5839deb8e003f0987 CC BY 4.0'}
+    # The review camera is a 54 degree vertical-FOV camera at the export origin.
+    # Scale and pitch the 0.6442 m forward arm reach below the viewport, then push
+    # it behind the camera and narrow the FOV to preserve the reviewed silhouette.
+    root['viewModel']={'embeddedHands':True,'cartridgePresentation':'separate-replacements','embeddedHandMeshes':[m.name for m in hands['meshes']],'mechanism':'swingout','gameplayWeapon':'pistol','forwardAxis':'-Z','scale':.75,'fov':32.31,'aimFov':45,'hip':[.08094,-.08751,-.55522],'hipRotation':[.15,.06,0], 'sight':{'height':.0213,'distance':1.2,'pitch':.15},'fire':{'discharge':.05},'reload':{'eject':.35},'clipContacts':animations.CONTACTS,'revision':'imported-hands-retarget-v2','handSource':'DJMaesen e3c42c05b22944e5839deb8e003f0987 CC BY 4.0'}
     root['EmbeddedHands']=True
     bpy.context.view_layer.update()
     rest=[(o,o.location.copy(),o.rotation_quaternion.copy(),o.scale.copy()) for o in [motion,*parts.values()]]
@@ -144,10 +147,13 @@ def render_sample(rig,name,fraction,path,view='runtime',material=False):
     if view=='runtime':
         vm=rig['root']['viewModel'];aim=1. if name=='AimIdle' else animations.smooth(fraction) if name=='AimIn' else 1-animations.smooth(fraction) if name=='AimOut' else 0.
         hip=vm['hip'];sight=vm['sight']
+        rig['root'].scale=(vm.get('scale',1),)*3
         rig['root'].location=(hip[0]*(1-aim),-hip[2]*(1-aim)+sight['distance']*aim,hip[1]*(1-aim)-sight['height']*aim)
-        rig['root'].rotation_quaternion=(Matrix.Rotation(sight['pitch']*aim,4,'X')@Matrix.Rotation(vm['hipRotation'][1]*(1-aim),4,'Z')).to_quaternion()
+        view_pitch=vm['hipRotation'][0]*(1-aim)+sight['pitch']*aim
+        rig['root'].rotation_quaternion=(Matrix.Rotation(view_pitch,4,'X')@Matrix.Rotation(vm['hipRotation'][1]*(1-aim),4,'Z')).to_quaternion()
         cam.location=(0,0,0);cam.rotation_euler=Vector((0,1,0)).to_track_quat('-Z','Y').to_euler()
-        cam.data.sensor_fit='VERTICAL';cam.data.sensor_height=24;cam.data.lens=24/(2*math.tan(math.radians(vm['fov'])/2));cam.data.clip_start=.02
+        view_fov=vm['fov']+(vm.get('aimFov',vm['fov'])-vm['fov'])*aim
+        cam.data.sensor_fit='VERTICAL';cam.data.sensor_height=24;cam.data.lens=24/(2*math.tan(math.radians(view_fov)/2));cam.data.clip_start=.02
     else:
         rig['root'].location=(0,0,0);rig['root'].rotation_quaternion=(1,0,0,0)
         cam.location={'first-person':(.025,-.52,.135),'left-contact':(-.45,-.18,.14),'top-contact':(0,-.05,.55)}.get(view,(.52,-.35,.23))
