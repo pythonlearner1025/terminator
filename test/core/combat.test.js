@@ -2,13 +2,13 @@ import assert from 'node:assert/strict'
 import test from 'node:test'
 import {World} from '../../lib/core/world.js'
 
-test('the starter revolver has exact catalog values and reloads exactly six rounds', () => {
+test('the rebuilt revolver has exact catalog values and reloads exactly six rounds', () => {
   const world = new World()
   const revolver = world.weaponCatalog.weapons.pistol
   assert.deepEqual(revolver, {
     id: 'pistol',
     slot: 1,
-    name: '1858 Revolver',
+    name: 'Rebuilt Revolver',
     damage: 50,
     rate: 2.5,
     mag: 6,

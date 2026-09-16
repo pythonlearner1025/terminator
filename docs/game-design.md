@@ -54,7 +54,7 @@ Weapons:
 
 | Slot | Weapon | Damage | Rate | Mag | Reserve | Spread | Reload | Price | Ammo |
 |------|--------|--------|------|-----|---------|--------|--------|-------|------|
-| 1 | 1858 Revolver | 50 | 2.5/s | 6 | 66 | 1.2 deg | 2.6 s | start | 6 |
+| 1 | Rebuilt Revolver | 50 | 2.5/s | 6 | 66 | 1.2 deg | 2.6 s | start | 6 |
 | 2 | M4 rifle | 30 | 11/s | 30 | 240 | 2 deg | 1.8 s | 400 | 20 |
 | 3 | Pump shotgun | 12 x 8 | 1.2/s | 8 | 48 | 7 deg | 2.4 s | 550 | 25 |
 | 4 | Plasma rifle | 90 | 3/s | 20 | 100 | 1 deg | 2.1 s | 1500 | 80 |
