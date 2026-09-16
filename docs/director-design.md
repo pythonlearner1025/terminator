@@ -97,7 +97,7 @@ Director states. Team intensity drives transitions.
 | peak_fade | no | team intensity falls to 0.6, or no unit is alive |
 | relax | no | a timer of 15 to 25 s expires |
 
-Every wave starts in build_up. Intensity carries over between waves. The trader is open during relax and during intermission, and closed otherwise.
+Every wave starts in build_up. Intensity carries over between waves. The trader is open during intermission only. A relax window sits inside a live wave, so it keeps the trader closed.
 
 Population functions. Timers only advance while the state is build_up or sustain_peak.
 
@@ -167,7 +167,7 @@ world.spawnUnit(type, pos, {yaw, rev, id, brain, enraged, alerted, wanderer})
 world.enrageUnit(unitId)          // switches a living unit to the enraged brain
 world.despawnUnit(unitId)         // silent removal: no unit_death, no scrap, telemetry causeOfDeath = 'despawned'
 world.unitSeenByAnyPlayer(unit)   // eye to eye line of sight and a 100 degree cone from the player's yaw
-world.traderOpen                  // boolean, set by the director. purchase() accepts intermission or traderOpen
+world.traderOpen                  // boolean, set by the director. True only in intermission
 world.director                    // {state, intensity, reservoir, reservoirMax}, written by the director every tick
 world.pickups                     // Pickups instance: plan(wave, rng), step(world), active, snapshot(), applySnapshot()
 world.setTraderSpot(spotId)       // moves the trader collider and nav block, rebuilds nav

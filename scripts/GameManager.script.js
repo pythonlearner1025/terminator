@@ -27,6 +27,7 @@ import {mountPlayersView} from '../lib/view/players.js'
 import {loadBakedLightingNoise} from '../lib/view/v2/lighting-noise-baked.js'
 import {createStartupProfile} from '../lib/ui/startup-profile.js'
 import {holdStartupRendering,holdCoveredEditorRendering} from '../lib/view/startup-rendering.js'
+import {sleepSubtrees} from '../lib/view/hidden-subtrees.js'
 import {warmupMatch} from '../lib/view/match-warmup.js'
 
 export class GameManager extends Object3DComponent {
@@ -86,6 +87,9 @@ export class GameManager extends Object3DComponent {
       this.hiddenUnitSources.push([object, object.visible])
       object.visible = false
     })
+    // Hidden still costs a world-matrix walk every render pass. The runtime
+    // clones use updateMatrixWorld(force), which descends regardless.
+    this.wakeUnitSources = sleepSubtrees(this.hiddenUnitSources.map(([object]) => object))
     const mapRoot = viewer.scene.modelRoot.getObjectByName('Map')
     if (!mapRoot) throw new Error('Map authored node not found')
     this.mapData = profile.measure('map-collision-build', () => buildV2PlayableMap(mapRules, mapPieceRegistry, scenePlacements(mapRoot)))
@@ -488,6 +492,7 @@ export class GameManager extends Object3DComponent {
     this.hud?.dispose()
     this.stopViews()
     this.mapView?.stop()
+    this.wakeUnitSources?.(); this.wakeUnitSources = null
     for (const [source, visible] of this.hiddenUnitSources || []) source.visible = visible
     this.hiddenUnitSources = null
     this.input = null

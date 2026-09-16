@@ -37,8 +37,8 @@ Top center, the wave block:
   reads "N LEFT" only when the reservoir is spent and the units on the map are the whole wave.
 - In intermission: "TRADER OPEN" and a countdown from 15. A world-space marker with distance points at
   the trader crate. A Ready button hint: "Press R to end intermission early".
-- The trader also opens during a relax window inside a wave. The marker and the trader key work the
-  same way. The trader screen shows a dash instead of a clock, because relax publishes no close time.
+- The trader stays shut for the whole wave, including a relax window. The marker and the trader key
+  do nothing until the intermission starts.
 - A centre banner reads "MOB INCOMING", or "MOB INCOMING · BEHIND" when the mob comes from behind.
   It holds for 2 seconds from the call-out and uses event time, so a replay keeps it in step.
 
@@ -72,12 +72,12 @@ Center:
 - Unit nameplates when a unit is within 25 m and in view: type, health bar, and rev label such as
   "T-800 rev 7". Skynet chatter from `act.say` shows as a subtitle under the nameplate.
 
-## Trader menu (intermission or a relax window, full screen overlay)
+## Trader menu (intermission only, full screen overlay)
 
 - Left column: categories. Weapons, Ammo, Armor, Items.
 - Center: the item list with icon, name, price, and for weapons the stats bars (damage, rate, mag).
 - Right column: the player's loadout, Scrap balance, "Fill all ammo" with the total price, "Buy full
-  armor" with the price, and the time remaining. A relax window has no close time, so it shows a dash.
+  armor" with the price, and the time remaining.
 - Buying plays a cash sound and flashes the balance. Not enough Scrap shakes the price in red.
 
 ## Screens

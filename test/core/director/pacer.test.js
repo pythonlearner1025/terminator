@@ -118,7 +118,7 @@ test('the reservoir holds back 15 percent until the rush releases it', () => {
   assert.equal(pacer.refund(12), false, 'no refunds once the reservoir is empty')
 })
 
-test('the trader opens in relax and in intermission, and purchase follows it', () => {
+test('the trader stays shut in every wave state, and opens in intermission', () => {
   const world = makeWorld()
   const director = new WaveDirector(world, {maxWaves: 2})
   director.start(config)
@@ -126,19 +126,19 @@ test('the trader opens in relax and in intermission, and purchase follows it', (
   world.player.scrap = 1000
   world.player.hp = 40
 
-  assert.equal(world.traderOpen, false)
-  assert.equal(world.purchase('medkit').ok, false, 'build_up keeps the trader shut')
+  for (const state of ['build_up', 'sustain_peak', 'peak_fade', 'relax']) {
+    director.pacer.state = state
+    director.pacer.sync()
+    assert.equal(world.traderOpen, false, `${state} keeps the trader shut`)
+    assert.equal(world.purchase('medkit').ok, false, `${state} rejects a purchase`)
+  }
 
-  director.pacer.state = 'relax'
-  director.pacer.sync()
+  director.finishWave()
+  assert.equal(director.phase, 'intermission')
   assert.equal(world.traderOpen, true)
-  assert.equal(world.purchase('medkit').ok, true, 'a relax window opens the trader')
-
-  director.pacer.state = 'build_up'
-  director.pacer.sync()
+  // The wave end heals the team, so the medkit needs a fresh wound to price.
   world.player.hp = 40
-  assert.equal(world.traderOpen, false)
-  assert.equal(world.purchase('medkit').ok, false, 'the window shuts again')
+  assert.equal(world.purchase('medkit').ok, true, 'the intermission opens the trader')
 })
 
 test('the intermission is 15 seconds and opens the trader', () => {
@@ -159,7 +159,8 @@ test('the director state, trader window, and finale ride the snapshot', () => {
   director.start(config)
   director.step({})
   director.pacer.state = 'relax'
-  director.pacer.sync()
+  director.finishWave()
+  assert.equal(world.traderOpen, true, 'the intermission is the only trader window')
   world.extraction = {pos: {x: 1, y: 0, z: 2}, phase: 'announced', timer: 12}
 
   const guest = makeWorld()

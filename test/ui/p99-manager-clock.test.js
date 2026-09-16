@@ -15,6 +15,8 @@ for(const sessionMode of ['single','host','guest'])test(`${sessionMode} manager 
   const director=new WaveDirector(world)
   director.start({spawns:[{t:0,gate:'N1',unit:'scout',count:1}],knobs:{gates:['N1'],doors:{},lights:{},fog:0,hazards:[],break_flank_wall:false}})
   const feel=new CameraFeel()
+  // The hold is a setting now, and it ships off. Turn it on for this case.
+  feel.hitStopEnabled=true
   world.emit('shot',{by:'player',weapon:'pistol',hit:true,headshot:true,killed:true})
   world.emit('kill',{headshot:true,playerId:'player',unitId:'fixture',unitType:'scout'})
   let sampled=0,rendered=0,guestSteps=0
@@ -47,4 +49,22 @@ for(const sessionMode of ['single','host','guest'])test(`${sessionMode} manager 
   manager.update({deltaTime:50})
   assert.equal(world.tick,ticks,'explicit UI pause still freezes as before')
   assert.equal(sampled,9)
+})
+
+test('the hit-stop setting ships off, so a headshot kill never holds presentation', t => {
+  const world=new World({seed:2029,brains:{scout:{tick(){}}}})
+  t.after(()=>world.destroy())
+  const director=new WaveDirector(world)
+  director.start({spawns:[{t:0,gate:'N1',unit:'scout',count:1}],knobs:{gates:['N1'],doors:{},lights:{},fog:0,hazards:[],break_flank_wall:false}})
+  const feel=new CameraFeel()
+  assert.equal(feel.hitStopEnabled,false,'default off')
+  world.emit('kill',{headshot:true,playerId:'player',unitId:'fixture',unitType:'scout'})
+  let rendered=0
+  const manager=Object.assign(Object.create(GameManager.prototype),{started:true,world,director,cameraFeel:feel,
+    party:null,sessionMode:'single',accumulator:0,ui:{frozen:false,sample:()=>({move:{x:0,z:0}})},syncViews(){rendered++},lobby:null})
+  manager.update({deltaTime:50})
+  assert.equal(feel.headshotKills,1,'the kill is still counted')
+  assert.equal(feel.freezeUntil,0,'no presentation hold is armed')
+  assert.equal(feel.hitStopped,false)
+  assert.equal(rendered,1,'the frame renders instead of repeating the last one')
 })

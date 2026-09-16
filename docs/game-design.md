@@ -108,7 +108,7 @@ Whatever the submitted config does not spend becomes the in-wave reservoir, whic
 mobs, specials, wanderers, and the end-of-wave rush. Mobs are rare and loud: one every 30 to 60 s. A
 wanderer trickle holds a small standing crowd on the map between them. See `docs/director-design.md`. A wave ends when the
 reservoir is empty and every unit is dead. Time cap 4 minutes, then remaining units abandon their scripts
-and rush. Intermission is 15 s. The trader is open in intermission and in every relax window. The player
+and rush. Intermission is 15 s. The trader is open in intermission only, when every enemy is dead. The player
 can end the intermission early with a Ready action.
 
 Wave 10 is the extraction finale. The chopper lands 180 s in; only then does standing on the pad end the

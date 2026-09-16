@@ -150,8 +150,7 @@ every number. The pacer changes how often threats arrive. It never changes their
 `lib/core/director.js` owns `Pacer`. It keeps one intensity number per living player and takes the team
 maximum. It walks four states: `build_up`, `sustain_peak`, `peak_fade`, and `relax`. It spends the wave
 reservoir only in the first two. `beginWave`, `spend`, `refund`, `releaseReserve`, and `drain` move the
-reservoir. Each state change emits `director_state`. The trader is open during `relax` and during
-intermission.
+reservoir. Each state change emits `director_state`. The trader is open only during intermission.
 
 `lib/core/population.js` owns spawn selection and the population functions. `spawnCandidates` joins
 `map.spawnGates` and `map.spawnSpots`. `spotIsValid` rejects a spot closer than 12 m to any living
@@ -180,7 +179,7 @@ world.despawnUnit(unitId)         // silent removal: no unit_death, no scrap, te
 world.unitSeenByAnyPlayer(unit)   // eye-to-eye sight inside a 100 degree cone around the player's yaw
 world.setTraderSpot(spotId)       // move the trader collider, rebuild navigation, emit trader_moved
 world.director                    // {state, intensity, reservoir, reservoirMax}, written every tick
-world.traderOpen                  // boolean; purchase() accepts intermission or traderOpen
+world.traderOpen                  // boolean; true only in intermission. purchase() accepts it or intermission
 world.extraction                  // null or {pos, phase, timer}
 world.pickups                     // Pickups instance
 ```

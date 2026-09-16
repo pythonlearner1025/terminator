@@ -99,6 +99,26 @@ test('dents accumulate, recycle at the cap, and reset without geometry replaceme
   d.dispose();source.dispose()
 })
 
+test('resetting an undeformed rig uploads nothing, because its vertices already match the source',()=>{
+  const source=geometry(),d=new GoreDeformer(source)
+  const position=d.geometry.attributes.position,normal=d.geometry.attributes.normal
+  position.version=0;normal.version=0
+  // A mob spawn recycles rigs that were never hit. A blind restore re-uploaded
+  // the whole mesh for each one.
+  d.reset()
+  assert.equal(position.version,0,'no vertex upload is queued for an untouched rig')
+  assert.equal(normal.version,0)
+  assert.deepEqual(position.array,source.attributes.position.array)
+  // A rig that was deformed still restores and uploads.
+  const slot=d.begin(new E.Vector3(),new E.Vector3(0,0,-1),0,.12,.13,false)
+  assert.ok(slot.count>0)
+  const dirtied=position.version
+  d.reset()
+  assert.ok(position.version>dirtied,'a deformed rig still uploads its restored vertices')
+  assert.deepEqual(position.array,source.attributes.position.array)
+  d.dispose();source.dispose()
+})
+
 test('match warmup reaches skull crunch, one limb, a torso split, and a real dent',()=>{
   const visuals=Array.from({length:3},()=>({rig:{joints:{Head:new E.Bone(),Chest:new E.Bone()}}}))
   const states=Array.from({length:3},()=>({maxHp:300})),calls=[]

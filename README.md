@@ -21,7 +21,7 @@ each player, then walks four states: build up, peak, fade, and relax. It spends 
 mobs of scouts, single specials, wanderers, and an end-of-wave rush. Spawns are picked out of sight,
 mostly behind you. Mobs run straight at you and shove each other apart. Your health regenerates back
 to 40 after five calm seconds, four supply caches glow green somewhere on the map each wave, the
-trader moves between waves and opens during a relax window, and wave 10 ends at an extraction point.
+trader moves between waves and opens only in the intermission, and wave 10 ends at an extraction point.
 The whole tune lives in `docs/director-design.md`.
 
 ## Local scenes
