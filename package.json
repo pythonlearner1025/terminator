@@ -13,18 +13,21 @@
   "mainScene": "assets/main.scene.gltf",
   "main": "./main.js",
   "scripts": {
+    "postinstall": "node tools/patch-kite3d-file-put.mjs",
+    "test:kite3d-put": "node --test --test-concurrency=1 test/server/kite3d-file-put.test.js test/server/kite3d-file-put-installer.test.js",
+    "probe:kite3d-put": "node tools/kite3d-put-probe.mjs",
     "dev": "kite3d dev",
     "publish": "kite3d publish",
     "pull": "kite3d pull",
     "server": "node server/index.js",
     "tunnel": "node server/party-tunnel.js",
     "dev:all": "concurrently -k -n game,server \"npm run dev\" \"npm run server\"",
-    "test": "find test -type f -name '*.test.js' -exec node --test {} +",
+    "test": "find test -type f -name '*.test.js' ! -path 'test/core/sim/sim.test.js' -exec node --test {} + && node --test test/core/sim/sim.test.js",
     "build:textures": "python3 tools/bake-map-textures.py && python3 tools/bake-unit-textures.py && python3 tools/bake-roster-textures.py",
     "build:map-assets": "node tools/build-map-assets.mjs",
     "build:unit-assets": "node tools/build-unit-assets.mjs",
     "build:range-assets": "node tools/build-range-assets.mjs",
-    "build:assets": "npm run build:textures && npm run build:map-assets && npm run build:unit-assets && npm run build:range-assets && npm run scene",
+    "build:assets": "npm run build:textures && npm run build:barrel && npm run build:map-assets && npm run build:unit-assets && npm run build:range-assets && npm run scene",
     "scene": "node tools/build-scene.mjs",
     "benchmark": "node tools/benchmark-world.mjs",
     "benchmark:view": "node tools/benchmark-browser.mjs",
@@ -36,7 +39,8 @@
     "assets:selected:fetch-models": "node tools/fetch-selected-assets.mjs --models",
     "assets:selected:apply-floor": "node tools/apply-selected-floor.mjs",
     "assets:selected:prepare-props": "python3 tools/prepare-selected-props.py",
-    "assets:selected:apply-props": "node tools/apply-selected-props.mjs"
+    "assets:selected:apply-props": "node tools/apply-selected-props.mjs",
+    "build:barrel": "blender -b --factory-startup -P tools/blender/barrel/build.py"
   },
   "devDependencies": {
     "@gltf-transform/core": "^4.5.0",
@@ -84,12 +88,14 @@
     },
     "publish": {
       "exclude": [
+        "coordination/**",
         "docs/**",
         "docs/evidence/**",
         "server/**",
         "packages/**",
         "test/**",
-        "tools/**"
+        "tools/**",
+        "coordination/**"
       ]
     },
     "plugins": [

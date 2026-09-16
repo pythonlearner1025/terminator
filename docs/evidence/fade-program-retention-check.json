@@ -1,0 +1,127 @@
+{
+  "ok": true,
+  "checkedAt": "2026-09-15T00:41:19.612Z",
+  "mode": "headless",
+  "componentTypes": [
+    "Cannon3DBodyComponent",
+    "Cannon3DShapeComponent",
+    "CannonRagdollComponent",
+    "GameManager",
+    "HtmlUiComponent"
+  ],
+  "rows": [
+    {
+      "kind": "script",
+      "path": "scripts/GameManager.script.js",
+      "status": "pass",
+      "detail": "GameManager"
+    },
+    {
+      "kind": "script",
+      "path": "generators/v2-preview.js",
+      "status": "pass",
+      "detail": "no component types"
+    },
+    {
+      "kind": "plugin",
+      "path": "lib/view/v2/exact-image-source.plugin.js",
+      "status": "pass",
+      "detail": "resolved"
+    },
+    {
+      "kind": "plugin",
+      "path": "scripts/FirstPerson.plugin.js",
+      "status": "pass",
+      "detail": "resolved"
+    },
+    {
+      "kind": "component",
+      "path": "Game Manager",
+      "status": "pass",
+      "detail": "GameManager"
+    }
+  ],
+  "outcomes": [
+    {
+      "name": "Playable",
+      "status": "pass",
+      "summary": "The game booted and ran 30 frames without errors.",
+      "codes": [],
+      "durationMs": 22291,
+      "report": {
+        "projectValidation": {
+          "ok": true,
+          "status": "pass",
+          "summary": "Project validations passed.",
+          "results": [
+            {
+              "status": "pass",
+              "summary": "Headless world and view adapters are running.",
+              "checks": {
+                "nodesPresent": true,
+                "systemsReady": true,
+                "authoredPieces": 266,
+                "runtimeBatches": 32,
+                "v2Modules": 5,
+                "v2Error": null,
+                "v2TransparencyReady": true,
+                "tickRate": 60
+              }
+            }
+          ]
+        },
+        "cleanup": {
+          "ok": true,
+          "status": "pass",
+          "summary": "Runtime cleanup passed.",
+          "issues": [],
+          "trackedObjectCount": 0,
+          "outsideRenderableCount": 0
+        },
+        "runtimeErrors": 0,
+        "relationships": []
+      }
+    },
+    {
+      "name": "Editable",
+      "status": "pass",
+      "summary": "Stopped-mode authored representation passed.",
+      "codes": [],
+      "report": {
+        "ok": true,
+        "status": "pass",
+        "summary": "Stopped-mode authored representation passed.",
+        "issues": [],
+        "checks": {
+          "visibleAuthoredContent": true,
+          "selectableAuthoredContent": true,
+          "relationshipsValid": true,
+          "cameraUseful": true
+        },
+        "metrics": {
+          "authoredObjectCount": 2188,
+          "renderableCount": 970,
+          "visibleRenderableCount": 937,
+          "selectableCount": 937,
+          "cameraFramedRenderableCount": 925,
+          "cameraInsideRenderableCount": 0
+        }
+      }
+    },
+    {
+      "name": "Persisted",
+      "status": "pass",
+      "summary": "Save/Reload semantic equivalence passed.",
+      "codes": [],
+      "report": {
+        "ok": true,
+        "status": "pass",
+        "summary": "Save/Reload semantic equivalence passed.",
+        "issues": [],
+        "changes": [],
+        "beforeBytes": 76710,
+        "afterBytes": 76710
+      }
+    }
+  ]
+}

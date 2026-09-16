@@ -43,8 +43,17 @@ async function main() {
     const gltfPath = resolve(directory, `${slug}.gltf`)
     const binPath = resolve(directory, `${slug}.bin`)
     await mkdir(directory, {recursive: true})
-    const object = createPiece(spec)
-    await writeGltf(object, gltfPath, binPath, assetId)
+    if (spec.kind === 'barrel') {
+      const barrel = JSON.parse(await readFile(gltfPath, 'utf8').catch(() => {
+        throw new Error('Run npm run build:barrel before building map assets')
+      }))
+      if (!barrel.asset.generator.includes('deterministic barrel build')) {
+        throw new Error('Run npm run build:barrel to replace the legacy barrel')
+      }
+    } else {
+      const object = createPiece(spec)
+      await writeGltf(object, gltfPath, binPath, assetId)
+    }
     const gltfBytes = (await readFile(gltfPath)).byteLength
     const binBytes = (await readFile(binPath)).byteLength
     totalBytes += gltfBytes + binBytes
@@ -55,6 +64,11 @@ async function main() {
       files: {
         'f.gltf': posix(relative(root, gltfPath)),
         [`${slug}.bin`]: posix(relative(root, binPath)),
+        ...(spec.kind === 'barrel' ? Object.fromEntries(
+          ['albedo', 'normal', 'orm', 'emissive'].map(name => [
+            `barrel-${name}.png`, posix(relative(root, resolve(directory, `barrel-${name}.png`))),
+          ]),
+        ) : {}),
       },
     }
   }
@@ -234,9 +248,7 @@ function createPiece(spec) {
       localShapes()
       break
     case 'barrel':
-      cylinder('Burn barrel drum', .395, 1.262, [0, .011, 0], 'rust')
-      for (const y of [-.5, -.16, .32, .59]) cylinder('Barrel steel hoop', .395, .05, [0, y, 0], 'steel')
-      break
+      throw new Error('Barrel geometry is owned by tools/blender/barrel/build.py')
     case 'container': {
       box('Container shell', size, [0, 0, 0], spec.sourceId?.includes('red') ? 'red' : spec.sourceId?.includes('blue') ? 'blue' : 'steel')
       for (const x of [-spec.size.x / 2 + .06, spec.size.x / 2 - .06]) {

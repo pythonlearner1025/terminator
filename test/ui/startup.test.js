@@ -6,6 +6,30 @@ globalThis.ImageData ??= class {}
 globalThis.window ??= {}
 const {UiSession}=await import('../../lib/ui/session.js')
 const {Hud}=await import('../../lib/ui/hud.js')
+const {LobbyClient}=await import('../../lib/net/lobby-client.js')
+test('public menu opens built-in Skynet without a probe, error or premature match',async t=>{
+  const previousLocation=globalThis.location
+  globalThis.location=new URL('https://terminator.app.blitz.dev/')
+  t.after(()=>{if(previousLocation===undefined)delete globalThis.location;else globalThis.location=previousLocation})
+  const requests=t.mock.method(globalThis,'fetch',async()=>{throw Error('unexpected probe')})
+  let starts=0
+  const world={skynet:{name:'BUILT-IN',connected:false}}
+  const director={phase:'lobby',start(){starts++;this.phase='wave'},beginWave(){}}
+  const lobby=new LobbyClient({world,director})
+  assert.equal(lobby.serverUrl,'')
+  const session={manager:{world,director,lobby}}
+  try {
+    UiSession.prototype.openLobby.call(session)
+    await new Promise(resolve=>setImmediate(resolve))
+    const snapshot=UiSession.prototype.lobbySnapshot.call(session)
+    assert.equal(snapshot.status,'Built-in Skynet is ready.')
+    assert.equal(snapshot.error,null)
+    assert.equal(requests.mock.callCount(),0)
+    assert.equal(starts,0)
+    lobby.beginMatch()
+    assert.equal(starts,1)
+  } finally {session.lobbyDifficulty?.dispose();lobby.stop()}
+})
 test('stopped menu never runs scheduled preparation; a live menu prepares once', () => {
   let id=0,runs=0
   const jobs=new Map()

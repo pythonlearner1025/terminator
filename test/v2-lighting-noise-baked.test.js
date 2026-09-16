@@ -9,13 +9,35 @@ import * as noise from '../lib/view/v2/lighting-noise.js'
 globalThis.ImageData??=class{}
 globalThis.window??={}
 const E=await import('threepipe')
-const {mountV2Lighting}=await import('../lib/view/v2/lighting.js')
+const {mountV2Lighting,lightingPlumeUrl}=await import('../lib/view/v2/lighting.js')
 const {defaultMap}=await import('../lib/core/map.js')
 const base=new URL('../',import.meta.url)
 const compressed=await readFile(new URL('assets/v2/lighting-baked/production.rgba.gz',base))
 const hash=data=>createHash('sha256').update(data).digest('hex')
 const response=()=>new Response(compressed,{status:200})
 const fixture=()=>{const scene=new E.Scene(),root=new E.Group();scene.add(root);return {root,map:defaultMap,viewer:{scene,getPlugin(){},setDirty(){}}}}
+
+for(const [base,assets] of [
+ ['http://localhost:4321/files/lib/view/v2/','http://localhost:4321/files/assets/v2/'],
+ ['https://terminator.app.blitz.dev/lib/view/v2/','https://terminator.app.blitz.dev/assets/v2/'],
+])test(`lighting fetches resolve against the module at ${base}`,async()=>{
+ const urls=[]
+ const load=createLightingNoiseLoader({moduleUrl:`${base}lighting-noise-baked.js?revision=2`,fetchImpl:async url=>{urls.push(url);return response()}})
+ assert.equal((await load()).sky.width,2048)
+ assert.deepEqual(urls,[`${assets}lighting-baked/production.rgba.gz`])
+ for(let i=0;i<4;i++)assert.equal(lightingPlumeUrl(i,`${base}lighting.js?revision=2`),`${assets}lighting/plume-${i}.rgba`)
+})
+
+test('standalone plume loading uses module-relative URLs for all four requests',async(t)=>{
+ const urls=[]
+ t.mock.method(globalThis,'fetch',async url=>{urls.push(url);return new Response(new Uint8Array(512*512*4))})
+ t.mock.property(globalThis,'window',{location:{origin:'https://terminator.app.blitz.dev'}})
+ const lighting=mountV2Lighting({...fixture(),loadNoisePixels:null})
+ try{
+  await lighting.ready
+  assert.deepEqual(urls,Array.from({length:4},(_,i)=>new URL(`assets/v2/lighting/plume-${i}.rgba`,base).href))
+ }finally{lighting.dispose()}
+})
 
 test('lossless lighting bundle preserves every production RGBA byte and source recipe',async()=>{
  assert.equal(hash(await readFile(new URL(manifest.sourceFile,base))),manifest.sourceSha256)

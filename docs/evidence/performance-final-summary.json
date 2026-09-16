@@ -1,0 +1,464 @@
+{
+  "sourceCommit": "23ccd98af762e63f7bb2f91ca489bc0b24bf760a",
+  "testedHead": "e1d1e11918d266238e774c960e5d7d79bf5bb009",
+  "acceptance": "INCOMPLETE: natural fade shader coverage failed; no production fix made in bounded verification",
+  "soakCompleted": true,
+  "startupGoalPass": true,
+  "newProgramEvents": 8,
+  "newProgramFamilies": [
+    "Gore piece fade",
+    "Pooled HK debris",
+    "Pooled fading wreck metal"
+  ],
+  "shaderComparisons": [
+    {
+      "added": {
+        "elapsedSeconds": 190.52,
+        "id": 236,
+        "name": "Gore piece fade",
+        "cacheKey": "physical,STANDARD,,PHYSICAL,,SSAO_ENABLED,1,INVERSE_ALPHAMAP,0,highp,srgb-linear,306,2048,uv,false,false,uv,false,uv,false,false,uv,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,,true,false,0,,2,5,10,0,2,0,1,0,0,0,0,1,0,0,0,0,161,513,,onBeforeCompile(e,t){const i=[[\"vec3 totalDiffuse = \",\"afterModulation\"],[\"#include <aomap_fragment>\",\"beforeModulation\"],[\"#include <lights_physical_fragment>\",\"beforeAccumulation\"],[\"#include <clipping_planes_fragment>\",\"mainStart\"]],s=[[\"#include <uv_vertex>\",\"mainStart\"]];for(const r of s)e.vertexShader=wt(e.vertexShader,r[0],\"#glMarker \"+r[1]+`\n`+r[0]);for(const r of i)e.fragmentShader=wt(e.fragmentShader,r[0],\"#glMarker \"+r[1]+`\n`+r[0]);e.fragmentShader=wt(e.fragmentShader,\"#include <opaque_fragment>\",`gl_FragColor = clamp(gl_FragColor, 0.0, 1000.0);\n`,{append:!0}),Ee.onBeforeCompile.call(this,e,t),e.defines&&(e.defines.INVERSE_ALPHAMAP=this.userData.inverseAlphaMap?1:0),super.onBeforeCompile(e,t)}1srgb-linearundefined"
+      },
+      "closestStartup": {
+        "id": 175,
+        "name": "Endoskeleton 1K worn metal atlas",
+        "cacheKey": "physical,STANDARD,,PHYSICAL,,SSAO_ENABLED,1,INVERSE_ALPHAMAP,0,highp,rgbm-16,306,2048,uv,false,false,uv,false,uv,false,false,uv,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,,true,false,0,,2,5,10,0,2,0,1,0,0,0,0,1,0,0,0,0,161,131601,,onBeforeCompile(e,t){const i=[[\"vec3 totalDiffuse = \",\"afterModulation\"],[\"#include <aomap_fragment>\",\"beforeModulation\"],[\"#include <lights_physical_fragment>\",\"beforeAccumulation\"],[\"#include <clipping_planes_fragment>\",\"mainStart\"]],s=[[\"#include <uv_vertex>\",\"mainStart\"]];for(const r of s)e.vertexShader=wt(e.vertexShader,r[0],\"#glMarker \"+r[1]+`\n`+r[0]);for(const r of i)e.fragmentShader=wt(e.fragmentShader,r[0],\"#glMarker \"+r[1]+`\n`+r[0]);e.fragmentShader=wt(e.fragmentShader,\"#include <opaque_fragment>\",`gl_FragColor = clamp(gl_FragColor, 0.0, 1000.0);\n`,{append:!0}),Ee.onBeforeCompile.call(this,e,t),e.defines&&(e.defines.INVERSE_ALPHAMAP=this.userData.inverseAlphaMap?1:0),super.onBeforeCompile(e,t)}1srgb-linearundefined"
+      },
+      "cacheKeyTokenDifferences": [
+        {
+          "index": 10,
+          "startup": "rgbm-16",
+          "naturalFade": "srgb-linear"
+        },
+        {
+          "index": 58,
+          "startup": "131601",
+          "naturalFade": "513"
+        }
+      ]
+    },
+    {
+      "added": {
+        "elapsedSeconds": 198.0875,
+        "id": 237,
+        "name": "Gore piece fade",
+        "cacheKey": "physical,STANDARD,,PHYSICAL,,SSAO_ENABLED,1,INVERSE_ALPHAMAP,0,highp,srgb-linear,306,2048,uv,false,false,uv,false,uv,false,false,uv,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,,true,false,0,,2,5,10,0,2,0,1,0,0,0,0,1,0,0,0,0,161,513,,onBeforeCompile(e,t){const i=[[\"vec3 totalDiffuse = \",\"afterModulation\"],[\"#include <aomap_fragment>\",\"beforeModulation\"],[\"#include <lights_physical_fragment>\",\"beforeAccumulation\"],[\"#include <clipping_planes_fragment>\",\"mainStart\"]],s=[[\"#include <uv_vertex>\",\"mainStart\"]];for(const r of s)e.vertexShader=wt(e.vertexShader,r[0],\"#glMarker \"+r[1]+`\n`+r[0]);for(const r of i)e.fragmentShader=wt(e.fragmentShader,r[0],\"#glMarker \"+r[1]+`\n`+r[0]);e.fragmentShader=wt(e.fragmentShader,\"#include <opaque_fragment>\",`gl_FragColor = clamp(gl_FragColor, 0.0, 1000.0);\n`,{append:!0}),Ee.onBeforeCompile.call(this,e,t),e.defines&&(e.defines.INVERSE_ALPHAMAP=this.userData.inverseAlphaMap?1:0),super.onBeforeCompile(e,t)}1srgb-linearundefined"
+      },
+      "closestStartup": {
+        "id": 175,
+        "name": "Endoskeleton 1K worn metal atlas",
+        "cacheKey": "physical,STANDARD,,PHYSICAL,,SSAO_ENABLED,1,INVERSE_ALPHAMAP,0,highp,rgbm-16,306,2048,uv,false,false,uv,false,uv,false,false,uv,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,,true,false,0,,2,5,10,0,2,0,1,0,0,0,0,1,0,0,0,0,161,131601,,onBeforeCompile(e,t){const i=[[\"vec3 totalDiffuse = \",\"afterModulation\"],[\"#include <aomap_fragment>\",\"beforeModulation\"],[\"#include <lights_physical_fragment>\",\"beforeAccumulation\"],[\"#include <clipping_planes_fragment>\",\"mainStart\"]],s=[[\"#include <uv_vertex>\",\"mainStart\"]];for(const r of s)e.vertexShader=wt(e.vertexShader,r[0],\"#glMarker \"+r[1]+`\n`+r[0]);for(const r of i)e.fragmentShader=wt(e.fragmentShader,r[0],\"#glMarker \"+r[1]+`\n`+r[0]);e.fragmentShader=wt(e.fragmentShader,\"#include <opaque_fragment>\",`gl_FragColor = clamp(gl_FragColor, 0.0, 1000.0);\n`,{append:!0}),Ee.onBeforeCompile.call(this,e,t),e.defines&&(e.defines.INVERSE_ALPHAMAP=this.userData.inverseAlphaMap?1:0),super.onBeforeCompile(e,t)}1srgb-linearundefined"
+      },
+      "cacheKeyTokenDifferences": [
+        {
+          "index": 10,
+          "startup": "rgbm-16",
+          "naturalFade": "srgb-linear"
+        },
+        {
+          "index": 58,
+          "startup": "131601",
+          "naturalFade": "513"
+        }
+      ]
+    },
+    {
+      "added": {
+        "elapsedSeconds": 202.57090000000596,
+        "id": 238,
+        "name": "Pooled fading wreck metal",
+        "cacheKey": "physical,STANDARD,,PHYSICAL,,SSAO_ENABLED,1,INVERSE_ALPHAMAP,0,highp,srgb-linear,306,1024,uv,false,false,uv,false,uv,false,false,uv,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,,true,false,0,,2,5,10,0,2,0,1,0,0,0,0,1,0,0,0,0,161,529,,onBeforeCompile(e,t){const i=[[\"vec3 totalDiffuse = \",\"afterModulation\"],[\"#include <aomap_fragment>\",\"beforeModulation\"],[\"#include <lights_physical_fragment>\",\"beforeAccumulation\"],[\"#include <clipping_planes_fragment>\",\"mainStart\"]],s=[[\"#include <uv_vertex>\",\"mainStart\"]];for(const r of s)e.vertexShader=wt(e.vertexShader,r[0],\"#glMarker \"+r[1]+`\n`+r[0]);for(const r of i)e.fragmentShader=wt(e.fragmentShader,r[0],\"#glMarker \"+r[1]+`\n`+r[0]);e.fragmentShader=wt(e.fragmentShader,\"#include <opaque_fragment>\",`gl_FragColor = clamp(gl_FragColor, 0.0, 1000.0);\n`,{append:!0}),Ee.onBeforeCompile.call(this,e,t),e.defines&&(e.defines.INVERSE_ALPHAMAP=this.userData.inverseAlphaMap?1:0),super.onBeforeCompile(e,t)}1srgb-linearundefined"
+      },
+      "closestStartup": {
+        "id": 172,
+        "name": "Pooled HK debris",
+        "cacheKey": "physical,STANDARD,,PHYSICAL,,SSAO_ENABLED,1,INVERSE_ALPHAMAP,0,highp,rgbm-16,306,1024,uv,false,false,uv,false,uv,false,false,uv,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,,true,false,0,,2,5,10,0,2,0,1,0,0,0,0,1,0,0,0,0,161,131585,,onBeforeCompile(e,t){const i=[[\"vec3 totalDiffuse = \",\"afterModulation\"],[\"#include <aomap_fragment>\",\"beforeModulation\"],[\"#include <lights_physical_fragment>\",\"beforeAccumulation\"],[\"#include <clipping_planes_fragment>\",\"mainStart\"]],s=[[\"#include <uv_vertex>\",\"mainStart\"]];for(const r of s)e.vertexShader=wt(e.vertexShader,r[0],\"#glMarker \"+r[1]+`\n`+r[0]);for(const r of i)e.fragmentShader=wt(e.fragmentShader,r[0],\"#glMarker \"+r[1]+`\n`+r[0]);e.fragmentShader=wt(e.fragmentShader,\"#include <opaque_fragment>\",`gl_FragColor = clamp(gl_FragColor, 0.0, 1000.0);\n`,{append:!0}),Ee.onBeforeCompile.call(this,e,t),e.defines&&(e.defines.INVERSE_ALPHAMAP=this.userData.inverseAlphaMap?1:0),super.onBeforeCompile(e,t)}1srgb-linearundefined"
+      },
+      "cacheKeyTokenDifferences": [
+        {
+          "index": 10,
+          "startup": "rgbm-16",
+          "naturalFade": "srgb-linear"
+        },
+        {
+          "index": 58,
+          "startup": "131585",
+          "naturalFade": "529"
+        }
+      ]
+    },
+    {
+      "added": {
+        "elapsedSeconds": 211.70310000000893,
+        "id": 239,
+        "name": "Pooled fading wreck metal",
+        "cacheKey": "physical,STANDARD,,PHYSICAL,,SSAO_ENABLED,1,INVERSE_ALPHAMAP,0,highp,srgb-linear,306,1024,uv,false,false,uv,false,uv,false,false,uv,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,,true,false,0,,2,5,10,0,2,0,1,0,0,0,0,1,0,0,0,0,161,529,,onBeforeCompile(e,t){const i=[[\"vec3 totalDiffuse = \",\"afterModulation\"],[\"#include <aomap_fragment>\",\"beforeModulation\"],[\"#include <lights_physical_fragment>\",\"beforeAccumulation\"],[\"#include <clipping_planes_fragment>\",\"mainStart\"]],s=[[\"#include <uv_vertex>\",\"mainStart\"]];for(const r of s)e.vertexShader=wt(e.vertexShader,r[0],\"#glMarker \"+r[1]+`\n`+r[0]);for(const r of i)e.fragmentShader=wt(e.fragmentShader,r[0],\"#glMarker \"+r[1]+`\n`+r[0]);e.fragmentShader=wt(e.fragmentShader,\"#include <opaque_fragment>\",`gl_FragColor = clamp(gl_FragColor, 0.0, 1000.0);\n`,{append:!0}),Ee.onBeforeCompile.call(this,e,t),e.defines&&(e.defines.INVERSE_ALPHAMAP=this.userData.inverseAlphaMap?1:0),super.onBeforeCompile(e,t)}1srgb-linearundefined"
+      },
+      "closestStartup": {
+        "id": 172,
+        "name": "Pooled HK debris",
+        "cacheKey": "physical,STANDARD,,PHYSICAL,,SSAO_ENABLED,1,INVERSE_ALPHAMAP,0,highp,rgbm-16,306,1024,uv,false,false,uv,false,uv,false,false,uv,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,,true,false,0,,2,5,10,0,2,0,1,0,0,0,0,1,0,0,0,0,161,131585,,onBeforeCompile(e,t){const i=[[\"vec3 totalDiffuse = \",\"afterModulation\"],[\"#include <aomap_fragment>\",\"beforeModulation\"],[\"#include <lights_physical_fragment>\",\"beforeAccumulation\"],[\"#include <clipping_planes_fragment>\",\"mainStart\"]],s=[[\"#include <uv_vertex>\",\"mainStart\"]];for(const r of s)e.vertexShader=wt(e.vertexShader,r[0],\"#glMarker \"+r[1]+`\n`+r[0]);for(const r of i)e.fragmentShader=wt(e.fragmentShader,r[0],\"#glMarker \"+r[1]+`\n`+r[0]);e.fragmentShader=wt(e.fragmentShader,\"#include <opaque_fragment>\",`gl_FragColor = clamp(gl_FragColor, 0.0, 1000.0);\n`,{append:!0}),Ee.onBeforeCompile.call(this,e,t),e.defines&&(e.defines.INVERSE_ALPHAMAP=this.userData.inverseAlphaMap?1:0),super.onBeforeCompile(e,t)}1srgb-linearundefined"
+      },
+      "cacheKeyTokenDifferences": [
+        {
+          "index": 10,
+          "startup": "rgbm-16",
+          "naturalFade": "srgb-linear"
+        },
+        {
+          "index": 58,
+          "startup": "131585",
+          "naturalFade": "529"
+        }
+      ]
+    },
+    {
+      "added": {
+        "elapsedSeconds": 212.5805,
+        "id": 240,
+        "name": "Gore piece fade",
+        "cacheKey": "physical,STANDARD,,PHYSICAL,,SSAO_ENABLED,1,INVERSE_ALPHAMAP,0,highp,srgb-linear,306,2048,uv,false,false,uv,false,uv,false,false,uv,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,,true,false,0,,2,5,10,0,2,0,1,0,0,0,0,1,0,0,0,0,161,513,,onBeforeCompile(e,t){const i=[[\"vec3 totalDiffuse = \",\"afterModulation\"],[\"#include <aomap_fragment>\",\"beforeModulation\"],[\"#include <lights_physical_fragment>\",\"beforeAccumulation\"],[\"#include <clipping_planes_fragment>\",\"mainStart\"]],s=[[\"#include <uv_vertex>\",\"mainStart\"]];for(const r of s)e.vertexShader=wt(e.vertexShader,r[0],\"#glMarker \"+r[1]+`\n`+r[0]);for(const r of i)e.fragmentShader=wt(e.fragmentShader,r[0],\"#glMarker \"+r[1]+`\n`+r[0]);e.fragmentShader=wt(e.fragmentShader,\"#include <opaque_fragment>\",`gl_FragColor = clamp(gl_FragColor, 0.0, 1000.0);\n`,{append:!0}),Ee.onBeforeCompile.call(this,e,t),e.defines&&(e.defines.INVERSE_ALPHAMAP=this.userData.inverseAlphaMap?1:0),super.onBeforeCompile(e,t)}1srgb-linearundefined"
+      },
+      "closestStartup": {
+        "id": 175,
+        "name": "Endoskeleton 1K worn metal atlas",
+        "cacheKey": "physical,STANDARD,,PHYSICAL,,SSAO_ENABLED,1,INVERSE_ALPHAMAP,0,highp,rgbm-16,306,2048,uv,false,false,uv,false,uv,false,false,uv,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,,true,false,0,,2,5,10,0,2,0,1,0,0,0,0,1,0,0,0,0,161,131601,,onBeforeCompile(e,t){const i=[[\"vec3 totalDiffuse = \",\"afterModulation\"],[\"#include <aomap_fragment>\",\"beforeModulation\"],[\"#include <lights_physical_fragment>\",\"beforeAccumulation\"],[\"#include <clipping_planes_fragment>\",\"mainStart\"]],s=[[\"#include <uv_vertex>\",\"mainStart\"]];for(const r of s)e.vertexShader=wt(e.vertexShader,r[0],\"#glMarker \"+r[1]+`\n`+r[0]);for(const r of i)e.fragmentShader=wt(e.fragmentShader,r[0],\"#glMarker \"+r[1]+`\n`+r[0]);e.fragmentShader=wt(e.fragmentShader,\"#include <opaque_fragment>\",`gl_FragColor = clamp(gl_FragColor, 0.0, 1000.0);\n`,{append:!0}),Ee.onBeforeCompile.call(this,e,t),e.defines&&(e.defines.INVERSE_ALPHAMAP=this.userData.inverseAlphaMap?1:0),super.onBeforeCompile(e,t)}1srgb-linearundefined"
+      },
+      "cacheKeyTokenDifferences": [
+        {
+          "index": 10,
+          "startup": "rgbm-16",
+          "naturalFade": "srgb-linear"
+        },
+        {
+          "index": 58,
+          "startup": "131601",
+          "naturalFade": "513"
+        }
+      ]
+    },
+    {
+      "added": {
+        "elapsedSeconds": 222.47740000000596,
+        "id": 241,
+        "name": "Pooled HK debris",
+        "cacheKey": "physical,STANDARD,,PHYSICAL,,SSAO_ENABLED,1,INVERSE_ALPHAMAP,0,highp,srgb-linear,306,1024,uv,false,false,uv,false,uv,false,false,uv,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,,true,false,0,,2,5,10,0,2,0,1,0,0,0,0,1,0,0,0,0,161,513,,onBeforeCompile(e,t){const i=[[\"vec3 totalDiffuse = \",\"afterModulation\"],[\"#include <aomap_fragment>\",\"beforeModulation\"],[\"#include <lights_physical_fragment>\",\"beforeAccumulation\"],[\"#include <clipping_planes_fragment>\",\"mainStart\"]],s=[[\"#include <uv_vertex>\",\"mainStart\"]];for(const r of s)e.vertexShader=wt(e.vertexShader,r[0],\"#glMarker \"+r[1]+`\n`+r[0]);for(const r of i)e.fragmentShader=wt(e.fragmentShader,r[0],\"#glMarker \"+r[1]+`\n`+r[0]);e.fragmentShader=wt(e.fragmentShader,\"#include <opaque_fragment>\",`gl_FragColor = clamp(gl_FragColor, 0.0, 1000.0);\n`,{append:!0}),Ee.onBeforeCompile.call(this,e,t),e.defines&&(e.defines.INVERSE_ALPHAMAP=this.userData.inverseAlphaMap?1:0),super.onBeforeCompile(e,t)}1srgb-linearundefined"
+      },
+      "closestStartup": {
+        "id": 172,
+        "name": "Pooled HK debris",
+        "cacheKey": "physical,STANDARD,,PHYSICAL,,SSAO_ENABLED,1,INVERSE_ALPHAMAP,0,highp,rgbm-16,306,1024,uv,false,false,uv,false,uv,false,false,uv,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,,true,false,0,,2,5,10,0,2,0,1,0,0,0,0,1,0,0,0,0,161,131585,,onBeforeCompile(e,t){const i=[[\"vec3 totalDiffuse = \",\"afterModulation\"],[\"#include <aomap_fragment>\",\"beforeModulation\"],[\"#include <lights_physical_fragment>\",\"beforeAccumulation\"],[\"#include <clipping_planes_fragment>\",\"mainStart\"]],s=[[\"#include <uv_vertex>\",\"mainStart\"]];for(const r of s)e.vertexShader=wt(e.vertexShader,r[0],\"#glMarker \"+r[1]+`\n`+r[0]);for(const r of i)e.fragmentShader=wt(e.fragmentShader,r[0],\"#glMarker \"+r[1]+`\n`+r[0]);e.fragmentShader=wt(e.fragmentShader,\"#include <opaque_fragment>\",`gl_FragColor = clamp(gl_FragColor, 0.0, 1000.0);\n`,{append:!0}),Ee.onBeforeCompile.call(this,e,t),e.defines&&(e.defines.INVERSE_ALPHAMAP=this.userData.inverseAlphaMap?1:0),super.onBeforeCompile(e,t)}1srgb-linearundefined"
+      },
+      "cacheKeyTokenDifferences": [
+        {
+          "index": 10,
+          "startup": "rgbm-16",
+          "naturalFade": "srgb-linear"
+        },
+        {
+          "index": 58,
+          "startup": "131585",
+          "naturalFade": "513"
+        }
+      ]
+    },
+    {
+      "added": {
+        "elapsedSeconds": 230.681,
+        "id": 242,
+        "name": "Gore piece fade",
+        "cacheKey": "physical,STANDARD,,PHYSICAL,,SSAO_ENABLED,1,INVERSE_ALPHAMAP,0,highp,srgb-linear,306,2048,uv,false,false,uv,false,uv,false,false,uv,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,,true,false,0,,2,5,10,0,2,0,1,0,0,0,0,1,0,0,0,0,161,513,,onBeforeCompile(e,t){const i=[[\"vec3 totalDiffuse = \",\"afterModulation\"],[\"#include <aomap_fragment>\",\"beforeModulation\"],[\"#include <lights_physical_fragment>\",\"beforeAccumulation\"],[\"#include <clipping_planes_fragment>\",\"mainStart\"]],s=[[\"#include <uv_vertex>\",\"mainStart\"]];for(const r of s)e.vertexShader=wt(e.vertexShader,r[0],\"#glMarker \"+r[1]+`\n`+r[0]);for(const r of i)e.fragmentShader=wt(e.fragmentShader,r[0],\"#glMarker \"+r[1]+`\n`+r[0]);e.fragmentShader=wt(e.fragmentShader,\"#include <opaque_fragment>\",`gl_FragColor = clamp(gl_FragColor, 0.0, 1000.0);\n`,{append:!0}),Ee.onBeforeCompile.call(this,e,t),e.defines&&(e.defines.INVERSE_ALPHAMAP=this.userData.inverseAlphaMap?1:0),super.onBeforeCompile(e,t)}1srgb-linearundefined"
+      },
+      "closestStartup": {
+        "id": 175,
+        "name": "Endoskeleton 1K worn metal atlas",
+        "cacheKey": "physical,STANDARD,,PHYSICAL,,SSAO_ENABLED,1,INVERSE_ALPHAMAP,0,highp,rgbm-16,306,2048,uv,false,false,uv,false,uv,false,false,uv,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,,true,false,0,,2,5,10,0,2,0,1,0,0,0,0,1,0,0,0,0,161,131601,,onBeforeCompile(e,t){const i=[[\"vec3 totalDiffuse = \",\"afterModulation\"],[\"#include <aomap_fragment>\",\"beforeModulation\"],[\"#include <lights_physical_fragment>\",\"beforeAccumulation\"],[\"#include <clipping_planes_fragment>\",\"mainStart\"]],s=[[\"#include <uv_vertex>\",\"mainStart\"]];for(const r of s)e.vertexShader=wt(e.vertexShader,r[0],\"#glMarker \"+r[1]+`\n`+r[0]);for(const r of i)e.fragmentShader=wt(e.fragmentShader,r[0],\"#glMarker \"+r[1]+`\n`+r[0]);e.fragmentShader=wt(e.fragmentShader,\"#include <opaque_fragment>\",`gl_FragColor = clamp(gl_FragColor, 0.0, 1000.0);\n`,{append:!0}),Ee.onBeforeCompile.call(this,e,t),e.defines&&(e.defines.INVERSE_ALPHAMAP=this.userData.inverseAlphaMap?1:0),super.onBeforeCompile(e,t)}1srgb-linearundefined"
+      },
+      "cacheKeyTokenDifferences": [
+        {
+          "index": 10,
+          "startup": "rgbm-16",
+          "naturalFade": "srgb-linear"
+        },
+        {
+          "index": 58,
+          "startup": "131601",
+          "naturalFade": "513"
+        }
+      ]
+    },
+    {
+      "added": {
+        "elapsedSeconds": 239.0445,
+        "id": 243,
+        "name": "Gore piece fade",
+        "cacheKey": "physical,STANDARD,,PHYSICAL,,SSAO_ENABLED,1,INVERSE_ALPHAMAP,0,highp,srgb-linear,306,2048,uv,false,false,uv,false,uv,false,false,uv,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,,true,false,0,,2,5,10,0,2,0,1,0,0,0,0,1,0,0,0,0,161,513,,onBeforeCompile(e,t){const i=[[\"vec3 totalDiffuse = \",\"afterModulation\"],[\"#include <aomap_fragment>\",\"beforeModulation\"],[\"#include <lights_physical_fragment>\",\"beforeAccumulation\"],[\"#include <clipping_planes_fragment>\",\"mainStart\"]],s=[[\"#include <uv_vertex>\",\"mainStart\"]];for(const r of s)e.vertexShader=wt(e.vertexShader,r[0],\"#glMarker \"+r[1]+`\n`+r[0]);for(const r of i)e.fragmentShader=wt(e.fragmentShader,r[0],\"#glMarker \"+r[1]+`\n`+r[0]);e.fragmentShader=wt(e.fragmentShader,\"#include <opaque_fragment>\",`gl_FragColor = clamp(gl_FragColor, 0.0, 1000.0);\n`,{append:!0}),Ee.onBeforeCompile.call(this,e,t),e.defines&&(e.defines.INVERSE_ALPHAMAP=this.userData.inverseAlphaMap?1:0),super.onBeforeCompile(e,t)}1srgb-linearundefined"
+      },
+      "closestStartup": {
+        "id": 175,
+        "name": "Endoskeleton 1K worn metal atlas",
+        "cacheKey": "physical,STANDARD,,PHYSICAL,,SSAO_ENABLED,1,INVERSE_ALPHAMAP,0,highp,rgbm-16,306,2048,uv,false,false,uv,false,uv,false,false,uv,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,,true,false,0,,2,5,10,0,2,0,1,0,0,0,0,1,0,0,0,0,161,131601,,onBeforeCompile(e,t){const i=[[\"vec3 totalDiffuse = \",\"afterModulation\"],[\"#include <aomap_fragment>\",\"beforeModulation\"],[\"#include <lights_physical_fragment>\",\"beforeAccumulation\"],[\"#include <clipping_planes_fragment>\",\"mainStart\"]],s=[[\"#include <uv_vertex>\",\"mainStart\"]];for(const r of s)e.vertexShader=wt(e.vertexShader,r[0],\"#glMarker \"+r[1]+`\n`+r[0]);for(const r of i)e.fragmentShader=wt(e.fragmentShader,r[0],\"#glMarker \"+r[1]+`\n`+r[0]);e.fragmentShader=wt(e.fragmentShader,\"#include <opaque_fragment>\",`gl_FragColor = clamp(gl_FragColor, 0.0, 1000.0);\n`,{append:!0}),Ee.onBeforeCompile.call(this,e,t),e.defines&&(e.defines.INVERSE_ALPHAMAP=this.userData.inverseAlphaMap?1:0),super.onBeforeCompile(e,t)}1srgb-linearundefined"
+      },
+      "cacheKeyTokenDifferences": [
+        {
+          "index": 10,
+          "startup": "rgbm-16",
+          "naturalFade": "srgb-linear"
+        },
+        {
+          "index": 58,
+          "startup": "131601",
+          "naturalFade": "513"
+        }
+      ]
+    }
+  ],
+  "officialCheck": [
+    {
+      "name": "Playable",
+      "status": "pass",
+      "summary": "The game booted and ran 30 frames without errors.",
+      "codes": [],
+      "durationMs": 19288,
+      "report": {
+        "projectValidation": {
+          "ok": true,
+          "status": "pass",
+          "summary": "Project validations passed.",
+          "results": [
+            {
+              "status": "pass",
+              "summary": "Headless world and view adapters are running.",
+              "checks": {
+                "nodesPresent": true,
+                "systemsReady": true,
+                "authoredPieces": 266,
+                "runtimeBatches": 32,
+                "v2Modules": 5,
+                "v2Error": null,
+                "v2TransparencyReady": true,
+                "tickRate": 60
+              }
+            }
+          ]
+        },
+        "cleanup": {
+          "ok": true,
+          "status": "pass",
+          "summary": "Runtime cleanup passed.",
+          "issues": [],
+          "trackedObjectCount": 0,
+          "outsideRenderableCount": 0
+        },
+        "runtimeErrors": 0,
+        "relationships": []
+      }
+    },
+    {
+      "name": "Editable",
+      "status": "pass",
+      "summary": "Stopped-mode authored representation passed.",
+      "codes": [],
+      "report": {
+        "ok": true,
+        "status": "pass",
+        "summary": "Stopped-mode authored representation passed.",
+        "issues": [],
+        "checks": {
+          "visibleAuthoredContent": true,
+          "selectableAuthoredContent": true,
+          "relationshipsValid": true,
+          "cameraUseful": true
+        },
+        "metrics": {
+          "authoredObjectCount": 2188,
+          "renderableCount": 970,
+          "visibleRenderableCount": 937,
+          "selectableCount": 937,
+          "cameraFramedRenderableCount": 925,
+          "cameraInsideRenderableCount": 0
+        }
+      }
+    },
+    {
+      "name": "Persisted",
+      "status": "pass",
+      "summary": "Save/Reload semantic equivalence passed.",
+      "codes": [],
+      "report": {
+        "ok": true,
+        "status": "pass",
+        "summary": "Save/Reload semantic equivalence passed.",
+        "issues": [],
+        "changes": [],
+        "beforeBytes": 76710,
+        "afterBytes": 76710
+      }
+    }
+  ],
+  "cpuTests": {
+    "passed": 123,
+    "failed": 0,
+    "durationMs": 13363.285232
+  },
+  "stop": {
+    "renderEnabled": true,
+    "runtimeRoots": [],
+    "memory": {
+      "geometries": 601,
+      "textures": 85
+    },
+    "programs": 84,
+    "managerWorld": null,
+    "started": false,
+    "ragdollRecords": null
+  },
+  "cacheProbe": {
+    "description": "Fixed camera/population, normal rendering with GameManager.update paused; 300ms settling + 2500ms measured per on/off/on phase. RenderManager.render synchronous CPU wall time includes driver submission; not GPU elapsed time or uncapped FPS.",
+    "skeletons": 23,
+    "corpses": 80,
+    "tick": 14402,
+    "phases": [
+      {
+        "mode": "on",
+        "renderCpuMs": {
+          "n": 132,
+          "mean": 11.848484848710624,
+          "p50": 11.599999994039536,
+          "p95": 14.900000005960464
+        },
+        "frameMs": {
+          "n": 132,
+          "mean": 18.974242424197268,
+          "p50": 18.600000008940697,
+          "p95": 23.299999997019768
+        },
+        "nativeSkinCalls": 6732,
+        "nativeCorpseSkinCalls": 3564,
+        "skinUpdates": 0,
+        "skinSkips": 6996,
+        "textureVersionDeltas": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "exactPoseEqual": true,
+        "tick": 14402,
+        "cameraEqual": true
+      },
+      {
+        "mode": "off",
+        "renderCpuMs": {
+          "n": 139,
+          "mean": 11.16187050391873,
+          "p50": 10.299999997019768,
+          "p95": 13.399999991059303
+        },
+        "frameMs": {
+          "n": 139,
+          "mean": 18.0208633093954,
+          "p50": 17.19999998807907,
+          "p95": 22.599999994039536
+        },
+        "nativeSkinCalls": 14456,
+        "nativeCorpseSkinCalls": 11120,
+        "skinUpdates": 0,
+        "skinSkips": 0,
+        "textureVersionDeltas": [
+          139,
+          417,
+          417,
+          139,
+          417,
+          139,
+          417,
+          417,
+          417,
+          417,
+          139,
+          139,
+          417,
+          417,
+          417,
+          417,
+          139,
+          139,
+          417,
+          417,
+          417,
+          417,
+          139
+        ],
+        "exactPoseEqual": true,
+        "tick": 14402,
+        "cameraEqual": true
+      },
+      {
+        "mode": "on",
+        "renderCpuMs": {
+          "n": 150,
+          "mean": 10.178666666150093,
+          "p50": 9.899999991059303,
+          "p95": 12.200000002980232
+        },
+        "frameMs": {
+          "n": 150,
+          "mean": 16.768666666646798,
+          "p50": 16.5,
+          "p95": 19.200000002980232
+        },
+        "nativeSkinCalls": 7650,
+        "nativeCorpseSkinCalls": 4050,
+        "skinUpdates": 0,
+        "skinSkips": 7950,
+        "textureVersionDeltas": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "exactPoseEqual": true,
+        "tick": 14402,
+        "cameraEqual": true
+      }
+    ]
+  }
+}

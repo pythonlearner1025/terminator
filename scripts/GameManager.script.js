@@ -20,6 +20,7 @@ import {MapView} from '../lib/view/map.js'
 import {PlayerView} from '../lib/view/player.js'
 import {UnitView} from '../lib/view/units.js'
 import {mountPlayersView} from '../lib/view/players.js'
+import {loadBakedLightingNoise} from '../lib/view/v2/lighting-noise-baked.js'
 import {createStartupProfile} from '../lib/ui/startup-profile.js'
 import {holdStartupRendering,holdCoveredEditorRendering} from '../lib/view/startup-rendering.js'
 import {warmupMatch} from '../lib/view/match-warmup.js'
@@ -107,6 +108,20 @@ export class GameManager extends Object3DComponent {
     this.syncViews()
   }
 
+  // Asset-only work may overlap menu loading. The immutable atmosphere cache
+  // belongs to its loader, while cancellation belongs to this manager lifetime.
+  prepareMenuAssets() {
+    if (this.menuAssets) return this.menuAssets
+    const abort = this.menuAssetsAbort = new AbortController()
+    const pending = this.startup.measure('menu-lighting-decode', () => loadBakedLightingNoise({signal:abort.signal}))
+    this.menuAssets = pending
+    pending.catch(error => {
+      if (this.menuAssets === pending) this.menuAssets = null
+      if (!abort.signal.aborted) this.menuPreparationError = error
+    })
+    return pending
+  }
+
   prepareMap() {
     if (!this.mapView || this.mapView.root) return
     try {this.startup.measure('map-batching', () => this.mapView.start())}
@@ -115,6 +130,7 @@ export class GameManager extends Object3DComponent {
 
   startViews() {
     if (this.viewsStarted || !this.world) return false
+    this.ui?.promotePreparation?.()
     this.warmupAbort = new AbortController()
     const signal = this.warmupAbort.signal
     const profile = this.startup
@@ -155,6 +171,8 @@ export class GameManager extends Object3DComponent {
   stopViews() {
     this.warmupAbort?.abort()
     this.warmupAbort = null
+    this.visualWarmup = null
+    this.visualWarmupReport = null
     if (!this.viewsStarted) return
     this.viewsStarted = false
     this.playersView?.stop(); this.playersView = null
@@ -165,7 +183,7 @@ export class GameManager extends Object3DComponent {
 
   update({deltaTime} = {}) {
     if (!this.started || !this.world) return
-    if (this.ui?.frozen || (!this.range && this.cameraFeel?.hitStopped)) {
+    if (this.ui?.frozen) {
       this.accumulator = 0
       if (this.sessionMode !== 'guest') this.lobby?.update()
       this.party?.interpolate?.()
@@ -193,7 +211,6 @@ export class GameManager extends Object3DComponent {
       this.cameraFeel?.consume(this.world)
       this.accumulator -= TICK_SECONDS
       steps += 1
-      if (this.cameraFeel?.hitStopped) { this.accumulator = 0; break }
     }
     if (steps === 8) this.accumulator = Math.min(this.accumulator, TICK_SECONDS)
     if (this.sessionMode !== 'guest') this.lobby?.update()
@@ -285,6 +302,7 @@ export class GameManager extends Object3DComponent {
     this.matchStarting = true
     const party = this.party, world = this.world
     try {
+      this.startup.beginMatch?.('party-host-request')
       this.ui?.preparePartyMatch()
       const preparation = this.party.prepareMatch({hostLoaded: false})
       try {
@@ -301,12 +319,16 @@ export class GameManager extends Object3DComponent {
       }
       const prepared = await preparation
       if (this.party !== party || this.world !== world) return {ok:false, cancelled:true}
-      if (prepared?.ok === false) return prepared
+      if (prepared?.ok === false) {this.startup.failMatch(prepared.error);return prepared}
       const result = this.director.start()
       if (result === false || result?.ok === false) return result || {ok: false, error: 'Match could not start'}
+      this.startup.mark('match-ready')
       this.party.startMatch()
       this._acceptPartyState(this.party.state(), 'host')
       return {ok: true}
+    } catch (error) {
+      if (this.world === world) this.startup.failMatch(error)
+      throw error
     } finally {
       if (this.world === world) this.matchStarting = false
     }
@@ -323,6 +345,8 @@ export class GameManager extends Object3DComponent {
   }
 
   leaveParty() {
+    this.stopViews()
+    this.mapView?.stop()
     const wasGuest = this.sessionMode === 'guest'
     this._stopParty()
     if (wasGuest) this._resetSingleWorld()
@@ -351,13 +375,21 @@ export class GameManager extends Object3DComponent {
       this._acceptPartyState({...party.partyState, matchStarted: true}, role)
     }))
     this.partyOffs.push(party.on('match-prepare', () => {
+      this.startup.beginMatch?.('party-remote-request')
       this.ui?.preparePartyMatch()
-      this.startViews()
-      const signal = this.warmupAbort.signal
-      Promise.all([this.visualWarmup, prepareAudio()]).then(([warmup]) => {
-        if (!signal.aborted && !warmup?.cancelled && this.party === party) party.loaded?.()
-      }).catch(error => {
-        if (this.started && this.party === party) this._setPartyState({...this.partyState, status:'error', error:{message:error.message}})
+      const world = this.world
+      const prepare = async () => {
+        if (!this.started || this.party !== party || this.world !== world) return
+        this.startViews()
+        const signal = this.warmupAbort.signal
+        const [warmup] = await Promise.all([this.visualWarmup, prepareAudio()])
+        if (!signal.aborted && !warmup?.cancelled && this.party === party && this.world === world) party.loaded?.()
+      }
+      prepare().catch(error => {
+        if (this.started && this.party === party) {
+          this.startup.failMatch(error)
+          this._setPartyState({...this.partyState, status:'error', error:{message:error.message}})
+        }
       })
     }))
     this.partyOffs.push(party.on('return-lobby', () => {
@@ -369,6 +401,8 @@ export class GameManager extends Object3DComponent {
     }))
     this.partyOffs.push(party.on('ended', ({detail}) => {
       this.input?.stop()
+      this.stopViews()
+      this.mapView?.stop()
       this._setPartyState({...this.partyState, status: role === 'guest' ? 'host_left' : 'error', error: detail, notice: detail.notice})
     }))
   }
@@ -418,6 +452,9 @@ export class GameManager extends Object3DComponent {
   }
 
   stop() {
+    this.menuAssetsAbort?.abort(); this.menuAssetsAbort = null
+    this.menuAssets = null
+    this.menuPreparationError = null
     this.warmupAbort?.abort()
     this.releaseLoadRender?.(); this.releaseLoadRender = null
     this.started = false

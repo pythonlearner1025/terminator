@@ -7,3 +7,8 @@ dist/
 docs/evidence/**
 !docs/evidence/
 !docs/evidence/README.md
+
+# Worktree dependency symlink and downloaded Blender sources.
+/node_modules
+/tools/blender/cache/
+/tools/blender/barrel/__pycache__/

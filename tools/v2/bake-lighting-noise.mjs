@@ -15,7 +15,7 @@ for(const [id,{data,width,height},source] of maps){
  entries[id]={width,height,offset,byteLength:bytes.length,sha256:hash(bytes),...source};offset+=bytes.length;buffers.push(bytes)
 }
 const bytes=Buffer.concat(buffers),check=process.argv.includes('--check')
-const expectedManifest={version:1,format:'gzip of concatenated unchanged Uint8 RGBA; straight alpha, original color-space assignment retained by lighting.js',sourceFile:'lib/view/v2/lighting-noise.js',sourceSha256:hash(await readFile(new URL('lib/view/v2/lighting-noise.js',base))),rawByteLength:bytes.length,rawSha256:hash(bytes),url:'/files/assets/v2/lighting-baked/production.rgba.gz',maps:entries}
+const expectedManifest={version:1,format:'gzip of concatenated unchanged Uint8 RGBA; straight alpha, original color-space assignment retained by lighting.js',sourceFile:'lib/view/v2/lighting-noise.js',sourceSha256:hash(await readFile(new URL('lib/view/v2/lighting-noise.js',base))),rawByteLength:bytes.length,rawSha256:hash(bytes),url:'../../../assets/v2/lighting-baked/production.rgba.gz',maps:entries}
 const bundlePath=new URL('production.rgba.gz',out),jsonPath=new URL('manifest.json',out),modulePath=new URL('lib/view/v2/lighting-noise-baked-manifest.js',base)
 let compressed
 if(check){

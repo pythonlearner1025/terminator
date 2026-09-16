@@ -1,403 +1,65 @@
 {
   "asset": {
-    "generator": "Terminator tools/build-map-assets.mjs with glTF-Transform 4.5.0 and three.js",
-    "version": "2.0"
+    "version": "2.0",
+    "generator": "Terminator deterministic barrel build, Blender 5.2.1"
   },
-  "accessors": [
+  "scene": 0,
+  "scenes": [
     {
-      "name": "Barrel rust POSITION",
-      "type": "VEC3",
-      "componentType": 5126,
-      "count": 192,
-      "max": [
-        0.39500001072883606,
-        0.6419999599456787,
-        0.39500001072883606
-      ],
-      "min": [
-        -0.39500001072883606,
-        -0.6200000047683716,
-        -0.39500001072883606
-      ],
-      "bufferView": 0,
-      "byteOffset": 0
-    },
-    {
-      "name": "Barrel rust NORMAL",
-      "type": "VEC3",
-      "componentType": 5126,
-      "count": 192,
-      "bufferView": 0,
-      "byteOffset": 12
-    },
-    {
-      "name": "Barrel rust TEXCOORD_0",
-      "type": "VEC2",
-      "componentType": 5126,
-      "count": 192,
-      "bufferView": 0,
-      "byteOffset": 24
-    },
-    {
-      "name": "Barrel steel POSITION",
-      "type": "VEC3",
-      "componentType": 5126,
-      "count": 768,
-      "max": [
-        0.39500001072883606,
-        0.6150000095367432,
-        0.39500001072883606
-      ],
-      "min": [
-        -0.39500001072883606,
-        -0.5249999761581421,
-        -0.39500001072883606
-      ],
-      "bufferView": 1,
-      "byteOffset": 0
-    },
-    {
-      "name": "Barrel steel NORMAL",
-      "type": "VEC3",
-      "componentType": 5126,
-      "count": 768,
-      "bufferView": 1,
-      "byteOffset": 12
-    },
-    {
-      "name": "Barrel steel TEXCOORD_0",
-      "type": "VEC2",
-      "componentType": 5126,
-      "count": 768,
-      "bufferView": 1,
-      "byteOffset": 24
-    },
-    {
-      "bufferView": 4,
-      "componentType": 5126,
-      "count": 600,
-      "max": [
-        0.9545686841011047,
-        1.064453125,
-        1.1174756288528442
-      ],
-      "min": [
-        -1.1185498237609863,
-        -1.0086653232574463,
-        -0.964756429195404
-      ],
-      "type": "VEC3"
-    },
-    {
-      "bufferView": 4,
-      "byteOffset": 7200,
-      "componentType": 5126,
-      "count": 600,
-      "max": [
-        1,
-        1,
-        1
-      ],
-      "min": [
-        -1,
-        -1,
-        -1
-      ],
-      "type": "VEC3"
-    },
-    {
-      "bufferView": 3,
-      "componentType": 5126,
-      "count": 600,
-      "max": [
-        0.9978058934211731,
-        0.9980780482292175
-      ],
-      "min": [
-        0.005098789930343628,
-        0.0035872943699359894
-      ],
-      "type": "VEC2"
-    },
-    {
-      "bufferView": 2,
-      "componentType": 5125,
-      "count": 1140,
-      "type": "SCALAR"
-    },
-    {
-      "bufferView": 4,
-      "byteOffset": 14400,
-      "componentType": 5126,
-      "count": 600,
-      "max": [
-        0.9545686841011047,
-        1.064453125,
-        1.1174756288528442
-      ],
-      "min": [
-        -1.1185498237609863,
-        -1.0086653232574463,
-        -0.964756429195404
-      ],
-      "type": "VEC3"
-    },
-    {
-      "bufferView": 4,
-      "byteOffset": 21600,
-      "componentType": 5126,
-      "count": 600,
-      "max": [
-        1,
-        1,
-        1
-      ],
-      "min": [
-        -1,
-        -1,
-        -1
-      ],
-      "type": "VEC3"
-    },
-    {
-      "bufferView": 3,
-      "byteOffset": 4800,
-      "componentType": 5126,
-      "count": 600,
-      "max": [
-        0.9978058934211731,
-        0.9980780482292175
-      ],
-      "min": [
-        0.005098789930343628,
-        0.007408276200294495
-      ],
-      "type": "VEC2"
-    },
-    {
-      "bufferView": 2,
-      "byteOffset": 4560,
-      "componentType": 5125,
-      "count": 1140,
-      "type": "SCALAR"
-    },
-    {
-      "bufferView": 4,
-      "byteOffset": 28800,
-      "componentType": 5126,
-      "count": 600,
-      "max": [
-        0.9545686841011047,
-        1.064453125,
-        1.1174756288528442
-      ],
-      "min": [
-        -1.1185498237609863,
-        -1.0086653232574463,
-        -0.964756429195404
-      ],
-      "type": "VEC3"
-    },
-    {
-      "bufferView": 4,
-      "byteOffset": 36000,
-      "componentType": 5126,
-      "count": 600,
-      "max": [
-        1,
-        1,
-        1
-      ],
-      "min": [
-        -1,
-        -1,
-        -1
-      ],
-      "type": "VEC3"
-    },
-    {
-      "bufferView": 3,
-      "byteOffset": 9600,
-      "componentType": 5126,
-      "count": 600,
-      "max": [
-        0.9978058934211731,
-        0.9980780482292175
-      ],
-      "min": [
-        0.005098789930343628,
-        0.009027251042425632
-      ],
-      "type": "VEC2"
-    },
-    {
-      "bufferView": 2,
-      "byteOffset": 9120,
-      "componentType": 5125,
-      "count": 1140,
-      "type": "SCALAR"
-    },
-    {
-      "bufferView": 4,
-      "byteOffset": 43200,
-      "componentType": 5126,
-      "count": 600,
-      "max": [
-        0.9545686841011047,
-        1.064453125,
-        1.1174756288528442
-      ],
-      "min": [
-        -1.1185498237609863,
-        -1.0086653232574463,
-        -0.964756429195404
-      ],
-      "type": "VEC3"
-    },
-    {
-      "bufferView": 4,
-      "byteOffset": 50400,
-      "componentType": 5126,
-      "count": 600,
-      "max": [
-        1,
-        1,
-        1
-      ],
-      "min": [
-        -1,
-        -1,
-        -1
-      ],
-      "type": "VEC3"
-    },
-    {
-      "bufferView": 3,
-      "byteOffset": 14400,
-      "componentType": 5126,
-      "count": 600,
-      "max": [
-        0.9986968040466309,
-        0.9980780482292175
-      ],
-      "min": [
-        0.005098789930343628,
-        0.004883334040641785
-      ],
-      "type": "VEC2"
-    },
-    {
-      "bufferView": 2,
-      "byteOffset": 13680,
-      "componentType": 5125,
-      "count": 1140,
-      "type": "SCALAR"
-    },
-    {
-      "bufferView": 4,
-      "byteOffset": 57600,
-      "componentType": 5126,
-      "count": 600,
-      "max": [
-        0.9545686841011047,
-        1.064453125,
-        1.1174756288528442
-      ],
-      "min": [
-        -1.1185498237609863,
-        -1.0086653232574463,
-        -0.964756429195404
-      ],
-      "type": "VEC3"
-    },
-    {
-      "bufferView": 4,
-      "byteOffset": 64800,
-      "componentType": 5126,
-      "count": 600,
-      "max": [
-        1,
-        1,
-        1
-      ],
-      "min": [
-        -1,
-        -1,
-        -1
-      ],
-      "type": "VEC3"
-    },
-    {
-      "bufferView": 3,
-      "byteOffset": 19200,
-      "componentType": 5126,
-      "count": 600,
-      "max": [
-        0.9978058934211731,
-        0.9980780482292175
-      ],
-      "min": [
-        0.005098789930343628,
-        0.002098292112350464
-      ],
-      "type": "VEC2"
-    },
-    {
-      "bufferView": 2,
-      "byteOffset": 18240,
-      "componentType": 5125,
-      "count": 1140,
-      "type": "SCALAR"
+      "nodes": [
+        0
+      ]
     }
   ],
-  "bufferViews": [
+  "nodes": [
     {
-      "buffer": 0,
-      "byteOffset": 0,
-      "byteLength": 6144,
-      "byteStride": 32,
-      "target": 34962
-    },
-    {
-      "buffer": 0,
-      "byteOffset": 6144,
-      "byteLength": 24576,
-      "byteStride": 32,
-      "target": 34962
-    },
-    {
-      "buffer": 1,
-      "byteLength": 22800,
-      "name": "floatBufferViews",
-      "target": 34963
-    },
-    {
-      "buffer": 1,
-      "byteLength": 24000,
-      "byteOffset": 22800,
-      "byteStride": 8,
-      "name": "floatBufferViews",
-      "target": 34962
-    },
-    {
-      "buffer": 1,
-      "byteLength": 72000,
-      "byteOffset": 46800,
-      "byteStride": 12,
-      "name": "floatBufferViews",
-      "target": 34962
+      "name": "Burn barrel open steel drum",
+      "mesh": 0
     }
   ],
-  "samplers": [
+  "meshes": [
     {
-      "wrapS": 10497,
-      "wrapT": 10497
-    },
+      "name": "Open drum with two rolling hoops, chimes, dents, holes and coal",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "materials": [
     {
-      "magFilter": 9729,
-      "minFilter": 9987,
-      "wrapS": 10497,
-      "wrapT": 10497
+      "name": "Barrel worn steel soot and embers",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        },
+        "metallicFactor": 1,
+        "roughnessFactor": 1
+      },
+      "normalTexture": {
+        "index": 1
+      },
+      "occlusionTexture": {
+        "index": 2
+      },
+      "emissiveTexture": {
+        "index": 3
+      },
+      "emissiveFactor": [
+        1,
+        1,
+        1
+      ]
     }
   ],
   "textures": [
@@ -416,434 +78,92 @@
     {
       "source": 3,
       "sampler": 0
-    },
+    }
+  ],
+  "samplers": [
     {
-      "source": 4,
-      "sampler": 0
-    },
-    {
-      "source": 5,
-      "sampler": 0
-    },
-    {
-      "sampler": 1,
-      "source": 6
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 33071
     }
   ],
   "images": [
     {
-      "name": "rusty_metal_02_diff_1k.jpg",
-      "mimeType": "image/jpeg",
-      "uri": "/kite3d/assets/textures/map/rusty_metal_02_diff_1k.jpg"
+      "uri": "barrel-albedo.png"
     },
     {
-      "name": "rusty_metal_02_nor_gl_1k.jpg",
-      "mimeType": "image/jpeg",
-      "uri": "/kite3d/assets/textures/map/rusty_metal_02_nor_gl_1k.jpg"
+      "uri": "barrel-normal.png"
     },
     {
-      "name": "rusty_metal_02_arm_1k.jpg",
-      "mimeType": "image/jpeg",
-      "uri": "/kite3d/assets/textures/map/rusty_metal_02_arm_1k.jpg"
+      "uri": "barrel-orm.png"
     },
     {
-      "name": "paint_albedo.jpg",
-      "mimeType": "image/jpeg",
-      "uri": "/kite3d/assets/textures/map/paint_albedo.jpg"
+      "uri": "barrel-emissive.png"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 3509,
+      "type": "VEC3",
+      "min": [
+        -0.39399999380111694,
+        -0.6200000047683716,
+        -0.39399999380111694
+      ],
+      "max": [
+        0.39399999380111694,
+        0.6420000195503235,
+        0.39399999380111694
+      ]
     },
     {
-      "name": "paint_normal.jpg",
-      "mimeType": "image/jpeg",
-      "uri": "/kite3d/assets/textures/map/paint_normal.jpg"
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 3509,
+      "type": "VEC3"
     },
     {
-      "name": "paint_arm.jpg",
-      "mimeType": "image/jpeg",
-      "uri": "/kite3d/assets/textures/map/paint_arm.jpg"
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 3509,
+      "type": "VEC2"
     },
     {
-      "uri": "/kite3d/assets/models/selected/99483dc2d26548e1955898b063ad87cb/Material.010_baseColor.jpeg"
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 15516,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 42108
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 42108,
+      "byteLength": 42108
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 84216,
+      "byteLength": 28072
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 112288,
+      "byteLength": 31032
     }
   ],
   "buffers": [
     {
-      "name": "Map piece geometry",
       "uri": "barrel-0p8x1p3x0p8-103qszk.bin",
-      "byteLength": 30720
-    },
-    {
-      "byteLength": 118800,
-      "uri": "/kite3d/assets/models/selected/99483dc2d26548e1955898b063ad87cb/scene.bin"
-    }
-  ],
-  "materials": [
-    {
-      "name": "Map rust",
-      "pbrMetallicRoughness": {
-        "baseColorFactor": [
-          0.48,
-          0.3,
-          0.18,
-          1
-        ],
-        "roughnessFactor": 0.92,
-        "metallicFactor": 0.42,
-        "baseColorTexture": {
-          "index": 0
-        },
-        "metallicRoughnessTexture": {
-          "index": 2
-        }
-      },
-      "normalTexture": {
-        "index": 1
-      },
-      "occlusionTexture": {
-        "index": 2
-      }
-    },
-    {
-      "name": "Map steel",
-      "pbrMetallicRoughness": {
-        "baseColorFactor": [
-          0.44,
-          0.49,
-          0.51,
-          1
-        ],
-        "roughnessFactor": 0.68,
-        "metallicFactor": 0.82,
-        "baseColorTexture": {
-          "index": 3
-        },
-        "metallicRoughnessTexture": {
-          "index": 5
-        }
-      },
-      "normalTexture": {
-        "index": 4
-      },
-      "occlusionTexture": {
-        "index": 5
-      }
-    },
-    {
-      "doubleSided": true,
-      "name": "Selected barrel 1: Material.010",
-      "pbrMetallicRoughness": {
-        "baseColorTexture": {
-          "index": 6
-        },
-        "metallicFactor": 0,
-        "roughnessFactor": 0.7470177871865296
-      }
-    }
-  ],
-  "meshes": [
-    {
-      "name": "Barrel rust",
-      "primitives": [
-        {
-          "attributes": {
-            "POSITION": 0,
-            "NORMAL": 1,
-            "TEXCOORD_0": 2
-          },
-          "mode": 4,
-          "material": 0
-        }
-      ]
-    },
-    {
-      "name": "Barrel steel",
-      "primitives": [
-        {
-          "attributes": {
-            "POSITION": 3,
-            "NORMAL": 4,
-            "TEXCOORD_0": 5
-          },
-          "mode": 4,
-          "material": 1
-        }
-      ]
-    },
-    {
-      "name": "Cylinder_Material.010_0",
-      "primitives": [
-        {
-          "attributes": {
-            "NORMAL": 7,
-            "POSITION": 6,
-            "TEXCOORD_0": 8
-          },
-          "indices": 9,
-          "material": 2,
-          "mode": 4
-        }
-      ]
-    }
-  ],
-  "nodes": [
-    {
-      "name": "Barrel asset",
-      "extras": {
-        "mapPieceAsset": true,
-        "selectedSource": {
-          "id": "99483dc2d26548e1955898b063ad87cb",
-          "family": "barrel",
-          "source": "https://sketchfab.com/3d-models/barrel-pack-low-poly-props-99483dc2d26548e1955898b063ad87cb",
-          "tileCount": 1,
-          "fitBounds": [
-            0.8,
-            1.3,
-            0.8
-          ]
-        }
-      },
-      "children": [
-        1,
-        2,
-        16
-      ]
-    },
-    {
-      "name": "Barrel rust",
-      "extras": {
-        "material": "rust"
-      }
-    },
-    {
-      "name": "Barrel steel",
-      "extras": {
-        "material": "steel"
-      }
-    },
-    {
-      "children": [
-        4
-      ],
-      "matrix": [
-        1,
-        0,
-        0,
-        0,
-        0,
-        2.220446049250313e-16,
-        -1,
-        0,
-        0,
-        1,
-        2.220446049250313e-16,
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "name": "Sketchfab_model"
-    },
-    {
-      "children": [
-        5
-      ],
-      "matrix": [
-        0.009999999776482582,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0.009999999776482582,
-        0,
-        0,
-        -0.009999999776482582,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "name": "7bb9a797b52e4a38947027097e186016.fbx"
-    },
-    {
-      "children": [
-        6,
-        8,
-        10,
-        12,
-        14
-      ],
-      "name": "RootNode"
-    },
-    {
-      "children": [
-        7
-      ],
-      "matrix": [
-        100,
-        0,
-        0,
-        0,
-        0,
-        -0.000028212996916465727,
-        -99.99999999999602,
-        0,
-        0,
-        143.5407714843693,
-        -0.000040497153432757834,
-        0,
-        2.7370810508728027,
-        140.27749633789062,
-        440.66888427734375,
-        1
-      ],
-      "name": "Cylinder"
-    },
-    {
-      "mesh": 2,
-      "name": "Cylinder_Material.010_0"
-    },
-    {
-      "children": [
-        9
-      ],
-      "matrix": [
-        100,
-        0,
-        0,
-        0,
-        0,
-        -0.000028212996916465727,
-        -99.99999999999602,
-        0,
-        0,
-        143.5407714843693,
-        -0.000040497153432757834,
-        0,
-        -5.805087089538574,
-        138.41233825683594,
-        -209.05303955078125,
-        1
-      ],
-      "name": "Cylinder.001"
-    },
-    {
-      "name": "Cylinder.001_Material.001_0"
-    },
-    {
-      "children": [
-        11
-      ],
-      "matrix": [
-        100,
-        0,
-        0,
-        0,
-        0,
-        -0.000028212996916465727,
-        -99.99999999999602,
-        0,
-        0,
-        143.5407714843693,
-        -0.000040497153432757834,
-        0,
-        -2.619457244873047,
-        139.76889038085938,
-        -427.65411376953125,
-        1
-      ],
-      "name": "Cylinder.002"
-    },
-    {
-      "name": "Cylinder.002_Material.002_0"
-    },
-    {
-      "children": [
-        13
-      ],
-      "matrix": [
-        100,
-        0,
-        0,
-        0,
-        0,
-        -0.000028212996916465727,
-        -99.99999999999602,
-        0,
-        0,
-        143.5407714843693,
-        -0.000040497153432757834,
-        0,
-        -3.776693344116211,
-        139.70399475097656,
-        222.87220764160156,
-        1
-      ],
-      "name": "Cylinder.003"
-    },
-    {
-      "name": "Cylinder.003_Material.003_0"
-    },
-    {
-      "children": [
-        15
-      ],
-      "matrix": [
-        100,
-        0,
-        0,
-        0,
-        0,
-        -0.000028212996916465727,
-        -99.99999999999602,
-        0,
-        0,
-        143.5407714843693,
-        -0.000040497153432757834,
-        0,
-        -2.6539742946624756,
-        140.6915740966797,
-        4.946744441986084,
-        1
-      ],
-      "name": "Cylinder.004"
-    },
-    {
-      "name": "Cylinder.004_Material.004_0"
-    },
-    {
-      "name": "Selected barrel 1-1",
-      "matrix": [
-        0.38589208231342065,
-        0,
-        0,
-        0,
-        0,
-        0.4349495509191718,
-        0,
-        0,
-        0,
-        0,
-        0.3858920934082968,
-        0,
-        0.021077332188805566,
-        -0.6578098895749098,
-        -1.6897423814629724,
-        1
-      ],
-      "children": [
-        3
-      ]
-    }
-  ],
-  "scenes": [
-    {
-      "name": "Barrel 0p8x1p3x0p8 103qszk",
-      "nodes": [
-        0
-      ]
+      "byteLength": 143320
     }
   ]
 }

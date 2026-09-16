@@ -1,0 +1,13 @@
+KIND       STATUS  PATH                                      DETAIL
+script     PASS    scripts/GameManager.script.js             GameManager
+script     PASS    generators/v2-preview.js                  no component types
+plugin     PASS    lib/view/v2/exact-image-source.plugin.js  resolved
+plugin     PASS    scripts/FirstPerson.plugin.js             resolved
+component  PASS    Game Manager                              GameManager
+
+Runtime mode: headless
+Playable   PASS     The game booted and ran 30 frames without errors.
+  Project validation PASS: Headless world and view adapters are running.
+Editable   PASS     Stopped-mode authored representation passed.
+Persisted  PASS     Save/Reload semantic equivalence passed.
+Check passed (5 static row(s)).

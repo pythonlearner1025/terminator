@@ -143,3 +143,23 @@ The following model adaptations are distributed under CC BY 4.0. Changes: select
 | Sandbags | usedm (https://sketchfab.com/usedm) | [Sketchfab](https://sketchfab.com/3d-models/sandbags-b917a79cdc884eee9d44018c38b4df5e) | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
 | PE-77-D Generator | krambulini (https://sketchfab.com/krambulini) | [Sketchfab](https://sketchfab.com/3d-models/pe-77-d-generator-05cb0187751541f195d8b7cf3c4736ef) | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
 | Cable Spool | wolfgar74 (https://sketchfab.com/wolfgar74) | [Sketchfab](https://sketchfab.com/3d-models/cable-spool-22ddb8e02f944fb7b5662f14fdc50e5e) | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
+
+## Detailed burn barrel
+
+The source is [Poly Haven Barrel 03](https://polyhaven.com/a/barrel_03), CC0 1.0, downloaded 2026-09-12.
+The cache contains the 2K glTF, binary, diffuse, OpenGL normal, and ARM files.
+`tools/blender/barrel/build.py` pins each source URL and MD5. The cache is excluded from Git and publishing.
+The unavailable Barrel 02 URLs returned 404. No files came from another checkout.
+
+| Output file under assets/models/map/barrel-0p8x1p3x0p8-103qszk/ | Source and licence |
+| --- | --- |
+| barrel-0p8x1p3x0p8-103qszk.gltf | Original mesh traced from Barrel 03 and reference proportions; Barrel 03 CC0 1.0. |
+| barrel-0p8x1p3x0p8-103qszk.bin | Same mesh derivation; Barrel 03 CC0 1.0. |
+| barrel-albedo.png | Barrel 03 diffuse and existing Poly Haven Rusty Metal 02 diffuse; both CC0 1.0. Original soot and wear bake. |
+| barrel-normal.png | Barrel 03 and Rusty Metal 02 OpenGL normals plus original relief bake; CC0 1.0 source. |
+| barrel-orm.png | Barrel 03 ARM plus original rust, soot, and cavity masks; CC0 1.0 source. |
+| barrel-emissive.png | Original deterministic coal crack bake. No third-party image pixels. |
+
+Source files: `barrel_03_2k.gltf`, `barrel_03.bin`, `barrel_03_diff_2k.jpg`, `barrel_03_nor_gl_2k.jpg`, and `barrel_03_arm_2k.jpg`. Each is CC0 1.0.
+Study photos and KF2 frames retain their source copyrights. They remain under excluded `docs/reference/props/barrel/`.
+The bake uses photo colour measurements but copies no copyrighted study image pixels.

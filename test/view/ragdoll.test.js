@@ -134,3 +134,26 @@ test('24 active pieces retain frozen records and reuse the primed physics pool',
   assert.notEqual(pieces[0].settledAt,null)
   system.dispose()
 })
+
+test('repeated deaths, revivals and corpse expiry reuse bounded ragdoll records',()=>{
+  const system=new RagdollSystem({colliders:[]}),v=fixture(),state=unit()
+  system.primePools()
+  let released=0,firstRecord
+  for(let cycle=0;cycle<120;cycle++){
+    const record=system.add(v,state,shot,()=>released++)
+    firstRecord??=record
+    assert.equal(record,firstRecord,'same workload reuses its death record')
+    system.freeze(record)
+    if(cycle%2===0)system.release(record) // revived before wreck expiry
+    else {system.clock=record.settledAt+182.01;system.update(0)}
+    assert.equal(system.records.size,0)
+    assert.equal(system.active.length,0)
+    assert.equal(system.freeUnitRecords.length,1)
+    assert.equal(system.freeBodies.length,112)
+    assert.equal(system.freeConstraints.length,80)
+    assert.equal(system.world.bodies.length,0)
+    assert.equal(system.world.constraints.length,0)
+  }
+  assert.equal(released,120)
+  system.dispose();v.rig.mesh.geometry.dispose();v.rig.mesh.material.dispose()
+})
