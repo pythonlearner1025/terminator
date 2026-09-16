@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "height": 0.08919863876254801,
+    "distance": 0.4,
+    "pitch": -0.002948619890206472
+  },
+  "verticalFov": 54,
+  "viewport": [
+    640,
+    480
+  ],
+  "reticle": [
+    320,
+    240
+  ],
+  "points": {
+    "FrontSight": {
+      "world": [
+        2.2303569327791067e-8,
+        0.000011499636572862015,
+        -0.5662637571851846
+      ],
+      "pixel": [
+        320.0000185524369,
+        239.99043443317245
+      ],
+      "selectedTopVertices": 2
+    },
+    "RearSight": {
+      "world": [
+        -9.902248169872674e-9,
+        0.000018288861836412984,
+        -0.32656274637814037
+      ],
+      "pixel": [
+        319.9999857172272,
+        239.9736205704255
+      ],
+      "selectedTopVertices": 6
+    }
+  },
+  "limitations": "Top-edge geometry projection; rear notch aperture and perceived sight picture also need visual review."
+}

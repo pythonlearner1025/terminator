@@ -1,0 +1,303 @@
+{
+  "schema": "revolver-texture-finish/v1",
+  "baseCommit": "d76440e427dbc87cdda469077017820429411804",
+  "technique": "Deterministic mesh-aware UV paint with editable masks; not manual brush painting.",
+  "sourceBlend": "tools/blender/revolver-rebuild/source/assembled/revolver-rebuild.blend",
+  "sourceBlendSha256": "d8d033cbbd5c2623700600e51b003509a541342d3cec016151eee32047a3661e",
+  "baseSourceBlendSha256": "a1c506b177832cc183884cd75e2d58767e6e9a2a3004020956bd99b957019bf7",
+  "maps": {
+    "basecolor": {
+      "resolution": [
+        2048,
+        2048
+      ],
+      "colorSpace": "sRGB"
+    },
+    "orm": {
+      "resolution": [
+        2048,
+        2048
+      ],
+      "colorSpace": "Non-Color",
+      "channels": {
+        "R": "Original 1024 AO, exact nearest 2x2 replication",
+        "G": "Absolute roughness",
+        "B": "Absolute metallic"
+      }
+    },
+    "normal": {
+      "resolution": [
+        1024,
+        1024
+      ],
+      "unchanged": true
+    }
+  },
+  "runtimeValidation": {
+    "pass": true,
+    "baseCommit": "d76440e427dbc87cdda469077017820429411804",
+    "protectedTextByteExact": true,
+    "protectedDigests": {
+      "asset": "34b1ff945b8839549298ff3597ed0e43d5bb9a367a5023d3f430dcf9dee024fe",
+      "extensionsUsed": "4f41fe70fa3741fad01972bd239eab9815cc111a0702ecc875e5163d018d9b65",
+      "scene": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "scenes": "99cd8a35a922c42a2cc17e55c3dc6ec7167ecc707d0f96a5d498a72170d7cb8f",
+      "nodes": "b56c3646e3088c617d35283bcf2d703feca5e997b87412acba151b7d9f126ba3",
+      "animations": "a36ca281e645d27e7284c0f088bab4e8e93ef897213da66d762a952cc088c258",
+      "meshes": "867020999b30721381b58f33e15aff8789965fe5e0c73404a3bf2ef1b26f5871",
+      "textures": "55b67bd57811037ccf476780785bcc7db0eb9065db44a342f7c7075b01c094e0",
+      "skins": "9ebe42bd8db3c8ea494b7302db3f9662764b60228d5b1746e89cf47af5ede61c",
+      "accessors": "4a484b5272e801b53d30733562740f53ce077c41b72877eed0b3f130f59530c6",
+      "bufferViews": "16d12477ae342af0ef2626ab2c0da1146198b632df7b9910d70e90f6709e6111",
+      "samplers": "3df613fd78c79698493e28ee47bb77f8d110d9a9a5ac95dc18c1a2401e630c04",
+      "buffers": "8ef004e6943337926c70713ee1a8f031bbc11709f3292841bc7edb8a48f67107",
+      "gun-normal.png": "89bdb0648acd27d0e34e419c0739f4396a3f32159987a2b9b5bcc180fbe01974",
+      "gun-ao.png": "4548b505f6973dac1bfa589d06a1622e92240d636d90d450332bc01a2b386279",
+      "6aa3217682f84a9da397bf8e12f9b2b3.png": "b0b7500ec2849243a92bee5b3a26adf5c537256fc4f4dc060a662bd8017d226e",
+      "f407ef890d8c4e3d84a76b99c91c3411.png": "6b9beb5ddf39830b0e797e208417ce89787f21bf346105c245df9e061898de81",
+      "682a91cb011c45b2a89b92cfe169686f.png": "6f5be04d790c3b5992388cd7a6d0cc5eb37c3952f217b5d5b761fc6e59e46187",
+      "revolver-rebuild.bin": "66408c91d233a953275968eef11a54ed67c6b16fc05b064b0ec901dc851e8008"
+    },
+    "animations": [
+      "Idle",
+      "Draw",
+      "Fire",
+      "Reload",
+      "AimIn",
+      "AimOut",
+      "AimIdle",
+      "Sprint",
+      "Inspect"
+    ],
+    "materials": 6,
+    "drawPrimitives": 35,
+    "referencedImageCountBefore": 6,
+    "referencedImageCountAfter": 6,
+    "gpuTextureMemoryDeltaBytes": 33554432,
+    "gpuAssumption": "RGBA8 basecolor and ORM: 1024 to 2048, full mip chain. 24 MiB extra base level, 32 MiB including mips. ORM replaces the referenced AO slot; source AO remains 1024 on disk.",
+    "aoRedExact2x2Replication": true,
+    "maskTexelsAbove10": {
+      "roughness": 4194304,
+      "arsenal-markings": 468,
+      "metallic": 839432,
+      "grip-rub": 6687,
+      "directional-scratches": 113,
+      "contact-edge": 6455,
+      "handling-oil": 52986,
+      "recess-grime": 28336
+    },
+    "roughnessByMaterial": {
+      "steel": {
+        "p05": 0.4549019607843137,
+        "p95": 0.48627450980392156,
+        "std": 0.013658212220992158
+      },
+      "controls": {
+        "p05": 0.403921568627451,
+        "p95": 0.47843137254901963,
+        "std": 0.046717817193625055
+      },
+      "rubber": {
+        "p05": 0.7411764705882353,
+        "p95": 0.8117647058823529,
+        "std": 0.021327192703267824
+      },
+      "walnut": {
+        "p05": 0.4745098039215686,
+        "p95": 0.6,
+        "std": 0.03815552779967669
+      },
+      "brass": {
+        "p05": 0.3215686274509804,
+        "p95": 0.40784313725490196,
+        "std": 0.027614116086755312
+      }
+    },
+    "shippingPngBytesDelta": 315099
+  },
+  "sourceValidation": {
+    "pass": true,
+    "protectedFingerprintSha256": "7fb248088c8d86aa05085c6b564a856ce52423d4c1ccdd1bf861eeb5b626236a",
+    "meshDatablocks": 29,
+    "actionDatablocks": 648,
+    "materialPackedPixelsAndLinks": {
+      "Gun | brushed graphite steel": {
+        "mapsPackedMatchDisk": true,
+        "factors": [
+          1,
+          1
+        ],
+        "ormNonColor": true
+      },
+      "Gun | case brass": {
+        "mapsPackedMatchDisk": true,
+        "factors": [
+          1,
+          1
+        ],
+        "ormNonColor": true
+      },
+      "Gun | dark controls": {
+        "mapsPackedMatchDisk": true,
+        "factors": [
+          1,
+          1
+        ],
+        "ormNonColor": true
+      },
+      "Gun | molded black rubber": {
+        "mapsPackedMatchDisk": true,
+        "factors": [
+          1,
+          1
+        ],
+        "ormNonColor": true
+      },
+      "Gun | oiled walnut": {
+        "mapsPackedMatchDisk": true,
+        "factors": [
+          1,
+          1
+        ],
+        "ormNonColor": true
+      }
+    }
+  },
+  "tests": {
+    "weaponRegressionPassed": 47,
+    "weaponRegressionFailed": 0,
+    "exportFailures": [],
+    "exportWarnings": [],
+    "triangles": 27442,
+    "materials": 6,
+    "weightedVertices": 4255,
+    "deterministicRecomposition": {
+      "pass": true,
+      "filesCompared": 15,
+      "editableMasksUnchanged": true,
+      "compositeBytesUnchanged": true
+    },
+    "kite3dCheck": {
+      "ok": false,
+      "checkedAt": "2026-09-15T08:34:03.367Z",
+      "mode": "headless",
+      "componentTypes": [
+        "Cannon3DBodyComponent",
+        "Cannon3DShapeComponent",
+        "CannonRagdollComponent",
+        "GameManager",
+        "HtmlUiComponent",
+        "WeaponsLab"
+      ],
+      "rows": [
+        {
+          "kind": "script",
+          "path": "scripts/GameManager.script.js",
+          "status": "pass",
+          "detail": "GameManager"
+        },
+        {
+          "kind": "script",
+          "path": "scripts/WeaponsLab.script.js",
+          "status": "pass",
+          "detail": "WeaponsLab"
+        },
+        {
+          "kind": "plugin",
+          "path": "scripts/Environment.plugin.js",
+          "status": "pass",
+          "detail": "resolved"
+        },
+        {
+          "kind": "component",
+          "path": "Lab_Manager",
+          "status": "pass",
+          "detail": "WeaponsLab"
+        }
+      ],
+      "outcomes": [
+        {
+          "name": "Playable",
+          "status": "fail",
+          "summary": "Headless check failed: Error creating WebGL context.",
+          "codes": []
+        },
+        {
+          "name": "Editable",
+          "status": "fail",
+          "summary": "Headless check failed: Error creating WebGL context.",
+          "codes": []
+        },
+        {
+          "name": "Persisted",
+          "status": "fail",
+          "summary": "Headless check failed: Error creating WebGL context.",
+          "codes": []
+        }
+      ]
+    },
+    "doctorLimit": "Remote runtime registry HTTP 404; all local doctor rows passed."
+  },
+  "fileSha256": {
+    "assets/models/weapons/revolver-rebuild/682a91cb011c45b2a89b92cfe169686f.png": "6f5be04d790c3b5992388cd7a6d0cc5eb37c3952f217b5d5b761fc6e59e46187",
+    "assets/models/weapons/revolver-rebuild/6aa3217682f84a9da397bf8e12f9b2b3.png": "b0b7500ec2849243a92bee5b3a26adf5c537256fc4f4dc060a662bd8017d226e",
+    "assets/models/weapons/revolver-rebuild/f407ef890d8c4e3d84a76b99c91c3411.png": "6b9beb5ddf39830b0e797e208417ce89787f21bf346105c245df9e061898de81",
+    "assets/models/weapons/revolver-rebuild/gun-ao.png": "4548b505f6973dac1bfa589d06a1622e92240d636d90d450332bc01a2b386279",
+    "assets/models/weapons/revolver-rebuild/gun-basecolor.png": "425c0f95393c39eb6da67cad80490f504ad8d45bda9b314f65127e96e03f2ba5",
+    "assets/models/weapons/revolver-rebuild/gun-normal.png": "89bdb0648acd27d0e34e419c0739f4396a3f32159987a2b9b5bcc180fbe01974",
+    "assets/models/weapons/revolver-rebuild/gun-orm.png": "ba35bad4529c41a0420efc9307f388f59d1baad4668fdbb5445f3f4c129a0a6b",
+    "assets/models/weapons/revolver-rebuild/revolver-rebuild.bin": "66408c91d233a953275968eef11a54ed67c6b16fc05b064b0ec901dc851e8008",
+    "assets/models/weapons/revolver-rebuild/revolver-rebuild.gltf": "7d5d62c305c8a717f9f8474babbaaed8983d33cfa2dbb8ef3f2eae0a16c0cb1d",
+    "tools/blender/revolver-rebuild/assemble.py": "29c9935eadf379e379cfbe65c7e2d9af72fc7bf907a03233b1f4098a3f93b2ba",
+    "tools/blender/revolver-rebuild/gun.py": "3059af88b9538748b68b0c711a218d1f846c37df559a2fd242dd94adc251e794",
+    "tools/blender/revolver-rebuild/source/assembled/revolver-rebuild.blend": "d8d033cbbd5c2623700600e51b003509a541342d3cec016151eee32047a3661e",
+    "tools/blender/revolver-rebuild/source-assets/gun/gun-ao.png": "4548b505f6973dac1bfa589d06a1622e92240d636d90d450332bc01a2b386279",
+    "tools/blender/revolver-rebuild/source-assets/gun/gun-basecolor.png": "425c0f95393c39eb6da67cad80490f504ad8d45bda9b314f65127e96e03f2ba5",
+    "tools/blender/revolver-rebuild/source-assets/gun/gun-normal.png": "89bdb0648acd27d0e34e419c0739f4396a3f32159987a2b9b5bcc180fbe01974",
+    "tools/blender/revolver-rebuild/source-assets/gun/gun-orm.png": "ba35bad4529c41a0420efc9307f388f59d1baad4668fdbb5445f3f4c129a0a6b",
+    "tools/blender/revolver-rebuild/source-assets/gun/paint-layers/arsenal-markings.png": "5f0867cd8685810e6338c8452a3a824a8c198852c7bf9e4c56145aad2b73ce18",
+    "tools/blender/revolver-rebuild/source-assets/gun/paint-layers/contact-edge.png": "90895bdb8e459296051b4421fb61274bafa1eca6e017c31777eef599dd216771",
+    "tools/blender/revolver-rebuild/source-assets/gun/paint-layers/directional-scratches.png": "619bcc24f841684a1d6b0fd74ebc9f95bf5baea81e447c73ecb6e1f0e186513b",
+    "tools/blender/revolver-rebuild/source-assets/gun/paint-layers/grip-rub.png": "423b11cfec8b2a198dadc5c82098c89b716cecf8719fc4315ae8bba4d9431be8",
+    "tools/blender/revolver-rebuild/source-assets/gun/paint-layers/handling-oil.png": "7795a2565a9fb3c0c40218535aa94a69f5dbd4c7824c6394991b9481a4016b11",
+    "tools/blender/revolver-rebuild/source-assets/gun/paint-layers/material-regions.png": "195a169d116303d920a0b9cde091a57561b5effb1fe73310cfe9edce3dd4030f",
+    "tools/blender/revolver-rebuild/source-assets/gun/paint-layers/metallic.png": "cf09404c19995dc61bb929c93d4f7f1eee67e6023231acd697828920815d0280",
+    "tools/blender/revolver-rebuild/source-assets/gun/paint-layers/object-regions.png": "aef7631ce91c356f73af9a835d272482933029c5a574030b04f8bab36d62d3ce",
+    "tools/blender/revolver-rebuild/source-assets/gun/paint-layers/original-basecolor.png": "8c99a9eebeec0a2cfe16a05d8f27ca3e435eb5ec24d462a4366c0454622163bd",
+    "tools/blender/revolver-rebuild/source-assets/gun/paint-layers/recess-grime.png": "c6a290fe7815bba9bb89fdf4706b2b6b6502495cb74497a36b0aeef6be61f70f",
+    "tools/blender/revolver-rebuild/source-assets/gun/paint-layers/roughness.png": "7d6358b8cc6f38b9f13148c6298697f0812ae69272877eec1e30d23403c9307d",
+    "tools/blender/revolver-rebuild/texture-paint/gallery.py": "5668cb4fdb89cb287c03d5064ffd3ed2d4e1967158e420f7356a816004d87798",
+    "tools/blender/revolver-rebuild/texture-paint/manifest.py": "9de73e419d8ae514a9fae93f905fae1345f2bb4c314783f98ab1879a5de8892f",
+    "tools/blender/revolver-rebuild/texture-paint/paint.py": "143f00686c969486611fb839722ee30e1c088f96a08a018dd8447ffaca7f07d7",
+    "tools/blender/revolver-rebuild/texture-paint/prepare.py": "c9f9b8ede264a4a3399833598651b20f92f66ce306dac57135c94611d5ff831f",
+    "tools/blender/revolver-rebuild/texture-paint/run.sh": "11548f5aabf381a5ff533794b03bb04d1017f8ee8b10e331c947358129c419a5",
+    "tools/blender/revolver-rebuild/texture-paint/runtime.py": "74c5e90eb9584685eb43b2857c6b4dfe9ffa860e8ad30f2d6b0ccb0c6d05fd1d",
+    "tools/blender/revolver-rebuild/texture-paint/source.py": "6504466342ae871ed5e8bd2a9b85fb6e0838f1d6ba84e6fe637757a064f0bc43"
+  },
+  "evidence": {
+    "gallery": "tools/blender/revolver-rebuild/generated/texture-paint/index.html",
+    "captureSha256": {
+      "before/gun-normal.png": "89bdb0648acd27d0e34e419c0739f4396a3f32159987a2b9b5bcc180fbe01974",
+      "before/inspect.png": "113327123dd49ab905f92dbb13b311a2b34cae934c51f3c8734b1d433be36e1d",
+      "before/right.png": "b87b795caee57fa55a76b76746de2d98fbf7d23113c48cbe4ea5e558bfaf5db2",
+      "before/gun-basecolor.png": "8c99a9eebeec0a2cfe16a05d8f27ca3e435eb5ec24d462a4366c0454622163bd",
+      "before/left.png": "da1e02a5fb90b4872e384c92c6f3d306f304ff0cfe2ae81c1bfbdb599984998f",
+      "before/player.png": "d368f8818ea3b26bcd2fd8cb566d77da4b0bd1d23de5696d83582f4c30e092a6",
+      "before/threequarter.png": "ce50ac9a3b64f5ccaebefca7519af972cc2a3682be434d5560cfbf55ad9a6260",
+      "before/gun-ao.png": "4548b505f6973dac1bfa589d06a1622e92240d636d90d450332bc01a2b386279",
+      "after/inspect.png": "5268c27fad0588114de044b8a6d92fb6ebfb87fc55934bc19d2992996ab0e6c0",
+      "after/right.png": "f0f22e56f6cfdc2f6a7c91467edc0b03de8e1e1cf462e7dc63ad6fef76d4ef5e",
+      "after/left.png": "9ec05e610a919bc1bfba5ca496233f6d2607acb74de5b962bc62cd7b4b864f4c",
+      "after/player.png": "c514baad0faea76fcb9d6aca016735a334aba81829c8f4128ac82411f54ce9b4",
+      "after/threequarter.png": "13365ce7e727f27a33f2f72bd5992fc8349cb37820c7dbb28957612922d4fc7e"
+    },
+    "lightingCameraExposureEqual": true,
+    "renderer": "Blender Eevee; full assembled source, hands hidden only in gun closeups",
+    "archivedAnimationVideos": "unchanged; depict previous source finish"
+  },
+  "limits": [
+    "Fine lettering and wear resolve in closeups; normal player framing emphasizes the overall finish.",
+    "Inherited uneven UV density and original normal bake retained. No scratch/marking normal relief added.",
+    "Eevee evidence is not gameplay capture. Parent performs final integration review."
+  ]
+}

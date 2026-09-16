@@ -1,0 +1,3919 @@
+{
+  "status": "passed",
+  "source": {
+    "name": "First Person arms",
+    "source": "https://sketchfab.com/3d-models/first-person-arms-e3c42c05b22944e5839deb8e003f0987",
+    "author": "DJMaesen",
+    "license": {
+      "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+      "label": "CC Attribution",
+      "fullname": "Creative Commons Attribution",
+      "slug": "by",
+      "summary": "Share & adapt with credit",
+      "requirements": "Author must be credited. Commercial use is allowed.",
+      "url": "http://creativecommons.org/licenses/by/4.0/",
+      "free": true,
+      "isCc": true,
+      "needsAttribution": true,
+      "ccClauses": [
+        "Attribution"
+      ]
+    },
+    "download_type": "free",
+    "note": "Recovered viewer representation; original author and license are retained. No new asset license is granted."
+  },
+  "importer": {
+    "status": "passed",
+    "cli_exit_code": 0,
+    "sha256": "bdf08bdbce3cfb26fd1e2b144895b904a1f0dc04bca60a14233f58497e23dd4a",
+    "independent_reopen": {
+      "reopened": true,
+      "mesh_count": 1,
+      "packed_images": 3,
+      "file_size": 11814538,
+      "checked_frames": [
+        1
+      ],
+      "distinct_control_poses": 1,
+      "skin_vertex_samples": 16,
+      "max_skin_error_m": 1.89754454847951e-06,
+      "render_visible_fraction": 0.13875
+    }
+  },
+  "control_mapping": {
+    "L": {
+      "thumb": {
+        "joints": [
+          "L_thumb1_05",
+          "L_thumb2_06",
+          "L_thumb3_07"
+        ],
+        "terminal_unweighted": "L_thumb4_08",
+        "controls": [
+          "L_thumb1_05",
+          "L_thumb2_06",
+          "L_thumb3_07",
+          "L_thumb4_08"
+        ]
+      },
+      "index": {
+        "joints": [
+          "L_point1_09",
+          "L_point2_00",
+          "L_point3_010"
+        ],
+        "terminal_unweighted": "L_point4_011",
+        "controls": [
+          "L_point1_09",
+          "L_point2_00",
+          "L_point3_010",
+          "L_point4_011"
+        ]
+      },
+      "middle": {
+        "joints": [
+          "L_middle1_012",
+          "L_middle2_013",
+          "L_middle3_014"
+        ],
+        "terminal_unweighted": "L_middle4_015",
+        "controls": [
+          "L_middle1_012",
+          "L_middle2_013",
+          "L_middle3_014",
+          "L_middle4_015"
+        ]
+      },
+      "ring": {
+        "joints": [
+          "L_ring1_017",
+          "L_ring2_018",
+          "L_ring3_019"
+        ],
+        "terminal_unweighted": "L_ring4_020",
+        "controls": [
+          "L_ring1_017",
+          "L_ring2_018",
+          "L_ring3_019",
+          "L_ring4_020"
+        ]
+      },
+      "little": {
+        "joints": [
+          "L_pink1_021",
+          "L_pink2_022",
+          "L_pink3_023"
+        ],
+        "terminal_unweighted": "L_pink4_024",
+        "controls": [
+          "L_pink1_021",
+          "L_pink2_022",
+          "L_pink3_023",
+          "L_pink4_024"
+        ]
+      },
+      "wrist": {
+        "joint": "L_wrist_04",
+        "control": "L_wrist_04"
+      },
+      "forearm": {
+        "joint": "L_elbow_03",
+        "control": "L_elbow_03"
+      },
+      "upper_arm": {
+        "joint": "L_arm_02",
+        "control": "L_arm_02"
+      },
+      "palm": {
+        "joint": "L_palm_016",
+        "control": "L_palm_016"
+      }
+    },
+    "R": {
+      "thumb": {
+        "joints": [
+          "R_thumb1_028",
+          "R_thumb2_029",
+          "R_thumb3_030"
+        ],
+        "terminal_unweighted": "R_thumb4_031",
+        "controls": [
+          "R_thumb1_028",
+          "R_thumb2_029",
+          "R_thumb3_030",
+          "R_thumb4_031"
+        ]
+      },
+      "index": {
+        "joints": [
+          "R_point1_032",
+          "R_point2_033",
+          "R_point3_034"
+        ],
+        "terminal_unweighted": "R_point4_035",
+        "controls": [
+          "R_point1_032",
+          "R_point2_033",
+          "R_point3_034",
+          "R_point4_035"
+        ]
+      },
+      "middle": {
+        "joints": [
+          "R_middle1_036",
+          "R_middle2_037",
+          "R_middle3_038"
+        ],
+        "terminal_unweighted": "R_middle4_039",
+        "controls": [
+          "R_middle1_036",
+          "R_middle2_037",
+          "R_middle3_038",
+          "R_middle4_039"
+        ]
+      },
+      "ring": {
+        "joints": [
+          "R_ring1_041",
+          "R_ring2_042",
+          "R_ring3_043"
+        ],
+        "terminal_unweighted": "R_ring4_044",
+        "controls": [
+          "R_ring1_041",
+          "R_ring2_042",
+          "R_ring3_043",
+          "R_ring4_044"
+        ]
+      },
+      "little": {
+        "joints": [
+          "R_pink1_045",
+          "R_pink2_046",
+          "R_pink3_047"
+        ],
+        "terminal_unweighted": "R_pink4_048",
+        "controls": [
+          "R_pink1_045",
+          "R_pink2_046",
+          "R_pink3_047",
+          "R_pink4_048"
+        ]
+      },
+      "wrist": {
+        "joint": "R_wrist_027",
+        "control": "R_wrist_027"
+      },
+      "forearm": {
+        "joint": "R_elbow_026",
+        "control": "R_elbow_026"
+      },
+      "upper_arm": {
+        "joint": "R_arm_025",
+        "control": "R_arm_025"
+      },
+      "palm": {
+        "joint": "R_palm_040",
+        "control": "R_palm_040"
+      }
+    }
+  },
+  "isolated_deformation_tests": [
+    {
+      "bone": "L_thumb1_05",
+      "control": "L_thumb1_05",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 305,
+      "opposite_arm_max_displacement_m": 5.495474017239025e-07,
+      "moved_vertices": 445,
+      "max_displacement_m": 0.07954630965581518,
+      "rms_displacement_m": 0.013178968138323142,
+      "status": "passed"
+    },
+    {
+      "bone": "L_thumb2_06",
+      "control": "L_thumb2_06",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 234,
+      "opposite_arm_max_displacement_m": 5.495474017239025e-07,
+      "moved_vertices": 290,
+      "max_displacement_m": 0.05155597836304112,
+      "rms_displacement_m": 0.00714656165196635,
+      "status": "passed"
+    },
+    {
+      "bone": "L_thumb3_07",
+      "control": "L_thumb3_07",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 184,
+      "opposite_arm_max_displacement_m": 5.495474017239025e-07,
+      "moved_vertices": 184,
+      "max_displacement_m": 0.030013269950162253,
+      "rms_displacement_m": 0.0033405738651094653,
+      "status": "passed"
+    },
+    {
+      "bone": "L_point1_09",
+      "control": "L_point1_09",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 180,
+      "opposite_arm_max_displacement_m": 5.495474017239025e-07,
+      "moved_vertices": 288,
+      "max_displacement_m": 0.0668406530955746,
+      "rms_displacement_m": 0.010072561611925279,
+      "status": "passed"
+    },
+    {
+      "bone": "L_point2_00",
+      "control": "L_point2_00",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 189,
+      "opposite_arm_max_displacement_m": 5.495474017239025e-07,
+      "moved_vertices": 228,
+      "max_displacement_m": 0.03960329359446757,
+      "rms_displacement_m": 0.004877210490958779,
+      "status": "passed"
+    },
+    {
+      "bone": "L_point3_010",
+      "control": "L_point3_010",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 131,
+      "opposite_arm_max_displacement_m": 5.495474017239025e-07,
+      "moved_vertices": 131,
+      "max_displacement_m": 0.021076155716398728,
+      "rms_displacement_m": 0.0020985985029494075,
+      "status": "passed"
+    },
+    {
+      "bone": "L_middle1_012",
+      "control": "L_middle1_012",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 176,
+      "opposite_arm_max_displacement_m": 5.495474017239025e-07,
+      "moved_vertices": 299,
+      "max_displacement_m": 0.0756906089092028,
+      "rms_displacement_m": 0.011626108829514991,
+      "status": "passed"
+    },
+    {
+      "bone": "L_middle2_013",
+      "control": "L_middle2_013",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 191,
+      "opposite_arm_max_displacement_m": 5.495474017239025e-07,
+      "moved_vertices": 226,
+      "max_displacement_m": 0.04635287719706711,
+      "rms_displacement_m": 0.005896978483012793,
+      "status": "passed"
+    },
+    {
+      "bone": "L_middle3_014",
+      "control": "L_middle3_014",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 132,
+      "opposite_arm_max_displacement_m": 5.495474017239025e-07,
+      "moved_vertices": 132,
+      "max_displacement_m": 0.020998788742421254,
+      "rms_displacement_m": 0.0020666772853325387,
+      "status": "passed"
+    },
+    {
+      "bone": "L_ring1_017",
+      "control": "L_ring1_017",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 204,
+      "opposite_arm_max_displacement_m": 5.495474017239025e-07,
+      "moved_vertices": 310,
+      "max_displacement_m": 0.06580811192355414,
+      "rms_displacement_m": 0.010075610515491325,
+      "status": "passed"
+    },
+    {
+      "bone": "L_ring2_018",
+      "control": "L_ring2_018",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 179,
+      "opposite_arm_max_displacement_m": 5.495474017239025e-07,
+      "moved_vertices": 222,
+      "max_displacement_m": 0.04096205574124355,
+      "rms_displacement_m": 0.005160338224649739,
+      "status": "passed"
+    },
+    {
+      "bone": "L_ring3_019",
+      "control": "L_ring3_019",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 135,
+      "opposite_arm_max_displacement_m": 5.495474017239025e-07,
+      "moved_vertices": 135,
+      "max_displacement_m": 0.020709762196744946,
+      "rms_displacement_m": 0.0020417051635675783,
+      "status": "passed"
+    },
+    {
+      "bone": "L_pink1_021",
+      "control": "L_pink1_021",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 189,
+      "opposite_arm_max_displacement_m": 5.495474017239025e-07,
+      "moved_vertices": 303,
+      "max_displacement_m": 0.04930923061959088,
+      "rms_displacement_m": 0.007506463996322445,
+      "status": "passed"
+    },
+    {
+      "bone": "L_pink2_022",
+      "control": "L_pink2_022",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 180,
+      "opposite_arm_max_displacement_m": 5.495474017239025e-07,
+      "moved_vertices": 223,
+      "max_displacement_m": 0.033283195640485826,
+      "rms_displacement_m": 0.00415001362626091,
+      "status": "passed"
+    },
+    {
+      "bone": "L_pink3_023",
+      "control": "L_pink3_023",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 132,
+      "opposite_arm_max_displacement_m": 5.495474017239025e-07,
+      "moved_vertices": 132,
+      "max_displacement_m": 0.018575899129036406,
+      "rms_displacement_m": 0.0018498877646548617,
+      "status": "passed"
+    },
+    {
+      "bone": "L_wrist_04",
+      "control": "L_wrist_04",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 791,
+      "opposite_arm_max_displacement_m": 5.495474017239025e-07,
+      "moved_vertices": 1708,
+      "max_displacement_m": 0.11034590142465568,
+      "rms_displacement_m": 0.03891108136233969,
+      "status": "passed"
+    },
+    {
+      "bone": "L_elbow_03",
+      "control": "L_elbow_03",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 670,
+      "opposite_arm_max_displacement_m": 5.495474017239025e-07,
+      "moved_vertices": 2075,
+      "max_displacement_m": 0.30078031647145254,
+      "rms_displacement_m": 0.15167693820580028,
+      "status": "passed"
+    },
+    {
+      "bone": "L_palm_016",
+      "control": "L_palm_016",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 236,
+      "opposite_arm_max_displacement_m": 5.495474017239025e-07,
+      "moved_vertices": 660,
+      "max_displacement_m": 0.08641442818543985,
+      "rms_displacement_m": 0.019431220807802265,
+      "status": "passed"
+    },
+    {
+      "bone": "L_arm_02",
+      "control": "L_arm_02",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 210,
+      "opposite_arm_max_displacement_m": 5.495474017239025e-07,
+      "moved_vertices": 2123,
+      "max_displacement_m": 0.4058548637878637,
+      "rms_displacement_m": 0.22846326015413373,
+      "status": "passed"
+    },
+    {
+      "bone": "R_thumb1_028",
+      "control": "R_thumb1_028",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 305,
+      "opposite_arm_max_displacement_m": 4.2148494840009754e-07,
+      "moved_vertices": 445,
+      "max_displacement_m": 0.07951060719893425,
+      "rms_displacement_m": 0.01317948518398509,
+      "status": "passed"
+    },
+    {
+      "bone": "R_thumb2_029",
+      "control": "R_thumb2_029",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 233,
+      "opposite_arm_max_displacement_m": 4.2148494840009754e-07,
+      "moved_vertices": 289,
+      "max_displacement_m": 0.05158149014863612,
+      "rms_displacement_m": 0.0071469722433642946,
+      "status": "passed"
+    },
+    {
+      "bone": "R_thumb3_030",
+      "control": "R_thumb3_030",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 184,
+      "opposite_arm_max_displacement_m": 4.2148494840009754e-07,
+      "moved_vertices": 184,
+      "max_displacement_m": 0.03003430712836919,
+      "rms_displacement_m": 0.003340619828617483,
+      "status": "passed"
+    },
+    {
+      "bone": "R_point1_032",
+      "control": "R_point1_032",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 180,
+      "opposite_arm_max_displacement_m": 4.2148494840009754e-07,
+      "moved_vertices": 288,
+      "max_displacement_m": 0.06666591800146504,
+      "rms_displacement_m": 0.01007361752344417,
+      "status": "passed"
+    },
+    {
+      "bone": "R_point2_033",
+      "control": "R_point2_033",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 189,
+      "opposite_arm_max_displacement_m": 4.2148494840009754e-07,
+      "moved_vertices": 228,
+      "max_displacement_m": 0.039443659870694106,
+      "rms_displacement_m": 0.004878209988014663,
+      "status": "passed"
+    },
+    {
+      "bone": "R_point3_034",
+      "control": "R_point3_034",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 131,
+      "opposite_arm_max_displacement_m": 4.2148494840009754e-07,
+      "moved_vertices": 131,
+      "max_displacement_m": 0.020924766204480583,
+      "rms_displacement_m": 0.0020994119521214726,
+      "status": "passed"
+    },
+    {
+      "bone": "R_middle1_036",
+      "control": "R_middle1_036",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 176,
+      "opposite_arm_max_displacement_m": 4.2148494840009754e-07,
+      "moved_vertices": 299,
+      "max_displacement_m": 0.07577235768187429,
+      "rms_displacement_m": 0.011626360423582532,
+      "status": "passed"
+    },
+    {
+      "bone": "R_middle2_037",
+      "control": "R_middle2_037",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 191,
+      "opposite_arm_max_displacement_m": 4.2148494840009754e-07,
+      "moved_vertices": 226,
+      "max_displacement_m": 0.046439041803835894,
+      "rms_displacement_m": 0.00589726128744296,
+      "status": "passed"
+    },
+    {
+      "bone": "R_middle3_038",
+      "control": "R_middle3_038",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 132,
+      "opposite_arm_max_displacement_m": 4.2148494840009754e-07,
+      "moved_vertices": 132,
+      "max_displacement_m": 0.021055838984333088,
+      "rms_displacement_m": 0.0020678123214975044,
+      "status": "passed"
+    },
+    {
+      "bone": "R_ring1_041",
+      "control": "R_ring1_041",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 204,
+      "opposite_arm_max_displacement_m": 4.2148494840009754e-07,
+      "moved_vertices": 310,
+      "max_displacement_m": 0.06575192759586568,
+      "rms_displacement_m": 0.010075174056204221,
+      "status": "passed"
+    },
+    {
+      "bone": "R_ring2_042",
+      "control": "R_ring2_042",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 179,
+      "opposite_arm_max_displacement_m": 4.2148494840009754e-07,
+      "moved_vertices": 222,
+      "max_displacement_m": 0.04093771285996509,
+      "rms_displacement_m": 0.005160370175399698,
+      "status": "passed"
+    },
+    {
+      "bone": "R_ring3_043",
+      "control": "R_ring3_043",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 135,
+      "opposite_arm_max_displacement_m": 4.2148494840009754e-07,
+      "moved_vertices": 135,
+      "max_displacement_m": 0.020713777666679433,
+      "rms_displacement_m": 0.0020418035000669245,
+      "status": "passed"
+    },
+    {
+      "bone": "R_pink1_045",
+      "control": "R_pink1_045",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 189,
+      "opposite_arm_max_displacement_m": 4.2148494840009754e-07,
+      "moved_vertices": 303,
+      "max_displacement_m": 0.049315365278221404,
+      "rms_displacement_m": 0.007504734836596165,
+      "status": "passed"
+    },
+    {
+      "bone": "R_pink2_046",
+      "control": "R_pink2_046",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 180,
+      "opposite_arm_max_displacement_m": 4.2148494840009754e-07,
+      "moved_vertices": 223,
+      "max_displacement_m": 0.033254949107778674,
+      "rms_displacement_m": 0.00414814525221374,
+      "status": "passed"
+    },
+    {
+      "bone": "R_pink3_047",
+      "control": "R_pink3_047",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 132,
+      "opposite_arm_max_displacement_m": 4.2148494840009754e-07,
+      "moved_vertices": 132,
+      "max_displacement_m": 0.01853949212098531,
+      "rms_displacement_m": 0.0018467669034866344,
+      "status": "passed"
+    },
+    {
+      "bone": "R_wrist_027",
+      "control": "R_wrist_027",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 791,
+      "opposite_arm_max_displacement_m": 4.2148494840009754e-07,
+      "moved_vertices": 1708,
+      "max_displacement_m": 0.11023977652344545,
+      "rms_displacement_m": 0.03889603335257115,
+      "status": "passed"
+    },
+    {
+      "bone": "R_elbow_026",
+      "control": "R_elbow_026",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 680,
+      "opposite_arm_max_displacement_m": 4.2148494840009754e-07,
+      "moved_vertices": 2075,
+      "max_displacement_m": 0.30124304686002695,
+      "rms_displacement_m": 0.15194524386393865,
+      "status": "passed"
+    },
+    {
+      "bone": "R_palm_040",
+      "control": "R_palm_040",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 237,
+      "opposite_arm_max_displacement_m": 4.2148494840009754e-07,
+      "moved_vertices": 661,
+      "max_displacement_m": 0.08645319387280118,
+      "rms_displacement_m": 0.0194301162056591,
+      "status": "passed"
+    },
+    {
+      "bone": "R_arm_025",
+      "control": "R_arm_025",
+      "local_axis": "X",
+      "degrees": -20,
+      "own_weighted_vertices_moved": 210,
+      "opposite_arm_max_displacement_m": 4.2148494840009754e-07,
+      "moved_vertices": 2123,
+      "max_displacement_m": 0.4003976169897202,
+      "rms_displacement_m": 0.2254396022882358,
+      "status": "passed"
+    }
+  ],
+  "reset_max_error_m": 5.495474017239025e-07,
+  "structural_signature": "1441ea79b88e6fbd687e93c7b1f67bf2ed389d32dffe521031f477c8888b8e26",
+  "inventory": {
+    "blender": "5.2.1 LTS",
+    "meshes": [
+      {
+        "name": "armsmesh_arms_0",
+        "vertices": 4246,
+        "triangles": 7240,
+        "weighted_vertices": 4246,
+        "weight_sum_range": [
+          0.9999998984858394,
+          1.0000000856816769
+        ],
+        "groups": {
+          "L_arm_02": 210,
+          "L_elbow_03": 670,
+          "L_middle1_012": 176,
+          "L_middle2_013": 191,
+          "L_middle3_014": 132,
+          "L_palm_016": 236,
+          "L_pink1_021": 189,
+          "L_pink2_022": 180,
+          "L_pink3_023": 132,
+          "L_point1_09": 180,
+          "L_point2_00": 189,
+          "L_point3_010": 131,
+          "L_ring1_017": 204,
+          "L_ring2_018": 179,
+          "L_ring3_019": 135,
+          "L_thumb1_05": 305,
+          "L_thumb2_06": 234,
+          "L_thumb3_07": 184,
+          "L_wrist_04": 791,
+          "R_arm_025": 210,
+          "R_elbow_026": 680,
+          "R_middle1_036": 176,
+          "R_middle2_037": 191,
+          "R_middle3_038": 132,
+          "R_palm_040": 237,
+          "R_pink1_045": 189,
+          "R_pink2_046": 180,
+          "R_pink3_047": 132,
+          "R_point1_032": 180,
+          "R_point2_033": 189,
+          "R_point3_034": 131,
+          "R_ring1_041": 204,
+          "R_ring2_042": 179,
+          "R_ring3_043": 135,
+          "R_thumb1_028": 305,
+          "R_thumb2_029": 233,
+          "R_thumb3_030": 184,
+          "R_wrist_027": 791
+        },
+        "uv_layers": {
+          "UVMap": 21720,
+          "UVMap6": 21720
+        },
+        "uv_finite": true,
+        "geometry_sha256": "501d7460b30a11f5680d04c681a1e38f485467b1bef73ecbf95be991ba3fdf2d",
+        "weights_sha256": "f0aecde16cad0f21b9671075a995a13860aa37230e87c68e0bdea3a6796e67ea",
+        "uv_sha256": "97541ae9779dea537f4af41f31cc1c572073c21c6dd85074c207b9deb6c5b728",
+        "materials": [
+          "arms"
+        ],
+        "material_images": [
+          "armColor.png",
+          "armRoughness.png [data]",
+          "armnormal.png [data]"
+        ],
+        "armature_modifiers": [
+          {
+            "name": "Recovered skin",
+            "object": "osgAnimation.Skeleton rig",
+            "enabled": true
+          }
+        ]
+      }
+    ],
+    "armatures": [
+      {
+        "name": "osgAnimation.Skeleton rig",
+        "bones": [
+          {
+            "name": "chest_01",
+            "parent": null,
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "chest_01",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "control_parent": "osgAnimation.Skeleton",
+            "control_world_position": [
+              0.013864908367395401,
+              0.6246352791786194,
+              0.23945052921772003
+            ],
+            "control_world_axes": [
+              [
+                0.9999999403953552,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.9999999403953552
+              ],
+              [
+                0.0,
+                -0.9999999403953552,
+                0.0
+              ]
+            ]
+          },
+          {
+            "name": "L_arm_02",
+            "parent": "chest_01",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "L_arm_02",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.888457,
+              0.3724,
+              -0.268259,
+              0.0,
+              0.292234,
+              0.909709,
+              0.295007,
+              0.0,
+              0.353898,
+              0.183706,
+              -0.917065,
+              0.0,
+              19.0537,
+              -7.5645,
+              -12.544,
+              1.0
+            ],
+            "control_parent": "chest_01",
+            "control_world_position": [
+              0.33624181151390076,
+              0.5405664443969727,
+              0.13378137350082397
+            ],
+            "control_world_axes": [
+              [
+                -0.8034017086029053,
+                -0.44041866064071655,
+                0.4007207751274109
+              ],
+              [
+                0.5169525146484375,
+                -0.18195584416389465,
+                0.836452066898346
+              ],
+              [
+                -0.29547566175460815,
+                0.8791606426239014,
+                0.37385913729667664
+              ]
+            ]
+          },
+          {
+            "name": "L_elbow_03",
+            "parent": "L_arm_02",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "L_elbow_03",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.573759,
+              0.80784,
+              0.134887,
+              0.0,
+              0.818987,
+              0.567468,
+              0.0850936,
+              0.0,
+              -0.00780201,
+              0.159294,
+              -0.9872,
+              0.0,
+              13.679,
+              -17.526,
+              -0.360065,
+              1.0
+            ],
+            "control_parent": "L_arm_02",
+            "control_world_position": [
+              0.4592590630054474,
+              0.17453989386558533,
+              -0.021869763731956482
+            ],
+            "control_world_axes": [
+              [
+                -0.6164108514785767,
+                -0.040544211864471436,
+                0.7863800525665283
+              ],
+              [
+                0.7842237949371338,
+                -0.12156298756599426,
+                0.6084531545639038
+              ],
+              [
+                0.07092544436454773,
+                0.9917552471160889,
+                0.10672849416732788
+              ]
+            ]
+          },
+          {
+            "name": "L_wrist_04",
+            "parent": "L_elbow_03",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "L_wrist_04",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.238932,
+              0.51547,
+              0.822923,
+              0.0,
+              0.559781,
+              0.765595,
+              -0.317031,
+              0.0,
+              -0.793446,
+              0.384908,
+              -0.471476,
+              0.0,
+              27.1369,
+              -17.2939,
+              -4.15666,
+              1.0
+            ],
+            "control_parent": "L_elbow_03",
+            "control_world_position": [
+              0.4257688820362091,
+              -0.2937551438808441,
+              -0.07226565480232239
+            ],
+            "control_world_axes": [
+              [
+                -0.3441435992717743,
+                0.7827865481376648,
+                0.5184690356254578
+              ],
+              [
+                0.6429176926612854,
+                -0.20596912503242493,
+                0.7377216815948486
+              ],
+              [
+                0.6842672824859619,
+                0.5872151851654053,
+                -0.4323844015598297
+              ]
+            ]
+          },
+          {
+            "name": "L_thumb1_05",
+            "parent": "L_wrist_04",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "L_thumb1_05",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.56995,
+              -0.155523,
+              0.806827,
+              0.0,
+              -0.529866,
+              0.820052,
+              -0.21623,
+              0.0,
+              -0.628012,
+              -0.550751,
+              -0.549796,
+              0.0,
+              25.0659,
+              19.4353,
+              3.25989,
+              1.0
+            ],
+            "control_parent": "L_wrist_04",
+            "control_world_position": [
+              0.3561522364616394,
+              -0.34544217586517334,
+              -0.035427026450634
+            ],
+            "control_world_axes": [
+              [
+                -0.724761962890625,
+                0.45542341470718384,
+                -0.5170197486877441
+              ],
+              [
+                -0.19313667714595795,
+                0.5860193967819214,
+                0.7869430780410767
+              ],
+              [
+                0.6613759398460388,
+                0.6702019572257996,
+                -0.3367656469345093
+              ]
+            ]
+          },
+          {
+            "name": "L_thumb2_06",
+            "parent": "L_thumb1_05",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "L_thumb2_06",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.602289,
+              -0.309968,
+              0.735641,
+              0.0,
+              -0.585387,
+              0.798041,
+              -0.143011,
+              0.0,
+              -0.542743,
+              -0.516769,
+              -0.662103,
+              0.0,
+              22.7844,
+              20.2377,
+              11.7287,
+              1.0
+            ],
+            "control_parent": "L_thumb1_05",
+            "control_world_position": [
+              0.30299243330955505,
+              -0.40154391527175903,
+              -0.009477517567574978
+            ],
+            "control_world_axes": [
+              [
+                -0.7440611124038696,
+                0.3607127070426941,
+                -0.5623694062232971
+              ],
+              [
+                -0.33908170461654663,
+                0.521385908126831,
+                0.783058226108551
+              ],
+              [
+                0.5756705403327942,
+                0.773332417011261,
+                -0.26563188433647156
+              ]
+            ]
+          },
+          {
+            "name": "L_thumb3_07",
+            "parent": "L_thumb2_06",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "L_thumb3_07",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.583609,
+              -0.382566,
+              0.716271,
+              0.0,
+              -0.563456,
+              0.825951,
+              -0.017951,
+              0.0,
+              -0.584737,
+              -0.414063,
+              -0.697592,
+              0.0,
+              24.0025,
+              17.5581,
+              16.2978,
+              1.0
+            ],
+            "control_parent": "L_thumb2_06",
+            "control_world_position": [
+              0.26732149720191956,
+              -0.44946280121803284,
+              0.006982126273214817
+            ],
+            "control_world_axes": [
+              [
+                -0.7323147058486938,
+                0.4073699414730072,
+                -0.5456782579421997
+              ],
+              [
+                -0.3873572051525116,
+                0.40985536575317383,
+                0.8258164525032043
+              ],
+              [
+                0.5600619912147522,
+                0.8161299824714661,
+                -0.14234544336795807
+              ]
+            ]
+          },
+          {
+            "name": "L_thumb4_08",
+            "parent": "L_thumb3_07",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "L_thumb4_08",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "control_parent": "L_thumb3_07",
+            "control_world_position": [
+              0.23085084557533264,
+              -0.5026083588600159,
+              0.01625150814652443
+            ],
+            "control_world_axes": [
+              [
+                -0.7518181800842285,
+                0.46363765001296997,
+                -0.4688384532928467
+              ],
+              [
+                -0.3570460081100464,
+                0.31151628494262695,
+                0.8806109428405762
+              ],
+              [
+                0.5543352365493774,
+                0.8294562697410583,
+                -0.06866363435983658
+              ]
+            ]
+          },
+          {
+            "name": "L_point1_09",
+            "parent": "L_wrist_04",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "L_point1_09",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.62355,
+              0.668145,
+              0.405916,
+              0.0,
+              0.775719,
+              0.593324,
+              0.215003,
+              0.0,
+              -0.0971867,
+              0.448942,
+              -0.88826,
+              0.0,
+              13.5363,
+              -25.3934,
+              26.16,
+              1.0
+            ],
+            "control_parent": "L_wrist_04",
+            "control_world_position": [
+              0.3897573947906494,
+              -0.4917484521865845,
+              -0.0065979138016700745
+            ],
+            "control_world_axes": [
+              [
+                -0.564172089099884,
+                0.04965859651565552,
+                0.8241623640060425
+              ],
+              [
+                0.7904767990112305,
+                -0.2557852864265442,
+                0.5565248727798462
+              ],
+              [
+                0.23844492435455322,
+                0.9654572010040283,
+                0.10505294799804688
+              ]
+            ]
+          },
+          {
+            "name": "L_point2_00",
+            "parent": "L_point1_09",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "L_point2_00",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.671394,
+              0.551798,
+              0.494721,
+              0.0,
+              0.734434,
+              0.584738,
+              0.344512,
+              0.0,
+              -0.0991811,
+              0.594644,
+              -0.797848,
+              0.0,
+              14.3049,
+              -29.5999,
+              25.7302,
+              1.0
+            ],
+            "control_parent": "L_point1_09",
+            "control_world_position": [
+              0.3717578947544098,
+              -0.5686885714530945,
+              -0.017696939408779144
+            ],
+            "control_world_axes": [
+              [
+                -0.6147088408470154,
+                0.03862142562866211,
+                0.7878079414367676
+              ],
+              [
+                0.7049634456634521,
+                -0.421088844537735,
+                0.5707105994224548
+              ],
+              [
+                0.35377877950668335,
+                0.906196653842926,
+                0.23162034153938293
+              ]
+            ]
+          },
+          {
+            "name": "L_point3_010",
+            "parent": "L_point2_00",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "L_point3_010",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.648741,
+              0.491504,
+              0.580998,
+              0.0,
+              0.759948,
+              0.458701,
+              0.460513,
+              0.0,
+              -0.0401603,
+              0.740282,
+              -0.671096,
+              0.0,
+              11.6505,
+              -35.3385,
+              22.4862,
+              1.0
+            ],
+            "control_parent": "L_point2_00",
+            "control_world_position": [
+              0.3528224229812622,
+              -0.6171913743019104,
+              -0.03009406104683876
+            ],
+            "control_world_axes": [
+              [
+                -0.5787945985794067,
+                -0.012344390153884888,
+                0.8153798580169678
+              ],
+              [
+                0.6644798517227173,
+                -0.5867594480514526,
+                0.46279558539390564
+              ],
+              [
+                0.4727189540863037,
+                0.8096670508384705,
+                0.3478158414363861
+              ]
+            ]
+          },
+          {
+            "name": "L_point4_011",
+            "parent": "L_point3_010",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "L_point4_011",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "control_parent": "L_point3_010",
+            "control_world_position": [
+              0.32835322618484497,
+              -0.6591019034385681,
+              -0.04809793084859848
+            ],
+            "control_world_axes": [
+              [
+                -0.6717108488082886,
+                0.06637784838676453,
+                0.7378336787223816
+              ],
+              [
+                0.580641508102417,
+                -0.5713558793067932,
+                0.5800067782402039
+              ],
+              [
+                0.46006515622138977,
+                0.8180137276649475,
+                0.34524422883987427
+              ]
+            ]
+          },
+          {
+            "name": "L_middle1_012",
+            "parent": "L_wrist_04",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "L_middle1_012",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.602706,
+              0.641652,
+              0.474372,
+              0.0,
+              0.796638,
+              0.518093,
+              0.311365,
+              0.0,
+              -0.0459807,
+              0.565564,
+              -0.823422,
+              0.0,
+              14.0884,
+              -30.0014,
+              22.5321,
+              1.0
+            ],
+            "control_parent": "L_wrist_04",
+            "control_world_position": [
+              0.43147096037864685,
+              -0.49047788977622986,
+              -0.042670316994190216
+            ],
+            "control_world_axes": [
+              [
+                -0.5319511890411377,
+                0.005552858114242554,
+                0.8467566967010498
+              ],
+              [
+                0.781463623046875,
+                -0.38188254833221436,
+                0.4934370517730713
+              ],
+              [
+                0.3261016607284546,
+                0.9241940975189209,
+                0.19880355894565582
+              ]
+            ]
+          },
+          {
+            "name": "L_middle2_013",
+            "parent": "L_middle1_012",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "L_middle2_013",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.655224,
+              0.481284,
+              0.582277,
+              0.0,
+              0.753431,
+              0.472426,
+              0.457334,
+              0.0,
+              -0.0549753,
+              0.738362,
+              -0.67216,
+              0.0,
+              15.0566,
+              -34.6626,
+              19.8901,
+              1.0
+            ],
+            "control_parent": "L_middle1_012",
+            "control_world_position": [
+              0.4032426178455353,
+              -0.5704789161682129,
+              -0.059879329055547714
+            ],
+            "control_world_axes": [
+              [
+                -0.5885984301567078,
+                0.0002868175506591797,
+                0.8084253668785095
+              ],
+              [
+                0.6552520990371704,
+                -0.5855294466018677,
+                0.4772837460041046
+              ],
+              [
+                0.473493754863739,
+                0.8106509447097778,
+                0.3444538116455078
+              ]
+            ]
+          },
+          {
+            "name": "L_middle3_014",
+            "parent": "L_middle2_013",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "L_middle3_014",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.651231,
+              0.466998,
+              0.598173,
+              0.0,
+              0.757501,
+              0.35253,
+              0.549468,
+              0.0,
+              0.0457264,
+              0.810947,
+              -0.58333,
+              0.0,
+              10.7705,
+              -38.2402,
+              20.1759,
+              1.0
+            ],
+            "control_parent": "L_middle2_013",
+            "control_world_position": [
+              0.3686264753341675,
+              -0.6297439336776733,
+              -0.08506160974502563
+            ],
+            "control_world_axes": [
+              [
+                -0.56443190574646,
+                -0.09697967767715454,
+                0.8197630047798157
+              ],
+              [
+                0.6457557678222656,
+                -0.6704875230789185,
+                0.36530250310897827
+              ],
+              [
+                0.5142139196395874,
+                0.735555112361908,
+                0.44106975197792053
+              ]
+            ]
+          },
+          {
+            "name": "L_middle4_015",
+            "parent": "L_middle3_014",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "L_middle4_015",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "control_parent": "L_middle3_014",
+            "control_world_position": [
+              0.340344101190567,
+              -0.6673011183738708,
+              -0.1050461083650589
+            ],
+            "control_world_axes": [
+              [
+                -0.5308631658554077,
+                -0.05037686228752136,
+                0.8459588289260864
+              ],
+              [
+                0.641631007194519,
+                -0.6760075688362122,
+                0.36238545179367065
+              ],
+              [
+                0.5536187887191772,
+                0.7351705431938171,
+                0.39119088649749756
+              ]
+            ]
+          },
+          {
+            "name": "L_palm_016",
+            "parent": "L_wrist_04",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "L_palm_016",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.837911,
+              0.527933,
+              0.138534,
+              0.0,
+              0.536061,
+              0.84375,
+              0.0269131,
+              0.0,
+              -0.10268,
+              0.0968136,
+              -0.989992,
+              0.0,
+              21.5658,
+              -9.03811,
+              29.2213,
+              1.0
+            ],
+            "control_parent": "L_wrist_04",
+            "control_world_position": [
+              0.4454687535762787,
+              -0.4079003930091858,
+              -0.09186999499797821
+            ],
+            "control_world_axes": [
+              [
+                -0.7944374084472656,
+                -0.00831642746925354,
+                0.6072890758514404
+              ],
+              [
+                0.6045323610305786,
+                0.08530798554420471,
+                0.7919994592666626
+              ],
+              [
+                -0.058393239974975586,
+                0.9963198900222778,
+                -0.06274431943893433
+              ]
+            ]
+          },
+          {
+            "name": "L_ring1_017",
+            "parent": "L_palm_016",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "L_ring1_017",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.526337,
+              0.721813,
+              0.449394,
+              0.0,
+              0.844203,
+              0.380569,
+              0.377477,
+              0.0,
+              0.101442,
+              0.57806,
+              -0.809664,
+              0.0,
+              10.0552,
+              -32.0385,
+              22.592,
+              1.0
+            ],
+            "control_parent": "L_palm_016",
+            "control_world_position": [
+              0.4498494863510132,
+              -0.48264577984809875,
+              -0.08716282993555069
+            ],
+            "control_world_axes": [
+              [
+                -0.4242519438266754,
+                -0.11951494216918945,
+                0.8976225852966309
+              ],
+              [
+                0.8508688807487488,
+                -0.3918338119983673,
+                0.3499831557273865
+              ],
+              [
+                0.3098906874656677,
+                0.9122401475906372,
+                0.2679278254508972
+              ]
+            ]
+          },
+          {
+            "name": "L_ring2_018",
+            "parent": "L_ring1_017",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "L_ring2_018",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.590614,
+              0.586866,
+              0.553862,
+              0.0,
+              0.798722,
+              0.327359,
+              0.504856,
+              0.0,
+              0.114971,
+              0.740557,
+              -0.662085,
+              0.0,
+              10.3202,
+              -36.5043,
+              19.6968,
+              1.0
+            ],
+            "control_parent": "L_ring1_017",
+            "control_world_position": [
+              0.42776891589164734,
+              -0.5510058999061584,
+              -0.10686002671718597
+            ],
+            "control_world_axes": [
+              [
+                -0.48811399936676025,
+                -0.14924129843711853,
+                0.8599254488945007
+              ],
+              [
+                0.7468245029449463,
+                -0.581295371055603,
+                0.32303059101104736
+              ],
+              [
+                0.45166119933128357,
+                0.7998892068862915,
+                0.39519548416137695
+              ]
+            ]
+          },
+          {
+            "name": "L_ring3_019",
+            "parent": "L_ring2_018",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "L_ring3_019",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.577358,
+              0.287304,
+              0.764274,
+              0.0,
+              0.816411,
+              0.216218,
+              0.535464,
+              0.0,
+              -0.0114086,
+              0.933116,
+              -0.359393,
+              0.0,
+              15.2671,
+              -40.8006,
+              7.46498,
+              1.0
+            ],
+            "control_parent": "L_ring2_018",
+            "control_world_position": [
+              0.3992665708065033,
+              -0.5995098948478699,
+              -0.12769803404808044
+            ],
+            "control_world_axes": [
+              [
+                -0.4987162947654724,
+                -0.02155040204524994,
+                0.8664973974227905
+              ],
+              [
+                0.4831581115722656,
+                -0.8368814587593079,
+                0.2572699189186096
+              ],
+              [
+                0.7196112871170044,
+                0.5469599366188049,
+                0.4277786612510681
+              ]
+            ]
+          },
+          {
+            "name": "L_ring4_020",
+            "parent": "L_ring3_019",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "L_ring4_020",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "control_parent": "L_ring3_019",
+            "control_world_position": [
+              0.36538752913475037,
+              -0.625260591506958,
+              -0.14783769845962524
+            ],
+            "control_world_axes": [
+              [
+                -0.46558570861816406,
+                -0.05623707175254822,
+                0.8832141160964966
+              ],
+              [
+                0.5065827369689941,
+                -0.8352466821670532,
+                0.2138618677854538
+              ],
+              [
+                0.7256747484207153,
+                0.5469920635223389,
+                0.4173676371574402
+              ]
+            ]
+          },
+          {
+            "name": "L_pink1_021",
+            "parent": "L_palm_016",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "L_pink1_021",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.547032,
+              0.778558,
+              0.307577,
+              0.0,
+              0.832829,
+              0.469046,
+              0.293924,
+              0.0,
+              0.0845696,
+              0.416945,
+              -0.904989,
+              0.0,
+              13.4862,
+              -25.9081,
+              27.6114,
+              1.0
+            ],
+            "control_parent": "L_palm_016",
+            "control_world_position": [
+              0.4567336142063141,
+              -0.462123304605484,
+              -0.13673415780067444
+            ],
+            "control_world_axes": [
+              [
+                -0.4487447142601013,
+                -0.10803231596946716,
+                0.8871060609817505
+              ],
+              [
+                0.8817187547683716,
+                -0.21525664627552032,
+                0.4198054075241089
+              ],
+              [
+                0.14560294151306152,
+                0.970563530921936,
+                0.19184939563274384
+              ]
+            ]
+          },
+          {
+            "name": "L_pink2_022",
+            "parent": "L_pink1_021",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "L_pink2_022",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.495389,
+              0.554393,
+              0.668758,
+              0.0,
+              0.861938,
+              0.21804,
+              0.457736,
+              0.0,
+              0.10795,
+              0.803185,
+              -0.585867,
+              0.0,
+              11.9104,
+              -38.17,
+              13.2272,
+              1.0
+            ],
+            "control_parent": "L_pink1_021",
+            "control_world_position": [
+              0.44890767335891724,
+              -0.5142896175384521,
+              -0.14704576134681702
+            ],
+            "control_world_axes": [
+              [
+                -0.3912714719772339,
+                -0.11832082271575928,
+                0.9126373529434204
+              ],
+              [
+                0.7184674739837646,
+                -0.6589825749397278,
+                0.22259055078029633
+              ],
+              [
+                0.5750749707221985,
+                0.7427935004234314,
+                0.3428507447242737
+              ]
+            ]
+          },
+          {
+            "name": "L_pink3_023",
+            "parent": "L_pink2_022",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "L_pink3_023",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.542058,
+              0.309183,
+              0.781395,
+              0.0,
+              0.824754,
+              0.0174737,
+              0.565222,
+              0.0,
+              0.161103,
+              0.950842,
+              -0.264471,
+              0.0,
+              10.3156,
+              -41.541,
+              2.16225,
+              1.0
+            ],
+            "control_parent": "L_pink2_022",
+            "control_world_position": [
+              0.42403218150138855,
+              -0.5464199781417847,
+              -0.1618761420249939
+            ],
+            "control_world_axes": [
+              [
+                -0.4294079542160034,
+                -0.18264015018939972,
+                0.8844497799873352
+              ],
+              [
+                0.49161165952682495,
+                -0.8687949180603027,
+                0.05927428603172302
+              ],
+              [
+                0.7575796246528625,
+                0.4602586328983307,
+                0.4628554582595825
+              ]
+            ]
+          },
+          {
+            "name": "L_pink4_024",
+            "parent": "L_pink3_023",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "L_pink4_024",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "control_parent": "L_pink3_023",
+            "control_world_position": [
+              0.3908894956111908,
+              -0.5665554404258728,
+              -0.18212518095970154
+            ],
+            "control_world_axes": [
+              [
+                -0.44554874300956726,
+                -0.15359297394752502,
+                0.8819838166236877
+              ],
+              [
+                0.4770320653915405,
+                -0.8743976354598999,
+                0.08870875835418701
+              ],
+              [
+                0.7575794458389282,
+                0.4602586030960083,
+                0.4628554582595825
+              ]
+            ]
+          },
+          {
+            "name": "R_arm_025",
+            "parent": "chest_01",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "R_arm_025",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.888457,
+              -0.3724,
+              0.268259,
+              0.0,
+              -0.292234,
+              0.909709,
+              0.295007,
+              0.0,
+              -0.353898,
+              0.183706,
+              -0.917065,
+              0.0,
+              -19.0537,
+              -7.5645,
+              -12.544,
+              1.0
+            ],
+            "control_parent": "chest_01",
+            "control_world_position": [
+              -0.30851200222969055,
+              0.5405664443969727,
+              0.13378137350082397
+            ],
+            "control_world_axes": [
+              [
+                -0.8765544891357422,
+                0.4217049777507782,
+                -0.23198558390140533
+              ],
+              [
+                -0.34826603531837463,
+                -0.22304028272628784,
+                0.9104745984077454
+              ],
+              [
+                0.3322095274925232,
+                0.8788731694221497,
+                0.34237244725227356
+              ]
+            ]
+          },
+          {
+            "name": "R_elbow_026",
+            "parent": "R_arm_025",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "R_elbow_026",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.573759,
+              -0.80784,
+              -0.134887,
+              0.0,
+              -0.818987,
+              0.567468,
+              0.0850936,
+              0.0,
+              0.00780201,
+              0.159294,
+              -0.9872,
+              0.0,
+              -13.679,
+              -17.526,
+              -0.360065,
+              1.0
+            ],
+            "control_parent": "R_arm_025",
+            "control_world_position": [
+              -0.4468228816986084,
+              0.1746596395969391,
+              -0.008760780096054077
+            ],
+            "control_world_axes": [
+              [
+                -0.6881399154663086,
+                0.0008485019207000732,
+                -0.7255774736404419
+              ],
+              [
+                -0.7137832641601562,
+                -0.1803659200668335,
+                0.6767433285713196
+              ],
+              [
+                -0.13029523193836212,
+                0.9835991859436035,
+                0.12472261488437653
+              ]
+            ]
+          },
+          {
+            "name": "R_wrist_027",
+            "parent": "R_elbow_026",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "R_wrist_027",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.238932,
+              -0.51547,
+              -0.822923,
+              0.0,
+              -0.559781,
+              0.765595,
+              -0.317031,
+              0.0,
+              0.793446,
+              0.384908,
+              -0.471476,
+              0.0,
+              -27.1369,
+              -17.2939,
+              -4.15666,
+              1.0
+            ],
+            "control_parent": "R_elbow_026",
+            "control_world_position": [
+              -0.3852989673614502,
+              -0.28978419303894043,
+              -0.06765332818031311
+            ],
+            "control_world_axes": [
+              [
+                -0.3460540175437927,
+                -0.7751984000205994,
+                -0.5285017490386963
+              ],
+              [
+                -0.6219231486320496,
+                -0.23222702741622925,
+                0.7478517889976501
+              ],
+              [
+                -0.7024658918380737,
+                0.5874845385551453,
+                -0.40175074338912964
+              ]
+            ]
+          },
+          {
+            "name": "R_thumb1_028",
+            "parent": "R_wrist_027",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "R_thumb1_028",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.56995,
+              0.155523,
+              -0.806827,
+              0.0,
+              0.529866,
+              0.820052,
+              -0.21623,
+              0.0,
+              0.628012,
+              -0.550751,
+              -0.549796,
+              0.0,
+              -25.0659,
+              19.4353,
+              3.25989,
+              1.0
+            ],
+            "control_parent": "R_wrist_027",
+            "control_world_position": [
+              -0.3141138255596161,
+              -0.34133410453796387,
+              -0.033735889941453934
+            ],
+            "control_world_axes": [
+              [
+                -0.7057377099990845,
+                -0.4775715470314026,
+                0.523315966129303
+              ],
+              [
+                0.20430180430412292,
+                0.5700895190238953,
+                0.7957755923271179
+              ],
+              [
+                -0.6783767342567444,
+                0.6685232520103455,
+                -0.3047649562358856
+              ]
+            ]
+          },
+          {
+            "name": "R_thumb2_029",
+            "parent": "R_thumb1_028",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "R_thumb2_029",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.602289,
+              0.309968,
+              -0.735641,
+              0.0,
+              0.585387,
+              0.798041,
+              -0.143011,
+              0.0,
+              0.542743,
+              -0.516769,
+              -0.662103,
+              0.0,
+              -22.7844,
+              20.2377,
+              11.7287,
+              1.0
+            ],
+            "control_parent": "R_thumb1_028",
+            "control_world_position": [
+              -0.2595846354961395,
+              -0.39727386832237244,
+              -0.01041090115904808
+            ],
+            "control_world_axes": [
+              [
+                -0.7252053022384644,
+                -0.3842301666736603,
+                0.5713530778884888
+              ],
+              [
+                0.3509691059589386,
+                0.5076267123222351,
+                0.786851704120636
+              ],
+              [
+                -0.5923663377761841,
+                0.771156370639801,
+                -0.23328068852424622
+              ]
+            ]
+          },
+          {
+            "name": "R_thumb3_030",
+            "parent": "R_thumb2_029",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "R_thumb3_030",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.583609,
+              0.382566,
+              -0.716271,
+              0.0,
+              0.563456,
+              0.825951,
+              -0.017951,
+              0.0,
+              0.584737,
+              -0.414063,
+              -0.697592,
+              0.0,
+              -24.0025,
+              17.5581,
+              16.2978,
+              1.0
+            ],
+            "control_parent": "R_thumb2_029",
+            "control_world_position": [
+              -0.22287915647029877,
+              -0.4450578987598419,
+              0.004044137895107269
+            ],
+            "control_world_axes": [
+              [
+                -0.7132392525672913,
+                -0.4303135275840759,
+                0.5532810091972351
+              ],
+              [
+                0.4017741084098816,
+                0.3958166539669037,
+                0.8257762789726257
+              ],
+              [
+                -0.5743406414985657,
+                0.8112701177597046,
+                -0.10942315310239792
+              ]
+            ]
+          },
+          {
+            "name": "R_thumb4_031",
+            "parent": "R_thumb3_030",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "R_thumb4_031",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "control_parent": "R_thumb3_030",
+            "control_world_position": [
+              -0.18547868728637695,
+              -0.4978869557380676,
+              0.011169647797942162
+            ],
+            "control_world_axes": [
+              [
+                -0.7338455319404602,
+                -0.48503535985946655,
+                0.4756168723106384
+              ],
+              [
+                0.374137818813324,
+                0.2958039343357086,
+                0.8789317011833191
+              ],
+              [
+                -0.5670022368431091,
+                0.8229463696479797,
+                -0.0356043241918087
+              ]
+            ]
+          },
+          {
+            "name": "R_point1_032",
+            "parent": "R_wrist_027",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "R_point1_032",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.62355,
+              -0.668145,
+              -0.405916,
+              0.0,
+              -0.775719,
+              0.593324,
+              0.215003,
+              0.0,
+              0.0971867,
+              0.448942,
+              -0.88826,
+              0.0,
+              -13.5363,
+              -25.3934,
+              26.16,
+              1.0
+            ],
+            "control_parent": "R_wrist_027",
+            "control_world_position": [
+              -0.34502673149108887,
+              -0.48873430490493774,
+              -0.00759153813123703
+            ],
+            "control_world_axes": [
+              [
+                -0.583348274230957,
+                -0.03828388452529907,
+                -0.8113193511962891
+              ],
+              [
+                -0.7731636762619019,
+                -0.27985870838165283,
+                0.5691196322441101
+              ],
+              [
+                -0.24884293973445892,
+                0.9592776298522949,
+                0.1336553990840912
+              ]
+            ]
+          },
+          {
+            "name": "R_point2_033",
+            "parent": "R_point1_032",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "R_point2_033",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.671394,
+              -0.551798,
+              -0.494721,
+              0.0,
+              -0.734434,
+              0.584738,
+              0.344512,
+              0.0,
+              0.0991811,
+              0.594644,
+              -0.797848,
+              0.0,
+              -14.3049,
+              -29.5999,
+              25.7302,
+              1.0
+            ],
+            "control_parent": "R_point1_032",
+            "control_world_position": [
+              -0.3262645900249481,
+              -0.565132200717926,
+              -0.02094435691833496
+            ],
+            "control_world_axes": [
+              [
+                -0.6331295967102051,
+                -0.028814047574996948,
+                -0.7735093235969543
+              ],
+              [
+                -0.6851037740707397,
+                -0.4442283511161804,
+                0.577316164970398
+              ],
+              [
+                -0.3602495789527893,
+                0.8954501152038574,
+                0.26151350140571594
+              ]
+            ]
+          },
+          {
+            "name": "R_point3_034",
+            "parent": "R_point2_033",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "R_point3_034",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.648741,
+              -0.491504,
+              -0.580998,
+              0.0,
+              -0.759948,
+              0.458701,
+              0.460513,
+              0.0,
+              0.0401603,
+              0.740282,
+              -0.671096,
+              0.0,
+              -11.6505,
+              -35.3385,
+              22.4862,
+              1.0
+            ],
+            "control_parent": "R_point2_033",
+            "control_world_position": [
+              -0.30698275566101074,
+              -0.6130598187446594,
+              -0.034941475838422775
+            ],
+            "control_world_axes": [
+              [
+                -0.5985894203186035,
+                0.023284494876861572,
+                -0.8007175326347351
+              ],
+              [
+                -0.6450242400169373,
+                -0.6067394018173218,
+                0.4645545780658722
+              ],
+              [
+                -0.4750100076198578,
+                0.7945596575737,
+                0.37820684909820557
+              ]
+            ]
+          },
+          {
+            "name": "R_point4_035",
+            "parent": "R_point3_034",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "R_point4_035",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "control_parent": "R_point3_034",
+            "control_world_position": [
+              -0.28239497542381287,
+              -0.654188334941864,
+              -0.05451846867799759
+            ],
+            "control_world_axes": [
+              [
+                -0.6885175108909607,
+                -0.05853334069252014,
+                -0.7228537201881409
+              ],
+              [
+                -0.5585727691650391,
+                -0.5929058790206909,
+                0.5800508260726929
+              ],
+              [
+                -0.462536484003067,
+                0.8031415939331055,
+                0.3755309581756592
+              ]
+            ]
+          },
+          {
+            "name": "R_middle1_036",
+            "parent": "R_wrist_027",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "R_middle1_036",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.602706,
+              -0.641652,
+              -0.474372,
+              0.0,
+              -0.796638,
+              0.518093,
+              0.311365,
+              0.0,
+              0.0459807,
+              0.565564,
+              -0.823422,
+              0.0,
+              -14.0884,
+              -30.0014,
+              22.5321,
+              1.0
+            ],
+            "control_parent": "R_wrist_027",
+            "control_world_position": [
+              -0.3876195549964905,
+              -0.48720693588256836,
+              -0.042611148208379745
+            ],
+            "control_world_axes": [
+              [
+                -0.5522861480712891,
+                0.006788522005081177,
+                -0.8336269855499268
+              ],
+              [
+                -0.7639856338500977,
+                -0.40430450439453125,
+                0.502855658531189
+              ],
+              [
+                -0.3336254954338074,
+                0.9145992398262024,
+                0.22847814857959747
+              ]
+            ]
+          },
+          {
+            "name": "R_middle2_037",
+            "parent": "R_middle1_036",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "R_middle2_037",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.655224,
+              -0.481284,
+              -0.582277,
+              0.0,
+              -0.753431,
+              0.472426,
+              0.457334,
+              0.0,
+              0.0549753,
+              0.738362,
+              -0.67216,
+              0.0,
+              -15.0566,
+              -34.6626,
+              19.8901,
+              1.0
+            ],
+            "control_parent": "R_middle1_036",
+            "control_world_position": [
+              -0.3587399423122406,
+              -0.5663774013519287,
+              -0.062388889491558075
+            ],
+            "control_world_axes": [
+              [
+                -0.608049213886261,
+                0.010356903076171875,
+                -0.7938318252563477
+              ],
+              [
+                -0.6354641318321228,
+                -0.6057191491127014,
+                0.47884202003479004
+              ],
+              [
+                -0.47587981820106506,
+                0.7956111431121826,
+                0.37488847970962524
+              ]
+            ]
+          },
+          {
+            "name": "R_middle3_038",
+            "parent": "R_middle2_037",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "R_middle3_038",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.651231,
+              -0.466998,
+              -0.598173,
+              0.0,
+              -0.757501,
+              0.35253,
+              0.549468,
+              0.0,
+              -0.0457264,
+              0.810947,
+              -0.58333,
+              0.0,
+              -10.7705,
+              -38.2402,
+              20.1759,
+              1.0
+            ],
+            "control_parent": "R_middle2_037",
+            "control_world_position": [
+              -0.3239493668079376,
+              -0.6245428919792175,
+              -0.08979620039463043
+            ],
+            "control_world_axes": [
+              [
+                -0.5854825973510742,
+                0.10819309949874878,
+                -0.803432822227478
+              ],
+              [
+                -0.6275495886802673,
+                -0.6878889203071594,
+                0.3646783232688904
+              ],
+              [
+                -0.5132168531417847,
+                0.7177067399024963,
+                0.4706435799598694
+              ]
+            ]
+          },
+          {
+            "name": "R_middle4_039",
+            "parent": "R_middle3_038",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "R_middle4_039",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "control_parent": "R_middle3_038",
+            "control_world_position": [
+              -0.2956569492816925,
+              -0.661219596862793,
+              -0.11134087294340134
+            ],
+            "control_world_axes": [
+              [
+                -0.5519348382949829,
+                0.06269407272338867,
+                -0.8315271735191345
+              ],
+              [
+                -0.6234229207038879,
+                -0.6932805776596069,
+                0.36153268814086914
+              ],
+              [
+                -0.5538157224655151,
+                0.7179355621337891,
+                0.42173057794570923
+              ]
+            ]
+          },
+          {
+            "name": "R_palm_040",
+            "parent": "R_wrist_027",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "R_palm_040",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.837911,
+              -0.527933,
+              -0.138534,
+              0.0,
+              -0.536061,
+              0.84375,
+              0.0269131,
+              0.0,
+              0.10268,
+              0.0968136,
+              -0.989992,
+              0.0,
+              -21.5658,
+              -9.03811,
+              29.2213,
+              1.0
+            ],
+            "control_parent": "R_wrist_027",
+            "control_world_position": [
+              -0.4039258360862732,
+              -0.4037051498889923,
+              -0.08948482573032379
+            ],
+            "control_world_axes": [
+              [
+                -0.8090274333953857,
+                0.011346697807312012,
+                -0.5876611471176147
+              ],
+              [
+                -0.5861678719520569,
+                0.058211058378219604,
+                0.8080956339836121
+              ],
+              [
+                0.04337760806083679,
+                0.9982397556304932,
+                -0.04044327139854431
+              ]
+            ]
+          },
+          {
+            "name": "R_ring1_041",
+            "parent": "R_palm_040",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "R_ring1_041",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.526337,
+              -0.721813,
+              -0.449394,
+              0.0,
+              -0.844203,
+              0.380569,
+              0.377477,
+              0.0,
+              -0.101442,
+              0.57806,
+              -0.809664,
+              0.0,
+              -10.0552,
+              -32.0385,
+              22.592,
+              1.0
+            ],
+            "control_parent": "R_palm_040",
+            "control_world_position": [
+              -0.4071801006793976,
+              -0.478594571352005,
+              -0.0864507257938385
+            ],
+            "control_world_axes": [
+              [
+                -0.44755738973617554,
+                0.13451790809631348,
+                -0.8840798139572144
+              ],
+              [
+                -0.8367221355438232,
+                -0.4118695855140686,
+                0.36091458797454834
+              ],
+              [
+                -0.3155761957168579,
+                0.9012593030929565,
+                0.29688936471939087
+              ]
+            ]
+          },
+          {
+            "name": "R_ring2_042",
+            "parent": "R_ring1_041",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "R_ring2_042",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.590614,
+              -0.586866,
+              -0.553862,
+              0.0,
+              -0.798722,
+              0.327359,
+              0.504856,
+              0.0,
+              -0.114971,
+              0.740557,
+              -0.662085,
+              0.0,
+              -10.3202,
+              -36.5043,
+              19.6968,
+              1.0
+            ],
+            "control_parent": "R_ring1_041",
+            "control_world_position": [
+              -0.38466379046440125,
+              -0.5461567640304565,
+              -0.10829102993011475
+            ],
+            "control_world_axes": [
+              [
+                -0.5108785033226013,
+                0.1624508500099182,
+                -0.8441638946533203
+              ],
+              [
+                -0.73081374168396,
+                -0.5991635918617249,
+                0.32697731256484985
+              ],
+              [
+                -0.45267462730407715,
+                0.7839723825454712,
+                0.4248211979866028
+              ]
+            ]
+          },
+          {
+            "name": "R_ring3_043",
+            "parent": "R_ring2_042",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "R_ring3_043",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.577358,
+              -0.287304,
+              -0.764274,
+              0.0,
+              -0.816411,
+              0.216218,
+              0.535464,
+              0.0,
+              0.0114086,
+              0.933116,
+              -0.359393,
+              0.0,
+              -15.2671,
+              -40.8006,
+              7.46498,
+              1.0
+            ],
+            "control_parent": "R_ring2_042",
+            "control_world_position": [
+              -0.35602429509162903,
+              -0.5937531590461731,
+              -0.1309540718793869
+            ],
+            "control_world_axes": [
+              [
+                -0.5199110507965088,
+                0.03481219708919525,
+                -0.8535107970237732
+              ],
+              [
+                -0.4653964042663574,
+                -0.8494000434875488,
+                0.24884894490242004
+              ],
+              [
+                -0.7163090705871582,
+                0.526600182056427,
+                0.45781397819519043
+              ]
+            ]
+          },
+          {
+            "name": "R_ring4_044",
+            "parent": "R_ring3_043",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "R_ring4_044",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "control_parent": "R_ring3_043",
+            "control_world_position": [
+              -0.3223007023334503,
+              -0.6185453534126282,
+              -0.15250779688358307
+            ],
+            "control_world_axes": [
+              [
+                -0.4876692295074463,
+                0.07034412026405334,
+                -0.8701898455619812
+              ],
+              [
+                -0.4898909330368042,
+                -0.8470791578292847,
+                0.20606733858585358
+              ],
+              [
+                -0.7226240634918213,
+                0.5267907977104187,
+                0.44755542278289795
+              ]
+            ]
+          },
+          {
+            "name": "R_pink1_045",
+            "parent": "R_palm_040",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "R_pink1_045",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.547032,
+              -0.778558,
+              -0.307577,
+              0.0,
+              -0.832829,
+              0.469046,
+              0.293924,
+              0.0,
+              -0.0845696,
+              0.416945,
+              -0.904989,
+              0.0,
+              -13.4862,
+              -25.9081,
+              27.6114,
+              1.0
+            ],
+            "control_parent": "R_palm_040",
+            "control_world_position": [
+              -0.41554582118988037,
+              -0.4570156931877136,
+              -0.1353408843278885
+            ],
+            "control_world_axes": [
+              [
+                -0.4716293513774872,
+                0.12244835495948792,
+                -0.8732537031173706
+              ],
+              [
+                -0.8682464361190796,
+                -0.23742839694023132,
+                0.4356326460838318
+              ],
+              [
+                -0.15399271249771118,
+                0.9636565446853638,
+                0.21829354763031006
+              ]
+            ]
+          },
+          {
+            "name": "R_pink2_046",
+            "parent": "R_pink1_045",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "R_pink2_046",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.495389,
+              -0.554393,
+              -0.668758,
+              0.0,
+              -0.861938,
+              0.21804,
+              0.457736,
+              0.0,
+              -0.10795,
+              0.803185,
+              -0.585867,
+              0.0,
+              -11.9104,
+              -38.17,
+              13.2272,
+              1.0
+            ],
+            "control_parent": "R_pink1_045",
+            "control_world_position": [
+              -0.4072689414024353,
+              -0.5088107585906982,
+              -0.14707382023334503
+            ],
+            "control_world_axes": [
+              [
+                -0.4149390757083893,
+                0.13414055109024048,
+                -0.8999066352844238
+              ],
+              [
+                -0.7038631439208984,
+                -0.6740699410438538,
+                0.22406791150569916
+              ],
+              [
+                -0.5765434503555298,
+                0.7263855934143066,
+                0.3741145133972168
+              ]
+            ]
+          },
+          {
+            "name": "R_pink3_047",
+            "parent": "R_pink2_046",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "R_pink3_047",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              -0.542058,
+              -0.309183,
+              -0.781395,
+              0.0,
+              -0.824754,
+              0.0174737,
+              0.565222,
+              0.0,
+              -0.161103,
+              0.950842,
+              -0.264471,
+              0.0,
+              -10.3156,
+              -41.541,
+              2.16225,
+              1.0
+            ],
+            "control_parent": "R_pink2_046",
+            "control_world_position": [
+              -0.38232991099357605,
+              -0.5402313470840454,
+              -0.16325655579566956
+            ],
+            "control_world_axes": [
+              [
+                -0.45324376225471497,
+                0.19723859429359436,
+                -0.8692910671234131
+              ],
+              [
+                -0.4782360792160034,
+                -0.8767832517623901,
+                0.05041118711233139
+              ],
+              [
+                -0.7522368431091309,
+                0.4385749101638794,
+                0.4917231798171997
+              ]
+            ]
+          },
+          {
+            "name": "R_pink4_048",
+            "parent": "R_pink3_047",
+            "use_deform": true,
+            "constraints": [
+              {
+                "type": "COPY_TRANSFORMS",
+                "target": "R_pink4_048",
+                "influence": 1.0,
+                "muted": false,
+                "owner_space": "WORLD",
+                "target_space": "WORLD"
+              }
+            ],
+            "inverse_bind": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "control_parent": "R_pink3_047",
+            "control_world_position": [
+              -0.349420964717865,
+              -0.5594182014465332,
+              -0.18476852774620056
+            ],
+            "control_world_axes": [
+              [
+                -0.46892571449279785,
+                0.1679171621799469,
+                -0.8671289086341858
+              ],
+              [
+                -0.4628697633743286,
+                -0.8828680515289307,
+                0.07934554666280746
+              ],
+              [
+                -0.7522369027137756,
+                0.4385749101638794,
+                0.49172329902648926
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "images": [
+      {
+        "name": "armAO.png",
+        "size": [
+          2048,
+          2048
+        ],
+        "packed": true,
+        "packed_sha256": "79f9cdd920ff0d4b3a17ff949fa739da75a1ca6113c40629430c09debbf29753"
+      },
+      {
+        "name": "armColor.png",
+        "size": [
+          2048,
+          2048
+        ],
+        "packed": true,
+        "packed_sha256": "6b9beb5ddf39830b0e797e208417ce89787f21bf346105c245df9e061898de81"
+      },
+      {
+        "name": "armnormal.png [data]",
+        "size": [
+          2048,
+          2048
+        ],
+        "packed": true,
+        "packed_sha256": "b0b7500ec2849243a92bee5b3a26adf5c537256fc4f4dc060a662bd8017d226e"
+      },
+      {
+        "name": "armRoughness.png [data]",
+        "size": [
+          2048,
+          2048
+        ],
+        "packed": true,
+        "packed_sha256": "525cc2dcc924a82697d666e093b8379f920384d0b049229889e9d1ddb81f24ff"
+      }
+    ]
+  },
+  "fixed_cameras": {
+    "Asset camera": {
+      "matrix_world": [
+        [
+          0.8859126567840576,
+          0.19867302477359772,
+          -0.41915130615234375,
+          -0.5789523720741272
+        ],
+        [
+          -0.4638521075248718,
+          0.37944626808166504,
+          -0.8005384206771851,
+          -1.3835763931274414
+        ],
+        [
+          8.991563049676188e-10,
+          0.903631329536438,
+          0.42831113934516907,
+          0.524013102054596
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "type": "PERSP",
+      "ortho_scale": 6.0
+    },
+    "Hands inspection camera": {
+      "matrix_world": [
+        [
+          0.8859126567840576,
+          0.19867302477359772,
+          -0.41915130615234375,
+          -1.151871919631958
+        ],
+        [
+          -0.4638521075248718,
+          0.37944626808166504,
+          -0.8005384206771851,
+          -2.7645952701568604
+        ],
+        [
+          8.991563049676188e-10,
+          0.903631329536438,
+          0.42831113934516907,
+          1.1227046251296997
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "type": "ORTHO",
+      "ortho_scale": 1.350000023841858
+    }
+  },
+  "neutral": {
+    "moved_vertices": 0,
+    "max_displacement_m": 5.495474017239025e-07,
+    "rms_displacement_m": 2.0045179758358906e-07
+  },
+  "grip_offsets": [
+    {
+      "control": "L_thumb1_05",
+      "bone": "L_thumb1_05",
+      "local_axis": "X",
+      "degrees": -10
+    },
+    {
+      "control": "L_thumb2_06",
+      "bone": "L_thumb2_06",
+      "local_axis": "X",
+      "degrees": -25
+    },
+    {
+      "control": "L_thumb3_07",
+      "bone": "L_thumb3_07",
+      "local_axis": "X",
+      "degrees": -25
+    },
+    {
+      "control": "L_point1_09",
+      "bone": "L_point1_09",
+      "local_axis": "X",
+      "degrees": -35
+    },
+    {
+      "control": "L_point2_00",
+      "bone": "L_point2_00",
+      "local_axis": "X",
+      "degrees": -45
+    },
+    {
+      "control": "L_point3_010",
+      "bone": "L_point3_010",
+      "local_axis": "X",
+      "degrees": -30
+    },
+    {
+      "control": "L_middle1_012",
+      "bone": "L_middle1_012",
+      "local_axis": "X",
+      "degrees": -35
+    },
+    {
+      "control": "L_middle2_013",
+      "bone": "L_middle2_013",
+      "local_axis": "X",
+      "degrees": -45
+    },
+    {
+      "control": "L_middle3_014",
+      "bone": "L_middle3_014",
+      "local_axis": "X",
+      "degrees": -30
+    },
+    {
+      "control": "L_ring1_017",
+      "bone": "L_ring1_017",
+      "local_axis": "X",
+      "degrees": -35
+    },
+    {
+      "control": "L_ring2_018",
+      "bone": "L_ring2_018",
+      "local_axis": "X",
+      "degrees": -45
+    },
+    {
+      "control": "L_ring3_019",
+      "bone": "L_ring3_019",
+      "local_axis": "X",
+      "degrees": -30
+    },
+    {
+      "control": "L_pink1_021",
+      "bone": "L_pink1_021",
+      "local_axis": "X",
+      "degrees": -35
+    },
+    {
+      "control": "L_pink2_022",
+      "bone": "L_pink2_022",
+      "local_axis": "X",
+      "degrees": -45
+    },
+    {
+      "control": "L_pink3_023",
+      "bone": "L_pink3_023",
+      "local_axis": "X",
+      "degrees": -30
+    },
+    {
+      "control": "L_wrist_04",
+      "bone": "L_wrist_04",
+      "local_axis": "X",
+      "degrees": -8
+    },
+    {
+      "control": "R_thumb1_028",
+      "bone": "R_thumb1_028",
+      "local_axis": "X",
+      "degrees": -10
+    },
+    {
+      "control": "R_thumb2_029",
+      "bone": "R_thumb2_029",
+      "local_axis": "X",
+      "degrees": -25
+    },
+    {
+      "control": "R_thumb3_030",
+      "bone": "R_thumb3_030",
+      "local_axis": "X",
+      "degrees": -25
+    },
+    {
+      "control": "R_point1_032",
+      "bone": "R_point1_032",
+      "local_axis": "X",
+      "degrees": -35
+    },
+    {
+      "control": "R_point2_033",
+      "bone": "R_point2_033",
+      "local_axis": "X",
+      "degrees": -45
+    },
+    {
+      "control": "R_point3_034",
+      "bone": "R_point3_034",
+      "local_axis": "X",
+      "degrees": -30
+    },
+    {
+      "control": "R_middle1_036",
+      "bone": "R_middle1_036",
+      "local_axis": "X",
+      "degrees": -35
+    },
+    {
+      "control": "R_middle2_037",
+      "bone": "R_middle2_037",
+      "local_axis": "X",
+      "degrees": -45
+    },
+    {
+      "control": "R_middle3_038",
+      "bone": "R_middle3_038",
+      "local_axis": "X",
+      "degrees": -30
+    },
+    {
+      "control": "R_ring1_041",
+      "bone": "R_ring1_041",
+      "local_axis": "X",
+      "degrees": -35
+    },
+    {
+      "control": "R_ring2_042",
+      "bone": "R_ring2_042",
+      "local_axis": "X",
+      "degrees": -45
+    },
+    {
+      "control": "R_ring3_043",
+      "bone": "R_ring3_043",
+      "local_axis": "X",
+      "degrees": -30
+    },
+    {
+      "control": "R_pink1_045",
+      "bone": "R_pink1_045",
+      "local_axis": "X",
+      "degrees": -35
+    },
+    {
+      "control": "R_pink2_046",
+      "bone": "R_pink2_046",
+      "local_axis": "X",
+      "degrees": -45
+    },
+    {
+      "control": "R_pink3_047",
+      "bone": "R_pink3_047",
+      "local_axis": "X",
+      "degrees": -30
+    },
+    {
+      "control": "R_wrist_027",
+      "bone": "R_wrist_027",
+      "local_axis": "X",
+      "degrees": -8
+    }
+  ],
+  "grip": {
+    "moved_vertices": 3416,
+    "max_displacement_m": 0.25130873797886993,
+    "rms_displacement_m": 0.08991860221030992
+  },
+  "independent_reopens": {
+    "neutral": {
+      "status": "passed",
+      "file": "/home/minjune/games/terminator-v2/revolver-imported-hands/generated/imported-hands/neutral.blend",
+      "vertices_checked": 4246,
+      "max_source_skin_error_m": 2.0611193300187475e-06,
+      "max_reopen_coordinate_error_m": 0.0,
+      "structural_signature": "1441ea79b88e6fbd687e93c7b1f67bf2ed389d32dffe521031f477c8888b8e26",
+      "packed_images": 4,
+      "source_constraints_retained": 49,
+      "fixed_full_camera_verified": true
+    },
+    "test-grip": {
+      "status": "passed",
+      "file": "/home/minjune/games/terminator-v2/revolver-imported-hands/generated/imported-hands/test-grip.blend",
+      "vertices_checked": 4246,
+      "max_source_skin_error_m": 2.0369402268179437e-06,
+      "max_reopen_coordinate_error_m": 0.0,
+      "structural_signature": "1441ea79b88e6fbd687e93c7b1f67bf2ed389d32dffe521031f477c8888b8e26",
+      "packed_images": 4,
+      "source_constraints_retained": 49,
+      "fixed_full_camera_verified": true
+    }
+  },
+  "render_checks": {
+    "neutral.png": {
+      "width": 640,
+      "height": 360,
+      "rgb_stddev": 19.381668703126465
+    },
+    "test-grip.png": {
+      "width": 640,
+      "height": 360,
+      "rgb_stddev": 18.080775908776538
+    },
+    "changed_pixels": 12101,
+    "neutral-detail.png": {
+      "width": 640,
+      "height": 360,
+      "rgb_stddev": 22.643698206038408
+    },
+    "test-grip-detail.png": {
+      "width": 640,
+      "height": 360,
+      "rgb_stddev": 21.559144447745805
+    },
+    "changed_pixels-detail": 18309
+  },
+  "artifacts": {
+    "source/model.blend": {
+      "path": "/home/minjune/games/terminator-v2/revolver-imported-hands/generated/imported-hands/source/model.blend",
+      "bytes": 11814538,
+      "sha256": "1a12750a105ac7bdc13943ab1b7f077cecbc673a9f5d6706eccfa38918806606"
+    },
+    "source/status.json": {
+      "path": "/home/minjune/games/terminator-v2/revolver-imported-hands/generated/imported-hands/source/status.json",
+      "bytes": 1376,
+      "sha256": "77f2cdb2e5bfea59f4525967f10f012ce33b7a204ebf125baaf64ecf5093a5b8"
+    },
+    "source/reopen-validation.json": {
+      "path": "/home/minjune/games/terminator-v2/revolver-imported-hands/generated/imported-hands/source/reopen-validation.json",
+      "bytes": 225,
+      "sha256": "80a47ff074c53027b08ae267d430c185b85b48e9008673a030e095490433e81c"
+    },
+    "neutral.blend": {
+      "path": "/home/minjune/games/terminator-v2/revolver-imported-hands/generated/imported-hands/neutral.blend",
+      "bytes": 11817736,
+      "sha256": "e82e891b550408e7f7005877655b89558cedb1375c53a1f7d312f8da0dc0eca0"
+    },
+    "test-grip.blend": {
+      "path": "/home/minjune/games/terminator-v2/revolver-imported-hands/generated/imported-hands/test-grip.blend",
+      "bytes": 11818417,
+      "sha256": "cf18ab2471c1d697c16c71cc9d47127a053ce63c540a39870a52c5cd122a303e"
+    },
+    "neutral.png": {
+      "path": "/home/minjune/games/terminator-v2/revolver-imported-hands/generated/imported-hands/neutral.png",
+      "bytes": 253121,
+      "sha256": "c8220fb40ed98200b0436f15c513d53546260eb32251de0c11f94ee49bedff34"
+    },
+    "test-grip.png": {
+      "path": "/home/minjune/games/terminator-v2/revolver-imported-hands/generated/imported-hands/test-grip.png",
+      "bytes": 248794,
+      "sha256": "380dc5c197b2a9f649108e5715b107b096bacb2fcec626a59534e1b5d4d65364"
+    },
+    "neutral-detail.png": {
+      "path": "/home/minjune/games/terminator-v2/revolver-imported-hands/generated/imported-hands/neutral-detail.png",
+      "bytes": 261567,
+      "sha256": "ed407298acf60a9323abd8a37f3ccfae8b17b4371e4fa61adbd937073b398f35"
+    },
+    "test-grip-detail.png": {
+      "path": "/home/minjune/games/terminator-v2/revolver-imported-hands/generated/imported-hands/test-grip-detail.png",
+      "bytes": 258198,
+      "sha256": "37c07a3e5486849d8735ceee8e2044e9fedfa1283d50262c5a22bf55ab2b035e"
+    }
+  },
+  "limitations": [
+    "Recovered public viewer representation; original authoring rig, IK and authored constraints are unavailable.",
+    "Pose retained source transform objects; WORLD COPY_TRANSFORMS overrides direct pose-bone edits.",
+    "Ten fourth finger joints are unweighted endpoints. Chest is also unweighted; 38 bones carry weights.",
+    "Four 2048x2048 maps retained and packed in inspection blends; AO is reference-only, not connected in recovered shader.",
+    "Importer presentation root normalizes the asset maximum dimension to 2m; game-unit scale remains to be established.",
+    "Static grip is a deformation test, not fitted to any weapon; no collision/contact or runtime animation validation.",
+    "No source animation clips are present."
+  ],
+  "rig_usable": true
+}

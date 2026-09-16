@@ -1,0 +1,62 @@
+{
+  "source": "https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack",
+  "author": "3DModelsCC0",
+  "license": "CC0-1.0",
+  "shippable": true,
+  "textureResolution": 2048,
+  "sourceTextureSizes": {
+    "albedo": [
+      2048,
+      2048
+    ],
+    "normal": [
+      2048,
+      2048
+    ],
+    "roughness": [
+      2048,
+      2048
+    ],
+    "metallic": [
+      2048,
+      2048
+    ]
+  },
+  "notes": [
+    "AO is a neutral white channel; no invented occlusion detail."
+  ],
+  "triangles": 4808,
+  "sourceMeshNames": [
+    "Trigger",
+    "Magazine",
+    "Scope",
+    "Bolt",
+    "Barrel",
+    "FlipFlap",
+    "IronSight",
+    "Stock"
+  ],
+  "boundsMetres": [
+    [
+      -0.8244538307189941,
+      -0.029311826452612877,
+      -0.08835941553115845
+    ],
+    [
+      0.3058708608150482,
+      0.028016168624162674,
+      0.31183165311813354
+    ]
+  ],
+  "lengthMetres": 1.15,
+  "pivot": "Estimated grip center; static display candidate",
+  "decimation": false,
+  "removedDetachedSpareProp": false,
+  "partOffsets": {
+    "Magazine": [
+      0,
+      0,
+      0.035
+    ]
+  }
+}

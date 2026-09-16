@@ -163,3 +163,264 @@ The unavailable Barrel 02 URLs returned 404. No files came from another checkout
 Source files: `barrel_03_2k.gltf`, `barrel_03.bin`, `barrel_03_diff_2k.jpg`, `barrel_03_nor_gl_2k.jpg`, and `barrel_03_arm_2k.jpg`. Each is CC0 1.0.
 Study photos and KF2 frames retain their source copyrights. They remain under excluded `docs/reference/props/barrel/`.
 The bake uses photo colour measurements but copies no copyrighted study image pixels.
+## Bullet jacket maps
+
+Original procedural 512 by 512 bakes, tools/bake-bullets.py. Project-owned artwork. No external pixels.
+
+| File | Source and license |
+| --- | --- |
+| `assets/textures/bullets/bullet-albedo.png` | Original procedural metal wear; project asset. |
+| `assets/textures/bullets/bullet-normal.png` | Original procedural jacket grooves; project asset. |
+| `assets/textures/bullets/bullet-roughness.png` | Original procedural machining and scratches; project asset. |
+| `assets/textures/bullets/bullet-metalness.png` | Original procedural copper surface; project asset. |
+| `assets/textures/bullets/bullet-ao.png` | Original procedural groove occlusion; project asset. |
+| `assets/textures/bullets/bullet-emissive.png` | Original procedural hot base mask; project asset. |
+
+## Weapon model atlases
+
+All maps are 2048 by 2048 pixels. ORM packs AO, roughness, and metalness. No reference pixels are used.
+
+| File | Source | License |
+| --- | --- | --- |
+| `models/weapons/pistol/pistol-albedo.png` | Original Blender procedural bake, tools/blender/revolver/build.py | CC0-1.0 |
+| `models/weapons/pistol/pistol-normal.png` | Original Blender procedural bake, tools/blender/revolver/build.py | CC0-1.0 |
+| `models/weapons/pistol/pistol-orm.png` | Original Blender procedural bake, tools/blender/revolver/build.py | CC0-1.0 |
+| `models/weapons/pistol/pistol.gltf` | Original traced Blender geometry, tools/blender/revolver/model.py | CC0-1.0 |
+| `models/weapons/pistol/pistol.bin` | Original traced Blender geometry, tools/blender/revolver/model.py | CC0-1.0 |
+| `models/weapons/m4/m4-albedo.jpg` | Original procedural bake, tools/weapons/bake-atlases.py | CC0-1.0 |
+| `models/weapons/m4/m4-normal.png` | Original procedural bake, tools/weapons/bake-atlases.py | CC0-1.0 |
+| `models/weapons/m4/m4-orm.png` | Original procedural bake, tools/weapons/bake-atlases.py | CC0-1.0 |
+| `models/weapons/m4/m4.gltf` | Original geometry, tools/build-weapon-assets.mjs | CC0-1.0 |
+| `models/weapons/m4/m4.bin` | Original geometry, tools/build-weapon-assets.mjs | CC0-1.0 |
+| `models/weapons/shotgun/shotgun-albedo.jpg` | Original procedural bake, tools/weapons/bake-atlases.py | CC0-1.0 |
+| `models/weapons/shotgun/shotgun-normal.png` | Original procedural bake, tools/weapons/bake-atlases.py | CC0-1.0 |
+| `models/weapons/shotgun/shotgun-orm.png` | Original procedural bake, tools/weapons/bake-atlases.py | CC0-1.0 |
+| `models/weapons/shotgun/shotgun.gltf` | Original geometry, tools/build-weapon-assets.mjs | CC0-1.0 |
+| `models/weapons/shotgun/shotgun.bin` | Original geometry, tools/build-weapon-assets.mjs | CC0-1.0 |
+| `models/weapons/plasma/plasma-albedo.jpg` | Original procedural bake, tools/weapons/bake-atlases.py | CC0-1.0 |
+| `models/weapons/plasma/plasma-normal.png` | Original procedural bake, tools/weapons/bake-atlases.py | CC0-1.0 |
+| `models/weapons/plasma/plasma-orm.png` | Original procedural bake, tools/weapons/bake-atlases.py | CC0-1.0 |
+| `models/weapons/plasma/plasma-emissive.png` | Original procedural bake, tools/weapons/bake-atlases.py | CC0-1.0 |
+| `models/weapons/plasma/plasma.gltf` | Original geometry, tools/build-weapon-assets.mjs | CC0-1.0 |
+| `models/weapons/plasma/plasma.bin` | Original geometry, tools/build-weapon-assets.mjs | CC0-1.0 |
+| `models/weapons/sniper/sniper-albedo.jpg` | Original procedural bake, tools/weapons/bake-atlases.py | CC0-1.0 |
+| `models/weapons/sniper/sniper-normal.png` | Original procedural bake, tools/weapons/bake-atlases.py | CC0-1.0 |
+| `models/weapons/sniper/sniper-orm.png` | Original procedural bake, tools/weapons/bake-atlases.py | CC0-1.0 |
+| `models/weapons/sniper/sniper.gltf` | Original geometry, tools/build-weapon-assets.mjs | CC0-1.0 |
+| `models/weapons/sniper/sniper.bin` | Original geometry, tools/build-weapon-assets.mjs | CC0-1.0 |
+| `models/weapons/launcher/launcher-albedo.jpg` | Original procedural bake, tools/weapons/bake-atlases.py | CC0-1.0 |
+| `models/weapons/launcher/launcher-normal.png` | Original procedural bake, tools/weapons/bake-atlases.py | CC0-1.0 |
+| `models/weapons/launcher/launcher-orm.png` | Original procedural bake, tools/weapons/bake-atlases.py | CC0-1.0 |
+| `models/weapons/launcher/launcher.gltf` | Original geometry, tools/build-weapon-assets.mjs | CC0-1.0 |
+| `models/weapons/launcher/launcher.bin` | Original geometry, tools/build-weapon-assets.mjs | CC0-1.0 |
+| `models/weapons/knife/knife-albedo.jpg` | Original procedural bake, tools/weapons/bake-atlases.py | CC0-1.0 |
+| `models/weapons/knife/knife-normal.png` | Original procedural bake, tools/weapons/bake-atlases.py | CC0-1.0 |
+| `models/weapons/knife/knife-orm.png` | Original procedural bake, tools/weapons/bake-atlases.py | CC0-1.0 |
+| `models/weapons/knife/knife.gltf` | Original geometry, tools/build-weapon-assets.mjs | CC0-1.0 |
+| `models/weapons/knife/knife.bin` | Original geometry, tools/build-weapon-assets.mjs | CC0-1.0 |
+| `models/weapons/grenade/grenade-albedo.jpg` | Original procedural bake, tools/weapons/bake-atlases.py | CC0-1.0 |
+| `models/weapons/grenade/grenade-normal.png` | Original procedural bake, tools/weapons/bake-atlases.py | CC0-1.0 |
+| `models/weapons/grenade/grenade-orm.png` | Original procedural bake, tools/weapons/bake-atlases.py | CC0-1.0 |
+| `models/weapons/grenade/grenade.gltf` | Original geometry, tools/build-weapon-assets.mjs | CC0-1.0 |
+| `models/weapons/grenade/grenade.bin` | Original geometry, tools/build-weapon-assets.mjs | CC0-1.0 |
+| `models/weapons/hands/hands-albedo.jpg` | Original procedural bake, tools/weapons/bake-atlases.py | CC0-1.0 |
+| `models/weapons/hands/hands-normal.png` | Original procedural bake, tools/weapons/bake-atlases.py | CC0-1.0 |
+| `models/weapons/hands/hands-orm.png` | Original procedural bake, tools/weapons/bake-atlases.py | CC0-1.0 |
+| `models/weapons/hands/hands.gltf` | Original geometry, tools/build-weapon-assets.mjs | CC0-1.0 |
+| `models/weapons/hands/hands.bin` | Original geometry, tools/build-weapon-assets.mjs | CC0-1.0 |
+
+## Blender revolver pass 3
+
+The anatomical hand source is Dan Ulrich's `Hand  - Realistic`, in Blender Human Base Meshes v1.4.1.
+The asset metadata states `CC0`. The embedded bundle README states that all supplied assets use CC0.
+The unrelated embedded Rain Rig license is not the hand asset's license. No Rain Rig data is used.
+
+Exact source: https://download.blender.org/demo/asset-bundles/human-base-meshes/human-base-meshes-bundle-v1.4.1.zip
+License listing: https://www.blender.org/download/demo-files/
+License text: https://creativecommons.org/publicdomain/zero/1.0/
+
+| File | Derivation | License |
+|---|---|---|
+| `models/weapons/pistol/pistol.gltf` | Original revolver and rig; posed, decimated CC0 Dan Ulrich hands and short forearms | CC0-1.0 |
+| `models/weapons/pistol/pistol.bin` | Geometry, skin weights, UVs, and clips for the same derived asset | CC0-1.0 |
+| `models/weapons/pistol/pistol-albedo.png` | Original 2048 atlas with stained CC0 Poly Haven walnut; reference statistics guide colors | CC0-1.0 |
+| `models/weapons/pistol/pistol-normal.png` | Original surface-detail bake with CC0 Poly Haven walnut pores | CC0-1.0 |
+| `models/weapons/pistol/pistol-orm.png` | Baked occlusion, roughness, and metalness for the same asset | CC0-1.0 |
+
+The source bundle stays in gitignored `tools/blender/cache/`. Only derived hand geometry enters game assets.
+The photo and video references remain under `docs/reference/`, excluded from publishing.
+Their actual pixels do not enter the procedural texture atlases.
+
+Poly Haven walnut source: https://polyhaven.com/a/black_walnut_veneer_01
+License: https://polyhaven.com/license (CC0).
+
+| Cache file | Exact source URL | Use |
+|---|---|---|
+| `black_walnut_veneer_01_diff_2k.jpg` | https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/black_walnut_veneer_01/black_walnut_veneer_01_diff_2k.jpg | Stained albedo and pore bump baked into pistol atlases; CC0 |
+| `black_walnut_veneer_01_rough_2k.jpg` | https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/black_walnut_veneer_01/black_walnut_veneer_01_rough_2k.jpg | Varnish roughness baked into pistol ORM; CC0 |
+| `black_walnut_veneer_01_nor_gl_2k.jpg` | https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/black_walnut_veneer_01/black_walnut_veneer_01_nor_gl_2k.jpg | Study only; not used in exported textures; CC0 |
+
+## External weapon candidate files
+
+Models and source textures retain these licenses. Conversion changes scale, pose, format, and texture packing.
+
+| File | Author | License | Source |
+| --- | --- | --- | --- |
+| `assets/models/weapons-candidates/revolver/pavel-cc0/conversion.json` | Lucian Pavel | CC0-1.0 | [pavel-cc0](https://opengameart.org/content/old-revolver) |
+| `assets/models/weapons-candidates/revolver/pavel-cc0/main-albedo.png` | Lucian Pavel | CC0-1.0 | [pavel-cc0](https://opengameart.org/content/old-revolver) |
+| `assets/models/weapons-candidates/revolver/pavel-cc0/main-ao.png` | Lucian Pavel | CC0-1.0 | [pavel-cc0](https://opengameart.org/content/old-revolver) |
+| `assets/models/weapons-candidates/revolver/pavel-cc0/main-metallic.png` | Lucian Pavel | CC0-1.0 | [pavel-cc0](https://opengameart.org/content/old-revolver) |
+| `assets/models/weapons-candidates/revolver/pavel-cc0/main-normal.png` | Lucian Pavel | CC0-1.0 | [pavel-cc0](https://opengameart.org/content/old-revolver) |
+| `assets/models/weapons-candidates/revolver/pavel-cc0/main-orm.png` | Lucian Pavel | CC0-1.0 | [pavel-cc0](https://opengameart.org/content/old-revolver) |
+| `assets/models/weapons-candidates/revolver/pavel-cc0/main-roughness.png` | Lucian Pavel | CC0-1.0 | [pavel-cc0](https://opengameart.org/content/old-revolver) |
+| `assets/models/weapons-candidates/revolver/pavel-cc0/pavel-cc0.bin` | Lucian Pavel | CC0-1.0 | [pavel-cc0](https://opengameart.org/content/old-revolver) |
+| `assets/models/weapons-candidates/revolver/pavel-cc0/pavel-cc0.gltf` | Lucian Pavel | CC0-1.0 | [pavel-cc0](https://opengameart.org/content/old-revolver) |
+| `assets/models/weapons-candidates/revolver/loafbrr-cc0/conversion.json` | loafbrr_1 | CC0-1.0 | [loafbrr-cc0](https://opengameart.org/content/revolver-game-asset) |
+| `assets/models/weapons-candidates/revolver/loafbrr-cc0/loafbrr-cc0.bin` | loafbrr_1 | CC0-1.0 | [loafbrr-cc0](https://opengameart.org/content/revolver-game-asset) |
+| `assets/models/weapons-candidates/revolver/loafbrr-cc0/loafbrr-cc0.gltf` | loafbrr_1 | CC0-1.0 | [loafbrr-cc0](https://opengameart.org/content/revolver-game-asset) |
+| `assets/models/weapons-candidates/revolver/loafbrr-cc0/main-albedo.png` | loafbrr_1 | CC0-1.0 | [loafbrr-cc0](https://opengameart.org/content/revolver-game-asset) |
+| `assets/models/weapons-candidates/revolver/loafbrr-cc0/main-ao.png` | loafbrr_1 | CC0-1.0 | [loafbrr-cc0](https://opengameart.org/content/revolver-game-asset) |
+| `assets/models/weapons-candidates/revolver/loafbrr-cc0/main-metallic.png` | loafbrr_1 | CC0-1.0 | [loafbrr-cc0](https://opengameart.org/content/revolver-game-asset) |
+| `assets/models/weapons-candidates/revolver/loafbrr-cc0/main-normal.png` | loafbrr_1 | CC0-1.0 | [loafbrr-cc0](https://opengameart.org/content/revolver-game-asset) |
+| `assets/models/weapons-candidates/revolver/loafbrr-cc0/main-orm.png` | loafbrr_1 | CC0-1.0 | [loafbrr-cc0](https://opengameart.org/content/revolver-game-asset) |
+| `assets/models/weapons-candidates/revolver/loafbrr-cc0/main-roughness.png` | loafbrr_1 | CC0-1.0 | [loafbrr-cc0](https://opengameart.org/content/revolver-game-asset) |
+| `assets/models/weapons-candidates/revolver/detective-cc0/bullet-albedo.png` | LonesomeDucky | CC0-1.0 | [detective-cc0](https://opengameart.org/content/detective-special-revolver) |
+| `assets/models/weapons-candidates/revolver/detective-cc0/bullet-ao.png` | LonesomeDucky | CC0-1.0 | [detective-cc0](https://opengameart.org/content/detective-special-revolver) |
+| `assets/models/weapons-candidates/revolver/detective-cc0/bullet-metallic.png` | LonesomeDucky | CC0-1.0 | [detective-cc0](https://opengameart.org/content/detective-special-revolver) |
+| `assets/models/weapons-candidates/revolver/detective-cc0/bullet-normal.png` | LonesomeDucky | CC0-1.0 | [detective-cc0](https://opengameart.org/content/detective-special-revolver) |
+| `assets/models/weapons-candidates/revolver/detective-cc0/bullet-orm.png` | LonesomeDucky | CC0-1.0 | [detective-cc0](https://opengameart.org/content/detective-special-revolver) |
+| `assets/models/weapons-candidates/revolver/detective-cc0/bullet-roughness.png` | LonesomeDucky | CC0-1.0 | [detective-cc0](https://opengameart.org/content/detective-special-revolver) |
+| `assets/models/weapons-candidates/revolver/detective-cc0/conversion.json` | LonesomeDucky | CC0-1.0 | [detective-cc0](https://opengameart.org/content/detective-special-revolver) |
+| `assets/models/weapons-candidates/revolver/detective-cc0/detective-cc0.bin` | LonesomeDucky | CC0-1.0 | [detective-cc0](https://opengameart.org/content/detective-special-revolver) |
+| `assets/models/weapons-candidates/revolver/detective-cc0/detective-cc0.gltf` | LonesomeDucky | CC0-1.0 | [detective-cc0](https://opengameart.org/content/detective-special-revolver) |
+| `assets/models/weapons-candidates/revolver/detective-cc0/main-albedo.png` | LonesomeDucky | CC0-1.0 | [detective-cc0](https://opengameart.org/content/detective-special-revolver) |
+| `assets/models/weapons-candidates/revolver/detective-cc0/main-ao.png` | LonesomeDucky | CC0-1.0 | [detective-cc0](https://opengameart.org/content/detective-special-revolver) |
+| `assets/models/weapons-candidates/revolver/detective-cc0/main-metallic.png` | LonesomeDucky | CC0-1.0 | [detective-cc0](https://opengameart.org/content/detective-special-revolver) |
+| `assets/models/weapons-candidates/revolver/detective-cc0/main-normal.png` | LonesomeDucky | CC0-1.0 | [detective-cc0](https://opengameart.org/content/detective-special-revolver) |
+| `assets/models/weapons-candidates/revolver/detective-cc0/main-orm.png` | LonesomeDucky | CC0-1.0 | [detective-cc0](https://opengameart.org/content/detective-special-revolver) |
+| `assets/models/weapons-candidates/revolver/detective-cc0/main-roughness.png` | LonesomeDucky | CC0-1.0 | [detective-cc0](https://opengameart.org/content/detective-special-revolver) |
+| `assets/models/weapons-candidates/revolver/webley-ccby/conversion.json` | Ulf | CC-BY-3.0 | [webley-ccby](https://opengameart.org/content/webley-mark-ii-revolver) |
+| `assets/models/weapons-candidates/revolver/webley-ccby/main-albedo.png` | Ulf | CC-BY-3.0 | [webley-ccby](https://opengameart.org/content/webley-mark-ii-revolver) |
+| `assets/models/weapons-candidates/revolver/webley-ccby/main-ao.png` | Ulf | CC-BY-3.0 | [webley-ccby](https://opengameart.org/content/webley-mark-ii-revolver) |
+| `assets/models/weapons-candidates/revolver/webley-ccby/main-metallic.png` | Ulf | CC-BY-3.0 | [webley-ccby](https://opengameart.org/content/webley-mark-ii-revolver) |
+| `assets/models/weapons-candidates/revolver/webley-ccby/main-normal.png` | Ulf | CC-BY-3.0 | [webley-ccby](https://opengameart.org/content/webley-mark-ii-revolver) |
+| `assets/models/weapons-candidates/revolver/webley-ccby/main-orm.png` | Ulf | CC-BY-3.0 | [webley-ccby](https://opengameart.org/content/webley-mark-ii-revolver) |
+| `assets/models/weapons-candidates/revolver/webley-ccby/main-roughness.png` | Ulf | CC-BY-3.0 | [webley-ccby](https://opengameart.org/content/webley-mark-ii-revolver) |
+| `assets/models/weapons-candidates/revolver/webley-ccby/webley-ccby.bin` | Ulf | CC-BY-3.0 | [webley-ccby](https://opengameart.org/content/webley-mark-ii-revolver) |
+| `assets/models/weapons-candidates/revolver/webley-ccby/webley-ccby.gltf` | Ulf | CC-BY-3.0 | [webley-ccby](https://opengameart.org/content/webley-mark-ii-revolver) |
+| `assets/models/weapons-candidates/m4/3dmodels-cc0/3dmodels-cc0.bin` | 3DModelsCC0; mirrored by nisu | CC0-1.0 | [3dmodels-cc0](https://opengameart.org/content/m4a1-assault-rifle) |
+| `assets/models/weapons-candidates/m4/3dmodels-cc0/3dmodels-cc0.gltf` | 3DModelsCC0; mirrored by nisu | CC0-1.0 | [3dmodels-cc0](https://opengameart.org/content/m4a1-assault-rifle) |
+| `assets/models/weapons-candidates/m4/3dmodels-cc0/conversion.json` | 3DModelsCC0; mirrored by nisu | CC0-1.0 | [3dmodels-cc0](https://opengameart.org/content/m4a1-assault-rifle) |
+| `assets/models/weapons-candidates/m4/3dmodels-cc0/main-albedo.png` | 3DModelsCC0; mirrored by nisu | CC0-1.0 | [3dmodels-cc0](https://opengameart.org/content/m4a1-assault-rifle) |
+| `assets/models/weapons-candidates/m4/3dmodels-cc0/main-ao.png` | 3DModelsCC0; mirrored by nisu | CC0-1.0 | [3dmodels-cc0](https://opengameart.org/content/m4a1-assault-rifle) |
+| `assets/models/weapons-candidates/m4/3dmodels-cc0/main-metallic.png` | 3DModelsCC0; mirrored by nisu | CC0-1.0 | [3dmodels-cc0](https://opengameart.org/content/m4a1-assault-rifle) |
+| `assets/models/weapons-candidates/m4/3dmodels-cc0/main-normal.png` | 3DModelsCC0; mirrored by nisu | CC0-1.0 | [3dmodels-cc0](https://opengameart.org/content/m4a1-assault-rifle) |
+| `assets/models/weapons-candidates/m4/3dmodels-cc0/main-orm.png` | 3DModelsCC0; mirrored by nisu | CC0-1.0 | [3dmodels-cc0](https://opengameart.org/content/m4a1-assault-rifle) |
+| `assets/models/weapons-candidates/m4/3dmodels-cc0/main-roughness.png` | 3DModelsCC0; mirrored by nisu | CC0-1.0 | [3dmodels-cc0](https://opengameart.org/content/m4a1-assault-rifle) |
+| `assets/models/weapons-candidates/shotgun/3dmodels-cc0/3dmodels-cc0.bin` | 3DModelsCC0 | CC0-1.0 | [3dmodels-cc0](https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack) |
+| `assets/models/weapons-candidates/shotgun/3dmodels-cc0/3dmodels-cc0.gltf` | 3DModelsCC0 | CC0-1.0 | [3dmodels-cc0](https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack) |
+| `assets/models/weapons-candidates/shotgun/3dmodels-cc0/conversion.json` | 3DModelsCC0 | CC0-1.0 | [3dmodels-cc0](https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack) |
+| `assets/models/weapons-candidates/shotgun/3dmodels-cc0/main-albedo.png` | 3DModelsCC0 | CC0-1.0 | [3dmodels-cc0](https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack) |
+| `assets/models/weapons-candidates/shotgun/3dmodels-cc0/main-ao.png` | 3DModelsCC0 | CC0-1.0 | [3dmodels-cc0](https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack) |
+| `assets/models/weapons-candidates/shotgun/3dmodels-cc0/main-metallic.png` | 3DModelsCC0 | CC0-1.0 | [3dmodels-cc0](https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack) |
+| `assets/models/weapons-candidates/shotgun/3dmodels-cc0/main-normal.png` | 3DModelsCC0 | CC0-1.0 | [3dmodels-cc0](https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack) |
+| `assets/models/weapons-candidates/shotgun/3dmodels-cc0/main-orm.png` | 3DModelsCC0 | CC0-1.0 | [3dmodels-cc0](https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack) |
+| `assets/models/weapons-candidates/shotgun/3dmodels-cc0/main-roughness.png` | 3DModelsCC0 | CC0-1.0 | [3dmodels-cc0](https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack) |
+| `assets/models/weapons-candidates/grenade/3dmodels-cc0/3dmodels-cc0.bin` | 3DModelsCC0 | CC0-1.0 | [3dmodels-cc0](https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack) |
+| `assets/models/weapons-candidates/grenade/3dmodels-cc0/3dmodels-cc0.gltf` | 3DModelsCC0 | CC0-1.0 | [3dmodels-cc0](https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack) |
+| `assets/models/weapons-candidates/grenade/3dmodels-cc0/conversion.json` | 3DModelsCC0 | CC0-1.0 | [3dmodels-cc0](https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack) |
+| `assets/models/weapons-candidates/grenade/3dmodels-cc0/main-albedo.png` | 3DModelsCC0 | CC0-1.0 | [3dmodels-cc0](https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack) |
+| `assets/models/weapons-candidates/grenade/3dmodels-cc0/main-ao.png` | 3DModelsCC0 | CC0-1.0 | [3dmodels-cc0](https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack) |
+| `assets/models/weapons-candidates/grenade/3dmodels-cc0/main-metallic.png` | 3DModelsCC0 | CC0-1.0 | [3dmodels-cc0](https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack) |
+| `assets/models/weapons-candidates/grenade/3dmodels-cc0/main-normal.png` | 3DModelsCC0 | CC0-1.0 | [3dmodels-cc0](https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack) |
+| `assets/models/weapons-candidates/grenade/3dmodels-cc0/main-orm.png` | 3DModelsCC0 | CC0-1.0 | [3dmodels-cc0](https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack) |
+| `assets/models/weapons-candidates/grenade/3dmodels-cc0/main-roughness.png` | 3DModelsCC0 | CC0-1.0 | [3dmodels-cc0](https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack) |
+| `assets/models/weapons-candidates/sniper/3dmodels-cc0/3dmodels-cc0.bin` | 3DModelsCC0 | CC0-1.0 | [3dmodels-cc0](https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack) |
+| `assets/models/weapons-candidates/sniper/3dmodels-cc0/3dmodels-cc0.gltf` | 3DModelsCC0 | CC0-1.0 | [3dmodels-cc0](https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack) |
+| `assets/models/weapons-candidates/sniper/3dmodels-cc0/conversion.json` | 3DModelsCC0 | CC0-1.0 | [3dmodels-cc0](https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack) |
+| `assets/models/weapons-candidates/sniper/3dmodels-cc0/main-albedo.png` | 3DModelsCC0 | CC0-1.0 | [3dmodels-cc0](https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack) |
+| `assets/models/weapons-candidates/sniper/3dmodels-cc0/main-ao.png` | 3DModelsCC0 | CC0-1.0 | [3dmodels-cc0](https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack) |
+| `assets/models/weapons-candidates/sniper/3dmodels-cc0/main-metallic.png` | 3DModelsCC0 | CC0-1.0 | [3dmodels-cc0](https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack) |
+| `assets/models/weapons-candidates/sniper/3dmodels-cc0/main-normal.png` | 3DModelsCC0 | CC0-1.0 | [3dmodels-cc0](https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack) |
+| `assets/models/weapons-candidates/sniper/3dmodels-cc0/main-orm.png` | 3DModelsCC0 | CC0-1.0 | [3dmodels-cc0](https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack) |
+| `assets/models/weapons-candidates/sniper/3dmodels-cc0/main-roughness.png` | 3DModelsCC0 | CC0-1.0 | [3dmodels-cc0](https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack) |
+| `assets/models/weapons-candidates/plasma/a104-ccby/a104-ccby.bin` | PrSharkey; submitted by qubodup | CC-BY-3.0 | [a104-ccby](https://opengameart.org/content/a-104-cold-fusion-assault-rifle) |
+| `assets/models/weapons-candidates/plasma/a104-ccby/a104-ccby.gltf` | PrSharkey; submitted by qubodup | CC-BY-3.0 | [a104-ccby](https://opengameart.org/content/a-104-cold-fusion-assault-rifle) |
+| `assets/models/weapons-candidates/plasma/a104-ccby/conversion.json` | PrSharkey; submitted by qubodup | CC-BY-3.0 | [a104-ccby](https://opengameart.org/content/a-104-cold-fusion-assault-rifle) |
+| `assets/models/weapons-candidates/plasma/a104-ccby/main-albedo.png` | PrSharkey; submitted by qubodup | CC-BY-3.0 | [a104-ccby](https://opengameart.org/content/a-104-cold-fusion-assault-rifle) |
+| `assets/models/weapons-candidates/plasma/a104-ccby/main-ao.png` | PrSharkey; submitted by qubodup | CC-BY-3.0 | [a104-ccby](https://opengameart.org/content/a-104-cold-fusion-assault-rifle) |
+| `assets/models/weapons-candidates/plasma/a104-ccby/main-metallic.png` | PrSharkey; submitted by qubodup | CC-BY-3.0 | [a104-ccby](https://opengameart.org/content/a-104-cold-fusion-assault-rifle) |
+| `assets/models/weapons-candidates/plasma/a104-ccby/main-normal.png` | PrSharkey; submitted by qubodup | CC-BY-3.0 | [a104-ccby](https://opengameart.org/content/a-104-cold-fusion-assault-rifle) |
+| `assets/models/weapons-candidates/plasma/a104-ccby/main-orm.png` | PrSharkey; submitted by qubodup | CC-BY-3.0 | [a104-ccby](https://opengameart.org/content/a-104-cold-fusion-assault-rifle) |
+| `assets/models/weapons-candidates/plasma/a104-ccby/main-roughness.png` | PrSharkey; submitted by qubodup | CC-BY-3.0 | [a104-ccby](https://opengameart.org/content/a-104-cold-fusion-assault-rifle) |
+| `assets/models/weapons-candidates/knife/machete-cc0/conversion.json` | Lucian Pavel | CC0-1.0 | [machete-cc0](https://opengameart.org/content/pbr-machete-cc0) |
+| `assets/models/weapons-candidates/knife/machete-cc0/machete-cc0.bin` | Lucian Pavel | CC0-1.0 | [machete-cc0](https://opengameart.org/content/pbr-machete-cc0) |
+| `assets/models/weapons-candidates/knife/machete-cc0/machete-cc0.gltf` | Lucian Pavel | CC0-1.0 | [machete-cc0](https://opengameart.org/content/pbr-machete-cc0) |
+| `assets/models/weapons-candidates/knife/machete-cc0/main-albedo.png` | Lucian Pavel | CC0-1.0 | [machete-cc0](https://opengameart.org/content/pbr-machete-cc0) |
+| `assets/models/weapons-candidates/knife/machete-cc0/main-ao.png` | Lucian Pavel | CC0-1.0 | [machete-cc0](https://opengameart.org/content/pbr-machete-cc0) |
+| `assets/models/weapons-candidates/knife/machete-cc0/main-metallic.png` | Lucian Pavel | CC0-1.0 | [machete-cc0](https://opengameart.org/content/pbr-machete-cc0) |
+| `assets/models/weapons-candidates/knife/machete-cc0/main-normal.png` | Lucian Pavel | CC0-1.0 | [machete-cc0](https://opengameart.org/content/pbr-machete-cc0) |
+| `assets/models/weapons-candidates/knife/machete-cc0/main-orm.png` | Lucian Pavel | CC0-1.0 | [machete-cc0](https://opengameart.org/content/pbr-machete-cc0) |
+| `assets/models/weapons-candidates/knife/machete-cc0/main-roughness.png` | Lucian Pavel | CC0-1.0 | [machete-cc0](https://opengameart.org/content/pbr-machete-cc0) |
+
+## HD weapon comparison derivatives
+
+Created on 2026-09-13 with Blender 5.2.1 by Codex, directed by the project owner.
+The derivatives retain CC0 1.0. The originals remain unchanged.
+Photographs and KF2 models are references only. Their pixels and meshes do not enter these derivatives.
+
+| File | Source author and derivative | License |
+| --- | --- | --- |
+| `assets/models/weapons-candidates/shotgun/3dmodels-cc0-hd/3dmodels-cc0-hd.bin` | [3DModelsCC0](https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack); Codex geometry refinement and native 2048 texture bake. | CC0 1.0 |
+| `assets/models/weapons-candidates/shotgun/3dmodels-cc0-hd/3dmodels-cc0-hd.gltf` | [3DModelsCC0](https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack); Codex geometry refinement and native 2048 texture bake. | CC0 1.0 |
+| `assets/models/weapons-candidates/shotgun/3dmodels-cc0-hd/conversion.json` | [3DModelsCC0](https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack); Codex geometry refinement and native 2048 texture bake. | CC0 1.0 |
+| `assets/models/weapons-candidates/shotgun/3dmodels-cc0-hd/main-albedo.png` | [3DModelsCC0](https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack); Codex geometry refinement and native 2048 texture bake. | CC0 1.0 |
+| `assets/models/weapons-candidates/shotgun/3dmodels-cc0-hd/main-normal.png` | [3DModelsCC0](https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack); Codex geometry refinement and native 2048 texture bake. | CC0 1.0 |
+| `assets/models/weapons-candidates/shotgun/3dmodels-cc0-hd/main-orm.png` | [3DModelsCC0](https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack); Codex geometry refinement and native 2048 texture bake. | CC0 1.0 |
+| `assets/models/weapons-candidates/revolver/loafbrr-cc0-hd/conversion.json` | [loafbrr_1](https://opengameart.org/content/revolver-game-asset); Codex geometry refinement and native 2048 texture bake. | CC0 1.0 |
+| `assets/models/weapons-candidates/revolver/loafbrr-cc0-hd/loafbrr-cc0-hd.bin` | [loafbrr_1](https://opengameart.org/content/revolver-game-asset); Codex geometry refinement and native 2048 texture bake. | CC0 1.0 |
+| `assets/models/weapons-candidates/revolver/loafbrr-cc0-hd/loafbrr-cc0-hd.gltf` | [loafbrr_1](https://opengameart.org/content/revolver-game-asset); Codex geometry refinement and native 2048 texture bake. | CC0 1.0 |
+| `assets/models/weapons-candidates/revolver/loafbrr-cc0-hd/main-albedo.png` | loafbrr_1 base; 3DModelsCC0 wood texture; Codex atlas and wear. | CC0 1.0 |
+| `assets/models/weapons-candidates/revolver/loafbrr-cc0-hd/main-normal.png` | [loafbrr_1](https://opengameart.org/content/revolver-game-asset); Codex geometry refinement and native 2048 texture bake. | CC0 1.0 |
+| `assets/models/weapons-candidates/revolver/loafbrr-cc0-hd/main-orm.png` | [loafbrr_1](https://opengameart.org/content/revolver-game-asset); Codex geometry refinement and native 2048 texture bake. | CC0 1.0 |
+
+Each weapon uses three texture images: albedo, tangent-space normal, and packed ORM.
+ORM stores ambient occlusion in red, roughness in green, and metalness in blue.
+Curvature is an offline bake input. It is not an additional runtime texture.
+
+The editable sources and offline bakes below are CC0 derivatives by Codex, directed by the project owner.
+
+| File | Original author | License |
+| --- | --- | --- |
+| `tools/blender/hd/sources/shotgun.blend` | 3DModelsCC0 | CC0 1.0 |
+| `tools/blender/hd/sources/shotgun.json` | 3DModelsCC0 | CC0 1.0 |
+| `tools/blender/hd/sources/shotgun-ao.png` | 3DModelsCC0 | CC0 1.0 |
+| `tools/blender/hd/sources/shotgun-curvature.png` | 3DModelsCC0 | CC0 1.0 |
+| `tools/blender/hd/sources/revolver.blend` | loafbrr_1; 3DModelsCC0 wood palette | CC0 1.0 |
+| `tools/blender/hd/sources/revolver.json` | loafbrr_1; 3DModelsCC0 wood palette | CC0 1.0 |
+| `tools/blender/hd/sources/revolver-ao.png` | loafbrr_1; 3DModelsCC0 wood palette | CC0 1.0 |
+| `tools/blender/hd/sources/revolver-curvature.png` | loafbrr_1; 3DModelsCC0 wood palette | CC0 1.0 |
+
+## Animated modern swing-out revolver
+
+The original HD candidate stays unchanged. The following files are CC0 derivatives.
+The build source is `tools/blender/swingout/`. Its geometry, rig, animation, and procedural additions are CC0.
+
+| File | Source and changes | License |
+| --- | --- | --- |
+| `models/weapons/swingout/swingout.gltf` | loafbrr_1 HD candidate; separated mechanism, rebuilt crane, extractor, cartridges, loader, clips; Dan Ulrich CC0 hands | CC0-1.0 |
+| `models/weapons/swingout/swingout.bin` | Geometry, skin weights, UVs, and animation for the same derivative | CC0-1.0 |
+| `models/weapons/swingout/swingout-albedo.png` | loafbrr_1 base; 3DModelsCC0 wood; existing CC0 pistol hand atlas; new procedural material swatches | CC0-1.0 |
+| `models/weapons/swingout/swingout-normal.png` | Repacked HD candidate normal map and existing CC0 hand atlas normal map | CC0-1.0 |
+| `models/weapons/swingout/swingout-orm.png` | Repacked HD candidate and hand atlas occlusion, roughness, and metalness | CC0-1.0 |
+| `models/weapons/swingout/manifest.json` | Generated build measurements and source paths | CC0-1.0 |
+
+Original revolver: [loafbrr_1 on OpenGameArt](https://opengameart.org/content/revolver-game-asset).
+Wood palette: [3DModelsCC0](https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack).
+The hands derive from Dan Ulrich's `Hand - Realistic`, in Blender Human Base Meshes v1.4.1.
+The earlier anatomical-hand section records that source and its license.
+
+The runtime flame and hollow case geometry are original procedural CC0 work in `lib/view/revolver-fx.js`.
+Smoke reuses the existing CC0 `textures/weapons/fx-smoke.png`. No footage enters the runtime textures.
+Case impact sounds use original procedural synthesis. They contain no recorded source samples.
+Reference frames under `docs/reference/weapons/swingout/` retain their source copyrights and are excluded from publishing.

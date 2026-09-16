@@ -1,0 +1,113 @@
+{
+  "path": "/Users/minjunes/games/terminator-wt/revolver-rebuild-setup/tools/blender/revolver-rebuild/generated/frozen-game-asset/revolver-rebuild.gltf",
+  "triangles": 27442,
+  "materials": 6,
+  "weightedVertices": 4255,
+  "samples": {
+    "Idle": {
+      "duration": 2,
+      "samples": 121,
+      "maxMatrixElementStep": 0.00005865105385160145
+    },
+    "Draw": {
+      "duration": 0.699999988079071,
+      "samples": 121,
+      "maxMatrixElementStep": 0.009124551923715252
+    },
+    "Fire": {
+      "duration": 0.3166666626930237,
+      "samples": 121,
+      "maxMatrixElementStep": 0.07452429130866328
+    },
+    "Reload": {
+      "duration": 3.5999999046325684,
+      "samples": 121,
+      "maxMatrixElementStep": 0.9679435255758235
+    },
+    "AimIn": {
+      "duration": 0.18333333730697632,
+      "samples": 121,
+      "maxMatrixElementStep": 0.000026290295426362187
+    },
+    "AimOut": {
+      "duration": 0.18333333730697632,
+      "samples": 121,
+      "maxMatrixElementStep": 0.000026290295426362187
+    },
+    "AimIdle": {
+      "duration": 2,
+      "samples": 121,
+      "maxMatrixElementStep": 0.000025749243044704754
+    },
+    "Sprint": {
+      "duration": 0.800000011920929,
+      "samples": 121,
+      "maxMatrixElementStep": 0.0002089004026207264
+    },
+    "Inspect": {
+      "duration": 3,
+      "samples": 121,
+      "maxMatrixElementStep": 0.041335884136145196
+    }
+  },
+  "skinSamples": {
+    "Idle": {
+      "vertices": 4255,
+      "instants": 5,
+      "maxLocalDeformationM": 1.9746550182402456e-7
+    },
+    "Draw": {
+      "vertices": 4255,
+      "instants": 5,
+      "maxLocalDeformationM": 3.046276815411989e-7
+    },
+    "Fire": {
+      "vertices": 4255,
+      "instants": 5,
+      "maxLocalDeformationM": 0.004427985240776124
+    },
+    "Reload": {
+      "vertices": 4255,
+      "instants": 5,
+      "maxLocalDeformationM": 0.5922597279576665
+    },
+    "AimIn": {
+      "vertices": 4255,
+      "instants": 5,
+      "maxLocalDeformationM": 3.1563300237874635e-7
+    },
+    "AimOut": {
+      "vertices": 4255,
+      "instants": 5,
+      "maxLocalDeformationM": 3.1563300237874635e-7
+    },
+    "AimIdle": {
+      "vertices": 4255,
+      "instants": 5,
+      "maxLocalDeformationM": 1.9746550182402456e-7
+    },
+    "Sprint": {
+      "vertices": 4255,
+      "instants": 5,
+      "maxLocalDeformationM": 2.9936835943617045e-7
+    },
+    "Inspect": {
+      "vertices": 4255,
+      "instants": 5,
+      "maxLocalDeformationM": 2.1204724729239088e-9
+    }
+  },
+  "endpointDrift": {
+    "0": 1.4277393015071915e-7,
+    "1": 1.4277393015071915e-7
+  },
+  "failures": [],
+  "warnings": [],
+  "limits": [
+    "No browser or game check run here.",
+    "Structural and finite-pose checks do not certify finger contact, self-intersection or visual quality.",
+    "glTF Transform checks geometry/skin/actions and world transforms to 1 micrometer. Its near-zero local translation canonicalization allows 10 micrometers in imported source units; measured armsmesh world drift is 20 nanometers. Optional specular extension roundtrip is not covered; shipping original glTF retains it."
+  ],
+  "builder": "tools/blender/revolver-rebuild/assemble.py",
+  "reference": "loafbrr-cc0 visual reference only"
+}

@@ -1,0 +1,4565 @@
+{
+  "fingerprints": {
+    "geometry_sha256": "501d7460b30a11f5680d04c681a1e38f485467b1bef73ecbf95be991ba3fdf2d",
+    "weights_sha256": "f0aecde16cad0f21b9671075a995a13860aa37230e87c68e0bdea3a6796e67ea",
+    "uv_sha256": "97541ae9779dea537f4af41f31cc1c572073c21c6dd85074c207b9deb6c5b728"
+  },
+  "sourceVertices": 4246,
+  "sourceTriangles": 7240,
+  "sourceBones": 49,
+  "samples": {
+    "Idle": [
+      {
+        "fraction": 0,
+        "manualSkinMaxErrorM": 1.813097534888705e-07,
+        "gunContacts": {
+          "method": "evaluated vertices / 3-direction unanimous ray parity inside component bounds; depth is nearest surface. Open meshes remain uncertain",
+          "digits": {
+            "R:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 4.134174741921015e-05,
+              "worstSignedM": -0.01155976951122284,
+              "worst": {
+                "vertex": 44,
+                "part": "BodyGeometry",
+                "point": [
+                  0.00024021649733185768,
+                  -0.1123623475432396,
+                  0.026003766804933548
+                ]
+              },
+              "penetratingVertexPartPairs": 192
+            },
+            "R:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 0.0002850507735274732,
+              "worstSignedM": -0.002871813252568245,
+              "worst": {
+                "vertex": 1907,
+                "part": "TriggerGeometry",
+                "point": [
+                  0.000528180506080389,
+                  -0.051176536828279495,
+                  0.009407984092831612
+                ]
+              },
+              "penetratingVertexPartPairs": 9
+            },
+            "R:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.002215080661699176,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.0018543674377724528,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.00016814656555652618,
+              "worstSignedM": -0.008590652607381344,
+              "worst": {
+                "vertex": 124,
+                "part": "GripCore",
+                "point": [
+                  -0.0027870142366737127,
+                  -0.13601765036582947,
+                  -0.06414514780044556
+                ]
+              },
+              "penetratingVertexPartPairs": 16
+            },
+            "R:wrist": {
+              "vertices": 198,
+              "nearestSurfaceM": 0.00013546519039664418,
+              "worstSignedM": -0.013040725141763687,
+              "worst": {
+                "vertex": 1448,
+                "part": "GripCore",
+                "point": [
+                  2.300937194377184e-05,
+                  -0.12325789034366608,
+                  -0.012229588814079762
+                ]
+              },
+              "penetratingVertexPartPairs": 45
+            },
+            "R:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.0009464884642511606,
+              "worstSignedM": -0.008321627043187618,
+              "worst": {
+                "vertex": 1485,
+                "part": "GripCore",
+                "point": [
+                  0.004103355575352907,
+                  -0.13657911121845245,
+                  -0.05423722043633461
+                ]
+              },
+              "penetratingVertexPartPairs": 7
+            },
+            "L:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 2.1139558157301508e-05,
+              "worstSignedM": -0.0052933841943740845,
+              "worst": {
+                "vertex": 196,
+                "part": "GripCore",
+                "point": [
+                  -0.008127609267830849,
+                  -0.13797278702259064,
+                  -0.013562857173383236
+                ]
+              },
+              "penetratingVertexPartPairs": 9
+            },
+            "L:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 0.0001103606482502073,
+              "worstSignedM": -0.00518200546503067,
+              "worst": {
+                "vertex": 1621,
+                "part": "BodyGeometry",
+                "point": [
+                  -0.006618006154894829,
+                  -0.06939209252595901,
+                  -0.015036709606647491
+                ]
+              },
+              "penetratingVertexPartPairs": 19
+            },
+            "L:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.0014418868813663721,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.00015519312000833452,
+              "worstSignedM": -0.006546055898070335,
+              "worst": {
+                "vertex": 3642,
+                "part": "GripCore",
+                "point": [
+                  -0.001209760899655521,
+                  -0.12961798906326294,
+                  -0.06197889521718025
+                ]
+              },
+              "penetratingVertexPartPairs": 16
+            },
+            "L:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.0001935946347657591,
+              "worstSignedM": -0.0007475624443031847,
+              "worst": {
+                "vertex": 3068,
+                "part": "GripCore",
+                "point": [
+                  -0.008178964257240295,
+                  -0.1325749307870865,
+                  -0.08176969736814499
+                ]
+              },
+              "penetratingVertexPartPairs": 0
+            },
+            "L:wrist": {
+              "vertices": 203,
+              "nearestSurfaceM": 0.006151704583317041,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.019390851259231567,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            }
+          }
+        },
+        "bilateral": {
+          "R:thumb": {
+            "nearestOtherHandM": 0.00022502736828755587,
+            "worstInsideOtherHandM": -0.016806095838546753,
+            "insideVertices": 51
+          },
+          "R:index": {
+            "nearestOtherHandM": 0.014187171123921871,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:middle": {
+            "nearestOtherHandM": 1.1416374263717444e-06,
+            "worstInsideOtherHandM": -0.01653919368982315,
+            "insideVertices": 83
+          },
+          "R:ring": {
+            "nearestOtherHandM": 6.547506927745417e-05,
+            "worstInsideOtherHandM": -0.007037204224616289,
+            "insideVertices": 105
+          },
+          "R:little": {
+            "nearestOtherHandM": 2.402802238066215e-05,
+            "worstInsideOtherHandM": -0.004348273854702711,
+            "insideVertices": 48
+          },
+          "R:wrist": {
+            "nearestOtherHandM": 0.0003033504181075841,
+            "worstInsideOtherHandM": -0.0003033504181075841,
+            "insideVertices": 1
+          },
+          "R:palm": {
+            "nearestOtherHandM": 1.7623264056965127e-06,
+            "worstInsideOtherHandM": -0.0037561822682619095,
+            "insideVertices": 1
+          },
+          "L:thumb": {
+            "nearestOtherHandM": 0.0002729651750996709,
+            "worstInsideOtherHandM": -0.01939058117568493,
+            "insideVertices": 69
+          },
+          "L:index": {
+            "nearestOtherHandM": 3.92937108699698e-05,
+            "worstInsideOtherHandM": -0.010768183507025242,
+            "insideVertices": 84
+          },
+          "L:middle": {
+            "nearestOtherHandM": 4.138830627198331e-05,
+            "worstInsideOtherHandM": -0.008850913494825363,
+            "insideVertices": 60
+          },
+          "L:ring": {
+            "nearestOtherHandM": 1.3550781659432687e-05,
+            "worstInsideOtherHandM": -0.0063843256793916225,
+            "insideVertices": 27
+          },
+          "L:little": {
+            "nearestOtherHandM": 0.005324914585798979,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:wrist": {
+            "nearestOtherHandM": 8.118205005303025e-05,
+            "worstInsideOtherHandM": -0.005459084641188383,
+            "insideVertices": 10
+          },
+          "L:palm": {
+            "nearestOtherHandM": 0.015999246388673782,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          }
+        }
+      },
+      {
+        "fraction": 0.5,
+        "manualSkinMaxErrorM": 1.813097534888705e-07,
+        "gunContacts": {
+          "method": "evaluated vertices / 3-direction unanimous ray parity inside component bounds; depth is nearest surface. Open meshes remain uncertain",
+          "digits": {
+            "R:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 4.134174741921015e-05,
+              "worstSignedM": -0.01155976951122284,
+              "worst": {
+                "vertex": 44,
+                "part": "BodyGeometry",
+                "point": [
+                  0.00024021649733185768,
+                  -0.1123623475432396,
+                  0.026003766804933548
+                ]
+              },
+              "penetratingVertexPartPairs": 192
+            },
+            "R:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 0.0002850507735274732,
+              "worstSignedM": -0.002871813252568245,
+              "worst": {
+                "vertex": 1907,
+                "part": "TriggerGeometry",
+                "point": [
+                  0.000528180506080389,
+                  -0.051176536828279495,
+                  0.009407984092831612
+                ]
+              },
+              "penetratingVertexPartPairs": 9
+            },
+            "R:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.002215080661699176,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.0018543674377724528,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.00016814656555652618,
+              "worstSignedM": -0.008590652607381344,
+              "worst": {
+                "vertex": 124,
+                "part": "GripCore",
+                "point": [
+                  -0.0027870142366737127,
+                  -0.13601765036582947,
+                  -0.06414514780044556
+                ]
+              },
+              "penetratingVertexPartPairs": 16
+            },
+            "R:wrist": {
+              "vertices": 198,
+              "nearestSurfaceM": 0.00013546519039664418,
+              "worstSignedM": -0.013040725141763687,
+              "worst": {
+                "vertex": 1448,
+                "part": "GripCore",
+                "point": [
+                  2.300937194377184e-05,
+                  -0.12325789034366608,
+                  -0.012229588814079762
+                ]
+              },
+              "penetratingVertexPartPairs": 45
+            },
+            "R:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.0009464884642511606,
+              "worstSignedM": -0.008321627043187618,
+              "worst": {
+                "vertex": 1485,
+                "part": "GripCore",
+                "point": [
+                  0.004103355575352907,
+                  -0.13657911121845245,
+                  -0.05423722043633461
+                ]
+              },
+              "penetratingVertexPartPairs": 7
+            },
+            "L:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 2.1139558157301508e-05,
+              "worstSignedM": -0.0052933841943740845,
+              "worst": {
+                "vertex": 196,
+                "part": "GripCore",
+                "point": [
+                  -0.008127609267830849,
+                  -0.13797278702259064,
+                  -0.013562857173383236
+                ]
+              },
+              "penetratingVertexPartPairs": 9
+            },
+            "L:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 0.0001103606482502073,
+              "worstSignedM": -0.00518200546503067,
+              "worst": {
+                "vertex": 1621,
+                "part": "BodyGeometry",
+                "point": [
+                  -0.006618006154894829,
+                  -0.06939209252595901,
+                  -0.015036709606647491
+                ]
+              },
+              "penetratingVertexPartPairs": 19
+            },
+            "L:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.0014418868813663721,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.00015519312000833452,
+              "worstSignedM": -0.006546055898070335,
+              "worst": {
+                "vertex": 3642,
+                "part": "GripCore",
+                "point": [
+                  -0.001209760899655521,
+                  -0.12961798906326294,
+                  -0.06197889521718025
+                ]
+              },
+              "penetratingVertexPartPairs": 16
+            },
+            "L:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.0001935946347657591,
+              "worstSignedM": -0.0007475624443031847,
+              "worst": {
+                "vertex": 3068,
+                "part": "GripCore",
+                "point": [
+                  -0.008178964257240295,
+                  -0.1325749307870865,
+                  -0.08176969736814499
+                ]
+              },
+              "penetratingVertexPartPairs": 0
+            },
+            "L:wrist": {
+              "vertices": 203,
+              "nearestSurfaceM": 0.006151704583317041,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.019390851259231567,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            }
+          }
+        },
+        "bilateral": {
+          "R:thumb": {
+            "nearestOtherHandM": 0.00022502736828755587,
+            "worstInsideOtherHandM": -0.016806095838546753,
+            "insideVertices": 51
+          },
+          "R:index": {
+            "nearestOtherHandM": 0.014187171123921871,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:middle": {
+            "nearestOtherHandM": 1.1416374263717444e-06,
+            "worstInsideOtherHandM": -0.01653919368982315,
+            "insideVertices": 83
+          },
+          "R:ring": {
+            "nearestOtherHandM": 6.547506927745417e-05,
+            "worstInsideOtherHandM": -0.007037204224616289,
+            "insideVertices": 105
+          },
+          "R:little": {
+            "nearestOtherHandM": 2.402802238066215e-05,
+            "worstInsideOtherHandM": -0.004348273854702711,
+            "insideVertices": 48
+          },
+          "R:wrist": {
+            "nearestOtherHandM": 0.0003033504181075841,
+            "worstInsideOtherHandM": -0.0003033504181075841,
+            "insideVertices": 1
+          },
+          "R:palm": {
+            "nearestOtherHandM": 1.7623264056965127e-06,
+            "worstInsideOtherHandM": -0.0037561822682619095,
+            "insideVertices": 1
+          },
+          "L:thumb": {
+            "nearestOtherHandM": 0.0002729651750996709,
+            "worstInsideOtherHandM": -0.01939058117568493,
+            "insideVertices": 69
+          },
+          "L:index": {
+            "nearestOtherHandM": 3.92937108699698e-05,
+            "worstInsideOtherHandM": -0.010768183507025242,
+            "insideVertices": 84
+          },
+          "L:middle": {
+            "nearestOtherHandM": 4.138830627198331e-05,
+            "worstInsideOtherHandM": -0.008850913494825363,
+            "insideVertices": 60
+          },
+          "L:ring": {
+            "nearestOtherHandM": 1.3550781659432687e-05,
+            "worstInsideOtherHandM": -0.0063843256793916225,
+            "insideVertices": 27
+          },
+          "L:little": {
+            "nearestOtherHandM": 0.005324914585798979,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:wrist": {
+            "nearestOtherHandM": 8.118205005303025e-05,
+            "worstInsideOtherHandM": -0.005459084641188383,
+            "insideVertices": 10
+          },
+          "L:palm": {
+            "nearestOtherHandM": 0.015999246388673782,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          }
+        }
+      },
+      {
+        "fraction": 1,
+        "manualSkinMaxErrorM": 1.813097534888705e-07,
+        "gunContacts": {
+          "method": "evaluated vertices / 3-direction unanimous ray parity inside component bounds; depth is nearest surface. Open meshes remain uncertain",
+          "digits": {
+            "R:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 4.134174741921015e-05,
+              "worstSignedM": -0.01155976951122284,
+              "worst": {
+                "vertex": 44,
+                "part": "BodyGeometry",
+                "point": [
+                  0.00024021649733185768,
+                  -0.1123623475432396,
+                  0.026003766804933548
+                ]
+              },
+              "penetratingVertexPartPairs": 192
+            },
+            "R:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 0.0002850507735274732,
+              "worstSignedM": -0.002871813252568245,
+              "worst": {
+                "vertex": 1907,
+                "part": "TriggerGeometry",
+                "point": [
+                  0.000528180506080389,
+                  -0.051176536828279495,
+                  0.009407984092831612
+                ]
+              },
+              "penetratingVertexPartPairs": 9
+            },
+            "R:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.002215080661699176,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.0018543674377724528,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.00016814656555652618,
+              "worstSignedM": -0.008590652607381344,
+              "worst": {
+                "vertex": 124,
+                "part": "GripCore",
+                "point": [
+                  -0.0027870142366737127,
+                  -0.13601765036582947,
+                  -0.06414514780044556
+                ]
+              },
+              "penetratingVertexPartPairs": 16
+            },
+            "R:wrist": {
+              "vertices": 198,
+              "nearestSurfaceM": 0.00013546519039664418,
+              "worstSignedM": -0.013040725141763687,
+              "worst": {
+                "vertex": 1448,
+                "part": "GripCore",
+                "point": [
+                  2.300937194377184e-05,
+                  -0.12325789034366608,
+                  -0.012229588814079762
+                ]
+              },
+              "penetratingVertexPartPairs": 45
+            },
+            "R:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.0009464884642511606,
+              "worstSignedM": -0.008321627043187618,
+              "worst": {
+                "vertex": 1485,
+                "part": "GripCore",
+                "point": [
+                  0.004103355575352907,
+                  -0.13657911121845245,
+                  -0.05423722043633461
+                ]
+              },
+              "penetratingVertexPartPairs": 7
+            },
+            "L:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 2.1139558157301508e-05,
+              "worstSignedM": -0.0052933841943740845,
+              "worst": {
+                "vertex": 196,
+                "part": "GripCore",
+                "point": [
+                  -0.008127609267830849,
+                  -0.13797278702259064,
+                  -0.013562857173383236
+                ]
+              },
+              "penetratingVertexPartPairs": 9
+            },
+            "L:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 0.0001103606482502073,
+              "worstSignedM": -0.00518200546503067,
+              "worst": {
+                "vertex": 1621,
+                "part": "BodyGeometry",
+                "point": [
+                  -0.006618006154894829,
+                  -0.06939209252595901,
+                  -0.015036709606647491
+                ]
+              },
+              "penetratingVertexPartPairs": 19
+            },
+            "L:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.0014418868813663721,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.00015519312000833452,
+              "worstSignedM": -0.006546055898070335,
+              "worst": {
+                "vertex": 3642,
+                "part": "GripCore",
+                "point": [
+                  -0.001209760899655521,
+                  -0.12961798906326294,
+                  -0.06197889521718025
+                ]
+              },
+              "penetratingVertexPartPairs": 16
+            },
+            "L:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.0001935946347657591,
+              "worstSignedM": -0.0007475624443031847,
+              "worst": {
+                "vertex": 3068,
+                "part": "GripCore",
+                "point": [
+                  -0.008178964257240295,
+                  -0.1325749307870865,
+                  -0.08176969736814499
+                ]
+              },
+              "penetratingVertexPartPairs": 0
+            },
+            "L:wrist": {
+              "vertices": 203,
+              "nearestSurfaceM": 0.006151704583317041,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.019390851259231567,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            }
+          }
+        },
+        "bilateral": {
+          "R:thumb": {
+            "nearestOtherHandM": 0.00022502736828755587,
+            "worstInsideOtherHandM": -0.016806095838546753,
+            "insideVertices": 51
+          },
+          "R:index": {
+            "nearestOtherHandM": 0.014187171123921871,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:middle": {
+            "nearestOtherHandM": 1.1416374263717444e-06,
+            "worstInsideOtherHandM": -0.01653919368982315,
+            "insideVertices": 83
+          },
+          "R:ring": {
+            "nearestOtherHandM": 6.547506927745417e-05,
+            "worstInsideOtherHandM": -0.007037204224616289,
+            "insideVertices": 105
+          },
+          "R:little": {
+            "nearestOtherHandM": 2.402802238066215e-05,
+            "worstInsideOtherHandM": -0.004348273854702711,
+            "insideVertices": 48
+          },
+          "R:wrist": {
+            "nearestOtherHandM": 0.0003033504181075841,
+            "worstInsideOtherHandM": -0.0003033504181075841,
+            "insideVertices": 1
+          },
+          "R:palm": {
+            "nearestOtherHandM": 1.7623264056965127e-06,
+            "worstInsideOtherHandM": -0.0037561822682619095,
+            "insideVertices": 1
+          },
+          "L:thumb": {
+            "nearestOtherHandM": 0.0002729651750996709,
+            "worstInsideOtherHandM": -0.01939058117568493,
+            "insideVertices": 69
+          },
+          "L:index": {
+            "nearestOtherHandM": 3.92937108699698e-05,
+            "worstInsideOtherHandM": -0.010768183507025242,
+            "insideVertices": 84
+          },
+          "L:middle": {
+            "nearestOtherHandM": 4.138830627198331e-05,
+            "worstInsideOtherHandM": -0.008850913494825363,
+            "insideVertices": 60
+          },
+          "L:ring": {
+            "nearestOtherHandM": 1.3550781659432687e-05,
+            "worstInsideOtherHandM": -0.0063843256793916225,
+            "insideVertices": 27
+          },
+          "L:little": {
+            "nearestOtherHandM": 0.005324914585798979,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:wrist": {
+            "nearestOtherHandM": 8.118205005303025e-05,
+            "worstInsideOtherHandM": -0.005459084641188383,
+            "insideVertices": 10
+          },
+          "L:palm": {
+            "nearestOtherHandM": 0.015999246388673782,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          }
+        }
+      }
+    ],
+    "Draw": [
+      {
+        "fraction": 0,
+        "manualSkinMaxErrorM": 1.58445315943187e-07
+      },
+      {
+        "fraction": 0.5,
+        "manualSkinMaxErrorM": 1.5049435106459375e-07
+      },
+      {
+        "fraction": 1,
+        "manualSkinMaxErrorM": 1.813097534888705e-07
+      }
+    ],
+    "Fire": [
+      {
+        "fraction": 0,
+        "manualSkinMaxErrorM": 1.813097534888705e-07,
+        "gunContacts": {
+          "method": "evaluated vertices / 3-direction unanimous ray parity inside component bounds; depth is nearest surface. Open meshes remain uncertain",
+          "digits": {
+            "R:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 4.134174741921015e-05,
+              "worstSignedM": -0.01155976951122284,
+              "worst": {
+                "vertex": 44,
+                "part": "BodyGeometry",
+                "point": [
+                  0.00024021649733185768,
+                  -0.1123623475432396,
+                  0.026003766804933548
+                ]
+              },
+              "penetratingVertexPartPairs": 192
+            },
+            "R:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 0.00028506285161711276,
+              "worstSignedM": -0.0028718383982777596,
+              "worst": {
+                "vertex": 1907,
+                "part": "TriggerGeometry",
+                "point": [
+                  0.0005281553603708744,
+                  -0.05117654427886009,
+                  0.009407992474734783
+                ]
+              },
+              "penetratingVertexPartPairs": 9
+            },
+            "R:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.002215080661699176,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.0018543674377724528,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.00016814656555652618,
+              "worstSignedM": -0.008590652607381344,
+              "worst": {
+                "vertex": 124,
+                "part": "GripCore",
+                "point": [
+                  -0.0027870142366737127,
+                  -0.13601765036582947,
+                  -0.06414514780044556
+                ]
+              },
+              "penetratingVertexPartPairs": 16
+            },
+            "R:wrist": {
+              "vertices": 198,
+              "nearestSurfaceM": 0.00013546519039664418,
+              "worstSignedM": -0.013040725141763687,
+              "worst": {
+                "vertex": 1448,
+                "part": "GripCore",
+                "point": [
+                  2.300937194377184e-05,
+                  -0.12325789034366608,
+                  -0.012229588814079762
+                ]
+              },
+              "penetratingVertexPartPairs": 45
+            },
+            "R:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.0009464884642511606,
+              "worstSignedM": -0.008321627043187618,
+              "worst": {
+                "vertex": 1485,
+                "part": "GripCore",
+                "point": [
+                  0.004103355575352907,
+                  -0.13657911121845245,
+                  -0.05423722043633461
+                ]
+              },
+              "penetratingVertexPartPairs": 7
+            },
+            "L:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 2.1139558157301508e-05,
+              "worstSignedM": -0.0052933841943740845,
+              "worst": {
+                "vertex": 196,
+                "part": "GripCore",
+                "point": [
+                  -0.008127609267830849,
+                  -0.13797278702259064,
+                  -0.013562857173383236
+                ]
+              },
+              "penetratingVertexPartPairs": 9
+            },
+            "L:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 0.0001103606482502073,
+              "worstSignedM": -0.00518200546503067,
+              "worst": {
+                "vertex": 1621,
+                "part": "BodyGeometry",
+                "point": [
+                  -0.006618006154894829,
+                  -0.06939209252595901,
+                  -0.015036709606647491
+                ]
+              },
+              "penetratingVertexPartPairs": 19
+            },
+            "L:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.0014418868813663721,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.00015519312000833452,
+              "worstSignedM": -0.006546055898070335,
+              "worst": {
+                "vertex": 3642,
+                "part": "GripCore",
+                "point": [
+                  -0.001209760899655521,
+                  -0.12961798906326294,
+                  -0.06197889521718025
+                ]
+              },
+              "penetratingVertexPartPairs": 16
+            },
+            "L:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.0001935946347657591,
+              "worstSignedM": -0.0007475624443031847,
+              "worst": {
+                "vertex": 3068,
+                "part": "GripCore",
+                "point": [
+                  -0.008178964257240295,
+                  -0.1325749307870865,
+                  -0.08176969736814499
+                ]
+              },
+              "penetratingVertexPartPairs": 0
+            },
+            "L:wrist": {
+              "vertices": 203,
+              "nearestSurfaceM": 0.006151704583317041,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.019390851259231567,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            }
+          }
+        },
+        "bilateral": {
+          "R:thumb": {
+            "nearestOtherHandM": 0.00022502736828755587,
+            "worstInsideOtherHandM": -0.016806095838546753,
+            "insideVertices": 51
+          },
+          "R:index": {
+            "nearestOtherHandM": 0.01418718509376049,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:middle": {
+            "nearestOtherHandM": 1.1416374263717444e-06,
+            "worstInsideOtherHandM": -0.01653919368982315,
+            "insideVertices": 83
+          },
+          "R:ring": {
+            "nearestOtherHandM": 6.547506927745417e-05,
+            "worstInsideOtherHandM": -0.007037204224616289,
+            "insideVertices": 105
+          },
+          "R:little": {
+            "nearestOtherHandM": 2.402802238066215e-05,
+            "worstInsideOtherHandM": -0.004348273854702711,
+            "insideVertices": 48
+          },
+          "R:wrist": {
+            "nearestOtherHandM": 0.0003033504181075841,
+            "worstInsideOtherHandM": -0.0003033504181075841,
+            "insideVertices": 1
+          },
+          "R:palm": {
+            "nearestOtherHandM": 1.7623264056965127e-06,
+            "worstInsideOtherHandM": -0.0037561822682619095,
+            "insideVertices": 1
+          },
+          "L:thumb": {
+            "nearestOtherHandM": 0.0002729651750996709,
+            "worstInsideOtherHandM": -0.01939058117568493,
+            "insideVertices": 69
+          },
+          "L:index": {
+            "nearestOtherHandM": 3.92937108699698e-05,
+            "worstInsideOtherHandM": -0.010768183507025242,
+            "insideVertices": 84
+          },
+          "L:middle": {
+            "nearestOtherHandM": 4.138830627198331e-05,
+            "worstInsideOtherHandM": -0.008850913494825363,
+            "insideVertices": 60
+          },
+          "L:ring": {
+            "nearestOtherHandM": 1.3550781659432687e-05,
+            "worstInsideOtherHandM": -0.0063843256793916225,
+            "insideVertices": 27
+          },
+          "L:little": {
+            "nearestOtherHandM": 0.005324914585798979,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:wrist": {
+            "nearestOtherHandM": 8.118205005303025e-05,
+            "worstInsideOtherHandM": -0.005459084641188383,
+            "insideVertices": 10
+          },
+          "L:palm": {
+            "nearestOtherHandM": 0.015999246388673782,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          }
+        }
+      },
+      {
+        "fraction": 0.15625,
+        "manualSkinMaxErrorM": 1.813097534888705e-07,
+        "gunContacts": {
+          "method": "evaluated vertices / 3-direction unanimous ray parity inside component bounds; depth is nearest surface. Open meshes remain uncertain",
+          "digits": {
+            "R:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 4.134174741921015e-05,
+              "worstSignedM": -0.01155976951122284,
+              "worst": {
+                "vertex": 44,
+                "part": "BodyGeometry",
+                "point": [
+                  0.00024021649733185768,
+                  -0.1123623475432396,
+                  0.026003766804933548
+                ]
+              },
+              "penetratingVertexPartPairs": 192
+            },
+            "R:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 2.4543291146983393e-05,
+              "worstSignedM": -0.0031313879881054163,
+              "worst": {
+                "vertex": 1906,
+                "part": "TriggerGeometry",
+                "point": [
+                  0.000268605537712574,
+                  -0.052170682698488235,
+                  0.009569949470460415
+                ]
+              },
+              "penetratingVertexPartPairs": 14
+            },
+            "R:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.002215080661699176,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.0018543674377724528,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.00016814656555652618,
+              "worstSignedM": -0.008590652607381344,
+              "worst": {
+                "vertex": 124,
+                "part": "GripCore",
+                "point": [
+                  -0.0027870142366737127,
+                  -0.13601765036582947,
+                  -0.06414514780044556
+                ]
+              },
+              "penetratingVertexPartPairs": 16
+            },
+            "R:wrist": {
+              "vertices": 198,
+              "nearestSurfaceM": 0.00013546519039664418,
+              "worstSignedM": -0.013040725141763687,
+              "worst": {
+                "vertex": 1448,
+                "part": "GripCore",
+                "point": [
+                  2.300937194377184e-05,
+                  -0.12325789034366608,
+                  -0.012229588814079762
+                ]
+              },
+              "penetratingVertexPartPairs": 45
+            },
+            "R:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.0009464884642511606,
+              "worstSignedM": -0.008321627043187618,
+              "worst": {
+                "vertex": 1485,
+                "part": "GripCore",
+                "point": [
+                  0.004103355575352907,
+                  -0.13657911121845245,
+                  -0.05423722043633461
+                ]
+              },
+              "penetratingVertexPartPairs": 7
+            },
+            "L:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 2.1139558157301508e-05,
+              "worstSignedM": -0.0052933841943740845,
+              "worst": {
+                "vertex": 196,
+                "part": "GripCore",
+                "point": [
+                  -0.008127609267830849,
+                  -0.13797278702259064,
+                  -0.013562857173383236
+                ]
+              },
+              "penetratingVertexPartPairs": 9
+            },
+            "L:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 0.0001103606482502073,
+              "worstSignedM": -0.00518200546503067,
+              "worst": {
+                "vertex": 1621,
+                "part": "BodyGeometry",
+                "point": [
+                  -0.006618006154894829,
+                  -0.06939209252595901,
+                  -0.015036709606647491
+                ]
+              },
+              "penetratingVertexPartPairs": 19
+            },
+            "L:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.0014418868813663721,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.00015519312000833452,
+              "worstSignedM": -0.006546055898070335,
+              "worst": {
+                "vertex": 3642,
+                "part": "GripCore",
+                "point": [
+                  -0.001209760899655521,
+                  -0.12961798906326294,
+                  -0.06197889521718025
+                ]
+              },
+              "penetratingVertexPartPairs": 16
+            },
+            "L:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.0001935946347657591,
+              "worstSignedM": -0.0007475624443031847,
+              "worst": {
+                "vertex": 3068,
+                "part": "GripCore",
+                "point": [
+                  -0.008178964257240295,
+                  -0.1325749307870865,
+                  -0.08176969736814499
+                ]
+              },
+              "penetratingVertexPartPairs": 0
+            },
+            "L:wrist": {
+              "vertices": 203,
+              "nearestSurfaceM": 0.006151704583317041,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.019390851259231567,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            }
+          }
+        },
+        "bilateral": {
+          "R:thumb": {
+            "nearestOtherHandM": 0.00022502736828755587,
+            "worstInsideOtherHandM": -0.016806095838546753,
+            "insideVertices": 51
+          },
+          "R:index": {
+            "nearestOtherHandM": 0.014163101091980934,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:middle": {
+            "nearestOtherHandM": 1.1416374263717444e-06,
+            "worstInsideOtherHandM": -0.01653919368982315,
+            "insideVertices": 83
+          },
+          "R:ring": {
+            "nearestOtherHandM": 6.547506927745417e-05,
+            "worstInsideOtherHandM": -0.007037204224616289,
+            "insideVertices": 105
+          },
+          "R:little": {
+            "nearestOtherHandM": 2.402802238066215e-05,
+            "worstInsideOtherHandM": -0.004348273854702711,
+            "insideVertices": 48
+          },
+          "R:wrist": {
+            "nearestOtherHandM": 0.0003033504181075841,
+            "worstInsideOtherHandM": -0.0003033504181075841,
+            "insideVertices": 1
+          },
+          "R:palm": {
+            "nearestOtherHandM": 1.7623264056965127e-06,
+            "worstInsideOtherHandM": -0.0037561822682619095,
+            "insideVertices": 1
+          },
+          "L:thumb": {
+            "nearestOtherHandM": 0.0002729651750996709,
+            "worstInsideOtherHandM": -0.01939058117568493,
+            "insideVertices": 69
+          },
+          "L:index": {
+            "nearestOtherHandM": 3.92937108699698e-05,
+            "worstInsideOtherHandM": -0.010768183507025242,
+            "insideVertices": 86
+          },
+          "L:middle": {
+            "nearestOtherHandM": 4.138830627198331e-05,
+            "worstInsideOtherHandM": -0.008850913494825363,
+            "insideVertices": 61
+          },
+          "L:ring": {
+            "nearestOtherHandM": 1.3550781659432687e-05,
+            "worstInsideOtherHandM": -0.0063843256793916225,
+            "insideVertices": 25
+          },
+          "L:little": {
+            "nearestOtherHandM": 0.005324914585798979,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:wrist": {
+            "nearestOtherHandM": 8.118205005303025e-05,
+            "worstInsideOtherHandM": -0.005459084641188383,
+            "insideVertices": 10
+          },
+          "L:palm": {
+            "nearestOtherHandM": 0.015999246388673782,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          }
+        }
+      },
+      {
+        "fraction": 0.35,
+        "manualSkinMaxErrorM": 1.5632908983794812e-07,
+        "gunContacts": {
+          "method": "evaluated vertices / 3-direction unanimous ray parity inside component bounds; depth is nearest surface. Open meshes remain uncertain",
+          "digits": {
+            "R:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 4.1336799768032506e-05,
+              "worstSignedM": -0.01155979372560978,
+              "worst": {
+                "vertex": 44,
+                "part": "BodyGeometry",
+                "point": [
+                  0.00024019135162234306,
+                  -0.1255825310945511,
+                  0.018780073150992393
+                ]
+              },
+              "penetratingVertexPartPairs": 192
+            },
+            "R:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 2.499312540749088e-05,
+              "worstSignedM": -0.00313114607706666,
+              "worst": {
+                "vertex": 1906,
+                "part": "TriggerGeometry",
+                "point": [
+                  0.0002688458189368248,
+                  -0.0644642636179924,
+                  0.0062210457399487495
+                ]
+              },
+              "penetratingVertexPartPairs": 14
+            },
+            "R:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.002215083222836256,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.0018544072518125176,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.00016821722965687513,
+              "worstSignedM": -0.008590607903897762,
+              "worst": {
+                "vertex": 124,
+                "part": "GripCore",
+                "point": [
+                  -0.002787007950246334,
+                  -0.14343641698360443,
+                  -0.07269473373889923
+                ]
+              },
+              "penetratingVertexPartPairs": 16
+            },
+            "R:wrist": {
+              "vertices": 198,
+              "nearestSurfaceM": 0.00013548563583754003,
+              "worstSignedM": -0.01304070558398962,
+              "worst": {
+                "vertex": 1448,
+                "part": "GripCore",
+                "point": [
+                  2.300937194377184e-05,
+                  -0.13401585817337036,
+                  -0.020070703700184822
+                ]
+              },
+              "penetratingVertexPartPairs": 45
+            },
+            "R:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.0009464945760555565,
+              "worstSignedM": -0.008321619592607021,
+              "worst": {
+                "vertex": 1485,
+                "part": "GripCore",
+                "point": [
+                  0.004103337414562702,
+                  -0.1446290910243988,
+                  -0.06284283846616745
+                ]
+              },
+              "penetratingVertexPartPairs": 7
+            },
+            "L:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 2.1149196982150897e-05,
+              "worstSignedM": -0.005293429829180241,
+              "worst": {
+                "vertex": 196,
+                "part": "GripCore",
+                "point": [
+                  -0.008127554319798946,
+                  -0.1486157774925232,
+                  -0.02234029211103916
+                ]
+              },
+              "penetratingVertexPartPairs": 9
+            },
+            "L:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 0.00011037201329600066,
+              "worstSignedM": -0.005181973800063133,
+              "worst": {
+                "vertex": 1621,
+                "part": "BodyGeometry",
+                "point": [
+                  -0.00661803875118494,
+                  -0.08008081465959549,
+                  -0.019434452056884766
+                ]
+              },
+              "penetratingVertexPartPairs": 19
+            },
+            "L:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.0014418611535802484,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.0001551909081172198,
+              "worstSignedM": -0.006546076852828264,
+              "worst": {
+                "vertex": 3642,
+                "part": "GripCore",
+                "point": [
+                  -0.001209781737998128,
+                  -0.13718821108341217,
+                  -0.07012444734573364
+                ]
+              },
+              "penetratingVertexPartPairs": 16
+            },
+            "L:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.00019355941913090646,
+              "worstSignedM": -0.0007474792073480785,
+              "worst": {
+                "vertex": 3068,
+                "part": "GripCore",
+                "point": [
+                  -0.00817906018346548,
+                  -0.13887609541416168,
+                  -0.0900636538863182
+                ]
+              },
+              "penetratingVertexPartPairs": 0
+            },
+            "L:wrist": {
+              "vertices": 203,
+              "nearestSurfaceM": 0.006151630077511072,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.01939079351723194,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            }
+          }
+        },
+        "bilateral": {
+          "R:thumb": {
+            "nearestOtherHandM": 0.00022501766216009855,
+            "worstInsideOtherHandM": -0.01680615358054638,
+            "insideVertices": 51
+          },
+          "R:index": {
+            "nearestOtherHandM": 0.014163319952785969,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:middle": {
+            "nearestOtherHandM": 1.2065402188454755e-06,
+            "worstInsideOtherHandM": -0.016373196616768837,
+            "insideVertices": 79
+          },
+          "R:ring": {
+            "nearestOtherHandM": 6.543521158164367e-05,
+            "worstInsideOtherHandM": -0.007037146482616663,
+            "insideVertices": 105
+          },
+          "R:little": {
+            "nearestOtherHandM": 2.4031949578784406e-05,
+            "worstInsideOtherHandM": -0.0043482352048158646,
+            "insideVertices": 48
+          },
+          "R:wrist": {
+            "nearestOtherHandM": 0.00030338234500959516,
+            "worstInsideOtherHandM": -0.00030338234500959516,
+            "insideVertices": 1
+          },
+          "R:palm": {
+            "nearestOtherHandM": 1.712236212370044e-06,
+            "worstInsideOtherHandM": -0.003756214864552021,
+            "insideVertices": 1
+          },
+          "L:thumb": {
+            "nearestOtherHandM": 0.00027297885389998555,
+            "worstInsideOtherHandM": -0.019390594214200974,
+            "insideVertices": 70
+          },
+          "L:index": {
+            "nearestOtherHandM": 3.915873821824789e-05,
+            "worstInsideOtherHandM": -0.011368154548108578,
+            "insideVertices": 84
+          },
+          "L:middle": {
+            "nearestOtherHandM": 4.1365936340298504e-05,
+            "worstInsideOtherHandM": -0.008808596059679985,
+            "insideVertices": 55
+          },
+          "L:ring": {
+            "nearestOtherHandM": 1.3568690519605298e-05,
+            "worstInsideOtherHandM": -0.0066300868056714535,
+            "insideVertices": 26
+          },
+          "L:little": {
+            "nearestOtherHandM": 0.005324915517121553,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:wrist": {
+            "nearestOtherHandM": 8.113943476928398e-05,
+            "worstInsideOtherHandM": -0.005459129344671965,
+            "insideVertices": 10
+          },
+          "L:palm": {
+            "nearestOtherHandM": 0.015999164432287216,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          }
+        }
+      },
+      {
+        "fraction": 1,
+        "manualSkinMaxErrorM": 1.7008816363540766e-07,
+        "gunContacts": {
+          "method": "evaluated vertices / 3-direction unanimous ray parity inside component bounds; depth is nearest surface. Open meshes remain uncertain",
+          "digits": {
+            "R:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 0.010220272466540337,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 0.003214990021660924,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.0021580278407782316,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.002804393880069256,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.0025640593376010656,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:wrist": {
+              "vertices": 198,
+              "nearestSurfaceM": 0.035327762365341187,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.03710073605179787,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 0.0077600120566785336,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 0.003179445629939437,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.003193020122125745,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.002265344141051173,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.00330230500549078,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:wrist": {
+              "vertices": 203,
+              "nearestSurfaceM": 0.02871742658317089,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.025898180902004242,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            }
+          }
+        },
+        "bilateral": {
+          "R:thumb": {
+            "nearestOtherHandM": 3.1456838769372553e-06,
+            "worstInsideOtherHandM": -0.006644895765930414,
+            "insideVertices": 65
+          },
+          "R:index": {
+            "nearestOtherHandM": 1.3918777312937891e-06,
+            "worstInsideOtherHandM": -0.0019716930110007524,
+            "insideVertices": 37
+          },
+          "R:middle": {
+            "nearestOtherHandM": 2.0662798760895384e-06,
+            "worstInsideOtherHandM": -0.0015398368705064058,
+            "insideVertices": 43
+          },
+          "R:ring": {
+            "nearestOtherHandM": 2.3376917397399666e-06,
+            "worstInsideOtherHandM": -0.001671097707003355,
+            "insideVertices": 45
+          },
+          "R:little": {
+            "nearestOtherHandM": 2.2799054022470955e-07,
+            "worstInsideOtherHandM": -0.0008054971694946289,
+            "insideVertices": 43
+          },
+          "R:wrist": {
+            "nearestOtherHandM": 5.580935521720676e-06,
+            "worstInsideOtherHandM": -0.013456669636070728,
+            "insideVertices": 86
+          },
+          "R:palm": {
+            "nearestOtherHandM": 0.003316184738650918,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:thumb": {
+            "nearestOtherHandM": 5.6694773320487e-07,
+            "worstInsideOtherHandM": -0.00667883874848485,
+            "insideVertices": 69
+          },
+          "L:index": {
+            "nearestOtherHandM": 1.987124598201717e-08,
+            "worstInsideOtherHandM": -0.001985805341973901,
+            "insideVertices": 32
+          },
+          "L:middle": {
+            "nearestOtherHandM": 2.307862587258569e-06,
+            "worstInsideOtherHandM": -0.0015620506601408124,
+            "insideVertices": 50
+          },
+          "L:ring": {
+            "nearestOtherHandM": 3.3839576190075604e-06,
+            "worstInsideOtherHandM": -0.0018061650916934013,
+            "insideVertices": 46
+          },
+          "L:little": {
+            "nearestOtherHandM": 5.087482009002997e-07,
+            "worstInsideOtherHandM": -0.000670518318656832,
+            "insideVertices": 47
+          },
+          "L:wrist": {
+            "nearestOtherHandM": 6.213178039615741e-06,
+            "worstInsideOtherHandM": -0.013746974989771843,
+            "insideVertices": 87
+          },
+          "L:palm": {
+            "nearestOtherHandM": 0.003425630507990718,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          }
+        }
+      }
+    ],
+    "Reload": [
+      {
+        "fraction": 0,
+        "manualSkinMaxErrorM": 1.6323404237781945e-07,
+        "gunContacts": {
+          "method": "evaluated vertices / 3-direction unanimous ray parity inside component bounds; depth is nearest surface. Open meshes remain uncertain",
+          "digits": {
+            "R:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 4.134174741921015e-05,
+              "worstSignedM": -0.01155976951122284,
+              "worst": {
+                "vertex": 44,
+                "part": "BodyGeometry",
+                "point": [
+                  0.00024021649733185768,
+                  -0.1123623475432396,
+                  0.026003766804933548
+                ]
+              },
+              "penetratingVertexPartPairs": 192
+            },
+            "R:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 0.0002850507735274732,
+              "worstSignedM": -0.002871813252568245,
+              "worst": {
+                "vertex": 1907,
+                "part": "TriggerGeometry",
+                "point": [
+                  0.000528180506080389,
+                  -0.051176536828279495,
+                  0.009407984092831612
+                ]
+              },
+              "penetratingVertexPartPairs": 9
+            },
+            "R:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.002215080661699176,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.0018543674377724528,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.00016814656555652618,
+              "worstSignedM": -0.008590652607381344,
+              "worst": {
+                "vertex": 124,
+                "part": "GripCore",
+                "point": [
+                  -0.0027870142366737127,
+                  -0.13601765036582947,
+                  -0.06414514780044556
+                ]
+              },
+              "penetratingVertexPartPairs": 16
+            },
+            "R:wrist": {
+              "vertices": 198,
+              "nearestSurfaceM": 0.00013546519039664418,
+              "worstSignedM": -0.013040725141763687,
+              "worst": {
+                "vertex": 1448,
+                "part": "GripCore",
+                "point": [
+                  2.300937194377184e-05,
+                  -0.12325789034366608,
+                  -0.012229588814079762
+                ]
+              },
+              "penetratingVertexPartPairs": 45
+            },
+            "R:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.0009464884642511606,
+              "worstSignedM": -0.008321627043187618,
+              "worst": {
+                "vertex": 1485,
+                "part": "GripCore",
+                "point": [
+                  0.004103355575352907,
+                  -0.13657911121845245,
+                  -0.05423722043633461
+                ]
+              },
+              "penetratingVertexPartPairs": 7
+            },
+            "L:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 2.1121719328220934e-05,
+              "worstSignedM": -0.005293319001793861,
+              "worst": {
+                "vertex": 196,
+                "part": "GripCore",
+                "point": [
+                  -0.008127687498927116,
+                  -0.13797277212142944,
+                  -0.013562914915382862
+                ]
+              },
+              "penetratingVertexPartPairs": 9
+            },
+            "L:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 0.00011028043809346855,
+              "worstSignedM": -0.005181898362934589,
+              "worst": {
+                "vertex": 1621,
+                "part": "BodyGeometry",
+                "point": [
+                  -0.00661811325699091,
+                  -0.06939207762479782,
+                  -0.015036774799227715
+                ]
+              },
+              "penetratingVertexPartPairs": 19
+            },
+            "L:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.0014418504433706403,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.00015516221174038947,
+              "worstSignedM": -0.006546027027070522,
+              "worst": {
+                "vertex": 3642,
+                "part": "GripCore",
+                "point": [
+                  -0.0012098338920623064,
+                  -0.12961800396442413,
+                  -0.061978958547115326
+                ]
+              },
+              "penetratingVertexPartPairs": 16
+            },
+            "L:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.00019345198234077543,
+              "worstSignedM": -0.0007474321755580604,
+              "worst": {
+                "vertex": 3068,
+                "part": "GripCore",
+                "point": [
+                  -0.008179087191820145,
+                  -0.1325749158859253,
+                  -0.08176978677511215
+                ]
+              },
+              "penetratingVertexPartPairs": 0
+            },
+            "L:wrist": {
+              "vertices": 203,
+              "nearestSurfaceM": 0.006151783280074596,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.019390873610973358,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            }
+          }
+        },
+        "bilateral": {
+          "R:thumb": {
+            "nearestOtherHandM": 0.00022496242308989167,
+            "worstInsideOtherHandM": -0.01680605858564377,
+            "insideVertices": 51
+          },
+          "R:index": {
+            "nearestOtherHandM": 0.014187267981469631,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:middle": {
+            "nearestOtherHandM": 1.047066689352505e-06,
+            "worstInsideOtherHandM": -0.01653914526104927,
+            "insideVertices": 83
+          },
+          "R:ring": {
+            "nearestOtherHandM": 6.544154166476801e-05,
+            "worstInsideOtherHandM": -0.007037225645035505,
+            "insideVertices": 105
+          },
+          "R:little": {
+            "nearestOtherHandM": 2.4038889023358934e-05,
+            "worstInsideOtherHandM": -0.00434821005910635,
+            "insideVertices": 48
+          },
+          "R:wrist": {
+            "nearestOtherHandM": 0.00030331473681144416,
+            "worstInsideOtherHandM": -0.00030331473681144416,
+            "insideVertices": 1
+          },
+          "R:palm": {
+            "nearestOtherHandM": 1.7195917507706326e-06,
+            "worstInsideOtherHandM": -0.003756293561309576,
+            "insideVertices": 1
+          },
+          "L:thumb": {
+            "nearestOtherHandM": 0.00027306601987220347,
+            "worstInsideOtherHandM": -0.019390465691685677,
+            "insideVertices": 69
+          },
+          "L:index": {
+            "nearestOtherHandM": 3.9350470615318045e-05,
+            "worstInsideOtherHandM": -0.010768096894025803,
+            "insideVertices": 84
+          },
+          "L:middle": {
+            "nearestOtherHandM": 4.1481795051367953e-05,
+            "worstInsideOtherHandM": -0.008850844576954842,
+            "insideVertices": 60
+          },
+          "L:ring": {
+            "nearestOtherHandM": 1.3635716641147155e-05,
+            "worstInsideOtherHandM": -0.0063842227682471275,
+            "insideVertices": 27
+          },
+          "L:little": {
+            "nearestOtherHandM": 0.005325043573975563,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:wrist": {
+            "nearestOtherHandM": 8.120652637444437e-05,
+            "worstInsideOtherHandM": -0.005458996165543795,
+            "insideVertices": 10
+          },
+          "L:palm": {
+            "nearestOtherHandM": 0.01599929668009281,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          }
+        }
+      },
+      {
+        "fraction": 0.1,
+        "manualSkinMaxErrorM": 1.5730531784739882e-07,
+        "gunContacts": {
+          "method": "evaluated vertices / 3-direction unanimous ray parity inside component bounds; depth is nearest surface. Open meshes remain uncertain",
+          "digits": {
+            "R:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 4.012772478745319e-06,
+              "worstSignedM": -0.01199087593704462,
+              "worst": {
+                "vertex": 1668,
+                "part": "GripCore",
+                "point": [
+                  0.0066492678597569466,
+                  -0.13713684678077698,
+                  0.010733629576861858
+                ]
+              },
+              "penetratingVertexPartPairs": 179
+            },
+            "R:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 0.0002850448654498905,
+              "worstSignedM": -0.0028717992827296257,
+              "worst": {
+                "vertex": 1907,
+                "part": "TriggerGeometry",
+                "point": [
+                  0.00973985344171524,
+                  -0.07240310311317444,
+                  0.016249101608991623
+                ]
+              },
+              "penetratingVertexPartPairs": 9
+            },
+            "R:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.002215018728747964,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.0018543516052886844,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.00016816453717183322,
+              "worstSignedM": -0.00859067216515541,
+              "worst": {
+                "vertex": 124,
+                "part": "GripCore",
+                "point": [
+                  -0.01553028728812933,
+                  -0.14566348493099213,
+                  -0.06507384032011032
+                ]
+              },
+              "penetratingVertexPartPairs": 16
+            },
+            "R:wrist": {
+              "vertices": 198,
+              "nearestSurfaceM": 0.00016334881365764886,
+              "worstSignedM": -0.013144359923899174,
+              "worst": {
+                "vertex": 1489,
+                "part": "GripCore",
+                "point": [
+                  -0.00567490654066205,
+                  -0.148036926984787,
+                  -0.03841683641076088
+                ]
+              },
+              "penetratingVertexPartPairs": 45
+            },
+            "R:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.000946470070630312,
+              "worstSignedM": -0.008340621367096901,
+              "worst": {
+                "vertex": 1485,
+                "part": "GripCore",
+                "point": [
+                  -0.006351105403155088,
+                  -0.14780162274837494,
+                  -0.057604629546403885
+                ]
+              },
+              "penetratingVertexPartPairs": 7
+            },
+            "L:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 0.037593524903059006,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 0.04947741702198982,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.045862678438425064,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.052279625087976456,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.07295911014080048,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:wrist": {
+              "vertices": 203,
+              "nearestSurfaceM": 0.07937542349100113,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.09174025803804398,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            }
+          }
+        },
+        "bilateral": {
+          "R:thumb": {
+            "nearestOtherHandM": 0.03140847757458687,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:index": {
+            "nearestOtherHandM": 0.055699095129966736,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:middle": {
+            "nearestOtherHandM": 0.04455922916531563,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:ring": {
+            "nearestOtherHandM": 0.05390305072069168,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:little": {
+            "nearestOtherHandM": 0.06747623533010483,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:wrist": {
+            "nearestOtherHandM": 0.07044406980276108,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:palm": {
+            "nearestOtherHandM": 0.08832208812236786,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:thumb": {
+            "nearestOtherHandM": 0.031347788870334625,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:index": {
+            "nearestOtherHandM": 0.05148671939969063,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:middle": {
+            "nearestOtherHandM": 0.05412827059626579,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:ring": {
+            "nearestOtherHandM": 0.0445580929517746,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:little": {
+            "nearestOtherHandM": 0.04697364196181297,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:wrist": {
+            "nearestOtherHandM": 0.06091391667723656,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:palm": {
+            "nearestOtherHandM": 0.06956914812326431,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          }
+        }
+      },
+      {
+        "fraction": 0.2,
+        "manualSkinMaxErrorM": 2.2042262840996706e-07,
+        "gunContacts": {
+          "method": "evaluated vertices / 3-direction unanimous ray parity inside component bounds; depth is nearest surface. Open meshes remain uncertain",
+          "digits": {
+            "R:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 0.0001712730445433408,
+              "worstSignedM": -0.011854545213282108,
+              "worst": {
+                "vertex": 1668,
+                "part": "GripCore",
+                "point": [
+                  0.007474656216800213,
+                  -0.15118373930454254,
+                  0.011830179020762444
+                ]
+              },
+              "penetratingVertexPartPairs": 185
+            },
+            "R:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 0.00028492120327427983,
+              "worstSignedM": -0.0028717508539557457,
+              "worst": {
+                "vertex": 1907,
+                "part": "TriggerGeometry",
+                "point": [
+                  0.013933375477790833,
+                  -0.086913101375103,
+                  0.02157748118042946
+                ]
+              },
+              "penetratingVertexPartPairs": 9
+            },
+            "R:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.002215087180957198,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.0018543300684541464,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.00016817782307043672,
+              "worstSignedM": -0.008590620011091232,
+              "worst": {
+                "vertex": 124,
+                "part": "GripCore",
+                "point": [
+                  -0.02918027527630329,
+                  -0.1509193331003189,
+                  -0.06005268916487694
+                ]
+              },
+              "penetratingVertexPartPairs": 16
+            },
+            "R:wrist": {
+              "vertices": 198,
+              "nearestSurfaceM": 0.00015864174929447472,
+              "worstSignedM": -0.013082457706332207,
+              "worst": {
+                "vertex": 1489,
+                "part": "GripCore",
+                "point": [
+                  -0.014663180336356163,
+                  -0.15611974895000458,
+                  -0.035910893231630325
+                ]
+              },
+              "penetratingVertexPartPairs": 45
+            },
+            "R:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.0009466034825891256,
+              "worstSignedM": -0.008337225764989853,
+              "worst": {
+                "vertex": 1485,
+                "part": "GripCore",
+                "point": [
+                  -0.0188848078250885,
+                  -0.15402258932590485,
+                  -0.05465421825647354
+                ]
+              },
+              "penetratingVertexPartPairs": 7
+            },
+            "L:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 0.04286036267876625,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 0.0002929404436144978,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 5.5824984883656725e-05,
+              "worstSignedM": -5.5824984883656725e-05,
+              "worst": {
+                "vertex": 4140,
+                "part": "CylinderGeometry",
+                "point": [
+                  -0.012755095027387142,
+                  -0.07091332226991653,
+                  0.058511048555374146
+                ]
+              },
+              "penetratingVertexPartPairs": 0
+            },
+            "L:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.020144246518611908,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.04559583216905594,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:wrist": {
+              "vertices": 203,
+              "nearestSurfaceM": 0.061655838042497635,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.07806338369846344,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            }
+          }
+        },
+        "bilateral": {
+          "R:thumb": {
+            "nearestOtherHandM": 0.029426414519548416,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:index": {
+            "nearestOtherHandM": 0.04157979041337967,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:middle": {
+            "nearestOtherHandM": 0.028765318915247917,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:ring": {
+            "nearestOtherHandM": 0.04531289264559746,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:little": {
+            "nearestOtherHandM": 0.06993076205253601,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:wrist": {
+            "nearestOtherHandM": 0.06577792018651962,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:palm": {
+            "nearestOtherHandM": 0.08477313816547394,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:thumb": {
+            "nearestOtherHandM": 0.050125982612371445,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:index": {
+            "nearestOtherHandM": 0.0513201504945755,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:middle": {
+            "nearestOtherHandM": 0.03894796222448349,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:ring": {
+            "nearestOtherHandM": 0.029476121068000793,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:little": {
+            "nearestOtherHandM": 0.028723297640681267,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:wrist": {
+            "nearestOtherHandM": 0.05434815585613251,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:palm": {
+            "nearestOtherHandM": 0.05987292155623436,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          }
+        }
+      },
+      {
+        "fraction": 0.24,
+        "manualSkinMaxErrorM": 2.0683120721817114e-07,
+        "gunContacts": {
+          "method": "evaluated vertices / 3-direction unanimous ray parity inside component bounds; depth is nearest surface. Open meshes remain uncertain",
+          "digits": {
+            "R:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 1.0292491424479522e-05,
+              "worstSignedM": -0.011563518084585667,
+              "worst": {
+                "vertex": 44,
+                "part": "BodyGeometry",
+                "point": [
+                  0.014097681269049644,
+                  -0.1503026783466339,
+                  0.022588413208723068
+                ]
+              },
+              "penetratingVertexPartPairs": 192
+            },
+            "R:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 0.00028492120327427983,
+              "worstSignedM": -0.0028717508539557457,
+              "worst": {
+                "vertex": 1907,
+                "part": "TriggerGeometry",
+                "point": [
+                  0.013933375477790833,
+                  -0.086913101375103,
+                  0.02157748118042946
+                ]
+              },
+              "penetratingVertexPartPairs": 9
+            },
+            "R:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.002215087180957198,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.0018543300684541464,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.00016817782307043672,
+              "worstSignedM": -0.008590620011091232,
+              "worst": {
+                "vertex": 124,
+                "part": "GripCore",
+                "point": [
+                  -0.02918027527630329,
+                  -0.1509193331003189,
+                  -0.06005268916487694
+                ]
+              },
+              "penetratingVertexPartPairs": 16
+            },
+            "R:wrist": {
+              "vertices": 198,
+              "nearestSurfaceM": 0.00013536620826926082,
+              "worstSignedM": -0.013040311634540558,
+              "worst": {
+                "vertex": 1448,
+                "part": "GripCore",
+                "point": [
+                  -0.0033975550904870033,
+                  -0.15139925479888916,
+                  -0.013138850219547749
+                ]
+              },
+              "penetratingVertexPartPairs": 45
+            },
+            "R:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.0009466034825891256,
+              "worstSignedM": -0.008321539498865604,
+              "worst": {
+                "vertex": 1485,
+                "part": "GripCore",
+                "point": [
+                  -0.018860600888729095,
+                  -0.1539146602153778,
+                  -0.05453069880604744
+                ]
+              },
+              "penetratingVertexPartPairs": 7
+            },
+            "L:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 0.019649222493171692,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 0.008141820318996906,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.0279258843511343,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.043987393379211426,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.060341380536556244,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:wrist": {
+              "vertices": 203,
+              "nearestSurfaceM": 0.047581542283296585,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.0791618749499321,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            }
+          }
+        },
+        "bilateral": {
+          "R:thumb": {
+            "nearestOtherHandM": 0.022391268983483315,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:index": {
+            "nearestOtherHandM": 0.04920397326350212,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:middle": {
+            "nearestOtherHandM": 0.04466758295893669,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:ring": {
+            "nearestOtherHandM": 0.05142553895711899,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:little": {
+            "nearestOtherHandM": 0.0638321042060852,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:wrist": {
+            "nearestOtherHandM": 0.05946601927280426,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:palm": {
+            "nearestOtherHandM": 0.08635671436786652,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:thumb": {
+            "nearestOtherHandM": 0.022731712087988853,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:index": {
+            "nearestOtherHandM": 0.05098309740424156,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:middle": {
+            "nearestOtherHandM": 0.04920397326350212,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:ring": {
+            "nearestOtherHandM": 0.04720180481672287,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:little": {
+            "nearestOtherHandM": 0.04466758295893669,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:wrist": {
+            "nearestOtherHandM": 0.05009816214442253,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:palm": {
+            "nearestOtherHandM": 0.054975803941488266,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          }
+        }
+      },
+      {
+        "fraction": 0.34,
+        "manualSkinMaxErrorM": 2.0133806939231844e-07,
+        "gunContacts": {
+          "method": "evaluated vertices / 3-direction unanimous ray parity inside component bounds; depth is nearest surface. Open meshes remain uncertain",
+          "digits": {
+            "R:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 4.140937380725518e-05,
+              "worstSignedM": -0.011559657752513885,
+              "worst": {
+                "vertex": 44,
+                "part": "BodyGeometry",
+                "point": [
+                  0.014083978720009327,
+                  -0.15030266344547272,
+                  0.022551167756319046
+                ]
+              },
+              "penetratingVertexPartPairs": 192
+            },
+            "R:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 0.00028492120327427983,
+              "worstSignedM": -0.0028717508539557457,
+              "worst": {
+                "vertex": 1907,
+                "part": "TriggerGeometry",
+                "point": [
+                  0.013933375477790833,
+                  -0.086913101375103,
+                  0.02157748118042946
+                ]
+              },
+              "penetratingVertexPartPairs": 9
+            },
+            "R:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.002215087180957198,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.0018543300684541464,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.00016817782307043672,
+              "worstSignedM": -0.008590620011091232,
+              "worst": {
+                "vertex": 124,
+                "part": "GripCore",
+                "point": [
+                  -0.02918027527630329,
+                  -0.1509193331003189,
+                  -0.06005268916487694
+                ]
+              },
+              "penetratingVertexPartPairs": 16
+            },
+            "R:wrist": {
+              "vertices": 198,
+              "nearestSurfaceM": 0.00013557096826843917,
+              "worstSignedM": -0.013040616177022457,
+              "worst": {
+                "vertex": 1448,
+                "part": "GripCore",
+                "point": [
+                  -0.003397333435714245,
+                  -0.1514004021883011,
+                  -0.013138486072421074
+                ]
+              },
+              "penetratingVertexPartPairs": 45
+            },
+            "R:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.0009466034825891256,
+              "worstSignedM": -0.008321527391672134,
+              "worst": {
+                "vertex": 1485,
+                "part": "GripCore",
+                "point": [
+                  -0.01886058785021305,
+                  -0.15391460061073303,
+                  -0.05453065037727356
+                ]
+              },
+              "penetratingVertexPartPairs": 7
+            },
+            "L:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 0.0003938937443308532,
+              "worstSignedM": -0.0033763055689632893,
+              "worst": {
+                "vertex": 1008,
+                "part": "CylinderGeometry",
+                "point": [
+                  -0.015946513041853905,
+                  -0.05018427222967148,
+                  0.0710831806063652
+                ]
+              },
+              "penetratingVertexPartPairs": 1
+            },
+            "L:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 0.05081929638981819,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.06506656855344772,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.08252643048763275,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.09853598475456238,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:wrist": {
+              "vertices": 203,
+              "nearestSurfaceM": 0.03099273145198822,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.08559469133615494,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            }
+          }
+        },
+        "bilateral": {
+          "R:thumb": {
+            "nearestOtherHandM": 0.050930723547935486,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:index": {
+            "nearestOtherHandM": 0.051677197217941284,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:middle": {
+            "nearestOtherHandM": 0.05401144549250603,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:ring": {
+            "nearestOtherHandM": 0.06794383376836777,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:little": {
+            "nearestOtherHandM": 0.08686419576406479,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:wrist": {
+            "nearestOtherHandM": 0.09365809708833694,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:palm": {
+            "nearestOtherHandM": 0.10522593557834625,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:thumb": {
+            "nearestOtherHandM": 0.05099010840058327,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:index": {
+            "nearestOtherHandM": 0.10280986875295639,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:middle": {
+            "nearestOtherHandM": 0.10869165509939194,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:ring": {
+            "nearestOtherHandM": 0.11613307148218155,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:little": {
+            "nearestOtherHandM": 0.12413538247346878,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:wrist": {
+            "nearestOtherHandM": 0.062024205923080444,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:palm": {
+            "nearestOtherHandM": 0.10240676999092102,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          }
+        }
+      },
+      {
+        "fraction": 0.48,
+        "manualSkinMaxErrorM": 2.3713455293833537e-07,
+        "gunContacts": {
+          "method": "evaluated vertices / 3-direction unanimous ray parity inside component bounds; depth is nearest surface. Open meshes remain uncertain",
+          "digits": {
+            "R:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 4.140937380725518e-05,
+              "worstSignedM": -0.011559657752513885,
+              "worst": {
+                "vertex": 44,
+                "part": "BodyGeometry",
+                "point": [
+                  0.014083978720009327,
+                  -0.15030266344547272,
+                  0.022551167756319046
+                ]
+              },
+              "penetratingVertexPartPairs": 192
+            },
+            "R:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 0.00028492120327427983,
+              "worstSignedM": -0.0028717508539557457,
+              "worst": {
+                "vertex": 1907,
+                "part": "TriggerGeometry",
+                "point": [
+                  0.013933375477790833,
+                  -0.086913101375103,
+                  0.02157748118042946
+                ]
+              },
+              "penetratingVertexPartPairs": 9
+            },
+            "R:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.002215087180957198,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.0018543300684541464,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.00016817782307043672,
+              "worstSignedM": -0.008590620011091232,
+              "worst": {
+                "vertex": 124,
+                "part": "GripCore",
+                "point": [
+                  -0.02918027527630329,
+                  -0.1509193331003189,
+                  -0.06005268916487694
+                ]
+              },
+              "penetratingVertexPartPairs": 16
+            },
+            "R:wrist": {
+              "vertices": 198,
+              "nearestSurfaceM": 0.00013557096826843917,
+              "worstSignedM": -0.013040616177022457,
+              "worst": {
+                "vertex": 1448,
+                "part": "GripCore",
+                "point": [
+                  -0.003397333435714245,
+                  -0.1514004021883011,
+                  -0.013138486072421074
+                ]
+              },
+              "penetratingVertexPartPairs": 45
+            },
+            "R:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.0009466034825891256,
+              "worstSignedM": -0.008321527391672134,
+              "worst": {
+                "vertex": 1485,
+                "part": "GripCore",
+                "point": [
+                  -0.01886058785021305,
+                  -0.15391460061073303,
+                  -0.05453065037727356
+                ]
+              },
+              "penetratingVertexPartPairs": 7
+            },
+            "L:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 0.07948408275842667,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 0.12083929777145386,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.13673540949821472,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.1565469354391098,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.18086685240268707,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:wrist": {
+              "vertices": 203,
+              "nearestSurfaceM": 0.1453862190246582,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.1950949728488922,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            }
+          }
+        },
+        "bilateral": {
+          "R:thumb": {
+            "nearestOtherHandM": 0.1093987300992012,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:index": {
+            "nearestOtherHandM": 0.17142415046691895,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:middle": {
+            "nearestOtherHandM": 0.11454899609088898,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:ring": {
+            "nearestOtherHandM": 0.10850976407527924,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:little": {
+            "nearestOtherHandM": 0.09543600678443909,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:wrist": {
+            "nearestOtherHandM": 0.08592405170202255,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:palm": {
+            "nearestOtherHandM": 0.1059853583574295,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:thumb": {
+            "nearestOtherHandM": 0.08290290087461472,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:index": {
+            "nearestOtherHandM": 0.12844838201999664,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:middle": {
+            "nearestOtherHandM": 0.14562614262104034,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:ring": {
+            "nearestOtherHandM": 0.16915428638458252,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:little": {
+            "nearestOtherHandM": 0.19629529118537903,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:wrist": {
+            "nearestOtherHandM": 0.14556005597114563,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:palm": {
+            "nearestOtherHandM": 0.19681845605373383,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          }
+        }
+      },
+      {
+        "fraction": 0.59,
+        "manualSkinMaxErrorM": 2.2540315251657135e-07,
+        "gunContacts": {
+          "method": "evaluated vertices / 3-direction unanimous ray parity inside component bounds; depth is nearest surface. Open meshes remain uncertain",
+          "digits": {
+            "R:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 4.140937380725518e-05,
+              "worstSignedM": -0.011559657752513885,
+              "worst": {
+                "vertex": 44,
+                "part": "BodyGeometry",
+                "point": [
+                  0.014083978720009327,
+                  -0.15030266344547272,
+                  0.022551167756319046
+                ]
+              },
+              "penetratingVertexPartPairs": 192
+            },
+            "R:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 0.00028492120327427983,
+              "worstSignedM": -0.0028717508539557457,
+              "worst": {
+                "vertex": 1907,
+                "part": "TriggerGeometry",
+                "point": [
+                  0.013933375477790833,
+                  -0.086913101375103,
+                  0.02157748118042946
+                ]
+              },
+              "penetratingVertexPartPairs": 9
+            },
+            "R:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.002215087180957198,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.0018543300684541464,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.00016817782307043672,
+              "worstSignedM": -0.008590620011091232,
+              "worst": {
+                "vertex": 124,
+                "part": "GripCore",
+                "point": [
+                  -0.02918027527630329,
+                  -0.1509193331003189,
+                  -0.06005268916487694
+                ]
+              },
+              "penetratingVertexPartPairs": 16
+            },
+            "R:wrist": {
+              "vertices": 198,
+              "nearestSurfaceM": 0.00013557096826843917,
+              "worstSignedM": -0.013040616177022457,
+              "worst": {
+                "vertex": 1448,
+                "part": "GripCore",
+                "point": [
+                  -0.003397333435714245,
+                  -0.1514004021883011,
+                  -0.013138486072421074
+                ]
+              },
+              "penetratingVertexPartPairs": 45
+            },
+            "R:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.0009466034825891256,
+              "worstSignedM": -0.008321527391672134,
+              "worst": {
+                "vertex": 1485,
+                "part": "GripCore",
+                "point": [
+                  -0.01886058785021305,
+                  -0.15391460061073303,
+                  -0.05453065037727356
+                ]
+              },
+              "penetratingVertexPartPairs": 7
+            },
+            "L:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 0.00016149983275681734,
+              "worstSignedM": -0.006907146889716387,
+              "worst": {
+                "vertex": 4040,
+                "part": "GripCore",
+                "point": [
+                  -0.03392753750085831,
+                  -0.1805344820022583,
+                  -0.07266861945390701
+                ]
+              },
+              "penetratingVertexPartPairs": 20
+            },
+            "L:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 0.00012672417506109923,
+              "worstSignedM": -0.007005462422966957,
+              "worst": {
+                "vertex": 3397,
+                "part": "GripCore",
+                "point": [
+                  -0.02465732768177986,
+                  -0.14616644382476807,
+                  -0.06091049686074257
+                ]
+              },
+              "penetratingVertexPartPairs": 11
+            },
+            "L:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.005559952463954687,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.02451435476541519,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.054404616355895996,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:wrist": {
+              "vertices": 203,
+              "nearestSurfaceM": 0.03258414939045906,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.06831565499305725,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            }
+          }
+        },
+        "bilateral": {
+          "R:thumb": {
+            "nearestOtherHandM": 0.03850448504090309,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:index": {
+            "nearestOtherHandM": 0.0539974682033062,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:middle": {
+            "nearestOtherHandM": 0.023461420089006424,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:ring": {
+            "nearestOtherHandM": 0.0009173802100121975,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:little": {
+            "nearestOtherHandM": 3.5848293009621557e-06,
+            "worstInsideOtherHandM": -0.00971883162856102,
+            "insideVertices": 92
+          },
+          "R:wrist": {
+            "nearestOtherHandM": 0.001156764104962349,
+            "worstInsideOtherHandM": -0.0037599944043904543,
+            "insideVertices": 1
+          },
+          "R:palm": {
+            "nearestOtherHandM": 0.00014380669745150954,
+            "worstInsideOtherHandM": -0.007608366198837757,
+            "insideVertices": 6
+          },
+          "L:thumb": {
+            "nearestOtherHandM": 2.371355913055595e-05,
+            "worstInsideOtherHandM": -0.004410071764141321,
+            "insideVertices": 16
+          },
+          "L:index": {
+            "nearestOtherHandM": 7.02323523000814e-05,
+            "worstInsideOtherHandM": -0.0082190977409482,
+            "insideVertices": 55
+          },
+          "L:middle": {
+            "nearestOtherHandM": 9.790328476810828e-05,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:ring": {
+            "nearestOtherHandM": 0.02098299190402031,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:little": {
+            "nearestOtherHandM": 0.053673163056373596,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:wrist": {
+            "nearestOtherHandM": 0.04376458749175072,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:palm": {
+            "nearestOtherHandM": 0.07561951875686646,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          }
+        }
+      },
+      {
+        "fraction": 0.67,
+        "manualSkinMaxErrorM": 2.0133806939231844e-07,
+        "gunContacts": {
+          "method": "evaluated vertices / 3-direction unanimous ray parity inside component bounds; depth is nearest surface. Open meshes remain uncertain",
+          "digits": {
+            "R:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 4.140937380725518e-05,
+              "worstSignedM": -0.011559657752513885,
+              "worst": {
+                "vertex": 44,
+                "part": "BodyGeometry",
+                "point": [
+                  0.014083978720009327,
+                  -0.15030266344547272,
+                  0.022551167756319046
+                ]
+              },
+              "penetratingVertexPartPairs": 192
+            },
+            "R:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 0.00028492120327427983,
+              "worstSignedM": -0.0028717508539557457,
+              "worst": {
+                "vertex": 1907,
+                "part": "TriggerGeometry",
+                "point": [
+                  0.013933375477790833,
+                  -0.086913101375103,
+                  0.02157748118042946
+                ]
+              },
+              "penetratingVertexPartPairs": 9
+            },
+            "R:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.002215087180957198,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.0018543300684541464,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.00016817782307043672,
+              "worstSignedM": -0.008590620011091232,
+              "worst": {
+                "vertex": 124,
+                "part": "GripCore",
+                "point": [
+                  -0.02918027527630329,
+                  -0.1509193331003189,
+                  -0.06005268916487694
+                ]
+              },
+              "penetratingVertexPartPairs": 16
+            },
+            "R:wrist": {
+              "vertices": 198,
+              "nearestSurfaceM": 0.00013557096826843917,
+              "worstSignedM": -0.013040616177022457,
+              "worst": {
+                "vertex": 1448,
+                "part": "GripCore",
+                "point": [
+                  -0.003397333435714245,
+                  -0.1514004021883011,
+                  -0.013138486072421074
+                ]
+              },
+              "penetratingVertexPartPairs": 45
+            },
+            "R:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.0009466034825891256,
+              "worstSignedM": -0.008321527391672134,
+              "worst": {
+                "vertex": 1485,
+                "part": "GripCore",
+                "point": [
+                  -0.01886058785021305,
+                  -0.15391460061073303,
+                  -0.05453065037727356
+                ]
+              },
+              "penetratingVertexPartPairs": 7
+            },
+            "L:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 0.000573784695006907,
+              "worstSignedM": -0.00388043443672359,
+              "worst": {
+                "vertex": 172,
+                "part": "GripCore",
+                "point": [
+                  -0.008425560779869556,
+                  -0.1545034497976303,
+                  -0.0007502733496949077
+                ]
+              },
+              "penetratingVertexPartPairs": 3
+            },
+            "L:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 4.482470831135288e-05,
+              "worstSignedM": -0.006142061669379473,
+              "worst": {
+                "vertex": 3390,
+                "part": "CylinderGeometry",
+                "point": [
+                  -0.0002887616865336895,
+                  -0.09315526485443115,
+                  0.05470409616827965
+                ]
+              },
+              "penetratingVertexPartPairs": 76
+            },
+            "L:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 1.2659420463023707e-05,
+              "worstSignedM": -0.01290880236774683,
+              "worst": {
+                "vertex": 4087,
+                "part": "GripCore",
+                "point": [
+                  0.0054871453903615475,
+                  -0.15134616196155548,
+                  0.004271547310054302
+                ]
+              },
+              "penetratingVertexPartPairs": 202
+            },
+            "L:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 4.634953711502021e-06,
+              "worstSignedM": -0.012150492519140244,
+              "worst": {
+                "vertex": 3593,
+                "part": "GripCore",
+                "point": [
+                  0.00043982919305562973,
+                  -0.14724425971508026,
+                  -0.005252542439848185
+                ]
+              },
+              "penetratingVertexPartPairs": 172
+            },
+            "L:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.005237901583313942,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:wrist": {
+              "vertices": 203,
+              "nearestSurfaceM": 0.00010684577136998996,
+              "worstSignedM": -0.011311370879411697,
+              "worst": {
+                "vertex": 1590,
+                "part": "GripCore",
+                "point": [
+                  -0.030773838981986046,
+                  -0.15883520245552063,
+                  -0.06527335941791534
+                ]
+              },
+              "penetratingVertexPartPairs": 30
+            },
+            "L:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.006769979372620583,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            }
+          }
+        },
+        "bilateral": {
+          "R:thumb": {
+            "nearestOtherHandM": 7.763514440739527e-05,
+            "worstInsideOtherHandM": -0.009420335292816162,
+            "insideVertices": 50
+          },
+          "R:index": {
+            "nearestOtherHandM": 9.804986802919302e-06,
+            "worstInsideOtherHandM": -0.004483209457248449,
+            "insideVertices": 21
+          },
+          "R:middle": {
+            "nearestOtherHandM": 0.0002055213408311829,
+            "worstInsideOtherHandM": -0.024647710844874382,
+            "insideVertices": 160
+          },
+          "R:ring": {
+            "nearestOtherHandM": 0.00016826533828862011,
+            "worstInsideOtherHandM": -0.024901878088712692,
+            "insideVertices": 182
+          },
+          "R:little": {
+            "nearestOtherHandM": 8.354466262971982e-05,
+            "worstInsideOtherHandM": -0.00729588745161891,
+            "insideVertices": 51
+          },
+          "R:wrist": {
+            "nearestOtherHandM": 0.00022823145263828337,
+            "worstInsideOtherHandM": -0.022265002131462097,
+            "insideVertices": 47
+          },
+          "R:palm": {
+            "nearestOtherHandM": 0.0001936415646923706,
+            "worstInsideOtherHandM": -0.011256689205765724,
+            "insideVertices": 6
+          },
+          "L:thumb": {
+            "nearestOtherHandM": 1.593220622453373e-05,
+            "worstInsideOtherHandM": -0.005894218571484089,
+            "insideVertices": 21
+          },
+          "L:index": {
+            "nearestOtherHandM": 0.0008042211411520839,
+            "worstInsideOtherHandM": -0.001353928353637457,
+            "insideVertices": 2
+          },
+          "L:middle": {
+            "nearestOtherHandM": 2.0164487068541348e-05,
+            "worstInsideOtherHandM": -0.010810302570462227,
+            "insideVertices": 46
+          },
+          "L:ring": {
+            "nearestOtherHandM": 1.8954629922518507e-05,
+            "worstInsideOtherHandM": -0.009020430035889149,
+            "insideVertices": 41
+          },
+          "L:little": {
+            "nearestOtherHandM": 1.2677233826252632e-05,
+            "worstInsideOtherHandM": -0.011592290364205837,
+            "insideVertices": 105
+          },
+          "L:wrist": {
+            "nearestOtherHandM": 0.00021808886958751827,
+            "worstInsideOtherHandM": -0.023610452190041542,
+            "insideVertices": 66
+          },
+          "L:palm": {
+            "nearestOtherHandM": 0.00018107975483871996,
+            "worstInsideOtherHandM": -0.007654880173504353,
+            "insideVertices": 16
+          }
+        }
+      },
+      {
+        "fraction": 0.78,
+        "manualSkinMaxErrorM": 2.0133806939231844e-07,
+        "gunContacts": {
+          "method": "evaluated vertices / 3-direction unanimous ray parity inside component bounds; depth is nearest surface. Open meshes remain uncertain",
+          "digits": {
+            "R:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 4.140937380725518e-05,
+              "worstSignedM": -0.011559657752513885,
+              "worst": {
+                "vertex": 44,
+                "part": "BodyGeometry",
+                "point": [
+                  0.014083978720009327,
+                  -0.15030266344547272,
+                  0.022551167756319046
+                ]
+              },
+              "penetratingVertexPartPairs": 192
+            },
+            "R:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 0.00028492120327427983,
+              "worstSignedM": -0.0028717508539557457,
+              "worst": {
+                "vertex": 1907,
+                "part": "TriggerGeometry",
+                "point": [
+                  0.013933375477790833,
+                  -0.086913101375103,
+                  0.02157748118042946
+                ]
+              },
+              "penetratingVertexPartPairs": 9
+            },
+            "R:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.002215087180957198,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.0018543300684541464,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.00016817782307043672,
+              "worstSignedM": -0.008590620011091232,
+              "worst": {
+                "vertex": 124,
+                "part": "GripCore",
+                "point": [
+                  -0.02918027527630329,
+                  -0.1509193331003189,
+                  -0.06005268916487694
+                ]
+              },
+              "penetratingVertexPartPairs": 16
+            },
+            "R:wrist": {
+              "vertices": 198,
+              "nearestSurfaceM": 0.00013557096826843917,
+              "worstSignedM": -0.013040616177022457,
+              "worst": {
+                "vertex": 1448,
+                "part": "GripCore",
+                "point": [
+                  -0.003397333435714245,
+                  -0.1514004021883011,
+                  -0.013138486072421074
+                ]
+              },
+              "penetratingVertexPartPairs": 45
+            },
+            "R:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.0009466034825891256,
+              "worstSignedM": -0.008321527391672134,
+              "worst": {
+                "vertex": 1485,
+                "part": "GripCore",
+                "point": [
+                  -0.01886058785021305,
+                  -0.15391460061073303,
+                  -0.05453065037727356
+                ]
+              },
+              "penetratingVertexPartPairs": 7
+            },
+            "L:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 0.037833552807569504,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 0.029103899374604225,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.045998964458703995,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.06035352870821953,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.07774385809898376,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:wrist": {
+              "vertices": 203,
+              "nearestSurfaceM": 0.07337939739227295,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.09452321380376816,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            }
+          }
+        },
+        "bilateral": {
+          "R:thumb": {
+            "nearestOtherHandM": 0.029298821464180946,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:index": {
+            "nearestOtherHandM": 0.06289038807153702,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:middle": {
+            "nearestOtherHandM": 0.05061914026737213,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:ring": {
+            "nearestOtherHandM": 0.05775650218129158,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:little": {
+            "nearestOtherHandM": 0.07082445174455643,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:wrist": {
+            "nearestOtherHandM": 0.06279559433460236,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:palm": {
+            "nearestOtherHandM": 0.0927954763174057,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:thumb": {
+            "nearestOtherHandM": 0.029298821464180946,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:index": {
+            "nearestOtherHandM": 0.05764390528202057,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:middle": {
+            "nearestOtherHandM": 0.056473229080438614,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:ring": {
+            "nearestOtherHandM": 0.0506170429289341,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:little": {
+            "nearestOtherHandM": 0.055549848824739456,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:wrist": {
+            "nearestOtherHandM": 0.06450967490673065,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:palm": {
+            "nearestOtherHandM": 0.07447416335344315,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          }
+        }
+      },
+      {
+        "fraction": 0.84,
+        "manualSkinMaxErrorM": 2.1033874472220397e-07,
+        "gunContacts": {
+          "method": "evaluated vertices / 3-direction unanimous ray parity inside component bounds; depth is nearest surface. Open meshes remain uncertain",
+          "digits": {
+            "R:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 4.140937380725518e-05,
+              "worstSignedM": -0.011559657752513885,
+              "worst": {
+                "vertex": 44,
+                "part": "BodyGeometry",
+                "point": [
+                  0.014083978720009327,
+                  -0.15030266344547272,
+                  0.022551167756319046
+                ]
+              },
+              "penetratingVertexPartPairs": 192
+            },
+            "R:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 0.00028492120327427983,
+              "worstSignedM": -0.0028717508539557457,
+              "worst": {
+                "vertex": 1907,
+                "part": "TriggerGeometry",
+                "point": [
+                  0.013933375477790833,
+                  -0.086913101375103,
+                  0.02157748118042946
+                ]
+              },
+              "penetratingVertexPartPairs": 9
+            },
+            "R:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.002215087180957198,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.0018543300684541464,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.00016817782307043672,
+              "worstSignedM": -0.008590620011091232,
+              "worst": {
+                "vertex": 124,
+                "part": "GripCore",
+                "point": [
+                  -0.02918027527630329,
+                  -0.1509193331003189,
+                  -0.06005268916487694
+                ]
+              },
+              "penetratingVertexPartPairs": 16
+            },
+            "R:wrist": {
+              "vertices": 198,
+              "nearestSurfaceM": 0.00013557096826843917,
+              "worstSignedM": -0.013040616177022457,
+              "worst": {
+                "vertex": 1448,
+                "part": "GripCore",
+                "point": [
+                  -0.003397333435714245,
+                  -0.1514004021883011,
+                  -0.013138486072421074
+                ]
+              },
+              "penetratingVertexPartPairs": 45
+            },
+            "R:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.0009466034825891256,
+              "worstSignedM": -0.008321527391672134,
+              "worst": {
+                "vertex": 1485,
+                "part": "GripCore",
+                "point": [
+                  -0.01886058785021305,
+                  -0.15391460061073303,
+                  -0.05453065037727356
+                ]
+              },
+              "penetratingVertexPartPairs": 7
+            },
+            "L:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 0.05664784461259842,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 0.01736503280699253,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.0035511802416294813,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.015857215970754623,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.040690455585718155,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:wrist": {
+              "vertices": 203,
+              "nearestSurfaceM": 0.07096896320581436,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.07524847239255905,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            }
+          }
+        },
+        "bilateral": {
+          "R:thumb": {
+            "nearestOtherHandM": 0.022945763543248177,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:index": {
+            "nearestOtherHandM": 0.04231630638241768,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:middle": {
+            "nearestOtherHandM": 0.03752969205379486,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:ring": {
+            "nearestOtherHandM": 0.05562940612435341,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:little": {
+            "nearestOtherHandM": 0.08433552086353302,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:wrist": {
+            "nearestOtherHandM": 0.060380298644304276,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:palm": {
+            "nearestOtherHandM": 0.09565893560647964,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:thumb": {
+            "nearestOtherHandM": 0.05760161578655243,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:index": {
+            "nearestOtherHandM": 0.06410063803195953,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:middle": {
+            "nearestOtherHandM": 0.04319644719362259,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:ring": {
+            "nearestOtherHandM": 0.022945763543248177,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:little": {
+            "nearestOtherHandM": 0.028223324567079544,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:wrist": {
+            "nearestOtherHandM": 0.057903945446014404,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:palm": {
+            "nearestOtherHandM": 0.05890372022986412,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          }
+        }
+      },
+      {
+        "fraction": 0.92,
+        "manualSkinMaxErrorM": 1.9375091230788594e-07,
+        "gunContacts": {
+          "method": "evaluated vertices / 3-direction unanimous ray parity inside component bounds; depth is nearest surface. Open meshes remain uncertain",
+          "digits": {
+            "R:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 4.1310220694867894e-05,
+              "worstSignedM": -0.011559783481061459,
+              "worst": {
+                "vertex": 44,
+                "part": "BodyGeometry",
+                "point": [
+                  0.011677979491651058,
+                  -0.13622155785560608,
+                  0.023509731516242027
+                ]
+              },
+              "penetratingVertexPartPairs": 192
+            },
+            "R:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 0.0002850947203114629,
+              "worstSignedM": -0.0028717205859720707,
+              "worst": {
+                "vertex": 1907,
+                "part": "TriggerGeometry",
+                "point": [
+                  0.010025856085121632,
+                  -0.07323139160871506,
+                  0.016530241817235947
+                ]
+              },
+              "penetratingVertexPartPairs": 9
+            },
+            "R:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.0022150538861751556,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.001854263711720705,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.0001680450077401474,
+              "worstSignedM": -0.008590762503445148,
+              "worst": {
+                "vertex": 124,
+                "part": "GripCore",
+                "point": [
+                  -0.016213659197092056,
+                  -0.145993173122406,
+                  -0.06493311375379562
+                ]
+              },
+              "penetratingVertexPartPairs": 16
+            },
+            "R:wrist": {
+              "vertices": 198,
+              "nearestSurfaceM": 0.00013543528621084988,
+              "worstSignedM": -0.013040745630860329,
+              "worst": {
+                "vertex": 1448,
+                "part": "GripCore",
+                "point": [
+                  0.0008408189751207829,
+                  -0.14121896028518677,
+                  -0.014412935823202133
+                ]
+              },
+              "penetratingVertexPartPairs": 45
+            },
+            "R:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.0009464891627430916,
+              "worstSignedM": -0.008321710862219334,
+              "worst": {
+                "vertex": 1485,
+                "part": "GripCore",
+                "point": [
+                  -0.006961946375668049,
+                  -0.14804448187351227,
+                  -0.05743934214115143
+                ]
+              },
+              "penetratingVertexPartPairs": 7
+            },
+            "L:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 8.374433673452586e-05,
+              "worstSignedM": -0.012491160072386265,
+              "worst": {
+                "vertex": 3182,
+                "part": "GripCore",
+                "point": [
+                  0.009039047174155712,
+                  -0.13840025663375854,
+                  0.015264204703271389
+                ]
+              },
+              "penetratingVertexPartPairs": 149
+            },
+            "L:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 0.008120328187942505,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.03074730932712555,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.04537216201424599,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.04557361453771591,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:wrist": {
+              "vertices": 203,
+              "nearestSurfaceM": 0.015405573882162571,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.03497102111577988,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            }
+          }
+        },
+        "bilateral": {
+          "R:thumb": {
+            "nearestOtherHandM": 0.00010056218889076263,
+            "worstInsideOtherHandM": -0.010966387577354908,
+            "insideVertices": 65
+          },
+          "R:index": {
+            "nearestOtherHandM": 0.010662670247256756,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:middle": {
+            "nearestOtherHandM": 0.00010016706073656678,
+            "worstInsideOtherHandM": -0.004677041433751583,
+            "insideVertices": 30
+          },
+          "R:ring": {
+            "nearestOtherHandM": 0.004229762125760317,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:little": {
+            "nearestOtherHandM": 0.019869642332196236,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:wrist": {
+            "nearestOtherHandM": 0.0005266701919026673,
+            "worstInsideOtherHandM": -0.0005266701919026673,
+            "insideVertices": 1
+          },
+          "R:palm": {
+            "nearestOtherHandM": 0.03195466473698616,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:thumb": {
+            "nearestOtherHandM": 1.2733087714877911e-05,
+            "worstInsideOtherHandM": -0.012117616832256317,
+            "insideVertices": 68
+          },
+          "L:index": {
+            "nearestOtherHandM": 0.006731416564434767,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:middle": {
+            "nearestOtherHandM": 0.013224450871348381,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:ring": {
+            "nearestOtherHandM": 0.03090679831802845,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:little": {
+            "nearestOtherHandM": 0.04138527065515518,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:wrist": {
+            "nearestOtherHandM": 0.00024854144430719316,
+            "worstInsideOtherHandM": -0.002789457328617573,
+            "insideVertices": 2
+          },
+          "L:palm": {
+            "nearestOtherHandM": 0.03179417550563812,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          }
+        }
+      },
+      {
+        "fraction": 1,
+        "manualSkinMaxErrorM": 1.6323404237781945e-07,
+        "gunContacts": {
+          "method": "evaluated vertices / 3-direction unanimous ray parity inside component bounds; depth is nearest surface. Open meshes remain uncertain",
+          "digits": {
+            "R:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 4.134174741921015e-05,
+              "worstSignedM": -0.01155976951122284,
+              "worst": {
+                "vertex": 44,
+                "part": "BodyGeometry",
+                "point": [
+                  0.00024021649733185768,
+                  -0.1123623475432396,
+                  0.026003766804933548
+                ]
+              },
+              "penetratingVertexPartPairs": 192
+            },
+            "R:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 0.0002850507735274732,
+              "worstSignedM": -0.002871813252568245,
+              "worst": {
+                "vertex": 1907,
+                "part": "TriggerGeometry",
+                "point": [
+                  0.000528180506080389,
+                  -0.051176536828279495,
+                  0.009407984092831612
+                ]
+              },
+              "penetratingVertexPartPairs": 9
+            },
+            "R:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.002215080661699176,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.0018543674377724528,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "R:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.00016814656555652618,
+              "worstSignedM": -0.008590652607381344,
+              "worst": {
+                "vertex": 124,
+                "part": "GripCore",
+                "point": [
+                  -0.0027870142366737127,
+                  -0.13601765036582947,
+                  -0.06414514780044556
+                ]
+              },
+              "penetratingVertexPartPairs": 16
+            },
+            "R:wrist": {
+              "vertices": 198,
+              "nearestSurfaceM": 0.00013546519039664418,
+              "worstSignedM": -0.013040725141763687,
+              "worst": {
+                "vertex": 1448,
+                "part": "GripCore",
+                "point": [
+                  2.300937194377184e-05,
+                  -0.12325789034366608,
+                  -0.012229588814079762
+                ]
+              },
+              "penetratingVertexPartPairs": 45
+            },
+            "R:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.0009464884642511606,
+              "worstSignedM": -0.008321627043187618,
+              "worst": {
+                "vertex": 1485,
+                "part": "GripCore",
+                "point": [
+                  0.004103355575352907,
+                  -0.13657911121845245,
+                  -0.05423722043633461
+                ]
+              },
+              "penetratingVertexPartPairs": 7
+            },
+            "L:thumb": {
+              "vertices": 276,
+              "nearestSurfaceM": 2.1121719328220934e-05,
+              "worstSignedM": -0.005293319001793861,
+              "worst": {
+                "vertex": 196,
+                "part": "GripCore",
+                "point": [
+                  -0.008127687498927116,
+                  -0.13797277212142944,
+                  -0.013562914915382862
+                ]
+              },
+              "penetratingVertexPartPairs": 9
+            },
+            "L:index": {
+              "vertices": 228,
+              "nearestSurfaceM": 0.00011028043809346855,
+              "worstSignedM": -0.005181898362934589,
+              "worst": {
+                "vertex": 1621,
+                "part": "BodyGeometry",
+                "point": [
+                  -0.00661811325699091,
+                  -0.06939207762479782,
+                  -0.015036774799227715
+                ]
+              },
+              "penetratingVertexPartPairs": 19
+            },
+            "L:middle": {
+              "vertices": 238,
+              "nearestSurfaceM": 0.0014418504433706403,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:ring": {
+              "vertices": 241,
+              "nearestSurfaceM": 0.00015516221174038947,
+              "worstSignedM": -0.006546027027070522,
+              "worst": {
+                "vertex": 3642,
+                "part": "GripCore",
+                "point": [
+                  -0.0012098338920623064,
+                  -0.12961800396442413,
+                  -0.061978958547115326
+                ]
+              },
+              "penetratingVertexPartPairs": 16
+            },
+            "L:little": {
+              "vertices": 245,
+              "nearestSurfaceM": 0.00019345198234077543,
+              "worstSignedM": -0.0007474321755580604,
+              "worst": {
+                "vertex": 3068,
+                "part": "GripCore",
+                "point": [
+                  -0.008179087191820145,
+                  -0.1325749158859253,
+                  -0.08176978677511215
+                ]
+              },
+              "penetratingVertexPartPairs": 0
+            },
+            "L:wrist": {
+              "vertices": 203,
+              "nearestSurfaceM": 0.006151783280074596,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            },
+            "L:palm": {
+              "vertices": 37,
+              "nearestSurfaceM": 0.019390873610973358,
+              "worstSignedM": 0,
+              "worst": null,
+              "penetratingVertexPartPairs": 0
+            }
+          }
+        },
+        "bilateral": {
+          "R:thumb": {
+            "nearestOtherHandM": 0.00022496242308989167,
+            "worstInsideOtherHandM": -0.01680605858564377,
+            "insideVertices": 51
+          },
+          "R:index": {
+            "nearestOtherHandM": 0.014187267981469631,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "R:middle": {
+            "nearestOtherHandM": 1.047066689352505e-06,
+            "worstInsideOtherHandM": -0.01653914526104927,
+            "insideVertices": 83
+          },
+          "R:ring": {
+            "nearestOtherHandM": 6.544154166476801e-05,
+            "worstInsideOtherHandM": -0.007037225645035505,
+            "insideVertices": 105
+          },
+          "R:little": {
+            "nearestOtherHandM": 2.4038889023358934e-05,
+            "worstInsideOtherHandM": -0.00434821005910635,
+            "insideVertices": 48
+          },
+          "R:wrist": {
+            "nearestOtherHandM": 0.00030331473681144416,
+            "worstInsideOtherHandM": -0.00030331473681144416,
+            "insideVertices": 1
+          },
+          "R:palm": {
+            "nearestOtherHandM": 1.7195917507706326e-06,
+            "worstInsideOtherHandM": -0.003756293561309576,
+            "insideVertices": 1
+          },
+          "L:thumb": {
+            "nearestOtherHandM": 0.00027306601987220347,
+            "worstInsideOtherHandM": -0.019390465691685677,
+            "insideVertices": 69
+          },
+          "L:index": {
+            "nearestOtherHandM": 3.9350470615318045e-05,
+            "worstInsideOtherHandM": -0.010768096894025803,
+            "insideVertices": 84
+          },
+          "L:middle": {
+            "nearestOtherHandM": 4.1481795051367953e-05,
+            "worstInsideOtherHandM": -0.008850844576954842,
+            "insideVertices": 60
+          },
+          "L:ring": {
+            "nearestOtherHandM": 1.3635716641147155e-05,
+            "worstInsideOtherHandM": -0.0063842227682471275,
+            "insideVertices": 27
+          },
+          "L:little": {
+            "nearestOtherHandM": 0.005325043573975563,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          },
+          "L:wrist": {
+            "nearestOtherHandM": 8.120652637444437e-05,
+            "worstInsideOtherHandM": -0.005458996165543795,
+            "insideVertices": 10
+          },
+          "L:palm": {
+            "nearestOtherHandM": 0.01599929668009281,
+            "worstInsideOtherHandM": 0,
+            "insideVertices": 0
+          }
+        }
+      }
+    ],
+    "AimIn": [
+      {
+        "fraction": 0,
+        "manualSkinMaxErrorM": 1.813097534888705e-07
+      },
+      {
+        "fraction": 0.5,
+        "manualSkinMaxErrorM": 1.555575316639413e-07
+      },
+      {
+        "fraction": 1,
+        "manualSkinMaxErrorM": 1.6763806343078613e-07
+      }
+    ],
+    "AimOut": [
+      {
+        "fraction": 0,
+        "manualSkinMaxErrorM": 1.813097534888705e-07
+      },
+      {
+        "fraction": 0.5,
+        "manualSkinMaxErrorM": 1.555575316639413e-07
+      },
+      {
+        "fraction": 1,
+        "manualSkinMaxErrorM": 1.6763806343078613e-07
+      }
+    ],
+    "AimIdle": [
+      {
+        "fraction": 0,
+        "manualSkinMaxErrorM": 1.813097534888705e-07
+      },
+      {
+        "fraction": 0.5,
+        "manualSkinMaxErrorM": 1.813097534888705e-07
+      },
+      {
+        "fraction": 1,
+        "manualSkinMaxErrorM": 1.813097534888705e-07
+      }
+    ],
+    "Sprint": [
+      {
+        "fraction": 0,
+        "manualSkinMaxErrorM": 1.7994540394959545e-07
+      },
+      {
+        "fraction": 0.5,
+        "manualSkinMaxErrorM": 1.7994540394959545e-07
+      },
+      {
+        "fraction": 1,
+        "manualSkinMaxErrorM": 1.7994540394959545e-07
+      }
+    ],
+    "Inspect": [
+      {
+        "fraction": 0,
+        "manualSkinMaxErrorM": 1.813097534888705e-07
+      },
+      {
+        "fraction": 0.5,
+        "manualSkinMaxErrorM": 1.6814693150101786e-07
+      },
+      {
+        "fraction": 1,
+        "manualSkinMaxErrorM": 1.813097534888705e-07
+      }
+    ]
+  },
+  "failures": [],
+  "limits": [
+    "Ray parity on open gun components and sleeve cuffs is diagnostic.",
+    "Finite sampled instants do not certify all-time triangle collision or visual quality.",
+    "Browser proof belongs to QA after frozen manifest."
+  ]
+}

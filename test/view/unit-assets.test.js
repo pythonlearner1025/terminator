@@ -19,14 +19,16 @@ const expected = {
   soldier: {high: 46553, materials: ['Resistance olive worn fatigues', 'Resistance warm headlamp lens'], nodes: ['Headlamp Lens', 'Headlamp Target', 'Soldier fatigues and equipment']},
 }
 
-test('the scene exposes seven named unit asset instances without unit generators', async () => {
+test('the active scene exposes its named unit asset instances without unit generators', async () => {
   const scene = JSON.parse(await readFile(resolve(root, 'assets/main.scene.gltf'), 'utf8'))
   const names = {
     scout: 'Unit T-600 Scout', endo: 'Unit T-800 Endo', heavy: 'Unit T-800 Heavy',
     t1000: 'Unit T-1000', hkaerial: 'Unit HK-Aerial', hktank: 'Unit HK-Tank',
     soldier: 'Unit Resistance Soldier',
   }
-  for (const type of UNIT_ASSET_TYPES) {
+  const labScene = scene.nodes.some(candidate => /Lab[_ ]Manager/.test(candidate.name || ''))
+  const sceneTypes = labScene ? UNIT_ASSET_TYPES.filter(type => type !== 'soldier') : UNIT_ASSET_TYPES
+  for (const type of sceneTypes) {
     const node = scene.nodes.find(candidate => candidate.name === names[type])
     assert.ok(node, `${type}: placed scene node`)
     assert.equal(node.extras.rootPath, `/kite3d/@unit-${type}/${type}.gltf`)

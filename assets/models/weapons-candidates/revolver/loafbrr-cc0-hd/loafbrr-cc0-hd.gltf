@@ -1,0 +1,172 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v5.2.40",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        1
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "extras": {
+        "segments": 0
+      },
+      "mesh": 0,
+      "name": "revolver HD"
+    },
+    {
+      "children": [
+        0
+      ],
+      "name": "loafbrr-cc0-hd display"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "HD single PBR atlas.003",
+      "normalTexture": {
+        "index": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "occlusionTexture": {
+        "index": 2,
+        "strength": 1
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Circle.001",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/png",
+      "name": "main-normal",
+      "uri": "main-normal.png"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "main-albedo",
+      "uri": "main-albedo.png"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "main-orm",
+      "uri": "main-orm.png"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 17600,
+      "max": [
+        0.033135801553726196,
+        0.16478954255580902,
+        0.02602642960846424
+      ],
+      "min": [
+        -0.3168318271636963,
+        -0.014612807892262936,
+        -0.026026474311947823
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 17600,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 17600,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 84474,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 211200,
+      "byteOffset": 0,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 211200,
+      "byteOffset": 211200,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 140800,
+      "byteOffset": 422400,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 168948,
+      "byteOffset": 563200,
+      "target": 34963
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 732148,
+      "uri": "loafbrr-cc0-hd.bin"
+    }
+  ]
+}

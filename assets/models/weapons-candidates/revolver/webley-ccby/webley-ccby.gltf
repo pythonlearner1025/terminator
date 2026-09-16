@@ -1,0 +1,197 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v5.2.40",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        1
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "revolver-webley_mkii"
+    },
+    {
+      "children": [
+        0
+      ],
+      "name": "webley-ccby display"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Candidate revolver webley-ccby main",
+      "normalTexture": {
+        "index": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "occlusionTexture": {
+        "index": 2,
+        "strength": 1
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "revolver-webley_mkii.001",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2,
+            "COLOR_0": 3,
+            "COLOR_1": 4
+          },
+          "indices": 5,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/png",
+      "name": "main-normal",
+      "uri": "main-normal.png"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "main-albedo",
+      "uri": "main-albedo.png"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "main-orm",
+      "uri": "main-orm.png"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 2033,
+      "max": [
+        0.02191043272614479,
+        0.1812119483947754,
+        0.026478976011276245
+      ],
+      "min": [
+        -0.26408958435058594,
+        -0.019068121910095215,
+        -0.02672525867819786
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 2033,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 2033,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5121,
+      "count": 2033,
+      "normalized": true,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 2033,
+      "normalized": true,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5123,
+      "count": 5418,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 24396,
+      "byteOffset": 0,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 24396,
+      "byteOffset": 24396,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 16264,
+      "byteOffset": 48792,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 8132,
+      "byteOffset": 65056,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 16264,
+      "byteOffset": 73188,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 10836,
+      "byteOffset": 89452,
+      "target": 34963
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 100288,
+      "uri": "webley-ccby.bin"
+    }
+  ]
+}

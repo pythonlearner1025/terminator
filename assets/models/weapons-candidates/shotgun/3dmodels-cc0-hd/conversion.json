@@ -1,0 +1,70 @@
+{
+  "source": "https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack",
+  "author": "3DModelsCC0",
+  "license": "CC0-1.0",
+  "shippable": true,
+  "textureResolution": 2048,
+  "sourceTextureSizes": {
+    "albedo": [
+      2048,
+      2048
+    ],
+    "normal": [
+      2048,
+      2048
+    ],
+    "roughness": [
+      2048,
+      2048
+    ],
+    "metallic": [
+      2048,
+      2048
+    ]
+  },
+  "notes": [
+    "AO is a neutral white channel; no invented occlusion detail."
+  ],
+  "triangles": 31832,
+  "sourceMeshNames": [
+    "Ejection_Port",
+    "Fore_Stock",
+    "Bolt",
+    "Trigger",
+    "Receiver and stock",
+    "Bead",
+    "Bead base",
+    "Trigger guard",
+    "Magazine tube and cap",
+    "Barrel",
+    "Receiver pin 1 side -1",
+    "Receiver pin 1 side 1",
+    "Receiver pin 2 side -1",
+    "Receiver pin 2 side 1",
+    "Shell lifter visual",
+    "Front sling eye",
+    "Stock sling eye"
+  ],
+  "boundsMetres": [
+    [
+      -0.7245000004768372,
+      -0.02418903261423111,
+      -0.0622033029794693
+    ],
+    [
+      0.3255000710487366,
+      0.02418903261423111,
+      0.14514115452766418
+    ]
+  ],
+  "lengthMetres": 1.05,
+  "pivot": "Estimated grip center; static display candidate",
+  "decimation": false,
+  "removedDetachedSpareProp": false,
+  "partOffsets": {},
+  "derivativeOf": "3dmodels-cc0",
+  "derivativeAuthor": "Codex, directed by the project owner",
+  "drawCalls": 1,
+  "bakeRound": 6,
+  "validation": "Draft. Consult tools/blender/hd/rounds for measured gate failures."
+}

@@ -1,0 +1,172 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v5.2.40",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        1
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "extras": {
+        "segments": 0
+      },
+      "mesh": 0,
+      "name": "shotgun HD"
+    },
+    {
+      "children": [
+        0
+      ],
+      "name": "3dmodels-cc0-hd display"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "HD single PBR atlas.003",
+      "normalTexture": {
+        "index": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "occlusionTexture": {
+        "index": 2,
+        "strength": 1
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mesh.004",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/png",
+      "name": "main-normal",
+      "uri": "main-normal.png"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "main-albedo",
+      "uri": "main-albedo.png"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "main-orm",
+      "uri": "main-orm.png"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 22115,
+      "max": [
+        0.3254983127117157,
+        0.14514115452766418,
+        0.02370525151491165
+      ],
+      "min": [
+        -0.7245000004768372,
+        -0.06220012530684471,
+        -0.02370525151491165
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 22115,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 22115,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 95496,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 265380,
+      "byteOffset": 0,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 265380,
+      "byteOffset": 265380,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 176920,
+      "byteOffset": 530760,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 190992,
+      "byteOffset": 707680,
+      "target": 34963
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 898672,
+      "uri": "3dmodels-cc0-hd.bin"
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "asset": "assets/models/weapons/revolver-rebuild/revolver-rebuild.gltf",
+  "remoteAssetCommit": "b04f8193f6e2db643507b426955050b20f62e9d5",
+  "sourceCommit": "82d692d",
+  "review": "../../generated/revolver-imported-review.html",
+  "assetHashes": {
+    "682a91cb011c45b2a89b92cfe169686f.png": "6f5be04d790c3b5992388cd7a6d0cc5eb37c3952f217b5d5b761fc6e59e46187",
+    "6aa3217682f84a9da397bf8e12f9b2b3.png": "b0b7500ec2849243a92bee5b3a26adf5c537256fc4f4dc060a662bd8017d226e",
+    "f407ef890d8c4e3d84a76b99c91c3411.png": "6b9beb5ddf39830b0e797e208417ce89787f21bf346105c245df9e061898de81",
+    "gun-ao.png": "4548b505f6973dac1bfa589d06a1622e92240d636d90d450332bc01a2b386279",
+    "gun-basecolor.png": "8c99a9eebeec0a2cfe16a05d8f27ca3e435eb5ec24d462a4366c0454622163bd",
+    "gun-normal.png": "89bdb0648acd27d0e34e419c0739f4396a3f32159987a2b9b5bcc180fbe01974",
+    "revolver-rebuild.bin": "66408c91d233a953275968eef11a54ed67c6b16fc05b064b0ec901dc851e8008",
+    "revolver-rebuild.gltf": "0b464109a9056cdb17d6c3785f4ee7f13ec531a95c79aca2b3586349d2259363"
+  },
+  "packedSourceSha256": "a1c506b177832cc183884cd75e2d58767e6e9a2a3004020956bd99b957019bf7",
+  "skinFidelity": {
+    "status": "pass",
+    "samples": 93,
+    "sourceVertices": 4246,
+    "exportedVertices": 4255,
+    "maxErrorM": 6.652046845556906e-07,
+    "rmsErrorM": 2.765512563076196e-07,
+    "uncoveredVertices": 0,
+    "reportSha256": "9b09731a4c5f8c2dff0b3a7de6d6a4196ad169b06776ddb5da04f60fca5e2c9e"
+  },
+  "gameplay": {
+    "completed": true,
+    "nineClips": true,
+    "activeVariant": true,
+    "combinedImportedSkin": true,
+    "hip": true,
+    "ads": true,
+    "fire": true,
+    "sixShots": true,
+    "nativeFireDeformation": true,
+    "nativeReloadDeformation": true,
+    "sixCasesEjected": true,
+    "freshHiddenBefore": true,
+    "freshPresentedAtInsertion": true,
+    "reload": true,
+    "reloaded": true,
+    "sprint": true,
+    "inspectRendered": true,
+    "stoppedCleanup": true,
+    "stableRestartOwnership": true,
+    "stableStoppedScene": true,
+    "stableStoppedCamera": true,
+    "restartedHip": true
+  },
+  "kite650s": {
+    "machine": "650s",
+    "mode": "editor",
+    "checkedAt": "2026-09-15T05:12:25.372Z",
+    "ok": true,
+    "outcomes": [
+      {
+        "name": "Playable",
+        "status": "pass",
+        "summary": "The game booted and ran 30 frames without errors.",
+        "codes": [],
+        "durationMs": 15655.1,
+        "report": {
+          "projectValidation": {
+            "ok": true,
+            "status": "pass",
+            "summary": "Project validations passed.",
+            "results": [
+              {
+                "status": "pass",
+                "summary": "Headless world and view adapters are running.",
+                "checks": {
+                  "nodesPresent": true,
+                  "systemsReady": true,
+                  "authoredPieces": 0,
+                  "runtimeBatches": 0,
+                  "tickRate": 60
+                }
+              }
+            ]
+          },
+          "cleanup": {
+            "ok": true,
+            "status": "pass",
+            "summary": "Runtime cleanup passed.",
+            "issues": [],
+            "trackedObjectCount": 0,
+            "outsideRenderableCount": 0
+          },
+          "runtimeErrors": 0,
+          "relationships": []
+        }
+      },
+      {
+        "name": "Editable",
+        "status": "pass",
+        "summary": "Stopped-mode authored representation passed.",
+        "codes": [],
+        "durationMs": 10.1,
+        "report": {
+          "ok": true,
+          "status": "pass",
+          "summary": "Stopped-mode authored representation passed.",
+          "issues": [],
+          "checks": {
+            "visibleAuthoredContent": true,
+            "selectableAuthoredContent": true,
+            "relationshipsValid": true,
+            "cameraUseful": true
+          },
+          "metrics": {
+            "authoredObjectCount": 2358,
+            "renderableCount": 611,
+            "visibleRenderableCount": 479,
+            "selectableCount": 479,
+            "cameraFramedRenderableCount": 479,
+            "cameraInsideRenderableCount": 0
+          }
+        }
+      },
+      {
+        "name": "Persisted",
+        "status": "pass",
+        "summary": "Save/Reload semantic equivalence passed.",
+        "codes": [],
+        "durationMs": 6693,
+        "report": {
+          "ok": true,
+          "status": "pass",
+          "summary": "Save/Reload semantic equivalence passed.",
+          "issues": [],
+          "changes": [],
+          "beforeBytes": 17786,
+          "afterBytes": 17786
+        }
+      }
+    ]
+  },
+  "localChecks": {
+    "weaponTestsPassed": 43,
+    "qaTestsPassed": 13,
+    "existingSceneNodesPreserved": 70,
+    "sceneUnchangedDuringReplacement": true,
+    "kiteMac": {
+      "mode": "headless",
+      "ok": false,
+      "checkedAt": "2026-09-15T05:14:44.160Z",
+      "outcomes": [
+        {
+          "name": "Playable",
+          "status": "fail",
+          "summary": "Headless browser check failed: page.waitForFunction: Timeout 45000ms exceeded.",
+          "codes": []
+        },
+        {
+          "name": "Editable",
+          "status": "fail",
+          "summary": "Headless browser check failed: page.waitForFunction: Timeout 45000ms exceeded.",
+          "codes": []
+        },
+        {
+          "name": "Persisted",
+          "status": "fail",
+          "summary": "Headless browser check failed: page.waitForFunction: Timeout 45000ms exceeded.",
+          "codes": []
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "Hidden skin within opaque grip remains; sampled gun-component overlap reaches 13.15mm. No collision-free claim.",
+    "Finite samples and open sleeve/component ray-parity scans cannot prove continuous skin clearance.",
+    "Optional KHR_materials_specular roundtrip is not covered by installed glTF Transform core; original exported extension is retained.",
+    "Source AO retained in neutral.blend; no new hand bakes. Gun metallic/roughness are authored material values.",
+    "Main scene/other public variants were not regenerated; only this variant is replaced.",
+    "No publish or browser work performed in this worker.",
+    "Mac headless Kite check timed out at 45s; no interactive browser connection was available. Successful editor checks and actual gameplay captures are from 650s.",
+    "Bounded software-browser QA is not an FPS or load-time benchmark."
+  ]
+}

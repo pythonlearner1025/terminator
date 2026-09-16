@@ -1,8 +1,18 @@
 #!/usr/bin/env node
 import {readFile, writeFile} from 'node:fs/promises'
+import {addWeaponReferences} from './weapons/scene-references.mjs'
 
 globalThis.ImageData ??= class {}
 const {Object3D, PerspectiveCamera, Quaternion, Vector3} = await import('three')
+
+const savedScene = JSON.parse(await readFile(new URL('../assets/main.scene.gltf', import.meta.url), 'utf8'))
+if (savedScene.nodes?.some(node => /Lab[_ ]Manager/.test(node.name || ''))) {
+  const {labSceneDocument, candidatesFromRegistry} = await import('./build-lab-scene.mjs')
+  const registry = JSON.parse(await readFile(new URL('../assets.json', import.meta.url), 'utf8'))
+  await writeFile(new URL('../assets/main.scene.gltf', import.meta.url), `${JSON.stringify(labSceneDocument(savedScene, candidatesFromRegistry(registry)), null, 2)}\n`)
+  console.log('Rebuilt the placed-asset Weapons Lab scene')
+  process.exit(0)
+}
 
 const packageJson = JSON.parse(await readFile(new URL('../package.json', import.meta.url), 'utf8'))
 const placements = JSON.parse(await readFile(new URL('../lib/core/data/map-piece-placements.json', import.meta.url), 'utf8')).pieces
@@ -37,6 +47,7 @@ document.extensions = {
 }
 
 const scene = document.scenes[document.scene] || document.scenes[0]
+const existingRootIndices = [...(scene.nodes || [])]
 const rootIndices = []
 const resetPlacements = process.env.RESET_MAP_PLACEMENTS === '1'
 const preservePlacedMap = !resetPlacements && document.nodes.some(node => node.extras?.mapPiece?.nodeId)
@@ -96,8 +107,9 @@ for (const placement of placements) {
 
 rootIndices.push(mapIndex)
 for (const spec of authoredSpecs()) rootIndices.push(ensureNode(spec))
-scene.nodes = [...new Set(rootIndices)]
+scene.nodes = [...new Set([...rootIndices, ...existingRootIndices])]
 pruneUnreachableNodes(document)
+addWeaponReferences(document)
 
 await writeFile(scenePath, `${JSON.stringify(document, null, 2)}\n`)
 const placedCount = document.nodes.filter(node => node.extras?.mapPiece?.nodeId).length

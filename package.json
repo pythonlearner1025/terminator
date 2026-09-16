@@ -22,12 +22,12 @@
     "server": "node server/index.js",
     "tunnel": "node server/party-tunnel.js",
     "dev:all": "concurrently -k -n game,server \"npm run dev\" \"npm run server\"",
-    "test": "find test -type f -name '*.test.js' ! -path 'test/core/sim/sim.test.js' -exec node --test {} + && node --test test/core/sim/sim.test.js",
+    "test": "find test -type f -name '*.test.js' ! -path 'test/core/sim/sim.test.js' -exec node --test --test-concurrency=4 {} + && node --test test/core/sim/sim.test.js",
     "build:textures": "python3 tools/bake-map-textures.py && python3 tools/bake-unit-textures.py && python3 tools/bake-roster-textures.py",
     "build:map-assets": "node tools/build-map-assets.mjs",
     "build:unit-assets": "node tools/build-unit-assets.mjs",
     "build:range-assets": "node tools/build-range-assets.mjs",
-    "build:assets": "npm run build:textures && npm run build:barrel && npm run build:map-assets && npm run build:unit-assets && npm run build:range-assets && npm run scene",
+    "build:assets": "npm run build:textures && npm run build:barrel && npm run build:map-assets && npm run build:unit-assets && npm run build:range-assets && npm run build:lab-assets && npm run scene",
     "scene": "node tools/build-scene.mjs",
     "benchmark": "node tools/benchmark-world.mjs",
     "benchmark:view": "node tools/benchmark-browser.mjs",
@@ -40,7 +40,17 @@
     "assets:selected:apply-floor": "node tools/apply-selected-floor.mjs",
     "assets:selected:prepare-props": "python3 tools/prepare-selected-props.py",
     "assets:selected:apply-props": "node tools/apply-selected-props.mjs",
-    "build:barrel": "blender -b --factory-startup -P tools/blender/barrel/build.py"
+    "build:barrel": "blender -b --factory-startup -P tools/blender/barrel/build.py",
+    "scene:lab": "node tools/build-lab-scene.mjs",
+    "build:lab-assets": "node tools/build-lab-assets.mjs",
+    "weapons": "python3 tools/weapons/bake-atlases.py && node tools/build-weapon-assets.mjs",
+    "build:revolver": "blender -b -P tools/blender/revolver/build.py && node tools/blender/revolver/register.mjs",
+    "build:candidates": "node tools/build-candidate-assets.mjs",
+    "build:weapons-hd": "node tools/blender/hd/build-all.mjs",
+    "build:swingout": "node tools/blender/swingout/build.mjs",
+    "verify:revolver-rebuild": "node tools/blender/revolver-rebuild/verify.mjs",
+    "register:revolver-rebuild": "node tools/blender/revolver-rebuild/register.mjs",
+    "build:revolver-rebuild": "node tools/blender/revolver-rebuild/build.mjs"
   },
   "devDependencies": {
     "@gltf-transform/core": "^4.5.0",
@@ -67,7 +77,8 @@
     },
     "scripts": [
       "./scripts/GameManager.script.js",
-      "./generators/v2-preview.js"
+      "./generators/v2-preview.js",
+      "./scripts/WeaponsLab.script.js"
     ],
     "viewer": {
       "msaa": 2,
@@ -95,12 +106,14 @@
         "packages/**",
         "test/**",
         "tools/**",
-        "coordination/**"
+        "coordination/**",
+        "assets/reference/**"
       ]
     },
     "plugins": [
       "./lib/view/v2/exact-image-source.plugin.js",
-      "./scripts/FirstPerson.plugin.js"
+      "./scripts/FirstPerson.plugin.js",
+      "./scripts/Environment.plugin.js"
     ]
   }
 }

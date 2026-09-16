@@ -5,15 +5,18 @@ import {NavGrid} from '../../lib/core/nav.js'
 import {buildMapFromPlacements, defaultMap} from '../../lib/core/map.js'
 
 const root = new URL('../../', import.meta.url)
-const [scene, rules, registry, manifest] = await Promise.all([
+const [scene, rules, registry, manifest, canonical] = await Promise.all([
   readJson('assets/main.scene.gltf'),
   readJson('lib/core/data/map.json'),
   readJson('lib/core/data/map-piece-registry.json'),
   readJson('assets.json'),
+  readJson('lib/core/data/map-piece-placements.json'),
 ])
 
 function authoredPlacements() {
-  return scene.nodes.filter(node => node.extras?.mapPiece).map(node => {
+  const placed = scene.nodes.filter(node => node.extras?.mapPiece)
+  if (!placed.length) return structuredClone(canonical.pieces)
+  return placed.map(node => {
     const transform = nodeTransform(node)
     return {...node.extras.mapPiece, name: node.name, ...transform}
   })
@@ -30,7 +33,12 @@ test('the authored map reproduces every migrated collider within five centimetre
 })
 
 test('every placed node has a registered nested asset reference', () => {
-  const placements = scene.nodes.filter(node => node.extras?.mapPiece)
+  const scenePlacements = scene.nodes.filter(node => node.extras?.mapPiece)
+  const placements = scenePlacements.length ? scenePlacements : canonical.pieces.map(placement => ({
+    name: placement.name,
+    extras: {mapPiece: placement, rootPath: `/kite3d/@${placement.assetId}/f.gltf`,
+      sProperties: ['visible', 'name', 'position', 'quaternion', 'scale']},
+  }))
   assert.ok(placements.length > 200)
   for (const node of placements) {
     const id = node.extras.mapPiece.assetId

@@ -1,0 +1,24 @@
+{
+  "transport": "official Blender MCP stdio",
+  "blender": "5.2.1 LTS",
+  "reference_mesh_unchanged": true,
+  "rebuild_empty": true,
+  "hinge_test": "pass",
+  "custom_camera_repeat": "pass",
+  "screenshot_tool": "get_screenshot_of_window_as_image: pass, visually reviewed",
+  "capture_resolution": [
+    640,
+    480
+  ],
+  "files": {
+    "Reference": {
+      "file": "threequarter_left-clay-reference.png",
+      "sha256": "3931b98b3a8304c7f4e2ce40a0186fc7c5dc632aab0ce2380c74a3215a6656ee"
+    },
+    "Rebuild": {
+      "file": "threequarter_left-clay-rebuild.png",
+      "sha256": "bc83ec2a6240379c1de7aefdc8bbed54183236be91708f530ad4447b309fcfad"
+    }
+  },
+  "official_mcp_source_commit": "ff54e4d8f6b09502f2f466189cca0e52b4a91643"
+}

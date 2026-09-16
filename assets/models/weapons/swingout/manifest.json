@@ -1,0 +1,27 @@
+{
+  "source": "assets/models/weapons-candidates/revolver/loafbrr-cc0-hd/loafbrr-cc0-hd.gltf",
+  "builder": "tools/blender/swingout/build.py",
+  "triangles": 24538,
+  "drawCalls": 3,
+  "textures": [
+    "swingout-normal.png",
+    "swingout-orm.png",
+    "swingout-albedo.png"
+  ],
+  "textureSize": [
+    2048,
+    2048
+  ],
+  "clips": {
+    "Idle": 2,
+    "Draw": 0.65,
+    "Fire": 0.4,
+    "Reload": 2.6,
+    "AimIn": 0.2,
+    "AimOut": 0.2,
+    "AimIdle": 2,
+    "Sprint": 0.8,
+    "Inspect": 3.2
+  },
+  "joints": 76
+}

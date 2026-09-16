@@ -1,0 +1,284 @@
+{
+  "bake": {
+    "distinctHighDetail": true,
+    "sourceTriangles": 446114,
+    "lowTriangles": 28158,
+    "reliefVertices": 164546,
+    "detail": "Geometric wood grain, grip diamonds, pump grooves, six cylinder relief bands, hammer texture",
+    "maps": {
+      "normal": "Tangent-space Cycles selected-to-active, includes high geometric relief",
+      "ao": "Cycles ambient occlusion from separate relief source",
+      "curvature": "Cycles pointiness emitted from the high source"
+    },
+    "device": "OPTIX",
+    "resolution": 2048,
+    "samples": 32
+  },
+  "finish": {
+    "resolution": 2048,
+    "seed": 7301,
+    "albedo": "Transferred source detail, dark blue steel and warm walnut palette, pointiness-based edge wear",
+    "normal": "Transferred tangent normal plus the baked geometric relief delta; high-source base shading is subtracted",
+    "orm": "R: baked AO. G: oil sheen, wood roughness and cavity dirt. B: steel metalness, zero on wood.",
+    "curvature": "Offline high-source pointiness bake. Controls wear. Not loaded by the game.",
+    "validUvPixels": 2921861,
+    "woodPixels": 401585
+  },
+  "export": {
+    "triangles": 28158,
+    "drawCalls": 1,
+    "textureMaps": [
+      2048,
+      2048,
+      2048
+    ],
+    "path": "assets/models/weapons-candidates/revolver/loafbrr-cc0-hd/loafbrr-cc0-hd.gltf"
+  },
+  "parts": [
+    {
+      "name": "Hammer",
+      "triangles": 874,
+      "segments": 0,
+      "circularSections": [],
+      "added": false,
+      "reason": "Curved source geometry and bevels"
+    },
+    {
+      "name": "LOW_CHamberLock",
+      "triangles": 572,
+      "segments": 0,
+      "circularSections": [],
+      "added": false,
+      "reason": "Curved source geometry and bevels"
+    },
+    {
+      "name": "LOW_CHamberRotate",
+      "triangles": 390,
+      "segments": 0,
+      "circularSections": [],
+      "added": false,
+      "reason": "Curved source geometry and bevels"
+    },
+    {
+      "name": "REV_Cylinder",
+      "triangles": 8608,
+      "segments": 64,
+      "circularSections": [
+        {
+          "x": -0.136467,
+          "center": [
+            2.60770320892334e-08,
+            0.12742235511541367
+          ],
+          "radius": 0.026041216932615744,
+          "beforeSegments": 16,
+          "targetSegments": 64,
+          "measuredSegments": 64
+        },
+        {
+          "x": -0.136467,
+          "center": [
+            2.60770320892334e-08,
+            0.12742235511541367
+          ],
+          "radius": 0.006658326294527473,
+          "beforeSegments": 16,
+          "targetSegments": 64,
+          "measuredSegments": 64
+        },
+        {
+          "x": -0.137437,
+          "center": [
+            2.537854015827179e-08,
+            0.12742234766483307
+          ],
+          "radius": 0.006658326301551679,
+          "beforeSegments": 16,
+          "targetSegments": 64,
+          "measuredSegments": 64
+        },
+        {
+          "x": -0.082812,
+          "center": [
+            1.862645149230957e-08,
+            0.12742234021425247
+          ],
+          "radius": 0.026041216105941577,
+          "beforeSegments": 16,
+          "targetSegments": 64,
+          "measuredSegments": 64
+        },
+        {
+          "x": -0.082812,
+          "center": [
+            1.862645149230957e-08,
+            0.12742234021425247
+          ],
+          "radius": 0.0066583276138160565,
+          "beforeSegments": 16,
+          "targetSegments": 64,
+          "measuredSegments": 64
+        },
+        {
+          "x": -0.081843,
+          "center": [
+            1.932494342327118e-08,
+            0.12742233276367188
+          ],
+          "radius": 0.006658327620367592,
+          "beforeSegments": 16,
+          "targetSegments": 64,
+          "measuredSegments": 64
+        },
+        {
+          "x": -0.10964,
+          "center": [
+            2.2351741790771484e-08,
+            0.12742234393954277
+          ],
+          "radius": 0.026041215593066696,
+          "beforeSegments": 16,
+          "targetSegments": 64,
+          "measuredSegments": 64
+        }
+      ],
+      "added": false,
+      "reason": "Curved source geometry and bevels"
+    },
+    {
+      "name": "REV_Frame",
+      "triangles": 6662,
+      "segments": 64,
+      "circularSections": [
+        {
+          "x": -0.316832,
+          "center": [
+            0,
+            0.144415
+          ],
+          "radius": 0.0061466654518665354,
+          "beforeSegments": 16,
+          "targetSegments": 64,
+          "measuredSegments": 64
+        },
+        {
+          "x": -0.137916,
+          "center": [
+            0,
+            0.144415
+          ],
+          "radius": 0.006146687176361056,
+          "beforeSegments": 16,
+          "targetSegments": 64,
+          "measuredSegments": 64
+        }
+      ],
+      "added": false,
+      "reason": "Curved source geometry and bevels"
+    },
+    {
+      "name": "REV_Handle",
+      "triangles": 2604,
+      "segments": 0,
+      "circularSections": [],
+      "added": false,
+      "reason": "Curved source geometry and bevels"
+    },
+    {
+      "name": "REV_Trigger",
+      "triangles": 620,
+      "segments": 0,
+      "circularSections": [],
+      "added": false,
+      "reason": "Curved source geometry and bevels"
+    },
+    {
+      "name": "Frame screw 1 side -1",
+      "triangles": 764,
+      "segments": 64,
+      "circularSections": [],
+      "added": true,
+      "reason": "Visible hardware"
+    },
+    {
+      "name": "Frame screw 1 side 1",
+      "triangles": 764,
+      "segments": 64,
+      "circularSections": [],
+      "added": true,
+      "reason": "Visible hardware"
+    },
+    {
+      "name": "Frame screw 2 side -1",
+      "triangles": 764,
+      "segments": 64,
+      "circularSections": [],
+      "added": true,
+      "reason": "Visible hardware"
+    },
+    {
+      "name": "Frame screw 2 side 1",
+      "triangles": 764,
+      "segments": 64,
+      "circularSections": [],
+      "added": true,
+      "reason": "Visible hardware"
+    },
+    {
+      "name": "Frame screw 3 side -1",
+      "triangles": 764,
+      "segments": 64,
+      "circularSections": [],
+      "added": true,
+      "reason": "Visible hardware"
+    },
+    {
+      "name": "Frame screw 3 side 1",
+      "triangles": 764,
+      "segments": 64,
+      "circularSections": [],
+      "added": true,
+      "reason": "Visible hardware"
+    },
+    {
+      "name": "Ejector rod",
+      "triangles": 764,
+      "segments": 64,
+      "circularSections": [],
+      "added": true,
+      "reason": "Visible hardware"
+    },
+    {
+      "name": "Ejector collar",
+      "triangles": 764,
+      "segments": 64,
+      "circularSections": [],
+      "added": true,
+      "reason": "Visible hardware"
+    },
+    {
+      "name": "Cylinder release",
+      "triangles": 188,
+      "segments": null,
+      "circularSections": [],
+      "added": true,
+      "reason": "Visible hardware"
+    },
+    {
+      "name": "Grip escutcheon side -1",
+      "triangles": 764,
+      "segments": 64,
+      "circularSections": [],
+      "added": true,
+      "reason": "Visible hardware"
+    },
+    {
+      "name": "Grip escutcheon side 1",
+      "triangles": 764,
+      "segments": 64,
+      "circularSections": [],
+      "added": true,
+      "reason": "Visible hardware"
+    }
+  ]
+}

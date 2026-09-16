@@ -1,0 +1,993 @@
+{
+  "asset": {
+    "generator": "Terminator original weapon authoring, glTF Transform 4.3",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "name": "Right Hand and Sleeve position",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 7020,
+      "max": [
+        0.06518255174160004,
+        0.11400000005960464,
+        0.07261111587285995
+      ],
+      "min": [
+        -0.05362699553370476,
+        -0.4189999997615814,
+        -0.038525573909282684
+      ],
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Right Hand and Sleeve normal",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 7020,
+      "bufferView": 0,
+      "byteOffset": 12
+    },
+    {
+      "name": "Right Hand and Sleeve uv",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 7020,
+      "bufferView": 0,
+      "byteOffset": 24
+    },
+    {
+      "name": "Right Hand and Sleeve skinIndex",
+      "type": "VEC4",
+      "componentType": 5123,
+      "count": 7020,
+      "bufferView": 0,
+      "byteOffset": 32
+    },
+    {
+      "name": "Right Hand and Sleeve skinWeight",
+      "type": "VEC4",
+      "componentType": 5126,
+      "count": 7020,
+      "bufferView": 0,
+      "byteOffset": 40
+    },
+    {
+      "name": "Left Hand and Sleeve position",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 7020,
+      "max": [
+        0.06518255174160004,
+        0.11400000005960464,
+        0.07261111587285995
+      ],
+      "min": [
+        -0.05362699553370476,
+        -0.4189999997615814,
+        -0.038525573909282684
+      ],
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Left Hand and Sleeve normal",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 7020,
+      "bufferView": 1,
+      "byteOffset": 12
+    },
+    {
+      "name": "Left Hand and Sleeve uv",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 7020,
+      "bufferView": 1,
+      "byteOffset": 24
+    },
+    {
+      "name": "Left Hand and Sleeve skinIndex",
+      "type": "VEC4",
+      "componentType": 5123,
+      "count": 7020,
+      "bufferView": 1,
+      "byteOffset": 32
+    },
+    {
+      "name": "Left Hand and Sleeve skinWeight",
+      "type": "VEC4",
+      "componentType": 5126,
+      "count": 7020,
+      "bufferView": 1,
+      "byteOffset": 40
+    },
+    {
+      "name": "Right Hand and Sleeve inverse binds",
+      "type": "MAT4",
+      "componentType": 5126,
+      "count": 22,
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "name": "Left Hand and Sleeve inverse binds",
+      "type": "MAT4",
+      "componentType": 5126,
+      "count": 22,
+      "bufferView": 2,
+      "byteOffset": 1408
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 393120,
+      "byteStride": 56,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 393120,
+      "byteLength": 393120,
+      "byteStride": 56,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 786240,
+      "byteLength": 2816
+    }
+  ],
+  "samplers": [
+    {
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "source": 0,
+      "sampler": 0
+    },
+    {
+      "source": 1,
+      "sampler": 0
+    },
+    {
+      "source": 2,
+      "sampler": 0
+    }
+  ],
+  "images": [
+    {
+      "name": "hands albedo",
+      "mimeType": "image/jpeg",
+      "uri": "hands-albedo.jpg"
+    },
+    {
+      "name": "hands normal",
+      "mimeType": "image/png",
+      "uri": "hands-normal.png"
+    },
+    {
+      "name": "hands orm",
+      "mimeType": "image/png",
+      "uri": "hands-orm.png"
+    }
+  ],
+  "buffers": [
+    {
+      "name": "hands",
+      "uri": "hands.bin",
+      "byteLength": 789056
+    }
+  ],
+  "materials": [
+    {
+      "name": "hands 2K PBR",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1,
+        "scale": 0.75
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Right Hand and Sleeve",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2,
+            "JOINTS_0": 3,
+            "WEIGHTS_0": 4
+          },
+          "mode": 4,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "Left Hand and Sleeve",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 5,
+            "NORMAL": 6,
+            "TEXCOORD_0": 7,
+            "JOINTS_0": 8,
+            "WEIGHTS_0": 9
+          },
+          "mode": 4,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Hands Asset",
+      "extras": {
+        "weaponAsset": "hands",
+        "gltfUUID": "weapon-hands-root"
+      },
+      "children": [
+        1,
+        26
+      ]
+    },
+    {
+      "name": "RightHand",
+      "extras": {
+        "handRig": {
+          "side": "Right",
+          "fingers": [
+            "Index",
+            "Middle",
+            "Ring",
+            "Little",
+            "Thumb"
+          ]
+        },
+        "gltfUUID": "hands-Right"
+      },
+      "children": [
+        2,
+        4
+      ]
+    },
+    {
+      "name": "RightGlove",
+      "extras": {
+        "gltfUUID": "hands-RightGlove"
+      },
+      "children": [
+        3
+      ]
+    },
+    {
+      "name": "Right Hand and Sleeve",
+      "extras": {
+        "gltfUUID": "hands-Right-Hand-and-Sleeve"
+      },
+      "mesh": 0,
+      "skin": 0
+    },
+    {
+      "name": "RightPalm",
+      "extras": {
+        "gltfUUID": "hands-RightPalm"
+      },
+      "children": [
+        5,
+        6,
+        10,
+        14,
+        18,
+        22
+      ]
+    },
+    {
+      "name": "RightForearm",
+      "extras": {
+        "gltfUUID": "hands-RightForearm"
+      },
+      "translation": [
+        0,
+        -0.057,
+        0
+      ]
+    },
+    {
+      "name": "RightIndex1",
+      "extras": {
+        "gltfUUID": "hands-RightIndex1"
+      },
+      "translation": [
+        -0.029,
+        0.029,
+        0
+      ],
+      "children": [
+        7
+      ]
+    },
+    {
+      "name": "RightIndex2",
+      "extras": {
+        "gltfUUID": "hands-RightIndex2"
+      },
+      "translation": [
+        0,
+        0.029,
+        0
+      ],
+      "children": [
+        8
+      ]
+    },
+    {
+      "name": "RightIndex3",
+      "extras": {
+        "gltfUUID": "hands-RightIndex3"
+      },
+      "translation": [
+        0,
+        0.022,
+        0
+      ],
+      "children": [
+        9
+      ]
+    },
+    {
+      "name": "RightIndexTip",
+      "extras": {
+        "contactRadius": 0.005399999999999999,
+        "gltfUUID": "hands-RightIndexTip"
+      },
+      "translation": [
+        0,
+        0.017,
+        0
+      ]
+    },
+    {
+      "name": "RightMiddle1",
+      "extras": {
+        "gltfUUID": "hands-RightMiddle1"
+      },
+      "translation": [
+        -0.009,
+        0.037,
+        0
+      ],
+      "children": [
+        11
+      ]
+    },
+    {
+      "name": "RightMiddle2",
+      "extras": {
+        "gltfUUID": "hands-RightMiddle2"
+      },
+      "translation": [
+        0,
+        0.034,
+        0
+      ],
+      "children": [
+        12
+      ]
+    },
+    {
+      "name": "RightMiddle3",
+      "extras": {
+        "gltfUUID": "hands-RightMiddle3"
+      },
+      "translation": [
+        0,
+        0.024,
+        0
+      ],
+      "children": [
+        13
+      ]
+    },
+    {
+      "name": "RightMiddleTip",
+      "extras": {
+        "contactRadius": 0.005399999999999999,
+        "gltfUUID": "hands-RightMiddleTip"
+      },
+      "translation": [
+        0,
+        0.019,
+        0
+      ]
+    },
+    {
+      "name": "RightRing1",
+      "extras": {
+        "gltfUUID": "hands-RightRing1"
+      },
+      "translation": [
+        0.012,
+        0.034,
+        0
+      ],
+      "children": [
+        15
+      ]
+    },
+    {
+      "name": "RightRing2",
+      "extras": {
+        "gltfUUID": "hands-RightRing2"
+      },
+      "translation": [
+        0,
+        0.032,
+        0
+      ],
+      "children": [
+        16
+      ]
+    },
+    {
+      "name": "RightRing3",
+      "extras": {
+        "gltfUUID": "hands-RightRing3"
+      },
+      "translation": [
+        0,
+        0.023,
+        0
+      ],
+      "children": [
+        17
+      ]
+    },
+    {
+      "name": "RightRingTip",
+      "extras": {
+        "contactRadius": 0.005399999999999999,
+        "gltfUUID": "hands-RightRingTip"
+      },
+      "translation": [
+        0,
+        0.018,
+        0
+      ]
+    },
+    {
+      "name": "RightLittle1",
+      "extras": {
+        "gltfUUID": "hands-RightLittle1"
+      },
+      "translation": [
+        0.03,
+        0.021,
+        0
+      ],
+      "children": [
+        19
+      ]
+    },
+    {
+      "name": "RightLittle2",
+      "extras": {
+        "gltfUUID": "hands-RightLittle2"
+      },
+      "translation": [
+        0,
+        0.025,
+        0
+      ],
+      "children": [
+        20
+      ]
+    },
+    {
+      "name": "RightLittle3",
+      "extras": {
+        "gltfUUID": "hands-RightLittle3"
+      },
+      "translation": [
+        0,
+        0.018,
+        0
+      ],
+      "children": [
+        21
+      ]
+    },
+    {
+      "name": "RightLittleTip",
+      "extras": {
+        "contactRadius": 0.004679999999999999,
+        "gltfUUID": "hands-RightLittleTip"
+      },
+      "translation": [
+        0,
+        0.015,
+        0
+      ]
+    },
+    {
+      "name": "RightThumb1",
+      "extras": {
+        "gltfUUID": "hands-RightThumb1"
+      },
+      "translation": [
+        -0.033,
+        -0.016,
+        -0.006
+      ],
+      "children": [
+        23
+      ]
+    },
+    {
+      "name": "RightThumb2",
+      "extras": {
+        "gltfUUID": "hands-RightThumb2"
+      },
+      "translation": [
+        0,
+        0.028,
+        0
+      ],
+      "children": [
+        24
+      ]
+    },
+    {
+      "name": "RightThumb3",
+      "extras": {
+        "gltfUUID": "hands-RightThumb3"
+      },
+      "translation": [
+        0,
+        0.023,
+        0
+      ],
+      "children": [
+        25
+      ]
+    },
+    {
+      "name": "RightThumbTip",
+      "extras": {
+        "contactRadius": 0.0063,
+        "gltfUUID": "hands-RightThumbTip"
+      },
+      "translation": [
+        0,
+        0.02,
+        0
+      ]
+    },
+    {
+      "name": "LeftHand",
+      "extras": {
+        "handRig": {
+          "side": "Left",
+          "fingers": [
+            "Index",
+            "Middle",
+            "Ring",
+            "Little",
+            "Thumb"
+          ]
+        },
+        "gltfUUID": "hands-Left"
+      },
+      "scale": [
+        -1,
+        1,
+        1
+      ],
+      "children": [
+        27,
+        29
+      ]
+    },
+    {
+      "name": "LeftGlove",
+      "extras": {
+        "gltfUUID": "hands-LeftGlove"
+      },
+      "children": [
+        28
+      ]
+    },
+    {
+      "name": "Left Hand and Sleeve",
+      "extras": {
+        "gltfUUID": "hands-Left-Hand-and-Sleeve"
+      },
+      "mesh": 1,
+      "skin": 1
+    },
+    {
+      "name": "LeftPalm",
+      "extras": {
+        "gltfUUID": "hands-LeftPalm"
+      },
+      "children": [
+        30,
+        31,
+        35,
+        39,
+        43,
+        47
+      ]
+    },
+    {
+      "name": "LeftForearm",
+      "extras": {
+        "gltfUUID": "hands-LeftForearm"
+      },
+      "translation": [
+        0,
+        -0.057,
+        0
+      ]
+    },
+    {
+      "name": "LeftIndex1",
+      "extras": {
+        "gltfUUID": "hands-LeftIndex1"
+      },
+      "translation": [
+        -0.029,
+        0.029,
+        0
+      ],
+      "children": [
+        32
+      ]
+    },
+    {
+      "name": "LeftIndex2",
+      "extras": {
+        "gltfUUID": "hands-LeftIndex2"
+      },
+      "translation": [
+        0,
+        0.029,
+        0
+      ],
+      "children": [
+        33
+      ]
+    },
+    {
+      "name": "LeftIndex3",
+      "extras": {
+        "gltfUUID": "hands-LeftIndex3"
+      },
+      "translation": [
+        0,
+        0.022,
+        0
+      ],
+      "children": [
+        34
+      ]
+    },
+    {
+      "name": "LeftIndexTip",
+      "extras": {
+        "contactRadius": 0.005399999999999999,
+        "gltfUUID": "hands-LeftIndexTip"
+      },
+      "translation": [
+        0,
+        0.017,
+        0
+      ]
+    },
+    {
+      "name": "LeftMiddle1",
+      "extras": {
+        "gltfUUID": "hands-LeftMiddle1"
+      },
+      "translation": [
+        -0.009,
+        0.037,
+        0
+      ],
+      "children": [
+        36
+      ]
+    },
+    {
+      "name": "LeftMiddle2",
+      "extras": {
+        "gltfUUID": "hands-LeftMiddle2"
+      },
+      "translation": [
+        0,
+        0.034,
+        0
+      ],
+      "children": [
+        37
+      ]
+    },
+    {
+      "name": "LeftMiddle3",
+      "extras": {
+        "gltfUUID": "hands-LeftMiddle3"
+      },
+      "translation": [
+        0,
+        0.024,
+        0
+      ],
+      "children": [
+        38
+      ]
+    },
+    {
+      "name": "LeftMiddleTip",
+      "extras": {
+        "contactRadius": 0.005399999999999999,
+        "gltfUUID": "hands-LeftMiddleTip"
+      },
+      "translation": [
+        0,
+        0.019,
+        0
+      ]
+    },
+    {
+      "name": "LeftRing1",
+      "extras": {
+        "gltfUUID": "hands-LeftRing1"
+      },
+      "translation": [
+        0.012,
+        0.034,
+        0
+      ],
+      "children": [
+        40
+      ]
+    },
+    {
+      "name": "LeftRing2",
+      "extras": {
+        "gltfUUID": "hands-LeftRing2"
+      },
+      "translation": [
+        0,
+        0.032,
+        0
+      ],
+      "children": [
+        41
+      ]
+    },
+    {
+      "name": "LeftRing3",
+      "extras": {
+        "gltfUUID": "hands-LeftRing3"
+      },
+      "translation": [
+        0,
+        0.023,
+        0
+      ],
+      "children": [
+        42
+      ]
+    },
+    {
+      "name": "LeftRingTip",
+      "extras": {
+        "contactRadius": 0.005399999999999999,
+        "gltfUUID": "hands-LeftRingTip"
+      },
+      "translation": [
+        0,
+        0.018,
+        0
+      ]
+    },
+    {
+      "name": "LeftLittle1",
+      "extras": {
+        "gltfUUID": "hands-LeftLittle1"
+      },
+      "translation": [
+        0.03,
+        0.021,
+        0
+      ],
+      "children": [
+        44
+      ]
+    },
+    {
+      "name": "LeftLittle2",
+      "extras": {
+        "gltfUUID": "hands-LeftLittle2"
+      },
+      "translation": [
+        0,
+        0.025,
+        0
+      ],
+      "children": [
+        45
+      ]
+    },
+    {
+      "name": "LeftLittle3",
+      "extras": {
+        "gltfUUID": "hands-LeftLittle3"
+      },
+      "translation": [
+        0,
+        0.018,
+        0
+      ],
+      "children": [
+        46
+      ]
+    },
+    {
+      "name": "LeftLittleTip",
+      "extras": {
+        "contactRadius": 0.004679999999999999,
+        "gltfUUID": "hands-LeftLittleTip"
+      },
+      "translation": [
+        0,
+        0.015,
+        0
+      ]
+    },
+    {
+      "name": "LeftThumb1",
+      "extras": {
+        "gltfUUID": "hands-LeftThumb1"
+      },
+      "translation": [
+        -0.033,
+        -0.016,
+        -0.006
+      ],
+      "children": [
+        48
+      ]
+    },
+    {
+      "name": "LeftThumb2",
+      "extras": {
+        "gltfUUID": "hands-LeftThumb2"
+      },
+      "translation": [
+        0,
+        0.028,
+        0
+      ],
+      "children": [
+        49
+      ]
+    },
+    {
+      "name": "LeftThumb3",
+      "extras": {
+        "gltfUUID": "hands-LeftThumb3"
+      },
+      "translation": [
+        0,
+        0.023,
+        0
+      ],
+      "children": [
+        50
+      ]
+    },
+    {
+      "name": "LeftThumbTip",
+      "extras": {
+        "contactRadius": 0.0063,
+        "gltfUUID": "hands-LeftThumbTip"
+      },
+      "translation": [
+        0,
+        0.02,
+        0
+      ]
+    }
+  ],
+  "skins": [
+    {
+      "name": "Right Hand and Sleeve Skeleton",
+      "inverseBindMatrices": 10,
+      "skeleton": 4,
+      "joints": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "name": "Left Hand and Sleeve Skeleton",
+      "inverseBindMatrices": 11,
+      "skeleton": 29,
+      "joints": [
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "name": "hands Asset",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

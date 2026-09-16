@@ -1,0 +1,9 @@
+*.blend1
+__pycache__/
+# Full capture frames and studio renders remain local. Commit selected sheets and films.
+rounds/1[0-9]-game/fire-*x/
+rounds/1[0-9]-game/reload-*x/
+rounds/baseline-game/
+rounds/round-1[0-9]/*.png
+rounds/final-game/fire-*x/
+rounds/final-game/reload-*x/

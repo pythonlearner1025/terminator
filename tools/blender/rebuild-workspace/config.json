@@ -1,0 +1,92 @@
+{
+  "default_reference": "loafbrr-cc0",
+  "references": {
+    "loafbrr-cc0": {
+      "path": "assets/models/weapons-candidates/revolver/loafbrr-cc0/loafbrr-cc0.gltf",
+      "conversion": "assets/models/weapons-candidates/revolver/loafbrr-cc0/conversion.json"
+    },
+    "pavel-cc0": {
+      "path": "assets/models/weapons-candidates/revolver/pavel-cc0/pavel-cc0.gltf",
+      "conversion": "assets/models/weapons-candidates/revolver/pavel-cc0/conversion.json"
+    },
+    "detective-cc0": {
+      "path": "assets/models/weapons-candidates/revolver/detective-cc0/detective-cc0.gltf",
+      "conversion": "assets/models/weapons-candidates/revolver/detective-cc0/conversion.json"
+    },
+    "webley-ccby": {
+      "path": "assets/models/weapons-candidates/revolver/webley-ccby/webley-ccby.gltf",
+      "conversion": "assets/models/weapons-candidates/revolver/webley-ccby/conversion.json"
+    },
+    "loafbrr-cc0-hd": {
+      "path": "assets/models/weapons-candidates/revolver/loafbrr-cc0-hd/loafbrr-cc0-hd.gltf",
+      "conversion": "assets/models/weapons-candidates/revolver/loafbrr-cc0-hd/conversion.json"
+    },
+    "kf2-1858-reference": {
+      "path": "assets/reference/weapons/revolver/kf2-1858-reference/kf2-1858-reference.gltf",
+      "conversion": "assets/reference/weapons/revolver/kf2-1858-reference/conversion.json"
+    }
+  },
+  "camera": {
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "distance": 1.2,
+    "ortho_scale": 0.48,
+    "fov": 40,
+    "projection": "ORTHO",
+    "roll": 0
+  },
+  "presets": {
+    "left": {
+      "azimuth": -90,
+      "elevation": 0
+    },
+    "right": {
+      "azimuth": 90,
+      "elevation": 0
+    },
+    "top": {
+      "azimuth": -90,
+      "elevation": 90
+    },
+    "bottom": {
+      "azimuth": -90,
+      "elevation": -90
+    },
+    "front": {
+      "azimuth": 180,
+      "elevation": 0
+    },
+    "rear": {
+      "azimuth": 0,
+      "elevation": 0
+    },
+    "threequarter_left": {
+      "azimuth": -135,
+      "elevation": 22
+    },
+    "threequarter_right": {
+      "azimuth": 45,
+      "elevation": 22
+    },
+    "inspection": {
+      "azimuth": -125,
+      "elevation": 18,
+      "projection": "PERSP"
+    }
+  },
+  "render": {
+    "resolution": [
+      640,
+      480
+    ],
+    "studio_light": "paint.sl",
+    "background": [
+      0.055,
+      0.065,
+      0.08
+    ]
+  }
+}

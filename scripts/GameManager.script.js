@@ -1,3 +1,4 @@
+import {bindBulletPresentation} from '../lib/view/bullets.js'
 import {Object3DComponent} from 'threepipe'
 import mapRules from '../lib/core/data/map.json' with {type: 'json'}
 import mapPieceRegistry from '../lib/core/data/map-piece-registry.json' with {type: 'json'}
@@ -229,9 +230,11 @@ export class GameManager extends Object3DComponent {
       this.director.wave = this.world.wave
     }
     this.mapView?.sync(this.world)
+    const bullets=bindBulletPresentation(this)
+    this.playerView?.sync(this.world)
     this.unitView?.sync(this.world)
     this.playersView?.sync(this.world)
-    this.playerView?.sync(this.world)
+    bullets?.flush()
     this.grenadeView?.sync(this.world)
     this.cameraFeel?.apply(this.playerView?.camera,this.range?this.world.time:undefined)
     this.rangeView?.sync(this.world)

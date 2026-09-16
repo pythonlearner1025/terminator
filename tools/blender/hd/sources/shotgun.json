@@ -1,0 +1,321 @@
+{
+  "bake": {
+    "distinctHighDetail": true,
+    "sourceTriangles": 307142,
+    "lowTriangles": 31832,
+    "reliefVertices": 133954,
+    "detail": "Geometric wood grain, grip diamonds, pump grooves, six cylinder relief bands, hammer texture",
+    "maps": {
+      "normal": "Tangent-space Cycles selected-to-active, includes high geometric relief",
+      "ao": "Cycles ambient occlusion from separate relief source",
+      "curvature": "Cycles pointiness emitted from the high source"
+    },
+    "device": "OPTIX",
+    "resolution": 2048,
+    "samples": 32
+  },
+  "finish": {
+    "resolution": 2048,
+    "seed": 7301,
+    "albedo": "Transferred source detail, dark blue steel and warm walnut palette, pointiness-based edge wear",
+    "normal": "Transferred tangent normal plus the baked geometric relief delta; high-source base shading is subtracted",
+    "orm": "R: baked AO. G: oil sheen, wood roughness and cavity dirt. B: steel metalness, zero on wood.",
+    "curvature": "Offline high-source pointiness bake. Controls wear. Not loaded by the game.",
+    "validUvPixels": 2151140,
+    "woodPixels": 900120
+  },
+  "export": {
+    "triangles": 31832,
+    "drawCalls": 1,
+    "textureMaps": [
+      2048,
+      2048,
+      2048
+    ],
+    "path": "assets/models/weapons-candidates/shotgun/3dmodels-cc0-hd/3dmodels-cc0-hd.gltf"
+  },
+  "parts": [
+    {
+      "name": "Ejection_Port",
+      "triangles": 420,
+      "segments": 0,
+      "circularSections": [],
+      "added": false,
+      "reason": "Curved source geometry and bevels"
+    },
+    {
+      "name": "Fore_Stock",
+      "triangles": 2560,
+      "segments": 64,
+      "circularSections": [
+        {
+          "x": -0.34485,
+          "center": [
+            -1.4901161193847656e-08,
+            0.09090522676706314
+          ],
+          "radius": 0.020796607074531417,
+          "beforeSegments": 16,
+          "targetSegments": 64,
+          "measuredSegments": 64
+        },
+        {
+          "x": -0.502867,
+          "center": [
+            1.4901161193847656e-08,
+            0.09090522676706314
+          ],
+          "radius": 0.02079660707453142,
+          "beforeSegments": 16,
+          "targetSegments": 64,
+          "measuredSegments": 64
+        },
+        {
+          "x": -0.347761,
+          "center": [
+            -1.4901161193847656e-08,
+            0.09090522676706314
+          ],
+          "radius": 0.02370523741398487,
+          "beforeSegments": 16,
+          "targetSegments": 64,
+          "measuredSegments": 64
+        },
+        {
+          "x": -0.499956,
+          "center": [
+            1.4901161193847656e-08,
+            0.09090522676706314
+          ],
+          "radius": 0.02370523741398487,
+          "beforeSegments": 16,
+          "targetSegments": 64,
+          "measuredSegments": 64
+        }
+      ],
+      "added": false,
+      "reason": "Curved source geometry and bevels"
+    },
+    {
+      "name": "Bolt",
+      "triangles": 3360,
+      "segments": 0,
+      "circularSections": [],
+      "added": false,
+      "reason": "Curved source geometry and bevels"
+    },
+    {
+      "name": "Trigger",
+      "triangles": 740,
+      "segments": 0,
+      "circularSections": [],
+      "added": false,
+      "reason": "Curved source geometry and bevels"
+    },
+    {
+      "name": "Receiver and stock",
+      "triangles": 6832,
+      "segments": 0,
+      "circularSections": [],
+      "added": false,
+      "reason": "Curved source geometry and bevels"
+    },
+    {
+      "name": "Bead",
+      "triangles": 640,
+      "segments": 0,
+      "circularSections": [],
+      "added": false,
+      "reason": "Curved source geometry and bevels"
+    },
+    {
+      "name": "Bead base",
+      "triangles": 280,
+      "segments": 0,
+      "circularSections": [],
+      "added": false,
+      "reason": "Curved source geometry and bevels"
+    },
+    {
+      "name": "Trigger guard",
+      "triangles": 3868,
+      "segments": 0,
+      "circularSections": [],
+      "added": false,
+      "reason": "Curved source geometry and bevels"
+    },
+    {
+      "name": "Magazine tube and cap",
+      "triangles": 4960,
+      "segments": 72,
+      "circularSections": [
+        {
+          "x": -0.631808,
+          "center": [
+            1.5832483768463135e-08,
+            0.09502197057008743
+          ],
+          "radius": 0.012440610222267584,
+          "beforeSegments": 12,
+          "targetSegments": 72,
+          "measuredSegments": 72
+        },
+        {
+          "x": -0.629334,
+          "center": [
+            1.5832483768463135e-08,
+            0.09502197057008743
+          ],
+          "radius": 0.01495097874299254,
+          "beforeSegments": 12,
+          "targetSegments": 72,
+          "measuredSegments": 72
+        },
+        {
+          "x": -0.615943,
+          "center": [
+            1.4901161193847656e-08,
+            0.09502197429537773
+          ],
+          "radius": 0.014950979275398546,
+          "beforeSegments": 12,
+          "targetSegments": 72,
+          "measuredSegments": 72
+        },
+        {
+          "x": -0.611431,
+          "center": [
+            1.4901161193847656e-08,
+            0.09502197057008743
+          ],
+          "radius": 0.017527525781535772,
+          "beforeSegments": 12,
+          "targetSegments": 72,
+          "measuredSegments": 72
+        },
+        {
+          "x": -0.595421,
+          "center": [
+            1.30385160446167e-08,
+            0.09502197802066803
+          ],
+          "radius": 0.017527525913271856,
+          "beforeSegments": 12,
+          "targetSegments": 72,
+          "measuredSegments": 72
+        }
+      ],
+      "added": false,
+      "reason": "Curved source geometry and bevels"
+    },
+    {
+      "name": "Barrel",
+      "triangles": 2880,
+      "segments": 72,
+      "circularSections": [
+        {
+          "x": -0.218813,
+          "center": [
+            -1.5366822481155396e-08,
+            0.12609052285552025
+          ],
+          "radius": 0.009723154271420132,
+          "beforeSegments": 12,
+          "targetSegments": 72,
+          "measuredSegments": 72
+        },
+        {
+          "x": -0.7245,
+          "center": [
+            2.2817403078079224e-08,
+            0.12609048932790756
+          ],
+          "radius": 0.00972315532531201,
+          "beforeSegments": 12,
+          "targetSegments": 72,
+          "measuredSegments": 72
+        },
+        {
+          "x": -0.7245,
+          "center": [
+            2.2817403078079224e-08,
+            0.12609048932790756
+          ],
+          "radius": 0.01208585713910161,
+          "beforeSegments": 12,
+          "targetSegments": 72,
+          "measuredSegments": 72
+        },
+        {
+          "x": -0.212787,
+          "center": [
+            -1.5366822481155396e-08,
+            0.12609052285552025
+          ],
+          "radius": 0.012085854868282276,
+          "beforeSegments": 12,
+          "targetSegments": 72,
+          "measuredSegments": 72
+        }
+      ],
+      "added": false,
+      "reason": "Curved source geometry and bevels"
+    },
+    {
+      "name": "Receiver pin 1 side -1",
+      "triangles": 764,
+      "segments": 64,
+      "circularSections": [],
+      "added": true,
+      "reason": "Visible hardware"
+    },
+    {
+      "name": "Receiver pin 1 side 1",
+      "triangles": 764,
+      "segments": 64,
+      "circularSections": [],
+      "added": true,
+      "reason": "Visible hardware"
+    },
+    {
+      "name": "Receiver pin 2 side -1",
+      "triangles": 764,
+      "segments": 64,
+      "circularSections": [],
+      "added": true,
+      "reason": "Visible hardware"
+    },
+    {
+      "name": "Receiver pin 2 side 1",
+      "triangles": 764,
+      "segments": 64,
+      "circularSections": [],
+      "added": true,
+      "reason": "Visible hardware"
+    },
+    {
+      "name": "Shell lifter visual",
+      "triangles": 188,
+      "segments": null,
+      "circularSections": [],
+      "added": true,
+      "reason": "Visible hardware"
+    },
+    {
+      "name": "Front sling eye",
+      "triangles": 1024,
+      "segments": 64,
+      "circularSections": [],
+      "added": true,
+      "reason": "Visible hardware"
+    },
+    {
+      "name": "Stock sling eye",
+      "triangles": 1024,
+      "segments": 64,
+      "circularSections": [],
+      "added": true,
+      "reason": "Visible hardware"
+    }
+  ]
+}

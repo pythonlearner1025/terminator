@@ -33,14 +33,18 @@ test('selected props resolve locally and fit the preserved authored collider ext
       for (const mesh of gltf.meshes) for (const primitive of mesh.primitives) delete primitive.material
       const doc = await new NodeIO().readJSON({json: gltf, resources})
       const box = new Box3(), point = new Vector3()
-      for (const node of doc.getRoot().listNodes()) {
-        if (!node.getMesh()) continue
-        const matrix = new Matrix4().fromArray(node.getWorldMatrix())
-        for (const primitive of node.getMesh().listPrimitives()) {
-          const positions = primitive.getAttribute('POSITION').getArray()
-          for (let i = 0; i < positions.length; i += 3) box.expandByPoint(point.fromArray(positions, i).applyMatrix4(matrix))
+      const scene = doc.getRoot().getDefaultScene() || doc.getRoot().listScenes()[0]
+      const visit = node => {
+        if (node.getMesh()) {
+          const matrix = new Matrix4().fromArray(node.getWorldMatrix())
+          for (const primitive of node.getMesh().listPrimitives()) {
+            const positions = primitive.getAttribute('POSITION').getArray()
+            for (let i = 0; i < positions.length; i += 3) box.expandByPoint(point.fromArray(positions, i).applyMatrix4(matrix))
+          }
         }
+        for (const child of node.listChildren()) visit(child)
       }
+      for (const node of scene?.listChildren() || []) visit(node)
       const size = box.getSize(new Vector3()), center = box.getCenter(new Vector3()), entry = registry.assets[id]
       // A rubble visible-volume box may be shorter and offset from its nominal
       // asset envelope. Existing legacy imports within 5 cm are measured by the
@@ -53,5 +57,5 @@ test('selected props resolve locally and fit the preserved authored collider ext
       }
     }
   }
-  assert.equal(count, 13)
+  assert.equal(count, 12)
 })

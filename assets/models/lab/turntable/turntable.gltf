@@ -1,0 +1,367 @@
+{
+  "asset": {
+    "generator": "Terminator tools/build-lab-assets.mjs with glTF-Transform 4.5.0 and three.js",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "name": "Turntable plinth POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        0.4000000059604645,
+        0.03999999910593033,
+        0.4000000059604645
+      ],
+      "min": [
+        -0.4000000059604645,
+        -0.03999999910593033,
+        -0.4000000059604645
+      ],
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Turntable plinth NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 0,
+      "byteOffset": 12
+    },
+    {
+      "name": "Turntable plinth TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 0,
+      "byteOffset": 24
+    },
+    {
+      "name": "Turntable plinth indices",
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 36,
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Turntable column indices",
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 36,
+      "bufferView": 1,
+      "byteOffset": 72
+    },
+    {
+      "name": "Weapon turntable surface indices",
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 576,
+      "bufferView": 1,
+      "byteOffset": 144
+    },
+    {
+      "name": "Weapon rest indices",
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 36,
+      "bufferView": 1,
+      "byteOffset": 1296
+    },
+    {
+      "name": "Turntable column POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        0.11999999731779099,
+        0.4350000023841858,
+        0.11999999731779099
+      ],
+      "min": [
+        -0.11999999731779099,
+        -0.4350000023841858,
+        -0.11999999731779099
+      ],
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "name": "Turntable column NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 2,
+      "byteOffset": 12
+    },
+    {
+      "name": "Turntable column TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 2,
+      "byteOffset": 24
+    },
+    {
+      "name": "Weapon turntable surface POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 292,
+      "max": [
+        0.6399999856948853,
+        0.03999999910593033,
+        0.6399999856948853
+      ],
+      "min": [
+        -0.6399999856948853,
+        -0.03999999910593033,
+        -0.6399999856948853
+      ],
+      "bufferView": 3,
+      "byteOffset": 0
+    },
+    {
+      "name": "Weapon turntable surface NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 292,
+      "bufferView": 3,
+      "byteOffset": 12
+    },
+    {
+      "name": "Weapon turntable surface TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 292,
+      "bufferView": 3,
+      "byteOffset": 24
+    },
+    {
+      "name": "Weapon rest POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        0.05000000074505806,
+        0.05000000074505806,
+        0.14000000059604645
+      ],
+      "min": [
+        -0.05000000074505806,
+        -0.05000000074505806,
+        -0.14000000059604645
+      ],
+      "bufferView": 4,
+      "byteOffset": 0
+    },
+    {
+      "name": "Weapon rest NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 4,
+      "byteOffset": 12
+    },
+    {
+      "name": "Weapon rest TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 4,
+      "byteOffset": 24
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 768,
+      "byteStride": 32,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 768,
+      "byteLength": 1368,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2136,
+      "byteLength": 768,
+      "byteStride": 32,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2904,
+      "byteLength": 9344,
+      "byteStride": 32,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 12248,
+      "byteLength": 768,
+      "byteStride": 32,
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "name": "Lab Turntable Asset geometry",
+      "uri": "turntable.bin",
+      "byteLength": 13016
+    }
+  ],
+  "materials": [
+    {
+      "name": "Lab worn steel",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.13013647668074665,
+          0.16513219449147767,
+          0.1844749944900301,
+          1
+        ],
+        "roughnessFactor": 0.67,
+        "metallicFactor": 0.75
+      }
+    },
+    {
+      "name": "Lab range markings",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.5647115056965487,
+          0.25818285291079235,
+          0.03954623527052923,
+          1
+        ],
+        "roughnessFactor": 0.72,
+        "metallicFactor": 0.12
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Turntable plinth",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 3
+        }
+      ]
+    },
+    {
+      "name": "Turntable column",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 7,
+            "NORMAL": 8,
+            "TEXCOORD_0": 9
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 4
+        }
+      ]
+    },
+    {
+      "name": "Weapon turntable surface",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 10,
+            "NORMAL": 11,
+            "TEXCOORD_0": 12
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 5
+        }
+      ]
+    },
+    {
+      "name": "Weapon rest",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 13,
+            "NORMAL": 14,
+            "TEXCOORD_0": 15
+          },
+          "mode": 4,
+          "material": 1,
+          "indices": 6
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Lab Turntable Asset",
+      "extras": {
+        "labFixtureAsset": "turntable"
+      },
+      "children": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "name": "Turntable plinth",
+      "translation": [
+        0,
+        0.04,
+        0
+      ],
+      "mesh": 0
+    },
+    {
+      "name": "Turntable column",
+      "translation": [
+        0,
+        0.5,
+        0
+      ],
+      "mesh": 1
+    },
+    {
+      "name": "Weapon turntable surface",
+      "translation": [
+        0,
+        0.98,
+        0
+      ],
+      "mesh": 2
+    },
+    {
+      "name": "Weapon rest",
+      "translation": [
+        0,
+        1.06,
+        0
+      ],
+      "mesh": 3
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Lab Turntable Asset",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

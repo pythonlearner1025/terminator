@@ -1,0 +1,121 @@
+{
+  "bones": 49,
+  "clips": [
+    "Idle",
+    "Draw",
+    "Fire",
+    "Reload",
+    "AimIn",
+    "AimOut",
+    "AimIdle",
+    "Sprint",
+    "Inspect"
+  ],
+  "samples": {
+    "Idle": {
+      "clip": "Idle",
+      "seconds": 0,
+      "vertices": 4255,
+      "maxLocalDeformationM": 0,
+      "maxNearestSourceErrorM": 4.4652356639094506e-7,
+      "rmsErrorM": 2.915963700638748e-7
+    },
+    "Fire": {
+      "clip": "Fire",
+      "seconds": 0.05,
+      "vertices": 4255,
+      "maxLocalDeformationM": 0.0044279727469649765,
+      "maxNearestSourceErrorM": 4.4652356639094506e-7,
+      "rmsErrorM": 2.903849658927628e-7
+    },
+    "Draw": {
+      "clip": "Draw",
+      "seconds": 0.35,
+      "vertices": 4255,
+      "maxLocalDeformationM": 2.012201076275087e-7,
+      "maxNearestSourceErrorM": 4.692382768909722e-7,
+      "rmsErrorM": 2.5928499091679604e-7
+    },
+    "Reload": {
+      "clip": "Reload",
+      "seconds": 0.8640000000000001,
+      "vertices": 4255,
+      "maxLocalDeformationM": 0.5018430385738265,
+      "maxNearestSourceErrorM": 5.453949252529028e-7,
+      "rmsErrorM": 2.8359632712817063e-7
+    },
+    "Reload@73.44": {
+      "clip": "Reload",
+      "seconds": 1.224,
+      "vertices": 4255,
+      "maxLocalDeformationM": 0.5922597612533461,
+      "maxNearestSourceErrorM": 4.355623046957054e-7,
+      "rmsErrorM": 2.3494384104810342e-7
+    },
+    "Reload@144.72": {
+      "clip": "Reload",
+      "seconds": 2.412,
+      "vertices": 4255,
+      "maxLocalDeformationM": 0.5843907965275674,
+      "maxNearestSourceErrorM": 5.644750116518408e-7,
+      "rmsErrorM": 3.2060787279609076e-7
+    },
+    "Reload@181.44": {
+      "clip": "Reload",
+      "seconds": 3.024,
+      "vertices": 4255,
+      "maxLocalDeformationM": 0.43538789865222016,
+      "maxNearestSourceErrorM": 4.4611463877982756e-7,
+      "rmsErrorM": 2.37904647861224e-7
+    },
+    "Reload@216": {
+      "clip": "Reload",
+      "seconds": 3.6,
+      "vertices": 4255,
+      "maxLocalDeformationM": 1.841022441002548e-7,
+      "maxNearestSourceErrorM": 4.236430574675339e-7,
+      "rmsErrorM": 2.485200784159398e-7
+    },
+    "AimIn": {
+      "clip": "AimIn",
+      "seconds": 0.09000000000000001,
+      "vertices": 4255,
+      "maxLocalDeformationM": 4.425046440382534e-11,
+      "maxNearestSourceErrorM": 4.4957989163616707e-7,
+      "rmsErrorM": 3.088922323542006e-7
+    },
+    "AimOut": {
+      "clip": "AimOut",
+      "seconds": 0.09000000000000001,
+      "vertices": 4255,
+      "maxLocalDeformationM": 4.425046440382534e-11,
+      "maxNearestSourceErrorM": 4.4957989163616707e-7,
+      "rmsErrorM": 3.088922323542006e-7
+    },
+    "AimIdle": {
+      "clip": "AimIdle",
+      "seconds": 1,
+      "vertices": 4255,
+      "maxLocalDeformationM": 5.421010862427522e-20,
+      "maxNearestSourceErrorM": 4.4652356639094506e-7,
+      "rmsErrorM": 2.915963700638748e-7
+    },
+    "Sprint": {
+      "clip": "Sprint",
+      "seconds": 0.4,
+      "vertices": 4255,
+      "maxLocalDeformationM": 3.0501451758955153e-7,
+      "maxNearestSourceErrorM": 4.142817053211463e-7,
+      "rmsErrorM": 2.5359286177717124e-7
+    },
+    "Inspect": {
+      "clip": "Inspect",
+      "seconds": 1.5,
+      "vertices": 4255,
+      "maxLocalDeformationM": 2.1204724879510376e-9,
+      "maxNearestSourceErrorM": 4.820967993798925e-7,
+      "rmsErrorM": 3.157900335787972e-7
+    }
+  },
+  "duplicates": []
+}

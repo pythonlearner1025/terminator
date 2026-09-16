@@ -1,0 +1,55 @@
+{
+  "source": "https://opengameart.org/content/revolver-game-asset",
+  "author": "loafbrr_1",
+  "license": "CC0-1.0",
+  "shippable": true,
+  "textureResolution": 2048,
+  "sourceTextureSizes": {
+    "albedo": [
+      1024,
+      1024
+    ],
+    "normal": [
+      1024,
+      1024
+    ],
+    "roughness": [
+      1024,
+      1024
+    ],
+    "metallic": [
+      1024,
+      1024
+    ],
+    "ao": [
+      1024,
+      1024
+    ]
+  },
+  "notes": [],
+  "triangles": 1982,
+  "sourceMeshNames": [
+    "Hammer",
+    "LOW_CHamberLock",
+    "LOW_CHamberRotate",
+    "REV_Cylinder",
+    "REV_Frame",
+    "REV_Handle",
+    "REV_Trigger"
+  ],
+  "boundsMetres": [
+    [
+      -0.3168318271636963,
+      -0.025818411260843277,
+      -0.014629952609539032
+    ],
+    [
+      0.03316816687583923,
+      0.02581845596432686,
+      0.16478954255580902
+    ]
+  ],
+  "lengthMetres": 0.35,
+  "pivot": "Estimated grip center; static display candidate",
+  "decimation": false
+}

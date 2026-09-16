@@ -21,7 +21,16 @@
         281,
         282,
         283,
-        284
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293
       ]
     }
   ],
@@ -11358,6 +11367,285 @@
           "quaternion",
           "scale"
         ]
+      }
+    },
+    {
+      "name": "Weapon Template pistol",
+      "translation": [
+        43,
+        1.4,
+        13
+      ],
+      "rotation": [
+        0,
+        0.7071067811865475,
+        0,
+        0.7071067811865476
+      ],
+      "extras": {
+        "gltfUUID": "weapon-template-pistol",
+        "weaponAsset": "pistol",
+        "rootPath": "/kite3d/@weapon-pistol/pistol.gltf",
+        "sProperties": [
+          "position",
+          "rotation",
+          "quaternion",
+          "scale",
+          "visible",
+          "name"
+        ],
+        "kite3dAuthoring": {
+          "role": "template",
+          "id": "weapon-template-pistol"
+        }
+      }
+    },
+    {
+      "name": "Weapon Template m4",
+      "translation": [
+        43.65,
+        1.4,
+        13
+      ],
+      "rotation": [
+        0,
+        0.7071067811865475,
+        0,
+        0.7071067811865476
+      ],
+      "extras": {
+        "gltfUUID": "weapon-template-m4",
+        "weaponAsset": "m4",
+        "rootPath": "/kite3d/@weapon-m4/m4.gltf",
+        "sProperties": [
+          "position",
+          "rotation",
+          "quaternion",
+          "scale",
+          "visible",
+          "name"
+        ],
+        "kite3dAuthoring": {
+          "role": "template",
+          "id": "weapon-template-m4"
+        }
+      }
+    },
+    {
+      "name": "Weapon Template shotgun",
+      "translation": [
+        44.3,
+        1.4,
+        13
+      ],
+      "rotation": [
+        0,
+        0.7071067811865475,
+        0,
+        0.7071067811865476
+      ],
+      "extras": {
+        "gltfUUID": "weapon-template-shotgun",
+        "weaponAsset": "shotgun",
+        "rootPath": "/kite3d/@weapon-shotgun/shotgun.gltf",
+        "sProperties": [
+          "position",
+          "rotation",
+          "quaternion",
+          "scale",
+          "visible",
+          "name"
+        ],
+        "kite3dAuthoring": {
+          "role": "template",
+          "id": "weapon-template-shotgun"
+        }
+      }
+    },
+    {
+      "name": "Weapon Template plasma",
+      "translation": [
+        44.95,
+        1.4,
+        13
+      ],
+      "rotation": [
+        0,
+        0.7071067811865475,
+        0,
+        0.7071067811865476
+      ],
+      "extras": {
+        "gltfUUID": "weapon-template-plasma",
+        "weaponAsset": "plasma",
+        "rootPath": "/kite3d/@weapon-plasma/plasma.gltf",
+        "sProperties": [
+          "position",
+          "rotation",
+          "quaternion",
+          "scale",
+          "visible",
+          "name"
+        ],
+        "kite3dAuthoring": {
+          "role": "template",
+          "id": "weapon-template-plasma"
+        }
+      }
+    },
+    {
+      "name": "Weapon Template knife",
+      "translation": [
+        45.6,
+        1.4,
+        13
+      ],
+      "rotation": [
+        0,
+        0.7071067811865475,
+        0,
+        0.7071067811865476
+      ],
+      "extras": {
+        "gltfUUID": "weapon-template-knife",
+        "weaponAsset": "knife",
+        "rootPath": "/kite3d/@weapon-knife/knife.gltf",
+        "sProperties": [
+          "position",
+          "rotation",
+          "quaternion",
+          "scale",
+          "visible",
+          "name"
+        ],
+        "kite3dAuthoring": {
+          "role": "template",
+          "id": "weapon-template-knife"
+        }
+      }
+    },
+    {
+      "name": "Weapon Template grenade",
+      "translation": [
+        46.25,
+        1.4,
+        13
+      ],
+      "rotation": [
+        0,
+        0.7071067811865475,
+        0,
+        0.7071067811865476
+      ],
+      "extras": {
+        "gltfUUID": "weapon-template-grenade",
+        "weaponAsset": "grenade",
+        "rootPath": "/kite3d/@weapon-grenade/grenade.gltf",
+        "sProperties": [
+          "position",
+          "rotation",
+          "quaternion",
+          "scale",
+          "visible",
+          "name"
+        ],
+        "kite3dAuthoring": {
+          "role": "template",
+          "id": "weapon-template-grenade"
+        }
+      }
+    },
+    {
+      "name": "Weapon Template sniper",
+      "translation": [
+        46.9,
+        1.4,
+        13
+      ],
+      "rotation": [
+        0,
+        0.7071067811865475,
+        0,
+        0.7071067811865476
+      ],
+      "extras": {
+        "gltfUUID": "weapon-template-sniper",
+        "weaponAsset": "sniper",
+        "rootPath": "/kite3d/@weapon-sniper/sniper.gltf",
+        "sProperties": [
+          "position",
+          "rotation",
+          "quaternion",
+          "scale",
+          "visible",
+          "name"
+        ],
+        "kite3dAuthoring": {
+          "role": "template",
+          "id": "weapon-template-sniper"
+        }
+      }
+    },
+    {
+      "name": "Weapon Template launcher",
+      "translation": [
+        47.55,
+        1.4,
+        13
+      ],
+      "rotation": [
+        0,
+        0.7071067811865475,
+        0,
+        0.7071067811865476
+      ],
+      "extras": {
+        "gltfUUID": "weapon-template-launcher",
+        "weaponAsset": "launcher",
+        "rootPath": "/kite3d/@weapon-launcher/launcher.gltf",
+        "sProperties": [
+          "position",
+          "rotation",
+          "quaternion",
+          "scale",
+          "visible",
+          "name"
+        ],
+        "kite3dAuthoring": {
+          "role": "template",
+          "id": "weapon-template-launcher"
+        }
+      }
+    },
+    {
+      "name": "Weapon Template hands",
+      "translation": [
+        48.2,
+        1.4,
+        13
+      ],
+      "rotation": [
+        0,
+        0.7071067811865475,
+        0,
+        0.7071067811865476
+      ],
+      "extras": {
+        "gltfUUID": "weapon-template-hands",
+        "weaponAsset": "hands",
+        "rootPath": "/kite3d/@weapon-hands/hands.gltf",
+        "sProperties": [
+          "position",
+          "rotation",
+          "quaternion",
+          "scale",
+          "visible",
+          "name"
+        ],
+        "kite3dAuthoring": {
+          "role": "template",
+          "id": "weapon-template-hands"
+        }
       }
     }
   ],

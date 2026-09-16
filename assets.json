@@ -1,88 +1,591 @@
 {
   "version": 1,
   "files": {
-    "map-floor-60x0p5x60": {
-      "path": "assets/models/map/floor-60x0p5x60/floor-60x0p5x60.gltf",
+    "aerial_beach_01_1k": {
+      "path": "assets/imports/aerial_beach_01_1k/f.phmatgltf",
       "files": {
-        "f.gltf": "assets/models/map/floor-60x0p5x60/floor-60x0p5x60.gltf",
-        "floor-60x0p5x60.bin": "assets/models/map/floor-60x0p5x60/floor-60x0p5x60.bin"
+        "f.phmatgltf": "assets/imports/aerial_beach_01_1k/f.phmatgltf",
+        "aerial_beach_01.bin": "assets/imports/aerial_beach_01_1k/aerial_beach_01.bin",
+        "textures/aerial_beach_01_nor_gl_1k.jpg": "assets/imports/aerial_beach_01_1k/textures/aerial_beach_01_nor_gl_1k.jpg",
+        "textures/aerial_beach_01_diff_1k.jpg": "assets/imports/aerial_beach_01_1k/textures/aerial_beach_01_diff_1k.jpg",
+        "textures/aerial_beach_01_rough_1k.jpg": "assets/imports/aerial_beach_01_1k/textures/aerial_beach_01_rough_1k.jpg"
       }
     },
-    "map-wall-12x3x1": {
-      "path": "assets/models/map/wall-12x3x1/wall-12x3x1.gltf",
+    "aerial_beach_02_1k": {
+      "path": "assets/imports/aerial_beach_02_1k/f.phmatgltf",
       "files": {
-        "f.gltf": "assets/models/map/wall-12x3x1/wall-12x3x1.gltf",
-        "wall-12x3x1.bin": "assets/models/map/wall-12x3x1/wall-12x3x1.bin"
+        "f.phmatgltf": "assets/imports/aerial_beach_02_1k/f.phmatgltf",
+        "aerial_beach_02.bin": "assets/imports/aerial_beach_02_1k/aerial_beach_02.bin",
+        "textures/aerial_beach_02_nor_gl_1k.jpg": "assets/imports/aerial_beach_02_1k/textures/aerial_beach_02_nor_gl_1k.jpg",
+        "textures/aerial_beach_02_diff_1k.jpg": "assets/imports/aerial_beach_02_1k/textures/aerial_beach_02_diff_1k.jpg",
+        "textures/aerial_beach_02_rough_1k.jpg": "assets/imports/aerial_beach_02_1k/textures/aerial_beach_02_rough_1k.jpg"
       }
     },
-    "map-wall-28x3x1": {
-      "path": "assets/models/map/wall-28x3x1/wall-28x3x1.gltf",
+    "aerial_beach_03_1k": {
+      "path": "assets/imports/aerial_beach_03_1k/f.phmatgltf",
       "files": {
-        "f.gltf": "assets/models/map/wall-28x3x1/wall-28x3x1.gltf",
-        "wall-28x3x1.bin": "assets/models/map/wall-28x3x1/wall-28x3x1.bin"
+        "f.phmatgltf": "assets/imports/aerial_beach_03_1k/f.phmatgltf",
+        "aerial_beach_03.bin": "assets/imports/aerial_beach_03_1k/aerial_beach_03.bin",
+        "textures/aerial_beach_03_nor_gl_1k.jpg": "assets/imports/aerial_beach_03_1k/textures/aerial_beach_03_nor_gl_1k.jpg",
+        "textures/aerial_beach_03_diff_1k.jpg": "assets/imports/aerial_beach_03_1k/textures/aerial_beach_03_diff_1k.jpg",
+        "textures/aerial_beach_03_arm_1k.jpg": "assets/imports/aerial_beach_03_1k/textures/aerial_beach_03_arm_1k.jpg"
       }
     },
-    "map-wall-18x3x1": {
-      "path": "assets/models/map/wall-18x3x1/wall-18x3x1.gltf",
+    "aerial_beach_03_1k-1": {
+      "path": "assets/imports/aerial_beach_03_1k-1/f.phmatgltf",
       "files": {
-        "f.gltf": "assets/models/map/wall-18x3x1/wall-18x3x1.gltf",
-        "wall-18x3x1.bin": "assets/models/map/wall-18x3x1/wall-18x3x1.bin"
+        "f.phmatgltf": "assets/imports/aerial_beach_03_1k-1/f.phmatgltf",
+        "aerial_beach_03.bin": "assets/imports/aerial_beach_03_1k-1/aerial_beach_03.bin",
+        "textures/aerial_beach_03_nor_gl_1k.jpg": "assets/imports/aerial_beach_03_1k-1/textures/aerial_beach_03_nor_gl_1k.jpg",
+        "textures/aerial_beach_03_diff_1k.jpg": "assets/imports/aerial_beach_03_1k-1/textures/aerial_beach_03_diff_1k.jpg",
+        "textures/aerial_beach_03_arm_1k.jpg": "assets/imports/aerial_beach_03_1k-1/textures/aerial_beach_03_arm_1k.jpg"
       }
     },
-    "map-wall-16x3x1": {
-      "path": "assets/models/map/wall-16x3x1/wall-16x3x1.gltf",
+    "aerial_beach_03_1k-2": {
+      "path": "assets/imports/aerial_beach_03_1k-2/f.phmatgltf",
       "files": {
-        "f.gltf": "assets/models/map/wall-16x3x1/wall-16x3x1.gltf",
-        "wall-16x3x1.bin": "assets/models/map/wall-16x3x1/wall-16x3x1.bin"
+        "f.phmatgltf": "assets/imports/aerial_beach_03_1k-2/f.phmatgltf",
+        "aerial_beach_03.bin": "assets/imports/aerial_beach_03_1k-2/aerial_beach_03.bin",
+        "textures/aerial_beach_03_nor_gl_1k.jpg": "assets/imports/aerial_beach_03_1k-2/textures/aerial_beach_03_nor_gl_1k.jpg",
+        "textures/aerial_beach_03_diff_1k.jpg": "assets/imports/aerial_beach_03_1k-2/textures/aerial_beach_03_diff_1k.jpg",
+        "textures/aerial_beach_03_arm_1k.jpg": "assets/imports/aerial_beach_03_1k-2/textures/aerial_beach_03_arm_1k.jpg"
       }
     },
-    "map-wall-1x3x16": {
-      "path": "assets/models/map/wall-1x3x16/wall-1x3x16.gltf",
+    "aerial_beach_03_1k-3": {
+      "path": "assets/imports/aerial_beach_03_1k-3/f.phmatgltf",
       "files": {
-        "f.gltf": "assets/models/map/wall-1x3x16/wall-1x3x16.gltf",
-        "wall-1x3x16.bin": "assets/models/map/wall-1x3x16/wall-1x3x16.bin"
+        "f.phmatgltf": "assets/imports/aerial_beach_03_1k-3/f.phmatgltf",
+        "aerial_beach_03.bin": "assets/imports/aerial_beach_03_1k-3/aerial_beach_03.bin",
+        "textures/aerial_beach_03_nor_gl_1k.jpg": "assets/imports/aerial_beach_03_1k-3/textures/aerial_beach_03_nor_gl_1k.jpg",
+        "textures/aerial_beach_03_diff_1k.jpg": "assets/imports/aerial_beach_03_1k-3/textures/aerial_beach_03_diff_1k.jpg",
+        "textures/aerial_beach_03_arm_1k.jpg": "assets/imports/aerial_beach_03_1k-3/textures/aerial_beach_03_arm_1k.jpg"
       }
     },
-    "map-wall-1x3x13": {
-      "path": "assets/models/map/wall-1x3x13/wall-1x3x13.gltf",
+    "aerial_grass_rock_1k": {
+      "path": "assets/imports/aerial_grass_rock_1k/f.phmatgltf",
       "files": {
-        "f.gltf": "assets/models/map/wall-1x3x13/wall-1x3x13.gltf",
-        "wall-1x3x13.bin": "assets/models/map/wall-1x3x13/wall-1x3x13.bin"
+        "f.phmatgltf": "assets/imports/aerial_grass_rock_1k/f.phmatgltf",
+        "aerial_grass_rock.bin": "assets/imports/aerial_grass_rock_1k/aerial_grass_rock.bin",
+        "textures/aerial_grass_rock_nor_gl_1k.jpg": "assets/imports/aerial_grass_rock_1k/textures/aerial_grass_rock_nor_gl_1k.jpg",
+        "textures/aerial_grass_rock_diff_1k.jpg": "assets/imports/aerial_grass_rock_1k/textures/aerial_grass_rock_diff_1k.jpg",
+        "textures/aerial_grass_rock_rough_1k.jpg": "assets/imports/aerial_grass_rock_1k/textures/aerial_grass_rock_rough_1k.jpg"
       }
     },
-    "map-wall-1x3x6p4": {
-      "path": "assets/models/map/wall-1x3x6p4/wall-1x3x6p4.gltf",
+    "aerial_grass_rock_1k-1": {
+      "path": "assets/imports/aerial_grass_rock_1k-1/f.phmatgltf",
       "files": {
-        "f.gltf": "assets/models/map/wall-1x3x6p4/wall-1x3x6p4.gltf",
-        "wall-1x3x6p4.bin": "assets/models/map/wall-1x3x6p4/wall-1x3x6p4.bin"
+        "f.phmatgltf": "assets/imports/aerial_grass_rock_1k-1/f.phmatgltf",
+        "aerial_grass_rock.bin": "assets/imports/aerial_grass_rock_1k-1/aerial_grass_rock.bin",
+        "textures/aerial_grass_rock_nor_gl_1k.jpg": "assets/imports/aerial_grass_rock_1k-1/textures/aerial_grass_rock_nor_gl_1k.jpg",
+        "textures/aerial_grass_rock_diff_1k.jpg": "assets/imports/aerial_grass_rock_1k-1/textures/aerial_grass_rock_diff_1k.jpg",
+        "textures/aerial_grass_rock_rough_1k.jpg": "assets/imports/aerial_grass_rock_1k-1/textures/aerial_grass_rock_rough_1k.jpg"
       }
     },
-    "map-rubble-1x1p5x12-zh655b": {
-      "path": "assets/models/map/rubble-1x1p5x12-zh655b/rubble-1x1p5x12-zh655b.gltf",
+    "aerial_rocks_01_1k": {
+      "path": "assets/imports/aerial_rocks_01_1k/f.phmatgltf",
       "files": {
-        "f.gltf": "assets/models/map/rubble-1x1p5x12-zh655b/rubble-1x1p5x12-zh655b.gltf",
-        "rubble-1x1p5x12-zh655b.bin": "assets/models/map/rubble-1x1p5x12-zh655b/rubble-1x1p5x12-zh655b.bin"
+        "f.phmatgltf": "assets/imports/aerial_rocks_01_1k/f.phmatgltf",
+        "aerial_rocks_01.bin": "assets/imports/aerial_rocks_01_1k/aerial_rocks_01.bin",
+        "textures/aerial_rocks_01_nor_gl_1k.jpg": "assets/imports/aerial_rocks_01_1k/textures/aerial_rocks_01_nor_gl_1k.jpg",
+        "textures/aerial_rocks_01_diff_1k.jpg": "assets/imports/aerial_rocks_01_1k/textures/aerial_rocks_01_diff_1k.jpg",
+        "textures/aerial_rocks_01_rough_1k.jpg": "assets/imports/aerial_rocks_01_1k/textures/aerial_rocks_01_rough_1k.jpg"
       }
     },
-    "map-rubble-nw": {
-      "path": "assets/models/map/rubble-nw/rubble-nw.gltf",
+    "armchair_01_1k": {
+      "path": "assets/imports/armchair_01_1k/f.gltf",
       "files": {
-        "f.gltf": "assets/models/map/rubble-nw/rubble-nw.gltf",
-        "rubble-nw.bin": "assets/models/map/rubble-nw/rubble-nw.bin"
+        "f.gltf": "assets/imports/armchair_01_1k/f.gltf",
+        "ArmChair_01.bin": "assets/imports/armchair_01_1k/ArmChair_01.bin",
+        "textures/Armchair_01_nor_gl_1k.jpg": "assets/imports/armchair_01_1k/textures/Armchair_01_nor_gl_1k.jpg",
+        "textures/Armchair_01_diff_1k.jpg": "assets/imports/armchair_01_1k/textures/Armchair_01_diff_1k.jpg",
+        "textures/Armchair_01_arm_1k.jpg": "assets/imports/armchair_01_1k/textures/Armchair_01_arm_1k.jpg"
       }
     },
-    "map-rubble-se": {
-      "path": "assets/models/map/rubble-se/rubble-se.gltf",
+    "armchair_01_1k-1": {
+      "path": "assets/imports/armchair_01_1k-1/f.gltf",
       "files": {
-        "f.gltf": "assets/models/map/rubble-se/rubble-se.gltf",
-        "rubble-se.bin": "assets/models/map/rubble-se/rubble-se.bin"
+        "f.gltf": "assets/imports/armchair_01_1k-1/f.gltf",
+        "ArmChair_01.bin": "assets/imports/armchair_01_1k-1/ArmChair_01.bin",
+        "textures/Armchair_01_nor_gl_1k.jpg": "assets/imports/armchair_01_1k-1/textures/Armchair_01_nor_gl_1k.jpg",
+        "textures/Armchair_01_diff_1k.jpg": "assets/imports/armchair_01_1k-1/textures/Armchair_01_diff_1k.jpg",
+        "textures/Armchair_01_arm_1k.jpg": "assets/imports/armchair_01_1k-1/textures/Armchair_01_arm_1k.jpg"
       }
     },
-    "map-truck-5p5x2p4x2p4-m0jo9i": {
-      "path": "assets/models/map/truck-5p5x2p4x2p4-m0jo9i/truck-5p5x2p4x2p4-m0jo9i.gltf",
+    "armchair_01_1k-2": {
+      "path": "assets/imports/armchair_01_1k-2/f.gltf",
       "files": {
-        "f.gltf": "assets/models/map/truck-5p5x2p4x2p4-m0jo9i/truck-5p5x2p4x2p4-m0jo9i.gltf",
-        "truck-5p5x2p4x2p4-m0jo9i.bin": "assets/models/map/truck-5p5x2p4x2p4-m0jo9i/truck-5p5x2p4x2p4-m0jo9i.bin"
+        "f.gltf": "assets/imports/armchair_01_1k-2/f.gltf",
+        "ArmChair_01.bin": "assets/imports/armchair_01_1k-2/ArmChair_01.bin",
+        "textures/Armchair_01_nor_gl_1k.jpg": "assets/imports/armchair_01_1k-2/textures/Armchair_01_nor_gl_1k.jpg",
+        "textures/Armchair_01_diff_1k.jpg": "assets/imports/armchair_01_1k-2/textures/Armchair_01_diff_1k.jpg",
+        "textures/Armchair_01_arm_1k.jpg": "assets/imports/armchair_01_1k-2/textures/Armchair_01_arm_1k.jpg"
+      }
+    },
+    "barbershopchair_01_1k": {
+      "path": "assets/imports/barbershopchair_01_1k/f.gltf",
+      "files": {
+        "f.gltf": "assets/imports/barbershopchair_01_1k/f.gltf",
+        "BarberShopChair_01.bin": "assets/imports/barbershopchair_01_1k/BarberShopChair_01.bin",
+        "textures/BarberShopChair_01_nor_gl_1k.jpg": "assets/imports/barbershopchair_01_1k/textures/BarberShopChair_01_nor_gl_1k.jpg",
+        "textures/BarberShopChair_01_diff_1k.jpg": "assets/imports/barbershopchair_01_1k/textures/BarberShopChair_01_diff_1k.jpg",
+        "textures/BarberShopChair_01_arm_1k.jpg": "assets/imports/barbershopchair_01_1k/textures/BarberShopChair_01_arm_1k.jpg"
+      }
+    },
+    "barrel_02_1k": {
+      "path": "assets/imports/barrel_02_1k/f.gltf",
+      "files": {
+        "f.gltf": "assets/imports/barrel_02_1k/f.gltf",
+        "Barrel_02.bin": "assets/imports/barrel_02_1k/Barrel_02.bin",
+        "textures/Barrel_02_nor_gl_1k.jpg": "assets/imports/barrel_02_1k/textures/Barrel_02_nor_gl_1k.jpg",
+        "textures/Barrel_02_diff_1k.jpg": "assets/imports/barrel_02_1k/textures/Barrel_02_diff_1k.jpg",
+        "textures/Barrel_02_arm_1k.jpg": "assets/imports/barrel_02_1k/textures/Barrel_02_arm_1k.jpg"
+      }
+    },
+    "barrel_02_1k-1": {
+      "path": "assets/imports/barrel_02_1k-1/f.gltf",
+      "files": {
+        "f.gltf": "assets/imports/barrel_02_1k-1/f.gltf",
+        "Barrel_02.bin": "assets/imports/barrel_02_1k-1/Barrel_02.bin",
+        "textures/Barrel_02_nor_gl_1k.jpg": "assets/imports/barrel_02_1k-1/textures/Barrel_02_nor_gl_1k.jpg",
+        "textures/Barrel_02_diff_1k.jpg": "assets/imports/barrel_02_1k-1/textures/Barrel_02_diff_1k.jpg",
+        "textures/Barrel_02_arm_1k.jpg": "assets/imports/barrel_02_1k-1/textures/Barrel_02_arm_1k.jpg"
+      }
+    },
+    "candidate-grenade-3dmodels-cc0": {
+      "path": "assets/models/weapons-candidates/grenade/3dmodels-cc0/3dmodels-cc0.gltf",
+      "files": {
+        "3dmodels-cc0.gltf": "assets/models/weapons-candidates/grenade/3dmodels-cc0/3dmodels-cc0.gltf",
+        "3dmodels-cc0.bin": "assets/models/weapons-candidates/grenade/3dmodels-cc0/3dmodels-cc0.bin",
+        "main-normal.png": "assets/models/weapons-candidates/grenade/3dmodels-cc0/main-normal.png",
+        "main-albedo.png": "assets/models/weapons-candidates/grenade/3dmodels-cc0/main-albedo.png",
+        "main-orm.png": "assets/models/weapons-candidates/grenade/3dmodels-cc0/main-orm.png"
+      },
+      "candidate": {
+        "name": "Candidate grenade 3dmodels-cc0",
+        "weapon": "grenade",
+        "slug": "3dmodels-cc0",
+        "shippable": true,
+        "triangles": 3642
+      }
+    },
+    "candidate-knife-kf2-utility": {
+      "path": "assets/reference/weapons/knife/kf2-utility/kf2-utility.gltf",
+      "files": {
+        "kf2-utility.gltf": "assets/reference/weapons/knife/kf2-utility/kf2-utility.gltf",
+        "kf2-utility.bin": "assets/reference/weapons/knife/kf2-utility/kf2-utility.bin",
+        "main-normal.png": "assets/reference/weapons/knife/kf2-utility/main-normal.png",
+        "main-albedo.png": "assets/reference/weapons/knife/kf2-utility/main-albedo.png",
+        "main-orm.png": "assets/reference/weapons/knife/kf2-utility/main-orm.png"
+      },
+      "candidate": {
+        "name": "Candidate knife kf2-utility",
+        "weapon": "knife",
+        "slug": "kf2-utility",
+        "shippable": false,
+        "triangles": 3934
+      }
+    },
+    "candidate-knife-machete-cc0": {
+      "path": "assets/models/weapons-candidates/knife/machete-cc0/machete-cc0.gltf",
+      "files": {
+        "machete-cc0.gltf": "assets/models/weapons-candidates/knife/machete-cc0/machete-cc0.gltf",
+        "machete-cc0.bin": "assets/models/weapons-candidates/knife/machete-cc0/machete-cc0.bin",
+        "main-normal.png": "assets/models/weapons-candidates/knife/machete-cc0/main-normal.png",
+        "main-albedo.png": "assets/models/weapons-candidates/knife/machete-cc0/main-albedo.png",
+        "main-orm.png": "assets/models/weapons-candidates/knife/machete-cc0/main-orm.png"
+      },
+      "candidate": {
+        "name": "Candidate knife machete-cc0",
+        "weapon": "knife",
+        "slug": "machete-cc0",
+        "shippable": true,
+        "triangles": 1128
+      }
+    },
+    "candidate-launcher-danish-ccbysaref": {
+      "path": "assets/reference/weapons/launcher/danish-ccbysaref/danish-ccbysaref.gltf",
+      "files": {
+        "danish-ccbysaref.gltf": "assets/reference/weapons/launcher/danish-ccbysaref/danish-ccbysaref.gltf",
+        "danish-ccbysaref.bin": "assets/reference/weapons/launcher/danish-ccbysaref/danish-ccbysaref.bin",
+        "main-normal.png": "assets/reference/weapons/launcher/danish-ccbysaref/main-normal.png",
+        "main-albedo.png": "assets/reference/weapons/launcher/danish-ccbysaref/main-albedo.png",
+        "main-orm.png": "assets/reference/weapons/launcher/danish-ccbysaref/main-orm.png"
+      },
+      "candidate": {
+        "name": "Candidate launcher danish-ccbysaref",
+        "weapon": "launcher",
+        "slug": "danish-ccbysaref",
+        "shippable": false,
+        "triangles": 1676
+      }
+    },
+    "candidate-m4-3dmodels-cc0": {
+      "path": "assets/models/weapons-candidates/m4/3dmodels-cc0/3dmodels-cc0.gltf",
+      "files": {
+        "3dmodels-cc0.gltf": "assets/models/weapons-candidates/m4/3dmodels-cc0/3dmodels-cc0.gltf",
+        "3dmodels-cc0.bin": "assets/models/weapons-candidates/m4/3dmodels-cc0/3dmodels-cc0.bin",
+        "main-normal.png": "assets/models/weapons-candidates/m4/3dmodels-cc0/main-normal.png",
+        "main-albedo.png": "assets/models/weapons-candidates/m4/3dmodels-cc0/main-albedo.png",
+        "main-orm.png": "assets/models/weapons-candidates/m4/3dmodels-cc0/main-orm.png"
+      },
+      "candidate": {
+        "name": "Candidate m4 3dmodels-cc0",
+        "weapon": "m4",
+        "slug": "3dmodels-cc0",
+        "shippable": true,
+        "triangles": 9236
+      }
+    },
+    "candidate-plasma-a104-ccby": {
+      "path": "assets/models/weapons-candidates/plasma/a104-ccby/a104-ccby.gltf",
+      "files": {
+        "a104-ccby.gltf": "assets/models/weapons-candidates/plasma/a104-ccby/a104-ccby.gltf",
+        "a104-ccby.bin": "assets/models/weapons-candidates/plasma/a104-ccby/a104-ccby.bin",
+        "main-normal.png": "assets/models/weapons-candidates/plasma/a104-ccby/main-normal.png",
+        "main-albedo.png": "assets/models/weapons-candidates/plasma/a104-ccby/main-albedo.png",
+        "main-orm.png": "assets/models/weapons-candidates/plasma/a104-ccby/main-orm.png"
+      },
+      "candidate": {
+        "name": "Candidate plasma a104-ccby",
+        "weapon": "plasma",
+        "slug": "a104-ccby",
+        "shippable": true,
+        "triangles": 11005
+      }
+    },
+    "candidate-revolver-detective-cc0": {
+      "path": "assets/models/weapons-candidates/revolver/detective-cc0/detective-cc0.gltf",
+      "files": {
+        "detective-cc0.gltf": "assets/models/weapons-candidates/revolver/detective-cc0/detective-cc0.gltf",
+        "detective-cc0.bin": "assets/models/weapons-candidates/revolver/detective-cc0/detective-cc0.bin",
+        "main-normal.png": "assets/models/weapons-candidates/revolver/detective-cc0/main-normal.png",
+        "main-albedo.png": "assets/models/weapons-candidates/revolver/detective-cc0/main-albedo.png",
+        "main-orm.png": "assets/models/weapons-candidates/revolver/detective-cc0/main-orm.png",
+        "bullet-normal.png": "assets/models/weapons-candidates/revolver/detective-cc0/bullet-normal.png",
+        "bullet-albedo.png": "assets/models/weapons-candidates/revolver/detective-cc0/bullet-albedo.png",
+        "bullet-orm.png": "assets/models/weapons-candidates/revolver/detective-cc0/bullet-orm.png"
+      },
+      "candidate": {
+        "name": "Candidate revolver detective-cc0",
+        "weapon": "revolver",
+        "slug": "detective-cc0",
+        "shippable": true,
+        "triangles": 4604
+      }
+    },
+    "candidate-revolver-kf2-1858-reference": {
+      "path": "assets/reference/weapons/revolver/kf2-1858-reference/kf2-1858-reference.gltf",
+      "files": {
+        "kf2-1858-reference.gltf": "assets/reference/weapons/revolver/kf2-1858-reference/kf2-1858-reference.gltf",
+        "kf2-1858-reference.bin": "assets/reference/weapons/revolver/kf2-1858-reference/kf2-1858-reference.bin",
+        "main-normal.png": "assets/reference/weapons/revolver/kf2-1858-reference/main-normal.png",
+        "main-albedo.png": "assets/reference/weapons/revolver/kf2-1858-reference/main-albedo.png",
+        "main-orm.png": "assets/reference/weapons/revolver/kf2-1858-reference/main-orm.png"
+      },
+      "candidate": {
+        "name": "Candidate revolver kf2-1858-reference",
+        "weapon": "revolver",
+        "slug": "kf2-1858-reference",
+        "shippable": false,
+        "triangles": 8665
+      }
+    },
+    "candidate-revolver-loafbrr-cc0": {
+      "path": "assets/models/weapons-candidates/revolver/loafbrr-cc0/loafbrr-cc0.gltf",
+      "files": {
+        "loafbrr-cc0.gltf": "assets/models/weapons-candidates/revolver/loafbrr-cc0/loafbrr-cc0.gltf",
+        "loafbrr-cc0.bin": "assets/models/weapons-candidates/revolver/loafbrr-cc0/loafbrr-cc0.bin",
+        "main-normal.png": "assets/models/weapons-candidates/revolver/loafbrr-cc0/main-normal.png",
+        "main-albedo.png": "assets/models/weapons-candidates/revolver/loafbrr-cc0/main-albedo.png",
+        "main-orm.png": "assets/models/weapons-candidates/revolver/loafbrr-cc0/main-orm.png"
+      },
+      "candidate": {
+        "name": "Candidate revolver loafbrr-cc0",
+        "weapon": "revolver",
+        "slug": "loafbrr-cc0",
+        "shippable": true,
+        "triangles": 1982
+      }
+    },
+    "candidate-revolver-loafbrr-cc0-hd": {
+      "path": "assets/models/weapons-candidates/revolver/loafbrr-cc0-hd/loafbrr-cc0-hd.gltf",
+      "files": {
+        "loafbrr-cc0-hd.gltf": "assets/models/weapons-candidates/revolver/loafbrr-cc0-hd/loafbrr-cc0-hd.gltf",
+        "loafbrr-cc0-hd.bin": "assets/models/weapons-candidates/revolver/loafbrr-cc0-hd/loafbrr-cc0-hd.bin",
+        "main-normal.png": "assets/models/weapons-candidates/revolver/loafbrr-cc0-hd/main-normal.png",
+        "main-albedo.png": "assets/models/weapons-candidates/revolver/loafbrr-cc0-hd/main-albedo.png",
+        "main-orm.png": "assets/models/weapons-candidates/revolver/loafbrr-cc0-hd/main-orm.png"
+      },
+      "candidate": {
+        "name": "Candidate revolver loafbrr-cc0-hd",
+        "weapon": "revolver",
+        "slug": "loafbrr-cc0-hd",
+        "shippable": true,
+        "triangles": 28158,
+        "derivedFrom": "candidate-revolver-loafbrr-cc0"
+      }
+    },
+    "candidate-revolver-pavel-cc0": {
+      "path": "assets/models/weapons-candidates/revolver/pavel-cc0/pavel-cc0.gltf",
+      "files": {
+        "pavel-cc0.gltf": "assets/models/weapons-candidates/revolver/pavel-cc0/pavel-cc0.gltf",
+        "pavel-cc0.bin": "assets/models/weapons-candidates/revolver/pavel-cc0/pavel-cc0.bin",
+        "main-normal.png": "assets/models/weapons-candidates/revolver/pavel-cc0/main-normal.png",
+        "main-albedo.png": "assets/models/weapons-candidates/revolver/pavel-cc0/main-albedo.png",
+        "main-orm.png": "assets/models/weapons-candidates/revolver/pavel-cc0/main-orm.png"
+      },
+      "candidate": {
+        "name": "Candidate revolver pavel-cc0",
+        "weapon": "revolver",
+        "slug": "pavel-cc0",
+        "shippable": true,
+        "triangles": 3256
+      }
+    },
+    "candidate-revolver-webley-ccby": {
+      "path": "assets/models/weapons-candidates/revolver/webley-ccby/webley-ccby.gltf",
+      "files": {
+        "webley-ccby.gltf": "assets/models/weapons-candidates/revolver/webley-ccby/webley-ccby.gltf",
+        "webley-ccby.bin": "assets/models/weapons-candidates/revolver/webley-ccby/webley-ccby.bin",
+        "main-normal.png": "assets/models/weapons-candidates/revolver/webley-ccby/main-normal.png",
+        "main-albedo.png": "assets/models/weapons-candidates/revolver/webley-ccby/main-albedo.png",
+        "main-orm.png": "assets/models/weapons-candidates/revolver/webley-ccby/main-orm.png"
+      },
+      "candidate": {
+        "name": "Candidate revolver webley-ccby",
+        "weapon": "revolver",
+        "slug": "webley-ccby",
+        "shippable": true,
+        "triangles": 1806
+      }
+    },
+    "candidate-shotgun-3dmodels-cc0": {
+      "path": "assets/models/weapons-candidates/shotgun/3dmodels-cc0/3dmodels-cc0.gltf",
+      "files": {
+        "3dmodels-cc0.gltf": "assets/models/weapons-candidates/shotgun/3dmodels-cc0/3dmodels-cc0.gltf",
+        "3dmodels-cc0.bin": "assets/models/weapons-candidates/shotgun/3dmodels-cc0/3dmodels-cc0.bin",
+        "main-normal.png": "assets/models/weapons-candidates/shotgun/3dmodels-cc0/main-normal.png",
+        "main-albedo.png": "assets/models/weapons-candidates/shotgun/3dmodels-cc0/main-albedo.png",
+        "main-orm.png": "assets/models/weapons-candidates/shotgun/3dmodels-cc0/main-orm.png"
+      },
+      "candidate": {
+        "name": "Candidate shotgun 3dmodels-cc0",
+        "weapon": "shotgun",
+        "slug": "3dmodels-cc0",
+        "shippable": true,
+        "triangles": 1740
+      }
+    },
+    "candidate-shotgun-3dmodels-cc0-hd": {
+      "path": "assets/models/weapons-candidates/shotgun/3dmodels-cc0-hd/3dmodels-cc0-hd.gltf",
+      "files": {
+        "3dmodels-cc0-hd.gltf": "assets/models/weapons-candidates/shotgun/3dmodels-cc0-hd/3dmodels-cc0-hd.gltf",
+        "3dmodels-cc0-hd.bin": "assets/models/weapons-candidates/shotgun/3dmodels-cc0-hd/3dmodels-cc0-hd.bin",
+        "main-normal.png": "assets/models/weapons-candidates/shotgun/3dmodels-cc0-hd/main-normal.png",
+        "main-albedo.png": "assets/models/weapons-candidates/shotgun/3dmodels-cc0-hd/main-albedo.png",
+        "main-orm.png": "assets/models/weapons-candidates/shotgun/3dmodels-cc0-hd/main-orm.png"
+      },
+      "candidate": {
+        "name": "Candidate shotgun 3dmodels-cc0-hd",
+        "weapon": "shotgun",
+        "slug": "3dmodels-cc0-hd",
+        "shippable": true,
+        "triangles": 31832,
+        "derivedFrom": "candidate-shotgun-3dmodels-cc0"
+      }
+    },
+    "candidate-shotgun-kf2-aa12": {
+      "path": "assets/reference/weapons/shotgun/kf2-aa12/kf2-aa12.gltf",
+      "files": {
+        "kf2-aa12.gltf": "assets/reference/weapons/shotgun/kf2-aa12/kf2-aa12.gltf",
+        "kf2-aa12.bin": "assets/reference/weapons/shotgun/kf2-aa12/kf2-aa12.bin",
+        "main-normal.png": "assets/reference/weapons/shotgun/kf2-aa12/main-normal.png",
+        "main-albedo.png": "assets/reference/weapons/shotgun/kf2-aa12/main-albedo.png",
+        "main-orm.png": "assets/reference/weapons/shotgun/kf2-aa12/main-orm.png"
+      },
+      "candidate": {
+        "name": "Candidate shotgun kf2-aa12",
+        "weapon": "shotgun",
+        "slug": "kf2-aa12",
+        "shippable": false,
+        "triangles": 12701
+      }
+    },
+    "candidate-sniper-3dmodels-cc0": {
+      "path": "assets/models/weapons-candidates/sniper/3dmodels-cc0/3dmodels-cc0.gltf",
+      "files": {
+        "3dmodels-cc0.gltf": "assets/models/weapons-candidates/sniper/3dmodels-cc0/3dmodels-cc0.gltf",
+        "3dmodels-cc0.bin": "assets/models/weapons-candidates/sniper/3dmodels-cc0/3dmodels-cc0.bin",
+        "main-normal.png": "assets/models/weapons-candidates/sniper/3dmodels-cc0/main-normal.png",
+        "main-albedo.png": "assets/models/weapons-candidates/sniper/3dmodels-cc0/main-albedo.png",
+        "main-orm.png": "assets/models/weapons-candidates/sniper/3dmodels-cc0/main-orm.png"
+      },
+      "candidate": {
+        "name": "Candidate sniper 3dmodels-cc0",
+        "weapon": "sniper",
+        "slug": "3dmodels-cc0",
+        "shippable": true,
+        "triangles": 4808
+      }
+    },
+    "candidate-sniper-stein-m14-reference": {
+      "path": "assets/reference/weapons/sniper/stein-m14-reference/stein-m14-reference.gltf",
+      "files": {
+        "stein-m14-reference.gltf": "assets/reference/weapons/sniper/stein-m14-reference/stein-m14-reference.gltf",
+        "stein-m14-reference.bin": "assets/reference/weapons/sniper/stein-m14-reference/stein-m14-reference.bin",
+        "main-normal.png": "assets/reference/weapons/sniper/stein-m14-reference/main-normal.png",
+        "main-albedo.png": "assets/reference/weapons/sniper/stein-m14-reference/main-albedo.png",
+        "main-orm.png": "assets/reference/weapons/sniper/stein-m14-reference/main-orm.png"
+      },
+      "candidate": {
+        "name": "Candidate sniper stein-m14-reference",
+        "weapon": "sniper",
+        "slug": "stein-m14-reference",
+        "shippable": false,
+        "triangles": 14294
+      }
+    },
+    "cheesebox_01_1k": {
+      "path": "assets/imports/cheesebox_01_1k/f.gltf",
+      "files": {
+        "f.gltf": "assets/imports/cheesebox_01_1k/f.gltf",
+        "CheeseBox_01.bin": "assets/imports/cheesebox_01_1k/CheeseBox_01.bin",
+        "textures/CheeseBox_01_nor_gl_1k.jpg": "assets/imports/cheesebox_01_1k/textures/CheeseBox_01_nor_gl_1k.jpg",
+        "textures/CheeseBox_01_diff_1k.jpg": "assets/imports/cheesebox_01_1k/textures/CheeseBox_01_diff_1k.jpg",
+        "textures/CheeseBox_01_arm_1k.jpg": "assets/imports/cheesebox_01_1k/textures/CheeseBox_01_arm_1k.jpg"
+      }
+    },
+    "dark_wooden_planks_1k": {
+      "path": "assets/imports/dark_wooden_planks_1k/f.phmatgltf",
+      "files": {
+        "f.phmatgltf": "assets/imports/dark_wooden_planks_1k/f.phmatgltf",
+        "dark_wooden_planks.bin": "assets/imports/dark_wooden_planks_1k/dark_wooden_planks.bin",
+        "textures/dark_wooden_planks_nor_gl_1k.jpg": "assets/imports/dark_wooden_planks_1k/textures/dark_wooden_planks_nor_gl_1k.jpg",
+        "textures/dark_wooden_planks_diff_1k.jpg": "assets/imports/dark_wooden_planks_1k/textures/dark_wooden_planks_diff_1k.jpg",
+        "textures/dark_wooden_planks_arm_1k.jpg": "assets/imports/dark_wooden_planks_1k/textures/dark_wooden_planks_arm_1k.jpg"
+      }
+    },
+    "dartboard_1k": {
+      "path": "assets/imports/dartboard_1k/f.gltf",
+      "files": {
+        "f.gltf": "assets/imports/dartboard_1k/f.gltf",
+        "dartboard.bin": "assets/imports/dartboard_1k/dartboard.bin",
+        "textures/dartboard_nor_gl_1k.jpg": "assets/imports/dartboard_1k/textures/dartboard_nor_gl_1k.jpg",
+        "textures/dartboard_diff_1k.jpg": "assets/imports/dartboard_1k/textures/dartboard_diff_1k.jpg",
+        "textures/dartboard_arm_1k.jpg": "assets/imports/dartboard_1k/textures/dartboard_arm_1k.jpg"
+      }
+    },
+    "dead_quiver_branch_02_1k": {
+      "path": "assets/imports/dead_quiver_branch_02_1k/f.gltf",
+      "files": {
+        "f.gltf": "assets/imports/dead_quiver_branch_02_1k/f.gltf",
+        "dead_quiver_branch_02.bin": "assets/imports/dead_quiver_branch_02_1k/dead_quiver_branch_02.bin",
+        "textures/dead_quiver_branch_02_nor_gl_1k.jpg": "assets/imports/dead_quiver_branch_02_1k/textures/dead_quiver_branch_02_nor_gl_1k.jpg",
+        "textures/dead_quiver_branch_02_diff_1k.jpg": "assets/imports/dead_quiver_branch_02_1k/textures/dead_quiver_branch_02_diff_1k.jpg",
+        "textures/dead_quiver_branch_02_arm_1k.jpg": "assets/imports/dead_quiver_branch_02_1k/textures/dead_quiver_branch_02_arm_1k.jpg"
+      }
+    },
+    "dead_quiver_trunk_1k": {
+      "path": "assets/imports/dead_quiver_trunk_1k/f.gltf",
+      "files": {
+        "f.gltf": "assets/imports/dead_quiver_trunk_1k/f.gltf",
+        "dead_quiver_trunk.bin": "assets/imports/dead_quiver_trunk_1k/dead_quiver_trunk.bin",
+        "textures/dead_quiver_trunk_nor_gl_1k.jpg": "assets/imports/dead_quiver_trunk_1k/textures/dead_quiver_trunk_nor_gl_1k.jpg",
+        "textures/dead_quiver_trunk_diff_1k.jpg": "assets/imports/dead_quiver_trunk_1k/textures/dead_quiver_trunk_diff_1k.jpg",
+        "textures/dead_quiver_trunk_arm_1k.jpg": "assets/imports/dead_quiver_trunk_1k/textures/dead_quiver_trunk_arm_1k.jpg"
+      }
+    },
+    "defense_wall_1k": {
+      "path": "assets/imports/defense_wall_1k/f.phmatgltf",
+      "files": {
+        "f.phmatgltf": "assets/imports/defense_wall_1k/f.phmatgltf",
+        "defense_wall.bin": "assets/imports/defense_wall_1k/defense_wall.bin",
+        "textures/defense_wall_nor_gl_1k.jpg": "assets/imports/defense_wall_1k/textures/defense_wall_nor_gl_1k.jpg",
+        "textures/defense_wall_diff_1k.jpg": "assets/imports/defense_wall_1k/textures/defense_wall_diff_1k.jpg",
+        "textures/defense_wall_rough_1k.jpg": "assets/imports/defense_wall_1k/textures/defense_wall_rough_1k.jpg"
+      }
+    },
+    "denim_fabric_03_1k": {
+      "path": "assets/imports/denim_fabric_03_1k/f.phmatgltf",
+      "files": {
+        "f.phmatgltf": "assets/imports/denim_fabric_03_1k/f.phmatgltf",
+        "denim_fabric_03.bin": "assets/imports/denim_fabric_03_1k/denim_fabric_03.bin",
+        "textures/denim_fabric_03_spec_ior_1k.jpg": "assets/imports/denim_fabric_03_1k/textures/denim_fabric_03_spec_ior_1k.jpg",
+        "textures/denim_fabric_03_nor_gl_1k.jpg": "assets/imports/denim_fabric_03_1k/textures/denim_fabric_03_nor_gl_1k.jpg",
+        "textures/denim_fabric_03_diff_1k.jpg": "assets/imports/denim_fabric_03_1k/textures/denim_fabric_03_diff_1k.jpg",
+        "textures/denim_fabric_03_arm_1k.jpg": "assets/imports/denim_fabric_03_1k/textures/denim_fabric_03_arm_1k.jpg"
+      }
+    },
+    "denim_fabric_05_1k": {
+      "path": "assets/imports/denim_fabric_05_1k/f.phmatgltf",
+      "files": {
+        "f.phmatgltf": "assets/imports/denim_fabric_05_1k/f.phmatgltf",
+        "denim_fabric_05.bin": "assets/imports/denim_fabric_05_1k/denim_fabric_05.bin",
+        "textures/denim_fabric_05_spec_ior_1k.jpg": "assets/imports/denim_fabric_05_1k/textures/denim_fabric_05_spec_ior_1k.jpg",
+        "textures/denim_fabric_05_nor_gl_1k.jpg": "assets/imports/denim_fabric_05_1k/textures/denim_fabric_05_nor_gl_1k.jpg",
+        "textures/denim_fabric_05_diff_1k.jpg": "assets/imports/denim_fabric_05_1k/textures/denim_fabric_05_diff_1k.jpg",
+        "textures/denim_fabric_05_arm_1k.jpg": "assets/imports/denim_fabric_05_1k/textures/denim_fabric_05_arm_1k.jpg"
+      }
+    },
+    "denim_fabric_1k": {
+      "path": "assets/imports/denim_fabric_1k/f.phmatgltf",
+      "files": {
+        "f.phmatgltf": "assets/imports/denim_fabric_1k/f.phmatgltf",
+        "denim_fabric.bin": "assets/imports/denim_fabric_1k/denim_fabric.bin",
+        "textures/denim_fabric_nor_gl_1k.jpg": "assets/imports/denim_fabric_1k/textures/denim_fabric_nor_gl_1k.jpg",
+        "textures/denim_fabric_diff_1k.jpg": "assets/imports/denim_fabric_1k/textures/denim_fabric_diff_1k.jpg",
+        "textures/denim_fabric_rough_1k.jpg": "assets/imports/denim_fabric_1k/textures/denim_fabric_rough_1k.jpg"
+      }
+    },
+    "desk_lamp_arm_01_1k": {
+      "path": "assets/imports/desk_lamp_arm_01_1k/f.gltf",
+      "files": {
+        "f.gltf": "assets/imports/desk_lamp_arm_01_1k/f.gltf",
+        "desk_lamp_arm_01.bin": "assets/imports/desk_lamp_arm_01_1k/desk_lamp_arm_01.bin",
+        "textures/desk_lamp_arm_01_nor_gl_1k.jpg": "assets/imports/desk_lamp_arm_01_1k/textures/desk_lamp_arm_01_nor_gl_1k.jpg",
+        "textures/desk_lamp_arm_01_diff_1k.jpg": "assets/imports/desk_lamp_arm_01_1k/textures/desk_lamp_arm_01_diff_1k.jpg",
+        "textures/desk_lamp_arm_01_arm_1k.jpg": "assets/imports/desk_lamp_arm_01_1k/textures/desk_lamp_arm_01_arm_1k.jpg"
+      }
+    },
+    "drain_cleaner_1k": {
+      "path": "assets/imports/drain_cleaner_1k/f.gltf",
+      "files": {
+        "f.gltf": "assets/imports/drain_cleaner_1k/f.gltf",
+        "drain_cleaner.bin": "assets/imports/drain_cleaner_1k/drain_cleaner.bin",
+        "textures/drain_cleaner_nor_gl_1k.jpg": "assets/imports/drain_cleaner_1k/textures/drain_cleaner_nor_gl_1k.jpg",
+        "textures/drain_cleaner_diff_1k.jpg": "assets/imports/drain_cleaner_1k/textures/drain_cleaner_diff_1k.jpg",
+        "textures/drain_cleaner_arm_1k.jpg": "assets/imports/drain_cleaner_1k/textures/drain_cleaner_arm_1k.jpg"
+      }
+    },
+    "drill_01_1k": {
+      "path": "assets/imports/drill_01_1k/f.gltf",
+      "files": {
+        "f.gltf": "assets/imports/drill_01_1k/f.gltf",
+        "Drill_01.bin": "assets/imports/drill_01_1k/Drill_01.bin",
+        "textures/Drill_01_nor_gl_1k.jpg": "assets/imports/drill_01_1k/textures/Drill_01_nor_gl_1k.jpg",
+        "textures/Drill_01_diff_1k.jpg": "assets/imports/drill_01_1k/textures/Drill_01_diff_1k.jpg",
+        "textures/Drill_01_arm_1k.jpg": "assets/imports/drill_01_1k/textures/Drill_01_arm_1k.jpg"
+      }
+    },
+    "lab-firing-line": {
+      "path": "assets/models/lab/firing-line/firing-line.gltf",
+      "files": {
+        "f.gltf": "assets/models/lab/firing-line/firing-line.gltf",
+        "firing-line.bin": "assets/models/lab/firing-line/firing-line.bin"
+      }
+    },
+    "lab-range-shell": {
+      "path": "assets/models/lab/range-shell/range-shell.gltf",
+      "files": {
+        "f.gltf": "assets/models/lab/range-shell/range-shell.gltf",
+        "range-shell.bin": "assets/models/lab/range-shell/range-shell.bin"
+      }
+    },
+    "lab-turntable": {
+      "path": "assets/models/lab/turntable/turntable.gltf",
+      "files": {
+        "f.gltf": "assets/models/lab/turntable/turntable.gltf",
+        "turntable.bin": "assets/models/lab/turntable/turntable.bin"
       }
     },
     "map-barrel-0p8x1p3x0p8-103qszk": {
@@ -96,81 +599,32 @@
         "barrel-emissive.png": "assets/models/map/barrel-0p8x1p3x0p8-103qszk/barrel-emissive.png"
       }
     },
-    "map-floor-28x0p1x10": {
-      "path": "assets/models/map/floor-28x0p1x10/floor-28x0p1x10.gltf",
+    "map-bunk-1p1x0p7x2p2": {
+      "path": "assets/models/map/bunk-1p1x0p7x2p2/bunk-1p1x0p7x2p2.gltf",
       "files": {
-        "f.gltf": "assets/models/map/floor-28x0p1x10/floor-28x0p1x10.gltf",
-        "floor-28x0p1x10.bin": "assets/models/map/floor-28x0p1x10/floor-28x0p1x10.bin"
+        "f.gltf": "assets/models/map/bunk-1p1x0p7x2p2/bunk-1p1x0p7x2p2.gltf",
+        "bunk-1p1x0p7x2p2.bin": "assets/models/map/bunk-1p1x0p7x2p2/bunk-1p1x0p7x2p2.bin"
       }
     },
-    "map-floor-28x0p2x10": {
-      "path": "assets/models/map/floor-28x0p2x10/floor-28x0p2x10.gltf",
+    "map-bunker-shell": {
+      "path": "assets/models/map/bunker-shell/bunker-shell.gltf",
       "files": {
-        "f.gltf": "assets/models/map/floor-28x0p2x10/floor-28x0p2x10.gltf",
-        "floor-28x0p2x10.bin": "assets/models/map/floor-28x0p2x10/floor-28x0p2x10.bin"
+        "f.gltf": "assets/models/map/bunker-shell/bunker-shell.gltf",
+        "bunker-shell.bin": "assets/models/map/bunker-shell/bunker-shell.bin"
       }
     },
-    "map-floor-20x0p2x2": {
-      "path": "assets/models/map/floor-20x0p2x2/floor-20x0p2x2.gltf",
+    "map-cable-8x0p75x0p06": {
+      "path": "assets/models/map/cable-8x0p75x0p06/cable-8x0p75x0p06.gltf",
       "files": {
-        "f.gltf": "assets/models/map/floor-20x0p2x2/floor-20x0p2x2.gltf",
-        "floor-20x0p2x2.bin": "assets/models/map/floor-20x0p2x2/floor-20x0p2x2.bin"
+        "f.gltf": "assets/models/map/cable-8x0p75x0p06/cable-8x0p75x0p06.gltf",
+        "cable-8x0p75x0p06.bin": "assets/models/map/cable-8x0p75x0p06/cable-8x0p75x0p06.bin"
       }
     },
-    "map-stair-3x0p5x1": {
-      "path": "assets/models/map/stair-3x0p5x1/stair-3x0p5x1.gltf",
+    "map-column-0p7x4x0p7": {
+      "path": "assets/models/map/column-0p7x4x0p7/column-0p7x4x0p7.gltf",
       "files": {
-        "f.gltf": "assets/models/map/stair-3x0p5x1/stair-3x0p5x1.gltf",
-        "stair-3x0p5x1.bin": "assets/models/map/stair-3x0p5x1/stair-3x0p5x1.bin"
-      }
-    },
-    "map-stair-3x1x1": {
-      "path": "assets/models/map/stair-3x1x1/stair-3x1x1.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/stair-3x1x1/stair-3x1x1.gltf",
-        "stair-3x1x1.bin": "assets/models/map/stair-3x1x1/stair-3x1x1.bin"
-      }
-    },
-    "map-stair-3x1p5x1": {
-      "path": "assets/models/map/stair-3x1p5x1/stair-3x1p5x1.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/stair-3x1p5x1/stair-3x1p5x1.gltf",
-        "stair-3x1p5x1.bin": "assets/models/map/stair-3x1p5x1/stair-3x1p5x1.bin"
-      }
-    },
-    "map-stair-3x2x1": {
-      "path": "assets/models/map/stair-3x2x1/stair-3x2x1.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/stair-3x2x1/stair-3x2x1.gltf",
-        "stair-3x2x1.bin": "assets/models/map/stair-3x2x1/stair-3x2x1.bin"
-      }
-    },
-    "map-stair-3x2p5x1": {
-      "path": "assets/models/map/stair-3x2p5x1/stair-3x2p5x1.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/stair-3x2p5x1/stair-3x2p5x1.gltf",
-        "stair-3x2p5x1.bin": "assets/models/map/stair-3x2p5x1/stair-3x2p5x1.bin"
-      }
-    },
-    "map-stair-3x3x1": {
-      "path": "assets/models/map/stair-3x3x1/stair-3x3x1.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/stair-3x3x1/stair-3x3x1.gltf",
-        "stair-3x3x1.bin": "assets/models/map/stair-3x3x1/stair-3x3x1.bin"
-      }
-    },
-    "map-floor-10x0p7x18": {
-      "path": "assets/models/map/floor-10x0p7x18/floor-10x0p7x18.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/floor-10x0p7x18/floor-10x0p7x18.gltf",
-        "floor-10x0p7x18.bin": "assets/models/map/floor-10x0p7x18/floor-10x0p7x18.bin"
-      }
-    },
-    "map-container-red": {
-      "path": "assets/models/map/container-red/container-red.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/container-red/container-red.gltf",
-        "container-red.bin": "assets/models/map/container-red/container-red.bin"
+        "f.gltf": "assets/models/map/column-0p7x4x0p7/column-0p7x4x0p7.gltf",
+        "column-0p7x4x0p7.bin": "assets/models/map/column-0p7x4x0p7/column-0p7x4x0p7.bin"
       }
     },
     "map-container-blue": {
@@ -187,207 +641,11 @@
         "container-gray.bin": "assets/models/map/container-gray/container-gray.bin"
       }
     },
-    "map-ramp-2x0p6x6": {
-      "path": "assets/models/map/ramp-2x0p6x6/ramp-2x0p6x6.gltf",
+    "map-container-red": {
+      "path": "assets/models/map/container-red/container-red.gltf",
       "files": {
-        "f.gltf": "assets/models/map/ramp-2x0p6x6/ramp-2x0p6x6.gltf",
-        "ramp-2x0p6x6.bin": "assets/models/map/ramp-2x0p6x6/ramp-2x0p6x6.bin"
-      }
-    },
-    "map-tunnel-wall-10x3x0p6": {
-      "path": "assets/models/map/tunnel-wall-10x3x0p6/tunnel-wall-10x3x0p6.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/tunnel-wall-10x3x0p6/tunnel-wall-10x3x0p6.gltf",
-        "tunnel-wall-10x3x0p6.bin": "assets/models/map/tunnel-wall-10x3x0p6/tunnel-wall-10x3x0p6.bin"
-      }
-    },
-    "map-floor-10x0p4x8": {
-      "path": "assets/models/map/floor-10x0p4x8/floor-10x0p4x8.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/floor-10x0p4x8/floor-10x0p4x8.gltf",
-        "floor-10x0p4x8.bin": "assets/models/map/floor-10x0p4x8/floor-10x0p4x8.bin"
-      }
-    },
-    "map-floor-12x0p5x60-1ehthkr": {
-      "path": "assets/models/map/floor-12x0p5x60-1ehthkr/floor-12x0p5x60-1ehthkr.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/floor-12x0p5x60-1ehthkr/floor-12x0p5x60-1ehthkr.gltf",
-        "floor-12x0p5x60-1ehthkr.bin": "assets/models/map/floor-12x0p5x60-1ehthkr/floor-12x0p5x60-1ehthkr.bin"
-      }
-    },
-    "map-floor-12x0p5x60": {
-      "path": "assets/models/map/floor-12x0p5x60/floor-12x0p5x60.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/floor-12x0p5x60/floor-12x0p5x60.gltf",
-        "floor-12x0p5x60.bin": "assets/models/map/floor-12x0p5x60/floor-12x0p5x60.bin"
-      }
-    },
-    "map-floor-7p4x0p4x31p4": {
-      "path": "assets/models/map/floor-7p4x0p4x31p4/floor-7p4x0p4x31p4.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/floor-7p4x0p4x31p4/floor-7p4x0p4x31p4.gltf",
-        "floor-7p4x0p4x31p4.bin": "assets/models/map/floor-7p4x0p4x31p4/floor-7p4x0p4x31p4.bin"
-      }
-    },
-    "map-wall-1x3x15": {
-      "path": "assets/models/map/wall-1x3x15/wall-1x3x15.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/wall-1x3x15/wall-1x3x15.gltf",
-        "wall-1x3x15.bin": "assets/models/map/wall-1x3x15/wall-1x3x15.bin"
-      }
-    },
-    "map-wall-1x3x6": {
-      "path": "assets/models/map/wall-1x3x6/wall-1x3x6.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/wall-1x3x6/wall-1x3x6.gltf",
-        "wall-1x3x6.bin": "assets/models/map/wall-1x3x6/wall-1x3x6.bin"
-      }
-    },
-    "map-wall-1x3x7": {
-      "path": "assets/models/map/wall-1x3x7/wall-1x3x7.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/wall-1x3x7/wall-1x3x7.gltf",
-        "wall-1x3x7.bin": "assets/models/map/wall-1x3x7/wall-1x3x7.bin"
-      }
-    },
-    "map-wall-1x3x1": {
-      "path": "assets/models/map/wall-1x3x1/wall-1x3x1.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/wall-1x3x1/wall-1x3x1.gltf",
-        "wall-1x3x1.bin": "assets/models/map/wall-1x3x1/wall-1x3x1.bin"
-      }
-    },
-    "map-wall-0p6x3p6x16": {
-      "path": "assets/models/map/wall-0p6x3p6x16/wall-0p6x3p6x16.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/wall-0p6x3p6x16/wall-0p6x3p6x16.gltf",
-        "wall-0p6x3p6x16.bin": "assets/models/map/wall-0p6x3p6x16/wall-0p6x3p6x16.bin"
-      }
-    },
-    "map-wall-0p6x3p6x6": {
-      "path": "assets/models/map/wall-0p6x3p6x6/wall-0p6x3p6x6.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/wall-0p6x3p6x6/wall-0p6x3p6x6.gltf",
-        "wall-0p6x3p6x6.bin": "assets/models/map/wall-0p6x3p6x6/wall-0p6x3p6x6.bin"
-      }
-    },
-    "map-wall-0p6x3p6x12": {
-      "path": "assets/models/map/wall-0p6x3p6x12/wall-0p6x3p6x12.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/wall-0p6x3p6x12/wall-0p6x3p6x12.gltf",
-        "wall-0p6x3p6x12.bin": "assets/models/map/wall-0p6x3p6x12/wall-0p6x3p6x12.bin"
-      }
-    },
-    "map-wall-0p6x3p6x8": {
-      "path": "assets/models/map/wall-0p6x3p6x8/wall-0p6x3p6x8.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/wall-0p6x3p6x8/wall-0p6x3p6x8.gltf",
-        "wall-0p6x3p6x8.bin": "assets/models/map/wall-0p6x3p6x8/wall-0p6x3p6x8.bin"
-      }
-    },
-    "map-wall-12x3p6x0p6": {
-      "path": "assets/models/map/wall-12x3p6x0p6/wall-12x3p6x0p6.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/wall-12x3p6x0p6/wall-12x3p6x0p6.gltf",
-        "wall-12x3p6x0p6.bin": "assets/models/map/wall-12x3p6x0p6/wall-12x3p6x0p6.bin"
-      }
-    },
-    "map-wall-2p5x3p6x0p6": {
-      "path": "assets/models/map/wall-2p5x3p6x0p6/wall-2p5x3p6x0p6.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/wall-2p5x3p6x0p6/wall-2p5x3p6x0p6.gltf",
-        "wall-2p5x3p6x0p6.bin": "assets/models/map/wall-2p5x3p6x0p6/wall-2p5x3p6x0p6.bin"
-      }
-    },
-    "map-floor-10x0p2x20-1v1svwu": {
-      "path": "assets/models/map/floor-10x0p2x20-1v1svwu/floor-10x0p2x20-1v1svwu.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/floor-10x0p2x20-1v1svwu/floor-10x0p2x20-1v1svwu.gltf",
-        "floor-10x0p2x20-1v1svwu.bin": "assets/models/map/floor-10x0p2x20-1v1svwu/floor-10x0p2x20-1v1svwu.bin"
-      }
-    },
-    "map-floor-10x0p2x20-134p795": {
-      "path": "assets/models/map/floor-10x0p2x20-134p795/floor-10x0p2x20-134p795.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/floor-10x0p2x20-134p795/floor-10x0p2x20-134p795.gltf",
-        "floor-10x0p2x20-134p795.bin": "assets/models/map/floor-10x0p2x20-134p795/floor-10x0p2x20-134p795.bin"
-      }
-    },
-    "map-floor-18x0p3x6": {
-      "path": "assets/models/map/floor-18x0p3x6/floor-18x0p3x6.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/floor-18x0p3x6/floor-18x0p3x6.gltf",
-        "floor-18x0p3x6.bin": "assets/models/map/floor-18x0p3x6/floor-18x0p3x6.bin"
-      }
-    },
-    "map-column-0p7x4x0p7": {
-      "path": "assets/models/map/column-0p7x4x0p7/column-0p7x4x0p7.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/column-0p7x4x0p7/column-0p7x4x0p7.gltf",
-        "column-0p7x4x0p7.bin": "assets/models/map/column-0p7x4x0p7/column-0p7x4x0p7.bin"
-      }
-    },
-    "map-floor-10x0p3x4p8": {
-      "path": "assets/models/map/floor-10x0p3x4p8/floor-10x0p3x4p8.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/floor-10x0p3x4p8/floor-10x0p3x4p8.gltf",
-        "floor-10x0p3x4p8.bin": "assets/models/map/floor-10x0p3x4p8/floor-10x0p3x4p8.bin"
-      }
-    },
-    "map-floor-10x0p3x1p6": {
-      "path": "assets/models/map/floor-10x0p3x1p6/floor-10x0p3x1p6.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/floor-10x0p3x1p6/floor-10x0p3x1p6.gltf",
-        "floor-10x0p3x1p6.bin": "assets/models/map/floor-10x0p3x1p6/floor-10x0p3x1p6.bin"
-      }
-    },
-    "map-supply-2p6x1p28x1p1": {
-      "path": "assets/models/map/supply-2p6x1p28x1p1/supply-2p6x1p28x1p1.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/supply-2p6x1p28x1p1/supply-2p6x1p28x1p1.gltf",
-        "supply-2p6x1p28x1p1.bin": "assets/models/map/supply-2p6x1p28x1p1/supply-2p6x1p28x1p1.bin"
-      }
-    },
-    "map-sandbags-3p2x1p3x1p2": {
-      "path": "assets/models/map/sandbags-3p2x1p3x1p2/sandbags-3p2x1p3x1p2.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/sandbags-3p2x1p3x1p2/sandbags-3p2x1p3x1p2.gltf",
-        "sandbags-3p2x1p3x1p2.bin": "assets/models/map/sandbags-3p2x1p3x1p2/sandbags-3p2x1p3x1p2.bin"
-      }
-    },
-    "map-generator-1p6x1p6x2p4": {
-      "path": "assets/models/map/generator-1p6x1p6x2p4/generator-1p6x1p6x2p4.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/generator-1p6x1p6x2p4/generator-1p6x1p6x2p4.gltf",
-        "generator-1p6x1p6x2p4.bin": "assets/models/map/generator-1p6x1p6x2p4/generator-1p6x1p6x2p4.bin"
-      }
-    },
-    "map-spool-1p2x1p2x1p2-awmfnx": {
-      "path": "assets/models/map/spool-1p2x1p2x1p2-awmfnx/spool-1p2x1p2x1p2-awmfnx.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/spool-1p2x1p2x1p2-awmfnx/spool-1p2x1p2x1p2-awmfnx.gltf",
-        "spool-1p2x1p2x1p2-awmfnx.bin": "assets/models/map/spool-1p2x1p2x1p2-awmfnx/spool-1p2x1p2x1p2-awmfnx.bin"
-      }
-    },
-    "map-bunk-1p1x0p7x2p2": {
-      "path": "assets/models/map/bunk-1p1x0p7x2p2/bunk-1p1x0p7x2p2.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/bunk-1p1x0p7x2p2/bunk-1p1x0p7x2p2.gltf",
-        "bunk-1p1x0p7x2p2.bin": "assets/models/map/bunk-1p1x0p7x2p2/bunk-1p1x0p7x2p2.bin"
-      }
-    },
-    "map-rubble-3x1x2-1qfgh79": {
-      "path": "assets/models/map/rubble-3x1x2-1qfgh79/rubble-3x1x2-1qfgh79.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/rubble-3x1x2-1qfgh79/rubble-3x1x2-1qfgh79.gltf",
-        "rubble-3x1x2-1qfgh79.bin": "assets/models/map/rubble-3x1x2-1qfgh79/rubble-3x1x2-1qfgh79.bin"
-      }
-    },
-    "map-trader-2x1p3x1p2-3mxpxd": {
-      "path": "assets/models/map/trader-2x1p3x1p2-3mxpxd/trader-2x1p3x1p2-3mxpxd.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/trader-2x1p3x1p2-3mxpxd/trader-2x1p3x1p2-3mxpxd.gltf",
-        "trader-2x1p3x1p2-3mxpxd.bin": "assets/models/map/trader-2x1p3x1p2-3mxpxd/trader-2x1p3x1p2-3mxpxd.bin"
+        "f.gltf": "assets/models/map/container-red/container-red.gltf",
+        "container-red.bin": "assets/models/map/container-red/container-red.bin"
       }
     },
     "map-door-0p4x2p7x7p2": {
@@ -411,6 +669,111 @@
         "door-3x2x0p3.bin": "assets/models/map/door-3x2x0p3/door-3x2x0p3.bin"
       }
     },
+    "map-flank-4x3x1": {
+      "path": "assets/models/map/flank-4x3x1/flank-4x3x1.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/flank-4x3x1/flank-4x3x1.gltf",
+        "flank-4x3x1.bin": "assets/models/map/flank-4x3x1/flank-4x3x1.bin"
+      }
+    },
+    "map-floor-10x0p2x20-134p795": {
+      "path": "assets/models/map/floor-10x0p2x20-134p795/floor-10x0p2x20-134p795.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/floor-10x0p2x20-134p795/floor-10x0p2x20-134p795.gltf",
+        "floor-10x0p2x20-134p795.bin": "assets/models/map/floor-10x0p2x20-134p795/floor-10x0p2x20-134p795.bin"
+      }
+    },
+    "map-floor-10x0p2x20-1v1svwu": {
+      "path": "assets/models/map/floor-10x0p2x20-1v1svwu/floor-10x0p2x20-1v1svwu.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/floor-10x0p2x20-1v1svwu/floor-10x0p2x20-1v1svwu.gltf",
+        "floor-10x0p2x20-1v1svwu.bin": "assets/models/map/floor-10x0p2x20-1v1svwu/floor-10x0p2x20-1v1svwu.bin"
+      }
+    },
+    "map-floor-10x0p3x1p6": {
+      "path": "assets/models/map/floor-10x0p3x1p6/floor-10x0p3x1p6.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/floor-10x0p3x1p6/floor-10x0p3x1p6.gltf",
+        "floor-10x0p3x1p6.bin": "assets/models/map/floor-10x0p3x1p6/floor-10x0p3x1p6.bin"
+      }
+    },
+    "map-floor-10x0p3x4p8": {
+      "path": "assets/models/map/floor-10x0p3x4p8/floor-10x0p3x4p8.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/floor-10x0p3x4p8/floor-10x0p3x4p8.gltf",
+        "floor-10x0p3x4p8.bin": "assets/models/map/floor-10x0p3x4p8/floor-10x0p3x4p8.bin"
+      }
+    },
+    "map-floor-10x0p4x8": {
+      "path": "assets/models/map/floor-10x0p4x8/floor-10x0p4x8.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/floor-10x0p4x8/floor-10x0p4x8.gltf",
+        "floor-10x0p4x8.bin": "assets/models/map/floor-10x0p4x8/floor-10x0p4x8.bin"
+      }
+    },
+    "map-floor-10x0p7x18": {
+      "path": "assets/models/map/floor-10x0p7x18/floor-10x0p7x18.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/floor-10x0p7x18/floor-10x0p7x18.gltf",
+        "floor-10x0p7x18.bin": "assets/models/map/floor-10x0p7x18/floor-10x0p7x18.bin"
+      }
+    },
+    "map-floor-12x0p5x60": {
+      "path": "assets/models/map/floor-12x0p5x60/floor-12x0p5x60.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/floor-12x0p5x60/floor-12x0p5x60.gltf",
+        "floor-12x0p5x60.bin": "assets/models/map/floor-12x0p5x60/floor-12x0p5x60.bin"
+      }
+    },
+    "map-floor-12x0p5x60-1ehthkr": {
+      "path": "assets/models/map/floor-12x0p5x60-1ehthkr/floor-12x0p5x60-1ehthkr.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/floor-12x0p5x60-1ehthkr/floor-12x0p5x60-1ehthkr.gltf",
+        "floor-12x0p5x60-1ehthkr.bin": "assets/models/map/floor-12x0p5x60-1ehthkr/floor-12x0p5x60-1ehthkr.bin"
+      }
+    },
+    "map-floor-18x0p3x6": {
+      "path": "assets/models/map/floor-18x0p3x6/floor-18x0p3x6.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/floor-18x0p3x6/floor-18x0p3x6.gltf",
+        "floor-18x0p3x6.bin": "assets/models/map/floor-18x0p3x6/floor-18x0p3x6.bin"
+      }
+    },
+    "map-floor-20x0p2x2": {
+      "path": "assets/models/map/floor-20x0p2x2/floor-20x0p2x2.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/floor-20x0p2x2/floor-20x0p2x2.gltf",
+        "floor-20x0p2x2.bin": "assets/models/map/floor-20x0p2x2/floor-20x0p2x2.bin"
+      }
+    },
+    "map-floor-28x0p1x10": {
+      "path": "assets/models/map/floor-28x0p1x10/floor-28x0p1x10.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/floor-28x0p1x10/floor-28x0p1x10.gltf",
+        "floor-28x0p1x10.bin": "assets/models/map/floor-28x0p1x10/floor-28x0p1x10.bin"
+      }
+    },
+    "map-floor-28x0p2x10": {
+      "path": "assets/models/map/floor-28x0p2x10/floor-28x0p2x10.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/floor-28x0p2x10/floor-28x0p2x10.gltf",
+        "floor-28x0p2x10.bin": "assets/models/map/floor-28x0p2x10/floor-28x0p2x10.bin"
+      }
+    },
+    "map-floor-60x0p5x60": {
+      "path": "assets/models/map/floor-60x0p5x60/floor-60x0p5x60.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/floor-60x0p5x60/floor-60x0p5x60.gltf",
+        "floor-60x0p5x60.bin": "assets/models/map/floor-60x0p5x60/floor-60x0p5x60.bin"
+      }
+    },
+    "map-floor-7p4x0p4x31p4": {
+      "path": "assets/models/map/floor-7p4x0p4x31p4/floor-7p4x0p4x31p4.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/floor-7p4x0p4x31p4/floor-7p4x0p4x31p4.gltf",
+        "floor-7p4x0p4x31p4.bin": "assets/models/map/floor-7p4x0p4x31p4/floor-7p4x0p4x31p4.bin"
+      }
+    },
     "map-gate-4x3": {
       "path": "assets/models/map/gate-4x3/gate-4x3.gltf",
       "files": {
@@ -425,11 +788,11 @@
         "gate-7x4p8.bin": "assets/models/map/gate-7x4p8/gate-7x4p8.bin"
       }
     },
-    "map-hazard-5x0p1x5": {
-      "path": "assets/models/map/hazard-5x0p1x5/hazard-5x0p1x5.gltf",
+    "map-generator-1p6x1p6x2p4": {
+      "path": "assets/models/map/generator-1p6x1p6x2p4/generator-1p6x1p6x2p4.gltf",
       "files": {
-        "f.gltf": "assets/models/map/hazard-5x0p1x5/hazard-5x0p1x5.gltf",
-        "hazard-5x0p1x5.bin": "assets/models/map/hazard-5x0p1x5/hazard-5x0p1x5.bin"
+        "f.gltf": "assets/models/map/generator-1p6x1p6x2p4/generator-1p6x1p6x2p4.gltf",
+        "generator-1p6x1p6x2p4.bin": "assets/models/map/generator-1p6x1p6x2p4/generator-1p6x1p6x2p4.bin"
       }
     },
     "map-hazard-3x0p1x6": {
@@ -439,18 +802,11 @@
         "hazard-3x0p1x6.bin": "assets/models/map/hazard-3x0p1x6/hazard-3x0p1x6.bin"
       }
     },
-    "map-flank-4x3x1": {
-      "path": "assets/models/map/flank-4x3x1/flank-4x3x1.gltf",
+    "map-hazard-5x0p1x5": {
+      "path": "assets/models/map/hazard-5x0p1x5/hazard-5x0p1x5.gltf",
       "files": {
-        "f.gltf": "assets/models/map/flank-4x3x1/flank-4x3x1.gltf",
-        "flank-4x3x1.bin": "assets/models/map/flank-4x3x1/flank-4x3x1.bin"
-      }
-    },
-    "map-light-fixture-tube": {
-      "path": "assets/models/map/light-fixture-tube/light-fixture-tube.gltf",
-      "files": {
-        "f.gltf": "assets/models/map/light-fixture-tube/light-fixture-tube.gltf",
-        "light-fixture-tube.bin": "assets/models/map/light-fixture-tube/light-fixture-tube.bin"
+        "f.gltf": "assets/models/map/hazard-5x0p1x5/hazard-5x0p1x5.gltf",
+        "hazard-5x0p1x5.bin": "assets/models/map/hazard-5x0p1x5/hazard-5x0p1x5.bin"
       }
     },
     "map-light-fixture-emergency": {
@@ -458,6 +814,13 @@
       "files": {
         "f.gltf": "assets/models/map/light-fixture-emergency/light-fixture-emergency.gltf",
         "light-fixture-emergency.bin": "assets/models/map/light-fixture-emergency/light-fixture-emergency.bin"
+      }
+    },
+    "map-light-fixture-tube": {
+      "path": "assets/models/map/light-fixture-tube/light-fixture-tube.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/light-fixture-tube/light-fixture-tube.gltf",
+        "light-fixture-tube.bin": "assets/models/map/light-fixture-tube/light-fixture-tube.bin"
       }
     },
     "map-light-fixture-work": {
@@ -474,32 +837,256 @@
         "pipe-0p26x0p26x30p4.bin": "assets/models/map/pipe-0p26x0p26x30p4/pipe-0p26x0p26x30p4.bin"
       }
     },
-    "map-cable-8x0p75x0p06": {
-      "path": "assets/models/map/cable-8x0p75x0p06/cable-8x0p75x0p06.gltf",
+    "map-ramp-2x0p6x6": {
+      "path": "assets/models/map/ramp-2x0p6x6/ramp-2x0p6x6.gltf",
       "files": {
-        "f.gltf": "assets/models/map/cable-8x0p75x0p06/cable-8x0p75x0p06.gltf",
-        "cable-8x0p75x0p06.bin": "assets/models/map/cable-8x0p75x0p06/cable-8x0p75x0p06.bin"
+        "f.gltf": "assets/models/map/ramp-2x0p6x6/ramp-2x0p6x6.gltf",
+        "ramp-2x0p6x6.bin": "assets/models/map/ramp-2x0p6x6/ramp-2x0p6x6.bin"
       }
     },
-    "map-bunker-shell": {
-      "path": "assets/models/map/bunker-shell/bunker-shell.gltf",
+    "map-rubble-1x1p5x12-zh655b": {
+      "path": "assets/models/map/rubble-1x1p5x12-zh655b/rubble-1x1p5x12-zh655b.gltf",
       "files": {
-        "f.gltf": "assets/models/map/bunker-shell/bunker-shell.gltf",
-        "bunker-shell.bin": "assets/models/map/bunker-shell/bunker-shell.bin"
+        "f.gltf": "assets/models/map/rubble-1x1p5x12-zh655b/rubble-1x1p5x12-zh655b.gltf",
+        "rubble-1x1p5x12-zh655b.bin": "assets/models/map/rubble-1x1p5x12-zh655b/rubble-1x1p5x12-zh655b.bin"
       }
     },
-    "unit-scout": {
-      "path": "assets/models/units/scout/scout.gltf",
+    "map-rubble-3x1x2-1qfgh79": {
+      "path": "assets/models/map/rubble-3x1x2-1qfgh79/rubble-3x1x2-1qfgh79.gltf",
       "files": {
-        "scout.gltf": "assets/models/units/scout/scout.gltf",
-        "scout.bin": "assets/models/units/scout/scout.bin",
-        "textures/units/endoskeleton-albedo.jpg": "assets/textures/units/endoskeleton-albedo.jpg",
-        "textures/units/endoskeleton-orm.png": "assets/textures/units/endoskeleton-orm.png",
-        "textures/units/endoskeleton-normal.png": "assets/textures/units/endoskeleton-normal.png",
-        "textures/units/optic-albedo.png": "assets/textures/units/optic-albedo.png",
-        "textures/units/optic-orm.png": "assets/textures/units/optic-orm.png",
-        "textures/units/optic-normal.png": "assets/textures/units/optic-normal.png",
-        "textures/units/optic-emissive.png": "assets/textures/units/optic-emissive.png"
+        "f.gltf": "assets/models/map/rubble-3x1x2-1qfgh79/rubble-3x1x2-1qfgh79.gltf",
+        "rubble-3x1x2-1qfgh79.bin": "assets/models/map/rubble-3x1x2-1qfgh79/rubble-3x1x2-1qfgh79.bin"
+      }
+    },
+    "map-rubble-nw": {
+      "path": "assets/models/map/rubble-nw/rubble-nw.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/rubble-nw/rubble-nw.gltf",
+        "rubble-nw.bin": "assets/models/map/rubble-nw/rubble-nw.bin"
+      }
+    },
+    "map-rubble-se": {
+      "path": "assets/models/map/rubble-se/rubble-se.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/rubble-se/rubble-se.gltf",
+        "rubble-se.bin": "assets/models/map/rubble-se/rubble-se.bin"
+      }
+    },
+    "map-sandbags-3p2x1p3x1p2": {
+      "path": "assets/models/map/sandbags-3p2x1p3x1p2/sandbags-3p2x1p3x1p2.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/sandbags-3p2x1p3x1p2/sandbags-3p2x1p3x1p2.gltf",
+        "sandbags-3p2x1p3x1p2.bin": "assets/models/map/sandbags-3p2x1p3x1p2/sandbags-3p2x1p3x1p2.bin"
+      }
+    },
+    "map-spool-1p2x1p2x1p2-awmfnx": {
+      "path": "assets/models/map/spool-1p2x1p2x1p2-awmfnx/spool-1p2x1p2x1p2-awmfnx.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/spool-1p2x1p2x1p2-awmfnx/spool-1p2x1p2x1p2-awmfnx.gltf",
+        "spool-1p2x1p2x1p2-awmfnx.bin": "assets/models/map/spool-1p2x1p2x1p2-awmfnx/spool-1p2x1p2x1p2-awmfnx.bin"
+      }
+    },
+    "map-stair-3x0p5x1": {
+      "path": "assets/models/map/stair-3x0p5x1/stair-3x0p5x1.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/stair-3x0p5x1/stair-3x0p5x1.gltf",
+        "stair-3x0p5x1.bin": "assets/models/map/stair-3x0p5x1/stair-3x0p5x1.bin"
+      }
+    },
+    "map-stair-3x1p5x1": {
+      "path": "assets/models/map/stair-3x1p5x1/stair-3x1p5x1.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/stair-3x1p5x1/stair-3x1p5x1.gltf",
+        "stair-3x1p5x1.bin": "assets/models/map/stair-3x1p5x1/stair-3x1p5x1.bin"
+      }
+    },
+    "map-stair-3x1x1": {
+      "path": "assets/models/map/stair-3x1x1/stair-3x1x1.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/stair-3x1x1/stair-3x1x1.gltf",
+        "stair-3x1x1.bin": "assets/models/map/stair-3x1x1/stair-3x1x1.bin"
+      }
+    },
+    "map-stair-3x2p5x1": {
+      "path": "assets/models/map/stair-3x2p5x1/stair-3x2p5x1.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/stair-3x2p5x1/stair-3x2p5x1.gltf",
+        "stair-3x2p5x1.bin": "assets/models/map/stair-3x2p5x1/stair-3x2p5x1.bin"
+      }
+    },
+    "map-stair-3x2x1": {
+      "path": "assets/models/map/stair-3x2x1/stair-3x2x1.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/stair-3x2x1/stair-3x2x1.gltf",
+        "stair-3x2x1.bin": "assets/models/map/stair-3x2x1/stair-3x2x1.bin"
+      }
+    },
+    "map-stair-3x3x1": {
+      "path": "assets/models/map/stair-3x3x1/stair-3x3x1.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/stair-3x3x1/stair-3x3x1.gltf",
+        "stair-3x3x1.bin": "assets/models/map/stair-3x3x1/stair-3x3x1.bin"
+      }
+    },
+    "map-supply-2p6x1p28x1p1": {
+      "path": "assets/models/map/supply-2p6x1p28x1p1/supply-2p6x1p28x1p1.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/supply-2p6x1p28x1p1/supply-2p6x1p28x1p1.gltf",
+        "supply-2p6x1p28x1p1.bin": "assets/models/map/supply-2p6x1p28x1p1/supply-2p6x1p28x1p1.bin"
+      }
+    },
+    "map-trader-2x1p3x1p2-3mxpxd": {
+      "path": "assets/models/map/trader-2x1p3x1p2-3mxpxd/trader-2x1p3x1p2-3mxpxd.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/trader-2x1p3x1p2-3mxpxd/trader-2x1p3x1p2-3mxpxd.gltf",
+        "trader-2x1p3x1p2-3mxpxd.bin": "assets/models/map/trader-2x1p3x1p2-3mxpxd/trader-2x1p3x1p2-3mxpxd.bin"
+      }
+    },
+    "map-truck-5p5x2p4x2p4-m0jo9i": {
+      "path": "assets/models/map/truck-5p5x2p4x2p4-m0jo9i/truck-5p5x2p4x2p4-m0jo9i.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/truck-5p5x2p4x2p4-m0jo9i/truck-5p5x2p4x2p4-m0jo9i.gltf",
+        "truck-5p5x2p4x2p4-m0jo9i.bin": "assets/models/map/truck-5p5x2p4x2p4-m0jo9i/truck-5p5x2p4x2p4-m0jo9i.bin"
+      }
+    },
+    "map-tunnel-wall-10x3x0p6": {
+      "path": "assets/models/map/tunnel-wall-10x3x0p6/tunnel-wall-10x3x0p6.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/tunnel-wall-10x3x0p6/tunnel-wall-10x3x0p6.gltf",
+        "tunnel-wall-10x3x0p6.bin": "assets/models/map/tunnel-wall-10x3x0p6/tunnel-wall-10x3x0p6.bin"
+      }
+    },
+    "map-wall-0p6x3p6x12": {
+      "path": "assets/models/map/wall-0p6x3p6x12/wall-0p6x3p6x12.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/wall-0p6x3p6x12/wall-0p6x3p6x12.gltf",
+        "wall-0p6x3p6x12.bin": "assets/models/map/wall-0p6x3p6x12/wall-0p6x3p6x12.bin"
+      }
+    },
+    "map-wall-0p6x3p6x16": {
+      "path": "assets/models/map/wall-0p6x3p6x16/wall-0p6x3p6x16.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/wall-0p6x3p6x16/wall-0p6x3p6x16.gltf",
+        "wall-0p6x3p6x16.bin": "assets/models/map/wall-0p6x3p6x16/wall-0p6x3p6x16.bin"
+      }
+    },
+    "map-wall-0p6x3p6x6": {
+      "path": "assets/models/map/wall-0p6x3p6x6/wall-0p6x3p6x6.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/wall-0p6x3p6x6/wall-0p6x3p6x6.gltf",
+        "wall-0p6x3p6x6.bin": "assets/models/map/wall-0p6x3p6x6/wall-0p6x3p6x6.bin"
+      }
+    },
+    "map-wall-0p6x3p6x8": {
+      "path": "assets/models/map/wall-0p6x3p6x8/wall-0p6x3p6x8.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/wall-0p6x3p6x8/wall-0p6x3p6x8.gltf",
+        "wall-0p6x3p6x8.bin": "assets/models/map/wall-0p6x3p6x8/wall-0p6x3p6x8.bin"
+      }
+    },
+    "map-wall-12x3p6x0p6": {
+      "path": "assets/models/map/wall-12x3p6x0p6/wall-12x3p6x0p6.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/wall-12x3p6x0p6/wall-12x3p6x0p6.gltf",
+        "wall-12x3p6x0p6.bin": "assets/models/map/wall-12x3p6x0p6/wall-12x3p6x0p6.bin"
+      }
+    },
+    "map-wall-12x3x1": {
+      "path": "assets/models/map/wall-12x3x1/wall-12x3x1.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/wall-12x3x1/wall-12x3x1.gltf",
+        "wall-12x3x1.bin": "assets/models/map/wall-12x3x1/wall-12x3x1.bin"
+      }
+    },
+    "map-wall-16x3x1": {
+      "path": "assets/models/map/wall-16x3x1/wall-16x3x1.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/wall-16x3x1/wall-16x3x1.gltf",
+        "wall-16x3x1.bin": "assets/models/map/wall-16x3x1/wall-16x3x1.bin"
+      }
+    },
+    "map-wall-18x3x1": {
+      "path": "assets/models/map/wall-18x3x1/wall-18x3x1.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/wall-18x3x1/wall-18x3x1.gltf",
+        "wall-18x3x1.bin": "assets/models/map/wall-18x3x1/wall-18x3x1.bin"
+      }
+    },
+    "map-wall-1x3x1": {
+      "path": "assets/models/map/wall-1x3x1/wall-1x3x1.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/wall-1x3x1/wall-1x3x1.gltf",
+        "wall-1x3x1.bin": "assets/models/map/wall-1x3x1/wall-1x3x1.bin"
+      }
+    },
+    "map-wall-1x3x13": {
+      "path": "assets/models/map/wall-1x3x13/wall-1x3x13.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/wall-1x3x13/wall-1x3x13.gltf",
+        "wall-1x3x13.bin": "assets/models/map/wall-1x3x13/wall-1x3x13.bin"
+      }
+    },
+    "map-wall-1x3x15": {
+      "path": "assets/models/map/wall-1x3x15/wall-1x3x15.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/wall-1x3x15/wall-1x3x15.gltf",
+        "wall-1x3x15.bin": "assets/models/map/wall-1x3x15/wall-1x3x15.bin"
+      }
+    },
+    "map-wall-1x3x16": {
+      "path": "assets/models/map/wall-1x3x16/wall-1x3x16.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/wall-1x3x16/wall-1x3x16.gltf",
+        "wall-1x3x16.bin": "assets/models/map/wall-1x3x16/wall-1x3x16.bin"
+      }
+    },
+    "map-wall-1x3x6": {
+      "path": "assets/models/map/wall-1x3x6/wall-1x3x6.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/wall-1x3x6/wall-1x3x6.gltf",
+        "wall-1x3x6.bin": "assets/models/map/wall-1x3x6/wall-1x3x6.bin"
+      }
+    },
+    "map-wall-1x3x6p4": {
+      "path": "assets/models/map/wall-1x3x6p4/wall-1x3x6p4.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/wall-1x3x6p4/wall-1x3x6p4.gltf",
+        "wall-1x3x6p4.bin": "assets/models/map/wall-1x3x6p4/wall-1x3x6p4.bin"
+      }
+    },
+    "map-wall-1x3x7": {
+      "path": "assets/models/map/wall-1x3x7/wall-1x3x7.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/wall-1x3x7/wall-1x3x7.gltf",
+        "wall-1x3x7.bin": "assets/models/map/wall-1x3x7/wall-1x3x7.bin"
+      }
+    },
+    "map-wall-28x3x1": {
+      "path": "assets/models/map/wall-28x3x1/wall-28x3x1.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/wall-28x3x1/wall-28x3x1.gltf",
+        "wall-28x3x1.bin": "assets/models/map/wall-28x3x1/wall-28x3x1.bin"
+      }
+    },
+    "map-wall-2p5x3p6x0p6": {
+      "path": "assets/models/map/wall-2p5x3p6x0p6/wall-2p5x3p6x0p6.gltf",
+      "files": {
+        "f.gltf": "assets/models/map/wall-2p5x3p6x0p6/wall-2p5x3p6x0p6.gltf",
+        "wall-2p5x3p6x0p6.bin": "assets/models/map/wall-2p5x3p6x0p6/wall-2p5x3p6x0p6.bin"
+      }
+    },
+    "range-firing-line": {
+      "path": "assets/models/range/firing-line/firing-line.gltf",
+      "files": {
+        "f.gltf": "assets/models/range/firing-line/firing-line.gltf",
+        "firing-line.bin": "assets/models/range/firing-line/firing-line.bin"
+      }
+    },
+    "range-steel-target": {
+      "path": "assets/models/range/steel-target/steel-target.gltf",
+      "files": {
+        "f.gltf": "assets/models/range/steel-target/steel-target.gltf",
+        "steel-target.bin": "assets/models/range/steel-target/steel-target.bin"
       }
     },
     "unit-endo": {
@@ -530,16 +1117,6 @@
         "textures/units/optic-emissive.png": "assets/textures/units/optic-emissive.png"
       }
     },
-    "unit-t1000": {
-      "path": "assets/models/units/t1000/t1000.gltf",
-      "files": {
-        "t1000.gltf": "assets/models/units/t1000/t1000.gltf",
-        "t1000.bin": "assets/models/units/t1000/t1000.bin",
-        "textures/roster/liquid-albedo.jpg": "assets/textures/roster/liquid-albedo.jpg",
-        "textures/roster/liquid-orm.png": "assets/textures/roster/liquid-orm.png",
-        "textures/roster/liquid-normal.png": "assets/textures/roster/liquid-normal.png"
-      }
-    },
     "unit-hkaerial": {
       "path": "assets/models/units/hkaerial/hkaerial.gltf",
       "files": {
@@ -568,6 +1145,20 @@
         "textures/units/optic-emissive.png": "assets/textures/units/optic-emissive.png"
       }
     },
+    "unit-scout": {
+      "path": "assets/models/units/scout/scout.gltf",
+      "files": {
+        "scout.gltf": "assets/models/units/scout/scout.gltf",
+        "scout.bin": "assets/models/units/scout/scout.bin",
+        "textures/units/endoskeleton-albedo.jpg": "assets/textures/units/endoskeleton-albedo.jpg",
+        "textures/units/endoskeleton-orm.png": "assets/textures/units/endoskeleton-orm.png",
+        "textures/units/endoskeleton-normal.png": "assets/textures/units/endoskeleton-normal.png",
+        "textures/units/optic-albedo.png": "assets/textures/units/optic-albedo.png",
+        "textures/units/optic-orm.png": "assets/textures/units/optic-orm.png",
+        "textures/units/optic-normal.png": "assets/textures/units/optic-normal.png",
+        "textures/units/optic-emissive.png": "assets/textures/units/optic-emissive.png"
+      }
+    },
     "unit-soldier": {
       "path": "assets/models/units/soldier/soldier.gltf",
       "files": {
@@ -580,290 +1171,14 @@
         "textures/units/optic-emissive.png": "assets/textures/units/optic-emissive.png"
       }
     },
-    "range-steel-target": {
-      "path": "assets/models/range/steel-target/steel-target.gltf",
+    "unit-t1000": {
+      "path": "assets/models/units/t1000/t1000.gltf",
       "files": {
-        "f.gltf": "assets/models/range/steel-target/steel-target.gltf",
-        "steel-target.bin": "assets/models/range/steel-target/steel-target.bin"
-      }
-    },
-    "range-firing-line": {
-      "path": "assets/models/range/firing-line/firing-line.gltf",
-      "files": {
-        "f.gltf": "assets/models/range/firing-line/firing-line.gltf",
-        "firing-line.bin": "assets/models/range/firing-line/firing-line.bin"
-      }
-    },
-    "armchair_01_1k": {
-      "path": "assets/imports/armchair_01_1k/f.gltf",
-      "files": {
-        "f.gltf": "assets/imports/armchair_01_1k/f.gltf",
-        "ArmChair_01.bin": "assets/imports/armchair_01_1k/ArmChair_01.bin",
-        "textures/Armchair_01_nor_gl_1k.jpg": "assets/imports/armchair_01_1k/textures/Armchair_01_nor_gl_1k.jpg",
-        "textures/Armchair_01_diff_1k.jpg": "assets/imports/armchair_01_1k/textures/Armchair_01_diff_1k.jpg",
-        "textures/Armchair_01_arm_1k.jpg": "assets/imports/armchair_01_1k/textures/Armchair_01_arm_1k.jpg"
-      }
-    },
-    "barbershopchair_01_1k": {
-      "path": "assets/imports/barbershopchair_01_1k/f.gltf",
-      "files": {
-        "f.gltf": "assets/imports/barbershopchair_01_1k/f.gltf",
-        "BarberShopChair_01.bin": "assets/imports/barbershopchair_01_1k/BarberShopChair_01.bin",
-        "textures/BarberShopChair_01_nor_gl_1k.jpg": "assets/imports/barbershopchair_01_1k/textures/BarberShopChair_01_nor_gl_1k.jpg",
-        "textures/BarberShopChair_01_diff_1k.jpg": "assets/imports/barbershopchair_01_1k/textures/BarberShopChair_01_diff_1k.jpg",
-        "textures/BarberShopChair_01_arm_1k.jpg": "assets/imports/barbershopchair_01_1k/textures/BarberShopChair_01_arm_1k.jpg"
-      }
-    },
-    "barrel_02_1k": {
-      "path": "assets/imports/barrel_02_1k/f.gltf",
-      "files": {
-        "f.gltf": "assets/imports/barrel_02_1k/f.gltf",
-        "Barrel_02.bin": "assets/imports/barrel_02_1k/Barrel_02.bin",
-        "textures/Barrel_02_nor_gl_1k.jpg": "assets/imports/barrel_02_1k/textures/Barrel_02_nor_gl_1k.jpg",
-        "textures/Barrel_02_diff_1k.jpg": "assets/imports/barrel_02_1k/textures/Barrel_02_diff_1k.jpg",
-        "textures/Barrel_02_arm_1k.jpg": "assets/imports/barrel_02_1k/textures/Barrel_02_arm_1k.jpg"
-      }
-    },
-    "armchair_01_1k-1": {
-      "path": "assets/imports/armchair_01_1k-1/f.gltf",
-      "files": {
-        "f.gltf": "assets/imports/armchair_01_1k-1/f.gltf",
-        "ArmChair_01.bin": "assets/imports/armchair_01_1k-1/ArmChair_01.bin",
-        "textures/Armchair_01_nor_gl_1k.jpg": "assets/imports/armchair_01_1k-1/textures/Armchair_01_nor_gl_1k.jpg",
-        "textures/Armchair_01_diff_1k.jpg": "assets/imports/armchair_01_1k-1/textures/Armchair_01_diff_1k.jpg",
-        "textures/Armchair_01_arm_1k.jpg": "assets/imports/armchair_01_1k-1/textures/Armchair_01_arm_1k.jpg"
-      }
-    },
-    "armchair_01_1k-2": {
-      "path": "assets/imports/armchair_01_1k-2/f.gltf",
-      "files": {
-        "f.gltf": "assets/imports/armchair_01_1k-2/f.gltf",
-        "ArmChair_01.bin": "assets/imports/armchair_01_1k-2/ArmChair_01.bin",
-        "textures/Armchair_01_nor_gl_1k.jpg": "assets/imports/armchair_01_1k-2/textures/Armchair_01_nor_gl_1k.jpg",
-        "textures/Armchair_01_diff_1k.jpg": "assets/imports/armchair_01_1k-2/textures/Armchair_01_diff_1k.jpg",
-        "textures/Armchair_01_arm_1k.jpg": "assets/imports/armchair_01_1k-2/textures/Armchair_01_arm_1k.jpg"
-      }
-    },
-    "barrel_02_1k-1": {
-      "path": "assets/imports/barrel_02_1k-1/f.gltf",
-      "files": {
-        "f.gltf": "assets/imports/barrel_02_1k-1/f.gltf",
-        "Barrel_02.bin": "assets/imports/barrel_02_1k-1/Barrel_02.bin",
-        "textures/Barrel_02_nor_gl_1k.jpg": "assets/imports/barrel_02_1k-1/textures/Barrel_02_nor_gl_1k.jpg",
-        "textures/Barrel_02_diff_1k.jpg": "assets/imports/barrel_02_1k-1/textures/Barrel_02_diff_1k.jpg",
-        "textures/Barrel_02_arm_1k.jpg": "assets/imports/barrel_02_1k-1/textures/Barrel_02_arm_1k.jpg"
-      }
-    },
-    "aerial_beach_01_1k": {
-      "path": "assets/imports/aerial_beach_01_1k/f.phmatgltf",
-      "files": {
-        "f.phmatgltf": "assets/imports/aerial_beach_01_1k/f.phmatgltf",
-        "aerial_beach_01.bin": "assets/imports/aerial_beach_01_1k/aerial_beach_01.bin",
-        "textures/aerial_beach_01_nor_gl_1k.jpg": "assets/imports/aerial_beach_01_1k/textures/aerial_beach_01_nor_gl_1k.jpg",
-        "textures/aerial_beach_01_diff_1k.jpg": "assets/imports/aerial_beach_01_1k/textures/aerial_beach_01_diff_1k.jpg",
-        "textures/aerial_beach_01_rough_1k.jpg": "assets/imports/aerial_beach_01_1k/textures/aerial_beach_01_rough_1k.jpg"
-      }
-    },
-    "aerial_grass_rock_1k": {
-      "path": "assets/imports/aerial_grass_rock_1k/f.phmatgltf",
-      "files": {
-        "f.phmatgltf": "assets/imports/aerial_grass_rock_1k/f.phmatgltf",
-        "aerial_grass_rock.bin": "assets/imports/aerial_grass_rock_1k/aerial_grass_rock.bin",
-        "textures/aerial_grass_rock_nor_gl_1k.jpg": "assets/imports/aerial_grass_rock_1k/textures/aerial_grass_rock_nor_gl_1k.jpg",
-        "textures/aerial_grass_rock_diff_1k.jpg": "assets/imports/aerial_grass_rock_1k/textures/aerial_grass_rock_diff_1k.jpg",
-        "textures/aerial_grass_rock_rough_1k.jpg": "assets/imports/aerial_grass_rock_1k/textures/aerial_grass_rock_rough_1k.jpg"
-      }
-    },
-    "aerial_beach_03_1k": {
-      "path": "assets/imports/aerial_beach_03_1k/f.phmatgltf",
-      "files": {
-        "f.phmatgltf": "assets/imports/aerial_beach_03_1k/f.phmatgltf",
-        "aerial_beach_03.bin": "assets/imports/aerial_beach_03_1k/aerial_beach_03.bin",
-        "textures/aerial_beach_03_nor_gl_1k.jpg": "assets/imports/aerial_beach_03_1k/textures/aerial_beach_03_nor_gl_1k.jpg",
-        "textures/aerial_beach_03_diff_1k.jpg": "assets/imports/aerial_beach_03_1k/textures/aerial_beach_03_diff_1k.jpg",
-        "textures/aerial_beach_03_arm_1k.jpg": "assets/imports/aerial_beach_03_1k/textures/aerial_beach_03_arm_1k.jpg"
-      }
-    },
-    "aerial_beach_03_1k-1": {
-      "path": "assets/imports/aerial_beach_03_1k-1/f.phmatgltf",
-      "files": {
-        "f.phmatgltf": "assets/imports/aerial_beach_03_1k-1/f.phmatgltf",
-        "aerial_beach_03.bin": "assets/imports/aerial_beach_03_1k-1/aerial_beach_03.bin",
-        "textures/aerial_beach_03_nor_gl_1k.jpg": "assets/imports/aerial_beach_03_1k-1/textures/aerial_beach_03_nor_gl_1k.jpg",
-        "textures/aerial_beach_03_diff_1k.jpg": "assets/imports/aerial_beach_03_1k-1/textures/aerial_beach_03_diff_1k.jpg",
-        "textures/aerial_beach_03_arm_1k.jpg": "assets/imports/aerial_beach_03_1k-1/textures/aerial_beach_03_arm_1k.jpg"
-      }
-    },
-    "aerial_rocks_01_1k": {
-      "path": "assets/imports/aerial_rocks_01_1k/f.phmatgltf",
-      "files": {
-        "f.phmatgltf": "assets/imports/aerial_rocks_01_1k/f.phmatgltf",
-        "aerial_rocks_01.bin": "assets/imports/aerial_rocks_01_1k/aerial_rocks_01.bin",
-        "textures/aerial_rocks_01_nor_gl_1k.jpg": "assets/imports/aerial_rocks_01_1k/textures/aerial_rocks_01_nor_gl_1k.jpg",
-        "textures/aerial_rocks_01_diff_1k.jpg": "assets/imports/aerial_rocks_01_1k/textures/aerial_rocks_01_diff_1k.jpg",
-        "textures/aerial_rocks_01_rough_1k.jpg": "assets/imports/aerial_rocks_01_1k/textures/aerial_rocks_01_rough_1k.jpg"
-      }
-    },
-    "aerial_beach_02_1k": {
-      "path": "assets/imports/aerial_beach_02_1k/f.phmatgltf",
-      "files": {
-        "f.phmatgltf": "assets/imports/aerial_beach_02_1k/f.phmatgltf",
-        "aerial_beach_02.bin": "assets/imports/aerial_beach_02_1k/aerial_beach_02.bin",
-        "textures/aerial_beach_02_nor_gl_1k.jpg": "assets/imports/aerial_beach_02_1k/textures/aerial_beach_02_nor_gl_1k.jpg",
-        "textures/aerial_beach_02_diff_1k.jpg": "assets/imports/aerial_beach_02_1k/textures/aerial_beach_02_diff_1k.jpg",
-        "textures/aerial_beach_02_rough_1k.jpg": "assets/imports/aerial_beach_02_1k/textures/aerial_beach_02_rough_1k.jpg"
-      }
-    },
-    "aerial_beach_03_1k-2": {
-      "path": "assets/imports/aerial_beach_03_1k-2/f.phmatgltf",
-      "files": {
-        "f.phmatgltf": "assets/imports/aerial_beach_03_1k-2/f.phmatgltf",
-        "aerial_beach_03.bin": "assets/imports/aerial_beach_03_1k-2/aerial_beach_03.bin",
-        "textures/aerial_beach_03_nor_gl_1k.jpg": "assets/imports/aerial_beach_03_1k-2/textures/aerial_beach_03_nor_gl_1k.jpg",
-        "textures/aerial_beach_03_diff_1k.jpg": "assets/imports/aerial_beach_03_1k-2/textures/aerial_beach_03_diff_1k.jpg",
-        "textures/aerial_beach_03_arm_1k.jpg": "assets/imports/aerial_beach_03_1k-2/textures/aerial_beach_03_arm_1k.jpg"
-      }
-    },
-    "aerial_beach_03_1k-3": {
-      "path": "assets/imports/aerial_beach_03_1k-3/f.phmatgltf",
-      "files": {
-        "f.phmatgltf": "assets/imports/aerial_beach_03_1k-3/f.phmatgltf",
-        "aerial_beach_03.bin": "assets/imports/aerial_beach_03_1k-3/aerial_beach_03.bin",
-        "textures/aerial_beach_03_nor_gl_1k.jpg": "assets/imports/aerial_beach_03_1k-3/textures/aerial_beach_03_nor_gl_1k.jpg",
-        "textures/aerial_beach_03_diff_1k.jpg": "assets/imports/aerial_beach_03_1k-3/textures/aerial_beach_03_diff_1k.jpg",
-        "textures/aerial_beach_03_arm_1k.jpg": "assets/imports/aerial_beach_03_1k-3/textures/aerial_beach_03_arm_1k.jpg"
-      }
-    },
-    "aerial_grass_rock_1k-1": {
-      "path": "assets/imports/aerial_grass_rock_1k-1/f.phmatgltf",
-      "files": {
-        "f.phmatgltf": "assets/imports/aerial_grass_rock_1k-1/f.phmatgltf",
-        "aerial_grass_rock.bin": "assets/imports/aerial_grass_rock_1k-1/aerial_grass_rock.bin",
-        "textures/aerial_grass_rock_nor_gl_1k.jpg": "assets/imports/aerial_grass_rock_1k-1/textures/aerial_grass_rock_nor_gl_1k.jpg",
-        "textures/aerial_grass_rock_diff_1k.jpg": "assets/imports/aerial_grass_rock_1k-1/textures/aerial_grass_rock_diff_1k.jpg",
-        "textures/aerial_grass_rock_rough_1k.jpg": "assets/imports/aerial_grass_rock_1k-1/textures/aerial_grass_rock_rough_1k.jpg"
-      }
-    },
-    "denim_fabric_1k": {
-      "path": "assets/imports/denim_fabric_1k/f.phmatgltf",
-      "files": {
-        "f.phmatgltf": "assets/imports/denim_fabric_1k/f.phmatgltf",
-        "denim_fabric.bin": "assets/imports/denim_fabric_1k/denim_fabric.bin",
-        "textures/denim_fabric_nor_gl_1k.jpg": "assets/imports/denim_fabric_1k/textures/denim_fabric_nor_gl_1k.jpg",
-        "textures/denim_fabric_diff_1k.jpg": "assets/imports/denim_fabric_1k/textures/denim_fabric_diff_1k.jpg",
-        "textures/denim_fabric_rough_1k.jpg": "assets/imports/denim_fabric_1k/textures/denim_fabric_rough_1k.jpg"
-      }
-    },
-    "denim_fabric_03_1k": {
-      "path": "assets/imports/denim_fabric_03_1k/f.phmatgltf",
-      "files": {
-        "f.phmatgltf": "assets/imports/denim_fabric_03_1k/f.phmatgltf",
-        "denim_fabric_03.bin": "assets/imports/denim_fabric_03_1k/denim_fabric_03.bin",
-        "textures/denim_fabric_03_spec_ior_1k.jpg": "assets/imports/denim_fabric_03_1k/textures/denim_fabric_03_spec_ior_1k.jpg",
-        "textures/denim_fabric_03_nor_gl_1k.jpg": "assets/imports/denim_fabric_03_1k/textures/denim_fabric_03_nor_gl_1k.jpg",
-        "textures/denim_fabric_03_diff_1k.jpg": "assets/imports/denim_fabric_03_1k/textures/denim_fabric_03_diff_1k.jpg",
-        "textures/denim_fabric_03_arm_1k.jpg": "assets/imports/denim_fabric_03_1k/textures/denim_fabric_03_arm_1k.jpg"
-      }
-    },
-    "defense_wall_1k": {
-      "path": "assets/imports/defense_wall_1k/f.phmatgltf",
-      "files": {
-        "f.phmatgltf": "assets/imports/defense_wall_1k/f.phmatgltf",
-        "defense_wall.bin": "assets/imports/defense_wall_1k/defense_wall.bin",
-        "textures/defense_wall_nor_gl_1k.jpg": "assets/imports/defense_wall_1k/textures/defense_wall_nor_gl_1k.jpg",
-        "textures/defense_wall_diff_1k.jpg": "assets/imports/defense_wall_1k/textures/defense_wall_diff_1k.jpg",
-        "textures/defense_wall_rough_1k.jpg": "assets/imports/defense_wall_1k/textures/defense_wall_rough_1k.jpg"
-      }
-    },
-    "dark_wooden_planks_1k": {
-      "path": "assets/imports/dark_wooden_planks_1k/f.phmatgltf",
-      "files": {
-        "f.phmatgltf": "assets/imports/dark_wooden_planks_1k/f.phmatgltf",
-        "dark_wooden_planks.bin": "assets/imports/dark_wooden_planks_1k/dark_wooden_planks.bin",
-        "textures/dark_wooden_planks_nor_gl_1k.jpg": "assets/imports/dark_wooden_planks_1k/textures/dark_wooden_planks_nor_gl_1k.jpg",
-        "textures/dark_wooden_planks_diff_1k.jpg": "assets/imports/dark_wooden_planks_1k/textures/dark_wooden_planks_diff_1k.jpg",
-        "textures/dark_wooden_planks_arm_1k.jpg": "assets/imports/dark_wooden_planks_1k/textures/dark_wooden_planks_arm_1k.jpg"
-      }
-    },
-    "denim_fabric_05_1k": {
-      "path": "assets/imports/denim_fabric_05_1k/f.phmatgltf",
-      "files": {
-        "f.phmatgltf": "assets/imports/denim_fabric_05_1k/f.phmatgltf",
-        "denim_fabric_05.bin": "assets/imports/denim_fabric_05_1k/denim_fabric_05.bin",
-        "textures/denim_fabric_05_spec_ior_1k.jpg": "assets/imports/denim_fabric_05_1k/textures/denim_fabric_05_spec_ior_1k.jpg",
-        "textures/denim_fabric_05_nor_gl_1k.jpg": "assets/imports/denim_fabric_05_1k/textures/denim_fabric_05_nor_gl_1k.jpg",
-        "textures/denim_fabric_05_diff_1k.jpg": "assets/imports/denim_fabric_05_1k/textures/denim_fabric_05_diff_1k.jpg",
-        "textures/denim_fabric_05_arm_1k.jpg": "assets/imports/denim_fabric_05_1k/textures/denim_fabric_05_arm_1k.jpg"
-      }
-    },
-    "cheesebox_01_1k": {
-      "path": "assets/imports/cheesebox_01_1k/f.gltf",
-      "files": {
-        "f.gltf": "assets/imports/cheesebox_01_1k/f.gltf",
-        "CheeseBox_01.bin": "assets/imports/cheesebox_01_1k/CheeseBox_01.bin",
-        "textures/CheeseBox_01_nor_gl_1k.jpg": "assets/imports/cheesebox_01_1k/textures/CheeseBox_01_nor_gl_1k.jpg",
-        "textures/CheeseBox_01_diff_1k.jpg": "assets/imports/cheesebox_01_1k/textures/CheeseBox_01_diff_1k.jpg",
-        "textures/CheeseBox_01_arm_1k.jpg": "assets/imports/cheesebox_01_1k/textures/CheeseBox_01_arm_1k.jpg"
-      }
-    },
-    "drill_01_1k": {
-      "path": "assets/imports/drill_01_1k/f.gltf",
-      "files": {
-        "f.gltf": "assets/imports/drill_01_1k/f.gltf",
-        "Drill_01.bin": "assets/imports/drill_01_1k/Drill_01.bin",
-        "textures/Drill_01_nor_gl_1k.jpg": "assets/imports/drill_01_1k/textures/Drill_01_nor_gl_1k.jpg",
-        "textures/Drill_01_diff_1k.jpg": "assets/imports/drill_01_1k/textures/Drill_01_diff_1k.jpg",
-        "textures/Drill_01_arm_1k.jpg": "assets/imports/drill_01_1k/textures/Drill_01_arm_1k.jpg"
-      }
-    },
-    "desk_lamp_arm_01_1k": {
-      "path": "assets/imports/desk_lamp_arm_01_1k/f.gltf",
-      "files": {
-        "f.gltf": "assets/imports/desk_lamp_arm_01_1k/f.gltf",
-        "desk_lamp_arm_01.bin": "assets/imports/desk_lamp_arm_01_1k/desk_lamp_arm_01.bin",
-        "textures/desk_lamp_arm_01_nor_gl_1k.jpg": "assets/imports/desk_lamp_arm_01_1k/textures/desk_lamp_arm_01_nor_gl_1k.jpg",
-        "textures/desk_lamp_arm_01_diff_1k.jpg": "assets/imports/desk_lamp_arm_01_1k/textures/desk_lamp_arm_01_diff_1k.jpg",
-        "textures/desk_lamp_arm_01_arm_1k.jpg": "assets/imports/desk_lamp_arm_01_1k/textures/desk_lamp_arm_01_arm_1k.jpg"
-      }
-    },
-    "dead_quiver_trunk_1k": {
-      "path": "assets/imports/dead_quiver_trunk_1k/f.gltf",
-      "files": {
-        "f.gltf": "assets/imports/dead_quiver_trunk_1k/f.gltf",
-        "dead_quiver_trunk.bin": "assets/imports/dead_quiver_trunk_1k/dead_quiver_trunk.bin",
-        "textures/dead_quiver_trunk_nor_gl_1k.jpg": "assets/imports/dead_quiver_trunk_1k/textures/dead_quiver_trunk_nor_gl_1k.jpg",
-        "textures/dead_quiver_trunk_diff_1k.jpg": "assets/imports/dead_quiver_trunk_1k/textures/dead_quiver_trunk_diff_1k.jpg",
-        "textures/dead_quiver_trunk_arm_1k.jpg": "assets/imports/dead_quiver_trunk_1k/textures/dead_quiver_trunk_arm_1k.jpg"
-      }
-    },
-    "dead_quiver_branch_02_1k": {
-      "path": "assets/imports/dead_quiver_branch_02_1k/f.gltf",
-      "files": {
-        "f.gltf": "assets/imports/dead_quiver_branch_02_1k/f.gltf",
-        "dead_quiver_branch_02.bin": "assets/imports/dead_quiver_branch_02_1k/dead_quiver_branch_02.bin",
-        "textures/dead_quiver_branch_02_nor_gl_1k.jpg": "assets/imports/dead_quiver_branch_02_1k/textures/dead_quiver_branch_02_nor_gl_1k.jpg",
-        "textures/dead_quiver_branch_02_diff_1k.jpg": "assets/imports/dead_quiver_branch_02_1k/textures/dead_quiver_branch_02_diff_1k.jpg",
-        "textures/dead_quiver_branch_02_arm_1k.jpg": "assets/imports/dead_quiver_branch_02_1k/textures/dead_quiver_branch_02_arm_1k.jpg"
-      }
-    },
-    "dartboard_1k": {
-      "path": "assets/imports/dartboard_1k/f.gltf",
-      "files": {
-        "f.gltf": "assets/imports/dartboard_1k/f.gltf",
-        "dartboard.bin": "assets/imports/dartboard_1k/dartboard.bin",
-        "textures/dartboard_nor_gl_1k.jpg": "assets/imports/dartboard_1k/textures/dartboard_nor_gl_1k.jpg",
-        "textures/dartboard_diff_1k.jpg": "assets/imports/dartboard_1k/textures/dartboard_diff_1k.jpg",
-        "textures/dartboard_arm_1k.jpg": "assets/imports/dartboard_1k/textures/dartboard_arm_1k.jpg"
-      }
-    },
-    "drain_cleaner_1k": {
-      "path": "assets/imports/drain_cleaner_1k/f.gltf",
-      "files": {
-        "f.gltf": "assets/imports/drain_cleaner_1k/f.gltf",
-        "drain_cleaner.bin": "assets/imports/drain_cleaner_1k/drain_cleaner.bin",
-        "textures/drain_cleaner_nor_gl_1k.jpg": "assets/imports/drain_cleaner_1k/textures/drain_cleaner_nor_gl_1k.jpg",
-        "textures/drain_cleaner_diff_1k.jpg": "assets/imports/drain_cleaner_1k/textures/drain_cleaner_diff_1k.jpg",
-        "textures/drain_cleaner_arm_1k.jpg": "assets/imports/drain_cleaner_1k/textures/drain_cleaner_arm_1k.jpg"
+        "t1000.gltf": "assets/models/units/t1000/t1000.gltf",
+        "t1000.bin": "assets/models/units/t1000/t1000.bin",
+        "textures/roster/liquid-albedo.jpg": "assets/textures/roster/liquid-albedo.jpg",
+        "textures/roster/liquid-orm.png": "assets/textures/roster/liquid-orm.png",
+        "textures/roster/liquid-normal.png": "assets/textures/roster/liquid-normal.png"
       }
     },
     "v2-stopped-preview-019": {
@@ -877,6 +1192,123 @@
         "TextureAtlas_1005_baseColor.png": "assets/models/selected/5986d1487d9443b883d67b121c2c903c/TextureAtlas_1005_baseColor.png",
         "meshopt-0.bin": "assets/v2/performance/preview-019/meshopt-0.bin",
         "meshopt-1.bin": "assets/v2/performance/preview-019/meshopt-1.bin"
+      }
+    },
+    "weapon-grenade": {
+      "path": "assets/models/weapons/grenade/grenade.gltf",
+      "files": {
+        "grenade.gltf": "assets/models/weapons/grenade/grenade.gltf",
+        "grenade.bin": "assets/models/weapons/grenade/grenade.bin",
+        "grenade-albedo.jpg": "assets/models/weapons/grenade/grenade-albedo.jpg",
+        "grenade-normal.png": "assets/models/weapons/grenade/grenade-normal.png",
+        "grenade-orm.png": "assets/models/weapons/grenade/grenade-orm.png"
+      }
+    },
+    "weapon-hands": {
+      "path": "assets/models/weapons/hands/hands.gltf",
+      "files": {
+        "hands.gltf": "assets/models/weapons/hands/hands.gltf",
+        "hands.bin": "assets/models/weapons/hands/hands.bin",
+        "hands-albedo.jpg": "assets/models/weapons/hands/hands-albedo.jpg",
+        "hands-normal.png": "assets/models/weapons/hands/hands-normal.png",
+        "hands-orm.png": "assets/models/weapons/hands/hands-orm.png"
+      }
+    },
+    "weapon-knife": {
+      "path": "assets/models/weapons/knife/knife.gltf",
+      "files": {
+        "knife.gltf": "assets/models/weapons/knife/knife.gltf",
+        "knife.bin": "assets/models/weapons/knife/knife.bin",
+        "knife-albedo.jpg": "assets/models/weapons/knife/knife-albedo.jpg",
+        "knife-normal.png": "assets/models/weapons/knife/knife-normal.png",
+        "knife-orm.png": "assets/models/weapons/knife/knife-orm.png"
+      }
+    },
+    "weapon-launcher": {
+      "path": "assets/models/weapons/launcher/launcher.gltf",
+      "files": {
+        "launcher.gltf": "assets/models/weapons/launcher/launcher.gltf",
+        "launcher.bin": "assets/models/weapons/launcher/launcher.bin",
+        "launcher-albedo.jpg": "assets/models/weapons/launcher/launcher-albedo.jpg",
+        "launcher-normal.png": "assets/models/weapons/launcher/launcher-normal.png",
+        "launcher-orm.png": "assets/models/weapons/launcher/launcher-orm.png"
+      }
+    },
+    "weapon-m4": {
+      "path": "assets/models/weapons/m4/m4.gltf",
+      "files": {
+        "m4.gltf": "assets/models/weapons/m4/m4.gltf",
+        "m4.bin": "assets/models/weapons/m4/m4.bin",
+        "m4-albedo.jpg": "assets/models/weapons/m4/m4-albedo.jpg",
+        "m4-normal.png": "assets/models/weapons/m4/m4-normal.png",
+        "m4-orm.png": "assets/models/weapons/m4/m4-orm.png"
+      }
+    },
+    "weapon-pistol": {
+      "path": "assets/models/weapons/pistol/pistol.gltf",
+      "files": {
+        "pistol.gltf": "assets/models/weapons/pistol/pistol.gltf",
+        "pistol.bin": "assets/models/weapons/pistol/pistol.bin",
+        "pistol-normal.png": "assets/models/weapons/pistol/pistol-normal.png",
+        "pistol-orm.png": "assets/models/weapons/pistol/pistol-orm.png",
+        "pistol-albedo.png": "assets/models/weapons/pistol/pistol-albedo.png"
+      }
+    },
+    "weapon-plasma": {
+      "path": "assets/models/weapons/plasma/plasma.gltf",
+      "files": {
+        "plasma.gltf": "assets/models/weapons/plasma/plasma.gltf",
+        "plasma.bin": "assets/models/weapons/plasma/plasma.bin",
+        "plasma-albedo.jpg": "assets/models/weapons/plasma/plasma-albedo.jpg",
+        "plasma-normal.png": "assets/models/weapons/plasma/plasma-normal.png",
+        "plasma-orm.png": "assets/models/weapons/plasma/plasma-orm.png",
+        "plasma-emissive.png": "assets/models/weapons/plasma/plasma-emissive.png"
+      }
+    },
+    "weapon-revolver-rebuild": {
+      "path": "assets/models/weapons/revolver-rebuild/revolver-rebuild.gltf",
+      "files": {
+        "revolver-rebuild.gltf": "assets/models/weapons/revolver-rebuild/revolver-rebuild.gltf",
+        "LICENSES.md": "assets/models/weapons/revolver-rebuild/LICENSES.md",
+        "hand-attribution.json": "assets/models/weapons/revolver-rebuild/hand-attribution.json",
+        "revolver-rebuild.bin": "assets/models/weapons/revolver-rebuild/revolver-rebuild.bin",
+        "gun-normal.png": "assets/models/weapons/revolver-rebuild/gun-normal.png",
+        "gun-ao.png": "assets/models/weapons/revolver-rebuild/gun-ao.png",
+        "gun-orm.png": "assets/models/weapons/revolver-rebuild/gun-orm.png",
+        "gun-basecolor.png": "assets/models/weapons/revolver-rebuild/gun-basecolor.png",
+        "6aa3217682f84a9da397bf8e12f9b2b3.png": "assets/models/weapons/revolver-rebuild/6aa3217682f84a9da397bf8e12f9b2b3.png",
+        "f407ef890d8c4e3d84a76b99c91c3411.png": "assets/models/weapons/revolver-rebuild/f407ef890d8c4e3d84a76b99c91c3411.png",
+        "682a91cb011c45b2a89b92cfe169686f.png": "assets/models/weapons/revolver-rebuild/682a91cb011c45b2a89b92cfe169686f.png"
+      }
+    },
+    "weapon-shotgun": {
+      "path": "assets/models/weapons/shotgun/shotgun.gltf",
+      "files": {
+        "shotgun.gltf": "assets/models/weapons/shotgun/shotgun.gltf",
+        "shotgun.bin": "assets/models/weapons/shotgun/shotgun.bin",
+        "shotgun-albedo.jpg": "assets/models/weapons/shotgun/shotgun-albedo.jpg",
+        "shotgun-normal.png": "assets/models/weapons/shotgun/shotgun-normal.png",
+        "shotgun-orm.png": "assets/models/weapons/shotgun/shotgun-orm.png"
+      }
+    },
+    "weapon-sniper": {
+      "path": "assets/models/weapons/sniper/sniper.gltf",
+      "files": {
+        "sniper.gltf": "assets/models/weapons/sniper/sniper.gltf",
+        "sniper.bin": "assets/models/weapons/sniper/sniper.bin",
+        "sniper-albedo.jpg": "assets/models/weapons/sniper/sniper-albedo.jpg",
+        "sniper-normal.png": "assets/models/weapons/sniper/sniper-normal.png",
+        "sniper-orm.png": "assets/models/weapons/sniper/sniper-orm.png"
+      }
+    },
+    "weapon-swingout": {
+      "path": "assets/models/weapons/swingout/swingout.gltf",
+      "files": {
+        "swingout.gltf": "assets/models/weapons/swingout/swingout.gltf",
+        "swingout.bin": "assets/models/weapons/swingout/swingout.bin",
+        "swingout-normal.png": "assets/models/weapons/swingout/swingout-normal.png",
+        "swingout-orm.png": "assets/models/weapons/swingout/swingout-orm.png",
+        "swingout-albedo.png": "assets/models/weapons/swingout/swingout-albedo.png"
       }
     }
   }

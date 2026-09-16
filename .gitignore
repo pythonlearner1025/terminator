@@ -12,3 +12,9 @@ docs/evidence/**
 /node_modules
 /tools/blender/cache/
 /tools/blender/barrel/__pycache__/
+# Downloaded Blender source bundles stay outside the shipped project.
+tools/blender/cache/
+assets/reference/
+tools/blender/external/__pycache__/
+# Imported hand inspection artifacts and its isolated Python environment.
+generated/imported-hands/

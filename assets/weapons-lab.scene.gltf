@@ -1,0 +1,2859 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "tools/build-lab-scene.mjs; placed glTF assets only"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Weapons Lab",
+      "nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        17,
+        24,
+        31,
+        38,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "extensions": {},
+      "extras": {
+        "EntityComponentPlugin": {
+          "lab-lab_manager-component": {
+            "type": "WeaponsLab",
+            "state": {
+              "seed": 2029
+            }
+          }
+        },
+        "autoScaled": true,
+        "geometriesCentered": true,
+        "gltfUUID": "lab-lab_manager",
+        "isCentered": true,
+        "kite3dAuthoring": {
+          "id": "lab-lab_manager",
+          "role": "direct"
+        },
+        "name": "Lab_Manager"
+      },
+      "name": "Lab_Manager",
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "autoScaled": true,
+        "geometriesCentered": true,
+        "gltfAsset": {
+          "generator": "Terminator tools/build-lab-assets.mjs with glTF-Transform 4.5.0 and three.js",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-range",
+        "isCentered": true,
+        "kite3dAuthoring": {
+          "id": "lab-range",
+          "role": "direct"
+        },
+        "name": "Range",
+        "rootPath": "/kite3d/@lab-range-shell/f.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "uuid": "lab-range"
+      },
+      "name": "Range",
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "autoScaled": true,
+        "geometriesCentered": true,
+        "gltfAsset": {
+          "generator": "Terminator tools/build-lab-assets.mjs with glTF-Transform 4.5.0 and three.js",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-firing_line",
+        "isCentered": true,
+        "kite3dAuthoring": {
+          "id": "lab-firing_line",
+          "role": "direct"
+        },
+        "name": "Firing_Line",
+        "rootPath": "/kite3d/@lab-firing-line/f.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "uuid": "lab-firing_line"
+      },
+      "name": "Firing_Line",
+      "translation": [
+        -18,
+        0,
+        -13
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "autoScaled": true,
+        "geometriesCentered": true,
+        "gltfAsset": {
+          "generator": "Terminator tools/build-lab-assets.mjs with glTF-Transform 4.5.0 and three.js",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-turntable",
+        "isCentered": true,
+        "kite3dAuthoring": {
+          "id": "lab-turntable",
+          "role": "direct"
+        },
+        "name": "Turntable",
+        "rootPath": "/kite3d/@lab-turntable/f.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "uuid": "lab-turntable"
+      },
+      "name": "Turntable",
+      "translation": [
+        -16,
+        0,
+        -13
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "autoScaled": true,
+        "geometriesCentered": true,
+        "gltfUUID": "lab-candidates",
+        "isCentered": true,
+        "kite3dAuthoring": {
+          "id": "lab-candidates",
+          "role": "direct"
+        },
+        "name": "Candidates"
+      },
+      "name": "Candidates",
+      "translation": [
+        -19,
+        1.5,
+        -21
+      ],
+      "children": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "candidate": {
+          "weapon": "grenade",
+          "shippable": true
+        },
+        "gltfAsset": {
+          "generator": "Khronos glTF Blender I/O v5.2.40",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-candidate-grenade-3dmodels-cc0",
+        "kite3dAuthoring": {
+          "id": "lab-candidate-grenade-3dmodels-cc0",
+          "role": "direct"
+        },
+        "name": "Candidate grenade 3dmodels-cc0",
+        "rootPath": "/kite3d/@candidate-grenade-3dmodels-cc0/3dmodels-cc0.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "uuid": "lab-candidate-grenade-3dmodels-cc0"
+      },
+      "name": "Candidate grenade 3dmodels-cc0",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "candidate": {
+          "weapon": "knife",
+          "shippable": true
+        },
+        "gltfAsset": {
+          "generator": "Khronos glTF Blender I/O v5.2.40",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-candidate-knife-machete-cc0",
+        "kite3dAuthoring": {
+          "id": "lab-candidate-knife-machete-cc0",
+          "role": "direct"
+        },
+        "name": "Candidate knife machete-cc0",
+        "rootPath": "/kite3d/@candidate-knife-machete-cc0/machete-cc0.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "uuid": "lab-candidate-knife-machete-cc0"
+      },
+      "name": "Candidate knife machete-cc0",
+      "translation": [
+        0,
+        0,
+        2
+      ],
+      "rotation": [
+        0,
+        0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "candidate": {
+          "weapon": "m4",
+          "shippable": true
+        },
+        "gltfAsset": {
+          "generator": "Khronos glTF Blender I/O v5.2.40",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-candidate-m4-3dmodels-cc0",
+        "kite3dAuthoring": {
+          "id": "lab-candidate-m4-3dmodels-cc0",
+          "role": "direct"
+        },
+        "name": "Candidate m4 3dmodels-cc0",
+        "rootPath": "/kite3d/@candidate-m4-3dmodels-cc0/3dmodels-cc0.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "uuid": "lab-candidate-m4-3dmodels-cc0"
+      },
+      "name": "Candidate m4 3dmodels-cc0",
+      "translation": [
+        0,
+        0,
+        4
+      ],
+      "rotation": [
+        0,
+        0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "candidate": {
+          "weapon": "plasma",
+          "shippable": true
+        },
+        "gltfAsset": {
+          "generator": "Khronos glTF Blender I/O v5.2.40",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-candidate-plasma-a104-ccby",
+        "kite3dAuthoring": {
+          "id": "lab-candidate-plasma-a104-ccby",
+          "role": "direct"
+        },
+        "name": "Candidate plasma a104-ccby",
+        "rootPath": "/kite3d/@candidate-plasma-a104-ccby/a104-ccby.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "uuid": "lab-candidate-plasma-a104-ccby"
+      },
+      "name": "Candidate plasma a104-ccby",
+      "translation": [
+        0,
+        0,
+        5
+      ],
+      "rotation": [
+        0,
+        0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "candidate": {
+          "weapon": "revolver",
+          "shippable": true
+        },
+        "gltfAsset": {
+          "generator": "Khronos glTF Blender I/O v5.2.40",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-candidate-revolver-detective-cc0",
+        "kite3dAuthoring": {
+          "id": "lab-candidate-revolver-detective-cc0",
+          "role": "direct"
+        },
+        "name": "Candidate revolver detective-cc0",
+        "rootPath": "/kite3d/@candidate-revolver-detective-cc0/detective-cc0.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "uuid": "lab-candidate-revolver-detective-cc0"
+      },
+      "name": "Candidate revolver detective-cc0",
+      "translation": [
+        0,
+        0,
+        6
+      ],
+      "rotation": [
+        0,
+        0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "candidate": {
+          "weapon": "revolver",
+          "shippable": true
+        },
+        "gltfAsset": {
+          "generator": "Khronos glTF Blender I/O v5.2.40",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-candidate-revolver-loafbrr-cc0",
+        "kite3dAuthoring": {
+          "id": "lab-candidate-revolver-loafbrr-cc0",
+          "role": "direct"
+        },
+        "name": "Candidate revolver loafbrr-cc0",
+        "rootPath": "/kite3d/@candidate-revolver-loafbrr-cc0/loafbrr-cc0.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "uuid": "lab-candidate-revolver-loafbrr-cc0"
+      },
+      "name": "Candidate revolver loafbrr-cc0",
+      "translation": [
+        0,
+        0,
+        8
+      ],
+      "rotation": [
+        0,
+        0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "candidate": {
+          "weapon": "revolver",
+          "shippable": true,
+          "derivedFrom": "candidate-revolver-loafbrr-cc0"
+        },
+        "gltfAsset": {
+          "generator": "Khronos glTF Blender I/O v5.2.40",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-candidate-revolver-loafbrr-cc0-hd",
+        "kite3dAuthoring": {
+          "id": "lab-candidate-revolver-loafbrr-cc0-hd",
+          "role": "direct"
+        },
+        "name": "Candidate revolver loafbrr-cc0-hd",
+        "rootPath": "/kite3d/@candidate-revolver-loafbrr-cc0-hd/loafbrr-cc0-hd.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "uuid": "lab-candidate-revolver-loafbrr-cc0-hd"
+      },
+      "name": "Candidate revolver loafbrr-cc0-hd",
+      "translation": [
+        1,
+        0,
+        8
+      ],
+      "rotation": [
+        0,
+        0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "candidate": {
+          "weapon": "revolver",
+          "shippable": true
+        },
+        "gltfAsset": {
+          "generator": "Khronos glTF Blender I/O v5.2.40",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-candidate-revolver-pavel-cc0",
+        "kite3dAuthoring": {
+          "id": "lab-candidate-revolver-pavel-cc0",
+          "role": "direct"
+        },
+        "name": "Candidate revolver pavel-cc0",
+        "rootPath": "/kite3d/@candidate-revolver-pavel-cc0/pavel-cc0.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "uuid": "lab-candidate-revolver-pavel-cc0"
+      },
+      "name": "Candidate revolver pavel-cc0",
+      "translation": [
+        0,
+        0,
+        10
+      ],
+      "rotation": [
+        0,
+        0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "candidate": {
+          "weapon": "revolver",
+          "shippable": true
+        },
+        "gltfAsset": {
+          "generator": "Khronos glTF Blender I/O v5.2.40",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-candidate-revolver-webley-ccby",
+        "kite3dAuthoring": {
+          "id": "lab-candidate-revolver-webley-ccby",
+          "role": "direct"
+        },
+        "name": "Candidate revolver webley-ccby",
+        "rootPath": "/kite3d/@candidate-revolver-webley-ccby/webley-ccby.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "uuid": "lab-candidate-revolver-webley-ccby"
+      },
+      "name": "Candidate revolver webley-ccby",
+      "translation": [
+        0,
+        0,
+        11
+      ],
+      "rotation": [
+        0,
+        0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "candidate": {
+          "weapon": "shotgun",
+          "shippable": true
+        },
+        "gltfAsset": {
+          "generator": "Khronos glTF Blender I/O v5.2.40",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-candidate-shotgun-3dmodels-cc0",
+        "kite3dAuthoring": {
+          "id": "lab-candidate-shotgun-3dmodels-cc0",
+          "role": "direct"
+        },
+        "name": "Candidate shotgun 3dmodels-cc0",
+        "rootPath": "/kite3d/@candidate-shotgun-3dmodels-cc0/3dmodels-cc0.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "uuid": "lab-candidate-shotgun-3dmodels-cc0"
+      },
+      "name": "Candidate shotgun 3dmodels-cc0",
+      "translation": [
+        0,
+        0,
+        12
+      ],
+      "rotation": [
+        0,
+        0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "candidate": {
+          "weapon": "shotgun",
+          "shippable": true,
+          "derivedFrom": "candidate-shotgun-3dmodels-cc0"
+        },
+        "gltfAsset": {
+          "generator": "Khronos glTF Blender I/O v5.2.40",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-candidate-shotgun-3dmodels-cc0-hd",
+        "kite3dAuthoring": {
+          "id": "lab-candidate-shotgun-3dmodels-cc0-hd",
+          "role": "direct"
+        },
+        "name": "Candidate shotgun 3dmodels-cc0-hd",
+        "rootPath": "/kite3d/@candidate-shotgun-3dmodels-cc0-hd/3dmodels-cc0-hd.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "uuid": "lab-candidate-shotgun-3dmodels-cc0-hd"
+      },
+      "name": "Candidate shotgun 3dmodels-cc0-hd",
+      "translation": [
+        1,
+        0,
+        12
+      ],
+      "rotation": [
+        0,
+        0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "candidate": {
+          "weapon": "sniper",
+          "shippable": true
+        },
+        "gltfAsset": {
+          "generator": "Khronos glTF Blender I/O v5.2.40",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-candidate-sniper-3dmodels-cc0",
+        "kite3dAuthoring": {
+          "id": "lab-candidate-sniper-3dmodels-cc0",
+          "role": "direct"
+        },
+        "name": "Candidate sniper 3dmodels-cc0",
+        "rootPath": "/kite3d/@candidate-sniper-3dmodels-cc0/3dmodels-cc0.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "uuid": "lab-candidate-sniper-3dmodels-cc0"
+      },
+      "name": "Candidate sniper 3dmodels-cc0",
+      "translation": [
+        0,
+        0,
+        15
+      ],
+      "rotation": [
+        0,
+        0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "autoScaled": true,
+        "geometriesCentered": true,
+        "gltfUUID": "lab-targets_10m",
+        "isCentered": true,
+        "kite3dAuthoring": {
+          "id": "lab-targets_10m",
+          "role": "direct"
+        },
+        "name": "Targets_10m"
+      },
+      "name": "Targets_10m",
+      "translation": [
+        -8,
+        0,
+        -13
+      ],
+      "children": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "gltfAsset": {
+          "generator": "Terminator build-unit-assets.mjs using Three.js and glTF Transform",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-10-scout",
+        "kite3dAuthoring": {
+          "id": "lab-10-scout",
+          "role": "direct"
+        },
+        "name": "10m Scout Target",
+        "rootPath": "/kite3d/@unit-scout/scout.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "unitAsset": true,
+        "unitTemplateType": "scout",
+        "uuid": "lab-10-scout"
+      },
+      "name": "10m Scout Target",
+      "translation": [
+        0,
+        0,
+        -8.7
+      ],
+      "rotation": [
+        0,
+        -0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "gltfAsset": {
+          "generator": "Terminator build-unit-assets.mjs using Three.js and glTF Transform",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-10-endo",
+        "kite3dAuthoring": {
+          "id": "lab-10-endo",
+          "role": "direct"
+        },
+        "name": "10m Endo Target",
+        "rootPath": "/kite3d/@unit-endo/endo.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "unitAsset": true,
+        "unitTemplateType": "endo",
+        "uuid": "lab-10-endo"
+      },
+      "name": "10m Endo Target",
+      "translation": [
+        0,
+        0,
+        -6.800000000000001
+      ],
+      "rotation": [
+        0,
+        -0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "gltfAsset": {
+          "generator": "Terminator build-unit-assets.mjs using Three.js and glTF Transform",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-10-heavy",
+        "kite3dAuthoring": {
+          "id": "lab-10-heavy",
+          "role": "direct"
+        },
+        "name": "10m Heavy Target",
+        "rootPath": "/kite3d/@unit-heavy/heavy.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "unitAsset": true,
+        "unitTemplateType": "heavy",
+        "uuid": "lab-10-heavy"
+      },
+      "name": "10m Heavy Target",
+      "translation": [
+        0,
+        0,
+        -4.699999999999999
+      ],
+      "rotation": [
+        0,
+        -0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "gltfAsset": {
+          "generator": "Terminator build-unit-assets.mjs using Three.js and glTF Transform",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-10-t1000",
+        "kite3dAuthoring": {
+          "id": "lab-10-t1000",
+          "role": "direct"
+        },
+        "name": "10m T-1000 Target",
+        "rootPath": "/kite3d/@unit-t1000/t1000.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "unitAsset": true,
+        "unitTemplateType": "t1000",
+        "uuid": "lab-10-t1000"
+      },
+      "name": "10m T-1000 Target",
+      "translation": [
+        0,
+        0,
+        -2.5999999999999996
+      ],
+      "rotation": [
+        0,
+        -0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "gltfAsset": {
+          "generator": "Terminator build-unit-assets.mjs using Three.js and glTF Transform",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-10-hkaerial",
+        "kite3dAuthoring": {
+          "id": "lab-10-hkaerial",
+          "role": "direct"
+        },
+        "name": "10m HK-Aerial Target",
+        "rootPath": "/kite3d/@unit-hkaerial/hkaerial.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "unitAsset": true,
+        "unitTemplateType": "hkaerial",
+        "uuid": "lab-10-hkaerial"
+      },
+      "name": "10m HK-Aerial Target",
+      "translation": [
+        0,
+        4,
+        0.5999999999999996
+      ],
+      "rotation": [
+        0,
+        -0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "gltfAsset": {
+          "generator": "Terminator build-unit-assets.mjs using Three.js and glTF Transform",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-10-hktank",
+        "kite3dAuthoring": {
+          "id": "lab-10-hktank",
+          "role": "direct"
+        },
+        "name": "10m HK-Tank Target",
+        "rootPath": "/kite3d/@unit-hktank/hktank.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "unitAsset": true,
+        "unitTemplateType": "hktank",
+        "uuid": "lab-10-hktank"
+      },
+      "name": "10m HK-Tank Target",
+      "translation": [
+        0,
+        0,
+        5.7
+      ],
+      "rotation": [
+        0,
+        -0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "autoScaled": true,
+        "geometriesCentered": true,
+        "gltfUUID": "lab-targets_20m",
+        "isCentered": true,
+        "kite3dAuthoring": {
+          "id": "lab-targets_20m",
+          "role": "direct"
+        },
+        "name": "Targets_20m"
+      },
+      "name": "Targets_20m",
+      "translation": [
+        2,
+        0,
+        -13
+      ],
+      "children": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "gltfAsset": {
+          "generator": "Terminator build-unit-assets.mjs using Three.js and glTF Transform",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-20-scout",
+        "kite3dAuthoring": {
+          "id": "lab-20-scout",
+          "role": "direct"
+        },
+        "name": "20m Scout Target",
+        "rootPath": "/kite3d/@unit-scout/scout.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "unitAsset": true,
+        "unitTemplateType": "scout",
+        "uuid": "lab-20-scout"
+      },
+      "name": "20m Scout Target",
+      "translation": [
+        0,
+        0,
+        -8.7
+      ],
+      "rotation": [
+        0,
+        -0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "gltfAsset": {
+          "generator": "Terminator build-unit-assets.mjs using Three.js and glTF Transform",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-20-endo",
+        "kite3dAuthoring": {
+          "id": "lab-20-endo",
+          "role": "direct"
+        },
+        "name": "20m Endo Target",
+        "rootPath": "/kite3d/@unit-endo/endo.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "unitAsset": true,
+        "unitTemplateType": "endo",
+        "uuid": "lab-20-endo"
+      },
+      "name": "20m Endo Target",
+      "translation": [
+        0,
+        0,
+        -6.800000000000001
+      ],
+      "rotation": [
+        0,
+        -0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "gltfAsset": {
+          "generator": "Terminator build-unit-assets.mjs using Three.js and glTF Transform",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-20-heavy",
+        "kite3dAuthoring": {
+          "id": "lab-20-heavy",
+          "role": "direct"
+        },
+        "name": "20m Heavy Target",
+        "rootPath": "/kite3d/@unit-heavy/heavy.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "unitAsset": true,
+        "unitTemplateType": "heavy",
+        "uuid": "lab-20-heavy"
+      },
+      "name": "20m Heavy Target",
+      "translation": [
+        0,
+        0,
+        -4.699999999999999
+      ],
+      "rotation": [
+        0,
+        -0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "gltfAsset": {
+          "generator": "Terminator build-unit-assets.mjs using Three.js and glTF Transform",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-20-t1000",
+        "kite3dAuthoring": {
+          "id": "lab-20-t1000",
+          "role": "direct"
+        },
+        "name": "20m T-1000 Target",
+        "rootPath": "/kite3d/@unit-t1000/t1000.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "unitAsset": true,
+        "unitTemplateType": "t1000",
+        "uuid": "lab-20-t1000"
+      },
+      "name": "20m T-1000 Target",
+      "translation": [
+        0,
+        0,
+        -2.5999999999999996
+      ],
+      "rotation": [
+        0,
+        -0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "gltfAsset": {
+          "generator": "Terminator build-unit-assets.mjs using Three.js and glTF Transform",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-20-hkaerial",
+        "kite3dAuthoring": {
+          "id": "lab-20-hkaerial",
+          "role": "direct"
+        },
+        "name": "20m HK-Aerial Target",
+        "rootPath": "/kite3d/@unit-hkaerial/hkaerial.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "unitAsset": true,
+        "unitTemplateType": "hkaerial",
+        "uuid": "lab-20-hkaerial"
+      },
+      "name": "20m HK-Aerial Target",
+      "translation": [
+        0,
+        4,
+        0.5999999999999996
+      ],
+      "rotation": [
+        0,
+        -0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "gltfAsset": {
+          "generator": "Terminator build-unit-assets.mjs using Three.js and glTF Transform",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-20-hktank",
+        "kite3dAuthoring": {
+          "id": "lab-20-hktank",
+          "role": "direct"
+        },
+        "name": "20m HK-Tank Target",
+        "rootPath": "/kite3d/@unit-hktank/hktank.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "unitAsset": true,
+        "unitTemplateType": "hktank",
+        "uuid": "lab-20-hktank"
+      },
+      "name": "20m HK-Tank Target",
+      "translation": [
+        0,
+        0,
+        5.7
+      ],
+      "rotation": [
+        0,
+        -0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "autoScaled": true,
+        "geometriesCentered": true,
+        "gltfUUID": "lab-targets_40m",
+        "isCentered": true,
+        "kite3dAuthoring": {
+          "id": "lab-targets_40m",
+          "role": "direct"
+        },
+        "name": "Targets_40m"
+      },
+      "name": "Targets_40m",
+      "translation": [
+        22,
+        0,
+        -13
+      ],
+      "children": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "gltfAsset": {
+          "generator": "Terminator build-unit-assets.mjs using Three.js and glTF Transform",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-40-scout",
+        "kite3dAuthoring": {
+          "id": "lab-40-scout",
+          "role": "direct"
+        },
+        "name": "40m Scout Target",
+        "rootPath": "/kite3d/@unit-scout/scout.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "unitAsset": true,
+        "unitTemplateType": "scout",
+        "uuid": "lab-40-scout"
+      },
+      "name": "40m Scout Target",
+      "translation": [
+        0,
+        0,
+        -8.7
+      ],
+      "rotation": [
+        0,
+        -0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "gltfAsset": {
+          "generator": "Terminator build-unit-assets.mjs using Three.js and glTF Transform",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-40-endo",
+        "kite3dAuthoring": {
+          "id": "lab-40-endo",
+          "role": "direct"
+        },
+        "name": "40m Endo Target",
+        "rootPath": "/kite3d/@unit-endo/endo.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "unitAsset": true,
+        "unitTemplateType": "endo",
+        "uuid": "lab-40-endo"
+      },
+      "name": "40m Endo Target",
+      "translation": [
+        0,
+        0,
+        -6.800000000000001
+      ],
+      "rotation": [
+        0,
+        -0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "gltfAsset": {
+          "generator": "Terminator build-unit-assets.mjs using Three.js and glTF Transform",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-40-heavy",
+        "kite3dAuthoring": {
+          "id": "lab-40-heavy",
+          "role": "direct"
+        },
+        "name": "40m Heavy Target",
+        "rootPath": "/kite3d/@unit-heavy/heavy.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "unitAsset": true,
+        "unitTemplateType": "heavy",
+        "uuid": "lab-40-heavy"
+      },
+      "name": "40m Heavy Target",
+      "translation": [
+        0,
+        0,
+        -4.699999999999999
+      ],
+      "rotation": [
+        0,
+        -0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "gltfAsset": {
+          "generator": "Terminator build-unit-assets.mjs using Three.js and glTF Transform",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-40-t1000",
+        "kite3dAuthoring": {
+          "id": "lab-40-t1000",
+          "role": "direct"
+        },
+        "name": "40m T-1000 Target",
+        "rootPath": "/kite3d/@unit-t1000/t1000.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "unitAsset": true,
+        "unitTemplateType": "t1000",
+        "uuid": "lab-40-t1000"
+      },
+      "name": "40m T-1000 Target",
+      "translation": [
+        0,
+        0,
+        -2.5999999999999996
+      ],
+      "rotation": [
+        0,
+        -0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "gltfAsset": {
+          "generator": "Terminator build-unit-assets.mjs using Three.js and glTF Transform",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-40-hkaerial",
+        "kite3dAuthoring": {
+          "id": "lab-40-hkaerial",
+          "role": "direct"
+        },
+        "name": "40m HK-Aerial Target",
+        "rootPath": "/kite3d/@unit-hkaerial/hkaerial.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "unitAsset": true,
+        "unitTemplateType": "hkaerial",
+        "uuid": "lab-40-hkaerial"
+      },
+      "name": "40m HK-Aerial Target",
+      "translation": [
+        0,
+        4,
+        0.5999999999999996
+      ],
+      "rotation": [
+        0,
+        -0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "gltfAsset": {
+          "generator": "Terminator build-unit-assets.mjs using Three.js and glTF Transform",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-40-hktank",
+        "kite3dAuthoring": {
+          "id": "lab-40-hktank",
+          "role": "direct"
+        },
+        "name": "40m HK-Tank Target",
+        "rootPath": "/kite3d/@unit-hktank/hktank.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "unitAsset": true,
+        "unitTemplateType": "hktank",
+        "uuid": "lab-40-hktank"
+      },
+      "name": "40m HK-Tank Target",
+      "translation": [
+        0,
+        0,
+        5.7
+      ],
+      "rotation": [
+        0,
+        -0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "autoScaled": true,
+        "geometriesCentered": true,
+        "gltfUUID": "lab-plates",
+        "isCentered": true,
+        "kite3dAuthoring": {
+          "id": "lab-plates",
+          "role": "direct"
+        },
+        "name": "Plates"
+      },
+      "name": "Plates",
+      "translation": [
+        -3,
+        0,
+        -13
+      ],
+      "children": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "gltfAsset": {
+          "generator": "Terminator tools/build-range-assets.mjs with glTF-Transform 4.5.0 and three.js",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-plate-1",
+        "kite3dAuthoring": {
+          "id": "lab-plate-1",
+          "role": "direct"
+        },
+        "name": "Plate 1",
+        "rootPath": "/kite3d/@range-steel-target/f.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "uuid": "lab-plate-1"
+      },
+      "name": "Plate 1",
+      "translation": [
+        0,
+        0,
+        -8
+      ],
+      "rotation": [
+        0,
+        0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "gltfAsset": {
+          "generator": "Terminator tools/build-range-assets.mjs with glTF-Transform 4.5.0 and three.js",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-plate-2",
+        "kite3dAuthoring": {
+          "id": "lab-plate-2",
+          "role": "direct"
+        },
+        "name": "Plate 2",
+        "rootPath": "/kite3d/@range-steel-target/f.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "uuid": "lab-plate-2"
+      },
+      "name": "Plate 2",
+      "translation": [
+        0,
+        0,
+        -5
+      ],
+      "rotation": [
+        0,
+        0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "gltfAsset": {
+          "generator": "Terminator tools/build-range-assets.mjs with glTF-Transform 4.5.0 and three.js",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-plate-3",
+        "kite3dAuthoring": {
+          "id": "lab-plate-3",
+          "role": "direct"
+        },
+        "name": "Plate 3",
+        "rootPath": "/kite3d/@range-steel-target/f.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "uuid": "lab-plate-3"
+      },
+      "name": "Plate 3",
+      "translation": [
+        0,
+        0,
+        -2
+      ],
+      "rotation": [
+        0,
+        0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "gltfAsset": {
+          "generator": "Terminator tools/build-range-assets.mjs with glTF-Transform 4.5.0 and three.js",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-plate-4",
+        "kite3dAuthoring": {
+          "id": "lab-plate-4",
+          "role": "direct"
+        },
+        "name": "Plate 4",
+        "rootPath": "/kite3d/@range-steel-target/f.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "uuid": "lab-plate-4"
+      },
+      "name": "Plate 4",
+      "translation": [
+        0,
+        0,
+        1
+      ],
+      "rotation": [
+        0,
+        0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "gltfAsset": {
+          "generator": "Terminator tools/build-range-assets.mjs with glTF-Transform 4.5.0 and three.js",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-plate-5",
+        "kite3dAuthoring": {
+          "id": "lab-plate-5",
+          "role": "direct"
+        },
+        "name": "Plate 5",
+        "rootPath": "/kite3d/@range-steel-target/f.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "uuid": "lab-plate-5"
+      },
+      "name": "Plate 5",
+      "translation": [
+        0,
+        0,
+        4
+      ],
+      "rotation": [
+        0,
+        0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "gltfAsset": {
+          "generator": "Terminator tools/build-range-assets.mjs with glTF-Transform 4.5.0 and three.js",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-plate-6",
+        "kite3dAuthoring": {
+          "id": "lab-plate-6",
+          "role": "direct"
+        },
+        "name": "Plate 6",
+        "rootPath": "/kite3d/@range-steel-target/f.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "uuid": "lab-plate-6"
+      },
+      "name": "Plate 6",
+      "translation": [
+        0,
+        0,
+        7
+      ],
+      "rotation": [
+        0,
+        0.7071067811865476,
+        0,
+        0.7071067811865476
+      ]
+    },
+    {
+      "extensions": {
+        "KHR_lights_punctual": {
+          "light": 0
+        },
+        "WEBGI_light_extras": {
+          "shadow": {
+            "camera": {
+              "bottom": -5,
+              "far": 500,
+              "layers": 1,
+              "left": -5,
+              "near": 0.5,
+              "right": 5,
+              "top": 5,
+              "type": "OrthographicCamera",
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "zoom": 1
+            }
+          }
+        },
+        "WEBGI_object3d_extras": {
+          "castShadow": true
+        }
+      },
+      "extras": {
+        "autoScaled": true,
+        "geometriesCentered": true,
+        "gltfUUID": "lab-lights_night",
+        "isCentered": true,
+        "kite3dAuthoring": {
+          "id": "lab-lights_night",
+          "role": "direct"
+        },
+        "name": "Lights_Night"
+      },
+      "name": "Lights_Night",
+      "translation": [
+        -16,
+        8,
+        -8
+      ],
+      "rotation": [
+        -0.45758158085794043,
+        0,
+        0,
+        0.88916764271961
+      ]
+    },
+    {
+      "extensions": {
+        "KHR_lights_punctual": {
+          "light": 1
+        },
+        "WEBGI_light_extras": {
+          "shadow": {
+            "camera": {
+              "bottom": -5,
+              "far": 500,
+              "layers": 1,
+              "left": -5,
+              "near": 0.5,
+              "right": 5,
+              "top": 5,
+              "type": "OrthographicCamera",
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "zoom": 1
+            }
+          }
+        },
+        "WEBGI_object3d_extras": {
+          "castShadow": true
+        }
+      },
+      "extras": {
+        "autoScaled": true,
+        "geometriesCentered": true,
+        "gltfUUID": "lab-lights_overcast",
+        "isCentered": true,
+        "kite3dAuthoring": {
+          "id": "lab-lights_overcast",
+          "role": "direct"
+        },
+        "name": "Lights_Overcast"
+      },
+      "name": "Lights_Overcast",
+      "translation": [
+        -10,
+        14,
+        -17
+      ],
+      "rotation": [
+        -0.2394251821032146,
+        0.759743470504423,
+        0.4473700449722908,
+        0.4066023660312713
+      ]
+    },
+    {
+      "extensions": {
+        "KHR_lights_punctual": {
+          "light": 2
+        },
+        "WEBGI_light_extras": {
+          "shadow": {
+            "camera": {
+              "bottom": -5,
+              "far": 500,
+              "layers": 1,
+              "left": -5,
+              "near": 0.5,
+              "right": 5,
+              "top": 5,
+              "type": "OrthographicCamera",
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "zoom": 1
+            }
+          }
+        },
+        "WEBGI_object3d_extras": {
+          "castShadow": true
+        }
+      },
+      "extras": {
+        "autoScaled": true,
+        "geometriesCentered": true,
+        "gltfUUID": "lab-lights_noon",
+        "isCentered": true,
+        "kite3dAuthoring": {
+          "id": "lab-lights_noon",
+          "role": "direct"
+        },
+        "name": "Lights_Noon"
+      },
+      "name": "Lights_Noon",
+      "translation": [
+        8,
+        18,
+        -5
+      ],
+      "rotation": [
+        -0.2365103399077215,
+        0.5593094994113517,
+        0.17046700812709872,
+        0.776000478173276
+      ]
+    },
+    {
+      "camera": 0,
+      "extensions": {},
+      "extras": {
+        "autoScaled": true,
+        "geometriesCentered": true,
+        "gltfUUID": "lab-lab_camera",
+        "isCentered": true,
+        "kite3dAuthoring": {
+          "id": "lab-lab_camera",
+          "role": "direct"
+        },
+        "maxFarPlane": 180,
+        "minNearPlane": 0.05,
+        "name": "Lab_Camera"
+      },
+      "name": "Lab_Camera",
+      "translation": [
+        -30,
+        17,
+        10
+      ],
+      "rotation": [
+        -0.17228962403638837,
+        -0.45987012503613706,
+        -0.0914591944374239,
+        0.8662972753630853
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "autoScaled": true,
+        "geometriesCentered": true,
+        "gltfAsset": {
+          "generator": "Terminator build-unit-assets.mjs using Three.js and glTF Transform",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "terminator-node-unit-template-scout",
+        "isCentered": true,
+        "kite3dAuthoring": {
+          "id": "lab-unit-template-scout",
+          "role": "template"
+        },
+        "name": "Unit Template Scout",
+        "rootPath": "/kite3d/@unit-scout/scout.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "unitAsset": true,
+        "unitTemplateType": "scout",
+        "uuid": "terminator-node-unit-template-scout"
+      },
+      "name": "Unit T-600 Scout",
+      "translation": [
+        -21,
+        0,
+        -21
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "autoScaled": true,
+        "geometriesCentered": true,
+        "gltfAsset": {
+          "generator": "Terminator build-unit-assets.mjs using Three.js and glTF Transform",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "terminator-node-unit-template-endo",
+        "isCentered": true,
+        "kite3dAuthoring": {
+          "id": "lab-unit-template-endo",
+          "role": "template"
+        },
+        "name": "Unit Template Endo",
+        "rootPath": "/kite3d/@unit-endo/endo.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "unitAsset": true,
+        "unitTemplateType": "endo",
+        "uuid": "terminator-node-unit-template-endo"
+      },
+      "name": "Unit T-800 Endo",
+      "translation": [
+        -21,
+        0,
+        -18.1
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "autoScaled": true,
+        "geometriesCentered": true,
+        "gltfAsset": {
+          "generator": "Terminator build-unit-assets.mjs using Three.js and glTF Transform",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "terminator-node-unit-template-heavy",
+        "isCentered": true,
+        "kite3dAuthoring": {
+          "id": "lab-unit-template-heavy",
+          "role": "template"
+        },
+        "name": "Unit Template Heavy",
+        "rootPath": "/kite3d/@unit-heavy/heavy.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "unitAsset": true,
+        "unitTemplateType": "heavy",
+        "uuid": "terminator-node-unit-template-heavy"
+      },
+      "name": "Unit T-800 Heavy",
+      "translation": [
+        -21,
+        0,
+        -15.2
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "autoScaled": true,
+        "geometriesCentered": true,
+        "gltfAsset": {
+          "generator": "Terminator build-unit-assets.mjs using Three.js and glTF Transform",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "terminator-node-unit-template-t1000",
+        "isCentered": true,
+        "kite3dAuthoring": {
+          "id": "lab-unit-template-t-1000",
+          "role": "template"
+        },
+        "name": "Unit Template T-1000",
+        "rootPath": "/kite3d/@unit-t1000/t1000.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "unitAsset": true,
+        "unitTemplateType": "t1000",
+        "uuid": "terminator-node-unit-template-t1000"
+      },
+      "name": "Unit T-1000",
+      "translation": [
+        -21,
+        0,
+        -12.3
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "autoScaled": true,
+        "geometriesCentered": true,
+        "gltfAsset": {
+          "generator": "Terminator build-unit-assets.mjs using Three.js and glTF Transform",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "terminator-node-unit-template-hkaerial",
+        "isCentered": true,
+        "kite3dAuthoring": {
+          "id": "lab-unit-template-hk-aerial",
+          "role": "template"
+        },
+        "name": "Unit Template HK-Aerial",
+        "rootPath": "/kite3d/@unit-hkaerial/hkaerial.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "unitAsset": true,
+        "unitTemplateType": "hkaerial",
+        "uuid": "terminator-node-unit-template-hkaerial"
+      },
+      "name": "Unit HK-Aerial",
+      "translation": [
+        -21,
+        4,
+        -9.4
+      ]
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "autoScaled": true,
+        "geometriesCentered": true,
+        "gltfAsset": {
+          "generator": "Terminator build-unit-assets.mjs using Three.js and glTF Transform",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "terminator-node-unit-template-hktank",
+        "isCentered": true,
+        "kite3dAuthoring": {
+          "id": "lab-unit-template-hk-tank",
+          "role": "template"
+        },
+        "name": "Unit Template HK-Tank",
+        "rootPath": "/kite3d/@unit-hktank/hktank.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "unitAsset": true,
+        "unitTemplateType": "hktank",
+        "uuid": "terminator-node-unit-template-hktank"
+      },
+      "name": "Unit HK-Tank",
+      "translation": [
+        -21,
+        0,
+        -6.5
+      ]
+    },
+    {
+      "name": "Rebuilt Revolver Template",
+      "translation": [
+        -18,
+        1.55,
+        -19
+      ],
+      "extras": {
+        "gltfUUID": "lab-weapon-revolver-rebuild",
+        "kite3dAuthoring": {
+          "role": "template",
+          "id": "lab-weapon-revolver-rebuild"
+        },
+        "rootPath": "/kite3d/@weapon-revolver-rebuild/revolver-rebuild.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "weaponAsset": "revolver-rebuild"
+      }
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "autoScaled": true,
+        "geometriesCentered": true,
+        "gltfAsset": {
+          "generator": "Khronos glTF Blender I/O v5.2.40",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "weapon-template-pistol",
+        "isCentered": true,
+        "kite3dAuthoring": {
+          "id": "weapon-template-pistol",
+          "role": "template"
+        },
+        "name": "Weapon Template pistol",
+        "rootPath": "/kite3d/@weapon-pistol/pistol.gltf",
+        "rootPathOptions": {},
+        "sProperties": [
+          "position",
+          "rotation",
+          "quaternion",
+          "scale",
+          "visible",
+          "name"
+        ],
+        "uuid": "weapon-template-pistol",
+        "weaponAsset": "pistol"
+      },
+      "matrix": [
+        2.220446049250313e-16,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2.220446049250313e-16,
+        0,
+        -21,
+        1.2,
+        -4.2,
+        1
+      ],
+      "name": "Weapon_Template_pistol"
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "autoScaled": true,
+        "geometriesCentered": true,
+        "gltfAsset": {
+          "generator": "Terminator original weapon authoring, glTF Transform 4.3",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "weapon-template-m4",
+        "isCentered": true,
+        "kite3dAuthoring": {
+          "id": "weapon-template-m4",
+          "role": "template"
+        },
+        "name": "Weapon Template m4",
+        "rootPath": "/kite3d/@weapon-m4/m4.gltf",
+        "rootPathOptions": {},
+        "sProperties": [
+          "position",
+          "rotation",
+          "quaternion",
+          "scale",
+          "visible",
+          "name"
+        ],
+        "uuid": "weapon-template-m4",
+        "weaponAsset": "m4"
+      },
+      "matrix": [
+        2.220446049250313e-16,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2.220446049250313e-16,
+        0,
+        -20.44,
+        1.2,
+        -4.2,
+        1
+      ],
+      "name": "Weapon_Template_m4"
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "autoScaled": true,
+        "geometriesCentered": true,
+        "gltfAsset": {
+          "generator": "Terminator original weapon authoring, glTF Transform 4.3",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "weapon-template-shotgun",
+        "isCentered": true,
+        "kite3dAuthoring": {
+          "id": "weapon-template-shotgun",
+          "role": "template"
+        },
+        "name": "Weapon Template shotgun",
+        "rootPath": "/kite3d/@weapon-shotgun/shotgun.gltf",
+        "rootPathOptions": {},
+        "sProperties": [
+          "position",
+          "rotation",
+          "quaternion",
+          "scale",
+          "visible",
+          "name"
+        ],
+        "uuid": "weapon-template-shotgun",
+        "weaponAsset": "shotgun"
+      },
+      "matrix": [
+        2.220446049250313e-16,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2.220446049250313e-16,
+        0,
+        -19.88,
+        1.2,
+        -4.2,
+        1
+      ],
+      "name": "Weapon_Template_shotgun"
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "autoScaled": true,
+        "geometriesCentered": true,
+        "gltfAsset": {
+          "generator": "Terminator original weapon authoring, glTF Transform 4.3",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "weapon-template-plasma",
+        "isCentered": true,
+        "kite3dAuthoring": {
+          "id": "weapon-template-plasma",
+          "role": "template"
+        },
+        "name": "Weapon Template plasma",
+        "rootPath": "/kite3d/@weapon-plasma/plasma.gltf",
+        "rootPathOptions": {},
+        "sProperties": [
+          "position",
+          "rotation",
+          "quaternion",
+          "scale",
+          "visible",
+          "name"
+        ],
+        "uuid": "weapon-template-plasma",
+        "weaponAsset": "plasma"
+      },
+      "matrix": [
+        2.220446049250313e-16,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2.220446049250313e-16,
+        0,
+        -19.32,
+        1.2,
+        -4.2,
+        1
+      ],
+      "name": "Weapon_Template_plasma"
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "autoScaled": true,
+        "geometriesCentered": true,
+        "gltfAsset": {
+          "generator": "Terminator original weapon authoring, glTF Transform 4.3",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "weapon-template-knife",
+        "isCentered": true,
+        "kite3dAuthoring": {
+          "id": "weapon-template-knife",
+          "role": "template"
+        },
+        "name": "Weapon Template knife",
+        "rootPath": "/kite3d/@weapon-knife/knife.gltf",
+        "rootPathOptions": {},
+        "sProperties": [
+          "position",
+          "rotation",
+          "quaternion",
+          "scale",
+          "visible",
+          "name"
+        ],
+        "uuid": "weapon-template-knife",
+        "weaponAsset": "knife"
+      },
+      "matrix": [
+        2.220446049250313e-16,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2.220446049250313e-16,
+        0,
+        -18.759999999999998,
+        1.2,
+        -4.2,
+        1
+      ],
+      "name": "Weapon_Template_knife"
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "autoScaled": true,
+        "geometriesCentered": true,
+        "gltfAsset": {
+          "generator": "Terminator original weapon authoring, glTF Transform 4.3",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "weapon-template-grenade",
+        "isCentered": true,
+        "kite3dAuthoring": {
+          "id": "weapon-template-grenade",
+          "role": "template"
+        },
+        "name": "Weapon Template grenade",
+        "rootPath": "/kite3d/@weapon-grenade/grenade.gltf",
+        "rootPathOptions": {},
+        "sProperties": [
+          "position",
+          "rotation",
+          "quaternion",
+          "scale",
+          "visible",
+          "name"
+        ],
+        "uuid": "weapon-template-grenade",
+        "weaponAsset": "grenade"
+      },
+      "matrix": [
+        2.220446049250313e-16,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2.220446049250313e-16,
+        0,
+        -18.2,
+        1.2,
+        -4.2,
+        1
+      ],
+      "name": "Weapon_Template_grenade"
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "autoScaled": true,
+        "geometriesCentered": true,
+        "gltfAsset": {
+          "generator": "Terminator original weapon authoring, glTF Transform 4.3",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "weapon-template-sniper",
+        "isCentered": true,
+        "kite3dAuthoring": {
+          "id": "weapon-template-sniper",
+          "role": "template"
+        },
+        "name": "Weapon Template sniper",
+        "rootPath": "/kite3d/@weapon-sniper/sniper.gltf",
+        "rootPathOptions": {},
+        "sProperties": [
+          "position",
+          "rotation",
+          "quaternion",
+          "scale",
+          "visible",
+          "name"
+        ],
+        "uuid": "weapon-template-sniper",
+        "weaponAsset": "sniper"
+      },
+      "matrix": [
+        2.220446049250313e-16,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2.220446049250313e-16,
+        0,
+        -17.64,
+        1.2,
+        -4.2,
+        1
+      ],
+      "name": "Weapon_Template_sniper"
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "autoScaled": true,
+        "geometriesCentered": true,
+        "gltfAsset": {
+          "generator": "Terminator original weapon authoring, glTF Transform 4.3",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "weapon-template-launcher",
+        "isCentered": true,
+        "kite3dAuthoring": {
+          "id": "weapon-template-launcher",
+          "role": "template"
+        },
+        "name": "Weapon Template launcher",
+        "rootPath": "/kite3d/@weapon-launcher/launcher.gltf",
+        "rootPathOptions": {},
+        "sProperties": [
+          "position",
+          "rotation",
+          "quaternion",
+          "scale",
+          "visible",
+          "name"
+        ],
+        "uuid": "weapon-template-launcher",
+        "weaponAsset": "launcher"
+      },
+      "matrix": [
+        2.220446049250313e-16,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2.220446049250313e-16,
+        0,
+        -17.08,
+        1.2,
+        -4.2,
+        1
+      ],
+      "name": "Weapon_Template_launcher"
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "autoScaled": true,
+        "geometriesCentered": true,
+        "gltfAsset": {
+          "generator": "Terminator original weapon authoring, glTF Transform 4.3",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "weapon-template-hands",
+        "isCentered": true,
+        "kite3dAuthoring": {
+          "id": "weapon-template-hands",
+          "role": "template"
+        },
+        "name": "Weapon Template hands",
+        "rootPath": "/kite3d/@weapon-hands/hands.gltf",
+        "rootPathOptions": {},
+        "sProperties": [
+          "position",
+          "rotation",
+          "quaternion",
+          "scale",
+          "visible",
+          "name"
+        ],
+        "uuid": "weapon-template-hands",
+        "weaponAsset": "hands"
+      },
+      "matrix": [
+        2.220446049250313e-16,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2.220446049250313e-16,
+        0,
+        -16.52,
+        1.2,
+        -4.2,
+        1
+      ],
+      "name": "Weapon_Template_hands"
+    },
+    {
+      "extensions": {},
+      "extras": {
+        "autoScaled": true,
+        "geometriesCentered": true,
+        "gltfAsset": {
+          "generator": "Khronos glTF Blender I/O v5.2.40",
+          "version": "2.0"
+        },
+        "gltfExtras": {},
+        "gltfUUID": "lab-weapon-swingout",
+        "isCentered": true,
+        "kite3dAuthoring": {
+          "id": "lab-weapon-swingout",
+          "role": "template"
+        },
+        "name": "Swingout Revolver Template",
+        "rootPath": "/kite3d/@weapon-swingout/swingout.gltf",
+        "rootPathOptions": {
+          "createUniqueNames": false
+        },
+        "sProperties": [
+          "visible",
+          "name",
+          "position",
+          "quaternion",
+          "scale"
+        ],
+        "uuid": "lab-weapon-swingout"
+      },
+      "matrix": [
+        -2.220446049250313e-16,
+        0,
+        -1.0000000000000002,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1.0000000000000002,
+        0,
+        -2.220446049250313e-16,
+        0,
+        -17,
+        1.55,
+        -19,
+        1
+      ],
+      "name": "Swingout_Revolver_Template"
+    }
+  ],
+  "cameras": [
+    {
+      "name": "Lab_Camera",
+      "type": "perspective",
+      "perspective": {
+        "yfov": 1.0471975511965976,
+        "znear": 0.05,
+        "zfar": 180
+      }
+    }
+  ],
+  "extensionsUsed": [
+    "KHR_lights_punctual",
+    "WEBGI_object3d_extras",
+    "WEBGI_light_extras",
+    "WEBGI_viewer"
+  ],
+  "extensions": {
+    "KHR_lights_punctual": {
+      "lights": [
+        {
+          "name": "Lights_Night",
+          "type": "directional",
+          "color": [
+            0.43,
+            0.62,
+            1
+          ],
+          "intensity": 1.2
+        },
+        {
+          "name": "Lights_Overcast",
+          "type": "directional",
+          "color": [
+            0.85,
+            0.92,
+            1
+          ],
+          "intensity": 2.6
+        },
+        {
+          "name": "Lights_Noon",
+          "type": "directional",
+          "color": [
+            1,
+            0.93,
+            0.8
+          ],
+          "intensity": 4
+        }
+      ]
+    }
+  }
+}

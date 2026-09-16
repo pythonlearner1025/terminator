@@ -1,0 +1,46 @@
+{
+  "source": "https://opengameart.org/content/old-revolver",
+  "author": "Lucian Pavel",
+  "license": "CC0-1.0",
+  "shippable": true,
+  "textureResolution": 2048,
+  "sourceTextureSizes": {
+    "albedo": [
+      2048,
+      2048
+    ],
+    "normal": [
+      1024,
+      1024
+    ],
+    "specular": [
+      2048,
+      2048
+    ]
+  },
+  "notes": [
+    "AO is a neutral white channel; no invented occlusion detail.",
+    "Specular converted approximately to roughness and metalness; source has no PBR pair."
+  ],
+  "triangles": 3256,
+  "sourceMeshNames": [
+    "Revolver"
+  ],
+  "boundsMetres": [
+    [
+      -0.2905000150203705,
+      -0.023219481110572815,
+      -0.03234107792377472
+    ],
+    [
+      0.05949999392032623,
+      0.023219462484121323,
+      0.18326610326766968
+    ]
+  ],
+  "lengthMetres": 0.35,
+  "pivot": "Estimated grip center; static display candidate",
+  "decimation": false,
+  "removedDetachedSpareProp": true,
+  "partOffsets": {}
+}

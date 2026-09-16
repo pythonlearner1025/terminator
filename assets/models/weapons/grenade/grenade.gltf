@@ -1,0 +1,1347 @@
+{
+  "asset": {
+    "generator": "Terminator original weapon authoring, glTF Transform 4.3",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "name": "Lever Surface position",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 276,
+      "max": [
+        0.007500000298023224,
+        0.06199999898672104,
+        0.0460519939661026
+      ],
+      "min": [
+        -0.007499999832361937,
+        -0.026337170973420143,
+        -0.015068373642861843
+      ],
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Lever Surface normal",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 276,
+      "bufferView": 0,
+      "byteOffset": 12
+    },
+    {
+      "name": "Lever Surface uv",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 276,
+      "bufferView": 0,
+      "byteOffset": 24
+    },
+    {
+      "name": "Pin Surface position",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 1008,
+      "max": [
+        0.013500000350177288,
+        0.06960000097751617,
+        0.015599999576807022
+      ],
+      "min": [
+        -0.02938564121723175,
+        0.03840000182390213,
+        -0.015599999576807022
+      ],
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Pin Surface normal",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 1008,
+      "bufferView": 1,
+      "byteOffset": 12
+    },
+    {
+      "name": "Pin Surface uv",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 1008,
+      "bufferView": 1,
+      "byteOffset": 24
+    },
+    {
+      "name": "Shell Surface position",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 2052,
+      "max": [
+        0.036400001496076584,
+        0.0430000014603138,
+        0.036400001496076584
+      ],
+      "min": [
+        -0.036400001496076584,
+        -0.0430000014603138,
+        -0.036400001496076584
+      ],
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "name": "Shell Surface normal",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 2052,
+      "bufferView": 2,
+      "byteOffset": 12
+    },
+    {
+      "name": "Shell Surface uv",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 2052,
+      "bufferView": 2,
+      "byteOffset": 24
+    },
+    {
+      "name": "Fuze Surface position",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 576,
+      "max": [
+        0.017000000923871994,
+        0.057999998331069946,
+        0.017000000923871994
+      ],
+      "min": [
+        -0.017000000923871994,
+        0.035999998450279236,
+        -0.017000000923871994
+      ],
+      "bufferView": 3,
+      "byteOffset": 0
+    },
+    {
+      "name": "Fuze Surface normal",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 576,
+      "bufferView": 3,
+      "byteOffset": 12
+    },
+    {
+      "name": "Fuze Surface uv",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 576,
+      "bufferView": 3,
+      "byteOffset": 24
+    },
+    {
+      "name": "Identification Surface position",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 384,
+      "max": [
+        0.025856858119368553,
+        0.033472076058387756,
+        0.025856858119368553
+      ],
+      "min": [
+        -0.025856858119368553,
+        0.03054688684642315,
+        -0.025856858119368553
+      ],
+      "bufferView": 4,
+      "byteOffset": 0
+    },
+    {
+      "name": "Identification Surface normal",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 384,
+      "bufferView": 4,
+      "byteOffset": 12
+    },
+    {
+      "name": "Identification Surface uv",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 384,
+      "bufferView": 4,
+      "byteOffset": 24
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 8832,
+      "byteStride": 32,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 8832,
+      "byteLength": 32256,
+      "byteStride": 32,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 41088,
+      "byteLength": 65664,
+      "byteStride": 32,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 106752,
+      "byteLength": 18432,
+      "byteStride": 32,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 125184,
+      "byteLength": 12288,
+      "byteStride": 32,
+      "target": 34962
+    }
+  ],
+  "samplers": [
+    {
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "source": 0,
+      "sampler": 0
+    },
+    {
+      "source": 1,
+      "sampler": 0
+    },
+    {
+      "source": 2,
+      "sampler": 0
+    }
+  ],
+  "images": [
+    {
+      "name": "grenade albedo",
+      "mimeType": "image/jpeg",
+      "uri": "grenade-albedo.jpg"
+    },
+    {
+      "name": "grenade normal",
+      "mimeType": "image/png",
+      "uri": "grenade-normal.png"
+    },
+    {
+      "name": "grenade orm",
+      "mimeType": "image/png",
+      "uri": "grenade-orm.png"
+    }
+  ],
+  "buffers": [
+    {
+      "name": "grenade",
+      "uri": "grenade.bin",
+      "byteLength": 137472
+    }
+  ],
+  "materials": [
+    {
+      "name": "grenade 2K PBR",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 1,
+        "scale": 0.75
+      },
+      "occlusionTexture": {
+        "index": 2
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Lever Surface",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "mode": 4,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "Pin Surface",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 3,
+            "NORMAL": 4,
+            "TEXCOORD_0": 5
+          },
+          "mode": 4,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "Shell Surface",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 6,
+            "NORMAL": 7,
+            "TEXCOORD_0": 8
+          },
+          "mode": 4,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "Fuze Surface",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 9,
+            "NORMAL": 10,
+            "TEXCOORD_0": 11
+          },
+          "mode": 4,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "Identification Surface",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 12,
+            "NORMAL": 13,
+            "TEXCOORD_0": 14
+          },
+          "mode": 4,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "grenade Asset",
+      "extras": {
+        "weaponAsset": "grenade",
+        "viewModel": {
+          "id": "grenade",
+          "hip": [
+            0.17,
+            -0.18,
+            -0.38
+          ],
+          "fov": 58,
+          "grip": {
+            "position": [
+              0,
+              -0.009,
+              0.006
+            ],
+            "radius": [
+              0.036,
+              0.035,
+              0.033
+            ]
+          },
+          "support": null,
+          "handPoses": {
+            "RightHand": {
+              "position": [
+                0.041,
+                -0.012,
+                0.033
+              ],
+              "quaternion": [
+                0.5,
+                -0.5,
+                0.5,
+                -0.5
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "RightPalm": {
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "RightForearm": {
+              "position": [
+                0,
+                -0.057,
+                0
+              ],
+              "quaternion": [
+                -0.20900301324068105,
+                0,
+                0.269601520038275,
+                0.9400174258221852
+              ],
+              "scale": [
+                1,
+                1.2288537881509995,
+                1
+              ]
+            },
+            "RightIndex1": {
+              "position": [
+                -0.029,
+                0.029,
+                0
+              ],
+              "quaternion": [
+                -0.031646658712595165,
+                -0.000765710945703239,
+                -0.002317701283351262,
+                0.9994961385317291
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "RightIndex2": {
+              "position": [
+                0,
+                0.029,
+                0
+              ],
+              "quaternion": [
+                -0.24406040191648073,
+                -0.0036086097756594607,
+                -0.036155421561692505,
+                0.9690790904996085
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "RightIndex3": {
+              "position": [
+                0,
+                0.022,
+                0
+              ],
+              "quaternion": [
+                -0.719761015227434,
+                -0.0032289873952231576,
+                -0.12671495233131772,
+                0.6825518115534143
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "RightIndexTip": {
+              "position": [
+                0,
+                0.017,
+                0
+              ],
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "RightMiddle1": {
+              "position": [
+                -0.009,
+                0.037,
+                0
+              ],
+              "quaternion": [
+                -0.7004194446578247,
+                -0.007601043512519191,
+                -0.008625659810984844,
+                0.7136388608221738
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "RightMiddle2": {
+              "position": [
+                0,
+                0.034,
+                0
+              ],
+              "quaternion": [
+                -0.4714784158744743,
+                -0.009096129448980477,
+                -0.008314323993991313,
+                0.8817914922531672
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "RightMiddle3": {
+              "position": [
+                0,
+                0.024,
+                0
+              ],
+              "quaternion": [
+                0.12931102888547893,
+                -0.015399137020509077,
+                -0.00684613150827468,
+                0.9914608690568542
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "RightMiddleTip": {
+              "position": [
+                0,
+                0.019,
+                0
+              ],
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "RightRing1": {
+              "position": [
+                0.012,
+                0.034,
+                0
+              ],
+              "quaternion": [
+                -0.5953012249255719,
+                -0.015549344422156122,
+                -0.014096289418733978,
+                0.80322846321254
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "RightRing2": {
+              "position": [
+                0,
+                0.032,
+                0
+              ],
+              "quaternion": [
+                -0.5264962108628427,
+                -0.024227765046393197,
+                -0.02407317782935901,
+                0.8494911638487598
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "RightRing3": {
+              "position": [
+                0,
+                0.023,
+                0
+              ],
+              "quaternion": [
+                -0.12011837577158307,
+                -0.05108188296646889,
+                -0.06036939973895229,
+                0.9896048466988003
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "RightRingTip": {
+              "position": [
+                0,
+                0.018,
+                0
+              ],
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "RightLittle1": {
+              "position": [
+                0.03,
+                0.021,
+                0
+              ],
+              "quaternion": [
+                -0.4973052163557344,
+                0.0022570711356993583,
+                -0.0019046312864021535,
+                0.867570631012212
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "RightLittle2": {
+              "position": [
+                0,
+                0.025,
+                0
+              ],
+              "quaternion": [
+                -0.4979430171966284,
+                0.014462561737250301,
+                0.00870402210402393,
+                0.8670454578234797
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "RightLittle3": {
+              "position": [
+                0,
+                0.018,
+                0
+              ],
+              "quaternion": [
+                -0.3955372610839758,
+                0.05355798494595876,
+                0.1347162879269205,
+                0.9069362376208739
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "RightLittleTip": {
+              "position": [
+                0,
+                0.015,
+                0
+              ],
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "RightThumb1": {
+              "position": [
+                -0.033,
+                -0.016,
+                -0.006
+              ],
+              "quaternion": [
+                -0.16594519208796935,
+                -0.09354024097944169,
+                -0.4381223128476997,
+                0.8784994339926339
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "RightThumb2": {
+              "position": [
+                0,
+                0.028,
+                0
+              ],
+              "quaternion": [
+                -0.38002404272955703,
+                0.0054541150665137345,
+                0.005695096758194345,
+                0.9249429957836535
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "RightThumb3": {
+              "position": [
+                0,
+                0.023,
+                0
+              ],
+              "quaternion": [
+                -0.3361881874415285,
+                0.018110153143816886,
+                0.06004051035385667,
+                0.9397045610692416
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "RightThumbTip": {
+              "position": [
+                0,
+                0.02,
+                0
+              ],
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "LeftHand": {
+              "position": [
+                -0.12,
+                0.067,
+                -0.017
+              ],
+              "quaternion": [
+                -0.7071067811865475,
+                0,
+                0,
+                0.7071067811865476
+              ],
+              "scale": [
+                -1,
+                1,
+                1
+              ]
+            },
+            "LeftPalm": {
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "LeftForearm": {
+              "position": [
+                0,
+                -0.057,
+                0
+              ],
+              "quaternion": [
+                0.41383166108753605,
+                0,
+                0.26237165832639175,
+                0.8717249963082335
+              ],
+              "scale": [
+                1,
+                1.3741312654524234,
+                1
+              ]
+            },
+            "LeftIndex1": {
+              "position": [
+                -0.029,
+                0.029,
+                0
+              ],
+              "quaternion": [
+                -0.07492970727274234,
+                0,
+                0,
+                0.9971888181122075
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "LeftIndex2": {
+              "position": [
+                0,
+                0.029,
+                0
+              ],
+              "quaternion": [
+                -0.14943813247359922,
+                0,
+                0,
+                0.9887710779360422
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "LeftIndex3": {
+              "position": [
+                0,
+                0.022,
+                0
+              ],
+              "quaternion": [
+                -0.09983341664682815,
+                0,
+                0,
+                0.9950041652780257
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "LeftIndexTip": {
+              "position": [
+                0,
+                0.017,
+                0
+              ],
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "LeftMiddle1": {
+              "position": [
+                -0.009,
+                0.037,
+                0
+              ],
+              "quaternion": [
+                -0.07492970727274234,
+                0,
+                0,
+                0.9971888181122075
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "LeftMiddle2": {
+              "position": [
+                0,
+                0.034,
+                0
+              ],
+              "quaternion": [
+                -0.14943813247359922,
+                0,
+                0,
+                0.9887710779360422
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "LeftMiddle3": {
+              "position": [
+                0,
+                0.024,
+                0
+              ],
+              "quaternion": [
+                -0.09983341664682815,
+                0,
+                0,
+                0.9950041652780257
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "LeftMiddleTip": {
+              "position": [
+                0,
+                0.019,
+                0
+              ],
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "LeftRing1": {
+              "position": [
+                0.012,
+                0.034,
+                0
+              ],
+              "quaternion": [
+                -0.07492970727274234,
+                0,
+                0,
+                0.9971888181122075
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "LeftRing2": {
+              "position": [
+                0,
+                0.032,
+                0
+              ],
+              "quaternion": [
+                -0.14943813247359922,
+                0,
+                0,
+                0.9887710779360422
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "LeftRing3": {
+              "position": [
+                0,
+                0.023,
+                0
+              ],
+              "quaternion": [
+                -0.09983341664682815,
+                0,
+                0,
+                0.9950041652780257
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "LeftRingTip": {
+              "position": [
+                0,
+                0.018,
+                0
+              ],
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "LeftLittle1": {
+              "position": [
+                0.03,
+                0.021,
+                0
+              ],
+              "quaternion": [
+                -0.07492970727274234,
+                0,
+                0,
+                0.9971888181122075
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "LeftLittle2": {
+              "position": [
+                0,
+                0.025,
+                0
+              ],
+              "quaternion": [
+                -0.14943813247359922,
+                0,
+                0,
+                0.9887710779360422
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "LeftLittle3": {
+              "position": [
+                0,
+                0.018,
+                0
+              ],
+              "quaternion": [
+                -0.09983341664682815,
+                0,
+                0,
+                0.9950041652780257
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "LeftLittleTip": {
+              "position": [
+                0,
+                0.015,
+                0
+              ],
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "LeftThumb1": {
+              "position": [
+                -0.033,
+                -0.016,
+                -0.006
+              ],
+              "quaternion": [
+                -0.18298657129998708,
+                -0.07736548146578168,
+                -0.3816559020950483,
+                0.90270109637546
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "LeftThumb2": {
+              "position": [
+                0,
+                0.028,
+                0
+              ],
+              "quaternion": [
+                -0.3894183423086505,
+                0,
+                0,
+                0.9210609940028851
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "LeftThumb3": {
+              "position": [
+                0,
+                0.023,
+                0
+              ],
+              "quaternion": [
+                -0.31930878585700095,
+                0,
+                0,
+                0.9476507264148157
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            },
+            "LeftThumbTip": {
+              "position": [
+                0,
+                0.02,
+                0
+              ],
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ]
+            }
+          }
+        },
+        "gltfUUID": "weapon-grenade-root"
+      },
+      "children": [
+        1
+      ]
+    },
+    {
+      "name": "Body",
+      "extras": {
+        "gltfUUID": "weapon-grenade-Body"
+      },
+      "children": [
+        2,
+        4,
+        6,
+        7,
+        9,
+        11,
+        13,
+        14
+      ]
+    },
+    {
+      "name": "Lever",
+      "extras": {
+        "gltfUUID": "weapon-grenade-Lever"
+      },
+      "children": [
+        3
+      ]
+    },
+    {
+      "name": "Lever Surface",
+      "extras": {
+        "gltfUUID": "weapon-grenade-Lever-Surface"
+      },
+      "mesh": 0
+    },
+    {
+      "name": "Pin",
+      "extras": {
+        "gltfUUID": "weapon-grenade-Pin"
+      },
+      "children": [
+        5
+      ]
+    },
+    {
+      "name": "Pin Surface",
+      "extras": {
+        "gltfUUID": "weapon-grenade-Pin-Surface"
+      },
+      "mesh": 1
+    },
+    {
+      "name": "Pump",
+      "extras": {
+        "gltfUUID": "weapon-grenade-Pump"
+      }
+    },
+    {
+      "name": "Shell",
+      "extras": {
+        "gltfUUID": "weapon-grenade-Shell"
+      },
+      "children": [
+        8
+      ]
+    },
+    {
+      "name": "Shell Surface",
+      "extras": {
+        "gltfUUID": "weapon-grenade-Shell-Surface"
+      },
+      "mesh": 2
+    },
+    {
+      "name": "Fuze",
+      "extras": {
+        "gltfUUID": "weapon-grenade-Fuze"
+      },
+      "children": [
+        10
+      ]
+    },
+    {
+      "name": "Fuze Surface",
+      "extras": {
+        "gltfUUID": "weapon-grenade-Fuze-Surface"
+      },
+      "mesh": 3
+    },
+    {
+      "name": "Identification",
+      "extras": {
+        "gltfUUID": "weapon-grenade-Identification"
+      },
+      "children": [
+        12
+      ]
+    },
+    {
+      "name": "Identification Surface",
+      "extras": {
+        "gltfUUID": "weapon-grenade-Identification-Surface"
+      },
+      "mesh": 4
+    },
+    {
+      "name": "Muzzle",
+      "extras": {
+        "gltfUUID": "weapon-grenade-Muzzle"
+      },
+      "translation": [
+        0,
+        0.044,
+        -0.035
+      ]
+    },
+    {
+      "name": "Ejection",
+      "extras": {
+        "gltfUUID": "weapon-grenade-Ejection"
+      },
+      "translation": [
+        0.042,
+        0.018,
+        -0.031
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "name": "grenade Asset",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

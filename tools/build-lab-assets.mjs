@@ -2,16 +2,14 @@
 import {readFile, writeFile} from 'node:fs/promises'
 import {fileURLToPath, pathToFileURL} from 'node:url'
 import {writeModelAsset} from './lib/model-asset.mjs'
+import {labSceneDocument} from './build-lab-scene.mjs'
 
 globalThis.ImageData ??= class {}
 const THREE = await import('three')
 const projectRoot = fileURLToPath(new URL('../', import.meta.url))
 const manifestPath = new URL('../assets.json', import.meta.url)
 const scenePath = new URL('../assets/main.scene.gltf', import.meta.url)
-const LAB_TYPES = ['scout', 'endo', 'heavy', 't1000', 'hkaerial', 'hktank']
-const LAB_LABELS = ['Scout', 'Endo', 'Heavy', 'T-1000', 'HK-Aerial', 'HK-Tank']
 const LAB_LANES = [-21.7, -19.8, -17.7, -15.6, -12.4, -7.3]
-const LAB_PLATES = [-21, -18, -15, -12, -9, -6]
 
 export async function buildLabAssets() {
   const document = JSON.parse(await readFile(scenePath, 'utf8'))
@@ -25,10 +23,10 @@ export async function buildLabAssets() {
     projectRoot, manifest, ...asset,
     generator: 'Terminator tools/build-lab-assets.mjs with glTF-Transform 4.5.0 and three.js',
   })
-  rewriteLabScene(document)
+  const nextScene = labSceneDocument(document)
   await writeFile(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`)
-  await writeFile(scenePath, `${JSON.stringify(document, null, 2)}\n`)
-  console.log('Wrote three lab fixture assets and replaced lab Generator nodes with placed assets')
+  await writeFile(scenePath, `${JSON.stringify(nextScene, null, 2)}\n`)
+  console.log('Wrote three lab fixture assets and regenerated the placed-asset lab scene')
 }
 
 function labAssets() {
@@ -113,70 +111,6 @@ function turntable(materials) {
   addMesh(root, 'Weapon turntable surface', new THREE.CylinderGeometry(.64, .64, .08, 48), materials.steel, [0, .98, 0])
   addBox(root, 'Weapon rest', [.10, .10, .28], [0, 1.06, 0], materials.marking)
   return root
-}
-
-function rewriteLabScene(document) {
-  for (const [name, assetId] of [['Range', 'lab-range-shell'], ['Firing_Line', 'lab-firing-line'], ['Turntable', 'lab-turntable']]) {
-    const node = document.nodes.find(candidate => candidate.name === name || candidate.name === name.replaceAll('_', ' '))
-    if (!node) throw new Error(`Weapons Lab scene is missing ${name}`)
-    placeAsset(node, assetId, 'f.gltf', 'direct')
-  }
-  filterNodes(document, node => !/^Plates$/.test(node.name || '') && !/^Targets[_ ](?:10|20|40)m$/.test(node.name || ''))
-  for (const [index, type] of LAB_TYPES.entries()) {
-    const label = LAB_LABELS[index]
-    const node = document.nodes.find(candidate => candidate.name === `Unit Template ${label}` || candidate.name === `Unit_Template_${label}`)
-    if (!node) throw new Error(`Weapons Lab scene is missing Unit Template ${label}`)
-    placeAsset(node, `unit-${type}`, `${type}.gltf`, 'template')
-    node.extras.unitTemplateType = type
-  }
-  for (const [index, z] of LAB_PLATES.entries()) appendRootNode(document, placedNode({
-    name: `Plate ${index + 1}`, id: `lab-plate-${index + 1}`, assetId: 'range-steel-target', file: 'f.gltf',
-    translation: [-3, 0, z], rotation: [0, Math.SQRT1_2, 0, Math.SQRT1_2], role: 'direct',
-  }))
-  for (const row of [10, 20, 40]) for (const [index, type] of LAB_TYPES.entries()) appendRootNode(document, placedNode({
-    name: `${row}m ${LAB_LABELS[index]} Target`, id: `lab-${row}-${type}`, assetId: `unit-${type}`, file: `${type}.gltf`,
-    translation: [-18 + row, type === 'hkaerial' ? 4 : 0, LAB_LANES[index]],
-    rotation: [0, -Math.SQRT1_2, 0, Math.SQRT1_2], role: 'template', unitTemplateType: type,
-  }))
-  document.asset.generator = 'tools/build-lab-assets.mjs; all visible fixtures are placed glTF assets'
-}
-
-function placeAsset(node, assetId, file, role) {
-  node.extras ||= {}
-  node.extras.gltfUUID ||= `lab-${node.name.toLowerCase().replaceAll(' ', '-')}`
-  node.extras.kite3dAuthoring = {...node.extras.kite3dAuthoring, role, id: node.extras.kite3dAuthoring?.id || node.extras.gltfUUID}
-  node.extras.rootPath = `/kite3d/@${assetId}/${file}`
-  node.extras.sProperties = ['visible', 'name', 'position', 'quaternion', 'scale']
-  node.extras.rootPathOptions = {...node.extras.rootPathOptions, createUniqueNames: false}
-  for (const [id, component] of Object.entries(node.extras.EntityComponentPlugin || {})) {
-    if (component.type === 'Generator') delete node.extras.EntityComponentPlugin[id]
-  }
-  if (!Object.keys(node.extras.EntityComponentPlugin || {}).length) delete node.extras.EntityComponentPlugin
-}
-
-function placedNode({name, id, assetId, file, translation, rotation, role, unitTemplateType}) {
-  const node = {name, translation, rotation, extras: {
-    gltfUUID: id, kite3dAuthoring: {role, id}, rootPath: `/kite3d/@${assetId}/${file}`,
-    rootPathOptions: {createUniqueNames: false}, sProperties: ['visible', 'name', 'position', 'quaternion', 'scale'],
-  }}
-  if (unitTemplateType) node.extras.unitTemplateType = unitTemplateType
-  return node
-}
-
-function appendRootNode(document, node) {
-  document.nodes.push(node)
-  document.scenes[document.scene || 0].nodes.push(document.nodes.length - 1)
-}
-
-function filterNodes(document, keep) {
-  const oldNodes = document.nodes
-  const kept = oldNodes.map((node, index) => ({node, index})).filter(({node}) => keep(node))
-  const remap = new Map(kept.map(({index}, next) => [index, next]))
-  document.nodes = kept.map(({node}) => {
-    if (!node.children) return node
-    return {...node, children: node.children.filter(index => remap.has(index)).map(index => remap.get(index))}
-  })
-  for (const scene of document.scenes || []) scene.nodes = (scene.nodes || []).filter(index => remap.has(index)).map(index => remap.get(index))
 }
 
 function addBox(parent, name, size, position, material, rotation = [0, 0, 0]) {

@@ -1,0 +1,219 @@
+{
+  "asset": {
+    "generator": "Terminator tools/build-lab-assets.mjs with glTF-Transform 4.5.0 and three.js",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "name": "Firing line inlay POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        0.07999999821186066,
+        0.007499999832361937,
+        9.5
+      ],
+      "min": [
+        -0.07999999821186066,
+        -0.007499999832361937,
+        -9.5
+      ],
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Firing line inlay NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 0,
+      "byteOffset": 12
+    },
+    {
+      "name": "Firing line inlay TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 0,
+      "byteOffset": 24
+    },
+    {
+      "name": "Firing line inlay indices",
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 36,
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Firing mat indices",
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 36,
+      "bufferView": 1,
+      "byteOffset": 72
+    },
+    {
+      "name": "Firing mat POSITION",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        1,
+        0.012500000186264515,
+        1
+      ],
+      "min": [
+        -1,
+        -0.012500000186264515,
+        -1
+      ],
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "name": "Firing mat NORMAL",
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 2,
+      "byteOffset": 12
+    },
+    {
+      "name": "Firing mat TEXCOORD_0",
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 24,
+      "bufferView": 2,
+      "byteOffset": 24
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 768,
+      "byteStride": 32,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 768,
+      "byteLength": 144,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 912,
+      "byteLength": 768,
+      "byteStride": 32,
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "name": "Lab Firing Line Asset geometry",
+      "uri": "firing-line.bin",
+      "byteLength": 1680
+    }
+  ],
+  "materials": [
+    {
+      "name": "Lab range markings",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.5647115056965487,
+          0.25818285291079235,
+          0.03954623527052923,
+          1
+        ],
+        "roughnessFactor": 0.72,
+        "metallicFactor": 0.12
+      }
+    },
+    {
+      "name": "Lab worn steel",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.13013647668074665,
+          0.16513219449147767,
+          0.1844749944900301,
+          1
+        ],
+        "roughnessFactor": 0.67,
+        "metallicFactor": 0.75
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Firing line inlay",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 3
+        }
+      ]
+    },
+    {
+      "name": "Firing mat",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 5,
+            "NORMAL": 6,
+            "TEXCOORD_0": 7
+          },
+          "mode": 4,
+          "material": 1,
+          "indices": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Lab Firing Line Asset",
+      "extras": {
+        "labFixtureAsset": "firing-line"
+      },
+      "children": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "Firing line inlay",
+      "translation": [
+        0,
+        0.012,
+        0
+      ],
+      "mesh": 0
+    },
+    {
+      "name": "Firing mat",
+      "translation": [
+        -0.7,
+        0.017,
+        0
+      ],
+      "mesh": 1
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Lab Firing Line Asset",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

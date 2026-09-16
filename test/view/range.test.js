@@ -1,3 +1,4 @@
+import {weaponFixture} from './weapon-assets-fixture.mjs'
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import {readFile} from 'node:fs/promises'
@@ -48,7 +49,7 @@ test('freeze flash retains the current shot at its peak and does not invent a ne
 })
 
 test('weapon animation and camera spring follow admitted ticks, including a paused single step',()=>{
- const clock=new RangeClock(),rigs=createWeaponRigs(new E.Group(),new E.PhysicalMaterial())
+ const clock=new RangeClock(),rigs=createWeaponRigs(new E.Group(),new E.PhysicalMaterial(),weaponFixture)
  const fx={update(){},fire(){},eject(){}},animation=new WeaponAnimation(rigs,fx)
  const world={tick:0,eventLog:[],weaponCatalog:{weapons:{pistol:{rate:2.5,mag:6}}},player:{id:'player',activeWeapon:'pistol',pos:{x:0,y:0,z:0},vel:{x:0,z:0},yaw:0,pitch:0,ammo:{pistol:{mag:6,reserve:66}}}}
  const feel=new CameraFeel(),camera=new E.PerspectiveCamera();feel.velocity=1

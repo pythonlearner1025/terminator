@@ -1,0 +1,50 @@
+{
+  "source": "https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack",
+  "author": "3DModelsCC0",
+  "license": "CC0-1.0",
+  "shippable": true,
+  "textureResolution": 2048,
+  "sourceTextureSizes": {
+    "albedo": [
+      2048,
+      2048
+    ],
+    "normal": [
+      2048,
+      2048
+    ],
+    "roughness": [
+      2048,
+      2048
+    ],
+    "metallic": [
+      2048,
+      2048
+    ]
+  },
+  "notes": [
+    "AO is a neutral white channel; no invented occlusion detail."
+  ],
+  "triangles": 3642,
+  "sourceMeshNames": [
+    "Grenade",
+    "Pin"
+  ],
+  "boundsMetres": [
+    [
+      -0.03071034699678421,
+      -0.0358673594892025,
+      -0.057499997317790985
+    ],
+    [
+      0.03071034699678421,
+      0.0358673594892025,
+      0.057500001043081284
+    ]
+  ],
+  "lengthMetres": 0.115,
+  "pivot": "Estimated grip center; static display candidate",
+  "decimation": false,
+  "removedDetachedSpareProp": false,
+  "partOffsets": {}
+}

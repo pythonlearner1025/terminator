@@ -114,14 +114,18 @@ async function geometryBounds(root, source, directory = root) {
   for (const buffer of clean.buffers) resources[buffer.uri] = new Uint8Array(await readFile(buffer.uri.startsWith('/kite3d/') ? resolve(root, buffer.uri.slice(8)) : resolve(directory, buffer.uri)))
   const doc = await new NodeIO().readJSON({json: clean, resources})
   const bounds = new Box3(), point = new Vector3()
-  for (const node of doc.getRoot().listNodes()) {
-    if (!node.getMesh()) continue
-    const matrix = new Matrix4().fromArray(node.getWorldMatrix())
-    for (const primitive of node.getMesh().listPrimitives()) {
-      const positions = primitive.getAttribute('POSITION').getArray()
-      for (let index = 0; index < positions.length; index += 3) bounds.expandByPoint(point.fromArray(positions, index).applyMatrix4(matrix))
+  const scene = doc.getRoot().getDefaultScene() || doc.getRoot().listScenes()[0]
+  const visit = node => {
+    if (node.getMesh()) {
+      const matrix = new Matrix4().fromArray(node.getWorldMatrix())
+      for (const primitive of node.getMesh().listPrimitives()) {
+        const positions = primitive.getAttribute('POSITION').getArray()
+        for (let index = 0; index < positions.length; index += 3) bounds.expandByPoint(point.fromArray(positions, index).applyMatrix4(matrix))
+      }
     }
+    for (const child of node.listChildren()) visit(child)
   }
+  for (const node of scene?.listChildren() || []) visit(node)
   return bounds
 }
 

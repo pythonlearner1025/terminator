@@ -1,0 +1,44 @@
+{
+  "source": "https://opengameart.org/content/webley-mark-ii-revolver",
+  "author": "Ulf",
+  "license": "CC-BY-3.0",
+  "shippable": true,
+  "textureResolution": 2048,
+  "sourceTextureSizes": {
+    "albedo": [
+      1024,
+      1024
+    ],
+    "normal": [
+      1024,
+      1024
+    ],
+    "specular": [
+      1024,
+      1024
+    ]
+  },
+  "notes": [
+    "AO is a neutral white channel; no invented occlusion detail.",
+    "Specular converted approximately to roughness and metalness; source has no PBR pair."
+  ],
+  "triangles": 1806,
+  "sourceMeshNames": [
+    "revolver-webley_mkii"
+  ],
+  "boundsMetres": [
+    [
+      -0.26408958435058594,
+      -0.026478976011276245,
+      -0.019068121910095215
+    ],
+    [
+      0.02191043272614479,
+      0.02672525867819786,
+      0.1812119483947754
+    ]
+  ],
+  "lengthMetres": 0.286,
+  "pivot": "Estimated grip center; static display candidate",
+  "decimation": false
+}

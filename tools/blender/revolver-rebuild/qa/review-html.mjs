@@ -1,0 +1,47 @@
+// Embed only real browser PNGs; HTML never renders or synthesizes a replacement pose.
+import {readFile,writeFile,mkdir} from 'node:fs/promises'
+import {resolve,dirname} from 'node:path'
+import {digest,SOURCE} from './export-contract.mjs'
+const argv=process.argv.slice(2),opt=(name,fallback)=>{const i=argv.indexOf(name);return i<0?fallback:argv[i+1]}
+const input=resolve(opt('--proof','.kite3d/revolver-imported-gameplay'))
+const output=resolve(opt('--out','tools/blender/revolver-rebuild/generated/revolver-imported-review.html'))
+const r=JSON.parse(await readFile(`${input}/proof.json`,'utf8'))
+if(r.schema!==2||!r.importedContract||r.importedContract.failures.length)throw Error('Expected imported-rig gameplay evidence with passing export contract')
+if(!r.captures.length)throw Error('No actual gameplay PNGs to review')
+const historicalPath=opt('--historical'),historical=historicalPath?JSON.parse(await readFile(resolve(historicalPath,'proof.json'),'utf8')):null
+async function embed(report,dir){return Promise.all(report.captures.map(async c=>{const bytes=await readFile(resolve(dir,`${c.name}.png`));if(c.imageSha256&&digest(bytes)!==c.imageSha256)throw Error('Evidence PNG hash mismatch: '+c.name);return {...c,image:`data:image/png;base64,${bytes.toString('base64')}`}}))}
+const current=await embed(r,input),old=historical?await embed(historical,resolve(historicalPath)):[]
+const skinPath=opt('--skin');let skin=null
+if(skinPath){
+ const raw=await readFile(resolve(skinPath)),s=JSON.parse(raw)
+ if(s.hashes.gltf!==r.exportHashes['revolver-rebuild.gltf'])throw Error('Skin proof is for a different immutable export')
+ skin={status:s.status,reportSha256:digest(raw),hashes:s.hashes,maxM:s.maxM,rmsM:s.rmsM,toleranceM:s.toleranceM,sourceVertices:s.sourceVertexCount,exportedVertices:s.exportedVertexCount,samples:s.samples.length,
+  perClip:Object.fromEntries(Object.keys(s.actualClipDurations).map(name=>[name,{samples:s.samples.filter(x=>x.clip===name).length,maxM:Math.max(...s.samples.filter(x=>x.clip===name).map(x=>x.sourceVertexErrors.maxM))}])),limits:s.limitations}
+}
+const gameplaySummary=JSON.parse(await readFile(resolve(input,'summary.json')))
+const checkPath=opt('--check');let check=null
+if(checkPath){const p=JSON.parse(await readFile(resolve(checkPath,'proof.json'),'utf8'));if(p.freezeManifestSha256!==r.freezeManifestSha256)throw Error('Check is for a different immutable export');check=p.check||{unavailable:p.failure}}
+const notes={
+ '01-hip':'Normal live Idle. Review glove/finger silhouette, grip and lower-screen framing.',
+ '02-ads':'Normal AimIdle. Sight coordinates use the actual weapon shader projection; screen center is the aiming reference.',
+ '03-fire':'Live shot event at the recorded clip time. Review hammer/index response and muzzle marker; still frames cannot certify every intervening contact.',
+ '05-reload-open':'Live reload opening. Review support contact around the opened cylinder.',
+ '05-reload-eject':'Live ejection phase. Review ejector contact and case presentation.',
+ '05-reload-insert':'Live insertion phase. Review loader grasp and finger clearance near the frame.',
+ '05-reload-close':'Live closure phase. Review support hand contact with the cylinder.',
+ '05-reload-return':'Live return phase. Review wrist travel and return to the firing grip.',
+ '07-sprint':'Normal sprint input. The gun is deliberately lowered; record framing rather than treating every offscreen vertex as a clipping defect.',
+ '08-inspect':'Authored Inspect sample displayed by the actual WeaponsLab renderer. No gameplay Inspect binding is claimed.',
+ '00-editor-hip':'First Play in the editor viewport at its measured size; this is the matching baseline for restarted hip.',
+ '09-restarted-hip':'New editor Play after Stop, compared with the first Play at the same editor canvas size. Fullscreen pose captures use a larger canvas.'
+}
+const data={current,old,notes,source:SOURCE,revision:r.sourceRevision,hashes:r.exportHashes,freeze:r.freezeManifestSha256,ownership:r.ownership,errors:r.errors,httpErrors:r.httpErrors,check,skin,gameplay:gameplaySummary.results,completed:r.completed,limitations:r.limitations}
+const json=JSON.stringify(data).replaceAll('<','\\u003c')
+const html=`<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Imported revolver — actual game review</title><style>
+:root{color-scheme:dark;font:16px system-ui,sans-serif;background:#10151c;color:#e7edf6}body{max-width:1450px;margin:auto;padding:24px}h1{font-size:28px;margin-bottom:8px}p{line-height:1.5;color:#bfccd9}a{color:#85caff}button,select{font:inherit;background:#263448;color:inherit;border:1px solid #536278;padding:8px;border-radius:5px}nav{display:flex;gap:10px;align-items:center;flex-wrap:wrap;position:sticky;top:0;background:#10151cee;padding:12px 0;z-index:1}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:16px}figure{margin:0;background:#19222e;border:1px solid #344459;padding:12px}img{width:100%;height:auto;display:block}figcaption{padding:10px 0;font-weight:600}pre{overflow:auto;background:#19222e;padding:16px;white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px}.badge{color:#a4e0bd}.historical{color:#ffca86}.notes{min-height:55px}summary{cursor:pointer;padding:12px 0}code{overflow-wrap:anywhere}footer{margin-top:32px;border-top:1px solid #344459}
+</style><body><h1>Imported revolver: actual game review</h1><p>These are saved PNGs from the real Kite WeaponsLab runtime. They are not Blender previews. The imported source is <a href="${SOURCE.url}">${SOURCE.title}</a> by ${SOURCE.author}, <a href="${SOURCE.licenseUrl}">${SOURCE.license}</a>.</p><p class="badge">Combined imported hand mesh · 49 native bones · 38 weighted joints</p><nav><button id="prev">Previous</button><select id="pose" aria-label="Pose"></select><button id="next">Next</button><span id="counter"></span></nav><p class="notes" id="note"></p><div class="grid"><figure><figcaption id="caption"></figcaption><img id="new" alt="Imported rig actual gameplay capture"></figure><figure id="old-panel" hidden><figcaption class="historical" id="comparison-caption"></figcaption><img id="old" alt="Historical handmade rig gameplay capture"></figure></div><details open><summary>Pose, skin and sight measurements</summary><pre id="measure"></pre></details><details><summary>Stop / restart ownership</summary><p>Only stopped snapshots assess cleanup. Playing snapshots record the runtime objects owned during Play.</p><pre id="ownership"></pre></details><details><summary>Official Kite check and recorded errors</summary><pre id="check"></pre></details><footer><h2>Provenance and limits</h2><pre id="provenance"></pre><p>Contact notes describe what to review. They do not certify continuous collision-free motion from a few still frames. Imported source deformation tests and final animation swept tests remain separate evidence.</p></footer><script type="application/json" id="data">${json}</script><script>
+const d=JSON.parse(document.getElementById('data').textContent),select=document.getElementById('pose');for(const c of d.current){const o=document.createElement('option');o.value=c.name;o.textContent=c.name;select.append(o)}
+function show(){const c=d.current[select.selectedIndex],prior=c.name==='09-restarted-hip'?d.current.find(x=>x.name==='00-editor-hip'):d.old.find(x=>x.name===c.name);document.getElementById('new').src=c.image;document.getElementById('caption').textContent=c.name+' · '+c.clip+' '+Number(c.clipTime).toFixed(3)+'s · actual imported rig';document.getElementById('counter').textContent=(select.selectedIndex+1)+' / '+d.current.length;document.getElementById('note').textContent=d.notes[c.name]||c.method;document.getElementById('old-panel').hidden=!prior;document.getElementById('comparison-caption').textContent=c.name==='09-restarted-hip'?'First Play — same editor canvas size':'Historical handmade rig — comparison only';if(prior)document.getElementById('old').src=prior.image;document.getElementById('measure').textContent=JSON.stringify({method:c.method,clip:c.clip,time:c.clipTime,requestedReloadFraction:c.requestedReloadFraction,actualReloadFraction:c.actualReloadFraction,variant:c.activeVariant,canvas:c.canvas,sights:c.sights,bounds:c.bounds,skin:c.skin?.map(s=>({name:s.name,vertices:s.vertices,bones:s.boneCount,sourceSkeletonReused:s.sourceSkeletonReused})),imageSha256:c.imageSha256},null,2)}
+select.onchange=show;document.getElementById('prev').onclick=()=>{select.selectedIndex=(select.selectedIndex+d.current.length-1)%d.current.length;show()};document.getElementById('next').onclick=()=>{select.selectedIndex=(select.selectedIndex+1)%d.current.length;show()};document.getElementById('ownership').textContent=JSON.stringify(d.ownership,null,2);document.getElementById('check').textContent=JSON.stringify({official:d.check||'Unavailable: no check result supplied',gameplay:d.gameplay,skinFidelity:d.skin,errors:d.errors,httpErrors:d.httpErrors},null,2);document.getElementById('provenance').textContent=JSON.stringify({completed:d.completed,revision:d.revision,freezeManifestSha256:d.freeze,exportHashes:d.hashes,source:d.source,limits:d.limitations},null,2);show();
+</script></body></html>`
+await mkdir(dirname(output),{recursive:true});await writeFile(output,html);console.log(JSON.stringify({output,bytes:Buffer.byteLength(html),poses:current.length,historical:old.length,sha256:digest(html)}))

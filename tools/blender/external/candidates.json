@@ -1,0 +1,335 @@
+[
+  {
+    "id": "kf2-1858-reference",
+    "weapon": "revolver",
+    "source": "https://gamebanana.com/mods/589022",
+    "author": "Tripwire Interactive; Lt. Rocky; TFA port",
+    "license": "Game rip; reference only",
+    "shippable": false,
+    "file": "kf2-import.blend",
+    "length": 0.355,
+    "maps": {
+      "albedo": "kf2-import-images/1858_d.png",
+      "normal": "kf2-import-images/1858_n.png",
+      "specular": "kf2-import-images/1858_G.png"
+    },
+    "normalDX": true,
+    "detailPixels": [
+      565,
+      166
+    ]
+  },
+  {
+    "id": "pavel-cc0",
+    "weapon": "revolver",
+    "source": "https://opengameart.org/content/old-revolver",
+    "author": "Lucian Pavel",
+    "license": "CC0-1.0",
+    "shippable": true,
+    "file": "old-revolver/Revolver.fbx",
+    "length": 0.35,
+    "maps": {
+      "albedo": "old-revolver/Revolver.png",
+      "normal": "old-revolver/Revolver_NRM.png",
+      "specular": "old-revolver/Revolver_SPEC.png"
+    },
+    "gripFraction": [
+      0.83,
+      0.5,
+      0.15
+    ],
+    "detailPixels": [
+      520,
+      175
+    ],
+    "removeSpareBelowSourceX": -2
+  },
+  {
+    "id": "loafbrr-cc0",
+    "weapon": "revolver",
+    "source": "https://opengameart.org/content/revolver-game-asset",
+    "author": "loafbrr_1",
+    "license": "CC0-1.0",
+    "shippable": true,
+    "file": "loafbrr/GLTF/RevolverExport.gltf",
+    "length": 0.35,
+    "maps": {
+      "albedo": "loafbrr/Textures/Revolver_2/Revolver_2_Albedo.png",
+      "normal": "loafbrr/Textures/Revolver_2/Revolver_2_Normal.png",
+      "roughness": "loafbrr/Textures/Revolver_2/Revolver_2_Roughness.png",
+      "metallic": "loafbrr/Textures/Revolver_2/Revolver_2_Metalness.png",
+      "ao": "loafbrr/Textures/Revolver_2/Revolver_2_AO.png"
+    },
+    "keep": [
+      "Hammer",
+      "LOW_CHamberLock",
+      "LOW_CHamberRotate",
+      "REV_Cylinder",
+      "REV_Frame",
+      "REV_Handle",
+      "REV_Trigger"
+    ],
+    "restPose": true,
+    "detailPixels": [
+      530,
+      175
+    ]
+  },
+  {
+    "id": "detective-cc0",
+    "weapon": "revolver",
+    "source": "https://opengameart.org/content/detective-special-revolver",
+    "author": "LonesomeDucky",
+    "license": "CC0-1.0",
+    "shippable": true,
+    "file": "detective.blend",
+    "length": 0.19,
+    "maps": {
+      "albedo": "detective-images/RevolverBaseColor.png",
+      "normal": "detective-images/RevolverNormals.png",
+      "roughness": "detective-images/Roughness.png",
+      "metallic": "detective-images/Metalness.png",
+      "ao": "detective-images/AO.png"
+    },
+    "materials": {
+      "Bullet": {
+        "albedo": "detective-images/BulletBaseColor.png",
+        "normal": "detective-images/BulletNormal.png",
+        "roughness": "detective-images/BulletRoughness.png"
+      }
+    },
+    "detailPixels": [
+      455,
+      170
+    ]
+  },
+  {
+    "id": "webley-ccby",
+    "weapon": "revolver",
+    "source": "https://opengameart.org/content/webley-mark-ii-revolver",
+    "author": "Ulf",
+    "license": "CC-BY-3.0",
+    "shippable": true,
+    "file": "webley/revolver_webley_mkii_blue_engraved.blend",
+    "length": 0.286,
+    "maps": {
+      "albedo": "webley/textures/revolver-webley_mkii_blue_engraved/revolver-webley_mkii_blue_engraved_dif.png",
+      "normal": "webley/textures/revolver-webley_mkii_blue_engraved/revolver-webley_mkii_blue_engraved_nor.png",
+      "specular": "webley/textures/revolver-webley_mkii_blue_engraved/revolver-webley_mkii_blue_engraved_spec.png"
+    },
+    "keep": [
+      "revolver-webley_mkii"
+    ],
+    "detailPixels": [
+      448,
+      174
+    ]
+  },
+  {
+    "id": "3dmodels-cc0",
+    "weapon": "m4",
+    "source": "https://opengameart.org/content/m4a1-assault-rifle",
+    "author": "3DModelsCC0; mirrored by nisu",
+    "license": "CC0-1.0",
+    "shippable": true,
+    "file": "m4/M4A1/M4A1.fbx",
+    "length": 0.9,
+    "maps": {
+      "albedo": "m4/M4A1/M4A1_Base_Color.png",
+      "normal": "m4/M4A1/M4A1_Normal.png",
+      "roughness": "m4/M4A1/M4A1_Roughness.png",
+      "metallic": "m4/M4A1/M4A1_Metallic.png"
+    },
+    "gripFraction": [
+      0.74,
+      0.5,
+      0.22
+    ]
+  },
+  {
+    "id": "3dmodels-cc0",
+    "weapon": "shotgun",
+    "source": "https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack",
+    "author": "3DModelsCC0",
+    "license": "CC0-1.0",
+    "shippable": true,
+    "file": "cc0pack/Guns&Explosives/Shotgun/Shotgun.fbx",
+    "length": 1.05,
+    "maps": {
+      "albedo": "cc0pack/Guns&Explosives/Shotgun/Shotgun_Base_Color.png",
+      "normal": "cc0pack/Guns&Explosives/Shotgun/Shotgun_Normal_DirectX.png",
+      "roughness": "cc0pack/Guns&Explosives/Shotgun/Shotgun_Roughness.png",
+      "metallic": "cc0pack/Guns&Explosives/Shotgun/Shotgun_Metallic.png"
+    },
+    "normalDX": true,
+    "vertical": false,
+    "gripFraction": [
+      0.69,
+      0.5,
+      0.3
+    ]
+  },
+  {
+    "id": "3dmodels-cc0",
+    "weapon": "grenade",
+    "source": "https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack",
+    "author": "3DModelsCC0",
+    "license": "CC0-1.0",
+    "shippable": true,
+    "file": "cc0pack/Guns&Explosives/FragGrenade/FragGrenadeModel.fbx",
+    "length": 0.115,
+    "maps": {
+      "albedo": "cc0pack/Guns&Explosives/FragGrenade/FragGrenade_Base_Color.png",
+      "normal": "cc0pack/Guns&Explosives/FragGrenade/FragGrenade_Normal_DirectX.png",
+      "roughness": "cc0pack/Guns&Explosives/FragGrenade/FragGrenade_Roughness.png",
+      "metallic": "cc0pack/Guns&Explosives/FragGrenade/FragGrenade_Metallic.png"
+    },
+    "normalDX": true,
+    "vertical": true,
+    "detailPixels": [
+      480,
+      98
+    ]
+  },
+  {
+    "id": "3dmodels-cc0",
+    "weapon": "sniper",
+    "source": "https://3dmodelscc0.itch.io/free-cc0-guns-explosives-pack",
+    "author": "3DModelsCC0",
+    "license": "CC0-1.0",
+    "shippable": true,
+    "file": "cc0pack/Guns&Explosives/Sniper/Sniper.fbx",
+    "length": 1.15,
+    "maps": {
+      "albedo": "cc0pack/Guns&Explosives/Sniper/Sniper_Base_Color.png",
+      "normal": "cc0pack/Guns&Explosives/Sniper/Sniper_Normal.png",
+      "roughness": "cc0pack/Guns&Explosives/Sniper/Sniper_Roughness.png",
+      "metallic": "cc0pack/Guns&Explosives/Sniper/Sniper_Metallic.png"
+    },
+    "normalDX": false,
+    "vertical": false,
+    "gripFraction": [
+      0.73,
+      0.5,
+      0.22
+    ],
+    "partOffsets": {
+      "Magazine": [
+        0,
+        0,
+        0.035
+      ]
+    }
+  },
+  {
+    "id": "a104-ccby",
+    "weapon": "plasma",
+    "source": "https://opengameart.org/content/a-104-cold-fusion-assault-rifle",
+    "author": "PrSharkey; submitted by qubodup",
+    "license": "CC-BY-3.0",
+    "shippable": true,
+    "file": "plasma.blend",
+    "length": 0.85,
+    "maps": {
+      "albedo": "plasma-images/A-104_Rifle_diffuse.png",
+      "normal": "plasma-images/A-104_Rifle_normal.png",
+      "specular": "plasma-images/A-104_Rifle_Specular..png"
+    }
+  },
+  {
+    "id": "machete-cc0",
+    "weapon": "knife",
+    "source": "https://opengameart.org/content/pbr-machete-cc0",
+    "author": "Lucian Pavel",
+    "license": "CC0-1.0",
+    "shippable": true,
+    "file": "machete/Machete.fbx",
+    "length": 0.46,
+    "maps": {
+      "albedo": "machete/Machete.png",
+      "normal": "machete/Machete NRM.png",
+      "metalSmooth": "machete/Machete MET.png",
+      "ao": "machete/Machete AO.png"
+    },
+    "reverse": true
+  },
+  {
+    "id": "kf2-utility",
+    "weapon": "knife",
+    "source": "https://www.models-resource.com/pc_computer/killingfloor2/asset/323239/",
+    "author": "Tripwire Interactive; rip by Bastet",
+    "license": "Game rip; reference only",
+    "shippable": false,
+    "file": "kf2-knife/Demo Knife/DemoKnife.FBX",
+    "length": 0.3,
+    "maps": {
+      "albedo": "kf2-knife/Demo Knife/Wep_1stP_Demo_Knife_D.png",
+      "normal": "kf2-knife/Demo Knife/Wep_1stP_Demo_Knife_N.png",
+      "specular": "kf2-knife/Demo Knife/Wep_1stP_Demo_Knife_S.png"
+    },
+    "normalDX": true,
+    "roll": 90
+  },
+  {
+    "id": "kf2-aa12",
+    "weapon": "shotgun",
+    "source": "https://www.models-resource.com/pc_computer/killingfloor2/asset/323237/",
+    "author": "Tripwire Interactive; rip by Bastet",
+    "license": "Game rip; reference only",
+    "shippable": false,
+    "file": "kf2-aa12/AA-12 Shotgun/AA-12Shotgun.FBX",
+    "length": 0.965,
+    "maps": {
+      "albedo": "kf2-aa12/AA-12 Shotgun/Wep_1stP_AA12_D.png",
+      "normal": "kf2-aa12/AA-12 Shotgun/Wep_1stP_AA12_N.png",
+      "specular": "kf2-aa12/AA-12 Shotgun/Wep_1stP_AA12_S.png"
+    },
+    "normalDX": true
+  },
+  {
+    "id": "stein-m14-reference",
+    "weapon": "sniper",
+    "source": "https://stein-indie.itch.io/classic-weapons-pack",
+    "author": "Stein Games; underlying provenance unresolved",
+    "license": "Uploader claims CC0; reference pending provenance",
+    "shippable": false,
+    "file": "stein/WeaponsPack/M14/SKM_M14.fbx",
+    "length": 1.1,
+    "maps": {
+      "albedo": "stein/WeaponsPack/M14/T_M14_C.png",
+      "normal": "stein/WeaponsPack/M14/T_M14_N.png",
+      "rmao": "stein/WeaponsPack/M14/T_M14_RMAO.png"
+    },
+    "normalDX": true,
+    "provenance": "Source materials use WPN_MS16_L and WPN_ATT_BULLETS names. Keep reference-only pending clarification.",
+    "gripFraction": [
+      0.73,
+      0.5,
+      0.22
+    ]
+  },
+  {
+    "id": "danish-ccbysaref",
+    "weapon": "launcher",
+    "source": "https://opengameart.org/content/danish-light-automatic-rifle-model-54-underbarrel-grenade-launcher",
+    "author": "KometFox",
+    "license": "CC-BY-SA-4.0; reference by owner policy",
+    "shippable": false,
+    "file": "danish/DanishLARM54.blend",
+    "length": 1.0,
+    "maps": {
+      "albedo": "danish/DanishLARM54_Diffuse.png",
+      "normal": "danish/DanishLARM54_NormalGL.png",
+      "roughness": "danish/DanishLARM54_Roughness.png",
+      "metallic": "danish/DanishLARM54_Metallic.png",
+      "ao": "danish/DanishLARM54_AO.png"
+    },
+    "keep": [
+      "Danish Light Automatic Rifle Model 54 aUGL"
+    ],
+    "detailPixels": [
+      410,
+      290
+    ]
+  }
+]

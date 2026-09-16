@@ -1,0 +1,507 @@
+{
+  "clips": {
+    "Idle": 2.0,
+    "Draw": 0.7,
+    "Fire": 0.32,
+    "Reload": 3.6,
+    "AimIn": 0.18,
+    "AimOut": 0.18,
+    "AimIdle": 2.0,
+    "Sprint": 0.8,
+    "Inspect": 3.0
+  },
+  "contacts": {
+    "Reload": {
+      "release": 0.1,
+      "open": 0.24,
+      "eject": 0.34,
+      "reach": 0.48,
+      "insert": 0.67,
+      "close": 0.84,
+      "return": 0.96
+    },
+    "Fire": {
+      "strike": 0.15625,
+      "recovery": 0.8
+    }
+  },
+  "meshes": [
+    {
+      "name": "BodyGeometry",
+      "triangles": 1616,
+      "uvLayers": 1,
+      "materials": 1
+    },
+    {
+      "name": "Frame",
+      "triangles": 1104,
+      "uvLayers": 1,
+      "materials": 1
+    },
+    {
+      "name": "Barrel",
+      "triangles": 1048,
+      "uvLayers": 1,
+      "materials": 1
+    },
+    {
+      "name": "FrontSight",
+      "triangles": 156,
+      "uvLayers": 1,
+      "materials": 1
+    },
+    {
+      "name": "RearSight",
+      "triangles": 232,
+      "uvLayers": 1,
+      "materials": 2
+    },
+    {
+      "name": "CylinderGeometry",
+      "triangles": 1394,
+      "uvLayers": 1,
+      "materials": 1
+    },
+    {
+      "name": "Case0Geometry",
+      "triangles": 404,
+      "uvLayers": 1,
+      "materials": 2
+    },
+    {
+      "name": "Case1Geometry",
+      "triangles": 404,
+      "uvLayers": 1,
+      "materials": 2
+    },
+    {
+      "name": "Case2Geometry",
+      "triangles": 404,
+      "uvLayers": 1,
+      "materials": 2
+    },
+    {
+      "name": "Case3Geometry",
+      "triangles": 404,
+      "uvLayers": 1,
+      "materials": 2
+    },
+    {
+      "name": "Case4Geometry",
+      "triangles": 404,
+      "uvLayers": 1,
+      "materials": 2
+    },
+    {
+      "name": "Case5Geometry",
+      "triangles": 404,
+      "uvLayers": 1,
+      "materials": 2
+    },
+    {
+      "name": "CraneGeometry",
+      "triangles": 220,
+      "uvLayers": 1,
+      "materials": 1
+    },
+    {
+      "name": "EjectorGeometry",
+      "triangles": 156,
+      "uvLayers": 1,
+      "materials": 1
+    },
+    {
+      "name": "TriggerGuard",
+      "triangles": 2684,
+      "uvLayers": 1,
+      "materials": 1
+    },
+    {
+      "name": "TriggerGeometry",
+      "triangles": 936,
+      "uvLayers": 1,
+      "materials": 1
+    },
+    {
+      "name": "HammerGeometry",
+      "triangles": 332,
+      "uvLayers": 1,
+      "materials": 1
+    },
+    {
+      "name": "LatchGeometry",
+      "triangles": 236,
+      "uvLayers": 1,
+      "materials": 1
+    },
+    {
+      "name": "GripCore",
+      "triangles": 5468,
+      "uvLayers": 1,
+      "materials": 1
+    },
+    {
+      "name": "GripLeft",
+      "triangles": 830,
+      "uvLayers": 1,
+      "materials": 1
+    },
+    {
+      "name": "GripRight",
+      "triangles": 830,
+      "uvLayers": 1,
+      "materials": 1
+    },
+    {
+      "name": "Screw0L",
+      "triangles": 64,
+      "uvLayers": 1,
+      "materials": 2
+    },
+    {
+      "name": "Screw0R",
+      "triangles": 64,
+      "uvLayers": 1,
+      "materials": 2
+    },
+    {
+      "name": "Screw1L",
+      "triangles": 64,
+      "uvLayers": 1,
+      "materials": 2
+    },
+    {
+      "name": "Screw1R",
+      "triangles": 64,
+      "uvLayers": 1,
+      "materials": 2
+    },
+    {
+      "name": "Screw2L",
+      "triangles": 64,
+      "uvLayers": 1,
+      "materials": 2
+    },
+    {
+      "name": "Screw2R",
+      "triangles": 64,
+      "uvLayers": 1,
+      "materials": 2
+    },
+    {
+      "name": "DJMaesenArms",
+      "triangles": 7240,
+      "uvLayers": 2,
+      "materials": 1
+    },
+    {
+      "name": "Fresh0Geometry",
+      "triangles": 404,
+      "uvLayers": 1,
+      "materials": 2
+    },
+    {
+      "name": "Fresh1Geometry",
+      "triangles": 404,
+      "uvLayers": 1,
+      "materials": 2
+    },
+    {
+      "name": "Fresh2Geometry",
+      "triangles": 404,
+      "uvLayers": 1,
+      "materials": 2
+    },
+    {
+      "name": "Fresh3Geometry",
+      "triangles": 404,
+      "uvLayers": 1,
+      "materials": 2
+    },
+    {
+      "name": "Fresh4Geometry",
+      "triangles": 404,
+      "uvLayers": 1,
+      "materials": 2
+    },
+    {
+      "name": "Fresh5Geometry",
+      "triangles": 404,
+      "uvLayers": 1,
+      "materials": 2
+    },
+    {
+      "name": "Speedloader",
+      "triangles": 152,
+      "uvLayers": 1,
+      "materials": 1
+    }
+  ],
+  "warnings": [],
+  "triangles": 29866,
+  "contactValidation": "Not certified: inspect evaluated pad/contact report and renders; bone distances alone do not prove skin clearance.",
+  "loadingPose": {
+    "status": "native-control pinch retarget",
+    "fit": {
+      "index": {
+        "parameters": [
+          35,
+          55,
+          20,
+          0,
+          0
+        ],
+        "pad": [
+          0.11012505739927292,
+          0.01810518465936184,
+          -0.03275280073285103
+        ]
+      },
+      "thumb": {
+        "parameters": [
+          -12,
+          43.5,
+          57.5,
+          -12.5,
+          0
+        ],
+        "pad": [
+          0.11012375354766846,
+          0.0063292598351836205,
+          -0.03280611336231232
+        ]
+      },
+      "separationM": 0.011776045488432056,
+      "thumbTargetErrorM": 0.0002303338185304635
+    },
+    "limits": "12mm speedloader stem; evaluated pad centroids do not certify full skin clearance"
+  },
+  "sources": {
+    "gun.py": "5c9c0d55f40d10914976569172217b4241dc957deb74ecc2ea51e063bc28d0b0",
+    "imported_hands.py": "dd4788697878861499205368a82040fa4a9395eaa30e8df3e2ee0c6c3df2d449",
+    "assemble.py": "0f1fc867aea78e84c665e6403e0a09d7979ba9832bcd61452ff38bc5d904356f",
+    "animations.py": "f92ab15bab2e8cda8601764d29b2a89c066bc30a253a903376d391c93dcf1f9c"
+  },
+  "textures": {
+    "gun-ao.png": {
+      "sha256": "4548b505f6973dac1bfa589d06a1622e92240d636d90d450332bc01a2b386279",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "gun-ao.png.001": {
+      "sha256": "4548b505f6973dac1bfa589d06a1622e92240d636d90d450332bc01a2b386279",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "gun-basecolor.png": {
+      "sha256": "8c99a9eebeec0a2cfe16a05d8f27ca3e435eb5ec24d462a4366c0454622163bd",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "gun-basecolor.png.001": {
+      "sha256": "8c99a9eebeec0a2cfe16a05d8f27ca3e435eb5ec24d462a4366c0454622163bd",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "gun-normal.png": {
+      "sha256": "89bdb0648acd27d0e34e419c0739f4396a3f32159987a2b9b5bcc180fbe01974",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "gun-normal.png.001": {
+      "sha256": "89bdb0648acd27d0e34e419c0739f4396a3f32159987a2b9b5bcc180fbe01974",
+      "size": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "evaluatedContacts": {
+    "method": "evaluated vertices / 3-direction unanimous ray parity inside component bounds; depth is nearest surface. Open meshes remain uncertain",
+    "digits": {
+      "R:thumb": {
+        "vertices": 276,
+        "nearestSurfaceM": 4.134174741921015e-05,
+        "worstSignedM": -0.01155976951122284,
+        "worst": {
+          "vertex": 44,
+          "part": "BodyGeometry",
+          "point": [
+            0.00024021649733185768,
+            -0.1123623475432396,
+            0.026003766804933548
+          ]
+        },
+        "penetratingVertexPartPairs": 192
+      },
+      "R:index": {
+        "vertices": 228,
+        "nearestSurfaceM": 0.0002850507735274732,
+        "worstSignedM": -0.002871813252568245,
+        "worst": {
+          "vertex": 1907,
+          "part": "TriggerGeometry",
+          "point": [
+            0.000528180506080389,
+            -0.051176536828279495,
+            0.009407984092831612
+          ]
+        },
+        "penetratingVertexPartPairs": 9
+      },
+      "R:middle": {
+        "vertices": 238,
+        "nearestSurfaceM": 0.002215080661699176,
+        "worstSignedM": 0,
+        "worst": null,
+        "penetratingVertexPartPairs": 0
+      },
+      "R:ring": {
+        "vertices": 241,
+        "nearestSurfaceM": 0.0018543674377724528,
+        "worstSignedM": 0,
+        "worst": null,
+        "penetratingVertexPartPairs": 0
+      },
+      "R:little": {
+        "vertices": 245,
+        "nearestSurfaceM": 0.00016814656555652618,
+        "worstSignedM": -0.008590652607381344,
+        "worst": {
+          "vertex": 124,
+          "part": "GripCore",
+          "point": [
+            -0.0027870142366737127,
+            -0.13601765036582947,
+            -0.06414514780044556
+          ]
+        },
+        "penetratingVertexPartPairs": 16
+      },
+      "R:wrist": {
+        "vertices": 198,
+        "nearestSurfaceM": 0.00013546519039664418,
+        "worstSignedM": -0.013040725141763687,
+        "worst": {
+          "vertex": 1448,
+          "part": "GripCore",
+          "point": [
+            2.300937194377184e-05,
+            -0.12325789034366608,
+            -0.012229588814079762
+          ]
+        },
+        "penetratingVertexPartPairs": 45
+      },
+      "R:palm": {
+        "vertices": 37,
+        "nearestSurfaceM": 0.0009464884642511606,
+        "worstSignedM": -0.008321627043187618,
+        "worst": {
+          "vertex": 1485,
+          "part": "GripCore",
+          "point": [
+            0.004103355575352907,
+            -0.13657911121845245,
+            -0.05423722043633461
+          ]
+        },
+        "penetratingVertexPartPairs": 7
+      },
+      "L:thumb": {
+        "vertices": 276,
+        "nearestSurfaceM": 2.1139558157301508e-05,
+        "worstSignedM": -0.0052933841943740845,
+        "worst": {
+          "vertex": 196,
+          "part": "GripCore",
+          "point": [
+            -0.008127609267830849,
+            -0.13797278702259064,
+            -0.013562857173383236
+          ]
+        },
+        "penetratingVertexPartPairs": 9
+      },
+      "L:index": {
+        "vertices": 228,
+        "nearestSurfaceM": 0.0001103606482502073,
+        "worstSignedM": -0.00518200546503067,
+        "worst": {
+          "vertex": 1621,
+          "part": "BodyGeometry",
+          "point": [
+            -0.006618006154894829,
+            -0.06939209252595901,
+            -0.015036709606647491
+          ]
+        },
+        "penetratingVertexPartPairs": 19
+      },
+      "L:middle": {
+        "vertices": 238,
+        "nearestSurfaceM": 0.0014418868813663721,
+        "worstSignedM": 0,
+        "worst": null,
+        "penetratingVertexPartPairs": 0
+      },
+      "L:ring": {
+        "vertices": 241,
+        "nearestSurfaceM": 0.00015519312000833452,
+        "worstSignedM": -0.006546055898070335,
+        "worst": {
+          "vertex": 3642,
+          "part": "GripCore",
+          "point": [
+            -0.001209760899655521,
+            -0.12961798906326294,
+            -0.06197889521718025
+          ]
+        },
+        "penetratingVertexPartPairs": 16
+      },
+      "L:little": {
+        "vertices": 245,
+        "nearestSurfaceM": 0.0001935946347657591,
+        "worstSignedM": -0.0007475624443031847,
+        "worst": {
+          "vertex": 3068,
+          "part": "GripCore",
+          "point": [
+            -0.008178964257240295,
+            -0.1325749307870865,
+            -0.08176969736814499
+          ]
+        },
+        "penetratingVertexPartPairs": 0
+      },
+      "L:wrist": {
+        "vertices": 203,
+        "nearestSurfaceM": 0.006151704583317041,
+        "worstSignedM": 0,
+        "worst": null,
+        "penetratingVertexPartPairs": 0
+      },
+      "L:palm": {
+        "vertices": 37,
+        "nearestSurfaceM": 0.019390851259231567,
+        "worstSignedM": 0,
+        "worst": null,
+        "penetratingVertexPartPairs": 0
+      }
+    }
+  },
+  "exportSettings": {
+    "export_optimize_animation_keep_anim_object": true
+  }
+}

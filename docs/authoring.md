@@ -144,16 +144,13 @@ It also registers `range-steel-target` and `range-firing-line` in `assets.json`.
 It creates no visible geometry.
 Stop removes all loaded range nodes through `RuntimeObjectOwner`.
 
-## Weapons Lab branch sync
+## Weapons Lab scene
 
-The `lab/weapons` branch must merge this cleanup commit before it retires its lab generators.
-Keep the lab worktree unchanged until that merge.
-Then run `npm install` and `npm run build:assets` to create shared unit and range assets.
-Run `node tools/build-lab-assets.mjs` from the lab branch.
-The command writes three lab fixture assets and replaces every lab Generator node with placed assets.
+The integrated game keeps Bunker 7 in `assets/main.scene.gltf` and the authored gun range in
+`assets/weapons-lab.scene.gltf`. Run `npm run scene:lab` to rebuild only the gun range scene.
+Run `npm install` and `npm run build:assets` to create shared unit and range assets.
+`node tools/build-lab-assets.mjs` writes three lab fixture assets and updates the placed lab assets.
 It creates separate placed nodes for six plates and eighteen range targets.
-Remove all `generators/` entries from `kite3d.scripts` after the scene migration.
-Keep only `GameManager.script.js`, `WeaponsLab.script.js`, and other real component scripts.
 Run `node tools/build-lab-assets.mjs` again to confirm that the lab migration is deterministic.
 
 ## Evidence location
@@ -161,3 +158,27 @@ Run `node tools/build-lab-assets.mjs` again to confirm that the lab migration is
 Historical evidence and all new agent evidence live under `/Users/minjunes/games/terminator-evidence/docs/evidence/`.
 The repository keeps only `docs/evidence/README.md` as a pointer.
 The publish exclusions retain `docs/**`, so evidence and tracked study frames never ship.
+
+## Weapon asset ownership
+
+The eight weapons and shared hand rig are placed glTF assets under `assets/models/weapons/`.
+Run `npm run weapons` to rebuild the procedural packages.
+Then run `npm run build:revolver` to restore the Blender-authored pistol, embedded hands, and animation clips.
+The revolver provides Idle, Draw, Fire, Reload, AimIn, AimOut, AimIdle, Sprint, and Inspect clips.
+Its first-person mixer consumes gameplay state without changing shot, damage, ammunition, or reload timing.
+`lib/view/weapon-assets.js` loads the placed sources for first-person and third-person clones.
+The active first-person rig owns its cloned animation mixer and cleans it during Stop.
+All weapon proof outputs belong under `/Users/minjunes/games/terminator-evidence/docs/evidence/`.
+
+## Swing-out source follow-up
+
+The swing-out variant remains incomplete. See `tools/blender/swingout/TODO.md` for current acceptance status.
+Run `npm run build:swingout` to rebuild its glTF package and editable `tools/blender/swingout/swingout.blend`.
+The committed neutral hand scan makes the build independent of the downloaded reference cache.
+
+Keep Frame, Crane, Cylinder, Ejector, Hammer, Trigger, Latch, Loader, and LoaderButton names stable.
+Keep Case0–Case5, Fresh0–Fresh5, Bullet0–Bullet5, Muzzle, Ejection, CylinderGapLeft, and CylinderGapRight names stable.
+The nine clip names and `assets/models/weapons/swingout/` remain unchanged.
+Blender owns hand poses, gun motion, rod motion, and initial case flight.
+The view adapter applies ammunition masks and coordinates the visible bullet with the authored discharge time.
+Functional checks pass, but the skin audit still fails. The source does not meet the hand contact bar.

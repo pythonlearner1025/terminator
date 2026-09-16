@@ -6,7 +6,7 @@ import {measureRosterParts,measureColliderFit} from '../../tools/collider-fit.mj
 const partFit=await measureRosterParts()
 const E=await import('threepipe')
 const {loadUnitAsset}=await import('../../tools/load-unit-asset.mjs')
-const {clonePlacedUnitFigure}=await import('../../lib/view/unit-assets.js')
+const {clonePlacedUnitFigure,cloneSkinnedFigure}=await import('../../lib/view/unit-assets.js')
 const {rosterMaterials}=await import('../../lib/view/roster-materials.js')
 const {bindUnitRig,animateUnit,disposeUnitRig}=await import('../../lib/view/units-animation.js')
 const {resetRosterRig,rosterHit}=await import('../../lib/view/roster-animation.js')
@@ -26,10 +26,18 @@ function fixture(type){
 function step(v,n=30){for(let i=0;i<n;i++)animateUnit(v.rig,v.unit,1/60,i/60)}
 function destroy(v){disposeUnitRig(v.rig,v.object)}
 
+test('nested asset bone suffixes rebind to the cloned skeleton',()=>{
+  const nested=clonePlacedUnitFigure(sources.get('t1000'),'t1000','far')
+  nested.traverse(node=>{if(node.isBone){node.userData.name=node.name;node.name=`${node.name} 1`}})
+  const clone=cloneSkinnedFigure(nested),clonedBones=new Set()
+  clone.traverse(node=>{if(node.isBone)clonedBones.add(node)})
+  clone.traverse(node=>{if(node.isSkinnedMesh)assert.ok(node.skeleton.bones.every(bone=>clonedBones.has(bone)))})
+})
+
 test('three roster templates register authored sources and all core part names',async()=>{
   const scene=JSON.parse(await readFile(new URL('../../assets/main.scene.gltf',import.meta.url),'utf8'))
   for(const type of types){
-    assert.ok(scene.nodes.some(n=>n.name===TEMPLATE_NAMES[type]),type)
+    assert.ok(scene.nodes.some(n=>n.name===TEMPLATE_NAMES[type] || n.name===TEMPLATE_NAMES[type].replaceAll(' ','_')),type)
     const v=fixture(type)
     for(const part of Object.keys(spec.types[type].parts).flatMap(p=>p==='Limbs'?['Upper Arm Left','Upper Arm Right','Thigh Left','Thigh Right']:p)){
       const name=part==='head'?'Head':part==='chest'?'Chest':part==='left arm'?'Upper Arm Left':part==='right arm'?'Upper Arm Right':part==='left leg'?'Thigh Left':part==='right leg'?'Thigh Right':part

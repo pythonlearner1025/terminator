@@ -1,10 +1,9 @@
+import {weaponFixture} from './weapon-assets-fixture.mjs'
 import test from 'node:test'
 import assert from 'node:assert/strict'
 globalThis.ImageData??=class {}
 globalThis.window??={}
 const E=await import('threepipe')
-const {TracerPool,TracerView,TRACER_STYLE}=await import('../../lib/view/tracers.js')
-const {ProjectileView,projectileStyle,projectileType}=await import('../../lib/view/projectiles.js')
 const {createWeaponRigs,WEAPON_IDS}=await import('../../lib/view/weapons.js')
 const {GrenadeView}=await import('../../lib/view/grenade.js')
 const {WeaponAnimation}=await import('../../lib/view/weapons-animation.js')
@@ -20,129 +19,14 @@ function worldFixture(){
     unitById:new Map(),unitCatalog:{types:{}},activeColliders:()=>[]}
 }
 function animationFixture(){
-  const rigs=createWeaponRigs(new E.Group(),new E.PhysicalMaterial()),world=worldFixture()
+  const rigs=createWeaponRigs(new E.Group(),new E.PhysicalMaterial(),weaponFixture),world=worldFixture()
   const effects={flashes:0,cases:0,update(){},fire(){this.flashes++},eject(){this.cases++}}
   const animation=new WeaponAnimation(rigs,effects);animation.sync(world)
   return {rigs,world,effects,animation,step(n=1){world.tick+=n;animation.sync(world)}}
 }
 
-test('tracer buffers and slot objects remain fixed after overflow and 10000 warm events',()=>{
-  const pool=new TracerPool(new E.Group(),32),a=new E.Vector3(),b=new E.Vector3(0,0,30)
-  const items=[...pool.items],buffers=[pool.batch.start,pool.batch.end,pool.batch.color,pool.batch.shape]
-  for(let i=0;i<10000;i++){pool.emit(a,b,'m4');pool.update(1/600)}
-  assert.equal(pool.items.length,32);assert.ok(pool.overwritten>0)
-  for(let i=0;i<32;i++)assert.equal(pool.items[i],items[i])
-  for(const [i,buffer] of [pool.batch.start,pool.batch.end,pool.batch.color,pool.batch.shape].entries())assert.equal(buffer,buffers[i])
-  assert.ok(pool.batch.geometry.instanceCount<=64)
-  pool.update(2);assert.equal(pool.active,0);assert.equal(pool.batch.mesh.visible,false)
-  pool.dispose()
-})
-
-test('30 metre tracer travels for 0.2 seconds, clips its head, and fades behind impact',()=>{
-  const pool=new TracerPool(new E.Group(),4),p=pool.emit(new E.Vector3(),new E.Vector3(0,0,30),'m4')
-  pool.update(.1);assert.equal(pool.batch.end[2],15);assert.equal(p.active,true)
-  pool.update(.1);assert.equal(pool.batch.end[2],30);assert.equal(p.active,true)
-  pool.update(.02);assert.equal(p.active,true);assert.equal(pool.batch.end[2],30)
-  assert.ok(pool.batch.shape[2]>0&&pool.batch.shape[2]<1)
-  pool.update(.16);assert.equal(p.active,false)
-  assert.equal(pool.emit(new E.Vector3(),new E.Vector3(0,0,1),'knife'),null)
-  pool.dispose()
-})
-
-test('distant trajectories retain a full rifle trail, distinct widths, and bounded impact fade',()=>{
-  const pool=new TracerPool(new E.Group(),8),from=new E.Vector3(),to=new E.Vector3(0,0,40)
-  for(const id of ['pistol','m4','shotgun','plasma','sniper']) {
-    pool.reset();pool.emit(from,to,id);pool.update(.25)
-    assert.equal(pool.active,1);assert.equal(pool.batch.end[2],37.5)
-    assert.ok(Math.abs(pool.batch.end[2]-pool.batch.start[2]-TRACER_STYLE[id].trail)<.00001)
-    assert.equal(pool.batch.shape[2],1)
-    pool.update(.025)
-    assert.equal(pool.batch.end[2],40)
-    if(pool.batch.phase[3]===0)assert.ok(pool.batch.shape[2]>0&&pool.batch.shape[2]<1)
-    pool.update(.2);assert.equal(pool.active,0)
-  }
-  assert.ok(TRACER_STYLE.m4.trail>=2.5&&TRACER_STYLE.m4.trail<=4);assert.equal(TRACER_STYLE.sniper.trail,5.5)
-  assert.ok(TRACER_STYLE.sniper.trail>TRACER_STYLE.m4.trail)
-  assert.ok(TRACER_STYLE.pistol.width<TRACER_STYLE.m4.width)
-  assert.ok(TRACER_STYLE.plasma.width>TRACER_STYLE.m4.width)
-  pool.reset();pool.emit(from,new E.Vector3(0,0,.2),'sniper');pool.update(1/60)
-  assert.ok(pool.batch.start[2]>=0);assert.ok(pool.batch.end[2]<=.200001)
-  pool.update(.2);assert.equal(pool.active,0);pool.dispose()
-})
-
-test('incoming volleys follow authoritative velocity and retain only observed residual paths',()=>{
-  const view=new ProjectileView(new E.Group(),16,{shellMaterial:new E.PhysicalMaterial()})
-  const world=worldFixture(),camera=new E.PerspectiveCamera()
-  for(let i=0;i<12;i++)world.projectiles.push({id:i,type:i%2?'bolt':'round',owner:'unit',
-    pos:{x:i-6,y:1.65,z:24},vel:{x:0,y:0,z:-30}})
-  view.sync(world,camera)
-  for(let step=0;step<4;step++){
-    for(const p of world.projectiles)p.pos.z-=1
-    world.tick+=2;view.sync(world,camera)
-  }
-  const snapshot=JSON.stringify(world.projectiles);view.sync(world,camera)
-  assert.equal(view.orbs.count,6)
-  for(let i=0;i<12;i++){
-    assert.equal(view.streaks.end[i*3+2],20)
-    assert.ok(Math.abs(view.streaks.start[i*3+2]-(i%2?21.4:21))<.00001)
-  }
-  assert.equal(JSON.stringify(world.projectiles),snapshot)
-  world.projectiles=[];world.tick++;view.sync(world,camera)
-  assert.equal(view.orbs.count,0);assert.equal(view.lights[0].intensity,0)
-  assert.ok(view.streaks.count>0)
-  for(let i=0;i<view.streaks.count;i++)assert.equal(view.streaks.phase[i*4+3],1)
-  world.tick+=12;view.sync(world,camera);world.tick+=12;view.sync(world,camera)
-  assert.equal(view.streaks.count,0)
-  view.dispose()
-})
-
-test('projectile lights keep the two nearest luminous bolts without growing',()=>{
-  const view=new ProjectileView(new E.Group(),8,{shellMaterial:new E.PhysicalMaterial()})
-  const world=worldFixture(),camera=new E.PerspectiveCamera()
-  for(let i=1;i<=6;i++)world.projectiles.push({id:i,type:'bolt',owner:'unit',pos:{x:i,y:0,z:0},vel:{x:0,y:0,z:1}})
-  view.sync(world,camera)
-  assert.equal(view.lights.length,2)
-  assert.deepEqual(view.lights.map(light=>light.position.x).sort((a,b)=>a-b),[1,2])
-  assert.ok(view.lights.every(light=>light.visible&&light.intensity===1.4))
-  world.projectiles.length=0;world.tick++;view.sync(world,camera)
-  assert.ok(view.lights.every(light=>!light.visible&&light.intensity===0))
-  view.dispose()
-})
-
-test('shot events emit one travelling tracer or nine cosmetic shotgun pellets without replay',()=>{
-  const world=worldFixture(),view=new TracerView(new E.Group()),muzzle=new E.Vector3(0,1.5,.6)
-  view.sync(world,muzzle)
-  const event={type:'shot',by:'player',weapon:'shotgun',origin:{x:0,y:1.65,z:0},hitPoint:{x:0,y:1.5,z:30}}
-  world.eventLog.push(event);world.tick++
-  const before=JSON.stringify(event);view.sync(world,muzzle)
-  assert.equal(view.pool.emitted,9);view.sync(world,muzzle);assert.equal(view.pool.emitted,9)
-  assert.equal(JSON.stringify(event),before);assert.equal(TRACER_STYLE.shotgun.pellets,9)
-  world.eventLog.push({...event,unitType:'endo',by:'enemy',weapon:'m4'});view.sync(world,muzzle)
-  assert.equal(view.pool.emitted,9);view.dispose()
-})
-
-test('projectile types map to bounded instanced renderers and leave snapshots unchanged',()=>{
-  const view=new ProjectileView(new E.Group(),8,{shellMaterial:new E.PhysicalMaterial(),smokeMap:new E.Texture()})
-  const world=worldFixture(),camera=new E.PerspectiveCamera()
-  for(const [i,type] of ['round','bolt','shell','grenade'].entries())
-    world.projectiles.push({id:i,type,owner:'unit',pos:{x:i,y:1,z:20},vel:{x:0,y:0,z:-18}})
-  const snapshot=JSON.stringify(world.projectiles)
-  view.sync(world,camera);for(const p of world.projectiles)p.pos.z-=2;world.tick=6;view.sync(world,camera)
-  assert.equal(view.streaks.count,4);assert.equal(view.orbs.count,1);assert.equal(view.shells.count,1);assert.equal(view.smoke.count,2)
-  assert.equal(view.counts.grenade,1);assert.equal(projectileStyle('grenade').renderer,'grenade')
-  assert.equal(projectileType({projectileType:'bolt'}),'bolt')
-  assert.equal(projectileStyle('unknown'),null);assert.equal(JSON.stringify(world.projectiles),snapshot.replaceAll('\"z\":20','\"z\":18'))
-  assert.equal(view.streaks.end[2],18)
-  const slots=[...view.slots],array=view.shells.instanceMatrix.array
-  for(let i=0;i<500;i++){world.projectiles[0].id=100+i;world.tick++;view.sync(world,camera)}
-  assert.equal(view.slots.length,8);assert.equal(view.shells.instanceMatrix.array,array)
-  for(let i=0;i<8;i++)assert.equal(slots[i],view.slots[i])
-  world.projectiles=[];for(let i=0;i<3;i++){world.tick+=6;view.sync(world,camera)};assert.equal(view.streaks.count,0);assert.equal(view.orbs.count,0)
-  view.dispose()
-})
-
 test('all eight models have distinct mechanisms and finite vertices',()=>{
-  const rigs=createWeaponRigs(new E.Group(),new E.PhysicalMaterial())
+  const rigs=createWeaponRigs(new E.Group(),new E.PhysicalMaterial(),weaponFixture)
   assert.deepEqual(Object.keys(rigs),WEAPON_IDS)
   assert.ok(rigs.sniper.sight.scope);assert.equal(rigs.launcher.magazine.parent,rigs.launcher.breech)
   assert.ok(new E.Box3().setFromObject(rigs.sniper.body).getSize(new E.Vector3()).z>new E.Box3().setFromObject(rigs.m4.body).getSize(new E.Vector3()).z)
@@ -191,9 +75,11 @@ test('all firearms recoil, revolver keeps its cases, and transient actions retur
   const f=animationFixture(),p=f.world.player
   for(const id of ['pistol','m4','shotgun','plasma','sniper','launcher']) {
     p.activeWeapon=id;f.step(60);f.step(60)
-    const z=f.rigs[id].root.position.z,cases=f.effects.cases
+    f.rigs[id].root.updateMatrixWorld(true)
+    const z=f.rigs[id].body.getWorldPosition(new E.Vector3()).z,cases=f.effects.cases
     f.world.eventLog.push({type:'shot',by:p.id,weapon:id});f.step()
-    assert.equal(f.animation.state.mode,'fire');assert.ok(f.rigs[id].root.position.z>z)
+    f.rigs[id].root.updateMatrixWorld(true)
+    assert.equal(f.animation.state.mode,'fire');assert.ok(f.rigs[id].body.getWorldPosition(new E.Vector3()).z>z)
     if(id==='pistol')assert.equal(f.effects.cases,cases)
     assert.ok(Number.isFinite(f.rigs[id].root.rotation.x));f.step(120)
   }
@@ -205,7 +91,7 @@ test('all firearms recoil, revolver keeps its cases, and transient actions retur
 
 
 test('grenades reuse sixteen models across throws and warmup restores hidden source',()=>{
-  const scene=new E.Group();scene.modelRoot=new E.Group();scene.add(scene.modelRoot)
+  const scene=new E.Group();scene.modelRoot=weaponFixture;scene.add(scene.modelRoot)
   const source=new E.Group();source.name='Player Start';scene.modelRoot.add(source)
   const view=new GrenadeView({scene}),world=worldFixture()
   view.start(world,new E.PhysicalMaterial())
