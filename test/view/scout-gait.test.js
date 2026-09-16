@@ -68,8 +68,10 @@ test('new Scouts animate at 30 Hz in view and throttle to 12 Hz fully offscreen'
   unit.vel.z=7
   const camera=new E.PerspectiveCamera(54,16/9,.1,100)
   camera.position.set(0,2,-10);camera.lookAt(0,1,10);camera.updateProjectionMatrix();camera.updateMatrixWorld(true)
+  // A per-unit rig path fixture: specials, the range and the showcase keep rigs.
   const visual=fixture(),view={root:new E.Group(),activeIds:new Set(),visuals:new Map(),lastTick:0,quality:getQualityPreset('high'),
     viewer:{scene:{mainCamera:camera}},viewProjection:new E.Matrix4(),frustum:new E.Frustum(),cullSphere:new E.Sphere(),v4:new E.Vector3(),
+    instanced:null,instancedList:[],instancedFor:UnitView.prototype.instancedFor,
     cloneTemplateFigure:()=>visual,processEvents(){},fx:{update(){}},optics:{update(){}}}
   let previous=-1,updates=0
   for(let i=0;i<120;i++){
