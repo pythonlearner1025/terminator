@@ -18,7 +18,10 @@ function fixture() {
   const pool = {prime(){events.push('pool-prime')},reset(){events.push('pool-reset')}}
   const manager = {ctx:{viewer:{scene,renderManager:{webglRenderer:renderer,passes:[]},setDirty(){}}},viewsStarted:true,
     mapView:{ready:Promise.resolve()},unitView:{primeWarmup(){events.push('units-prime');return ()=>events.push('units-release')}},
-    playerView:{weapons:{rigs:{},worldFx:{pools:{pool}},primeWarmup(){events.push('weapons-prime');return ()=>events.push('weapons-release')}}}}
+    cachesView:{primeWarmup(){events.push('caches-prime');return ()=>events.push('caches-release')}},
+    playerView:{weapons:{rigs:{},worldFx:{pools:{pool}},
+      adoptEnvironment(){events.push('adopt-environment');return true},
+      primeWarmup(){events.push('weapons-prime');return ()=>events.push('weapons-release')}}}}
   const run = () => warmupMatch(manager,{signal:controller.signal,weaponReady:Promise.resolve()})
   return {controller,events,object,renderer,manager,run}
 }
@@ -30,6 +33,19 @@ test('both light variants compile once, render, and restore pooled state', async
   assert(f.events.includes('finish'))
   assert.deepEqual([f.object.count,f.object.visible,f.object.frustumCulled],[0,false,true])
 })
+// A material only stays compiled while an object still carries it, and setting
+// envMap drops every weapon program. So the crate must be in the scene and the
+// environment must be adopted before the first compile, not after.
+test('the cache crate and the weapon environment are ready before the first compile', async () => {
+  const f=fixture()
+  await f.run()
+  const compile=f.events.indexOf('compile')
+  assert(compile>=0)
+  assert(f.events.indexOf('caches-prime')<compile,'the crate must exist before the compile')
+  assert(f.events.indexOf('adopt-environment')<compile,'the environment must be adopted before the compile')
+  assert.equal(f.events.filter(x=>x==='caches-release').length,1)
+})
+
 test('asset failure prevents priming and compilation', async () => {
   const f=fixture();f.manager.mapView.ready=Promise.reject(Error('HTTP 503'))
   await assert.rejects(f.run(),/503/)
