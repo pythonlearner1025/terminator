@@ -60,6 +60,7 @@ export class GameManager extends Object3DComponent {
   started = false
   viewsStarted = false
   uiProjectionTick = null
+  uiProjectionPhase = null
 
   init(object, state) {
     super.init(object, state)
@@ -112,6 +113,7 @@ export class GameManager extends Object3DComponent {
     this.ui = new UiSession(this)
     this.accumulator = 0
     this.uiProjectionTick = null
+    this.uiProjectionPhase = null
     this.started = true
     this.syncViews()
   }
@@ -264,8 +266,13 @@ export class GameManager extends Object3DComponent {
 
   syncUi(force=false) {
     if(!this.world)return
-    if(!force&&this.uiProjectionTick!==null&&this.world.tick>=this.uiProjectionTick&&this.world.tick-this.uiProjectionTick<2)return
+    // The throttle holds UI projection to 30 Hz while the world ticks. A phase the
+    // UI has not seen always projects: a match that ends stops the tick, so the tick
+    // alone would hold the results screen back for good and leave the mouse locked.
+    const newPhase=this.uiProjectionPhase!==this.world.phase
+    if(!force&&!newPhase&&this.uiProjectionTick!==null&&this.world.tick>=this.uiProjectionTick&&this.world.tick-this.uiProjectionTick<2)return
     this.uiProjectionTick=this.world.tick
+    this.uiProjectionPhase=this.world.phase
     const view=projectViewModel(this.world,this.localPlayerId,{includeEnemyNameplates:false})
     if(this.ui)this.ui.sync(view)
     else this.hud?.render(view)
