@@ -1,3 +1,4 @@
+import {waitForProjectLoaded,runEditor,stopEditor,getCanvas} from '../../../test/helpers/editor-driver.mjs'
 import {chromium} from 'playwright'
 import {readFile, writeFile, mkdir} from 'node:fs/promises'
 import {resolve} from 'node:path'
@@ -13,7 +14,7 @@ page.on('console', event => {if(event.type()==='error') errors.push(event.text()
 page.on('response', response => {if(response.status()>=400) failures.push([response.status(),new URL(response.url()).pathname])})
 try {
  await page.goto(dev.url, {waitUntil:'domcontentloaded'})
- await page.getByTestId('play').waitFor({timeout:90000})
+ await waitForProjectLoaded(page,{timeout:90000})
  await page.waitForFunction(() => window.viewer?.scene?.modelRoot?.getObjectByName('Candidates')?.children.length >= 10, null, {timeout:90000})
  await page.waitForFunction(() => window.viewer.scene.modelRoot.getObjectByName('Candidates').children.every(o=>{let count=0;o.traverse(c=>{if(c.isMesh)count++});return count>0}), null, {timeout:90000})
  const candidates=await page.evaluate(()=>{
@@ -21,7 +22,7 @@ try {
   return group.children.map(o=>({name:o.name,position:o.position.toArray(),meshes:(()=>{let n=0;o.traverse(c=>{if(c.isMesh)n++});return n})()}))
  })
  const result={headless:true,port:new URL(dev.url).port,candidates,errors,failures}
- await page.getByTestId('play').click()
+ await runEditor(page)
  await page.waitForFunction(()=>window.terminator?.manager?.started,null,{timeout:60000})
  await page.evaluate(()=>window.terminator.manager.ready)
  await page.evaluate(()=>{
@@ -36,7 +37,7 @@ try {
  await page.waitForTimeout(2000)
  await page.screenshot({path:resolve(output,'lab-candidates.png')})
  await page.evaluate(()=>{window.viewer.container.removeAttribute('style');window.viewer.resize()})
- await page.getByTestId('play').click()
+ await stopEditor(page)
  await writeFile(resolve(output,'scene-result.json'),JSON.stringify(result,null,2)+'\n')
  console.log(JSON.stringify(result))
  if(errors.length||failures.length||candidates.some(c=>!c.meshes))throw Error('Candidate scene validation failed')

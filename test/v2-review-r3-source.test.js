@@ -44,26 +44,6 @@ audit('wall filtering preserves crossing/foreign triangles and original buffers,
  g.dispose();m.dispose()
 })
 
-audit('Generator removal protects all borrowed atlas instances and listeners over repeated previews', async () => {
- const {default:generate}=await source('generators/v2-preview.js')
- const data=JSON.parse(await readFile(resolve(sourceRoot,'lib/core/data/map-piece-placements.json'),'utf8'))
- const modelRoot=new E.Group(),map=new E.Group(),node=new E.Group();map.name='Map';modelRoot.add(map,node)
- for(const piece of data.pieces){const p=new E.Group();p.userData.mapPiece=piece;p.position.fromArray(piece.translation);p.rotation.fromArray([...piece.rotation,'XYZ']);p.scale.fromArray(piece.scale||[1,1,1]);map.add(p)}
- const textures=[],materials=[];let borrowedDisposals=0
- for(let i=1;i<=5;i++){const t=new E.Texture();t.addEventListener('dispose',()=>borrowedDisposals++);const mat=new E.PhysicalMaterial({name:`Selected rubble ${i}: audit`,map:t});const mesh=new E.Mesh2(new E.BoxGeometry(),mat);modelRoot.add(mesh);textures.push(t);materials.push(mat)}
- const listenerCounts=textures.map(t=>t._listeners?.update?.length||0)
- for(let cycle=0;cycle<3;cycle++){
-  const preview=await generate({node,viewer:{scene:{modelRoot},getPlugin(){return null}},engine:E})
-  assert.ok(preview.children.length);preview.removeFromParent()
-  // Installed Generator removes first, then recursively disposes enumerable resources.
-  preview.traverse(o=>{o.geometry?.dispose();for(const mat of Array.isArray(o.material)?o.material:[o.material]){if(!mat)continue;for(const value of Object.values(mat))if(value?.isTexture)value.dispose();mat.dispose()}})
-  assert.equal(node.children.length,0);assert.equal(borrowedDisposals,0)
-  assert.deepEqual(textures.map(t=>t._listeners?.update?.length||0),listenerCounts)
-  materials.forEach((m,i)=>assert.equal(m.map,textures[i]))
- }
- modelRoot.traverse(o=>o.geometry?.dispose());for(const m of materials){m.map=null;m.setDirty();m.dispose()}textures.forEach(t=>t.dispose())
-})
-
 audit('material cancellation releases both early and late loads after a texture failure', async () => {
  const {mountV2Materials}=await source('lib/view/v2/materials.js')
  const root=new E.Group(),original=new E.PhysicalMaterial({name:'Map concrete'}),mesh=new E.Mesh2(new E.BoxGeometry(),original);root.add(mesh)

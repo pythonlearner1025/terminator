@@ -10,7 +10,7 @@ try{
  const page=await b.newPage({viewport:config.viewport});await overrides?.install(page)
  const errors=[];page.on('pageerror',e=>errors.push(e.message))
  await page.addInitScript(({seed,settings})=>{let s=seed>>>0;Math.random=()=>{s=(Math.imul(1664525,s)+1013904223)>>>0;return s/4294967296};localStorage.setItem('terminator.settings.v1',JSON.stringify(settings))},config)
- await page.request.get(dev.url);await page.goto(dev.origin+'/files/tools/map-runtime.html');await page.waitForFunction(()=>window.terminator?.manager?.ui?.screens?.route==='main',null,{timeout:120000})
+ await page.request.get(dev.url);await page.goto(new URL(dev.url).origin+'/files/tools/map-runtime.html');await page.waitForFunction(()=>window.terminator?.manager?.ui?.screens?.route==='main',null,{timeout:120000})
  await page.evaluate(async config=>{const m=window.terminator.manager;m.update=()=>true;await m.ui.startMatch();await m.mapView.ready;await m.visualWarmup;m.ui.screens.show(null);m.input.stop();m.unitView.toggleShowcase(false)
  for(let tick=0;tick<=config.tick;tick++){m.world.tick=tick;m.mapView.sync(m.world);m.playerView.sync(m.world)}
  m.syncUi(true);m.hud.sync();window.__diagKeyOriginal=window.viewer.scene.getObjectByName('Map moon shadow key').position.toArray()

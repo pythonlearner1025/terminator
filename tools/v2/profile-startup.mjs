@@ -1,3 +1,4 @@
+import {waitForProjectLoaded,runEditor,stopEditor,getCanvas} from '../../test/helpers/editor-driver.mjs'
 // Run only after the coordinator grants this worktree the GPU lane.
 import {readFile,writeFile,mkdir} from 'node:fs/promises'
 import {execFileSync} from 'node:child_process'
@@ -10,8 +11,8 @@ const projectRoot=resolve(process.env.STARTUP_PROJECT_ROOT||'.')
 const dev=JSON.parse(await readFile(projectRoot+'/.kite3d/dev.json','utf8'))
 const ownPort=process.env.STARTUP_DEV_PORT||'4752'
 assert(['4752','4753'].includes(ownPort),'Unsupported owned startup port')
-assert.equal(new URL(dev.origin).hostname,'127.0.0.1')
-assert.equal(new URL(dev.origin).port,ownPort,'Startup server must match explicit owned port')
+assert.equal(new URL(new URL(dev.url).origin).hostname,'127.0.0.1')
+assert.equal(new URL(new URL(dev.url).origin).port,ownPort,'Startup server must match explicit owned port')
 const output=process.argv[2]
 if(!output)throw Error('Supply a new evidence JSON path')
 await readFile(output).then(()=>{throw Error('Refusing to replace evidence')},e=>{if(e.code!=='ENOENT')throw e})
@@ -45,13 +46,11 @@ try {
     if(mode==='cold-editor')await cdp.send('Network.clearBrowserCache')
     if(mode!=='restart') {
       await page.goto(dev.url,{waitUntil:'domcontentloaded'})
-      await page.getByTestId('play').waitFor({timeout:180000})
+      await waitForProjectLoaded(page,{timeout:180000})
       await page.waitForFunction(()=>window.viewer?.scene?.modelRoot?.getObjectByName('Map'),null,{timeout:180000})
-      await page.waitForFunction(async()=>{const state=await fetch('/api/state').then(r=>r.json());return state.projectLoaded&&!state.lastLoadError},null,{timeout:180000})
-      await page.waitForFunction(()=>{const node=document.querySelector('[data-testid="play"]');return node&&!node.disabled},null,{timeout:180000})
       await cdp.send('Profiler.start')
       await page.evaluate(()=>{window.__editorPlayAt=performance.now()})
-      await page.getByTestId('play').click()
+      await runEditor(page)
     } else {
       await cdp.send('Profiler.start')
       await page.evaluate(()=>{window.__startupLongTasks=[];performance.clearResourceTimings();window.__editorPlayAt=performance.now();window.terminator.manager.start()})
@@ -108,13 +107,13 @@ try {
     // those network errors, while rejecting shader/render and other failures.
     assert(errors.every(e=>e.includes('net::ERR_CONNECTION_REFUSED')||e.includes('status of 404')),JSON.stringify(errors))
     if(process.env.STARTUP_EXPECT_NO_ENEMY_OVERLAYS==='1')assert.equal(result.enemyPlates,0)
-    assert([...requests.values()].filter(r=>r.status>=400).every(r=>r.status===404&&['/favicon.ico','/files/.kite3d/console.log'].includes(r.path)),'Unexpected failed HTTP asset')
+    assert([...requests.values()].filter(r=>r.status>=400).every(r=>r.status===404&&r.path==='/favicon.ico'),'Unexpected failed HTTP asset')
     assert.equal(result.quality,'high');assert.equal(result.fov,72)
     await page.screenshot({path:output.replace(/\.json$/,'')+'-'+mode+'.png'})
     console.log(JSON.stringify({mode,editorToMenuMs:menuAt-ready.editorAt,menuPlayToWorldMs:ready.at-ready.menuPlayAt,enemies:result.enemies,visuals:result.visuals}))
-    if(mode==='cold-editor')await page.getByTestId('play').click()
+    if(mode==='cold-editor')await stopEditor(page)
   }
-  await page.getByTestId('play').click()
+  await stopEditor(page)
   report.renderer=await rendererInfo(page)
   report.cgroup=browser.captureCgroup
   report.browser=browser.version()

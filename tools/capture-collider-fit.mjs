@@ -8,7 +8,7 @@ assert.ok(name === 'before' || name === 'after', 'usage: node tools/capture-coll
 const root = new URL('../', import.meta.url)
 const output = new URL(`file:///Users/minjunes/games/terminator-evidence/docs/evidence/hitboxes/${name}.png`)
 const dev = JSON.parse(await readFile(new URL('.kite3d/dev.json', root), 'utf8'))
-assert.equal(new URL(dev.origin).port, '4687')
+assert.equal(new URL(new URL(dev.url).origin).port, '4687')
 await mkdir(new URL('file:///Users/minjunes/games/terminator-evidence/docs/evidence/hitboxes/'), {recursive: true})
 const browser = await chromium.launch({executablePath: chromium.executablePath(), headless: true})
 const page = await browser.newPage({viewport: {width: 1600, height: 1000}, deviceScaleFactor: 1})
@@ -20,7 +20,7 @@ page.on('console', message => {
 })
 try {
   await page.request.get(dev.url)
-  await page.goto(`${dev.origin}/files/tools/map-runtime.html?colliders=1`, {waitUntil: 'domcontentloaded'})
+  await page.goto(`${new URL(dev.url).origin}/files/tools/map-runtime.html?colliders=1`, {waitUntil: 'domcontentloaded'})
   await page.waitForFunction(() => window.terminator?.manager?.world, null, {timeout: 90_000})
   await page.evaluate(async () => {
     const manager = window.terminator.manager

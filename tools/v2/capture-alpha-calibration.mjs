@@ -11,7 +11,7 @@ const browser=await launchCaptureBrowser()
 try{
  const page=await browser.newPage({viewport:config.viewport}),errors=[];page.on('pageerror',e=>errors.push(e.message))
  await page.addInitScript(config=>localStorage.setItem('terminator.settings.v1',JSON.stringify(config.settings)),config)
- await page.request.get(dev.url);await page.goto(dev.origin+'/files/tools/map-runtime.html');await page.waitForFunction(()=>window.terminator?.manager?.ui?.screens?.route==='main',null,{timeout:120000})
+ await page.request.get(dev.url);await page.goto(new URL(dev.url).origin+'/files/tools/map-runtime.html');await page.waitForFunction(()=>window.terminator?.manager?.ui?.screens?.route==='main',null,{timeout:120000})
  const renderer=await rendererInfo(page)
  const result=await page.evaluate(async config=>{
   const E=await import('threepipe'),m=window.terminator.manager,v=window.viewer;m.update=()=>true;await m.ui.startMatch();await m.mapView.ready;await m.visualWarmup;m.ui.screens.show(null);m.input.stop();m.unitView.toggleShowcase(false)

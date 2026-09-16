@@ -1,3 +1,4 @@
+import {waitForProjectLoaded,runEditor,stopEditor,getCanvas} from '../../test/helpers/editor-driver.mjs'
 // Run only after the coordinator grants this worktree the GPU lane.
 import {readFile,writeFile,mkdir} from 'node:fs/promises'
 import {execFileSync} from 'node:child_process'
@@ -11,8 +12,8 @@ const projectRoot=resolve(process.env.STARTUP_PROJECT_ROOT||'.')
 const dev=JSON.parse(await readFile(projectRoot+'/.kite3d/dev.json','utf8'))
 const ownPort=process.env.STARTUP_DEV_PORT||'4755'
 assert((process.platform==='darwin'?['4753','4756','4755','4745']:['4755','4745']).includes(ownPort),'Unsupported owned startup port')
-assert.equal(new URL(dev.origin).hostname,'127.0.0.1')
-assert.equal(new URL(dev.origin).port,ownPort,'Startup server must match explicit owned port')
+assert.equal(new URL(new URL(dev.url).origin).hostname,'127.0.0.1')
+assert.equal(new URL(new URL(dev.url).origin).port,ownPort,'Startup server must match explicit owned port')
 const output=process.argv[2]
 if(!output)throw Error('Supply a new evidence JSON path')
 await readFile(output).then(()=>{throw Error('Refusing to replace evidence')},e=>{if(e.code!=='ENOENT')throw e})
@@ -57,13 +58,11 @@ try {
     if(mode==='cold-editor')await cdp.send('Network.clearBrowserCache')
     if(mode!=='restart') {
       await page.goto(dev.url,{waitUntil:'domcontentloaded'})
-      await page.getByTestId('play').waitFor({timeout:180000})
+      await waitForProjectLoaded(page,{timeout:180000})
       await page.waitForFunction(()=>window.viewer?.scene?.modelRoot?.getObjectByName('Map'),null,{timeout:180000})
-      await page.waitForFunction(async()=>{const state=await fetch('/api/state').then(r=>r.json());return state.projectLoaded&&!state.lastLoadError},null,{timeout:180000})
-      await page.waitForFunction(()=>{const node=document.querySelector('[data-testid="play"]');return node&&!node.disabled},null,{timeout:180000})
       if(profiling)await cdp.send('Profiler.start')
       await page.evaluate(()=>{window.__startupAuthoringViewer=window.viewer;window.__editorPlayAt=performance.now()})
-      await page.getByTestId('play').click()
+      await runEditor(page)
     } else {
       if(profiling)await cdp.send('Profiler.start')
       await page.evaluate(()=>{window.__startupLongTasks=[];performance.clearResourceTimings();window.__editorPlayAt=performance.now();window.__actualEditorClickAt=window.__editorPlayAt;window.terminator.manager.start()})
@@ -135,21 +134,16 @@ try {
     assert(result.drawingBuffer.every(n=>n>0));assert.equal(result.renderEnabled,true);assert.deepEqual(pageErrors,[])
     // The existing unavailable lobby falls back to built-in Skynet. Preserve
     // those network errors, while rejecting shader/render and other failures.
-    // Editor file previews may read the heartbeat file through a stale revision.
-    // Record this exact volatile-metadata race, never whitelist gameplay assets.
-    const metadataFailures=[...requests.values()].filter(r=>r.status===412&&r.path==='/files/.kite3d/state.json')
-    report.runs.at(-1).editorMetadataFailures=metadataFailures
-    const onlyMetadata412=[...requests.values()].filter(r=>r.status===412).every(r=>r.path==='/files/.kite3d/state.json')
-    assert(errors.every(e=>e.includes('net::ERR_CONNECTION_REFUSED')||e.includes('status of 404')||e.includes('status of 412')&&metadataFailures.length&&onlyMetadata412),JSON.stringify(errors))
+    assert(errors.every(e=>e.includes('net::ERR_CONNECTION_REFUSED')||e.includes('status of 404')),JSON.stringify(errors))
     if(process.env.STARTUP_EXPECT_BAKED==='1'){assert(result.v2Stats[0].bakedReuse);assert(result.v2Stats[1].bakedReuse)}
     if(process.env.STARTUP_EXPECT_NO_ENEMY_OVERLAYS==='1')assert.equal(result.enemyPlates,0)
-    assert([...requests.values()].filter(r=>r.status>=400).every(r=>r.status===404&&['/favicon.ico','/files/.kite3d/console.log'].includes(r.path)||r.status===412&&r.path==='/files/.kite3d/state.json'),'Unexpected failed HTTP asset')
+    assert([...requests.values()].filter(r=>r.status>=400).every(r=>r.status===404&&r.path==='/favicon.ico'),'Unexpected failed HTTP asset')
     assert.equal(result.quality,'high');assert.equal(result.fov,72)
     await page.screenshot({path:output.replace(/\.json$/,'')+'-'+mode+'.png'})
     console.log(JSON.stringify({mode,timing,editorToMenuMs:menuAt-ready.editorAt,menuPlayToWorldMs:ready.at-ready.menuPlayAt,enemies:result.enemies,visuals:result.visuals}))
-    if(mode==='cold-editor')await page.getByTestId('play').click()
+    if(mode==='cold-editor')await stopEditor(page)
   }
-  if(await page.evaluate(()=>window.terminator?.manager?.started))await page.getByTestId('play').click()
+  if(await page.evaluate(()=>window.terminator?.manager?.started))await stopEditor(page)
   report.renderer=await rendererInfo(page)
   report.cgroup=browser.captureCgroup
   report.browser=browser.version()

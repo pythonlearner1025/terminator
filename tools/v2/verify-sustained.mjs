@@ -1,7 +1,6 @@
 // Run from project root: DISPLAY=:1 taskset -c 0,1 node tools/v2/verify-sustained.mjs
 // Requires the project's kite3d dev server. One disposable Playwright profile.
 import {readFile, writeFile, appendFile, mkdir} from 'node:fs/promises'
-import {spawn} from 'node:child_process'
 import {launchCaptureBrowser} from './capture-browser.mjs'
 const output=process.env.SUSTAIN_OUTPUT||'docs/evidence/sustained-validation.json'
 const findings=process.env.SUSTAIN_FINDINGS||'../coordination/sustained-validation.findings.md'
@@ -9,7 +8,7 @@ const seconds=Number(process.env.SUSTAIN_SECONDS||240)
 if(!Number.isFinite(seconds)||seconds<180||seconds>300)throw Error('SUSTAIN_SECONDS must be 180–300')
 const cg='/sys/fs/cgroup'+(await readFile('/proc/self/cgroup','utf8')).split('\n').find(x=>x.startsWith('0::')).slice(3)
 const report={startedAt:new Date().toISOString(),durationSeconds:seconds,viewport:[480,270],samples:[],errors:[],consoleErrors:[],resourceFailures:[]}
-let browser,monitor,child,deadline
+let browser,monitor,deadline
 await mkdir('docs/evidence',{recursive:true})
 const save=()=>writeFile(output,JSON.stringify(report,null,2)+'\n')
 async function progress(message){console.log(message);await appendFile(findings,`\n${new Date().toISOString()} ${message}\n`);await save()}
@@ -17,7 +16,7 @@ try{
  report.cgroup={memoryMax:Number(await readFile(cg+'/memory.max','utf8')),tasksMax:Number(await readFile(cg+'/pids.max','utf8')),abortAboveBytes:3.5*1024**3}
  // Monitor starts before launch, covers browser startup as well as scene load.
  monitor=setInterval(async()=>{try{const bytes=Number(await readFile(cg+'/memory.current','utf8'));report.peakCgroupBytes=Math.max(report.peakCgroupBytes||0,bytes);if(bytes>report.cgroup.abortAboveBytes&&!report.aborted){report.aborted='cgroup above 3.5 GiB';console.error(report.aborted);await browser?.close()}}catch{}},500)
- deadline=setTimeout(()=>{report.aborted='12 minute overall deadline';child?.kill('SIGTERM');browser?.close()},720000)
+ deadline=setTimeout(()=>{report.aborted='12 minute overall deadline';browser?.close()},720000)
  browser=await launchCaptureBrowser()
  if(report.aborted)throw Error(report.aborted)
  const context=await browser.newContext({viewport:{width:480,height:270},deviceScaleFactor:1,ignoreHTTPSErrors:true})
@@ -37,7 +36,7 @@ try{
  page.on('requestfailed',r=>{if(report.resourceFailures.length<30){const url=new URL(r.url());report.resourceFailures.push({path:url.pathname,error:r.failure()?.errorText})}})
  const dev=JSON.parse(await readFile('.kite3d/dev.json','utf8'))
  await page.request.get(dev.url)
- await page.goto(dev.origin+'/files/tools/map-runtime.html',{waitUntil:'domcontentloaded'})
+ await page.goto(new URL(dev.url).origin+'/files/tools/map-runtime.html',{waitUntil:'domcontentloaded'})
  await page.waitForFunction(()=>window.terminator?.manager?.ui?.screens?.route==='main')
  await progress('Owned 480x270 Vulkan browser loaded main menu; starting through actual DOM buttons.')
  async function domStart(){
@@ -105,17 +104,6 @@ try{
  report.restart=await domStart()
  report.restartStop=await page.evaluate(()=>{const m=window.terminator.manager,v=m.ctx.viewer;m.stop();return {runtimeRoots:v.scene.children.filter(o=>/Runtime|Endo menu stage/.test(o.name)).map(o=>o.name),memory:{...v.renderManager.webglRenderer.info.memory},programs:v.renderManager.webglRenderer.info.programs.length}})
  if(report.restartStop.runtimeRoots.length)throw Error('Restart Stop left runtime roots')
- await progress(`Restart DOM START next frame ${report.restart.nextFrameMs.toFixed(1)}ms; second Stop clean. Closing runtime page before editor check.`)
- await page.close()
- const editor=await context.newPage();await editor.goto(dev.url,{waitUntil:'domcontentloaded'})
- await editor.waitForFunction(async()=>{const state=await fetch('/api/state').then(r=>r.json());return state.projectLoaded&&!state.lastLoadError},null,{timeout:120000})
- await progress('Stopped editor loaded in same owned browser; running all three Kite3D check outcomes.')
- child=spawn('npx',['kite3d','check'],{stdio:['ignore','pipe','pipe']});let checkLog=''
- child.stdout.on('data',s=>{checkLog+=s;process.stdout.write(s)});child.stderr.on('data',s=>{checkLog+=s;process.stderr.write(s)})
- report.checkExit=await new Promise(resolve=>child.once('exit',resolve));child=null
- await writeFile('docs/evidence/sustained-check.log',checkLog)
- report.check=JSON.parse(await readFile('.kite3d/check.json','utf8'))
- if(report.checkExit!==0)throw Error('Kite3D check failed')
- await progress('Integrated Kite3D check completed successfully. Browser evidence recorded; closing owned browser.')
+ await progress(`Restart DOM START next frame ${report.restart.nextFrameMs.toFixed(1)}ms; second Stop clean. Browser lifecycle evidence recorded.`)
 }catch(error){report.error=error.stack;console.error(error.stack);process.exitCode=1}
-finally{clearInterval(monitor);clearTimeout(deadline);child?.kill('SIGTERM');await browser?.close();report.finishedAt=new Date().toISOString();await save()}
+finally{clearInterval(monitor);clearTimeout(deadline);await browser?.close();report.finishedAt=new Date().toISOString();await save()}

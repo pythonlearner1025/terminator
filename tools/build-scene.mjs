@@ -109,7 +109,7 @@ rootIndices.push(mapIndex)
 for (const spec of authoredSpecs()) rootIndices.push(ensureNode(spec))
 scene.nodes = [...new Set([...rootIndices, ...existingRootIndices])]
 pruneUnreachableNodes(document)
-addWeaponReferences(document)
+addWeaponReferences(document,{includeRevolverRebuild:true})
 
 await writeFile(scenePath, `${JSON.stringify(document, null, 2)}\n`)
 const placedCount = document.nodes.filter(node => node.extras?.mapPiece?.nodeId).length

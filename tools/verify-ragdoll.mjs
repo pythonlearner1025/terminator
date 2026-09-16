@@ -4,7 +4,7 @@ import {readFile,writeFile,mkdir} from 'node:fs/promises'
 import assert from 'node:assert/strict'
 const root=new URL('../',import.meta.url),out=new URL('file:///Users/minjunes/games/terminator-evidence/docs/evidence/ragdoll/')
 const dev=JSON.parse(await readFile(new URL('.kite3d/dev.json',root),'utf8'))
-assert.equal(new URL(dev.origin).port,'4670')
+assert.equal(new URL(new URL(dev.url).origin).port,'4670')
 const captureScreenshots=process.argv.includes('--screenshots')
 if(captureScreenshots)await mkdir(out,{recursive:true})
 const browser=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true,args:['--use-angle=metal']})
@@ -22,7 +22,7 @@ page.on('pageerror',e=>errors.push(redact(e.message)))
 page.on('console',e=>{if(['warning','error'].includes(e.type()))report(e.text(),e.location().url)})
 try {
   await page.request.get(dev.url)
-  await page.goto(dev.origin+'/files/tools/map-runtime.html')
+  await page.goto(new URL(dev.url).origin+'/files/tools/map-runtime.html')
   await page.waitForFunction(()=>window.terminator?.manager?.unitView,null,{timeout:90000})
   await page.waitForFunction(()=>terminator.manager.ui.screens.route==='main',null,{timeout:90000})
   await page.evaluate(async()=>{

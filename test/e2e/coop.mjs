@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import {waitForProjectLoaded,runEditor,stopEditor,getCanvas} from '../helpers/editor-driver.mjs'
 import assert from 'node:assert/strict'
 import {spawn} from 'node:child_process'
 import {mkdir, readFile, writeFile} from 'node:fs/promises'
@@ -60,7 +61,7 @@ try {
   const authenticatedInvite = new URL(invite)
   authenticatedInvite.searchParams.set('t', new URL(dev.url).searchParams.get('t'))
   await guest.goto(authenticatedInvite.href, {waitUntil: 'domcontentloaded'})
-  await guest.getByTestId('play').click()
+  await runEditor(guest)
   await guest.waitForFunction(() => window.terminator?.manager?.ui?.screens?.route === 'party-join', null, {timeout: 120_000})
   await guest.locator('[data-party-field="name"]').fill('Sarah')
   await guest.getByTestId('join-party-submit').click()
@@ -289,7 +290,7 @@ function watchPage(role, page) {
 
 async function bootEditor(page, url) {
   await page.goto(url, {waitUntil: 'domcontentloaded'})
-  await page.getByTestId('play').click()
+  await runEditor(page)
   await page.waitForFunction(() => window.terminator?.manager?.ui?.screens?.route === 'main', null, {timeout: 120_000})
   await page.evaluate(() => {
     const ui = window.terminator.manager.ui

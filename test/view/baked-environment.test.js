@@ -12,8 +12,11 @@ function snapshot(root){
  const groups=new Map()
  root.traverse(m=>{if(!m.isMesh)return;const group=m.userData.v2Ground?'ground':m.userData.v2PileCover?m.name:m.userData.architectureSurface==='photoscan'?m.name:m.name
   const attrs=Object.entries(m.geometry.attributes).map(([key,a])=>[key==='_v2fracturemask'?'v2FractureMask':key,a]).sort(([a],[b])=>a.localeCompare(b))
+  const normalized=new Map(attrs.map(([,a])=>[a,a.array instanceof Float32Array
+    ? Float32Array.from(a.array,value=>Math.round(value*1e5)/1e5)
+    : a.array]))
   const hashRows=[],count=m.geometry.index?.count||m.geometry.attributes.position.count,width=attrs.reduce((n,[,a])=>n+a.itemSize*4,0)*3,row=Buffer.alloc(width)
-  for(let i=0;i<count;i+=3){let offset=0;for(let j=0;j<3;j++){const vertex=m.geometry.index?m.geometry.index.getX(i+j):i+j;for(const [,a]of attrs){const bytes=Buffer.from(a.array.buffer,a.array.byteOffset,a.array.byteLength);bytes.copy(row,offset,vertex*a.itemSize*4,(vertex+1)*a.itemSize*4);offset+=a.itemSize*4}}hashRows.push(row.toString('base64'))}
+  for(let i=0;i<count;i+=3){let offset=0;for(let j=0;j<3;j++){const vertex=m.geometry.index?m.geometry.index.getX(i+j):i+j;for(const [,a]of attrs){const array=normalized.get(a),bytes=Buffer.from(array.buffer,array.byteOffset,array.byteLength);bytes.copy(row,offset,vertex*a.itemSize*4,(vertex+1)*a.itemSize*4);offset+=a.itemSize*4}}hashRows.push(row.toString('base64'))}
   hashRows.sort();const hash=createHash('sha256');for(const row of hashRows)hash.update(row)
   groups.set(group+(m.userData.v2Ground?m.material.name:''),{hash:hash.digest('hex'),count,material:{color:m.material.color.toArray().map(Math.fround),roughness:m.material.roughness,metalness:m.material.metalness,side:m.material.side,vertexColors:m.material.vertexColors},shadow:[m.castShadow,m.receiveShadow]})
  });return groups

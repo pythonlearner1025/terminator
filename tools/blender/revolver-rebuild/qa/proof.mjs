@@ -1,16 +1,15 @@
+import {waitForProjectLoaded,runEditor,stopEditor,getCanvas} from '../../../../test/helpers/editor-driver.mjs'
 // Actual editor Play + GameManager/WeaponView, one private Linux Chromium tab.
 // Invoke through run.sh: the lock and cgroup are part of the proof contract.
 import {chromium} from 'playwright'
-import {readFile, writeFile, mkdir, copyFile, access} from 'node:fs/promises'
-import {execFile, execFileSync} from 'node:child_process'
-import {promisify} from 'node:util'
+import {readFile, writeFile, mkdir, access} from 'node:fs/promises'
+import {execFileSync} from 'node:child_process'
 import {resolve,dirname} from 'node:path'
 import {freezeGate,digest,SOURCE} from './export-contract.mjs'
-const run = promisify(execFile)
 if (process.env.REVOLVER_QA_LOCKED !== '1') throw Error('Use qa/run.sh for resource isolation')
 const argv=process.argv.slice(2),option=(name,fallback)=>{const i=argv.indexOf(name);return i<0?fallback:argv[i+1]}
 const mode=option('--mode','gameplay')
-if(!['gameplay','check'].includes(mode))throw Error('Use --mode gameplay or --mode check')
+if(mode!=='gameplay')throw Error('The rewrite proof supports --mode gameplay; engine Check was removed')
 const out=resolve(option('--out',`.kite3d/revolver-imported-${mode}`))
 const manifestPath=resolve(option('--manifest','../coordination/revolver-retarget-ready.json'))
 const exportPath=resolve(option('--export','tools/blender/revolver-rebuild/generated/assembled-imported/revolver-rebuild.gltf'))
@@ -35,17 +34,17 @@ const stage = async name => {report.stages.push({name,ms:Date.now()-started});co
 const started=Date.now()
 let browser,page,deadline,resourceTimer
 const pendingRequests=new Map()
-const resourceSample=async()=>{if(!report.cgroup)return;const row={ms:Date.now()-started};for(const f of ['memory.current','memory.peak','memory.events','pids.current','pids.events'])try{row[f]=(await readFile(`/sys/fs/cgroup${report.cgroup}/${f}`,'utf8')).trim()}catch{};row.pendingRequests=[...pendingRequests.values()].slice(0,12).map(r=>({path:r.path,ageMs:Date.now()-r.started}));try{const state=JSON.parse(await readFile('.kite3d/state.json','utf8'));row.editor={updatedAt:state.updatedAt,playState:state.playState,lastLoadError:safe(state.lastLoadError)}}catch{};report.resources.push(row)}
+const resourceSample=async()=>{if(!report.cgroup)return;const row={ms:Date.now()-started};for(const f of ['memory.current','memory.peak','memory.events','pids.current','pids.events'])try{row[f]=(await readFile(`/sys/fs/cgroup${report.cgroup}/${f}`,'utf8')).trim()}catch{};row.pendingRequests=[...pendingRequests.values()].slice(0,12).map(r=>({path:r.path,ageMs:Date.now()-r.started}));report.resources.push(row)}
 async function ownership(label) {
  const data=await page.evaluate(async label=>{
   if(label.startsWith('stop-'))return window.revolverQAStopped
-  const E=await import('@kite3d/engine'),v=label==='after-official-check'?window.revolverQAEditor:window.viewer,m=window.terminator?.manager
+  const v=window.viewer,m=window.terminator?.manager
   const snapshot=()=>{
-   const names=[],byOwner={};let sceneNodes=0,authoredNodes=0
-   v.scene.traverse(o=>{sceneNodes++;const r=o.userData.kite3dRuntime;if(r){names.push(o.name);byOwner[r.ownerId]=(byOwner[r.ownerId]||0)+1}})
+   const names=[];let sceneNodes=0,authoredNodes=0,outsideRenderables=0
+   v.scene.traverse(o=>{sceneNodes++;if(/Runtime|Endo menu stage|Weapons Lab Environment/.test(o.name))names.push(o.name);if((o.isMesh||o.isLine||o.isPoints)&&!v.scene.modelRoot.getObjectById(o.id))outsideRenderables++})
    v.scene.modelRoot.traverse(()=>authoredNodes++)
    const c=v.scene.mainCamera
-   return {running:v.getPlugin('EntityComponentPlugin')?.running||false,started:m?.started||false,sceneNodes,authoredNodes,names,byOwner,cleanup:E.runtimeCleanupReport(v),hud:document.querySelectorAll('[data-testid="terminator-hud"]').length,camera:{position:c.position.toArray(),quaternion:c.quaternion.toArray(),fov:c.fov,near:c.near,controlsMode:c.controlsMode}}
+   return {running:v.getPlugin('EntityComponentPlugin')?.running||false,started:m?.started||false,sceneNodes,authoredNodes,names,outsideRenderables,hud:document.querySelectorAll('[data-testid="terminator-hud"]').length,labDom:document.querySelectorAll('[data-testid="weapons-lab"], [data-terminator-range-style]').length,listenerTypes:Object.keys(v._listeners||{}).sort(),camera:{position:c.position.toArray(),quaternion:c.quaternion.toArray(),fov:c.fov,near:c.near,controlsMode:c.controlsMode}}
   }
   if(label.startsWith('play-'))window.revolverQA.snapshot=snapshot
   return snapshot()
@@ -79,14 +78,14 @@ async function capture(name,method='world-input',requested={}) {
   const cartridges=Object.fromEntries(['Case','Fresh','Bullet'].map(prefix=>[prefix,Array.from({length:6},(_,i)=>{const n=r.root.getObjectByName(prefix+i);return {name:n?.name,scale:n?.scale.toArray(),position:n?.position.toArray(),visible:n?.visible}})]))
   return {cartridges,spent:[...cp.spent],retiredGeometry,manager:m.constructor.ComponentType,embeddedHandMeshes:handMeshes,skin,markerPositions:Object.fromEntries(['Muzzle','HandRight','HandLeft','Cylinder','Hammer'].map(name=>[name,r.root.getObjectByName(name)?.getWorldPosition(new T.Vector3()).toArray()])),tick:m.world.tick,activeVariant:w.variant,clip:cp.name,clipTime:cp.actions.get(cp.name)?.time,clipDuration:cp.actions.get(cp.name)?.getClip().duration,clipFraction:cp.actions.get(cp.name)?cp.actions.get(cp.name).time/cp.actions.get(cp.name).getClip().duration:null,reloadProgress:m.world.player.reloadTimer>0?1-m.world.player.reloadTimer/m.world.weaponCatalog.weapons.pistol.reloadSeconds:0,clips:[...cp.actions.keys()],aimAmount:w.animation.aimAmount,shots:cp.shots,ammo:{...m.world.player.ammo.pistol},reloadTimer:m.world.player.reloadTimer,velocity:{...m.world.player.vel},canvas:{x:rect.x,y:rect.y,width:rect.width,height:rect.height},weaponFov:w.camera.fov,worldFov:c.fov,reticle:[rect.width/2,rect.height/2],bounds,sights,hammer:r.root.getObjectByName('Hammer').quaternion.toArray(),cylinder:r.root.getObjectByName('Cylinder').quaternion.toArray(),freshScales:Array.from({length:6},(_,i)=>r.root.getObjectByName('Fresh'+i)?.scale.toArray()),fx:{...w.fx.revolver?.stats},renderer:v.renderManager.webglRenderer.info.render}
  })
- await page.getByTestId('game-canvas').screenshot({path:`${out}/${name}.png`,timeout:10000})
+ await getCanvas(page).screenshot({path:`${out}/${name}.png`,timeout:10000})
  const png=await readFile(`${out}/${name}.png`)
  report.captures.push({name,method,...requested,imageSha256:digest(png),imageSize:[png.readUInt32BE(16),png.readUInt32BE(20)],...data});await save()
  if(data.skin.length!==1||data.skin[0].boneCount!==49||data.skin[0].sourceSkeletonReused||data.retiredGeometry.length||JSON.stringify(data.embeddedHandMeshes)!==JSON.stringify(data.skin.map(s=>s.name)))throw Error('Live imported skin contract failed; see capture JSON')
 }
 async function enterMatch() {
  await stage('play-requested')
- await page.getByTestId('play').click()
+ await runEditor(page)
  await page.waitForFunction(()=>window.terminator?.manager?.started,null,{timeout:45000})
  await stage('manager-started')
  await page.evaluate(async()=>{
@@ -108,8 +107,8 @@ async function enterMatch() {
 async function stop() {
  await page.evaluate(()=>{const m=window.terminator.manager,q=window.revolverQA;m.update=q.originalUpdate;const container=m.ctx.viewer.container;if(q.originalStyle===null)container.removeAttribute('style');else container.setAttribute('style',q.originalStyle);m.ctx.viewer.resize()})
  await page.evaluate(()=>{const ecp=window.terminator.manager.ctx.ecp,original=ecp.stop;ecp.stop=function(...args){const value=original.apply(this,args);window.revolverQAStopped=window.revolverQA.snapshot();return value}})
- await page.getByTestId('play').click()
- await page.waitForFunction(()=>!window.kite3dGame)
+ await stopEditor(page)
+ await page.waitForFunction(()=>!window.viewer.getPlugin('EntityComponentPlugin').running)
  // Do not retain closures containing a disposed Play viewer across restart.
  await page.evaluate(()=>{delete window.revolverQA})
  await stage('editor-stopped')
@@ -139,7 +138,7 @@ try {
  page.on('response',r=>{if(r.status()>=400)report.httpErrors.push({status:r.status(),path:new URL(r.url()).pathname})})
  await stage('browser-started')
  await page.goto(dev.url,{waitUntil:'domcontentloaded',timeout:30000})
- await page.getByTestId('play').waitFor({timeout:30000})
+ await waitForProjectLoaded(page,{timeout:30000})
  await stage('editor-loaded')
  await page.evaluate(()=>{window.revolverQAEditor=window.viewer})
  await page.waitForTimeout(2500)
@@ -184,25 +183,6 @@ try {
  await enterMatch();await ownership('play-2');await capture('09-restarted-hip');await stop();await ownership('stop-2')
  await stage('restart-complete')
  }
- if(mode==='check'){
- // Require a live stopped editor; official CLI then uses this same tab.
- let state
- for(let attempt=0;attempt<100;attempt++){try{state=JSON.parse(await readFile('.kite3d/state.json','utf8'));if(Date.parse(state.updatedAt)>=started&&state.projectLoaded&&state.playState==='stopped')break}catch{};await new Promise(r=>setTimeout(r,250))}
- if(!state)throw Error('Connected editor did not publish state')
- report.stateBeforeCheck={updatedAt:state.updatedAt,playState:state.playState,clientId:state.clientId}
- if(Date.now()-Date.parse(state.updatedAt)>15000)throw Error('Editor state stale; refusing a fallback second browser')
- const remaining=Math.min(85000,108000-(Date.now()-started))
- if(remaining<5000)throw Error('Insufficient time remaining for official check')
- await stage('official-check-requested')
- try {const result=await run('npx',['--no-install','kite3d','check'],{timeout:remaining,maxBuffer:1024*1024,env:{...process.env,PLAYWRIGHT_BROWSERS_PATH:resolve(out,'no-fallback-browser')}});report.checkOutput=safe(result.stdout+result.stderr)}catch(e){report.checkOutput=safe((e.stdout||'')+(e.stderr||'')+'\n'+e.message)}
- const checkText=await readFile('.kite3d/check.json','utf8').catch(()=>null)
- if(!checkText)throw Error('Official check did not produce check.json within the bounded run')
- report.check=JSON.parse(checkText)
- if(Date.parse(report.check.checkedAt)<started)throw Error('Official check.json predates this run')
- await copyFile('.kite3d/check.json',`${out}/check.json`)
- await ownership('after-official-check')
- await stage('official-check-complete')
- }
  report.completed=true
 } catch(e) {report.failure=safe(e.stack||e);process.exitCode=1;console.error(safe(e.message));if(page)try{report.pageText=safe(await page.locator('body').innerText({timeout:2000}));await page.screenshot({path:`${out}/failure.png`,timeout:3000})}catch{}}
 finally {
@@ -210,7 +190,6 @@ finally {
  await resourceSample()
  if(browser)await browser.close().catch(()=>{})
  report.elapsedMs=Date.now()-started;report.closedOwnBrowser=true
- for(const file of ['state.json','console.log'])try{await writeFile(`${out}/${file}`,safe(await readFile(`.kite3d/${file}`,'utf8')))}catch{}
  await save()
  console.log(JSON.stringify({output:out,completed:report.completed||false,captures:report.captures.length,errors:report.errors.length,elapsedMs:report.elapsedMs}))
 }

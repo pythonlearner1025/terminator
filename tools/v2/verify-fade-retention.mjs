@@ -32,7 +32,7 @@ try{
  page.on('pageerror',e=>report.errors.push(e.message.replace(/([?&]t=)[^&\s"')]+/g,'$1[REDACTED]')))
  const dev=JSON.parse(await readFile('.kite3d/dev.json','utf8'));await page.request.get(dev.url)
  for(const label of (process.env.FADE_STAGE?[process.env.FADE_STAGE]:['old','fixed'])){
-  await page.goto(dev.origin+'/files/tools/map-runtime.html',{waitUntil:'domcontentloaded'})
+  await page.goto(new URL(dev.url).origin+'/files/tools/map-runtime.html',{waitUntil:'domcontentloaded'})
   await page.waitForFunction(()=>window.terminator?.manager?.ui?.screens?.route==='main')
   await page.evaluate(()=>{
    const m=window.terminator.manager,u=m.unitView,v=m.ctx.viewer,r=v.renderManager.webglRenderer

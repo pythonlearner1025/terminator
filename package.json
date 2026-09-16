@@ -13,12 +13,8 @@
   "mainScene": "assets/main.scene.gltf",
   "main": "./main.js",
   "scripts": {
-    "postinstall": "node tools/patch-kite3d-file-put.mjs",
-    "test:kite3d-put": "node --test --test-concurrency=1 test/server/kite3d-file-put.test.js test/server/kite3d-file-put-installer.test.js",
-    "probe:kite3d-put": "node tools/kite3d-put-probe.mjs",
     "dev": "kite3d dev",
     "publish": "kite3d publish",
-    "pull": "kite3d pull",
     "server": "node server/index.js",
     "tunnel": "node server/party-tunnel.js",
     "dev:all": "concurrently -k -n game,server \"npm run dev\" \"npm run server\"",
@@ -55,19 +51,19 @@
   "devDependencies": {
     "@gltf-transform/core": "^4.5.0",
     "concurrently": "^9.2.1",
-    "kite3d": "0.19.0-alpha.2",
-    "meshoptimizer": "0.20.0"
+    "kite3d": "file:../../kite3d/packages/kite3d",
+    "meshoptimizer": "0.20.0",
+    "playwright": "^1.63.0"
   },
   "dependencies": {
     "@jitl/quickjs-wasmfile-release-sync": "^0.32.0",
-    "@kite3d/engine": "0.19.0-alpha.2",
+    "@kite3d/engine": "file:../../kite3d/packages/engine",
     "cannon-es": "0.20.0",
     "quickjs-emscripten": "0.32.0",
     "threepipe": "0.5.1",
     "ws": "^8.21.3"
   },
   "kite3d": {
-    "version": "0.19.0-alpha.2",
     "name": "Terminator: human vs Skynet",
     "imports": {
       "#quickjs-core": "https://esm.sh/quickjs-emscripten-core@0.32.0?bundle",
@@ -77,7 +73,6 @@
     },
     "scripts": [
       "./scripts/GameManager.script.js",
-      "./generators/v2-preview.js",
       "./scripts/WeaponsLab.script.js"
     ],
     "viewer": {
@@ -96,19 +91,6 @@
           0
         ]
       }
-    },
-    "publish": {
-      "exclude": [
-        "coordination/**",
-        "docs/**",
-        "docs/evidence/**",
-        "server/**",
-        "packages/**",
-        "test/**",
-        "tools/**",
-        "coordination/**",
-        "assets/reference/**"
-      ]
     },
     "plugins": [
       "./lib/view/v2/exact-image-source.plugin.js",

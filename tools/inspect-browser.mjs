@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import {waitForProjectLoaded,runEditor,stopEditor,getCanvas} from '../test/helpers/editor-driver.mjs'
 import {readFile} from 'node:fs/promises'
 import {chromium} from 'playwright'
 
@@ -13,7 +14,7 @@ page.on('console', (message) => {
 })
 page.on('pageerror', (error) => messages.push(`pageerror: ${safe(error.stack || error.message)}`))
 await page.goto(dev.url, {waitUntil: 'domcontentloaded'})
-await page.getByTestId('play').click()
+await runEditor(page)
 await page.waitForFunction(() => Boolean(window.viewer), {timeout: 15000})
 await page.waitForTimeout(1500)
 if (process.argv.includes('--ai')) {

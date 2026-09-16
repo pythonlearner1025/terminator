@@ -1,6 +1,7 @@
 # Kite3D research notes
 
-Research date: 2026-09-11.
+Research date: 2026-09-11. It records Kite3D 0.15.0 as it was on that date. The engine rewrite
+deleted a large part of what is described below. Read `AGENTS.md` for the API this game uses now.
 
 ## Summary
 
@@ -669,9 +670,11 @@ SHA-256: 36c75b6063db1045580e647ce30ed2aca7d93e401b6026acd663a628ecd6a1a4
 
 The screenshot shows the full editor in Play mode. The viewport is blank because the fresh scene is empty.
 
-The generated guide names `data-testid="game-canvas"`. The tested editor did not expose that test ID. It exposed `play`, `save-scene`, `open-game`, `check-game`, `scene-hierarchy`, and `project-files`. Wait on `play` and then `window.viewer` for this release.
+That release's editor selectors no longer apply. Current browser harnesses import
+`test/helpers/editor-driver.mjs`, wait for `window.kite3dProjectLoaded`, and use the editor's
+Edit/Run controls and `.editorCanvasContainer canvas` through that adapter.
 
-For FPS screenshots, expose a deterministic test mode. Accept synthetic aim coordinates. Do not require pointer lock. Use `page.keyboard` for movement. Publish stable telemetry with `publishGameTelemetry` for assertions.
+For FPS screenshots, expose a deterministic test mode. Accept synthetic aim coordinates. Do not require pointer lock. Use `page.keyboard` for movement. Read assertions from `window.terminator`.
 
 ## AI agent features
 
@@ -683,8 +686,6 @@ Kite3D 0.15.0 is explicitly agent-oriented.
 - `kite3d restore` restores a checkpoint without rewriting history.
 - `kite3d journal` reports human scene edits.
 - `kite3d check` validates Playable, Editable, and Persisted outcomes.
-- `registerGameValidation` adds project assertions.
-- `publishGameTelemetry` exposes an immutable test snapshot.
 - `kite3d bake` converts procedural previews into authored scene nodes.
 - `kite3d sources` locates the installed Threepipe source.
 - The local API exposes state, files, events, check, bake, and publish operations.

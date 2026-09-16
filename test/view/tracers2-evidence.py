@@ -88,9 +88,6 @@ summary={'runs':runs,'corePixels':{name:core_pixels(name) for name in ['after-m4
     'captures':{name:json.loads((scratch/f'{name}-capture.json').read_text()) for name in ['before','after']},
     'referenceBytes':sum(p.stat().st_size for p in Path('docs/reference/tracers').glob('*.jpg')),
     'gifBytes':(out/'m4-burst.gif').stat().st_size}
-summary['checks']={}
-for label,path in [('default',scratch/'check-default.json'),('headlessMetal',Path('.kite3d/check.json'))]:
-    if path.exists():summary['checks'][label]=json.loads(path.read_text())['outcomes']
 summary['testRuns']=[]
 for name in ['npm-test.log','npm-test-final.log','npm-test-retry.log']:
     path=scratch/name

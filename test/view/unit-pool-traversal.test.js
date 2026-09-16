@@ -5,7 +5,7 @@ globalThis.window ??= {removeEventListener(){}}
 const E=await import('threepipe')
 const {UnitView}=await import('../../lib/view/units.js')
 
-test('a recycled rig stops scene matrix traversal, reactivates without allocation, and returns to owner cleanup',()=>{
+test('a recycled rig stops scene matrix traversal, reactivates without allocation, and leaves with its runtime root',()=>{
  const scene=new E.Group(),root=new E.Group();scene.add(root)
  const view=new UnitView({removeEventListener(){}})
  view.root=root;view.dormantRoot=new E.Group();view.templates={endo:new E.Group()};view.visualPool={endo:[]}
@@ -29,8 +29,6 @@ test('a recycled rig stops scene matrix traversal, reactivates without allocatio
  scene.updateMatrixWorld(true);assert(updates>0);assert.deepEqual(object.position.toArray(),[2,3,4])
  view.visuals.set('new',visual);view.recycleVisual('new',visual,'endo')
  const template=new E.Group();view.dormantRoot.add(template);view.runtimeTemplates={endo:template}
- let cleaned=0
- view.owner={cleanup(){const seen=[];root.traverse(o=>seen.push(o));assert(seen.includes(object));assert(seen.includes(template));cleaned++;root.removeFromParent()}}
- view.stop();view.stop();assert.equal(cleaned,1);assert.equal(view.dormantRoot,null)
+ view.stop();view.stop();assert.equal(root.parent,null);assert.equal(view.dormantRoot,null)
  geometry.dispose();material.dispose()
 })

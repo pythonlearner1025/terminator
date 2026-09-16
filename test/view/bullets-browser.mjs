@@ -1,3 +1,4 @@
+import {waitForProjectLoaded,runEditor,stopEditor,getCanvas} from '../helpers/editor-driver.mjs'
 // Headless proof against an isolated lab server. Does not start or stop any server.
 // node test/view/bullets-browser.mjs .kite3d/bullets-proof/.kite3d/dev.json
 import {chromium} from 'playwright'
@@ -10,7 +11,7 @@ const browser=await chromium.launch({headless:true,executablePath:'/Applications
 const page=await browser.newPage({viewport:{width:1920,height:1080},deviceScaleFactor:1}),errors=[]
 page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text())})
 try {
- await page.goto(dev.url+'&range=1');await page.getByTestId('play').click({timeout:60000})
+ await page.goto(dev.url+'&range=1');await runEditor(page,{timeout:60000})
  await page.waitForFunction(()=>window.terminator?.manager?.started,null,{timeout:60000})
  await page.evaluate(async()=>{
   const m=window.terminator.manager,v=window.viewer;await m.ready;m.capturePaused=true;m.input.stop();m.range.setReloads(false)

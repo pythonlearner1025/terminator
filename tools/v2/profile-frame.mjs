@@ -10,7 +10,7 @@ import {launchCaptureBrowser,browserOptions} from './capture-browser.mjs'
 const out=resolve(process.argv[2]);await access(out).then(()=>{throw Error('Output exists')},e=>{if(e.code!=='ENOENT')throw e});await mkdir(out,{recursive:true})
 const dev=JSON.parse(await readFile('.kite3d/dev.json','utf8'))
 const ownPort=process.env.FRAME_DEV_PORT||'4751'
-if(!['4751','4753'].includes(ownPort)||new URL(dev.origin).hostname!=='127.0.0.1'||new URL(dev.origin).port!==ownPort)throw Error('Frame server must match explicit owned port')
+if(!['4751','4753'].includes(ownPort)||new URL(new URL(dev.url).origin).hostname!=='127.0.0.1'||new URL(new URL(dev.url).origin).port!==ownPort)throw Error('Frame server must match explicit owned port')
 const config=JSON.parse(await readFile(new URL('../../docs/scene-targets/views.json',import.meta.url),'utf8'))
 const report={git:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),status:execFileSync('git',['status','--short'],{encoding:'utf8'}),config,sourceFiles:{},errors:[],views:[],method:'150 fixed-view frames at tick 120; 120 deterministic active warmup frames then 360 active frames, 1/60s gameplay update per render; cadence measured independently; seventh view resumes native deltaTime/catch-up for 180 frames from the same tick-600 state; CPU frame starts before component preFrame; GPU spans all viewer render passes'}
 for(const file of execFileSync('git',['ls-files','lib','scripts','main.js','package.json','assets/main.scene.gltf'],{encoding:'utf8'}).trim().split('\n'))report.sourceFiles[file]=createHash('sha256').update(await readFile(file)).digest('hex')
@@ -33,7 +33,7 @@ try {
  page.on('pageerror',e=>{report.errors.push(e.message);console.log('pageerror',e.message.slice(0,250))})
  await page.addInitScript(({seed,settings})=>{let s=seed>>>0;Math.random=()=>{s=(Math.imul(s,1664525)+1013904223)>>>0;return s/4294967296};localStorage.setItem('terminator.settings.v1',JSON.stringify(settings))},config)
  await page.request.get(dev.url);console.log('authenticated')
- await page.goto(dev.origin+'/files/tools/map-runtime.html',{waitUntil:'domcontentloaded'});console.log('document loaded')
+ await page.goto(new URL(dev.url).origin+'/files/tools/map-runtime.html',{waitUntil:'domcontentloaded'});console.log('document loaded')
  await page.waitForFunction(()=>window.terminator?.manager?.ui?.screens?.route==='main',null,{timeout:120000});console.log('main ready')
  await page.evaluate(async()=>{const m=window.terminator.manager;window.perfOriginalUpdate=m.update;m.update=()=>true;await m.ui.startMatch();await m.mapView.ready;await m.visualWarmup;m.ui.screens.show(null);m.input.stop();m.unitView.toggleShowcase(false)})
  console.log('match ready')

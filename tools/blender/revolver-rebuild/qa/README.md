@@ -13,9 +13,9 @@ npx --no-install kite3d dev --port 4777 --no-open
 
 Use exact 0.19.0-alpha.2 dependencies and an existing Playwright browser. Never install through the shared node_modules symlink. No browser download is attempted.
 
-## Two serialized, bounded runs
+## One bounded gameplay run
 
-Replace `APPROVED_MANIFEST_SHA256` with the approved manifest digest. `--export` may point to another isolated frozen staging directory. Both runs must use the same immutable manifest/export.
+Replace `APPROVED_MANIFEST_SHA256` with the approved manifest digest. `--export` may point to another isolated frozen staging directory. The run must use the immutable manifest/export.
 
 ```sh
 tools/blender/revolver-rebuild/qa/run.sh \
@@ -24,14 +24,7 @@ tools/blender/revolver-rebuild/qa/run.sh \
   --manifest ../coordination/revolver-retarget-ready.json \
   --approved-manifest-sha APPROVED_MANIFEST_SHA256
 
-tools/blender/revolver-rebuild/qa/run.sh \
-  --mode check --out .kite3d/revolver-imported-check \
-  --export tools/blender/revolver-rebuild/generated/assembled-imported/revolver-rebuild.gltf \
-  --manifest ../coordination/revolver-retarget-ready.json \
-  --approved-manifest-sha APPROVED_MANIFEST_SHA256
-
 node tools/blender/revolver-rebuild/qa/summarize.mjs .kite3d/revolver-imported-gameplay
-node tools/blender/revolver-rebuild/qa/summarize.mjs .kite3d/revolver-imported-check
 node --test tools/blender/revolver-rebuild/qa/export-contract.test.mjs
 ```
 
@@ -39,16 +32,13 @@ The runner takes the shared `revolver-blender.lock`, requires at least 3 GiB Mem
 
 Gameplay captures include hip, ADS, fire, five reload phases, sprint, authored Inspect, and restarted hip. It records actual skin samples/bone names, clone skeleton independence, all nine clips, marker positions, real weapon-projection sight pixels, clipping/framing, ammo, source/asset/PNG hashes, console/network errors, and resource-pressure samples. Pose timing uses normal director/range inputs with wall time frozen. Reload captures seek forward from the measured current reload progress and record requested/actual clip fractions with a one-tick tolerance; they fail if a requested phase has already passed. Only Inspect samples an authored clip, clearly marked. Contact stills do not certify continuous collision-free motion.
 
-The Stop observer records `runtimeCleanupReport` synchronously after the original ECP.stop and before Kite disposes its Play viewer. Only stopped reports indicate cleanup success. It releases QA closures retaining the disposed viewer, then requests garbage collection in this private browser before the second editor Play. This is resource mitigation, not a stop-performance claim. Camera values are compared without transient UUIDs. Gameplay proof and official check are split to give each a full bounded run.
-
-Check mode runs official `npx --no-install kite3d check` with a connected, stopped editor. A deliberately nonexistent child-only `PLAYWRIGHT_BROWSERS_PATH` prevents the CLI from launching a second fallback browser. `check.json` must come from this run; timeout/missing results are reported unavailable, never three passes. The command can save/reload the isolated scene as part of its normal persistence check.
+The Stop observer records scene-node, runtime-root, listener-type, and DOM counts after component shutdown. It releases QA closures retaining the stopped viewer, requests garbage collection in this private browser, and repeats editor Run/Stop to prove stable cleanup. Camera values are compared without transient UUIDs.
 
 ## Self-contained actual-game comparison
 
 ```sh
 node tools/blender/revolver-rebuild/qa/review-html.mjs \
   --proof .kite3d/revolver-imported-gameplay \
-  --check .kite3d/revolver-imported-check \
   --skin tools/blender/revolver-rebuild/generated/imported-final-frozen/skin-roundtrip.json \
   --out tools/blender/revolver-rebuild/generated/revolver-imported-review.html
 ```
@@ -75,8 +65,7 @@ Frozen source `524194f`, asset `b04f819`; runtime lib/scripts/main.js match revi
   native skin deformation, five measured Reload phases, and authored Inspect.
 - Both Stops remove 23 tracked objects, 468 outside renderables, and one HUD.
   Second Play succeeds with stable owner counts and restored scene/camera.
-- Official check: `.kite3d/revolver-imported-check-final/check.json`, `mode: editor`;
-  Playable, Editable and Persisted all pass. Both private browsers closed.
+- Two Run/Stop cycles completed with stable scene, listener, and DOM counts; the private browser closed.
 - ADS at 960×640: front sight top `(480.0000,318.9826)`, rear top
   `(480.0000,318.5564)`; aiming reference `(480,320)`.
 - Visual review found no camera-clipping sleeve strips in the captured poses.

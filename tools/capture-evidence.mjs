@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import {waitForProjectLoaded,runEditor,stopEditor,getCanvas} from '../test/helpers/editor-driver.mjs'
 import {mkdir, readFile} from 'node:fs/promises'
 import {chromium} from 'playwright'
 
@@ -23,10 +24,10 @@ page.on('response', (response) => {
 
 try {
   await page.goto(dev.url, {waitUntil: 'domcontentloaded'})
-  await page.getByTestId('play').waitFor({state: 'visible', timeout: 15000})
+  await waitForProjectLoaded(page,{timeout:15000})
   await page.waitForTimeout(750)
   const alreadyPlaying = await page.evaluate(() => Boolean(window.terminator?.world))
-  if (!alreadyPlaying) await page.getByTestId('play').click()
+  if (!alreadyPlaying) await runEditor(page)
   await page.waitForFunction(() => Boolean(window.terminator?.world && document.querySelector('[data-testid="terminator-hud"]')), undefined, {timeout: 15000})
   await waitTicks(40)
 
@@ -99,7 +100,7 @@ try {
     playerStart: window.terminator.world.replay.length > 0,
   }))
   await releasePointerLock()
-  await page.getByTestId('play').click({force: true})
+  await stopEditor(page)
   await page.waitForFunction(() => !document.querySelector('[data-testid="terminator-hud"]'), undefined, {timeout: 5000})
   if (messages.length) throw new Error(`Browser emitted ${messages.length} warning or error messages:\n${messages.join('\n')}`)
   console.log(JSON.stringify({walkedFrom: beforeWalk, walkedTo: afterWalk, damageEvents, ...finalState, screenshots: [

@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import {waitForProjectLoaded,runEditor,stopEditor,getCanvas} from '../test/helpers/editor-driver.mjs'
 import {mkdir, readFile, writeFile} from 'node:fs/promises'
 import {fileURLToPath} from 'node:url'
 import {chromium} from 'playwright'
@@ -30,7 +31,7 @@ try {
     localStorage.setItem('terminator.settings.v1', JSON.stringify({quality: 'high', controlsSeen: true}))
   })
   await page.goto(dev.url, {waitUntil: 'domcontentloaded'})
-  await page.getByTestId('play').waitFor({state: 'visible', timeout: 30_000})
+  await waitForProjectLoaded(page,{timeout:30_000})
   await page.waitForFunction(() => document.body.innerText.includes('Project loaded'), undefined, {timeout: 90_000})
   await page.waitForTimeout(500)
 
@@ -53,16 +54,14 @@ try {
         viewer.setDirty()
       },
     })
-    document.querySelector('[data-testid="play"]').addEventListener('click', () => {
-      probe.click = performance.now()
-    }, {capture: true, once: true})
   })
 
   const cdp = await page.context().newCDPSession(page)
   await cdp.send('Profiler.enable')
   await cdp.send('Profiler.setSamplingInterval', {interval: 100})
   await cdp.send('Profiler.start')
-  await page.getByTestId('play').click({timeout: 90_000})
+  await page.evaluate(() => { window.__playProbe.click = performance.now() })
+  await runEditor(page,{timeout:90_000})
   await page.waitForFunction(() => Number.isFinite(window.__playProbe?.firstRender), undefined, {timeout: 90_000})
   const {profile} = await cdp.send('Profiler.stop')
   await cdp.send('Profiler.disable')

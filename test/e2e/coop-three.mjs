@@ -331,11 +331,9 @@ async function startDevServer() {
     if (devProcess.exitCode !== null) throw new Error(`kite3d dev exited ${devProcess.exitCode}: ${redact(diagnostics)}`)
     try {
       const dev = JSON.parse(await readFile(devFile, 'utf8'))
-      if (dev.origin === `http://127.0.0.1:${port}` && (await fetch(dev.url)).ok) {
-        const endpoint = new URL('/api/import-map', dev.url)
-        endpoint.searchParams.set('t', new URL(dev.url).searchParams.get('t'))
-        const importMap = await (await fetch(endpoint)).json()
-        return {...dev, importMap}
+      if (new URL(dev.url).origin === `http://127.0.0.1:${port}`) {
+        const response = await fetch(dev.url)
+        if (response.ok) return {...dev, importMap: importMapFromHtml(await response.text())}
       }
     } catch {}
     await new Promise(resolve => setTimeout(resolve, 150))
@@ -345,6 +343,13 @@ async function startDevServer() {
 
 function redact(value) {
   return String(value).replace(/\?t=[A-Za-z0-9._~-]+/g, '?t=[redacted]')
+}
+
+
+function importMapFromHtml(html) {
+  const match = html.match(/<script[^>]+type=["']importmap["'][^>]*>([\s\S]*?)<\/script>/i)
+  if (!match) throw new Error('Editor HTML did not contain an import map')
+  return JSON.parse(match[1])
 }
 
 function runtimeHtml(importMap) {
@@ -361,7 +366,7 @@ async function startRuntimeServer(dev) {
       return response.end(runtimeHtml(dev.importMap))
     }
     try {
-      const target = new URL(`${requestUrl.pathname}${requestUrl.search}`, dev.origin)
+      const target = new URL(`${requestUrl.pathname}${requestUrl.search}`, new URL(dev.url).origin)
       const upstream = await fetch(target, {headers: {'X-Kite3D-Token': token}})
       const headers = {}
       for (const name of ['content-type', 'cache-control', 'etag']) {

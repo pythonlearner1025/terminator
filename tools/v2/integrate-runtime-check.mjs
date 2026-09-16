@@ -16,7 +16,7 @@ try {
  page.on('pageerror',e=>report.errors.push(e.message.replace(/([?&]t=)[^&\s]+/g,'$1[redacted]')))
  await page.addInitScript(settings=>localStorage.setItem('terminator.settings.v1',JSON.stringify(settings)),config.settings)
  await page.request.get(dev.url)
- await page.goto(dev.origin+'/files/tools/map-runtime.html')
+ await page.goto(new URL(dev.url).origin+'/files/tools/map-runtime.html')
  await page.waitForFunction(()=>window.terminator?.manager?.ui?.screens?.route==='main',null,{timeout:120000})
  report.renderer=await rendererInfo(page)
  for(let cycle=0;cycle<3;cycle++){

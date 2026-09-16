@@ -7,7 +7,7 @@ const round=Number(process.argv[2]||1)
 const output=new URL(`tools/blender/cache/round-${round}/`,root)
 await mkdir(output,{recursive:true})
 const dev=JSON.parse(await readFile(new URL('.kite3d/dev.json',root),'utf8'))
-assert.equal(new URL(dev.origin).port,'4692')
+assert.equal(new URL(new URL(dev.url).origin).port,'4692')
 const browser=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true,args:['--use-angle=metal']})
 const page=await browser.newPage({viewport:{width:1920,height:1080},deviceScaleFactor:1})
 const errors=[]
@@ -15,7 +15,7 @@ page.on('pageerror',e=>errors.push(e.message.replace(/([?&]t=)[^&\s]+/g,'$1[reda
 try{
  await page.addInitScript(()=>localStorage.setItem('terminator.settings.v1',JSON.stringify({quality:'high',controlsSeen:true})))
  await page.request.get(dev.url)
- await page.goto(dev.origin+'/files/tools/map-runtime.html',{waitUntil:'domcontentloaded'})
+ await page.goto(new URL(dev.url).origin+'/files/tools/map-runtime.html',{waitUntil:'domcontentloaded'})
  await page.waitForFunction(()=>window.terminator?.manager?.world,null,{timeout:90000})
  const report=await page.evaluate(async()=>{
   const m=window.terminator.manager

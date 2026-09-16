@@ -41,7 +41,7 @@ try{
  page.on('requestfailed',r=>{if(report.resourceFailures.length<30){const url=new URL(r.url());report.resourceFailures.push({path:url.pathname,error:r.failure()?.errorText})}})
  const dev=JSON.parse(await readFile('.kite3d/dev.json','utf8'))
  await page.request.get(dev.url)
- await page.goto(dev.origin+'/files/tools/map-runtime.html',{waitUntil:'domcontentloaded'})
+ await page.goto(new URL(dev.url).origin+'/files/tools/map-runtime.html',{waitUntil:'domcontentloaded'})
  await page.waitForFunction(()=>window.terminator?.manager?.ui?.screens?.route==='main')
  await progress('Owned 480x270 Vulkan browser loaded main menu; starting through actual DOM buttons.')
  async function domStart(){

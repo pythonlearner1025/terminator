@@ -5,7 +5,7 @@ globalThis.ImageData ??= class {}
 globalThis.window ??= {}
 const api=await import('threepipe')
 
-test('batched sources leave the live graph and restore exact order, transforms and visibility on repeat stop',()=>{
+test('batched sources stay registered and restore transforms and visibility on repeat stop',()=>{
  const source=new api.Group(),runtime=new api.Group(),marker=new api.Group(),material=new api.PhysicalMaterial({color:0x334455})
  source.add(marker)
  const placements=[]
@@ -18,8 +18,8 @@ test('batched sources leave the live graph and restore exact order, transforms a
  const order=[...source.children],states=placements.map(p=>({matrix:p.matrix.clone(),position:p.position.toArray(),visible:p.visible}))
  for(let cycle=0;cycle<2;cycle++){
   const batch=batchPlacedMap(api,source,runtime)
-  assert.deepEqual(source.children,[marker])
-  assert(placements.every(p=>p.parent===null))
+  assert.deepEqual(source.children,order)
+  assert(placements.every(p=>p.parent===source && !p.visible))
   assert.equal(batch.batches.length,1);assert.equal(batch.dynamic.length,1)
   assert.equal(batch.batches[0].geometry.attributes.position.count,36*3)
   assert.equal(batch.dynamic[0].parent,runtime)

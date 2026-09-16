@@ -1,3 +1,4 @@
+import {waitForProjectLoaded,runEditor,stopEditor,getCanvas} from '../helpers/editor-driver.mjs'
 // Run on 4676 with --no-open. All browsers remain headless.
 // node test/view/tracers-browser.mjs before <revision>
 // node test/view/tracers-browser.mjs after [--burst]
@@ -26,7 +27,7 @@ try {
   await page.addInitScript(()=>localStorage.setItem('terminator.settings.v1',JSON.stringify({quality:'high',controlsSeen:true})))
   if(variant==='before')for(const file of ['tracers.js','projectiles.js','fx.js'])await page.route('**/lib/view/'+file+'*',async route=>route.fulfill({contentType:'text/javascript',body:sources[file]}))
   await page.goto(dev.url,{waitUntil:'domcontentloaded'})
-  await page.getByTestId('play').waitFor({timeout:30000});await page.getByTestId('play').click()
+  await waitForProjectLoaded(page,{timeout:30000});await runEditor(page)
   await page.waitForFunction(()=>window.terminator?.manager?.world,null,{timeout:60000})
   await page.evaluate(async()=>{
     const m=window.terminator.manager,w=m.world,viewer=window.viewer
@@ -161,7 +162,7 @@ try {
       await page.screenshot({path:`${out}/burst/${String(frame).padStart(3,'0')}.png`})
     }
   }
-  await page.getByTestId('play').evaluate(b=>b.click())
+  await stopEditor(page)
   await page.waitForFunction(()=>!window.viewer.scene.getObjectByName('Player Runtime'),null,{timeout:15000})
   const cleanup=await page.evaluate(()=>!document.querySelector('[data-testid="sniper-scope"]')&&!document.querySelector('[data-testid="weapon-screen-fx"]'))
   await writeFile(`${out}/${variant}-capture.json`,JSON.stringify({measurements,cleanup,errors},null,2)+'\n')

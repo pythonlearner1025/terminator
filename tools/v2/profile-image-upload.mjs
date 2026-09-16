@@ -8,7 +8,7 @@ import {launchCaptureBrowser,rendererInfo} from './capture-browser.mjs'
 assert.equal(process.env.STARTUP_GPU_GRANTED,'1')
 const dev=JSON.parse(await readFile('.kite3d/dev.json','utf8'))
 const port=process.env.STARTUP_DEV_PORT||'4755'
-assert.equal(new URL(dev.origin).hostname,'127.0.0.1');assert.equal(new URL(dev.origin).port,port)
+assert.equal(new URL(new URL(dev.url).origin).hostname,'127.0.0.1');assert.equal(new URL(new URL(dev.url).origin).port,port)
 assert((process.platform==='darwin'?['4753','4755','4756']:['4755']).includes(port))
 if(process.platform==='linux')assert.equal(JSON.parse(await readFile('../coordination/perf-budget-gpu.json','utf8')).owner,'perf-budget-startup')
 const output=process.argv[2];assert(output,'Supply a fresh evidence path')
@@ -20,7 +20,7 @@ try {
   page.on('pageerror',e=>report.errors.push(e.message))
   await page.addInitScript(()=>localStorage.setItem('terminator.settings.v1',JSON.stringify({quality:'high',fov:72,controlsSeen:true})))
   await page.request.get(dev.url)
-  await page.goto(dev.origin+'/files/tools/map-runtime.html')
+  await page.goto(new URL(dev.url).origin+'/files/tools/map-runtime.html')
   await page.waitForFunction(()=>window.terminator?.manager?.ui?.screens?.route==='main',null,{timeout:120000})
   await page.evaluate(async()=>{const m=window.terminator.manager;await m.ui.startMatch();m.ui.screens.show(null)})
   report.renderer=await rendererInfo(page)

@@ -55,7 +55,7 @@ try {
    localStorage.setItem('terminator.settings.v1',JSON.stringify(settings))
   },config)
   await page.request.get(dev.url)
-  await page.goto(dev.origin+'/files/tools/map-runtime.html',{waitUntil:'domcontentloaded'})
+  await page.goto(new URL(dev.url).origin+'/files/tools/map-runtime.html',{waitUntil:'domcontentloaded'})
   await page.waitForFunction(()=>window.terminator?.manager?.ui?.screens?.route==='main',null,{timeout:120000})
   const state=await page.evaluate(async({view,config,transparencyDiagnostic})=>{
    const m=window.terminator.manager

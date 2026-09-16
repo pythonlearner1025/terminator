@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import {waitForProjectLoaded,runEditor,stopEditor,getCanvas} from '../test/helpers/editor-driver.mjs'
 import assert from 'node:assert/strict'
 import {mkdir, readFile, writeFile} from 'node:fs/promises'
 import {chromium} from 'playwright'
@@ -33,8 +34,8 @@ try {
     localStorage.setItem('terminator.settings.v1', JSON.stringify({quality: 'high', controlsSeen: true}))
   })
   await page.goto(dev.url, {waitUntil: 'domcontentloaded'})
-  await page.getByTestId('play').waitFor({state: 'visible', timeout: 30_000})
-  await page.getByTestId('play').click()
+  await waitForProjectLoaded(page,{timeout:30_000})
+  await runEditor(page)
   await page.waitForFunction(() => Boolean(window.terminator?.manager?.world), undefined, {timeout: 45_000})
   await page.waitForFunction(() => window.terminator.manager.ui?.screens?.route === 'main', undefined, {timeout: 45_000})
   await page.evaluate(async () => {

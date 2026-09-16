@@ -22,7 +22,7 @@ if(!process.argv[2])throw Error('Pass a fresh output directory')
 const out=resolve(process.argv[2]);await access(out).then(()=>{throw Error('Output exists')},e=>{if(e.code!=='ENOENT')throw e});await mkdir(out,{recursive:true})
 const dev=JSON.parse(await readFile('.kite3d/dev.json','utf8'))
 const ownPort=process.env.FRAME_DEV_PORT||'4754'
-if(!(process.platform==='darwin'?['4753','4756']:['4754']).includes(ownPort)||new URL(dev.origin).hostname!=='127.0.0.1'||new URL(dev.origin).port!==ownPort)throw Error('Frame server must match explicit owned port')
+if(!(process.platform==='darwin'?['4753','4756']:['4754']).includes(ownPort)||new URL(new URL(dev.url).origin).hostname!=='127.0.0.1'||new URL(new URL(dev.url).origin).port!==ownPort)throw Error('Frame server must match explicit owned port')
 const config=JSON.parse(await readFile(new URL('../../docs/scene-targets/views.json',import.meta.url),'utf8'))
 if(process.env.FRAME_VIEWPORT){const [width,height]=JSON.parse(process.env.FRAME_VIEWPORT);if(!Number.isInteger(width)||!Number.isInteger(height)||width<640||height<480)throw Error('Invalid viewport');config.viewport={width,height}}
 const dpr=Number(process.env.FRAME_DPR||1)
@@ -49,7 +49,7 @@ try {
  page.on('pageerror',e=>{report.errors.push(e.message);console.log('pageerror',e.message.slice(0,250))})
  await page.addInitScript(({seed,settings})=>{let s=seed>>>0;Math.random=()=>{s=(Math.imul(s,1664525)+1013904223)>>>0;return s/4294967296};localStorage.setItem('terminator.settings.v1',JSON.stringify(settings))},config)
  await page.request.get(dev.url);console.log('authenticated')
- await page.goto(dev.origin+'/files/tools/map-runtime.html',{waitUntil:'domcontentloaded'});console.log('document loaded')
+ await page.goto(new URL(dev.url).origin+'/files/tools/map-runtime.html',{waitUntil:'domcontentloaded'});console.log('document loaded')
  await page.waitForFunction(()=>window.terminator?.manager?.ui?.screens?.route==='main',null,{timeout:120000});console.log('main ready')
  report.warmupResidency=await page.evaluate(async()=>{
   const m=window.terminator.manager,r=window.viewer.renderManager.webglRenderer,prime=m.unitView.primeWarmup,rows=[]

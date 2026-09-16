@@ -1,3 +1,4 @@
+import {waitForProjectLoaded,runEditor,stopEditor,getCanvas} from '../../../test/helpers/editor-driver.mjs'
 // Capture the actual placed pairs headlessly. Do not save this temporary camera setup.
 import {chromium} from 'playwright'
 import {readFile,writeFile,mkdir} from 'node:fs/promises'
@@ -11,7 +12,7 @@ await mkdir(output,{recursive:true})
 try {
  const page=await browser.newPage({viewport:{width:1920,height:1080},deviceScaleFactor:1})
  await page.goto(dev.url,{waitUntil:'domcontentloaded'})
- await page.getByTestId('play').click({timeout:90000})
+ await runEditor(page,{timeout:90000})
  await page.waitForFunction(()=>window.terminator?.manager?.started,null,{timeout:90000})
  await page.evaluate(()=>window.terminator.manager.ready)
  const setup=await page.evaluate(async()=>{

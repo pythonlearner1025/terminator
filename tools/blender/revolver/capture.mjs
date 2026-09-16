@@ -1,3 +1,4 @@
+import {waitForProjectLoaded,runEditor,stopEditor,getCanvas} from '../../../test/helpers/editor-driver.mjs'
 import {chromium} from 'playwright'
 import {readFile,writeFile,mkdir} from 'node:fs/promises'
 import {resolve} from 'node:path'
@@ -25,7 +26,7 @@ async function capture(name){
 }
 try{
  await page.goto(dev.url,{waitUntil:'domcontentloaded'})
- await page.getByTestId('play').waitFor({timeout:90000});await page.getByTestId('play').click()
+ await waitForProjectLoaded(page,{timeout:90000});await runEditor(page)
  await page.waitForFunction(()=>window.terminator?.manager?.started,null,{timeout:60000})
  await page.evaluate(()=>window.terminator.manager.ready)
  await page.evaluate(()=>{
@@ -63,6 +64,6 @@ try{
  await page.screenshot({path:resolve(output,'range-performance-24.png')})
  // Stop through the same editor control after restoring the canvas layout.
  await page.evaluate(()=>{window.viewer.container.removeAttribute('style');window.viewer.resize()})
- await page.getByTestId('play').click()
+ await stopEditor(page)
  console.log(performanceOnly?'Measured 24 enemies in isolation.':'Three core shots, reload, and aim at 0.25x. Four frames. Zero console errors.')
 }finally{await browser.close()}

@@ -1,3 +1,4 @@
+import {waitForProjectLoaded,runEditor,stopEditor,getCanvas} from '../../helpers/editor-driver.mjs'
 import {readFile} from 'node:fs/promises'
 import {chromium} from 'playwright'
 
@@ -16,8 +17,8 @@ page.on('pageerror', (error) => browserErrors.push(`pageerror: ${safe(error.mess
 
 try {
   await page.goto(dev.url, {waitUntil: 'domcontentloaded'})
-  await page.getByTestId('play').waitFor({state: 'visible', timeout: 15000})
-  await page.getByTestId('play').click()
+  await waitForProjectLoaded(page,{timeout:15000})
+  await runEditor(page)
   await page.waitForFunction(() => Boolean(window.terminator?.world), undefined, {timeout: 40000})
   await page.getByTestId('menu-play').evaluate((element) => element.click())
   await page.locator('[data-action="start-match"]').evaluate((element) => element.click())

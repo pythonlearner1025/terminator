@@ -1,3 +1,4 @@
+import {waitForProjectLoaded,runEditor,stopEditor,getCanvas} from '../helpers/editor-driver.mjs'
 // Run against this worktree's server: kite3d dev --port 4682 --no-open.
 // All input targets a private headless page. No desktop window is created.
 import assert from 'node:assert/strict'
@@ -36,7 +37,7 @@ const proof={weapons:[],controls:[],screenshots:[],errors,missing}
 try {
  await page.addInitScript(()=>localStorage.setItem('terminator.settings.v1',JSON.stringify({quality:'high',controlsSeen:true})))
  await page.goto(dev.url+'&range=1&colliders=1',{waitUntil:'domcontentloaded'})
- await page.getByTestId('play').click({timeout:60000})
+ await runEditor(page,{timeout:60000})
  await page.waitForFunction(()=>window.terminator?.manager?.rangeView&&!window.terminator.manager.ui.screens.route,null,{timeout:120000})
  await data(()=>window.terminator.manager.mapView.ready)
  assert.equal(await data(()=>window.terminator.world.aliveUnits.length),18)
@@ -150,23 +151,24 @@ try {
  await click('time-0');await click('shots-clear');assert.equal(await data(()=>window.terminator.manager.rangeView.shots.length),0)
  assert.equal(await data(()=>window.terminator.manager.rangeView.lines.drawRange.count),0)
  // Restore the page layout, then exercise editor Stop and a normal mode restart.
- await data(()=>{const v=window.viewer;v.container.setAttribute('style',window.rangeSavedStyle||'');v.resize();document.querySelector('[data-testid="play"]').click()})
+ await data(()=>{const v=window.viewer;v.container.setAttribute('style',window.rangeSavedStyle||'');v.resize()})
+ await stopEditor(page)
  await page.waitForFunction(()=>!document.querySelector('[data-testid="range-panel"]'))
- await page.goto(dev.url,{waitUntil:'domcontentloaded'});await page.getByTestId('play').click({timeout:60000})
+ await page.goto(dev.url,{waitUntil:'domcontentloaded'});await runEditor(page,{timeout:60000})
  await page.waitForFunction(()=>window.terminator?.manager?.ui,null,{timeout:60000})
  assert.equal(await page.getByTestId('range-panel').count(),0)
  assert.equal(await page.locator('[data-terminator-range-style]').count(),0)
  assert.equal(await data(()=>window.terminator.manager.range),null)
- await page.getByTestId('play').click()
+ await stopEditor(page)
  // Both flags retain independent panels with one common F1 toggle.
- await page.goto(dev.url+'&range=1&sandbox=1',{waitUntil:'domcontentloaded'});await page.getByTestId('play').click({timeout:60000})
+ await page.goto(dev.url+'&range=1&sandbox=1',{waitUntil:'domcontentloaded'});await runEditor(page,{timeout:60000})
  await page.waitForFunction(()=>window.terminator?.manager?.rangeView,null,{timeout:120000})
  await page.getByTestId('sandbox-panel').waitFor();await page.getByTestId('range-panel').waitFor()
  const a=await page.getByTestId('sandbox-panel').boundingBox(),b=await page.getByTestId('range-panel').boundingBox()
  assert.ok(a.x>=b.x+b.width,'panels must not overlap')
  await page.keyboard.press('F1');assert.equal(await page.getByTestId('sandbox-panel').isVisible(),false);assert.equal(await page.getByTestId('range-panel').isVisible(),false)
  await page.keyboard.press('F1');assert.equal(await page.getByTestId('sandbox-panel').isVisible(),true)
- await page.getByTestId('play').click()
+ await stopEditor(page)
  proof.controls.push('clear shots, editor Stop cleanup, range-off DOM, and combined sandbox panels')
  assert.deepEqual(errors,[])
  await writeFile('.kite3d/range-proof.json',JSON.stringify(proof,null,2)+'\n')

@@ -37,9 +37,11 @@ test('floor materials retain distinct texture repeats when entering Play', () =>
 
 test('floor materials with matching transforms still share one static batch', () => {
   const {source, runtime} = fixture([[5, 10], [5, 10]])
+  const authored = source.children.map(placement => placement.children[0].material)
   const batching = batchPlacedMap(api, source, runtime)
   assert.equal(batching.batches.length, 1)
-  assert.equal(batching.sharedMaterials.disposedMaterials, 1)
+  assert.equal(batching.sharedMaterials.disposedMaterials, 0)
+  assert.deepEqual(source.children.map(placement => placement.children[0].material), authored)
 })
 
 test('imported vertex colors and additional UV channels survive static batching', () => {

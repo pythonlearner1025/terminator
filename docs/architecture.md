@@ -18,8 +18,8 @@ tools/lib/    Build-only figure and glTF export libraries
 `lib/core/` is the authority for gameplay. It uses plain ES modules. It imports no code from
 `threepipe`, `@kite3d/engine`, or the DOM. It runs in Node 20 or newer without a browser shim.
 
-`lib/view/` reads core state and creates visual objects. Runtime roots are outside
-`viewer.scene.modelRoot`. `RuntimeObjectOwner` owns every runtime root and clone. The adapters do not
+`lib/view/` reads core state and creates visual objects. Each view adds its own runtime root to
+`viewer.scene`, outside `viewer.scene.modelRoot`, and removes it in `stop()`. The adapters do not
 decide damage, movement limits, AI reactions, waves, or economy rules.
 
 `lib/ui/hud.js` renders one view-model. It contains no game rules. It owns and removes its style and

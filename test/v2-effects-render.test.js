@@ -5,15 +5,15 @@ import {readFile,writeFile} from 'node:fs/promises'
 import {createHash} from 'node:crypto'
 test('V2 particles render, freeze, depth-occlude and clean up in real Threepipe', {skip:process.env.V2_EFFECTS_RENDER !== '1', timeout:60000}, async()=>{
 const dev=JSON.parse(await readFile('.kite3d/dev.json','utf8'))
-const browser=await chromium.launch({executablePath:'/usr/bin/google-chrome',headless:true,args:['--no-sandbox','--use-angle=swiftshader-webgl','--enable-unsafe-swiftshader']})
+const browser=await chromium.launch({headless:true,args:['--no-sandbox','--use-angle=swiftshader-webgl','--enable-unsafe-swiftshader']})
 try{
 const page=await browser.newPage({viewport:{width:1280,height:720}}),errors=[]
 page.on('pageerror',e=>{errors.push(e.message);console.log('Page error:',e.message)})
 page.on('console',e=>{if(e.type()==='error'){errors.push(e.text());console.log('Console error:',e.text().slice(0,1800))}})
 await page.route('**/files/tools/map-runtime.html',route=>route.fulfill({contentType:'text/html',body:'<!doctype html><style>body{margin:0;background:#02050a}canvas{width:100vw;height:100vh;display:block}</style><canvas id="game"></canvas>'}))
-await page.request.get(dev.url);await page.goto(dev.origin+'/files/tools/map-runtime.html')
-const info=await page.evaluate(async()=>{
-const imports=await fetch('/api/import-map').then(r=>r.json());const script=document.createElement('script');script.type='importmap';script.textContent=JSON.stringify(imports);document.head.append(script)
+await page.goto(dev.url,{waitUntil:'domcontentloaded'});await page.goto(new URL(dev.url).origin+'/files/tools/map-runtime.html')
+const info=await page.evaluate(async tokenQuery=>{
+const html=await fetch('/'+tokenQuery).then(r=>r.text()),match=html.match(/<script[^>]+type=["']importmap["'][^>]*>([\s\S]*?)<\/script>/i);if(!match)throw Error('Editor HTML did not contain an import map');const script=document.createElement('script');script.type='importmap';script.textContent=match[1];document.head.append(script)
 const E=await import('threepipe'),{mountV2Effects}=await import('/files/lib/view/v2/effects.js')
 const viewer=new E.ThreeViewer({canvas:document.getElementById('game'),msaa:false,tonemap:true,rgbm:false,backgroundColor:'#030811'})
 const root=new E.Group();viewer.scene.addObject(root)
@@ -28,7 +28,7 @@ const camera=viewer.scene.mainCamera;camera.position.set(3.5,2.1,6);camera.targe
 window.fx=fx;window.viewer=viewer;window.E=E
 const gl=viewer.canvas.getContext('webgl2'),ext=gl.getExtension('WEBGL_debug_renderer_info')
 return {stats:fx.stats,renderer:ext?gl.getParameter(ext.UNMASKED_RENDERER_WEBGL):'unknown'}
-})
+},new URL(dev.url).search)
 await page.waitForTimeout(2500)
 const first=await page.screenshot({path:'.kite3d/effects-isolated.png'})
 await page.evaluate(()=>{fx.sync({tick:120});viewer.setDirty()});await page.waitForTimeout(300)

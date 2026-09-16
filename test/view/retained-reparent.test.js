@@ -1,7 +1,6 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import {retainResourcesDuring} from '../../lib/view/retained-reparent.js'
-import {detachAuthoredRoot} from '../../lib/view/authored-detachment.js'
 globalThis.ImageData ??= class {}
 globalThis.window ??= {}
 const E=await import('threepipe')
@@ -33,20 +32,4 @@ test('retention scope restores mixed settings on nested calls and exceptions',()
   retainResourcesDuring(manager,()=>{});assert(Object.values(manager).every(v=>v===false));throw Error('abort')
  }),/abort/)
  assert.deepEqual(manager,saved)
-})
-
-test('restoring authored preview before its borrower is removed protects their shared geometry',()=>{
- const manager=new E.Object3DManager(),scene=new E.Group(),preview=new E.Group()
- manager.setRoot(scene);manager.registerObject(scene);scene.parentRoot=scene
- manager.registerObject(preview);scene.add(preview)
- const geometry=new E.BoxGeometry(),material=new E.PhysicalMaterial(),source=new E.Mesh2(geometry,material)
- preview.add(source);manager.registerObject(source)
- let disposed=0;geometry.addEventListener('dispose',()=>disposed++)
- const attachment=detachAuthoredRoot(preview,manager)
- assert.equal(disposed,0);assert.equal(preview.parent,null)
- const borrower=new E.Mesh2(geometry,material);scene.add(borrower);manager.registerObject(borrower)
- attachment.restore();assert.equal(preview.parent,scene)
- borrower.removeFromParent();assert.equal(disposed,0)
- assert.equal(manager.getGeometry(geometry.uuid),geometry)
- source.removeFromParent();assert.equal(disposed,1)
 })

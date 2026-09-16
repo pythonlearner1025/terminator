@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import {waitForProjectLoaded,runEditor,stopEditor,getCanvas} from '../test/helpers/editor-driver.mjs'
 import {spawn} from 'node:child_process'
 import {mkdir, readFile, writeFile} from 'node:fs/promises'
 import {loadavg} from 'node:os'
@@ -34,7 +35,7 @@ try {
     localStorage.setItem('terminator.settings.v1', JSON.stringify({quality: 'high', controlsSeen: true}))
   })
   await page.goto(dev.url, {waitUntil: 'domcontentloaded'})
-  await page.getByTestId('play').waitFor({state: 'visible', timeout: 30_000})
+  await waitForProjectLoaded(page,{timeout:30_000})
   await page.waitForFunction(() => {
     let mapPieces = 0, loadedMapPieces = 0, unitAssets = 0, loadedUnitAssets = 0
     window.viewer?.scene?.modelRoot?.traverse(object => {
@@ -71,7 +72,7 @@ try {
       canvas: {width: rect.width, height: rect.height},
     }
   }, Math.min(5, options.seconds))
-  await page.getByTestId('play').click()
+  await runEditor(page)
   await page.waitForFunction(() => Boolean(window.terminator?.manager?.world), undefined, {timeout: 45_000})
   await page.waitForFunction(() => Boolean(window.terminator?.manager?.ui?.menuScene?.root)
     && window.terminator.manager.ui.screens?.route === 'main', undefined, {timeout: 45_000})
@@ -351,7 +352,7 @@ function parseOptions(argv) {
 async function ensureDevServer() {
   const file = new URL('.kite3d/dev.json', root)
   const existing = await readDev(file)
-  if (existing?.origin === `http://127.0.0.1:${options.port}` && await reachable(existing.url)) return existing
+  if (existing?.url && new URL(existing.url).origin === `http://127.0.0.1:${options.port}` && await reachable(existing.url)) return existing
   server = spawn('npx', ['kite3d', 'dev', '--port', String(options.port), '--no-open'], {
     cwd: new URL('.', root), stdio: ['ignore', 'pipe', 'pipe'],
   })
@@ -362,7 +363,7 @@ async function ensureDevServer() {
   while (Date.now() < deadline) {
     if (server.exitCode !== null) throw new Error(`kite3d dev exited ${server.exitCode}: ${redact(diagnostics)}`)
     const dev = await readDev(file)
-    if (dev?.origin === `http://127.0.0.1:${options.port}` && await reachable(dev.url)) return dev
+    if (dev?.url && new URL(dev.url).origin === `http://127.0.0.1:${options.port}` && await reachable(dev.url)) return dev
     await delay(150)
   }
   throw new Error(`kite3d dev did not become ready on port ${options.port}: ${redact(diagnostics)}`)

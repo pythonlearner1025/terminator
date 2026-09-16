@@ -6,7 +6,7 @@ import {resolve} from 'node:path'
 import {launchCaptureBrowser,browserOptions} from './capture-browser.mjs'
 assert.equal(process.env.FRAME_GPU_GRANTED,'1')
 const dev=JSON.parse(await readFile('.kite3d/dev.json','utf8')),port=process.env.FRAME_DEV_PORT||'4754'
-assert((process.platform==='darwin'?['4753','4756']:['4754']).includes(port));assert.equal(new URL(dev.origin).port,port);assert.equal(new URL(dev.origin).hostname,'127.0.0.1')
+assert((process.platform==='darwin'?['4753','4756']:['4754']).includes(port));assert.equal(new URL(new URL(dev.url).origin).port,port);assert.equal(new URL(new URL(dev.url).origin).hostname,'127.0.0.1')
 if(process.platform==='linux')assert.equal(JSON.parse(await readFile('../coordination/perf-budget-gpu.json','utf8')).owner,'perf-budget-frame')
 const options=browserOptions();process.env.CHROME_ARGS=JSON.stringify([...options.args,'--disable-frame-rate-limit','--disable-gpu-vsync'])
 const out=resolve(process.argv[2]);await mkdir(out)
@@ -18,7 +18,7 @@ try{
  const page=await browser.newPage({viewport:config.viewport,deviceScaleFactor:1})
  page.on('pageerror',e=>report.errors.push(e.message))
  await page.addInitScript(({seed,settings})=>{let s=seed>>>0;Math.random=()=>{s=(Math.imul(s,1664525)+1013904223)>>>0;return s/4294967296};localStorage.setItem('terminator.settings.v1',JSON.stringify(settings))},config)
- await page.request.get(dev.url);await page.goto(dev.origin+'/files/tools/map-runtime.html')
+ await page.request.get(dev.url);await page.goto(new URL(dev.url).origin+'/files/tools/map-runtime.html')
  await page.waitForFunction(()=>window.terminator?.manager?.ui?.screens?.route==='main',null,{timeout:120000})
  await page.evaluate(async({view,tick})=>{
   const m=window.terminator.manager;m.update=()=>true;await m.ui.startMatch();await m.mapView.ready;await m.visualWarmup;m.ui.screens.show(null);m.input.stop()

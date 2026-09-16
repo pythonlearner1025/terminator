@@ -1,3 +1,4 @@
+import {waitForProjectLoaded,runEditor,stopEditor,getCanvas} from '../../../test/helpers/editor-driver.mjs'
 import {chromium} from 'playwright'
 import {readFile,writeFile} from 'node:fs/promises'
 import assert from 'node:assert/strict'
@@ -5,7 +6,7 @@ const dev=JSON.parse(await readFile('.kite3d/dev.json','utf8'))
 const browser=await chromium.launch({headless:true,args:['--use-angle=vulkan','--enable-features=Vulkan','--disable-vulkan-surface','--no-sandbox']})
 try{
  const page=await browser.newPage({viewport:{width:1920,height:900}})
- await page.goto(dev.url,{waitUntil:'domcontentloaded'});await page.getByTestId('play').click({timeout:120000})
+ await page.goto(dev.url,{waitUntil:'domcontentloaded'});await runEditor(page,{timeout:120000})
  await page.waitForFunction(()=>window.terminator?.manager?.started,null,{timeout:120000})
  const result=await page.evaluate(async()=>{
   const m=window.terminator.manager;await m.ready;m.capturePaused=true;m.update=()=>true
@@ -30,7 +31,7 @@ try{
  })
  for(const row of result){assert.equal(row.casesDuringFire,0);assert.equal(row.ejected,row.fired);assert.equal(row.mag,6);for(const scale of row.restoredCases)assert.equal(scale,1);for(const c of row.live){assert.equal(c.caseScale,1);assert.equal(c.bulletScale,1);assert.equal(c.freshScale,.001)}}
  const order=[];await page.evaluate(()=>window.fireOrderStart())
- const canvas=page.getByTestId('game-canvas'),box=await canvas.boundingBox(),cdp=await page.context().newCDPSession(page)
+ const canvas=getCanvas(page),box=await canvas.boundingBox(),cdp=await page.context().newCDPSession(page)
  for(let i=0;i<6;i++){
   if(i)await page.evaluate(()=>window.fireOrderStep())
   const row=await page.evaluate(()=>window.fireOrderRead());order.push(row)

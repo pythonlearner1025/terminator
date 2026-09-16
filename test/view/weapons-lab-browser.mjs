@@ -1,3 +1,4 @@
+import {waitForProjectLoaded,runEditor,stopEditor,getCanvas} from '../helpers/editor-driver.mjs'
 // Run after copying this worktree into .kite3d/lab-proof-project and starting its 4683 server.
 // Uses a private headless browser. It never controls the owner's 4310 editor.
 import assert from 'node:assert/strict'
@@ -30,7 +31,7 @@ async function timeline(fraction) {await page.getByTestId('lab-scrubber').fill(S
 try {
   await page.addInitScript(() => localStorage.setItem('terminator.settings.v1',JSON.stringify({quality:'high',controlsSeen:true})))
   await page.goto(dev.url, {waitUntil:'domcontentloaded'})
-  await page.getByTestId('play').click({timeout:60000})
+  await runEditor(page,{timeout:60000})
   await page.waitForFunction(() => window.terminator?.manager?.started, null, {timeout:90000})
   await evaluate(() => window.terminator.manager.ready)
   await fullViewport(); await page.waitForTimeout(1500)
@@ -69,12 +70,13 @@ try {
   await page.keyboard.press('F2')
   assert.equal(await page.locator('[data-testid=lab-debug]').count(),0)
   assert.equal(await evaluate(() => Boolean(window.terminator.manager.lab.panel)),false)
-  await evaluate(() => {window.viewer.container.setAttribute('style',window.labOriginalContainerStyle);document.querySelector('[data-testid=play]').click()})
+  await evaluate(() => {window.viewer.container.setAttribute('style',window.labOriginalContainerStyle)})
+  await stopEditor(page)
   await page.waitForFunction(() => !document.querySelector('[data-testid=weapons-lab]'))
   assert.equal(await page.locator('[data-weapons-lab-style]').count(),0)
-  await page.getByTestId('play').click()
+  await runEditor(page)
   await page.waitForFunction(() => window.terminator?.manager?.started)
-  await page.getByTestId('play').click()
+  await stopEditor(page)
   proof.controls.push('F2 removed, Stop cleanup and second Play boot')
   assert.deepEqual(errors,[]);assert.deepEqual(missing,[])
   await writeFile('.kite3d/weapons-lab-proof.json',JSON.stringify(proof,null,2)+'\n')

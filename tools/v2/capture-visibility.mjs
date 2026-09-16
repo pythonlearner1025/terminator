@@ -25,7 +25,7 @@ try{
  const page=await browser.newPage({viewport:config.viewport,deviceScaleFactor:1});await overrides?.install(page)
  page.on('pageerror',e=>report.errors.push(clean(e.message)));page.on('console',e=>{if(e.type()==='error')report.errors.push(clean(e.text()))})
  await page.addInitScript(({seed,settings})=>{let state=seed>>>0;Math.random=()=>{state=(Math.imul(1664525,state)+1013904223)>>>0;return state/4294967296};localStorage.setItem('terminator.settings.v1',JSON.stringify(settings))},config)
- await page.request.get(dev.url);await page.goto(dev.origin+'/files/tools/map-runtime.html')
+ await page.request.get(dev.url);await page.goto(new URL(dev.url).origin+'/files/tools/map-runtime.html')
  await page.waitForFunction(()=>window.terminator?.manager?.ui?.screens?.route==='main',null,{timeout:120000})
  report.initial=await page.evaluate(async({view,config,objectName})=>{
   const m=window.terminator.manager,viewer=window.viewer;m.update=()=>true

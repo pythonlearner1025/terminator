@@ -16,7 +16,7 @@ try {
  page.on('pageerror',e=>report.pageErrors.push(e.message))
  page.on('console',e=>{if(e.type()==='error')report.expectedConsoleErrors.push(e.text())})
  await page.addInitScript(settings=>localStorage.setItem('terminator.settings.v1',JSON.stringify(settings)),config.settings)
- await page.request.get(dev.url);await page.goto(dev.origin+'/files/tools/map-runtime.html')
+ await page.request.get(dev.url);await page.goto(new URL(dev.url).origin+'/files/tools/map-runtime.html')
  const menu=()=>page.waitForFunction(()=>window.terminator?.manager?.ui?.screens?.route==='main',null,{timeout:120000})
  await menu();report.renderer=await rendererInfo(page)
  const pattern=`**/assets/models/selected/${scan.source}/scene.bin`

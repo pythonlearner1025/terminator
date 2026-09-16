@@ -4,7 +4,7 @@ import {readFile,writeFile,mkdir} from 'node:fs/promises'
 import assert from 'node:assert/strict'
 const root=new URL('../',import.meta.url),out=new URL('file:///Users/minjunes/games/terminator-evidence/docs/evidence/gore/')
 const dev=JSON.parse(await readFile(new URL('.kite3d/dev.json',root),'utf8'))
-assert.equal(new URL(dev.origin).port,'4720')
+assert.equal(new URL(new URL(dev.url).origin).port,'4720')
 await mkdir(out,{recursive:true})
 const browser=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true,args:['--use-angle=metal']})
 const page=await browser.newPage({viewport:{width:1920,height:1080},deviceScaleFactor:1})
@@ -13,7 +13,7 @@ page.on('pageerror',e=>errors.push(e.message))
 page.on('console',m=>{if(m.type()==='error')errors.push(m.text().replace(/([?&]t=)[^&\s)"']+/g,'$1[redacted]'))})
 try {
   await page.request.get(dev.url)
-  await page.goto(dev.origin+'/files/tools/map-runtime.html')
+  await page.goto(new URL(dev.url).origin+'/files/tools/map-runtime.html')
   await page.waitForFunction(()=>window.terminator?.manager?.ui?.screens?.route==='main',null,{timeout:90000})
   const warmup=await page.evaluate(async()=>{
     const m=terminator.manager

@@ -1,3 +1,4 @@
+import {waitForProjectLoaded,runEditor,stopEditor,getCanvas} from '../../../test/helpers/editor-driver.mjs'
 // Record the real GameManager and WeaponView. No lab UI or authored-clip override.
 import {chromium} from 'playwright'
 import {readFile,mkdir,writeFile} from 'node:fs/promises'
@@ -11,7 +12,7 @@ try{
  const page=await browser.newPage({viewport:{width:1920,height:900}})
  page.on('pageerror',e=>errors.push(e.message))
  await page.goto(dev.url,{waitUntil:'domcontentloaded'})
- await page.getByTestId('play').click({timeout:120000})
+ await runEditor(page,{timeout:120000})
  await page.waitForFunction(()=>window.terminator?.manager?.started,null,{timeout:120000})
  await page.evaluate(async()=>{
   const m=window.terminator.manager;await m.ready;if(m.ui?.startMatch){await m.ui.startMatch();m.ui.screens.show(null)}
@@ -21,7 +22,7 @@ try{
   window.reviewStep=(input={})=>{m.world.step({yaw:0,pitch:0,...input});m.syncViews()}
   for(let i=0;i<70;i++)window.reviewStep()
  })
- const canvas=page.getByTestId('game-canvas'),box=await canvas.boundingBox(),cdp=await page.context().newCDPSession(page)
+ const canvas=getCanvas(page),box=await canvas.boundingBox(),cdp=await page.context().newCDPSession(page)
  for(const speed of [1,.25]){
   for(const clip of ['fire','reload']){
    const frames=`${folder}/${clip}-${speed}x`;console.log('Capture',clip,speed);await mkdir(frames,{recursive:true})

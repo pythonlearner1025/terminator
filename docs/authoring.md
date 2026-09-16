@@ -142,7 +142,7 @@ Therefore, range placement during Play is acceptable.
 It also registers `range-steel-target` and `range-firing-line` in `assets.json`.
 `lib/view/range-props.js` loads those files and places six target nodes during Play.
 It creates no visible geometry.
-Stop removes all loaded range nodes through `RuntimeObjectOwner`.
+Stop removes the `Weapons Range Runtime` root, and the loaded range nodes under it, from the scene.
 
 ## Weapons Lab scene
 

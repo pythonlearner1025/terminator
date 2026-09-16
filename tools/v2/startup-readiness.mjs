@@ -1,3 +1,4 @@
+import {waitForProjectLoaded,runEditor,stopEditor,getCanvas} from '../../test/helpers/editor-driver.mjs'
 import assert from 'node:assert/strict'
 import {readFile,writeFile,mkdir} from 'node:fs/promises'
 import {execFileSync} from 'node:child_process'
@@ -5,7 +6,7 @@ import {dirname} from 'node:path'
 import {launchCaptureBrowser} from './capture-browser.mjs'
 const dev=JSON.parse(await readFile('.kite3d/dev.json','utf8'))
 const ownPort=process.env.STARTUP_DEV_PORT||'4752'
-assert(['4752','4753'].includes(ownPort));assert.equal(new URL(dev.origin).hostname,'127.0.0.1');assert.equal(new URL(dev.origin).port,ownPort)
+assert(['4752','4753'].includes(ownPort));assert.equal(new URL(new URL(dev.url).origin).hostname,'127.0.0.1');assert.equal(new URL(new URL(dev.url).origin).port,ownPort)
 const output=process.argv[2]||'docs/evidence/perf-startup/readiness.json'
 await readFile(output).then(()=>{throw Error('Refusing evidence overwrite')},e=>{if(e.code!=='ENOENT')throw e})
 const browser=await launchCaptureBrowser(),report={source:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),errors:[],cycles:[]}
@@ -17,7 +18,7 @@ try {
  let failing=true,requests=0
  await page.route('**/assets/textures/weapons/weapon-albedo.png',async route=>{requests++;if(failing)await route.fulfill({status:503,body:'Intentional optional preload failure'});else await route.continue()})
  await page.request.get(dev.url)
- await page.goto(dev.origin+'/files/tools/map-runtime.html')
+ await page.goto(new URL(dev.url).origin+'/files/tools/map-runtime.html')
  const menu=()=>page.waitForFunction(()=>window.terminator?.manager?.ui?.screens?.route==='main',null,{timeout:120000})
  await menu()
  await page.waitForFunction(()=>window.terminator.manager.ui.preparationError,null,{timeout:30000})
@@ -69,17 +70,18 @@ try {
  const editor=await browser.newPage({viewport:{width:1920,height:1080}})
  editor.on('pageerror',e=>report.errors.push(e.message))
  await editor.goto(dev.url,{waitUntil:'domcontentloaded'})
- await editor.waitForFunction(async()=>{const s=await fetch('/api/state').then(r=>r.json());return s.projectLoaded&&!s.lastLoadError&&window.viewer?.scene.modelRoot.getObjectByName('Map')},null,{timeout:120000})
+ await waitForProjectLoaded(editor,{timeout:120000})
+ await editor.waitForFunction(()=>window.viewer?.scene.modelRoot.getObjectByName('Map'),null,{timeout:120000})
  await editor.evaluate(()=>{window.__startupEditor=window.viewer})
  const menuHeld=Promise.withResolvers(),menuGate=Promise.withResolvers();releaseGate=menuGate.resolve
  await editor.route('**/assets/store/materials/steel-albedo.png',async route=>{menuHeld.resolve();await menuGate.promise;await route.abort().catch(()=>{})})
- await editor.getByTestId('play').click()
+ await runEditor(editor)
  let menuTimer
  try{await Promise.race([menuHeld.promise,new Promise((_,reject)=>{menuTimer=setTimeout(()=>reject(Error('Menu request not observed')),60000)})])}finally{clearTimeout(menuTimer)}
  await editor.waitForFunction(()=>window.terminator?.manager?.ui?.screens?.route==='loading',null,{timeout:30000})
  report.editorLoading=await editor.evaluate(()=>({renderEnabled:window.terminator.manager.ctx.viewer.renderEnabled,phase:window.terminator.manager.director.phase}))
  assert.equal(report.editorLoading.renderEnabled,false)
- await editor.getByTestId('play').click()
+ await stopEditor(editor)
  releaseGate()
  await editor.waitForFunction(()=>window.__startupEditor.renderEnabled&&!window.__startupEditor.getPlugin('EntityComponentPlugin').running,null,{timeout:30000})
  report.editorStopped=await editor.evaluate(()=>({renderEnabled:window.__startupEditor.renderEnabled,previewVisible:(window.__startupEditor.scene.modelRoot.getObjectByName('V2 Environment Preview')||window.__startupEditor.scene.modelRoot.getObjectByName('V2_Environment_Preview')).visible}))

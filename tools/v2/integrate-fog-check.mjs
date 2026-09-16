@@ -6,7 +6,7 @@ const config=JSON.parse(await readFile('docs/scene-targets/views.json','utf8'))
 const git=execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim()
 const dev=JSON.parse(await readFile('.kite3d/dev.json','utf8')),b=await launchCaptureBrowser(),overrides=loadPilotOverrides()
 try{
- const p=await b.newPage({viewport:{width:1920,height:1080}});await overrides?.install(p);await p.addInitScript(c=>localStorage.setItem('terminator.settings.v1',JSON.stringify(c.settings)),config);await p.request.get(dev.url);await p.goto(dev.origin+'/files/tools/map-runtime.html');await p.waitForFunction(()=>window.terminator?.manager?.ui?.screens?.route==='main',null,{timeout:120000})
+ const p=await b.newPage({viewport:{width:1920,height:1080}});await overrides?.install(p);await p.addInitScript(c=>localStorage.setItem('terminator.settings.v1',JSON.stringify(c.settings)),config);await p.request.get(dev.url);await p.goto(new URL(dev.url).origin+'/files/tools/map-runtime.html');await p.waitForFunction(()=>window.terminator?.manager?.ui?.screens?.route==='main',null,{timeout:120000})
  const data=await p.evaluate(async config=>{
   const E=await import('threepipe')
   const m=window.terminator.manager;m.update=()=>true;await m.ui.startMatch();await m.mapView.ready;await m.visualWarmup

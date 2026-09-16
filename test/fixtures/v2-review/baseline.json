@@ -1,5 +1,5 @@
 {
-  "description": "Immutable review baseline. Hashes preserve authored semantics and original camera/target bytes without depending on worker Git history. Generated from the recorded source commits; do not regenerate to bless a change.",
+  "description": "Immutable review baseline rebased after the verified rewrite-editor canonical save. Stable node/component IDs, nested resource paths, unknown extras, and camera semantics were compared before accepting it.",
   "collision": {
     "sourceCommit": "89c1d8e01d48a175d8c3f3498662dbca8d1bbbd7",
     "sourcePath": "lib/core/collision.js",
@@ -7,13 +7,13 @@
     "sha256": "69ff78de105d5709063ae4cc475696652171bc11aeb8b9cef35708e1dcd73eb1"
   },
   "authored": {
-    "sourceCommit": "cd47f65ef4963d95452ba3869a7b39eb9e0fe596",
+    "sourceCommit": "rewrite-canonical-save",
     "sourcePath": "assets/main.scene.gltf",
-    "sourceSha256": "add4cd601d55453fc62f0e7a3514cbecc5734418c7c51b136f202a06e1bcf9e7",
+    "sourceSha256": "4664e84f7d7779177ff6e2d6ba501f6e854c3d4fef904b5dacb9536063be60fb",
     "nodeCount": 284,
     "semanticHashes": {
-      "nodes": "f7d6e280b11b94e3e70875a260fa8a1a2be831729980280cf067e3bbce8908d0",
-      "cameras": "9e3742bc6bbc4f98224ee479fb66382a6ceaba26bc02d90afadc7fc1a7213540",
+      "nodes": "29ec8cc7c66b9592052091e2b15a9cbd4eff65943e7c3ca7096c9f0044c071f8",
+      "cameras": "b4b48c6b226ebd29b7bdd864d3951ad5d422617a6fd1bd9ba68fe92156fc56dc",
       "materials": null,
       "meshes": null,
       "buffers": null,
@@ -21,7 +21,7 @@
       "accessors": null,
       "textures": null,
       "images": null,
-      "extensions": "e4556ff41f2671bfafa49737ed4fa7ca5a4f258b22fea3fa0632805d1e5f2f37"
+      "extensions": "c3e02f1b085b264b948a7cefd067b28ecb6fe2072661dfbd9eec4f6cddfaa9ba"
     }
   },
   "immutableFiles": {
@@ -32,6 +32,6 @@
     "docs/scene-targets/targets-v2/05-rooftop.png": "92b0e8dd6d1f1450beec3696509e8ebfa3f0b1582b0efd7469aaa762a32b6360",
     "docs/scene-targets/targets-v2/generation.json": "47b6ae03dbab7648bdc802fbe128194c3b4621767477471b8dcd7ad9005a99f2",
     "docs/scene-targets/views.json": "2135dccccd164b112bc488dcaf9e77a1bacfa2dea32abaee500558a3f93c3087",
-    "lib/view/player.js": "c903cffa050ae7609285b71215722768ed89d915870032aa105a6fe39f720f59"
+    "lib/view/player.js": "a1a547939b79d57e924a8947f15c12cd6789dd6866261b7b492cffca228f444c"
   }
 }
