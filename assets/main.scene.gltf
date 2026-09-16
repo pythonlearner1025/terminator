@@ -14942,8 +14942,6 @@
           },
           "type": "Generator"
         },
-        "rootPath": "/kite3d/@v2-stopped-preview-019/f.gltf",
-        "rootPathOptions": {},
         "sProperties": [
           "visible",
           "name",
@@ -14951,7 +14949,8 @@
           "quaternion",
           "scale"
         ],
-        "uuid": "terminator-v2-environment-preview"
+        "uuid": "terminator-v2-environment-preview",
+        "v2PreviewStandIn": "Runtime builds this from the baked recipes; see tools/v2/drop-preview-subtree.mjs"
       },
       "name": "V2 Environment Preview"
     },

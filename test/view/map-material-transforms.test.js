@@ -60,3 +60,29 @@ test('imported vertex colors and additional UV channels survive static batching'
   assert.ok(Math.abs(geometry.attributes.uv1.getX(0) - .3) < .00001)
   assert.ok(Math.abs(geometry.attributes.uv2.getX(0) - .7) < .00001)
 })
+
+// The batch material has to stand in for every piece it swallows. The old key
+// was `material.name` plus five texture slots, which got both halves wrong.
+test('identical materials merge whatever they are called, and a shared name does not merge different ones', () => {
+  const named = (label, tune = () => {}) => {
+    const {source, runtime} = fixture([[5, 10], [5, 10]])
+    source.children.forEach((placement, index) => {
+      placement.children[0].material.name = label(index)
+      tune(placement.children[0].material, index)
+    })
+    return batchPlacedMap(api, source, runtime)
+  }
+  // Two names, one identity: the editor renames a duplicated slab all the time.
+  assert.equal(named(index => `Map concrete ${index}`).batches.length, 1)
+  // One name, two identities. Merging these paints the second slab with the
+  // first slab's roughness.
+  for (const [what, tune] of [
+    ['roughness', (material, index) => {material.roughness = index ? .2 : .9}],
+    ['color', (material, index) => material.color.setHex(index ? 0xff0000 : 0xffffff)],
+    ['emissive', (material, index) => {material.emissiveIntensity = index ? 3 : 1}],
+    ['normalScale', (material, index) => material.normalScale.set(index ? .3 : 1, 1)],
+    ['depthWrite', (material, index) => {material.depthWrite = !index}],
+  ]) {
+    assert.equal(named(() => 'Map concrete', tune).batches.length, 2, what)
+  }
+})

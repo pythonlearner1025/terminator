@@ -8,7 +8,9 @@ if(process.argv.includes('--measure')) {
  const data=JSON.parse(await readFile(new URL('../../assets/v2/ground/fragments.json',import.meta.url),'utf8'))
  const handle=mountV2Ground({root:new Group(),map:defaultMap});await handle.ready
  const grid=.025,counts={},nx=Math.ceil((defaultMap.bounds.maxX-defaultMap.bounds.minX)/grid)
- for(const record of handle.root.userData.aggregateFragments){
+ const field=handle.root.userData.aggregateFragments
+ for(let index=0;index<field.count;index++){
+  const record={source:field.source[field.sourceIndex[index]],variant:field.variant[index],x:field.x[index],z:field.z[index],width:field.width[index],depth:field.depth[index],yaw:field.yaw[index]}
   const result=counts[record.source]??={patches:0,projectedAreaM2:0,cells:new Set()},cs=Math.cos(record.yaw),sn=Math.sin(record.yaw);result.patches++
   for(const g of data.finePatches[record.variant].groups)for(let i=0;i<g.positions.length;i+=9){
    const p=[];for(let j=0;j<3;j++){const x=g.positions[i+j*3]*record.width,z=g.positions[i+j*3+2]*record.depth;p.push([record.x+x*cs+z*sn,record.z-x*sn+z*cs])}
