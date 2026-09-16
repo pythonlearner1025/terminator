@@ -24,6 +24,15 @@ to 40 after five calm seconds, four supply caches glow green somewhere on the ma
 trader moves between waves and opens only in the intermission, and wave 10 ends at an extraction point.
 The whole tune lives in `docs/director-design.md`.
 
+## Just play it
+
+`npm run play` serves the game the way the published release runs it: no editor, no Run button, the
+project files booted straight through `createGame`. It prints a URL, opens your browser, and stops on
+Ctrl-C. The default port is 4500; `--port=<n>` moves it and `--no-open` leaves the browser alone. The
+game's own URL flags work as command flags: `--sandbox`, `--range`, `--weapon=revolver-rebuild` and
+`--party=<code>`. For example, `npm run play -- --port=4600 --sandbox --no-open`. Use `npx kite3d dev`
+instead when you need to edit the scene.
+
 ## Local scenes
 
 Install the linked Kite3D rewrite and open the Bunker 7 main scene:

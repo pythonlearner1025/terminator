@@ -10,13 +10,12 @@
 //   node tools/stress-frames.mjs --label=before --out=<dir>
 //   node tools/stress-frames.mjs --scenarios=m4-mob --profile=m4-mob
 import {spawn} from 'node:child_process'
-import {createReadStream} from 'node:fs'
-import {mkdir, readFile, stat, writeFile} from 'node:fs/promises'
-import {createServer} from 'node:http'
-import {extname, join, normalize, resolve} from 'node:path'
+import {mkdir, readFile, writeFile} from 'node:fs/promises'
+import {join, resolve} from 'node:path'
 import {fileURLToPath} from 'node:url'
 import {chromium} from 'playwright'
 import {runEditor} from '../test/helpers/editor-driver.mjs'
+import {createStandaloneServer} from './standalone-page.mjs'
 
 const root = new URL('../', import.meta.url)
 const projectDir = fileURLToPath(root)
@@ -63,6 +62,7 @@ try {
     viewport: {width: options.width, height: options.height, deviceScaleFactor: options.dpr},
     headless: options.headless,
     experiment: options.experiment || null,
+    quality: options.quality,
     note: options.note || null,
     scenarios: results,
   }
@@ -77,7 +77,7 @@ try {
   process.stderr.write(`${redact(String(error?.stack || error))}\n`)
   process.exitCode = 1
 } finally {
-  staticServer?.close()
+  await staticServer?.close()
   if (server) {
     server.kill('SIGTERM')
     await Promise.race([new Promise(done => server.once('exit', done)), delay(5_000)])
@@ -102,9 +102,9 @@ async function measureGroup({group, scenarios, base, run}) {
       if (['warning', 'error'].includes(message.type())) warnings.push(`${message.type()}: ${redact(message.text())}`)
     })
     page.on('pageerror', error => warnings.push(`pageerror: ${redact(error.stack || error.message)}`))
-    await page.addInitScript(() => {
-      localStorage.setItem('terminator.settings.v1', JSON.stringify({quality: 'high', controlsSeen: true}))
-    })
+    await page.addInitScript(quality => {
+      localStorage.setItem('terminator.settings.v1', JSON.stringify({quality, controlsSeen: true}))
+    }, options.quality)
     await page.addInitScript(glCountersSource)
     const url = withQuery(base, group === 'wave' ? {} : {sandbox: '1'})
     await page.goto(url, {waitUntil: 'domcontentloaded'})
@@ -797,6 +797,7 @@ function parseOptions(argv) {
     profile: value('profile', ''),
     trace: value('trace', ''),
     experiment: value('experiment', ''),
+    quality: value('quality', 'high'),
     note: value('note', ''),
   }
 }
@@ -819,58 +820,12 @@ async function ensureDevServer() {
   throw new Error(`kite3d dev did not start on port ${options.port}: ${redact(diagnostics)}`)
 }
 
-// The published game boots through createGame on a generated index.html. This
-// serves the same page from the project directory so the engine runs without
-// the editor. No file is written into the repository.
+// The standalone page is the one `npm run play` serves, so a measurement and a
+// player boot the same way. It listens one port above the dev server.
 async function ensureStandalone() {
-  const packageJson = JSON.parse(await readFile(join(projectDir, 'package.json'), 'utf8'))
-  const engine = JSON.parse(await readFile(join(projectDir, 'node_modules/@kite3d/engine/package.json'), 'utf8'))
-  const shared = ['threepipe', 'three', 'uiconfig.js', 'ts-browser-helpers', '@kite3d/engine']
-  const imports = Object.fromEntries(shared.map(key => [key, './_blitz/runtime.js']))
-  const external = [...shared]
-  for (const [key, version] of Object.entries(packageJson.dependencies || {})) {
-    if (shared.includes(key) || String(version).startsWith('file:')) continue
-    imports[key] = `https://esm.sh/${key}@${String(version).replace(/^[\^~]/, '')}?external=${external.join(',')}`
-  }
-  Object.assign(imports, packageJson.kite3d?.imports || {})
-  const html = `<!doctype html><html><head><meta charset="utf-8">`
-    + `<title>${packageJson.kite3d?.name || packageJson.name}</title>`
-    + `<meta name="kite3d-runtime" content="${engine.version} local">`
-    + `<style>html,body{margin:0;height:100%;background:#000;overflow:hidden}canvas{display:block;width:100%;height:100%}</style>`
-    + `<script type="importmap">${JSON.stringify({imports})}</script></head>`
-    + `<body><canvas id="kite3d-canvas"></canvas>`
-    + `<script type="module">import {createGame} from './_blitz/runtime.js';`
-    + `createGame({base: new URL('./', location.href).href, canvas: document.getElementById('kite3d-canvas')})`
-    + `.then(() => {window.__standaloneReady = true}).catch(error => {window.__standaloneError = String(error)});</script></body></html>`
-  const port = options.port + 1
-  staticServer = createServer(async (request, response) => {
-    const path = decodeURIComponent(new URL(request.url, 'http://x').pathname)
-    if (path === '/' || path === '/index.html') return send(response, 200, 'text/html', html)
-    const file = path === '/_blitz/runtime.js'
-      ? join(projectDir, 'node_modules/@kite3d/engine/dist/runtime.js')
-      : join(projectDir, normalize(path).replace(/^(\.\.[/\\])+/, ''))
-    try {
-      const info = await stat(file)
-      if (!info.isFile()) throw new Error('not a file')
-      response.writeHead(200, {'content-type': mime(file), 'content-length': info.size, 'access-control-allow-origin': '*'})
-      createReadStream(file).pipe(response)
-    } catch { send(response, 404, 'text/plain', 'not found') }
-  })
-  await new Promise(done => staticServer.listen(port, '127.0.0.1', done))
-  return `http://127.0.0.1:${port}/`
-}
-
-function send(response, status, type, body) {
-  response.writeHead(status, {'content-type': type, 'content-length': Buffer.byteLength(body), 'access-control-allow-origin': '*'})
-  response.end(body)
-}
-
-function mime(file) {
-  return {'.js': 'text/javascript', '.mjs': 'text/javascript', '.json': 'application/json', '.gltf': 'model/gltf+json',
-    '.glb': 'model/gltf-binary', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp',
-    '.hdr': 'image/vnd.radiance', '.exr': 'image/x-exr', '.ktx2': 'image/ktx2', '.bin': 'application/octet-stream',
-    '.wasm': 'application/wasm', '.mp3': 'audio/mpeg', '.ogg': 'audio/ogg', '.wav': 'audio/wav', '.css': 'text/css',
-    '.svg': 'image/svg+xml', '.html': 'text/html'}[extname(file).toLowerCase()] || 'application/octet-stream'
+  const served = await createStandaloneServer({projectDir, port: options.port + 1})
+  staticServer = served
+  return served.url
 }
 
 function withQuery(url, extra) {

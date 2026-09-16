@@ -14,6 +14,7 @@
   "main": "./main.js",
   "scripts": {
     "dev": "kite3d dev",
+    "play": "node tools/play.mjs",
     "publish": "kite3d publish",
     "server": "node server/index.js",
     "tunnel": "node server/party-tunnel.js",
