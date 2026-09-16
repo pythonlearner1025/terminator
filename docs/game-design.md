@@ -30,6 +30,9 @@ The footprint grows from 3,600 to 5,040 square metres, or 40 percent.
   S3 has a seven metre aperture, 4.8 metre shutter, and `tags: ["boss"]` for the shared boss contract.
 - Four existing lockable doors and three existing light switches keep their ids and rules.
   Fourteen added practical lights follow those switches. Four pooled local point lights remain active at most.
+  Supply caches add one shared point light, 4 m range and no shadows, that follows the crate nearest the
+  player. One light per crate cost about half the frame rate and washed the colonnade ceiling green.
+  The crate glow itself comes from the emissive material and bloom.
 - Two added fire barrels join the original courtyard fires.
 - Four low fog areas, three steam vents, two damaged cable emitters, and pooled dust add local atmosphere.
   The existing fires, rain, skyline smoke, and two configurable hazard slots remain.
@@ -64,7 +67,7 @@ The sniper penetrates two units. Each continued hit retains 60 percent of the pr
 The launcher fires 32 m/s shells. A shell arms after 2.5 meters and detonates on contact.
 The revolver starts with 6 loaded rounds and 66 reserve rounds. Body hits kill a Scout in 3 shots and an Endo in 6 shots.
 
-Currency is Scrap. The player starts with 400. Terminators drop Scrap on death: Scout 50, Endo 130,
+Currency is Scrap. The player starts with 400. Terminators drop Scrap on death: Scout 12, Endo 130,
 Heavy 350, T-1000 400, HK-Aerial 350, and HK-Tank 1500. Every wave clear pays 150.
 A medkit heals 50 for 100 Scrap. Armor costs 2 Scrap per point.
 
@@ -72,7 +75,7 @@ A medkit heals 50 for 100 Scrap. Armor costs 2 Scrap per point.
 
 | Unit | HP | Speed | Attack | Damage | Reaction delay | Turn rate | Spread | Vision | Cost |
 |------|----|-------|--------|--------|----------------|-----------|--------|--------|------|
-| T-600 Scout | 120 | 7 m/s | melee at 1.5 m | 25 per hit, 1 per s | 150 ms | 360 deg/s | | 110 deg, 30 m | 40 |
+| T-600 Scout | 60 | 7 m/s | melee at 1.5 m | 3 per hit, 1 per s | 150 ms | 360 deg/s | | 110 deg, 30 m | 12 |
 | T-800 Endo | 300 | 3.5 m/s | plasma rifle, 3-shot burst | 15 per shot | 250 ms | 180 deg/s | 3 deg | 110 deg, 40 m | 100 |
 | T-800 Heavy | 900 | 2 m/s | minigun, 1 s spin-up | 8 per shot, 12 per s | 400 ms | 90 deg/s | 6 deg | 100 deg, 45 m | 300 |
 | T-1000 | 900 | 5.5 m/s | blade at 1.6 m | 35 per hit, 0.7 s | 150 ms | 300 deg/s | | 120 deg, 40 m | 320 |
@@ -90,18 +93,26 @@ The HK-Tank's rear Core takes 3x damage. Its boss health uses the difficulty hea
 All ranged enemies fire simulated projectiles. Endo and Heavy rounds travel 30 m/s for two seconds.
 Plasma bolts travel 18 m/s. Tank shells travel 22 m/s, use gravity, and splash within 2.5 meters.
 
-Max alive is 24 solo and 36 with three players. One newly unlocked large unit can exceed the 40-percent
-type cap. Later copies cannot. From wave 3 on, each wave uses at least two non-boss types.
+Max alive is 32 solo and 44 with three players. One newly unlocked large unit can exceed the 40-percent
+type cap, which guards specials only. Later copies cannot. The Scout is the common: it is cheap, it is
+weak on its own, and the director buys it by the dozen. A player who stands still and never fires dies
+to the first mob in 8 to 20 s, measured by `tools/measure-pacing.mjs`.
 
 ## Waves and budget
 
 Ten waves. Wave N base budget is 300 + 120 N. The applied budget is base times a performance multiplier
-between 0.8 and 1.5, computed from the last wave: health lost, time to clear, and damage taken per
+between 0.9 and 1.1, computed from the last wave: health lost, time to clear, and damage taken per
 minute. The multiplier and the budget are always visible on the HUD.
 
-A wave ends when every unit is dead. Time cap 4 minutes, then remaining units abandon their scripts and
-rush. Intermission is 45 s. The trader is open only in intermission. The player can end the intermission
-early with a Ready action.
+Whatever the submitted config does not spend becomes the in-wave reservoir, which the director spends on
+mobs, specials, wanderers, and the end-of-wave rush. Mobs are rare and loud: one every 30 to 60 s. A
+wanderer trickle holds a small standing crowd on the map between them. See `docs/director-design.md`. A wave ends when the
+reservoir is empty and every unit is dead. Time cap 4 minutes, then remaining units abandon their scripts
+and rush. Intermission is 15 s. The trader is open in intermission and in every relax window. The player
+can end the intermission early with a Ready action.
+
+Wave 10 is the extraction finale. The chopper lands 180 s in; only then does standing on the pad end the
+match, with every living player within 6 m of it.
 
 Wave 1 unlocks Scout and Endo. Wave 2 unlocks Heavy. Wave 3 unlocks HK-Aerial. Wave 4 unlocks T-1000.
 Waves 5 and 10 add one HK-Tank boss. Wave 10 is the finale.

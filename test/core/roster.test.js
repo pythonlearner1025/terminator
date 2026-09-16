@@ -5,23 +5,20 @@ import {World} from '../../lib/core/world.js'
 import {projectViewModel} from '../../lib/core/viewmodel.js'
 import {WaveDirector, configCost, isBossWave, unlockedUnitTypes, validateWaveConfig, waveBudget} from '../../lib/core/waves.js'
 
-test('normal built-in waves unlock the roster and spend through unit cost', () => {
+test('the pacer unlock waves match the roster, and the plan itself spends nothing', () => {
   const skynet = new BuiltinSkynet()
-  const expected = [
-    ['scout:4', 'endo:1'],
-    ['heavy:1', 'scout:3', 'endo:1'],
-    ['hkaerial:1', 'heavy:1', 'scout:1'],
-    ['t1000:1', 'hkaerial:1', 'scout:2', 'endo:1'],
-    ['hktank:1', 't1000:1', 'hkaerial:1', 'heavy:1'],
-  ]
-  const costs = [260, 520, 640, 760, 880]
   for (let wave = 1; wave <= 5; wave += 1) {
     const budget = waveBudget(wave).applied
-    const config = skynet.plan({wave, budget, telemetry: null, scaling: {maxAlive: 24}})
-    assert.deepEqual(config.spawns.map(({unit, count}) => `${unit}:${count}`), expected[wave - 1])
-    assert.equal(configCost(config), costs[wave - 1])
-    assert.equal(validateWaveConfig(config, {wave, budget}).ok, true)
+    const config = skynet.plan({wave, budget, telemetry: null, scaling: {maxAlive: 32}})
+    const bossOnly = isBossWave(wave) ? ['hktank:1'] : []
+    assert.deepEqual(config.spawns.map(({unit, count}) => `${unit}:${count}`), bossOnly)
+    assert.equal(configCost(config), 0, 'the whole budget reaches the pacer reservoir')
+    assert.equal(validateWaveConfig(config, {wave, budget, requireUnits: false}).ok, true)
     assert.equal(config.spawns.every(({unit}) => unlockedUnitTypes(wave).includes(unit)), true)
+    for (const [type, spec] of Object.entries(config.population.specials)) {
+      assert.equal(unlockedUnitTypes(spec.unlockWave).includes(type), true, `${type} unlocks on wave ${spec.unlockWave}`)
+      if (spec.unlockWave > 1) assert.equal(unlockedUnitTypes(spec.unlockWave - 1).includes(type), false, `${type} is locked one wave earlier`)
+    }
   }
 })
 

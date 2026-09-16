@@ -14,9 +14,12 @@ import {PartyHost} from '../lib/net/party-host.js'
 import {Hud} from '../lib/ui/hud.js'
 import {UiSession} from '../lib/ui/session.js'
 import {prepareAudio} from '../lib/ui/sfx.js'
+import {mountSkynetVoice} from '../lib/ui/skynet-voice.js'
 import {CameraFeel} from '../lib/view/camera-feel.js'
 import {GrenadeView} from '../lib/view/grenade.js'
 import {InputController} from '../lib/view/input.js'
+import {mountCachesView} from '../lib/view/caches.js' // map
+import {mountExtractionView} from '../lib/view/extraction.js' // map
 import {MapView} from '../lib/view/map.js'
 import {PlayerView} from '../lib/view/player.js'
 import {UnitView} from '../lib/view/units.js'
@@ -144,6 +147,9 @@ export class GameManager extends Object3DComponent {
       this.grenadeView.start(this.world, this.playerView.weapons.material)
       this.playersView = mountPlayersView(this.ctx.viewer, this.world,
         () => this.localPlayerId ?? this.world?.localPlayerId ?? this.world?.player?.id ?? 'player')
+      // map: cache crates and the extraction beacon are runtime-only and sync themselves each frame
+      this.cachesView = mountCachesView(this.ctx.viewer, () => this.world)
+      this.extractionView = mountExtractionView(this.ctx.viewer, () => this.world)
       this.viewsStarted = true
       this.syncViews()
       profile.spans.push({name:'view-construction',start:before,end:performance.now(),ms:performance.now()-before,status:'ready'})
@@ -161,6 +167,9 @@ export class GameManager extends Object3DComponent {
       this.warmupAbort.abort()
       this.viewsStarted = false
       this.playersView?.stop(); this.playersView = null
+      // map: the runtime cache crates and the extraction beacon leave no scene objects behind
+      this.cachesView?.stop(); this.cachesView = null
+      this.extractionView?.stop(); this.extractionView = null
       this.grenadeView?.stop()
       this.playerView?.stop()
       this.unitView?.stop()
@@ -177,6 +186,9 @@ export class GameManager extends Object3DComponent {
     if (!this.viewsStarted) return
     this.viewsStarted = false
     this.playersView?.stop(); this.playersView = null
+    // map: the runtime cache crates and the extraction beacon leave no scene objects behind
+    this.cachesView?.stop(); this.cachesView = null
+    this.extractionView?.stop(); this.extractionView = null
     this.grenadeView?.stop()
     this.playerView?.stop()
     this.unitView?.stop()
@@ -215,6 +227,9 @@ export class GameManager extends Object3DComponent {
     }
     if (steps === 8) this.accumulator = Math.min(this.accumulator, TICK_SECONDS)
     if (this.sessionMode !== 'guest') this.lobby?.update()
+    // View-only hit-stop. The fixed steps and the party clock above already ran; only the
+    // presentation holds, so unit and weapon animation, projectiles and camera springs freeze.
+    if (this.cameraFeel?.hitStopped) return true
     this.syncViews()
     return true
   }
@@ -236,6 +251,7 @@ export class GameManager extends Object3DComponent {
     this.playersView?.sync(this.world)
     bullets?.flush()
     this.grenadeView?.sync(this.world)
+    mountSkynetVoice(this) // presence: Skynet taunts read director events before the HUD projection
     this.cameraFeel?.apply(this.playerView?.camera,this.range?this.world.time:undefined)
     this.rangeView?.sync(this.world)
     this.syncUi()

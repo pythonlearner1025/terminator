@@ -1,10 +1,11 @@
 {
-  "maxAlive": 24,
+  "maxAlive": 32,
   "types": {
     "scout": {
       "id": "scout",
       "name": "T-600 Scout",
-      "hp": 120,
+      "role": "common",
+      "hp": 60,
       "height": 1.85,
       "radius": 0.38,
       "hitVolumes": {
@@ -32,7 +33,7 @@
       },
       "speed": 7,
       "attack": "melee",
-      "damage": 25,
+      "damage": 3,
       "range": 1.5,
       "cooldown": 1,
       "reactionDelay": 0.15,
@@ -45,12 +46,13 @@
       "regen": 0,
       "staggerResist": 0,
       "projectile": null,
-      "cost": 40,
-      "scrap": 50
+      "cost": 12,
+      "scrap": 12
     },
     "endo": {
       "id": "endo",
       "name": "T-800 Endo",
+      "role": "special",
       "hp": 300,
       "height": 2,
       "radius": 0.42,
@@ -101,6 +103,7 @@
     "heavy": {
       "id": "heavy",
       "name": "T-800 Heavy",
+      "role": "special",
       "hp": 900,
       "height": 2.25,
       "radius": 0.55,
@@ -151,6 +154,7 @@
     "t1000": {
       "id": "t1000",
       "name": "T-1000",
+      "role": "special",
       "hp": 900,
       "height": 1.85,
       "radius": 0.4,
@@ -198,6 +202,7 @@
     "hkaerial": {
       "id": "hkaerial",
       "name": "HK-Aerial",
+      "role": "special",
       "hp": 500,
       "height": 1.2,
       "radius": 0.9,
@@ -237,6 +242,7 @@
     "hktank": {
       "id": "hktank",
       "name": "HK-Tank",
+      "role": "boss",
       "boss": true,
       "hp": 6000,
       "height": 3.2,

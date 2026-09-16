@@ -51,7 +51,7 @@ test('unit melee and hitscan damage the selected teammate rather than the host',
   scout.targetPlayerId = meleeGuest.id
   scout.intent.melee = true
   meleeWorld.updateMeleeUnit(scout, meleeWorld.unitCatalog.types.scout, true)
-  assert.equal(meleeGuest.hp, 75)
+  assert.equal(meleeGuest.hp, 100 - meleeWorld.unitCatalog.types.scout.damage)
   assert.equal(meleeWorld.player.hp, 100)
 
   const gunWorld = new World({seed: 4, brains: {scout: idleBrain, endo: idleBrain, heavy: idleBrain}})

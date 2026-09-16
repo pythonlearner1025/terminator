@@ -4,14 +4,14 @@ import {performanceMultiplier, validateWaveConfig, waveBudget} from '../../lib/c
 
 test('budget formula uses 300 + 120 N and multiplier stays in bounds', () => {
   assert.deepEqual(waveBudget(4), {base: 780, multiplier: 1, applied: 780})
-  assert.equal(performanceMultiplier({healthLost: 0, timeToClear: 30, damagePerMinute: 0}), 1.5)
-  assert.equal(performanceMultiplier({healthLost: 200, timeToClear: 300, damagePerMinute: 400}), 0.8)
+  assert.equal(performanceMultiplier({healthLost: 0, timeToClear: 30, damagePerMinute: 0}), 1.1)
+  assert.equal(performanceMultiplier({healthLost: 200, timeToClear: 300, damagePerMinute: 400}), 0.9)
 })
 
 test('config validation lists over budget, gate count and unknown ids together', () => {
   const config = {
     spawns: [
-      {t: 0, gate: 'N1', unit: 'scout', count: 20},
+      {t: 0, gate: 'N1', unit: 'scout', count: 40},
       {t: 1, gate: 'NO_GATE', unit: 'unknown-unit', count: 1},
     ],
     knobs: {

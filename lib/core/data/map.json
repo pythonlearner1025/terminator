@@ -275,6 +275,239 @@
     "yaw": 0,
     "pitch": 0
   },
+  "cacheSpots": [
+    {
+      "id": "cache_courtyard_north",
+      "pos": {
+        "x": -12,
+        "y": 0,
+        "z": 8
+      }
+    },
+    {
+      "id": "cache_courtyard_east",
+      "pos": {
+        "x": 8,
+        "y": 0,
+        "z": -8
+      }
+    },
+    {
+      "id": "cache_courtyard_south",
+      "pos": {
+        "x": -4,
+        "y": 0,
+        "z": -22
+      }
+    },
+    {
+      "id": "cache_tunnel",
+      "pos": {
+        "x": -24,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "id": "cache_dock_north",
+      "pos": {
+        "x": 22,
+        "y": 0.7,
+        "z": 2
+      }
+    },
+    {
+      "id": "cache_dock_south",
+      "pos": {
+        "x": 23,
+        "y": 0.7,
+        "z": -8
+      }
+    },
+    {
+      "id": "cache_link",
+      "pos": {
+        "x": 22,
+        "y": 0,
+        "z": 13
+      }
+    },
+    {
+      "id": "cache_barracks_ground",
+      "pos": {
+        "x": 36,
+        "y": 0,
+        "z": 8
+      }
+    },
+    {
+      "id": "cache_barracks_upper",
+      "pos": {
+        "x": 36,
+        "y": 3.2,
+        "z": 20
+      }
+    },
+    {
+      "id": "cache_depot",
+      "pos": {
+        "x": 37,
+        "y": 0,
+        "z": -18
+      }
+    },
+    {
+      "id": "cache_stores",
+      "pos": {
+        "x": -36,
+        "y": 0,
+        "z": 26
+      }
+    },
+    {
+      "id": "cache_pump_house",
+      "pos": {
+        "x": -36,
+        "y": 0,
+        "z": -26
+      }
+    }
+  ],
+  "traderSpots": [
+    {
+      "id": "trader_crate",
+      "pos": {
+        "x": -7,
+        "y": 0.65,
+        "z": 23
+      }
+    },
+    {
+      "id": "trader_dock",
+      "pos": {
+        "x": 22,
+        "y": 1.35,
+        "z": -2
+      }
+    },
+    {
+      "id": "trader_barracks",
+      "pos": {
+        "x": 36,
+        "y": 0.65,
+        "z": 18
+      }
+    },
+    {
+      "id": "trader_tunnel",
+      "pos": {
+        "x": -24,
+        "y": 0.65,
+        "z": 2.5
+      }
+    }
+  ],
+  "spawnSpots": [
+    {
+      "id": "tunnel_west",
+      "pos": {
+        "x": -27.5,
+        "y": 0,
+        "z": 0
+      },
+      "yaw": 1.570796
+    },
+    {
+      "id": "tunnel_east",
+      "pos": {
+        "x": -20.5,
+        "y": 0,
+        "z": 0
+      },
+      "yaw": 1.570796
+    },
+    {
+      "id": "link_west",
+      "pos": {
+        "x": 15,
+        "y": 0,
+        "z": 13
+      },
+      "yaw": -1.570796
+    },
+    {
+      "id": "link_east",
+      "pos": {
+        "x": 29,
+        "y": 0,
+        "z": 13
+      },
+      "yaw": -1.570796
+    },
+    {
+      "id": "barracks_south",
+      "pos": {
+        "x": 36,
+        "y": 0,
+        "z": 4.8
+      },
+      "yaw": 0
+    },
+    {
+      "id": "barracks_north",
+      "pos": {
+        "x": 36,
+        "y": 0,
+        "z": 23.2
+      },
+      "yaw": 3.141593
+    },
+    {
+      "id": "barracks_upper",
+      "pos": {
+        "x": 36,
+        "y": 3.2,
+        "z": 7
+      },
+      "yaw": 0
+    },
+    {
+      "id": "depot",
+      "pos": {
+        "x": 36,
+        "y": 0,
+        "z": -25
+      },
+      "yaw": 0
+    },
+    {
+      "id": "pump_house",
+      "pos": {
+        "x": -36,
+        "y": 0,
+        "z": -26.5
+      },
+      "yaw": 0
+    },
+    {
+      "id": "stores",
+      "pos": {
+        "x": -36,
+        "y": 0,
+        "z": 26.5
+      },
+      "yaw": 3.141593
+    }
+  ],
+  "extraction": {
+    "pos": {
+      "x": 37,
+      "y": 0,
+      "z": 0
+    },
+    "gateId": "E1",
+    "holdSeconds": 180
+  },
   "walkable": {
     "maxStep": 0.5,
     "agentHeight": 2,

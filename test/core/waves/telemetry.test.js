@@ -7,7 +7,8 @@ const idleBrain = {tick() {}}
 
 test('scripted 60 second run produces complete and internally consistent telemetry', () => {
   const world = new World({seed: 44, brains: {scout: idleBrain, endo: idleBrain, heavy: idleBrain}})
-  const director = new WaveDirector(world)
+  // Legacy schedule only: the pacer has its own tests under test/core/director.
+  const director = new WaveDirector(world, {pacer: false})
   director.start({
     spawns: [{t: 120, gate: 'N1', unit: 'scout', count: 1}],
     knobs: {gates: ['N1'], doors: {}, lights: {}, fog: 0, hazards: [], break_flank_wall: false},
@@ -81,7 +82,7 @@ test('trader purchases use documented prices and enter telemetry and the event l
 
 test('intermission purchases are carried into the next wave summary', () => {
   const world = new World({seed: 6, brains: {scout: idleBrain, endo: idleBrain, heavy: idleBrain}})
-  const director = new WaveDirector(world, {maxWaves: 2})
+  const director = new WaveDirector(world, {maxWaves: 2, pacer: false})
   const config = {
     spawns: [{t: 0, gate: 'N1', unit: 'scout', count: 1}],
     knobs: {gates: ['N1'], doors: {}, lights: {}, fog: 0, hazards: [], break_flank_wall: false},

@@ -7,7 +7,8 @@ const idleBrain = {tick() {}}
 
 test('health resets to 100 when a wave is cleared', () => {
   const world = new World({seed: 2029, brains: {scout: idleBrain, endo: idleBrain, heavy: idleBrain}})
-  const director = new WaveDirector(world, {maxWaves: 3, intermissionSeconds: 1, now: () => 1000})
+  // Legacy schedule only: the pacer has its own tests under test/core/director.
+  const director = new WaveDirector(world, {maxWaves: 3, intermissionSeconds: 1, now: () => 1000, pacer: false})
   assert.equal(director.start({
     spawns: [{t: 0, gate: 'N1', unit: 'scout', count: 1}],
     knobs: {gates: ['N1'], doors: {}, lights: {}, fog: 0, hazards: [], break_flank_wall: false},

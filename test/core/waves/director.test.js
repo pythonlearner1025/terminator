@@ -14,10 +14,12 @@ import {
 } from '../../../lib/core/waves.js'
 
 const idleBrain = {tick() {}}
+// These tests drive the legacy spawn schedule and the phase machine, so they
+// run with the in-wave pacer off. test/core/director covers the pacer itself.
 
 test('state machine covers lobby, wave, intermission, ready, timeout, and ended', () => {
   const world = makeWorld()
-  const director = new WaveDirector(world, {maxWaves: 2, intermissionSeconds: 1 / 60, now: () => 1000})
+  const director = new WaveDirector(world, {maxWaves: 2, intermissionSeconds: 1 / 60, now: () => 1000, pacer: false})
   assert.equal(director.phase, 'lobby')
 
   assert.equal(director.start(configFor(1)).ok, true)
@@ -41,14 +43,14 @@ test('state machine covers lobby, wave, intermission, ready, timeout, and ended'
   ])
 })
 
-test('ready ends the 45 second intermission early', () => {
+test('ready ends the intermission early', () => {
   const world = makeWorld()
-  const director = new WaveDirector(world, {builtin: new BuiltinSkynet(), intermissionSeconds: 45})
+  const director = new WaveDirector(world, {builtin: new BuiltinSkynet(), intermissionSeconds: 15, pacer: false})
   director.start(configFor(1))
   director.step({})
   killAll(world)
   director.step({})
-  assert.equal(director.intermissionTicksLeft, 45 * 60)
+  assert.equal(director.intermissionTicksLeft, 15 * 60)
   director.submitConfig({wave: 2, ...configFor(2)})
   director.step({ready: true})
   assert.equal(director.phase, 'wave')
@@ -57,7 +59,7 @@ test('ready ends the 45 second intermission early', () => {
 
 test('four minute cap makes current and future units abandon scripts and rush', () => {
   const world = makeWorld()
-  const director = new WaveDirector(world)
+  const director = new WaveDirector(world, {pacer: false})
   director.start({
     spawns: [
       {t: 0, gate: 'N1', unit: 'scout', count: 1},
@@ -80,15 +82,16 @@ test('four minute cap makes current and future units abandon scripts and rush', 
 
 test('performance multiplier uses the exact three inputs and clamps both bounds', () => {
   assert.deepEqual(waveBudget(4), {base: 780, multiplier: 1, applied: 780})
-  assert.equal(performanceMultiplier({healthLost: 0, timeToClear: 30, damagePerMinute: 0}), 1.5)
-  assert.equal(performanceMultiplier({health_lost: 200, time_to_clear: 300, damage_per_minute: 400}), 0.8)
-  assert.equal(performanceMultiplier({healthLost: 50, timeToClear: 120, damagePerMinute: 180}), 1.125)
+  assert.equal(performanceMultiplier({healthLost: 0, timeToClear: 30, damagePerMinute: 0}), 1.1)
+  assert.equal(performanceMultiplier({health_lost: 200, time_to_clear: 300, damage_per_minute: 400}), 0.9)
+  assert.equal(performanceMultiplier({healthLost: 50, timeToClear: 120, damagePerMinute: 180}), 1.1)
 })
 
 test('validation returns all budget, gate, unit, id, and hazard errors without applying', () => {
   const invalid = {
     spawns: [
-      {t: 0, gate: 'N1', unit: 'scout', count: 20},
+      {t: 0, gate: 'N1', unit: 'scout', count: 40},
+      {t: 0, gate: 'N2', unit: 'endo', count: 3},
       {t: 1, gate: 'NOT_A_GATE', unit: 'not-a-unit', count: 1},
     ],
     knobs: {
@@ -107,7 +110,7 @@ test('validation returns all budget, gate, unit, id, and hazard errors without a
   }
 
   const world = makeWorld()
-  const director = new WaveDirector(world)
+  const director = new WaveDirector(world, {pacer: false})
   director.start(configFor(1))
   director.step({})
   killAll(world)
@@ -121,7 +124,7 @@ test('validation returns all budget, gate, unit, id, and hazard errors without a
 test('missing, invalid, and late submissions reuse the last valid config and count fallback', () => {
   const now = {value: 1000}
   const world = makeWorld()
-  const director = new WaveDirector(world, {now: () => now.value})
+  const director = new WaveDirector(world, {now: () => now.value, pacer: false})
   const first = configFor(1)
   director.start(first)
   director.step({})
@@ -152,7 +155,7 @@ test('missing, invalid, and late submissions reuse the last valid config and cou
 
 test('a missing submission uses the last valid config and reports the reason', () => {
   const world = makeWorld()
-  const director = new WaveDirector(world)
+  const director = new WaveDirector(world, {pacer: false})
   const first = configFor(1)
   director.start(first)
   director.step({})
@@ -168,7 +171,7 @@ test('a missing submission uses the last valid config and reports the reason', (
 
 test('an invalid revision after a valid submission falls back to that last valid config', () => {
   const world = makeWorld()
-  const director = new WaveDirector(world)
+  const director = new WaveDirector(world, {pacer: false})
   director.start(configFor(1))
   director.step({})
   killAll(world)
@@ -189,7 +192,7 @@ test('an invalid revision after a valid submission falls back to that last valid
 
 test('player death ends the match and publishes a death wave summary', () => {
   const world = makeWorld()
-  const director = new WaveDirector(world)
+  const director = new WaveDirector(world, {pacer: false})
   director.start(configFor(1))
   director.step({})
   world.damagePlayer(1000, world.aliveUnits[0])
@@ -205,7 +208,7 @@ test('player death ends the match and publishes a death wave summary', () => {
 test('spawn and SSE events carry revisions, protocol names, and documented throttles', () => {
   const world = makeWorld()
   world.skynet.revs.scout = 7
-  const director = new WaveDirector(world)
+  const director = new WaveDirector(world, {pacer: false})
   director.start(configFor(1))
   director.step({})
   const unit = world.aliveUnits[0]

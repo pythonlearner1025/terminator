@@ -17,9 +17,9 @@ function makeParty() {
 }
 
 test('difficulty scaling matches all three player-count tiers and is projected', () => {
-  assert.deepEqual(difficultyScaling(1), {players: 1, budgetMultiplier: 1, unitHealthMultiplier: 1, maxAlive: 24})
-  assert.deepEqual(difficultyScaling(2), {players: 2, budgetMultiplier: 1.6, unitHealthMultiplier: 1.35, maxAlive: 30})
-  assert.deepEqual(difficultyScaling(3), {players: 3, budgetMultiplier: 2.1, unitHealthMultiplier: 1.7, maxAlive: 36})
+  assert.deepEqual(difficultyScaling(1), {players: 1, budgetMultiplier: 1, unitHealthMultiplier: 1, maxAlive: 32})
+  assert.deepEqual(difficultyScaling(2), {players: 2, budgetMultiplier: 1.6, unitHealthMultiplier: 1.35, maxAlive: 38})
+  assert.deepEqual(difficultyScaling(3), {players: 3, budgetMultiplier: 2.1, unitHealthMultiplier: 1.7, maxAlive: 44})
 
   const world = makeParty()
   const director = new WaveDirector(world)
@@ -28,8 +28,8 @@ test('difficulty scaling matches all three player-count tiers and is projected',
 
   assert.equal(started.budget, Math.round(420 * 1.6))
   assert.deepEqual(started.scaling, difficultyScaling(2))
-  assert.equal(world.aliveUnits[0].maxHp, 120 * 1.35)
-  assert.equal(world.maxAlive, 30)
+  assert.equal(world.aliveUnits[0].maxHp, 60 * 1.35)
+  assert.equal(world.maxAlive, 38)
   assert.deepEqual(projectViewModel(world).scaling, difficultyScaling(2))
   assert.deepEqual(buildRulesPayload({playerCount: 3}).scaling, difficultyScaling(3))
 })
@@ -37,7 +37,8 @@ test('difficulty scaling matches all three player-count tiers and is projected',
 test('a dead teammate respawns next wave and the match ends only when everyone is dead together', () => {
   const world = makeParty()
   const guest = world.getPlayer('guest-1')
-  const director = new WaveDirector(world, {maxWaves: 3, intermissionSeconds: 45})
+  // The in-wave pacer is off: this test drives the legacy schedule and the phase machine.
+  const director = new WaveDirector(world, {maxWaves: 3, intermissionSeconds: 45, pacer: false})
   world.player.ammo.m4.owned = true
   director.start(config)
   director.step({})
@@ -52,7 +53,7 @@ test('a dead teammate respawns next wave and the match ends only when everyone i
   assert.equal(director.phase, 'intermission')
   assert.equal(world.player.alive, false)
   assert.equal(guest.hp, 100)
-  assert.equal(guest.scrap, 400 + 50 + 150)
+  assert.equal(guest.scrap, 400 + 12 + 150)
   const firstSummary = director.telemetryByWave.get(1)
   assert.deepEqual(firstSummary.scaling, difficultyScaling(2))
   assert.equal(firstSummary.players.length, 2)

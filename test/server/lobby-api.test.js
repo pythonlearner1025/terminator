@@ -35,7 +35,7 @@ test('all lobby HTTP endpoints complete a match relay lifecycle', async (t) => {
   const script = await json(fixture.url, `${base}/script`, {method: 'POST', headers: agent, body: {unit_type: 'scout', source: validScript, note: 'test'}})
   assert.deepEqual(script.body, {ok: true, rev: 2})
   const config = await json(fixture.url, `${base}/wave_config`, {method: 'POST', headers: agent, body: {wave: 2, ...validConfig}})
-  assert.deepEqual(config.body, {ok: true, cost: 40, budget: 540})
+  assert.deepEqual(config.body, {ok: true, cost: 12, budget: 540})
 
   const simulation = await json(fixture.url, `${base}/simulate`, {method: 'POST', headers: agent, body: {wave_config: validConfig, scripts: {scout: validScript}, ghost: 'last', seed: 42}})
   assert.equal(simulation.body.ok, true)

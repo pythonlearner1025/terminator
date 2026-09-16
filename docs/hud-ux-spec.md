@@ -9,6 +9,7 @@ W18 replaces the text treatments below. Barlow, angular panels, scanlines, skull
 - Skynet lobby: code, complete selectable install command/copy, status icon, Start. Pause: Resume and Settings/Menu icons. Quit: Quit and Menu.
 - Trader: categories, short item names, prices, scrap balance, bulk ammo/armor icons with prices, countdown. Purchases retain sound, color, and brief error labels.
 - HUD: icon/number vitals, numeric ammunition, `WAVE 3/10`, remaining count, `SKYNET · BUILT-IN · 1140`, `E7 S3 H1`, one short transmission line, three icon feed entries. Enemy plates show type, rev and health only. Teammates keep names and health, with armor bars. Spectate keeps the target name and arrow controls. No gameplay hints or chatter subtitles.
+- Director: the Skynet panel adds a reservoir line, `LEFT <reservoir>`, with a state word beside it: BUILD, PEAK, FADE, or RELAX. A `MOB INCOMING` banner holds 2 seconds, with ` · BEHIND` when the mob comes from behind. Green crate markers point at the four active supply caches within 30 m. An extraction marker shows on wave 10. Settings adds a Crosshair checkbox, off by default.
 - Results: result, wave, kills/accuracy/damage taken/scrap, Play Again. Co-op shows the same four values per player; initials identify players, with full names in accessible labels. Partial history and unavailable/disconnected data retain accessible labels. Server dossier APIs and core data are unchanged.
 
 Measurements, screenshots, and checks: [W18 evidence](/Users/minjunes/games/terminator-evidence/docs/evidence/w18-terse-ui/README.md).
@@ -31,33 +32,52 @@ Bottom right, the weapon block:
 - A reload progress ring around the crosshair while reloading.
 
 Top center, the wave block:
-- "WAVE 3 / 10" with a bar of terminator icons that empties as the wave is cleared, and the count of
-  units remaining.
-- In intermission: "TRADER OPEN" and a countdown from 45. A world-space marker with distance points at
+- "WAVE 3 / 10" with a bar of terminator icons that empties as the wave is cleared, and a unit count.
+  The count reads "N ALIVE" while the pacer reservoir still buys units, because more are coming. It
+  reads "N LEFT" only when the reservoir is spent and the units on the map are the whole wave.
+- In intermission: "TRADER OPEN" and a countdown from 15. A world-space marker with distance points at
   the trader crate. A Ready button hint: "Press R to end intermission early".
+- The trader also opens during a relax window inside a wave. The marker and the trader key work the
+  same way. The trader screen shows a dash instead of a clock, because relax publishes no close time.
+- A centre banner reads "MOB INCOMING", or "MOB INCOMING · BEHIND" when the mob comes from behind.
+  It holds for 2 seconds from the call-out and uses event time, so a replay keeps it in step.
 
 Top right, the Skynet panel, red:
 - "SKYNET: <agent name>" or "SKYNET: BUILT-IN". A connection dot.
 - Budget for the coming wave with the multiplier, for example "BUDGET 1140 (x1.2)".
+- The reservoir line, "LEFT 640", sits on its own row under the title, because the title line has no
+  room for it. It is what the in-wave pacer still holds. It drains through the wave, and the whole row
+  hides when no director state is published.
+- The pacer state word sits on that row: BUILD, PEAK, FADE, or RELAX. It hides when there is no word.
 - Deployed model revs, for example "ENDO r7 · SCOUT r3 · HEAVY r1".
 - Fallback count if above zero.
 - A transmission ticker for taunts, with a typewriter reveal and a short static burst sound.
+  The director verbs speak here: mobs, a dispatched T-1000, lights out, stragglers, extraction, and
+  one camp call-out per wave summary. One line at most every 8 seconds.
 
 Top left, the Scrap counter with a scrap icon, and a kill feed below it (last 5, fade out).
 
+World-space markers:
+- One green crate marker per active supply cache, with its distance. Four caches are active per wave.
+  A marker shows only within 30 m and only while the cache point is on screen.
+- One extraction marker on wave 10. It shows the hold timer while the timer runs, and the phase word
+  otherwise. It hides when there is no extraction.
+
 Center:
-- A dynamic crosshair that opens with spread and movement.
+- A crosshair of four short lines that opens with spread and closes while aiming. It is off by
+  default. Settings has a Crosshair checkbox that mounts and removes it at once. It hides while a
+  screen is open and while the player is dead.
 - Hit marker on hit, a heavier red marker on headshot, a skull tick on kill.
 - Damage direction indicators as red arcs at the screen edge pointing at the attacker.
 - Unit nameplates when a unit is within 25 m and in view: type, health bar, and rev label such as
   "T-800 rev 7". Skynet chatter from `act.say` shows as a subtitle under the nameplate.
 
-## Trader menu (intermission only, full screen overlay)
+## Trader menu (intermission or a relax window, full screen overlay)
 
 - Left column: categories. Weapons, Ammo, Armor, Items.
 - Center: the item list with icon, name, price, and for weapons the stats bars (damage, rate, mag).
 - Right column: the player's loadout, Scrap balance, "Fill all ammo" with the total price, "Buy full
-  armor" with the price, and the time remaining.
+  armor" with the price, and the time remaining. A relax window has no close time, so it shows a dash.
 - Buying plays a cash sound and flashes the balance. Not enough Scrap shakes the price in red.
 
 ## Screens
@@ -68,7 +88,9 @@ Center:
   that flips from "Waiting for Skynet" to "<agent name> connected", map name, and a Start button.
   Starting without an agent shows "Built-in Skynet will play".
 - Pause: Resume, Settings, Quit to menu. The game freezes and blurs behind it.
-- Settings: mouse sensitivity, field of view, master, music, and effects volume, quality preset.
+- Settings: mouse sensitivity, field of view, HUD size, master, music, and effects volume, quality
+  preset, and a Crosshair checkbox. The checkbox is off by default. It is a labelled toggle row like
+  the sliders, with an ON or OFF readout in the right column, and the keyboard reaches it.
 - Post-match: result banner (SURVIVED or TERMINATED), wave reached, kills by type, accuracy, damage
   taken, Scrap earned, time. Then the dossier reveal: a red terminal panel that types out Skynet's
   markdown and lists the traits with confidence bars. A Play Again button.

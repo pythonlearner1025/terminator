@@ -19,7 +19,7 @@ test('difficulty budgets and unit health combine with each co-op tier', () => {
       assert.equal(director.start(config).ok,true)
       director.spawnDueUnits()
       assert.equal(world.waveBudget,Math.round(420*base.budgetMultiplier*budget))
-      assert.equal(world.aliveUnits[0].maxHp,Math.round(300*base.unitHealthMultiplier*hp*10000)/10000)
+      assert.equal(world.aliveUnits.find(unit=>unit.type==='endo').maxHp,Math.round(300*base.unitHealthMultiplier*hp*10000)/10000)
       assert.equal(world.maxAlive,base.maxAlive,'difficulty does not change simultaneous unit cap')
       const guest=new World()
       guest.applySnapshot(world.snapshot())

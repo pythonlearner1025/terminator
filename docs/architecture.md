@@ -4,7 +4,8 @@
 
 ```text
 assets/       Saved scenes, textures, reusable map pieces, and placed unit models
-lib/core/     Headless simulation, data, default brains, waves, and HUD projection
+lib/core/     Headless simulation, data, waves, the in-wave director, and HUD projection
+lib/core/brains/ Native unit brains, including the enraged mob brain
 lib/view/     Kite3D and threepipe adapters
 lib/ui/       HTML and CSS HUD
 scripts/      Kite3D Object3D components
@@ -65,10 +66,19 @@ was removed.
 
 `world.step(inputsByPlayer)` advances exactly one tick at 60 Hz. The bundle is keyed by player id.
 A legacy plain input record applies to the host. Missing player ids reuse that player's last absolute
-input. The step moves every player, advances their weapon timers, runs unit brains at 10 Hz, applies
-body limits, updates attacks and hazards, samples aggregate and per-player telemetry, and increments
-`world.tick` once. It does not read wall clock time. The same seed, starting state, and input bundles
-produce the same event log.
+input. The step moves every player, regenerates their health, advances their weapon timers, runs unit
+brains at 10 Hz, applies body limits, updates attacks and hazards, steps supply caches, samples
+aggregate and per-player telemetry, and increments `world.tick` once. It does not read wall clock
+time. The same seed, starting state, and input bundles produce the same event log.
+
+A player who took no damage for 5 seconds regenerates 4 health per second up to 40. Regeneration
+never passes 40. Medkits and the wave-clear heal are unchanged. `player.lastDamagedAtTick` is the
+clock; a snapshot without it reads as never damaged.
+
+Any damage above zero staggers a common for 0.25 s. Specials keep the old rule: 65 damage or more
+staggers for 0.4 s. A knife hit on a common staggers it 0.6 s and pushes it 2.5 m away. A shotgun
+shot that lands 4 or more pellets on one common pushes it 1.5 m. A push is `unit.knockback`, spends
+0.3 s, overrides the brain's move intent, and stops at colliders.
 
 The replay buffer is `world.replay`. It contains one normalized keyed bundle for every completed tick.
 Ghost replay extracts the host record and also accepts legacy single-player records.
@@ -80,7 +90,11 @@ targeting consider every living player.
 
 `world.snapshot()` returns plain JSON state, including keyed players and `playerOrder`, units,
 projectiles, map state, phase and wave timers, scaling, deterministic RNG state, replay and prior
-inputs, telemetry, and an `events` delta. `eventStart` and `eventCursor` identify that delta.
+inputs, telemetry, and an `events` delta. It also carries `director`, `traderOpen`, `extraction`,
+`pickups`, and `traderSpotId`. Units carry `enraged`, `wanderer`, `knockback`, and
+`lastSeenByPlayerTick`. Players carry `lastDamagedAtTick`. An older snapshot without these reads as
+a closed trader, an empty pacer, and undamaged players.
+`eventStart` and `eventCursor` identify that delta.
 `world.applySnapshot(snapshot)` replaces prediction and render state and appends the event delta.
 `world.predictPlayer(playerId, inputs)` advances only that player's movement fields by one 60 Hz tick
 without advancing world time, AI, combat, events, or telemetry.
@@ -117,7 +131,7 @@ include the configured radius and a hit list. Damage falls off linearly to zero 
 units and every living player, including the thrower and teammates.
 
 At each wave start, `WaveDirector` selects connected-player scaling: one player uses budget `1.0`,
-health `1.0`, and max alive `24`; two use `1.6`, `1.35`, and `30`; three use `2.1`, `1.7`, and `36`.
+health `1.0`, and max alive `32`; two use `1.6`, `1.35`, and `38`; three use `2.1`, `1.7`, and `44`.
 The budget multiplier is applied after the performance multiplier. The selected block is exposed by
 director state, rules, wave summaries, snapshots, and the view-model. A cleared wave heals and pays
 every living player. Dead players keep their loadout and respawn with full health at the next wave.
@@ -125,6 +139,59 @@ The match ends only when every connected player is dead before a wave clears.
 
 Roster validation unlocks Heavy on wave 2, HK-Aerial on wave 3, and T-1000 on wave 4. Waves 5 and 10
 require one zero-cost HK-Tank at the 8-meter boss gate. The final wave carries the finale flag.
+
+## In-wave director
+
+`WaveDirector` runs an in-wave pacer beside the legacy wave schedule. `new WaveDirector(world, {pacer})`
+takes `pacer: true` by default. `pacer: false` drops the pacer, the population, and the deck, so a test
+that drives a `spawns` list alone keeps the old behavior. `docs/director-design.md` holds the tune and
+every number. The pacer changes how often threats arrive. It never changes their strength.
+
+`lib/core/director.js` owns `Pacer`. It keeps one intensity number per living player and takes the team
+maximum. It walks four states: `build_up`, `sustain_peak`, `peak_fade`, and `relax`. It spends the wave
+reservoir only in the first two. `beginWave`, `spend`, `refund`, `releaseReserve`, and `drain` move the
+reservoir. Each state change emits `director_state`. The trader is open during `relax` and during
+intermission.
+
+`lib/core/population.js` owns spawn selection and the population functions. `spawnCandidates` joins
+`map.spawnGates` and `map.spawnSpots`. `spotIsValid` rejects a spot closer than 12 m to any living
+player, or one any living player can see. `spotIsBehind` tests the spot against the nearest player's
+yaw. `Population` schedules mobs, specials, wanderers, the end-of-wave rush, and the straggler rule,
+and pays for each out of the reservoir. `Deck` deals one wave event card per wave from a shuffled list
+and never deals the same card twice in a row.
+
+`lib/core/pickups.js` owns supply caches. `world.pickups` is a `Pickups` instance. `plan(wave, rng)`
+picks four of the twelve `map.cacheSpots`, one weapon, one armor, one ammo, and one grenades cache.
+When the player owns every weapon, the weapon cache becomes an ammo cache.
+`step(world)` gives a cache to any player within 1.2 m and emits `cache_taken`. `snapshot()` and
+`applySnapshot()` carry the active list to guests.
+
+`lib/core/brains/enraged.js` is the mob brain. World refreshes `lastKnownPlayer` to the nearest living
+player on every brain tick of an enraged unit, so the brain only moves, faces, and attacks.
+`world.resolveUnitBrain(unit)` picks it for any unit with `unit.enraged`, including after a snapshot
+and after a script error.
+
+The director pass adds these `World` members:
+
+```js
+world.spawnUnit(type, pos, {yaw, rev, id, brain, enraged, alerted, wanderer})
+world.enrageUnit(unitId)          // switch a living unit to the enraged brain
+world.despawnUnit(unitId)         // silent removal: no unit_death, no scrap, telemetry causeOfDeath 'despawned'
+world.unitSeenByAnyPlayer(unit)   // eye-to-eye sight inside a 100 degree cone around the player's yaw
+world.setTraderSpot(spotId)       // move the trader collider, rebuild navigation, emit trader_moved
+world.director                    // {state, intensity, reservoir, reservoirMax}, written every tick
+world.traderOpen                  // boolean; purchase() accepts intermission or traderOpen
+world.extraction                  // null or {pos, phase, timer}
+world.pickups                     // Pickups instance
+```
+
+`enraged` gives the unit the enraged brain. `alerted` sets `lastKnownPlayer` to the nearest living
+player at spawn. `wanderer` marks the unit for the despawn and refund rule and tracks
+`unit.lastSeenByPlayerTick` at 2 Hz.
+
+The director emits `director_state`, `mob_incoming`, `special_dispatched`, `stragglers_enraged`,
+`deck_card`, `trader_moved`, `cache_spawned`, `cache_taken`, and `extraction`. Audio, camera feel, the
+HUD, and telemetry read them from the event log.
 
 ## Vertical surfaces and navigation
 
@@ -157,7 +224,9 @@ its clearance sphere against active colliders, floors, walls, and indoor ceiling
 Bunker 7 extension records use `exp_` collider ids and `area: "expansion"`.
 `assets/main.scene.gltf` owns all visual map placement transforms.
 `map-piece-registry.json` owns local collider shapes for each reusable asset.
-`map.json` owns surfaces, gates, doors, switches, hazards, starts, fog, vents, and sparks.
+`map.json` owns surfaces, gates, doors, switches, hazards, starts, fog, vents, and sparks. It also
+owns `cacheSpots`, `traderSpots`, `spawnSpots`, and `extraction`. Those carry no geometry, so no scene
+placement moves them; `lib/core/map.js` copies them to `{id, pos, yaw}` records for every reader.
 `lib/core/map.js` applies scene transforms to registry shapes before creating `World` and `NavGrid`.
 The same ordered placements always create the same collider array.
 `MapView` reads the derived map and owns pooled atmosphere.
@@ -205,7 +274,8 @@ Wheel input uses `switchTo: "next" | "previous"`; direct slot inputs remain numb
 to aim; only the left button fires. Firearms aim only outside reloads and quick knife/grenade
 actions. Aiming uses `weapons.json.aim`: 35% base spread, 60% movement speed, and no sprint.
 The view-model's `weapon.aiming` and `weapon.spread` expose effective aim and hitscan spread in
-degrees. The legacy `crosshair.spread` also reports that spread; the HUD draws no crosshair.
+degrees. The legacy `crosshair.spread` also reports that spread. `lib/ui/crosshair.js` draws four
+short lines that open with that spread. The Crosshair setting mounts it and is off by default.
 
 ## Unit brain contract
 
@@ -286,7 +356,9 @@ Flyer `moveTo` consumes its full three-dimensional target without requesting a n
   armor: {value, max, ratio},
   ammo: {mag, reserve, capacity, low, empty},
   weapon: {id, name, slot, reloadProgress, reloading},
-  wave: {current, total, remaining, phase, timer, budget, multiplier, boss, finale},
+  wave: {current, total, remaining, phase, timer, budget, multiplier, boss, finale, traderOpen},
+  director: {state, intensity, reservoir, reservoirMax, traderOpen},
+  extraction: null | {pos, phase, timer},
   boss: null | {name, hp, hpMax},
   skynet: {status, connected, fallbackCount, revs},
   scrap,
