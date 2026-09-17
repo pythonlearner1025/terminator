@@ -12,6 +12,14 @@ import {extname, join, normalize} from 'node:path'
 const RUNTIME_PATH = '/_blitz/runtime.js'
 const RUNTIME_FILE = 'node_modules/@kite3d/engine/dist/runtime.js'
 
+// `createGame` reads the boot scene from the project's package.json `mainScene`
+// field, so a different scene means a different package.json. The file on disk
+// never changes: the server answers `/package.json` with this copy instead.
+export async function packageJsonWithScene(projectDir, scene) {
+  const packageJson = JSON.parse(await readFile(join(projectDir, 'package.json'), 'utf8'))
+  return `${JSON.stringify({...packageJson, mainScene: scene}, null, 2)}\n`
+}
+
 export async function buildStandaloneHtml(projectDir) {
   const packageJson = JSON.parse(await readFile(join(projectDir, 'package.json'), 'utf8'))
   const engine = JSON.parse(await readFile(join(projectDir, 'node_modules/@kite3d/engine/package.json'), 'utf8'))
@@ -39,11 +47,15 @@ export async function buildStandaloneHtml(projectDir) {
 
 // Resolves to the listening server plus the URL it answers on. Pass port 0 to
 // let the operating system choose a free port; `url` then carries the real one.
-export async function createStandaloneServer({projectDir, port = 0, host = '127.0.0.1'}) {
+// `scene` is a project-relative path; without it the project's own package.json
+// is served, so the boot scene stays the one the project names.
+export async function createStandaloneServer({projectDir, port = 0, host = '127.0.0.1', scene = null}) {
   const html = await buildStandaloneHtml(projectDir)
+  const packageJson = scene ? await packageJsonWithScene(projectDir, scene) : null
   const server = createServer(async (request, response) => {
     const path = decodeURIComponent(new URL(request.url, 'http://x').pathname)
     if (path === '/' || path === '/index.html') return send(response, 200, 'text/html', html)
+    if (packageJson && path === '/package.json') return send(response, 200, 'application/json', packageJson)
     const file = path === RUNTIME_PATH
       ? join(projectDir, RUNTIME_FILE)
       : join(projectDir, normalize(path).replace(/^(\.\.[/\\])+/, ''))
@@ -59,7 +71,7 @@ export async function createStandaloneServer({projectDir, port = 0, host = '127.
     server.listen(port, host, () => { server.removeListener('error', fail); done() })
   })
   return {
-    server, html,
+    server, html, scene,
     url: `http://${host}:${server.address().port}/`,
     // A browser holds its connection open, so the listener alone never closes.
     close: () => new Promise(done => { server.closeAllConnections?.(); server.close(done) }),

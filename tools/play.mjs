@@ -5,9 +5,12 @@
 //   npm run play
 //   npm run play -- --port=4600 --no-open
 //   npm run play -- --sandbox --weapon=revolver-rebuild
+//   npm run play -- --scene=assets/weapons-lab.scene.gltf
 //
 // Ctrl-C stops the server and exits 0.
 import {spawn} from 'node:child_process'
+import {stat} from 'node:fs/promises'
+import {isAbsolute, join, relative, resolve, sep} from 'node:path'
 import {fileURLToPath, pathToFileURL} from 'node:url'
 import {createStandaloneServer} from './standalone-page.mjs'
 
@@ -18,14 +21,15 @@ export const QUERY_FLAGS = Object.freeze(['sandbox', 'range', 'weapon', 'party']
 const projectDir = fileURLToPath(new URL('../', import.meta.url))
 
 export function parsePlayOptions(argv) {
-  const options = {port: DEFAULT_PORT, host: '127.0.0.1', open: true, query: {}}
-  const known = ['--port=<n>', '--no-open', ...QUERY_FLAGS.map(flag => `--${flag}[=<value>]`)].join(', ')
+  const options = {port: DEFAULT_PORT, host: '127.0.0.1', open: true, scene: null, query: {}}
+  const known = ['--port=<n>', '--no-open', '--scene=<path>', ...QUERY_FLAGS.map(flag => `--${flag}[=<value>]`)].join(', ')
   for (const arg of argv) {
     const match = /^--([a-z][a-z-]*)(?:=([\s\S]*))?$/.exec(arg)
     if (!match) throw new Error(`Unknown argument ${arg}. Known: ${known}`)
     const [, name, value] = match
     if (name === 'no-open') { options.open = false; continue }
     if (name === 'open') { options.open = value !== 'false'; continue }
+    if (name === 'scene') { options.scene = value ?? ''; continue }
     if (name === 'port') {
       const port = Number(value)
       if (!Number.isInteger(port) || port < 0 || port > 65535) throw new Error(`--port needs a port number, got ${value}`)
@@ -38,6 +42,22 @@ export function parsePlayOptions(argv) {
     throw new Error(`Unknown argument ${arg}. Known: ${known}`)
   }
   return options
+}
+
+// `--scene` names the boot scene as a project-relative path. The engine accepts
+// a text `.gltf` file and nothing else, so check that here and say which rule
+// the value broke. The caller prints the message; no stack reaches the player.
+export async function resolveScene(projectDir, requested) {
+  const value = String(requested ?? '').trim()
+  if (!value) throw new Error('--scene needs a path to a .gltf scene file, for example --scene=assets/weapons-lab.scene.gltf')
+  const inside = relative(projectDir, resolve(projectDir, value))
+  if (!inside || inside.startsWith('..') || isAbsolute(inside)) throw new Error(`--scene must name a file inside the project, got ${value}`)
+  const path = inside.split(sep).join('/')
+  if (!path.toLowerCase().endsWith('.gltf')) throw new Error(`--scene must name a text .gltf scene file, got ${value}`)
+  const info = await stat(join(projectDir, inside)).catch(() => null)
+  if (!info) throw new Error(`--scene names a file that does not exist: ${path}`)
+  if (!info.isFile()) throw new Error(`--scene must name a file, not a directory: ${path}`)
+  return path
 }
 
 export function playUrl(base, query = {}) {
@@ -56,8 +76,10 @@ export function openBrowser(url) {
 
 export async function play(argv = process.argv.slice(2), {out = process.stdout} = {}) {
   const options = parsePlayOptions(argv)
-  const served = await createStandaloneServer({projectDir, port: options.port, host: options.host})
+  const scene = options.scene === null ? null : await resolveScene(projectDir, options.scene)
+  const served = await createStandaloneServer({projectDir, port: options.port, host: options.host, scene})
   const url = playUrl(served.url, options.query)
+  if (scene) out.write(`Booting ${scene}\n`)
   out.write(`Terminator is playable at ${url}\nPress Ctrl-C to stop.\n`)
   if (options.open) openBrowser(url)
   return {...served, url, options}
