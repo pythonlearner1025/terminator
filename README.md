@@ -33,6 +33,12 @@ game's own URL flags work as command flags: `--sandbox`, `--range`, `--weapon=re
 `--party=<code>`. For example, `npm run play -- --port=4600 --sandbox --no-open`. Use `npx kite3d dev`
 instead when you need to edit the scene.
 
+`--scene=<path>` boots a different scene, for example
+`npm run play -- --scene=assets/weapons-lab.scene.gltf`. The path must name a text `.gltf` file inside
+the project. A bad path stops the command and says which rule it broke. The server answers with a
+`package.json` that names the requested scene; the file in the repository never changes. Without the
+flag the game boots Bunker 7, the scene `package.json` already names.
+
 ## Local scenes
 
 Install the linked Kite3D rewrite and open the Bunker 7 main scene:
@@ -47,4 +53,15 @@ Open the URL printed by the command and press Run. Add `&weapon=revolver-rebuild
 
 To play-test the director, run `npx kite3d dev --no-open --port 4400`, open the printed URL, press Run, then Play and Start. Stop the server when you finish, so the next session can take the port.
 
-The gun range is stored separately at `assets/weapons-lab.scene.gltf`. With the editor stopped, open that file from **Project files**, then press Run. The range selects `revolver-rebuild` automatically and exposes its nine animation clips through the range controls. To return to the game, open `assets/main.scene.gltf` from **Project files**.
+The gun range is stored separately at `assets/weapons-lab.scene.gltf`. Run
+`npm run play -- --scene=assets/weapons-lab.scene.gltf` to play it without the editor. In the editor,
+stop the editor, open that file from **Project files**, then press Run. To return to the game, open
+`assets/main.scene.gltf` from **Project files**.
+
+The lab holds `revolver-rebuild` and mounts the range panel on its own. The main scene still needs
+`?range=1` for that panel; the lab does not, because the lab is a range. F1 hides and shows the panel,
+exactly as in the main scene: showing it takes the mouse so you can click it, and hiding it gives the
+mouse back to the game. The panel lists the nine authored clips of the held rig: Idle, Draw, Fire,
+Reload, AimIn, AimOut, AimIdle, Sprint, and Inspect. Select one and it plays on the revolver at the
+panel's own time scale, so Pause holds a frame and Step walks it one tick. LIVE gives the rig back to
+the gameplay animation. A weapon with no authored clips leaves that row disabled.

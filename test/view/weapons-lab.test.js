@@ -9,6 +9,7 @@ const {labSceneDocument} = await import('../../tools/build-lab-scene.mjs')
 const {bootLabWorld, WeaponsLab} = await import('../../scripts/WeaponsLab.script.js')
 const {WeaponAnimation} = await import('../../lib/view/weapons-animation.js')
 const {createWeaponRigs} = await import('../../lib/view/weapons.js')
+const {AUTHORED_CLIPS} = await import('../../lib/view/weapon-clips.js')
 
 test('lab scene uses placed fixture, plate, target, unit, weapon, light, and camera nodes', () => {
   const scene = labSceneDocument()
@@ -66,5 +67,37 @@ test('clip fractions map to frames, sample the real reload pose, and leave live 
   for (const [clip,fraction] of [['fire',.5],['aim',.5],['switch',.5],['idle',.5]]) {
     const frame = a.setClipTime(clip, fraction); assert.equal(frame.frame, Math.round(frame.frames * fraction))
   }
+  world.destroy()
+})
+
+test('the nine authored clips the range panel lists are the nine the revolver ships, and each one samples', async () => {
+  const revolver = JSON.parse(await readFile(new URL('../../assets/models/weapons/revolver-rebuild/revolver-rebuild.gltf', import.meta.url), 'utf8'))
+  assert.equal(AUTHORED_CLIPS.length, 9)
+  assert.deepEqual(revolver.animations.map(clip => clip.name), [...AUTHORED_CLIPS])
+  const {world} = bootLabWorld(), rigs = createWeaponRigs(new E.Group(), new E.PhysicalMaterial(), weaponFixture)
+  const animation = new WeaponAnimation(rigs, {update() {}, eject() {}, fire() {}})
+  animation.sync(world)
+  const pose = () => {
+    rigs.pistol.root.updateMatrixWorld(true)
+    const parts = []
+    rigs.pistol.root.traverse(node => parts.push(node.matrixWorld.toArray()))
+    return JSON.stringify(parts)
+  }
+  // The fixture rig is the procedural pistol, whose Idle and AimIdle are single
+  // held poses. Its other seven clips carry motion, so scrubbing has to move the
+  // rig. The Blender revolver animates all nine; the browser proof covers that.
+  const held = ['Idle', 'AimIdle']
+  for (const clip of AUTHORED_CLIPS) {
+    const start = animation.setClipTime(clip, 0, world)
+    assert.equal(start?.clip, clip, `${clip} is a clip the panel can select`)
+    assert.ok(start.duration > 0, `${clip} has a real duration`)
+    assert.equal(rigs.pistol.clipPlayer.name, clip, `${clip} is the clip the rig plays`)
+    const first = pose()
+    animation.setClipTime(clip, .5, world)
+    if (held.includes(clip)) assert.equal(pose(), first, `${clip} holds one pose`)
+    else assert.notEqual(pose(), first, `${clip} moves the rig between fraction 0 and 0.5`)
+  }
+  animation.setClipTime(null, 0, world)
+  assert.equal(animation.clipPreview, null)
   world.destroy()
 })

@@ -1,8 +1,10 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import {readFile} from 'node:fs/promises'
+import {mkdir, mkdtemp, readFile, rm} from 'node:fs/promises'
+import {tmpdir} from 'node:os'
+import {join} from 'node:path'
 import {fileURLToPath} from 'node:url'
-import {DEFAULT_PORT, QUERY_FLAGS, parsePlayOptions, playUrl, play} from '../../tools/play.mjs'
+import {DEFAULT_PORT, QUERY_FLAGS, parsePlayOptions, playUrl, play, resolveScene} from '../../tools/play.mjs'
 
 const projectDir = fileURLToPath(new URL('../../', import.meta.url))
 
@@ -20,8 +22,10 @@ test('the flags are the port, the browser, and the query flags the game reads', 
   assert.deepEqual(QUERY_FLAGS, ['sandbox', 'range', 'weapon', 'party'])
   assert.deepEqual(parsePlayOptions(['--sandbox', '--weapon=revolver-rebuild']).query,
     {sandbox: '1', weapon: 'revolver-rebuild'})
+  assert.equal(parsePlayOptions([]).scene, null)
+  assert.equal(parsePlayOptions(['--scene=assets/weapons-lab.scene.gltf']).scene, 'assets/weapons-lab.scene.gltf')
   assert.throws(() => parsePlayOptions(['--port=nope']), /--port needs a port number/)
-  assert.throws(() => parsePlayOptions(['--editor']), /Unknown argument --editor/)
+  assert.throws(() => parsePlayOptions(['--editor']), /Unknown argument --editor\. Known: .*--scene=<path>/)
   assert.equal(playUrl('http://127.0.0.1:4500/', {sandbox: '1', party: 'ABCD'}),
     'http://127.0.0.1:4500/?sandbox=1&party=ABCD')
 })
@@ -60,4 +64,37 @@ test('the server answers with the standalone page and the project files', async 
     await session.close()
   }
   assert.equal((await fetch(new URL(session.url).origin).catch(() => 'closed')), 'closed', 'the server stops')
+})
+
+test('--scene names a text .gltf file inside the project, and says which rule a bad value broke', async () => {
+  assert.equal(await resolveScene(projectDir, 'assets/weapons-lab.scene.gltf'), 'assets/weapons-lab.scene.gltf')
+  assert.equal(await resolveScene(projectDir, './assets/weapons-lab.scene.gltf'), 'assets/weapons-lab.scene.gltf')
+  // A bare `--scene` parses to an empty string, so that is the empty case.
+  assert.equal(parsePlayOptions(['--scene']).scene, '')
+  await assert.rejects(() => resolveScene(projectDir, ''), /--scene needs a path to a \.gltf scene file/)
+  await assert.rejects(() => resolveScene(projectDir, '../kite3d/package.json'), /--scene must name a file inside the project, got \.\.\/kite3d\/package\.json/)
+  await assert.rejects(() => resolveScene(projectDir, 'assets/main.scene.glb'), /--scene must name a text \.gltf scene file, got assets\/main\.scene\.glb/)
+  await assert.rejects(() => resolveScene(projectDir, 'assets'), /--scene must name a text \.gltf scene file, got assets/)
+  await assert.rejects(() => resolveScene(projectDir, 'assets/no-such.scene.gltf'), /--scene names a file that does not exist: assets\/no-such\.scene\.gltf/)
+  const fake = await mkdtemp(join(tmpdir(), 'play-scene-'))
+  try {
+    await mkdir(join(fake, 'looks-like.gltf'))
+    await assert.rejects(() => resolveScene(fake, 'looks-like.gltf'), /--scene must name a file, not a directory: looks-like\.gltf/)
+  } finally { await rm(fake, {recursive: true, force: true}) }
+})
+
+test('--scene boots that scene by serving a package.json that names it, and never writes the real one', async () => {
+  const lines = []
+  const session = await play(['--port=0', '--no-open', '--scene=assets/weapons-lab.scene.gltf'], {out: {write: line => lines.push(line)}})
+  try {
+    assert.match(lines.join(''), /Booting assets\/weapons-lab\.scene\.gltf/)
+    const origin = new URL(session.url).origin
+    const served = await (await fetch(`${origin}/package.json`)).json()
+    const onDisk = JSON.parse(await readFile(`${projectDir}package.json`, 'utf8'))
+    assert.equal(served.mainScene, 'assets/weapons-lab.scene.gltf', 'the page boots the requested scene')
+    assert.equal(onDisk.mainScene, 'assets/main.scene.gltf', 'the project file still names Bunker 7')
+    assert.deepEqual({...served, mainScene: null}, {...onDisk, mainScene: null}, 'only mainScene differs')
+  } finally {
+    await session.close()
+  }
 })
