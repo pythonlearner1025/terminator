@@ -148,7 +148,8 @@ export class GameManager extends Object3DComponent {
     try {
       this.prepareMap()
       this.mapView.startEffects()
-      this.unitView.start(this.world)
+      // The weapons range keeps per-unit rigs for inspection and slow motion.
+      this.unitView.start(this.world, {instanced: !this.range})
       this.playerView.start(this.world)
       this.grenadeView.start(this.world, this.playerView.weapons.material)
       this.playersView = mountPlayersView(this.ctx.viewer, this.world,

@@ -173,6 +173,14 @@ function experimentSource(name) {
       })
     }
     if (part === 'shadow-off') viewer.renderManager.webglRenderer.shadowMap.enabled = false
+    if (part.startsWith('instanced-lod')) {
+      const metres = Number(part.split(':')[1] || 5)
+      for (const system of manager.unitView.instancedList || []) system.quality = {...system.quality, instancedLodDistance: metres}
+    }
+    if (part === 'instanced-off') {
+      // Route every common back to a per-unit rig, keeping everything else.
+      manager.unitView.instancedFor = () => null
+    }
     if (part === 'ragdoll-off') manager.unitView.ragdolls.update = () => {}
     if (part === 'hitstop-off') Object.defineProperty(manager.cameraFeel, 'hitStopped', {get: () => false})
     if (part.startsWith('corpse-cap')) {
@@ -474,12 +482,12 @@ function instrumentSource() {
   wrap(viewer.renderManager, 'render', 'render')
   // info.render resets when the next pass starts, so read each pass on the way out.
   const renderManager = viewer.renderManager
-  const passRender = renderManager.render.bind(renderManager)
-  renderManager.render = (...args) => {
+  const webgl = renderManager.webglRenderer
+  const passRender = webgl.render.bind(webgl)
+  webgl.render = (...args) => {
     const value = passRender(...args)
-    const info = renderManager.webglRenderer.info
-    state.passCalls += info.render.calls
-    state.passTriangles += info.render.triangles
+    state.passCalls += webgl.info.render.calls
+    state.passTriangles += webgl.info.render.triangles
     return value
   }
   state.passCalls = 0
@@ -494,6 +502,7 @@ function instrumentSource() {
   wrap(manager.unitView.optics, 'update', 'optics')
   wrap(manager.unitView, 'processEvents', 'unitEvents')
   wrap(manager.unitView, 'cloneTemplateFigure', 'unitClone')
+  for (const system of manager.unitView.instancedList || []) wrap(system, 'sync', 'instanced')
   wrap(manager.unitView, 'recycleVisual', 'unitRecycle')
   wrap(manager.unitView, 'damageEvent', 'unitDamage')
   wrap(manager.playerView, 'sync', 'player')
@@ -605,6 +614,7 @@ function instrumentSource() {
       drawCalls: info.render.calls, triangles: info.render.triangles,
       programs: info.programs?.length ?? null, geometries: info.memory.geometries, textures: info.memory.textures,
       aliveUnits: manager.world.aliveUnits.length,
+      instanced: manager.unitView?.instancedReport?.() || null,
       ragdolls: manager.unitView?.fx?.ragdolls?.records?.length ?? null,
       gorePieces: manager.unitView?.fx?.gore?.pieces?.items?.length ?? null,
       decals: manager.unitView?.fx?.decals?.length ?? null,

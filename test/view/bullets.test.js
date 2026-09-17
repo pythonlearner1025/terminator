@@ -119,7 +119,7 @@ test('presentation adapters release flinch, sound, marker and kill effects only 
   const world={tick:0,eventLog:[],player:{id:'p',yaw:0,pitch:0},players:new Map()}
   const view=new BulletView(new E.Group(),resources()),calls=[]
   world.unitById=new Map([['dead',{}]])
-  view.manager={world,localPlayerId:'p',unitView:{visuals:new Map([['dead',{}]]),damageEvent:()=>calls.push('flinch'),killEffect:()=>calls.push('kill'),
+  view.manager={world,localPlayerId:'p',unitView:{visuals:new Map([['dead',{}]]),hasPresentation:id=>id==='dead',damageEvent:()=>calls.push('flinch'),killEffect:()=>calls.push('kill'),
     fx:{gore:{hitWrecks:()=>calls.push('wreck')},update:()=>{}}},audioBindings:{bulletImpact:e=>calls.push(e.type+'-sound')},hud:{showHit:()=>calls.push('marker')}}
   view.sync(world,v(),[])
   const point=v(0,0,20),hit={type:'unit_damage',tick:0,playerId:'p',weapon:'m4',unitId:'dead',point}

@@ -29,7 +29,17 @@ test('high is untouched by the new preset', () => {
     id: 'high', renderScale: 1, shadowMapSize: 1024, gbufferScale: .2,
     ssaoScale: .2, ssaoSamples: 2, ssaoEnabled: true, bloomScale: .2, particleDensity: .65,
     lodDistance: 5, animationLodDistance: 7, animationHz: 30, farAnimationHz: 24,
+    instancedLodDistance: 12,
   })
+})
+
+// `performance` renders at full scale, so the crowd it draws is the crowd
+// `high` draws. Only the three levers above separate them.
+test('performance keeps the high LOD distances, near rig and instanced alike', () => {
+  const preset = QUALITY_PRESETS.performance, high = QUALITY_PRESETS.high
+  assert.equal(preset.lodDistance, high.lodDistance)
+  assert.equal(preset.animationLodDistance, high.animationLodDistance)
+  assert.equal(preset.instancedLodDistance, high.instancedLodDistance)
 })
 
 test('performance is selectable in settings and listed in the quality menu', () => {
